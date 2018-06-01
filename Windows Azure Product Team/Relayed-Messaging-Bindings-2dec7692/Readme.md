@@ -1,1 +1,0 @@
-{"Title":"Relayed Messaging Bindings: NetTcp Relayed","Description":"This sample demonstrates using the NetTcpRelayBinding binding. ","IsPublished":true,"ModifiedDate":"2011-11-16T11:46:45.82","License":"Apache License, Version 2.0","Requires":"Visual Studio 2010","Technologies":"Microsoft Azure,Service Bus,","Topics":"Service Bus,"}
