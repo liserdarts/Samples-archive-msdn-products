@@ -1,0 +1,1 @@
+{"Title":"Relayed Messaging Authentication: WebNoAuth","Description":"This sample demonstrates how to expose an HTTP service that does not require client user authentication.","IsPublished":true,"ModifiedDate":"2014-09-03T11:26:50.79","License":"Apache License, Version 2.0","Requires":"Visual Studio 2010","Technologies":"Microsoft Azure,Service Bus,","Topics":"Service Bus,"}

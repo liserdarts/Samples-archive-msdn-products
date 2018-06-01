@@ -1,0 +1,1 @@
+{"Title":"Windows Azure Diagnostics Sample","Description":"The Windows Azure Diagnostics sample shows how to capture performance counter diagnostic data in your Windows Azure application.\r\n","IsPublished":true,"ModifiedDate":"2011-04-26T14:57:42.76","License":"Custom","Requires":"Visual Studio 2010","Technologies":"Microsoft Azure,","Topics":"Diagnostics,"}

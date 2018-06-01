@@ -1,0 +1,1 @@
+{"Title":"Brokered Messaging: Management Operations Using REST","Description":"This sample demonstrates how to perform management operations on the Service Bus using REST","IsPublished":true,"ModifiedDate":"2014-08-14T12:16:12.177","License":"Apache License, Version 2.0","Requires":"Visual Studio 2010","Technologies":"Microsoft Azure,Service Bus,","Topics":"Service Bus,"}
