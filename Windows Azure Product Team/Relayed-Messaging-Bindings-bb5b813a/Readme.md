@@ -1,0 +1,1 @@
+{"Title":"Relayed Messaging Bindings: Net Oneway","Description":"This sample demonstrates how to expose and consume a service endpoint using the NetOnewayRelayBinding binding. ","IsPublished":true,"ModifiedDate":"2011-11-16T11:48:31.397","License":"Apache License, Version 2.0","Requires":"Visual Studio 2010","Technologies":"Microsoft Azure,Service Bus,","Topics":"Service Bus,"}
