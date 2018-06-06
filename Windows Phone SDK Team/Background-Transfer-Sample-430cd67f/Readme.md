@@ -4,7 +4,9 @@
 ## License
 * MS-LPL
 ## Technologies
+* Windows Phone 8
 ## Topics
+* background transfer
 ## IsPublished
 * True
 ## ModifiedDate
