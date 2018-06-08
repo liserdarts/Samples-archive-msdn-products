@@ -1,0 +1,210 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
+    <head><link rel="stylesheet" type="text/css" href="description/Combined.css,0:HeaderFooterSprite,0:Header.NonMtps,1:LinkList;/Areas/Centers/Themes/StandardDevCenter/Content:0,/Areas/Epx/Themes/Base/Content:1&amp;amp;hashKey=C9973DA951AE6202C9B348379A1BE49D" xmlns="http://www.w3.org/1999/xhtml" />
+<link type="text/css" rel="stylesheet" xmlns="http://www.w3.org/1999/xhtml" />
+<link rel="stylesheet" type="text/css" href="description/67b74b86-a273-4ad7-9ed5-0f97276412eaCombined.css,0:HeaderFooterSprite,0:Footer.NonMtps,1:LinkList;/Areas/Centers/Themes/StandardDevCenter/Content:0,/Areas/Epx/Themes/Base/Content:1&amp;amp;hashKey=F576C687BC536B84D6E5B3246EE39B49" xmlns="http://www.w3.org/1999/xhtml" />
+<link type="text/css" rel="stylesheet" xmlns="http://www.w3.org/1999/xhtml" />
+
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <title>Brokered Messaging; MSMQ ServiceBus Bridge</title>
+        <link href="description/Galleries.css" type="text/css" rel="Stylesheet" /><link href="description/Layout.css" type="text/css" rel="Stylesheet" /><link href="description/Brand.css" type="text/css" rel="Stylesheet" />
+        <link href="description/iframedescription.css" rel="Stylesheet" type="text/css" />
+        <script src="description/offline.js" type="text/javascript"></script>
+        <style type="text/css">
+            #projectInfo {
+                overflow: auto;
+            }
+            #longDesc {
+                clear:both;
+                margin: 25px 0 10px 0;
+            }
+
+            #SampleIndexList{
+                margin-left: 15px;
+            }
+        </style>
+    </head>
+<body>
+    <div id="offlineDescription">
+        <h1>Brokered Messaging; MSMQ ServiceBus Bridge</h1>
+        <br/>
+        <div id="projectInfo">
+            <div class="section">
+                    <div class="itemBarLong tagsContainer">
+                        <label for="Technologies">Technologies</label>
+                        <div id="Technologies">
+                            Microsoft Azure, Service Bus
+                        </div>
+                    </div>
+                    <div class="itemBarLong tagsContainer">
+                        <label for="Topics">Topics</label>
+                        <div id="Topics">
+                            Service Bus
+                        </div>
+                    </div>
+                <div class="itemBarLong">
+                    <label for="Platforms">Platforms</label>
+                    <div id="Platforms">
+                        Cloud
+                    </div>
+                </div>
+                <div class="itemBarLong">
+                    <label for="Requirements">Requirements</label>
+                    <div id="Requirements">
+                        
+                    </div>
+                </div>
+                <div class="itemBar">
+                    <label for="LastUpdated">Primary language</label>
+                    <div id="LastUpdated">en-US</div>
+                </div>
+                <div class="itemBar">
+                    <label for="LastUpdated">Updated</label>
+                    <div id="LastUpdated">11/15/2011</div>
+                </div>
+                <div class="itemBarLong">
+                    <label for="License">License</label>
+                    <div id="License">
+                        <a href="license.rtf">Apache License, Version 2.0</a></div>
+                </div>
+                <div class="itemBar">
+                    <div class="viewonlinecont">
+                        <a data-link="online" href="http://code.msdn.microsoft.com/Brokered-Messaging-MSMQ-a31c6644">View this sample online</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+                   
+<script type="text/javascript">
+    function initializePage() {
+        var otherTabClass = 'otherTab';
+        var hiddenPreClass = 'hidden';
+
+        var htmlDecode = function(encodedData) {
+            var decodedData = "";
+            if (encodedData) {
+                var div = document.createElement('div');
+                div.innerHTML = encodedData;
+                decodedData = div.firstChild.nodeValue.replace( /\\r\\n/ig , '\r\n');
+            }
+            return decodedData;
+        };
+                
+        Galleries.iterateElem(Galleries.findElem(null, 'div', 'scriptcode'), function (index, scriptBlock) {
+            var titleElem = Galleries.findElem(scriptBlock, 'div', 'title')[0];
+            var labelElems = Galleries.findElem(titleElem, 'span');
+            if (labelElems.length == 0) {
+                labelElems = titleElem;
+            }
+            var languageSpans = Galleries.findElem(scriptBlock, 'span', 'hidden');
+            var pres = Galleries.findElem(scriptBlock, 'pre');
+            if (languageSpans.length > 0 && pres.length > 1) {
+                Galleries.iterateElem(labelElems, function(index, elem) {
+                    var codePre = pres[index];
+                    var labelSpan = elem;
+                    var languageSpan = languageSpans[index];
+                            
+                    elem.code = codePre.innerHTML.replace( /(\r(\n)?)|((\r)?\n)/ig , '\\r\\n');
+                            
+                    codePre.className = codePre.className.replace(hiddenPreClass, '');
+                            
+                    languageSpan.parentNode.removeChild(languageSpan);
+                });
+
+                pres = Galleries.findElem(scriptBlock, 'pre');
+                Galleries.iterateElem(labelElems, function(index, elem) {
+                    var codePre = pres[index];
+                    var labelSpan = elem;
+                    if (index == 0) {
+                        scriptBlock.activeTab = 0;
+                    }
+                    else {
+                        labelSpan.className += otherTabClass;
+                        codePre.className += hiddenPreClass;
+                    }
+                    Galleries.attachEventHandler(labelSpan, 'click', function(e) {
+                        var activeTab = scriptBlock.activeTab;
+                        labelElems[activeTab].className += otherTabClass;
+                        pres[activeTab].className += hiddenPreClass;
+
+                        codePre.className = codePre.className.replace(hiddenPreClass, '');
+                        labelSpan.className = labelSpan.className.replace(otherTabClass, '');
+                        scriptBlock.activeTab = index;
+                    });
+                });
+
+                var preview = Galleries.findElem(scriptBlock, 'div', 'preview');
+                if (preview.length == 0) {
+                    preview.push(pres[pres.length - 1]);
+                }
+                Galleries.iterateElem(preview, function(index, elem) {
+                    elem.parentNode.removeChild(elem);
+                });
+
+                if (window.clipboardData && clipboardData.setData) {
+                    var copyLink = document.createElement('a');
+                    copyLink.href = 'javascript:void(0);';
+                    copyLink.className = 'copyCode';
+                    copyLink.innerHTML = 'Copy code';
+                    Galleries.attachEventHandler(copyLink, 'click', function (e) {
+                        clipboardData.setData("Text", htmlDecode(labelElems[scriptBlock.activeTab].code));
+                        return false;
+                    });
+                    scriptBlock.insertBefore(copyLink, scriptBlock.childNodes[0]);
+                }
+            }
+        });
+    }
+
+    Galleries.onWindowLoad(function(){
+        initializePage();
+    });
+
+</script>
+<div id="longDesc">
+    
+<h1>Introduction</h1>
+<p>This sample demonstrates communication between MSMQ and the Service Bus using a bridge.</p>
+<p>There are 3 executables in this sample. The intention of the sample is to showcase a simple implementation of MSMQ-to-ServiceBus bridge using the Bridge project. The MsmqTestClient and ServiceBusTestClient projects are client projects used for testing the
+ bridge.</p>
+<p>The functionalities of the executables are:</p>
+<ul>
+<li>The MsmqTestClient program acts as a setup utility as well as an MSMQ test client. It creates all the queues (both MSMQ and Service Bus), and sends/receives messages from MSMQ queues using <a class="libraryLink" href="http://msdn.microsoft.com/en-US/library/System.Messaging.aspx"  title="Auto generated link to System.Messaging">System.Messaging</a> APIs. When all the messages are sent and received,
+ the program deletes the queues. </li><li>The ServiceBusTestClient program sends/receives messages from Service Bus queues using Service Bus APIs.
+</li><li>The Bridge program is the MSMQ-ServiceBus bridge that can send messages from an MSMQ queue to a Service Bus queue and vice-versa. The bridge in this sample is a simple implementation that is tied to a fixed MsmqQueue and a Service Bus queue. It can be made
+ generic in nature by enumerating queues in MSMQ and Service Bus to achieve an automatic bridging capability. However, it is not the intention of this sample to showcase an all-purpose bridge between MSMQ and Service Bus.
+</li></ul>
+<p>The sequence of steps performed by the sample are as below:</p>
+<ul>
+<li>The MsmqTestClient program creates all the necessary queues (MSMQ queues - MsmqSendQueue/MsmqReceiveQueue, Service Bus queues - ServiceBusSendQueue/ServiceBusReceiveQueue)
+</li><li>The MsmqTestClient program sends a Message to a MSMQ queue (MsmqSendQueue) </li><li>The Bridge reads this MSMQ message from the MSMQ queue (MsmqSendQueue), converts the message a into BrokeredMessage and sends it to a Service Bus queue (ServiceBusSendQueue)
+</li><li>The ServiceBusTestClient program receives the BrokeredMessage from the Service Bus queue (ServiceBusSendQueue) and sends the BrokeredMessage back through another ServiceBus queue (ServiceBusReceiveQueue)
+</li><li>The Bridge receives the BrokeredMessage from this Service Bus queue (ServiceBusReceiveQueue) and sends an MSMQ message to another MSMQ queue (MsmqReceiveQueue)
+</li><li>The MsmqTestClient program receives the MSMQ message from the second MSMQ queue (MsmqReceiveQueue)
+</li><li>The MsmqTestClient program deletes all the queues&nbsp; </li></ul>
+<p><strong>Note:</strong> The sample demonstrates simple communication between MSMQ and Service Bus. It does not deal with acknowledgements for the messages being sent.</p>
+<p>&nbsp;</p>
+<h1>Prerequisites</h1>
+<p>If you haven't already done so, please read the release notes document that explains how to sign up for a Windows Azure account and how to configure your environment.</p>
+<p>To install MSQM, please refer to <a href="http://msdn.microsoft.com/en-us/library/aa967729.aspx">
+Installing Message Queuing (MSMQ).</a></p>
+<p>&nbsp;</p>
+<h1>Running the Sample</h1>
+<p><br>
+After building the solution, run the executables in the following order.</p>
+<ol>
+<li>MsmqTestClient.exe </li><li>Bridge.exe </li><li>ServiceBusTestClient.exe </li></ol>
+<p><br>
+Each will prompt for a Service Bus service namespace, issuer name (e.g. &quot;owner&quot;), and issuer key.</p>
+<p>When finished, the MsmqTestClient will prompt to press ENTER to clean up queues and exit the application.</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+
+</div>
+
+
+    </div>
+</body>
+</html>
