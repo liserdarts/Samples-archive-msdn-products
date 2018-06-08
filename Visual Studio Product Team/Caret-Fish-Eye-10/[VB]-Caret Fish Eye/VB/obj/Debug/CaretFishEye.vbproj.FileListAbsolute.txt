@@ -1,0 +1,9 @@
+C:\Users\cgranger\Documents\Public\Samples\RTM\VB\CaretFishEye\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\cgranger\Documents\Public\Samples\RTM\VB\CaretFishEye\bin\Debug\source.extension.vsixmanifest
+C:\Users\cgranger\Documents\Public\Samples\RTM\VB\CaretFishEye\bin\Debug\CaretFisheye.dll
+C:\Users\cgranger\Documents\Public\Samples\RTM\VB\CaretFishEye\bin\Debug\CaretFisheye.pdb
+C:\Users\cgranger\Documents\Public\Samples\RTM\VB\CaretFishEye\bin\Debug\CaretFisheye.vsix
+C:\Users\cgranger\Documents\Public\Samples\RTM\VB\CaretFishEye\bin\Debug\extension.vsixmanifest
+C:\Users\cgranger\Documents\Public\Samples\RTM\VB\CaretFishEye\obj\Debug\CaretFisheye.dll
+C:\Users\cgranger\Documents\Public\Samples\RTM\VB\CaretFishEye\obj\Debug\CaretFisheye.pdb
+C:\Users\cgranger\Documents\Public\Samples\RTM\VB\CaretFishEye\obj\Debug\extension.vsixmanifest
