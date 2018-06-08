@@ -1,0 +1,9 @@
+C:\Users\cgranger\Documents\Public\Samples\tempRC\CompletionTooltip\bin\Debug\source.extension.vsixmanifest
+C:\Users\cgranger\Documents\Public\Samples\tempRC\CompletionTooltip\bin\Debug\CompletionTooltipCustomization.dll
+C:\Users\cgranger\Documents\Public\Samples\tempRC\CompletionTooltip\bin\Debug\CompletionTooltipCustomization.pdb
+C:\Users\cgranger\Documents\Public\Samples\tempRC\CompletionTooltip\bin\Debug\CompletionTooltipCustomization.vsix
+C:\Users\cgranger\Documents\Public\Samples\tempRC\CompletionTooltip\bin\Debug\extension.vsixmanifest
+C:\Users\cgranger\Documents\Public\Samples\tempRC\CompletionTooltip\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\cgranger\Documents\Public\Samples\tempRC\CompletionTooltip\obj\Debug\CompletionTooltipCustomization.dll
+C:\Users\cgranger\Documents\Public\Samples\tempRC\CompletionTooltip\obj\Debug\CompletionTooltipCustomization.pdb
+C:\Users\cgranger\Documents\Public\Samples\tempRC\CompletionTooltip\obj\Debug\extension.vsixmanifest
