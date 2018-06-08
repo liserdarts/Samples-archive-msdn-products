@@ -1,0 +1,1 @@
+bin\HelloFabric_WebRole.dll

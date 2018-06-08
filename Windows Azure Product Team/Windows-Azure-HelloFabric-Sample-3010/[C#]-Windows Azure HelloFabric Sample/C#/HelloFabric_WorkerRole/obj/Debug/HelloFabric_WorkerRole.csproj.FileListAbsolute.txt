@@ -1,0 +1,10 @@
+C:\Users\davidmu\Documents\Visual Studio 2010\Projects\Windows_Azure_HelloFabric_Sample\C#\HelloFabric_WorkerRole\bin\Debug\HelloFabric_WorkerRole.dll.config
+C:\Users\davidmu\Documents\Visual Studio 2010\Projects\Windows_Azure_HelloFabric_Sample\C#\HelloFabric_WorkerRole\bin\Debug\HelloFabric_WorkerRole.dll
+C:\Users\davidmu\Documents\Visual Studio 2010\Projects\Windows_Azure_HelloFabric_Sample\C#\HelloFabric_WorkerRole\bin\Debug\HelloFabric_WorkerRole.pdb
+C:\Users\davidmu\Documents\Visual Studio 2010\Projects\Windows_Azure_HelloFabric_Sample\C#\HelloFabric_WorkerRole\bin\Debug\Microsoft.WindowsAzure.Diagnostics.dll
+C:\Users\davidmu\Documents\Visual Studio 2010\Projects\Windows_Azure_HelloFabric_Sample\C#\HelloFabric_WorkerRole\bin\Debug\Microsoft.WindowsAzure.StorageClient.dll
+C:\Users\davidmu\Documents\Visual Studio 2010\Projects\Windows_Azure_HelloFabric_Sample\C#\HelloFabric_WorkerRole\bin\Debug\Microsoft.WindowsAzure.Diagnostics.xml
+C:\Users\davidmu\Documents\Visual Studio 2010\Projects\Windows_Azure_HelloFabric_Sample\C#\HelloFabric_WorkerRole\bin\Debug\Microsoft.WindowsAzure.StorageClient.xml
+C:\Users\davidmu\Documents\Visual Studio 2010\Projects\Windows_Azure_HelloFabric_Sample\C#\HelloFabric_WorkerRole\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\davidmu\Documents\Visual Studio 2010\Projects\Windows_Azure_HelloFabric_Sample\C#\HelloFabric_WorkerRole\obj\Debug\HelloFabric_WorkerRole.dll
+C:\Users\davidmu\Documents\Visual Studio 2010\Projects\Windows_Azure_HelloFabric_Sample\C#\HelloFabric_WorkerRole\obj\Debug\HelloFabric_WorkerRole.pdb

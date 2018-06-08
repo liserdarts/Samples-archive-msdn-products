@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<ServiceConfiguration serviceName="HelloFabric" xmlns="http://schemas.microsoft.com/ServiceHosting/2008/10/ServiceConfiguration">
+  <Role name="HelloFabric_WebRole">
+    <Instances count="1" />
+    <ConfigurationSettings>
+      <Setting name="BannerText" value="Hello Fabric!" />
+      <Setting name="LogAllRequests" value="false" />
+      <Setting name="LogFailedRequests" value="true" />
+      <Setting name="Microsoft.WindowsAzure.Plugins.Diagnostics.ConnectionString" value="UseDevelopmentStorage=true" />
+    </ConfigurationSettings>
+  </Role>
+  <Role name="HelloFabric_WorkerRole">
+    <Instances count="1" />
+    <ConfigurationSettings>
+      <Setting name="Microsoft.WindowsAzure.Plugins.Diagnostics.ConnectionString" value="UseDevelopmentStorage=true" />
+    </ConfigurationSettings>
+  </Role>
+</ServiceConfiguration>

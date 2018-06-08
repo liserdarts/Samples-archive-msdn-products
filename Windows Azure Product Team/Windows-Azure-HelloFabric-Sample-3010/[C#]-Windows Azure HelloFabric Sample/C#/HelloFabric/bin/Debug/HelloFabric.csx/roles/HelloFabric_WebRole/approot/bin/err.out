@@ -1,0 +1,256 @@
+Get-Item : Cannot find path 'C:\Users\davidmu\AppData\Local\dftmp\Resources\7f6
+49c83-273f-498b-9b2f-19904ef7db59\directory\DiagnosticStore\FailedReqLogFiles' 
+because it does not exist.
+At C:\Users\davidmu\Documents\Visual Studio 2010\Projects\Windows_Azure_HelloFa
+bric_Sample\C#\HelloFabric\bin\Debug\HelloFabric.csx\roles\HelloFabric_WebRole\
+approot\bin\workaround.ps1:21 char:35
++     $FailedRequestsACL = (Get-Item <<<<  $FailedRequestLogsPath).GetAccessCon
+trol("Access")
+    + CategoryInfo          : ObjectNotFound: (C:\Users\davidm...iledReqLogFil 
+   es:String) [Get-Item], ItemNotFoundException
+    + FullyQualifiedErrorId : PathNotFound,Microsoft.PowerShell.Commands.GetIt 
+   emCommand
+ 
+You cannot call a method on a null-valued expression.
+At C:\Users\davidmu\Documents\Visual Studio 2010\Projects\Windows_Azure_HelloFa
+bric_Sample\C#\HelloFabric\bin\Debug\HelloFabric.csx\roles\HelloFabric_WebRole\
+approot\bin\workaround.ps1:21 char:76
++     $FailedRequestsACL = (Get-Item $FailedRequestLogsPath).GetAccessControl <
+<<< ("Access")
+    + CategoryInfo          : InvalidOperation: (GetAccessControl:String) [],  
+   ParentContainsErrorRecordException
+    + FullyQualifiedErrorId : InvokeMethodOnNull
+ 
+Exception calling "GetLocalResource" with "1" argument(s): "error"
+At C:\Users\davidmu\Documents\Visual Studio 2010\Projects\Windows_Azure_HelloFa
+bric_Sample\C#\HelloFabric\bin\Debug\HelloFabric.csx\roles\HelloFabric_WebRole\
+approot\bin\workaround.ps1:38 char:92
++     $WCFLogPath = [Microsoft.WindowsAzure.ServiceRuntime.RoleEnvironment]::Ge
+tLocalResource <<<< ($WCFLogResourceName).RootPath
+    + CategoryInfo          : NotSpecified: (:) [], ParentContainsErrorRecordE 
+   xception
+    + FullyQualifiedErrorId : DotNetMethodException
+ 
+Exception calling "GetLocalResource" with "1" argument(s): "error"
+At C:\Users\davidmu\Documents\Visual Studio 2010\Projects\Windows_Azure_HelloFa
+bric_Sample\C#\HelloFabric\bin\Debug\HelloFabric.csx\roles\HelloFabric_WebRole\
+approot\bin\workaround.ps1:38 char:92
++     $WCFLogPath = [Microsoft.WindowsAzure.ServiceRuntime.RoleEnvironment]::Ge
+tLocalResource <<<< ($WCFLogResourceName).RootPath
+    + CategoryInfo          : NotSpecified: (:) [], ParentContainsErrorRecordE 
+   xception
+    + FullyQualifiedErrorId : DotNetMethodException
+ 
+Exception calling "GetLocalResource" with "1" argument(s): "error"
+At C:\Users\davidmu\Documents\Visual Studio 2010\Projects\Windows_Azure_HelloFa
+bric_Sample\C#\HelloFabric\bin\Debug\HelloFabric.csx\roles\HelloFabric_WebRole\
+approot\bin\workaround.ps1:38 char:92
++     $WCFLogPath = [Microsoft.WindowsAzure.ServiceRuntime.RoleEnvironment]::Ge
+tLocalResource <<<< ($WCFLogResourceName).RootPath
+    + CategoryInfo          : NotSpecified: (:) [], ParentContainsErrorRecordE 
+   xception
+    + FullyQualifiedErrorId : DotNetMethodException
+ 
+Exception calling "GetLocalResource" with "1" argument(s): "error"
+At C:\Users\davidmu\Documents\Visual Studio 2010\Projects\Windows_Azure_HelloFa
+bric_Sample\C#\HelloFabric\bin\Debug\HelloFabric.csx\roles\HelloFabric_WebRole\
+approot\bin\workaround.ps1:38 char:92
++     $WCFLogPath = [Microsoft.WindowsAzure.ServiceRuntime.RoleEnvironment]::Ge
+tLocalResource <<<< ($WCFLogResourceName).RootPath
+    + CategoryInfo          : NotSpecified: (:) [], ParentContainsErrorRecordE 
+   xception
+    + FullyQualifiedErrorId : DotNetMethodException
+ 
+Exception calling "GetLocalResource" with "1" argument(s): "error"
+At C:\Users\davidmu\Documents\Visual Studio 2010\Projects\Windows_Azure_HelloFa
+bric_Sample\C#\HelloFabric\bin\Debug\HelloFabric.csx\roles\HelloFabric_WebRole\
+approot\bin\workaround.ps1:38 char:92
++     $WCFLogPath = [Microsoft.WindowsAzure.ServiceRuntime.RoleEnvironment]::Ge
+tLocalResource <<<< ($WCFLogResourceName).RootPath
+    + CategoryInfo          : NotSpecified: (:) [], ParentContainsErrorRecordE 
+   xception
+    + FullyQualifiedErrorId : DotNetMethodException
+ 
+Exception calling "GetLocalResource" with "1" argument(s): "error"
+At C:\Users\davidmu\Documents\Visual Studio 2010\Projects\Windows_Azure_HelloFa
+bric_Sample\C#\HelloFabric\bin\Debug\HelloFabric.csx\roles\HelloFabric_WebRole\
+approot\bin\workaround.ps1:38 char:92
++     $WCFLogPath = [Microsoft.WindowsAzure.ServiceRuntime.RoleEnvironment]::Ge
+tLocalResource <<<< ($WCFLogResourceName).RootPath
+    + CategoryInfo          : NotSpecified: (:) [], ParentContainsErrorRecordE 
+   xception
+    + FullyQualifiedErrorId : DotNetMethodException
+ 
+Exception calling "GetLocalResource" with "1" argument(s): "error"
+At C:\Users\davidmu\Documents\Visual Studio 2010\Projects\Windows_Azure_HelloFa
+bric_Sample\C#\HelloFabric\bin\Debug\HelloFabric.csx\roles\HelloFabric_WebRole\
+approot\bin\workaround.ps1:38 char:92
++     $WCFLogPath = [Microsoft.WindowsAzure.ServiceRuntime.RoleEnvironment]::Ge
+tLocalResource <<<< ($WCFLogResourceName).RootPath
+    + CategoryInfo          : NotSpecified: (:) [], ParentContainsErrorRecordE 
+   xception
+    + FullyQualifiedErrorId : DotNetMethodException
+ 
+Exception calling "GetLocalResource" with "1" argument(s): "error"
+At C:\Users\davidmu\Documents\Visual Studio 2010\Projects\Windows_Azure_HelloFa
+bric_Sample\C#\HelloFabric\bin\Debug\HelloFabric.csx\roles\HelloFabric_WebRole\
+approot\bin\workaround.ps1:38 char:92
++     $WCFLogPath = [Microsoft.WindowsAzure.ServiceRuntime.RoleEnvironment]::Ge
+tLocalResource <<<< ($WCFLogResourceName).RootPath
+    + CategoryInfo          : NotSpecified: (:) [], ParentContainsErrorRecordE 
+   xception
+    + FullyQualifiedErrorId : DotNetMethodException
+ 
+Exception calling "GetLocalResource" with "1" argument(s): "error"
+At C:\Users\davidmu\Documents\Visual Studio 2010\Projects\Windows_Azure_HelloFa
+bric_Sample\C#\HelloFabric\bin\Debug\HelloFabric.csx\roles\HelloFabric_WebRole\
+approot\bin\workaround.ps1:38 char:92
++     $WCFLogPath = [Microsoft.WindowsAzure.ServiceRuntime.RoleEnvironment]::Ge
+tLocalResource <<<< ($WCFLogResourceName).RootPath
+    + CategoryInfo          : NotSpecified: (:) [], ParentContainsErrorRecordE 
+   xception
+    + FullyQualifiedErrorId : DotNetMethodException
+ 
+Exception calling "GetLocalResource" with "1" argument(s): "error"
+At C:\Users\davidmu\Documents\Visual Studio 2010\Projects\Windows_Azure_HelloFa
+bric_Sample\C#\HelloFabric\bin\Debug\HelloFabric.csx\roles\HelloFabric_WebRole\
+approot\bin\workaround.ps1:38 char:92
++     $WCFLogPath = [Microsoft.WindowsAzure.ServiceRuntime.RoleEnvironment]::Ge
+tLocalResource <<<< ($WCFLogResourceName).RootPath
+    + CategoryInfo          : NotSpecified: (:) [], ParentContainsErrorRecordE 
+   xception
+    + FullyQualifiedErrorId : DotNetMethodException
+ 
+Exception calling "GetLocalResource" with "1" argument(s): "error"
+At C:\Users\davidmu\Documents\Visual Studio 2010\Projects\Windows_Azure_HelloFa
+bric_Sample\C#\HelloFabric\bin\Debug\HelloFabric.csx\roles\HelloFabric_WebRole\
+approot\bin\workaround.ps1:38 char:92
++     $WCFLogPath = [Microsoft.WindowsAzure.ServiceRuntime.RoleEnvironment]::Ge
+tLocalResource <<<< ($WCFLogResourceName).RootPath
+    + CategoryInfo          : NotSpecified: (:) [], ParentContainsErrorRecordE 
+   xception
+    + FullyQualifiedErrorId : DotNetMethodException
+ 
+Exception calling "GetLocalResource" with "1" argument(s): "error"
+At C:\Users\davidmu\Documents\Visual Studio 2010\Projects\Windows_Azure_HelloFa
+bric_Sample\C#\HelloFabric\bin\Debug\HelloFabric.csx\roles\HelloFabric_WebRole\
+approot\bin\workaround.ps1:38 char:92
++     $WCFLogPath = [Microsoft.WindowsAzure.ServiceRuntime.RoleEnvironment]::Ge
+tLocalResource <<<< ($WCFLogResourceName).RootPath
+    + CategoryInfo          : NotSpecified: (:) [], ParentContainsErrorRecordE 
+   xception
+    + FullyQualifiedErrorId : DotNetMethodException
+ 
+Exception calling "GetLocalResource" with "1" argument(s): "error"
+At C:\Users\davidmu\Documents\Visual Studio 2010\Projects\Windows_Azure_HelloFa
+bric_Sample\C#\HelloFabric\bin\Debug\HelloFabric.csx\roles\HelloFabric_WebRole\
+approot\bin\workaround.ps1:38 char:92
++     $WCFLogPath = [Microsoft.WindowsAzure.ServiceRuntime.RoleEnvironment]::Ge
+tLocalResource <<<< ($WCFLogResourceName).RootPath
+    + CategoryInfo          : NotSpecified: (:) [], ParentContainsErrorRecordE 
+   xception
+    + FullyQualifiedErrorId : DotNetMethodException
+ 
+Exception calling "GetLocalResource" with "1" argument(s): "error"
+At C:\Users\davidmu\Documents\Visual Studio 2010\Projects\Windows_Azure_HelloFa
+bric_Sample\C#\HelloFabric\bin\Debug\HelloFabric.csx\roles\HelloFabric_WebRole\
+approot\bin\workaround.ps1:38 char:92
++     $WCFLogPath = [Microsoft.WindowsAzure.ServiceRuntime.RoleEnvironment]::Ge
+tLocalResource <<<< ($WCFLogResourceName).RootPath
+    + CategoryInfo          : NotSpecified: (:) [], ParentContainsErrorRecordE 
+   xception
+    + FullyQualifiedErrorId : DotNetMethodException
+ 
+Exception calling "GetLocalResource" with "1" argument(s): "error"
+At C:\Users\davidmu\Documents\Visual Studio 2010\Projects\Windows_Azure_HelloFa
+bric_Sample\C#\HelloFabric\bin\Debug\HelloFabric.csx\roles\HelloFabric_WebRole\
+approot\bin\workaround.ps1:38 char:92
++     $WCFLogPath = [Microsoft.WindowsAzure.ServiceRuntime.RoleEnvironment]::Ge
+tLocalResource <<<< ($WCFLogResourceName).RootPath
+    + CategoryInfo          : NotSpecified: (:) [], ParentContainsErrorRecordE 
+   xception
+    + FullyQualifiedErrorId : DotNetMethodException
+ 
+Get-Item : Cannot find path 'C:\Users\davidmu\AppData\Local\dftmp\Resources\55a
+6b580-7952-4445-9aab-f3ef557d2c8d\directory\DiagnosticStore\FailedReqLogFiles' 
+because it does not exist.
+At C:\Users\davidmu\Documents\Visual Studio 2010\Projects\Windows_Azure_HelloFa
+bric_Sample\C#\HelloFabric\bin\Debug\HelloFabric.csx\roles\HelloFabric_WebRole\
+approot\bin\workaround.ps1:21 char:35
++     $FailedRequestsACL = (Get-Item <<<<  $FailedRequestLogsPath).GetAccessCon
+trol("Access")
+    + CategoryInfo          : ObjectNotFound: (C:\Users\davidm...iledReqLogFil 
+   es:String) [Get-Item], ItemNotFoundException
+    + FullyQualifiedErrorId : PathNotFound,Microsoft.PowerShell.Commands.GetIt 
+   emCommand
+ 
+You cannot call a method on a null-valued expression.
+At C:\Users\davidmu\Documents\Visual Studio 2010\Projects\Windows_Azure_HelloFa
+bric_Sample\C#\HelloFabric\bin\Debug\HelloFabric.csx\roles\HelloFabric_WebRole\
+approot\bin\workaround.ps1:21 char:76
++     $FailedRequestsACL = (Get-Item $FailedRequestLogsPath).GetAccessControl <
+<<< ("Access")
+    + CategoryInfo          : InvalidOperation: (GetAccessControl:String) [],  
+   ParentContainsErrorRecordException
+    + FullyQualifiedErrorId : InvokeMethodOnNull
+ 
+Exception calling "GetLocalResource" with "1" argument(s): "error"
+At C:\Users\davidmu\Documents\Visual Studio 2010\Projects\Windows_Azure_HelloFa
+bric_Sample\C#\HelloFabric\bin\Debug\HelloFabric.csx\roles\HelloFabric_WebRole\
+approot\bin\workaround.ps1:38 char:92
++     $WCFLogPath = [Microsoft.WindowsAzure.ServiceRuntime.RoleEnvironment]::Ge
+tLocalResource <<<< ($WCFLogResourceName).RootPath
+    + CategoryInfo          : NotSpecified: (:) [], ParentContainsErrorRecordE 
+   xception
+    + FullyQualifiedErrorId : DotNetMethodException
+ 
+Exception calling "GetLocalResource" with "1" argument(s): "error"
+At C:\Users\davidmu\Documents\Visual Studio 2010\Projects\Windows_Azure_HelloFa
+bric_Sample\C#\HelloFabric\bin\Debug\HelloFabric.csx\roles\HelloFabric_WebRole\
+approot\bin\workaround.ps1:38 char:92
++     $WCFLogPath = [Microsoft.WindowsAzure.ServiceRuntime.RoleEnvironment]::Ge
+tLocalResource <<<< ($WCFLogResourceName).RootPath
+    + CategoryInfo          : NotSpecified: (:) [], ParentContainsErrorRecordE 
+   xception
+    + FullyQualifiedErrorId : DotNetMethodException
+ 
+Exception calling "GetLocalResource" with "1" argument(s): "error"
+At C:\Users\davidmu\Documents\Visual Studio 2010\Projects\Windows_Azure_HelloFa
+bric_Sample\C#\HelloFabric\bin\Debug\HelloFabric.csx\roles\HelloFabric_WebRole\
+approot\bin\workaround.ps1:38 char:92
++     $WCFLogPath = [Microsoft.WindowsAzure.ServiceRuntime.RoleEnvironment]::Ge
+tLocalResource <<<< ($WCFLogResourceName).RootPath
+    + CategoryInfo          : NotSpecified: (:) [], ParentContainsErrorRecordE 
+   xception
+    + FullyQualifiedErrorId : DotNetMethodException
+ 
+Exception calling "GetLocalResource" with "1" argument(s): "error"
+At C:\Users\davidmu\Documents\Visual Studio 2010\Projects\Windows_Azure_HelloFa
+bric_Sample\C#\HelloFabric\bin\Debug\HelloFabric.csx\roles\HelloFabric_WebRole\
+approot\bin\workaround.ps1:38 char:92
++     $WCFLogPath = [Microsoft.WindowsAzure.ServiceRuntime.RoleEnvironment]::Ge
+tLocalResource <<<< ($WCFLogResourceName).RootPath
+    + CategoryInfo          : NotSpecified: (:) [], ParentContainsErrorRecordE 
+   xception
+    + FullyQualifiedErrorId : DotNetMethodException
+ 
+Exception calling "GetLocalResource" with "1" argument(s): "error"
+At C:\Users\davidmu\Documents\Visual Studio 2010\Projects\Windows_Azure_HelloFa
+bric_Sample\C#\HelloFabric\bin\Debug\HelloFabric.csx\roles\HelloFabric_WebRole\
+approot\bin\workaround.ps1:38 char:92
++     $WCFLogPath = [Microsoft.WindowsAzure.ServiceRuntime.RoleEnvironment]::Ge
+tLocalResource <<<< ($WCFLogResourceName).RootPath
+    + CategoryInfo          : NotSpecified: (:) [], ParentContainsErrorRecordE 
+   xception
+    + FullyQualifiedErrorId : DotNetMethodException
+ 
+Exception calling "GetLocalResource" with "1" argument(s): "error"
+At C:\Users\davidmu\Documents\Visual Studio 2010\Projects\Windows_Azure_HelloFa
+bric_Sample\C#\HelloFabric\bin\Debug\HelloFabric.csx\roles\HelloFabric_WebRole\
+approot\bin\workaround.ps1:38 char:92
++     $WCFLogPath = [Microsoft.WindowsAzure.ServiceRuntime.RoleEnvironment]::Ge
+tLocalResource <<<< ($WCFLogResourceName).RootPath
+    + CategoryInfo          : NotSpecified: (:) [], ParentContainsErrorRecordE 
+   xception
+    + FullyQualifiedErrorId : DotNetMethodException
+ 

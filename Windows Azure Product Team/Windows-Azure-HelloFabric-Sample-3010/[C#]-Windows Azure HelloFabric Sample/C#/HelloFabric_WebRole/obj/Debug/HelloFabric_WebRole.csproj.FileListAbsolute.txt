@@ -1,0 +1,9 @@
+C:\Users\davidmu\Documents\Visual Studio 2010\Projects\Windows_Azure_HelloFabric_Sample\C#\HelloFabric_WebRole\bin\HelloFabric_WebRole.dll
+C:\Users\davidmu\Documents\Visual Studio 2010\Projects\Windows_Azure_HelloFabric_Sample\C#\HelloFabric_WebRole\bin\HelloFabric_WebRole.pdb
+C:\Users\davidmu\Documents\Visual Studio 2010\Projects\Windows_Azure_HelloFabric_Sample\C#\HelloFabric_WebRole\bin\Microsoft.WindowsAzure.Diagnostics.dll
+C:\Users\davidmu\Documents\Visual Studio 2010\Projects\Windows_Azure_HelloFabric_Sample\C#\HelloFabric_WebRole\bin\Microsoft.WindowsAzure.StorageClient.dll
+C:\Users\davidmu\Documents\Visual Studio 2010\Projects\Windows_Azure_HelloFabric_Sample\C#\HelloFabric_WebRole\bin\Microsoft.WindowsAzure.Diagnostics.xml
+C:\Users\davidmu\Documents\Visual Studio 2010\Projects\Windows_Azure_HelloFabric_Sample\C#\HelloFabric_WebRole\bin\Microsoft.WindowsAzure.StorageClient.xml
+C:\Users\davidmu\Documents\Visual Studio 2010\Projects\Windows_Azure_HelloFabric_Sample\C#\HelloFabric_WebRole\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\davidmu\Documents\Visual Studio 2010\Projects\Windows_Azure_HelloFabric_Sample\C#\HelloFabric_WebRole\obj\Debug\HelloFabric_WebRole.dll
+C:\Users\davidmu\Documents\Visual Studio 2010\Projects\Windows_Azure_HelloFabric_Sample\C#\HelloFabric_WebRole\obj\Debug\HelloFabric_WebRole.pdb
