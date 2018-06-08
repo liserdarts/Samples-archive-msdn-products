@@ -1,0 +1,324 @@
+﻿<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<HTML dir=ltr XMLNS:MSHelp = "http://msdn.microsoft.com/mshelp" xmlns:ddue = 
+"http://ddue.schemas.microsoft.com/authoring/2003/5" xmlns:xlink = 
+"http://www.w3.org/1999/xlink" xmlns:tool = "http://www.microsoft.com/tooltip" 
+XMLNS:[default] http://ddue.schemas.microsoft.com/authoring/2003/5 = 
+"http://ddue.schemas.microsoft.com/authoring/2003/5"><HEAD><TITLE>ServiceBus PowerShell Provider Sample</TITLE>
+<META content="text/html; CHARSET=utf-8" http-equiv=Content-Type></META>
+<META name=save content=history></META>
+<LINK rel=stylesheet type=text/css 
+href="../../../CommonFiles/Classic.css"></LINK>
+
+<META name=GENERATOR content="MSHTML 8.00.6001.18783">
+    <style type="text/css">
+        .newStyle1
+        {
+            background-color: #0000FF;
+        }
+    </style>
+</HEAD>
+<BODY>
+<DIV id=header>
+<TABLE id=topTable width="100%">
+  <TBODY>
+  <TR id=headerTableRow1>
+    <TD align=left><SPAN id=runningHeaderText></SPAN></TD></TR>
+  <TR id=headerTableRow2>
+    <TD align=left><SPAN id=nsrTitle>Service Bus PowerShell Provider Sample</SPAN></TD></TR>
+  <TR id=headerTableRow3>
+    <TD></TD></TR></TBODY></TABLE>
+</DIV>
+<DIV id=mainSection>
+<DIV id=mainBody>
+<DIV id=allHistory class=saveHistory onload="loadAll()" 
+onsave="saveAll()"></DIV>
+<P>This sample demonstrates how to use Windows PowerShell to: </P>
+    <ul>
+        <li>Navigate your Service Bus service namespace as you would navigate the file system</li>
+        <li>Use built-in cmdlets to create and delete queues, topics, subscriptions, and rules</li>
+        <li>Use custom cmdlets to send and receive messages. </li>
+    </ul>
+<H2 class=heading>Prerequisites</H2>
+<DIV id=sectionSection0 class=section><content 
+xmlns="http://ddue.schemas.microsoft.com/authoring/2003/5">
+<P xmlns="">If you haven't already done so, please read the release notes 
+document that explains how to sign up for a Windows Azure 
+account and how to configure your environment.</P>
+				</content></DIV>
+<H2 class=heading>Setup the ServiceBus Module</H2>
+<DIV id=sectionSection1 class=section><content 
+xmlns="http://ddue.schemas.microsoft.com/authoring/2003/5">
+    <P xmlns="">
+        1.Build the ServiceBusPowerShellProvider solution
+            </P>
+    <P xmlns="">
+        2.
+                Create a folder for your module under %PSModulePath%
+                <a href="file:///C:/Windows/system32/WindowsPowerShell/v1.0/Modules/ServiceBus">C:\Windows\system32\WindowsPowerShell\v1.0\Modules\ServiceBus</a>
+    </P>
+    <P xmlns="">
+        3. Copy your debug folder to the folder you just created: copy 
+        %PathToSDK%\ServiceBusPowerShellProvider\bin\Debug\* %PSModulePath%\ServiceBus\
+    </P>
+    <P xmlns="">
+        4. Open a powershell window
+    </P>
+    <P xmlns="">
+        5.
+                Import the module you just created 
+    </P>
+    <P xmlns="">
+        Import-Module ServiceBus
+    </P>
+    <P xmlns="">
+        6.
+                Create a PSDrive 
+    </P>
+    <P xmlns="">
+        new-psdrive -name ServiceBus -root c:\ps -psprovider 
+                ServiceBusPowerShellProvider
+    </P>
+    <P xmlns="">
+        7.
+                Move to the PSDrive location you just created
+            </P>
+    <P xmlns="">
+        set-location ServiceBus:\</P>
+    <SPAN codeLanguage="xml">
+<TABLE cellSpacing=0 cellPadding=0 width="100%">
+  <TBODY>
+  <TR>
+    <TH>Powershell Output</TH>
+</TR>
+  <TR>
+    <TD><PRE>Windows PowerShell Copyright (C) 2009 Microsoft Corporation. All rights reserved. </PRE>
+        <PRE>PS C:\&gt; Import-Module ServiceBus PS C:\&gt; new-psdrive -name ServiceBus -root c:\ps -psprovider ServiceBusPowerShellProvider </PRE>
+        <PRE>Name Used (GB) Free (GB) Provider 		Root CurrentLocation </PRE>
+        <PRE>---- --------- --------- -------- 		---- --------------- </PRE>
+        <PRE>ServiceBus 		ServiceBus... 	<a href="file:///c:/ps">c:\ps</a> </PRE>
+        <PRE>PS C:\&gt; set-location ServiceBus:\ </PRE>
+        <PRE>PS ServiceBus:\&gt; </PRE></TD></TR></TBODY></TABLE></SPAN>
+    <P xmlns="">
+        &nbsp;</P>
+    <P xmlns="">
+        There is a sample shortcut that already does the above, so next time you can 
+        simply use that. It is convenient to create it by hand the first time, in case any 
+        issues arise.</P>
+    <P xmlns="">
+        It is possible that you will encounter problems with the .Net version that PowerShell 
+        loads by default. If that is the case, you need to add a configuration file to
+        <a href="file:///C:/Windows/SysWOW64/WindowsPowerShell/v1.0/powershell.exe.config">
+        C:\Windows\SysWOW64\WindowsPowerShell\v1.0\powershell.exe.config</a>. The file should 
+        appear as follows:</P>
+<DIV class=code xmlns=""></DIV>
+<DIV class=code xmlns=""><SPAN codeLanguage="xml">
+<TABLE cellSpacing=0 cellPadding=0 width="100%">
+  <TBODY>
+  <TR>
+    <TH>Xml&nbsp;</TH>
+</TR>
+  <TR>
+    <TD colSpan=2><PRE>&lt;?xml version=&quot;1.0&quot; encoding=&quot;utf-8&quot; ?&gt; &lt;configuration&gt; 
+        &lt;startup useLegacyV2RuntimeActivationPolicy=&quot;true&quot;&gt; 
+            &lt;supportedRuntime version=&quot;v4.0.30319&quot;/&gt; 
+            &lt;supportedRuntime version=&quot;v2.0.50727&quot;/&gt; 
+        &lt;/startup&gt; 
+    &lt;/configuration&gt;</PRE>
+      </TD></TR></TBODY></TABLE></SPAN></DIV>
+    </content></DIV>
+
+    <H2 class=heading>Use the ServiceBus Module</H2>
+<DIV id=sectionSection2 class=section><content 
+xmlns="http://ddue.schemas.microsoft.com/authoring/2003/5">
+    1. Set your servicebus credentials
+    <SPAN codeLanguage="xml">
+<TABLE cellSpacing=0 cellPadding=0 width="100%">
+  <TBODY>
+  <TR>
+    <TH>Powershell Output</TH>
+</TR>
+  <TR>
+    <TD><PRE>Set-ServiceBusCredentials -IssuerName &lt;issuer_name&gt; -Namespace &lt;service_namespace&gt; -IssuerSecret &lt;issuer_secret&gt;</PRE>
+        </TD></TR></TBODY></TABLE></SPAN>
+    <P xmlns="">
+        &nbsp;</P>
+    <P xmlns="">
+        2. Navigate through the environment
+    </P>
+    <SPAN codeLanguage="xml">
+<TABLE cellSpacing=0 cellPadding=0 width="100%">
+  <TBODY>
+  <TR>
+    <TH>Powershell Output</TH>
+</TR>
+  <TR>
+    <TD><PRE>PS ServiceBus:\&gt; dir </PRE>
+        <PRE>Queues </PRE>
+        <PRE>Topics </PRE>
+        <PRE>PS ServiceBus:\&gt; cd Queues </PRE>
+        <PRE>PS ServiceBus:\Queues&gt; dir </PRE>
+        <PRE>PS ServiceBus:\Queues&gt;</PRE>
+        </TD></TR></TBODY></TABLE></SPAN>
+    <P xmlns="">
+&nbsp;
+    </P>
+    <P xmlns="">
+        3. Create a new queue</P>
+    <SPAN codeLanguage="xml">
+<TABLE cellSpacing=0 cellPadding=0 width="100%">
+  <TBODY>
+  <TR>
+    <TH>Powershell Output</TH>
+</TR>
+  <TR>
+    <TD>&nbsp;PS ServiceBus:\Queues&gt; new-item demoqueue
+        <br />
+        PS ServiceBus:\Queues&gt; dir
+        <br />
+        PSPath : 
+        Microsoft.ServiceBus.Samples.ServiceBusPowerShellPSSnapIn\ServiceBusPowerShell 
+        Provider::c:\ps\Queues\demoqueue
+        <br />
+        PSParentPath : 
+        Microsoft.ServiceBus.Samples.ServiceBusPowerShellPSSnapIn\ServiceBusPowerShell 
+        Provider::c:\ps\Queues
+        <br />
+        PSChildName : demoqueue PSDrive : ServiceBus
+        <br />
+        PSProvider : 
+        Microsoft.ServiceBus.Samples.ServiceBusPowerShellPSSnapIn\ServiceBusPowerShell 
+        Provider
+        <br />
+        PSIsContainer : False NamespaceClient : 
+        Microsoft.ServiceBus.ServiceBusNamespaceClient
+        <br />
+        Path : demoqueue
+        <br />
+        LockDuration : 00:00:30
+        <br />
+        MaxQueueSizeInBytes : 104857600
+        <br />
+        RequiresDuplicateDetection : False
+        <br />
+        RequiresSession : False
+        <br />
+        DefaultMessageTimeToLive : 10675199.02:48:05.4775807
+        <br />
+        EnableDeadLetteringOnMessageExpiration : False<br />
+        DuplicateDetectionHistoryTimeWindow : 00:10:00
+        <br />
+        ExtensionData : System.Runtime.Serialization.ExtensionDataObject </TD></TR></TBODY></TABLE></SPAN>
+    <P xmlns="">
+&nbsp;</P>
+    <P xmlns="">
+        4. Send/Receive messages from queue
+    </P>
+    <SPAN codeLanguage="xml">
+<TABLE cellSpacing=0 cellPadding=0 width="100%">
+  <TBODY>
+  <TR>
+    <TH>Powershell Output</TH>
+</TR>
+  <TR>
+    <TD>&nbsp;PS ServiceBus:\Queues&gt; Send-Message -To demoqueue -Message message1
+        <br />
+        PS ServiceBus:\Queues&gt; Send-Message -To demoqueue -Message message2
+        <br />
+        PS ServiceBus:\Queues&gt; Receive-Message -From demoqueue
+        <br />
+        CorrelationId :
+        <br />
+        SessionId :
+        <br />
+        ReplyToSessionId :
+        <br />
+        DeliveryCount : 0
+        <br />
+        ExpiresAtUtc : 12/31/9999 11:59:59 PM
+        <br />
+        LockedUntilUtc : 4/27/2011 11:51:10 PM
+        <br />
+        LockToken : 5ca26ecf-45e9-4399-923f-d3a65c35707c
+        <br />
+        MessageId : 55b08788753a49b6951e20949e358921
+        <br />
+        MessageReceipt : Microsoft.ServiceBus.Messaging.MessageReceipt
+        <br />
+        ContentType :
+        <br />
+        Label :
+        <br />
+        Properties : {[Body, message1]}
+        <br />
+        ReplyTo :
+        <br />
+        EnqueuedTimeUtc : 4/27/2011 11:50:21 PM
+        <br />
+        ScheduledEnqueueTimeUtc : 1/1/0001 12:00:00 AM
+        <br />
+        SequenceNumber : 1
+        <br />
+        Size : 71
+        <br />
+        TimeToLive : 10675199.02:48:05.4775807
+        <br />
+        To :
+        <br />
+        <br />
+        PS ServiceBus:\Queues&gt; $message = Receive-Message -From demoqueue -PeekLock
+        <br />
+        PS ServiceBus:\Queues&gt; $message
+        <br />
+        CorrelationId :
+        <br />
+        SessionId :
+        <br />
+        ReplyToSessionId :
+        <br />
+        DeliveryCount : 0
+        <br />
+        ExpiresAtUtc : 12/31/9999 11:59:59 PM
+        <br />
+        LockedUntilUtc : 4/27/2011 11:51:23 PM
+        <br />
+        LockToken : bb0c842d-c432-4c0c-bfd9-49aae8599434
+        <br />
+        MessageId : fa5c8d6c0c8e45a7b37b79ba3d4dafac
+        <br />
+        MessageReceipt : Microsoft.ServiceBus.Messaging.MessageReceipt
+        <br />
+        ContentType :
+        <br />
+        Label :
+        <br />
+        Properties : {[Body, message2]}
+        <br />
+        ReplyTo :
+        <br />
+        EnqueuedTimeUtc : 4/27/2011 11:50:24 PM
+        <br />
+        ScheduledEnqueueTimeUtc : 1/1/0001 12:00:00 AM
+        <br />
+        SequenceNumber : 2 Size : 71
+        <br />
+        TimeToLive : 10675199.02:48:05.4775807
+        <br />
+        To :
+        <br />
+        <br />
+        PS ServiceBus:\Queues&gt; $message.Complete()
+        <br />
+        PS ServiceBus:\Queues&gt;</TD></TR></TBODY></TABLE></SPAN>
+    <P xmlns="">
+&nbsp;</P>
+    </content>
+    </DIV>
+    <!--[if gte IE 5]><tool:tip 
+avoidmouse="false" element="languageFilterToolTip"></tool:tip><![endif]--></DIV>
+<P xmlns="">
+    <hr /> 
+    Did you find this information useful?
+          <a href="http://go.microsoft.com/fwlink/?LinkID=155664">
+        Please send your suggestions and comments about the documentation.
+
+    </a></P></DIV></BODY></HTML>
