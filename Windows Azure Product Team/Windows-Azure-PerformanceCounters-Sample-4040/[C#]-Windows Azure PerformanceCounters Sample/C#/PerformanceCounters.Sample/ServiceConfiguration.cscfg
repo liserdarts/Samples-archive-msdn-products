@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ServiceConfiguration serviceName="PerformanceCounters.Sample" xmlns="http://schemas.microsoft.com/ServiceHosting/2008/10/ServiceConfiguration" osFamily="1" osVersion="*">
+  <Role name="PerformanceCounters.WebRole">
+    <Instances count="1" />
+    <ConfigurationSettings>
+      <Setting name="Microsoft.WindowsAzure.Plugins.Diagnostics.ConnectionString" value="UseDevelopmentStorage=true" />
+      <Setting name="WebRolePerfCounterConfig" value="\Processor(_Total)\% Processor Time;;\Memory\Available MBytes;;\SampleCustomCategory\Total Button1 Clicks;;\SampleCustomCategory\Total Button2 Clicks" />
+      <Setting name="WebRolePerfCounterTransferPeriod" value="1" />
+      <Setting name="WebRolePerfCounterSampleRate" value="10" />
+    </ConfigurationSettings>
+  </Role>
+</ServiceConfiguration>

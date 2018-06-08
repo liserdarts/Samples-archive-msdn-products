@@ -1,0 +1,26 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{CC5FD16D-436D-48AD-A40C-5A424C6E3E79}") = "PerformanceCounters.Sample", "PerformanceCounters.Sample\PerformanceCounters.Sample.ccproj", "{50D3E548-B361-45BB-A525-FA9C1C300526}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PerformanceCounters.WebRole", "PerformanceCounters.WebRole\PerformanceCounters.WebRole.csproj", "{DD78EBBB-7C8A-413F-AC97-E503767D38C8}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{50D3E548-B361-45BB-A525-FA9C1C300526}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{50D3E548-B361-45BB-A525-FA9C1C300526}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{50D3E548-B361-45BB-A525-FA9C1C300526}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{50D3E548-B361-45BB-A525-FA9C1C300526}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DD78EBBB-7C8A-413F-AC97-E503767D38C8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DD78EBBB-7C8A-413F-AC97-E503767D38C8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DD78EBBB-7C8A-413F-AC97-E503767D38C8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DD78EBBB-7C8A-413F-AC97-E503767D38C8}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
