@@ -1,1 +1,0 @@
-{"Title":"Caching API Sample: Getting started with Windows Azure Caching APIs","Description":"This sample shows how to use various Windows Azure Caching APIs.","IsPublished":true,"ModifiedDate":"2011-11-14T13:50:42.343","License":"Apache License, Version 2.0","Requires":"Visual Studio 2010","Technologies":"Microsoft Azure,Caching Service,","Topics":"Caching,"}

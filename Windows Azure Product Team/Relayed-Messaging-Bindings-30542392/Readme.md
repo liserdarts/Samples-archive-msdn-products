@@ -1,1 +1,0 @@
-{"Title":"Relayed Messaging Bindings: NetTcp MsgSec UserName","Description":"This sample demonstrates using the NetTcpRelayBinding binding with message security.  ","IsPublished":true,"ModifiedDate":"2011-11-15T13:49:43","License":"Apache License, Version 2.0","Requires":"Visual Studio 2010","Technologies":"Microsoft Azure,Service Bus,","Topics":"Service Bus,"}
