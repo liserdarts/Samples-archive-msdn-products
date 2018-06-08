@@ -1,0 +1,9 @@
+C:\Appserver_sb_prod\private\source\ServiceBus\SDK\Content\Samples\CSharp\ServiceBus\Scenarios\RelayedMessaging\CloudTrace\TraceTest\obj\Debug\ResolveAssemblyReference.cache
+C:\Appserver_sb_prod\private\source\ServiceBus\SDK\Content\Samples\CSharp\ServiceBus\Scenarios\RelayedMessaging\CloudTrace\TraceTest\bin\Debug\servicebus.config
+C:\Appserver_sb_prod\private\source\ServiceBus\SDK\Content\Samples\CSharp\ServiceBus\Scenarios\RelayedMessaging\CloudTrace\TraceTest\bin\Debug\TraceTest.exe.config
+C:\Appserver_sb_prod\private\source\ServiceBus\SDK\Content\Samples\CSharp\ServiceBus\Scenarios\RelayedMessaging\CloudTrace\TraceTest\bin\Debug\TraceTest.exe
+C:\Appserver_sb_prod\private\source\ServiceBus\SDK\Content\Samples\CSharp\ServiceBus\Scenarios\RelayedMessaging\CloudTrace\TraceTest\bin\Debug\TraceTest.pdb
+C:\Appserver_sb_prod\private\source\ServiceBus\SDK\Content\Samples\CSharp\ServiceBus\Scenarios\RelayedMessaging\CloudTrace\TraceTest\bin\Debug\Microsoft.ServiceBus.Samples.CloudTraceListener.dll
+C:\Appserver_sb_prod\private\source\ServiceBus\SDK\Content\Samples\CSharp\ServiceBus\Scenarios\RelayedMessaging\CloudTrace\TraceTest\bin\Debug\Microsoft.ServiceBus.Samples.CloudTraceListener.pdb
+C:\Appserver_sb_prod\private\source\ServiceBus\SDK\Content\Samples\CSharp\ServiceBus\Scenarios\RelayedMessaging\CloudTrace\TraceTest\obj\Debug\TraceTest.exe
+C:\Appserver_sb_prod\private\source\ServiceBus\SDK\Content\Samples\CSharp\ServiceBus\Scenarios\RelayedMessaging\CloudTrace\TraceTest\obj\Debug\TraceTest.pdb

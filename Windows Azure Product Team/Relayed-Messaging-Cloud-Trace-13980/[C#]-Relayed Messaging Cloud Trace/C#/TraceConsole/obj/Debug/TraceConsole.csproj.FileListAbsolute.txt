@@ -1,0 +1,7 @@
+C:\Appserver_sb_prod\private\source\ServiceBus\SDK\Content\Samples\CSharp\ServiceBus\Scenarios\RelayedMessaging\CloudTrace\TraceConsole\bin\Debug\TraceConsole.exe.config
+C:\Appserver_sb_prod\private\source\ServiceBus\SDK\Content\Samples\CSharp\ServiceBus\Scenarios\RelayedMessaging\CloudTrace\TraceConsole\obj\Debug\ResolveAssemblyReference.cache
+C:\Appserver_sb_prod\private\source\ServiceBus\SDK\Content\Samples\CSharp\ServiceBus\Scenarios\RelayedMessaging\CloudTrace\TraceConsole\bin\Debug\servicebus.config
+C:\Appserver_sb_prod\private\source\ServiceBus\SDK\Content\Samples\CSharp\ServiceBus\Scenarios\RelayedMessaging\CloudTrace\TraceConsole\bin\Debug\TraceConsole.exe
+C:\Appserver_sb_prod\private\source\ServiceBus\SDK\Content\Samples\CSharp\ServiceBus\Scenarios\RelayedMessaging\CloudTrace\TraceConsole\bin\Debug\TraceConsole.pdb
+C:\Appserver_sb_prod\private\source\ServiceBus\SDK\Content\Samples\CSharp\ServiceBus\Scenarios\RelayedMessaging\CloudTrace\TraceConsole\obj\Debug\TraceConsole.exe
+C:\Appserver_sb_prod\private\source\ServiceBus\SDK\Content\Samples\CSharp\ServiceBus\Scenarios\RelayedMessaging\CloudTrace\TraceConsole\obj\Debug\TraceConsole.pdb
