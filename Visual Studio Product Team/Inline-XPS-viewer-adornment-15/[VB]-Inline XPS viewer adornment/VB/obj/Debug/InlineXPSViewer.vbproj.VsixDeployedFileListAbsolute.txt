@@ -1,0 +1,5 @@
+C:\Users\cgranger\AppData\Local\Microsoft\VisualStudio\10.0Exp\Extensions\Huizhong Long\InlineXPSViewer\1.0\\InlineXPSViewer.dll
+C:\Users\cgranger\AppData\Local\Microsoft\VisualStudio\10.0Exp\Extensions\Huizhong Long\InlineXPSViewer\1.0\\extension.vsixmanifest
+C:\Users\cgranger\AppData\Local\Microsoft\VisualStudio\10.0Exp\Extensions\Huizhong Long\InlineXPSViewer\1.0\\InlineXPS_ScreenShot.png
+C:\Users\cgranger\AppData\Local\Microsoft\VisualStudio\10.0Exp\Extensions\Huizhong Long\InlineXPSViewer\1.0\\InlineXPS_small.png
+C:\Users\cgranger\AppData\Local\Microsoft\VisualStudio\10.0Exp\Extensions\Huizhong Long\InlineXPSViewer\1.0\\InlineXPSViewer.pdb
