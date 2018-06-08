@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<VSContent xmlns="http://schemas.microsoft.com/developer/vscontent/2005">
+  <Content>
+    <FileName>MatchOptionsCommands.Addin</FileName>
+    <FileName>MatchOptionsCommands.dll</FileName>
+    <FileName>en-US\MatchOptionsCommands.resources.dll</FileName>
+    <DisplayName>MatchOptionsCommands</DisplayName>
+    <Description>Adds toggle buttons for various find options in Visual Studio.</Description>
+    <FileContentType>Addin</FileContentType>
+    <ContentVersion>2.0</ContentVersion>
+  </Content>
+</VSContent>
