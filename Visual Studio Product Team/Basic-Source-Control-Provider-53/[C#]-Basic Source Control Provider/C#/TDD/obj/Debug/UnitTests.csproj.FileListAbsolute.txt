@@ -1,0 +1,9 @@
+C:\Users\richap\Desktop\Original\Example.BasicSccProvider\TDD\bin\Debug\BasicSccProvider.UnitTests.dll
+C:\Users\richap\Desktop\Original\Example.BasicSccProvider\TDD\bin\Debug\BasicSccProvider.UnitTests.pdb
+C:\Users\richap\Desktop\Original\Example.BasicSccProvider\TDD\bin\Debug\BasicSccProvider.dll
+C:\Users\richap\Desktop\Original\Example.BasicSccProvider\TDD\bin\Debug\Microsoft.VSSDK.UnitTestLibrary.dll
+C:\Users\richap\Desktop\Original\Example.BasicSccProvider\TDD\bin\Debug\BasicSccProvider.pdb
+C:\Users\richap\Desktop\Original\Example.BasicSccProvider\TDD\bin\Debug\Microsoft.VSSDK.UnitTestLibrary.xml
+C:\Users\richap\Desktop\Original\Example.BasicSccProvider\TDD\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\richap\Desktop\Original\Example.BasicSccProvider\TDD\obj\Debug\BasicSccProvider.UnitTests.dll
+C:\Users\richap\Desktop\Original\Example.BasicSccProvider\TDD\obj\Debug\BasicSccProvider.UnitTests.pdb
