@@ -1,0 +1,233 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
+    <head><link rel="stylesheet" type="text/css" href="description/Combined.css,0:HeaderFooterSprite,0:Header.NonMtps,1:LinkList;/Areas/Centers/Themes/StandardDevCenter/Content:0,/Areas/Epx/Themes/Base/Content:1&amp;amp;hashKey=C9973DA951AE6202C9B348379A1BE49D" xmlns="http://www.w3.org/1999/xhtml" />
+<link type="text/css" rel="stylesheet" xmlns="http://www.w3.org/1999/xhtml" />
+<link rel="stylesheet" type="text/css" href="description/9bf1b74c-1640-46af-84d3-e440c8f95162Combined.css,0:HeaderFooterSprite,0:Footer.NonMtps,1:LinkList;/Areas/Centers/Themes/StandardDevCenter/Content:0,/Areas/Epx/Themes/Base/Content:1&amp;amp;hashKey=F576C687BC536B84D6E5B3246EE39B49" xmlns="http://www.w3.org/1999/xhtml" />
+<link type="text/css" rel="stylesheet" xmlns="http://www.w3.org/1999/xhtml" />
+
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <title>Service Bus Resource Provider REST APIs</title>
+        <link href="description/Galleries.css" type="text/css" rel="Stylesheet" /><link href="description/Layout.css" type="text/css" rel="Stylesheet" /><link href="description/Brand.css" type="text/css" rel="Stylesheet" />
+        <link href="description/iframedescription.css" rel="Stylesheet" type="text/css" />
+        <script src="description/offline.js" type="text/javascript"></script>
+        <style type="text/css">
+            #projectInfo {
+                overflow: auto;
+            }
+            #longDesc {
+                clear:both;
+                margin: 25px 0 10px 0;
+            }
+
+            #SampleIndexList{
+                margin-left: 15px;
+            }
+        </style>
+    </head>
+<body>
+    <div id="offlineDescription">
+        <h1>Service Bus Resource Provider REST APIs</h1>
+        <br/>
+        <div id="projectInfo">
+            <div class="section">
+                    <div class="itemBarLong tagsContainer">
+                        <label for="Technologies">Technologies</label>
+                        <div id="Technologies">
+                            Microsoft Azure, Service Bus, Windows Azure Service Bus
+                        </div>
+                    </div>
+                    <div class="itemBarLong tagsContainer">
+                        <label for="Topics">Topics</label>
+                        <div id="Topics">
+                            Service Bus, Windows Azure Service Bus
+                        </div>
+                    </div>
+                <div class="itemBarLong">
+                    <label for="Platforms">Platforms</label>
+                    <div id="Platforms">
+                        Web, Cloud
+                    </div>
+                </div>
+                <div class="itemBarLong">
+                    <label for="Requirements">Requirements</label>
+                    <div id="Requirements">
+                        
+                    </div>
+                </div>
+                <div class="itemBar">
+                    <label for="LastUpdated">Primary language</label>
+                    <div id="LastUpdated">en-US</div>
+                </div>
+                <div class="itemBar">
+                    <label for="LastUpdated">Updated</label>
+                    <div id="LastUpdated">8/28/2013</div>
+                </div>
+                <div class="itemBarLong">
+                    <label for="License">License</label>
+                    <div id="License">
+                        <a href="license.rtf">Apache License, Version 2.0</a></div>
+                </div>
+                <div class="itemBar">
+                    <div class="viewonlinecont">
+                        <a data-link="online" href="http://code.msdn.microsoft.com/Service-Bus-Resource-5d887203">View this sample online</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+                   
+<script type="text/javascript">
+    function initializePage() {
+        var otherTabClass = 'otherTab';
+        var hiddenPreClass = 'hidden';
+
+        var htmlDecode = function(encodedData) {
+            var decodedData = "";
+            if (encodedData) {
+                var div = document.createElement('div');
+                div.innerHTML = encodedData;
+                decodedData = div.firstChild.nodeValue.replace( /\\r\\n/ig , '\r\n');
+            }
+            return decodedData;
+        };
+                
+        Galleries.iterateElem(Galleries.findElem(null, 'div', 'scriptcode'), function (index, scriptBlock) {
+            var titleElem = Galleries.findElem(scriptBlock, 'div', 'title')[0];
+            var labelElems = Galleries.findElem(titleElem, 'span');
+            if (labelElems.length == 0) {
+                labelElems = titleElem;
+            }
+            var languageSpans = Galleries.findElem(scriptBlock, 'span', 'hidden');
+            var pres = Galleries.findElem(scriptBlock, 'pre');
+            if (languageSpans.length > 0 && pres.length > 1) {
+                Galleries.iterateElem(labelElems, function(index, elem) {
+                    var codePre = pres[index];
+                    var labelSpan = elem;
+                    var languageSpan = languageSpans[index];
+                            
+                    elem.code = codePre.innerHTML.replace( /(\r(\n)?)|((\r)?\n)/ig , '\\r\\n');
+                            
+                    codePre.className = codePre.className.replace(hiddenPreClass, '');
+                            
+                    languageSpan.parentNode.removeChild(languageSpan);
+                });
+
+                pres = Galleries.findElem(scriptBlock, 'pre');
+                Galleries.iterateElem(labelElems, function(index, elem) {
+                    var codePre = pres[index];
+                    var labelSpan = elem;
+                    if (index == 0) {
+                        scriptBlock.activeTab = 0;
+                    }
+                    else {
+                        labelSpan.className += otherTabClass;
+                        codePre.className += hiddenPreClass;
+                    }
+                    Galleries.attachEventHandler(labelSpan, 'click', function(e) {
+                        var activeTab = scriptBlock.activeTab;
+                        labelElems[activeTab].className += otherTabClass;
+                        pres[activeTab].className += hiddenPreClass;
+
+                        codePre.className = codePre.className.replace(hiddenPreClass, '');
+                        labelSpan.className = labelSpan.className.replace(otherTabClass, '');
+                        scriptBlock.activeTab = index;
+                    });
+                });
+
+                var preview = Galleries.findElem(scriptBlock, 'div', 'preview');
+                if (preview.length == 0) {
+                    preview.push(pres[pres.length - 1]);
+                }
+                Galleries.iterateElem(preview, function(index, elem) {
+                    elem.parentNode.removeChild(elem);
+                });
+
+                if (window.clipboardData && clipboardData.setData) {
+                    var copyLink = document.createElement('a');
+                    copyLink.href = 'javascript:void(0);';
+                    copyLink.className = 'copyCode';
+                    copyLink.innerHTML = 'Copy code';
+                    Galleries.attachEventHandler(copyLink, 'click', function (e) {
+                        clipboardData.setData("Text", htmlDecode(labelElems[scriptBlock.activeTab].code));
+                        return false;
+                    });
+                    scriptBlock.insertBefore(copyLink, scriptBlock.childNodes[0]);
+                }
+            }
+        });
+    }
+
+    Galleries.onWindowLoad(function(){
+        initializePage();
+    });
+
+</script>
+<div id="longDesc">
+    
+<h1>Introduction</h1>
+<p>This sample demonstrates how to use the new Service Bus Resource Provider REST APIs to manage namespaces and messaging entities. You can use these APIs to create, update, or delete queues, topics, subscriptions, and notification hubs. You can read more about
+ the Service Bus Resource Provider REST APIs <a href="http://msdn.microsoft.com/en-us/library/windowsazure/jj856298.aspx" >
+here</a>.</p>
+<p>Specifically, this sample demonstrates the following operations on queues, topics, subscriptions, and notification hubs:</p>
+<ul>
+<li>Create </li><li>Get </li><li>Delete </li></ul>
+<h1><span>Sample Prerequisites</span></h1>
+<p>The Service Bus Resource Provider REST APIs, like other Windows Azure Service Management APIs, use Windows Azure management certificate-based authentication. To access Service Bus messaging entities, you create a certificate and upload it to the portal.
+ This enables Service Bus to trust applications that use that certificate. To do so, follow these steps:</p>
+<ol>
+<li>If you don&rsquo;t already have a Windows Azure subscription, you can create one on
+<a href="http://www.windowsAzure.com">http://www.windowsazure.com</a>. </li><li>Using the <em>Makecert </em>tool, create a new certificate to upload to your Windows Azure account. For information about how to create and upload a certificate (including a sample Makecert.exe command line), see
+<a href="http://msdn.microsoft.com/en-us/library/windowsazure/gg551722.aspx" >
+Create and Upload a Management Certificate for Windows Azure</a>. This sample uses this certificate as a trusted program to access Windows Azure services and perform the API calls. If this step fails, the sample will not work.<br>
+<br>
+Management certificates must have a key length of at least 2048 bits and should reside in the Personal certificate store. When the certificate is installed on the client, it should contain the private key of the certificate. To upload the certificate to the
+ Windows Azure Management Portal, you must export it as a .cer format file that does not contain the private key.
+</li><li>Upload your certificate to <a href="http://manage.windowsAzure.com">http://manage.windowsazure.com</a>.<br>
+<br>
+Note that the maximum number of certificates per subscription is 25. Make sure you do not exceed this number.
+</li></ol>
+<h1><span style="font-size:20px; font-weight:bold">Running the Sample</span></h1>
+<ol>
+<li>When you upload the certificate to your WindowsAzure.com subscription, copy the certificate thumbprint and subscription ID (GUID) values from the portal to the
+<strong>azureCertificateThumbprint </strong>and <strong>SubscriptionID </strong>constants in Program.cs.
+</li><li>Run the application.&nbsp; </li></ol>
+<h1><span>Expected Output</span></h1>
+<p>Hitting Windows Azure Management (RDFE) Endpoint: <a href="http://code.msdn.microsoft.com/Service-Bus-Resource-5d887203/https://management.core.windows.net">
+http://code.msdn.microsoft.com/Service-Bus-Resource-5d887203/https://management.core.windows.net</a><br>
+Creating Service Bus Namespace: &hellip;&hellip;<br>
+Created Service Bus Namespace: &hellip;..<br>
+Created Queue: IssueQueue<br>
+Created Notification Hub<br>
+Name: NotificationHub<br>
+Created the Topic: CoolTopic<br>
+Created Subscription SimpleSubscription in Topic CoolTopic<br>
+Nameespace.GET<br>
+Name: &hellip;..<br>
+Region: South Central US<br>
+ConnectionString: &hellip;&hellip; <br>
+ServiceBusEndpoint: &hellip;&hellip;.<br>
+Status: Active<br>
+AcsManagementEndpoint: &hellip;&hellip;.<br>
+Topic.Get&nbsp;<br>
+Name: Cooltopic<br>
+MaxSizeinMegabytes: 1024<br>
+IsAnonymousAccessible: False<br>
+Status: Active<br>
+SubscriptionCount: 1<br>
+ForwardTo:</p>
+<p>Queue.GET:<br>
+Name: IssueQueue<br>
+MaxSizeinMegabytes: 1024<br>
+IsAnonymousAccessible: False<br>
+Status: Active<br>
+MessageCount: 0<br>
+MaxDeliveryCount: 1-<br>
+ForwardTo:</p>
+<p>Deleting namespace: &hellip;&hellip;..</p>
+
+</div>
+
+
+    </div>
+</body>
+</html>
