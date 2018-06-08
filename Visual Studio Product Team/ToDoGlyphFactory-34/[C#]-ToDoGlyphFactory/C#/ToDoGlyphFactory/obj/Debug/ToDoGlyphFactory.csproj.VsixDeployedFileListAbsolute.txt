@@ -1,0 +1,3 @@
+C:\Users\lukewest\AppData\Local\Microsoft\VisualStudio\10.0Exp\Extensions\lukewest\ToDoGlyphFactory\1.0\\ToDoGlyphFactory.dll
+C:\Users\lukewest\AppData\Local\Microsoft\VisualStudio\10.0Exp\Extensions\lukewest\ToDoGlyphFactory\1.0\\extension.vsixmanifest
+C:\Users\lukewest\AppData\Local\Microsoft\VisualStudio\10.0Exp\Extensions\lukewest\ToDoGlyphFactory\1.0\\ToDoGlyphFactory.pdb
