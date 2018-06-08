@@ -1,0 +1,7 @@
+C:\Users\cgranger\AppData\Local\Microsoft\VisualStudio\10.0Exp\Extensions\Roman Golovin and Noah Richards\Spell Checker\1.0\\SpellChecker.dll
+C:\Users\cgranger\AppData\Local\Microsoft\VisualStudio\10.0Exp\Extensions\Roman Golovin and Noah Richards\Spell Checker\1.0\\extension.vsixmanifest
+C:\Users\cgranger\AppData\Local\Microsoft\VisualStudio\10.0Exp\Extensions\Roman Golovin and Noah Richards\Spell Checker\1.0\\spell-icon.png
+C:\Users\cgranger\AppData\Local\Microsoft\VisualStudio\10.0Exp\Extensions\Roman Golovin and Noah Richards\Spell Checker\1.0\\spell-screenshot.png
+C:\Users\cgranger\AppData\Local\Microsoft\VisualStudio\10.0Exp\Extensions\Roman Golovin and Noah Richards\Spell Checker\1.0\\SpellChecker.pkgdef
+C:\Users\cgranger\AppData\Local\Microsoft\VisualStudio\10.0Exp\Extensions\Roman Golovin and Noah Richards\Spell Checker\1.0\\SpellChecker.pdb
+C:\Users\cgranger\AppData\Local\Microsoft\VisualStudio\10.0Exp\Extensions\Roman Golovin and Noah Richards\Spell Checker\1.0\\ms-pl.txt
