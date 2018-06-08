@@ -1,0 +1,103 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{4F835837-6DCF-402E-B7A8-CC4419087FFB}</ProjectGuid>
+    <OutputType>Exe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>sbaztool</RootNamespace>
+    <AssemblyName>sbaztool</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkProfile>
+    </TargetFrameworkProfile>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.ServiceBus, Version=1.6.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\..\..\..\..\..\..\..\bins\debug\amd64\Appserver\Microsoft.ServiceBus.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.Services.Client" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="..\Microsoft.ServiceBus.AccessControlExtensions\AccessControlList.cs">
+      <Link>AccessControlList.cs</Link>
+    </Compile>
+    <Compile Include="..\Microsoft.ServiceBus.AccessControlExtensions\AccessControlManagement.cs">
+      <Link>AccessControlManagement.cs</Link>
+    </Compile>
+    <Compile Include="..\Microsoft.ServiceBus.AccessControlExtensions\AccessControlRule.cs">
+      <Link>AccessControlRule.cs</Link>
+    </Compile>
+    <Compile Include="..\Microsoft.ServiceBus.AccessControlExtensions\AccessControlServiceIdentity.cs">
+      <Link>AccessControlServiceIdentity.cs</Link>
+    </Compile>
+    <Compile Include="..\Microsoft.ServiceBus.AccessControlExtensions\AccessControlSettings.cs">
+      <Link>AccessControlSettings.cs</Link>
+    </Compile>
+    <Compile Include="..\Microsoft.ServiceBus.AccessControlExtensions\Claim.cs">
+      <Link>Claim.cs</Link>
+    </Compile>
+    <Compile Include="..\Microsoft.ServiceBus.AccessControlExtensions\IdentityReference.cs">
+      <Link>IdentityReference.cs</Link>
+    </Compile>
+    <Compile Include="..\Microsoft.ServiceBus.AccessControlExtensions\ManagementServiceExtensions.cs">
+      <Link>ManagementServiceExtensions.cs</Link>
+    </Compile>
+    <Compile Include="..\Microsoft.ServiceBus.AccessControlExtensions\ManagementServiceHelper.cs">
+      <Link>ManagementServiceHelper.cs</Link>
+    </Compile>
+    <Compile Include="..\Microsoft.ServiceBus.AccessControlExtensions\ManagementServiceTypes.cs">
+      <Link>ManagementServiceTypes.cs</Link>
+    </Compile>
+    <Compile Include="..\Microsoft.ServiceBus.AccessControlExtensions\NamespaceAccessControl.cs">
+      <Link>NamespaceAccessControl.cs</Link>
+    </Compile>
+    <Compile Include="..\Microsoft.ServiceBus.AccessControlExtensions\Right.cs">
+      <Link>Right.cs</Link>
+    </Compile>
+    <Compile Include="..\Microsoft.ServiceBus.AccessControlExtensions\ServiceBusRight.cs">
+      <Link>ServiceBusRight.cs</Link>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

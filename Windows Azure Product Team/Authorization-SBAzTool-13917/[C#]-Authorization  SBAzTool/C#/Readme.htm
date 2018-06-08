@@ -1,0 +1,314 @@
+﻿<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<html dir="ltr" xmlns:mshelp="http://msdn.microsoft.com/mshelp" xmlns:ddue="http://ddue.schemas.microsoft.com/authoring/2003/5"
+xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:tool="http://www.microsoft.com/tooltip">
+<head>
+    <title>Managing Access Control</title>
+    <meta content="text/html; CHARSET=utf-8" http-equiv="Content-Type"></meta>
+    <meta name="save" content="history"></meta>
+    <link rel="stylesheet" type="text/css" href="../../../CommonFiles/Classic.css"></link>
+    <meta name="GENERATOR" content="MSHTML 8.00.6001.18783">
+    </head>
+<body>
+    <div id="header">
+        <table id="topTable" width="100%">
+            <tbody>
+                <tr id="headerTableRow1">
+                    <td align="left">
+                        <span id="runningHeaderText"></span>
+                    </td>
+                </tr>
+                <tr id="headerTableRow2">
+                    <td align="left">
+                        <span id="nsrTitle">Authorization Sample</span>
+                    </td>
+                </tr>
+                <tr id="headerTableRow3">
+                    <td>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    <div id="mainSection">
+        <div id="mainBody">
+            <p>
+                This sample demonstrates how to create and manage service identities in the Access
+                Control Service for use with Service Bus and how to assign (and revoke) right from
+                these service Identities so that they can send to or receive from a particular Service
+                Bus entity or manage a particular branch of a Service Bus namespace.</p>
+            <p>
+                The sample consists of a command-line tool and a reusable assembly that share the
+                same code files. The command-line tool references the code files directly instead
+                of using the assembly just to limit the number of files to be copied if the tool
+                needs to be copied for management purposes.</p>
+            <h2 class="heading">
+                SBAzTool</h2>
+            <p>
+                The tool, SBAzTool.exe, allows managing service identities and authorization rules
+                associated with a Windows Azure Service Bus namespace.</p>
+            <p>
+                The command structure is generally as follows:</p>
+            <p>
+                <i>sbaztool.exe [command] [command-arg] ... [command-arg] {option} {option}</i></p>
+            <p>
+                Options are generally applicable across commands and supply information such as
+                namespace names or access keys. The command "storeoptions" allows storing the options
+                in the user context for subsequent command invocations. The commands "showoptions"
+                and "clearoptions" allow showing and clearing the stored options.</p>
+            <p>
+                The following options are defined:</p>
+            <table>
+                <tr>
+                    <td>
+                        -n &lt;namespace&gt;
+                    </td>
+                    <td>
+                        &lt;namespace&gt; is the Service Bus namespace to operate on. Required.
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        -k &lt;key&gt;
+                    </td>
+                    <td>
+                        &lt;key&gt; is the Access Control management key for the Access Control &lt;namespace&gt;-sb
+                        namespace. Required.
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        -q
+                    </td>
+                    <td>
+                        Suppresses the logo and all output except errors.
+                    </td>
+                </tr>
+            </table>
+            <p>
+                The following commands are defined:</p>
+            <table>
+                <tr>
+                    <td>
+                        makeid &lt;name&gt; [&lt;key&gt;]
+                    </td>
+                    <td>
+                        Creates a new service identity with &lt;name&gt; and a 32-byte, base64-encoded &lt;key&gt;.
+                        If &lt;key&gt; is not provided, it is generated and displayed.
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        showid &lt;name&gt;
+                    </td>
+                    <td>
+                        Gets details for the service identity with &lt;name&gt;
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        deleteid &lt;name&gt;
+                    </td>
+                    <td>
+                        Deletes the service identity with &lt;name&gt;
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        grant &lt;op&gt; &lt;path&gt; &lt;name&gt;
+                    </td>
+                    <td>
+                        Grants operation &lt;op&gt; on &lt;path&gt; for identity &lt;name&gt;. See remarks
+                        below.
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        revoke &lt;op&gt; &lt;path&gt; &lt;name&gt;
+                    </td>
+                    <td>
+                        Revokes permission for operation &lt;op&gt; on &lt;path&gt; for service identity
+                        &lt;name&gt;. See remarks below.
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        show &lt;path&gt;
+                    </td>
+                    <td>
+                        Shows all permissions effective for &lt;path&gt;
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        storeoptions
+                    </td>
+                    <td>
+                        Stores the options provided with the command in the user's context. Stored options
+                        are sticky across command line sessions and reboots until cleared.
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        showoptions
+                    </td>
+                    <td>
+                        Shows the stored options
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        clearoptions
+                    </td>
+                    <td>
+                        Clears the stored options.
+                    </td>
+                </tr>
+            </table>
+            <p>
+                The defined operations for the "grant" and "revoke" command are</p>
+            <table>
+                <tr>
+                    <td>
+                        Send
+                    </td>
+                    <td>
+                        Sending into a queue, topic or relay endpoint.
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        Listen
+                    </td>
+                    <td>
+                        Receiving from a queue or subscription or listening on the relay.
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        Manage
+                    </td>
+                    <td>
+                        Creating or deleting queues, topics, or subscriptions.
+                    </td>
+                </tr>
+            </table>
+            <p>
+                Details about the associated rights can be found in the product documentation. The
+                &lt;path&gt; expression is a relative path on the Service Bus namespace, e.g. /myqueue
+                or /my/endpoint. The leading slash is optional.
+            </p>
+            <h2 class="heading">
+                Prerequisites</h2>
+            <div id="sectionSection0" class="section">
+                <content xmlns="http://ddue.schemas.microsoft.com/authoring/2003/5">
+          <P xmlns="">
+            If you haven't already done so, please read the release notes
+            document that explains how to sign up for a Windows Azure
+            account and how to configure your environment.
+          </P>
+        </content>
+            </div>
+            <h2 class="heading">
+                Example Usage</h2>
+            <div id="sectionSection1" class="section">
+                <content xmlns="http://ddue.schemas.microsoft.com/authoring/2003/5">
+            <p>Here are a few examples for how to use the tool\</p>
+            <h2 class="heading">Managing service identities</h2>
+            <table>
+                <tr>
+                    <td>
+                        sbaztool makeid johndoe -n mynamespace -k TiNj35FAIviW1ZxCcNUtEfowH//9jAYvU28Vz4NhRBM=
+                    </td>
+                    <td>
+                        Creates a new service identity 'johndoe' in namespace 'mynamespace' with the management key 'TiNj35FAIviW1ZxCcNUtEfowH//9jAYvU28Vz4NhRBM='. 
+                        The actual namespace to use here is your own service namespace and the master management key for that namespace,
+                        which can be obtained from the management portal. The access key for the new service identity is generated and printed
+                        on the console. The -n and -k options can be omitted if they have been previously stored in the user context using the 
+                        "storeoptions" command.
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        sbaztool makeid johndoe eYEysqKvEQUCGUf0BTXyBSJg0EUBs2Dh/zsJIkUqTIg= -n ... -k ...
+                    </td>
+                    <td>
+                        Creates a new service identity 'johndoe' with the preset key 'eYEysqKvEQUCGUf0BTXyBSJg0EUBs2Dh/zsJIkUqTIg=' in the desired namespace with the required key (see above). 
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        sbaztool showid johndoe -n ... -k ...
+                    </td>
+                    <td>
+                        Shows the details (key) of the service identity 'johndoe'. 
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        sbaztool deleteid johndoe -n ... -k ...
+                    </td>
+                    <td>
+                        Deletes the service identity 'johndoe'. 
+                    </td>
+                </tr>
+            </table>
+            <h2 class="heading">Managing access control rules</h2>
+            <table>
+                <tr>
+                    <td>
+                        sbaztool grant Send / johndoe -n ... -k ...
+                    </td>
+                    <td>
+                        This operation grants 'Send' rights to the previously created service identity 'johndoe' on the namespace root.
+                        With that, 'johndoe' can send messages to any Service Bus entity within the namespace.
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        sbaztool grant Send /foo johndoe -n ... -k ...
+                    </td>
+                    <td>
+                        This operation grants 'Send' rights to the previously created service identity 'johndoe' on the namespace 
+                        branch '/foo'. 'johndoe' can send messages to any Service Bus entity at and below the address '/foo'
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        sbaztool grant Listen /bar/baz johndoe -n ... -k ...
+                    </td>
+                    <td>
+                        This operation grants 'Listen' rights to the previously created service identity 'johndoe' on the namespace 
+                        branch '/bar/baz'. 'johndoe' can receive messages from any Service Bus entity at and below the address '/bar/baz'
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        sbaztool revoke Listen /bar/baz johndoe -n ... -k ...
+                    </td>
+                    <td>
+                        This operation revokes the previously granted 'Listen' rights for service identity 'johndoe' on the namespace 
+                        branch '/bar/baz'. 'johndoe' can no longer receive messages from Service Bus entities at and below the address '/bar/baz'.
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        sbaztool revoke Send /foo/zoo johndoe -n ... -k ...
+                    </td>
+                    <td>
+                        This operation revokes the previously granted 'Send' right for 'johndoe' from the namespace branch 
+                        'foo/zoo'. However, if the right was previously granted on a parent branch, like '/foo' as shown above,
+                        the operation will fail because inherited rights can not be revoked on parent branches. 
+                    </td>
+                </tr>
+                            </table>
+          </content>
+            </div>
+        </div>
+        <!--[if gte IE 5]><tool:tip avoidmouse="false" element="languageFilterToolTip"></tool:tip><![endif]-->
+    </div>
+    <hr />
+    Did you find this information useful? <a href="http://go.microsoft.com/fwlink/?LinkID=155664">
+        Please send your suggestions and comments about the documentation. </a></P>
+    </div>
+</body>
+</html>
