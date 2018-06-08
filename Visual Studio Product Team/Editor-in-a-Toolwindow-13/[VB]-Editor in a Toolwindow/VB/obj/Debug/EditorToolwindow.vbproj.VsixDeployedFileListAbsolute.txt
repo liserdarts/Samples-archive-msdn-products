@@ -1,0 +1,4 @@
+C:\Users\cgranger\AppData\Local\Microsoft\VisualStudio\10.0Exp\Extensions\Microsoft\Editor in a ToolWindow\1.0\\EditorToolwindow.dll
+C:\Users\cgranger\AppData\Local\Microsoft\VisualStudio\10.0Exp\Extensions\Microsoft\Editor in a ToolWindow\1.0\\EditorToolwindow.pkgdef
+C:\Users\cgranger\AppData\Local\Microsoft\VisualStudio\10.0Exp\Extensions\Microsoft\Editor in a ToolWindow\1.0\\extension.vsixmanifest
+C:\Users\cgranger\AppData\Local\Microsoft\VisualStudio\10.0Exp\Extensions\Microsoft\Editor in a ToolWindow\1.0\\EditorToolwindow.pdb
