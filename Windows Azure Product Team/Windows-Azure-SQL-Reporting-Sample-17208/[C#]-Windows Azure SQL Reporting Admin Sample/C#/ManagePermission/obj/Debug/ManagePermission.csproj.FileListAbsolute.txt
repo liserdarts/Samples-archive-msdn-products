@@ -1,0 +1,124 @@
+D:\Community Contribution\Projects\AzureReportingAdminSample\ManagePermission\bin\ManagePermission.dll
+D:\Community Contribution\Projects\AzureReportingAdminSample\ManagePermission\bin\ManagePermission.pdb
+D:\Community Contribution\Projects\AzureReportingAdminSample\ManagePermission\bin\Microsoft.WindowsAzure.Diagnostics.dll
+D:\Community Contribution\Projects\AzureReportingAdminSample\ManagePermission\bin\Microsoft.WindowsAzure.StorageClient.dll
+D:\Community Contribution\Projects\AzureReportingAdminSample\ManagePermission\bin\System.Web.Providers.dll
+D:\Community Contribution\Projects\AzureReportingAdminSample\ManagePermission\bin\Microsoft.WindowsAzure.Diagnostics.xml
+D:\Community Contribution\Projects\AzureReportingAdminSample\ManagePermission\bin\Microsoft.WindowsAzure.StorageClient.xml
+D:\Community Contribution\Projects\AzureReportingAdminSample\ManagePermission\obj\Debug\ResolveAssemblyReference.cache
+D:\Community Contribution\Projects\AzureReportingAdminSample\ManagePermission\obj\Debug\ManagePermission.dll
+D:\Community Contribution\Projects\AzureReportingAdminSample\ManagePermission\obj\Debug\ManagePermission.pdb
+D:\Community Contribution\Projects\AzureReportingAdminSample\ManagePermission\bin\AjaxControlToolkit.pdb
+D:\Community Contribution\Projects\AzureReportingAdminSample\ManagePermission\bin\ar\AjaxControlToolkit.resources.dll
+D:\Community Contribution\Projects\AzureReportingAdminSample\ManagePermission\bin\cs\AjaxControlToolkit.resources.dll
+D:\Community Contribution\Projects\AzureReportingAdminSample\ManagePermission\bin\de\AjaxControlToolkit.resources.dll
+D:\Community Contribution\Projects\AzureReportingAdminSample\ManagePermission\bin\es\AjaxControlToolkit.resources.dll
+D:\Community Contribution\Projects\AzureReportingAdminSample\ManagePermission\bin\fr\AjaxControlToolkit.resources.dll
+D:\Community Contribution\Projects\AzureReportingAdminSample\ManagePermission\bin\he\AjaxControlToolkit.resources.dll
+D:\Community Contribution\Projects\AzureReportingAdminSample\ManagePermission\bin\hi\AjaxControlToolkit.resources.dll
+D:\Community Contribution\Projects\AzureReportingAdminSample\ManagePermission\bin\it\AjaxControlToolkit.resources.dll
+D:\Community Contribution\Projects\AzureReportingAdminSample\ManagePermission\bin\ja\AjaxControlToolkit.resources.dll
+D:\Community Contribution\Projects\AzureReportingAdminSample\ManagePermission\bin\ko\AjaxControlToolkit.resources.dll
+D:\Community Contribution\Projects\AzureReportingAdminSample\ManagePermission\bin\nl\AjaxControlToolkit.resources.dll
+D:\Community Contribution\Projects\AzureReportingAdminSample\ManagePermission\bin\pt\AjaxControlToolkit.resources.dll
+D:\Community Contribution\Projects\AzureReportingAdminSample\ManagePermission\bin\ru\AjaxControlToolkit.resources.dll
+D:\Community Contribution\Projects\AzureReportingAdminSample\ManagePermission\bin\tr-TR\AjaxControlToolkit.resources.dll
+D:\Community Contribution\Projects\AzureReportingAdminSample\ManagePermission\bin\zh-CHS\AjaxControlToolkit.resources.dll
+D:\Community Contribution\Projects\AzureReportingAdminSample\ManagePermission\bin\zh-CHT\AjaxControlToolkit.resources.dll
+D:\Community Contribution\Projects\Azure Samples\08-02\AzureReportingAdminSample\ManagePermission\bin\ManagePermission.dll
+D:\Community Contribution\Projects\Azure Samples\08-02\AzureReportingAdminSample\ManagePermission\bin\ManagePermission.pdb
+D:\Community Contribution\Projects\Azure Samples\08-02\AzureReportingAdminSample\ManagePermission\bin\Microsoft.WindowsAzure.Diagnostics.dll
+D:\Community Contribution\Projects\Azure Samples\08-02\AzureReportingAdminSample\ManagePermission\bin\Microsoft.WindowsAzure.StorageClient.dll
+D:\Community Contribution\Projects\Azure Samples\08-02\AzureReportingAdminSample\ManagePermission\bin\System.Web.Providers.dll
+D:\Community Contribution\Projects\Azure Samples\08-02\AzureReportingAdminSample\ManagePermission\bin\AjaxControlToolkit.pdb
+D:\Community Contribution\Projects\Azure Samples\08-02\AzureReportingAdminSample\ManagePermission\bin\Microsoft.WindowsAzure.Diagnostics.xml
+D:\Community Contribution\Projects\Azure Samples\08-02\AzureReportingAdminSample\ManagePermission\bin\Microsoft.WindowsAzure.StorageClient.xml
+D:\Community Contribution\Projects\Azure Samples\08-02\AzureReportingAdminSample\ManagePermission\bin\ar\AjaxControlToolkit.resources.dll
+D:\Community Contribution\Projects\Azure Samples\08-02\AzureReportingAdminSample\ManagePermission\bin\cs\AjaxControlToolkit.resources.dll
+D:\Community Contribution\Projects\Azure Samples\08-02\AzureReportingAdminSample\ManagePermission\bin\de\AjaxControlToolkit.resources.dll
+D:\Community Contribution\Projects\Azure Samples\08-02\AzureReportingAdminSample\ManagePermission\bin\es\AjaxControlToolkit.resources.dll
+D:\Community Contribution\Projects\Azure Samples\08-02\AzureReportingAdminSample\ManagePermission\bin\fr\AjaxControlToolkit.resources.dll
+D:\Community Contribution\Projects\Azure Samples\08-02\AzureReportingAdminSample\ManagePermission\bin\he\AjaxControlToolkit.resources.dll
+D:\Community Contribution\Projects\Azure Samples\08-02\AzureReportingAdminSample\ManagePermission\bin\hi\AjaxControlToolkit.resources.dll
+D:\Community Contribution\Projects\Azure Samples\08-02\AzureReportingAdminSample\ManagePermission\bin\it\AjaxControlToolkit.resources.dll
+D:\Community Contribution\Projects\Azure Samples\08-02\AzureReportingAdminSample\ManagePermission\bin\ja\AjaxControlToolkit.resources.dll
+D:\Community Contribution\Projects\Azure Samples\08-02\AzureReportingAdminSample\ManagePermission\bin\ko\AjaxControlToolkit.resources.dll
+D:\Community Contribution\Projects\Azure Samples\08-02\AzureReportingAdminSample\ManagePermission\bin\nl\AjaxControlToolkit.resources.dll
+D:\Community Contribution\Projects\Azure Samples\08-02\AzureReportingAdminSample\ManagePermission\bin\pt\AjaxControlToolkit.resources.dll
+D:\Community Contribution\Projects\Azure Samples\08-02\AzureReportingAdminSample\ManagePermission\bin\ru\AjaxControlToolkit.resources.dll
+D:\Community Contribution\Projects\Azure Samples\08-02\AzureReportingAdminSample\ManagePermission\bin\tr-TR\AjaxControlToolkit.resources.dll
+D:\Community Contribution\Projects\Azure Samples\08-02\AzureReportingAdminSample\ManagePermission\bin\zh-CHS\AjaxControlToolkit.resources.dll
+D:\Community Contribution\Projects\Azure Samples\08-02\AzureReportingAdminSample\ManagePermission\bin\zh-CHT\AjaxControlToolkit.resources.dll
+D:\Community Contribution\Projects\Azure Samples\08-02\AzureReportingAdminSample\ManagePermission\obj\Debug\ResolveAssemblyReference.cache
+D:\Community Contribution\Projects\Azure Samples\08-02\AzureReportingAdminSample\ManagePermission\obj\Debug\ManagePermission.dll
+D:\Community Contribution\Projects\Azure Samples\08-02\AzureReportingAdminSample\ManagePermission\obj\Debug\ManagePermission.pdb
+D:\Community Contribution\Projects\Azure Samples\09-02\AzureReportingAdminSample\ManagePermission\bin\ManagePermission.dll
+D:\Community Contribution\Projects\Azure Samples\09-02\AzureReportingAdminSample\ManagePermission\bin\ManagePermission.pdb
+D:\Community Contribution\Projects\Azure Samples\09-02\AzureReportingAdminSample\ManagePermission\bin\Microsoft.WindowsAzure.Diagnostics.dll
+D:\Community Contribution\Projects\Azure Samples\09-02\AzureReportingAdminSample\ManagePermission\bin\Microsoft.WindowsAzure.StorageClient.dll
+D:\Community Contribution\Projects\Azure Samples\09-02\AzureReportingAdminSample\ManagePermission\bin\System.Web.Providers.dll
+D:\Community Contribution\Projects\Azure Samples\09-02\AzureReportingAdminSample\ManagePermission\bin\Microsoft.WindowsAzure.Diagnostics.xml
+D:\Community Contribution\Projects\Azure Samples\09-02\AzureReportingAdminSample\ManagePermission\bin\Microsoft.WindowsAzure.StorageClient.xml
+D:\Community Contribution\Projects\Azure Samples\09-02\AzureReportingAdminSample\ManagePermission\obj\Debug\ResolveAssemblyReference.cache
+D:\Community Contribution\Projects\Azure Samples\09-02\AzureReportingAdminSample\ManagePermission\obj\Debug\ManagePermission.dll
+D:\Community Contribution\Projects\Azure Samples\09-02\AzureReportingAdminSample\ManagePermission\obj\Debug\ManagePermission.pdb
+D:\Community Contribution\Projects\Azure Samples\10-02\AzureReportingAdminSample\ManagePermission\obj\Debug\ResolveAssemblyReference.cache
+D:\Community Contribution\Projects\Azure Samples\10-02\AzureReportingAdminSample\ManagePermission\obj\Debug\ManagePermission.dll
+D:\Community Contribution\Projects\Azure Samples\10-02\AzureReportingAdminSample\ManagePermission\bin\ManagePermission.dll
+D:\Community Contribution\Projects\Azure Samples\10-02\AzureReportingAdminSample\ManagePermission\bin\ManagePermission.pdb
+D:\Community Contribution\Projects\Azure Samples\10-02\AzureReportingAdminSample\ManagePermission\bin\Microsoft.WindowsAzure.Diagnostics.dll
+D:\Community Contribution\Projects\Azure Samples\10-02\AzureReportingAdminSample\ManagePermission\bin\Microsoft.WindowsAzure.StorageClient.dll
+D:\Community Contribution\Projects\Azure Samples\10-02\AzureReportingAdminSample\ManagePermission\bin\System.Web.Providers.dll
+D:\Community Contribution\Projects\Azure Samples\10-02\AzureReportingAdminSample\ManagePermission\bin\Microsoft.WindowsAzure.Diagnostics.xml
+D:\Community Contribution\Projects\Azure Samples\10-02\AzureReportingAdminSample\ManagePermission\bin\Microsoft.WindowsAzure.StorageClient.xml
+D:\Community Contribution\Projects\Azure Samples\10-02\AzureReportingAdminSample\ManagePermission\obj\Debug\ManagePermission.pdb
+D:\Community Contribution\Projects\Azure Samples\13-02\AzureReportingAdminSample\ManagePermission\bin\ManagePermission.dll
+D:\Community Contribution\Projects\Azure Samples\13-02\AzureReportingAdminSample\ManagePermission\bin\ManagePermission.pdb
+D:\Community Contribution\Projects\Azure Samples\13-02\AzureReportingAdminSample\ManagePermission\bin\Microsoft.WindowsAzure.Diagnostics.dll
+D:\Community Contribution\Projects\Azure Samples\13-02\AzureReportingAdminSample\ManagePermission\bin\Microsoft.WindowsAzure.StorageClient.dll
+D:\Community Contribution\Projects\Azure Samples\13-02\AzureReportingAdminSample\ManagePermission\bin\System.Web.Providers.dll
+D:\Community Contribution\Projects\Azure Samples\13-02\AzureReportingAdminSample\ManagePermission\bin\Microsoft.WindowsAzure.Diagnostics.xml
+D:\Community Contribution\Projects\Azure Samples\13-02\AzureReportingAdminSample\ManagePermission\bin\Microsoft.WindowsAzure.StorageClient.xml
+D:\Community Contribution\Projects\Azure Samples\13-02\AzureReportingAdminSample\ManagePermission\obj\Debug\ResolveAssemblyReference.cache
+D:\Community Contribution\Projects\Azure Samples\13-02\AzureReportingAdminSample\ManagePermission\obj\Debug\ManagePermission.dll
+D:\Community Contribution\Projects\Azure Samples\13-02\AzureReportingAdminSample\ManagePermission\obj\Debug\ManagePermission.pdb
+D:\Community Contribution\Projects\Azure Samples\14-02\AzureReportingAdminSample\ManagePermission\bin\ManagePermission.dll
+D:\Community Contribution\Projects\Azure Samples\14-02\AzureReportingAdminSample\ManagePermission\bin\ManagePermission.pdb
+D:\Community Contribution\Projects\Azure Samples\14-02\AzureReportingAdminSample\ManagePermission\bin\Microsoft.WindowsAzure.Diagnostics.dll
+D:\Community Contribution\Projects\Azure Samples\14-02\AzureReportingAdminSample\ManagePermission\bin\Microsoft.WindowsAzure.StorageClient.dll
+D:\Community Contribution\Projects\Azure Samples\14-02\AzureReportingAdminSample\ManagePermission\bin\System.Web.Providers.dll
+D:\Community Contribution\Projects\Azure Samples\14-02\AzureReportingAdminSample\ManagePermission\bin\Microsoft.WindowsAzure.Diagnostics.xml
+D:\Community Contribution\Projects\Azure Samples\14-02\AzureReportingAdminSample\ManagePermission\bin\Microsoft.WindowsAzure.StorageClient.xml
+D:\Community Contribution\Projects\Azure Samples\14-02\AzureReportingAdminSample\ManagePermission\obj\Debug\ResolveAssemblyReference.cache
+D:\Community Contribution\Projects\Azure Samples\14-02\AzureReportingAdminSample\ManagePermission\obj\Debug\ManagePermission.dll
+D:\Community Contribution\Projects\Azure Samples\14-02\AzureReportingAdminSample\ManagePermission\obj\Debug\ManagePermission.pdb
+D:\Community Contribution\Projects\Azure Samples\02-15\AzureReportingAdminSample\ManagePermission\bin\ManagePermission.dll
+D:\Community Contribution\Projects\Azure Samples\02-15\AzureReportingAdminSample\ManagePermission\bin\ManagePermission.pdb
+D:\Community Contribution\Projects\Azure Samples\02-15\AzureReportingAdminSample\ManagePermission\bin\Microsoft.WindowsAzure.Diagnostics.dll
+D:\Community Contribution\Projects\Azure Samples\02-15\AzureReportingAdminSample\ManagePermission\bin\Microsoft.WindowsAzure.StorageClient.dll
+D:\Community Contribution\Projects\Azure Samples\02-15\AzureReportingAdminSample\ManagePermission\bin\System.Web.Providers.dll
+D:\Community Contribution\Projects\Azure Samples\02-15\AzureReportingAdminSample\ManagePermission\bin\Microsoft.WindowsAzure.Diagnostics.xml
+D:\Community Contribution\Projects\Azure Samples\02-15\AzureReportingAdminSample\ManagePermission\bin\Microsoft.WindowsAzure.StorageClient.xml
+D:\Community Contribution\Projects\Azure Samples\02-15\AzureReportingAdminSample\ManagePermission\obj\Debug\ResolveAssemblyReference.cache
+D:\Community Contribution\Projects\Azure Samples\02-15\AzureReportingAdminSample\ManagePermission\obj\Debug\ManagePermission.dll
+D:\Community Contribution\Projects\Azure Samples\02-15\AzureReportingAdminSample\ManagePermission\obj\Debug\ManagePermission.pdb
+D:\Community Contribution\Projects\Azure Samples\02-16\AzureReportingAdminSample\ManagePermission\bin\ManagePermission.dll
+D:\Community Contribution\Projects\Azure Samples\02-16\AzureReportingAdminSample\ManagePermission\bin\ManagePermission.pdb
+D:\Community Contribution\Projects\Azure Samples\02-16\AzureReportingAdminSample\ManagePermission\bin\Microsoft.WindowsAzure.Diagnostics.dll
+D:\Community Contribution\Projects\Azure Samples\02-16\AzureReportingAdminSample\ManagePermission\bin\Microsoft.WindowsAzure.StorageClient.dll
+D:\Community Contribution\Projects\Azure Samples\02-16\AzureReportingAdminSample\ManagePermission\bin\System.Web.Providers.dll
+D:\Community Contribution\Projects\Azure Samples\02-16\AzureReportingAdminSample\ManagePermission\bin\Microsoft.WindowsAzure.Diagnostics.xml
+D:\Community Contribution\Projects\Azure Samples\02-16\AzureReportingAdminSample\ManagePermission\bin\Microsoft.WindowsAzure.StorageClient.xml
+D:\Community Contribution\Projects\Azure Samples\02-16\AzureReportingAdminSample\ManagePermission\obj\Debug\ResolveAssemblyReference.cache
+D:\Community Contribution\Projects\Azure Samples\02-16\AzureReportingAdminSample\ManagePermission\obj\Debug\ManagePermission.dll
+D:\Community Contribution\Projects\Azure Samples\02-16\AzureReportingAdminSample\ManagePermission\obj\Debug\ManagePermission.pdb
+D:\Community Contribution\Azure Admin Samples\03-06\AzureReportingAdminSample\ManagePermission\bin\ManagePermission.dll
+D:\Community Contribution\Azure Admin Samples\03-06\AzureReportingAdminSample\ManagePermission\bin\ManagePermission.pdb
+D:\Community Contribution\Azure Admin Samples\03-06\AzureReportingAdminSample\ManagePermission\bin\Microsoft.WindowsAzure.Diagnostics.dll
+D:\Community Contribution\Azure Admin Samples\03-06\AzureReportingAdminSample\ManagePermission\bin\Microsoft.WindowsAzure.StorageClient.dll
+D:\Community Contribution\Azure Admin Samples\03-06\AzureReportingAdminSample\ManagePermission\bin\System.Web.Providers.dll
+D:\Community Contribution\Azure Admin Samples\03-06\AzureReportingAdminSample\ManagePermission\bin\Microsoft.WindowsAzure.Diagnostics.xml
+D:\Community Contribution\Azure Admin Samples\03-06\AzureReportingAdminSample\ManagePermission\bin\Microsoft.WindowsAzure.StorageClient.xml
+D:\Community Contribution\Azure Admin Samples\03-06\AzureReportingAdminSample\ManagePermission\obj\Debug\ResolveAssemblyReference.cache
+D:\Community Contribution\Azure Admin Samples\03-06\AzureReportingAdminSample\ManagePermission\obj\Debug\ManagePermission.dll
+D:\Community Contribution\Azure Admin Samples\03-06\AzureReportingAdminSample\ManagePermission\obj\Debug\ManagePermission.pdb

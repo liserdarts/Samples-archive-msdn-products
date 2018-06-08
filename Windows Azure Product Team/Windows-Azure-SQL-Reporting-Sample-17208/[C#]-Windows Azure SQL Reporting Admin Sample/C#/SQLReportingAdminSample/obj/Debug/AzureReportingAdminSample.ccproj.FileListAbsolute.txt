@@ -1,0 +1,914 @@
+D:\Community Contribution\Projects\AzureReportingAdminSample\AzureReportingAdminSample\bin\Debug\ServiceConfiguration.cscfg
+D:\Community Contribution\Projects\AzureReportingAdminSample\AzureReportingAdminSample\obj\Debug\ResolveAssemblyReference.cache
+D:\Community Contribution\Projects\AzureReportingAdminSample\AzureReportingAdminSample\bin\Debug\AzureReportingAdminSample.csx\roles\ManagePermission\base\x86\mswasri.dll
+D:\Community Contribution\Projects\AzureReportingAdminSample\AzureReportingAdminSample\bin\Debug\AzureReportingAdminSample.csx\roles\ManagePermission\base\x86\WaRuntimeProxy.dll
+D:\Community Contribution\Projects\AzureReportingAdminSample\AzureReportingAdminSample\bin\Debug\AzureReportingAdminSample.csx\roles\ManagePermission\approot\About.aspx
+D:\Community Contribution\Projects\AzureReportingAdminSample\AzureReportingAdminSample\bin\Debug\AzureReportingAdminSample.csx\roles\ManagePermission\approot\Default.aspx
+D:\Community Contribution\Projects\AzureReportingAdminSample\AzureReportingAdminSample\bin\Debug\AzureReportingAdminSample.csx\roles\ManagePermission\approot\Global.asax
+D:\Community Contribution\Projects\AzureReportingAdminSample\AzureReportingAdminSample\bin\Debug\AzureReportingAdminSample.csx\roles\ManagePermission\approot\packages.config
+D:\Community Contribution\Projects\AzureReportingAdminSample\AzureReportingAdminSample\bin\Debug\AzureReportingAdminSample.csx\roles\ManagePermission\approot\Site.Master
+D:\Community Contribution\Projects\AzureReportingAdminSample\AzureReportingAdminSample\bin\Debug\AzureReportingAdminSample.csx\roles\ManagePermission\approot\Web.config
+D:\Community Contribution\Projects\AzureReportingAdminSample\AzureReportingAdminSample\bin\Debug\AzureReportingAdminSample.csx\roles\ManagePermission\approot\Account\ChangePassword.aspx
+D:\Community Contribution\Projects\AzureReportingAdminSample\AzureReportingAdminSample\bin\Debug\AzureReportingAdminSample.csx\roles\ManagePermission\approot\Account\ChangePasswordSuccess.aspx
+D:\Community Contribution\Projects\AzureReportingAdminSample\AzureReportingAdminSample\bin\Debug\AzureReportingAdminSample.csx\roles\ManagePermission\approot\Account\Login.aspx
+D:\Community Contribution\Projects\AzureReportingAdminSample\AzureReportingAdminSample\bin\Debug\AzureReportingAdminSample.csx\roles\ManagePermission\approot\Account\Register.aspx
+D:\Community Contribution\Projects\AzureReportingAdminSample\AzureReportingAdminSample\bin\Debug\AzureReportingAdminSample.csx\roles\ManagePermission\approot\Account\Web.config
+D:\Community Contribution\Projects\AzureReportingAdminSample\AzureReportingAdminSample\bin\Debug\AzureReportingAdminSample.csx\roles\ManagePermission\approot\bin\ManagePermission.dll
+D:\Community Contribution\Projects\AzureReportingAdminSample\AzureReportingAdminSample\bin\Debug\AzureReportingAdminSample.csx\roles\ManagePermission\approot\bin\ManagePermission.pdb
+D:\Community Contribution\Projects\AzureReportingAdminSample\AzureReportingAdminSample\bin\Debug\AzureReportingAdminSample.csx\roles\ManagePermission\approot\bin\Microsoft.WindowsAzure.Diagnostics.dll
+D:\Community Contribution\Projects\AzureReportingAdminSample\AzureReportingAdminSample\bin\Debug\AzureReportingAdminSample.csx\roles\ManagePermission\approot\bin\Microsoft.WindowsAzure.Diagnostics.xml
+D:\Community Contribution\Projects\AzureReportingAdminSample\AzureReportingAdminSample\bin\Debug\AzureReportingAdminSample.csx\roles\ManagePermission\approot\bin\Microsoft.WindowsAzure.StorageClient.dll
+D:\Community Contribution\Projects\AzureReportingAdminSample\AzureReportingAdminSample\bin\Debug\AzureReportingAdminSample.csx\roles\ManagePermission\approot\bin\Microsoft.WindowsAzure.StorageClient.xml
+D:\Community Contribution\Projects\AzureReportingAdminSample\AzureReportingAdminSample\bin\Debug\AzureReportingAdminSample.csx\roles\ManagePermission\approot\bin\System.Web.Providers.dll
+D:\Community Contribution\Projects\AzureReportingAdminSample\AzureReportingAdminSample\bin\Debug\AzureReportingAdminSample.csx\roles\ManagePermission\approot\Scripts\jquery-1.4.1-vsdoc.js
+D:\Community Contribution\Projects\AzureReportingAdminSample\AzureReportingAdminSample\bin\Debug\AzureReportingAdminSample.csx\roles\ManagePermission\approot\Scripts\jquery-1.4.1.js
+D:\Community Contribution\Projects\AzureReportingAdminSample\AzureReportingAdminSample\bin\Debug\AzureReportingAdminSample.csx\roles\ManagePermission\approot\Scripts\jquery-1.4.1.min.js
+D:\Community Contribution\Projects\AzureReportingAdminSample\AzureReportingAdminSample\bin\Debug\AzureReportingAdminSample.csx\roles\ManagePermission\approot\Styles\Site.css
+D:\Community Contribution\Projects\AzureReportingAdminSample\AzureReportingAdminSample\bin\Debug\AzureReportingAdminSample.csx\roles\ManagePermission\RuntimeSetup.Manifest
+D:\Community Contribution\Projects\AzureReportingAdminSample\AzureReportingAdminSample\bin\Debug\AzureReportingAdminSample.csx\roles\ManagePermission\base\x64\Diagnostics.dll
+D:\Community Contribution\Projects\AzureReportingAdminSample\AzureReportingAdminSample\bin\Debug\AzureReportingAdminSample.csx\roles\ManagePermission\base\x64\IISConfigurator.exe
+D:\Community Contribution\Projects\AzureReportingAdminSample\AzureReportingAdminSample\bin\Debug\AzureReportingAdminSample.csx\roles\ManagePermission\base\x64\msshrtmi.dll
+D:\Community Contribution\Projects\AzureReportingAdminSample\AzureReportingAdminSample\bin\Debug\AzureReportingAdminSample.csx\roles\ManagePermission\base\x64\mswasr.dll
+D:\Community Contribution\Projects\AzureReportingAdminSample\AzureReportingAdminSample\bin\Debug\AzureReportingAdminSample.csx\roles\ManagePermission\base\x64\mswasri.dll
+D:\Community Contribution\Projects\AzureReportingAdminSample\AzureReportingAdminSample\bin\Debug\AzureReportingAdminSample.csx\roles\ManagePermission\base\x64\WaHostBootstrapper.exe
+D:\Community Contribution\Projects\AzureReportingAdminSample\AzureReportingAdminSample\bin\Debug\AzureReportingAdminSample.csx\roles\ManagePermission\base\x64\WaIISHost.exe
+D:\Community Contribution\Projects\AzureReportingAdminSample\AzureReportingAdminSample\bin\Debug\AzureReportingAdminSample.csx\roles\ManagePermission\base\x64\WaRuntimeProxy.dll
+D:\Community Contribution\Projects\AzureReportingAdminSample\AzureReportingAdminSample\bin\Debug\AzureReportingAdminSample.csx\roles\ManagePermission\base\x64\WaWebHost.exe
+D:\Community Contribution\Projects\AzureReportingAdminSample\AzureReportingAdminSample\bin\Debug\AzureReportingAdminSample.csx\roles\ManagePermission\base\x64\WaWorkerHost.exe
+D:\Community Contribution\Projects\AzureReportingAdminSample\AzureReportingAdminSample\bin\Debug\AzureReportingAdminSample.csx\roles\ManagePermission\base\x86\Diagnostics.dll
+D:\Community Contribution\Projects\AzureReportingAdminSample\AzureReportingAdminSample\bin\Debug\AzureReportingAdminSample.csx\roles\ManagePermission\base\x86\IISConfigurator.exe
+D:\Community Contribution\Projects\AzureReportingAdminSample\AzureReportingAdminSample\bin\Debug\AzureReportingAdminSample.csx\roles\ManagePermission\base\x86\msshrtmi.dll
+D:\Community Contribution\Projects\AzureReportingAdminSample\AzureReportingAdminSample\bin\Debug\AzureReportingAdminSample.csx\roles\ManagePermission\base\x86\mswasr.dll
+D:\Community Contribution\Projects\AzureReportingAdminSample\AzureReportingAdminSample\bin\Debug\AzureReportingAdminSample.csx\roles\ManagePermission\base\x86\WaHostBootstrapper.exe
+D:\Community Contribution\Projects\AzureReportingAdminSample\AzureReportingAdminSample\bin\Debug\AzureReportingAdminSample.csx\roles\ManagePermission\base\x86\WaIISHost.exe
+D:\Community Contribution\Projects\AzureReportingAdminSample\AzureReportingAdminSample\bin\Debug\AzureReportingAdminSample.csx\roles\ManagePermission\base\x86\WaWebHost.exe
+D:\Community Contribution\Projects\AzureReportingAdminSample\AzureReportingAdminSample\bin\Debug\AzureReportingAdminSample.csx\roles\ManagePermission\base\x86\WaWorkerHost.exe
+D:\Community Contribution\Projects\AzureReportingAdminSample\AzureReportingAdminSample\bin\Debug\AzureReportingAdminSample.csx\roles\ManagePermission\diagnostics\x64\monitor\EtwListener.dll
+D:\Community Contribution\Projects\AzureReportingAdminSample\AzureReportingAdminSample\bin\Debug\AzureReportingAdminSample.csx\roles\ManagePermission\diagnostics\x64\monitor\FileListener.dll
+D:\Community Contribution\Projects\AzureReportingAdminSample\AzureReportingAdminSample\bin\Debug\AzureReportingAdminSample.csx\roles\ManagePermission\diagnostics\x64\monitor\MonAgent.dll
+D:\Community Contribution\Projects\AzureReportingAdminSample\AzureReportingAdminSample\bin\Debug\AzureReportingAdminSample.csx\roles\ManagePermission\diagnostics\x64\monitor\MonAgentHost.exe
+D:\Community Contribution\Projects\AzureReportingAdminSample\AzureReportingAdminSample\bin\Debug\AzureReportingAdminSample.csx\roles\ManagePermission\diagnostics\x64\monitor\MonDiagnostics.dll
+D:\Community Contribution\Projects\AzureReportingAdminSample\AzureReportingAdminSample\bin\Debug\AzureReportingAdminSample.csx\roles\ManagePermission\diagnostics\x64\monitor\MonEvents.dll
+D:\Community Contribution\Projects\AzureReportingAdminSample\AzureReportingAdminSample\bin\Debug\AzureReportingAdminSample.csx\roles\ManagePermission\diagnostics\x64\monitor\MonNetTransport.dll
+D:\Community Contribution\Projects\AzureReportingAdminSample\AzureReportingAdminSample\bin\Debug\AzureReportingAdminSample.csx\roles\ManagePermission\diagnostics\x64\monitor\MonQuery.dll
+D:\Community Contribution\Projects\AzureReportingAdminSample\AzureReportingAdminSample\bin\Debug\AzureReportingAdminSample.csx\roles\ManagePermission\diagnostics\x64\monitor\MonTables.dll
+D:\Community Contribution\Projects\AzureReportingAdminSample\AzureReportingAdminSample\bin\Debug\AzureReportingAdminSample.csx\roles\ManagePermission\diagnostics\x64\monitor\secutil.dll
+D:\Community Contribution\Projects\AzureReportingAdminSample\AzureReportingAdminSample\bin\Debug\AzureReportingAdminSample.csx\roles\ManagePermission\diagnostics\x64\monitor\SysCounterListener.dll
+D:\Community Contribution\Projects\AzureReportingAdminSample\AzureReportingAdminSample\bin\Debug\AzureReportingAdminSample.csx\roles\ManagePermission\diagnostics\x64\monitor\SystemEventsListener.dll
+D:\Community Contribution\Projects\AzureReportingAdminSample\AzureReportingAdminSample\bin\Debug\AzureReportingAdminSample.csx\roles\ManagePermission\diagnostics\x64\monitor\schema\1.0\ma.xsd
+D:\Community Contribution\Projects\AzureReportingAdminSample\AzureReportingAdminSample\bin\Debug\AzureReportingAdminSample.csx\roles\ManagePermission\diagnostics\x64\monitor\schema\1.0\maStatic.xsd
+D:\Community Contribution\Projects\AzureReportingAdminSample\AzureReportingAdminSample\bin\Debug\AzureReportingAdminSample.csx\roles\ManagePermission\diagnostics\x64\monitor\schema\1.0\query.xsd
+D:\Community Contribution\Projects\AzureReportingAdminSample\AzureReportingAdminSample\bin\Debug\AzureReportingAdminSample.csx\roles\ManagePermission\diagnostics\x64\monitor\schema\1.0\shared.xsd
+D:\Community Contribution\Projects\AzureReportingAdminSample\AzureReportingAdminSample\bin\Debug\AzureReportingAdminSample.csx\roles\ManagePermission\__entrypoint.txt
+D:\Community Contribution\Projects\AzureReportingAdminSample\AzureReportingAdminSample\bin\Debug\AzureReportingAdminSample.csx\roles\ManagePermission\web.config
+D:\Community Contribution\Projects\AzureReportingAdminSample\AzureReportingAdminSample\bin\Debug\AzureReportingAdminSample.csx\roles\ManagePermission\plugins\Diagnostics\Diagnostics.csplugin
+D:\Community Contribution\Projects\AzureReportingAdminSample\AzureReportingAdminSample\bin\Debug\AzureReportingAdminSample.csx\roles\ManagePermission\plugins\Diagnostics\DiagnosticsAgent.exe
+D:\Community Contribution\Projects\AzureReportingAdminSample\AzureReportingAdminSample\bin\Debug\AzureReportingAdminSample.csx\roles\ManagePermission\plugins\Diagnostics\Microsoft.WindowsAzure.Diagnostics.dll
+D:\Community Contribution\Projects\AzureReportingAdminSample\AzureReportingAdminSample\bin\Debug\AzureReportingAdminSample.csx\roles\ManagePermission\plugins\Diagnostics\Microsoft.WindowsAzure.StorageClient.dll
+D:\Community Contribution\Projects\AzureReportingAdminSample\AzureReportingAdminSample\bin\Debug\AzureReportingAdminSample.csx\roles\ManagePermission\plugins\Diagnostics\mswapd.dll
+D:\Community Contribution\Projects\AzureReportingAdminSample\AzureReportingAdminSample\bin\Debug\AzureReportingAdminSample.csx\roles\ManagePermission\RoleModel.xml
+D:\Community Contribution\Projects\AzureReportingAdminSample\AzureReportingAdminSample\bin\Debug\AzureReportingAdminSample.csx\ServiceDefinition.build.rd
+D:\Community Contribution\Projects\AzureReportingAdminSample\AzureReportingAdminSample\bin\Debug\AzureReportingAdminSample.csx\ServiceDefinition.build.rdsc
+D:\Community Contribution\Projects\AzureReportingAdminSample\AzureReportingAdminSample\bin\Debug\AzureReportingAdminSample.csx\ServiceDefinition.build.csdef
+D:\Community Contribution\Projects\AzureReportingAdminSample\AzureReportingAdminSample\obj\Debug\ManagePermission\About.aspx
+D:\Community Contribution\Projects\AzureReportingAdminSample\AzureReportingAdminSample\obj\Debug\ManagePermission\Account\ChangePassword.aspx
+D:\Community Contribution\Projects\AzureReportingAdminSample\AzureReportingAdminSample\obj\Debug\ManagePermission\Account\ChangePasswordSuccess.aspx
+D:\Community Contribution\Projects\AzureReportingAdminSample\AzureReportingAdminSample\obj\Debug\ManagePermission\Account\Login.aspx
+D:\Community Contribution\Projects\AzureReportingAdminSample\AzureReportingAdminSample\obj\Debug\ManagePermission\Account\Register.aspx
+D:\Community Contribution\Projects\AzureReportingAdminSample\AzureReportingAdminSample\obj\Debug\ManagePermission\Account\Web.config
+D:\Community Contribution\Projects\AzureReportingAdminSample\AzureReportingAdminSample\obj\Debug\ManagePermission\bin\ManagePermission.dll
+D:\Community Contribution\Projects\AzureReportingAdminSample\AzureReportingAdminSample\obj\Debug\ManagePermission\bin\ManagePermission.pdb
+D:\Community Contribution\Projects\AzureReportingAdminSample\AzureReportingAdminSample\obj\Debug\ManagePermission\bin\Microsoft.WindowsAzure.Diagnostics.dll
+D:\Community Contribution\Projects\AzureReportingAdminSample\AzureReportingAdminSample\obj\Debug\ManagePermission\bin\Microsoft.WindowsAzure.Diagnostics.xml
+D:\Community Contribution\Projects\AzureReportingAdminSample\AzureReportingAdminSample\obj\Debug\ManagePermission\bin\Microsoft.WindowsAzure.StorageClient.dll
+D:\Community Contribution\Projects\AzureReportingAdminSample\AzureReportingAdminSample\obj\Debug\ManagePermission\bin\Microsoft.WindowsAzure.StorageClient.xml
+D:\Community Contribution\Projects\AzureReportingAdminSample\AzureReportingAdminSample\obj\Debug\ManagePermission\bin\System.Web.Providers.dll
+D:\Community Contribution\Projects\AzureReportingAdminSample\AzureReportingAdminSample\obj\Debug\ManagePermission\Default.aspx
+D:\Community Contribution\Projects\AzureReportingAdminSample\AzureReportingAdminSample\obj\Debug\ManagePermission\Global.asax
+D:\Community Contribution\Projects\AzureReportingAdminSample\AzureReportingAdminSample\obj\Debug\ManagePermission\packages.config
+D:\Community Contribution\Projects\AzureReportingAdminSample\AzureReportingAdminSample\obj\Debug\ManagePermission\Scripts\jquery-1.4.1-vsdoc.js
+D:\Community Contribution\Projects\AzureReportingAdminSample\AzureReportingAdminSample\obj\Debug\ManagePermission\Scripts\jquery-1.4.1.js
+D:\Community Contribution\Projects\AzureReportingAdminSample\AzureReportingAdminSample\obj\Debug\ManagePermission\Scripts\jquery-1.4.1.min.js
+D:\Community Contribution\Projects\AzureReportingAdminSample\AzureReportingAdminSample\obj\Debug\ManagePermission\Site.Master
+D:\Community Contribution\Projects\AzureReportingAdminSample\AzureReportingAdminSample\obj\Debug\ManagePermission\Styles\Site.css
+D:\Community Contribution\Projects\AzureReportingAdminSample\AzureReportingAdminSample\obj\Debug\ManagePermission\Web.config
+D:\Community Contribution\Projects\AzureReportingAdminSample\AzureReportingAdminSample\bin\Debug\AzureReportingAdminSample.csx\roles\ManagePermission\approot\bin\AjaxControlToolkit.dll
+D:\Community Contribution\Projects\AzureReportingAdminSample\AzureReportingAdminSample\bin\Debug\AzureReportingAdminSample.csx\roles\ManagePermission\approot\bin\AjaxControlToolkit.pdb
+D:\Community Contribution\Projects\AzureReportingAdminSample\AzureReportingAdminSample\bin\Debug\AzureReportingAdminSample.csx\roles\ManagePermission\approot\bin\ar\AjaxControlToolkit.resources.dll
+D:\Community Contribution\Projects\AzureReportingAdminSample\AzureReportingAdminSample\bin\Debug\AzureReportingAdminSample.csx\roles\ManagePermission\approot\bin\cs\AjaxControlToolkit.resources.dll
+D:\Community Contribution\Projects\AzureReportingAdminSample\AzureReportingAdminSample\bin\Debug\AzureReportingAdminSample.csx\roles\ManagePermission\approot\bin\de\AjaxControlToolkit.resources.dll
+D:\Community Contribution\Projects\AzureReportingAdminSample\AzureReportingAdminSample\bin\Debug\AzureReportingAdminSample.csx\roles\ManagePermission\approot\bin\es\AjaxControlToolkit.resources.dll
+D:\Community Contribution\Projects\AzureReportingAdminSample\AzureReportingAdminSample\bin\Debug\AzureReportingAdminSample.csx\roles\ManagePermission\approot\bin\fr\AjaxControlToolkit.resources.dll
+D:\Community Contribution\Projects\AzureReportingAdminSample\AzureReportingAdminSample\bin\Debug\AzureReportingAdminSample.csx\roles\ManagePermission\approot\bin\he\AjaxControlToolkit.resources.dll
+D:\Community Contribution\Projects\AzureReportingAdminSample\AzureReportingAdminSample\bin\Debug\AzureReportingAdminSample.csx\roles\ManagePermission\approot\bin\hi\AjaxControlToolkit.resources.dll
+D:\Community Contribution\Projects\AzureReportingAdminSample\AzureReportingAdminSample\bin\Debug\AzureReportingAdminSample.csx\roles\ManagePermission\approot\bin\it\AjaxControlToolkit.resources.dll
+D:\Community Contribution\Projects\AzureReportingAdminSample\AzureReportingAdminSample\bin\Debug\AzureReportingAdminSample.csx\roles\ManagePermission\approot\bin\ja\AjaxControlToolkit.resources.dll
+D:\Community Contribution\Projects\AzureReportingAdminSample\AzureReportingAdminSample\bin\Debug\AzureReportingAdminSample.csx\roles\ManagePermission\approot\bin\ko\AjaxControlToolkit.resources.dll
+D:\Community Contribution\Projects\AzureReportingAdminSample\AzureReportingAdminSample\bin\Debug\AzureReportingAdminSample.csx\roles\ManagePermission\approot\bin\nl\AjaxControlToolkit.resources.dll
+D:\Community Contribution\Projects\AzureReportingAdminSample\AzureReportingAdminSample\bin\Debug\AzureReportingAdminSample.csx\roles\ManagePermission\approot\bin\pt\AjaxControlToolkit.resources.dll
+D:\Community Contribution\Projects\AzureReportingAdminSample\AzureReportingAdminSample\bin\Debug\AzureReportingAdminSample.csx\roles\ManagePermission\approot\bin\ru\AjaxControlToolkit.resources.dll
+D:\Community Contribution\Projects\AzureReportingAdminSample\AzureReportingAdminSample\bin\Debug\AzureReportingAdminSample.csx\roles\ManagePermission\approot\bin\tr-TR\AjaxControlToolkit.resources.dll
+D:\Community Contribution\Projects\AzureReportingAdminSample\AzureReportingAdminSample\bin\Debug\AzureReportingAdminSample.csx\roles\ManagePermission\approot\bin\zh-CHS\AjaxControlToolkit.resources.dll
+D:\Community Contribution\Projects\AzureReportingAdminSample\AzureReportingAdminSample\bin\Debug\AzureReportingAdminSample.csx\roles\ManagePermission\approot\bin\zh-CHT\AjaxControlToolkit.resources.dll
+D:\Community Contribution\Projects\AzureReportingAdminSample\AzureReportingAdminSample\obj\Debug\ManagePermission\bin\AjaxControlToolkit.dll
+D:\Community Contribution\Projects\AzureReportingAdminSample\AzureReportingAdminSample\obj\Debug\ManagePermission\bin\AjaxControlToolkit.pdb
+D:\Community Contribution\Projects\AzureReportingAdminSample\AzureReportingAdminSample\obj\Debug\ManagePermission\bin\ar\AjaxControlToolkit.resources.dll
+D:\Community Contribution\Projects\AzureReportingAdminSample\AzureReportingAdminSample\obj\Debug\ManagePermission\bin\cs\AjaxControlToolkit.resources.dll
+D:\Community Contribution\Projects\AzureReportingAdminSample\AzureReportingAdminSample\obj\Debug\ManagePermission\bin\de\AjaxControlToolkit.resources.dll
+D:\Community Contribution\Projects\AzureReportingAdminSample\AzureReportingAdminSample\obj\Debug\ManagePermission\bin\es\AjaxControlToolkit.resources.dll
+D:\Community Contribution\Projects\AzureReportingAdminSample\AzureReportingAdminSample\obj\Debug\ManagePermission\bin\fr\AjaxControlToolkit.resources.dll
+D:\Community Contribution\Projects\AzureReportingAdminSample\AzureReportingAdminSample\obj\Debug\ManagePermission\bin\he\AjaxControlToolkit.resources.dll
+D:\Community Contribution\Projects\AzureReportingAdminSample\AzureReportingAdminSample\obj\Debug\ManagePermission\bin\hi\AjaxControlToolkit.resources.dll
+D:\Community Contribution\Projects\AzureReportingAdminSample\AzureReportingAdminSample\obj\Debug\ManagePermission\bin\it\AjaxControlToolkit.resources.dll
+D:\Community Contribution\Projects\AzureReportingAdminSample\AzureReportingAdminSample\obj\Debug\ManagePermission\bin\ja\AjaxControlToolkit.resources.dll
+D:\Community Contribution\Projects\AzureReportingAdminSample\AzureReportingAdminSample\obj\Debug\ManagePermission\bin\ko\AjaxControlToolkit.resources.dll
+D:\Community Contribution\Projects\AzureReportingAdminSample\AzureReportingAdminSample\obj\Debug\ManagePermission\bin\nl\AjaxControlToolkit.resources.dll
+D:\Community Contribution\Projects\AzureReportingAdminSample\AzureReportingAdminSample\obj\Debug\ManagePermission\bin\pt\AjaxControlToolkit.resources.dll
+D:\Community Contribution\Projects\AzureReportingAdminSample\AzureReportingAdminSample\obj\Debug\ManagePermission\bin\ru\AjaxControlToolkit.resources.dll
+D:\Community Contribution\Projects\AzureReportingAdminSample\AzureReportingAdminSample\obj\Debug\ManagePermission\bin\tr-TR\AjaxControlToolkit.resources.dll
+D:\Community Contribution\Projects\AzureReportingAdminSample\AzureReportingAdminSample\obj\Debug\ManagePermission\bin\zh-CHS\AjaxControlToolkit.resources.dll
+D:\Community Contribution\Projects\AzureReportingAdminSample\AzureReportingAdminSample\obj\Debug\ManagePermission\bin\zh-CHT\AjaxControlToolkit.resources.dll
+D:\Community Contribution\Projects\Azure Samples\08-02\AzureReportingAdminSample\AzureReportingAdminSample\bin\Debug\ServiceConfiguration.cscfg
+D:\Community Contribution\Projects\Azure Samples\08-02\AzureReportingAdminSample\AzureReportingAdminSample\bin\Debug\AzureReportingAdminSample.csx\roles\ManagePermission\approot\About.aspx
+D:\Community Contribution\Projects\Azure Samples\08-02\AzureReportingAdminSample\AzureReportingAdminSample\bin\Debug\AzureReportingAdminSample.csx\roles\ManagePermission\approot\Default.aspx
+D:\Community Contribution\Projects\Azure Samples\08-02\AzureReportingAdminSample\AzureReportingAdminSample\bin\Debug\AzureReportingAdminSample.csx\roles\ManagePermission\approot\Global.asax
+D:\Community Contribution\Projects\Azure Samples\08-02\AzureReportingAdminSample\AzureReportingAdminSample\bin\Debug\AzureReportingAdminSample.csx\roles\ManagePermission\approot\packages.config
+D:\Community Contribution\Projects\Azure Samples\08-02\AzureReportingAdminSample\AzureReportingAdminSample\bin\Debug\AzureReportingAdminSample.csx\roles\ManagePermission\approot\Site.Master
+D:\Community Contribution\Projects\Azure Samples\08-02\AzureReportingAdminSample\AzureReportingAdminSample\bin\Debug\AzureReportingAdminSample.csx\roles\ManagePermission\approot\Web.config
+D:\Community Contribution\Projects\Azure Samples\08-02\AzureReportingAdminSample\AzureReportingAdminSample\bin\Debug\AzureReportingAdminSample.csx\roles\ManagePermission\approot\Account\ChangePassword.aspx
+D:\Community Contribution\Projects\Azure Samples\08-02\AzureReportingAdminSample\AzureReportingAdminSample\bin\Debug\AzureReportingAdminSample.csx\roles\ManagePermission\approot\Account\ChangePasswordSuccess.aspx
+D:\Community Contribution\Projects\Azure Samples\08-02\AzureReportingAdminSample\AzureReportingAdminSample\bin\Debug\AzureReportingAdminSample.csx\roles\ManagePermission\approot\Account\Login.aspx
+D:\Community Contribution\Projects\Azure Samples\08-02\AzureReportingAdminSample\AzureReportingAdminSample\bin\Debug\AzureReportingAdminSample.csx\roles\ManagePermission\approot\Account\Register.aspx
+D:\Community Contribution\Projects\Azure Samples\08-02\AzureReportingAdminSample\AzureReportingAdminSample\bin\Debug\AzureReportingAdminSample.csx\roles\ManagePermission\approot\Account\Web.config
+D:\Community Contribution\Projects\Azure Samples\08-02\AzureReportingAdminSample\AzureReportingAdminSample\bin\Debug\AzureReportingAdminSample.csx\roles\ManagePermission\approot\bin\AjaxControlToolkit.dll
+D:\Community Contribution\Projects\Azure Samples\08-02\AzureReportingAdminSample\AzureReportingAdminSample\bin\Debug\AzureReportingAdminSample.csx\roles\ManagePermission\approot\bin\AjaxControlToolkit.pdb
+D:\Community Contribution\Projects\Azure Samples\08-02\AzureReportingAdminSample\AzureReportingAdminSample\bin\Debug\AzureReportingAdminSample.csx\roles\ManagePermission\approot\bin\ManagePermission.dll
+D:\Community Contribution\Projects\Azure Samples\08-02\AzureReportingAdminSample\AzureReportingAdminSample\bin\Debug\AzureReportingAdminSample.csx\roles\ManagePermission\approot\bin\ManagePermission.pdb
+D:\Community Contribution\Projects\Azure Samples\08-02\AzureReportingAdminSample\AzureReportingAdminSample\bin\Debug\AzureReportingAdminSample.csx\roles\ManagePermission\approot\bin\Microsoft.WindowsAzure.Diagnostics.dll
+D:\Community Contribution\Projects\Azure Samples\08-02\AzureReportingAdminSample\AzureReportingAdminSample\bin\Debug\AzureReportingAdminSample.csx\roles\ManagePermission\approot\bin\Microsoft.WindowsAzure.Diagnostics.xml
+D:\Community Contribution\Projects\Azure Samples\08-02\AzureReportingAdminSample\AzureReportingAdminSample\bin\Debug\AzureReportingAdminSample.csx\roles\ManagePermission\approot\bin\Microsoft.WindowsAzure.StorageClient.dll
+D:\Community Contribution\Projects\Azure Samples\08-02\AzureReportingAdminSample\AzureReportingAdminSample\bin\Debug\AzureReportingAdminSample.csx\roles\ManagePermission\approot\bin\Microsoft.WindowsAzure.StorageClient.xml
+D:\Community Contribution\Projects\Azure Samples\08-02\AzureReportingAdminSample\AzureReportingAdminSample\bin\Debug\AzureReportingAdminSample.csx\roles\ManagePermission\approot\bin\System.Web.Providers.dll
+D:\Community Contribution\Projects\Azure Samples\08-02\AzureReportingAdminSample\AzureReportingAdminSample\bin\Debug\AzureReportingAdminSample.csx\roles\ManagePermission\approot\Scripts\jquery-1.4.1-vsdoc.js
+D:\Community Contribution\Projects\Azure Samples\08-02\AzureReportingAdminSample\AzureReportingAdminSample\bin\Debug\AzureReportingAdminSample.csx\roles\ManagePermission\approot\Scripts\jquery-1.4.1.js
+D:\Community Contribution\Projects\Azure Samples\08-02\AzureReportingAdminSample\AzureReportingAdminSample\bin\Debug\AzureReportingAdminSample.csx\roles\ManagePermission\approot\Scripts\jquery-1.4.1.min.js
+D:\Community Contribution\Projects\Azure Samples\08-02\AzureReportingAdminSample\AzureReportingAdminSample\bin\Debug\AzureReportingAdminSample.csx\roles\ManagePermission\approot\Styles\Site.css
+D:\Community Contribution\Projects\Azure Samples\08-02\AzureReportingAdminSample\AzureReportingAdminSample\bin\Debug\AzureReportingAdminSample.csx\roles\ManagePermission\approot\bin\ar\AjaxControlToolkit.resources.dll
+D:\Community Contribution\Projects\Azure Samples\08-02\AzureReportingAdminSample\AzureReportingAdminSample\bin\Debug\AzureReportingAdminSample.csx\roles\ManagePermission\approot\bin\cs\AjaxControlToolkit.resources.dll
+D:\Community Contribution\Projects\Azure Samples\08-02\AzureReportingAdminSample\AzureReportingAdminSample\bin\Debug\AzureReportingAdminSample.csx\roles\ManagePermission\approot\bin\de\AjaxControlToolkit.resources.dll
+D:\Community Contribution\Projects\Azure Samples\08-02\AzureReportingAdminSample\AzureReportingAdminSample\bin\Debug\AzureReportingAdminSample.csx\roles\ManagePermission\approot\bin\es\AjaxControlToolkit.resources.dll
+D:\Community Contribution\Projects\Azure Samples\08-02\AzureReportingAdminSample\AzureReportingAdminSample\bin\Debug\AzureReportingAdminSample.csx\roles\ManagePermission\approot\bin\fr\AjaxControlToolkit.resources.dll
+D:\Community Contribution\Projects\Azure Samples\08-02\AzureReportingAdminSample\AzureReportingAdminSample\bin\Debug\AzureReportingAdminSample.csx\roles\ManagePermission\approot\bin\he\AjaxControlToolkit.resources.dll
+D:\Community Contribution\Projects\Azure Samples\08-02\AzureReportingAdminSample\AzureReportingAdminSample\bin\Debug\AzureReportingAdminSample.csx\roles\ManagePermission\approot\bin\hi\AjaxControlToolkit.resources.dll
+D:\Community Contribution\Projects\Azure Samples\08-02\AzureReportingAdminSample\AzureReportingAdminSample\bin\Debug\AzureReportingAdminSample.csx\roles\ManagePermission\approot\bin\it\AjaxControlToolkit.resources.dll
+D:\Community Contribution\Projects\Azure Samples\08-02\AzureReportingAdminSample\AzureReportingAdminSample\bin\Debug\AzureReportingAdminSample.csx\roles\ManagePermission\approot\bin\ja\AjaxControlToolkit.resources.dll
+D:\Community Contribution\Projects\Azure Samples\08-02\AzureReportingAdminSample\AzureReportingAdminSample\bin\Debug\AzureReportingAdminSample.csx\roles\ManagePermission\approot\bin\ko\AjaxControlToolkit.resources.dll
+D:\Community Contribution\Projects\Azure Samples\08-02\AzureReportingAdminSample\AzureReportingAdminSample\bin\Debug\AzureReportingAdminSample.csx\roles\ManagePermission\approot\bin\nl\AjaxControlToolkit.resources.dll
+D:\Community Contribution\Projects\Azure Samples\08-02\AzureReportingAdminSample\AzureReportingAdminSample\bin\Debug\AzureReportingAdminSample.csx\roles\ManagePermission\approot\bin\pt\AjaxControlToolkit.resources.dll
+D:\Community Contribution\Projects\Azure Samples\08-02\AzureReportingAdminSample\AzureReportingAdminSample\bin\Debug\AzureReportingAdminSample.csx\roles\ManagePermission\approot\bin\ru\AjaxControlToolkit.resources.dll
+D:\Community Contribution\Projects\Azure Samples\08-02\AzureReportingAdminSample\AzureReportingAdminSample\bin\Debug\AzureReportingAdminSample.csx\roles\ManagePermission\approot\bin\tr-TR\AjaxControlToolkit.resources.dll
+D:\Community Contribution\Projects\Azure Samples\08-02\AzureReportingAdminSample\AzureReportingAdminSample\bin\Debug\AzureReportingAdminSample.csx\roles\ManagePermission\approot\bin\zh-CHS\AjaxControlToolkit.resources.dll
+D:\Community Contribution\Projects\Azure Samples\08-02\AzureReportingAdminSample\AzureReportingAdminSample\bin\Debug\AzureReportingAdminSample.csx\roles\ManagePermission\approot\bin\zh-CHT\AjaxControlToolkit.resources.dll
+D:\Community Contribution\Projects\Azure Samples\08-02\AzureReportingAdminSample\AzureReportingAdminSample\bin\Debug\AzureReportingAdminSample.csx\roles\ManagePermission\RuntimeSetup.Manifest
+D:\Community Contribution\Projects\Azure Samples\08-02\AzureReportingAdminSample\AzureReportingAdminSample\bin\Debug\AzureReportingAdminSample.csx\roles\ManagePermission\base\x64\Diagnostics.dll
+D:\Community Contribution\Projects\Azure Samples\08-02\AzureReportingAdminSample\AzureReportingAdminSample\bin\Debug\AzureReportingAdminSample.csx\roles\ManagePermission\base\x64\IISConfigurator.exe
+D:\Community Contribution\Projects\Azure Samples\08-02\AzureReportingAdminSample\AzureReportingAdminSample\bin\Debug\AzureReportingAdminSample.csx\roles\ManagePermission\base\x64\msshrtmi.dll
+D:\Community Contribution\Projects\Azure Samples\08-02\AzureReportingAdminSample\AzureReportingAdminSample\bin\Debug\AzureReportingAdminSample.csx\roles\ManagePermission\base\x64\mswasr.dll
+D:\Community Contribution\Projects\Azure Samples\08-02\AzureReportingAdminSample\AzureReportingAdminSample\bin\Debug\AzureReportingAdminSample.csx\roles\ManagePermission\base\x64\mswasri.dll
+D:\Community Contribution\Projects\Azure Samples\08-02\AzureReportingAdminSample\AzureReportingAdminSample\bin\Debug\AzureReportingAdminSample.csx\roles\ManagePermission\base\x64\WaHostBootstrapper.exe
+D:\Community Contribution\Projects\Azure Samples\08-02\AzureReportingAdminSample\AzureReportingAdminSample\bin\Debug\AzureReportingAdminSample.csx\roles\ManagePermission\base\x64\WaIISHost.exe
+D:\Community Contribution\Projects\Azure Samples\08-02\AzureReportingAdminSample\AzureReportingAdminSample\bin\Debug\AzureReportingAdminSample.csx\roles\ManagePermission\base\x64\WaRuntimeProxy.dll
+D:\Community Contribution\Projects\Azure Samples\08-02\AzureReportingAdminSample\AzureReportingAdminSample\bin\Debug\AzureReportingAdminSample.csx\roles\ManagePermission\base\x64\WaWebHost.exe
+D:\Community Contribution\Projects\Azure Samples\08-02\AzureReportingAdminSample\AzureReportingAdminSample\bin\Debug\AzureReportingAdminSample.csx\roles\ManagePermission\base\x64\WaWorkerHost.exe
+D:\Community Contribution\Projects\Azure Samples\08-02\AzureReportingAdminSample\AzureReportingAdminSample\bin\Debug\AzureReportingAdminSample.csx\roles\ManagePermission\base\x86\Diagnostics.dll
+D:\Community Contribution\Projects\Azure Samples\08-02\AzureReportingAdminSample\AzureReportingAdminSample\bin\Debug\AzureReportingAdminSample.csx\roles\ManagePermission\base\x86\IISConfigurator.exe
+D:\Community Contribution\Projects\Azure Samples\08-02\AzureReportingAdminSample\AzureReportingAdminSample\bin\Debug\AzureReportingAdminSample.csx\roles\ManagePermission\base\x86\msshrtmi.dll
+D:\Community Contribution\Projects\Azure Samples\08-02\AzureReportingAdminSample\AzureReportingAdminSample\bin\Debug\AzureReportingAdminSample.csx\roles\ManagePermission\base\x86\mswasr.dll
+D:\Community Contribution\Projects\Azure Samples\08-02\AzureReportingAdminSample\AzureReportingAdminSample\bin\Debug\AzureReportingAdminSample.csx\roles\ManagePermission\base\x86\mswasri.dll
+D:\Community Contribution\Projects\Azure Samples\08-02\AzureReportingAdminSample\AzureReportingAdminSample\bin\Debug\AzureReportingAdminSample.csx\roles\ManagePermission\base\x86\WaHostBootstrapper.exe
+D:\Community Contribution\Projects\Azure Samples\08-02\AzureReportingAdminSample\AzureReportingAdminSample\bin\Debug\AzureReportingAdminSample.csx\roles\ManagePermission\base\x86\WaIISHost.exe
+D:\Community Contribution\Projects\Azure Samples\08-02\AzureReportingAdminSample\AzureReportingAdminSample\bin\Debug\AzureReportingAdminSample.csx\roles\ManagePermission\base\x86\WaRuntimeProxy.dll
+D:\Community Contribution\Projects\Azure Samples\08-02\AzureReportingAdminSample\AzureReportingAdminSample\bin\Debug\AzureReportingAdminSample.csx\roles\ManagePermission\base\x86\WaWebHost.exe
+D:\Community Contribution\Projects\Azure Samples\08-02\AzureReportingAdminSample\AzureReportingAdminSample\bin\Debug\AzureReportingAdminSample.csx\roles\ManagePermission\base\x86\WaWorkerHost.exe
+D:\Community Contribution\Projects\Azure Samples\08-02\AzureReportingAdminSample\AzureReportingAdminSample\bin\Debug\AzureReportingAdminSample.csx\roles\ManagePermission\diagnostics\x64\monitor\EtwListener.dll
+D:\Community Contribution\Projects\Azure Samples\08-02\AzureReportingAdminSample\AzureReportingAdminSample\bin\Debug\AzureReportingAdminSample.csx\roles\ManagePermission\diagnostics\x64\monitor\FileListener.dll
+D:\Community Contribution\Projects\Azure Samples\08-02\AzureReportingAdminSample\AzureReportingAdminSample\bin\Debug\AzureReportingAdminSample.csx\roles\ManagePermission\diagnostics\x64\monitor\MonAgent.dll
+D:\Community Contribution\Projects\Azure Samples\08-02\AzureReportingAdminSample\AzureReportingAdminSample\bin\Debug\AzureReportingAdminSample.csx\roles\ManagePermission\diagnostics\x64\monitor\MonAgentHost.exe
+D:\Community Contribution\Projects\Azure Samples\08-02\AzureReportingAdminSample\AzureReportingAdminSample\bin\Debug\AzureReportingAdminSample.csx\roles\ManagePermission\diagnostics\x64\monitor\MonDiagnostics.dll
+D:\Community Contribution\Projects\Azure Samples\08-02\AzureReportingAdminSample\AzureReportingAdminSample\bin\Debug\AzureReportingAdminSample.csx\roles\ManagePermission\diagnostics\x64\monitor\MonEvents.dll
+D:\Community Contribution\Projects\Azure Samples\08-02\AzureReportingAdminSample\AzureReportingAdminSample\bin\Debug\AzureReportingAdminSample.csx\roles\ManagePermission\diagnostics\x64\monitor\MonNetTransport.dll
+D:\Community Contribution\Projects\Azure Samples\08-02\AzureReportingAdminSample\AzureReportingAdminSample\bin\Debug\AzureReportingAdminSample.csx\roles\ManagePermission\diagnostics\x64\monitor\MonQuery.dll
+D:\Community Contribution\Projects\Azure Samples\08-02\AzureReportingAdminSample\AzureReportingAdminSample\bin\Debug\AzureReportingAdminSample.csx\roles\ManagePermission\diagnostics\x64\monitor\MonTables.dll
+D:\Community Contribution\Projects\Azure Samples\08-02\AzureReportingAdminSample\AzureReportingAdminSample\bin\Debug\AzureReportingAdminSample.csx\roles\ManagePermission\diagnostics\x64\monitor\secutil.dll
+D:\Community Contribution\Projects\Azure Samples\08-02\AzureReportingAdminSample\AzureReportingAdminSample\bin\Debug\AzureReportingAdminSample.csx\roles\ManagePermission\diagnostics\x64\monitor\SysCounterListener.dll
+D:\Community Contribution\Projects\Azure Samples\08-02\AzureReportingAdminSample\AzureReportingAdminSample\bin\Debug\AzureReportingAdminSample.csx\roles\ManagePermission\diagnostics\x64\monitor\SystemEventsListener.dll
+D:\Community Contribution\Projects\Azure Samples\08-02\AzureReportingAdminSample\AzureReportingAdminSample\bin\Debug\AzureReportingAdminSample.csx\roles\ManagePermission\diagnostics\x64\monitor\schema\1.0\ma.xsd
+D:\Community Contribution\Projects\Azure Samples\08-02\AzureReportingAdminSample\AzureReportingAdminSample\bin\Debug\AzureReportingAdminSample.csx\roles\ManagePermission\diagnostics\x64\monitor\schema\1.0\maStatic.xsd
+D:\Community Contribution\Projects\Azure Samples\08-02\AzureReportingAdminSample\AzureReportingAdminSample\bin\Debug\AzureReportingAdminSample.csx\roles\ManagePermission\diagnostics\x64\monitor\schema\1.0\query.xsd
+D:\Community Contribution\Projects\Azure Samples\08-02\AzureReportingAdminSample\AzureReportingAdminSample\bin\Debug\AzureReportingAdminSample.csx\roles\ManagePermission\diagnostics\x64\monitor\schema\1.0\shared.xsd
+D:\Community Contribution\Projects\Azure Samples\08-02\AzureReportingAdminSample\AzureReportingAdminSample\bin\Debug\AzureReportingAdminSample.csx\roles\ManagePermission\__entrypoint.txt
+D:\Community Contribution\Projects\Azure Samples\08-02\AzureReportingAdminSample\AzureReportingAdminSample\bin\Debug\AzureReportingAdminSample.csx\roles\ManagePermission\web.config
+D:\Community Contribution\Projects\Azure Samples\08-02\AzureReportingAdminSample\AzureReportingAdminSample\bin\Debug\AzureReportingAdminSample.csx\roles\ManagePermission\plugins\Diagnostics\Diagnostics.csplugin
+D:\Community Contribution\Projects\Azure Samples\08-02\AzureReportingAdminSample\AzureReportingAdminSample\bin\Debug\AzureReportingAdminSample.csx\roles\ManagePermission\plugins\Diagnostics\DiagnosticsAgent.exe
+D:\Community Contribution\Projects\Azure Samples\08-02\AzureReportingAdminSample\AzureReportingAdminSample\bin\Debug\AzureReportingAdminSample.csx\roles\ManagePermission\plugins\Diagnostics\Microsoft.WindowsAzure.Diagnostics.dll
+D:\Community Contribution\Projects\Azure Samples\08-02\AzureReportingAdminSample\AzureReportingAdminSample\bin\Debug\AzureReportingAdminSample.csx\roles\ManagePermission\plugins\Diagnostics\Microsoft.WindowsAzure.StorageClient.dll
+D:\Community Contribution\Projects\Azure Samples\08-02\AzureReportingAdminSample\AzureReportingAdminSample\bin\Debug\AzureReportingAdminSample.csx\roles\ManagePermission\plugins\Diagnostics\mswapd.dll
+D:\Community Contribution\Projects\Azure Samples\08-02\AzureReportingAdminSample\AzureReportingAdminSample\bin\Debug\AzureReportingAdminSample.csx\roles\ManagePermission\RoleModel.xml
+D:\Community Contribution\Projects\Azure Samples\08-02\AzureReportingAdminSample\AzureReportingAdminSample\bin\Debug\AzureReportingAdminSample.csx\ServiceDefinition.build.rd
+D:\Community Contribution\Projects\Azure Samples\08-02\AzureReportingAdminSample\AzureReportingAdminSample\bin\Debug\AzureReportingAdminSample.csx\ServiceDefinition.build.rdsc
+D:\Community Contribution\Projects\Azure Samples\08-02\AzureReportingAdminSample\AzureReportingAdminSample\bin\Debug\AzureReportingAdminSample.csx\ServiceDefinition.build.csdef
+D:\Community Contribution\Projects\Azure Samples\08-02\AzureReportingAdminSample\AzureReportingAdminSample\obj\Debug\ResolveAssemblyReference.cache
+D:\Community Contribution\Projects\Azure Samples\08-02\AzureReportingAdminSample\AzureReportingAdminSample\obj\Debug\ManagePermission\About.aspx
+D:\Community Contribution\Projects\Azure Samples\08-02\AzureReportingAdminSample\AzureReportingAdminSample\obj\Debug\ManagePermission\Account\ChangePassword.aspx
+D:\Community Contribution\Projects\Azure Samples\08-02\AzureReportingAdminSample\AzureReportingAdminSample\obj\Debug\ManagePermission\Account\ChangePasswordSuccess.aspx
+D:\Community Contribution\Projects\Azure Samples\08-02\AzureReportingAdminSample\AzureReportingAdminSample\obj\Debug\ManagePermission\Account\Login.aspx
+D:\Community Contribution\Projects\Azure Samples\08-02\AzureReportingAdminSample\AzureReportingAdminSample\obj\Debug\ManagePermission\Account\Register.aspx
+D:\Community Contribution\Projects\Azure Samples\08-02\AzureReportingAdminSample\AzureReportingAdminSample\obj\Debug\ManagePermission\Account\Web.config
+D:\Community Contribution\Projects\Azure Samples\08-02\AzureReportingAdminSample\AzureReportingAdminSample\obj\Debug\ManagePermission\bin\AjaxControlToolkit.dll
+D:\Community Contribution\Projects\Azure Samples\08-02\AzureReportingAdminSample\AzureReportingAdminSample\obj\Debug\ManagePermission\bin\AjaxControlToolkit.pdb
+D:\Community Contribution\Projects\Azure Samples\08-02\AzureReportingAdminSample\AzureReportingAdminSample\obj\Debug\ManagePermission\bin\ar\AjaxControlToolkit.resources.dll
+D:\Community Contribution\Projects\Azure Samples\08-02\AzureReportingAdminSample\AzureReportingAdminSample\obj\Debug\ManagePermission\bin\cs\AjaxControlToolkit.resources.dll
+D:\Community Contribution\Projects\Azure Samples\08-02\AzureReportingAdminSample\AzureReportingAdminSample\obj\Debug\ManagePermission\bin\de\AjaxControlToolkit.resources.dll
+D:\Community Contribution\Projects\Azure Samples\08-02\AzureReportingAdminSample\AzureReportingAdminSample\obj\Debug\ManagePermission\bin\es\AjaxControlToolkit.resources.dll
+D:\Community Contribution\Projects\Azure Samples\08-02\AzureReportingAdminSample\AzureReportingAdminSample\obj\Debug\ManagePermission\bin\fr\AjaxControlToolkit.resources.dll
+D:\Community Contribution\Projects\Azure Samples\08-02\AzureReportingAdminSample\AzureReportingAdminSample\obj\Debug\ManagePermission\bin\he\AjaxControlToolkit.resources.dll
+D:\Community Contribution\Projects\Azure Samples\08-02\AzureReportingAdminSample\AzureReportingAdminSample\obj\Debug\ManagePermission\bin\hi\AjaxControlToolkit.resources.dll
+D:\Community Contribution\Projects\Azure Samples\08-02\AzureReportingAdminSample\AzureReportingAdminSample\obj\Debug\ManagePermission\bin\it\AjaxControlToolkit.resources.dll
+D:\Community Contribution\Projects\Azure Samples\08-02\AzureReportingAdminSample\AzureReportingAdminSample\obj\Debug\ManagePermission\bin\ja\AjaxControlToolkit.resources.dll
+D:\Community Contribution\Projects\Azure Samples\08-02\AzureReportingAdminSample\AzureReportingAdminSample\obj\Debug\ManagePermission\bin\ko\AjaxControlToolkit.resources.dll
+D:\Community Contribution\Projects\Azure Samples\08-02\AzureReportingAdminSample\AzureReportingAdminSample\obj\Debug\ManagePermission\bin\ManagePermission.dll
+D:\Community Contribution\Projects\Azure Samples\08-02\AzureReportingAdminSample\AzureReportingAdminSample\obj\Debug\ManagePermission\bin\ManagePermission.pdb
+D:\Community Contribution\Projects\Azure Samples\08-02\AzureReportingAdminSample\AzureReportingAdminSample\obj\Debug\ManagePermission\bin\Microsoft.WindowsAzure.Diagnostics.dll
+D:\Community Contribution\Projects\Azure Samples\08-02\AzureReportingAdminSample\AzureReportingAdminSample\obj\Debug\ManagePermission\bin\Microsoft.WindowsAzure.Diagnostics.xml
+D:\Community Contribution\Projects\Azure Samples\08-02\AzureReportingAdminSample\AzureReportingAdminSample\obj\Debug\ManagePermission\bin\Microsoft.WindowsAzure.StorageClient.dll
+D:\Community Contribution\Projects\Azure Samples\08-02\AzureReportingAdminSample\AzureReportingAdminSample\obj\Debug\ManagePermission\bin\Microsoft.WindowsAzure.StorageClient.xml
+D:\Community Contribution\Projects\Azure Samples\08-02\AzureReportingAdminSample\AzureReportingAdminSample\obj\Debug\ManagePermission\bin\nl\AjaxControlToolkit.resources.dll
+D:\Community Contribution\Projects\Azure Samples\08-02\AzureReportingAdminSample\AzureReportingAdminSample\obj\Debug\ManagePermission\bin\pt\AjaxControlToolkit.resources.dll
+D:\Community Contribution\Projects\Azure Samples\08-02\AzureReportingAdminSample\AzureReportingAdminSample\obj\Debug\ManagePermission\bin\ru\AjaxControlToolkit.resources.dll
+D:\Community Contribution\Projects\Azure Samples\08-02\AzureReportingAdminSample\AzureReportingAdminSample\obj\Debug\ManagePermission\bin\System.Web.Providers.dll
+D:\Community Contribution\Projects\Azure Samples\08-02\AzureReportingAdminSample\AzureReportingAdminSample\obj\Debug\ManagePermission\bin\tr-TR\AjaxControlToolkit.resources.dll
+D:\Community Contribution\Projects\Azure Samples\08-02\AzureReportingAdminSample\AzureReportingAdminSample\obj\Debug\ManagePermission\bin\zh-CHS\AjaxControlToolkit.resources.dll
+D:\Community Contribution\Projects\Azure Samples\08-02\AzureReportingAdminSample\AzureReportingAdminSample\obj\Debug\ManagePermission\bin\zh-CHT\AjaxControlToolkit.resources.dll
+D:\Community Contribution\Projects\Azure Samples\08-02\AzureReportingAdminSample\AzureReportingAdminSample\obj\Debug\ManagePermission\Default.aspx
+D:\Community Contribution\Projects\Azure Samples\08-02\AzureReportingAdminSample\AzureReportingAdminSample\obj\Debug\ManagePermission\Global.asax
+D:\Community Contribution\Projects\Azure Samples\08-02\AzureReportingAdminSample\AzureReportingAdminSample\obj\Debug\ManagePermission\packages.config
+D:\Community Contribution\Projects\Azure Samples\08-02\AzureReportingAdminSample\AzureReportingAdminSample\obj\Debug\ManagePermission\Scripts\jquery-1.4.1-vsdoc.js
+D:\Community Contribution\Projects\Azure Samples\08-02\AzureReportingAdminSample\AzureReportingAdminSample\obj\Debug\ManagePermission\Scripts\jquery-1.4.1.js
+D:\Community Contribution\Projects\Azure Samples\08-02\AzureReportingAdminSample\AzureReportingAdminSample\obj\Debug\ManagePermission\Scripts\jquery-1.4.1.min.js
+D:\Community Contribution\Projects\Azure Samples\08-02\AzureReportingAdminSample\AzureReportingAdminSample\obj\Debug\ManagePermission\Site.Master
+D:\Community Contribution\Projects\Azure Samples\08-02\AzureReportingAdminSample\AzureReportingAdminSample\obj\Debug\ManagePermission\Styles\Site.css
+D:\Community Contribution\Projects\Azure Samples\08-02\AzureReportingAdminSample\AzureReportingAdminSample\obj\Debug\ManagePermission\Web.config
+D:\Community Contribution\Projects\Azure Samples\08-02\AzureReportingAdminSample\AzureReportingAdminSample\bin\Debug\AzureReportingAdminSample.csx\roles\ManagePermission\approot\AzureRSAdminPage.aspx
+D:\Community Contribution\Projects\Azure Samples\08-02\AzureReportingAdminSample\AzureReportingAdminSample\obj\Debug\ManagePermission\AzureRSAdminPage.aspx
+D:\Community Contribution\Projects\Azure Samples\08-02\AzureReportingAdminSample\AzureReportingAdminSample\bin\Debug\AzureReportingAdminSample.csx\roles\ManagePermission\approot\Popup.aspx
+D:\Community Contribution\Projects\Azure Samples\08-02\AzureReportingAdminSample\AzureReportingAdminSample\obj\Debug\ManagePermission\Popup.aspx
+D:\Community Contribution\Projects\Azure Samples\08-02\AzureReportingAdminSample\AzureReportingAdminSample\bin\Debug\AzureReportingAdminSample.csx\roles\ManagePermission\approot\ModalPopup.aspx
+D:\Community Contribution\Projects\Azure Samples\08-02\AzureReportingAdminSample\AzureReportingAdminSample\obj\Debug\ManagePermission\ModalPopup.aspx
+D:\Community Contribution\Projects\Azure Samples\09-02\AzureReportingAdminSample\AzureReportingAdminSample\bin\Debug\ServiceConfiguration.cscfg
+D:\Community Contribution\Projects\Azure Samples\09-02\AzureReportingAdminSample\AzureReportingAdminSample\obj\Debug\ResolveAssemblyReference.cache
+D:\Community Contribution\Projects\Azure Samples\09-02\AzureReportingAdminSample\AzureReportingAdminSample\bin\Debug\AzureReportingAdminSample.csx\roles\ManagePermission\approot\About.aspx
+D:\Community Contribution\Projects\Azure Samples\09-02\AzureReportingAdminSample\AzureReportingAdminSample\bin\Debug\AzureReportingAdminSample.csx\roles\ManagePermission\approot\AzureRSAdminPage.aspx
+D:\Community Contribution\Projects\Azure Samples\09-02\AzureReportingAdminSample\AzureReportingAdminSample\bin\Debug\AzureReportingAdminSample.csx\roles\ManagePermission\approot\Default.aspx
+D:\Community Contribution\Projects\Azure Samples\09-02\AzureReportingAdminSample\AzureReportingAdminSample\bin\Debug\AzureReportingAdminSample.csx\roles\ManagePermission\approot\Global.asax
+D:\Community Contribution\Projects\Azure Samples\09-02\AzureReportingAdminSample\AzureReportingAdminSample\bin\Debug\AzureReportingAdminSample.csx\roles\ManagePermission\approot\ModalPopup.aspx
+D:\Community Contribution\Projects\Azure Samples\09-02\AzureReportingAdminSample\AzureReportingAdminSample\bin\Debug\AzureReportingAdminSample.csx\roles\ManagePermission\approot\packages.config
+D:\Community Contribution\Projects\Azure Samples\09-02\AzureReportingAdminSample\AzureReportingAdminSample\bin\Debug\AzureReportingAdminSample.csx\roles\ManagePermission\approot\Popup.aspx
+D:\Community Contribution\Projects\Azure Samples\09-02\AzureReportingAdminSample\AzureReportingAdminSample\bin\Debug\AzureReportingAdminSample.csx\roles\ManagePermission\approot\Site.Master
+D:\Community Contribution\Projects\Azure Samples\09-02\AzureReportingAdminSample\AzureReportingAdminSample\bin\Debug\AzureReportingAdminSample.csx\roles\ManagePermission\approot\Web.config
+D:\Community Contribution\Projects\Azure Samples\09-02\AzureReportingAdminSample\AzureReportingAdminSample\bin\Debug\AzureReportingAdminSample.csx\roles\ManagePermission\approot\Account\ChangePassword.aspx
+D:\Community Contribution\Projects\Azure Samples\09-02\AzureReportingAdminSample\AzureReportingAdminSample\bin\Debug\AzureReportingAdminSample.csx\roles\ManagePermission\approot\Account\ChangePasswordSuccess.aspx
+D:\Community Contribution\Projects\Azure Samples\09-02\AzureReportingAdminSample\AzureReportingAdminSample\bin\Debug\AzureReportingAdminSample.csx\roles\ManagePermission\approot\Account\Login.aspx
+D:\Community Contribution\Projects\Azure Samples\09-02\AzureReportingAdminSample\AzureReportingAdminSample\bin\Debug\AzureReportingAdminSample.csx\roles\ManagePermission\approot\Account\Register.aspx
+D:\Community Contribution\Projects\Azure Samples\09-02\AzureReportingAdminSample\AzureReportingAdminSample\bin\Debug\AzureReportingAdminSample.csx\roles\ManagePermission\approot\Account\Web.config
+D:\Community Contribution\Projects\Azure Samples\09-02\AzureReportingAdminSample\AzureReportingAdminSample\bin\Debug\AzureReportingAdminSample.csx\roles\ManagePermission\approot\bin\AjaxControlToolkit.dll
+D:\Community Contribution\Projects\Azure Samples\09-02\AzureReportingAdminSample\AzureReportingAdminSample\bin\Debug\AzureReportingAdminSample.csx\roles\ManagePermission\approot\bin\ManagePermission.dll
+D:\Community Contribution\Projects\Azure Samples\09-02\AzureReportingAdminSample\AzureReportingAdminSample\bin\Debug\AzureReportingAdminSample.csx\roles\ManagePermission\approot\bin\ManagePermission.pdb
+D:\Community Contribution\Projects\Azure Samples\09-02\AzureReportingAdminSample\AzureReportingAdminSample\bin\Debug\AzureReportingAdminSample.csx\roles\ManagePermission\approot\bin\Microsoft.WindowsAzure.Diagnostics.dll
+D:\Community Contribution\Projects\Azure Samples\09-02\AzureReportingAdminSample\AzureReportingAdminSample\bin\Debug\AzureReportingAdminSample.csx\roles\ManagePermission\approot\bin\Microsoft.WindowsAzure.Diagnostics.xml
+D:\Community Contribution\Projects\Azure Samples\09-02\AzureReportingAdminSample\AzureReportingAdminSample\bin\Debug\AzureReportingAdminSample.csx\roles\ManagePermission\approot\bin\Microsoft.WindowsAzure.StorageClient.dll
+D:\Community Contribution\Projects\Azure Samples\09-02\AzureReportingAdminSample\AzureReportingAdminSample\bin\Debug\AzureReportingAdminSample.csx\roles\ManagePermission\approot\bin\Microsoft.WindowsAzure.StorageClient.xml
+D:\Community Contribution\Projects\Azure Samples\09-02\AzureReportingAdminSample\AzureReportingAdminSample\bin\Debug\AzureReportingAdminSample.csx\roles\ManagePermission\approot\bin\System.Web.Providers.dll
+D:\Community Contribution\Projects\Azure Samples\09-02\AzureReportingAdminSample\AzureReportingAdminSample\bin\Debug\AzureReportingAdminSample.csx\roles\ManagePermission\approot\Scripts\jquery-1.4.1-vsdoc.js
+D:\Community Contribution\Projects\Azure Samples\09-02\AzureReportingAdminSample\AzureReportingAdminSample\bin\Debug\AzureReportingAdminSample.csx\roles\ManagePermission\approot\Scripts\jquery-1.4.1.js
+D:\Community Contribution\Projects\Azure Samples\09-02\AzureReportingAdminSample\AzureReportingAdminSample\bin\Debug\AzureReportingAdminSample.csx\roles\ManagePermission\approot\Scripts\jquery-1.4.1.min.js
+D:\Community Contribution\Projects\Azure Samples\09-02\AzureReportingAdminSample\AzureReportingAdminSample\bin\Debug\AzureReportingAdminSample.csx\roles\ManagePermission\approot\Styles\Site.css
+D:\Community Contribution\Projects\Azure Samples\09-02\AzureReportingAdminSample\AzureReportingAdminSample\bin\Debug\AzureReportingAdminSample.csx\roles\ManagePermission\RuntimeSetup.Manifest
+D:\Community Contribution\Projects\Azure Samples\09-02\AzureReportingAdminSample\AzureReportingAdminSample\bin\Debug\AzureReportingAdminSample.csx\roles\ManagePermission\base\x64\Diagnostics.dll
+D:\Community Contribution\Projects\Azure Samples\09-02\AzureReportingAdminSample\AzureReportingAdminSample\bin\Debug\AzureReportingAdminSample.csx\roles\ManagePermission\base\x64\IISConfigurator.exe
+D:\Community Contribution\Projects\Azure Samples\09-02\AzureReportingAdminSample\AzureReportingAdminSample\bin\Debug\AzureReportingAdminSample.csx\roles\ManagePermission\base\x64\msshrtmi.dll
+D:\Community Contribution\Projects\Azure Samples\09-02\AzureReportingAdminSample\AzureReportingAdminSample\bin\Debug\AzureReportingAdminSample.csx\roles\ManagePermission\base\x64\mswasr.dll
+D:\Community Contribution\Projects\Azure Samples\09-02\AzureReportingAdminSample\AzureReportingAdminSample\bin\Debug\AzureReportingAdminSample.csx\roles\ManagePermission\base\x64\mswasri.dll
+D:\Community Contribution\Projects\Azure Samples\09-02\AzureReportingAdminSample\AzureReportingAdminSample\bin\Debug\AzureReportingAdminSample.csx\roles\ManagePermission\base\x64\WaHostBootstrapper.exe
+D:\Community Contribution\Projects\Azure Samples\09-02\AzureReportingAdminSample\AzureReportingAdminSample\bin\Debug\AzureReportingAdminSample.csx\roles\ManagePermission\base\x64\WaIISHost.exe
+D:\Community Contribution\Projects\Azure Samples\09-02\AzureReportingAdminSample\AzureReportingAdminSample\bin\Debug\AzureReportingAdminSample.csx\roles\ManagePermission\base\x64\WaRuntimeProxy.dll
+D:\Community Contribution\Projects\Azure Samples\09-02\AzureReportingAdminSample\AzureReportingAdminSample\bin\Debug\AzureReportingAdminSample.csx\roles\ManagePermission\base\x64\WaWebHost.exe
+D:\Community Contribution\Projects\Azure Samples\09-02\AzureReportingAdminSample\AzureReportingAdminSample\bin\Debug\AzureReportingAdminSample.csx\roles\ManagePermission\base\x64\WaWorkerHost.exe
+D:\Community Contribution\Projects\Azure Samples\09-02\AzureReportingAdminSample\AzureReportingAdminSample\bin\Debug\AzureReportingAdminSample.csx\roles\ManagePermission\base\x86\Diagnostics.dll
+D:\Community Contribution\Projects\Azure Samples\09-02\AzureReportingAdminSample\AzureReportingAdminSample\bin\Debug\AzureReportingAdminSample.csx\roles\ManagePermission\base\x86\IISConfigurator.exe
+D:\Community Contribution\Projects\Azure Samples\09-02\AzureReportingAdminSample\AzureReportingAdminSample\bin\Debug\AzureReportingAdminSample.csx\roles\ManagePermission\base\x86\msshrtmi.dll
+D:\Community Contribution\Projects\Azure Samples\09-02\AzureReportingAdminSample\AzureReportingAdminSample\bin\Debug\AzureReportingAdminSample.csx\roles\ManagePermission\base\x86\mswasr.dll
+D:\Community Contribution\Projects\Azure Samples\09-02\AzureReportingAdminSample\AzureReportingAdminSample\bin\Debug\AzureReportingAdminSample.csx\roles\ManagePermission\base\x86\mswasri.dll
+D:\Community Contribution\Projects\Azure Samples\09-02\AzureReportingAdminSample\AzureReportingAdminSample\bin\Debug\AzureReportingAdminSample.csx\roles\ManagePermission\base\x86\WaHostBootstrapper.exe
+D:\Community Contribution\Projects\Azure Samples\09-02\AzureReportingAdminSample\AzureReportingAdminSample\bin\Debug\AzureReportingAdminSample.csx\roles\ManagePermission\base\x86\WaIISHost.exe
+D:\Community Contribution\Projects\Azure Samples\09-02\AzureReportingAdminSample\AzureReportingAdminSample\bin\Debug\AzureReportingAdminSample.csx\roles\ManagePermission\base\x86\WaRuntimeProxy.dll
+D:\Community Contribution\Projects\Azure Samples\09-02\AzureReportingAdminSample\AzureReportingAdminSample\bin\Debug\AzureReportingAdminSample.csx\roles\ManagePermission\base\x86\WaWebHost.exe
+D:\Community Contribution\Projects\Azure Samples\09-02\AzureReportingAdminSample\AzureReportingAdminSample\bin\Debug\AzureReportingAdminSample.csx\roles\ManagePermission\base\x86\WaWorkerHost.exe
+D:\Community Contribution\Projects\Azure Samples\09-02\AzureReportingAdminSample\AzureReportingAdminSample\bin\Debug\AzureReportingAdminSample.csx\roles\ManagePermission\diagnostics\x64\monitor\EtwListener.dll
+D:\Community Contribution\Projects\Azure Samples\09-02\AzureReportingAdminSample\AzureReportingAdminSample\bin\Debug\AzureReportingAdminSample.csx\roles\ManagePermission\diagnostics\x64\monitor\FileListener.dll
+D:\Community Contribution\Projects\Azure Samples\09-02\AzureReportingAdminSample\AzureReportingAdminSample\bin\Debug\AzureReportingAdminSample.csx\roles\ManagePermission\diagnostics\x64\monitor\MonAgent.dll
+D:\Community Contribution\Projects\Azure Samples\09-02\AzureReportingAdminSample\AzureReportingAdminSample\bin\Debug\AzureReportingAdminSample.csx\roles\ManagePermission\diagnostics\x64\monitor\MonAgentHost.exe
+D:\Community Contribution\Projects\Azure Samples\09-02\AzureReportingAdminSample\AzureReportingAdminSample\bin\Debug\AzureReportingAdminSample.csx\roles\ManagePermission\diagnostics\x64\monitor\MonDiagnostics.dll
+D:\Community Contribution\Projects\Azure Samples\09-02\AzureReportingAdminSample\AzureReportingAdminSample\bin\Debug\AzureReportingAdminSample.csx\roles\ManagePermission\diagnostics\x64\monitor\MonEvents.dll
+D:\Community Contribution\Projects\Azure Samples\09-02\AzureReportingAdminSample\AzureReportingAdminSample\bin\Debug\AzureReportingAdminSample.csx\roles\ManagePermission\diagnostics\x64\monitor\MonNetTransport.dll
+D:\Community Contribution\Projects\Azure Samples\09-02\AzureReportingAdminSample\AzureReportingAdminSample\bin\Debug\AzureReportingAdminSample.csx\roles\ManagePermission\diagnostics\x64\monitor\MonQuery.dll
+D:\Community Contribution\Projects\Azure Samples\09-02\AzureReportingAdminSample\AzureReportingAdminSample\bin\Debug\AzureReportingAdminSample.csx\roles\ManagePermission\diagnostics\x64\monitor\MonTables.dll
+D:\Community Contribution\Projects\Azure Samples\09-02\AzureReportingAdminSample\AzureReportingAdminSample\bin\Debug\AzureReportingAdminSample.csx\roles\ManagePermission\diagnostics\x64\monitor\secutil.dll
+D:\Community Contribution\Projects\Azure Samples\09-02\AzureReportingAdminSample\AzureReportingAdminSample\bin\Debug\AzureReportingAdminSample.csx\roles\ManagePermission\diagnostics\x64\monitor\SysCounterListener.dll
+D:\Community Contribution\Projects\Azure Samples\09-02\AzureReportingAdminSample\AzureReportingAdminSample\bin\Debug\AzureReportingAdminSample.csx\roles\ManagePermission\diagnostics\x64\monitor\SystemEventsListener.dll
+D:\Community Contribution\Projects\Azure Samples\09-02\AzureReportingAdminSample\AzureReportingAdminSample\bin\Debug\AzureReportingAdminSample.csx\roles\ManagePermission\diagnostics\x64\monitor\schema\1.0\ma.xsd
+D:\Community Contribution\Projects\Azure Samples\09-02\AzureReportingAdminSample\AzureReportingAdminSample\bin\Debug\AzureReportingAdminSample.csx\roles\ManagePermission\diagnostics\x64\monitor\schema\1.0\maStatic.xsd
+D:\Community Contribution\Projects\Azure Samples\09-02\AzureReportingAdminSample\AzureReportingAdminSample\bin\Debug\AzureReportingAdminSample.csx\roles\ManagePermission\diagnostics\x64\monitor\schema\1.0\query.xsd
+D:\Community Contribution\Projects\Azure Samples\09-02\AzureReportingAdminSample\AzureReportingAdminSample\bin\Debug\AzureReportingAdminSample.csx\roles\ManagePermission\diagnostics\x64\monitor\schema\1.0\shared.xsd
+D:\Community Contribution\Projects\Azure Samples\09-02\AzureReportingAdminSample\AzureReportingAdminSample\bin\Debug\AzureReportingAdminSample.csx\roles\ManagePermission\__entrypoint.txt
+D:\Community Contribution\Projects\Azure Samples\09-02\AzureReportingAdminSample\AzureReportingAdminSample\bin\Debug\AzureReportingAdminSample.csx\roles\ManagePermission\web.config
+D:\Community Contribution\Projects\Azure Samples\09-02\AzureReportingAdminSample\AzureReportingAdminSample\bin\Debug\AzureReportingAdminSample.csx\roles\ManagePermission\plugins\Diagnostics\Diagnostics.csplugin
+D:\Community Contribution\Projects\Azure Samples\09-02\AzureReportingAdminSample\AzureReportingAdminSample\bin\Debug\AzureReportingAdminSample.csx\roles\ManagePermission\plugins\Diagnostics\DiagnosticsAgent.exe
+D:\Community Contribution\Projects\Azure Samples\09-02\AzureReportingAdminSample\AzureReportingAdminSample\bin\Debug\AzureReportingAdminSample.csx\roles\ManagePermission\plugins\Diagnostics\Microsoft.WindowsAzure.Diagnostics.dll
+D:\Community Contribution\Projects\Azure Samples\09-02\AzureReportingAdminSample\AzureReportingAdminSample\bin\Debug\AzureReportingAdminSample.csx\roles\ManagePermission\plugins\Diagnostics\Microsoft.WindowsAzure.StorageClient.dll
+D:\Community Contribution\Projects\Azure Samples\09-02\AzureReportingAdminSample\AzureReportingAdminSample\bin\Debug\AzureReportingAdminSample.csx\roles\ManagePermission\plugins\Diagnostics\mswapd.dll
+D:\Community Contribution\Projects\Azure Samples\09-02\AzureReportingAdminSample\AzureReportingAdminSample\bin\Debug\AzureReportingAdminSample.csx\roles\ManagePermission\RoleModel.xml
+D:\Community Contribution\Projects\Azure Samples\09-02\AzureReportingAdminSample\AzureReportingAdminSample\bin\Debug\AzureReportingAdminSample.csx\ServiceDefinition.build.rd
+D:\Community Contribution\Projects\Azure Samples\09-02\AzureReportingAdminSample\AzureReportingAdminSample\bin\Debug\AzureReportingAdminSample.csx\ServiceDefinition.build.rdsc
+D:\Community Contribution\Projects\Azure Samples\09-02\AzureReportingAdminSample\AzureReportingAdminSample\bin\Debug\AzureReportingAdminSample.csx\ServiceDefinition.build.csdef
+D:\Community Contribution\Projects\Azure Samples\09-02\AzureReportingAdminSample\AzureReportingAdminSample\obj\Debug\ManagePermission\About.aspx
+D:\Community Contribution\Projects\Azure Samples\09-02\AzureReportingAdminSample\AzureReportingAdminSample\obj\Debug\ManagePermission\Account\ChangePassword.aspx
+D:\Community Contribution\Projects\Azure Samples\09-02\AzureReportingAdminSample\AzureReportingAdminSample\obj\Debug\ManagePermission\Account\ChangePasswordSuccess.aspx
+D:\Community Contribution\Projects\Azure Samples\09-02\AzureReportingAdminSample\AzureReportingAdminSample\obj\Debug\ManagePermission\Account\Login.aspx
+D:\Community Contribution\Projects\Azure Samples\09-02\AzureReportingAdminSample\AzureReportingAdminSample\obj\Debug\ManagePermission\Account\Register.aspx
+D:\Community Contribution\Projects\Azure Samples\09-02\AzureReportingAdminSample\AzureReportingAdminSample\obj\Debug\ManagePermission\Account\Web.config
+D:\Community Contribution\Projects\Azure Samples\09-02\AzureReportingAdminSample\AzureReportingAdminSample\obj\Debug\ManagePermission\AzureRSAdminPage.aspx
+D:\Community Contribution\Projects\Azure Samples\09-02\AzureReportingAdminSample\AzureReportingAdminSample\obj\Debug\ManagePermission\bin\AjaxControlToolkit.dll
+D:\Community Contribution\Projects\Azure Samples\09-02\AzureReportingAdminSample\AzureReportingAdminSample\obj\Debug\ManagePermission\bin\ManagePermission.dll
+D:\Community Contribution\Projects\Azure Samples\09-02\AzureReportingAdminSample\AzureReportingAdminSample\obj\Debug\ManagePermission\bin\ManagePermission.pdb
+D:\Community Contribution\Projects\Azure Samples\09-02\AzureReportingAdminSample\AzureReportingAdminSample\obj\Debug\ManagePermission\bin\Microsoft.WindowsAzure.Diagnostics.dll
+D:\Community Contribution\Projects\Azure Samples\09-02\AzureReportingAdminSample\AzureReportingAdminSample\obj\Debug\ManagePermission\bin\Microsoft.WindowsAzure.Diagnostics.xml
+D:\Community Contribution\Projects\Azure Samples\09-02\AzureReportingAdminSample\AzureReportingAdminSample\obj\Debug\ManagePermission\bin\Microsoft.WindowsAzure.StorageClient.dll
+D:\Community Contribution\Projects\Azure Samples\09-02\AzureReportingAdminSample\AzureReportingAdminSample\obj\Debug\ManagePermission\bin\Microsoft.WindowsAzure.StorageClient.xml
+D:\Community Contribution\Projects\Azure Samples\09-02\AzureReportingAdminSample\AzureReportingAdminSample\obj\Debug\ManagePermission\bin\System.Web.Providers.dll
+D:\Community Contribution\Projects\Azure Samples\09-02\AzureReportingAdminSample\AzureReportingAdminSample\obj\Debug\ManagePermission\Default.aspx
+D:\Community Contribution\Projects\Azure Samples\09-02\AzureReportingAdminSample\AzureReportingAdminSample\obj\Debug\ManagePermission\Global.asax
+D:\Community Contribution\Projects\Azure Samples\09-02\AzureReportingAdminSample\AzureReportingAdminSample\obj\Debug\ManagePermission\ModalPopup.aspx
+D:\Community Contribution\Projects\Azure Samples\09-02\AzureReportingAdminSample\AzureReportingAdminSample\obj\Debug\ManagePermission\packages.config
+D:\Community Contribution\Projects\Azure Samples\09-02\AzureReportingAdminSample\AzureReportingAdminSample\obj\Debug\ManagePermission\Popup.aspx
+D:\Community Contribution\Projects\Azure Samples\09-02\AzureReportingAdminSample\AzureReportingAdminSample\obj\Debug\ManagePermission\Scripts\jquery-1.4.1-vsdoc.js
+D:\Community Contribution\Projects\Azure Samples\09-02\AzureReportingAdminSample\AzureReportingAdminSample\obj\Debug\ManagePermission\Scripts\jquery-1.4.1.js
+D:\Community Contribution\Projects\Azure Samples\09-02\AzureReportingAdminSample\AzureReportingAdminSample\obj\Debug\ManagePermission\Scripts\jquery-1.4.1.min.js
+D:\Community Contribution\Projects\Azure Samples\09-02\AzureReportingAdminSample\AzureReportingAdminSample\obj\Debug\ManagePermission\Site.Master
+D:\Community Contribution\Projects\Azure Samples\09-02\AzureReportingAdminSample\AzureReportingAdminSample\obj\Debug\ManagePermission\Styles\Site.css
+D:\Community Contribution\Projects\Azure Samples\09-02\AzureReportingAdminSample\AzureReportingAdminSample\obj\Debug\ManagePermission\Web.config
+D:\Community Contribution\Projects\Azure Samples\10-02\AzureReportingAdminSample\AzureReportingAdminSample\bin\Debug\ServiceConfiguration.cscfg
+D:\Community Contribution\Projects\Azure Samples\10-02\AzureReportingAdminSample\AzureReportingAdminSample\obj\Debug\ResolveAssemblyReference.cache
+D:\Community Contribution\Projects\Azure Samples\10-02\AzureReportingAdminSample\AzureReportingAdminSample\bin\Debug\AzureReportingAdminSample.csx\roles\ManagePermission\approot\About.aspx
+D:\Community Contribution\Projects\Azure Samples\10-02\AzureReportingAdminSample\AzureReportingAdminSample\bin\Debug\AzureReportingAdminSample.csx\roles\ManagePermission\approot\AzureRSAdminPage.aspx
+D:\Community Contribution\Projects\Azure Samples\10-02\AzureReportingAdminSample\AzureReportingAdminSample\bin\Debug\AzureReportingAdminSample.csx\roles\ManagePermission\approot\Default.aspx
+D:\Community Contribution\Projects\Azure Samples\10-02\AzureReportingAdminSample\AzureReportingAdminSample\bin\Debug\AzureReportingAdminSample.csx\roles\ManagePermission\approot\Global.asax
+D:\Community Contribution\Projects\Azure Samples\10-02\AzureReportingAdminSample\AzureReportingAdminSample\bin\Debug\AzureReportingAdminSample.csx\roles\ManagePermission\approot\ModalPopup.aspx
+D:\Community Contribution\Projects\Azure Samples\10-02\AzureReportingAdminSample\AzureReportingAdminSample\bin\Debug\AzureReportingAdminSample.csx\roles\ManagePermission\approot\packages.config
+D:\Community Contribution\Projects\Azure Samples\10-02\AzureReportingAdminSample\AzureReportingAdminSample\bin\Debug\AzureReportingAdminSample.csx\roles\ManagePermission\approot\Popup.aspx
+D:\Community Contribution\Projects\Azure Samples\10-02\AzureReportingAdminSample\AzureReportingAdminSample\bin\Debug\AzureReportingAdminSample.csx\roles\ManagePermission\approot\Site.Master
+D:\Community Contribution\Projects\Azure Samples\10-02\AzureReportingAdminSample\AzureReportingAdminSample\bin\Debug\AzureReportingAdminSample.csx\roles\ManagePermission\approot\Web.config
+D:\Community Contribution\Projects\Azure Samples\10-02\AzureReportingAdminSample\AzureReportingAdminSample\bin\Debug\AzureReportingAdminSample.csx\roles\ManagePermission\approot\Account\ChangePassword.aspx
+D:\Community Contribution\Projects\Azure Samples\10-02\AzureReportingAdminSample\AzureReportingAdminSample\bin\Debug\AzureReportingAdminSample.csx\roles\ManagePermission\approot\Account\ChangePasswordSuccess.aspx
+D:\Community Contribution\Projects\Azure Samples\10-02\AzureReportingAdminSample\AzureReportingAdminSample\bin\Debug\AzureReportingAdminSample.csx\roles\ManagePermission\approot\Account\Login.aspx
+D:\Community Contribution\Projects\Azure Samples\10-02\AzureReportingAdminSample\AzureReportingAdminSample\bin\Debug\AzureReportingAdminSample.csx\roles\ManagePermission\approot\Account\Register.aspx
+D:\Community Contribution\Projects\Azure Samples\10-02\AzureReportingAdminSample\AzureReportingAdminSample\bin\Debug\AzureReportingAdminSample.csx\roles\ManagePermission\approot\Account\Web.config
+D:\Community Contribution\Projects\Azure Samples\10-02\AzureReportingAdminSample\AzureReportingAdminSample\bin\Debug\AzureReportingAdminSample.csx\roles\ManagePermission\approot\bin\AjaxControlToolkit.dll
+D:\Community Contribution\Projects\Azure Samples\10-02\AzureReportingAdminSample\AzureReportingAdminSample\bin\Debug\AzureReportingAdminSample.csx\roles\ManagePermission\approot\bin\ManagePermission.dll
+D:\Community Contribution\Projects\Azure Samples\10-02\AzureReportingAdminSample\AzureReportingAdminSample\bin\Debug\AzureReportingAdminSample.csx\roles\ManagePermission\approot\bin\ManagePermission.pdb
+D:\Community Contribution\Projects\Azure Samples\10-02\AzureReportingAdminSample\AzureReportingAdminSample\bin\Debug\AzureReportingAdminSample.csx\roles\ManagePermission\approot\bin\Microsoft.WindowsAzure.Diagnostics.dll
+D:\Community Contribution\Projects\Azure Samples\10-02\AzureReportingAdminSample\AzureReportingAdminSample\bin\Debug\AzureReportingAdminSample.csx\roles\ManagePermission\approot\bin\Microsoft.WindowsAzure.Diagnostics.xml
+D:\Community Contribution\Projects\Azure Samples\10-02\AzureReportingAdminSample\AzureReportingAdminSample\bin\Debug\AzureReportingAdminSample.csx\roles\ManagePermission\approot\bin\Microsoft.WindowsAzure.StorageClient.dll
+D:\Community Contribution\Projects\Azure Samples\10-02\AzureReportingAdminSample\AzureReportingAdminSample\bin\Debug\AzureReportingAdminSample.csx\roles\ManagePermission\approot\bin\Microsoft.WindowsAzure.StorageClient.xml
+D:\Community Contribution\Projects\Azure Samples\10-02\AzureReportingAdminSample\AzureReportingAdminSample\bin\Debug\AzureReportingAdminSample.csx\roles\ManagePermission\approot\bin\System.Web.Providers.dll
+D:\Community Contribution\Projects\Azure Samples\10-02\AzureReportingAdminSample\AzureReportingAdminSample\bin\Debug\AzureReportingAdminSample.csx\roles\ManagePermission\approot\Scripts\jquery-1.4.1-vsdoc.js
+D:\Community Contribution\Projects\Azure Samples\10-02\AzureReportingAdminSample\AzureReportingAdminSample\bin\Debug\AzureReportingAdminSample.csx\roles\ManagePermission\approot\Scripts\jquery-1.4.1.js
+D:\Community Contribution\Projects\Azure Samples\10-02\AzureReportingAdminSample\AzureReportingAdminSample\bin\Debug\AzureReportingAdminSample.csx\roles\ManagePermission\approot\Scripts\jquery-1.4.1.min.js
+D:\Community Contribution\Projects\Azure Samples\10-02\AzureReportingAdminSample\AzureReportingAdminSample\bin\Debug\AzureReportingAdminSample.csx\roles\ManagePermission\approot\Styles\Site.css
+D:\Community Contribution\Projects\Azure Samples\10-02\AzureReportingAdminSample\AzureReportingAdminSample\bin\Debug\AzureReportingAdminSample.csx\roles\ManagePermission\RuntimeSetup.Manifest
+D:\Community Contribution\Projects\Azure Samples\10-02\AzureReportingAdminSample\AzureReportingAdminSample\bin\Debug\AzureReportingAdminSample.csx\roles\ManagePermission\base\x64\Diagnostics.dll
+D:\Community Contribution\Projects\Azure Samples\10-02\AzureReportingAdminSample\AzureReportingAdminSample\bin\Debug\AzureReportingAdminSample.csx\roles\ManagePermission\base\x64\IISConfigurator.exe
+D:\Community Contribution\Projects\Azure Samples\10-02\AzureReportingAdminSample\AzureReportingAdminSample\bin\Debug\AzureReportingAdminSample.csx\roles\ManagePermission\base\x64\msshrtmi.dll
+D:\Community Contribution\Projects\Azure Samples\10-02\AzureReportingAdminSample\AzureReportingAdminSample\bin\Debug\AzureReportingAdminSample.csx\roles\ManagePermission\base\x64\mswasr.dll
+D:\Community Contribution\Projects\Azure Samples\10-02\AzureReportingAdminSample\AzureReportingAdminSample\bin\Debug\AzureReportingAdminSample.csx\roles\ManagePermission\base\x64\mswasri.dll
+D:\Community Contribution\Projects\Azure Samples\10-02\AzureReportingAdminSample\AzureReportingAdminSample\bin\Debug\AzureReportingAdminSample.csx\roles\ManagePermission\base\x64\WaHostBootstrapper.exe
+D:\Community Contribution\Projects\Azure Samples\10-02\AzureReportingAdminSample\AzureReportingAdminSample\bin\Debug\AzureReportingAdminSample.csx\roles\ManagePermission\base\x64\WaIISHost.exe
+D:\Community Contribution\Projects\Azure Samples\10-02\AzureReportingAdminSample\AzureReportingAdminSample\bin\Debug\AzureReportingAdminSample.csx\roles\ManagePermission\base\x64\WaRuntimeProxy.dll
+D:\Community Contribution\Projects\Azure Samples\10-02\AzureReportingAdminSample\AzureReportingAdminSample\bin\Debug\AzureReportingAdminSample.csx\roles\ManagePermission\base\x64\WaWebHost.exe
+D:\Community Contribution\Projects\Azure Samples\10-02\AzureReportingAdminSample\AzureReportingAdminSample\bin\Debug\AzureReportingAdminSample.csx\roles\ManagePermission\base\x64\WaWorkerHost.exe
+D:\Community Contribution\Projects\Azure Samples\10-02\AzureReportingAdminSample\AzureReportingAdminSample\bin\Debug\AzureReportingAdminSample.csx\roles\ManagePermission\base\x86\Diagnostics.dll
+D:\Community Contribution\Projects\Azure Samples\10-02\AzureReportingAdminSample\AzureReportingAdminSample\bin\Debug\AzureReportingAdminSample.csx\roles\ManagePermission\base\x86\IISConfigurator.exe
+D:\Community Contribution\Projects\Azure Samples\10-02\AzureReportingAdminSample\AzureReportingAdminSample\bin\Debug\AzureReportingAdminSample.csx\roles\ManagePermission\base\x86\msshrtmi.dll
+D:\Community Contribution\Projects\Azure Samples\10-02\AzureReportingAdminSample\AzureReportingAdminSample\bin\Debug\AzureReportingAdminSample.csx\roles\ManagePermission\base\x86\mswasr.dll
+D:\Community Contribution\Projects\Azure Samples\10-02\AzureReportingAdminSample\AzureReportingAdminSample\bin\Debug\AzureReportingAdminSample.csx\roles\ManagePermission\base\x86\mswasri.dll
+D:\Community Contribution\Projects\Azure Samples\10-02\AzureReportingAdminSample\AzureReportingAdminSample\bin\Debug\AzureReportingAdminSample.csx\roles\ManagePermission\base\x86\WaHostBootstrapper.exe
+D:\Community Contribution\Projects\Azure Samples\10-02\AzureReportingAdminSample\AzureReportingAdminSample\bin\Debug\AzureReportingAdminSample.csx\roles\ManagePermission\base\x86\WaIISHost.exe
+D:\Community Contribution\Projects\Azure Samples\10-02\AzureReportingAdminSample\AzureReportingAdminSample\bin\Debug\AzureReportingAdminSample.csx\roles\ManagePermission\base\x86\WaRuntimeProxy.dll
+D:\Community Contribution\Projects\Azure Samples\10-02\AzureReportingAdminSample\AzureReportingAdminSample\bin\Debug\AzureReportingAdminSample.csx\roles\ManagePermission\base\x86\WaWebHost.exe
+D:\Community Contribution\Projects\Azure Samples\10-02\AzureReportingAdminSample\AzureReportingAdminSample\bin\Debug\AzureReportingAdminSample.csx\roles\ManagePermission\base\x86\WaWorkerHost.exe
+D:\Community Contribution\Projects\Azure Samples\10-02\AzureReportingAdminSample\AzureReportingAdminSample\bin\Debug\AzureReportingAdminSample.csx\roles\ManagePermission\diagnostics\x64\monitor\EtwListener.dll
+D:\Community Contribution\Projects\Azure Samples\10-02\AzureReportingAdminSample\AzureReportingAdminSample\bin\Debug\AzureReportingAdminSample.csx\roles\ManagePermission\diagnostics\x64\monitor\FileListener.dll
+D:\Community Contribution\Projects\Azure Samples\10-02\AzureReportingAdminSample\AzureReportingAdminSample\bin\Debug\AzureReportingAdminSample.csx\roles\ManagePermission\diagnostics\x64\monitor\MonAgent.dll
+D:\Community Contribution\Projects\Azure Samples\10-02\AzureReportingAdminSample\AzureReportingAdminSample\bin\Debug\AzureReportingAdminSample.csx\roles\ManagePermission\diagnostics\x64\monitor\MonAgentHost.exe
+D:\Community Contribution\Projects\Azure Samples\10-02\AzureReportingAdminSample\AzureReportingAdminSample\bin\Debug\AzureReportingAdminSample.csx\roles\ManagePermission\diagnostics\x64\monitor\MonDiagnostics.dll
+D:\Community Contribution\Projects\Azure Samples\10-02\AzureReportingAdminSample\AzureReportingAdminSample\bin\Debug\AzureReportingAdminSample.csx\roles\ManagePermission\diagnostics\x64\monitor\MonEvents.dll
+D:\Community Contribution\Projects\Azure Samples\10-02\AzureReportingAdminSample\AzureReportingAdminSample\bin\Debug\AzureReportingAdminSample.csx\roles\ManagePermission\diagnostics\x64\monitor\MonNetTransport.dll
+D:\Community Contribution\Projects\Azure Samples\10-02\AzureReportingAdminSample\AzureReportingAdminSample\bin\Debug\AzureReportingAdminSample.csx\roles\ManagePermission\diagnostics\x64\monitor\MonQuery.dll
+D:\Community Contribution\Projects\Azure Samples\10-02\AzureReportingAdminSample\AzureReportingAdminSample\bin\Debug\AzureReportingAdminSample.csx\roles\ManagePermission\diagnostics\x64\monitor\MonTables.dll
+D:\Community Contribution\Projects\Azure Samples\10-02\AzureReportingAdminSample\AzureReportingAdminSample\bin\Debug\AzureReportingAdminSample.csx\roles\ManagePermission\diagnostics\x64\monitor\secutil.dll
+D:\Community Contribution\Projects\Azure Samples\10-02\AzureReportingAdminSample\AzureReportingAdminSample\bin\Debug\AzureReportingAdminSample.csx\roles\ManagePermission\diagnostics\x64\monitor\SysCounterListener.dll
+D:\Community Contribution\Projects\Azure Samples\10-02\AzureReportingAdminSample\AzureReportingAdminSample\bin\Debug\AzureReportingAdminSample.csx\roles\ManagePermission\diagnostics\x64\monitor\SystemEventsListener.dll
+D:\Community Contribution\Projects\Azure Samples\10-02\AzureReportingAdminSample\AzureReportingAdminSample\bin\Debug\AzureReportingAdminSample.csx\roles\ManagePermission\diagnostics\x64\monitor\schema\1.0\ma.xsd
+D:\Community Contribution\Projects\Azure Samples\10-02\AzureReportingAdminSample\AzureReportingAdminSample\bin\Debug\AzureReportingAdminSample.csx\roles\ManagePermission\diagnostics\x64\monitor\schema\1.0\maStatic.xsd
+D:\Community Contribution\Projects\Azure Samples\10-02\AzureReportingAdminSample\AzureReportingAdminSample\bin\Debug\AzureReportingAdminSample.csx\roles\ManagePermission\diagnostics\x64\monitor\schema\1.0\query.xsd
+D:\Community Contribution\Projects\Azure Samples\10-02\AzureReportingAdminSample\AzureReportingAdminSample\bin\Debug\AzureReportingAdminSample.csx\roles\ManagePermission\diagnostics\x64\monitor\schema\1.0\shared.xsd
+D:\Community Contribution\Projects\Azure Samples\10-02\AzureReportingAdminSample\AzureReportingAdminSample\bin\Debug\AzureReportingAdminSample.csx\roles\ManagePermission\__entrypoint.txt
+D:\Community Contribution\Projects\Azure Samples\10-02\AzureReportingAdminSample\AzureReportingAdminSample\bin\Debug\AzureReportingAdminSample.csx\roles\ManagePermission\web.config
+D:\Community Contribution\Projects\Azure Samples\10-02\AzureReportingAdminSample\AzureReportingAdminSample\bin\Debug\AzureReportingAdminSample.csx\roles\ManagePermission\plugins\Diagnostics\Diagnostics.csplugin
+D:\Community Contribution\Projects\Azure Samples\10-02\AzureReportingAdminSample\AzureReportingAdminSample\bin\Debug\AzureReportingAdminSample.csx\roles\ManagePermission\plugins\Diagnostics\DiagnosticsAgent.exe
+D:\Community Contribution\Projects\Azure Samples\10-02\AzureReportingAdminSample\AzureReportingAdminSample\bin\Debug\AzureReportingAdminSample.csx\roles\ManagePermission\plugins\Diagnostics\Microsoft.WindowsAzure.Diagnostics.dll
+D:\Community Contribution\Projects\Azure Samples\10-02\AzureReportingAdminSample\AzureReportingAdminSample\bin\Debug\AzureReportingAdminSample.csx\roles\ManagePermission\plugins\Diagnostics\Microsoft.WindowsAzure.StorageClient.dll
+D:\Community Contribution\Projects\Azure Samples\10-02\AzureReportingAdminSample\AzureReportingAdminSample\bin\Debug\AzureReportingAdminSample.csx\roles\ManagePermission\plugins\Diagnostics\mswapd.dll
+D:\Community Contribution\Projects\Azure Samples\10-02\AzureReportingAdminSample\AzureReportingAdminSample\bin\Debug\AzureReportingAdminSample.csx\roles\ManagePermission\RoleModel.xml
+D:\Community Contribution\Projects\Azure Samples\10-02\AzureReportingAdminSample\AzureReportingAdminSample\bin\Debug\AzureReportingAdminSample.csx\ServiceDefinition.build.rd
+D:\Community Contribution\Projects\Azure Samples\10-02\AzureReportingAdminSample\AzureReportingAdminSample\bin\Debug\AzureReportingAdminSample.csx\ServiceDefinition.build.rdsc
+D:\Community Contribution\Projects\Azure Samples\10-02\AzureReportingAdminSample\AzureReportingAdminSample\bin\Debug\AzureReportingAdminSample.csx\ServiceDefinition.build.csdef
+D:\Community Contribution\Projects\Azure Samples\10-02\AzureReportingAdminSample\AzureReportingAdminSample\obj\Debug\ManagePermission\About.aspx
+D:\Community Contribution\Projects\Azure Samples\10-02\AzureReportingAdminSample\AzureReportingAdminSample\obj\Debug\ManagePermission\Account\ChangePassword.aspx
+D:\Community Contribution\Projects\Azure Samples\10-02\AzureReportingAdminSample\AzureReportingAdminSample\obj\Debug\ManagePermission\Account\ChangePasswordSuccess.aspx
+D:\Community Contribution\Projects\Azure Samples\10-02\AzureReportingAdminSample\AzureReportingAdminSample\obj\Debug\ManagePermission\Account\Login.aspx
+D:\Community Contribution\Projects\Azure Samples\10-02\AzureReportingAdminSample\AzureReportingAdminSample\obj\Debug\ManagePermission\Account\Register.aspx
+D:\Community Contribution\Projects\Azure Samples\10-02\AzureReportingAdminSample\AzureReportingAdminSample\obj\Debug\ManagePermission\Account\Web.config
+D:\Community Contribution\Projects\Azure Samples\10-02\AzureReportingAdminSample\AzureReportingAdminSample\obj\Debug\ManagePermission\AzureRSAdminPage.aspx
+D:\Community Contribution\Projects\Azure Samples\10-02\AzureReportingAdminSample\AzureReportingAdminSample\obj\Debug\ManagePermission\bin\AjaxControlToolkit.dll
+D:\Community Contribution\Projects\Azure Samples\10-02\AzureReportingAdminSample\AzureReportingAdminSample\obj\Debug\ManagePermission\bin\ManagePermission.dll
+D:\Community Contribution\Projects\Azure Samples\10-02\AzureReportingAdminSample\AzureReportingAdminSample\obj\Debug\ManagePermission\bin\ManagePermission.pdb
+D:\Community Contribution\Projects\Azure Samples\10-02\AzureReportingAdminSample\AzureReportingAdminSample\obj\Debug\ManagePermission\bin\Microsoft.WindowsAzure.Diagnostics.dll
+D:\Community Contribution\Projects\Azure Samples\10-02\AzureReportingAdminSample\AzureReportingAdminSample\obj\Debug\ManagePermission\bin\Microsoft.WindowsAzure.Diagnostics.xml
+D:\Community Contribution\Projects\Azure Samples\10-02\AzureReportingAdminSample\AzureReportingAdminSample\obj\Debug\ManagePermission\bin\Microsoft.WindowsAzure.StorageClient.dll
+D:\Community Contribution\Projects\Azure Samples\10-02\AzureReportingAdminSample\AzureReportingAdminSample\obj\Debug\ManagePermission\bin\Microsoft.WindowsAzure.StorageClient.xml
+D:\Community Contribution\Projects\Azure Samples\10-02\AzureReportingAdminSample\AzureReportingAdminSample\obj\Debug\ManagePermission\bin\System.Web.Providers.dll
+D:\Community Contribution\Projects\Azure Samples\10-02\AzureReportingAdminSample\AzureReportingAdminSample\obj\Debug\ManagePermission\Default.aspx
+D:\Community Contribution\Projects\Azure Samples\10-02\AzureReportingAdminSample\AzureReportingAdminSample\obj\Debug\ManagePermission\Global.asax
+D:\Community Contribution\Projects\Azure Samples\10-02\AzureReportingAdminSample\AzureReportingAdminSample\obj\Debug\ManagePermission\ModalPopup.aspx
+D:\Community Contribution\Projects\Azure Samples\10-02\AzureReportingAdminSample\AzureReportingAdminSample\obj\Debug\ManagePermission\packages.config
+D:\Community Contribution\Projects\Azure Samples\10-02\AzureReportingAdminSample\AzureReportingAdminSample\obj\Debug\ManagePermission\Popup.aspx
+D:\Community Contribution\Projects\Azure Samples\10-02\AzureReportingAdminSample\AzureReportingAdminSample\obj\Debug\ManagePermission\Scripts\jquery-1.4.1-vsdoc.js
+D:\Community Contribution\Projects\Azure Samples\10-02\AzureReportingAdminSample\AzureReportingAdminSample\obj\Debug\ManagePermission\Scripts\jquery-1.4.1.js
+D:\Community Contribution\Projects\Azure Samples\10-02\AzureReportingAdminSample\AzureReportingAdminSample\obj\Debug\ManagePermission\Scripts\jquery-1.4.1.min.js
+D:\Community Contribution\Projects\Azure Samples\10-02\AzureReportingAdminSample\AzureReportingAdminSample\obj\Debug\ManagePermission\Site.Master
+D:\Community Contribution\Projects\Azure Samples\10-02\AzureReportingAdminSample\AzureReportingAdminSample\obj\Debug\ManagePermission\Styles\Site.css
+D:\Community Contribution\Projects\Azure Samples\10-02\AzureReportingAdminSample\AzureReportingAdminSample\obj\Debug\ManagePermission\Web.config
+D:\Community Contribution\Projects\Azure Samples\13-02\AzureReportingAdminSample\AzureReportingAdminSample\bin\Debug\ServiceConfiguration.cscfg
+D:\Community Contribution\Projects\Azure Samples\13-02\AzureReportingAdminSample\AzureReportingAdminSample\bin\Debug\AzureReportingAdminSample.csx\roles\ManagePermission\approot\About.aspx
+D:\Community Contribution\Projects\Azure Samples\13-02\AzureReportingAdminSample\AzureReportingAdminSample\bin\Debug\AzureReportingAdminSample.csx\roles\ManagePermission\approot\AzureRSAdminPage.aspx
+D:\Community Contribution\Projects\Azure Samples\13-02\AzureReportingAdminSample\AzureReportingAdminSample\bin\Debug\AzureReportingAdminSample.csx\roles\ManagePermission\approot\Default.aspx
+D:\Community Contribution\Projects\Azure Samples\13-02\AzureReportingAdminSample\AzureReportingAdminSample\bin\Debug\AzureReportingAdminSample.csx\roles\ManagePermission\approot\Global.asax
+D:\Community Contribution\Projects\Azure Samples\13-02\AzureReportingAdminSample\AzureReportingAdminSample\bin\Debug\AzureReportingAdminSample.csx\roles\ManagePermission\approot\ModalPopup.aspx
+D:\Community Contribution\Projects\Azure Samples\13-02\AzureReportingAdminSample\AzureReportingAdminSample\bin\Debug\AzureReportingAdminSample.csx\roles\ManagePermission\approot\packages.config
+D:\Community Contribution\Projects\Azure Samples\13-02\AzureReportingAdminSample\AzureReportingAdminSample\bin\Debug\AzureReportingAdminSample.csx\roles\ManagePermission\approot\Popup.aspx
+D:\Community Contribution\Projects\Azure Samples\13-02\AzureReportingAdminSample\AzureReportingAdminSample\bin\Debug\AzureReportingAdminSample.csx\roles\ManagePermission\approot\Site.Master
+D:\Community Contribution\Projects\Azure Samples\13-02\AzureReportingAdminSample\AzureReportingAdminSample\bin\Debug\AzureReportingAdminSample.csx\roles\ManagePermission\approot\Web.config
+D:\Community Contribution\Projects\Azure Samples\13-02\AzureReportingAdminSample\AzureReportingAdminSample\bin\Debug\AzureReportingAdminSample.csx\roles\ManagePermission\approot\Account\ChangePassword.aspx
+D:\Community Contribution\Projects\Azure Samples\13-02\AzureReportingAdminSample\AzureReportingAdminSample\bin\Debug\AzureReportingAdminSample.csx\roles\ManagePermission\approot\Account\ChangePasswordSuccess.aspx
+D:\Community Contribution\Projects\Azure Samples\13-02\AzureReportingAdminSample\AzureReportingAdminSample\bin\Debug\AzureReportingAdminSample.csx\roles\ManagePermission\approot\Account\Login.aspx
+D:\Community Contribution\Projects\Azure Samples\13-02\AzureReportingAdminSample\AzureReportingAdminSample\bin\Debug\AzureReportingAdminSample.csx\roles\ManagePermission\approot\Account\Register.aspx
+D:\Community Contribution\Projects\Azure Samples\13-02\AzureReportingAdminSample\AzureReportingAdminSample\bin\Debug\AzureReportingAdminSample.csx\roles\ManagePermission\approot\Account\Web.config
+D:\Community Contribution\Projects\Azure Samples\13-02\AzureReportingAdminSample\AzureReportingAdminSample\bin\Debug\AzureReportingAdminSample.csx\roles\ManagePermission\approot\bin\AjaxControlToolkit.dll
+D:\Community Contribution\Projects\Azure Samples\13-02\AzureReportingAdminSample\AzureReportingAdminSample\bin\Debug\AzureReportingAdminSample.csx\roles\ManagePermission\approot\bin\ManagePermission.dll
+D:\Community Contribution\Projects\Azure Samples\13-02\AzureReportingAdminSample\AzureReportingAdminSample\bin\Debug\AzureReportingAdminSample.csx\roles\ManagePermission\approot\bin\ManagePermission.pdb
+D:\Community Contribution\Projects\Azure Samples\13-02\AzureReportingAdminSample\AzureReportingAdminSample\bin\Debug\AzureReportingAdminSample.csx\roles\ManagePermission\approot\bin\Microsoft.WindowsAzure.Diagnostics.dll
+D:\Community Contribution\Projects\Azure Samples\13-02\AzureReportingAdminSample\AzureReportingAdminSample\bin\Debug\AzureReportingAdminSample.csx\roles\ManagePermission\approot\bin\Microsoft.WindowsAzure.Diagnostics.xml
+D:\Community Contribution\Projects\Azure Samples\13-02\AzureReportingAdminSample\AzureReportingAdminSample\bin\Debug\AzureReportingAdminSample.csx\roles\ManagePermission\approot\bin\Microsoft.WindowsAzure.StorageClient.dll
+D:\Community Contribution\Projects\Azure Samples\13-02\AzureReportingAdminSample\AzureReportingAdminSample\bin\Debug\AzureReportingAdminSample.csx\roles\ManagePermission\approot\bin\Microsoft.WindowsAzure.StorageClient.xml
+D:\Community Contribution\Projects\Azure Samples\13-02\AzureReportingAdminSample\AzureReportingAdminSample\bin\Debug\AzureReportingAdminSample.csx\roles\ManagePermission\approot\bin\System.Web.Providers.dll
+D:\Community Contribution\Projects\Azure Samples\13-02\AzureReportingAdminSample\AzureReportingAdminSample\bin\Debug\AzureReportingAdminSample.csx\roles\ManagePermission\approot\Scripts\jquery-1.4.1-vsdoc.js
+D:\Community Contribution\Projects\Azure Samples\13-02\AzureReportingAdminSample\AzureReportingAdminSample\bin\Debug\AzureReportingAdminSample.csx\roles\ManagePermission\approot\Scripts\jquery-1.4.1.js
+D:\Community Contribution\Projects\Azure Samples\13-02\AzureReportingAdminSample\AzureReportingAdminSample\bin\Debug\AzureReportingAdminSample.csx\roles\ManagePermission\approot\Scripts\jquery-1.4.1.min.js
+D:\Community Contribution\Projects\Azure Samples\13-02\AzureReportingAdminSample\AzureReportingAdminSample\bin\Debug\AzureReportingAdminSample.csx\roles\ManagePermission\approot\Styles\Site.css
+D:\Community Contribution\Projects\Azure Samples\13-02\AzureReportingAdminSample\AzureReportingAdminSample\bin\Debug\AzureReportingAdminSample.csx\roles\ManagePermission\RuntimeSetup.Manifest
+D:\Community Contribution\Projects\Azure Samples\13-02\AzureReportingAdminSample\AzureReportingAdminSample\bin\Debug\AzureReportingAdminSample.csx\roles\ManagePermission\base\x64\Diagnostics.dll
+D:\Community Contribution\Projects\Azure Samples\13-02\AzureReportingAdminSample\AzureReportingAdminSample\bin\Debug\AzureReportingAdminSample.csx\roles\ManagePermission\base\x64\IISConfigurator.exe
+D:\Community Contribution\Projects\Azure Samples\13-02\AzureReportingAdminSample\AzureReportingAdminSample\bin\Debug\AzureReportingAdminSample.csx\roles\ManagePermission\base\x64\msshrtmi.dll
+D:\Community Contribution\Projects\Azure Samples\13-02\AzureReportingAdminSample\AzureReportingAdminSample\bin\Debug\AzureReportingAdminSample.csx\roles\ManagePermission\base\x64\mswasr.dll
+D:\Community Contribution\Projects\Azure Samples\13-02\AzureReportingAdminSample\AzureReportingAdminSample\bin\Debug\AzureReportingAdminSample.csx\roles\ManagePermission\base\x64\mswasri.dll
+D:\Community Contribution\Projects\Azure Samples\13-02\AzureReportingAdminSample\AzureReportingAdminSample\bin\Debug\AzureReportingAdminSample.csx\roles\ManagePermission\base\x64\WaHostBootstrapper.exe
+D:\Community Contribution\Projects\Azure Samples\13-02\AzureReportingAdminSample\AzureReportingAdminSample\bin\Debug\AzureReportingAdminSample.csx\roles\ManagePermission\base\x64\WaIISHost.exe
+D:\Community Contribution\Projects\Azure Samples\13-02\AzureReportingAdminSample\AzureReportingAdminSample\bin\Debug\AzureReportingAdminSample.csx\roles\ManagePermission\base\x64\WaRuntimeProxy.dll
+D:\Community Contribution\Projects\Azure Samples\13-02\AzureReportingAdminSample\AzureReportingAdminSample\bin\Debug\AzureReportingAdminSample.csx\roles\ManagePermission\base\x64\WaWebHost.exe
+D:\Community Contribution\Projects\Azure Samples\13-02\AzureReportingAdminSample\AzureReportingAdminSample\bin\Debug\AzureReportingAdminSample.csx\roles\ManagePermission\base\x64\WaWorkerHost.exe
+D:\Community Contribution\Projects\Azure Samples\13-02\AzureReportingAdminSample\AzureReportingAdminSample\bin\Debug\AzureReportingAdminSample.csx\roles\ManagePermission\base\x86\Diagnostics.dll
+D:\Community Contribution\Projects\Azure Samples\13-02\AzureReportingAdminSample\AzureReportingAdminSample\bin\Debug\AzureReportingAdminSample.csx\roles\ManagePermission\base\x86\IISConfigurator.exe
+D:\Community Contribution\Projects\Azure Samples\13-02\AzureReportingAdminSample\AzureReportingAdminSample\bin\Debug\AzureReportingAdminSample.csx\roles\ManagePermission\base\x86\msshrtmi.dll
+D:\Community Contribution\Projects\Azure Samples\13-02\AzureReportingAdminSample\AzureReportingAdminSample\bin\Debug\AzureReportingAdminSample.csx\roles\ManagePermission\base\x86\mswasr.dll
+D:\Community Contribution\Projects\Azure Samples\13-02\AzureReportingAdminSample\AzureReportingAdminSample\bin\Debug\AzureReportingAdminSample.csx\roles\ManagePermission\base\x86\mswasri.dll
+D:\Community Contribution\Projects\Azure Samples\13-02\AzureReportingAdminSample\AzureReportingAdminSample\bin\Debug\AzureReportingAdminSample.csx\roles\ManagePermission\base\x86\WaHostBootstrapper.exe
+D:\Community Contribution\Projects\Azure Samples\13-02\AzureReportingAdminSample\AzureReportingAdminSample\bin\Debug\AzureReportingAdminSample.csx\roles\ManagePermission\base\x86\WaIISHost.exe
+D:\Community Contribution\Projects\Azure Samples\13-02\AzureReportingAdminSample\AzureReportingAdminSample\bin\Debug\AzureReportingAdminSample.csx\roles\ManagePermission\base\x86\WaRuntimeProxy.dll
+D:\Community Contribution\Projects\Azure Samples\13-02\AzureReportingAdminSample\AzureReportingAdminSample\bin\Debug\AzureReportingAdminSample.csx\roles\ManagePermission\base\x86\WaWebHost.exe
+D:\Community Contribution\Projects\Azure Samples\13-02\AzureReportingAdminSample\AzureReportingAdminSample\bin\Debug\AzureReportingAdminSample.csx\roles\ManagePermission\base\x86\WaWorkerHost.exe
+D:\Community Contribution\Projects\Azure Samples\13-02\AzureReportingAdminSample\AzureReportingAdminSample\bin\Debug\AzureReportingAdminSample.csx\roles\ManagePermission\diagnostics\x64\monitor\EtwListener.dll
+D:\Community Contribution\Projects\Azure Samples\13-02\AzureReportingAdminSample\AzureReportingAdminSample\bin\Debug\AzureReportingAdminSample.csx\roles\ManagePermission\diagnostics\x64\monitor\FileListener.dll
+D:\Community Contribution\Projects\Azure Samples\13-02\AzureReportingAdminSample\AzureReportingAdminSample\bin\Debug\AzureReportingAdminSample.csx\roles\ManagePermission\diagnostics\x64\monitor\MonAgent.dll
+D:\Community Contribution\Projects\Azure Samples\13-02\AzureReportingAdminSample\AzureReportingAdminSample\bin\Debug\AzureReportingAdminSample.csx\roles\ManagePermission\diagnostics\x64\monitor\MonAgentHost.exe
+D:\Community Contribution\Projects\Azure Samples\13-02\AzureReportingAdminSample\AzureReportingAdminSample\bin\Debug\AzureReportingAdminSample.csx\roles\ManagePermission\diagnostics\x64\monitor\MonDiagnostics.dll
+D:\Community Contribution\Projects\Azure Samples\13-02\AzureReportingAdminSample\AzureReportingAdminSample\bin\Debug\AzureReportingAdminSample.csx\roles\ManagePermission\diagnostics\x64\monitor\MonEvents.dll
+D:\Community Contribution\Projects\Azure Samples\13-02\AzureReportingAdminSample\AzureReportingAdminSample\bin\Debug\AzureReportingAdminSample.csx\roles\ManagePermission\diagnostics\x64\monitor\MonNetTransport.dll
+D:\Community Contribution\Projects\Azure Samples\13-02\AzureReportingAdminSample\AzureReportingAdminSample\bin\Debug\AzureReportingAdminSample.csx\roles\ManagePermission\diagnostics\x64\monitor\MonQuery.dll
+D:\Community Contribution\Projects\Azure Samples\13-02\AzureReportingAdminSample\AzureReportingAdminSample\bin\Debug\AzureReportingAdminSample.csx\roles\ManagePermission\diagnostics\x64\monitor\MonTables.dll
+D:\Community Contribution\Projects\Azure Samples\13-02\AzureReportingAdminSample\AzureReportingAdminSample\bin\Debug\AzureReportingAdminSample.csx\roles\ManagePermission\diagnostics\x64\monitor\secutil.dll
+D:\Community Contribution\Projects\Azure Samples\13-02\AzureReportingAdminSample\AzureReportingAdminSample\bin\Debug\AzureReportingAdminSample.csx\roles\ManagePermission\diagnostics\x64\monitor\SysCounterListener.dll
+D:\Community Contribution\Projects\Azure Samples\13-02\AzureReportingAdminSample\AzureReportingAdminSample\bin\Debug\AzureReportingAdminSample.csx\roles\ManagePermission\diagnostics\x64\monitor\SystemEventsListener.dll
+D:\Community Contribution\Projects\Azure Samples\13-02\AzureReportingAdminSample\AzureReportingAdminSample\bin\Debug\AzureReportingAdminSample.csx\roles\ManagePermission\diagnostics\x64\monitor\schema\1.0\ma.xsd
+D:\Community Contribution\Projects\Azure Samples\13-02\AzureReportingAdminSample\AzureReportingAdminSample\bin\Debug\AzureReportingAdminSample.csx\roles\ManagePermission\diagnostics\x64\monitor\schema\1.0\maStatic.xsd
+D:\Community Contribution\Projects\Azure Samples\13-02\AzureReportingAdminSample\AzureReportingAdminSample\bin\Debug\AzureReportingAdminSample.csx\roles\ManagePermission\diagnostics\x64\monitor\schema\1.0\query.xsd
+D:\Community Contribution\Projects\Azure Samples\13-02\AzureReportingAdminSample\AzureReportingAdminSample\bin\Debug\AzureReportingAdminSample.csx\roles\ManagePermission\diagnostics\x64\monitor\schema\1.0\shared.xsd
+D:\Community Contribution\Projects\Azure Samples\13-02\AzureReportingAdminSample\AzureReportingAdminSample\bin\Debug\AzureReportingAdminSample.csx\roles\ManagePermission\__entrypoint.txt
+D:\Community Contribution\Projects\Azure Samples\13-02\AzureReportingAdminSample\AzureReportingAdminSample\bin\Debug\AzureReportingAdminSample.csx\roles\ManagePermission\web.config
+D:\Community Contribution\Projects\Azure Samples\13-02\AzureReportingAdminSample\AzureReportingAdminSample\bin\Debug\AzureReportingAdminSample.csx\roles\ManagePermission\plugins\Diagnostics\Diagnostics.csplugin
+D:\Community Contribution\Projects\Azure Samples\13-02\AzureReportingAdminSample\AzureReportingAdminSample\bin\Debug\AzureReportingAdminSample.csx\roles\ManagePermission\plugins\Diagnostics\DiagnosticsAgent.exe
+D:\Community Contribution\Projects\Azure Samples\13-02\AzureReportingAdminSample\AzureReportingAdminSample\bin\Debug\AzureReportingAdminSample.csx\roles\ManagePermission\plugins\Diagnostics\Microsoft.WindowsAzure.Diagnostics.dll
+D:\Community Contribution\Projects\Azure Samples\13-02\AzureReportingAdminSample\AzureReportingAdminSample\bin\Debug\AzureReportingAdminSample.csx\roles\ManagePermission\plugins\Diagnostics\Microsoft.WindowsAzure.StorageClient.dll
+D:\Community Contribution\Projects\Azure Samples\13-02\AzureReportingAdminSample\AzureReportingAdminSample\bin\Debug\AzureReportingAdminSample.csx\roles\ManagePermission\plugins\Diagnostics\mswapd.dll
+D:\Community Contribution\Projects\Azure Samples\13-02\AzureReportingAdminSample\AzureReportingAdminSample\bin\Debug\AzureReportingAdminSample.csx\roles\ManagePermission\RoleModel.xml
+D:\Community Contribution\Projects\Azure Samples\13-02\AzureReportingAdminSample\AzureReportingAdminSample\bin\Debug\AzureReportingAdminSample.csx\ServiceDefinition.build.rd
+D:\Community Contribution\Projects\Azure Samples\13-02\AzureReportingAdminSample\AzureReportingAdminSample\bin\Debug\AzureReportingAdminSample.csx\ServiceDefinition.build.rdsc
+D:\Community Contribution\Projects\Azure Samples\13-02\AzureReportingAdminSample\AzureReportingAdminSample\bin\Debug\AzureReportingAdminSample.csx\ServiceDefinition.build.csdef
+D:\Community Contribution\Projects\Azure Samples\13-02\AzureReportingAdminSample\AzureReportingAdminSample\obj\Debug\ResolveAssemblyReference.cache
+D:\Community Contribution\Projects\Azure Samples\13-02\AzureReportingAdminSample\AzureReportingAdminSample\obj\Debug\ManagePermission\About.aspx
+D:\Community Contribution\Projects\Azure Samples\13-02\AzureReportingAdminSample\AzureReportingAdminSample\obj\Debug\ManagePermission\Account\ChangePassword.aspx
+D:\Community Contribution\Projects\Azure Samples\13-02\AzureReportingAdminSample\AzureReportingAdminSample\obj\Debug\ManagePermission\Account\ChangePasswordSuccess.aspx
+D:\Community Contribution\Projects\Azure Samples\13-02\AzureReportingAdminSample\AzureReportingAdminSample\obj\Debug\ManagePermission\Account\Login.aspx
+D:\Community Contribution\Projects\Azure Samples\13-02\AzureReportingAdminSample\AzureReportingAdminSample\obj\Debug\ManagePermission\Account\Register.aspx
+D:\Community Contribution\Projects\Azure Samples\13-02\AzureReportingAdminSample\AzureReportingAdminSample\obj\Debug\ManagePermission\Account\Web.config
+D:\Community Contribution\Projects\Azure Samples\13-02\AzureReportingAdminSample\AzureReportingAdminSample\obj\Debug\ManagePermission\AzureRSAdminPage.aspx
+D:\Community Contribution\Projects\Azure Samples\13-02\AzureReportingAdminSample\AzureReportingAdminSample\obj\Debug\ManagePermission\bin\AjaxControlToolkit.dll
+D:\Community Contribution\Projects\Azure Samples\13-02\AzureReportingAdminSample\AzureReportingAdminSample\obj\Debug\ManagePermission\bin\ManagePermission.dll
+D:\Community Contribution\Projects\Azure Samples\13-02\AzureReportingAdminSample\AzureReportingAdminSample\obj\Debug\ManagePermission\bin\ManagePermission.pdb
+D:\Community Contribution\Projects\Azure Samples\13-02\AzureReportingAdminSample\AzureReportingAdminSample\obj\Debug\ManagePermission\bin\Microsoft.WindowsAzure.Diagnostics.dll
+D:\Community Contribution\Projects\Azure Samples\13-02\AzureReportingAdminSample\AzureReportingAdminSample\obj\Debug\ManagePermission\bin\Microsoft.WindowsAzure.Diagnostics.xml
+D:\Community Contribution\Projects\Azure Samples\13-02\AzureReportingAdminSample\AzureReportingAdminSample\obj\Debug\ManagePermission\bin\Microsoft.WindowsAzure.StorageClient.dll
+D:\Community Contribution\Projects\Azure Samples\13-02\AzureReportingAdminSample\AzureReportingAdminSample\obj\Debug\ManagePermission\bin\Microsoft.WindowsAzure.StorageClient.xml
+D:\Community Contribution\Projects\Azure Samples\13-02\AzureReportingAdminSample\AzureReportingAdminSample\obj\Debug\ManagePermission\bin\System.Web.Providers.dll
+D:\Community Contribution\Projects\Azure Samples\13-02\AzureReportingAdminSample\AzureReportingAdminSample\obj\Debug\ManagePermission\Default.aspx
+D:\Community Contribution\Projects\Azure Samples\13-02\AzureReportingAdminSample\AzureReportingAdminSample\obj\Debug\ManagePermission\Global.asax
+D:\Community Contribution\Projects\Azure Samples\13-02\AzureReportingAdminSample\AzureReportingAdminSample\obj\Debug\ManagePermission\ModalPopup.aspx
+D:\Community Contribution\Projects\Azure Samples\13-02\AzureReportingAdminSample\AzureReportingAdminSample\obj\Debug\ManagePermission\packages.config
+D:\Community Contribution\Projects\Azure Samples\13-02\AzureReportingAdminSample\AzureReportingAdminSample\obj\Debug\ManagePermission\Popup.aspx
+D:\Community Contribution\Projects\Azure Samples\13-02\AzureReportingAdminSample\AzureReportingAdminSample\obj\Debug\ManagePermission\Scripts\jquery-1.4.1-vsdoc.js
+D:\Community Contribution\Projects\Azure Samples\13-02\AzureReportingAdminSample\AzureReportingAdminSample\obj\Debug\ManagePermission\Scripts\jquery-1.4.1.js
+D:\Community Contribution\Projects\Azure Samples\13-02\AzureReportingAdminSample\AzureReportingAdminSample\obj\Debug\ManagePermission\Scripts\jquery-1.4.1.min.js
+D:\Community Contribution\Projects\Azure Samples\13-02\AzureReportingAdminSample\AzureReportingAdminSample\obj\Debug\ManagePermission\Site.Master
+D:\Community Contribution\Projects\Azure Samples\13-02\AzureReportingAdminSample\AzureReportingAdminSample\obj\Debug\ManagePermission\Styles\Site.css
+D:\Community Contribution\Projects\Azure Samples\13-02\AzureReportingAdminSample\AzureReportingAdminSample\obj\Debug\ManagePermission\Web.config
+D:\Community Contribution\Projects\Azure Samples\14-02\AzureReportingAdminSample\AzureReportingAdminSample\bin\Debug\ServiceConfiguration.cscfg
+D:\Community Contribution\Projects\Azure Samples\14-02\AzureReportingAdminSample\AzureReportingAdminSample\bin\Debug\AzureReportingAdminSample.csx\roles\ManagePermission\approot\About.aspx
+D:\Community Contribution\Projects\Azure Samples\14-02\AzureReportingAdminSample\AzureReportingAdminSample\bin\Debug\AzureReportingAdminSample.csx\roles\ManagePermission\approot\AzureRSAdminPage.aspx
+D:\Community Contribution\Projects\Azure Samples\14-02\AzureReportingAdminSample\AzureReportingAdminSample\bin\Debug\AzureReportingAdminSample.csx\roles\ManagePermission\approot\Default.aspx
+D:\Community Contribution\Projects\Azure Samples\14-02\AzureReportingAdminSample\AzureReportingAdminSample\bin\Debug\AzureReportingAdminSample.csx\roles\ManagePermission\approot\Global.asax
+D:\Community Contribution\Projects\Azure Samples\14-02\AzureReportingAdminSample\AzureReportingAdminSample\bin\Debug\AzureReportingAdminSample.csx\roles\ManagePermission\approot\ModalPopup.aspx
+D:\Community Contribution\Projects\Azure Samples\14-02\AzureReportingAdminSample\AzureReportingAdminSample\bin\Debug\AzureReportingAdminSample.csx\roles\ManagePermission\approot\packages.config
+D:\Community Contribution\Projects\Azure Samples\14-02\AzureReportingAdminSample\AzureReportingAdminSample\bin\Debug\AzureReportingAdminSample.csx\roles\ManagePermission\approot\Popup.aspx
+D:\Community Contribution\Projects\Azure Samples\14-02\AzureReportingAdminSample\AzureReportingAdminSample\bin\Debug\AzureReportingAdminSample.csx\roles\ManagePermission\approot\Site.Master
+D:\Community Contribution\Projects\Azure Samples\14-02\AzureReportingAdminSample\AzureReportingAdminSample\bin\Debug\AzureReportingAdminSample.csx\roles\ManagePermission\approot\Web.config
+D:\Community Contribution\Projects\Azure Samples\14-02\AzureReportingAdminSample\AzureReportingAdminSample\bin\Debug\AzureReportingAdminSample.csx\roles\ManagePermission\approot\Account\ChangePassword.aspx
+D:\Community Contribution\Projects\Azure Samples\14-02\AzureReportingAdminSample\AzureReportingAdminSample\bin\Debug\AzureReportingAdminSample.csx\roles\ManagePermission\approot\Account\ChangePasswordSuccess.aspx
+D:\Community Contribution\Projects\Azure Samples\14-02\AzureReportingAdminSample\AzureReportingAdminSample\bin\Debug\AzureReportingAdminSample.csx\roles\ManagePermission\approot\Account\Login.aspx
+D:\Community Contribution\Projects\Azure Samples\14-02\AzureReportingAdminSample\AzureReportingAdminSample\bin\Debug\AzureReportingAdminSample.csx\roles\ManagePermission\approot\Account\Register.aspx
+D:\Community Contribution\Projects\Azure Samples\14-02\AzureReportingAdminSample\AzureReportingAdminSample\bin\Debug\AzureReportingAdminSample.csx\roles\ManagePermission\approot\Account\Web.config
+D:\Community Contribution\Projects\Azure Samples\14-02\AzureReportingAdminSample\AzureReportingAdminSample\bin\Debug\AzureReportingAdminSample.csx\roles\ManagePermission\approot\bin\AjaxControlToolkit.dll
+D:\Community Contribution\Projects\Azure Samples\14-02\AzureReportingAdminSample\AzureReportingAdminSample\bin\Debug\AzureReportingAdminSample.csx\roles\ManagePermission\approot\bin\ManagePermission.dll
+D:\Community Contribution\Projects\Azure Samples\14-02\AzureReportingAdminSample\AzureReportingAdminSample\bin\Debug\AzureReportingAdminSample.csx\roles\ManagePermission\approot\bin\ManagePermission.pdb
+D:\Community Contribution\Projects\Azure Samples\14-02\AzureReportingAdminSample\AzureReportingAdminSample\bin\Debug\AzureReportingAdminSample.csx\roles\ManagePermission\approot\bin\Microsoft.WindowsAzure.Diagnostics.dll
+D:\Community Contribution\Projects\Azure Samples\14-02\AzureReportingAdminSample\AzureReportingAdminSample\bin\Debug\AzureReportingAdminSample.csx\roles\ManagePermission\approot\bin\Microsoft.WindowsAzure.Diagnostics.xml
+D:\Community Contribution\Projects\Azure Samples\14-02\AzureReportingAdminSample\AzureReportingAdminSample\bin\Debug\AzureReportingAdminSample.csx\roles\ManagePermission\approot\bin\Microsoft.WindowsAzure.StorageClient.dll
+D:\Community Contribution\Projects\Azure Samples\14-02\AzureReportingAdminSample\AzureReportingAdminSample\bin\Debug\AzureReportingAdminSample.csx\roles\ManagePermission\approot\bin\Microsoft.WindowsAzure.StorageClient.xml
+D:\Community Contribution\Projects\Azure Samples\14-02\AzureReportingAdminSample\AzureReportingAdminSample\bin\Debug\AzureReportingAdminSample.csx\roles\ManagePermission\approot\bin\System.Web.Providers.dll
+D:\Community Contribution\Projects\Azure Samples\14-02\AzureReportingAdminSample\AzureReportingAdminSample\bin\Debug\AzureReportingAdminSample.csx\roles\ManagePermission\approot\Scripts\jquery-1.4.1-vsdoc.js
+D:\Community Contribution\Projects\Azure Samples\14-02\AzureReportingAdminSample\AzureReportingAdminSample\bin\Debug\AzureReportingAdminSample.csx\roles\ManagePermission\approot\Scripts\jquery-1.4.1.js
+D:\Community Contribution\Projects\Azure Samples\14-02\AzureReportingAdminSample\AzureReportingAdminSample\bin\Debug\AzureReportingAdminSample.csx\roles\ManagePermission\approot\Scripts\jquery-1.4.1.min.js
+D:\Community Contribution\Projects\Azure Samples\14-02\AzureReportingAdminSample\AzureReportingAdminSample\bin\Debug\AzureReportingAdminSample.csx\roles\ManagePermission\approot\Styles\Site.css
+D:\Community Contribution\Projects\Azure Samples\14-02\AzureReportingAdminSample\AzureReportingAdminSample\bin\Debug\AzureReportingAdminSample.csx\roles\ManagePermission\RuntimeSetup.Manifest
+D:\Community Contribution\Projects\Azure Samples\14-02\AzureReportingAdminSample\AzureReportingAdminSample\bin\Debug\AzureReportingAdminSample.csx\roles\ManagePermission\base\x64\Diagnostics.dll
+D:\Community Contribution\Projects\Azure Samples\14-02\AzureReportingAdminSample\AzureReportingAdminSample\bin\Debug\AzureReportingAdminSample.csx\roles\ManagePermission\base\x64\IISConfigurator.exe
+D:\Community Contribution\Projects\Azure Samples\14-02\AzureReportingAdminSample\AzureReportingAdminSample\bin\Debug\AzureReportingAdminSample.csx\roles\ManagePermission\base\x64\msshrtmi.dll
+D:\Community Contribution\Projects\Azure Samples\14-02\AzureReportingAdminSample\AzureReportingAdminSample\bin\Debug\AzureReportingAdminSample.csx\roles\ManagePermission\base\x64\mswasr.dll
+D:\Community Contribution\Projects\Azure Samples\14-02\AzureReportingAdminSample\AzureReportingAdminSample\bin\Debug\AzureReportingAdminSample.csx\roles\ManagePermission\base\x64\mswasri.dll
+D:\Community Contribution\Projects\Azure Samples\14-02\AzureReportingAdminSample\AzureReportingAdminSample\bin\Debug\AzureReportingAdminSample.csx\roles\ManagePermission\base\x64\WaHostBootstrapper.exe
+D:\Community Contribution\Projects\Azure Samples\14-02\AzureReportingAdminSample\AzureReportingAdminSample\bin\Debug\AzureReportingAdminSample.csx\roles\ManagePermission\base\x64\WaIISHost.exe
+D:\Community Contribution\Projects\Azure Samples\14-02\AzureReportingAdminSample\AzureReportingAdminSample\bin\Debug\AzureReportingAdminSample.csx\roles\ManagePermission\base\x64\WaRuntimeProxy.dll
+D:\Community Contribution\Projects\Azure Samples\14-02\AzureReportingAdminSample\AzureReportingAdminSample\bin\Debug\AzureReportingAdminSample.csx\roles\ManagePermission\base\x64\WaWebHost.exe
+D:\Community Contribution\Projects\Azure Samples\14-02\AzureReportingAdminSample\AzureReportingAdminSample\bin\Debug\AzureReportingAdminSample.csx\roles\ManagePermission\base\x64\WaWorkerHost.exe
+D:\Community Contribution\Projects\Azure Samples\14-02\AzureReportingAdminSample\AzureReportingAdminSample\bin\Debug\AzureReportingAdminSample.csx\roles\ManagePermission\base\x86\Diagnostics.dll
+D:\Community Contribution\Projects\Azure Samples\14-02\AzureReportingAdminSample\AzureReportingAdminSample\bin\Debug\AzureReportingAdminSample.csx\roles\ManagePermission\base\x86\IISConfigurator.exe
+D:\Community Contribution\Projects\Azure Samples\14-02\AzureReportingAdminSample\AzureReportingAdminSample\bin\Debug\AzureReportingAdminSample.csx\roles\ManagePermission\base\x86\msshrtmi.dll
+D:\Community Contribution\Projects\Azure Samples\14-02\AzureReportingAdminSample\AzureReportingAdminSample\bin\Debug\AzureReportingAdminSample.csx\roles\ManagePermission\base\x86\mswasr.dll
+D:\Community Contribution\Projects\Azure Samples\14-02\AzureReportingAdminSample\AzureReportingAdminSample\bin\Debug\AzureReportingAdminSample.csx\roles\ManagePermission\base\x86\mswasri.dll
+D:\Community Contribution\Projects\Azure Samples\14-02\AzureReportingAdminSample\AzureReportingAdminSample\bin\Debug\AzureReportingAdminSample.csx\roles\ManagePermission\base\x86\WaHostBootstrapper.exe
+D:\Community Contribution\Projects\Azure Samples\14-02\AzureReportingAdminSample\AzureReportingAdminSample\bin\Debug\AzureReportingAdminSample.csx\roles\ManagePermission\base\x86\WaIISHost.exe
+D:\Community Contribution\Projects\Azure Samples\14-02\AzureReportingAdminSample\AzureReportingAdminSample\bin\Debug\AzureReportingAdminSample.csx\roles\ManagePermission\base\x86\WaRuntimeProxy.dll
+D:\Community Contribution\Projects\Azure Samples\14-02\AzureReportingAdminSample\AzureReportingAdminSample\bin\Debug\AzureReportingAdminSample.csx\roles\ManagePermission\base\x86\WaWebHost.exe
+D:\Community Contribution\Projects\Azure Samples\14-02\AzureReportingAdminSample\AzureReportingAdminSample\bin\Debug\AzureReportingAdminSample.csx\roles\ManagePermission\base\x86\WaWorkerHost.exe
+D:\Community Contribution\Projects\Azure Samples\14-02\AzureReportingAdminSample\AzureReportingAdminSample\bin\Debug\AzureReportingAdminSample.csx\roles\ManagePermission\diagnostics\x64\monitor\EtwListener.dll
+D:\Community Contribution\Projects\Azure Samples\14-02\AzureReportingAdminSample\AzureReportingAdminSample\bin\Debug\AzureReportingAdminSample.csx\roles\ManagePermission\diagnostics\x64\monitor\FileListener.dll
+D:\Community Contribution\Projects\Azure Samples\14-02\AzureReportingAdminSample\AzureReportingAdminSample\bin\Debug\AzureReportingAdminSample.csx\roles\ManagePermission\diagnostics\x64\monitor\MonAgent.dll
+D:\Community Contribution\Projects\Azure Samples\14-02\AzureReportingAdminSample\AzureReportingAdminSample\bin\Debug\AzureReportingAdminSample.csx\roles\ManagePermission\diagnostics\x64\monitor\MonAgentHost.exe
+D:\Community Contribution\Projects\Azure Samples\14-02\AzureReportingAdminSample\AzureReportingAdminSample\bin\Debug\AzureReportingAdminSample.csx\roles\ManagePermission\diagnostics\x64\monitor\MonDiagnostics.dll
+D:\Community Contribution\Projects\Azure Samples\14-02\AzureReportingAdminSample\AzureReportingAdminSample\bin\Debug\AzureReportingAdminSample.csx\roles\ManagePermission\diagnostics\x64\monitor\MonEvents.dll
+D:\Community Contribution\Projects\Azure Samples\14-02\AzureReportingAdminSample\AzureReportingAdminSample\bin\Debug\AzureReportingAdminSample.csx\roles\ManagePermission\diagnostics\x64\monitor\MonNetTransport.dll
+D:\Community Contribution\Projects\Azure Samples\14-02\AzureReportingAdminSample\AzureReportingAdminSample\bin\Debug\AzureReportingAdminSample.csx\roles\ManagePermission\diagnostics\x64\monitor\MonQuery.dll
+D:\Community Contribution\Projects\Azure Samples\14-02\AzureReportingAdminSample\AzureReportingAdminSample\bin\Debug\AzureReportingAdminSample.csx\roles\ManagePermission\diagnostics\x64\monitor\MonTables.dll
+D:\Community Contribution\Projects\Azure Samples\14-02\AzureReportingAdminSample\AzureReportingAdminSample\bin\Debug\AzureReportingAdminSample.csx\roles\ManagePermission\diagnostics\x64\monitor\secutil.dll
+D:\Community Contribution\Projects\Azure Samples\14-02\AzureReportingAdminSample\AzureReportingAdminSample\bin\Debug\AzureReportingAdminSample.csx\roles\ManagePermission\diagnostics\x64\monitor\SysCounterListener.dll
+D:\Community Contribution\Projects\Azure Samples\14-02\AzureReportingAdminSample\AzureReportingAdminSample\bin\Debug\AzureReportingAdminSample.csx\roles\ManagePermission\diagnostics\x64\monitor\SystemEventsListener.dll
+D:\Community Contribution\Projects\Azure Samples\14-02\AzureReportingAdminSample\AzureReportingAdminSample\bin\Debug\AzureReportingAdminSample.csx\roles\ManagePermission\diagnostics\x64\monitor\schema\1.0\ma.xsd
+D:\Community Contribution\Projects\Azure Samples\14-02\AzureReportingAdminSample\AzureReportingAdminSample\bin\Debug\AzureReportingAdminSample.csx\roles\ManagePermission\diagnostics\x64\monitor\schema\1.0\maStatic.xsd
+D:\Community Contribution\Projects\Azure Samples\14-02\AzureReportingAdminSample\AzureReportingAdminSample\bin\Debug\AzureReportingAdminSample.csx\roles\ManagePermission\diagnostics\x64\monitor\schema\1.0\query.xsd
+D:\Community Contribution\Projects\Azure Samples\14-02\AzureReportingAdminSample\AzureReportingAdminSample\bin\Debug\AzureReportingAdminSample.csx\roles\ManagePermission\diagnostics\x64\monitor\schema\1.0\shared.xsd
+D:\Community Contribution\Projects\Azure Samples\14-02\AzureReportingAdminSample\AzureReportingAdminSample\bin\Debug\AzureReportingAdminSample.csx\roles\ManagePermission\__entrypoint.txt
+D:\Community Contribution\Projects\Azure Samples\14-02\AzureReportingAdminSample\AzureReportingAdminSample\bin\Debug\AzureReportingAdminSample.csx\roles\ManagePermission\web.config
+D:\Community Contribution\Projects\Azure Samples\14-02\AzureReportingAdminSample\AzureReportingAdminSample\bin\Debug\AzureReportingAdminSample.csx\roles\ManagePermission\plugins\Diagnostics\Diagnostics.csplugin
+D:\Community Contribution\Projects\Azure Samples\14-02\AzureReportingAdminSample\AzureReportingAdminSample\bin\Debug\AzureReportingAdminSample.csx\roles\ManagePermission\plugins\Diagnostics\DiagnosticsAgent.exe
+D:\Community Contribution\Projects\Azure Samples\14-02\AzureReportingAdminSample\AzureReportingAdminSample\bin\Debug\AzureReportingAdminSample.csx\roles\ManagePermission\plugins\Diagnostics\Microsoft.WindowsAzure.Diagnostics.dll
+D:\Community Contribution\Projects\Azure Samples\14-02\AzureReportingAdminSample\AzureReportingAdminSample\bin\Debug\AzureReportingAdminSample.csx\roles\ManagePermission\plugins\Diagnostics\Microsoft.WindowsAzure.StorageClient.dll
+D:\Community Contribution\Projects\Azure Samples\14-02\AzureReportingAdminSample\AzureReportingAdminSample\bin\Debug\AzureReportingAdminSample.csx\roles\ManagePermission\plugins\Diagnostics\mswapd.dll
+D:\Community Contribution\Projects\Azure Samples\14-02\AzureReportingAdminSample\AzureReportingAdminSample\bin\Debug\AzureReportingAdminSample.csx\roles\ManagePermission\RoleModel.xml
+D:\Community Contribution\Projects\Azure Samples\14-02\AzureReportingAdminSample\AzureReportingAdminSample\bin\Debug\AzureReportingAdminSample.csx\ServiceDefinition.build.rd
+D:\Community Contribution\Projects\Azure Samples\14-02\AzureReportingAdminSample\AzureReportingAdminSample\bin\Debug\AzureReportingAdminSample.csx\ServiceDefinition.build.rdsc
+D:\Community Contribution\Projects\Azure Samples\14-02\AzureReportingAdminSample\AzureReportingAdminSample\bin\Debug\AzureReportingAdminSample.csx\ServiceDefinition.build.csdef
+D:\Community Contribution\Projects\Azure Samples\14-02\AzureReportingAdminSample\AzureReportingAdminSample\obj\Debug\ResolveAssemblyReference.cache
+D:\Community Contribution\Projects\Azure Samples\14-02\AzureReportingAdminSample\AzureReportingAdminSample\obj\Debug\ManagePermission\About.aspx
+D:\Community Contribution\Projects\Azure Samples\14-02\AzureReportingAdminSample\AzureReportingAdminSample\obj\Debug\ManagePermission\Account\ChangePassword.aspx
+D:\Community Contribution\Projects\Azure Samples\14-02\AzureReportingAdminSample\AzureReportingAdminSample\obj\Debug\ManagePermission\Account\ChangePasswordSuccess.aspx
+D:\Community Contribution\Projects\Azure Samples\14-02\AzureReportingAdminSample\AzureReportingAdminSample\obj\Debug\ManagePermission\Account\Login.aspx
+D:\Community Contribution\Projects\Azure Samples\14-02\AzureReportingAdminSample\AzureReportingAdminSample\obj\Debug\ManagePermission\Account\Register.aspx
+D:\Community Contribution\Projects\Azure Samples\14-02\AzureReportingAdminSample\AzureReportingAdminSample\obj\Debug\ManagePermission\Account\Web.config
+D:\Community Contribution\Projects\Azure Samples\14-02\AzureReportingAdminSample\AzureReportingAdminSample\obj\Debug\ManagePermission\AzureRSAdminPage.aspx
+D:\Community Contribution\Projects\Azure Samples\14-02\AzureReportingAdminSample\AzureReportingAdminSample\obj\Debug\ManagePermission\bin\AjaxControlToolkit.dll
+D:\Community Contribution\Projects\Azure Samples\14-02\AzureReportingAdminSample\AzureReportingAdminSample\obj\Debug\ManagePermission\bin\ManagePermission.dll
+D:\Community Contribution\Projects\Azure Samples\14-02\AzureReportingAdminSample\AzureReportingAdminSample\obj\Debug\ManagePermission\bin\ManagePermission.pdb
+D:\Community Contribution\Projects\Azure Samples\14-02\AzureReportingAdminSample\AzureReportingAdminSample\obj\Debug\ManagePermission\bin\Microsoft.WindowsAzure.Diagnostics.dll
+D:\Community Contribution\Projects\Azure Samples\14-02\AzureReportingAdminSample\AzureReportingAdminSample\obj\Debug\ManagePermission\bin\Microsoft.WindowsAzure.Diagnostics.xml
+D:\Community Contribution\Projects\Azure Samples\14-02\AzureReportingAdminSample\AzureReportingAdminSample\obj\Debug\ManagePermission\bin\Microsoft.WindowsAzure.StorageClient.dll
+D:\Community Contribution\Projects\Azure Samples\14-02\AzureReportingAdminSample\AzureReportingAdminSample\obj\Debug\ManagePermission\bin\Microsoft.WindowsAzure.StorageClient.xml
+D:\Community Contribution\Projects\Azure Samples\14-02\AzureReportingAdminSample\AzureReportingAdminSample\obj\Debug\ManagePermission\bin\System.Web.Providers.dll
+D:\Community Contribution\Projects\Azure Samples\14-02\AzureReportingAdminSample\AzureReportingAdminSample\obj\Debug\ManagePermission\Default.aspx
+D:\Community Contribution\Projects\Azure Samples\14-02\AzureReportingAdminSample\AzureReportingAdminSample\obj\Debug\ManagePermission\Global.asax
+D:\Community Contribution\Projects\Azure Samples\14-02\AzureReportingAdminSample\AzureReportingAdminSample\obj\Debug\ManagePermission\ModalPopup.aspx
+D:\Community Contribution\Projects\Azure Samples\14-02\AzureReportingAdminSample\AzureReportingAdminSample\obj\Debug\ManagePermission\packages.config
+D:\Community Contribution\Projects\Azure Samples\14-02\AzureReportingAdminSample\AzureReportingAdminSample\obj\Debug\ManagePermission\Popup.aspx
+D:\Community Contribution\Projects\Azure Samples\14-02\AzureReportingAdminSample\AzureReportingAdminSample\obj\Debug\ManagePermission\Scripts\jquery-1.4.1-vsdoc.js
+D:\Community Contribution\Projects\Azure Samples\14-02\AzureReportingAdminSample\AzureReportingAdminSample\obj\Debug\ManagePermission\Scripts\jquery-1.4.1.js
+D:\Community Contribution\Projects\Azure Samples\14-02\AzureReportingAdminSample\AzureReportingAdminSample\obj\Debug\ManagePermission\Scripts\jquery-1.4.1.min.js
+D:\Community Contribution\Projects\Azure Samples\14-02\AzureReportingAdminSample\AzureReportingAdminSample\obj\Debug\ManagePermission\Site.Master
+D:\Community Contribution\Projects\Azure Samples\14-02\AzureReportingAdminSample\AzureReportingAdminSample\obj\Debug\ManagePermission\Styles\Site.css
+D:\Community Contribution\Projects\Azure Samples\14-02\AzureReportingAdminSample\AzureReportingAdminSample\obj\Debug\ManagePermission\Web.config
+D:\Community Contribution\Projects\Azure Samples\02-15\AzureReportingAdminSample\AzureReportingAdminSample\bin\Debug\ServiceConfiguration.cscfg
+D:\Community Contribution\Projects\Azure Samples\02-15\AzureReportingAdminSample\AzureReportingAdminSample\obj\Debug\ResolveAssemblyReference.cache
+D:\Community Contribution\Projects\Azure Samples\02-15\AzureReportingAdminSample\AzureReportingAdminSample\bin\Debug\AzureReportingAdminSample.csx\roles\ManagePermission\approot\AzureRSAdminPage.aspx
+D:\Community Contribution\Projects\Azure Samples\02-15\AzureReportingAdminSample\AzureReportingAdminSample\bin\Debug\AzureReportingAdminSample.csx\roles\ManagePermission\approot\Global.asax
+D:\Community Contribution\Projects\Azure Samples\02-15\AzureReportingAdminSample\AzureReportingAdminSample\bin\Debug\AzureReportingAdminSample.csx\roles\ManagePermission\approot\packages.config
+D:\Community Contribution\Projects\Azure Samples\02-15\AzureReportingAdminSample\AzureReportingAdminSample\bin\Debug\AzureReportingAdminSample.csx\roles\ManagePermission\approot\Web.config
+D:\Community Contribution\Projects\Azure Samples\02-15\AzureReportingAdminSample\AzureReportingAdminSample\bin\Debug\AzureReportingAdminSample.csx\roles\ManagePermission\approot\Account\ChangePassword.aspx
+D:\Community Contribution\Projects\Azure Samples\02-15\AzureReportingAdminSample\AzureReportingAdminSample\bin\Debug\AzureReportingAdminSample.csx\roles\ManagePermission\approot\Account\ChangePasswordSuccess.aspx
+D:\Community Contribution\Projects\Azure Samples\02-15\AzureReportingAdminSample\AzureReportingAdminSample\bin\Debug\AzureReportingAdminSample.csx\roles\ManagePermission\approot\Account\Login.aspx
+D:\Community Contribution\Projects\Azure Samples\02-15\AzureReportingAdminSample\AzureReportingAdminSample\bin\Debug\AzureReportingAdminSample.csx\roles\ManagePermission\approot\Account\Register.aspx
+D:\Community Contribution\Projects\Azure Samples\02-15\AzureReportingAdminSample\AzureReportingAdminSample\bin\Debug\AzureReportingAdminSample.csx\roles\ManagePermission\approot\Account\Web.config
+D:\Community Contribution\Projects\Azure Samples\02-15\AzureReportingAdminSample\AzureReportingAdminSample\bin\Debug\AzureReportingAdminSample.csx\roles\ManagePermission\approot\bin\AjaxControlToolkit.dll
+D:\Community Contribution\Projects\Azure Samples\02-15\AzureReportingAdminSample\AzureReportingAdminSample\bin\Debug\AzureReportingAdminSample.csx\roles\ManagePermission\approot\bin\ManagePermission.dll
+D:\Community Contribution\Projects\Azure Samples\02-15\AzureReportingAdminSample\AzureReportingAdminSample\bin\Debug\AzureReportingAdminSample.csx\roles\ManagePermission\approot\bin\ManagePermission.pdb
+D:\Community Contribution\Projects\Azure Samples\02-15\AzureReportingAdminSample\AzureReportingAdminSample\bin\Debug\AzureReportingAdminSample.csx\roles\ManagePermission\approot\bin\Microsoft.WindowsAzure.Diagnostics.dll
+D:\Community Contribution\Projects\Azure Samples\02-15\AzureReportingAdminSample\AzureReportingAdminSample\bin\Debug\AzureReportingAdminSample.csx\roles\ManagePermission\approot\bin\Microsoft.WindowsAzure.Diagnostics.xml
+D:\Community Contribution\Projects\Azure Samples\02-15\AzureReportingAdminSample\AzureReportingAdminSample\bin\Debug\AzureReportingAdminSample.csx\roles\ManagePermission\approot\bin\Microsoft.WindowsAzure.StorageClient.dll
+D:\Community Contribution\Projects\Azure Samples\02-15\AzureReportingAdminSample\AzureReportingAdminSample\bin\Debug\AzureReportingAdminSample.csx\roles\ManagePermission\approot\bin\Microsoft.WindowsAzure.StorageClient.xml
+D:\Community Contribution\Projects\Azure Samples\02-15\AzureReportingAdminSample\AzureReportingAdminSample\bin\Debug\AzureReportingAdminSample.csx\roles\ManagePermission\approot\bin\System.Web.Providers.dll
+D:\Community Contribution\Projects\Azure Samples\02-15\AzureReportingAdminSample\AzureReportingAdminSample\bin\Debug\AzureReportingAdminSample.csx\roles\ManagePermission\approot\Scripts\jquery-1.4.1-vsdoc.js
+D:\Community Contribution\Projects\Azure Samples\02-15\AzureReportingAdminSample\AzureReportingAdminSample\bin\Debug\AzureReportingAdminSample.csx\roles\ManagePermission\approot\Scripts\jquery-1.4.1.js
+D:\Community Contribution\Projects\Azure Samples\02-15\AzureReportingAdminSample\AzureReportingAdminSample\bin\Debug\AzureReportingAdminSample.csx\roles\ManagePermission\approot\Scripts\jquery-1.4.1.min.js
+D:\Community Contribution\Projects\Azure Samples\02-15\AzureReportingAdminSample\AzureReportingAdminSample\bin\Debug\AzureReportingAdminSample.csx\roles\ManagePermission\approot\Styles\Site.css
+D:\Community Contribution\Projects\Azure Samples\02-15\AzureReportingAdminSample\AzureReportingAdminSample\bin\Debug\AzureReportingAdminSample.csx\roles\ManagePermission\RuntimeSetup.Manifest
+D:\Community Contribution\Projects\Azure Samples\02-15\AzureReportingAdminSample\AzureReportingAdminSample\bin\Debug\AzureReportingAdminSample.csx\roles\ManagePermission\base\x64\Diagnostics.dll
+D:\Community Contribution\Projects\Azure Samples\02-15\AzureReportingAdminSample\AzureReportingAdminSample\bin\Debug\AzureReportingAdminSample.csx\roles\ManagePermission\base\x64\IISConfigurator.exe
+D:\Community Contribution\Projects\Azure Samples\02-15\AzureReportingAdminSample\AzureReportingAdminSample\bin\Debug\AzureReportingAdminSample.csx\roles\ManagePermission\base\x64\msshrtmi.dll
+D:\Community Contribution\Projects\Azure Samples\02-15\AzureReportingAdminSample\AzureReportingAdminSample\bin\Debug\AzureReportingAdminSample.csx\roles\ManagePermission\base\x64\mswasr.dll
+D:\Community Contribution\Projects\Azure Samples\02-15\AzureReportingAdminSample\AzureReportingAdminSample\bin\Debug\AzureReportingAdminSample.csx\roles\ManagePermission\base\x64\mswasri.dll
+D:\Community Contribution\Projects\Azure Samples\02-15\AzureReportingAdminSample\AzureReportingAdminSample\bin\Debug\AzureReportingAdminSample.csx\roles\ManagePermission\base\x64\WaHostBootstrapper.exe
+D:\Community Contribution\Projects\Azure Samples\02-15\AzureReportingAdminSample\AzureReportingAdminSample\bin\Debug\AzureReportingAdminSample.csx\roles\ManagePermission\base\x64\WaIISHost.exe
+D:\Community Contribution\Projects\Azure Samples\02-15\AzureReportingAdminSample\AzureReportingAdminSample\bin\Debug\AzureReportingAdminSample.csx\roles\ManagePermission\base\x64\WaRuntimeProxy.dll
+D:\Community Contribution\Projects\Azure Samples\02-15\AzureReportingAdminSample\AzureReportingAdminSample\bin\Debug\AzureReportingAdminSample.csx\roles\ManagePermission\base\x64\WaWebHost.exe
+D:\Community Contribution\Projects\Azure Samples\02-15\AzureReportingAdminSample\AzureReportingAdminSample\bin\Debug\AzureReportingAdminSample.csx\roles\ManagePermission\base\x64\WaWorkerHost.exe
+D:\Community Contribution\Projects\Azure Samples\02-15\AzureReportingAdminSample\AzureReportingAdminSample\bin\Debug\AzureReportingAdminSample.csx\roles\ManagePermission\base\x86\Diagnostics.dll
+D:\Community Contribution\Projects\Azure Samples\02-15\AzureReportingAdminSample\AzureReportingAdminSample\bin\Debug\AzureReportingAdminSample.csx\roles\ManagePermission\base\x86\IISConfigurator.exe
+D:\Community Contribution\Projects\Azure Samples\02-15\AzureReportingAdminSample\AzureReportingAdminSample\bin\Debug\AzureReportingAdminSample.csx\roles\ManagePermission\base\x86\msshrtmi.dll
+D:\Community Contribution\Projects\Azure Samples\02-15\AzureReportingAdminSample\AzureReportingAdminSample\bin\Debug\AzureReportingAdminSample.csx\roles\ManagePermission\base\x86\mswasr.dll
+D:\Community Contribution\Projects\Azure Samples\02-15\AzureReportingAdminSample\AzureReportingAdminSample\bin\Debug\AzureReportingAdminSample.csx\roles\ManagePermission\base\x86\mswasri.dll
+D:\Community Contribution\Projects\Azure Samples\02-15\AzureReportingAdminSample\AzureReportingAdminSample\bin\Debug\AzureReportingAdminSample.csx\roles\ManagePermission\base\x86\WaHostBootstrapper.exe
+D:\Community Contribution\Projects\Azure Samples\02-15\AzureReportingAdminSample\AzureReportingAdminSample\bin\Debug\AzureReportingAdminSample.csx\roles\ManagePermission\base\x86\WaIISHost.exe
+D:\Community Contribution\Projects\Azure Samples\02-15\AzureReportingAdminSample\AzureReportingAdminSample\bin\Debug\AzureReportingAdminSample.csx\roles\ManagePermission\base\x86\WaRuntimeProxy.dll
+D:\Community Contribution\Projects\Azure Samples\02-15\AzureReportingAdminSample\AzureReportingAdminSample\bin\Debug\AzureReportingAdminSample.csx\roles\ManagePermission\base\x86\WaWebHost.exe
+D:\Community Contribution\Projects\Azure Samples\02-15\AzureReportingAdminSample\AzureReportingAdminSample\bin\Debug\AzureReportingAdminSample.csx\roles\ManagePermission\base\x86\WaWorkerHost.exe
+D:\Community Contribution\Projects\Azure Samples\02-15\AzureReportingAdminSample\AzureReportingAdminSample\bin\Debug\AzureReportingAdminSample.csx\roles\ManagePermission\diagnostics\x64\monitor\EtwListener.dll
+D:\Community Contribution\Projects\Azure Samples\02-15\AzureReportingAdminSample\AzureReportingAdminSample\bin\Debug\AzureReportingAdminSample.csx\roles\ManagePermission\diagnostics\x64\monitor\FileListener.dll
+D:\Community Contribution\Projects\Azure Samples\02-15\AzureReportingAdminSample\AzureReportingAdminSample\bin\Debug\AzureReportingAdminSample.csx\roles\ManagePermission\diagnostics\x64\monitor\MonAgent.dll
+D:\Community Contribution\Projects\Azure Samples\02-15\AzureReportingAdminSample\AzureReportingAdminSample\bin\Debug\AzureReportingAdminSample.csx\roles\ManagePermission\diagnostics\x64\monitor\MonAgentHost.exe
+D:\Community Contribution\Projects\Azure Samples\02-15\AzureReportingAdminSample\AzureReportingAdminSample\bin\Debug\AzureReportingAdminSample.csx\roles\ManagePermission\diagnostics\x64\monitor\MonDiagnostics.dll
+D:\Community Contribution\Projects\Azure Samples\02-15\AzureReportingAdminSample\AzureReportingAdminSample\bin\Debug\AzureReportingAdminSample.csx\roles\ManagePermission\diagnostics\x64\monitor\MonEvents.dll
+D:\Community Contribution\Projects\Azure Samples\02-15\AzureReportingAdminSample\AzureReportingAdminSample\bin\Debug\AzureReportingAdminSample.csx\roles\ManagePermission\diagnostics\x64\monitor\MonNetTransport.dll
+D:\Community Contribution\Projects\Azure Samples\02-15\AzureReportingAdminSample\AzureReportingAdminSample\bin\Debug\AzureReportingAdminSample.csx\roles\ManagePermission\diagnostics\x64\monitor\MonQuery.dll
+D:\Community Contribution\Projects\Azure Samples\02-15\AzureReportingAdminSample\AzureReportingAdminSample\bin\Debug\AzureReportingAdminSample.csx\roles\ManagePermission\diagnostics\x64\monitor\MonTables.dll
+D:\Community Contribution\Projects\Azure Samples\02-15\AzureReportingAdminSample\AzureReportingAdminSample\bin\Debug\AzureReportingAdminSample.csx\roles\ManagePermission\diagnostics\x64\monitor\secutil.dll
+D:\Community Contribution\Projects\Azure Samples\02-15\AzureReportingAdminSample\AzureReportingAdminSample\bin\Debug\AzureReportingAdminSample.csx\roles\ManagePermission\diagnostics\x64\monitor\SysCounterListener.dll
+D:\Community Contribution\Projects\Azure Samples\02-15\AzureReportingAdminSample\AzureReportingAdminSample\bin\Debug\AzureReportingAdminSample.csx\roles\ManagePermission\diagnostics\x64\monitor\SystemEventsListener.dll
+D:\Community Contribution\Projects\Azure Samples\02-15\AzureReportingAdminSample\AzureReportingAdminSample\bin\Debug\AzureReportingAdminSample.csx\roles\ManagePermission\diagnostics\x64\monitor\schema\1.0\ma.xsd
+D:\Community Contribution\Projects\Azure Samples\02-15\AzureReportingAdminSample\AzureReportingAdminSample\bin\Debug\AzureReportingAdminSample.csx\roles\ManagePermission\diagnostics\x64\monitor\schema\1.0\maStatic.xsd
+D:\Community Contribution\Projects\Azure Samples\02-15\AzureReportingAdminSample\AzureReportingAdminSample\bin\Debug\AzureReportingAdminSample.csx\roles\ManagePermission\diagnostics\x64\monitor\schema\1.0\query.xsd
+D:\Community Contribution\Projects\Azure Samples\02-15\AzureReportingAdminSample\AzureReportingAdminSample\bin\Debug\AzureReportingAdminSample.csx\roles\ManagePermission\diagnostics\x64\monitor\schema\1.0\shared.xsd
+D:\Community Contribution\Projects\Azure Samples\02-15\AzureReportingAdminSample\AzureReportingAdminSample\bin\Debug\AzureReportingAdminSample.csx\roles\ManagePermission\__entrypoint.txt
+D:\Community Contribution\Projects\Azure Samples\02-15\AzureReportingAdminSample\AzureReportingAdminSample\bin\Debug\AzureReportingAdminSample.csx\roles\ManagePermission\web.config
+D:\Community Contribution\Projects\Azure Samples\02-15\AzureReportingAdminSample\AzureReportingAdminSample\bin\Debug\AzureReportingAdminSample.csx\roles\ManagePermission\plugins\Diagnostics\Diagnostics.csplugin
+D:\Community Contribution\Projects\Azure Samples\02-15\AzureReportingAdminSample\AzureReportingAdminSample\bin\Debug\AzureReportingAdminSample.csx\roles\ManagePermission\plugins\Diagnostics\DiagnosticsAgent.exe
+D:\Community Contribution\Projects\Azure Samples\02-15\AzureReportingAdminSample\AzureReportingAdminSample\bin\Debug\AzureReportingAdminSample.csx\roles\ManagePermission\plugins\Diagnostics\Microsoft.WindowsAzure.Diagnostics.dll
+D:\Community Contribution\Projects\Azure Samples\02-15\AzureReportingAdminSample\AzureReportingAdminSample\bin\Debug\AzureReportingAdminSample.csx\roles\ManagePermission\plugins\Diagnostics\Microsoft.WindowsAzure.StorageClient.dll
+D:\Community Contribution\Projects\Azure Samples\02-15\AzureReportingAdminSample\AzureReportingAdminSample\bin\Debug\AzureReportingAdminSample.csx\roles\ManagePermission\plugins\Diagnostics\mswapd.dll
+D:\Community Contribution\Projects\Azure Samples\02-15\AzureReportingAdminSample\AzureReportingAdminSample\bin\Debug\AzureReportingAdminSample.csx\roles\ManagePermission\RoleModel.xml
+D:\Community Contribution\Projects\Azure Samples\02-15\AzureReportingAdminSample\AzureReportingAdminSample\bin\Debug\AzureReportingAdminSample.csx\ServiceDefinition.build.rd
+D:\Community Contribution\Projects\Azure Samples\02-15\AzureReportingAdminSample\AzureReportingAdminSample\bin\Debug\AzureReportingAdminSample.csx\ServiceDefinition.build.rdsc
+D:\Community Contribution\Projects\Azure Samples\02-15\AzureReportingAdminSample\AzureReportingAdminSample\bin\Debug\AzureReportingAdminSample.csx\ServiceDefinition.build.csdef
+D:\Community Contribution\Projects\Azure Samples\02-15\AzureReportingAdminSample\AzureReportingAdminSample\obj\Debug\ManagePermission\Account\ChangePassword.aspx
+D:\Community Contribution\Projects\Azure Samples\02-15\AzureReportingAdminSample\AzureReportingAdminSample\obj\Debug\ManagePermission\Account\ChangePasswordSuccess.aspx
+D:\Community Contribution\Projects\Azure Samples\02-15\AzureReportingAdminSample\AzureReportingAdminSample\obj\Debug\ManagePermission\Account\Login.aspx
+D:\Community Contribution\Projects\Azure Samples\02-15\AzureReportingAdminSample\AzureReportingAdminSample\obj\Debug\ManagePermission\Account\Register.aspx
+D:\Community Contribution\Projects\Azure Samples\02-15\AzureReportingAdminSample\AzureReportingAdminSample\obj\Debug\ManagePermission\Account\Web.config
+D:\Community Contribution\Projects\Azure Samples\02-15\AzureReportingAdminSample\AzureReportingAdminSample\obj\Debug\ManagePermission\AzureRSAdminPage.aspx
+D:\Community Contribution\Projects\Azure Samples\02-15\AzureReportingAdminSample\AzureReportingAdminSample\obj\Debug\ManagePermission\bin\AjaxControlToolkit.dll
+D:\Community Contribution\Projects\Azure Samples\02-15\AzureReportingAdminSample\AzureReportingAdminSample\obj\Debug\ManagePermission\bin\ManagePermission.dll
+D:\Community Contribution\Projects\Azure Samples\02-15\AzureReportingAdminSample\AzureReportingAdminSample\obj\Debug\ManagePermission\bin\ManagePermission.pdb
+D:\Community Contribution\Projects\Azure Samples\02-15\AzureReportingAdminSample\AzureReportingAdminSample\obj\Debug\ManagePermission\bin\Microsoft.WindowsAzure.Diagnostics.dll
+D:\Community Contribution\Projects\Azure Samples\02-15\AzureReportingAdminSample\AzureReportingAdminSample\obj\Debug\ManagePermission\bin\Microsoft.WindowsAzure.Diagnostics.xml
+D:\Community Contribution\Projects\Azure Samples\02-15\AzureReportingAdminSample\AzureReportingAdminSample\obj\Debug\ManagePermission\bin\Microsoft.WindowsAzure.StorageClient.dll
+D:\Community Contribution\Projects\Azure Samples\02-15\AzureReportingAdminSample\AzureReportingAdminSample\obj\Debug\ManagePermission\bin\Microsoft.WindowsAzure.StorageClient.xml
+D:\Community Contribution\Projects\Azure Samples\02-15\AzureReportingAdminSample\AzureReportingAdminSample\obj\Debug\ManagePermission\bin\System.Web.Providers.dll
+D:\Community Contribution\Projects\Azure Samples\02-15\AzureReportingAdminSample\AzureReportingAdminSample\obj\Debug\ManagePermission\Global.asax
+D:\Community Contribution\Projects\Azure Samples\02-15\AzureReportingAdminSample\AzureReportingAdminSample\obj\Debug\ManagePermission\packages.config
+D:\Community Contribution\Projects\Azure Samples\02-15\AzureReportingAdminSample\AzureReportingAdminSample\obj\Debug\ManagePermission\Scripts\jquery-1.4.1-vsdoc.js
+D:\Community Contribution\Projects\Azure Samples\02-15\AzureReportingAdminSample\AzureReportingAdminSample\obj\Debug\ManagePermission\Scripts\jquery-1.4.1.js
+D:\Community Contribution\Projects\Azure Samples\02-15\AzureReportingAdminSample\AzureReportingAdminSample\obj\Debug\ManagePermission\Scripts\jquery-1.4.1.min.js
+D:\Community Contribution\Projects\Azure Samples\02-15\AzureReportingAdminSample\AzureReportingAdminSample\obj\Debug\ManagePermission\Styles\Site.css
+D:\Community Contribution\Projects\Azure Samples\02-15\AzureReportingAdminSample\AzureReportingAdminSample\obj\Debug\ManagePermission\Web.config
+D:\Community Contribution\Projects\Azure Samples\02-16\AzureReportingAdminSample\AzureReportingAdminSample\bin\Debug\ServiceConfiguration.cscfg
+D:\Community Contribution\Projects\Azure Samples\02-16\AzureReportingAdminSample\AzureReportingAdminSample\bin\Debug\AzureReportingAdminSample.csx\roles\ManagePermission\approot\AzureRSAdminPage.aspx
+D:\Community Contribution\Projects\Azure Samples\02-16\AzureReportingAdminSample\AzureReportingAdminSample\bin\Debug\AzureReportingAdminSample.csx\roles\ManagePermission\approot\Global.asax
+D:\Community Contribution\Projects\Azure Samples\02-16\AzureReportingAdminSample\AzureReportingAdminSample\bin\Debug\AzureReportingAdminSample.csx\roles\ManagePermission\approot\packages.config
+D:\Community Contribution\Projects\Azure Samples\02-16\AzureReportingAdminSample\AzureReportingAdminSample\bin\Debug\AzureReportingAdminSample.csx\roles\ManagePermission\approot\Web.config
+D:\Community Contribution\Projects\Azure Samples\02-16\AzureReportingAdminSample\AzureReportingAdminSample\bin\Debug\AzureReportingAdminSample.csx\roles\ManagePermission\approot\bin\AjaxControlToolkit.dll
+D:\Community Contribution\Projects\Azure Samples\02-16\AzureReportingAdminSample\AzureReportingAdminSample\bin\Debug\AzureReportingAdminSample.csx\roles\ManagePermission\approot\bin\ManagePermission.dll
+D:\Community Contribution\Projects\Azure Samples\02-16\AzureReportingAdminSample\AzureReportingAdminSample\bin\Debug\AzureReportingAdminSample.csx\roles\ManagePermission\approot\bin\ManagePermission.pdb
+D:\Community Contribution\Projects\Azure Samples\02-16\AzureReportingAdminSample\AzureReportingAdminSample\bin\Debug\AzureReportingAdminSample.csx\roles\ManagePermission\approot\bin\Microsoft.WindowsAzure.Diagnostics.dll
+D:\Community Contribution\Projects\Azure Samples\02-16\AzureReportingAdminSample\AzureReportingAdminSample\bin\Debug\AzureReportingAdminSample.csx\roles\ManagePermission\approot\bin\Microsoft.WindowsAzure.Diagnostics.xml
+D:\Community Contribution\Projects\Azure Samples\02-16\AzureReportingAdminSample\AzureReportingAdminSample\bin\Debug\AzureReportingAdminSample.csx\roles\ManagePermission\approot\bin\Microsoft.WindowsAzure.StorageClient.dll
+D:\Community Contribution\Projects\Azure Samples\02-16\AzureReportingAdminSample\AzureReportingAdminSample\bin\Debug\AzureReportingAdminSample.csx\roles\ManagePermission\approot\bin\Microsoft.WindowsAzure.StorageClient.xml
+D:\Community Contribution\Projects\Azure Samples\02-16\AzureReportingAdminSample\AzureReportingAdminSample\bin\Debug\AzureReportingAdminSample.csx\roles\ManagePermission\approot\bin\System.Web.Providers.dll
+D:\Community Contribution\Projects\Azure Samples\02-16\AzureReportingAdminSample\AzureReportingAdminSample\bin\Debug\AzureReportingAdminSample.csx\roles\ManagePermission\RuntimeSetup.Manifest
+D:\Community Contribution\Projects\Azure Samples\02-16\AzureReportingAdminSample\AzureReportingAdminSample\bin\Debug\AzureReportingAdminSample.csx\roles\ManagePermission\base\x64\Diagnostics.dll
+D:\Community Contribution\Projects\Azure Samples\02-16\AzureReportingAdminSample\AzureReportingAdminSample\bin\Debug\AzureReportingAdminSample.csx\roles\ManagePermission\base\x64\IISConfigurator.exe
+D:\Community Contribution\Projects\Azure Samples\02-16\AzureReportingAdminSample\AzureReportingAdminSample\bin\Debug\AzureReportingAdminSample.csx\roles\ManagePermission\base\x64\msshrtmi.dll
+D:\Community Contribution\Projects\Azure Samples\02-16\AzureReportingAdminSample\AzureReportingAdminSample\bin\Debug\AzureReportingAdminSample.csx\roles\ManagePermission\base\x64\mswasr.dll
+D:\Community Contribution\Projects\Azure Samples\02-16\AzureReportingAdminSample\AzureReportingAdminSample\bin\Debug\AzureReportingAdminSample.csx\roles\ManagePermission\base\x64\mswasri.dll
+D:\Community Contribution\Projects\Azure Samples\02-16\AzureReportingAdminSample\AzureReportingAdminSample\bin\Debug\AzureReportingAdminSample.csx\roles\ManagePermission\base\x64\WaHostBootstrapper.exe
+D:\Community Contribution\Projects\Azure Samples\02-16\AzureReportingAdminSample\AzureReportingAdminSample\bin\Debug\AzureReportingAdminSample.csx\roles\ManagePermission\base\x64\WaIISHost.exe
+D:\Community Contribution\Projects\Azure Samples\02-16\AzureReportingAdminSample\AzureReportingAdminSample\bin\Debug\AzureReportingAdminSample.csx\roles\ManagePermission\base\x64\WaRuntimeProxy.dll
+D:\Community Contribution\Projects\Azure Samples\02-16\AzureReportingAdminSample\AzureReportingAdminSample\bin\Debug\AzureReportingAdminSample.csx\roles\ManagePermission\base\x64\WaWebHost.exe
+D:\Community Contribution\Projects\Azure Samples\02-16\AzureReportingAdminSample\AzureReportingAdminSample\bin\Debug\AzureReportingAdminSample.csx\roles\ManagePermission\base\x64\WaWorkerHost.exe
+D:\Community Contribution\Projects\Azure Samples\02-16\AzureReportingAdminSample\AzureReportingAdminSample\bin\Debug\AzureReportingAdminSample.csx\roles\ManagePermission\base\x86\Diagnostics.dll
+D:\Community Contribution\Projects\Azure Samples\02-16\AzureReportingAdminSample\AzureReportingAdminSample\bin\Debug\AzureReportingAdminSample.csx\roles\ManagePermission\base\x86\IISConfigurator.exe
+D:\Community Contribution\Projects\Azure Samples\02-16\AzureReportingAdminSample\AzureReportingAdminSample\bin\Debug\AzureReportingAdminSample.csx\roles\ManagePermission\base\x86\msshrtmi.dll
+D:\Community Contribution\Projects\Azure Samples\02-16\AzureReportingAdminSample\AzureReportingAdminSample\bin\Debug\AzureReportingAdminSample.csx\roles\ManagePermission\base\x86\mswasr.dll
+D:\Community Contribution\Projects\Azure Samples\02-16\AzureReportingAdminSample\AzureReportingAdminSample\bin\Debug\AzureReportingAdminSample.csx\roles\ManagePermission\base\x86\mswasri.dll
+D:\Community Contribution\Projects\Azure Samples\02-16\AzureReportingAdminSample\AzureReportingAdminSample\bin\Debug\AzureReportingAdminSample.csx\roles\ManagePermission\base\x86\WaHostBootstrapper.exe
+D:\Community Contribution\Projects\Azure Samples\02-16\AzureReportingAdminSample\AzureReportingAdminSample\bin\Debug\AzureReportingAdminSample.csx\roles\ManagePermission\base\x86\WaIISHost.exe
+D:\Community Contribution\Projects\Azure Samples\02-16\AzureReportingAdminSample\AzureReportingAdminSample\bin\Debug\AzureReportingAdminSample.csx\roles\ManagePermission\base\x86\WaRuntimeProxy.dll
+D:\Community Contribution\Projects\Azure Samples\02-16\AzureReportingAdminSample\AzureReportingAdminSample\bin\Debug\AzureReportingAdminSample.csx\roles\ManagePermission\base\x86\WaWebHost.exe
+D:\Community Contribution\Projects\Azure Samples\02-16\AzureReportingAdminSample\AzureReportingAdminSample\bin\Debug\AzureReportingAdminSample.csx\roles\ManagePermission\base\x86\WaWorkerHost.exe
+D:\Community Contribution\Projects\Azure Samples\02-16\AzureReportingAdminSample\AzureReportingAdminSample\bin\Debug\AzureReportingAdminSample.csx\roles\ManagePermission\diagnostics\x64\monitor\EtwListener.dll
+D:\Community Contribution\Projects\Azure Samples\02-16\AzureReportingAdminSample\AzureReportingAdminSample\bin\Debug\AzureReportingAdminSample.csx\roles\ManagePermission\diagnostics\x64\monitor\FileListener.dll
+D:\Community Contribution\Projects\Azure Samples\02-16\AzureReportingAdminSample\AzureReportingAdminSample\bin\Debug\AzureReportingAdminSample.csx\roles\ManagePermission\diagnostics\x64\monitor\MonAgent.dll
+D:\Community Contribution\Projects\Azure Samples\02-16\AzureReportingAdminSample\AzureReportingAdminSample\bin\Debug\AzureReportingAdminSample.csx\roles\ManagePermission\diagnostics\x64\monitor\MonAgentHost.exe
+D:\Community Contribution\Projects\Azure Samples\02-16\AzureReportingAdminSample\AzureReportingAdminSample\bin\Debug\AzureReportingAdminSample.csx\roles\ManagePermission\diagnostics\x64\monitor\MonDiagnostics.dll
+D:\Community Contribution\Projects\Azure Samples\02-16\AzureReportingAdminSample\AzureReportingAdminSample\bin\Debug\AzureReportingAdminSample.csx\roles\ManagePermission\diagnostics\x64\monitor\MonEvents.dll
+D:\Community Contribution\Projects\Azure Samples\02-16\AzureReportingAdminSample\AzureReportingAdminSample\bin\Debug\AzureReportingAdminSample.csx\roles\ManagePermission\diagnostics\x64\monitor\MonNetTransport.dll
+D:\Community Contribution\Projects\Azure Samples\02-16\AzureReportingAdminSample\AzureReportingAdminSample\bin\Debug\AzureReportingAdminSample.csx\roles\ManagePermission\diagnostics\x64\monitor\MonQuery.dll
+D:\Community Contribution\Projects\Azure Samples\02-16\AzureReportingAdminSample\AzureReportingAdminSample\bin\Debug\AzureReportingAdminSample.csx\roles\ManagePermission\diagnostics\x64\monitor\MonTables.dll
+D:\Community Contribution\Projects\Azure Samples\02-16\AzureReportingAdminSample\AzureReportingAdminSample\bin\Debug\AzureReportingAdminSample.csx\roles\ManagePermission\diagnostics\x64\monitor\secutil.dll
+D:\Community Contribution\Projects\Azure Samples\02-16\AzureReportingAdminSample\AzureReportingAdminSample\bin\Debug\AzureReportingAdminSample.csx\roles\ManagePermission\diagnostics\x64\monitor\SysCounterListener.dll
+D:\Community Contribution\Projects\Azure Samples\02-16\AzureReportingAdminSample\AzureReportingAdminSample\bin\Debug\AzureReportingAdminSample.csx\roles\ManagePermission\diagnostics\x64\monitor\SystemEventsListener.dll
+D:\Community Contribution\Projects\Azure Samples\02-16\AzureReportingAdminSample\AzureReportingAdminSample\bin\Debug\AzureReportingAdminSample.csx\roles\ManagePermission\diagnostics\x64\monitor\schema\1.0\ma.xsd
+D:\Community Contribution\Projects\Azure Samples\02-16\AzureReportingAdminSample\AzureReportingAdminSample\bin\Debug\AzureReportingAdminSample.csx\roles\ManagePermission\diagnostics\x64\monitor\schema\1.0\maStatic.xsd
+D:\Community Contribution\Projects\Azure Samples\02-16\AzureReportingAdminSample\AzureReportingAdminSample\bin\Debug\AzureReportingAdminSample.csx\roles\ManagePermission\diagnostics\x64\monitor\schema\1.0\query.xsd
+D:\Community Contribution\Projects\Azure Samples\02-16\AzureReportingAdminSample\AzureReportingAdminSample\bin\Debug\AzureReportingAdminSample.csx\roles\ManagePermission\diagnostics\x64\monitor\schema\1.0\shared.xsd
+D:\Community Contribution\Projects\Azure Samples\02-16\AzureReportingAdminSample\AzureReportingAdminSample\bin\Debug\AzureReportingAdminSample.csx\roles\ManagePermission\__entrypoint.txt
+D:\Community Contribution\Projects\Azure Samples\02-16\AzureReportingAdminSample\AzureReportingAdminSample\bin\Debug\AzureReportingAdminSample.csx\roles\ManagePermission\web.config
+D:\Community Contribution\Projects\Azure Samples\02-16\AzureReportingAdminSample\AzureReportingAdminSample\bin\Debug\AzureReportingAdminSample.csx\roles\ManagePermission\plugins\Diagnostics\Diagnostics.csplugin
+D:\Community Contribution\Projects\Azure Samples\02-16\AzureReportingAdminSample\AzureReportingAdminSample\bin\Debug\AzureReportingAdminSample.csx\roles\ManagePermission\plugins\Diagnostics\DiagnosticsAgent.exe
+D:\Community Contribution\Projects\Azure Samples\02-16\AzureReportingAdminSample\AzureReportingAdminSample\bin\Debug\AzureReportingAdminSample.csx\roles\ManagePermission\plugins\Diagnostics\Microsoft.WindowsAzure.Diagnostics.dll
+D:\Community Contribution\Projects\Azure Samples\02-16\AzureReportingAdminSample\AzureReportingAdminSample\bin\Debug\AzureReportingAdminSample.csx\roles\ManagePermission\plugins\Diagnostics\Microsoft.WindowsAzure.StorageClient.dll
+D:\Community Contribution\Projects\Azure Samples\02-16\AzureReportingAdminSample\AzureReportingAdminSample\bin\Debug\AzureReportingAdminSample.csx\roles\ManagePermission\plugins\Diagnostics\mswapd.dll
+D:\Community Contribution\Projects\Azure Samples\02-16\AzureReportingAdminSample\AzureReportingAdminSample\bin\Debug\AzureReportingAdminSample.csx\roles\ManagePermission\RoleModel.xml
+D:\Community Contribution\Projects\Azure Samples\02-16\AzureReportingAdminSample\AzureReportingAdminSample\bin\Debug\AzureReportingAdminSample.csx\ServiceDefinition.build.rd
+D:\Community Contribution\Projects\Azure Samples\02-16\AzureReportingAdminSample\AzureReportingAdminSample\bin\Debug\AzureReportingAdminSample.csx\ServiceDefinition.build.rdsc
+D:\Community Contribution\Projects\Azure Samples\02-16\AzureReportingAdminSample\AzureReportingAdminSample\bin\Debug\AzureReportingAdminSample.csx\ServiceDefinition.build.csdef
+D:\Community Contribution\Projects\Azure Samples\02-16\AzureReportingAdminSample\AzureReportingAdminSample\obj\Debug\ResolveAssemblyReference.cache
+D:\Community Contribution\Projects\Azure Samples\02-16\AzureReportingAdminSample\AzureReportingAdminSample\obj\Debug\ManagePermission\AzureRSAdminPage.aspx
+D:\Community Contribution\Projects\Azure Samples\02-16\AzureReportingAdminSample\AzureReportingAdminSample\obj\Debug\ManagePermission\bin\AjaxControlToolkit.dll
+D:\Community Contribution\Projects\Azure Samples\02-16\AzureReportingAdminSample\AzureReportingAdminSample\obj\Debug\ManagePermission\bin\ManagePermission.dll
+D:\Community Contribution\Projects\Azure Samples\02-16\AzureReportingAdminSample\AzureReportingAdminSample\obj\Debug\ManagePermission\bin\ManagePermission.pdb
+D:\Community Contribution\Projects\Azure Samples\02-16\AzureReportingAdminSample\AzureReportingAdminSample\obj\Debug\ManagePermission\bin\Microsoft.WindowsAzure.Diagnostics.dll
+D:\Community Contribution\Projects\Azure Samples\02-16\AzureReportingAdminSample\AzureReportingAdminSample\obj\Debug\ManagePermission\bin\Microsoft.WindowsAzure.Diagnostics.xml
+D:\Community Contribution\Projects\Azure Samples\02-16\AzureReportingAdminSample\AzureReportingAdminSample\obj\Debug\ManagePermission\bin\Microsoft.WindowsAzure.StorageClient.dll
+D:\Community Contribution\Projects\Azure Samples\02-16\AzureReportingAdminSample\AzureReportingAdminSample\obj\Debug\ManagePermission\bin\Microsoft.WindowsAzure.StorageClient.xml
+D:\Community Contribution\Projects\Azure Samples\02-16\AzureReportingAdminSample\AzureReportingAdminSample\obj\Debug\ManagePermission\bin\System.Web.Providers.dll
+D:\Community Contribution\Projects\Azure Samples\02-16\AzureReportingAdminSample\AzureReportingAdminSample\obj\Debug\ManagePermission\Global.asax
+D:\Community Contribution\Projects\Azure Samples\02-16\AzureReportingAdminSample\AzureReportingAdminSample\obj\Debug\ManagePermission\packages.config
+D:\Community Contribution\Projects\Azure Samples\02-16\AzureReportingAdminSample\AzureReportingAdminSample\obj\Debug\ManagePermission\Web.config
+D:\Community Contribution\Azure Admin Samples\03-06\AzureReportingAdminSample\AzureReportingAdminSample\bin\Debug\ServiceConfiguration.cscfg
+D:\Community Contribution\Azure Admin Samples\03-06\AzureReportingAdminSample\AzureReportingAdminSample\bin\Debug\AzureReportingAdminSample.csx\roles\ManagePermission\approot\AzureRSAdminPage.aspx
+D:\Community Contribution\Azure Admin Samples\03-06\AzureReportingAdminSample\AzureReportingAdminSample\bin\Debug\AzureReportingAdminSample.csx\roles\ManagePermission\approot\Global.asax
+D:\Community Contribution\Azure Admin Samples\03-06\AzureReportingAdminSample\AzureReportingAdminSample\bin\Debug\AzureReportingAdminSample.csx\roles\ManagePermission\approot\packages.config
+D:\Community Contribution\Azure Admin Samples\03-06\AzureReportingAdminSample\AzureReportingAdminSample\bin\Debug\AzureReportingAdminSample.csx\roles\ManagePermission\approot\Web.config
+D:\Community Contribution\Azure Admin Samples\03-06\AzureReportingAdminSample\AzureReportingAdminSample\bin\Debug\AzureReportingAdminSample.csx\roles\ManagePermission\approot\bin\AjaxControlToolkit.dll
+D:\Community Contribution\Azure Admin Samples\03-06\AzureReportingAdminSample\AzureReportingAdminSample\bin\Debug\AzureReportingAdminSample.csx\roles\ManagePermission\approot\bin\ManagePermission.dll
+D:\Community Contribution\Azure Admin Samples\03-06\AzureReportingAdminSample\AzureReportingAdminSample\bin\Debug\AzureReportingAdminSample.csx\roles\ManagePermission\approot\bin\ManagePermission.pdb
+D:\Community Contribution\Azure Admin Samples\03-06\AzureReportingAdminSample\AzureReportingAdminSample\bin\Debug\AzureReportingAdminSample.csx\roles\ManagePermission\approot\bin\Microsoft.WindowsAzure.Diagnostics.dll
+D:\Community Contribution\Azure Admin Samples\03-06\AzureReportingAdminSample\AzureReportingAdminSample\bin\Debug\AzureReportingAdminSample.csx\roles\ManagePermission\approot\bin\Microsoft.WindowsAzure.Diagnostics.xml
+D:\Community Contribution\Azure Admin Samples\03-06\AzureReportingAdminSample\AzureReportingAdminSample\bin\Debug\AzureReportingAdminSample.csx\roles\ManagePermission\approot\bin\Microsoft.WindowsAzure.StorageClient.dll
+D:\Community Contribution\Azure Admin Samples\03-06\AzureReportingAdminSample\AzureReportingAdminSample\bin\Debug\AzureReportingAdminSample.csx\roles\ManagePermission\approot\bin\Microsoft.WindowsAzure.StorageClient.xml
+D:\Community Contribution\Azure Admin Samples\03-06\AzureReportingAdminSample\AzureReportingAdminSample\bin\Debug\AzureReportingAdminSample.csx\roles\ManagePermission\approot\bin\System.Web.Providers.dll
+D:\Community Contribution\Azure Admin Samples\03-06\AzureReportingAdminSample\AzureReportingAdminSample\bin\Debug\AzureReportingAdminSample.csx\roles\ManagePermission\RuntimeSetup.Manifest
+D:\Community Contribution\Azure Admin Samples\03-06\AzureReportingAdminSample\AzureReportingAdminSample\bin\Debug\AzureReportingAdminSample.csx\roles\ManagePermission\base\x64\Diagnostics.dll
+D:\Community Contribution\Azure Admin Samples\03-06\AzureReportingAdminSample\AzureReportingAdminSample\bin\Debug\AzureReportingAdminSample.csx\roles\ManagePermission\base\x64\IISConfigurator.exe
+D:\Community Contribution\Azure Admin Samples\03-06\AzureReportingAdminSample\AzureReportingAdminSample\bin\Debug\AzureReportingAdminSample.csx\roles\ManagePermission\base\x64\msshrtmi.dll
+D:\Community Contribution\Azure Admin Samples\03-06\AzureReportingAdminSample\AzureReportingAdminSample\bin\Debug\AzureReportingAdminSample.csx\roles\ManagePermission\base\x64\mswasr.dll
+D:\Community Contribution\Azure Admin Samples\03-06\AzureReportingAdminSample\AzureReportingAdminSample\bin\Debug\AzureReportingAdminSample.csx\roles\ManagePermission\base\x64\mswasri.dll
+D:\Community Contribution\Azure Admin Samples\03-06\AzureReportingAdminSample\AzureReportingAdminSample\bin\Debug\AzureReportingAdminSample.csx\roles\ManagePermission\base\x64\WaHostBootstrapper.exe
+D:\Community Contribution\Azure Admin Samples\03-06\AzureReportingAdminSample\AzureReportingAdminSample\bin\Debug\AzureReportingAdminSample.csx\roles\ManagePermission\base\x64\WaIISHost.exe
+D:\Community Contribution\Azure Admin Samples\03-06\AzureReportingAdminSample\AzureReportingAdminSample\bin\Debug\AzureReportingAdminSample.csx\roles\ManagePermission\base\x64\WaRuntimeProxy.dll
+D:\Community Contribution\Azure Admin Samples\03-06\AzureReportingAdminSample\AzureReportingAdminSample\bin\Debug\AzureReportingAdminSample.csx\roles\ManagePermission\base\x64\WaWebHost.exe
+D:\Community Contribution\Azure Admin Samples\03-06\AzureReportingAdminSample\AzureReportingAdminSample\bin\Debug\AzureReportingAdminSample.csx\roles\ManagePermission\base\x64\WaWorkerHost.exe
+D:\Community Contribution\Azure Admin Samples\03-06\AzureReportingAdminSample\AzureReportingAdminSample\bin\Debug\AzureReportingAdminSample.csx\roles\ManagePermission\base\x86\Diagnostics.dll
+D:\Community Contribution\Azure Admin Samples\03-06\AzureReportingAdminSample\AzureReportingAdminSample\bin\Debug\AzureReportingAdminSample.csx\roles\ManagePermission\base\x86\IISConfigurator.exe
+D:\Community Contribution\Azure Admin Samples\03-06\AzureReportingAdminSample\AzureReportingAdminSample\bin\Debug\AzureReportingAdminSample.csx\roles\ManagePermission\base\x86\msshrtmi.dll
+D:\Community Contribution\Azure Admin Samples\03-06\AzureReportingAdminSample\AzureReportingAdminSample\bin\Debug\AzureReportingAdminSample.csx\roles\ManagePermission\base\x86\mswasr.dll
+D:\Community Contribution\Azure Admin Samples\03-06\AzureReportingAdminSample\AzureReportingAdminSample\bin\Debug\AzureReportingAdminSample.csx\roles\ManagePermission\base\x86\mswasri.dll
+D:\Community Contribution\Azure Admin Samples\03-06\AzureReportingAdminSample\AzureReportingAdminSample\bin\Debug\AzureReportingAdminSample.csx\roles\ManagePermission\base\x86\WaHostBootstrapper.exe
+D:\Community Contribution\Azure Admin Samples\03-06\AzureReportingAdminSample\AzureReportingAdminSample\bin\Debug\AzureReportingAdminSample.csx\roles\ManagePermission\base\x86\WaIISHost.exe
+D:\Community Contribution\Azure Admin Samples\03-06\AzureReportingAdminSample\AzureReportingAdminSample\bin\Debug\AzureReportingAdminSample.csx\roles\ManagePermission\base\x86\WaRuntimeProxy.dll
+D:\Community Contribution\Azure Admin Samples\03-06\AzureReportingAdminSample\AzureReportingAdminSample\bin\Debug\AzureReportingAdminSample.csx\roles\ManagePermission\base\x86\WaWebHost.exe
+D:\Community Contribution\Azure Admin Samples\03-06\AzureReportingAdminSample\AzureReportingAdminSample\bin\Debug\AzureReportingAdminSample.csx\roles\ManagePermission\base\x86\WaWorkerHost.exe
+D:\Community Contribution\Azure Admin Samples\03-06\AzureReportingAdminSample\AzureReportingAdminSample\bin\Debug\AzureReportingAdminSample.csx\roles\ManagePermission\diagnostics\x64\monitor\EtwListener.dll
+D:\Community Contribution\Azure Admin Samples\03-06\AzureReportingAdminSample\AzureReportingAdminSample\bin\Debug\AzureReportingAdminSample.csx\roles\ManagePermission\diagnostics\x64\monitor\FileListener.dll
+D:\Community Contribution\Azure Admin Samples\03-06\AzureReportingAdminSample\AzureReportingAdminSample\bin\Debug\AzureReportingAdminSample.csx\roles\ManagePermission\diagnostics\x64\monitor\MonAgent.dll
+D:\Community Contribution\Azure Admin Samples\03-06\AzureReportingAdminSample\AzureReportingAdminSample\bin\Debug\AzureReportingAdminSample.csx\roles\ManagePermission\diagnostics\x64\monitor\MonAgentHost.exe
+D:\Community Contribution\Azure Admin Samples\03-06\AzureReportingAdminSample\AzureReportingAdminSample\bin\Debug\AzureReportingAdminSample.csx\roles\ManagePermission\diagnostics\x64\monitor\MonDiagnostics.dll
+D:\Community Contribution\Azure Admin Samples\03-06\AzureReportingAdminSample\AzureReportingAdminSample\bin\Debug\AzureReportingAdminSample.csx\roles\ManagePermission\diagnostics\x64\monitor\MonEvents.dll
+D:\Community Contribution\Azure Admin Samples\03-06\AzureReportingAdminSample\AzureReportingAdminSample\bin\Debug\AzureReportingAdminSample.csx\roles\ManagePermission\diagnostics\x64\monitor\MonNetTransport.dll
+D:\Community Contribution\Azure Admin Samples\03-06\AzureReportingAdminSample\AzureReportingAdminSample\bin\Debug\AzureReportingAdminSample.csx\roles\ManagePermission\diagnostics\x64\monitor\MonQuery.dll
+D:\Community Contribution\Azure Admin Samples\03-06\AzureReportingAdminSample\AzureReportingAdminSample\bin\Debug\AzureReportingAdminSample.csx\roles\ManagePermission\diagnostics\x64\monitor\MonTables.dll
+D:\Community Contribution\Azure Admin Samples\03-06\AzureReportingAdminSample\AzureReportingAdminSample\bin\Debug\AzureReportingAdminSample.csx\roles\ManagePermission\diagnostics\x64\monitor\secutil.dll
+D:\Community Contribution\Azure Admin Samples\03-06\AzureReportingAdminSample\AzureReportingAdminSample\bin\Debug\AzureReportingAdminSample.csx\roles\ManagePermission\diagnostics\x64\monitor\SysCounterListener.dll
+D:\Community Contribution\Azure Admin Samples\03-06\AzureReportingAdminSample\AzureReportingAdminSample\bin\Debug\AzureReportingAdminSample.csx\roles\ManagePermission\diagnostics\x64\monitor\SystemEventsListener.dll
+D:\Community Contribution\Azure Admin Samples\03-06\AzureReportingAdminSample\AzureReportingAdminSample\bin\Debug\AzureReportingAdminSample.csx\roles\ManagePermission\diagnostics\x64\monitor\schema\1.0\ma.xsd
+D:\Community Contribution\Azure Admin Samples\03-06\AzureReportingAdminSample\AzureReportingAdminSample\bin\Debug\AzureReportingAdminSample.csx\roles\ManagePermission\diagnostics\x64\monitor\schema\1.0\maStatic.xsd
+D:\Community Contribution\Azure Admin Samples\03-06\AzureReportingAdminSample\AzureReportingAdminSample\bin\Debug\AzureReportingAdminSample.csx\roles\ManagePermission\diagnostics\x64\monitor\schema\1.0\query.xsd
+D:\Community Contribution\Azure Admin Samples\03-06\AzureReportingAdminSample\AzureReportingAdminSample\bin\Debug\AzureReportingAdminSample.csx\roles\ManagePermission\diagnostics\x64\monitor\schema\1.0\shared.xsd
+D:\Community Contribution\Azure Admin Samples\03-06\AzureReportingAdminSample\AzureReportingAdminSample\bin\Debug\AzureReportingAdminSample.csx\roles\ManagePermission\__entrypoint.txt
+D:\Community Contribution\Azure Admin Samples\03-06\AzureReportingAdminSample\AzureReportingAdminSample\bin\Debug\AzureReportingAdminSample.csx\roles\ManagePermission\web.config
+D:\Community Contribution\Azure Admin Samples\03-06\AzureReportingAdminSample\AzureReportingAdminSample\bin\Debug\AzureReportingAdminSample.csx\roles\ManagePermission\plugins\Diagnostics\Diagnostics.csplugin
+D:\Community Contribution\Azure Admin Samples\03-06\AzureReportingAdminSample\AzureReportingAdminSample\bin\Debug\AzureReportingAdminSample.csx\roles\ManagePermission\plugins\Diagnostics\DiagnosticsAgent.exe
+D:\Community Contribution\Azure Admin Samples\03-06\AzureReportingAdminSample\AzureReportingAdminSample\bin\Debug\AzureReportingAdminSample.csx\roles\ManagePermission\plugins\Diagnostics\Microsoft.WindowsAzure.Diagnostics.dll
+D:\Community Contribution\Azure Admin Samples\03-06\AzureReportingAdminSample\AzureReportingAdminSample\bin\Debug\AzureReportingAdminSample.csx\roles\ManagePermission\plugins\Diagnostics\Microsoft.WindowsAzure.StorageClient.dll
+D:\Community Contribution\Azure Admin Samples\03-06\AzureReportingAdminSample\AzureReportingAdminSample\bin\Debug\AzureReportingAdminSample.csx\roles\ManagePermission\plugins\Diagnostics\mswapd.dll
+D:\Community Contribution\Azure Admin Samples\03-06\AzureReportingAdminSample\AzureReportingAdminSample\bin\Debug\AzureReportingAdminSample.csx\roles\ManagePermission\RoleModel.xml
+D:\Community Contribution\Azure Admin Samples\03-06\AzureReportingAdminSample\AzureReportingAdminSample\bin\Debug\AzureReportingAdminSample.csx\ServiceDefinition.build.rd
+D:\Community Contribution\Azure Admin Samples\03-06\AzureReportingAdminSample\AzureReportingAdminSample\bin\Debug\AzureReportingAdminSample.csx\ServiceDefinition.build.rdsc
+D:\Community Contribution\Azure Admin Samples\03-06\AzureReportingAdminSample\AzureReportingAdminSample\bin\Debug\AzureReportingAdminSample.csx\ServiceDefinition.build.csdef
+D:\Community Contribution\Azure Admin Samples\03-06\AzureReportingAdminSample\AzureReportingAdminSample\obj\Debug\ResolveAssemblyReference.cache
+D:\Community Contribution\Azure Admin Samples\03-06\AzureReportingAdminSample\AzureReportingAdminSample\obj\Debug\ManagePermission\AzureRSAdminPage.aspx
+D:\Community Contribution\Azure Admin Samples\03-06\AzureReportingAdminSample\AzureReportingAdminSample\obj\Debug\ManagePermission\bin\AjaxControlToolkit.dll
+D:\Community Contribution\Azure Admin Samples\03-06\AzureReportingAdminSample\AzureReportingAdminSample\obj\Debug\ManagePermission\bin\ManagePermission.dll
+D:\Community Contribution\Azure Admin Samples\03-06\AzureReportingAdminSample\AzureReportingAdminSample\obj\Debug\ManagePermission\bin\ManagePermission.pdb
+D:\Community Contribution\Azure Admin Samples\03-06\AzureReportingAdminSample\AzureReportingAdminSample\obj\Debug\ManagePermission\bin\Microsoft.WindowsAzure.Diagnostics.dll
+D:\Community Contribution\Azure Admin Samples\03-06\AzureReportingAdminSample\AzureReportingAdminSample\obj\Debug\ManagePermission\bin\Microsoft.WindowsAzure.Diagnostics.xml
+D:\Community Contribution\Azure Admin Samples\03-06\AzureReportingAdminSample\AzureReportingAdminSample\obj\Debug\ManagePermission\bin\Microsoft.WindowsAzure.StorageClient.dll
+D:\Community Contribution\Azure Admin Samples\03-06\AzureReportingAdminSample\AzureReportingAdminSample\obj\Debug\ManagePermission\bin\Microsoft.WindowsAzure.StorageClient.xml
+D:\Community Contribution\Azure Admin Samples\03-06\AzureReportingAdminSample\AzureReportingAdminSample\obj\Debug\ManagePermission\bin\System.Web.Providers.dll
+D:\Community Contribution\Azure Admin Samples\03-06\AzureReportingAdminSample\AzureReportingAdminSample\obj\Debug\ManagePermission\Global.asax
+D:\Community Contribution\Azure Admin Samples\03-06\AzureReportingAdminSample\AzureReportingAdminSample\obj\Debug\ManagePermission\packages.config
+D:\Community Contribution\Azure Admin Samples\03-06\AzureReportingAdminSample\AzureReportingAdminSample\obj\Debug\ManagePermission\Web.config
