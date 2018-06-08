@@ -1,0 +1,10 @@
+C:\Users\davidmu\Downloads\HelloWorld\HelloWorld_WebRole\bin\HelloWorld_WebRole.dll
+C:\Users\davidmu\Downloads\HelloWorld\HelloWorld_WebRole\bin\HelloWorld_WebRole.pdb
+C:\Users\davidmu\Downloads\HelloWorld\HelloWorld_WebRole\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\davidmu\Downloads\HelloWorld\HelloWorld_WebRole\obj\Debug\HelloWorld_WebRole.dll
+C:\Users\davidmu\Downloads\HelloWorld\HelloWorld_WebRole\obj\Debug\HelloWorld_WebRole.pdb
+C:\Users\davidmu\Downloads\HelloWorld\HelloWorld\HelloWorld_WebRole\bin\HelloWorld_WebRole.dll
+C:\Users\davidmu\Downloads\HelloWorld\HelloWorld\HelloWorld_WebRole\bin\HelloWorld_WebRole.pdb
+C:\Users\davidmu\Downloads\HelloWorld\HelloWorld\HelloWorld_WebRole\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\davidmu\Downloads\HelloWorld\HelloWorld\HelloWorld_WebRole\obj\Debug\HelloWorld_WebRole.dll
+C:\Users\davidmu\Downloads\HelloWorld\HelloWorld\HelloWorld_WebRole\obj\Debug\HelloWorld_WebRole.pdb
