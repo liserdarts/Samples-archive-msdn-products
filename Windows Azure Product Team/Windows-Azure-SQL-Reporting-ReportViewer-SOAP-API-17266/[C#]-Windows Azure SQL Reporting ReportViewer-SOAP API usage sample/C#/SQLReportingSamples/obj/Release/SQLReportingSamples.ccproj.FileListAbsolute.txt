@@ -1,0 +1,2 @@
+D:\Community Contribution\SQLReportingSamples\WindowsAzureSQLReportingSamples\SQLReportingSamples\bin\Release\ServiceConfiguration.cscfg
+D:\Community Contribution\SQLReportingSamples\WindowsAzureSQLReportingSamples\SQLReportingSamples\obj\Release\ResolveAssemblyReference.cache

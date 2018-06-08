@@ -1,0 +1,12 @@
+D:\Community Contribution\SQLReportingSamples\WindowsAzureSQLReportingSamples\SOAPManagement\bin\SOAPManagement.dll
+D:\Community Contribution\SQLReportingSamples\WindowsAzureSQLReportingSamples\SOAPManagement\bin\SOAPManagement.pdb
+D:\Community Contribution\SQLReportingSamples\WindowsAzureSQLReportingSamples\SOAPManagement\bin\Microsoft.ReportViewer.Common.dll
+D:\Community Contribution\SQLReportingSamples\WindowsAzureSQLReportingSamples\SOAPManagement\bin\Microsoft.ReportViewer.WebForms.dll
+D:\Community Contribution\SQLReportingSamples\WindowsAzureSQLReportingSamples\SOAPManagement\bin\Microsoft.WindowsAzure.Diagnostics.dll
+D:\Community Contribution\SQLReportingSamples\WindowsAzureSQLReportingSamples\SOAPManagement\bin\Microsoft.WindowsAzure.StorageClient.dll
+D:\Community Contribution\SQLReportingSamples\WindowsAzureSQLReportingSamples\SOAPManagement\bin\Microsoft.ReportViewer.WebForms.xml
+D:\Community Contribution\SQLReportingSamples\WindowsAzureSQLReportingSamples\SOAPManagement\bin\Microsoft.WindowsAzure.Diagnostics.xml
+D:\Community Contribution\SQLReportingSamples\WindowsAzureSQLReportingSamples\SOAPManagement\bin\Microsoft.WindowsAzure.StorageClient.xml
+D:\Community Contribution\SQLReportingSamples\WindowsAzureSQLReportingSamples\SOAPManagement\obj\Release\ResolveAssemblyReference.cache
+D:\Community Contribution\SQLReportingSamples\WindowsAzureSQLReportingSamples\SOAPManagement\obj\Release\SOAPManagement.dll
+D:\Community Contribution\SQLReportingSamples\WindowsAzureSQLReportingSamples\SOAPManagement\obj\Release\SOAPManagement.pdb
