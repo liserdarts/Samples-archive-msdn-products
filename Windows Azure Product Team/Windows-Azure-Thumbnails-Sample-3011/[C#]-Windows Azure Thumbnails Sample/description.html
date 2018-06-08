@@ -1,0 +1,264 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
+    <head><link rel="stylesheet" type="text/css" href="description/Combined.css,1:ImageSprite;/Areas/Epx/Themes/Msdn/Content:0,/Areas/Epx/Content/Css:1&amp;amp;hashKey=E7560C71640616C5057FAEACB58DCB00" xmlns="http://www.w3.org/1999/xhtml" />
+<link rel="stylesheet" type="text/css" href="description/2f95808e-ca34-4249-88ff-44fabe33cdc0Combined.css,1:LinkList,2:ImageSprite,2:SiteFeedbackLink;/Areas/Epx/Themes/Msdn/Content:0,/Areas/Epx/Themes/Base/Content:1,/Areas/Epx/Content/Css:2&amp;amp;hashKey=EEE39C2D6B93379FDAF50337BE99AF8C" xmlns="http://www.w3.org/1999/xhtml" />
+
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <title>Windows Azure Thumbnails Sample</title>
+        <link href="description/Galleries.css" type="text/css" rel="Stylesheet" /><link href="description/Layout.css" type="text/css" rel="Stylesheet" /><link href="description/Brand.css" type="text/css" rel="Stylesheet" />
+        <link href="description/iframedescription.css" rel="Stylesheet" type="text/css" />
+        <script src="description/offline.js" type="text/javascript"></script>
+        <style type="text/css">
+            #projectInfo {
+                overflow: auto;
+            }
+            #longDesc {
+                clear:both;
+                margin: 25px 0 10px 0;
+            }
+
+            #SampleIndexList{
+                margin-left: 15px;
+            }
+        </style>
+    </head>
+<body>
+    <div id="offlineDescription">
+        <h1>Windows Azure Thumbnails Sample</h1>
+        <br/>
+        <div id="projectInfo">
+            <div class="section">
+                    <div class="itemBarLong tagsContainer">
+                        <label for="Technologies">Technologies</label>
+                        <div id="Technologies">
+                            Windows Azure
+                        </div>
+                    </div>
+                    <div class="itemBarLong tagsContainer">
+                        <label for="Topics">Topics</label>
+                        <div id="Topics">
+                            Windows Azure Application
+                        </div>
+                    </div>
+                <div class="itemBarLong">
+                    <label for="Platforms">Platforms</label>
+                    <div id="Platforms">
+                        Cloud
+                    </div>
+                </div>
+                <div class="itemBarLong">
+                    <label for="Requirements">Requirements</label>
+                    <div id="Requirements">
+                        
+                    </div>
+                </div>
+                <div class="itemBar">
+                    <label for="LastUpdated">Primary Language</label>
+                    <div id="LastUpdated">en-US</div>
+                </div>
+                <div class="itemBar">
+                    <label for="LastUpdated">Last Updated</label>
+                    <div id="LastUpdated">4/23/2011</div>
+                </div>
+                <div class="itemBarLong">
+                    <label for="License">License</label>
+                    <div id="License">
+                        <a href="license.rtf">Custom</a></div>
+                </div>
+                <div class="itemBar">
+                    <div class="viewonlinecont">
+                        <a data-link="online" href="http://code.msdn.microsoft.com/Windows-Azure-Thumbnails-c001c8d7">View this sample online</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+                   
+<script type="text/javascript">
+    function initializePage() {
+        var otherTabClass = 'otherTab';
+        var hiddenPreClass = 'hidden';
+
+        var htmlDecode = function(encodedData) {
+            var decodedData = "";
+            if (encodedData) {
+                var div = document.createElement('div');
+                div.innerHTML = encodedData;
+                decodedData = div.firstChild.nodeValue.replace( /\\r\\n/ig , '\r\n');
+            }
+            return decodedData;
+        };
+                
+        Galleries.iterateElem(Galleries.findElem(null, 'div', 'scriptcode'), function (index, scriptBlock) {
+            var titleElem = Galleries.findElem(scriptBlock, 'div', 'title')[0];
+            var labelElems = Galleries.findElem(titleElem, 'span');
+            if (labelElems.length == 0) {
+                labelElems = titleElem;
+            }
+            var languageSpans = Galleries.findElem(scriptBlock, 'span', 'hidden');
+            var pres = Galleries.findElem(scriptBlock, 'pre');
+            if (languageSpans.length > 0 && pres.length > 1) {
+                Galleries.iterateElem(labelElems, function(index, elem) {
+                    var codePre = pres[index];
+                    var labelSpan = elem;
+                    var languageSpan = languageSpans[index];
+                            
+                    elem.code = codePre.innerHTML.replace( /(\r(\n)?)|((\r)?\n)/ig , '\\r\\n');
+                            
+                    codePre.className = codePre.className.replace(hiddenPreClass, '');
+                            
+                    languageSpan.parentNode.removeChild(languageSpan);
+                });
+
+                pres = Galleries.findElem(scriptBlock, 'pre');
+                Galleries.iterateElem(labelElems, function(index, elem) {
+                    var codePre = pres[index];
+                    var labelSpan = elem;
+                    if (index == 0) {
+                        scriptBlock.activeTab = 0;
+                    }
+                    else {
+                        labelSpan.className += otherTabClass;
+                        codePre.className += hiddenPreClass;
+                    }
+                    Galleries.attachEventHandler(labelSpan, 'click', function(e) {
+                        var activeTab = scriptBlock.activeTab;
+                        labelElems[activeTab].className += otherTabClass;
+                        pres[activeTab].className += hiddenPreClass;
+
+                        codePre.className = codePre.className.replace(hiddenPreClass, '');
+                        labelSpan.className = labelSpan.className.replace(otherTabClass, '');
+                        scriptBlock.activeTab = index;
+                    });
+                });
+
+                var preview = Galleries.findElem(scriptBlock, 'div', 'preview');
+                if (preview.length == 0) {
+                    preview.push(pres[pres.length - 1]);
+                }
+                Galleries.iterateElem(preview, function(index, elem) {
+                    elem.parentNode.removeChild(elem);
+                });
+
+                if (window.clipboardData && clipboardData.setData) {
+                    var copyLink = document.createElement('a');
+                    copyLink.href = 'javascript:void(0);';
+                    copyLink.className = 'copyCode';
+                    copyLink.innerHTML = 'Copy Code';
+                    Galleries.attachEventHandler(copyLink, 'click', function (e) {
+                        clipboardData.setData("Text", htmlDecode(labelElems[scriptBlock.activeTab].code));
+                        return false;
+                    });
+                    scriptBlock.insertBefore(copyLink, scriptBlock.childNodes[0]);
+                }
+            }
+        });
+    }
+
+    Galleries.onWindowLoad(function(){
+        initializePage();
+    });
+
+</script>
+<div id="longDesc">
+    
+<p><span style="font-family:arial,helvetica,sans-serif; font-size:x-small"><strong>Before you install and use&nbsp;Windows Azure&nbsp;Thumbnails Sample you must:</strong></span></p>
+<ol>
+<li><span style="font-family:arial,helvetica,sans-serif; font-size:x-small"><strong>Review the&nbsp;Windows Azure&nbsp;Thumbnails Sample&nbsp;license terms by clicking&nbsp;the Custom link above.</strong></span>
+</li><li><span style="font-family:arial,helvetica,sans-serif; font-size:x-small"><strong>Print and retain a copy of the license terms for your records.</strong></span>
+</li></ol>
+<p><span style="font-family:arial,helvetica,sans-serif; font-size:x-small"><strong>By downloading and using&nbsp;the&nbsp;Windows Azure&nbsp;Thumbnails Sample,&nbsp;you agree to such license terms.&nbsp; If you do not accept them, do not use the software.</strong></span></p>
+<h1><span style="font-size:large">Introduction</span></h1>
+<p><span style="font-family:verdana,geneva; font-size:x-small"><span style="line-height:150%">The Windows Azure Thumbnails sample is a hosted service that demonstrates a web role, a worker role, and a queue. The web role provides a front-end application for
+ the user to upload images and adds a work item to a queue. The worker role retrieves the work item from the queue and creates thumbnails in the specified folder.</span></span></p>
+<h1><span style="font-size:large">Prerequisites</span></h1>
+<ul>
+<li><span class="LabelEmbedded" style="font-size:x-small"><span style="line-height:150%"><strong>Storage account</strong>
+<span style="line-height:150%">&ndash; The sample is configured for using the Windows Azure Compute Emulator
+<span style="line-height:150%">and diagnostic data and images are collected in a local storage account. If you want to use this sample with a subscription in Windows Azure, you must create a storage account in Windows Azure and provide the account information
+ in the service configuration for the sample.</span></span></span></span> </li><li><strong><span style="font-size:x-small"><span class="LabelEmbedded"><span style="line-height:150%"><span style="line-height:150%"><span style="line-height:150%"><span class="LabelEmbedded"><span style="line-height:150%">Windows Azure SDK
+</span></span></span></span></span></span></span></strong><span class="LabelEmbedded" style="font-family:verdana,geneva; font-size:x-small"><span style="line-height:150%"><span style="line-height:150%"><span style="line-height:150%"><span class="LabelEmbedded"><span style="line-height:150%"><span style="line-height:150%">&ndash;
+ provides tools and files that are needed to complete the development process of an application for Windows Azure.</span></span></span></span></span></span></span>
+</li><li><span style="font-family:verdana,geneva; font-size:x-small"><span class="LabelEmbedded"><span style="line-height:150%"><span style="line-height:150%"><span style="line-height:150%"><span class="LabelEmbedded"><span style="line-height:150%"><span style="line-height:150%"><span class="LabelEmbedded"><span style="line-height:150%"><strong>Visual
+ Studio 2010</strong> <span style="line-height:150%">&ndash; the sample provides a Visual Studio 2010 project that you can use to deploy the sample.</span></span></span></span></span></span></span></span></span></span></span>
+</li></ul>
+<h1><span style="font-size:large; font-weight:bold">Building and Running the Sample</span></h1>
+<p><strong><span style="font-family:verdana,geneva; font-size:x-small"><span style="line-height:150%">To run the sample from Visual Studio 2010</span></span></strong></p>
+<ol>
+<li><span style="line-height:150%; font-family:verdana,geneva; font-size:x-small"><span style="line-height:150%">Open Visual Studio 2010 as an administrator.</span></span>
+</li><li><span style="font-family:verdana,geneva; font-size:x-small"><span style="line-height:150%"><span style="line-height:150%"><span style="line-height:150%">Browse to the folder where you extracted the sample and open Thumbnails.sln.</span></span></span></span>
+</li><li><span style="line-height:150%; font-family:verdana,geneva; font-size:x-small"><span style="line-height:150%"><span style="line-height:150%"><span style="line-height:150%">Press F6 to build the solution.</span></span></span></span>
+</li><li><span style="line-height:150%; font-family:verdana,geneva; font-size:x-small"><span style="line-height:150%"><span style="line-height:150%"><span style="line-height:150%"><span style="line-height:150%">Press F5 to debug the solution. When you debug or run
+ the application from Visual Studio, Visual Studio packages the application, starts the Windows Azure Compute Emulator<span style="line-height:150%">, deploys the application to the Compute Emulator<span style="line-height:150%">, and launches the browser to
+ display the default web page defined by the web role.</span></span></span></span></span></span></span>
+</li><li><span style="line-height:150%; font-family:verdana,geneva; font-size:x-small"><span style="line-height:150%"><span style="line-height:150%"><span style="line-height:150%"><span style="line-height:150%"><span style="line-height:150%"><span style="line-height:150%"><span style="line-height:150%">The
+ page displayed by the web role instance shows images that have been previously uploaded. Click
+<span class="UI"><span style="line-height:150%">Browse <span style="line-height:150%">
+to select an image to upload. <span style="line-height:150%">Click <span class="UI">
+<span style="line-height:150%">Submit<span style="line-height:150%">&nbsp;to upload the file, create a blob in the appropriate container, and add a message to the queue for the worker role instance.</span></span></span></span></span></span></span></span></span></span></span></span></span></span></span>
+</li></ol>
+<h1><span style="font-family:verdana,geneva; font-size:medium"><span style="line-height:150%"><span style="line-height:150%"><span style="line-height:150%"><span style="line-height:150%"><span style="line-height:150%"><span style="line-height:150%"><span style="line-height:150%"><span style="line-height:150%"><span class="UI"><span style="line-height:150%"><span style="line-height:150%"><span style="line-height:150%"><span class="UI"><span style="line-height:150%"><span style="line-height:150%"><span style="line-height:150%">Configuring
+ the diagnostic connection string</span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></h1>
+<p><span style="font-family:verdana,geneva; font-size:x-small"><span style="line-height:150%"><span style="line-height:150%"><span style="line-height:150%"><span style="line-height:150%"><span style="line-height:150%"><span style="line-height:150%"><span style="line-height:150%"><span style="line-height:150%"><span class="UI"><span style="line-height:150%"><span style="line-height:150%"><span style="line-height:150%"><span class="UI"><span style="line-height:150%"><span style="line-height:150%"><span style="line-height:150%"><span style="line-height:150%">The
+ Windows Azure Managed Library provides diagnostics classes to write log data to the Windows Azure storage services, either at scheduled intervals or by requesting an on-demand transfer. By default, the Windows Azure Thumbnails sample is configured to write
+ log data and image data to development storage. If you choose to deploy the application to Windows Azure, you must change the configuration string in the service model to specify a storage account in<br>
+Windows Azure.</span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></p>
+<p><strong><span style="font-family:verdana,geneva; font-size:x-small"><span style="line-height:150%"><span style="line-height:150%"><span style="line-height:150%"><span style="line-height:150%"><span style="line-height:150%"><span style="line-height:150%"><span style="line-height:150%"><span style="line-height:150%"><span class="UI"><span style="line-height:150%"><span style="line-height:150%"><span style="line-height:150%"><span class="UI"><span style="line-height:150%"><span style="line-height:150%"><span style="line-height:150%"><span style="line-height:150%"><span style="line-height:150%">To
+ change the diagnostic connection string in Visual Studio</span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></strong></p>
+<ol>
+<li><span style="font-family:verdana,geneva; font-size:x-small"><span style="line-height:150%"><span style="line-height:150%"><span style="line-height:150%"><span style="line-height:150%"><span style="line-height:150%"><span style="line-height:150%"><span style="line-height:150%"><span style="line-height:150%"><span class="UI"><span style="line-height:150%"><span style="line-height:150%"><span style="line-height:150%"><span class="UI"><span style="line-height:150%"><span style="line-height:150%"><span style="line-height:150%"><span style="line-height:150%"><span style="line-height:150%"><span style="line-height:150%">In
+ Solution Explorer, expand <span class="UI"><span style="line-height:150%"><strong>Roles</strong><span style="line-height:150%">, right-click
+<span class="UI"><span style="line-height:150%"><strong>Thumbnails_WebRole</strong><span style="line-height:150%"><strong>&nbsp;</strong><span class="UI"><span style="line-height:150%">, and then click
+<strong>Properties</strong>.</span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span>
+</li><li><span style="font-family:verdana,geneva; font-size:x-small"><span style="line-height:150%"><span style="line-height:150%"><span style="line-height:150%"><span style="line-height:150%"><span style="line-height:150%"><span style="line-height:150%"><span style="line-height:150%"><span style="line-height:150%"><span class="UI"><span style="line-height:150%"><span style="line-height:150%"><span style="line-height:150%"><span class="UI"><span style="line-height:150%"><span style="line-height:150%"><span style="line-height:150%"><span style="line-height:150%"><span style="line-height:150%"><span style="line-height:150%"><span class="UI"><span style="line-height:150%"><span style="line-height:150%"><span class="UI"><span style="line-height:150%"><span style="line-height:150%"><span class="UI"><span style="line-height:150%"><span style="font-family:verdana,geneva; font-size:x-small"><span style="line-height:150%"><span style="line-height:150%"><span style="line-height:150%"><span style="line-height:150%"><span style="line-height:150%"><span style="line-height:150%"><span style="line-height:150%"><span style="line-height:150%"><span class="UI"><span style="line-height:150%"><span style="line-height:150%"><span style="line-height:150%"><span class="UI"><span style="line-height:150%"><span style="line-height:150%"><span style="line-height:150%"><span style="line-height:150%"><span style="line-height:150%"><span style="line-height:150%"><span class="UI"><span style="line-height:150%"><span style="line-height:150%"><span class="UI"><span style="line-height:150%"><span style="line-height:150%"><span class="UI"><span style="line-height:150%"><span style="line-height:150%">On
+ the Settings page, select <span class="UI"><span style="line-height:150%"><strong>Microsoft.WindowsAzure.Plugins.Diagnostics.ConnectionString</strong><span style="line-height:150%"><span class="UI"><span style="line-height:150%"><span style="line-height:150%">,
+ and then click the Edit (...) button.</span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span>
+</li><li><span style="font-family:verdana,geneva; font-size:x-small"><span style="line-height:150%"><span style="line-height:150%"><span style="line-height:150%"><span style="line-height:150%"><span style="line-height:150%"><span style="line-height:150%"><span style="line-height:150%"><span style="line-height:150%"><span class="UI"><span style="line-height:150%"><span style="line-height:150%"><span style="line-height:150%"><span class="UI"><span style="line-height:150%"><span style="line-height:150%"><span style="line-height:150%"><span style="line-height:150%"><span style="line-height:150%"><span style="line-height:150%"><span class="UI"><span style="line-height:150%"><span style="line-height:150%"><span class="UI"><span style="line-height:150%"><span style="line-height:150%"><span class="UI"><span style="line-height:150%"><span style="line-height:150%"><span class="UI"><span style="line-height:150%"><span style="line-height:150%"><span class="UI"><span style="line-height:150%"><span style="line-height:150%"><span style="line-height:150%">Select
+<span class="UI"><span style="line-height:150%">Enter Storage Credentials<span style="line-height:150%">, and then enter your account name and key for your Windows Azure storage account.</span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span>
+</li><li><span style="font-family:verdana,geneva; font-size:x-small"><span style="line-height:150%"><span style="line-height:150%"><span style="line-height:150%"><span style="line-height:150%"><span style="line-height:150%"><span style="line-height:150%"><span style="line-height:150%"><span style="line-height:150%"><span class="UI"><span style="line-height:150%"><span style="line-height:150%"><span style="line-height:150%"><span class="UI"><span style="line-height:150%"><span style="line-height:150%"><span style="line-height:150%"><span style="line-height:150%"><span style="line-height:150%"><span style="line-height:150%"><span class="UI"><span style="line-height:150%"><span style="line-height:150%"><span class="UI"><span style="line-height:150%"><span style="line-height:150%"><span class="UI"><span style="line-height:150%"><span style="line-height:150%"><span class="UI"><span style="line-height:150%"><span style="line-height:150%"><span class="UI"><span style="line-height:150%"><span style="line-height:150%"><span style="line-height:150%"><span class="UI"><span style="line-height:150%"><span style="line-height:150%"><span style="line-height:150%">Select
+ whether to use the default HTTP or HTTPS endpoints to connect to the storage services. Alternately, you can configure custom endpoints for each of the three storage services.</span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span>
+</li><li><span style="font-family:verdana,geneva; font-size:x-small"><span style="line-height:150%"><span style="line-height:150%"><span style="line-height:150%"><span style="line-height:150%"><span style="line-height:150%"><span style="line-height:150%"><span style="line-height:150%"><span style="line-height:150%"><span class="UI"><span style="line-height:150%"><span style="line-height:150%"><span style="line-height:150%"><span class="UI"><span style="line-height:150%"><span style="line-height:150%"><span style="line-height:150%"><span style="line-height:150%"><span style="line-height:150%"><span style="line-height:150%"><span class="UI"><span style="line-height:150%"><span style="line-height:150%"><span class="UI"><span style="line-height:150%"><span style="line-height:150%"><span class="UI"><span style="line-height:150%"><span style="line-height:150%"><span class="UI"><span style="line-height:150%"><span style="line-height:150%"><span class="UI"><span style="line-height:150%"><span style="line-height:150%"><span style="line-height:150%"><span class="UI"><span style="line-height:150%"><span style="line-height:150%"><span style="line-height:150%"><span style="line-height:150%">Click
+<span class="UI"><span style="line-height:150%">OK.</span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span>
+</li><li><span style="font-family:verdana,geneva; font-size:x-small"><span style="line-height:150%"><span style="line-height:150%"><span style="line-height:150%"><span style="line-height:150%"><span style="line-height:150%"><span style="line-height:150%"><span style="line-height:150%"><span style="line-height:150%"><span class="UI"><span style="line-height:150%"><span style="line-height:150%"><span style="line-height:150%"><span class="UI"><span style="line-height:150%"><span style="line-height:150%"><span style="line-height:150%"><span style="line-height:150%"><span style="line-height:150%"><span style="line-height:150%"><span class="UI"><span style="line-height:150%"><span style="line-height:150%"><span class="UI"><span style="line-height:150%"><span style="line-height:150%"><span class="UI"><span style="line-height:150%"><span style="line-height:150%"><span class="UI"><span style="line-height:150%"><span style="line-height:150%"><span class="UI"><span style="line-height:150%"><span style="line-height:150%"><span style="line-height:150%"><span class="UI"><span style="line-height:150%"><span style="line-height:150%"><span style="line-height:150%"><span style="line-height:150%"><span class="UI"><span style="line-height:150%"><span style="line-height:150%">Repeat
+ this process for the worker role.</span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span>
+</li></ol>
+<p><span style="font-family:verdana,geneva; font-size:x-small"><span style="line-height:150%"><span style="line-height:150%"><span style="line-height:150%"><span style="line-height:150%"><span style="line-height:150%"><span style="line-height:150%"><span style="line-height:150%"><span style="line-height:150%"><span class="UI"><span style="line-height:150%"><span style="line-height:150%"><span style="line-height:150%"><span class="UI"><span style="line-height:150%"><span style="line-height:150%"><span style="line-height:150%"><span style="line-height:150%"><span style="line-height:150%"><span style="line-height:150%"><span class="UI"><span style="line-height:150%"><span style="line-height:150%"><span class="UI"><span style="line-height:150%"><span style="line-height:150%"><span class="UI"><span style="line-height:150%"><span style="line-height:150%"><span class="UI"><span style="line-height:150%"><span style="line-height:150%"><span class="UI"><span style="line-height:150%"><span style="line-height:150%"><span style="line-height:150%"><span class="UI"><span style="line-height:150%"><span style="line-height:150%"><span style="line-height:150%"><span style="line-height:150%"><span class="UI"><span style="line-height:150%"><span style="line-height:150%"><span style="line-height:150%"><strong>To
+ change the diagnostic connection string by using a text editor</strong></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></p>
+<ol>
+<li><span style="font-family:verdana,geneva; font-size:x-small"><span style="line-height:150%"><span style="line-height:150%"><span style="line-height:150%"><span style="line-height:150%"><span style="line-height:150%"><span style="line-height:150%"><span style="line-height:150%"><span style="line-height:150%"><span class="UI"><span style="line-height:150%"><span style="line-height:150%"><span style="line-height:150%"><span class="UI"><span style="line-height:150%"><span style="line-height:150%"><span style="line-height:150%"><span style="line-height:150%"><span style="line-height:150%"><span style="line-height:150%"><span class="UI"><span style="line-height:150%"><span style="line-height:150%"><span class="UI"><span style="line-height:150%"><span style="line-height:150%"><span class="UI"><span style="line-height:150%"><span style="line-height:150%"><span class="UI"><span style="line-height:150%"><span style="line-height:150%"><span class="UI"><span style="line-height:150%"><span style="line-height:150%"><span style="line-height:150%"><span class="UI"><span style="line-height:150%"><span style="line-height:150%"><span style="line-height:150%"><span style="line-height:150%"><span class="UI"><span style="line-height:150%"><span style="line-height:150%"><span style="line-height:150%"><span style="line-height:150%">Edit
+ the ServiceConfiguration.cscfg file using a text editor, such as Notepad.</span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span>
+</li><li><span style="font-family:verdana,geneva; font-size:x-small"><span style="line-height:150%"><span style="line-height:150%"><span style="line-height:150%"><span style="line-height:150%"><span style="line-height:150%"><span style="line-height:150%"><span style="line-height:150%"><span style="line-height:150%"><span class="UI"><span style="line-height:150%"><span style="line-height:150%"><span style="line-height:150%"><span class="UI"><span style="line-height:150%"><span style="line-height:150%"><span style="line-height:150%"><span style="line-height:150%"><span style="line-height:150%"><span style="line-height:150%"><span class="UI"><span style="line-height:150%"><span style="line-height:150%"><span class="UI"><span style="line-height:150%"><span style="line-height:150%"><span class="UI"><span style="line-height:150%"><span style="line-height:150%"><span class="UI"><span style="line-height:150%"><span style="line-height:150%"><span class="UI"><span style="line-height:150%"><span style="line-height:150%"><span style="line-height:150%"><span class="UI"><span style="line-height:150%"><span style="line-height:150%"><span style="line-height:150%"><span style="line-height:150%"><span class="UI"><span style="line-height:150%"><span style="line-height:150%"><span style="line-height:150%"><span style="line-height:150%"><span style="line-height:150%">Change
+ the value of the <span style="line-height:150%"><strong>Microsoft.WindowsAzure.Plugins.Diagnostics.ConnectionString</strong> setting
+</span>to use a connection string for Windows Azure storage. The connection string must be in the format shown in the example below.</span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span>
+</li><li><span style="font-family:verdana,geneva; font-size:x-small"><span style="line-height:150%"><span style="line-height:150%"><span style="line-height:150%"><span style="line-height:150%"><span style="line-height:150%"><span style="line-height:150%"><span style="line-height:150%"><span style="line-height:150%"><span class="UI"><span style="line-height:150%"><span style="line-height:150%"><span style="line-height:150%"><span class="UI"><span style="line-height:150%"><span style="line-height:150%"><span style="line-height:150%"><span style="line-height:150%"><span style="line-height:150%"><span style="line-height:150%"><span class="UI"><span style="line-height:150%"><span style="line-height:150%"><span class="UI"><span style="line-height:150%"><span style="line-height:150%"><span class="UI"><span style="line-height:150%"><span style="line-height:150%"><span class="UI"><span style="line-height:150%"><span style="line-height:150%"><span class="UI"><span style="line-height:150%"><span style="line-height:150%"><span style="line-height:150%"><span class="UI"><span style="line-height:150%"><span style="line-height:150%"><span style="line-height:150%"><span style="line-height:150%"><span class="UI"><span style="line-height:150%"><span style="line-height:150%"><span style="line-height:150%"><span style="line-height:150%"><span style="line-height:150%"><span style="line-height:150%">Locate
+ the Microsoft.WindowsAzure.Plugins.Diagnostics.ConnectionString setting for the worker role and change it in the same way.</span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span>
+</li><li><span style="font-family:verdana,geneva; font-size:x-small"><span style="line-height:150%"><span style="line-height:150%"><span style="line-height:150%"><span style="line-height:150%"><span style="line-height:150%"><span style="line-height:150%"><span style="line-height:150%"><span style="line-height:150%"><span class="UI"><span style="line-height:150%"><span style="line-height:150%"><span style="line-height:150%"><span class="UI"><span style="line-height:150%"><span style="line-height:150%"><span style="line-height:150%"><span style="line-height:150%"><span style="line-height:150%"><span style="line-height:150%"><span class="UI"><span style="line-height:150%"><span style="line-height:150%"><span class="UI"><span style="line-height:150%"><span style="line-height:150%"><span class="UI"><span style="line-height:150%"><span style="line-height:150%"><span class="UI"><span style="line-height:150%"><span style="line-height:150%"><span class="UI"><span style="line-height:150%"><span style="line-height:150%"><span style="line-height:150%"><span class="UI"><span style="line-height:150%"><span style="line-height:150%"><span style="line-height:150%"><span style="line-height:150%"><span class="UI"><span style="line-height:150%"><span style="line-height:150%"><span style="line-height:150%"><span style="line-height:150%"><span style="line-height:150%"><span style="line-height:150%"><span style="line-height:150%">Save
+ the ServiceConfiguration.cscfg file.</span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span>
+</li></ol>
+<div class="scriptcode">
+<div class="pluginEditHolder" pluginCommand="mceScriptCode">
+<div class="title"><span>XML</span></div>
+<div class="pluginLinkHolder"><span class="pluginEditHolderLink">Edit</span>|<span class="pluginRemoveHolderLink">Remove</span></div>
+<span class="hidden">xml</span>
+<pre class="hidden">DefaultEndpointsProtocol=[http|https];AccountName=&lt;account-name&gt;;AccountKey=&lt;account-key&gt;</pre>
+<div class="preview">
+<pre class="js">DefaultEndpointsProtocol=[http|https];AccountName=&lt;account-name&gt;;AccountKey=&lt;account-key&gt;&nbsp;
+&nbsp;
+</pre>
+</div>
+</div>
+</div>
+<div class="endscriptcode"><span style="font-family:verdana,geneva"><span style="font-size:x-small">You must choose either http or https, &lt;account-name&gt; must be changed to the name of your storage account, and &lt;acc</span></span><span style="font-size:x-small">ount-key&gt;
+ must be changed to the key of your&nbsp;storage account.</span></div>
+<div class="scriptcode">
+<div class="pluginEditHolder" pluginCommand="mceScriptCode">
+<div class="preview"></div>
+</div>
+</div>
+
+</div>
+
+
+    </div>
+</body>
+</html>
