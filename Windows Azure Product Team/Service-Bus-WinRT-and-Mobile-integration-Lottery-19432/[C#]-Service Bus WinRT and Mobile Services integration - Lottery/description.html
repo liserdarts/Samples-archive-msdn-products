@@ -1,0 +1,336 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
+    <head><link rel="stylesheet" type="text/css" href="description/Combined.css,0:HeaderFooterSprite,0:Header.NonMtps,1:LinkList;/Areas/Centers/Themes/StandardDevCenter/Content:0,/Areas/Epx/Themes/Base/Content:1&amp;amp;hashKey=E26C1359372FE948C3C39B3F0FB94413" xmlns="http://www.w3.org/1999/xhtml" />
+<link type="text/css" rel="stylesheet" xmlns="http://www.w3.org/1999/xhtml" />
+<link rel="stylesheet" type="text/css" href="description/007decc8-6c12-4163-b4b5-9d2256e5c10eCombined.css,0:HeaderFooterSprite,0:Footer.NonMtps,1:LinkList;/Areas/Centers/Themes/StandardDevCenter/Content:0,/Areas/Epx/Themes/Base/Content:1&amp;amp;hashKey=76DF6246C5394201214B48DD1A8F406B" xmlns="http://www.w3.org/1999/xhtml" />
+<link type="text/css" rel="stylesheet" xmlns="http://www.w3.org/1999/xhtml" />
+
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <title>Service Bus WinRT and Mobile Services integration - Lottery</title>
+        <link href="description/Galleries.css" type="text/css" rel="Stylesheet" /><link href="description/Layout.css" type="text/css" rel="Stylesheet" /><link href="description/Brand.css" type="text/css" rel="Stylesheet" />
+        <link href="description/iframedescription.css" rel="Stylesheet" type="text/css" />
+        <script src="description/offline.js" type="text/javascript"></script>
+        <style type="text/css">
+            #projectInfo {
+                overflow: auto;
+            }
+            #longDesc {
+                clear:both;
+                margin: 25px 0 10px 0;
+            }
+
+            #SampleIndexList{
+                margin-left: 15px;
+            }
+        </style>
+    </head>
+<body>
+    <div id="offlineDescription">
+        <h1>Service Bus WinRT and Mobile Services integration - Lottery</h1>
+        <br/>
+        <div id="projectInfo">
+            <div class="section">
+                    <div class="itemBarLong tagsContainer">
+                        <label for="Technologies">Technologies</label>
+                        <div id="Technologies">
+                            Microsoft Azure, Service Bus, Windows Azure Service Bus, Windows Azure Mobile Services
+                        </div>
+                    </div>
+                    <div class="itemBarLong tagsContainer">
+                        <label for="Topics">Topics</label>
+                        <div id="Topics">
+                            Messaging, Publish Subscribe
+                        </div>
+                    </div>
+                <div class="itemBarLong">
+                    <label for="Platforms">Platforms</label>
+                    <div id="Platforms">
+                        Cloud, Windows RT
+                    </div>
+                </div>
+                <div class="itemBarLong">
+                    <label for="Requirements">Requirements</label>
+                    <div id="Requirements">
+                        
+                    </div>
+                </div>
+                <div class="itemBar">
+                    <label for="LastUpdated">Primary language</label>
+                    <div id="LastUpdated">en-US</div>
+                </div>
+                <div class="itemBar">
+                    <label for="LastUpdated">Updated</label>
+                    <div id="LastUpdated">11/8/2012</div>
+                </div>
+                <div class="itemBarLong">
+                    <label for="License">License</label>
+                    <div id="License">
+                        <a href="license.rtf">Apache License, Version 2.0</a></div>
+                </div>
+                <div class="itemBar">
+                    <div class="viewonlinecont">
+                        <a data-link="online" href="http://code.msdn.microsoft.com/Service-Bus-WinRT-and-b31312a2">View this sample online</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+                   
+<script type="text/javascript">
+    function initializePage() {
+        var otherTabClass = 'otherTab';
+        var hiddenPreClass = 'hidden';
+
+        var htmlDecode = function(encodedData) {
+            var decodedData = "";
+            if (encodedData) {
+                var div = document.createElement('div');
+                div.innerHTML = encodedData;
+                decodedData = div.firstChild.nodeValue.replace( /\\r\\n/ig , '\r\n');
+            }
+            return decodedData;
+        };
+                
+        Galleries.iterateElem(Galleries.findElem(null, 'div', 'scriptcode'), function (index, scriptBlock) {
+            var titleElem = Galleries.findElem(scriptBlock, 'div', 'title')[0];
+            var labelElems = Galleries.findElem(titleElem, 'span');
+            if (labelElems.length == 0) {
+                labelElems = titleElem;
+            }
+            var languageSpans = Galleries.findElem(scriptBlock, 'span', 'hidden');
+            var pres = Galleries.findElem(scriptBlock, 'pre');
+            if (languageSpans.length > 0 && pres.length > 1) {
+                Galleries.iterateElem(labelElems, function(index, elem) {
+                    var codePre = pres[index];
+                    var labelSpan = elem;
+                    var languageSpan = languageSpans[index];
+                            
+                    elem.code = codePre.innerHTML.replace( /(\r(\n)?)|((\r)?\n)/ig , '\\r\\n');
+                            
+                    codePre.className = codePre.className.replace(hiddenPreClass, '');
+                            
+                    languageSpan.parentNode.removeChild(languageSpan);
+                });
+
+                pres = Galleries.findElem(scriptBlock, 'pre');
+                Galleries.iterateElem(labelElems, function(index, elem) {
+                    var codePre = pres[index];
+                    var labelSpan = elem;
+                    if (index == 0) {
+                        scriptBlock.activeTab = 0;
+                    }
+                    else {
+                        labelSpan.className += otherTabClass;
+                        codePre.className += hiddenPreClass;
+                    }
+                    Galleries.attachEventHandler(labelSpan, 'click', function(e) {
+                        var activeTab = scriptBlock.activeTab;
+                        labelElems[activeTab].className += otherTabClass;
+                        pres[activeTab].className += hiddenPreClass;
+
+                        codePre.className = codePre.className.replace(hiddenPreClass, '');
+                        labelSpan.className = labelSpan.className.replace(otherTabClass, '');
+                        scriptBlock.activeTab = index;
+                    });
+                });
+
+                var preview = Galleries.findElem(scriptBlock, 'div', 'preview');
+                if (preview.length == 0) {
+                    preview.push(pres[pres.length - 1]);
+                }
+                Galleries.iterateElem(preview, function(index, elem) {
+                    elem.parentNode.removeChild(elem);
+                });
+
+                if (window.clipboardData && clipboardData.setData) {
+                    var copyLink = document.createElement('a');
+                    copyLink.href = 'javascript:void(0);';
+                    copyLink.className = 'copyCode';
+                    copyLink.innerHTML = 'Copy code';
+                    Galleries.attachEventHandler(copyLink, 'click', function (e) {
+                        clipboardData.setData("Text", htmlDecode(labelElems[scriptBlock.activeTab].code));
+                        return false;
+                    });
+                    scriptBlock.insertBefore(copyLink, scriptBlock.childNodes[0]);
+                }
+            }
+        });
+    }
+
+    Galleries.onWindowLoad(function(){
+        initializePage();
+    });
+
+</script>
+<div id="longDesc">
+    
+<h1>Introduction</h1>
+<p><span style="font-size:small">Service Bus Lottery sample is a simple application that
+</span><span style="font-size:small">showcases the Azure Messaging WinRT client library and&nbsp;interactions between Azure Mobile Services and Service Bus.<br>
+</span><span style="font-size:small">The app uses a table in Azure Mobile Services called
+</span><span style="font-size:small">&ldquo;Prizes&rdquo;. Various clients can submit prizes to be distributed. The distribution
+</span><span style="font-size:small">happens via a Service Bus Queue that load balances the messages across all
+</span><span style="font-size:small">clients that are currently connected.<br>
+</span><span style="font-size:small">Messages are sent through the azure node.js module from the
+</span><span style="font-size:small">Insert script of the Prizes table inside Mobile Services. Client uses the
+</span><span style="font-size:small">Mobile Services Messaging SDK to start a receiving loop as soon as the app is
+</span><span style="font-size:small">started.</span></p>
+<h1>&nbsp;<img id="70352" src="description/sbzumo.png" alt="" width="727" height="499"><span>Building the Sample</span></h1>
+<p><span style="font-size:small">If you haven&rsquo;t </span><span style="font-size:small">already, we strongly recommend you look at the
+<a href="http://code.msdn.microsoft.com/Service-Bus-WinRT-and-b31312a2/https://www.windowsazure.com/en-us/develop/net/how-to-guides/service-bus-queues/">
+Service Bus Queues tutorial</a> to understand the Service Bus feature we will be using
+</span><span style="font-size:small">in the sample, and the <a href="http://go.microsoft.com/fwlink/?LinkID=262854&amp;clcid=0x409">
+Mobile Services getting started guide</a> to familiarize yourself with Mobile</span><br>
+<span style="font-size:small">Services.</span></p>
+<ol>
+<li><span style="font-size:small">Make sure you have the necessary</span><span style="font-size:small">&nbsp; pre-requisites:</span>
+<ul>
+<li><span style="font-size:small">Windows Azure account and access to the Mobile </span>
+<span style="font-size:small">Servies preview. <a href="http://aka.ms/mobileservices" >
+Sign up<br>
+for the Free Trial</a></span> </li><li><span style="font-size:small"><a href="http://go.microsoft.com/fwlink/?LinkId=257546" >Visual Studio 2012 Express for Windows 8</a></span>
+</li><li><span style="font-size:small"><a href="http://go.microsoft.com/fwlink/?LinkID=257545&amp;clcid=0x409" >Mobile Services SDK</a></span>
+</li></ul>
+</li><li><span style="font-size:small">Open a browser and sign&nbsp;</span><span style="font-size:small">in to the
+<a href="http://code.msdn.microsoft.com/Service-Bus-WinRT-and-b31312a2/https://manage.windowsazure.com/">Windows Azure management portal</a>,&nbsp;</span><span style="font-size:small">click on the
+<strong>New</strong> button at the bottom left, select <strong>App Services</strong>, choose
+<strong>Service Bus Queue</strong> and select <strong>Quick</strong> <strong>Create</strong>. Specify a&nbsp;</span><span style="font-size:small">queue name and a region.</span>
+</li><li><span style="font-size:small">Click again on the <strong>New&nbsp;</strong></span><span style="font-size:small">button at the bottom left, choose
+<strong>Mobile Service</strong> and select <strong>Create</strong>.&nbsp;</span><span style="font-size:small">Complete the steps to create your application.</span>
+</li><li><span style="font-size:small">Click on the <strong>Data</strong></span><span style="font-size:small"> tab and create a table called
+<strong>Prizes</strong>.</span> </li><li><span style="font-size:small">Open the <strong>ServerScripts</strong></span><span style="font-size:small"> folder inside the download zip and paste the contents of Prizes_Insert.js&nbsp;i</span><span style="font-size:small">nto the insert script of the
+ table Prizes in the Portal.</span> </li><li><span style="font-size:small">In the script replace the following placeholders:</span>&nbsp;
+<ul>
+<li><span style="font-size:small">&lt;namespace&nbsp;</span><span style="font-size:small">name&gt;: the name of the Service Bus Namespace as reported in the
+<strong>All Items</strong> page of the portal.</span> </li><li><span style="font-size:small">&lt;namespace key&gt;:&nbsp;</span><span style="font-size:small">the
+<strong>Default Key</strong> found by&nbsp;</span><span style="font-size:small">clicking on
+<strong>Access Key</strong> at the&nbsp;</span><span style="font-size:small">bottom the namespace detail page.&nbsp;</span>
+</li><li><span style="font-size:small">&lt;queue name&gt;:&nbsp;</span><span style="font-size:small">the name of the queue created at step 2</span>
+</li></ul>
+</li><li><span style="font-size:small">Open the solution (.sln</span><span style="font-size:small"> file) inside the zip with Visual Studio 2012 (make sure you have first&nbsp;</span><span style="font-size:small">extracted the zip file).</span>
+</li><li><span style="font-size:small">Configure your client app to point at your new</span><span style="font-size:small"> mobile service endpoint. Inside the Window Azure management portal,
+</span><span style="font-size:small">navigate to the Quick Start in your application:<br>
+</span><img id="70301" src="description/mobile.png" alt="" width="405" height="372">
+</li><li><span style="font-size:small">Click &ldquo;Connect an existing Windows 8 application&rdquo;&nbsp;</span><span style="font-size:small">and copy the url and application key from the code sample. Open App.xaml.cs&nbsp;</span><span style="font-size:small">and
+ paste the url and key into the appropriate fields.</span> </li><li><span style="font-size:small">Open MainPage.xaml.cs Replace the following&nbsp;</span><span style="font-size:small">placeholders:</span>
+<ul>
+<li><span style="font-size:small">&lt;queue name&gt;: with the queue name created&nbsp;</span><span style="font-size:small">at step 2</span>
+</li><li><span style="font-size:small">&lt;service bus connection string&gt;: the <strong>
+Connection String</strong> found by&nbsp;</span><span style="font-size:small">clicking on
+<strong>Access Key</strong> at the&nbsp;</span><span style="font-size:small">bottom the namespace detail page.</span>
+</li></ul>
+</li><li><span style="font-size:small">Build and run the app&nbsp;</span><span style="font-size:small">in Visual Studio</span>
+</li></ol>
+<p><span style="font-size:20px; font-weight:bold">Description</span></p>
+<p><span style="font-size:small">This sample demonstrates how you can send messages from a moblie services script using the Azure Node.js SDK</span></p>
+<div class="scriptcode">
+<div class="pluginEditHolder" pluginCommand="mceScriptCode">
+<div class="title"><span>JavaScript</span></div>
+<div class="pluginLinkHolder"><span class="pluginEditHolderLink">Edit</span>|<span class="pluginRemoveHolderLink">Remove</span></div>
+<span class="hidden">js</span>
+<pre class="hidden">function insert(item, user, request) {
+    var insertInQueue = function() {
+        var azure = require('azure');
+        var serviceBusService = azure.createServiceBusService('&lt;namespace name&gt;', '&lt;namespace key&gt;');
+
+        serviceBusService.createQueueIfNotExists('&lt;queue name&gt;', function(error) {
+            if (!error) {
+                serviceBusService.sendQueueMessage('&lt;queue name&gt;', '&quot;' &#43; item.text &#43; '&quot;', function(error) {
+                    if (!error) {
+                        console.log('sent message: ' &#43; item.id);
+                    }
+                });
+            }
+        });
+    };
+
+    request.execute({
+        success: function () {
+            insertInQueue();
+            request.respond();
+        }
+    });
+}</pre>
+<div class="preview">
+<pre class="js"><span class="js__operator">function</span>&nbsp;insert(item,&nbsp;user,&nbsp;request)&nbsp;<span class="js__brace">{</span>&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;<span class="js__statement">var</span>&nbsp;insertInQueue&nbsp;=&nbsp;<span class="js__operator">function</span>()&nbsp;<span class="js__brace">{</span>&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="js__statement">var</span>&nbsp;azure&nbsp;=&nbsp;require(<span class="js__string">'azure'</span>);&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="js__statement">var</span>&nbsp;serviceBusService&nbsp;=&nbsp;azure.createServiceBusService(<span class="js__string">'&lt;namespace&nbsp;name&gt;'</span>,&nbsp;<span class="js__string">'&lt;namespace&nbsp;key&gt;'</span>);&nbsp;
+&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;serviceBusService.createQueueIfNotExists(<span class="js__string">'&lt;queue&nbsp;name&gt;'</span>,&nbsp;<span class="js__operator">function</span>(error)&nbsp;<span class="js__brace">{</span>&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="js__statement">if</span>&nbsp;(!error)&nbsp;<span class="js__brace">{</span>&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;serviceBusService.sendQueueMessage(<span class="js__string">'&lt;queue&nbsp;name&gt;'</span>,&nbsp;<span class="js__string">'&quot;'</span>&nbsp;&#43;&nbsp;item.text&nbsp;&#43;&nbsp;<span class="js__string">'&quot;'</span>,&nbsp;<span class="js__operator">function</span>(error)&nbsp;<span class="js__brace">{</span>&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="js__statement">if</span>&nbsp;(!error)&nbsp;<span class="js__brace">{</span>&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;console.log(<span class="js__string">'sent&nbsp;message:&nbsp;'</span>&nbsp;&#43;&nbsp;item.id);&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="js__brace">}</span>&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="js__brace">}</span>);&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="js__brace">}</span>&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="js__brace">}</span>);&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;<span class="js__brace">}</span>;&nbsp;
+&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;request.execute(<span class="js__brace">{</span>&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;success:&nbsp;<span class="js__operator">function</span>&nbsp;()&nbsp;<span class="js__brace">{</span>&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;insertInQueue();&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;request.respond();&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="js__brace">}</span>&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;<span class="js__brace">}</span>);&nbsp;
+<span class="js__brace">}</span></pre>
+</div>
+</div>
+</div>
+<p><span style="font-size:small">The Windows store app sample demonstrates how to receive messages from a Service Bus Queue:</span></p>
+<h1><span>
+<div class="scriptcode">
+<div class="pluginEditHolder" pluginCommand="mceScriptCode">
+<div class="title"><span>C#</span></div>
+<div class="pluginLinkHolder"><span class="pluginEditHolderLink">Edit</span>|<span class="pluginRemoveHolderLink">Remove</span></div>
+<span class="hidden">csharp</span>
+<pre class="hidden">// this code connects to the Service Bus queue.
+prizesQ = new Queue(&quot;&lt;queue name&gt;&quot;, &quot;&lt;service bus connection string&gt;&quot;);
+
+//receive messages in a Async method
+    while (true)
+    {
+        try
+        {
+            String prize = await prizesQ.ReceiveAsync&lt;String&gt;();
+            // process the message here
+         } 
+         catch (MessagingException)
+         {
+            // we need to catch exception thrown when no message is retrieved.
+          }
+       }</pre>
+<div class="preview">
+<pre class="csharp"><span class="cs__com">//&nbsp;this&nbsp;code&nbsp;connects&nbsp;to&nbsp;the&nbsp;Service&nbsp;Bus&nbsp;queue.</span>&nbsp;
+prizesQ&nbsp;=&nbsp;<span class="cs__keyword">new</span>&nbsp;Queue(<span class="cs__string">&quot;&lt;queue&nbsp;name&gt;&quot;</span>,&nbsp;<span class="cs__string">&quot;&lt;service&nbsp;bus&nbsp;connection&nbsp;string&gt;&quot;</span>);&nbsp;
+&nbsp;
+<span class="cs__com">//receive&nbsp;messages&nbsp;in&nbsp;a&nbsp;Async&nbsp;method</span>&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;<span class="cs__keyword">while</span>&nbsp;(<span class="cs__keyword">true</span>)&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;{&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="cs__keyword">try</span>&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;String&nbsp;prize&nbsp;=&nbsp;await&nbsp;prizesQ.ReceiveAsync&lt;String&gt;();&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="cs__com">//&nbsp;process&nbsp;the&nbsp;message&nbsp;here</span>&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="cs__keyword">catch</span>&nbsp;(MessagingException)&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="cs__com">//&nbsp;we&nbsp;need&nbsp;to&nbsp;catch&nbsp;exception&nbsp;thrown&nbsp;when&nbsp;no&nbsp;message&nbsp;is&nbsp;retrieved.</span>&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}</pre>
+</div>
+</div>
+</div>
+</span>More Information</h1>
+<p><span style="font-size:small"><a href="http://msdn.microsoft.com/en-us/library/microsoft.windowsazure.messaging.aspx">Windows Azure Service Bus WinRT Library reference</a><br>
+<a href="http://www.windowsazure.com/en-us/develop/net/fundamentals/hybrid-solutions/">Windows Azure Service Bus</a><br>
+<a href="http://www.windowsazure.com/en-us/develop/mobile/">Windows Azure Mobile Services</a><br>
+<a href="http://code.msdn.microsoft.com/Service-Bus-WinRT-and-b31312a2/https://github.com/WindowsAzure/azure-sdk-for-node">Windows Azure Node.js SDK</a><br>
+<a href="http://www.windowsazure.com/en-us/">Windows Azure</a></span></p>
+
+</div>
+
+
+    </div>
+</body>
+</html>
