@@ -1,0 +1,26 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<unattend xmlns="urn:schemas-microsoft-com:unattend">
+  <servicing>
+    <package action="configure">
+      <assemblyIdentity name="Microsoft-Windows-Foundation-Package" version="6.1.7600.16385" processorArchitecture="amd64" publicKeyToken="31bf3856ad364e35" language="" />
+      <selection name="NetFx3" state="true" />
+      <selection name="IIS-WebServerRole" state="true" />
+      <selection name="IIS-WebServer" state="true" />
+      <selection name="IIS-CommonHttpFeatures" state="true" />
+      <selection name="IIS-HttpErrors" state="true" />
+      <selection name="IIS-ApplicationDevelopment" state="true" />
+      <selection name="IIS-HealthAndDiagnostics" state="true" />
+      <selection name="IIS-HttpLogging" state="true" />
+      <selection name="IIS-RequestMonitor" state="true" />
+      <selection name="IIS-Security" state="true" />
+      <selection name="IIS-RequestFiltering" state="true" />
+      <selection name="IIS-Performance" state="true" />
+      <selection name="IIS-WebServerManagementTools" state="true" />
+      <selection name="IIS-StaticContent" state="true" />
+      <selection name="IIS-DefaultDocument" state="true" />
+      <selection name="IIS-DirectoryBrowsing" state="true" />
+      <selection name="IIS-HttpCompressionStatic" state="true" />
+      <selection name="IIS-ManagementConsole" state="true" />
+    </package>
+  </servicing>
+</unattend>

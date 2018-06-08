@@ -1,0 +1,13 @@
+C:\rd\rd_samples_n\services\samples\ExternalSamples\LogDrive\LogDriveService\bin\x64\Debug\LogDriveService.exe.config
+C:\rd\rd_samples_n\services\samples\ExternalSamples\LogDrive\LogDriveService\bin\x64\Debug\LogDriveService.exe
+C:\rd\rd_samples_n\services\samples\ExternalSamples\LogDrive\LogDriveService\bin\x64\Debug\LogDriveService.pdb
+C:\rd\rd_samples_n\services\samples\ExternalSamples\LogDrive\LogDriveService\bin\x64\Debug\Microsoft.WindowsAzure.CloudDrive.dll
+C:\rd\rd_samples_n\services\samples\ExternalSamples\LogDrive\LogDriveService\bin\x64\Debug\Microsoft.WindowsAzure.StorageClient.dll
+C:\rd\rd_samples_n\services\samples\ExternalSamples\LogDrive\LogDriveService\bin\x64\Debug\Microsoft.WindowsAzure.CloudDrive.xml
+C:\rd\rd_samples_n\services\samples\ExternalSamples\LogDrive\LogDriveService\bin\x64\Debug\Microsoft.WindowsAzure.StorageClient.xml
+C:\rd\rd_samples_n\services\samples\ExternalSamples\LogDrive\LogDriveService\obj\x64\Debug\ResolveAssemblyReference.cache
+C:\rd\rd_samples_n\services\samples\ExternalSamples\LogDrive\LogDriveService\obj\x64\Debug\Samples.LogDriveService.resources
+C:\rd\rd_samples_n\services\samples\ExternalSamples\LogDrive\LogDriveService\obj\x64\Debug\ResGen.read.1.tlog
+C:\rd\rd_samples_n\services\samples\ExternalSamples\LogDrive\LogDriveService\obj\x64\Debug\ResGen.write.1.tlog
+C:\rd\rd_samples_n\services\samples\ExternalSamples\LogDrive\LogDriveService\obj\x64\Debug\LogDriveService.exe
+C:\rd\rd_samples_n\services\samples\ExternalSamples\LogDrive\LogDriveService\obj\x64\Debug\LogDriveService.pdb

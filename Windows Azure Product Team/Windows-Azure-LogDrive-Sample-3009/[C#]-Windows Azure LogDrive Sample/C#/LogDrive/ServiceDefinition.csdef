@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ServiceDefinition xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" name="Reference-VMRoleTest" xmlns="http://schemas.microsoft.com/ServiceHosting/2008/10/ServiceDefinition">
+  <VirtualMachineRole name="VmRole1" vmsize="Medium">
+    <LocalResources>
+      <LocalStorage name="Data" />
+    </LocalResources>
+    <ConfigurationSettings>
+      <Setting name="LogDriveService.BlobPath" />
+      <Setting name="LogDriveService.AccountName" />
+      <Setting name="LogDriveService.AccountKey" />
+    </ConfigurationSettings>
+
+    <Endpoints>
+      <InputEndpoint name="HttpIn" protocol="tcp" port="80" localPort="80" />
+      <InputEndpoint name="Microsoft.WindowsAzure.Plugins.RemoteForwarder.RdpInput" protocol="tcp" port="3389" localPort="3389" />
+    </Endpoints>
+
+  </VirtualMachineRole>
+
+</ServiceDefinition>

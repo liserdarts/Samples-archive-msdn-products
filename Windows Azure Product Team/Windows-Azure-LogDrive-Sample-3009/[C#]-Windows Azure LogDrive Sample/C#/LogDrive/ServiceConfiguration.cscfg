@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ServiceConfiguration xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" serviceName="Reference-VMRoleTest" xmlns="http://schemas.microsoft.com/ServiceHosting/2008/10/ServiceConfiguration">
+  <Role name="VmRole1">
+    <OsImage href="VHDNAME" />
+    <ConfigurationSettings>
+      <Setting name="LogDriveService.BlobPath" value="http://ACCOUNT.blob.core.windows.net/CONTAINER/{0}.vhd"/>
+      <Setting name="LogDriveService.AccountName" value="ACCOUNTNAME"/>
+      <Setting name="LogDriveService.AccountKey" value="ACCOUNTKEY"/>
+    </ConfigurationSettings>
+    <Instances count="1" />
+    <Certificates />
+  </Role>
+</ServiceConfiguration>
