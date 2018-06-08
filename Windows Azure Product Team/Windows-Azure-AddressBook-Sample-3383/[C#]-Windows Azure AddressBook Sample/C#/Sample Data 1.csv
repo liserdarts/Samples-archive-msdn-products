@@ -1,0 +1,9 @@
+FirstName,LastName,Email,CellPhone,HomePhone,StreetAddress,City,State,ZipCode
+Anna,Anderson,anna@contoso.com,425-555-0101,425-555-0111,101 Alder,Redmond,WA,58052
+Bob,Brown,bob@contoso.com,425-555-0102,425-555-0122,202 Beech,Bellevue,WA,58006
+Chloe,Clark,chloe@contoso.com,425-555-0103,425-555-0133,303 Chestnut,Kirkland,WA,58033
+Daniel,Davis,daniel@contoso.com,425-555-0104,425-555-0144,404 Dogwood,Redmond,WA,58052
+Emma,Evans,emma@contoso.com,425-555-0105,425-555-0155,505 Elm,Bellevue,WA,58007
+Francisco,Flores,francisco@email.com,425-555-0106,425-555-0166,606 Fir,Kirkland,WA,58034
+Grace,Green,grace@contoso.com,425-555-0107,425-555-0177,707 Ginkgo,Redmond,WA,58052
+Hunter,Harris,hunter@contoso.com,425-555-0108,425-555-0188,808 Hemlock,Bellevue,WA,58004
