@@ -1,0 +1,15 @@
+﻿<?xml version='1.0' encoding='utf-8'?>
+<SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)" GeneratedClassNamespace="CacheAPISample.Properties" GeneratedClassName="Settings">
+  <Profiles />
+  <Settings>
+    <Setting Name="EncryptedToken" Type="System.String" Scope="User">
+      <Value Profile="(Default)">[Encrypted ACS token goes here]</Value>
+    </Setting>
+    <Setting Name="EncryptionKey" Type="System.String" Scope="User">
+      <Value Profile="(Default)">[Symmetric key used for encryption goes here]</Value>
+    </Setting>
+    <Setting Name="EncryptionIV" Type="System.String" Scope="User">
+      <Value Profile="(Default)">[Initialization vector used for encryption goes here]</Value>
+    </Setting>
+  </Settings>
+</SettingsFile>

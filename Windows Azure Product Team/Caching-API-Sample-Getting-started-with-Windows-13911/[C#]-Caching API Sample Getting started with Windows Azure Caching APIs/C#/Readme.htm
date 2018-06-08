@@ -1,0 +1,127 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:v="urn:schemas-microsoft-com:vml" xmlns:o="urn:schemas-microsoft-com:office:office">
+
+<head>
+<meta http-equiv="Content-Language" content="en-us" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Windows Azure platform AppFabric</title>
+<style type="text/css">
+    .style3
+    {
+        background-color: #FFFFFF;
+    }
+a:link
+	{color:blue;
+	text-decoration:underline;
+	text-underline:single;
+    }
+</style>
+</head>
+
+<body>
+
+<h1>Windows Azure AppFabric Caching API Usage Sample</h1>
+    <p>
+        <span class="style3">This sample shows how to use various Windows Azure 
+        AppFabric Caching APIs. 
+        <br/><br/>
+        Note: Samples are provided for educational purposes only.
+        They are not intended to be used in a production environment and have not been 
+        tested in a production environment. Microsoft does not provide technical support 
+        for these samples.</span>
+    </p>
+    <h2>Prerequisites</h2>
+    <p>
+        <span class="style3">This sample assumes that the Windows Azure AppFabric SDK is installed 
+        and all cache related references are resolved in the sample&#39;s 
+        solution. The SDK can be installed from
+        <a href="http://go.microsoft.com/fwlink/?LinkId=216119">
+        http://go.microsoft.com/fwlink/?LinkId=216119</a>. 
+        The cache related binaries can be found in the following path:
+        <br /><br />
+        &lt;SDK install path&gt;\V1.0\Assemblies\NET4.0\Cache&nbsp;</span></p>
+    <h2>Sample Flow</h2>
+<p><span style="font-size:12.0pt;line-height:115%;
+font-family:&quot;Times New Roman&quot;,&quot;serif&quot;;mso-fareast-font-family:&quot;Times New Roman&quot;;
+mso-ansi-language:EN-US;mso-fareast-language:EN-US;mso-bidi-language:AR-SA">This 
+    sample exercises the following caching capabilities</span>:</p>
+    <ol>
+        <li>
+            <p class="style3">
+                Simple Add/Get to the default cache.</p>
+        </li>
+        <li>
+            <p class="style3">
+                Add/Get/<span class="SpellE">GetAndLock</span>/<span class="SpellE">GetIfNewer</span>/Put/<span 
+                    class="SpellE">PutAndUnlock</span> to the default cache/region. 
+                <span style="font-size:12.0pt;line-height:115%;
+font-family:&quot;Times New Roman&quot;,&quot;serif&quot;;mso-fareast-font-family:&quot;Times New Roman&quot;;
+mso-ansi-language:EN-US;mso-fareast-language:EN-US;mso-bidi-language:AR-SA">This includes the 
+                following variations</span>:</p>
+            <ol>
+                <li>
+                    <p class="style3">
+                        <span class="SpellE">GetAndLock</span> trying to access a locked object.</p>
+                </li>
+                <li>
+                    <p class="style3">
+                        <span class="SpellE">PutAndUnlock</span> trying to unlock an object that is not 
+                        locked.</p>
+                </li>
+            </ol>
+        </li>
+        <li>
+            <p class="style3">
+                Add/Get/Put of a versioned object.</p>
+            <ol>
+                <li>
+                    <p class="style3">
+                        Explicitly modify an item only if versions match.</p>
+                </li>
+                <li>
+                    <p class="style3">
+                        Fail to modify an item if a newer item is available in the cache.</p>
+                </li>
+            </ol>
+        </li>
+    </ol>
+    <div id="sectionSection4" class="section">
+        <content 
+xmlns="http://ddue.schemas.microsoft.com/authoring/2003/5">
+        <h2 class="heading">
+            Running the Sample</h2>
+        <div id="sectionSection5" class="section">
+            <content 
+xmlns="http://ddue.schemas.microsoft.com/authoring/2003/5">
+            <p class="style3" xmlns="">
+                Before you run this sample, 
+                <span style="font-size:12.0pt;line-height:115%;
+font-family:&quot;Times New Roman&quot;,&quot;serif&quot;;mso-fareast-font-family:&quot;Times New Roman&quot;;
+mso-ansi-language:EN-US;mso-fareast-language:EN-US;mso-bidi-language:AR-SA">you must provision a 
+                cache on the <a href="http://go.microsoft.com/fwlink/?LinkId=213161">Windows Azure AppFabric Management Portal</a>. 
+                The properties window for your cache contains necessary information for 
+                connecting this sample. The cache Service URL must be placed in the 
+                PrepareClient() method in the Program.vb|Program.cs file. The cache Authentication Token 
+                must be put in either the PrepareClient() method or the app.config file. For more details on how to 
+                provision a cache on the portal, see <a 
+                    href="http://go.microsoft.com/fwlink/?LinkId=202670" target="_blank">
+                http://go.microsoft.com/fwlink/?LinkId=202670</a></span>.
+                <br/>
+                
+            <p class="style3" xmlns="">
+                <span style="font-size:12.0pt;line-height:115%;
+font-family:&quot;Times New Roman&quot;,&quot;serif&quot;;mso-fareast-font-family:&quot;Times New Roman&quot;;
+mso-ansi-language:EN-US;mso-fareast-language:EN-US;mso-bidi-language:AR-SA">When the executable 
+                is run, it will run through the flow described above and log its output to the 
+                console window.</span></p>
+            </content>
+        </div>
+        <p xmlns="">
+            <b>Expected Output</b></p>
+<p>Not Applicable.</p>
+        </content>
+    </div>
+
+</body>
+
+</html>

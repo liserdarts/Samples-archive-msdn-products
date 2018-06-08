@@ -1,0 +1,161 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:v="urn:schemas-microsoft-com:vml" xmlns:o="urn:schemas-microsoft-com:office:office">
+
+<head>
+<meta http-equiv="Content-Language" content="en-us" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Windows Azure platform AppFabric</title>
+<style type="text/css">
+    .style3
+    {
+        background-color: #FFFFFF;
+    }
+a:link
+	{color:blue;
+	text-decoration:underline;
+	text-underline:single;
+    }
+</style>
+</head>
+
+<body>
+
+<h1>Windows Azure AppFabric Labs <span class="style3">CacheAPI Usage</span> Sample</h1>
+    <p>
+        <span class="style3">This sample shows how to use various Windows Azure 
+        AppFabric Cache APIs. 
+        <br />
+        Note: Samples are provided for educational purposes only.
+        They are not intended to be used in a production environment and have not been 
+        tested in a production environment. Microsoft does not provide technical support 
+        for these samples. </span>
+    </p>
+    <h2>Prerequisites</h2>
+    <p>
+        <span class="style3">This sample assumes that the Windows Azure AppFabric LABS 
+        SDK is installed and all cache related references are resolved in the sample&#39;s 
+        solution. The SDK can be installed from --
+        <a href="http://www.microsoft.com/downloads/en/details.aspx?FamilyID=D89640FC-C552-446E-AEAD-B1E0D940F31B">
+        http://www.microsoft.com/downloads/en/details.aspx?FamilyID=D89640FC-C552-446E-AEAD-B1E0D940F31B</a>. 
+        The cache related binaries can be found in the following path &lt;SDK install 
+        path&gt;\V2.0\Assemblies\Cache&nbsp; .</span></p>
+    <h2>Sample Flow</h2>
+<p><span style="font-size:12.0pt;line-height:115%;
+font-family:&quot;Times New Roman&quot;,&quot;serif&quot;;mso-fareast-font-family:&quot;Times New Roman&quot;;
+mso-ansi-language:EN-US;mso-fareast-language:EN-US;mso-bidi-language:AR-SA">This 
+    sample exercises the following caching capabilities</span>:</p>
+    <ol>
+        <li>
+            <p class="style3">
+                Simple Add/Get to the default cache.</p>
+        </li>
+        <li>
+            <p class="style3">
+                Add/Get/<span class="SpellE">GetAndLock</span>/<span class="SpellE">GetIfNewer</span>/Put/<span 
+                    class="SpellE">PutAndUnlock</span> to the default cache/region. 
+                <span style="font-size:12.0pt;line-height:115%;
+font-family:&quot;Times New Roman&quot;,&quot;serif&quot;;mso-fareast-font-family:&quot;Times New Roman&quot;;
+mso-ansi-language:EN-US;mso-fareast-language:EN-US;mso-bidi-language:AR-SA">This includes the 
+                following variations</span>:</p>
+            <ol>
+                <li>
+                    <p class="style3">
+                        <span class="SpellE">GetAndLock</span> trying to access a locked object.</p>
+                </li>
+                <li>
+                    <p class="style3">
+                        <span class="SpellE">PutAndUnlock</span> trying to unlock an object that is not 
+                        locked.</p>
+                </li>
+            </ol>
+        </li>
+        <li>
+            <p class="style3">
+                Add/Get/Put of a versioned object.</p>
+            <ol>
+                <li>
+                    <p class="style3">
+                        Explicitly modify an item only if versions match.</p>
+                </li>
+                <li>
+                    <p class="style3">
+                        Fail to modify an item if a newer item is available in the cache.</p>
+                </li>
+            </ol>
+        </li>
+    </ol>
+    <div id="sectionSection4" class="section">
+        <content 
+xmlns="http://ddue.schemas.microsoft.com/authoring/2003/5">
+        <h2 class="heading">
+            Running the Sample</h2>
+        <div id="sectionSection5" class="section">
+            <content 
+xmlns="http://ddue.schemas.microsoft.com/authoring/2003/5">
+            <p class="style3" xmlns="">
+                Before you run this sample, 
+                <span style="font-size:12.0pt;line-height:115%;
+font-family:&quot;Times New Roman&quot;,&quot;serif&quot;;mso-fareast-font-family:&quot;Times New Roman&quot;;
+mso-ansi-language:EN-US;mso-fareast-language:EN-US;mso-bidi-language:AR-SA">you must provision a 
+                cache on the portal </span>(<span lang="EN" style="font-size:8.5pt;font-family:&quot;Segoe UI&quot;,&quot;sans-serif&quot;;
+mso-fareast-font-family:Calibri;mso-fareast-theme-font:minor-latin;color:#353535;
+mso-ansi-language:EN;mso-fareast-language:EN-US;mso-bidi-language:AR-SA"><a 
+                    href="https://portal.windows.net/" target="_blank">https://portal.windows.net/</a></span>). 
+                <span style="font-size:12.0pt;line-height:115%;
+font-family:&quot;Times New Roman&quot;,&quot;serif&quot;;mso-fareast-font-family:&quot;Times New Roman&quot;;
+mso-ansi-language:EN-US;mso-fareast-language:EN-US;mso-bidi-language:AR-SA">The cache endpoint 
+                URI and the Authentication Token for the cache you have provisioned need to be put in the 
+                PrepareClient() method in the Program.cs source file. For more details on how to 
+                provision a cache on the portal, see <span lang="EN" style="font-size:8.5pt;font-family:&quot;Segoe UI&quot;,&quot;sans-serif&quot;;
+mso-fareast-font-family:Calibri;mso-fareast-theme-font:minor-latin;color:#353535;
+mso-ansi-language:EN;mso-fareast-language:EN-US;mso-bidi-language:AR-SA"><a 
+                    href="https://portal.windows.net/" target="_blank">
+                http://go.microsoft.com/fwlink/?LinkId=202670</a></span></span>.<br />
+                After you obtain a cache endpoint URI and Authentication Token, use the following steps to 
+                update the sample: </p>
+            <ol>
+                <li>
+                    <p class="style3">
+                        <span style="font-size:12.0pt;line-height:115%;
+font-family:&quot;Times New Roman&quot;,&quot;serif&quot;;mso-fareast-font-family:&quot;Times New Roman&quot;;
+mso-ansi-language:EN-US;mso-fareast-language:EN-US;mso-bidi-language:AR-SA">Open the Program.cs source 
+                        file, and navigate to the PrepareClient() method.</span></p>
+                </li>
+                <li>
+                    <p class="style3">
+                        <span style="font-size:12.0pt;line-height:115%;
+font-family:&quot;Times New Roman&quot;,&quot;serif&quot;;mso-fareast-font-family:&quot;Times New Roman&quot;;
+mso-ansi-language:EN-US;mso-fareast-language:EN-US;mso-bidi-language:AR-SA">Assign the cache endpoint 
+                        URI to the hostName string.</span></p>
+                </li>
+                <li>
+                    <p class="style3">
+                        <span style="font-size:12.0pt;line-height:115%;
+font-family:&quot;Times New Roman&quot;,&quot;serif&quot;;mso-fareast-font-family:&quot;Times New Roman&quot;;
+mso-ansi-language:EN-US;mso-fareast-language:EN-US;mso-bidi-language:AR-SA">Assign the Authentication Token to the authenticationToken string.</span></p>
+                </li>
+                <li>
+                    <p class="style3">
+                        <span style="font-size:12.0pt;line-height:115%;
+font-family:&quot;Times New Roman&quot;,&quot;serif&quot;;mso-fareast-font-family:&quot;Times New Roman&quot;;
+mso-ansi-language:EN-US;mso-fareast-language:EN-US;mso-bidi-language:AR-SA">Build the solution in Visual 
+                        Studio or from the command line, and then run the resulting executable file.</span></p>
+                </li>
+            </ol>
+            <p class="style3" xmlns="">
+                <span style="font-size:12.0pt;line-height:115%;
+font-family:&quot;Times New Roman&quot;,&quot;serif&quot;;mso-fareast-font-family:&quot;Times New Roman&quot;;
+mso-ansi-language:EN-US;mso-fareast-language:EN-US;mso-bidi-language:AR-SA">When the executable 
+                is run, it will run through the flow described above and log its output to the 
+                console window.</span></p>
+            </content>
+        </div>
+        <p xmlns="">
+            <b>Expected Output</b></p>
+<p>Not Applicable.</p>
+        </content>
+    </div>
+
+</body>
+
+</html>
