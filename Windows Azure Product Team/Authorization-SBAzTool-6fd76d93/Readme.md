@@ -1,1 +1,0 @@
-{"Title":"Authorization : SBAzTool","Description":"This sample demonstrates how to create and manage service identities in the Access Control Service for use with Service Bus ","IsPublished":true,"ModifiedDate":"2011-11-14T12:19:36.94","License":"Apache License, Version 2.0","Requires":"Visual Studio 2010","Technologies":"Microsoft Azure,Service Bus,","Topics":"Service Bus,"}
