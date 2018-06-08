@@ -1,0 +1,164 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:v="urn:schemas-microsoft-com:vml" xmlns:o="urn:schemas-microsoft-com:office:office">
+
+<head>
+<meta http-equiv="Content-Language" content="en-us" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Windows Azure platform AppFabric</title>
+<style type="text/css">
+    .style3
+    {
+        background-color: #FFFFFF;
+    }
+a:link
+	{color:blue;
+	text-decoration:underline;
+	text-underline:single;
+    }
+</style>
+</head>
+
+<body>
+
+<h1><b>
+    <span style="font-size:24.0pt;line-height:115%;
+font-family:&quot;Times New Roman&quot;,&quot;serif&quot;;mso-fareast-font-family:&quot;Times New Roman&quot;;
+mso-font-kerning:18.0pt;mso-ansi-language:EN-US;mso-fareast-language:EN-US;
+mso-bidi-language:AR-SA">Windows Azure AppFabric Labs TrySessionCloud Sample</span></b></h1>
+    <p>
+        <span class="style3">This sample shows how to use Windows Azure AppFabric 
+        caching features to save session state data for your ASP.NET web application. 
+        For more information about using Windows Azure AppFabric caching with ASP.NET 
+        applications, see 
+                <span style="font-size:12.0pt;line-height:115%;
+font-family:&quot;Times New Roman&quot;,&quot;serif&quot;;mso-fareast-font-family:&quot;Times New Roman&quot;;
+mso-ansi-language:EN-US;mso-fareast-language:EN-US;mso-bidi-language:AR-SA"> <span lang="EN" style="font-size:8.5pt;font-family:&quot;Segoe UI&quot;,&quot;sans-serif&quot;;
+mso-fareast-font-family:Calibri;mso-fareast-theme-font:minor-latin;color:#353535;
+mso-ansi-language:EN;mso-fareast-language:EN-US;mso-bidi-language:AR-SA"><a 
+                    href="https://portal.appfabriclabs.com/" target="_blank">
+                http://go.microsoft.com/fwlink/?LinkId=202673</a></span></span>. 
+        <br />
+        Note: Samples are provided for educational purposes only.
+        They are not intended to be used in a production environment and have not been 
+        tested in a production environment. Microsoft does not provide technical support 
+        for these samples. </span>
+    </p>
+    <h2>Prerequisites</h2>
+    <p>
+        <span class="style3">This sample assumes that the Windows Azure AppFabric LABS 
+        SDK is installed and all cache related references are resolved in the sample&#39;s 
+        solution. The SDK can be installed from --
+        <a href="http://www.microsoft.com/downloads/en/details.aspx?FamilyID=D89640FC-C552-446E-AEAD-B1E0D940F31B">
+        http://www.microsoft.com/downloads/en/details.aspx?FamilyID=D89640FC-C552-446E-AEAD-B1E0D940F31B</a>. 
+        The cache related binaries can be found in the following path &lt;SDK install 
+        path&gt;\V2.0\Assemblies\Cache .</span></p>
+    <h2>Sample Flow</h2>
+<p><span style="font-size:12.0pt;line-height:115%;
+font-family:&quot;Times New Roman&quot;,&quot;serif&quot;;mso-fareast-font-family:&quot;Times New Roman&quot;;
+mso-ansi-language:EN-US;mso-fareast-language:EN-US;mso-bidi-language:AR-SA">This 
+    sample has the following characteristics:</span></p>
+    <ol>
+        <li>
+            <p class="style3">
+                <span style="font-size:12.0pt;line-height:115%;
+font-family:&quot;Times New Roman&quot;,&quot;serif&quot;;mso-fareast-font-family:&quot;Times New Roman&quot;;
+mso-ansi-language:EN-US;mso-fareast-language:EN-US;mso-bidi-language:AR-SA">There is an edit box 
+                on the Default.aspx page where you can type any text.</span></p>
+        </li>
+        <li>
+            <p class="style3">
+                <span style="font-size:12.0pt;line-height:115%;
+font-family:&quot;Times New Roman&quot;,&quot;serif&quot;;mso-fareast-font-family:&quot;Times New Roman&quot;;
+mso-ansi-language:EN-US;mso-fareast-language:EN-US;mso-bidi-language:AR-SA">When you type the 
+                text and press the &quot;Add to Session Object&quot; button, the content of the text box 
+                is added to the Session object. Behind the scenes, this session state 
+                information is stored in an Azure AppFabric cache in the cloud.</span></p>
+        </li>
+        <li>
+            <p class="style3">
+                <span style="font-size:12.0pt;line-height:115%;
+font-family:&quot;Times New Roman&quot;,&quot;serif&quot;;mso-fareast-font-family:&quot;Times New Roman&quot;;
+mso-ansi-language:EN-US;mso-fareast-language:EN-US;mso-bidi-language:AR-SA">Once you add the 
+                text to the session object, a table on the page enumerates the contents of the 
+                Session object and displays its contents.</span></p>
+        </li>
+    </ol>
+    <div id="sectionSection4" class="section">
+        <content 
+xmlns="http://ddue.schemas.microsoft.com/authoring/2003/5">
+        <h2 class="heading">
+            Running the Sample</h2>
+        <div id="sectionSection5" class="section">
+            <content 
+xmlns="http://ddue.schemas.microsoft.com/authoring/2003/5">
+            <p class="style3" xmlns="">
+                Before you run this sample, 
+                <span style="font-size:12.0pt;line-height:115%;
+font-family:&quot;Times New Roman&quot;,&quot;serif&quot;;mso-fareast-font-family:&quot;Times New Roman&quot;;
+mso-ansi-language:EN-US;mso-fareast-language:EN-US;mso-bidi-language:AR-SA">you must provision a 
+                cache on the portal </span>(<span lang="EN" style="font-size:8.5pt;font-family:&quot;Segoe UI&quot;,&quot;sans-serif&quot;;
+mso-fareast-font-family:Calibri;mso-fareast-theme-font:minor-latin;color:#353535;
+mso-ansi-language:EN;mso-fareast-language:EN-US;mso-bidi-language:AR-SA"><a 
+                    href="https://portal.appfabriclabs.com/" target="_blank">https://portal.appfabriclabs.com/</a></span>). 
+                <span style="font-size:12.0pt;line-height:115%;
+font-family:&quot;Times New Roman&quot;,&quot;serif&quot;;mso-fareast-font-family:&quot;Times New Roman&quot;;
+mso-ansi-language:EN-US;mso-fareast-language:EN-US;mso-bidi-language:AR-SA">The cache endpoint 
+                URI and the Authentication Token for the cache you have provisioned need to be put in the 
+                web.config file. For more details on how to 
+                provision a cache on the portal, see <span lang="EN" style="font-size:8.5pt;font-family:&quot;Segoe UI&quot;,&quot;sans-serif&quot;;
+mso-fareast-font-family:Calibri;mso-fareast-theme-font:minor-latin;color:#353535;
+mso-ansi-language:EN;mso-fareast-language:EN-US;mso-bidi-language:AR-SA"><a 
+                    href="https://portal.appfabriclabs.com/" target="_blank">
+                http://go.microsoft.com/fwlink/?LinkId=202670</a></span></span>.<br />
+                <span style="font-size:12.0pt;line-height:115%;
+font-family:&quot;Times New Roman&quot;,&quot;serif&quot;;mso-fareast-font-family:&quot;Times New Roman&quot;;
+mso-ansi-language:EN-US;mso-fareast-language:EN-US;mso-bidi-language:AR-SA">After you obtain a 
+                cache endpoint URI and Authentication Token, use the following steps to update the web.config 
+                file</span>: </p>
+            <ol>
+                <li>
+                    <p class="style3">
+                        <span style="font-size:12.0pt;line-height:115%;
+font-family:&quot;Times New Roman&quot;,&quot;serif&quot;;mso-fareast-font-family:&quot;Times New Roman&quot;;
+mso-ansi-language:EN-US;mso-fareast-language:EN-US;mso-bidi-language:AR-SA">Open the web.config file.</span></p>
+                </li>
+                <li>
+                    <p class="style3">
+                        <span style="font-size:12.0pt;line-height:115%;
+font-family:&quot;Times New Roman&quot;,&quot;serif&quot;;mso-fareast-font-family:&quot;Times New Roman&quot;;
+mso-ansi-language:EN-US;mso-fareast-language:EN-US;mso-bidi-language:AR-SA">Navigate to the hosts 
+                        element in the dataCacheClient element.</span></p>
+                </li>
+                <li>
+                    <p class="style3">
+                        <span style="font-size:12.0pt;line-height:115%;
+font-family:&quot;Times New Roman&quot;,&quot;serif&quot;;mso-fareast-font-family:&quot;Times New Roman&quot;;
+mso-ansi-language:EN-US;mso-fareast-language:EN-US;mso-bidi-language:AR-SA">Change the name attribute of 
+                        the host element to the value of the cache endpoint URI.</span></p>
+                </li>
+                <li>
+                    <p class="style3">
+                        <span style="font-size:12.0pt;line-height:115%;
+font-family:&quot;Times New Roman&quot;,&quot;serif&quot;;mso-fareast-font-family:&quot;Times New Roman&quot;;
+mso-ansi-language:EN-US;mso-fareast-language:EN-US;mso-bidi-language:AR-SA">Place the Authentication Token in 
+                        the authconfiginfo element.</span></p>
+                </li>
+            </ol>
+            <p class="style3" xmlns="">
+                <span style="font-size:12.0pt;line-height:115%;
+font-family:&quot;Times New Roman&quot;,&quot;serif&quot;;mso-fareast-font-family:&quot;Times New Roman&quot;;
+mso-ansi-language:EN-US;mso-fareast-language:EN-US;mso-bidi-language:AR-SA">Build the solution 
+                in Visual Studio or from the command line, and then press F5 to debug the 
+                solution in the browser. This should open the Default.aspx page.</span></p>
+            </content>
+        </div>
+        <p xmlns="">
+            <b>Expected Output</b></p>
+<p>The page will enumerate the contents of the Session object and will display its 
+    contents. These contents should be the same as what you had added. </p>
+        </content>
+    </div>
+
+</body>
+
+</html>
