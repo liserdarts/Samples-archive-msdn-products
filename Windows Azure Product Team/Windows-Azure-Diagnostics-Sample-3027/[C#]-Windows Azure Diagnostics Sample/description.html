@@ -1,0 +1,216 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
+    <head><link rel="stylesheet" type="text/css" href="description/Combined.css,1:ImageSprite;/Areas/Epx/Themes/Msdn/Content:0,/Areas/Epx/Content/Css:1&amp;amp;hashKey=E7560C71640616C5057FAEACB58DCB00" xmlns="http://www.w3.org/1999/xhtml" />
+<link rel="stylesheet" type="text/css" href="description/2f95808e-ca34-4249-88ff-44fabe33cdc0Combined.css,1:LinkList,2:ImageSprite,2:SiteFeedbackLink;/Areas/Epx/Themes/Msdn/Content:0,/Areas/Epx/Themes/Base/Content:1,/Areas/Epx/Content/Css:2&amp;amp;hashKey=EEE39C2D6B93379FDAF50337BE99AF8C" xmlns="http://www.w3.org/1999/xhtml" />
+
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <title>Windows Azure Diagnostics Sample</title>
+        <link href="description/Galleries.css" type="text/css" rel="Stylesheet" /><link href="description/Layout.css" type="text/css" rel="Stylesheet" /><link href="description/Brand.css" type="text/css" rel="Stylesheet" />
+        <link href="description/iframedescription.css" rel="Stylesheet" type="text/css" />
+        <script src="description/offline.js" type="text/javascript"></script>
+        <style type="text/css">
+            #projectInfo {
+                overflow: auto;
+            }
+            #longDesc {
+                clear:both;
+                margin: 25px 0 10px 0;
+            }
+
+            #SampleIndexList{
+                margin-left: 15px;
+            }
+        </style>
+    </head>
+<body>
+    <div id="offlineDescription">
+        <h1>Windows Azure Diagnostics Sample</h1>
+        <br/>
+        <div id="projectInfo">
+            <div class="section">
+                    <div class="itemBarLong tagsContainer">
+                        <label for="Technologies">Technologies</label>
+                        <div id="Technologies">
+                            Windows Azure
+                        </div>
+                    </div>
+                    <div class="itemBarLong tagsContainer">
+                        <label for="Topics">Topics</label>
+                        <div id="Topics">
+                            Diagnostics
+                        </div>
+                    </div>
+                <div class="itemBarLong">
+                    <label for="Platforms">Platforms</label>
+                    <div id="Platforms">
+                        Cloud
+                    </div>
+                </div>
+                <div class="itemBarLong">
+                    <label for="Requirements">Requirements</label>
+                    <div id="Requirements">
+                        
+                    </div>
+                </div>
+                <div class="itemBar">
+                    <label for="LastUpdated">Primary Language</label>
+                    <div id="LastUpdated">en-US</div>
+                </div>
+                <div class="itemBar">
+                    <label for="LastUpdated">Last Updated</label>
+                    <div id="LastUpdated">4/26/2011</div>
+                </div>
+                <div class="itemBarLong">
+                    <label for="License">License</label>
+                    <div id="License">
+                        <a href="license.rtf">Custom</a></div>
+                </div>
+                <div class="itemBar">
+                    <div class="viewonlinecont">
+                        <a data-link="online" href="http://code.msdn.microsoft.com/Windows-Azure-Diagnostics-acc66c1a">View this sample online</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+                   
+<script type="text/javascript">
+    function initializePage() {
+        var otherTabClass = 'otherTab';
+        var hiddenPreClass = 'hidden';
+
+        var htmlDecode = function(encodedData) {
+            var decodedData = "";
+            if (encodedData) {
+                var div = document.createElement('div');
+                div.innerHTML = encodedData;
+                decodedData = div.firstChild.nodeValue.replace( /\\r\\n/ig , '\r\n');
+            }
+            return decodedData;
+        };
+                
+        Galleries.iterateElem(Galleries.findElem(null, 'div', 'scriptcode'), function (index, scriptBlock) {
+            var titleElem = Galleries.findElem(scriptBlock, 'div', 'title')[0];
+            var labelElems = Galleries.findElem(titleElem, 'span');
+            if (labelElems.length == 0) {
+                labelElems = titleElem;
+            }
+            var languageSpans = Galleries.findElem(scriptBlock, 'span', 'hidden');
+            var pres = Galleries.findElem(scriptBlock, 'pre');
+            if (languageSpans.length > 0 && pres.length > 1) {
+                Galleries.iterateElem(labelElems, function(index, elem) {
+                    var codePre = pres[index];
+                    var labelSpan = elem;
+                    var languageSpan = languageSpans[index];
+                            
+                    elem.code = codePre.innerHTML.replace( /(\r(\n)?)|((\r)?\n)/ig , '\\r\\n');
+                            
+                    codePre.className = codePre.className.replace(hiddenPreClass, '');
+                            
+                    languageSpan.parentNode.removeChild(languageSpan);
+                });
+
+                pres = Galleries.findElem(scriptBlock, 'pre');
+                Galleries.iterateElem(labelElems, function(index, elem) {
+                    var codePre = pres[index];
+                    var labelSpan = elem;
+                    if (index == 0) {
+                        scriptBlock.activeTab = 0;
+                    }
+                    else {
+                        labelSpan.className += otherTabClass;
+                        codePre.className += hiddenPreClass;
+                    }
+                    Galleries.attachEventHandler(labelSpan, 'click', function(e) {
+                        var activeTab = scriptBlock.activeTab;
+                        labelElems[activeTab].className += otherTabClass;
+                        pres[activeTab].className += hiddenPreClass;
+
+                        codePre.className = codePre.className.replace(hiddenPreClass, '');
+                        labelSpan.className = labelSpan.className.replace(otherTabClass, '');
+                        scriptBlock.activeTab = index;
+                    });
+                });
+
+                var preview = Galleries.findElem(scriptBlock, 'div', 'preview');
+                if (preview.length == 0) {
+                    preview.push(pres[pres.length - 1]);
+                }
+                Galleries.iterateElem(preview, function(index, elem) {
+                    elem.parentNode.removeChild(elem);
+                });
+
+                if (window.clipboardData && clipboardData.setData) {
+                    var copyLink = document.createElement('a');
+                    copyLink.href = 'javascript:void(0);';
+                    copyLink.className = 'copyCode';
+                    copyLink.innerHTML = 'Copy Code';
+                    Galleries.attachEventHandler(copyLink, 'click', function (e) {
+                        clipboardData.setData("Text", htmlDecode(labelElems[scriptBlock.activeTab].code));
+                        return false;
+                    });
+                    scriptBlock.insertBefore(copyLink, scriptBlock.childNodes[0]);
+                }
+            }
+        });
+    }
+
+    Galleries.onWindowLoad(function(){
+        initializePage();
+    });
+
+</script>
+<div id="longDesc">
+    
+<p><span style="font-family:arial,helvetica,sans-serif; font-size:x-small"><strong>Before you install and use&nbsp;Windows Azure&nbsp;Diagnostics Sample you must:</strong></span></p>
+<ol>
+<li><span style="font-family:arial,helvetica,sans-serif; font-size:x-small"><strong>Review the&nbsp;Windows Azure&nbsp;Diagnostics Sample&nbsp;license terms by clicking&nbsp;the Custom link above.</strong></span>
+</li><li><span style="font-family:arial,helvetica,sans-serif; font-size:x-small"><strong>Print and retain a copy of the license terms for your records.</strong></span>
+</li></ol>
+<p><span style="font-family:arial,helvetica,sans-serif; font-size:x-small"><strong>By downloading and using&nbsp;the&nbsp;Windows Azure&nbsp;Diagnostics Sample,&nbsp;you agree to such license terms.&nbsp; If you do not accept them, do not use the software.</strong></span></p>
+<h1><span style="font-family:verdana,geneva; font-size:large"><strong>Introduction</strong></span></h1>
+<p><span style="font-family:verdana,geneva; font-size:x-small">Windows Azure provides capabilities that allow you to diagnose data such as performance counters, event logs and IIS logs. The Windows Azure Diagnostics sample shows how to capture performance counter
+ diagnostic data&nbsp;in your Windows Azure application.</span></p>
+<p><span style="font-family:verdana,geneva; font-size:x-small">The process of implementing diagnostics in your application requires the following:</span></p>
+<ul>
+<li><span style="font-family:verdana,geneva; font-size:x-small">Importing the Diagnostics module into your service definition.</span>
+</li><li><span style="font-family:verdana,geneva; font-size:x-small">Specifying the diagnostics connection string to use for your application.</span>
+</li><li><span style="font-family:verdana,geneva; font-size:x-small">Setting configuration settings that determine which data will be monitored, at what interval will it be transferred to your storage account, and the maximum amount of file buffer size allocated
+ to the data buffer.</span> </li></ul>
+<p><span style="line-height:150%; font-family:verdana,geneva; font-size:x-small"><span class="LinkText"><span style="line-height:150%"><span style="line-height:150%"><span style="line-height:150%"><span style="line-height:150%"><span style="line-height:150%"><span style="line-height:150%"><span style="line-height:150%"><span style="line-height:150%"><span style="line-height:150%">You
+ can use the following information to understand and run the&nbsp;Diagnostics sample:</span></span></span></span></span></span></span></span></span></span></span></p>
+<ul>
+<li><span style="line-height:150%; font-family:verdana,geneva; font-size:x-small"><span class="LinkText"><span style="line-height:150%"><span style="line-height:150%"><span style="line-height:150%"><span style="line-height:150%"><span style="line-height:150%"><span style="line-height:150%"><span style="line-height:150%"><span style="line-height:150%"><span style="line-height:150%"><a href="http://msdn.microsoft.com/en-us/library/gg433048.aspx">Collecting
+ Logging Data by Using Windows Azure Diagnostics</a></span></span></span></span></span></span></span></span></span></span></span>
+</li><li><span style="line-height:150%; font-family:verdana,geneva; font-size:x-small"><span class="LinkText"><span style="line-height:150%"><span style="line-height:150%"><span style="line-height:150%"><span style="line-height:150%"><span style="line-height:150%"><span style="line-height:150%"><span style="line-height:150%"><span style="line-height:150%"><span style="line-height:150%"><a href="http://msdn.microsoft.com/en-us/library/hh180875.aspx">Code
+ Quick Start: Capturing diagnostics in your Windows Azure application</a></span></span></span></span></span></span></span></span></span></span></span>
+</li><li><a href="http://www.microsoft.com/windowsazure/sdk/"><span style="line-height:150%; font-family:verdana,geneva; font-size:x-small"><span class="LinkText"><span style="line-height:150%"><span style="line-height:150%"><span style="line-height:150%"><span style="line-height:150%"><span style="line-height:150%"><span style="line-height:150%"><span style="line-height:150%"><span style="line-height:150%"><span style="line-height:150%"><span style="line-height:150%; font-family:verdana,geneva; font-size:x-small"><span class="LinkText"><span style="line-height:150%"><span style="line-height:150%"><span style="line-height:150%"><span style="line-height:150%"><span style="line-height:150%"><span style="line-height:150%"><span style="line-height:150%"><span style="line-height:150%"><span style="line-height:150%"><span class="LinkText"><span style="line-height:150%"><span class="LinkText"><span style="line-height:150%"><span class="LinkText"><span style="line-height:150%">Windows
+ Azure Tools</span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span><span style="line-height:150%; font-family:verdana,geneva; font-size:x-small"><span class="LinkText"><span style="line-height:150%"><span style="line-height:150%"><span style="line-height:150%"><span style="line-height:150%"><span style="line-height:150%"><span style="line-height:150%"><span style="line-height:150%"><span style="line-height:150%"><span style="line-height:150%">
+</span></span></span></span></span></span></span></span></span></span></span></a></li></ul>
+<h1><span style="font-size:large">Prerequisites</span></h1>
+<ul>
+<li><span style="font-size:x-small"><span class="LabelEmbedded"><span style="line-height:150%"><span style="line-height:150%"><span style="line-height:150%"><span class="LabelEmbedded"><span style="line-height:150%"><strong>Windows Azure SDK</strong>
+<span style="line-height:150%">&ndash; provides tools and files that are needed to complete the development process of an application for Windows Azure.</span></span></span></span></span></span></span></span>
+</li><li><span style="font-size:x-small"><span class="LabelEmbedded"><span style="line-height:150%"><span style="line-height:150%"><span style="line-height:150%"><span class="LabelEmbedded"><span style="line-height:150%"><span style="line-height:150%"><span style="font-family:verdana,geneva; font-size:x-small"><span class="LabelEmbedded"><span style="line-height:150%"><span style="line-height:150%"><span style="line-height:150%"><span class="LabelEmbedded"><span style="line-height:150%"><span style="line-height:150%"><span class="LabelEmbedded"><span style="line-height:150%"><strong>Visual
+ Studio 2010</strong> <span style="line-height:150%">&ndash; the sample provides a Visual Studio 2010 project that you can use to deploy the sample.</span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span>
+</li></ul>
+<h1><strong>Building and Running the Sample</strong></h1>
+<p><strong><span style="font-family:verdana,geneva; font-size:x-small"><span style="line-height:150%">To run the sample from Visual Studio 2010</span></span></strong></p>
+<ol>
+<li><span style="font-family:verdana,geneva; font-size:x-small"><span style="line-height:150%"><span style="font-family:verdana,geneva; font-size:x-small"><span style="line-height:150%"><span style="line-height:150%">Open Visual Studio 2010 as an administrator.</span></span></span></span></span>
+</li><li><span style="font-family:verdana,geneva; font-size:x-small"><span style="line-height:150%"><span style="font-family:verdana,geneva; font-size:x-small"><span style="line-height:150%"><span style="line-height:150%"><span style="font-size:20px"><span style="line-height:150%"><span style="line-height:150%"><span style="line-height:150%"><span style="font-size:x-small">Browse
+ to the folder where you extracted the sample and open DiagnosticsSample.sln.</span></span></span></span></span></span></span></span></span></span>
+</li><li><span style="font-family:verdana,geneva; font-size:x-small"><span style="line-height:150%"><span style="font-family:verdana,geneva; font-size:x-small"><span style="line-height:150%"><span style="line-height:150%"><span style="font-size:20px"><span style="line-height:150%"><span style="line-height:150%"><span style="line-height:150%"><span style="font-size:x-small"><span style="font-family:verdana,geneva; font-size:x-small"><span style="line-height:150%"><span style="line-height:150%"><span style="line-height:150%"><span style="line-height:150%">Press
+ F6 to build the solution.</span></span></span></span></span></span></span></span></span></span></span></span></span></span></span>
+</li><li><span style="font-family:verdana,geneva; font-size:x-small"><span style="line-height:150%"><span style="font-family:verdana,geneva; font-size:x-small"><span style="line-height:150%"><span style="line-height:150%"><span style="font-size:20px"><span style="line-height:150%"><span style="line-height:150%"><span style="line-height:150%"><span style="font-size:x-small"><span style="font-family:verdana,geneva; font-size:x-small"><span style="line-height:150%"><span style="line-height:150%"><span style="line-height:150%"><span style="line-height:150%"><span style="font-family:verdana,geneva; font-size:x-small"><span style="line-height:150%"><span style="line-height:150%"><span style="line-height:150%"><span style="line-height:150%"><span style="line-height:150%">Press
+ F5 to debug the solution. When you debug or run the application from Visual Studio, Visual Studio packages the application, starts the Windows Azure Compute Emulator<span style="line-height:150%">, deploys the application to the Compute Emulator<span style="line-height:150%">,</span></span></span></span></span></span></span><span style="line-height:150%"><span style="line-height:150%"><span style="line-height:150%"><span style="line-height:150%"><span style="line-height:150%"><span style="line-height:150%"><span style="line-height:150%">and
+ launches the browser to </span></span></span></span></span></span></span><span style="line-height:150%"><span style="line-height:150%"><span style="line-height:150%"><span style="line-height:150%"><span style="line-height:150%">&nbsp;</span></span></span></span></span><span style="line-height:150%"><span style="line-height:150%"><span style="line-height:150%"><span style="line-height:150%"><span style="line-height:150%"><span style="line-height:150%"><span style="line-height:150%">display
+ the default web page defined by the web role.</span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span>
+</li></ol>
+
+</div>
+
+
+    </div>
+</body>
+</html>
