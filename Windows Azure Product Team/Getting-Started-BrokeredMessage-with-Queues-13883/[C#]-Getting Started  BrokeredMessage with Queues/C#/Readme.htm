@@ -1,0 +1,161 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<HTML dir=ltr XMLNS:MSHelp = "http://msdn.microsoft.com/mshelp" xmlns:ddue = 
+"http://ddue.schemas.microsoft.com/authoring/2003/5" xmlns:xlink = 
+"http://www.w3.org/1999/xlink" xmlns:tool = "http://www.microsoft.com/tooltip"
+XMLNS:[default] http://ddue.schemas.microsoft.com/authoring/2003/5 =
+"http://ddue.schemas.microsoft.com/authoring/2003/5"><HEAD>
+  <TITLE>Windows Azure AppFabric MessagingWithQueues Sample</TITLE>
+  <META content="text/html; CHARSET=utf-8" http-equiv=Content-Type></META>
+  <META name=save content=history></META>
+  <LINK rel=stylesheet type=text/css
+  href="../../../CommonFiles/Classic.css"></LINK>
+
+  <META name=GENERATOR content="MSHTML 8.00.6001.18783">
+    <style type="text/css">
+      .style2 {
+      font-family: monospace;
+      font-size: small;
+      color: #000000;
+      }
+      </style>
+  </HEAD>
+<BODY>
+  <DIV id=header>
+    <TABLE id=topTable width="100%">
+      <TBODY>
+        <TR id=headerTableRow1>
+          <TD align=left>
+            <SPAN id=runningHeaderText></SPAN>
+          </TD>
+        </TR>
+        <TR id=headerTableRow2>
+          <TD align=left>
+            <SPAN id=nsrTitle>Windows Azure AppFabric MessagingWithQueues Sample</SPAN>
+          </TD>
+        </TR>
+        <TR id=headerTableRow3>
+          <TD></TD>
+        </TR>
+      </TBODY>
+    </TABLE>
+  </DIV>
+  <DIV id=mainSection>
+    <DIV id=mainBody>
+      <P>
+        This sample demonstrates how to use Windows Azure AppFabric Service
+        Bus to send and receive messages from a queue.</P>
+        <P>
+            The queue provides decoupled, asynchronous communication between a sender and 
+            any number of receivers (here, a single receiver).</P>
+      <H2 class=heading>Prerequisites</H2>
+      <DIV id=sectionSection0 class=section>
+        <content xmlns="http://ddue.schemas.microsoft.com/authoring/2003/5">
+          <P xmlns="">
+            If you haven't already done so, please read the release notes
+            document that explains how to sign up for a Windows Azure AppFabric
+            account.
+          </P>
+        </content>
+      </DIV>
+        <H2 class=heading>Sample Flow</H2>
+      <DIV id=sectionSection1 class="section">
+        <content xmlns="http://ddue.schemas.microsoft.com/authoring/2003/5">
+            <p>The sample flows in the following manner:</p>
+            <ol>
+                <li>Start a sender.<ol>
+                    <li>Sender prompts for user Service Bus credentials.</li>
+                    <li>Sender creates queue.</li>
+                    <li>Sender sends messages to queue.</li>
+                    </ol>
+                </li>
+                <li>Start a receiver.<ol>
+                    <li>Receiver retrieves messages from the queue.</li>
+                    <li>Close receiver.</li>
+                    </ol>
+                </li>
+                <li>Close sender (deletes queue).</li>
+            </ol>
+          </content>
+      </DIV>
+    </DIV>
+    <H2 class=heading>Running the Sample</H2>
+    <DIV id=DIV1 class=section>
+      <content
+xmlns="http://ddue.schemas.microsoft.com/authoring/2003/5">
+
+        <P xmlns="">
+          To run the sample:
+        </P>
+        <ol>
+            <LI>Build the solution in Visual Studio.</LI>
+            <LI>Run the sender, inputting service namespace, issuer name, and issuer key when 
+                prompted to do so.</LI>
+            <LI>Run the receiver, inputting service namespace, issuer name, and issuer key when 
+                prompted to do so.</LI>
+        </ol>
+        <P xmlns="">
+            <B>Expected Output - Sender</B></P>
+        <DIV class=code xmlns="">
+          <SPAN codeLanguage="other">
+            <TABLE cellSpacing=0 cellPadding=0 width="100%">
+              <TBODY>
+                <TR>
+                  <TD colSpan=2>
+                    <PRE class="style2">
+Please provide the service namespace to use: &lt;service_namespace&gt;
+Please provide the issuer name to use: &lt;issuer_name&gt;
+Please provide the issuer key to use: &lt;issuer_key&gt;
+
+Creating Queue 'IssueTrackingQueue'...
+
+Sending messages to queue...
+Message sent: Id = 1, Body = Package lost
+Message sent: Id = 2, Body = Package damaged
+Message sent: Id = 3, Body = Package defective
+
+Finished sending messages, press ENTER to clean up and exit.
+                    </PRE>
+                  </TD>
+                </TR>
+              </TBODY>
+            </TABLE>
+          </SPAN>
+        </DIV>
+        <P xmlns="">
+            <B>Expected Output - Receiver</B></P>
+        <DIV class=code xmlns="">
+          <SPAN codeLanguage="other">
+            <TABLE cellSpacing=0 cellPadding=0 width="100%">
+              <TBODY>
+                <TR>
+                  <TD colSpan=2>
+                    <PRE class="style2">
+Please provide the service namespace to use: &lt;service_namespace&gt;
+Please provide the issuer name to use: &lt;issuer_name&gt;
+Please provide the issuer key to use: &lt;issuer_key&gt;
+
+Receiving messages from queue...
+Message received: Id = 1, Body = Package lost
+Message received: Id = 2, Body = Package damaged
+Message received: Id = 3, Body = Package defective
+
+End of scenario, press ENTER to exit.
+                    </PRE>
+                  </TD>
+                </TR>
+              </TBODY>
+            </TABLE>
+          </SPAN>
+        </DIV>
+      </content>
+    </DIV>
+    <!--[if gte IE 5]><tool:tip avoidmouse="false" element="languageFilterToolTip"></tool:tip><![endif]-->
+  </DIV>
+    <hr />
+    Did you find this information useful?
+    <a href="http://go.microsoft.com/fwlink/?LinkID=155664">
+      Please send your suggestions and comments about the documentation.
+    </a>
+  </P>
+  </DIV>
+</BODY></HTML>
