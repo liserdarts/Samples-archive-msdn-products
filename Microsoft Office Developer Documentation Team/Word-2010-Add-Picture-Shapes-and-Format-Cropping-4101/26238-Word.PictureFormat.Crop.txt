@@ -1,0 +1,49 @@
+' Microsoft Word 2010
+
+' This example demonstrates the behavior of the PictureFormat.Crop property.
+' This code places a new shape on a document, and then
+' modifies both the picture and the cropping of that picture.
+
+' Add a new module to a new document, and single step through this code.
+' Arrange the VBA window and the Word window side by side so you
+' can see both. Place the cursor inside this procedure and press
+' F8 to single step throught the code, seeing the effect of
+' each line of code.
+
+Sub CropDemo()
+    ' Put your own image path in here. This image path
+    ' should work for standard Windows 7 installations.
+    Const fileName As String = "C:\Windows\Web\Wallpaper\Landscapes\img10.jpg"
+       
+   
+    With ActiveDocument
+        Dim shp As Shape
+        Set shp = ActiveDocument.Shapes.AddPicture(fileName, msoFalse, msoTrue)
+      
+        shp.Line.Visible = True
+       
+        ' Retrieve the dimensions of the shape:
+        Dim picWidth As Double
+        Dim picHeight As Double
+        picWidth = shp.Width
+        picHeight = shp.Height
+       
+        With shp.PictureFormat.Crop
+            ' Modify the picture itself, not its container:
+            ' Shift the picture 10% to the right and down,
+            ' and then make the picture 90% of its original size.
+            .PictureOffsetX = picWidth / 10
+            .PictureOffsetY = picHeight / 10
+            .PictureHeight = picHeight * 0.9
+            .PictureWidth = picWidth * 0.9
+           
+            ' Now modify the cropping by changing the shape
+            ' of the container. Changing the shape alters
+            ' the portion of the picture that you see:
+            .ShapeHeight = 100
+            .ShapeWidth = 100
+            .ShapeLeft = 100
+            .ShapeTop = 150
+        End With
+    End With
+End Sub
