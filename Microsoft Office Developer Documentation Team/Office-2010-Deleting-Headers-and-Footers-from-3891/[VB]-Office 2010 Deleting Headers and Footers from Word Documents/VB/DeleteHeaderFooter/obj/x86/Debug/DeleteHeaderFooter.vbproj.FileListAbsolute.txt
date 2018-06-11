@@ -1,0 +1,10 @@
+I:\DropBox\My Dropbox\Office 2010 VHTs\Dec 2010\DeleteHeaderFooter\Demos\VB\DeleteHeaderFooter\DeleteHeaderFooter\bin\Debug\DeleteHeaderFooter.exe
+I:\DropBox\My Dropbox\Office 2010 VHTs\Dec 2010\DeleteHeaderFooter\Demos\VB\DeleteHeaderFooter\DeleteHeaderFooter\bin\Debug\DeleteHeaderFooter.pdb
+I:\DropBox\My Dropbox\Office 2010 VHTs\Dec 2010\DeleteHeaderFooter\Demos\VB\DeleteHeaderFooter\DeleteHeaderFooter\bin\Debug\DeleteHeaderFooter.xml
+I:\DropBox\My Dropbox\Office 2010 VHTs\Dec 2010\DeleteHeaderFooter\Demos\VB\DeleteHeaderFooter\DeleteHeaderFooter\obj\x86\Debug\ResolveAssemblyReference.cache
+I:\DropBox\My Dropbox\Office 2010 VHTs\Dec 2010\DeleteHeaderFooter\Demos\VB\DeleteHeaderFooter\DeleteHeaderFooter\obj\x86\Debug\DeleteHeaderFooter.Resources.resources
+I:\DropBox\My Dropbox\Office 2010 VHTs\Dec 2010\DeleteHeaderFooter\Demos\VB\DeleteHeaderFooter\DeleteHeaderFooter\obj\x86\Debug\GenerateResource.read.1.tlog
+I:\DropBox\My Dropbox\Office 2010 VHTs\Dec 2010\DeleteHeaderFooter\Demos\VB\DeleteHeaderFooter\DeleteHeaderFooter\obj\x86\Debug\GenerateResource.write.1.tlog
+I:\DropBox\My Dropbox\Office 2010 VHTs\Dec 2010\DeleteHeaderFooter\Demos\VB\DeleteHeaderFooter\DeleteHeaderFooter\obj\x86\Debug\DeleteHeaderFooter.exe
+I:\DropBox\My Dropbox\Office 2010 VHTs\Dec 2010\DeleteHeaderFooter\Demos\VB\DeleteHeaderFooter\DeleteHeaderFooter\obj\x86\Debug\DeleteHeaderFooter.xml
+I:\DropBox\My Dropbox\Office 2010 VHTs\Dec 2010\DeleteHeaderFooter\Demos\VB\DeleteHeaderFooter\DeleteHeaderFooter\obj\x86\Debug\DeleteHeaderFooter.pdb
