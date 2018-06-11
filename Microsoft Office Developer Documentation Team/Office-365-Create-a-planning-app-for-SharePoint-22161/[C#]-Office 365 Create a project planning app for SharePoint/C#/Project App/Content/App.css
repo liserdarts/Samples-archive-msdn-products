@@ -1,0 +1,125 @@
+﻿/* Place custom styles below */
+.work {
+
+                                list-style:none;
+                                margin:0;
+                                padding:0;
+                }
+
+.work li {
+
+                                float:left;
+                                display:block; 
+                                margin:0px;
+                                display:inline;
+                                padding:3px; 
+                                background:#fff;
+                                height: 180px;    
+                                }
+
+.work li a {                           
+
+                                margin: 0px 0 0 0px ;
+                                border:none; 
+                                }
+
+.work p   {
+                                margin-bottom:0;
+                                }
+
+                                
+
+.work li .show
+{
+                                display:block;
+                                height: 180px;
+                                }                                
+
+.work li .hide 
+{
+                                                color:#d4df9d;
+                                                text-align: left;
+                                                height: 0;
+                                                height: 180px;
+                                                display: none
+
+                                    }
+
+ 
+
+.work li:hover .hide{
+
+                                                cursor: pointer;
+                                                padding:0px;
+                                                height: 180px;
+                                                display: block;
+                                                border: 0px green solid
+
+                                }
+
+                                
+
+.work li:hover .hide .dev{
+
+                                                cursor: pointer;
+                                                margin: 3px 3px 3px 3px;
+                                                padding:0px;
+                                                background-color:#fff;
+                                                height: 180px;
+                                                width: 240px;
+                                                display: block;
+                                                top: 0;
+                                                border: 0px green solid
+
+                                }
+
+ 
+
+.work .devs a, .work .managers a
+
+{
+
+                color: black;
+
+}
+
+ 
+
+.work .devs a:hover, .work .managers a:hover
+{
+                color: black;
+                text-decoration:underline;
+}
+                                
+
+.work li:hover .show {
+                                height: 0;
+                /* overflow: hidden; */ 
+}
+                
+
+.work .descriptionbody
+{
+color: gray
+}
+
+.legendnav a:hover
+{
+text-decoration:underline
+}
+
+.legendnav2 a:hover
+{
+text-decoration:none
+}
+
+.legendnav
+{
+border-bottom: 1px solid gray;
+padding-bottom: 10px;
+}
+
+       #Hero-WPQ3 .ms-list-addnew, #Hero-WPQ1 .ms-list-addnew
+        {
+           display: none;
+        }

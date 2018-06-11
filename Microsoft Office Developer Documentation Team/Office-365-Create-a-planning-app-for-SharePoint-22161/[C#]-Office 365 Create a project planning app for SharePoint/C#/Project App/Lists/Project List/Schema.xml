@@ -1,0 +1,57 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<List xmlns:ows="Microsoft SharePoint" Title="Project List" FolderCreation="FALSE" Direction="$Resources:Direction;" Url="Lists/Project List" BaseType="0" xmlns="http://schemas.microsoft.com/sharepoint/">
+  <MetaData>
+    <ContentTypes>
+      
+      
+    <ContentType ID="0x0100bb96c491a2fd4dcf8c56657a287a058a" Name="ListFieldsContentType"><FieldRefs><FieldRef ID="{fa564e0f-0c70-4ab9-b863-0177e6ddd247}" Name="Title" /><FieldRef ID="{202e9458-bb93-48b9-925e-a2e9c4d80811}" Name="ProjectState" /><FieldRef ID="{64cd368d-2f95-4bfc-a1f9-8d4324ecb007}" Name="StartDate" /><FieldRef ID="{8A121252-85A9-443d-8217-A1B57020FADF}" Name="_EndDate" /><FieldRef ID="{d2311440-1ed6-46ea-b46d-daa643dc3886}" Name="PercentComplete" /><FieldRef ID="{68d96df7-ffae-462f-899d-176be403d838}" Name="ProjectType" /><FieldRef ID="{8b65686e-7ae1-4824-9b1e-fa307d5d65ef}" Name="ScrumNotes" /><FieldRef ID="{698dd4fd-ce91-4e17-b4bb-45cbf16413b4}" Name="ProjectManager" /><FieldRef ID="{add3a111-0e4c-469c-afe2-923c3fe08a10}" Name="Developers" /><FieldRef ID="{a5697bf4-ef9e-411e-a952-dad136076691}" Name="Testers" /><FieldRef ID="{176da506-dcea-41e9-9f62-dd5319005b66}" Name="Activation" /><FieldRef ID="{dd654602-3462-49bd-b17e-e1ac13cebc01}" Name="ProjectDescription" /><FieldRef ID="{37c87256-7aff-4ccb-813e-272b5f764668}" Name="ProjectDocuments" /><FieldRef ID="{6a4c46f7-1a2f-43cf-bf31-5094449954d4}" Name="ProjectStatus" /><FieldRef ID="{1ede6940-4751-465e-b74c-06d7571a6f11}" Name="Category1" /></FieldRefs></ContentType><ContentTypeRef ID="0x01">
+        <Folder TargetName="Item" />
+      </ContentTypeRef><ContentTypeRef ID="0x0120" /></ContentTypes>
+    <Fields>
+      
+    <Field ID="{fa564e0f-0c70-4ab9-b863-0177e6ddd247}" Type="Text" Name="Title" DisplayName="$Resources:core,Project Name;" Required="TRUE" SourceID="http://schemas.microsoft.com/sharepoint/v3" StaticName="Title" MaxLength="255" /><Field Name="ProjectState" ID="{202e9458-bb93-48b9-925e-a2e9c4d80811}" DisplayName="Project State" Type="Choice"><CHOICES><CHOICE>In-Pursuit</CHOICE><CHOICE>On-Boarding</CHOICE><CHOICE>On-Hold</CHOICE><CHOICE>Active</CHOICE><CHOICE>Completed</CHOICE></CHOICES></Field><Field ID="{64cd368d-2f95-4bfc-a1f9-8d4324ecb007}" Name="StartDate" SourceID="http://schemas.microsoft.com/sharepoint/v3" StaticName="StartDate" Group="Base Columns" Type="DateTime" Format="DateOnly" DisplayName="Start Date"><Default>[today]</Default></Field><Field ID="{8A121252-85A9-443d-8217-A1B57020FADF}" Name="_EndDate" Group="Base Columns" Type="DateTime" DisplayName="End Date" Format="DateTime" SourceID="http://schemas.microsoft.com/sharepoint/v3/fields" StaticName="_EndDate"><Default>[today]</Default></Field><Field ID="{d2311440-1ed6-46ea-b46d-daa643dc3886}" Name="PercentComplete" SourceID="http://schemas.microsoft.com/sharepoint/v3" StaticName="PercentComplete" Group="Core Task and Issue Columns" Type="Number" Percentage="TRUE" Min="0" Max="100" DisplayName="% Complete" Decimals="0" /><Field Name="ProjectType" ID="{68d96df7-ffae-462f-899d-176be403d838}" DisplayName="Project Type" Type="Choice" Format="Dropdown"><CHOICES><CHOICE>ASP.NET</CHOICE><CHOICE>Azure</CHOICE><CHOICE>Silverlight</CHOICE><CHOICE>SharePoint</CHOICE><CHOICE>SQL</CHOICE></CHOICES></Field><Field Name="ScrumNotes" ID="{8b65686e-7ae1-4824-9b1e-fa307d5d65ef}" DisplayName="Scrum Notes" Type="Note" /><Field Name="ProjectManager" ID="{698dd4fd-ce91-4e17-b4bb-45cbf16413b4}" DisplayName="Project Manager" Type="Choice" Format="Dropdown"><CHOICES><CHOICE>Project Manager 1</CHOICE><CHOICE>Project Manager 2</CHOICE><CHOICE>Project Manager 3</CHOICE></CHOICES></Field><Field Name="Developers" ID="{add3a111-0e4c-469c-afe2-923c3fe08a10}" DisplayName="Developers" Type="Choice" Format="Dropdown"><CHOICES><CHOICE>Developer 1</CHOICE><CHOICE>Developer 2</CHOICE><CHOICE>Developer 3</CHOICE></CHOICES></Field><Field Name="Testers" ID="{a5697bf4-ef9e-411e-a952-dad136076691}" DisplayName="Testers" Type="Choice" Format="Dropdown"><CHOICES><CHOICE>Tester 1</CHOICE><CHOICE>Tester 2</CHOICE><CHOICE>Tester 3</CHOICE></CHOICES></Field><Field Name="Activation" ID="{176da506-dcea-41e9-9f62-dd5319005b66}" DisplayName="Activation" Type="Choice" Format="RadioButtons"><CHOICES><CHOICE>Active</CHOICE><CHOICE>In-Active</CHOICE></CHOICES></Field><Field Name="ProjectDescription" ID="{dd654602-3462-49bd-b17e-e1ac13cebc01}" DisplayName="Project Description" Type="Note" /><Field Name="ProjectDocuments" ID="{37c87256-7aff-4ccb-813e-272b5f764668}" DisplayName="Project Documents" Type="URL" Format="Hyperlink" /><Field Name="ProjectStatus" ID="{6a4c46f7-1a2f-43cf-bf31-5094449954d4}" DisplayName="Project Status" Type="Choice" Format="Dropdown"><CHOICES><CHOICE>On-Target</CHOICE><CHOICE>At-Risk</CHOICE><CHOICE>Critical</CHOICE></CHOICES></Field><Field Name="Category1" ID="{1ede6940-4751-465e-b74c-06d7571a6f11}" DisplayName="Category" Type="Choice"><CHOICES><CHOICE>Contoso </CHOICE><CHOICE>Contoso Corp</CHOICE><CHOICE>Contoso HR</CHOICE></CHOICES></Field></Fields>
+    <Views>
+      
+      
+    <View BaseViewID="0" Type="HTML" MobileView="TRUE" TabularView="FALSE">
+        <Toolbar Type="Standard" />
+        <XslLink Default="TRUE">main.xsl</XslLink>
+        <RowLimit Paged="TRUE">30</RowLimit>
+        <ViewFields>
+          
+        <FieldRef Name="LinkTitleNoMenu"></FieldRef></ViewFields>
+        <Query>
+          <OrderBy>
+            
+          <FieldRef Name="Modified" Ascending="FALSE"></FieldRef></OrderBy>
+        </Query>
+        <ParameterBindings>
+          <ParameterBinding Name="AddNewAnnouncement" Location="Resource(wss,addnewitem)" />
+          <ParameterBinding Name="NoAnnouncements" Location="Resource(wss,noXinviewofY_LIST)" />
+          <ParameterBinding Name="NoAnnouncementsHowTo" Location="Resource(wss,noXinviewofY_ONET_HOME)" />
+        </ParameterBindings>
+      </View><View BaseViewID="1" Type="HTML" WebPartZoneID="Main" DisplayName="$Resources:core,objectiv_schema_mwsidcamlidC24;" DefaultView="TRUE" MobileView="TRUE" MobileDefaultView="TRUE" SetupPath="pages\viewpage.aspx" ImageUrl="/_layouts/15/images/generic.png" Url="AllItems.aspx">
+        <Toolbar Type="Standard" />
+        <XslLink Default="TRUE">main.xsl</XslLink>
+        <JSLink>clienttemplates.js</JSLink>
+        <RowLimit Paged="TRUE">30</RowLimit>
+        <ViewFields>
+          
+        <FieldRef Name="LinkTitle"></FieldRef><FieldRef Name="ProjectState" /><FieldRef Name="StartDate" /><FieldRef Name="_EndDate" /><FieldRef Name="PercentComplete" /><FieldRef Name="ProjectType" /><FieldRef Name="ScrumNotes" /><FieldRef Name="ProjectManager" /><FieldRef Name="Developers" /><FieldRef Name="Testers" /><FieldRef Name="Activation" /><FieldRef Name="ProjectDescription" /><FieldRef Name="ProjectDocuments" /><FieldRef Name="ProjectStatus" /><FieldRef Name="Category1" /></ViewFields>
+        <Query>
+          <OrderBy>
+            
+          <FieldRef Name="ID"></FieldRef></OrderBy>
+        </Query>
+        <ParameterBindings>
+          <ParameterBinding Name="NoAnnouncements" Location="Resource(wss,noXinviewofY_LIST)" />
+          <ParameterBinding Name="NoAnnouncementsHowTo" Location="Resource(wss,noXinviewofY_DEFAULT)" />
+        </ParameterBindings>
+      </View></Views>
+    <Forms>
+      <Form Type="DisplayForm" Url="DispForm.aspx" SetupPath="pages\form.aspx" WebPartZoneID="Main" />
+      <Form Type="EditForm" Url="EditForm.aspx" SetupPath="pages\form.aspx" WebPartZoneID="Main" />
+      <Form Type="NewForm" Url="NewForm.aspx" SetupPath="pages\form.aspx" WebPartZoneID="Main" />
+    </Forms>
+  </MetaData>
+</List>
