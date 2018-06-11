@@ -1,0 +1,254 @@
+﻿<FAQList>
+  <FAQ>
+    <Question>How can I access Outlook from outside the organization?</Question>
+    <Answer>
+      Visit http://Outlook.wingtiptoys.com and login.
+    </Answer>
+  </FAQ>
+  <FAQ>
+    <Question>How do I set up e-Fax on my computer?</Question>
+    <Answer>
+      The IT Help Desk can set up your computer to send and receive faxes. Please call ext. 5555.
+    </Answer>
+  </FAQ>
+  <FAQ>
+    <Question>How can I access SharePoint from outside the organization?</Question>
+    <Answer>
+      Visit http://SharePoint.wingtiptoys.com. At the prompt enter your domain and user name.
+    </Answer>
+  </FAQ>
+  <FAQ>
+    <Question>How do I view documents that were not written in Word?</Question>
+    <Answer>
+      As long as you are sure it is text document (rather than a spreadsheet or a PowerPoint presentation, for example), start Word, choose file, open and change “files of type” to “all files” at the bottom of the dialog box. You can then browse to the file and try to open it. Alternatively, you can add a “.doc” extension to the end of the file, then double click it. Bear in mind that some document types (Adobe Acrobat files, for example) cannot be opened in Word.
+    </Answer>
+  </FAQ>
+  <FAQ>
+    <Question>How do I save a document so others will be able to read it?</Question>
+    <Answer>
+      Do not use periods or other punctuation marks or symbols in the file name. Use letters and numbers only. Spaces are OK.
+    </Answer>
+  </FAQ>
+  <FAQ>
+    <Question>How can I find out if my mobile device will work in the area I will be visiting?</Question>
+    <Answer>
+      Before you go, visit http://www.wingtiptoys.com/learn/international/roaming/international-roaming.aspx and enter your itinerary.
+    </Answer>
+  </FAQ>
+  <FAQ>
+    <Question>Can I use my mobile device internationally?</Question>
+    <Answer>
+      When you are abroad and turn on your wireless phone, it will automatically search for a wireless network. Registration usually occurs within 30-40 seconds. When the name or network number of the local operator is displayed, your phone should be ready to use.
+    </Answer>
+  </FAQ>
+  <FAQ>
+    <Question>How do I make international calls when roaming outside the US?</Question>
+    <Answer>
+      Make international calls using the international format (+, country code, number). For example, to place an international call back to the United States, dial +1, then the area code and number (the U.S. country code is "1").  Holding down the 0 key will cause the + sign to appear.
+    </Answer>
+  </FAQ>
+  <FAQ>
+    <Question>How can I change networks while travelling internationally?</Question>
+    <Answer>
+      Click the settings icon and then the options icon. Scroll to network and select it. Change the network selection mode from automatic to manual. Select "scan for available networks". Choose a network from the list provided.
+    </Answer>
+  </FAQ>
+  <FAQ>
+    <Question>How do I access voice mail while travelling internationally?</Question>
+    <Answer>
+      Click the settings icon and then the options icon. Scroll to network and select it. Change the network selection mode from automatic to manual. Select "scan for available networks". Choose a network from the list provided.  Once on the network, press and hold the number "1" key.
+    </Answer>
+  </FAQ>
+  <FAQ>
+    <Question>What do I do if my mobile device won't work internationally?</Question>
+    <Answer>
+      When you arrive at certain international destinations, it may be necessary to turn your wireless phone off and then back on again so it recognizes the local wireless network.
+    </Answer>
+  </FAQ>
+  <FAQ>
+    <Question>What do I do if my device shows "OFF" near the signal strength indicator on the home screen?</Question>
+    <Answer>
+      To turn the radio on, select the icon that looks like a radio tower. Rings will appear above the icon, indicating the radio is now on.
+    </Answer>
+  </FAQ>
+  <FAQ>
+    <Question>What do I do if my device shows a red "X" near the signal strength indicator on the home screen?</Question>
+    <Answer>
+      This indicates that the device is not receiving a signal. This could be a result of not being in an area with wireless coverage. No phone or data use is possible.
+    </Answer>
+  </FAQ>
+  <FAQ>
+    <Question>Is the signal strength in my location strong enough for phone and data use?</Question>
+    <Answer>
+      A minimum of two bars in the signal strength indicator are required. Calls placed with one bar are unreliable because of the poor signal.
+    </Answer>
+  </FAQ>
+  <FAQ>
+    <Question>How do I reset my mobile device (soft reset)?</Question>
+    <Answer>
+      Simultaneously press Alt+Cap+Delete to perform a soft reset. (This will not cause data loss.)
+    </Answer>
+  </FAQ>
+  <FAQ>
+    <Question>How do I reset my mobile device (hard reset)?</Question>
+    <Answer>
+      Remove and reinsert the battery to perform a hard reset. The battery is accessed by removing the device's rear cover. (This will not cause data loss.)
+    </Answer>
+  </FAQ>
+  <FAQ>
+    <Question>What do I do if my device shows "GSM" instead of "EDGE" at the top of the home screen?</Question>
+    <Answer>
+      "GSM" indicates that voice service is available but data services are not. Sometimes turning the device off and on, performing a reset (see above) can restore EDGE. Sometimes EDGE coverage is unavailable due to your location or local network conditions.
+    </Answer>
+  </FAQ>
+  <FAQ>
+    <Question>How do I remove and replace the SIM card?</Question>
+    <Answer>
+      Removing and replacing the SIM card can sometimes restore lost data and/or voice connectivity. Turn the power off. Remove the back cover and the battery. The SIM card is underneath. A plastic rab must be pressed to release the SIM. Note the proper orientation of the card before removing it.
+    </Answer>
+  </FAQ>
+  <FAQ>
+    <Question>How can I register my mobile device on the network?</Question>
+    <Answer>
+      Registering the device on the network can sometimes restore lost data and/or voice connectivity. Click the settings icon and then the options icon. Select Advanced Options, then Host Routing Table. You will see a long list of the work "Contoso" followed by a number. Click the trackwheel and choose register now. A registration message should be received in the device's inbox
+    </Answer>
+  </FAQ>
+  <FAQ>
+    <Question>What do I do if my mobile device is not working, but other people's are?</Question>
+    <Answer>
+      The other devices may be using a different carrier.
+    </Answer>
+  </FAQ>
+  <FAQ>
+    <Question>Can I listen to voicemails on my mobile device?</Question>
+    <Answer>
+      You must dial-in to voice mail  and follow the prompts to listen to voicemails that appear in your mobile device e-mail.
+    </Answer>
+  </FAQ>
+  <FAQ>
+    <Question>How do I get my computer set up and access training?</Question>
+    <Answer>
+      If you or your supervisor are having trouble accessing any of the organization's computer systems, visit the IT Training site
+    </Answer>
+  </FAQ>
+  <FAQ>
+    <Question>How do I support a new hire in getting set up?</Question>
+    <Answer>
+      Your supervisor should fill out a New Hire form via Human Resources, which direct Information Technology (IT) staff to create a network log-on, password, email account and other computer authorizations.
+    </Answer>
+  </FAQ>
+  <FAQ>
+    <Question>Who do I call if my computer is having problems?</Question>
+    <Answer>
+      Call the Help Desk
+    </Answer>
+  </FAQ>
+  <FAQ>
+    <Question>I just got a laptop. What do I do now?</Question>
+    <Answer>
+      Make sure it has an inventory tag, then call the Help Desk to arrange for it to be set up and configured for use with the organization network.
+    </Answer>
+  </FAQ>
+  <FAQ>
+    <Question>How do I add a printer?</Question>
+    <Answer>
+      First, visit the physical printer you want to add and write down the number from the label attached to it. Then at your PC, choose Printers and Faxes from the Start menu and click Add Printer in the task bar on the left. The Add Printer Wizard will appear. Choose "a network printer..." and click Next. Choose "find a printer in the directory" and click next. Type the name of the printer that you wrote down earlier and click "find now". When the printer name appears click on it and click the OK button. You will be asked to choose whether to make this new printer your default printer, then click next and finish.
+    </Answer>
+  </FAQ>
+  <FAQ>
+    <Question>Who do I call if my desktop printer needs toner or is jammed?</Question>
+    <Answer>
+      Call the Help Desk
+    </Answer>
+  </FAQ>
+  <FAQ>
+    <Question>How do I make a web page my home page in Internet Explorer?</Question>
+    <Answer>
+      Go to the  page you want to make your home page. Choose Tools, Internet Options. In the Internet Options box, choose on the General tab, click the "Use Current" button. Click OK.
+    </Answer>
+  </FAQ>
+  <FAQ>
+    <Question>How do I access my email when I am away from the office?</Question>
+    <Answer>
+      Use Outlook web access at https://owa.wingtiptoys.org. Supply your user name and password.
+    </Answer>
+  </FAQ>
+  <FAQ>
+    <Question>How do I get email on my laptop when I am away from the office?</Question>
+    <Answer>
+      Use the VPN to connect to the internet, then start Outlook.
+    </Answer>
+  </FAQ>
+  <FAQ>
+    <Question>What do I do if I receive an "access denied" message?</Question>
+    <Answer>
+      Ensure the user name and password you supplied are correct. Empty Internet Explorer temp files (Tools, Internet Options, Delete Files). If you still can't log on, your account may have been locked: please call the Help Desk at so a technician can unlock your account.
+    </Answer>
+  </FAQ>
+  <FAQ>
+    <Question>How do I view folder lists in Outlook?</Question>
+    <Answer>
+      In Outlook click on "Go" in the top menu bar and choose Folder List.
+    </Answer>
+  </FAQ>
+  <FAQ>
+    <Question>How do I sync my mail on my laptop so that I can read it when I am offline?</Question>
+    <Answer>
+      Connect the internet, then start Outlook. Choose Tools, Send/Receive, Send/Receive All. This may take some time the first time you do this, or if it's been a while since you last synched.
+    </Answer>
+  </FAQ>
+  <FAQ>
+    <Question>How do I print only one month of my calendar?</Question>
+    <Answer>
+      While in your calendar choose File, Print. Choose "Monthly Style" and specify the first and last days of the month you want to print as the start and end days under "print range". Click OK.
+    </Answer>
+  </FAQ>
+  <FAQ>
+    <Question>How do I use the calendar to schedule meeting requests?</Question>
+    <Answer>
+      Please contact the Help Desk to arrange Outlook training.
+    </Answer>
+  </FAQ>
+  <FAQ>
+    <Question>How do I sign up for Outlook training?</Question>
+    <Answer>
+      You may  wish to reference the Technology User Training site on SharePoint.
+    </Answer>
+  </FAQ>
+  <FAQ>
+    <Question>Who do I call if a conference room phone is not working?</Question>
+    <Answer>
+      Call or send an email to the Help Desk
+    </Answer>
+  </FAQ>
+  <FAQ>
+    <Question>Who do I call if I have a problem with my desk phone?</Question>
+    <Answer>
+      Please send an email to the Help Desk
+    </Answer>
+  </FAQ>
+  <FAQ>
+    <Question>What is the external phone number to access my voice mail  messages from outside the organization?</Question>
+    <Answer>
+      555-555-5555, press # then at the "mailbox number please" prompt enter your extension than your numeric password I don't know or have forgotten my voicemail password.	The default voice mail password is 5555. If you have changed it and forgot what you changed it to, call the Help Desk and ask for it to be reset.
+    </Answer>
+  </FAQ>
+  <FAQ>
+    <Question>How do I change my voicemail password?</Question>
+    <Answer>
+      Dial in to voice mail, press 4 from the main menu, and follow the prompts.
+    </Answer>
+  </FAQ>
+  <FAQ>
+    <Question>How can I forward my calls directly to voicemail?</Question>
+    <Answer>
+      Unless the LCD panel on your telephone already shows menu options, press the Menu button so it does show them. CFrwd should appear on the menu. Press the button directly underneath it.  Dial 5555. You will hear 2 beeps. Press the Drop button to end the call. An arrow over CFrwd will appear while your calls are forwarded.
+    </Answer>
+  </FAQ>
+  <FAQ>
+    <Question>How can I turn off call forwarding to voicemail?</Question>
+    <Answer>
+      Unless the LCD panel on your telephone already shows menu options, press the Menu button so it does show them. CFrwd should appear on the menu. Press the button directly underneath it. The arrow over CFrwd will disappear and your calls will not be directly forwarded to voicemail. Calls will still be forwarded to voicemail after several rings in accordance with organization policy for your unit.
+    </Answer>
+  </FAQ>
+</FAQList>

@@ -1,0 +1,55 @@
+﻿#listTable
+{
+	font-family: "Lucida Sans Unicode", "Lucida Grande", Sans-Serif;
+	font-size: 10px;
+	background: #fff;
+	margin: 0px;
+	width: 100%;
+	border-collapse: collapse;
+	text-align: left;
+}
+#listTable th
+{
+	font-size: 12px;
+	font-weight: normal;
+	color: #039;
+	padding: 10px 8px;
+	border-bottom: 2px solid #6678b1;
+}
+#listTable td
+{
+    color: #669;
+	padding: 9px 8px 0px 8px;
+
+}
+
+#listTable tbody tr:hover td
+{
+	color: #009;
+}
+
+#resultsTable
+{
+	font-family: "Lucida Sans Unicode", "Lucida Grande", Sans-Serif;
+	font-size: 10px;
+	margin: 0px;
+	width: 480px;
+	text-align: left;
+	border-collapse: collapse;
+}
+#resultsTable th
+{
+	font-size: 11px;
+	font-weight: normal;
+	padding: 5px 4px;
+	color: #039;
+}
+#resultsTable td
+{
+	padding: 4px;
+	color: #669;
+}
+#resultsTable tr .even
+{
+	background: #e8edff; 
+}
