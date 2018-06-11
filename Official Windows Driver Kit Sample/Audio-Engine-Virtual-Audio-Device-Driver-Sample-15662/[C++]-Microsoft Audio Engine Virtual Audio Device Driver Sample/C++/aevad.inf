@@ -1,0 +1,221 @@
+[Version]
+Signature="$CHICAGO$"
+Class=MEDIA
+Provider=%MSFT%
+ClassGUID={4d36e96c-e325-11ce-bfc1-08002be10318}
+DriverVer = 02/22/2007, 6.0.6000.1
+CatalogFile=aevad.cat
+
+[SourceDisksNames]
+222="MSVAD Driver Disk","",222
+
+[SourceDisksFiles]
+aesample.sys=222
+
+;;This syntax is only recognized on Windows XP and above- it is needed to install 64-bit drivers on
+;;Windows Server 2003 Service Pack 1 and above.
+
+[Manufacturer]
+%MfgName%=MicrosoftDS,NTAMD64,NTIA64,NTARM
+
+;;  For Windows Server 2003 Service Pack 1 and above, a 64-bit OS will not install a driver
+;;  unless the Manufacturer and Models Sections explicitly show it is a driver for that platform
+;;  But the individual model section decorations (or lack thereof) work as they always have.
+;;  All of the model sections referred to are undecorated or NT-decorated, hence work on all platforms
+
+[MicrosoftDS]
+%MSVAD_AE.DeviceDesc%=MSVAD_AE,*MSVADAE
+
+
+;; This section enables installing on x64 systems
+
+[MicrosoftDS.NTAMD64]
+%MSVAD_AE.DeviceDesc%=MSVAD_AE,*MSVADAE
+
+;;  This section enables installing on Itanium systems
+
+[MicrosoftDS.NTIA64]
+%MSVAD_AE.DeviceDesc%=MSVAD_AE,*MSVADAE
+
+;; This section enables installing on ARM systems
+
+[MicrosoftDS.NTARM]
+%MSVAD_AE.DeviceDesc%=MSVAD_AE,*MSVADAE
+
+
+[DestinationDirs]
+MSVAD_AE.CopyList=10,system32\drivers
+
+;======================================================
+; MSVAD_AE
+;======================================================
+[MSVAD_AE]
+AlsoInstall=ks.registration(ks.inf),wdmaudio.registration(wdmaudio.inf)
+CopyFiles=MSVAD_AE.CopyList
+AddReg=MSVAD_AE.AddReg
+
+[MSVAD_AE.CopyList]
+aesample.sys
+
+[MSVAD_AE.Interfaces]
+;
+; Interfaces for render in endpoint.
+;
+AddInterface=%KSCATEGORY_AUDIO%,%KSNAME_Wave%,MSVAD.I.Wave
+AddInterface=%KSCATEGORY_RENDER%,%KSNAME_Wave%,MSVAD.I.Wave
+AddInterface=%KSCATEGORY_REALTIME%,%KSNAME_Wave%,MSVAD.I.Wave
+
+AddInterface=%KSCATEGORY_AUDIO%,%KSNAME_Topology%,MSVAD.I.Topo
+AddInterface=%KSCATEGORY_TOPOLOGY%,%KSNAME_Topology%,MSVAD.I.Topo
+
+;
+; Interfaces for microphone in endpoint.
+;
+AddInterface=%KSCATEGORY_AUDIO%,    %KSNAME_WaveMicIn%,MSVAD.I.WaveMicIn
+AddInterface=%KSCATEGORY_REALTIME%, %KSNAME_WaveMicIn%,MSVAD.I.WaveMicIn
+AddInterface=%KSCATEGORY_CAPTURE%,  %KSNAME_WaveMicIn%,MSVAD.I.WaveMicIn
+
+AddInterface=%KSCATEGORY_AUDIO%,    %KSNAME_TopologyMicIn%,MSVAD.I.TopoMicIn
+AddInterface=%KSCATEGORY_TOPOLOGY%, %KSNAME_TopologyMicIn%,MSVAD.I.TopoMicIn
+
+
+[MSVAD_AE.AddReg]
+HKR,,AssociatedFilters,,"wdmaud,swmidi,redbook"
+HKR,,Driver,,aesample.sys
+
+HKR,Drivers,SubClasses,,"wave,midi,mixer"
+
+HKR,Drivers\wave\wdmaud.drv,Driver,,wdmaud.drv
+HKR,Drivers\midi\wdmaud.drv,Driver,,wdmaud.drv
+HKR,Drivers\mixer\wdmaud.drv,Driver,,wdmaud.drv
+
+HKR,Drivers\wave\wdmaud.drv,Description,,%MSVAD_AE.DeviceDesc%
+HKR,Drivers\midi\wdmaud.drv,Description,,%MSVAD_MIDI%
+HKR,Drivers\mixer\wdmaud.drv,Description,,%MSVAD_AE.DeviceDesc%
+
+;======================================================
+; render interfaces
+;======================================================
+[MSVAD.I.Wave]
+AddReg=MSVAD.I.Wave.AddReg
+[MSVAD.I.Wave.AddReg]
+HKR,,CLSID,,%Proxy.CLSID%
+HKR,,FriendlyName,,%MSVAD.Wave.szPname%
+
+[MSVAD.I.Topo]
+AddReg=MSVAD.I.Topo.AddReg
+[MSVAD.I.Topo.AddReg]
+HKR,,CLSID,,%Proxy.CLSID%
+HKR,,FriendlyName,,%MSVAD.Topo.szPname%
+; Uncomment the following lines to opt-in to pull mode.
+; HKR,"EP\\0",%PKEY_AudioEndpoint_Association%,,%KSNODETYPE_ANY%
+; HKR,"EP\\0",%PKEY_AudioEndpoint_Supports_EventDriven_Mode%,0x00010001,0x1
+
+;======================================================
+; capture interfaces
+;======================================================
+[MSVAD.I.WaveMicIn]
+AddReg=MSVAD.I.WaveMicIn.AddReg
+[MSVAD.I.WaveMicIn.AddReg]
+HKR,,CLSID,,%Proxy.CLSID%
+HKR,,FriendlyName,,%MSVAD.WaveMicIn.szPname%
+
+[MSVAD.I.TopoMicIn]
+AddReg=MSVAD.I.TopoMicIn.AddReg
+[MSVAD.I.TopoMicIn.AddReg]
+HKR,,CLSID,,%Proxy.CLSID%
+HKR,,FriendlyName,,%MSVAD.TopoMicIn.szPname%
+; Uncomment the following lines to opt-in to pull mode.
+; HKR,"EP\\0",%PKEY_AudioEndpoint_Association%,,%KSNODETYPE_ANY%
+; HKR,"EP\\0",%PKEY_AudioEndpoint_Supports_EventDriven_Mode%,0x00010001,0x1
+
+[MSVAD_AE.HW]
+AddReg = AUDIOHW.AddReg
+
+;======================================================
+; MSVAD_AE
+;======================================================
+[MSVAD_AE.NT]
+Include=ks.inf,wdmaudio.inf
+Needs=KS.Registration, WDMAUDIO.Registration
+CopyFiles=MSVAD_AE.CopyList
+AddReg=MSVAD_AE.AddReg
+
+[MSVAD_AE.NT.Interfaces]
+;
+; Interfaces for render in endpoint.
+;
+AddInterface=%KSCATEGORY_AUDIO%,%KSNAME_Wave%,MSVAD.I.Wave
+AddInterface=%KSCATEGORY_RENDER%,%KSNAME_Wave%,MSVAD.I.Wave
+AddInterface=%KSCATEGORY_REALTIME%,%KSNAME_Wave%,MSVAD.I.Wave
+AddInterface=%KSCATEGORY_AUDIO%,%KSNAME_Topology%,MSVAD.I.Topo
+AddInterface=%KSCATEGORY_TOPOLOGY%,%KSNAME_Topology%,MSVAD.I.Topo
+
+;
+; Interfaces for microphone in endpoint.
+;
+AddInterface=%KSCATEGORY_AUDIO%,%KSNAME_WaveMicIn%,MSVAD.I.WaveMicIn
+AddInterface=%KSCATEGORY_REALTIME%,%KSNAME_WaveMicIn%,MSVAD.I.WaveMicIn
+AddInterface=%KSCATEGORY_CAPTURE%,%KSNAME_WaveMicIn%,MSVAD.I.WaveMicIn
+AddInterface=%KSCATEGORY_AUDIO%,%KSNAME_TopologyMicIn%,MSVAD.I.TopoMicIn
+AddInterface=%KSCATEGORY_TOPOLOGY%,%KSNAME_TopologyMicIn%,MSVAD.I.TopoMicIn
+
+[MSVAD_AE.NT.Services]
+AddService=msvad_aesample,0x00000002,msvad_AESample_Service_Inst
+
+[msvad_AESample_Service_Inst]
+DisplayName=%msvad_AESample.SvcDesc%
+ServiceType=1
+StartType=3
+ErrorControl=1
+ServiceBinary=%10%\system32\drivers\aesample.sys
+
+[MSVAD_AE.NT.HW]
+AddReg = AUDIOHW.AddReg
+
+[AUDIOHW.AddReg]
+; FILE_DEVICE_SOUND
+HKR,,DeviceType,0x10001,0x0000001D
+; SDDL_DEVOBJ_SYS_ALL_ADM_RWX_WORLD_RWX_RES_RWX
+HKR,,Security,,"D:P(A;;GA;;;SY)(A;;GRGWGX;;;BA)(A;;GRGWGX;;;WD)(A;;GRGWGX;;;RC)"
+
+
+;======================================================
+; COMMON
+;======================================================
+[Strings]
+MSFT="Microsoft"
+MfgName="Microsoft Audio DDK"
+MSVAD_AE.DeviceDesc="Microsoft Virtual Audio Offloading Device (WDM) with mic in support 2"
+
+MSVAD.Wave.szPname="MSVAD Wave"
+MSVAD.Topo.szPname="MSVAD Topology"
+
+;; for capture
+MSVAD.WaveMicIn.szPname="MSVAD Wave for microphone"
+MSVAD.TopoMicIn.szPname="MSVAD Topology for microphone"
+
+
+MSVAD_MIDI="MSVAD -> WDM Midi Device"
+
+Proxy.CLSID="{17CCA71B-ECD7-11D0-B908-00A0C9223196}"
+KSCATEGORY_AUDIO="{6994AD04-93EF-11D0-A3CC-00A0C9223196}"
+KSCATEGORY_RENDER="{65E8773E-8F56-11D0-A3B9-00A0C9223196}"
+KSCATEGORY_CAPTURE="{65E8773D-8F56-11D0-A3B9-00A0C9223196}"
+KSCATEGORY_REALTIME ="{EB115FFC-10C8-4964-831D-6DCB02E6F23F}" ; non-localizable
+KSCATEGORY_TOPOLOGY = "{DDA54A40-1E4C-11D1-A050-405705C10000}" ; non-localizable
+
+KSNAME_Wave="Wave"
+KSNAME_Topology="Topology"
+
+KSNAME_WaveMicIn="WaveMicIn"
+KSNAME_TopologyMicIn="TopologyMicIn"
+
+msvad_AESample.SvcDesc="Microsoft Virtual Audio Offloading Device (WDM)"
+
+MediaCategories="SYSTEM\CurrentControlSet\Control\MediaCategories"
+KSNODETYPE_ANY   = "{00000000-0000-0000-0000-000000000000}"
+PKEY_AudioEndpoint_Association = "{1DA5D803-D492-4EDD-8C23-E0C0FFEE7F0E},2"
+PKEY_AudioEndpoint_Supports_EventDriven_Mode = "{1DA5D803-D492-4EDD-8C23-E0C0FFEE7F0E},7"
+PKEY_Endpoint_AllowWMAOffloading = "{b3f8fa53-0004-438e-9003-51a46e139bfc},28"
+

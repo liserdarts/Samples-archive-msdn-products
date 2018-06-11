@@ -1,0 +1,30 @@
+/*++
+
+Copyright (c) 1997-2000  Microsoft Corporation All Rights Reserved
+
+Module Name:
+
+    aevad.rc
+
+Abstract:
+
+
+--*/
+
+#include <windows.h>
+
+#include <ntverp.h>
+
+#define VER_FILETYPE                VFT_DRV
+#define VER_FILESUBTYPE             VFT2_DRV_SOUND
+#define VER_FILEDESCRIPTION_STR     "Microsoft Virtual Audio Offloading Device"
+#define VER_INTERNALNAME_STR        "aesample.sys"
+#define VER_ORIGINALFILENAME_STR    "aesample.sys"
+
+#define VER_LEGALCOPYRIGHT_YEARS    "2010"
+#define VER_LEGALCOPYRIGHT_STR	    "Copyright (C) Microsoft Corp." VER_LEGALCOPYRIGHT_YEARS
+
+#include "common.ver"
+
+
+

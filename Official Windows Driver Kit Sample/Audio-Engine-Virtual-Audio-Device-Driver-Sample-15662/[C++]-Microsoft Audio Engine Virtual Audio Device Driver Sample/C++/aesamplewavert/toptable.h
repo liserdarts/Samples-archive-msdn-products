@@ -1,0 +1,149 @@
+/*++
+
+Copyright (c) 1997-2000  Microsoft Corporation All Rights Reserved
+
+Module Name:
+
+    toptable.h
+
+Abstract:
+
+    Declaration of topology tables.
+
+--*/
+
+#ifndef _MSVAD_TOPTABLE_H_
+#define _MSVAD_TOPTABLE_H_
+
+//=============================================================================
+static
+KSDATARANGE PinDataRangesBridge[] =
+{
+ {
+   sizeof(KSDATARANGE),
+   0,
+   0,
+   0,
+   STATICGUIDOF(KSDATAFORMAT_TYPE_AUDIO),
+   STATICGUIDOF(KSDATAFORMAT_SUBTYPE_ANALOG),
+   STATICGUIDOF(KSDATAFORMAT_SPECIFIER_NONE)
+ }
+};
+
+//=============================================================================
+static
+PKSDATARANGE PinDataRangePointersBridge[] =
+{
+  &PinDataRangesBridge[0]
+};
+
+//=============================================================================
+static
+PCPIN_DESCRIPTOR RenderTopoMiniportPins[] =
+{
+  // KSPIN_TOPO_WAVEOUT_SOURCE
+  {
+    0,
+    0,
+    0,                                              // InstanceCount
+    NULL,                                           // AutomationTable
+    {                                               // KsPinDescriptor
+      0,                                            // InterfacesCount
+      NULL,                                         // Interfaces
+      0,                                            // MediumsCount
+      NULL,                                         // Mediums
+      SIZEOF_ARRAY(PinDataRangePointersBridge),     // DataRangesCount
+      PinDataRangePointersBridge,                   // DataRanges
+      KSPIN_DATAFLOW_IN,                            // DataFlow
+      KSPIN_COMMUNICATION_NONE,                     // Communication
+      &KSCATEGORY_AUDIO,                            // Category
+      NULL,                                         // Name
+      0                                             // Reserved
+    }
+  },
+  // KSPIN_TOPO_LINEOUT_DEST
+  {
+    0,
+    0,
+    0,                                              // InstanceCount
+    NULL,                                           // AutomationTable
+    {                                               // KsPinDescriptor
+      0,                                            // InterfacesCount
+      NULL,                                         // Interfaces
+      0,                                            // MediumsCount
+      NULL,                                         // Mediums
+      SIZEOF_ARRAY(PinDataRangePointersBridge),     // DataRangesCount
+      PinDataRangePointersBridge,                   // DataRanges
+      KSPIN_DATAFLOW_OUT,                           // DataFlow
+      KSPIN_COMMUNICATION_NONE,                     // Communication
+      &KSNODETYPE_SPEAKER,                          // Category
+      NULL,                                         // Name
+      0                                             // Reserved
+    }
+  }
+};
+
+//=============================================================================
+static
+KSJACK_DESCRIPTION JackDescSpeakers =
+{
+    KSAUDIO_SPEAKER_STEREO,
+    0xB3C98C,               // Color spec for green
+    eConnType3Point5mm,
+    eGeoLocRear,
+    eGenLocPrimaryBox,
+    ePortConnJack,
+    TRUE
+};
+
+// Only return a KSJACK_DESCRIPTION for the physical bridge pin.
+static 
+PKSJACK_DESCRIPTION JackDescriptions[] =
+{
+    NULL,
+    &JackDescSpeakers
+};
+
+//=============================================================================
+static
+PCCONNECTION_DESCRIPTOR RenderTopoMiniportConnections[] =
+{
+  //  FromNode,                     FromPin,                        ToNode,                      ToPin
+  {   PCFILTER_NODE,                KSPIN_TOPO_WAVEOUT_SOURCE,      PCFILTER_NODE,               KSPIN_TOPO_LINEOUT_DEST}
+};
+
+
+//=============================================================================
+static
+PCPROPERTY_ITEM PropertiesRenderTopoFilter[] =
+{
+    {
+        &KSPROPSETID_Jack,
+        KSPROPERTY_JACK_DESCRIPTION,
+        KSPROPERTY_TYPE_GET | KSPROPERTY_TYPE_BASICSUPPORT,
+        PropertyHandler_TopoFilter
+    }
+};
+
+DEFINE_PCAUTOMATION_TABLE_PROP(AutomationRenderTopoFilter, PropertiesRenderTopoFilter);
+
+//=============================================================================
+static
+PCFILTER_DESCRIPTOR RenderTopoMiniportFilterDescriptor =
+{
+  0,                                  // Version
+  &AutomationRenderTopoFilter,        // AutomationTable
+  sizeof(PCPIN_DESCRIPTOR),           // PinSize
+  SIZEOF_ARRAY(RenderTopoMiniportPins),         // PinCount
+  RenderTopoMiniportPins,             // Pins
+  sizeof(PCNODE_DESCRIPTOR),          // NodeSize
+  0,                                  // NodeCount
+  NULL,                               // Nodes
+  SIZEOF_ARRAY(RenderTopoMiniportConnections),  // ConnectionCount
+  RenderTopoMiniportConnections,      // Connections
+  0,                                  // CategoryCount
+  NULL                                // Categories
+};
+
+#endif
+    
