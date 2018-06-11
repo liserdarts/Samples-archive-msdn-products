@@ -1,0 +1,6 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<parameters>
+  <setParameter name="IIS Web Application Name" value="Default Web Site/" />
+  <setParameter name="ClientId" value="6ee0bb33-7348-42db-a98b-c662fd090be1" />
+  <setParameter name="ClientSecret" value="YZARPmuEIZyYC2XDn1qv2NJQhZ9LYJ2sDINK/3ZIX0I=" />
+</parameters>

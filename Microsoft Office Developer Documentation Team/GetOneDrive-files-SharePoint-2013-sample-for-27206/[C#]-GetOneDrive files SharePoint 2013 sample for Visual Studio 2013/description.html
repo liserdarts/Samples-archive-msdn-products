@@ -1,0 +1,434 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
+    <head><link rel="stylesheet" type="text/css" href="description/Combined.css,0:HeaderFooterSprite,0:Header.NonMtps,1:LinkList;/Areas/Centers/Themes/StandardDevCenter/Content:0,/Areas/Epx/Themes/Base/Content:1&amp;amp;hashKey=C9973DA951AE6202C9B348379A1BE49D" xmlns="http://www.w3.org/1999/xhtml" />
+<link type="text/css" rel="stylesheet" xmlns="http://www.w3.org/1999/xhtml" />
+<link rel="stylesheet" type="text/css" href="description/a7bd86db-8a7a-43ce-8954-21f8f839f51bCombined.css,0:HeaderFooterSprite,0:Footer.NonMtps,1:LinkList;/Areas/Centers/Themes/StandardDevCenter/Content:0,/Areas/Epx/Themes/Base/Content:1&amp;amp;hashKey=F576C687BC536B84D6E5B3246EE39B49" xmlns="http://www.w3.org/1999/xhtml" />
+<link type="text/css" rel="stylesheet" xmlns="http://www.w3.org/1999/xhtml" />
+
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <title>GetOneDrive files SharePoint 2013 sample for Visual Studio 2013</title>
+        <link href="description/Galleries.css" type="text/css" rel="Stylesheet" /><link href="description/Layout.css" type="text/css" rel="Stylesheet" /><link href="description/Brand.css" type="text/css" rel="Stylesheet" />
+        <link href="description/iframedescription.css" rel="Stylesheet" type="text/css" />
+        <script src="description/offline.js" type="text/javascript"></script>
+        <style type="text/css">
+            #projectInfo {
+                overflow: auto;
+            }
+            #longDesc {
+                clear:both;
+                margin: 25px 0 10px 0;
+            }
+
+            #SampleIndexList{
+                margin-left: 15px;
+            }
+        </style>
+    </head>
+<body>
+    <div id="offlineDescription">
+        <h1>GetOneDrive files SharePoint 2013 sample for Visual Studio 2013</h1>
+        <br/>
+        <div id="projectInfo">
+            <div class="section">
+                    <div class="itemBarLong tagsContainer">
+                        <label for="Technologies">Technologies</label>
+                        <div id="Technologies">
+                            apps for SharePoint, Office 365 Enterprise
+                        </div>
+                    </div>
+                    <div class="itemBarLong tagsContainer">
+                        <label for="Topics">Topics</label>
+                        <div id="Topics">
+                            SharePoint
+                        </div>
+                    </div>
+                <div class="itemBarLong">
+                    <label for="Platforms">Platforms</label>
+                    <div id="Platforms">
+                        Web, Cloud
+                    </div>
+                </div>
+                <div class="itemBarLong">
+                    <label for="Requirements">Requirements</label>
+                    <div id="Requirements">
+                        
+                    </div>
+                </div>
+                <div class="itemBar">
+                    <label for="LastUpdated">Primary language</label>
+                    <div id="LastUpdated">en-US</div>
+                </div>
+                <div class="itemBar">
+                    <label for="LastUpdated">Updated</label>
+                    <div id="LastUpdated">2/13/2014</div>
+                </div>
+                <div class="itemBarLong">
+                    <label for="License">License</label>
+                    <div id="License">
+                        <a href="license.rtf">Apache License, Version 2.0</a></div>
+                </div>
+                <div class="itemBar">
+                    <div class="viewonlinecont">
+                        <a data-link="online" href="http://code.msdn.microsoft.com/GetOneDrive-files-809584fd">View this sample online</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+                   
+<script type="text/javascript">
+    function initializePage() {
+        var otherTabClass = 'otherTab';
+        var hiddenPreClass = 'hidden';
+
+        var htmlDecode = function(encodedData) {
+            var decodedData = "";
+            if (encodedData) {
+                var div = document.createElement('div');
+                div.innerHTML = encodedData;
+                decodedData = div.firstChild.nodeValue.replace( /\\r\\n/ig , '\r\n');
+            }
+            return decodedData;
+        };
+                
+        Galleries.iterateElem(Galleries.findElem(null, 'div', 'scriptcode'), function (index, scriptBlock) {
+            var titleElem = Galleries.findElem(scriptBlock, 'div', 'title')[0];
+            var labelElems = Galleries.findElem(titleElem, 'span');
+            if (labelElems.length == 0) {
+                labelElems = titleElem;
+            }
+            var languageSpans = Galleries.findElem(scriptBlock, 'span', 'hidden');
+            var pres = Galleries.findElem(scriptBlock, 'pre');
+            if (languageSpans.length > 0 && pres.length > 1) {
+                Galleries.iterateElem(labelElems, function(index, elem) {
+                    var codePre = pres[index];
+                    var labelSpan = elem;
+                    var languageSpan = languageSpans[index];
+                            
+                    elem.code = codePre.innerHTML.replace( /(\r(\n)?)|((\r)?\n)/ig , '\\r\\n');
+                            
+                    codePre.className = codePre.className.replace(hiddenPreClass, '');
+                            
+                    languageSpan.parentNode.removeChild(languageSpan);
+                });
+
+                pres = Galleries.findElem(scriptBlock, 'pre');
+                Galleries.iterateElem(labelElems, function(index, elem) {
+                    var codePre = pres[index];
+                    var labelSpan = elem;
+                    if (index == 0) {
+                        scriptBlock.activeTab = 0;
+                    }
+                    else {
+                        labelSpan.className += otherTabClass;
+                        codePre.className += hiddenPreClass;
+                    }
+                    Galleries.attachEventHandler(labelSpan, 'click', function(e) {
+                        var activeTab = scriptBlock.activeTab;
+                        labelElems[activeTab].className += otherTabClass;
+                        pres[activeTab].className += hiddenPreClass;
+
+                        codePre.className = codePre.className.replace(hiddenPreClass, '');
+                        labelSpan.className = labelSpan.className.replace(otherTabClass, '');
+                        scriptBlock.activeTab = index;
+                    });
+                });
+
+                var preview = Galleries.findElem(scriptBlock, 'div', 'preview');
+                if (preview.length == 0) {
+                    preview.push(pres[pres.length - 1]);
+                }
+                Galleries.iterateElem(preview, function(index, elem) {
+                    elem.parentNode.removeChild(elem);
+                });
+
+                if (window.clipboardData && clipboardData.setData) {
+                    var copyLink = document.createElement('a');
+                    copyLink.href = 'javascript:void(0);';
+                    copyLink.className = 'copyCode';
+                    copyLink.innerHTML = 'Copy code';
+                    Galleries.attachEventHandler(copyLink, 'click', function (e) {
+                        clipboardData.setData("Text", htmlDecode(labelElems[scriptBlock.activeTab].code));
+                        return false;
+                    });
+                    scriptBlock.insertBefore(copyLink, scriptBlock.childNodes[0]);
+                }
+            }
+        });
+    }
+
+    Galleries.onWindowLoad(function(){
+        initializePage();
+    });
+
+</script>
+<div id="longDesc">
+    
+<div id="header">Demonstrates how to build and deploy a provider hosted SharePoint app using the .NET client API for SharePoint 2013 to get OneDrive Pro folder contents.</div>
+<div id="mainSection">
+<div id="mainBody">
+<div>
+<p>The project is organized into view (pages folder), view model (ViewModel folder), and model (DataModel folder). The code that uses the managed SharePoint APIs is in the OneDriveProDocs.cs file. The Scripts folder contains the ChromeLoader.js file for showing
+ SP chrome on the UI.</p>
+<p>The view model is composed of an Item class that describes an individual file from OneDrive Pro and an Items class that encapsulates an observable collection of Item that is consumed by the view layer. In the model layer, each OneDrive Pro folder is queried
+ for contained files. The combined file collection is displayed in a web UI. The logic in this solution works with your OneDrive Pro site and your team site without any code change.</p>
+<p>The UI logic instantiates the view model items class by calling the items constructor. The constructor calls the model _oneDriveModel.Run() method. Run connects to OneDrive Pro and gets the files and folders to fill the Items observable collection. A list
+ on the UI is bound to the observable collection and fills when the collection fills.</p>
+</div>
+<h1>Prerequisites</h1>
+<div id="sectionSection0">
+<p>This sample requires the following:</p>
+<ul>
+<li>
+<p>Visual Studio 2012</p>
+</li><li>
+<p>Office Developer Tools for Visual Studio 2012</p>
+</li><li>
+<p>Either of the following:</p>
+<ul>
+<li>
+<p>SharePoint Server 2013 configured to host apps, and with a Developer Site Collection already created; or,</p>
+</li><li>
+<p>Access to an Office 365 developer site configured to host apps.</p>
+</li></ul>
+</li></ul>
+</div>
+<h1>Key components of the sample</h1>
+<div id="sectionSection1">
+<p>The sample app contains the following:</p>
+<ul>
+<li>
+<p>The <strong>getonedrivefilesWeb</strong> folder, which contains the web project and associated source files.</p>
+</li><li>
+<p>The <strong>getonedriveFilesWeb\DataModel</strong> folder, which contains OneDriveProDics.cs.</p>
+</li><li>
+<p>The <strong>getonedriveFilesWeb\ViewModel</strong> folder, which contains the source files for the view model classes.</p>
+</li></ul>
+<p>All other files are automatically provided by the Visual Studio project template for apps for SharePoint, and they have not been modified in the development of this sample.</p>
+</div>
+<h1>Configure the sample</h1>
+<div id="sectionSection2">
+<p>Follow these steps to configure the sample.</p>
+<div>
+<ol>
+<li>
+<p>Use the <a href="http://code.msdn.microsoft.com/GetOneDrive-files-809584fd/http://code.msdn.microsoft.com/GetOneDrive-files-809584fd/https://manage.windowsazure.com" >Windows Azure Management Portal</a> to set up an Azure provider host web site. Copy the new domain URL to notepad. You will need to paste the URL into the App Domain field in the next step.</p>
+<strong>
+<div class="caption">Figure 3: Create a new website in Azure</div>
+</strong><br>
+<strong>&nbsp;</strong><img src="description/image.png" alt="">
+<p>&nbsp;</p>
+</li><li>
+<p>Use the Office 365 development site Appregnew.aspx page to register your SharePoint app with SharePoint. Copy the generated
+<span>client Id</span> and <span>client secret</span> values to notepad. Paste the domain URL into the App Domain field.</p>
+<strong>
+<div class="caption">Figure 4. The SharePoint AppRegNew.aspx page.</div>
+</strong><br>
+<strong>&nbsp;</strong><img src="description/4a951af2-9b3e-4f0f-9394-c39925185aadimage.png" alt="">
+<p>&nbsp;</p>
+</li><li>
+<p>Set the Project Url property to the URL of the provider host domain in the Properties page of the web project.</p>
+<strong>
+<div class="caption">Figure 7. Visual Studio, new project dialog</div>
+</strong><br>
+<strong>&nbsp;</strong><img src="description/de612a05-531f-4d44-b682-764ac1874aa4image.png" alt="">
+<p>&nbsp;</p>
+</li><li>
+<p>Update the SharePoint web app project Web.config file to hold the client ID and client secret values that you got when you register the SharePoint app.</p>
+<strong>
+<div class="caption">Figure 8. Web app, web.config XML file</div>
+</strong><br>
+<strong>&nbsp;</strong><img src="description/0c6ecf4f-9f5b-4195-8dd1-8efc5874ab0dimage.png" alt=""> </li></ol>
+</div>
+</div>
+<h1>Deploy the sample to OneDrive Pro</h1>
+<div id="sectionSection3">
+<p>Deployment of a new provider-hosted SharePoint app includes the following steps:</p>
+<ul>
+<li>
+<p>Download an Azure publish profile from the Azure management portal</p>
+</li><li>
+<p>In Visual Studio, publish the web app components to the Azure provider host web</p>
+</li><li>
+<p>In Visual Studio, publish the SharePoint component of the app solution to the SharePoint app catalog</p>
+</li><li>
+<p>In your Office 365 OneDrive Pro site, deploy the app from the SharePoint catalog to a SharePoint site</p>
+</li></ul>
+<h3>Download a provider-host publish profile from Azure</h3>
+<div>
+<p>After Azure creates the new web site and starts it, click the <span>Publish your app</span> link to download the web site publishing profile from
+<a href="http://code.msdn.microsoft.com/GetOneDrive-files-809584fd/http://code.msdn.microsoft.com/GetOneDrive-files-809584fd/https://manage.windowsazure.com" >Windows Azure Management Portal</a>. The profile is the publication parameter source when the profile is imported into Visual Studio using the web app publication dialog.</p>
+<strong>
+<div class="caption">Figure 10. Download an Azure publishing profile</div>
+</strong><br>
+<strong>&nbsp;</strong><img src="description/633235f8-df56-471d-8e0a-eee6634ded6cimage.png" alt=""></div>
+<h3>Publish the remote web app to Azure</h3>
+<div>
+<p>Now that you've configured both projects and registered the SharePoint app, you can publish the remote web app.</p>
+<ol>
+<li>
+<p>Open the project web publish dialog</p>
+<strong>
+<div class="caption">Figure 11. Open publish dialog for web project</div>
+</strong><br>
+<strong>&nbsp;</strong><img src="description/3ff847af-0967-4969-b6aa-e64a660fd789image.png" alt=""> </li><li>
+<p>Import the publish settings that you downloaded from Azure</p>
+<strong>
+<div class="caption">Figure 12. Import the Azure publishing profile</div>
+</strong><br>
+<strong>&nbsp;</strong><img src="description/db993b70-24bb-4b1b-918f-6d8dbcaccac8image.png" alt=""> </li><li>
+<p>Verify that the connection settings are correct by clicking the Validate Connection button.</p>
+<strong>
+<div class="caption">Figure 13. Verify Azure publish profile attributes</div>
+</strong><br>
+<strong>&nbsp;</strong><img src="description/fa388243-5bc2-4d68-9520-01d373e9dd7cimage.png" alt="">
+<p><br>
+<span>Note:</span> Be sure to change the web protocol in the provider host URL. Azure creates identical web sites for HTTP and HTTP secure (HTTPS). A provider hosted SharePoint web component must be hosted on an HTTPS site.</p>
+</li><li>
+<p>Click the publish button and you'll know the web site is published when you see the following web page</p>
+<strong>
+<div class="caption">Figure 14. Web app is published on Azure</div>
+</strong><br>
+<strong>&nbsp;</strong><img src="description/5c626730-449d-4143-98bd-0ac94383a1dfimage.png" alt=""> </li></ol>
+</div>
+<h3>Build the SharePoint app</h3>
+<div>
+<p>Publishing the SharePoint app component of the solution is a two step process that includes:</p>
+<ul>
+<li>
+<p>Building the publishing app package</p>
+</li><li>
+<p>Uploading the app to the OneDrive Pro app catalog</p>
+</li></ul>
+<p>&nbsp;</p>
+<ol>
+<li>
+<p>To build the app, answer the prompts in the Visual Studio SharePoint project publish dialog.</p>
+<strong>
+<div class="caption">Figure 15. SharePoint app project publish dialog - profile tab</div>
+</strong><br>
+<strong>&nbsp;</strong><img src="description/ba337240-0e36-4d6b-b8d1-717704bb6136image.png" alt=""> </li><li>
+<p>Use the client ID and client secret from SharePoint app registration to fill the prompts on the hosting tab.</p>
+<strong>
+<div class="caption">Figure 16. SharePoint app project publish dialog - hosting tab</div>
+</strong><br>
+<strong>&nbsp;</strong><img src="description/f2c50dc9-5743-4a04-a65f-8c8ecf838ba5image.png" alt="">
+<p><br>
+After you click Finish in the publication dialog, Visual Studio builds the app.</p>
+</li><li>
+<p>Open the build output folder on your development computer</p>
+<strong>
+<div class="caption">Figure 17. App build output folder</div>
+</strong><br>
+<strong>&nbsp;</strong><img src="description/fdcfe1ea-16fb-481e-8ddb-5cc3c3446462image.png" alt=""> </li></ol>
+<p>&nbsp;</p>
+</div>
+<h3>Publish the app to the OneDrive Pro app catalog</h3>
+<div>
+<p>Sign in to your Office 365 developer site and go to the Team site. To add the new app to the OneDrive Pro app catalog, open the catalog using the following steps:</p>
+<ol>
+<li>
+<p>From the team site, click <span>OneDrive</span> in the SharePoint navigation ribbon.</p>
+</li><li>
+<p>Click on the Admin link in the nav. ribbon and then click the <span>SharePoint</span> menu item</p>
+</li><li>
+<p>Click <span>apps</span> from the list on the left side of the SharePoint admin center page</p>
+</li><li>
+<p>Click <span>App catalog</span> under apps.</p>
+</li></ol>
+<p>You can distribute both SharePoint apps and Office apps from the OneDrive Pro app catalog. To distribute your SharePoint app, click
+<span>Distribute apps for SharePoint</span> to open the SharePoint app list.</p>
+<p>Click <span>new app</span> to open the <span>Add a document</span> dialog. You can also drag the app file from the build output folder onto the Apps for SharePoint page and drop the app in the list on the page.</p>
+<strong>
+<div class="caption">Figure 18. Add app to SharePoint dialog</div>
+</strong><br>
+<strong>&nbsp;</strong><img src="description/cff33d59-654a-4af5-ad8e-7b6e0e8c7502image.png" alt="">
+<p>After you have chosen your app from the dialog or dragged the app onto the page, SharePoint uploads your app file and then adds it to the list. Once SharePoint has finished adding it to the list, a user can deploy your app.</p>
+</div>
+<h3>Deploy the SharePoint app to your OneDrive Pro site</h3>
+<div>
+<p>Now that you have added your app to the SharePoint app catalog, a user can deploy it to their OneDrive Pro site or their team site. The following procedure deploys a an app to a user's OneDrivePro site.</p>
+<ol>
+<li>
+<p>Click the <span>Site Contents</span> link on the left column of the page</p>
+</li><li>
+<p>Click <span>add an app</span></p>
+<strong>
+<div class="caption">Figure 19. OneDrive Pro site contents list</div>
+</strong><br>
+<strong>&nbsp;</strong><img src="description/286e1c4c-4ddc-42c3-8c52-3160416dd510image.png" alt=""> </li><li>
+<p>Click on the app you want to deploy</p>
+<strong>
+<div class="caption">Figure 20. Choose the app to deploy</div>
+</strong><br>
+<strong>&nbsp;</strong><img src="description/3f38d5bf-484e-42e2-9f6a-08ca29b81d11image.png" alt=""> </li><li>
+<p>Review the site action permissions that the app is requesting and then click <span>
+Trust It</span> if you want to grant the requested permissions.</p>
+<strong>
+<div class="caption">Figure 21. App trust dialog</div>
+</strong><br>
+<strong>&nbsp;</strong><img src="description/7f02770c-0dab-431c-b312-4b520d7408b9image.png" alt=""> </li></ol>
+<p>If you chose to trust the app then it is now deployed to your site and you can use it.</p>
+</div>
+</div>
+<h1>Run and test the sample</h1>
+<div id="sectionSection4">
+<p>To run and test the sample, do the following:</p>
+<ol>
+<li>
+<p>Press F5 to run the app.</p>
+</li><li>
+<p>Sign in to your SharePoint Server 2013 Developer Site collection or Office 365 Developer Site if you are prompted to do so by the browser.</p>
+</li></ol>
+</div>
+<h1>Change log</h1>
+<div id="sectionSection6"><strong>
+<div class="caption"></div>
+</strong>
+<div>
+<table cellspacing="2" cellpadding="5" width="50%" frame="lhs">
+<tbody>
+<tr>
+<th>
+<p>Version</p>
+</th>
+<th>
+<p>Date</p>
+</th>
+</tr>
+<tr>
+<td>
+<p>First version</p>
+</td>
+<td>
+<p>July 16, 2012</p>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<h1>Related content</h1>
+<div id="sectionSection7">
+<ul>
+<li>
+<p><a href="http://msdn.microsoft.com/en-us/library/office/apps/fp179930.aspx" >Apps for SharePoint overview</a></p>
+</li><li>
+<p><a href="http://msdn.microsoft.com/en-us/library/office/apps/fp161179.aspx" >How to: Set up an environment for developing apps for SharePoint on Office 365</a></p>
+</li><li>
+<p><a href="http://msdn.microsoft.com/en-us/library/office/apps/fp179923.aspx" >How to: Set up an on-premises development environment for apps for SharePoint</a></p>
+</li><li>
+<p><a href="http://msdn.microsoft.com/en-us/library/fp179924.aspx" >Sign up for an Office 365 Developer Site</a></p>
+</li><li>
+<p><a href="http://msdn.microsoft.com/en-us/library/office/jj193041.aspx" >.NET client API reference for SharePoint 2013</a></p>
+</li></ul>
+</div>
+</div>
+</div>
+
+</div>
+
+
+    </div>
+</body>
+</html>

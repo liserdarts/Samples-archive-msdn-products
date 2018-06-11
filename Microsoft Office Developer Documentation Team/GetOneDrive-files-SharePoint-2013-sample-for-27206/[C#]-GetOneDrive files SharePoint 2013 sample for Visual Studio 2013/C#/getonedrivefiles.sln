@@ -1,0 +1,28 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "getonedrivefiles", "getonedrivefiles\getonedrivefiles.csproj", "{BA42D95D-086F-435C-B041-21B1A397198A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "getonedrivefilesWeb", "getonedrivefilesWeb\getonedrivefilesWeb.csproj", "{C2B5E879-BF67-4CEE-8CED-60D6AEE8E4B1}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{BA42D95D-086F-435C-B041-21B1A397198A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BA42D95D-086F-435C-B041-21B1A397198A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BA42D95D-086F-435C-B041-21B1A397198A}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{BA42D95D-086F-435C-B041-21B1A397198A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BA42D95D-086F-435C-B041-21B1A397198A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BA42D95D-086F-435C-B041-21B1A397198A}.Release|Any CPU.Deploy.0 = Release|Any CPU
+		{C2B5E879-BF67-4CEE-8CED-60D6AEE8E4B1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C2B5E879-BF67-4CEE-8CED-60D6AEE8E4B1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C2B5E879-BF67-4CEE-8CED-60D6AEE8E4B1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C2B5E879-BF67-4CEE-8CED-60D6AEE8E4B1}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

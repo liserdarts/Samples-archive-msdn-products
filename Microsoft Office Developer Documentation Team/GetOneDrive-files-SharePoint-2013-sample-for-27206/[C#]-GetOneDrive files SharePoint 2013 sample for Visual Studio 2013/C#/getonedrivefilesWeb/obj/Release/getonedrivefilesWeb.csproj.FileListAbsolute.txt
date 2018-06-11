@@ -1,0 +1,10 @@
+E:\JohnAustinFiles\Sample Code\SharePoint\getOnedrivefiles\getonedrivefilesWeb\bin\getonedrivefilesWeb.dll
+E:\JohnAustinFiles\Sample Code\SharePoint\getOnedrivefiles\getonedrivefilesWeb\bin\getonedrivefilesWeb.pdb
+E:\JohnAustinFiles\Sample Code\SharePoint\getOnedrivefiles\getonedrivefilesWeb\bin\Microsoft.IdentityModel.dll
+E:\JohnAustinFiles\Sample Code\SharePoint\getOnedrivefiles\getonedrivefilesWeb\bin\Microsoft.IdentityModel.Extensions.dll
+E:\JohnAustinFiles\Sample Code\SharePoint\getOnedrivefiles\getonedrivefilesWeb\bin\Microsoft.SharePoint.Client.dll
+E:\JohnAustinFiles\Sample Code\SharePoint\getOnedrivefiles\getonedrivefilesWeb\bin\Microsoft.SharePoint.Client.Runtime.dll
+E:\JohnAustinFiles\Sample Code\SharePoint\getOnedrivefiles\getonedrivefilesWeb\bin\en\Microsoft.IdentityModel.resources.dll
+E:\JohnAustinFiles\Sample Code\SharePoint\getOnedrivefiles\getonedrivefilesWeb\obj\Release\getonedrivefilesWeb.dll
+E:\JohnAustinFiles\Sample Code\SharePoint\getOnedrivefiles\getonedrivefilesWeb\obj\Release\getonedrivefilesWeb.pdb
+E:\JohnAustinFiles\Sample Code\SharePoint\getOnedrivefiles\getonedrivefilesWeb\obj\Release\getonedrivefilesWeb.csprojResolveAssemblyReference.cache
