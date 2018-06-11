@@ -1,0 +1,7 @@
+<XamlCompilerSaveState>
+  <ReferenceAssemblyList>
+    <LocalAssembly PathName="c:\sessionpicker\sessionpickerdemo\ucourseselector\obj\release\intermediatexaml\ucourseselector.exe" HashGuid="ee2c6f62-4d07-ea59-beb5-bf10ddea50a1" />
+    <ReferenceAssembly PathName="c:\sessionpicker\sessionpickerdemo\packages\microsoft.identitymodel.clients.activedirectory.2.5.1-alpha\lib\netcore45\microsoft.identitymodel.clients.activedirectory.winmd" HashGuid="fffff384-9428-173d-2706-cb0468541acd" />
+    <ReferenceAssembly PathName="c:\sessionpicker\sessionpickerdemo\packages\newtonsoft.json.6.0.1\lib\netcore45\newtonsoft.json.dll" HashGuid="09c236d1-053d-8905-8ef0-17027540c930" />
+  </ReferenceAssemblyList>
+</XamlCompilerSaveState>

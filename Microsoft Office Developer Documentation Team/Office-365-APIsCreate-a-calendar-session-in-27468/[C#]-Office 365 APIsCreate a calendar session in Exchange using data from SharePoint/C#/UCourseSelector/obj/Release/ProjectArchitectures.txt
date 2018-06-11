@@ -1,0 +1,1 @@
+C:\SessionPicker\SessionPickerDemo\UCourseSelector\SessionPickerDemo.csproj;neutral

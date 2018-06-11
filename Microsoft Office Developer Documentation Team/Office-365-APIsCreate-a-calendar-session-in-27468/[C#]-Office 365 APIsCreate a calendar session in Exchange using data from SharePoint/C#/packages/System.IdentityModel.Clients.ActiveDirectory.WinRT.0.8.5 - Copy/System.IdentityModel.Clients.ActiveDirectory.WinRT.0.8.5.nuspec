@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
+  <metadata>
+    <id>System.IdentityModel.Clients.ActiveDirectory.WinRT</id>
+    <version>0.8.5</version>
+    <title>Active Directory Authentication Library for Windows Store Beta</title>
+    <authors>Microsoft</authors>
+    <owners>Microsoft</owners>
+    <licenseUrl>http://go.microsoft.com/fwlink/?LinkId=285469</licenseUrl>
+    <projectUrl>http://go.microsoft.com/fwlink/?LinkId=285470</projectUrl>
+    <requireLicenseAcceptance>true</requireLicenseAcceptance>
+    <description>This package contains the main assembly for the Active Directory Authentication Library (ADAL). ADAL provides easy to use authentication functionality for your Windows Store apps by taking advantage of Active Directory or Windows Azure Active Directory.</description>
+    <summary>This package contains the main assembly for the Active Directory Authentication Library (ADAL). ADAL provides easy to use authentication functionality for your Windows Store apps by taking advantage of Active Directory or Windows Azure Active Directory.</summary>
+    <copyright>Copyright 2013</copyright>
+    <language>en-US</language>
+    <tags>Active Directory Authentication Library, ADAL, Directory, Windows Azure AD, AAD, Identity, Authentication, Store</tags>
+  </metadata>
+</package>
