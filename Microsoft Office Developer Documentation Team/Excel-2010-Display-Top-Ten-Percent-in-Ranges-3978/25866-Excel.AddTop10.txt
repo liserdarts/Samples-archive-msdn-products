@@ -1,0 +1,41 @@
+' Excel 2010
+
+' Demonstrate the AddTop10 method
+
+' In a new workbook, in the VBA editor, copy this code
+' into the Sheet1 class module. Place the cursor
+' inside the DemoAddTop10 procedure, and press F5
+' to run the procedure. View Sheet1 to see the results.
+
+Sub DemoAddTop10()
+  ' Fill a range with random numbers.
+  ' Mark the top 10% of items in green, and the bottom
+  ' 10% of the items in red.
+ 
+  ' Set up a range, and fill it with random numbers.
+  Dim rng As Range
+  Set rng = Range("A1:E10")
+  SetupRangeData rng
+ 
+  ' Clear any existing format conditions.
+  rng.FormatConditions.Delete
+ 
+  ' Set up a condition that formats the top
+  ' 10 percent of items on green.
+  Dim fc As Top10
+  Set fc = rng.FormatConditions.AddTop10
+  fc.Percent = True
+  fc.TopBottom = xlTop10Top
+  fc.Interior.Color = vbGreen
+ 
+  ' Set up a condition that formats the bottom
+  ' 10 percent of items in red.
+  Set fc = rng.FormatConditions.AddTop10
+  fc.TopBottom = xlTop10Bottom
+  fc.Percent = True
+  fc.Interior.Color = vbRed
+End Sub
+
+Sub SetupRangeData(rng As Range)
+  rng.Formula = "=RANDBETWEEN(1, 100)"
+End Sub
