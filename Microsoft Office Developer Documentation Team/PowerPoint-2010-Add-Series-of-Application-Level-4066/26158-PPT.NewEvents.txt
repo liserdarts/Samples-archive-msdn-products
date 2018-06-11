@@ -1,0 +1,145 @@
+PowerPoint 2010 adds a series of new Application-level events. Unfortunately, PowerPoint still makes it exceedingly difficult to trap and handle application-level events, so the simplest solution is to create a managed add-in to demonstrate the new events.
+
+To see the events in action, follow these steps:
+
+1. In Visual Studio 2010, create a new PowerPoint 2010 add-in project (use the video here to help you get started: http://msdn.microsoft.com/en-us/vsto/cc338006).
+
+2. (C# only) In the ThisAddIn.cs class, in the ThisAddIn_Startup method, add the following code:
+
+// C#:
+Application.PresentationBeforeClose += new PowerPoint.EApplication_PresentationBeforeCloseEventHandler(Application_PresentationBeforeClose);
+Application.PresentationCloseFinal += new PowerPoint.EApplication_PresentationCloseFinalEventHandler(Application_PresentationCloseFinal);
+Application.ProtectedViewWindowActivate += new PowerPoint.EApplication_ProtectedViewWindowActivateEventHandler(Application_ProtectedViewWindowActivate);
+Application.ProtectedViewWindowBeforeClose += new PowerPoint.EApplication_ProtectedViewWindowBeforeCloseEventHandler(Application_ProtectedViewWindowBeforeClose);
+Application.ProtectedViewWindowBeforeEdit += new PowerPoint.EApplication_ProtectedViewWindowBeforeEditEventHandler(Application_ProtectedViewWindowBeforeEdit);
+Application.ProtectedViewWindowDeactivate += new PowerPoint.EApplication_ProtectedViewWindowDeactivateEventHandler(Application_ProtectedViewWindowDeactivate);
+Application.ProtectedViewWindowOpen += new PowerPoint.EApplication_ProtectedViewWindowOpenEventHandler(Application_ProtectedViewWindowOpen);
+
+3. In the ThisAddIn.vb or ThisAddIn.cs class, add the following statements at the top of the file:
+
+' Visual Basic:
+Imports System.Windows.Forms
+Imports Microsoft.Office.Interop.PowerPoint
+
+// C#:
+using System.Windows.Forms;
+using Microsoft.Office.Interop.PowerPoint;
+
+4. In the ThisAddIn.vb or ThisAddIn.cs class, add the following code, which traps and displays information about each of the new Application-level events:
+
+' Visual Basic:
+  Private Sub Application_PresentationBeforeClose(
+    ByVal Pres As Presentation, ByRef Cancel As Boolean) _
+    Handles Application.PresentationBeforeClose
+
+    Cancel = (MessageBox.Show("PresentationBeforeClose", "Event",
+                              MessageBoxButtons.OKCancel) = DialogResult.Cancel)
+  End Sub
+
+  Private Sub Application_PresentationCloseFinal(
+    ByVal Pres As Presentation) Handles Application.PresentationCloseFinal
+    MessageBox.Show("PresentationCloseFinal", "Event")
+  End Sub
+
+  Private Sub Application_ProtectedViewWindowActivate(
+    ByVal ProtViewWindow As ProtectedViewWindow) Handles Application.ProtectedViewWindowActivate
+    MessageBox.Show("ProtectedViewWindowActivate: " & ProtViewWindow.Caption, "Event")
+  End Sub
+
+  Private Sub Application_ProtectedViewWindowBeforeClose(
+    ByVal ProtViewWindow As ProtectedViewWindow,
+    ByVal ProtectedViewCloseReason As PpProtectedViewCloseReason,
+    ByRef Cancel As Boolean) Handles Application.ProtectedViewWindowBeforeClose
+
+    Dim reason As String = "none"
+
+    Select Case ProtectedViewCloseReason
+      Case PowerPoint.PpProtectedViewCloseReason.ppProtectedViewCloseEdit
+        reason = "Edit"
+      Case PowerPoint.PpProtectedViewCloseReason.ppProtectedViewCloseForced
+        reason = "Forced"
+      Case PowerPoint.PpProtectedViewCloseReason.ppProtectedViewCloseNormal
+        reason = "Normal"
+    End Select
+    Cancel = (MessageBox.Show(String.Format("ProtectedViewWindowBeforeClose: {0} ({1})",
+      ProtViewWindow.Caption, reason), "Event", MessageBoxButtons.OKCancel) = DialogResult.Cancel)
+  End Sub
+
+  Private Sub Application_ProtectedViewWindowBeforeEdit(
+    ByVal ProtViewWindow As ProtectedViewWindow,
+    ByRef Cancel As Boolean) Handles Application.ProtectedViewWindowBeforeEdit
+
+    Cancel = (MessageBox.Show("ProtectedViewWindowBeforeEdit" & ProtViewWindow.Caption,
+                              "Event", MessageBoxButtons.OKCancel) = DialogResult.Cancel)
+  End Sub
+
+  Private Sub Application_ProtectedViewWindowDeactivate(
+    ByVal ProtViewWindow As ProtectedViewWindow) Handles Application.ProtectedViewWindowDeactivate
+    MessageBox.Show("ProtectedViewWindowDeactivate" & ProtViewWindow.Caption, "Event")
+  End Sub
+
+  Private Sub Application_ProtectedViewWindowOpen(
+    ByVal ProtViewWindow As ProtectedViewWindow) Handles Application.ProtectedViewWindowOpen
+    MessageBox.Show("ProtectedViewWindowOpen" & ProtViewWindow.Caption, "Event")
+  End Sub
+
+// C#:
+        void Application_ProtectedViewWindowOpen(PowerPoint.ProtectedViewWindow ProtViewWindow)
+        {
+          MessageBox.Show("ProtectedViewWindowOpen: " + ProtViewWindow.Caption, "Event");
+        }
+
+        void Application_ProtectedViewWindowDeactivate(PowerPoint.ProtectedViewWindow ProtViewWindow)
+        {
+          MessageBox.Show("ProtectedViewWindowDeactivate: " + ProtViewWindow.Caption, "Event");
+        }
+
+        void Application_ProtectedViewWindowBeforeEdit(PowerPoint.ProtectedViewWindow ProtViewWindow, ref bool Cancel)
+        {
+          Cancel = (MessageBox.Show("ProtectedViewWindowBeforeEdit: " + ProtViewWindow.Caption,
+                                    "Event", MessageBoxButtons.OKCancel) == DialogResult.Cancel);
+        }
+
+        void Application_ProtectedViewWindowBeforeClose(PowerPoint.ProtectedViewWindow ProtViewWindow, PowerPoint.PpProtectedViewCloseReason ProtectedViewCloseReason, ref bool Cancel)
+        {
+          string reason = "none";
+
+          switch(ProtectedViewCloseReason)
+          {
+            case PpProtectedViewCloseReason.ppProtectedViewCloseEdit:
+              reason = "Edit";
+              break;
+            case PpProtectedViewCloseReason.ppProtectedViewCloseForced:
+              reason = "Forced";
+              break;
+            case PpProtectedViewCloseReason.ppProtectedViewCloseNormal:
+              reason = "Normal";
+              break;
+          }
+          Cancel = (MessageBox.Show(String.Format("ProtectedViewWindowBeforeClose: {0} ({1})",
+            ProtViewWindow.Caption, reason), "Event", MessageBoxButtons.OKCancel) == DialogResult.Cancel);
+        }
+
+        void Application_ProtectedViewWindowActivate(PowerPoint.ProtectedViewWindow ProtViewWindow)
+        {
+          MessageBox.Show("ProtectedViewWindowActivate: " + ProtViewWindow.Caption, "Event");
+        }
+
+        void Application_PresentationCloseFinal(PowerPoint.Presentation Pres)
+        {
+          MessageBox.Show("PresentationCloseFinal", "Event");
+        }
+
+        void Application_PresentationBeforeClose(PowerPoint.Presentation Pres, ref bool Cancel)
+        {
+          Cancel = (MessageBox.Show("PresentationBeforeClose", "Event",
+                                    MessageBoxButtons.OKCancel) == DialogResult.Cancel);
+        }
+
+5. Run the sample add-in, which starts PowerPoint for you.
+6. In PowerPoint, select File and then Open. In the Open dialog box, locate an existing PowerPoint presentation, but don't open it yet. Click the arrow next to the Open button, and select Open in Protected View from the menu (this opens the presentation in Protected View--most of the new events deal with Protected View).
+7. With the presentation open in Protected View, note the ProtectedViewWindowOpen and then ProtectedViewWindowActivate events that occur.
+8. Click the Enable Editing button above the design window, and note that you can cancel the ProtectedViewWindowBeforeEdit event. Click the Cancel button, verify that you don't go into edit mode, and try again, this time clicking OK. Note the ProtectedViewWindowBeforeClose and ProtectedViewWindowDeactivate events.
+9. From the menu, select File and then Close. Note the cancellable PresentationBeforeClose event, and then the PresentationCloseFinal events.
+10. Quit PowerPoint to return to Visual Studio 2010.
+
