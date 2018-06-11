@@ -1,0 +1,10 @@
+I:\DropBox\My Dropbox\Office 2010 VHTs\PPT--NumberOfSlides\Demos\CS\RetrieveSlideCount\RetrieveSlideCount\bin\Debug\RetrieveSlideCount.exe
+I:\DropBox\My Dropbox\Office 2010 VHTs\PPT--NumberOfSlides\Demos\CS\RetrieveSlideCount\RetrieveSlideCount\bin\Debug\RetrieveSlideCount.pdb
+I:\DropBox\My Dropbox\Office 2010 VHTs\PPT--NumberOfSlides\Demos\CS\RetrieveSlideCount\RetrieveSlideCount\obj\x86\Debug\ResolveAssemblyReference.cache
+I:\DropBox\My Dropbox\Office 2010 VHTs\PPT--NumberOfSlides\Demos\CS\RetrieveSlideCount\RetrieveSlideCount\obj\x86\Debug\RetrieveSlideCount.exe
+I:\DropBox\My Dropbox\Office 2010 VHTs\PPT--NumberOfSlides\Demos\CS\RetrieveSlideCount\RetrieveSlideCount\obj\x86\Debug\RetrieveSlideCount.pdb
+C:\Users\salri\DevDocs\Ken Getz\June 2011\PPTGetSlideCount\PPTGetSlideCount_DEMO\Demos\CS\RetrieveSlideCount\RetrieveSlideCount\obj\x86\Debug\RetrieveSlideCount.exe
+C:\Users\salri\DevDocs\Ken Getz\June 2011\PPTGetSlideCount\PPTGetSlideCount_DEMO\Demos\CS\RetrieveSlideCount\RetrieveSlideCount\obj\x86\Debug\RetrieveSlideCount.pdb
+C:\Users\salri\DevDocs\Ken Getz\June 2011\PPTGetSlideCount\PPTGetSlideCount_DEMO\Demos\CS\RetrieveSlideCount\RetrieveSlideCount\bin\Debug\RetrieveSlideCount.exe
+C:\Users\salri\DevDocs\Ken Getz\June 2011\PPTGetSlideCount\PPTGetSlideCount_DEMO\Demos\CS\RetrieveSlideCount\RetrieveSlideCount\bin\Debug\RetrieveSlideCount.pdb
+C:\Users\salri\DevDocs\Ken Getz\June 2011\PPTGetSlideCount\PPTGetSlideCount_DEMO\Demos\CS\RetrieveSlideCount\RetrieveSlideCount\obj\x86\Debug\ResolveAssemblyReference.cache
