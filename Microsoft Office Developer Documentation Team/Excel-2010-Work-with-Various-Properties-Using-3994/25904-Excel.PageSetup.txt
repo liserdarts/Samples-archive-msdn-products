@@ -1,0 +1,51 @@
+' Excel 2010
+ 
+' Work with the features new to the PageSetup object in Excel 2007.
+
+' In Excel 2010, in a new workbook, copy all this code into
+' the Sheet1 class module. Place the cursor in the
+' PageSetupDemo procedure, and then press F8 to
+' single-step through the code. Arrange the VBA and Excel windows
+' side by side so you can follow the instructions in the comments.
+
+Sub PageSetupDemo()
+ 
+  Range("A1:H100").Formula = "=RANDBETWEEN(1, 100)"
+  With PageSetup
+    .LeftMargin = 100
+    .RightMargin = 100
+       
+    ' Set the page header and footer for all the pages. You can see these
+    ' by clicking File and then clicking the Print button.
+    .CenterHeader = "This is the page header."
+    .CenterFooter = "This is the page footer."
+   
+    ' Use distinct even and odd page headers:
+    .OddAndEvenPagesHeaderFooter = True
+    .EvenPage.CenterHeader.Text = "This is an even page header"
+    .EvenPage.CenterFooter.Text = "This is an even page footer"
+   
+    ' When you preview the workbook, you'll see different headers on the
+    ' even and odd pages.
+   
+    ' Now make the first page have a specific header/footer,
+    ' as well:
+    .DifferentFirstPageHeaderFooter = True
+    .FirstPage.LeftFooter.Text = "This is the bottom of the first page"
+    .FirstPage.LeftHeader.Text = "This is the top of the first page."
+   
+    ' Watch carefully as you modify this property. It affects
+    ' whether the headers and footers respect the margins
+    ' you set in the PageSetup object, earlier in the
+    ' procedure:
+    .AlignMarginsHeaderFooter = True
+    ' Now set the value to False:
+    .AlignMarginsHeaderFooter = False
+   
+    ' Ensure that the header and footer size scales with the printed
+    ' document scaling:
+    .ScaleWithDocHeaderFooter = True
+  End With
+  ActiveWorkbook.PrintPreview
+End Sub
+
