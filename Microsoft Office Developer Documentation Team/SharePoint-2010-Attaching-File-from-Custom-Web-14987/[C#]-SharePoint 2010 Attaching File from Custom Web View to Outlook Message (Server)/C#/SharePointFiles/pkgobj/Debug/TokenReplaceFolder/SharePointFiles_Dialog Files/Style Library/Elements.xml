@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">
+  <Module Name="Style Library" Url="Style Library">
+  <File Path="Style Library\jquery-1.4.1.js" Url="jquery-1.4.1.js" Type="GhostableInLibrary"/>
+<File Path="Style Library\cfd.css" Url="cfd.css" Type="GhostableInLibrary"/>
+<File Path="Style Library\SingleAndMultiselect.xslt" Url="SingleAndMultiselect.xslt" Type="GhostableInLibrary"/>
+</Module>
+</Elements>

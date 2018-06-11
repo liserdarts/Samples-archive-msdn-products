@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Feature xmlns="http://schemas.microsoft.com/sharepoint/" Title="Web View Files" Description="Installs the files needed to render a cusom web view in the cfd" Id="772c4255-b14c-4972-a5f9-671ae89b46b8" Scope="Web">
+  <ElementManifests>
+    <ElementManifest Location="Style Library\Elements.xml" />
+    <ElementFile Location="Style Library\jquery-1.4.1.js" />
+    <ElementFile Location="Style Library\cfd.css" />
+    <ElementFile Location="Style Library\SingleAndMultiselect.xslt" />
+  </ElementManifests>
+</Feature>

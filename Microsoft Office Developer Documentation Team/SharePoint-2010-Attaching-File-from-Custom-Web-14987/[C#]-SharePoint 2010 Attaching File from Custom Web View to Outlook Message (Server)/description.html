@@ -1,0 +1,221 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
+    <head><link rel="stylesheet" type="text/css" href="description/Combined.css,0:HeaderFooterSprite,0:Header.NonMtps,1:LinkList;/Areas/Centers/Themes/StandardDevCenter/Content:0,/Areas/Epx/Themes/Base/Content:1&amp;amp;hashKey=C9973DA951AE6202C9B348379A1BE49D" xmlns="http://www.w3.org/1999/xhtml" />
+<link type="text/css" rel="stylesheet" xmlns="http://www.w3.org/1999/xhtml" />
+<link rel="stylesheet" type="text/css" href="description/9bf1b74c-1640-46af-84d3-e440c8f95162Combined.css,0:HeaderFooterSprite,0:Footer.NonMtps,1:LinkList;/Areas/Centers/Themes/StandardDevCenter/Content:0,/Areas/Epx/Themes/Base/Content:1&amp;amp;hashKey=F576C687BC536B84D6E5B3246EE39B49" xmlns="http://www.w3.org/1999/xhtml" />
+<link type="text/css" rel="stylesheet" xmlns="http://www.w3.org/1999/xhtml" />
+
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <title>SharePoint 2010: Attaching File from Custom Web View to Outlook Message (Server)</title>
+        <link href="description/Galleries.css" type="text/css" rel="Stylesheet" /><link href="description/Layout.css" type="text/css" rel="Stylesheet" /><link href="description/Brand.css" type="text/css" rel="Stylesheet" />
+        <link href="description/iframedescription.css" rel="Stylesheet" type="text/css" />
+        <script src="description/offline.js" type="text/javascript"></script>
+        <style type="text/css">
+            #projectInfo {
+                overflow: auto;
+            }
+            #longDesc {
+                clear:both;
+                margin: 25px 0 10px 0;
+            }
+
+            #SampleIndexList{
+                margin-left: 15px;
+            }
+        </style>
+    </head>
+<body>
+    <div id="offlineDescription">
+        <h1>SharePoint 2010: Attaching File from Custom Web View to Outlook Message (Server)</h1>
+        <br/>
+        <div id="projectInfo">
+            <div class="section">
+                    <div class="itemBarLong tagsContainer">
+                        <label for="Technologies">Technologies</label>
+                        <div id="Technologies">
+                            SharePoint Server 2010, Outlook 2010
+                        </div>
+                    </div>
+                    <div class="itemBarLong tagsContainer">
+                        <label for="Topics">Topics</label>
+                        <div id="Topics">
+                            Microsoft Office Outlook AddIn, Web View
+                        </div>
+                    </div>
+                <div class="itemBarLong">
+                    <label for="Platforms">Platforms</label>
+                    <div id="Platforms">
+                        Desktop, Cloud
+                    </div>
+                </div>
+                <div class="itemBarLong">
+                    <label for="Requirements">Requirements</label>
+                    <div id="Requirements">
+                        
+                    </div>
+                </div>
+                <div class="itemBar">
+                    <label for="LastUpdated">Primary language</label>
+                    <div id="LastUpdated">en-US</div>
+                </div>
+                <div class="itemBar">
+                    <label for="LastUpdated">Updated</label>
+                    <div id="LastUpdated">4/18/2012</div>
+                </div>
+                <div class="itemBarLong">
+                    <label for="License">License</label>
+                    <div id="License">
+                        <a href="license.rtf">Apache License, Version 2.0</a></div>
+                </div>
+                <div class="itemBar">
+                    <div class="viewonlinecont">
+                        <a data-link="online" href="http://code.msdn.microsoft.com/SharePoint-2010-Attaching-144821a7">View this sample online</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+                   
+<script type="text/javascript">
+    function initializePage() {
+        var otherTabClass = 'otherTab';
+        var hiddenPreClass = 'hidden';
+
+        var htmlDecode = function(encodedData) {
+            var decodedData = "";
+            if (encodedData) {
+                var div = document.createElement('div');
+                div.innerHTML = encodedData;
+                decodedData = div.firstChild.nodeValue.replace( /\\r\\n/ig , '\r\n');
+            }
+            return decodedData;
+        };
+                
+        Galleries.iterateElem(Galleries.findElem(null, 'div', 'scriptcode'), function (index, scriptBlock) {
+            var titleElem = Galleries.findElem(scriptBlock, 'div', 'title')[0];
+            var labelElems = Galleries.findElem(titleElem, 'span');
+            if (labelElems.length == 0) {
+                labelElems = titleElem;
+            }
+            var languageSpans = Galleries.findElem(scriptBlock, 'span', 'hidden');
+            var pres = Galleries.findElem(scriptBlock, 'pre');
+            if (languageSpans.length > 0 && pres.length > 1) {
+                Galleries.iterateElem(labelElems, function(index, elem) {
+                    var codePre = pres[index];
+                    var labelSpan = elem;
+                    var languageSpan = languageSpans[index];
+                            
+                    elem.code = codePre.innerHTML.replace( /(\r(\n)?)|((\r)?\n)/ig , '\\r\\n');
+                            
+                    codePre.className = codePre.className.replace(hiddenPreClass, '');
+                            
+                    languageSpan.parentNode.removeChild(languageSpan);
+                });
+
+                pres = Galleries.findElem(scriptBlock, 'pre');
+                Galleries.iterateElem(labelElems, function(index, elem) {
+                    var codePre = pres[index];
+                    var labelSpan = elem;
+                    if (index == 0) {
+                        scriptBlock.activeTab = 0;
+                    }
+                    else {
+                        labelSpan.className += otherTabClass;
+                        codePre.className += hiddenPreClass;
+                    }
+                    Galleries.attachEventHandler(labelSpan, 'click', function(e) {
+                        var activeTab = scriptBlock.activeTab;
+                        labelElems[activeTab].className += otherTabClass;
+                        pres[activeTab].className += hiddenPreClass;
+
+                        codePre.className = codePre.className.replace(hiddenPreClass, '');
+                        labelSpan.className = labelSpan.className.replace(otherTabClass, '');
+                        scriptBlock.activeTab = index;
+                    });
+                });
+
+                var preview = Galleries.findElem(scriptBlock, 'div', 'preview');
+                if (preview.length == 0) {
+                    preview.push(pres[pres.length - 1]);
+                }
+                Galleries.iterateElem(preview, function(index, elem) {
+                    elem.parentNode.removeChild(elem);
+                });
+
+                if (window.clipboardData && clipboardData.setData) {
+                    var copyLink = document.createElement('a');
+                    copyLink.href = 'javascript:void(0);';
+                    copyLink.className = 'copyCode';
+                    copyLink.innerHTML = 'Copy code';
+                    Galleries.attachEventHandler(copyLink, 'click', function (e) {
+                        clipboardData.setData("Text", htmlDecode(labelElems[scriptBlock.activeTab].code));
+                        return false;
+                    });
+                    scriptBlock.insertBefore(copyLink, scriptBlock.childNodes[0]);
+                }
+            }
+        });
+    }
+
+    Galleries.onWindowLoad(function(){
+        initializePage();
+    });
+
+</script>
+<div id="longDesc">
+    
+<h1>Pre-requisites</h1>
+<ul>
+<li><span style="font-size:small">A SharePoint site installed at the root of a Web Application, with the document id feature turned on (Site Actions-&gt;Site Settings-&gt;Site collection features)</span>
+</li></ul>
+<p><span style="font-size:small"><img src="description/pre-req1.png" alt="" width="772" height="43"></span></p>
+<ul>
+<li><span style="font-size:small">Visual Studio 2010</span> </li><li><span style="font-size:small">Outlook 2010</span> </li></ul>
+<p><span style="font-size:small"><strong>Note</strong>: This sample is to be used in conjunction with the corresponding&nbsp;<a href="http://code.msdn.microsoft.com/SharePoint-2010-Attaching-a1738dee">Client sample</a> and the technical article, Attaching Files
+ from a Custom SharePoint WebView to an Outlook Message.</span></p>
+<h1><span>Development Technologies Used</span></h1>
+<ul>
+<li><span style="font-size:small"><a href="http://msdn.microsoft.com/en-us/library/ee556847.aspx">SharePoint 2010 API</a></span>
+</li><li><span style="font-size:small"><a href="http://msdn.microsoft.com/en-us/library/ms767600(v=VS.85).aspx">XML and XSLT</a></span>
+</li><li><span style="font-size:small"><a href="http://jquery.com/">JQuery 1.4.1</a></span>
+</li></ul>
+<p><span style="font-size:20px; font-weight:bold">Solution Overview</span></p>
+<p><span style="font-size:small">The solution SharePoint.CustomWebView contains 2 projects with all the components needed to run the server side customisations.</span></p>
+<ul>
+<li><span style="font-size:small">SharePoint.CustomWebView, a standard c# project that targets the .Net framework 3.5 &ndash; contains a custom FileDialogPostProcessor for creating Web Views for the Common File Dialog</span>
+</li><li><span style="font-size:small">SharePointFiles &ndash; a SharePoint project that deploys files that the FileDialogPostProcessor is dependent on.</span>&nbsp;
+</li></ul>
+<h1><span>Installing the Server</span></h1>
+<p><span style="font-size:small">Open the solution SharePoint.CustomWebView in Visual Studio. In the solution explorer click on the SharePointFiles project. Update the Site Url in the project properties to point to the root site in your SharePoint farm. For
+ example in the example below the server &lsquo;http://sdg-wks125&rsquo; has a SharePoint site created at its root on port 80.</span></p>
+<p><span style="font-size:small">&nbsp;</span><br>
+<img src="description/s-install1.png" alt="" width="354" height="253">&nbsp;</p>
+<p><span style="font-size:small">Now right click the project and select deploy.</span></p>
+<p><img src="description/s-install2.png" alt="" width="506" height="153"></p>
+<p><span style="font-size:small">This should install 3 files in the style library of the root site that it was deployed into. This can be verified by opening a browser and typing in the url of the site. Click
+<span style="background-color:#c0c0c0">&lsquo;Site Actions&rsquo;-&gt;&rsquo;View All Content-&gt;&rsquo;Style Library&rsquo;</span>:</span></p>
+<p><span style="font-size:small"><img src="description/s-install3.png" alt="" width="431" height="80"></span><br>
+&nbsp;<br>
+<span style="font-size:small">Select the SharePoint.CustomWebView project and rebuild it. Then right click the HelperScript folder and select Open Folder in Windows Explorer.</span></p>
+<p><span style="font-size:small"><img src="description/s-install4.png" alt="" width="395" height="267">&nbsp;</span><br>
+&nbsp;<br>
+<span style="font-size:small">Start the SharePoint 2010 management shell and change the working directory to the location just opened.&nbsp; The run the scripts in the following sequence:</span></p>
+<ul>
+<li><span style="font-size:small">RunOnce.Bat &ndash; registers the component in the registry</span>
+</li><li><span style="font-size:small">QuickDeploy-Debug.bat &ndash; registers the component in the gac</span>
+</li><li><span style="font-size:small">RecyleAppPool80.vbs &ndash; recycles the IIS App Pool for the SharePoint site running on Port 80</span>
+</li><li><span style="font-size:small">DialogSwitcher.ps1 &ndash; this last script updates a SharePoint site to use the newly installed component and needs a site&rsquo;s url as a parameter:
+</span><br>
+<span style="font-size:small"><img src="description/s-install5.png" alt="" width="314" height="20"></span>
+</li></ul>
+<p><span style="font-size:small">Now verify the custom FileDialogPostProcessor is working by opening notepad, select
+<span style="background-color:#c0c0c0">&lsquo;File&rsquo;-&gt;&rsquo;Open&rsquo;</span> and typing in the url to the same site the DialogSwitcher.ps1 was run on. Using the example above this would be
+<a href="http://sdk-wks125">http://sdk-wks125</a>:</span></p>
+<p><span style="font-size:small"><img src="description/s-install6.png" alt="" width="683" height="434">&nbsp;</span></p>
+
+</div>
+
+
+    </div>
+</body>
+</html>

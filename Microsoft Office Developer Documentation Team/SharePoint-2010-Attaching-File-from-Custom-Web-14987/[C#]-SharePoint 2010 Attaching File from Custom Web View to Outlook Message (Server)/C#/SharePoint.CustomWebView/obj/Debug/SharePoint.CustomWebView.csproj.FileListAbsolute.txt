@@ -1,0 +1,5 @@
+C:\Users\benrosc\documents\visual studio 2010\Projects\SharePoint.CustomWebView\SharePoint.CustomWebView\bin\Debug\SharePoint.CustomWebView.dll
+C:\Users\benrosc\documents\visual studio 2010\Projects\SharePoint.CustomWebView\SharePoint.CustomWebView\bin\Debug\SharePoint.CustomWebView.pdb
+C:\Users\benrosc\documents\visual studio 2010\Projects\SharePoint.CustomWebView\SharePoint.CustomWebView\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\benrosc\documents\visual studio 2010\Projects\SharePoint.CustomWebView\SharePoint.CustomWebView\obj\Debug\SharePoint.CustomWebView.dll
+C:\Users\benrosc\documents\visual studio 2010\Projects\SharePoint.CustomWebView\SharePoint.CustomWebView\obj\Debug\SharePoint.CustomWebView.pdb

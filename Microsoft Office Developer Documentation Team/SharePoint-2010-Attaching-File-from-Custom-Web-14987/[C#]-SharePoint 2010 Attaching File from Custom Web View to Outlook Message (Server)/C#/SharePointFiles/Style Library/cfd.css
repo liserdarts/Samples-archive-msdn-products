@@ -1,0 +1,162 @@
+﻿
+#FileDialogViewTable tbody tr td
+{
+    white-space:nowrap;
+}
+
+.banner
+{
+    background-color:#FFFFE1;
+    border-bottom: 1px solid #E2E2E2;
+    padding: 4px;
+    display:none;
+    cursor:hand;
+}
+
+.version-topup
+{
+    border-left:1px solid white;
+    border-right:1px solid white;
+}
+
+.version-topup span
+{
+    visibility:hidden;
+    padding-right:4px;
+    padding-left:4px;
+}
+
+.version-topup:hover span
+{
+    visibility:visible;
+    color:#529DCC;
+}
+
+.version-topup img
+{
+    padding-left: 3px;
+    vertical-align:middle;
+}
+
+.version-topup img.hide
+{
+    visibility:hidden;
+}
+
+.hideversion
+{
+    display:none;
+}
+
+td.tbar
+{
+    /*
+    background-image:url('/Style%20Library/CCStyles/tbar.png');
+    background-repeat:no-repeat;
+    */
+}
+td.tbar-end
+{
+    /*
+    background-image:url('/Style%20Library/CCStyles/tbar-end.png');
+    background-repeat:no-repeat;
+    */
+}
+
+.ms-itmhover:hover td.version-topup
+{
+    background-color:#C9EAFE;
+    border-left:1px solid #A5CCE4;
+    border-right:1px solid #A5CCE4;
+    padding-left:3px!important;
+    padding-right:3px!important;
+}
+
+.version-topup:hover img
+{
+    visibility:visible;
+    padding-left: 3px;
+}
+
+a:focus
+{
+    outline: none;
+}
+#panel
+{
+    background: #f9f9f9;
+    height: 100px;
+    display: none;
+}
+#panel2
+{
+    background: #f9f9f9;
+    height: 60px;
+    padding-left:50px;
+}
+.slide
+{
+    margin: 0;
+    padding: 0;
+    border-top: solid 1px #422410;
+}
+.active
+{
+    background-position: right 12px;
+}
+
+.library-icon-small
+{
+    vertical-align: middle;
+    border: 0;
+    margin-right: 4px;
+}
+
+.body-banner
+{
+    background-image: url('/Style%20Library/CCStyles/blue-banner-background.png');
+    background-repeat:repeat-x;
+}
+
+#tab-container
+{
+    width: 100%;
+    vertical-align: bottom;
+    background-color: #007DBE;
+    color: White;
+}
+#tab-container div
+{
+    float: left;
+    padding: 8px 5px 5px 5px;
+    margin: 8px 4px 0px 4px;
+}
+#tab-container div a
+{
+    color: white;
+}
+#tab-container div.selected
+{
+    float: left;
+    padding: 8px 5px 5px 5px;
+    margin: 8px 4px 0px 4px;
+    background-color: #f9f9f9;
+}
+#tab-container div.selected a
+{
+    color: black;
+}
+
+#DiblyCue
+{
+    display:none;
+}
+
+.ms-vb2
+{
+    color :Black;
+}
+.ms-fileDlgSiteTitle 
+{
+    color:Black;
+}

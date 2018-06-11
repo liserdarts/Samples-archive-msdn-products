@@ -1,0 +1,1 @@
+"..\Tools\regasm.exe" /codebase "..\bin\Debug\SharePoint.CustomWebView.dll"

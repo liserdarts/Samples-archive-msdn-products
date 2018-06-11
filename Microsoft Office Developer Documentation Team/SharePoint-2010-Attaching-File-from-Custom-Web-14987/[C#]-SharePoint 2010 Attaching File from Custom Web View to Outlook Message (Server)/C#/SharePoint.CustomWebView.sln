@@ -1,0 +1,28 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SharePoint.CustomWebView", "SharePoint.CustomWebView\SharePoint.CustomWebView.csproj", "{AFB7DB07-8172-4EFC-AC55-35194F4C18F2}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SharePointFiles", "SharePointFiles\SharePointFiles.csproj", "{F65591FE-4474-4B46-9BF3-8B516852E5A4}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{AFB7DB07-8172-4EFC-AC55-35194F4C18F2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AFB7DB07-8172-4EFC-AC55-35194F4C18F2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AFB7DB07-8172-4EFC-AC55-35194F4C18F2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AFB7DB07-8172-4EFC-AC55-35194F4C18F2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F65591FE-4474-4B46-9BF3-8B516852E5A4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F65591FE-4474-4B46-9BF3-8B516852E5A4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F65591FE-4474-4B46-9BF3-8B516852E5A4}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{F65591FE-4474-4B46-9BF3-8B516852E5A4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F65591FE-4474-4B46-9BF3-8B516852E5A4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F65591FE-4474-4B46-9BF3-8B516852E5A4}.Release|Any CPU.Deploy.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
