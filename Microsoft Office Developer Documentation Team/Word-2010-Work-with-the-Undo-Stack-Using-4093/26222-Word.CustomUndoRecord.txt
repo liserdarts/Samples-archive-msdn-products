@@ -1,0 +1,55 @@
+' Microsoft Word 2010
+
+' Copy all of this code into a new module in a
+' Microsoft Word document.
+
+' Demonstrate working with the Undo stack. No matter what you do,
+' Undo actions occur in the opposite order from which they occurred.
+' Normally, each individual action gets added to the Undo stack by
+' Microsoft Word. You can control the granularity of the Undo
+' stack by interacting with the Application.UndoRecord object.
+' Remember that undoing any action undoes any actions higher
+' on the stack (that is, undo items added later to the undo stack).
+' Normally, you can interact with the Undo stack in the Word 2010
+' user interace, and can choose one or more actions to undo. By grouping
+' undo actions into a custom record, you can treat a group of actions as a
+' single action.
+
+
+' Before running this procedure, enter some text into the
+' document and verify that the Undo toolbar item
+' shows the results of your typing, available for undo.
+' Then place the cursor in this procedure and press F5 to run it.
+' Finally, go back to Microsoft Word, and verify that the Undo
+' toolbar item shows "My Second Undo Record" and "My Undo Record".
+' Try undoing either of them, then repeat and undo the other, so that
+' you understand how the Undo stack works. By creating your own custom
+' undo records, you have instructed Microsoft Word to treat the whole
+' group of actions as a single undo item.
+Sub UndoRecordTest()
+
+    Dim ur As UndoRecord
+   
+    ' The Application object supplies a single
+    ' UndoRecord object, which maintains a stack
+    ' of undo actions. You can interact with the stack, a little.
+    Set ur = Application.UndoRecord
+   
+    ur.StartCustomRecord "My Undo Record"
+        ActiveDocument.Range.InsertAfter "Here is some text. "
+        ActiveDocument.Range.InsertAfter "Here is some more text. "
+        ActiveDocument.Range.InsertParagraphAfter
+        ActiveDocument.Range.InsertAfter "After the chart."
+        ActiveDocument.Shapes.AddChart xl3DPie, 100, 100, 200, 200
+    ur.EndCustomRecord
+   
+    ur.StartCustomRecord "My Second Undo Record"
+        ActiveDocument.Range.InsertAfter "Here is some more text. "
+        ActiveDocument.Range.InsertParagraphAfter
+       
+        Dim paras As Paragraphs
+        Set paras = ActiveDocument.Paragraphs
+        ActiveDocument.Tables.Add paras(paras.Count).Range, 2, 2
+    ur.EndCustomRecord
+   
+End Sub
