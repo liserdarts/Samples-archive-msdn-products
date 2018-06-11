@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package dslVersion="1.0.0.0" 
+        Id="81f0ea78-ef4c-481c-98f6-5d22d809a977" 
+        solutionId="81f0ea78-ef4c-481c-98f6-5d22d809a977" 
+        xmlns="http://schemas.microsoft.com/VisualStudio/2008/SharePointTools/PackageModel" 
+        name="FeedDeck"
+        sharePointProductVersion="15.0">
+  <features>
+        <featureReference itemId="090c6203-1500-4de4-8879-709c821499a6" />
+  </features>
+</package>
