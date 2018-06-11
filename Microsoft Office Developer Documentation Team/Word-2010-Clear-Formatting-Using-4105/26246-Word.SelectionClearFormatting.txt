@@ -1,0 +1,75 @@
+Option Explicit
+
+' Word 2010/Word 2007
+
+' Demonstrate the Selection.ClearCharacter... and Selection.ClearParagraph... methods.
+
+' In a new document, type the following text and then press Enter:
+'
+' =rand(1, 5)
+'
+' This action inserts 1 paragraph with 5 sentences into the
+' current document. Then, in the VBA editor, in the ThisDocument class,
+' copy in this code, and place the cursor within
+' the SelectionClearFormattingDemo procedure and press F8 and then Shift+F8
+' to single step through the code. Arrange
+' the VBA and Word windows side by side on screen so you can view the
+' behavior as you step through the code.
+
+Sub SelectionClearFormattingDemo()
+    ' Apply character and paragraph formats.
+    ' Press F8 to step into this the first time.
+    ' Press Shift+F8 to step over subsequent lines of code:
+    ApplyFormattingAndSelect Sentences(3)
+   
+    ' Note that the sentence is now formatted.
+    ' Remove the character direct formatting;
+    Selection.ClearCharacterDirectFormatting
+       
+    ' Reapply the formatting:
+    ApplyFormattingAndSelect Sentences(3)
+
+    ' Remove the character style formatting:
+    Selection.ClearCharacterStyle
+
+    ' Reapply the formatting:
+    ApplyFormattingAndSelect Sentences(3)
+   
+    ' Remove all character formatting (leaving paragraph formatting):
+    Selection.ClearCharacterAllFormatting
+   
+    ' Reapply the formatting:
+    ApplyFormattingAndSelect Sentences(3)
+   
+    ' Remove the paragraph direct formatting:
+    Selection.ClearParagraphDirectFormatting
+   
+    ' Reapply the formatting:
+    ApplyFormattingAndSelect Sentences(3)
+   
+    ' Remove the paragraph style formatting:
+    Selection.ClearParagraphStyle
+   
+    ' Reapply the formatting:
+    ApplyFormattingAndSelect Sentences(3)
+   
+    ' Remove all paragraph formatting (leaving character formatting):
+    Selection.ClearParagraphAllFormatting
+   
+End Sub
+
+Sub ApplyFormattingAndSelect(rng As Range)
+    With rng
+        ' Apply a paragraph and character style:
+        .Style = "Quote"
+       
+        ' Apply a character style:
+        .Style = "Subtle Reference"
+       
+        ' Apply direct formatting:
+        .Font.Bold = True
+        .Font.ColorIndex = wdBrightGreen
+        .ParagraphFormat.LineSpacing = 20
+        .Select
+    End With
+End Sub
