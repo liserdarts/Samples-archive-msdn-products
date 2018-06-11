@@ -1,0 +1,6 @@
+C:\Users\markp\Documents\Visual Studio 2008\Projects\B2BCall\bin\Debug\B2BCall.exe.config
+C:\Users\markp\Documents\Visual Studio 2008\Projects\B2BCall\bin\Debug\B2BCall.exe
+C:\Users\markp\Documents\Visual Studio 2008\Projects\B2BCall\bin\Debug\B2BCall.pdb
+C:\Users\markp\Documents\Visual Studio 2008\Projects\B2BCall\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\markp\Documents\Visual Studio 2008\Projects\B2BCall\obj\Debug\B2BCall.exe
+C:\Users\markp\Documents\Visual Studio 2008\Projects\B2BCall\obj\Debug\B2BCall.pdb
