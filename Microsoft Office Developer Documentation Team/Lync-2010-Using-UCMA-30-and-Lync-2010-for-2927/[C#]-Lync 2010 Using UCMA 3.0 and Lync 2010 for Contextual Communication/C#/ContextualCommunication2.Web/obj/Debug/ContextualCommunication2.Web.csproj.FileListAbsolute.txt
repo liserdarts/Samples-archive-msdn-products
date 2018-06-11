@@ -1,0 +1,5 @@
+C:\Users\markp\Documents\Visual Studio 2010\Projects\ContextualCommunication2\ContextualCommunication2.Web\bin\ContextualCommunication2.Web.dll
+C:\Users\markp\Documents\Visual Studio 2010\Projects\ContextualCommunication2\ContextualCommunication2.Web\bin\ContextualCommunication2.Web.pdb
+C:\Users\markp\Documents\Visual Studio 2010\Projects\ContextualCommunication2\ContextualCommunication2.Web\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\markp\Documents\Visual Studio 2010\Projects\ContextualCommunication2\ContextualCommunication2.Web\obj\Debug\ContextualCommunication2.Web.dll
+C:\Users\markp\Documents\Visual Studio 2010\Projects\ContextualCommunication2\ContextualCommunication2.Web\obj\Debug\ContextualCommunication2.Web.pdb
