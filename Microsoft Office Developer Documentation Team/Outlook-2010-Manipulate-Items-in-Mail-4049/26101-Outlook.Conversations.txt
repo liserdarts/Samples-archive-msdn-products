@@ -1,0 +1,105 @@
+' Outlook 2010 exposes a new Conversation object that includes
+' one or more items that can be stored in multiple folders and/or
+' information stores (Exchange Server mailboxes, PSTs, etc.)
+' In order to test this code, you need Outlook 2010.
+' Open the VBA editor and paste this code into the existing
+' ThisOutlookSession module.
+' In your Inbox (or other folder with Mail items), ensure Conversation
+' mode is enabled (select the View tab on the Ribbon to check
+' the "Show as Conversations" option, and then select a Mail item
+' in a conversation.
+' Open the Immediate window in the VBA editor and with the cursor
+' inside the GetConverstationInformation method, press F5.
+Public Sub GetConverstationInformation()
+    
+    Dim host As Outlook.Application
+    Set host = ThisOutlookSession.Application
+        
+    ' Check for Outlook 2010
+    If Left(host.Version, 2) = "14" Then
+        Dim selectedItem As Object
+        Dim theMailItem As Outlook.MailItem
+        
+        ' Get the user's currently selected item.
+        Set selectedItem = host.ActiveExplorer.Selection.Item(1)
+        
+        ' Check to see if the item is a MailItem.
+        If TypeOf selectedItem Is Outlook.MailItem Then
+            Set theMailItem = selectedItem
+            ' Check to see that the item's current folder
+            ' has conversations enabled.
+            Dim parentFolder As Outlook.Folder
+            Dim parentStore As Outlook.Store
+            Set parentFolder = theMailItem.Parent
+            Set parentStore = parentFolder.Store
+            If parentStore.IsConversationEnabled Then
+                ' Try and get the conversation.
+                Dim theConversation As Outlook.Conversation
+                Set theConversation = theMailItem.GetConversation
+                If Not IsNull(theConversation) Then
+                    ' Outlook provides a table object
+                    ' the contains all of the items in the
+                    ' conversation.
+                    Dim itemsTable As Outlook.Table
+                    Set itemsTable = theConversation.GetTable
+                                        
+                    ' Get the Root Items
+                    ' Enumerate the list of items
+                    ' only writing out data for MailItems.
+                    ' A conversation can contain other items
+                    ' like MeetingItems.
+                    ' Then use a helper method and recursion
+                    ' to walk all the items in the conversation.
+                    Dim group As Outlook.SimpleItems
+                    Set group = theConversation.GetRootItems
+                    Dim obj As Object
+                    Dim fld As Outlook.Folder
+                    Dim mi As Outlook.MailItem
+                    
+                    For Each obj In group
+                        If TypeOf obj Is Outlook.MailItem Then
+                            Set mi = obj
+                            Set fld = mi.Parent
+                            
+                            Debug.Print mi.Sender & _
+                                " sent the message '" & mi.Subject & _
+                                "' which is in '" & fld.Name & "'."
+                        End If
+                        GetConversationDetails mi, theConversation
+                    Next
+                Else
+                    MsgBox "The currently selected item is not a part of a conversation."
+                End If
+            Else
+                MsgBox "The currently selected item is not in a folder with conversations enabled."
+            End If
+        Else
+            MsgBox "The currently selected item is not a mail item."
+        End If
+    Else
+        MsgBox "This code only works with Outlook 2010."
+    End If
+End Sub
+
+Private Sub GetConversationDetails(anItem As Object, theConversation As Outlook.Conversation)
+    Dim group As Outlook.SimpleItems
+    Set group = theConversation.GetChildren(anItem)
+    
+    If group.Count > 0 Then
+        Dim obj As Object
+        Dim fld As Outlook.Folder
+        Dim mi As Outlook.MailItem
+        
+        For Each obj In group
+            If TypeOf obj Is Outlook.MailItem Then
+                Set mi = obj
+                Set fld = mi.Parent
+                
+                Debug.Print mi.Sender & _
+                    " sent the message '" & mi.Subject & _
+                    "' which is in '" & fld.Name & "'."
+            End If
+            GetConversationDetails mi, theConversation
+        Next
+    End If
+End Sub
