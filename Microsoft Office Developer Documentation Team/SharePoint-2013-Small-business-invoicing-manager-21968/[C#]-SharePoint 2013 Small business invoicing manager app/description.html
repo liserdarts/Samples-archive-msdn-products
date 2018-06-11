@@ -1,0 +1,366 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
+    <head><link rel="stylesheet" type="text/css" href="description/Combined.css,0:HeaderFooterSprite,0:Header.NonMtps,1:LinkList;/Areas/Centers/Themes/StandardDevCenter/Content:0,/Areas/Epx/Themes/Base/Content:1&amp;amp;hashKey=C9973DA951AE6202C9B348379A1BE49D" xmlns="http://www.w3.org/1999/xhtml" />
+<link type="text/css" rel="stylesheet" xmlns="http://www.w3.org/1999/xhtml" />
+<link rel="stylesheet" type="text/css" href="description/1b88b18a-5268-4861-9da2-6c6e2539edaaCombined.css,0:HeaderFooterSprite,0:Footer.NonMtps,1:LinkList;/Areas/Centers/Themes/StandardDevCenter/Content:0,/Areas/Epx/Themes/Base/Content:1&amp;amp;hashKey=F576C687BC536B84D6E5B3246EE39B49" xmlns="http://www.w3.org/1999/xhtml" />
+<link type="text/css" rel="stylesheet" xmlns="http://www.w3.org/1999/xhtml" />
+
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <title>SharePoint 2013: Small business invoicing manager app</title>
+        <link href="description/Galleries.css" type="text/css" rel="Stylesheet" /><link href="description/Layout.css" type="text/css" rel="Stylesheet" /><link href="description/Brand.css" type="text/css" rel="Stylesheet" />
+        <link href="description/iframedescription.css" rel="Stylesheet" type="text/css" />
+        <script src="description/offline.js" type="text/javascript"></script>
+        <style type="text/css">
+            #projectInfo {
+                overflow: auto;
+            }
+            #longDesc {
+                clear:both;
+                margin: 25px 0 10px 0;
+            }
+
+            #SampleIndexList{
+                margin-left: 15px;
+            }
+        </style>
+    </head>
+<body>
+    <div id="offlineDescription">
+        <h1>SharePoint 2013: Small business invoicing manager app</h1>
+        <br/>
+        <div id="projectInfo">
+            <div class="section">
+                    <div class="itemBarLong tagsContainer">
+                        <label for="Technologies">Technologies</label>
+                        <div id="Technologies">
+                            Javascript, SharePoint Server 2013, SharePoint Foundation 2013, apps for SharePoint
+                        </div>
+                    </div>
+                    <div class="itemBarLong tagsContainer">
+                        <label for="Topics">Topics</label>
+                        <div id="Topics">
+                            data and storage
+                        </div>
+                    </div>
+                <div class="itemBarLong">
+                    <label for="Platforms">Platforms</label>
+                    <div id="Platforms">
+                        Cloud
+                    </div>
+                </div>
+                <div class="itemBarLong">
+                    <label for="Requirements">Requirements</label>
+                    <div id="Requirements">
+                        
+                    </div>
+                </div>
+                <div class="itemBar">
+                    <label for="LastUpdated">Primary language</label>
+                    <div id="LastUpdated">en-US</div>
+                </div>
+                <div class="itemBar">
+                    <label for="LastUpdated">Updated</label>
+                    <div id="LastUpdated">5/3/2013</div>
+                </div>
+                <div class="itemBarLong">
+                    <label for="License">License</label>
+                    <div id="License">
+                        <a href="license.rtf">Apache License, Version 2.0</a></div>
+                </div>
+                <div class="itemBar">
+                    <div class="viewonlinecont">
+                        <a data-link="online" href="http://code.msdn.microsoft.com/SharePoint-2013-Small-e20411b0">View this sample online</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+                   
+<script type="text/javascript">
+    function initializePage() {
+        var otherTabClass = 'otherTab';
+        var hiddenPreClass = 'hidden';
+
+        var htmlDecode = function(encodedData) {
+            var decodedData = "";
+            if (encodedData) {
+                var div = document.createElement('div');
+                div.innerHTML = encodedData;
+                decodedData = div.firstChild.nodeValue.replace( /\\r\\n/ig , '\r\n');
+            }
+            return decodedData;
+        };
+                
+        Galleries.iterateElem(Galleries.findElem(null, 'div', 'scriptcode'), function (index, scriptBlock) {
+            var titleElem = Galleries.findElem(scriptBlock, 'div', 'title')[0];
+            var labelElems = Galleries.findElem(titleElem, 'span');
+            if (labelElems.length == 0) {
+                labelElems = titleElem;
+            }
+            var languageSpans = Galleries.findElem(scriptBlock, 'span', 'hidden');
+            var pres = Galleries.findElem(scriptBlock, 'pre');
+            if (languageSpans.length > 0 && pres.length > 1) {
+                Galleries.iterateElem(labelElems, function(index, elem) {
+                    var codePre = pres[index];
+                    var labelSpan = elem;
+                    var languageSpan = languageSpans[index];
+                            
+                    elem.code = codePre.innerHTML.replace( /(\r(\n)?)|((\r)?\n)/ig , '\\r\\n');
+                            
+                    codePre.className = codePre.className.replace(hiddenPreClass, '');
+                            
+                    languageSpan.parentNode.removeChild(languageSpan);
+                });
+
+                pres = Galleries.findElem(scriptBlock, 'pre');
+                Galleries.iterateElem(labelElems, function(index, elem) {
+                    var codePre = pres[index];
+                    var labelSpan = elem;
+                    if (index == 0) {
+                        scriptBlock.activeTab = 0;
+                    }
+                    else {
+                        labelSpan.className += otherTabClass;
+                        codePre.className += hiddenPreClass;
+                    }
+                    Galleries.attachEventHandler(labelSpan, 'click', function(e) {
+                        var activeTab = scriptBlock.activeTab;
+                        labelElems[activeTab].className += otherTabClass;
+                        pres[activeTab].className += hiddenPreClass;
+
+                        codePre.className = codePre.className.replace(hiddenPreClass, '');
+                        labelSpan.className = labelSpan.className.replace(otherTabClass, '');
+                        scriptBlock.activeTab = index;
+                    });
+                });
+
+                var preview = Galleries.findElem(scriptBlock, 'div', 'preview');
+                if (preview.length == 0) {
+                    preview.push(pres[pres.length - 1]);
+                }
+                Galleries.iterateElem(preview, function(index, elem) {
+                    elem.parentNode.removeChild(elem);
+                });
+
+                if (window.clipboardData && clipboardData.setData) {
+                    var copyLink = document.createElement('a');
+                    copyLink.href = 'javascript:void(0);';
+                    copyLink.className = 'copyCode';
+                    copyLink.innerHTML = 'Copy code';
+                    Galleries.attachEventHandler(copyLink, 'click', function (e) {
+                        clipboardData.setData("Text", htmlDecode(labelElems[scriptBlock.activeTab].code));
+                        return false;
+                    });
+                    scriptBlock.insertBefore(copyLink, scriptBlock.childNodes[0]);
+                }
+            }
+        });
+    }
+
+    Galleries.onWindowLoad(function(){
+        initializePage();
+    });
+
+</script>
+<div id="longDesc">
+    
+<div id="header">Demonstrates how to use JavaScript and jQuery in an app for SharePoint that manages customers, their purchase orders, and their invoices.</div>
+<div id="mainSection">
+<div id="mainBody">
+<div class="introduction">
+<p><span class="label">Provided by: </span><a href="http://mvp.microsoft.com/en-US/findanmvp/Pages/profile.aspx?MVPID=c558e0ed-382f-4008-8002-4634a9167b99" >Martin Harwar</a>,
+<a href="http://point8020.com/Default.aspx" >Point8020.com</a>.</p>
+<p>The solution is based on the SharePoint-hosted app template provided by Visual Studio 2012. The solution uses the JavaScript implementation of the client-side object model to read, create, update, and delete data from lists based on user actions. The lists
+ included in this solution represent Customers, their Purchase Orders, and their Invoices. The lists are related to each other through lookup fields, and the user interface (UI) ensures that all data operations synchronize the list items to ensure the relationships
+ are maintained.</p>
+<p>The UI is implemented with simple HTML elements and Cascading Style Sheet (CSS) styles to present a modern look and feel.</p>
+<p>JavaScript and jQuery are used to control all aspects of the UI, and the solution contains no server-side code.</p>
+</div>
+<h1 class="heading">Prerequisites</h1>
+<div class="section" id="sectionSection0">
+<p>This sample requires the following:</p>
+<ul>
+<li>
+<p>Visual Studio 2012</p>
+</li><li>
+<p>Office Developer Tools for Visual Studio 2012</p>
+</li><li>
+<p>Either one of the following:</p>
+<ul>
+<li>
+<p>Access to an Office 365 Developer Site configured to host apps (recommended)</p>
+</li><li>
+<p>SharePoint Server 2013 (RTM) configured to host apps, and with a Developer Site collection already created</p>
+</li></ul>
+</li></ul>
+</div>
+<h1 class="heading">Key components</h1>
+<div class="section" id="sectionSection1">
+<p>The sample app contains the following:</p>
+<ul>
+<li>
+<p>The Default.aspx webpage, which presents the customers, purchase orders, and invoices.</p>
+</li><li>
+<p>The App.js file in the scripts folder, which retrieves and manages customer, purchase order, and invoice data by using the JavaScript implementation of the client object model (JSOM). The App.js file also contains the UI logic that is implemented in Default.aspx.</p>
+</li><li>
+<p>The App.css file in the contents folder, which contains style definitions used by the elements in Default.aspx.</p>
+</li><li>
+<p>Three list definitions and instances&mdash;one for customers, one for purchase orders, and one for invoices. The lists are linked together by lookup fields, and the customer list includes some sample data to help you get started.</p>
+</li></ul>
+<p>All other files are automatically provided by the Visual Studio project template for apps for SharePoint, and they have not been modified in the development of this sample app.</p>
+</div>
+<h1 class="heading">Configure the sample</h1>
+<div class="section" id="sectionSection2">
+<p>Follow these steps to configure the sample.</p>
+<div class="subSection">
+<ol>
+<li>
+<p>Open the SP_SmallBizInvoicing_js.sln file using Visual Studio 2012.</p>
+</li><li>
+<p>In the <span class="ui">Properties</span> window, add the full URL to your Office 365 Developer Site or SharePoint Server 2013 Developer Site collection to the
+<span><span class="keyword">Site URL</span></span> property.</p>
+<p>You may be prompted to provide credentials if you have added a URL to an Office 365 Developer Site, as shown in Figure 1. No other configuration is necessary.</p>
+<div class="caption"><strong>Figure 1. Office 365 connection dialog box</strong></div>
+<br>
+<img src="description/image.png" alt=""> </li></ol>
+</div>
+</div>
+<h1 class="heading">Build, run, and test the sample</h1>
+<div class="section" id="sectionSection3">
+<p>Follow these steps to build and run the sample:</p>
+<div class="subSection">
+<ol>
+<li>
+<p>To build the sample, press CTRL&#43;SHIFT&#43;B.</p>
+</li><li>
+<p>Once the sample is built, press F5 to run the app. Sign in to your SharePoint Server 2013 or Office 365 Developer Site if you are prompted to do so.</p>
+</li><li>
+<p>When the app opens, the start screen resembles Figure 2. When the customer clicks the
+<span class="ui">Customers</span> tile, four sample customers are listed. The data for these four customers was deployed with the solution. Likewise, when you click the
+<span class="ui">Purchase Orders</span> tile, instead of customer data you will see all existing purchase orders. Similarly, Invoices are listed when you click the
+<span class="ui">Invoices</span> tile. (Note that no purchase orders are included initially; later in this walkthrough we'll create both.)</p>
+<div class="caption"><strong>Figure 2. Start screen for the app</strong></div>
+<br>
+<img src="description/1d0c7188-ee09-4e93-981f-57d03b7e8b61image.png" alt=""> </li><li>
+<p>From the <span class="ui">Customer</span> tile, you can click the <span class="ui">
+&#43;New Customer</span> link to bring up the <span class="ui">Add New Customer</span> form, as shown in
+<span class="ui">Figure 3</span>, where you can enter data about the new customer.</p>
+<p>After a new customer is entered, that customer appears in the list that appears when you click the
+<span class="ui">Customers</span> tile (as in Figure 2, above). In addition, by clicking the customer record, you can open the
+<span class="ui">Edit Customer</span> form (identical to Figure 3, but with customer data exposed for editing). The
+<span class="ui">Edit Customer</span> form also lets you view that customer's existing purchase orders and invoices and add a new purchase order for that customer.</p>
+<div class="caption"><strong>Figure 3. New Customer entry form</strong></div>
+<br>
+<img src="description/3a72d0ed-b34b-4822-88d0-40217a559d7cimage.png" alt=""> </li><li>
+<p>To add a new purchase order for a customer, click <span class="ui">Add New Purchase Order</span>, which opens the form shown in
+<span class="ui">Figure 4</span> on which the <span class="ui">Customer</span> field is prepopulated with customer lookup data. Note that normally you would hide the initial part of the lookup data; it is included here to illustrate how the lists are linked.</p>
+<p>Click <span class="ui">Save</span> to commit the purchase order data to the appropriate SharePoint list and save the link to the customer. The new purchase order is now shown as a link when you click the
+<span class="ui">Purchase Orders</span> tile. You can then click that link to reopen the purchase order record in the
+<span class="ui">Edit Purchase Order</span> form (identical to Figure 4 except that editable data is shown).</p>
+<div class="alert">
+<table cellspacing="0" cellpadding="0" width="100%">
+<tbody>
+<tr>
+<th align="left"><strong>Note</strong></th>
+</tr>
+<tr>
+<td>
+<p>From the <span class="ui">Edit Purchase Order</span> form, you can upload a file and bind it as an attachment to the purchase order list item. You can also delete attachments, and you can view attachments by clicking their document link.</p>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="caption"><strong>Figure 4. Add New Purchase Order form</strong></div>
+<br>
+<img src="description/b12b015d-7424-4cea-892e-b6266d892955image.png" alt=""> </li><li>
+<p>On the <span class="ui">Edit Purchase Order</span> form is a button labeled <span class="ui">
+Raise Invoice for this PO</span>. Clicking this button opens the <span class="ui">
+Add New Invoice</span> form, shown in <span class="ui">Figure 5</span>. Entering a new invoice record automatically associates the invoice with the purchase order from which you opened the form.</p>
+<p>Note that the <span class="ui">Customer</span> field and the <span class="ui">
+PO Number</span> field are prepopulated with the appropriate lookup data. Also keep in mind that in your own app, you would likely hide the initial parts of this lookup data. It has been added here to illustrate how the lists are linked.</p>
+<p>When you click <span class="ui">Save</span>, the new invoice is added to the appropriate SharePoint list, associated with the proper purchase order, and then added to the list of invoices that appear on the invoices section of the app.</p>
+<div class="caption"><strong>Figure 5. Add New Invoice form</strong></div>
+<br>
+<img src="description/eecfa7ab-f8c4-4c44-8221-3d350f06c974image.png" alt="">
+<p>Of course, you can also edit invoice data by opening the invoice record. The <span class="ui">
+Edit Invoice</span> form is similar to the <span class="ui">Add New Invoice</span> form (Figure 5) except that it displays invoice data for the appropriate record.</p>
+<p>In addition, as with purchase orders, you can upload and attach files to invoice list items in SharePoint. A link on the list item indicates the presence of an attachment. You can click the link to open the attachment, or you can delete the attachment.</p>
+</li><li>
+<p><span class="ui">Figure 6</span> displays the app's <span class="ui">Reports</span> form rendering prepopulated data as a bar chart and shows the following:</p>
+<ul>
+<li>
+<p>The <span class="ui">Total Invoices</span> bar shows the invoice totals for all invoices that have a status of either
+<span class="ui">Open</span> or <span class="ui">Paid</span>.</p>
+</li><li>
+<p>The <span class="ui">Total Received</span> bar shows the sum of invoices with the status of
+<span class="ui">Paid</span>. Note that in Figure 6, no invoices have yet been paid.</p>
+</li><li>
+<p>The <span class="ui">Amount Becoming Due</span> bar reflects invoices that remain
+<span class="ui">Open</span> and where the invoice date plus the number of days allotted for payment is greater than or equal to the current date.</p>
+</li><li>
+<p>The <span class="ui">Amount Overdue</span> bar indicates the <span class="ui">
+Open</span> invoices where the invoice date plus the number of days allotted for payment is less than the current date.</p>
+</li></ul>
+<div class="caption"><strong>Figure 6. Report form</strong></div>
+<br>
+<img src="description/96c431f1-d06a-4818-874e-a92f366d1f57image.png" alt=""> </li><li>
+<p>The app ensures data integrity with SharePoint lists, as when it checks whether dependent data exists before allowing the user to delete a list item, such as a customer purchase order.
+<span class="ui">Figure 7</span>, for example, shows an alert message when the user tries to delete a customer record. The message warns that the customer cannot be deleted because there is at least one associated purchase order. The user must first delete
+ a customer's purchase orders before deleting the customer to avoid orphaned purchase order list items.</p>
+<p>Similar alerts are raised with other dependent data, such as with invoices that are associated with a purchase order.</p>
+<div class="caption"><strong>Figure 7. Alert messages in the app</strong></div>
+<br>
+<img src="description/a9c61205-077c-4735-9159-8b6d3470f3cdimage.png" alt=""> </li></ol>
+</div>
+</div>
+<h1 class="heading">Troubleshooting</h1>
+<div class="section" id="sectionSection4">
+<p>Make sure that you have SharePoint Server 2013 configured to host apps (with a Developer Site Collection already created), or that you have signed up for an Office 365 Developer Site configured to host apps. Also ensure that you are using the released versions
+ of Visual Studio 2012 and Office Developer Tools for Visual Studio 2012.</p>
+</div>
+<h1 class="heading">Change log</h1>
+<div class="section" id="sectionSection5">
+<div class="caption"></div>
+<div class="tableSection">
+<table cellspacing="2" cellpadding="5" width="50%" frame="lhs">
+<tbody>
+<tr>
+<td>
+<p>First release</p>
+</td>
+<td>
+<p>April 2013</p>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<h1 class="heading">Related content</h1>
+<div class="section" id="sectionSection6">
+<ul>
+<li>
+<p><a href="http://msdn.microsoft.com/en-us/library/fp179924.aspx" >Sign up for an Office 365 Developer Site</a></p>
+</li><li>
+<p><a href="http://msdn.microsoft.com/en-us/library/jj692554.aspx" >How to: Provision a Developer Site using your existing Office 365 subscription</a></p>
+</li><li>
+<p><a href="http://msdn.microsoft.com/en-us/office/apps/fp160950.aspx" >Build apps for Office and SharePoint</a></p>
+</li><li>
+<p><a href="http://msdn.microsoft.com/en-us/library/fp179930.aspx" >Apps for SharePoint overview</a></p>
+</li><li>
+<p><a href="http://code.msdn.microsoft.com/officeapps/site/search?f%5B0%5D.Type=Technology&amp;f%5B0%5D.Value=apps%20for%20SharePoint" >Apps for Office and SharePoint samples</a></p>
+</li><li>
+<p><a href="http://code.msdn.microsoft.com/officeapps/Apps-for-SharePoint-sample-64c80184" >Apps for SharePoint sample pack</a></p>
+</li></ul>
+</div>
+</div>
+</div>
+<p>&nbsp;</p>
+
+</div>
+
+
+    </div>
+</body>
+</html>

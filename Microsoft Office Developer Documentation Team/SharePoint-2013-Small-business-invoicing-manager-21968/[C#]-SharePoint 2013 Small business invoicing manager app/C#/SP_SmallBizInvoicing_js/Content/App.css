@@ -1,0 +1,151 @@
+﻿.tile{
+    width:200px;
+    height:50px;
+    color:#FFFFFF;
+    background-color:#0072C6;
+    margin-top:5px;
+    margin-left:0px;
+    margin-right:10px;
+    margin-bottom:10px;
+    cursor:pointer;
+    padding:5px;
+    float:left;
+    text-align:center;
+}
+    .tile:hover {
+        background-color:#C6C6C6;
+    }
+.tileHeadingText{
+    text-align:center;
+    font-family:"Segoe UI Light", "Segoe UI", sans-serif; 
+    font-weight:lighter;
+    font-size:24px;
+    margin-top:10px;
+    margin-bottom:10px;
+}
+.tileBodyText{
+    text-align:center;
+    font-family:"Segoe UI Light", "Segoe UI", sans-serif; 
+    font-weight:lighter;
+    font-size:18px;
+    margin-top:10px;
+    margin-bottom:10px;
+}
+.clicker {
+    cursor:pointer;
+    padding-bottom:10px;
+    padding-right:10px;
+    padding-top:10px;
+    padding-left:0px;
+    color:orange;
+    font-family:"Segoe UI Light", "Segoe UI", sans-serif; 
+    font-weight:lighter;
+    font-size:18px;
+}
+.deleteButton {
+    cursor:pointer;
+    padding-bottom:5px;
+    padding-top:5px;
+    padding-left:5px;
+    padding-right:5px;
+    margin-right:5px;
+    color:#ffffff;
+    background-color:#AAAAAA;
+    font-family:"Segoe UI", sans-serif; 
+    font-size:12px;
+}
+.clear {
+    width:100%;
+    clear:both;
+    height:5px;
+}
+.errorClass {
+    color:#ffffff;
+    background-color:#ff0000;
+    margin-right:10px;
+}
+.formLabel {
+    width:150px;
+    float:left;
+    margin-right:5px;
+    color:#ffffff;
+    font-size:16px;
+    font-family:"Segoe UI", sans-serif; 
+}
+.formTitle {
+    width:600px;
+    float:right;
+    text-align:right;
+    margin-right:60px;
+    margin-bottom:20px;
+    margin-top:0px;
+    color:#ffffff;
+    font-size:36px;
+    font-family:"Segoe UI Light", "Segoe UI", sans-serif; 
+    font-weight:lighter;
+}
+.button {
+    color:#ffffff;
+    background-color:#AAAAAA;
+    font-size:18px;
+    font-family:"Segoe UI Light", "Segoe UI", sans-serif;
+    font-weight:lighter;
+    cursor:pointer;
+    height:30px;
+    width:75px;
+    float:right;
+    margin:5px;
+    text-align:center;
+    vertical-align:middle;
+}
+    .button:hover {
+        background-color:#0072C6;
+    }
+.item {
+    cursor:pointer;
+    color:#09356A;
+    font-family:"Segoe UI", sans-serif; 
+    font-size:14px;
+}
+.listHeading {
+    color:#0072C6;
+    font-size:24px;
+    font-family:"Segoe UI Light", "Segoe UI", sans-serif; 
+    font-weight:lighter;
+}
+.listSubHeading {
+    color:#0072C6;
+    font-size:18px;
+    font-family:"Segoe UI Light", "Segoe UI", sans-serif; 
+    font-weight:lighter;
+}
+.reportChart {
+    color:#FFFFFF;
+    font-size:18px;
+    font-family:"Segoe UI Light", "Segoe UI", sans-serif; 
+    font-weight:lighter;
+    margin:10px 10px 10px 10px;
+    padding:10px 10px 10px 10px;
+    height:300px;
+    width:800px;
+}
+.chartLabel {
+    float:left;
+    background-color:#AAAAAA;
+    color:#FFFFFF;
+    width:200px;
+    height:50px;
+    padding:10px 10px 10px 10px;
+    text-align:right;
+}
+.chartBar {
+    float:left;
+    background-color:#0072C6;
+    color:#FFFFFF;
+    height:70px;
+}
+.chartBarLabel {
+    float: right;
+    margin-top:2px;
+    margin-right:5px;
+}

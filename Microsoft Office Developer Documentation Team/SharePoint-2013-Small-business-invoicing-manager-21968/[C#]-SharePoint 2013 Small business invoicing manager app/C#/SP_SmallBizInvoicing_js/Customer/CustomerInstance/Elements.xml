@@ -1,0 +1,37 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">
+  <ListInstance Title="Customer" OnQuickLaunch="TRUE" TemplateType="10000" Url="Lists/Customer" Description="Customer List">
+    <Data>
+      <Rows>
+        <Row>
+          <Field Name="Title">Adventure Works Cycles</Field>
+          <Field Name="Address">123 Main Street, Birmingham, West Midlands, UK</Field>
+          <Field Name="Business Phone">555-5555</Field>
+          <Field Name="E-Mail">someone@adventure-works.com</Field>
+          <Field Name="Web Site">http://www.adventure-works.com</Field>
+        </Row>
+        <Row>
+          <Field Name="Title">Alpine Ski House</Field>
+          <Field Name="Address">456 Main Street, Fayetteville, Arkansas, USA</Field>
+          <Field Name="Business Phone">555-5555</Field>
+          <Field Name="E-Mail">someone@alpineskihouse.com</Field>
+          <Field Name="Web Site">http://www.alpineskihouse.com</Field>
+        </Row>
+        <Row>
+          <Field Name="Title">Blue Yonder Airlines</Field>
+          <Field Name="Address">789 Main Street, Beijing, PRC</Field>
+          <Field Name="Business Phone">555-5555</Field>
+          <Field Name="E-Mail">someone@blueyonderairlines.com</Field>
+          <Field Name="Web Site">http://www.blueyonderairlines.com</Field>
+        </Row>
+        <Row>
+          <Field Name="Title">Contoso Pharmaceuticals </Field>
+          <Field Name="Address">135 Main Street, Rio de Janeiro, Brazil</Field>
+          <Field Name="Business Phone">555-5555</Field>
+          <Field Name="E-Mail">someone@contoso.com</Field>
+          <Field Name="Web Site">http://www.contoso.com</Field>
+        </Row>
+      </Rows>
+    </Data>
+  </ListInstance>
+</Elements>

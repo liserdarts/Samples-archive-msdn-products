@@ -1,0 +1,57 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<List xmlns:ows="Microsoft SharePoint" Title="Purchase Order" FolderCreation="FALSE" Direction="$Resources:Direction;" Url="Lists/Purchase Order" BaseType="0" xmlns="http://schemas.microsoft.com/sharepoint/">
+  <MetaData>
+    <ContentTypes>
+      
+      
+    <ContentType ID="0x010002f5769ec3d740458ab35d290776404c" Name="ListFieldsContentType"><FieldRefs><FieldRef ID="{d3636be3-98fc-461c-bc57-b2b70e94fe13}" Name="POCustomer" /><FieldRef ID="{355ca043-5bd6-4afe-9d66-45c7b19dcd2c}" Name="PONumber" /><FieldRef ID="{bb500f97-8d9d-47bb-aebb-a2ea6dd7493f}" Name="PODate" /><FieldRef ID="{e9e861ee-9e0b-4b4d-8cb4-c9bf9286e064}" Name="PODueDate" /><FieldRef ID="{31670c7c-0671-4594-8abc-1d942e8c54f2}" Name="POAmount" /></FieldRefs></ContentType><ContentTypeRef ID="0x01">
+        <Folder TargetName="Item" />
+      </ContentTypeRef><ContentTypeRef ID="0x0120" /></ContentTypes>
+    <Fields>
+      
+    <Field Name="POCustomer" ID="{d3636be3-98fc-461c-bc57-b2b70e94fe13}" DisplayName="Customer" Type="Lookup" Required="TRUE" List="Lists/Customer" ShowField="Title" /><Field Name="PONumber" ID="{355ca043-5bd6-4afe-9d66-45c7b19dcd2c}" DisplayName="PO Number" Type="Text" Required="TRUE" /><Field Name="PODate" ID="{bb500f97-8d9d-47bb-aebb-a2ea6dd7493f}" DisplayName="PO Date" Type="DateTime" Required="TRUE" Format="DateOnly" /><Field Name="PODueDate" ID="{e9e861ee-9e0b-4b4d-8cb4-c9bf9286e064}" DisplayName="Due Date" Type="DateTime" Required="FALSE" Format="DateOnly" /><Field Name="POAmount" ID="{31670c7c-0671-4594-8abc-1d942e8c54f2}" DisplayName="PO Amount" Type="Currency" Required="TRUE" LCID="1033" Decimals="2" Min="0" /></Fields>
+    <Views>
+      
+      
+    <View BaseViewID="0" Type="HTML" MobileView="TRUE" TabularView="FALSE">
+        <Toolbar Type="Standard" />
+        <XslLink Default="TRUE">main.xsl</XslLink>
+        <RowLimit Paged="TRUE">30</RowLimit>
+        <ViewFields>
+          
+        <FieldRef Name="LinkTitleNoMenu"></FieldRef></ViewFields>
+        <Query>
+          <OrderBy>
+            
+          <FieldRef Name="Modified" Ascending="FALSE"></FieldRef></OrderBy>
+        </Query>
+        <ParameterBindings>
+          <ParameterBinding Name="AddNewAnnouncement" Location="Resource(wss,addnewitem)" />
+          <ParameterBinding Name="NoAnnouncements" Location="Resource(wss,noXinviewofY_LIST)" />
+          <ParameterBinding Name="NoAnnouncementsHowTo" Location="Resource(wss,noXinviewofY_ONET_HOME)" />
+        </ParameterBindings>
+      </View><View BaseViewID="1" Type="HTML" WebPartZoneID="Main" DisplayName="$Resources:core,objectiv_schema_mwsidcamlidC24;" DefaultView="TRUE" MobileView="TRUE" MobileDefaultView="TRUE" SetupPath="pages\viewpage.aspx" ImageUrl="/_layouts/15/images/generic.png?rev=23" Url="AllItems.aspx">
+        <Toolbar Type="Standard" />
+        <XslLink Default="TRUE">main.xsl</XslLink>
+        <JSLink>clienttemplates.js</JSLink>
+        <RowLimit Paged="TRUE">30</RowLimit>
+        <ViewFields>
+          
+        <FieldRef Name="ID" /><FieldRef Name="POCustomer" /><FieldRef Name="PONumber" /><FieldRef Name="PODate" /><FieldRef Name="PODueDate" /><FieldRef Name="POAmount" /><FieldRef Name="Attachments" /></ViewFields>
+        <Query>
+          <OrderBy>
+            
+          <FieldRef Name="ID"></FieldRef></OrderBy>
+        </Query>
+        <ParameterBindings>
+          <ParameterBinding Name="NoAnnouncements" Location="Resource(wss,noXinviewofY_LIST)" />
+          <ParameterBinding Name="NoAnnouncementsHowTo" Location="Resource(wss,noXinviewofY_DEFAULT)" />
+        </ParameterBindings>
+      </View></Views>
+    <Forms>
+      <Form Type="DisplayForm" Url="DispForm.aspx" SetupPath="pages\form.aspx" WebPartZoneID="Main" />
+      <Form Type="EditForm" Url="EditForm.aspx" SetupPath="pages\form.aspx" WebPartZoneID="Main" />
+      <Form Type="NewForm" Url="NewForm.aspx" SetupPath="pages\form.aspx" WebPartZoneID="Main" />
+    </Forms>
+  </MetaData>
+</List>

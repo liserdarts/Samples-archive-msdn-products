@@ -1,0 +1,57 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<List xmlns:ows="Microsoft SharePoint" Title="Invoice" FolderCreation="FALSE" Direction="$Resources:Direction;" Url="Lists/Invoice" BaseType="0" xmlns="http://schemas.microsoft.com/sharepoint/">
+  <MetaData>
+    <ContentTypes>
+      
+      
+    <ContentType ID="0x010022ee2fcaeb874dd3813c174618922220" Name="ListFieldsContentType"><FieldRefs><FieldRef ID="{ca8e465b-2717-429a-bc5f-75de0145436c}" Name="Customer" /><FieldRef ID="{bb65564e-8e46-49b2-8830-9dccb1c516b0}" Name="InvoiceNumber" /><FieldRef ID="{548ef5ef-fbdb-40ff-9538-d8db6daa5263}" Name="InvoiceDate" /><FieldRef ID="{6ce550b2-cf93-488e-b7e2-6438cfb8e3b1}" Name="PaymentTerms" /><FieldRef ID="{dc76e1e9-b881-4ce2-b8aa-2f831d7f117d}" Name="InvoiceAmount" /><FieldRef ID="{c0e3f9e3-ca09-45d1-a11a-40c96321caea}" Name="PaymentStatus" /><FieldRef ID="{529c361b-ec1b-4431-a4d8-6e1ed3b7f6e7}" Name="PONumber" /></FieldRefs></ContentType><ContentTypeRef ID="0x01">
+        <Folder TargetName="Item" />
+      </ContentTypeRef><ContentTypeRef ID="0x0120" /></ContentTypes>
+    <Fields>
+      
+    <Field Name="Customer" ID="{ca8e465b-2717-429a-bc5f-75de0145436c}" DisplayName="Customer" Type="Lookup" Required="TRUE" List="Lists/Customer" ShowField="Title" /><Field Name="InvoiceNumber" ID="{bb65564e-8e46-49b2-8830-9dccb1c516b0}" DisplayName="InvoiceNumber" Type="Number" Required="TRUE" Decimals="0" Min="1" /><Field Name="InvoiceDate" ID="{548ef5ef-fbdb-40ff-9538-d8db6daa5263}" DisplayName="InvoiceDate" Type="DateTime" Required="TRUE" Format="DateOnly" /><Field Name="PaymentTerms" ID="{6ce550b2-cf93-488e-b7e2-6438cfb8e3b1}" DisplayName="PaymentTerms" Type="Number" Required="TRUE" Decimals="0" Min="0" /><Field Name="InvoiceAmount" ID="{dc76e1e9-b881-4ce2-b8aa-2f831d7f117d}" DisplayName="InvoiceAmount" Type="Currency" Required="TRUE" LCID="1033" Decimals="2" Min="0" /><Field Name="PaymentStatus" ID="{c0e3f9e3-ca09-45d1-a11a-40c96321caea}" DisplayName="PaymentStatus" Type="Choice" Required="TRUE" Format="Dropdown" FillInChoice="FALSE"><CHOICES><CHOICE>Open</CHOICE><CHOICE>Paid</CHOICE><CHOICE>Canceled</CHOICE><CHOICE>Rejected</CHOICE></CHOICES></Field><Field Name="PONumber" ID="{529c361b-ec1b-4431-a4d8-6e1ed3b7f6e7}" DisplayName="PONumber" Type="Lookup" Required="TRUE" List="Lists/Purchase Order" ShowField="PONumber" /></Fields>
+    <Views>
+      
+      
+    <View BaseViewID="0" Type="HTML" MobileView="TRUE" TabularView="FALSE">
+        <Toolbar Type="Standard" />
+        <XslLink Default="TRUE">main.xsl</XslLink>
+        <RowLimit Paged="TRUE">30</RowLimit>
+        <ViewFields>
+          
+        <FieldRef Name="LinkTitleNoMenu"></FieldRef></ViewFields>
+        <Query>
+          <OrderBy>
+            
+          <FieldRef Name="Modified" Ascending="FALSE"></FieldRef></OrderBy>
+        </Query>
+        <ParameterBindings>
+          <ParameterBinding Name="AddNewAnnouncement" Location="Resource(wss,addnewitem)" />
+          <ParameterBinding Name="NoAnnouncements" Location="Resource(wss,noXinviewofY_LIST)" />
+          <ParameterBinding Name="NoAnnouncementsHowTo" Location="Resource(wss,noXinviewofY_ONET_HOME)" />
+        </ParameterBindings>
+      </View><View BaseViewID="1" Type="HTML" WebPartZoneID="Main" DisplayName="$Resources:core,objectiv_schema_mwsidcamlidC24;" DefaultView="TRUE" MobileView="TRUE" MobileDefaultView="TRUE" SetupPath="pages\viewpage.aspx" ImageUrl="/_layouts/15/images/generic.png?rev=23" Url="AllItems.aspx">
+        <Toolbar Type="Standard" />
+        <XslLink Default="TRUE">main.xsl</XslLink>
+        <JSLink>clienttemplates.js</JSLink>
+        <RowLimit Paged="TRUE">30</RowLimit>
+        <ViewFields>
+          
+        <FieldRef Name="ID" /><FieldRef Name="Customer" /><FieldRef Name="InvoiceNumber" /><FieldRef Name="InvoiceDate" /><FieldRef Name="PaymentTerms" /><FieldRef Name="InvoiceAmount" /><FieldRef Name="PaymentStatus" /><FieldRef Name="Attachments" /><FieldRef Name="PONumber" /></ViewFields>
+        <Query>
+          <OrderBy>
+            
+          <FieldRef Name="ID"></FieldRef></OrderBy>
+        </Query>
+        <ParameterBindings>
+          <ParameterBinding Name="NoAnnouncements" Location="Resource(wss,noXinviewofY_LIST)" />
+          <ParameterBinding Name="NoAnnouncementsHowTo" Location="Resource(wss,noXinviewofY_DEFAULT)" />
+        </ParameterBindings>
+      </View></Views>
+    <Forms>
+      <Form Type="DisplayForm" Url="DispForm.aspx" SetupPath="pages\form.aspx" WebPartZoneID="Main" />
+      <Form Type="EditForm" Url="EditForm.aspx" SetupPath="pages\form.aspx" WebPartZoneID="Main" />
+      <Form Type="NewForm" Url="NewForm.aspx" SetupPath="pages\form.aspx" WebPartZoneID="Main" />
+    </Forms>
+  </MetaData>
+</List>
