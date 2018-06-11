@@ -1,0 +1,7 @@
+C:\CSharpSamples\Grouped LINQ Samples\XQuery\SGML-StandardGeneralizedMarkupLanguage\SGML-StandardGeneralizedMarkupLanguage\obj\x86\Debug\ResolveAssemblyReference.cache
+C:\CSharpSamples\Grouped LINQ Samples\XQuery\SGML-StandardGeneralizedMarkupLanguage\SGML-StandardGeneralizedMarkupLanguage\bin\Debug\sgml.xml
+C:\CSharpSamples\Grouped LINQ Samples\XQuery\SGML-StandardGeneralizedMarkupLanguage\SGML-StandardGeneralizedMarkupLanguage\bin\Debug\SGML-StandardGeneralizedMarkupLanguage.exe
+C:\CSharpSamples\Grouped LINQ Samples\XQuery\SGML-StandardGeneralizedMarkupLanguage\SGML-StandardGeneralizedMarkupLanguage\bin\Debug\SGML-StandardGeneralizedMarkupLanguage.pdb
+C:\CSharpSamples\Grouped LINQ Samples\XQuery\SGML-StandardGeneralizedMarkupLanguage\SGML-StandardGeneralizedMarkupLanguage\obj\x86\Debug\SGML-StandardGeneralizedMarkupLanguage.exe
+C:\CSharpSamples\Grouped LINQ Samples\XQuery\SGML-StandardGeneralizedMarkupLanguage\SGML-StandardGeneralizedMarkupLanguage\obj\x86\Debug\SGML-StandardGeneralizedMarkupLanguage.pdb
+C:\CSharpSamples\Grouped LINQ Samples\XQuery\SGML-StandardGeneralizedMarkupLanguage\SGML-StandardGeneralizedMarkupLanguage\bin\Debug\report.dtd

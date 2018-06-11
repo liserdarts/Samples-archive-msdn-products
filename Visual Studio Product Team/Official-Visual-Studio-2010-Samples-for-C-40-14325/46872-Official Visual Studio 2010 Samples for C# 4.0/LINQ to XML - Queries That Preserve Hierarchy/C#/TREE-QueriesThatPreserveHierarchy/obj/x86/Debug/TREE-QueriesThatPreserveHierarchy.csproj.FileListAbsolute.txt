@@ -1,0 +1,6 @@
+C:\Users\v-damdec\Desktop\CSharpSamples\Grouped LINQ Samples\XQuery\TREE-QueriesThatPreserveHierarchy\TREE-QueriesThatPreserveHierarchy\bin\Debug\book.xml
+C:\Users\v-damdec\Desktop\CSharpSamples\Grouped LINQ Samples\XQuery\TREE-QueriesThatPreserveHierarchy\TREE-QueriesThatPreserveHierarchy\bin\Debug\TREE-QueriesThatPreserveHierarchy.exe
+C:\Users\v-damdec\Desktop\CSharpSamples\Grouped LINQ Samples\XQuery\TREE-QueriesThatPreserveHierarchy\TREE-QueriesThatPreserveHierarchy\bin\Debug\TREE-QueriesThatPreserveHierarchy.pdb
+C:\Users\v-damdec\Desktop\CSharpSamples\Grouped LINQ Samples\XQuery\TREE-QueriesThatPreserveHierarchy\TREE-QueriesThatPreserveHierarchy\obj\x86\Debug\ResolveAssemblyReference.cache
+C:\Users\v-damdec\Desktop\CSharpSamples\Grouped LINQ Samples\XQuery\TREE-QueriesThatPreserveHierarchy\TREE-QueriesThatPreserveHierarchy\obj\x86\Debug\TREE-QueriesThatPreserveHierarchy.exe
+C:\Users\v-damdec\Desktop\CSharpSamples\Grouped LINQ Samples\XQuery\TREE-QueriesThatPreserveHierarchy\TREE-QueriesThatPreserveHierarchy\obj\x86\Debug\TREE-QueriesThatPreserveHierarchy.pdb
