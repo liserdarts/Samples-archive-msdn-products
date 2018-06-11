@@ -1,0 +1,58 @@
+Option Explicit
+
+' Excel 2007/2010
+' Working with Page/Pages
+
+' In Excel 2010, in a new workbook, copy all this code into
+' the Sheet1 class module. Place the cursor in the
+' WorkWithPages procedure, and then press F8 to start debugging.
+' Arrange the VBA and Excel windows
+' side by side so you can see the results of running the code.
+
+Sub WorkWithPages()
+    ' Fill random data:
+    Range("A1", "R100").Formula = "=RANDBETWEEN(1, 100)"
+   
+    Dim pgs As Pages
+    Set pgs = PageSetup.Pages
+   
+    PageSetup.DifferentFirstPageHeaderFooter = True
+   
+    ' Look in the Immediate window for this output:
+    Debug.Print "The current sheet can be printed on " & _
+     pgs.Count & " page(s)."
+    
+    Dim pg As Page
+    Set pg = pgs(1)
+    pg.CenterHeader.Text = "This is the first page's header"
+   
+    Set pg = pgs(2)
+    pg.CenterFooter.Text = "This is the second page's footer"
+      
+    Set pg = pgs(pgs.Count)
+    pg.CenterFooter.Text = "This is the last page's center footer."
+    pg.LeftHeader.Text = "This is the last page's header"
+   
+    ' Note that Excel supports only distinct headers/footers
+    ' for the first page, so headers and footers on the second
+    ' and other pages are combined--the last value set overwrites
+    ' the header/footer.
+   
+    ' See the values in the Immediate window.
+    ' Note that the code disregards errors that occur--attempting
+    ' to retrieve a header/footer setting that doesn't exist raises an error:
+    On Error Resume Next
+    Debug.Print "First page (CenterHeader) : " & pgs(1).CenterHeader.Text
+    Debug.Print "Second page (CenterHeader): " & pgs(2).CenterHeader.Text
+    Debug.Print "Second page (CenterFooter): " & pgs(2).CenterFooter.Text
+    Debug.Print "Third page (CenterFooter) : " & pgs(3).CenterFooter.Text
+    Debug.Print "Last page (LeftHeader)    : " & pgs(pgs.Count).LeftHeader.Text
+    Debug.Print "Last page (CenterFooter)  : " & pgs(pgs.Count).CenterFooter.Text
+   
+    ' In conclusion, use the Page class to retrieve information about headers
+    ' and footers for specific pages. Use the PageSetup object to set the headers
+    ' and footers, as it's clearer to set them there.
+End Sub
+
+
+
