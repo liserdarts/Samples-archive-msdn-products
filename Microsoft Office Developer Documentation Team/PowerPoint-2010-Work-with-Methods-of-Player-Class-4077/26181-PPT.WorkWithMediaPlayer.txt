@@ -1,0 +1,69 @@
+' PowerPoint 2010
+
+' Place this code into a module in a new presentation.
+' On the first slide, add a video (on the Insert tab, in the Media Group,
+' select Video and then Video from File). Play the video to ensure
+' everything works, and then place your cursor in the TestPlayer procedure.
+' Single step through the code, if you like.
+
+' Arrange the VBA window and the PowerPoint window so you
+' can see both simultaneously.
+
+' Once you have run the TestPlayer procedure, put the cursor in any
+' of the other procedures, and press F5 to run the selected procedure.
+' Each procedure calls one of the methods of the Player class.
+' (You could, of course, create action buttons on the presentation to
+' accomplish this same goal, but it's easier for demonstration purposes
+' to simply run the procedures directly.)
+
+Private shapeID As Integer
+Private plyr As Player
+
+Sub TestPlayer()
+    Dim shp As Shape
+    For Each shp In ActivePresentation.Slides(1).Shapes
+        ' Find the first media shape on the slide:
+        If shp.Type = msoMedia Then
+            shapeID = shp.id
+            Exit For
+        End If
+    Next shp
+   
+    ' Add some bookmarks to the media. Delete all existing bookmarks
+    ' first, so you can execute this code multiple times.
+    Dim i As Integer
+    With shp.MediaFormat
+        For i = .MediaBookmarks.Count To 1 Step -1
+            .MediaBookmarks(i).Delete
+        Next i
+    End With
+   
+    With shp.MediaFormat.MediaBookmarks
+        .Add 1000, "Bookmark 1"
+        .Add 5000, "Bookmark 2"
+        .Add 8000, "Bookmark 3"
+    End With
+   
+    ' Store away a reference to the Player instance.
+    Set plyr = Application.Windows(1).View.Player(shapeID)
+End Sub
+
+Sub Play()
+    plyr.Play
+End Sub
+
+Sub Pause()
+    plyr.Pause
+End Sub
+
+Sub GotoNextBookmark()
+    plyr.GotoNextBookmark
+End Sub
+
+Sub GotoPreviousBookmark()
+    plyr.GotoPreviousBookmark
+End Sub
+
+Sub GotoPosition()
+    plyr.CurrentPosition = 4000
+End Sub
