@@ -1,0 +1,9 @@
+C:\StudentFiles\LabFiles\Module_6\Lab\TrustedLogin\RegisterSTS\bin\Debug\RegisterSTS.exe
+C:\StudentFiles\LabFiles\Module_6\Lab\TrustedLogin\RegisterSTS\bin\Debug\RegisterSTS.pdb
+C:\StudentFiles\LabFiles\Module_6\Lab\TrustedLogin\RegisterSTS\obj\x86\Debug\ResolveAssemblyReference.cache
+C:\StudentFiles\LabFiles\Module_6\Lab\TrustedLogin\RegisterSTS\obj\x86\Debug\RegisterSTS.Form1.resources
+C:\StudentFiles\LabFiles\Module_6\Lab\TrustedLogin\RegisterSTS\obj\x86\Debug\RegisterSTS.Properties.Resources.resources
+C:\StudentFiles\LabFiles\Module_6\Lab\TrustedLogin\RegisterSTS\obj\x86\Debug\ResGen.read.1.tlog
+C:\StudentFiles\LabFiles\Module_6\Lab\TrustedLogin\RegisterSTS\obj\x86\Debug\ResGen.write.1.tlog
+C:\StudentFiles\LabFiles\Module_6\Lab\TrustedLogin\RegisterSTS\obj\x86\Debug\RegisterSTS.exe
+C:\StudentFiles\LabFiles\Module_6\Lab\TrustedLogin\RegisterSTS\obj\x86\Debug\RegisterSTS.pdb
