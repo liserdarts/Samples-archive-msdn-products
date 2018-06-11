@@ -1,0 +1,10 @@
+C:\Users\keng\Documents\My Dropbox\Office 2010 VHTs\VHT E - XL Retrieve Cell Value\Demo\VB\RetrieveCellValue\RetrieveCellValue\bin\Debug\RetrieveCellValue.exe
+C:\Users\keng\Documents\My Dropbox\Office 2010 VHTs\VHT E - XL Retrieve Cell Value\Demo\VB\RetrieveCellValue\RetrieveCellValue\bin\Debug\RetrieveCellValue.pdb
+C:\Users\keng\Documents\My Dropbox\Office 2010 VHTs\VHT E - XL Retrieve Cell Value\Demo\VB\RetrieveCellValue\RetrieveCellValue\bin\Debug\RetrieveCellValue.xml
+C:\Users\keng\Documents\My Dropbox\Office 2010 VHTs\VHT E - XL Retrieve Cell Value\Demo\VB\RetrieveCellValue\RetrieveCellValue\obj\x86\Debug\ResolveAssemblyReference.cache
+C:\Users\keng\Documents\My Dropbox\Office 2010 VHTs\VHT E - XL Retrieve Cell Value\Demo\VB\RetrieveCellValue\RetrieveCellValue\obj\x86\Debug\RetrieveCellValue.Resources.resources
+C:\Users\keng\Documents\My Dropbox\Office 2010 VHTs\VHT E - XL Retrieve Cell Value\Demo\VB\RetrieveCellValue\RetrieveCellValue\obj\x86\Debug\GenerateResource.read.1.tlog
+C:\Users\keng\Documents\My Dropbox\Office 2010 VHTs\VHT E - XL Retrieve Cell Value\Demo\VB\RetrieveCellValue\RetrieveCellValue\obj\x86\Debug\GenerateResource.write.1.tlog
+C:\Users\keng\Documents\My Dropbox\Office 2010 VHTs\VHT E - XL Retrieve Cell Value\Demo\VB\RetrieveCellValue\RetrieveCellValue\obj\x86\Debug\RetrieveCellValue.exe
+C:\Users\keng\Documents\My Dropbox\Office 2010 VHTs\VHT E - XL Retrieve Cell Value\Demo\VB\RetrieveCellValue\RetrieveCellValue\obj\x86\Debug\RetrieveCellValue.xml
+C:\Users\keng\Documents\My Dropbox\Office 2010 VHTs\VHT E - XL Retrieve Cell Value\Demo\VB\RetrieveCellValue\RetrieveCellValue\obj\x86\Debug\RetrieveCellValue.pdb
