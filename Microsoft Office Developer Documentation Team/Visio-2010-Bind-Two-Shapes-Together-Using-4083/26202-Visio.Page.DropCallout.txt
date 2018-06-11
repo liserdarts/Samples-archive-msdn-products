@@ -1,0 +1,62 @@
+Option Explicit
+
+' Visio 2010 with the US Units stencils installed.
+
+' Demonstrate the DropCallout method.
+
+' Visio 2010 allows you to create a callout shape
+' and bind it to another shape on a page.
+' Once you do this, the callout stays bound to the
+' shape if you move the parent shape on the document.
+'
+' To run this demo, open Visio 2010 and create a blank document.
+' Open the VBA editor and paste this code into the existing 
+' ThisDocument module.
+' With the cursor inside the AddCallOut
+' method, press F5.
+
+Sub AddCallOut()
+    ' Access objects on the current document.
+    Dim doc As Visio.Document
+    Set doc = Application.ActiveDocument
+    Dim thePage As Visio.Page
+    Set thePage = doc.Pages(1)
+    
+    ' Open the built-in Basic Shapes stencil.
+    ' If the stencil is already open, the code
+    ' activates the stencil.
+    Dim stencilName As String
+    stencilName = "Basic Shapes (US units).vss"
+    Dim stencil As Visio.Document
+    Set stencil = Application.Documents.OpenEx(stencilName, visOpenDocked)
+    
+    ' Open the built-in Callouts Shapes stencil.
+    ' If the stencil is already open, the code
+    ' activates the stencil.
+    ' This code opens the stencil hidden unlike
+    ' the basic shapes stencil above.
+    Dim calloutsFileName As String
+    calloutsFileName = Application.GetBuiltInStencilFile(visBuiltInStencilCallouts, visMSUS)
+    Dim callouts As Visio.Document
+    Set callouts = Application.Documents.OpenEx(calloutsFileName, visOpenHidden)
+    
+    ' Create a triangle master shape from the stencil.
+    Dim triangleMaster As Visio.Master
+    Set triangleMaster = stencil.Masters("Triangle")
+    
+    ' Define and create a triangle.
+    Dim triangle1 As Visio.Shape
+    Set triangle1 = thePage.Drop(triangleMaster, 2, 2)
+    ' Define and create a 'cloud callout' master.
+    Dim callout As Visio.Master
+    Set callout = callouts.Masters("cloud callout")
+    
+    ' Use the new DropCallout method to add the cloud callout
+    ' to the page and link it to the triangle.
+    Dim results As Visio.Shape
+    Set results = thePage.DropCallout(callout, triangle1)
+    
+    ' Change the Text of the callout.
+    results.Text = "Callout for a Triangle"
+End Sub
+
