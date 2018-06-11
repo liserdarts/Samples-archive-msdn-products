@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">
+  <!-- Parent ContentType: Document (0x0101) -->
+	<Field ID="{30C3D21A-A7C9-410E-A896-82875475F697}" Name="ReviewStatus" DisplayName="Review Status" Type ="Choice" >
+		<CHOICES>
+			<CHOICE>Review Required</CHOICE>
+			<CHOICE>Review in Progress</CHOICE>
+			<CHOICE>Review Completed</CHOICE>
+		</CHOICES>
+	</Field>
+	<ContentType ID="0x010100f6058869a9af4b6fb4d4cc6976cb5bf6"
+               Name="Official Documents"
+               Group="Custom Content Types"
+               Description="Official Documents Content Type"
+               Inherits="TRUE"
+               Version="0">
+    <FieldRefs>
+		<FieldRef ID="{30C3D21A-A7C9-410E-A896-82875475F697}" Name="ReviewStatus" DisplayName="Review Status"  />
+	</FieldRefs>
+  </ContentType>
+</Elements>

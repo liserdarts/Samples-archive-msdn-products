@@ -1,0 +1,6 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package dslVersion="1.0.0.0" Id="68efa9d5-51df-4c1a-9235-1b46c05ffa51" solutionId="68efa9d5-51df-4c1a-9235-1b46c05ffa51" xmlns="http://schemas.microsoft.com/VisualStudio/2008/SharePointTools/PackageModel" name="OfficialDocuments">
+    <features>
+        <featureReference itemId="f00206f6-b40a-4fa2-b5f4-88525914c378" />
+    </features>
+</package>

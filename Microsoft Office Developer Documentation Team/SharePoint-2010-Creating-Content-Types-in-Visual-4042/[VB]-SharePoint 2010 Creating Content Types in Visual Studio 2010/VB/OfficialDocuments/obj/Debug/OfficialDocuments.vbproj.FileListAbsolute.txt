@@ -1,0 +1,7 @@
+C:\temp\OfficialDocuments\OfficialDocuments\bin\Debug\OfficialDocuments.dll
+C:\temp\OfficialDocuments\OfficialDocuments\bin\Debug\OfficialDocuments.pdb
+C:\temp\OfficialDocuments\OfficialDocuments\bin\Debug\OfficialDocuments.xml
+C:\temp\OfficialDocuments\OfficialDocuments\obj\Debug\ResolveAssemblyReference.cache
+C:\temp\OfficialDocuments\OfficialDocuments\obj\Debug\OfficialDocuments.dll
+C:\temp\OfficialDocuments\OfficialDocuments\obj\Debug\OfficialDocuments.xml
+C:\temp\OfficialDocuments\OfficialDocuments\obj\Debug\OfficialDocuments.pdb
