@@ -1,0 +1,22 @@
+' Excel 2010
+
+' In a new workbook, in the VBA editor, create a new module and past in
+' all this code. Place the cursor inside the TestAddIns procedure, and press
+' F5 to run the code. View the results in the Immediate window.
+
+' Use the AddIn.IsOpen property to determine if an add-in is currently open.
+' To test this property, run the code in the TestAddIns procedure. This code
+' first loops through all the add-ins, indicating whether they're open.
+' Most will not be. The code also installs the SOLVER.XLAM add-in. Run the code
+' again, and now you'll see that the Solver add-in is open this time.
+
+Sub TestAddIns()
+    Dim ai As AddIn
+    For Each ai In Application.AddIns
+        Debug.Print ai.Name & " " & ai.IsOpen
+        ' Install the SOLVER add-in.
+        If ai.Name = "SOLVER.XLAM" Then
+            ai.Installed = True
+        End If
+    Next ai
+End Sub
