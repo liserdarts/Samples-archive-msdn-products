@@ -1,0 +1,47 @@
+Option Explicit
+
+' Word 2010
+
+' Demonstrate the Document.SaveAsQuickStyleSet method
+
+' In a new document, type the following text and then press Enter:
+'
+' =rand(5, 5)
+'
+' This action inserts 5 paragraphs with 5 sentences each into the
+' current document. Then, in the VBA editor, in the ThisDocument class,
+' copy in this code, and place the cursor within
+' the DemoSaveAsQuickStyleSet procedure and press F8 to single step through the code. Arrange
+' the VBA and Word windows side by side on screen so you can view the
+' behavior as you step through the code.
+
+Sub DemoSaveAsQuickStyleSet()
+    ' Given the five paragraphs you added (by following the instructions),
+    ' modify the color, font, and paragraph layout. Then save the whole
+    ' thing as a new quick style.
+    
+     Dim theme As OfficeTheme
+     Set theme = ActiveDocument.DocumentTheme
+    
+    ' Modify this path for your own installation of Microsoft Office:
+    Const themeFolder As String = "C:\Program Files (x86)\Microsoft Office\Document Themes 14\"
+   
+    ' Modify the name of the new template to meet your needs:
+    Const newTemplateName = "C:\temp\Demo1.dotx"
+    
+    ' Select one of the available theme color sets:
+    theme.ThemeColorScheme.Load themeFolder & "Theme Colors\Adjacency.xml"
+   
+    ' Select one of the available theme fonts:
+    theme.ThemeFontScheme.Load themeFolder & "Theme Fonts\Slipstream.xml"
+   
+    ' Save the settings as a new quick style set. This actually
+    ' creates a new document template, which you can use for
+    ' creating future documents.
+    ActiveDocument.SaveAsQuickStyleSet newTemplateName
+   
+    ' Verify that in the new document that this statement creates,
+    ' the theme color and font correspond to the options you
+    ' set when you created the quick set.
+    Documents.Add newTemplateName
+End Sub
