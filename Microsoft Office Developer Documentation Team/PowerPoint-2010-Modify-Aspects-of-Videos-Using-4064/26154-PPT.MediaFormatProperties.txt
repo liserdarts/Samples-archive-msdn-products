@@ -1,0 +1,61 @@
+' PowerPoint 2010
+
+' Place the following code in a new presentation.
+' On the first slide, add a video (on the Insert tab, in the Media Group,
+' select Video and then Video from File). Play the video to ensure
+' everything works, and then place your cursor in the following
+' procedure. Single step through the code, if you like. The values of
+' the properties will appear in the Immediate window. The code changes
+' the starting and ending points of the video (modify these values if your video
+' isn't longer than 5 seconds), and changes the volume and fade in/out duration:
+
+Sub MediaFormatInfo()
+    Dim shp As Shape
+    For Each shp In ActivePresentation.Slides(1).Shapes
+        ' Is it a media shape?
+        If shp.Type = msoMedia Then
+            Debug.Print "Media Element: " & shp.Name
+            DisplayMediaFormatInfo shp
+           
+            ' Work with the MediaFormat property:
+            With shp.MediaFormat
+                ' Modify the values that can be modified:
+                ' Start at 2 seconds, end at 5 seconds,
+                ' fade in and out for 1/2 second:
+                .StartPoint = 2000
+                .EndPoint = 5000
+                .FadeInDuration = 500
+                .FadeOutDuration = 500
+               
+                ' Ensure the video isn't muted, and
+                ' that the volume is less than the max:
+                .Muted = False
+                .Volume = 0.25
+            End With
+        Debug.Print "================"
+        DisplayMediaFormatInfo shp
+        End If
+    Next shp
+End Sub
+
+Private Sub DisplayMediaFormatInfo(shp As Shape)
+    With shp.MediaFormat
+        ' Retrieve all the useful properties:
+        Debug.Print vbTab & "AudioCompressionType: " & .AudioCompressionType
+        Debug.Print vbTab & "AudioSamplingRate: " & .AudioSamplingRate
+        Debug.Print vbTab & "EndPoint: " & .EndPoint
+        Debug.Print vbTab & "FadeInDuration: " & .FadeInDuration
+        Debug.Print vbTab & "FadeOutDuration: " & .FadeOutDuration
+        Debug.Print vbTab & "IsEmbedded: " & .IsEmbedded
+        Debug.Print vbTab & "IsLinked: " & .IsLinked
+        Debug.Print vbTab & "Length: " & .Length
+        Debug.Print vbTab & "Muted: " & .Muted
+        Debug.Print vbTab & "ResamplingStatus: " & .ResamplingStatus
+        Debug.Print vbTab & "SampleHeight: " & .SampleHeight
+        Debug.Print vbTab & "SampleWidth: " & .SampleWidth
+        Debug.Print vbTab & "StartPoint: " & .StartPoint
+        Debug.Print vbTab & "VideoCompressionType: " & .VideoCompressionType
+        Debug.Print vbTab & "VideoFrameRate: " & .VideoFrameRate
+        Debug.Print vbTab & "Volume: " & .Volume
+    End With
+End Sub
