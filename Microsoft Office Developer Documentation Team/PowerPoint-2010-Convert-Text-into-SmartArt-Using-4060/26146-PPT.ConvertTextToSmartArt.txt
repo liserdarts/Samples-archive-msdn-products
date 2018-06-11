@@ -1,0 +1,54 @@
+' PowerPoint 2010
+
+Sub ConvertToSmartArtLayoutTest()
+    ' PowerPoint 2010 supports converting text programmatically into
+    ' one of the many built-in smart art layouts. Unfortunately,
+    ' there's no simple way to map from an index in the collection
+    ' of smart art layouts to the names of the layouts (which
+    ' you can see in the Insert | SmartArt ribbon item's list
+    ' of smart art layouts. To get around this, place your cursor
+    ' int the CreateSmartArtList procedure, and press F5. This
+    ' procedure lists all the index values and smart art names
+    ' into the Debug window. Copy this list from the Debug window
+    ' to a text file, and use it for reference. Then,
+    ' in the ribbon, you can locate the smart art layout by name,
+    ' and convert it to its matching index in the list you just
+    ' created.
+   
+    ' This sample procedure creates a new slide, then inserts
+    ' text into a shape, and finally converts the text into a smart
+    ' art layout. This code assumes that you have pasted this
+    ' sample code into a PowerPoint presentation:
+   
+    Dim sld As Slide
+    Set sld = ActivePresentation.Slides.Add(1, ppLayoutText)
+    Dim shp As Shape
+    Set shp = sld.Shapes(2)
+   
+    ' Create text with Main at the top level, and
+    ' NW, NE, SW, SE as the four child paragraphs.
+    Dim sampleText As String
+    sampleText = "Main.NW.NE.SW.SE"
+    sampleText = Replace(text, ".", vbCrLf)
+   
+    ' Insert the text into the shape:
+    With shp.TextFrame.TextRange.Paragraphs
+        .Text = sampleText
+        .Lines(2).IndentLevel = 2
+        .Lines(3).IndentLevel = 2
+        .Lines(4).IndentLevel = 2
+        .Lines(5).IndentLevel = 2
+    End With
+   
+    ' Now that the shape includes text that is appropriate
+    ' for the smart art layout you'll use, convert it to
+    ' the appropriate layout (121, Titled Matrix):
+    shp.ConvertTextToSmartArt Application.SmartArtLayouts(121)
+End Sub
+
+Sub CreateSmartArtList()
+    Dim i As Integer
+    For i = 1 To Application.SmartArtLayouts.Count
+        Debug.Print i, Application.SmartArtLayouts(i).Name
+    Next i
+End Sub
