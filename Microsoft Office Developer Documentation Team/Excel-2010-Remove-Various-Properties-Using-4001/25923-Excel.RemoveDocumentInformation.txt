@@ -1,0 +1,47 @@
+' Excel 2010
+
+' Work with the RemoveDocumentInformation method.
+' Add a named range with a comment, some document properties,
+' and a comment.
+
+' In Excel 2010, in a new workbook, copy all this code into
+' the Sheet1 class module. Place the cursor in the
+' TestRemoveDocumentInformation procedure,
+' and then press F8 to single-step through the code.
+' Verify that the various items get added as you single step,
+' and that they're removed at the end.
+
+Sub TestRemoveDocumentInformation()
+  ' Set up a named range with a comment:
+  Dim nm As Name
+  Set nm = Names.Add(Name:="TestNamedRange", _
+   RefersToR1C1:="=Sheet1!R1C1:R7C3")
+  nm.Name = "NamedRange"
+
+   ' You can see the comment by clicking the Formulas tab menu and then 
+   ' clicking Name Manager.
+  nm.Comment = "Here is a comment"
+ 
+  ' Set some document properties:
+  Dim props As Office.DocumentProperties
+  Set props = ActiveWorkbook.BuiltinDocumentProperties
+  props("Author").Value = "Author Name"
+  props("Subject").Value = "Test Document"
+ 
+  ' Add a comment, which will include your name.
+  ' Removing information will convert author name to Author
+ 
+  Dim cmt As Comment
+  Set cmt = Range("B3").AddComment
+  cmt.Visible = False
+  cmt.Text "This is a test"
+
+  ' Remove comments, defined name comments, personal information, and document properties.
+  ActiveWorkbook.RemoveDocumentInformation xlRDIComments
+  ActiveWorkbook.RemoveDocumentInformation xlRDIDefinedNameComments
+  ActiveWorkbook.RemoveDocumentInformation xlRDIRemovePersonalInformation
+  ActiveWorkbook.RemoveDocumentInformation xlRDIDocumentProperties
+ 
+End Sub
+
+
