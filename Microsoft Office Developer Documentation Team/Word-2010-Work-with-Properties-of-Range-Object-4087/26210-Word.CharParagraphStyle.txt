@@ -1,0 +1,60 @@
+Option Explicit
+
+' Word 2010
+
+' Demonstrate the Range.CharacterStyle and Range.ParagraphStyle properties
+
+' In a new document, type the following text and then press Enter:
+'
+' =rand(1, 5)
+'
+' This action inserts 1 paragraph with 5 sentences each into the
+' current document. Then, in the VBA editor, in the ThisDocument class,
+' copy in this code, and place the cursor within
+' the RangeCharacterParagraphStyle procedure and press F8 to single step through the code. Arrange
+' the VBA and Word windows side by side on screen so you can view the
+' behavior as you step through the code.
+
+Sub RangeCharacterParagraphStyle()
+    Dim rng As Range
+   
+    ' Select a character range that covers the first four words,
+    ' using the sample random text:
+    Set rng = ActiveDocument.Range
+   
+    rng.Words(3).Style = "Book Title"
+    rng.Words(4).Style = "Emphasis"
+    rng.Paragraphs(1).Style = "Heading 3"
+   
+    Dim charStyle As Style
+   
+    ' Note that attempting to retrieve the CharacterStyle
+    ' property of a range that includes multiple character
+    ' styles returns Nothing:
+    Set charStyle = rng.CharacterStyle
+    ' This should display True in the Immediate window:
+    Debug.Print charStyle Is Nothing
+   
+    ' This should display "Book Title" in the Immediate window:
+    Set charStyle = rng.Words(3).CharacterStyle
+    Debug.Print charStyle.NameLocal
+   
+    ' This should display "Emphasis" in the Immediate window:
+    Set charStyle = rng.Words(4).CharacterStyle
+    Debug.Print charStyle.NameLocal
+   
+   
+    Dim paraStyle As Style
+   
+    ' Note that attempting to retrieve the ParagraphStyle
+    ' property of a range that includes multiple paragraph
+    ' styles returns Nothing:
+    Set paraStyle = rng.ParagraphStyle
+   
+    ' This should display True in the Immediate window:
+    Debug.Print paraStyle Is Nothing
+
+    ' This should print Heading 3 in the Immediate window.    
+    Set paraStyle = rng.Paragraphs(1).Range.ParagraphStyle
+    Debug.Print paraStyle.NameLocal
+End Sub
