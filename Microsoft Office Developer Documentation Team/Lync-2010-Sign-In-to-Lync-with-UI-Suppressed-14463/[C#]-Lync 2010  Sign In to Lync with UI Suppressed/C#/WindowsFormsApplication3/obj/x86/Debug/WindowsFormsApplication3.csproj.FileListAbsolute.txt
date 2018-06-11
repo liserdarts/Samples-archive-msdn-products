@@ -1,0 +1,13 @@
+C:\Data\UCode\OCOM\SignInToLyncWithUISuppressed\WindowsFormsApplication3\WindowsFormsApplication3\bin\Debug\WindowsFormsApplication3.exe.config
+C:\Data\UCode\OCOM\SignInToLyncWithUISuppressed\WindowsFormsApplication3\WindowsFormsApplication3\bin\Debug\WindowsFormsApplication3.exe
+C:\Data\UCode\OCOM\SignInToLyncWithUISuppressed\WindowsFormsApplication3\WindowsFormsApplication3\bin\Debug\WindowsFormsApplication3.pdb
+C:\Data\UCode\OCOM\SignInToLyncWithUISuppressed\WindowsFormsApplication3\WindowsFormsApplication3\bin\Debug\Microsoft.Lync.Model.dll
+C:\Data\UCode\OCOM\SignInToLyncWithUISuppressed\WindowsFormsApplication3\WindowsFormsApplication3\bin\Debug\Microsoft.Office.Uc.dll
+C:\Data\UCode\OCOM\SignInToLyncWithUISuppressed\WindowsFormsApplication3\WindowsFormsApplication3\bin\Debug\Microsoft.Lync.Model.xml
+C:\Data\UCode\OCOM\SignInToLyncWithUISuppressed\WindowsFormsApplication3\WindowsFormsApplication3\obj\x86\Debug\ResolveAssemblyReference.cache
+C:\Data\UCode\OCOM\SignInToLyncWithUISuppressed\WindowsFormsApplication3\WindowsFormsApplication3\obj\x86\Debug\WindowsFormsApplication3.Form1.resources
+C:\Data\UCode\OCOM\SignInToLyncWithUISuppressed\WindowsFormsApplication3\WindowsFormsApplication3\obj\x86\Debug\WindowsFormsApplication3.Properties.Resources.resources
+C:\Data\UCode\OCOM\SignInToLyncWithUISuppressed\WindowsFormsApplication3\WindowsFormsApplication3\obj\x86\Debug\GenerateResource-ResGen.read.1.tlog
+C:\Data\UCode\OCOM\SignInToLyncWithUISuppressed\WindowsFormsApplication3\WindowsFormsApplication3\obj\x86\Debug\GenerateResource-ResGen.write.1.tlog
+C:\Data\UCode\OCOM\SignInToLyncWithUISuppressed\WindowsFormsApplication3\WindowsFormsApplication3\obj\x86\Debug\WindowsFormsApplication3.exe
+C:\Data\UCode\OCOM\SignInToLyncWithUISuppressed\WindowsFormsApplication3\WindowsFormsApplication3\obj\x86\Debug\WindowsFormsApplication3.pdb
