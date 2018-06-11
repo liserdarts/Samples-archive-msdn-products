@@ -1,0 +1,302 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
+    <head><link rel="stylesheet" type="text/css" href="description/Combined.css,0:HeaderFooterSprite,0:Header.NonMtps,1:LinkList;/Areas/Centers/Themes/StandardDevCenter/Content:0,/Areas/Epx/Themes/Base/Content:1&amp;amp;hashKey=C9973DA951AE6202C9B348379A1BE49D" xmlns="http://www.w3.org/1999/xhtml" />
+<link type="text/css" rel="stylesheet" xmlns="http://www.w3.org/1999/xhtml" />
+<link rel="stylesheet" type="text/css" href="description/67b74b86-a273-4ad7-9ed5-0f97276412eaCombined.css,0:HeaderFooterSprite,0:Footer.NonMtps,1:LinkList;/Areas/Centers/Themes/StandardDevCenter/Content:0,/Areas/Epx/Themes/Base/Content:1&amp;amp;hashKey=F576C687BC536B84D6E5B3246EE39B49" xmlns="http://www.w3.org/1999/xhtml" />
+<link type="text/css" rel="stylesheet" xmlns="http://www.w3.org/1999/xhtml" />
+
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <title>Create a UCWA Windows Store app using C#/XAML and XML</title>
+        <link href="description/Galleries.css" type="text/css" rel="Stylesheet" /><link href="description/Layout.css" type="text/css" rel="Stylesheet" /><link href="description/Brand.css" type="text/css" rel="Stylesheet" />
+            <link href="description/librarydescription.css" rel="Stylesheet" type="text/css" />
+        <link href="description/iframedescription.css" rel="Stylesheet" type="text/css" />
+        <script src="description/offline.js" type="text/javascript"></script>
+        <style type="text/css">
+            #projectInfo {
+                overflow: auto;
+            }
+            #longDesc {
+                clear:both;
+                margin: 25px 0 10px 0;
+            }
+
+            #SampleIndexList{
+                margin-left: 15px;
+            }
+        </style>
+    </head>
+<body>
+    <div id="offlineDescription">
+        <h1>Create a UCWA Windows Store app using C#/XAML and XML</h1>
+        <br/>
+        <div id="projectInfo">
+            <div class="section">
+                    <div class="itemBarLong tagsContainer">
+                        <label for="Technologies">Technologies</label>
+                        <div id="Technologies">
+                            Lync Server 2013, Lync 2013
+                        </div>
+                    </div>
+                    <div class="itemBarLong tagsContainer">
+                        <label for="Topics">Topics</label>
+                        <div id="Topics">
+                            Unified Communications Web API
+                        </div>
+                    </div>
+                <div class="itemBarLong">
+                    <label for="Platforms">Platforms</label>
+                    <div id="Platforms">
+                        Cloud
+                    </div>
+                </div>
+                <div class="itemBarLong">
+                    <label for="Requirements">Requirements</label>
+                    <div id="Requirements">
+                        
+                    </div>
+                </div>
+                <div class="itemBar">
+                    <label for="LastUpdated">Primary language</label>
+                    <div id="LastUpdated">en-US</div>
+                </div>
+                <div class="itemBar">
+                    <label for="LastUpdated">Updated</label>
+                    <div id="LastUpdated">2/4/2014</div>
+                </div>
+                <div class="itemBarLong">
+                    <label for="License">License</label>
+                    <div id="License">
+                        <a href="license.rtf">Apache License, Version 2.0</a></div>
+                </div>
+                <div class="itemBar">
+                    <div class="viewonlinecont">
+                        <a data-link="online" href="http://code.msdn.microsoft.com/Create-a-UCWA-Windows-2c48d3f9">View this sample online</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+                   
+<script type="text/javascript">
+    function initializePage() {
+        var otherTabClass = 'otherTab';
+        var hiddenPreClass = 'hidden';
+
+        var htmlDecode = function(encodedData) {
+            var decodedData = "";
+            if (encodedData) {
+                var div = document.createElement('div');
+                div.innerHTML = encodedData;
+                decodedData = div.firstChild.nodeValue.replace( /\\r\\n/ig , '\r\n');
+            }
+            return decodedData;
+        };
+                
+        Galleries.iterateElem(Galleries.findElem(null, 'div', 'scriptcode'), function (index, scriptBlock) {
+            var titleElem = Galleries.findElem(scriptBlock, 'div', 'title')[0];
+            var labelElems = Galleries.findElem(titleElem, 'span');
+            if (labelElems.length == 0) {
+                labelElems = titleElem;
+            }
+            var languageSpans = Galleries.findElem(scriptBlock, 'span', 'hidden');
+            var pres = Galleries.findElem(scriptBlock, 'pre');
+            if (languageSpans.length > 0 && pres.length > 1) {
+                Galleries.iterateElem(labelElems, function(index, elem) {
+                    var codePre = pres[index];
+                    var labelSpan = elem;
+                    var languageSpan = languageSpans[index];
+                            
+                    elem.code = codePre.innerHTML.replace( /(\r(\n)?)|((\r)?\n)/ig , '\\r\\n');
+                            
+                    codePre.className = codePre.className.replace(hiddenPreClass, '');
+                            
+                    languageSpan.parentNode.removeChild(languageSpan);
+                });
+
+                pres = Galleries.findElem(scriptBlock, 'pre');
+                Galleries.iterateElem(labelElems, function(index, elem) {
+                    var codePre = pres[index];
+                    var labelSpan = elem;
+                    if (index == 0) {
+                        scriptBlock.activeTab = 0;
+                    }
+                    else {
+                        labelSpan.className += otherTabClass;
+                        codePre.className += hiddenPreClass;
+                    }
+                    Galleries.attachEventHandler(labelSpan, 'click', function(e) {
+                        var activeTab = scriptBlock.activeTab;
+                        labelElems[activeTab].className += otherTabClass;
+                        pres[activeTab].className += hiddenPreClass;
+
+                        codePre.className = codePre.className.replace(hiddenPreClass, '');
+                        labelSpan.className = labelSpan.className.replace(otherTabClass, '');
+                        scriptBlock.activeTab = index;
+                    });
+                });
+
+                var preview = Galleries.findElem(scriptBlock, 'div', 'preview');
+                if (preview.length == 0) {
+                    preview.push(pres[pres.length - 1]);
+                }
+                Galleries.iterateElem(preview, function(index, elem) {
+                    elem.parentNode.removeChild(elem);
+                });
+
+                if (window.clipboardData && clipboardData.setData) {
+                    var copyLink = document.createElement('a');
+                    copyLink.href = 'javascript:void(0);';
+                    copyLink.className = 'copyCode';
+                    copyLink.innerHTML = 'Copy code';
+                    Galleries.attachEventHandler(copyLink, 'click', function (e) {
+                        clipboardData.setData("Text", htmlDecode(labelElems[scriptBlock.activeTab].code));
+                        return false;
+                    });
+                    scriptBlock.insertBefore(copyLink, scriptBlock.childNodes[0]);
+                }
+            }
+        });
+    }
+
+    Galleries.onWindowLoad(function(){
+        initializePage();
+    });
+
+</script>
+<div id="longDesc">
+    
+<div class="content">
+<div>
+<div class="topic">
+<div class="majorTitle"></div>
+<h1 class="title">Start creating UCWA Windows Store apps</h1>
+<div id="mainSection">
+<div id="mainBody">
+<div class="summary">
+<p>In this article, you will learn how to build a simple Windows Store app in C#/XAML and XML. The steps illustrated here are required of all UCWA applications. It is intended as a self-contained introduction to building and deploying a UCWA application targeted
+ for Windows Store.</p>
+</div>
+<div class="introduction">
+<p><strong>Last modified: </strong>January 08, 2014</p>
+<p><em><strong>Applies to: </strong>Lync 2013 | Lync Server 2013</em></p>
+<p>Demonstrated UCWA programming features include how to make asynchronous calls to sign in and then to get the self-presence, personal note and the list of telephone numbers of the signed-in user. Some basic requirements of Windows Store apps are also examined
+ in the context of a UCWA application. Specifically, you will learn how to carry out the following programming tasks:</p>
+<ul>
+<li>
+<p><strong>Create and Test a Windows Store application using C#/XAML</strong></p>
+<p>The application has a UI component based on the basic Windows Store app UI template. It takes a user name and password from a user and logs the user in to UCWA. The application takes advantage of the Windows Store app API features to cache or persist the
+ user login information and other application data to render fluid user experiences.</p>
+<p>Creating and deploying Windows Store apps involves a somewhat different process than a Windows desktop application. This tutorial is self-contained and does not require extensive prior knowledge of using Windows Store app APIs. However, if you&rsquo;re new
+ to building Windows Store apps, you may find it helpful to read the articles listed in the
+<a href="#bk_addresources">Additional resources</a> section.</p>
+</li><li>
+<p><strong>Sign in to UCWA and inspect the local user data and presence</strong></p>
+<p>Sign-in is the first step that every UCWA application must perform before other UCWA features become available. The process involves discovering the UCWA service address, getting the user authenticated, and creating a UCWA
+<span class="code">application</span> resource.</p>
+<p>Programming using UCWA involves initiating HTTP requests and processing responses to access and operate UCWA resources. To do so, this application uses
+<a href="http://msdn.microsoft.com/en-us/library/system.net.httpwebrequest(v=vs.110).aspx" >
+HttpWebRequest</a> and <a href="http://msdn.microsoft.com/en-us/library/system.net.httpwebresponse(v=vs.110).aspx" >
+HttpWebResponse</a> as well as other classes in the <a href="http://msdn.microsoft.com/en-us/library/System.Net(v=vs.110).aspx" >
+<a class="libraryLink" href="http://msdn.microsoft.com/en-US/library/System.Net.aspx"  title="Auto generated link to System.Net">System.Net</a> namespace</a> for Windows Store apps. To showcase the versatility of UCWA, the application chooses XML as the content type for transporting the HTTP messages and uses the
+<a href="http://msdn.microsoft.com/en-us/library/system.xml.linq(v=vs.110).aspx" >
+System.Xml.Linq</a> namespace to parse the UCWA resources.</p>
+</li></ul>
+</div>
+<div class="LW_CollapsibleArea_Container">
+<div class="LW_CollapsibleArea_TitleDiv"><span class="LW_CollapsibleArea_Title">What is involved in signing in a user to UCWA?</span>
+<div class="LW_CollapsibleArea_HrDiv">
+<hr class="LW_CollapsibleArea_Hr">
+</div>
+</div>
+<a id="sectionToggle0"></a>
+<p>Signing in is the first step to create any UCWA application. It amounts to getting a user authenticated using one of the following authentication types:</p>
+<ul>
+<li>
+<p>Using the user-supplied Lync account name and password</p>
+</li><li>
+<p>Using integrated Windows credentials</p>
+</li><li>
+<p>Using user&rsquo;s account name and a conference ID for joining a meeting anonymously</p>
+</li><li>
+<p>Using passive authentication supported by Active Directory Federation Service</p>
+</li></ul>
+<p>In this article, the password-based authentication is used. Once the user is authenticated, the application is returned an OAuth security token. The UCWA application must provide this security token in any of the subsequent HTTP requests. When the token
+ expires, the application must be renew it.</p>
+<p>Before the authentication can take place, the UCWA application must first locate the UCWA service enabled on the user&rsquo;s domain. The process is known as auto-discovery of the UCWA
+<a href="http://ucwa.lync.com/documentation/GettingStarted-RootURL" >
+root</a> resource and will be illustrated in this article.</p>
+<p>A successful authentication must also be followed by obtaining a UCWA <a href="http://ucwa.lync.com/documentation/Resources-application" >
+application</a> resource representing an instance of the application bound to the local endpoint of the signed-in user. When the application times out, the
+<span class="code">application</span> resource must be updated. This may involve getting the user re-authenticated.</p>
+<p>Because UCWA-specific operations are carried out as HTTP requests and responses, it is natural to encapsulate them in a separate type. In this article, they are exposed as asynchronous methods on a
+<span class="code">Transport</span> class, which can be reused for other applications as well. The asynchronous behavior is built upon the
+<span class="code">async/await</span><a href="http://msdn.microsoft.com/en-us/library/vstudio/hh191443.aspx" >pattern</a>. It is required to ensure that the Windows Store app be responsive.</p>
+<p>A Windows Store app undergoes a much frequent change of states than traditional desktop applications. Managing the application&rsquo;s states and life cycle is important to enable the Windows Store app fluid and to comply with the REST-ful requirements of
+ UCWA.</p>
+</div>
+<div class="LW_CollapsibleArea_Container">
+<div class="LW_CollapsibleArea_TitleDiv"><span class="LW_CollapsibleArea_Title">In this article</span>
+<div class="LW_CollapsibleArea_HrDiv">
+<hr class="LW_CollapsibleArea_Hr">
+</div>
+</div>
+<a id="sectionToggle1"></a>
+<p>This article contains the following topics.</p>
+<ul>
+<li>
+<p><span><a href="http://msdn.microsoft.com/EN-US/library/dn551188.aspx">Create a UCWA Windows Store App project</a></span></p>
+</li><li>
+<p><span><a href="http://msdn.microsoft.com/EN-US/library/dn551189.aspx">Enable fluid user interface</a></span></p>
+</li><li>
+<p><span><a href="http://msdn.microsoft.com/EN-US/library/dn551193.aspx">Ensure responsive HTTP operations</a></span></p>
+</li><li>
+<p><span><a href="http://msdn.microsoft.com/EN-US/library/dn551191.aspx">Implement the UCWA sign-in workflow</a></span></p>
+</li><li>
+<p><span><a href="http://msdn.microsoft.com/EN-US/library/dn551194.aspx">Putting it all together</a></span></p>
+</li></ul>
+</div>
+<a id="bk_addresources"></a>
+<div class="LW_CollapsibleArea_Container">
+<div class="LW_CollapsibleArea_TitleDiv"><span class="LW_CollapsibleArea_Title">Additional resources</span>
+<div class="LW_CollapsibleArea_HrDiv">
+<hr class="LW_CollapsibleArea_Hr">
+</div>
+</div>
+<a id="sectionToggle2"></a>
+<ul>
+<li>
+<p><a href="http://msdn.microsoft.com/en-us/library/windows/apps/hh974581.aspx" >Create you first Windows Store app using C# or Visual Basic</a>: If you&rsquo;re new to building Windows Store apps, I highly recommend this step-by-step guide with
+ clear instructions to creating a Windows RT application using C# or Visual Basic.</p>
+</li><li>
+<p><a href="http://msdn.microsoft.com/en-us/library/windows/apps/hh974578.aspx" >Get a developer license (Windows Store apps)</a>: To install and test a Windows RT application before submitting it to Windows Store, you can get a developer license
+ for each machine on which you intent to run the app. This article tells you how to get and renew a developer license, valid for a 30-day period, from Visual Studio or at a command prompt.</p>
+</li><li>
+<p><a href="http://technet.microsoft.com/en-us/library/hh852635.aspx" >How to Add and Remove Apps</a>: This article details the requirements and steps necessary for deploying an enterprise (or LOB) application using the mechanism of side-loading
+ and, therefore, bypassing Windows Store all together. This could be a common scenario for UCWA apps.</p>
+</li><li>
+<p><a href="http://technet.microsoft.com/en-us/library/hh832040.aspx" >Manage Client Access to the Windows Store</a>: In addition to configuring side-loading for deploying your Windows RT application without going through Windows Store, this
+ article provides an entry point to other information useful for managing app access to Windows Store in an enterprise environment.</p>
+</li><li>
+<p><a href="http://msdn.microsoft.com/en-us/library/windows/apps/hh986968.aspx" >Manage app lifecycle and state (Windows Store apps using C#/VB and XAML)</a>: It offers an introductory discussion of Windows app lifecycle and state management
+ issues, with a hands-on tutorial.</p>
+</li><li>
+<p><a href="http://ucwa.lync.com/documentation/api-reference" >UCWA API Resource reference library</a>: This is the official UCWA documentation site where you can find detailed specification of all the UCWA resources.</p>
+</li><li>
+<p><a href="http://ucwa.lync.com/" >UCWA Dev Portal</a>: This is the official UCWA development portal where you can find interactive demo and sample codes, written in JavaScript and JSON. You can also access the community forum for UCWA developers.</p>
+</li><li>
+<p><a href="http://ucwa.lync.com/documentation/what-is-lync-ucwa-api" >What is UCWA API?</a>: This is the landing page of the official UCWA documentation, where you can find more detailed discussions of the requirements, features and architecture
+ of UCWA.</p>
+</li></ul>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+
+</div>
+
+
+    </div>
+</body>
+</html>

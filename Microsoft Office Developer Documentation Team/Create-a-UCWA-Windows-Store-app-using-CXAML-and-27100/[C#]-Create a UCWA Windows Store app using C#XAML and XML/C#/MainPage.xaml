@@ -1,0 +1,62 @@
+﻿<Page
+    x:Name="pageRoot"
+    x:Class="UcwaWinStoreHello.MainPage"
+    DataContext="{Binding DefaultViewModel, RelativeSource={RelativeSource Self}}"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:UcwaWinStoreHello"
+    xmlns:common="using:UcwaWinStoreHello.Common"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d">
+
+    <Page.Resources>
+        <!-- TODO: Delete this line if the key AppName is declared in App.xaml -->
+        <x:String x:Key="AppName">UCWA RT App</x:String>
+    </Page.Resources>
+
+    <!--
+        This grid acts as a root panel for the page that defines two rows:
+        * Row 0 contains the back button and page title
+        * Row 1 contains the rest of the page layout
+    -->
+    <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+        <Grid.ChildrenTransitions>
+            <TransitionCollection>
+                <EntranceThemeTransition/>
+            </TransitionCollection>
+        </Grid.ChildrenTransitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="140"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+
+        <!-- Back button and page title -->
+        <Grid>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="120"/>
+                <ColumnDefinition Width="*"/>
+            </Grid.ColumnDefinitions>
+            <Button x:Name="backButton" Margin="39,59,39,0" Command="{Binding NavigationHelper.GoBackCommand, ElementName=pageRoot}"
+                        Style="{StaticResource NavigationBackButtonNormalStyle}"
+                        VerticalAlignment="Top"
+                        AutomationProperties.Name="Back"
+                        AutomationProperties.AutomationId="BackButton"
+                        AutomationProperties.ItemType="Navigation Button"/>
+            <TextBlock x:Name="pageTitle" Text="{StaticResource AppName}" Style="{StaticResource HeaderTextBlockStyle}" Grid.Column="1" 
+                        IsHitTestVisible="false" TextWrapping="NoWrap" VerticalAlignment="Bottom" Margin="0,0,30,40"/>
+        </Grid>
+        <StackPanel Height="390" Margin="150,136,0,0" Grid.Row="1" Width="303" HorizontalAlignment="Left" VerticalAlignment="Top">
+            <TextBlock x:Name="textBlockIntro" TextWrapping="Wrap" Text="TextBlock" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="10,20" FontSize="16"/>
+            <TextBlock x:Name="textBlockUserName" TextWrapping="Wrap" Text="User name (e.g., john@contoso.com)" VerticalAlignment="Top" HorizontalAlignment="Left" Margin="20,0" ToolTipService.ToolTip="A Lync user account" FontSize="16"/>
+            <TextBox x:Name="textBoxUserName" TextWrapping="Wrap" ToolTipService.ToolTip="Lync user account name" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="20,0,0,20" Width="250" TextChanged="UserName_Changed"/>
+            <TextBlock x:Name="textBlockPassword" TextWrapping="Wrap" Text="Password:" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="20,0,0,0" FontSize="16"/>
+            <PasswordBox x:Name="passwordBox" PlaceholderText="" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="20,0,0,20" Width="250" PasswordChanged="Password_Changed"/>
+            <CheckBox x:Name="checkBoxSaveUserInfo" Content="Save user info" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="20,0,0,0" FlowDirection="RightToLeft" Checked="SaveUserInfo_Checked" Unchecked="SaveUserInfo_Unchecked" />
+            <Button x:Name="buttonSignIn" Content="Sign in" HorizontalAlignment="Left" VerticalAlignment="Top" Width="88" Margin="172,0,0,0" RenderTransformOrigin="1.056,0.254" Click="buttonSignIn_Cliked" FontSize="16"/>
+            <TextBlock x:Name="textBlockError" TextWrapping="Wrap" Text="Status" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="30,30,0,0" MinWidth="160" MinHeight="60" Height="84" Width="227" FontSize="14"/>
+
+        </StackPanel>
+
+    </Grid>
+</Page>
