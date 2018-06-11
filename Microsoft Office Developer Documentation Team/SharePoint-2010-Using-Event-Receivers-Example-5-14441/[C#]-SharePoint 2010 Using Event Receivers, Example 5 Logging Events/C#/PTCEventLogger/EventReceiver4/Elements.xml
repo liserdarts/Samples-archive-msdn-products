@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">
+  <Receivers>
+      <Receiver>
+        <Name>EventReceiver4EmailReceived</Name>
+        <Type>EmailReceived</Type>
+        <Assembly>$SharePoint.Project.AssemblyFullName$</Assembly>
+        <Class>PTCEventLogger.EventReceiver4.EventReceiver4</Class>
+        <SequenceNumber>10000</SequenceNumber>
+        <Synchronization>Synchronous</Synchronization>
+      </Receiver>
+
+  </Receivers>
+</Elements>

@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">
+  <Receivers>
+      <Receiver>
+        <Name>EventReceiver3ItemAdding</Name>
+        <Type>ItemAdding</Type>
+        <Assembly>PTCEventLogger, Version=1.0.0.0, Culture=neutral, PublicKeyToken=1914f0cfa73e050c</Assembly>
+        <Class>PTCEventLogger.EventReceiver3.EventReceiver3</Class>
+        <SequenceNumber>10000</SequenceNumber>
+      </Receiver>
+      <Receiver>
+        <Name>EventReceiver3ItemUpdating</Name>
+        <Type>ItemUpdating</Type>
+        <Assembly>PTCEventLogger, Version=1.0.0.0, Culture=neutral, PublicKeyToken=1914f0cfa73e050c</Assembly>
+        <Class>PTCEventLogger.EventReceiver3.EventReceiver3</Class>
+        <SequenceNumber>10000</SequenceNumber>
+      </Receiver>
+      <Receiver>
+        <Name>EventReceiver3ItemDeleting</Name>
+        <Type>ItemDeleting</Type>
+        <Assembly>PTCEventLogger, Version=1.0.0.0, Culture=neutral, PublicKeyToken=1914f0cfa73e050c</Assembly>
+        <Class>PTCEventLogger.EventReceiver3.EventReceiver3</Class>
+        <SequenceNumber>10000</SequenceNumber>
+      </Receiver>
+      <Receiver>
+        <Name>EventReceiver3ItemCheckingIn</Name>
+        <Type>ItemCheckingIn</Type>
+        <Assembly>PTCEventLogger, Version=1.0.0.0, Culture=neutral, PublicKeyToken=1914f0cfa73e050c</Assembly>
+        <Class>PTCEventLogger.EventReceiver3.EventReceiver3</Class>
+        <SequenceNumber>10000</SequenceNumber>
+      </Receiver>
+      <Receiver>
+        <Name>EventReceiver3ItemCheckingOut</Name>
+        <Type>ItemCheckingOut</Type>
+        <Assembly>PTCEventLogger, Version=1.0.0.0, Culture=neutral, PublicKeyToken=1914f0cfa73e050c</Assembly>
+        <Class>PTCEventLogger.EventReceiver3.EventReceiver3</Class>
+        <SequenceNumber>10000</SequenceNumber>
+      </Receiver>
+      <Receiver>
+        <Name>EventReceiver3ItemUncheckingOut</Name>
+        <Type>ItemUncheckingOut</Type>
+        <Assembly>PTCEventLogger, Version=1.0.0.0, Culture=neutral, PublicKeyToken=1914f0cfa73e050c</Assembly>
+        <Class>PTCEventLogger.EventReceiver3.EventReceiver3</Class>
+        <SequenceNumber>10000</SequenceNumber>
+      </Receiver>
+      <Receiver>
+        <Name>EventReceiver3ItemAttachmentAdding</Name>
+        <Type>ItemAttachmentAdding</Type>
+        <Assembly>PTCEventLogger, Version=1.0.0.0, Culture=neutral, PublicKeyToken=1914f0cfa73e050c</Assembly>
+        <Class>PTCEventLogger.EventReceiver3.EventReceiver3</Class>
+        <SequenceNumber>10000</SequenceNumber>
+      </Receiver>
+      <Receiver>
+        <Name>EventReceiver3ItemAttachmentDeleting</Name>
+        <Type>ItemAttachmentDeleting</Type>
+        <Assembly>PTCEventLogger, Version=1.0.0.0, Culture=neutral, PublicKeyToken=1914f0cfa73e050c</Assembly>
+        <Class>PTCEventLogger.EventReceiver3.EventReceiver3</Class>
+        <SequenceNumber>10000</SequenceNumber>
+      </Receiver>
+      <Receiver>
+        <Name>EventReceiver3ItemFileMoving</Name>
+        <Type>ItemFileMoving</Type>
+        <Assembly>PTCEventLogger, Version=1.0.0.0, Culture=neutral, PublicKeyToken=1914f0cfa73e050c</Assembly>
+        <Class>PTCEventLogger.EventReceiver3.EventReceiver3</Class>
+        <SequenceNumber>10000</SequenceNumber>
+      </Receiver>
+      <Receiver>
+        <Name>EventReceiver3ItemAdded</Name>
+        <Type>ItemAdded</Type>
+        <Assembly>PTCEventLogger, Version=1.0.0.0, Culture=neutral, PublicKeyToken=1914f0cfa73e050c</Assembly>
+        <Class>PTCEventLogger.EventReceiver3.EventReceiver3</Class>
+        <SequenceNumber>10000</SequenceNumber>
+        <Synchronization>Synchronous</Synchronization>
+      </Receiver>
+      <Receiver>
+        <Name>EventReceiver3ItemUpdated</Name>
+        <Type>ItemUpdated</Type>
+        <Assembly>PTCEventLogger, Version=1.0.0.0, Culture=neutral, PublicKeyToken=1914f0cfa73e050c</Assembly>
+        <Class>PTCEventLogger.EventReceiver3.EventReceiver3</Class>
+        <SequenceNumber>10000</SequenceNumber>
+        <Synchronization>Synchronous</Synchronization>
+      </Receiver>
+      <Receiver>
+        <Name>EventReceiver3ItemDeleted</Name>
+        <Type>ItemDeleted</Type>
+        <Assembly>PTCEventLogger, Version=1.0.0.0, Culture=neutral, PublicKeyToken=1914f0cfa73e050c</Assembly>
+        <Class>PTCEventLogger.EventReceiver3.EventReceiver3</Class>
+        <SequenceNumber>10000</SequenceNumber>
+        <Synchronization>Synchronous</Synchronization>
+      </Receiver>
+      <Receiver>
+        <Name>EventReceiver3ItemCheckedIn</Name>
+        <Type>ItemCheckedIn</Type>
+        <Assembly>PTCEventLogger, Version=1.0.0.0, Culture=neutral, PublicKeyToken=1914f0cfa73e050c</Assembly>
+        <Class>PTCEventLogger.EventReceiver3.EventReceiver3</Class>
+        <SequenceNumber>10000</SequenceNumber>
+        <Synchronization>Synchronous</Synchronization>
+      </Receiver>
+      <Receiver>
+        <Name>EventReceiver3ItemCheckedOut</Name>
+        <Type>ItemCheckedOut</Type>
+        <Assembly>PTCEventLogger, Version=1.0.0.0, Culture=neutral, PublicKeyToken=1914f0cfa73e050c</Assembly>
+        <Class>PTCEventLogger.EventReceiver3.EventReceiver3</Class>
+        <SequenceNumber>10000</SequenceNumber>
+        <Synchronization>Synchronous</Synchronization>
+      </Receiver>
+      <Receiver>
+        <Name>EventReceiver3ItemUncheckedOut</Name>
+        <Type>ItemUncheckedOut</Type>
+        <Assembly>PTCEventLogger, Version=1.0.0.0, Culture=neutral, PublicKeyToken=1914f0cfa73e050c</Assembly>
+        <Class>PTCEventLogger.EventReceiver3.EventReceiver3</Class>
+        <SequenceNumber>10000</SequenceNumber>
+        <Synchronization>Synchronous</Synchronization>
+      </Receiver>
+      <Receiver>
+        <Name>EventReceiver3ItemAttachmentAdded</Name>
+        <Type>ItemAttachmentAdded</Type>
+        <Assembly>PTCEventLogger, Version=1.0.0.0, Culture=neutral, PublicKeyToken=1914f0cfa73e050c</Assembly>
+        <Class>PTCEventLogger.EventReceiver3.EventReceiver3</Class>
+        <SequenceNumber>10000</SequenceNumber>
+        <Synchronization>Synchronous</Synchronization>
+      </Receiver>
+      <Receiver>
+        <Name>EventReceiver3ItemAttachmentDeleted</Name>
+        <Type>ItemAttachmentDeleted</Type>
+        <Assembly>PTCEventLogger, Version=1.0.0.0, Culture=neutral, PublicKeyToken=1914f0cfa73e050c</Assembly>
+        <Class>PTCEventLogger.EventReceiver3.EventReceiver3</Class>
+        <SequenceNumber>10000</SequenceNumber>
+        <Synchronization>Synchronous</Synchronization>
+      </Receiver>
+      <Receiver>
+        <Name>EventReceiver3ItemFileMoved</Name>
+        <Type>ItemFileMoved</Type>
+        <Assembly>PTCEventLogger, Version=1.0.0.0, Culture=neutral, PublicKeyToken=1914f0cfa73e050c</Assembly>
+        <Class>PTCEventLogger.EventReceiver3.EventReceiver3</Class>
+        <SequenceNumber>10000</SequenceNumber>
+        <Synchronization>Synchronous</Synchronization>
+      </Receiver>
+      <Receiver>
+        <Name>EventReceiver3ItemFileConverted</Name>
+        <Type>ItemFileConverted</Type>
+        <Assembly>PTCEventLogger, Version=1.0.0.0, Culture=neutral, PublicKeyToken=1914f0cfa73e050c</Assembly>
+        <Class>PTCEventLogger.EventReceiver3.EventReceiver3</Class>
+        <SequenceNumber>10000</SequenceNumber>
+        <Synchronization>Synchronous</Synchronization>
+      </Receiver>
+
+  </Receivers>
+</Elements>

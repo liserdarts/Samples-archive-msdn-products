@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">
+  <Receivers >
+      <Receiver>
+        <Name>EventReceiver1SiteDeleting</Name>
+        <Type>SiteDeleting</Type>
+        <Assembly>PTCEventLogger, Version=1.0.0.0, Culture=neutral, PublicKeyToken=1914f0cfa73e050c</Assembly>
+        <Class>PTCEventLogger.EventReceiver1.EventReceiver1</Class>
+        <SequenceNumber>10000</SequenceNumber>
+      </Receiver>
+      <Receiver>
+        <Name>EventReceiver1WebDeleting</Name>
+        <Type>WebDeleting</Type>
+        <Assembly>PTCEventLogger, Version=1.0.0.0, Culture=neutral, PublicKeyToken=1914f0cfa73e050c</Assembly>
+        <Class>PTCEventLogger.EventReceiver1.EventReceiver1</Class>
+        <SequenceNumber>10000</SequenceNumber>
+      </Receiver>
+      <Receiver>
+        <Name>EventReceiver1WebMoving</Name>
+        <Type>WebMoving</Type>
+        <Assembly>PTCEventLogger, Version=1.0.0.0, Culture=neutral, PublicKeyToken=1914f0cfa73e050c</Assembly>
+        <Class>PTCEventLogger.EventReceiver1.EventReceiver1</Class>
+        <SequenceNumber>10000</SequenceNumber>
+      </Receiver>
+      <Receiver>
+        <Name>EventReceiver1WebAdding</Name>
+        <Type>WebAdding</Type>
+        <Assembly>PTCEventLogger, Version=1.0.0.0, Culture=neutral, PublicKeyToken=1914f0cfa73e050c</Assembly>
+        <Class>PTCEventLogger.EventReceiver1.EventReceiver1</Class>
+        <SequenceNumber>10000</SequenceNumber>
+      </Receiver>
+      <Receiver>
+        <Name>EventReceiver1SiteDeleted</Name>
+        <Type>SiteDeleted</Type>
+        <Assembly>PTCEventLogger, Version=1.0.0.0, Culture=neutral, PublicKeyToken=1914f0cfa73e050c</Assembly>
+        <Class>PTCEventLogger.EventReceiver1.EventReceiver1</Class>
+        <SequenceNumber>10000</SequenceNumber>
+        <Synchronization>Synchronous</Synchronization>
+      </Receiver>
+      <Receiver>
+        <Name>EventReceiver1WebDeleted</Name>
+        <Type>WebDeleted</Type>
+        <Assembly>PTCEventLogger, Version=1.0.0.0, Culture=neutral, PublicKeyToken=1914f0cfa73e050c</Assembly>
+        <Class>PTCEventLogger.EventReceiver1.EventReceiver1</Class>
+        <SequenceNumber>10000</SequenceNumber>
+        <Synchronization>Synchronous</Synchronization>
+      </Receiver>
+      <Receiver>
+        <Name>EventReceiver1WebMoved</Name>
+        <Type>WebMoved</Type>
+        <Assembly>PTCEventLogger, Version=1.0.0.0, Culture=neutral, PublicKeyToken=1914f0cfa73e050c</Assembly>
+        <Class>PTCEventLogger.EventReceiver1.EventReceiver1</Class>
+        <SequenceNumber>10000</SequenceNumber>
+        <Synchronization>Synchronous</Synchronization>
+      </Receiver>
+      <Receiver>
+        <Name>EventReceiver1WebProvisioned</Name>
+        <Type>WebProvisioned</Type>
+        <Assembly>PTCEventLogger, Version=1.0.0.0, Culture=neutral, PublicKeyToken=1914f0cfa73e050c</Assembly>
+        <Class>PTCEventLogger.EventReceiver1.EventReceiver1</Class>
+        <SequenceNumber>10000</SequenceNumber>
+        <Synchronization>Synchronous</Synchronization>
+      </Receiver>
+
+  </Receivers>
+</Elements>

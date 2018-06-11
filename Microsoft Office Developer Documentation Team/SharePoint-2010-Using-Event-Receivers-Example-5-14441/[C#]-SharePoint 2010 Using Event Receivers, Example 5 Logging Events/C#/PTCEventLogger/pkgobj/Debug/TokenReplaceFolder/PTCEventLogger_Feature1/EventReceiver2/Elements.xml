@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">
+  <Receivers >
+      <Receiver>
+        <Name>EventReceiver2FieldAdded</Name>
+        <Type>FieldAdded</Type>
+        <Assembly>PTCEventLogger, Version=1.0.0.0, Culture=neutral, PublicKeyToken=1914f0cfa73e050c</Assembly>
+        <Class>PTCEventLogger.EventReceiver2.EventReceiver2</Class>
+        <SequenceNumber>10000</SequenceNumber>
+        <Synchronization>Synchronous</Synchronization>
+      </Receiver>
+      <Receiver>
+        <Name>EventReceiver2FieldAdding</Name>
+        <Type>FieldAdding</Type>
+        <Assembly>PTCEventLogger, Version=1.0.0.0, Culture=neutral, PublicKeyToken=1914f0cfa73e050c</Assembly>
+        <Class>PTCEventLogger.EventReceiver2.EventReceiver2</Class>
+        <SequenceNumber>10000</SequenceNumber>
+      </Receiver>
+      <Receiver>
+        <Name>EventReceiver2FieldDeleted</Name>
+        <Type>FieldDeleted</Type>
+        <Assembly>PTCEventLogger, Version=1.0.0.0, Culture=neutral, PublicKeyToken=1914f0cfa73e050c</Assembly>
+        <Class>PTCEventLogger.EventReceiver2.EventReceiver2</Class>
+        <SequenceNumber>10000</SequenceNumber>
+        <Synchronization>Synchronous</Synchronization>
+      </Receiver>
+      <Receiver>
+        <Name>EventReceiver2FieldDeleting</Name>
+        <Type>FieldDeleting</Type>
+        <Assembly>PTCEventLogger, Version=1.0.0.0, Culture=neutral, PublicKeyToken=1914f0cfa73e050c</Assembly>
+        <Class>PTCEventLogger.EventReceiver2.EventReceiver2</Class>
+        <SequenceNumber>10000</SequenceNumber>
+      </Receiver>
+      <Receiver>
+        <Name>EventReceiver2FieldUpdated</Name>
+        <Type>FieldUpdated</Type>
+        <Assembly>PTCEventLogger, Version=1.0.0.0, Culture=neutral, PublicKeyToken=1914f0cfa73e050c</Assembly>
+        <Class>PTCEventLogger.EventReceiver2.EventReceiver2</Class>
+        <SequenceNumber>10000</SequenceNumber>
+        <Synchronization>Synchronous</Synchronization>
+      </Receiver>
+      <Receiver>
+        <Name>EventReceiver2FieldUpdating</Name>
+        <Type>FieldUpdating</Type>
+        <Assembly>PTCEventLogger, Version=1.0.0.0, Culture=neutral, PublicKeyToken=1914f0cfa73e050c</Assembly>
+        <Class>PTCEventLogger.EventReceiver2.EventReceiver2</Class>
+        <SequenceNumber>10000</SequenceNumber>
+      </Receiver>
+      <Receiver>
+        <Name>EventReceiver2ListAdding</Name>
+        <Type>ListAdding</Type>
+        <Assembly>PTCEventLogger, Version=1.0.0.0, Culture=neutral, PublicKeyToken=1914f0cfa73e050c</Assembly>
+        <Class>PTCEventLogger.EventReceiver2.EventReceiver2</Class>
+        <SequenceNumber>10000</SequenceNumber>
+      </Receiver>
+      <Receiver>
+        <Name>EventReceiver2ListDeleting</Name>
+        <Type>ListDeleting</Type>
+        <Assembly>PTCEventLogger, Version=1.0.0.0, Culture=neutral, PublicKeyToken=1914f0cfa73e050c</Assembly>
+        <Class>PTCEventLogger.EventReceiver2.EventReceiver2</Class>
+        <SequenceNumber>10000</SequenceNumber>
+      </Receiver>
+      <Receiver>
+        <Name>EventReceiver2ListAdded</Name>
+        <Type>ListAdded</Type>
+        <Assembly>PTCEventLogger, Version=1.0.0.0, Culture=neutral, PublicKeyToken=1914f0cfa73e050c</Assembly>
+        <Class>PTCEventLogger.EventReceiver2.EventReceiver2</Class>
+        <SequenceNumber>10000</SequenceNumber>
+        <Synchronization>Synchronous</Synchronization>
+      </Receiver>
+      <Receiver>
+        <Name>EventReceiver2ListDeleted</Name>
+        <Type>ListDeleted</Type>
+        <Assembly>PTCEventLogger, Version=1.0.0.0, Culture=neutral, PublicKeyToken=1914f0cfa73e050c</Assembly>
+        <Class>PTCEventLogger.EventReceiver2.EventReceiver2</Class>
+        <SequenceNumber>10000</SequenceNumber>
+        <Synchronization>Synchronous</Synchronization>
+      </Receiver>
+
+  </Receivers>
+</Elements>

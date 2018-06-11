@@ -1,0 +1,6 @@
+C:\Users\alibad\Desktop\PTCEventLogger\PTCEventLogger\bin\Debug\PTCEventLogger.dll
+C:\Users\alibad\Desktop\PTCEventLogger\PTCEventLogger\bin\Debug\PTCEventLogger.pdb
+C:\Users\alibad\Desktop\PTCEventLogger\PTCEventLogger\bin\Debug\Microsoft.Sharepoint.Sandbox.dll
+C:\Users\alibad\Desktop\PTCEventLogger\PTCEventLogger\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\alibad\Desktop\PTCEventLogger\PTCEventLogger\obj\Debug\PTCEventLogger.dll
+C:\Users\alibad\Desktop\PTCEventLogger\PTCEventLogger\obj\Debug\PTCEventLogger.pdb

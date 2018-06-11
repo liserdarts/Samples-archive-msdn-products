@@ -1,0 +1,37 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">
+  <Receivers>
+      <Receiver>
+        <Name>EventReceiver5WorkflowStarting</Name>
+        <Type>WorkflowStarting</Type>
+        <Assembly>$SharePoint.Project.AssemblyFullName$</Assembly>
+        <Class>PTCEventLogger.EventReceiver5.EventReceiver5</Class>
+        <SequenceNumber>10000</SequenceNumber>
+      </Receiver>
+      <Receiver>
+        <Name>EventReceiver5WorkflowStarted</Name>
+        <Type>WorkflowStarted</Type>
+        <Assembly>$SharePoint.Project.AssemblyFullName$</Assembly>
+        <Class>PTCEventLogger.EventReceiver5.EventReceiver5</Class>
+        <SequenceNumber>10000</SequenceNumber>
+        <Synchronization>Synchronous</Synchronization>
+      </Receiver>
+      <Receiver>
+        <Name>EventReceiver5WorkflowPostponed</Name>
+        <Type>WorkflowPostponed</Type>
+        <Assembly>$SharePoint.Project.AssemblyFullName$</Assembly>
+        <Class>PTCEventLogger.EventReceiver5.EventReceiver5</Class>
+        <SequenceNumber>10000</SequenceNumber>
+        <Synchronization>Synchronous</Synchronization>
+      </Receiver>
+      <Receiver>
+        <Name>EventReceiver5WorkflowCompleted</Name>
+        <Type>WorkflowCompleted</Type>
+        <Assembly>$SharePoint.Project.AssemblyFullName$</Assembly>
+        <Class>PTCEventLogger.EventReceiver5.EventReceiver5</Class>
+        <SequenceNumber>10000</SequenceNumber>
+        <Synchronization>Synchronous</Synchronization>
+      </Receiver>
+
+  </Receivers>
+</Elements>

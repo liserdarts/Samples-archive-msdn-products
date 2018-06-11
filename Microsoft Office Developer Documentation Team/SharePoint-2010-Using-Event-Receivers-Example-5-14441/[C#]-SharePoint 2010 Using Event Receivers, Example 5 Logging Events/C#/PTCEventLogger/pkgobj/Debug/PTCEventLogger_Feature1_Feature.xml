@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Feature xmlns="http://schemas.microsoft.com/sharepoint/" Description="My Event Receiver Feature" Id="c12fb7b1-b25a-42ed-8023-f38dd2ba1cea" Scope="Site" Title="PTCEventLogger Feature1">
+  <Properties>
+    <Property Key="GloballyAvailable" Value="true" />
+  </Properties>
+  <ElementManifests>
+    <ElementManifest Location="EventReceiver1\Elements.xml" />
+    <ElementManifest Location="EventReceiver2\Elements.xml" />
+    <ElementManifest Location="EventReceiver3\Elements.xml" />
+    <ElementManifest Location="EventReceiver4\Elements.xml" />
+    <ElementManifest Location="EventReceiver5\Elements.xml" />
+  </ElementManifests>
+</Feature>

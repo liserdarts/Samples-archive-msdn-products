@@ -1,0 +1,6 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package dslVersion="1.0.0.0" Id="503657aa-be52-44b3-a7fb-849b94dc2fcd" solutionId="503657aa-be52-44b3-a7fb-849b94dc2fcd" xmlns="http://schemas.microsoft.com/VisualStudio/2008/SharePointTools/PackageModel" name="PTCEventLogger">
+    <features>
+        <featureReference itemId="c12fb7b1-b25a-42ed-8023-f38dd2ba1cea" />
+    </features>
+</package>
