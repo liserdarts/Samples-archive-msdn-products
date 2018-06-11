@@ -1,0 +1,89 @@
+' Excel 2007/2010
+' Working with Tables (ListObject)
+' Work with TableStyles, TableStyle, TableStyleElements, TableStyleElement
+
+' In Excel 2010, in a new workbook, copy all this code into
+' the Sheet1 class module. Place the cursor in the
+' ListObjectStyleDemo procedure, and then press F8 to start debugging, then Shift+F8 to
+' single-step through the code (stepping over any called procedures).
+' Arrange the VBA and Excel windows
+' side by side so you can see the results of running the code.
+
+Sub ListObjectStyleDemo()
+    ' Step over this procedure. It's not terribly interesting.
+    FillRandomData
+  
+    Dim lo As ListObject
+    Set lo = ListObjects.Add( _
+     SourceType:=xlSrcRange, _
+     Source:=Range("A1:F13"), _
+     XlListObjectHasHeaders:=xlYes)
+    lo.Name = "SampleData"
+  
+    ' This code is only interesting if you single-step through it.
+    Dim i As Integer
+    For i = 1 To 20
+        lo.TableStyle = ActiveWorkbook.TableStyles(i)
+    Next i
+   
+    ' Use a named table style:
+    lo.TableStyle = "TableStyleMedium9"
+   
+    Dim ts As TableStyle
+    Set ts = lo.TableStyle
+    With ts.TableStyleElements(xlHeaderRow)
+        .Font.Bold = False
+    End With
+   
+    CopyStyleElement ts.TableStyleElements(xlRowStripe1), Range("H2"), "xlRowStripe1"
+    CopyStyleElement ts.TableStyleElements(xlHeaderRow), Range("H3"), "xlHeaderRow"
+    ' With more complex table styles, could copy more styles to the output cells.
+   
+    ' Delete the table, so you can re-run the code.
+    lo.Delete
+End Sub
+
+Sub CopyStyleElement(tse As TableStyleElement, rng As Range, title As String)
+    On Error Resume Next
+    With rng
+        With .Interior
+            .ThemeColor = tse.Interior.ThemeColor
+            .TintAndShade = tse.Interior.TintAndShade
+        End With
+        With .Font
+            .Color = tse.Font.Color
+            .Name = tse.Font.Name
+            .Size = tse.Font.Size
+            .Bold = tse.Font.Bold
+            .Italic = tse.Font.Italic
+        End With
+        .Value = title
+    End With
+End Sub
+
+
+Sub FillRandomData()
+    ' No need to stop through this procedure.
+    Range("A1", "F1").Value = Array("Month", "North", "South", "East", "West", "Total")
+  
+    ' Fill in twelve rows with random data.
+    Dim i As Integer
+    Dim j As Integer
+    For i = 1 To 12
+        Cells(i + 1, 1).Value = MonthName(i, True)
+        For j = 2 To 5
+            Cells(i + 1, j) = Round(Rnd * 100)
+        Next j
+    Next i
+    Range("F2", "F13").Formula = "=SUM(B2:E2)"
+End Sub
+
+Sub ListTableStyles()
+    ' Use this procedure to list all the named table styles in the
+    ' Immediate window. Put the cursor in this procedure and press F5
+    ' to run it. Look in the Immediate window for the results.
+    Dim ts As TableStyle
+    For Each ts In ActiveWorkbook.TableStyles
+        Debug.Print ts.Name
+    Next ts
+End Sub
