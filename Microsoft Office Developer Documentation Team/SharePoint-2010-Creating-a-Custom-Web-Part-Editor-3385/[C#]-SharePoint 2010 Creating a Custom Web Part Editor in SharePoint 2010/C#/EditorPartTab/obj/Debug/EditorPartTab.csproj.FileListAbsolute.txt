@@ -1,0 +1,15 @@
+E:\IP\MSDN\2010\EditorPartTab\EditorPartTab\obj\Debug\ResolveAssemblyReference.cache
+E:\IP\MSDN\2010\EditorPartTab\EditorPartTab\bin\Debug\EditorPartTab.dll
+E:\IP\MSDN\2010\EditorPartTab\EditorPartTab\bin\Debug\EditorPartTab.pdb
+E:\IP\MSDN\2010\EditorPartTab\EditorPartTab\obj\Debug\EditorPartTab.dll
+E:\IP\MSDN\2010\EditorPartTab\EditorPartTab\obj\Debug\EditorPartTab.pdb
+C:\Users\Administrator\Desktop\EditorPartTab\EditorPartTab\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\Administrator\Desktop\EditorPartTab\EditorPartTab\bin\Debug\MSDN.SharePoint.Samples.dll
+C:\Users\Administrator\Desktop\EditorPartTab\EditorPartTab\bin\Debug\MSDN.SharePoint.Samples.pdb
+C:\Users\Administrator\Desktop\EditorPartTab\EditorPartTab\obj\Debug\MSDN.SharePoint.Samples.dll
+C:\Users\Administrator\Desktop\EditorPartTab\EditorPartTab\obj\Debug\MSDN.SharePoint.Samples.pdb
+E:\IP\MSDN\FromVijay\EditorPartTab\bin\Debug\MSDN.SharePoint.Samples.dll
+E:\IP\MSDN\FromVijay\EditorPartTab\bin\Debug\MSDN.SharePoint.Samples.pdb
+E:\IP\MSDN\FromVijay\EditorPartTab\obj\Debug\ResolveAssemblyReference.cache
+E:\IP\MSDN\FromVijay\EditorPartTab\obj\Debug\MSDN.SharePoint.Samples.dll
+E:\IP\MSDN\FromVijay\EditorPartTab\obj\Debug\MSDN.SharePoint.Samples.pdb

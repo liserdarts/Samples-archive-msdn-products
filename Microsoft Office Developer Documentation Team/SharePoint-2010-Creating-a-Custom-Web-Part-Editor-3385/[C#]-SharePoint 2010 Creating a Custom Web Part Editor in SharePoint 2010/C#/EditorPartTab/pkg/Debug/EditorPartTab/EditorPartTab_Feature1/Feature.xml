@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Feature xmlns="http://schemas.microsoft.com/sharepoint/" Id="5396334b-a6d3-420e-aeeb-f985c8f2adef" Scope="Site" Title="EditorPartTab Feature1">
+  <ElementManifests>
+    <ElementManifest Location="TabEditorWebPart\Elements.xml" />
+    <ElementFile Location="TabEditorWebPart\TabEditorWebPart.webpart" />
+  </ElementManifests>
+</Feature>

@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Solution xmlns="http://schemas.microsoft.com/sharepoint/" SolutionId="85aeddc2-dac2-4c5b-bbbd-1831a97f0b16" SharePointProductVersion="14.0">
+  <Assemblies>
+    <Assembly Location="MSDN.SharePoint.Samples.dll" DeploymentTarget="GlobalAssemblyCache">
+      <SafeControls>
+        <SafeControl Assembly="MSDN.SharePoint.Samples, Version=1.0.0.0, Culture=neutral, PublicKeyToken=3aae0e8a62e006af" Namespace="MSDN.SharePoint.Samples" TypeName="*" />
+      </SafeControls>
+    </Assembly>
+  </Assemblies>
+  <TemplateFiles>
+    <TemplateFile Location="CONTROLTEMPLATES\EditorPartTab\TabEditorWebPart\TabConfigurationEditorPartUserControl.ascx" />
+  </TemplateFiles>
+  <FeatureManifests>
+    <FeatureManifest Location="EditorPartTab_Feature1\Feature.xml" />
+  </FeatureManifests>
+</Solution>
