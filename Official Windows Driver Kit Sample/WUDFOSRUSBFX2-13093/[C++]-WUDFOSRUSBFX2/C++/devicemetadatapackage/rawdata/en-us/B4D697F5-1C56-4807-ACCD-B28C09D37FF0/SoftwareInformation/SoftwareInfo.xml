@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<SoftwareInfo xmlns="http://schemas.microsoft.com/windows/2010/08/DeviceMetadata/SoftwareInfo">
+	<DeviceCompanionApplications>
+		<Package>
+			<Identity Name="Microsoft.SDKSamples.MoFx2App" Publisher="CN=Microsoft Corporation, O=Microsoft Corporation, L=Redmond, S=Washington, C=US" />
+			<Applications>
+				<Application Id="Microsoft.SDKSamples.MoFx2App" />			
+      </Applications>
+		</Package>
+	</DeviceCompanionApplications>
+
+  <PrivilegedApplications>
+		<Package>
+			<Identity Name="Microsoft.SDKSamples.MoFx2App" Publisher="CN=Microsoft Corporation, O=Microsoft Corporation, L=Redmond, S=Washington, C=US" AccessCustomDriver="true" />
+    </Package>
+	</PrivilegedApplications>
+</SoftwareInfo>
