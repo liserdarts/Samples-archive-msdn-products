@@ -1,0 +1,114 @@
+﻿<StateMachineWorkflowDesigner xmlns:ns0="clr-namespace:System.Drawing;Assembly=System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" Size="546, 495" AutoSizeMargin="16, 24" Location="30, 30" Name="Workflow1" xmlns="http://schemas.microsoft.com/winfx/2006/xaml/workflow">
+	<StateMachineWorkflowDesigner.Designers>
+		<StateDesigner Size="160, 80" AutoSizeMargin="16, 24" Location="46, 69" Name="InitialState">
+			<StateDesigner.Designers>
+				<EventDrivenDesigner Name="eventDrivenActivity1" Size="150, 182" Location="54, 100">
+					<EventDrivenDesigner.Designers>
+						<HandleExternalEventActivityDesigner Name="onWorkflowActivated1" Size="130, 41" Location="64, 162" />
+						<SetStateDesigner Name="setStateActivity1" Size="130, 41" Location="64, 222" />
+					</EventDrivenDesigner.Designers>
+				</EventDrivenDesigner>
+			</StateDesigner.Designers>
+		</StateDesigner>
+		<StateDesigner Size="187, 80" AutoSizeMargin="16, 24" Location="99, 194" Name="stateInProgress">
+			<StateDesigner.Designers>
+				<StateInitializationDesigner Name="stateInProgressInitialization" Size="150, 122" Location="107, 225">
+					<StateInitializationDesigner.Designers>
+						<CallExternalMethodActivityDesigner Name="createTask1" Size="130, 41" Location="117, 287" />
+					</StateInitializationDesigner.Designers>
+				</StateInitializationDesigner>
+				<EventDrivenDesigner Name="eventDrivenActivity2" Size="381, 363" Location="107, 249">
+					<EventDrivenDesigner.Designers>
+						<HandleExternalEventActivityDesigner Name="onTaskChanged1" Size="130, 41" Location="232, 311" />
+						<IfElseDesigner Name="ifElseActivity1" Size="361, 222" Location="117, 371">
+							<IfElseDesigner.Designers>
+								<IfElseBranchDesigner Name="ifElseBranchActivity1" Size="150, 122" Location="136, 442">
+									<IfElseBranchDesigner.Designers>
+										<SetStateDesigner Name="setStateActivity2" Size="130, 41" Location="146, 504" />
+									</IfElseBranchDesigner.Designers>
+								</IfElseBranchDesigner>
+								<IfElseBranchDesigner Name="ifElseBranchActivity2" Size="150, 122" Location="309, 442" />
+							</IfElseDesigner.Designers>
+						</IfElseDesigner>
+					</EventDrivenDesigner.Designers>
+				</EventDrivenDesigner>
+			</StateDesigner.Designers>
+		</StateDesigner>
+		<StateDesigner Size="175, 80" AutoSizeMargin="16, 24" Location="326, 241" Name="stateReview">
+			<StateDesigner.Designers>
+				<StateInitializationDesigner Name="stateInitializationActivity1" Size="150, 122" Location="334, 272">
+					<StateInitializationDesigner.Designers>
+						<CallExternalMethodActivityDesigner Name="createReviewTask" Size="130, 41" Location="344, 334" />
+					</StateInitializationDesigner.Designers>
+				</StateInitializationDesigner>
+				<EventDrivenDesigner Name="eventDrivenActivity3" Size="612, 544" Location="334, 296">
+					<EventDrivenDesigner.Designers>
+						<HandleExternalEventActivityDesigner Name="onTaskChanged2" Size="130, 41" Location="575, 358" />
+						<IfElseDesigner Name="ifElseActivity2" Size="592, 403" Location="344, 418">
+							<IfElseDesigner.Designers>
+								<IfElseBranchDesigner Name="ifElseBranchActivity3" Size="381, 303" Location="363, 489">
+									<IfElseBranchDesigner.Designers>
+										<IfElseDesigner Name="ifElseActivity3" Size="361, 222" Location="373, 551">
+											<IfElseDesigner.Designers>
+												<IfElseBranchDesigner Name="ifElseBranchActivity5" Size="150, 122" Location="392, 622">
+													<IfElseBranchDesigner.Designers>
+														<SetStateDesigner Name="setStateActivity3" Size="130, 41" Location="402, 684" />
+													</IfElseBranchDesigner.Designers>
+												</IfElseBranchDesigner>
+												<IfElseBranchDesigner Name="ifElseBranchActivity6" Size="150, 122" Location="565, 622">
+													<IfElseBranchDesigner.Designers>
+														<SetStateDesigner Name="setStateActivity4" Size="130, 41" Location="575, 684" />
+													</IfElseBranchDesigner.Designers>
+												</IfElseBranchDesigner>
+											</IfElseDesigner.Designers>
+										</IfElseDesigner>
+									</IfElseBranchDesigner.Designers>
+								</IfElseBranchDesigner>
+								<IfElseBranchDesigner Name="ifElseBranchActivity4" Size="150, 303" Location="767, 489" />
+							</IfElseDesigner.Designers>
+						</IfElseDesigner>
+					</EventDrivenDesigner.Designers>
+				</EventDrivenDesigner>
+			</StateDesigner.Designers>
+		</StateDesigner>
+		<StateDesigner Size="160, 80" AutoSizeMargin="16, 24" Location="219, 386" Name="stateFinished" />
+	</StateMachineWorkflowDesigner.Designers>
+	<StateMachineWorkflowDesigner.DesignerConnectors>
+		<StateDesignerConnector TargetActivity="stateInProgress" SetStateName="setStateActivity1" SourceActivity="InitialState" TargetConnectionIndex="0" SourceStateName="InitialState" TargetConnectionEdge="Top" SourceConnectionEdge="Right" EventHandlerName="eventDrivenActivity1" SourceConnectionIndex="0" TargetStateName="stateInProgress">
+			<StateDesignerConnector.Segments>
+				<ns1:Point X="192" Y="110" xmlns:ns1="clr-namespace:System.Drawing;Assembly=System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+				<ns2:Point X="216" Y="110" xmlns:ns2="clr-namespace:System.Drawing;Assembly=System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+				<ns3:Point X="216" Y="182" xmlns:ns3="clr-namespace:System.Drawing;Assembly=System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+				<ns4:Point X="192" Y="182" xmlns:ns4="clr-namespace:System.Drawing;Assembly=System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+				<ns5:Point X="192" Y="194" xmlns:ns5="clr-namespace:System.Drawing;Assembly=System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+			</StateDesignerConnector.Segments>
+		</StateDesignerConnector>
+		<StateDesignerConnector TargetActivity="stateReview" SetStateName="setStateActivity2" SourceActivity="stateInProgress" TargetConnectionIndex="0" SourceStateName="stateInProgress" TargetConnectionEdge="Top" SourceConnectionEdge="Right" EventHandlerName="eventDrivenActivity2" SourceConnectionIndex="1" TargetStateName="stateReview">
+			<StateDesignerConnector.Segments>
+				<ns6:Point X="245" Y="259" xmlns:ns6="clr-namespace:System.Drawing;Assembly=System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+				<ns7:Point X="298" Y="259" xmlns:ns7="clr-namespace:System.Drawing;Assembly=System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+				<ns8:Point X="298" Y="233" xmlns:ns8="clr-namespace:System.Drawing;Assembly=System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+				<ns9:Point X="413" Y="233" xmlns:ns9="clr-namespace:System.Drawing;Assembly=System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+				<ns10:Point X="413" Y="241" xmlns:ns10="clr-namespace:System.Drawing;Assembly=System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+			</StateDesignerConnector.Segments>
+		</StateDesignerConnector>
+		<StateDesignerConnector TargetActivity="stateFinished" SetStateName="setStateActivity3" SourceActivity="stateReview" TargetConnectionIndex="0" SourceStateName="stateReview" TargetConnectionEdge="Top" SourceConnectionEdge="Right" EventHandlerName="eventDrivenActivity3" SourceConnectionIndex="1" TargetStateName="stateFinished">
+			<StateDesignerConnector.Segments>
+				<ns11:Point X="472" Y="306" xmlns:ns11="clr-namespace:System.Drawing;Assembly=System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+				<ns12:Point X="507" Y="306" xmlns:ns12="clr-namespace:System.Drawing;Assembly=System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+				<ns13:Point X="507" Y="374" xmlns:ns13="clr-namespace:System.Drawing;Assembly=System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+				<ns14:Point X="299" Y="374" xmlns:ns14="clr-namespace:System.Drawing;Assembly=System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+				<ns15:Point X="299" Y="386" xmlns:ns15="clr-namespace:System.Drawing;Assembly=System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+			</StateDesignerConnector.Segments>
+		</StateDesignerConnector>
+		<StateDesignerConnector TargetActivity="stateInProgress" SetStateName="setStateActivity4" SourceActivity="stateReview" TargetConnectionIndex="0" SourceStateName="stateReview" TargetConnectionEdge="Top" SourceConnectionEdge="Right" EventHandlerName="eventDrivenActivity3" SourceConnectionIndex="1" TargetStateName="stateInProgress">
+			<StateDesignerConnector.Segments>
+				<ns16:Point X="472" Y="306" xmlns:ns16="clr-namespace:System.Drawing;Assembly=System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+				<ns17:Point X="512" Y="306" xmlns:ns17="clr-namespace:System.Drawing;Assembly=System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+				<ns18:Point X="512" Y="186" xmlns:ns18="clr-namespace:System.Drawing;Assembly=System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+				<ns19:Point X="192" Y="186" xmlns:ns19="clr-namespace:System.Drawing;Assembly=System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+				<ns20:Point X="192" Y="194" xmlns:ns20="clr-namespace:System.Drawing;Assembly=System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+			</StateDesignerConnector.Segments>
+		</StateDesignerConnector>
+	</StateMachineWorkflowDesigner.DesignerConnectors>
+</StateMachineWorkflowDesigner>

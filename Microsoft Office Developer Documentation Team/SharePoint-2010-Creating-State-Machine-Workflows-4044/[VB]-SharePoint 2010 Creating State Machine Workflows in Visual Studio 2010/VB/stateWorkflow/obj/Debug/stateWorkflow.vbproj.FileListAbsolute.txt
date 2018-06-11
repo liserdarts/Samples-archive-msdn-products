@@ -1,0 +1,7 @@
+c:\temp\stateWorkflow\stateWorkflow\bin\Debug\stateWorkflow.dll
+c:\temp\stateWorkflow\stateWorkflow\bin\Debug\stateWorkflow.pdb
+c:\temp\stateWorkflow\stateWorkflow\bin\Debug\stateWorkflow.xml
+c:\temp\stateWorkflow\stateWorkflow\obj\Debug\ResolveAssemblyReference.cache
+c:\temp\stateWorkflow\stateWorkflow\obj\Debug\stateWorkflow.dll
+c:\temp\stateWorkflow\stateWorkflow\obj\Debug\stateWorkflow.xml
+c:\temp\stateWorkflow\stateWorkflow\obj\Debug\stateWorkflow.pdb

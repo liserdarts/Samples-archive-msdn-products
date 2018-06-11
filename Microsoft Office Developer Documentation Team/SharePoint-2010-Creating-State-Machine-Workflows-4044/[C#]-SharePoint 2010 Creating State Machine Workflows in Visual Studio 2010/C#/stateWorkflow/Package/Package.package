@@ -1,0 +1,6 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package dslVersion="1.0.0.0" Id="3e10c182-7692-4b06-9e10-4ca0a9922cdf" solutionId="3e10c182-7692-4b06-9e10-4ca0a9922cdf" xmlns="http://schemas.microsoft.com/VisualStudio/2008/SharePointTools/PackageModel" name="stateWorkflow">
+    <features>
+        <featureReference itemId="08e1f4db-87a9-4cab-bfad-6f30630028f5" />
+    </features>
+</package>
