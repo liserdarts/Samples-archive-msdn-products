@@ -1,0 +1,2 @@
+\\tkzaw-pro-17\mydocs9\kenmilne\my documents\visual studio 2012\Projects\SPAutomatedTaggingClient\SPAutomatedTaggingClient\bin\Debug\SPAutomatedTaggingClient.exe.config
+\\tkzaw-pro-17\mydocs9\kenmilne\my documents\visual studio 2012\Projects\SPAutomatedTaggingClient\SPAutomatedTaggingClient\obj\Debug\SPAutomatedTaggingClient.csprojResolveAssemblyReference.cache

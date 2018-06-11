@@ -1,0 +1,5 @@
+\\tkzaw-pro-17\mydocs9\kenmilne\my documents\visual studio 2012\Projects\SPAutomatedTaggingClient\SPAutomatedTaggingClient\bin\Release\SPAutomatedTaggingClient.exe.config
+\\tkzaw-pro-17\mydocs9\kenmilne\my documents\visual studio 2012\Projects\SPAutomatedTaggingClient\SPAutomatedTaggingClient\bin\Release\SPAutomatedTaggingClient.exe
+\\tkzaw-pro-17\mydocs9\kenmilne\my documents\visual studio 2012\Projects\SPAutomatedTaggingClient\SPAutomatedTaggingClient\bin\Release\SPAutomatedTaggingClient.pdb
+\\tkzaw-pro-17\mydocs9\kenmilne\my documents\visual studio 2012\Projects\SPAutomatedTaggingClient\SPAutomatedTaggingClient\obj\Release\SPAutomatedTaggingClient.exe
+\\tkzaw-pro-17\mydocs9\kenmilne\my documents\visual studio 2012\Projects\SPAutomatedTaggingClient\SPAutomatedTaggingClient\obj\Release\SPAutomatedTaggingClient.pdb
