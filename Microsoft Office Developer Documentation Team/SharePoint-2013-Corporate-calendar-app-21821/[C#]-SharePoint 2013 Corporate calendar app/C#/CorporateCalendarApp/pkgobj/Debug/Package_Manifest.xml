@@ -1,0 +1,6 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Solution xmlns="http://schemas.microsoft.com/sharepoint/" SolutionId="cfaffbe9-89f7-4117-8257-0992f2d5ef28" SharePointProductVersion="15.0">
+  <FeatureManifests>
+    <FeatureManifest Location="CorporateCalendarApp_Feature1\Feature.xml" />
+  </FeatureManifests>
+</Solution>
