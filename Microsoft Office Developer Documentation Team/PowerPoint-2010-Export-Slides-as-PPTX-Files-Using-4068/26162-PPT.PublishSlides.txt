@@ -1,0 +1,70 @@
+' PowerPoint 2010/2007
+
+' Demonstrate the PublishSlides method of the Presentation and SlideRange classes.
+' The documentation indicates that this method creates a Web presentation in HTML format.
+' Not so--it simply exports each slide as a separate PPTX file, so that
+' you can view them in a browser if you like.  The separate files are named PublishSlides_001.pptx,
+' PublishSlides_002.pptx, and so on. The final number represents the position of the slide within the
+' presentation.
+
+' Copy the following code into a module in an existing, previously saved PowerPoint presentation.
+' (The PublishSlides method fails silently if you haven't already saved the presentation.)
+' Modify the PublishSlidesDemo procedure to show off the features you want to
+' examine, and press F5 to run the procedure. Look in the folder you specify in
+' the libraryUrl constant to see the published slides.
+
+Sub PublishSlidesDemo()
+    ' Demonstrate the Presentation.PublishSlides method.
+   
+    ' The library URL can either be a file system path, or
+    ' a link to a SharePoint Slide Library. For this demonstration,
+    ' use a local file path.
+   
+    ' Modify this path to meet your own needs:
+    Const libraryUrl As String = "C:\Temp\"
+    ' Publish all the slides:
+    PublishSlideRange libraryUrl, True
+   
+    ' Publish a range of slides:
+    ' PublishSlideRange libraryUrl, True, 2, 5
+End Sub
+
+Sub PublishSlideRange(libraryUrl As String, Optional OverWrite As Boolean = True, _
+Optional startSlide As Variant, Optional endSlide As Variant)
+   
+    If IsMissing(startSlide) And IsMissing(endSlide) Then
+        ' Neither endpoint specified. Use ActivePresentation.PublishSlides
+        ActivePresentation.PublishSlides libraryUrl, OverWrite
+    Else
+        If IsMissing(startSlide) Then
+            startSlide = 1
+        End If
+        If IsMissing(endSlide) Then
+            endSlide = ActivePresentation.Slides.Count
+        End If
+       
+        ' Make sure the values are in a reasonable range:
+        If startSlide < 1 Then
+            startSlide = 1
+        End If
+        If endSlide > ActivePresentation.Slides.Count Then
+            endSlide = ActivePresentation.Slides.Count
+        End If
+       
+        Dim rng As SlideRange
+       
+        ' Create an array containing a list of all the slides to publish:
+        ReDim slidesToPublish(1 To (endSlide - startSlide + 1)) As Integer
+        Dim counter As Integer
+        counter = 1
+        Dim i As Integer
+        For i = startSlide To endSlide
+            slidesToPublish(counter) = i
+            counter = counter + 1
+        Next i
+       
+        ' Given the array of slide numbers, publish the slides:
+        Set rng = ActivePresentation.Slides.Range(slidesToPublish)
+        rng.PublishSlides libraryUrl, OverWrite
+    End If
+End Sub
