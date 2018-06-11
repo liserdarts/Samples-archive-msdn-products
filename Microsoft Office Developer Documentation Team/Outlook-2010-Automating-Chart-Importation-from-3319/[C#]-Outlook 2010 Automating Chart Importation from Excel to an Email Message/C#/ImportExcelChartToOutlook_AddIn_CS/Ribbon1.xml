@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<customUI xmlns="http://schemas.microsoft.com/office/2009/07/customui" onLoad="Ribbon_Load">
+  <ribbon>
+    <tabs>
+      <tab id="MyTab"
+           getVisible="MyTabInspector_GetVisible"
+           label="MyTab">
+        <group label="MyGroup" id="MyGroup" autoScale="true">
+          <button id="MyButton"
+                  size="large"
+                  label="Copy Excel Chart"
+                  imageMso="HappyFace"
+                  onAction="OnMyButtonClick"/>
+        </group>
+      </tab>
+    </tabs>
+  </ribbon>
+</customUI>
+
