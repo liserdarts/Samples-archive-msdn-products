@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+      <UniqueIdentifier>{44D98A03-C6A8-4E26-9407-6A199AD6689A}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files">
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+      <UniqueIdentifier>{636FF4C5-90B8-414F-9F3A-3AD6B0A84E2D}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Resource Files">
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+      <UniqueIdentifier>{E08952A3-F307-421F-909F-090DD10F4BCE}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Driver Files">
+      <Extensions>inf;inv;inx;mof;mc;</Extensions>
+      <UniqueIdentifier>{A87905EE-FE98-40BE-8FD1-935A202FD57C}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>
