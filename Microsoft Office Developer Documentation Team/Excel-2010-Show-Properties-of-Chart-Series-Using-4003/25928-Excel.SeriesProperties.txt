@@ -1,0 +1,46 @@
+' Work with new properties of the Series class.
+
+' In a new workbook, in the VBA editor, copy this code into the Sheet1 class.
+' Place the cursor inside the TestSeriesProperties procedure, and press F8
+' to single over each line through the code. Place the VBA and Excel windows side by side so you can
+' see the results of running the code as you step through the code.
+
+
+Sub TestSeriesProperties()
+    ' Demonstrate Series.
+    '   InvertColorIndex
+    '   InvertColor
+    '   InvertIfNegative (not new in 2010)
+   
+    Dim rng As Range
+    ' Press Shift+F8 to step over this procedure:
+    Set rng = FillRange(-25, 25, 20)
+       
+    ' Create the chart, set its source data, and turn off tick labels--they just get in the way here:
+    Dim cht As Chart
+    Set cht = Shapes.AddChart(XlChartType.xl3DColumn, Width:=500, Height:=300).Chart
+    cht.SetSourceData rng
+    cht.Axes(xlCategory).TickLabelPosition = xlNone
+              
+    With cht.SeriesCollection(1)
+        ' Invert negative values:
+        .InvertIfNegative = True
+       
+        ' Set a color:
+        .InvertColor = vbRed
+       
+        ' Or select a color index:
+        .InvertColorIndex = 13
+    End With
+   
+End Sub
+
+Function FillRange(minValue As Integer, maxValue As Integer, count As Integer) As Range
+    Dim i As Integer
+  
+    For i = 1 To count
+        ' Generate random numbers between minValue and maxValue
+        Me.Range("A" & i, "B" & i).Value = Array("Value " & i, Int((maxValue - minValue + 1) * Rnd + minValue))
+    Next i
+    Set FillRange = Me.Range("A1", "B" & count)
+End Function
