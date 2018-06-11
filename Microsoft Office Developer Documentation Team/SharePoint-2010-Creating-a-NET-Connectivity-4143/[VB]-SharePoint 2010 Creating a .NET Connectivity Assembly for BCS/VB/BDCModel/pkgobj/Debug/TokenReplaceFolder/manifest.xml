@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Solution xmlns="http://schemas.microsoft.com/sharepoint/" SolutionId="43e2f1b6-2b98-4755-85a5-8ef07fc81a35" SharePointProductVersion="14.0">
+  <Assemblies>
+    <Assembly Location="BDCModel.dll" DeploymentTarget="GlobalAssemblyCache" />
+  </Assemblies>
+  <FeatureManifests>
+    <FeatureManifest Location="BDCModel_Feature1\Feature.xml" />
+  </FeatureManifests>
+</Solution>

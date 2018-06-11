@@ -1,0 +1,7 @@
+c:\users\administrator\documents\visual studio 2010\projects\BDCModel\BDCModel\bin\Debug\BDCModel.dll
+c:\users\administrator\documents\visual studio 2010\projects\BDCModel\BDCModel\bin\Debug\BDCModel.pdb
+c:\users\administrator\documents\visual studio 2010\projects\BDCModel\BDCModel\bin\Debug\BDCModel.xml
+c:\users\administrator\documents\visual studio 2010\projects\BDCModel\BDCModel\obj\Debug\ResolveAssemblyReference.cache
+c:\users\administrator\documents\visual studio 2010\projects\BDCModel\BDCModel\obj\Debug\BDCModel.dll
+c:\users\administrator\documents\visual studio 2010\projects\BDCModel\BDCModel\obj\Debug\BDCModel.xml
+c:\users\administrator\documents\visual studio 2010\projects\BDCModel\BDCModel\obj\Debug\BDCModel.pdb
