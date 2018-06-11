@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package dslVersion="1.0.0.0" 
+        Id="6c153cfd-2458-40e7-91f6-e31f7119f31f" 
+        solutionId="6c153cfd-2458-40e7-91f6-e31f7119f31f" 
+        xmlns="http://schemas.microsoft.com/VisualStudio/2008/SharePointTools/PackageModel" 
+        name="SP_RoughCutEditor_js"
+        sharePointProductVersion="15.0">
+  <features>
+        <featureReference itemId="853ec4a1-2883-4b2b-89ee-1f3c445e3110" />
+  </features>
+</package>

@@ -1,0 +1,403 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
+    <head><link rel="stylesheet" type="text/css" href="description/Combined.css,0:HeaderFooterSprite,0:Header.NonMtps,1:LinkList;/Areas/Centers/Themes/StandardDevCenter/Content:0,/Areas/Epx/Themes/Base/Content:1&amp;amp;hashKey=C9973DA951AE6202C9B348379A1BE49D" xmlns="http://www.w3.org/1999/xhtml" />
+<link type="text/css" rel="stylesheet" xmlns="http://www.w3.org/1999/xhtml" />
+<link rel="stylesheet" type="text/css" href="description/1b88b18a-5268-4861-9da2-6c6e2539edaaCombined.css,0:HeaderFooterSprite,0:Footer.NonMtps,1:LinkList;/Areas/Centers/Themes/StandardDevCenter/Content:0,/Areas/Epx/Themes/Base/Content:1&amp;amp;hashKey=F576C687BC536B84D6E5B3246EE39B49" xmlns="http://www.w3.org/1999/xhtml" />
+<link type="text/css" rel="stylesheet" xmlns="http://www.w3.org/1999/xhtml" />
+
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <title>SharePoint 2013: Rough-cut video editor app</title>
+        <link href="description/Galleries.css" type="text/css" rel="Stylesheet" /><link href="description/Layout.css" type="text/css" rel="Stylesheet" /><link href="description/Brand.css" type="text/css" rel="Stylesheet" />
+        <link href="description/iframedescription.css" rel="Stylesheet" type="text/css" />
+        <script src="description/offline.js" type="text/javascript"></script>
+        <style type="text/css">
+            #projectInfo {
+                overflow: auto;
+            }
+            #longDesc {
+                clear:both;
+                margin: 25px 0 10px 0;
+            }
+
+            #SampleIndexList{
+                margin-left: 15px;
+            }
+        </style>
+    </head>
+<body>
+    <div id="offlineDescription">
+        <h1>SharePoint 2013: Rough-cut video editor app</h1>
+        <br/>
+        <div id="projectInfo">
+            <div class="section">
+                    <div class="itemBarLong tagsContainer">
+                        <label for="Technologies">Technologies</label>
+                        <div id="Technologies">
+                            C#, Javascript, Sharepoint Online, SharePoint Server 2013, SharePoint Foundation 2013, apps for SharePoint
+                        </div>
+                    </div>
+                    <div class="itemBarLong tagsContainer">
+                        <label for="Topics">Topics</label>
+                        <div id="Topics">
+                            data and storage
+                        </div>
+                    </div>
+                <div class="itemBarLong">
+                    <label for="Platforms">Platforms</label>
+                    <div id="Platforms">
+                        Cloud
+                    </div>
+                </div>
+                <div class="itemBarLong">
+                    <label for="Requirements">Requirements</label>
+                    <div id="Requirements">
+                        
+                    </div>
+                </div>
+                <div class="itemBar">
+                    <label for="LastUpdated">Primary language</label>
+                    <div id="LastUpdated">en-US</div>
+                </div>
+                <div class="itemBar">
+                    <label for="LastUpdated">Updated</label>
+                    <div id="LastUpdated">7/8/2013</div>
+                </div>
+                <div class="itemBarLong">
+                    <label for="License">License</label>
+                    <div id="License">
+                        <a href="license.rtf">Apache License, Version 2.0</a></div>
+                </div>
+                <div class="itemBar">
+                    <div class="viewonlinecont">
+                        <a data-link="online" href="http://code.msdn.microsoft.com/SharePoint-2013-Rough-cut-9d22f80f">View this sample online</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+                   
+<script type="text/javascript">
+    function initializePage() {
+        var otherTabClass = 'otherTab';
+        var hiddenPreClass = 'hidden';
+
+        var htmlDecode = function(encodedData) {
+            var decodedData = "";
+            if (encodedData) {
+                var div = document.createElement('div');
+                div.innerHTML = encodedData;
+                decodedData = div.firstChild.nodeValue.replace( /\\r\\n/ig , '\r\n');
+            }
+            return decodedData;
+        };
+                
+        Galleries.iterateElem(Galleries.findElem(null, 'div', 'scriptcode'), function (index, scriptBlock) {
+            var titleElem = Galleries.findElem(scriptBlock, 'div', 'title')[0];
+            var labelElems = Galleries.findElem(titleElem, 'span');
+            if (labelElems.length == 0) {
+                labelElems = titleElem;
+            }
+            var languageSpans = Galleries.findElem(scriptBlock, 'span', 'hidden');
+            var pres = Galleries.findElem(scriptBlock, 'pre');
+            if (languageSpans.length > 0 && pres.length > 1) {
+                Galleries.iterateElem(labelElems, function(index, elem) {
+                    var codePre = pres[index];
+                    var labelSpan = elem;
+                    var languageSpan = languageSpans[index];
+                            
+                    elem.code = codePre.innerHTML.replace( /(\r(\n)?)|((\r)?\n)/ig , '\\r\\n');
+                            
+                    codePre.className = codePre.className.replace(hiddenPreClass, '');
+                            
+                    languageSpan.parentNode.removeChild(languageSpan);
+                });
+
+                pres = Galleries.findElem(scriptBlock, 'pre');
+                Galleries.iterateElem(labelElems, function(index, elem) {
+                    var codePre = pres[index];
+                    var labelSpan = elem;
+                    if (index == 0) {
+                        scriptBlock.activeTab = 0;
+                    }
+                    else {
+                        labelSpan.className += otherTabClass;
+                        codePre.className += hiddenPreClass;
+                    }
+                    Galleries.attachEventHandler(labelSpan, 'click', function(e) {
+                        var activeTab = scriptBlock.activeTab;
+                        labelElems[activeTab].className += otherTabClass;
+                        pres[activeTab].className += hiddenPreClass;
+
+                        codePre.className = codePre.className.replace(hiddenPreClass, '');
+                        labelSpan.className = labelSpan.className.replace(otherTabClass, '');
+                        scriptBlock.activeTab = index;
+                    });
+                });
+
+                var preview = Galleries.findElem(scriptBlock, 'div', 'preview');
+                if (preview.length == 0) {
+                    preview.push(pres[pres.length - 1]);
+                }
+                Galleries.iterateElem(preview, function(index, elem) {
+                    elem.parentNode.removeChild(elem);
+                });
+
+                if (window.clipboardData && clipboardData.setData) {
+                    var copyLink = document.createElement('a');
+                    copyLink.href = 'javascript:void(0);';
+                    copyLink.className = 'copyCode';
+                    copyLink.innerHTML = 'Copy code';
+                    Galleries.attachEventHandler(copyLink, 'click', function (e) {
+                        clipboardData.setData("Text", htmlDecode(labelElems[scriptBlock.activeTab].code));
+                        return false;
+                    });
+                    scriptBlock.insertBefore(copyLink, scriptBlock.childNodes[0]);
+                }
+            }
+        });
+    }
+
+    Galleries.onWindowLoad(function(){
+        initializePage();
+    });
+
+</script>
+<div id="longDesc">
+    
+<div id="header">
+<table id="bottomTable" cellspacing="0" cellpadding="0">
+<tbody>
+<tr id="headerTableRow1">
+<td align="left"><span id="runningHeaderText">&nbsp;</span></td>
+</tr>
+<tr id="headerTableRow2">
+<td align="left"><span id="nsrTitle">SharePoint 2013: Rough-cut video editor app</span></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div id="mainSection">
+<div id="mainBody">
+<p>&nbsp;</p>
+<div>
+<p>Demonstrates how to use JavaScript, jQuery, and the HTML5 video API in an app for SharePoint to edit HTML5 videos, and how to use a drag-and-drop operation to create new video productions from the edited clips.</p>
+</div>
+<div>
+<p><span>Provided by:</span> <a href="http://mvp.microsoft.com/en-US/findanmvp/Pages/profile.aspx?MVPID=c558e0ed-382f-4008-8002-4634a9167b99" >
+Martin Harwar</a>, <a href="http://point8020.com/Default.aspx" >Point8020.com</a></p>
+<p>You don't have to create new video files using expensive, difficult-to-use editing tools if you just want to re-purpose existing video content.
+<span>Rough-cut</span> is an industry-standard term for splicing together pieces of existing video footage to effectively create a new video or montage. Microsoft used this approach to enable broadcasters in the Winter Olympics to output event highlights and
+ footage on their websites.</p>
+<p>In this app, the user first adds a set of video files from a SharePoint library to the app's &quot;video bin&quot; and then selects one or more of those videos to put into the &quot;production timeline.&quot; Once in the timeline, each video can be clipped with start and end
+ times. The resulting production, composed of clips, is called a <span>rough cut</span>.</p>
+<p>This app also demonstrates the use of a drag-and-drop operation to upload video files to a production, and to specify the order of clips within a new production. The app calls the HTML5 video APIs for choosing and playing selected frame sequences within
+ an edited clip.</p>
+<p>This solution is based on the SharePoint-hosted app template provided by Visual Studio 2012. The solution uses the JavaScript implementation of the client object model to read, create, update, and delete data from lists based on user actions. The lists included
+ in this solution represent the original videos, definitions of new productions, and edited video clips in each production.</p>
+<p>The lists are related to each other through lookup fields, and the user interface (UI) ensures that all data operations synchronize with their list items so that the relationships are maintained. The UI is implemented with HTML elements and cascading style
+ sheet (CSS) styles to present a modern look and feel. JavaScript and jQuery are used to control all aspects of the UI, and the solution contains no server-side code.</p>
+</div>
+<h1>Prerequisites</h1>
+<div id="sectionSection0">
+<p>This sample requires the following:</p>
+<ul>
+<li>
+<p>Visual Studio 2012</p>
+</li><li>
+<p>Office Developer Tools for Visual Studio 2012</p>
+</li><li>
+<p>Either of the following:</p>
+<ul>
+<li>
+<p>Access to an Office 365 Enterprise site that has been configured to host apps (recommended).</p>
+</li><li>
+<p>SharePoint Server 2013 configured to host apps, and with a Developer Site Collection already created.</p>
+</li></ul>
+</li></ul>
+</div>
+<h1>Key components</h1>
+<div id="sectionSection1">
+<p>The sample app contains the following:</p>
+<ul>
+<li>
+<p>The <span><strong><span class="keyword">Default.aspx</span></strong></span> webpage, which is used to create productions, manage videos clips on production timelines, and edit video clips on production timelines. This page is also used to play the productions.</p>
+</li><li>
+<p>The <span><strong><span class="keyword">App.js</span></strong></span> file in the
+<span><strong><span class="keyword">scripts</span></strong></span> folder, which is used to retrieve and manage production information and video clip data by using the JavaScript implementation of the client object model (JSOM). The
+<span><strong><span class="keyword">App.js</span></strong></span> file also contains the UI logic that is implemented in
+<span><strong><span class="keyword">Default.aspx</span></strong></span>.</p>
+</li><li>
+<p>The <span><strong><span class="keyword">App.css</span></strong></span> file in the
+<span><strong><span class="keyword">contents</span></strong></span> folder, which contains style definitions used by the elements in
+<span><strong><span class="keyword">Default.aspx</span></strong></span>.</p>
+</li><li>
+<p>Two list definitions and instances: one for productions and one for the edited clips in the productions. The lists are linked together by lookup fields. A document library is also included to let the user upload videos for inclusion in productions.</p>
+</li><li>
+<p>All other files are automatically provided by the Visual Studio 2012 project template for apps for SharePoint, and they have not been modified in the development of this sample app.</p>
+</li></ul>
+</div>
+<h1>Configure the sample</h1>
+<div id="sectionSection2">
+<p>Follow these steps to configure the sample.</p>
+<div>
+<ol>
+<li>
+<p>Open the <span><strong><span class="keyword">SP_RoughCutEditor_js.sln</span></strong></span> file with Visual Studio 2012.</p>
+</li><li>
+<p>In the <span><strong><span class="keyword">Properties</span></strong></span> window, add the full URL to your Office 365 Enterprise site or SharePoint Server 2013 Developer Site Collection to the
+<span><strong><span class="keyword">Site URL</span></strong></span> property. You may be prompted to provide credentials if you have added a URL to an Office 365 site.</p>
+</li><li>
+<p>No other configuration is necessary.</p>
+</li></ol>
+</div>
+</div>
+<h1>Build, run, and test the sample</h1>
+<div id="sectionSection3">
+<p>&nbsp;</p>
+<div>
+<ol>
+<li>
+<p>Press Ctrl&#43;Shift&#43;B to build the solution.</p>
+</li><li>
+<p>Press F5 to run the app.</p>
+</li><li>
+<p>Sign in to your SharePoint Server 2013 or Office 365 Enterprise site if you are prompted to do so by the browser.</p>
+</li><li>
+<p>When the app appears, the starting screen resembles Figure 1.</p>
+<strong>
+<div class="caption">Figure 1. Start screen</div>
+</strong><br>
+<img src="description/image.png" alt=""> </li><li>
+<p>Click <strong><span class="ui">New Production</span></strong> to enter a new production name, as shown in Figure 2.</p>
+<strong>
+<div class="caption">Figure 2. New Production form</div>
+</strong><br>
+<img src="description/eda0efc7-f2af-458f-8099-ada302e09030image.png" alt=""> </li><li>
+<p>Figure 3 shows that five productions have been created.</p>
+<strong>
+<div class="caption">Figure 3. New productions listed</div>
+</strong><br>
+<img src="description/1513b391-1fe3-4361-a95c-32ddab083881image.png" alt=""> </li><li>
+<p>Next to each production name is a button to edit the contents of the production, as shown in Figure 4.</p>
+<strong>
+<div class="caption">Figure 4. Edit button for a production</div>
+</strong><br>
+<img src="description/2ca4cca6-422e-4a66-87ff-477853db4d3eimage.png" alt=""> </li><li>
+<p>Click the <strong><span class="ui">Edit</span></strong> button for a production to display its contents. Initially, there are no videos in a production. To add a video file, click the
+<strong><span class="ui">Upload</span></strong> button shown in Figure 5.</p>
+<strong>
+<div class="caption">Figure 5. Edit Production form</div>
+</strong><br>
+<img src="description/41d816be-39e4-4980-a8e9-46630178e3dcimage.png" alt=""> </li><li>
+<p>Click <strong><span class="ui">Upload</span></strong> to see the document library that is included in this app. This is a standard document library, so you can upload video files using any of the standard methods. Figure 6 shows how to use a drag-and-drop
+ operation to upload four MP4 files from a local folder.</p>
+<strong>
+<div class="caption">Figure 6. Uploading video files</div>
+</strong><br>
+<img src="description/e00e752a-a7b4-4e71-8274-a86dc4a3efa6image.png" alt=""> </li><li>
+<p>Figure 7 shows the four files that have been uploaded and are now listed in the
+<strong><span class="ui">Video Bin</span></strong> for a production. Next to each file name is an icon for adding the file to the current production's timeline.</p>
+<strong>
+<div class="caption">Figure 7. Files in the Video Bin</div>
+</strong><br>
+<img src="description/ff9b1438-6a35-4bbf-9d38-0ecd154fd2d1image.png" alt=""> </li><li>
+<p>Figure 8 shows that three videos have been added to the production timeline. Each video displays its current clip start and end times. By default, each video is included in its entirety. Click a video's
+<strong><span class="ui">[Edit]</span></strong> link to change the clip times, or
+<strong><span class="ui">[Remove]</span></strong> to remove a video from the timeline.</p>
+<strong>
+<div class="caption">Figure 8. Video clips in the Production Timeline</div>
+</strong><br>
+<img src="description/25b4c0af-6bf8-4e87-8db9-8ef7e63a0c80image.png" alt=""> </li><li>
+<p>Figure 9 shows how you can re-order the videos in the production by using a drag-and-drop operation. In this case, the Seals.mp4 video is being moved from the end of the production to the second position.</p>
+<strong>
+<div class="caption">Figure 9. Changing the order of video clips</div>
+</strong><br>
+<img src="description/a15522c7-b1df-495d-bf33-e30f6ab1e76eimage.png" alt=""> </li><li>
+<p>Click the <strong><span class="ui">[Edit]</span></strong> link for a video on the timeline to see the video. The video is rendered and paused as shown in Figure 10. You can then use the timeline sliders to set the start and end times for the clip. The
+ video frames are displayed as you adjust the timeline sliders, which enables you to set the start and end times to exact frames. Click
+<strong><span class="ui">Save</span></strong> to save the current clip times and return to the Edit Production screen, as shown in Figure 10.</p>
+<strong>
+<div class="caption">Figure 10. Editing a video clip timeline</div>
+</strong><br>
+<img src="description/44995e21-08d6-4658-83e7-5db7b5c97931image.png" alt=""> </li><li>
+<p>Figure 11 shows how the start and end times for the Seals.mp4 clip have been applied. Click
+<strong><span class="ui">Save</span></strong> to save your changes to the production.</p>
+<strong>
+<div class="caption">Figure 11. Revised clip in the Production Timeline</div>
+</strong><br>
+<img src="description/d1172439-d0a0-42c4-9e2e-947a013e32d2image.png" alt=""> </li><li>
+<p>Next to each production name is a button to play the production, as shown in Figure 12.</p>
+<strong>
+<div class="caption">Figure 12. Play button for a production</div>
+</strong><br>
+<img src="description/56f20670-6df8-448c-b39f-593d1b4c0788image.png" alt=""> </li><li>
+<p>Click the play button for a production to see the clips on that production's timeline played in sequence, using the start and end times of each of those clips. The result is that it appears as if a new video has been created from subsets of multiple videos.
+ This is a <span>rough cut</span>. Figure 13 shows an example screen shot.</p>
+<strong>
+<div class="caption">Figure 13. Play a production</div>
+</strong><br>
+<img src="description/a9d31592-3580-41a6-a0c1-2af46d6ab3d0image.png" alt=""> </li><li>
+<p>Figure 14 shows that you can add the same video to the production timeline more than once. In this case, the Horses.mp4 video has been added three times, where each instance presents different cuts of that video.</p>
+<strong>
+<div class="caption">Figure 14. Multiple copies of a clip in the Production Timeline</div>
+</strong><br>
+<img src="description/9df5df02-1fda-4932-bfe1-cf136a139d5bimage.png" alt=""> </li></ol>
+</div>
+</div>
+<h1>Troubleshooting</h1>
+<div id="sectionSection4">
+<p>Ensure that you have SharePoint Server 2013 properly configured to host apps (with a Developer Site Collection already created), or that you have signed up for an Office 365 Enterprise site configured to host apps.</p>
+<p>&nbsp;</p>
+</div>
+<h1>Change log</h1>
+<div id="sectionSection5"><strong>
+<div class="caption"></div>
+</strong>
+<div>
+<table cellspacing="2" cellpadding="5" width="50%" frame="lhs">
+<tbody>
+<tr>
+<th>
+<p>Version</p>
+</th>
+<th>
+<p>Date</p>
+</th>
+</tr>
+<tr>
+<td>
+<p>First version</p>
+</td>
+<td>
+<p>July 2013</p>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<h1>Related content</h1>
+<div id="sectionSection6">
+<ul>
+<li>
+<p><a href="http://msdn.microsoft.com/en-us/library/fp179930.aspx" >Apps for SharePoint overview</a></p>
+</li><li>
+<p><a href="http://www.jQuery.com" >jQuery</a></p>
+</li><li>
+<p><a href="http://bing.com?q=HTML5" >HTML5</a></p>
+</li><li>
+<p><a href="http://msdn.microsoft.com/en-us/library/ie/hh924820(v=vs.85).aspx" >HTML5 Video API</a></p>
+</li><li>
+<p><a href="http://msdn.microsoft.com/en-us/library/ms970435.aspx" >JavaScript</a></p>
+</li></ul>
+</div>
+</div>
+</div>
+<p>&nbsp;</p>
+
+</div>
+
+
+    </div>
+</body>
+</html>
