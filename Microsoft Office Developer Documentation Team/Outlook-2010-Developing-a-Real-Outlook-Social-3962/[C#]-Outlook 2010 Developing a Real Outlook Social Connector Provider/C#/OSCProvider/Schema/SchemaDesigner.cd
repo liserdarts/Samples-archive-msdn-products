@@ -1,0 +1,109 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="OSCProvider.Schema.Activity">
+    <Position X="19.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>BABACACAwAABCAAACAAAAAABAMABAABAAAAAQIiAAAA=</HashCode>
+      <FileName>Schema\Activity.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="OSCProvider.Schema.TemplateVariable">
+    <Position X="7.75" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>EAABCAAIAAAKBhAACAAIAAQAAAQAAAQAAIgARAAEAAA=</HashCode>
+      <FileName>Schema\TemplateVariable.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="OSCProvider.Schema.Person">
+    <Position X="17.75" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>IBIFKMAkYCABAMCOgARQQIkAAQhoAEUCAABHpCAAACg=</HashCode>
+      <FileName>Schema\Person.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="OSCProvider.Schema.ActivityFeed">
+    <Position X="11" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAACAAAAEAAAAAAAAAAAAAAAAAAAAAEAAAAQIBAACA=</HashCode>
+      <FileName>Schema\ActivityFeed.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="OSCProvider.Schema.SimpleTemplateVariable">
+    <Position X="13.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>EAAACAAAAAACBhAAAAAAAAQAAAQAAAAAAIgAAAAEAAA=</HashCode>
+      <FileName>Schema\SimpleTemplateVariable.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="OSCProvider.Schema.SimpleLinkVariable" Collapsed="true">
+    <Position X="13.25" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAACAAAAAAAAAAAAAAAAAABAAAAACAAAAAA=</HashCode>
+      <FileName>Schema\SimpleTemplateVariable.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="OSCProvider.Schema.SimplePictureVariable" Collapsed="true">
+    <Position X="11.25" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAACAAAAAAAAAAEAAAAAAABAAAAgCAAAAAA=</HashCode>
+      <FileName>Schema\SimpleTemplateVariable.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="OSCProvider.Schema.SimpleTextVariable" Collapsed="true">
+    <Position X="15.75" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAACAAAAAAAAAAAAAAAAAAAAAAAACAAAAAA=</HashCode>
+      <FileName>Schema\SimpleTemplateVariable.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="OSCProvider.Schema.Template">
+    <Position X="15.75" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAKAAAAAABAEAAAIQAAAAAAMAAABAAABIEAAEAAAA=</HashCode>
+      <FileName>Schema\Template.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="OSCProvider.Schema.EntityVariable" Collapsed="true">
+    <Position X="3.25" Y="6.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAACAAAACgAAAAAAAAAAAAAAAAQAAAAAAAgAAAAA=</HashCode>
+      <FileName>Schema\TemplateVariable.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="OSCProvider.Schema.PublisherVariable" Collapsed="true">
+    <Position X="3.25" Y="8.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAACAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Schema\TemplateVariable.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="OSCProvider.Schema.LinkVariable" Collapsed="true">
+    <Position X="10" Y="6.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAACAAAAAAAAAAAAAAAAAAAAAAAgCAAAAAA=</HashCode>
+      <FileName>Schema\TemplateVariable.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="OSCProvider.Schema.PictureVariable" Collapsed="true">
+    <Position X="5.5" Y="6.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAACAAAAAAAAAAEAAAAAAABAAAAgAAAAAAA=</HashCode>
+      <FileName>Schema\TemplateVariable.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="OSCProvider.Schema.ListVariable" Collapsed="true">
+    <Position X="7.75" Y="6.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAACAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Schema\TemplateVariable.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="OSCProvider.Schema.TextVariable" Collapsed="true">
+    <Position X="12.25" Y="6.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAACAAAAAAAAAAAAAAAAAAAAAAAACAAAAAA=</HashCode>
+      <FileName>Schema\TemplateVariable.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

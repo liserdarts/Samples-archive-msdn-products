@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Package
+    xmlns="http://schemas.microsoft.com/developer/2004/01/bootstrapper"
+    Name="Outlook Social Connector v1.1"
+    Culture="en">
+
+    <PackageFiles>
+        <!--G-link to install the latest version of the 32-bit OSC 
+            (English version) for Outlook 2003 and Outlook 2007.-->
+        <PackageFile Name="outlooksocialconnector-x86-en-us.exe"
+                     HomeSite="http://g.live.com/0cr1033/80"
+                     PublicKey="3082010a0282010100bd3089fb4572a8536b9e894f0023c0bed41d3db1594038f373918226e696120053d91c820e3cce1dbbbdf7428d97d4fc381ae4b9f9e3ecd36103bfa0d3d6754d5c46a9ed5ef0d2e2695b1a73eab31c8d04cd2944a064592f1e985d6ec7ab18398265c4a7bcab758819ea87971426b37f2676a4d4383984e3b326d518f92be9d2c9165a5421f2978d878629fef4492ce68bf8043f7dcdcd9692860d7103e2d0fe0c4235ffd7b83fdd8e450a7df6d74bad5bf076721d77237d8935c41c5db250034b476d07a75588980680a681ad544ed881d6fabf42c031be550d99d553491230ebe5a5887c5ec47a5a148708b43769a0eb32248c08ebf9d414bae0fccdeaa4150203010001"/>
+        <!--G-link to install the latest version of the 32-bit OSC 
+            (English version) for Outlook 2010.-->
+        <PackageFile Name="osc-kb983403-fullfile-x86-en-us.exe"
+                     HomeSite ="http://g.live.com/0cr1033/82"
+                     PublicKey="3082010a0282010100bd3089fb4572a8536b9e894f0023c0bed41d3db1594038f373918226e696120053d91c820e3cce1dbbbdf7428d97d4fc381ae4b9f9e3ecd36103bfa0d3d6754d5c46a9ed5ef0d2e2695b1a73eab31c8d04cd2944a064592f1e985d6ec7ab18398265c4a7bcab758819ea87971426b37f2676a4d4383984e3b326d518f92be9d2c9165a5421f2978d878629fef4492ce68bf8043f7dcdcd9692860d7103e2d0fe0c4235ffd7b83fdd8e450a7df6d74bad5bf076721d77237d8935c41c5db250034b476d07a75588980680a681ad544ed881d6fabf42c031be550d99d553491230ebe5a5887c5ec47a5a148708b43769a0eb32248c08ebf9d414bae0fccdeaa4150203010001"/>
+        <!--G-link to install the latest version of the 64-bit OSC 
+            (English version) for Outlook 2010.-->
+        <PackageFile Name="osc-kb983403-fullfile-x64-en-us.exe"
+                     HomeSite ="http://g.live.com/0cr1033/83"
+                     PublicKey="3082010a0282010100bd3089fb4572a8536b9e894f0023c0bed41d3db1594038f373918226e696120053d91c820e3cce1dbbbdf7428d97d4fc381ae4b9f9e3ecd36103bfa0d3d6754d5c46a9ed5ef0d2e2695b1a73eab31c8d04cd2944a064592f1e985d6ec7ab18398265c4a7bcab758819ea87971426b37f2676a4d4383984e3b326d518f92be9d2c9165a5421f2978d878629fef4492ce68bf8043f7dcdcd9692860d7103e2d0fe0c4235ffd7b83fdd8e450a7df6d74bad5bf076721d77237d8935c41c5db250034b476d07a75588980680a681ad544ed881d6fabf42c031be550d99d553491230ebe5a5887c5ec47a5a148708b43769a0eb32248c08ebf9d414bae0fccdeaa4150203010001"/>
+    </PackageFiles>
+
+    <Commands>
+        <!--Install latest OSC for Outlook 2003.-->
+        <Command PackageFile="outlooksocialconnector-x86-en-us.exe">
+            <InstallConditions>
+                <!--Install if the OSC version is less than 1.1 and 
+                    the Office version is 2003.-->
+                <BypassIf Property="OSCVersion" Compare="VersionGreaterThanOrEqualTo" Value="1.1"/>
+                <BypassIf Property="OfficeVersion" Compare="ValueNotExists"/>
+                <BypassIf Property ="OfficeVersion" Compare="ValueNotEqualTo" Value="11.0"/>
+            </InstallConditions>
+            <ExitCodes>
+                <ExitCode Value="0" Result="Success"/>
+                <ExitCode Value="1641" Result="SuccessReboot"/>
+                <ExitCode Value="3010" Result="SuccessReboot"/>
+                <DefaultExitCode Result="Fail" String="GeneralFailure"/>
+            </ExitCodes>
+        </Command>
+        <!--Install latest OSC for Outlook 2007.-->
+        <Command PackageFile="outlooksocialconnector-x86-en-us.exe">
+            <InstallConditions>
+                <!--Install if the OSC version is less than 1.1 and 
+                    the Office version is 2007.-->
+                <BypassIf Property="OSCVersion" Compare="VersionGreaterThanOrEqualTo" Value="1.1"/>
+                <BypassIf Property="OfficeVersion" Compare="ValueNotExists"/>
+                <BypassIf Property ="OfficeVersion" Compare="ValueNotEqualTo" Value="12.0"/>
+            </InstallConditions>
+            <ExitCodes>
+                <ExitCode Value="0" Result="Success"/>
+                <ExitCode Value="1641" Result="SuccessReboot"/>
+                <ExitCode Value="3010" Result="SuccessReboot"/>
+                <DefaultExitCode Result="Fail" String="GeneralFailure"/>
+            </ExitCodes>
+        </Command>
+        <!--Install latest OSC for Outlook 2010 32-bit.-->
+        <Command PackageFile="osc-kb983403-fullfile-x86-en-us.exe">
+            <InstallConditions>
+                <!--Install if the OSC version is less than 1.1 and 
+                    the Office version is 2010 and 
+                    Office is 32-bit.-->
+                <BypassIf Property="OSCVersion" Compare="VersionGreaterThanOrEqualTo" Value="1.1"/>
+                <BypassIf Property="OfficeVersion" Compare="ValueNotExists"/>
+                <BypassIf Property ="OfficeVersion" Compare="ValueNotEqualTo" Value="14.0"/>
+                <BypassIf Property ="Outlook14Bitness" Compare="ValueNotEqualTo" Value="x86"/>
+            </InstallConditions>
+            <ExitCodes>
+                <ExitCode Value="0" Result="Success"/>
+                <ExitCode Value="1641" Result="SuccessReboot"/>
+                <ExitCode Value="3010" Result="SuccessReboot"/>
+                <DefaultExitCode Result="Fail" String="GeneralFailure"/>
+            </ExitCodes>
+        </Command>
+        <!--Install latest OSC for Outlook 2010 64-bit-->
+        <Command PackageFile="osc-kb983403-fullfile-x64-en-us.exe">
+            <InstallConditions>
+                <!--Install if the OSC version is less than 1.1 and 
+                    the Office version is 2010 and 
+                    Office is 64-bit.-->
+                <!--NOTE: 64-bit versions of Office run only on 64-bit 
+                    versions of Windows.  For 64-bit versions of Windows, 
+                    you must create an executable that evaluates the
+                    64-bit registry keys and modify the Product.xml file to 
+                    use an ExternalCheck to evaluate the results.  Then
+                    modify these InstallConditions to use the results.-->
+                <BypassIf Property="OSCVersion" Compare="VersionGreaterThanOrEqualTo" Value="1.1"/>
+                <BypassIf Property="OfficeVersion" Compare="ValueNotExists"/>
+                <BypassIf Property ="OfficeVersion" Compare="ValueNotEqualTo" Value="14.0"/>
+                <BypassIf Property ="Outlook14Bitness" Compare="ValueNotEqualTo" Value="x64"/>
+            </InstallConditions>
+            <ExitCodes>
+                <ExitCode Value="0" Result="Success"/>
+                <ExitCode Value="1641" Result="SuccessReboot"/>
+                <ExitCode Value="3010" Result="SuccessReboot"/>
+                <DefaultExitCode Result="Fail" String="GeneralFailure"/>
+            </ExitCodes>
+        </Command>
+    </Commands>
+</Package>

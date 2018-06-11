@@ -1,0 +1,196 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
+    <head><link rel="stylesheet" type="text/css" href="description/Combined.css,1:ImageSprite;/Areas/Epx/Themes/Msdn/Content:0,/Areas/Epx/Content/Css:1&amp;amp;hashKey=E7560C71640616C5057FAEACB58DCB00" xmlns="http://www.w3.org/1999/xhtml" />
+<link rel="stylesheet" type="text/css" href="description/2f95808e-ca34-4249-88ff-44fabe33cdc0Combined.css,1:LinkList,2:ImageSprite,2:SiteFeedbackLink;/Areas/Epx/Themes/Msdn/Content:0,/Areas/Epx/Themes/Base/Content:1,/Areas/Epx/Content/Css:2&amp;amp;hashKey=EEE39C2D6B93379FDAF50337BE99AF8C" xmlns="http://www.w3.org/1999/xhtml" />
+
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <title>Outlook 2010: Developing a Real Outlook Social Connector Provider</title>
+        <link href="description/Galleries.css" type="text/css" rel="Stylesheet" /><link href="description/Layout.css" type="text/css" rel="Stylesheet" /><link href="description/Brand.css" type="text/css" rel="Stylesheet" />
+        <link href="description/iframedescription.css" rel="Stylesheet" type="text/css" />
+        <script src="description/offline.js" type="text/javascript"></script>
+        <style type="text/css">
+            #projectInfo {
+                overflow: auto;
+            }
+            #longDesc {
+                clear:both;
+                margin: 25px 0 10px 0;
+            }
+
+            #SampleIndexList{
+                margin-left: 15px;
+            }
+        </style>
+    </head>
+<body>
+    <div id="offlineDescription">
+        <h1>Outlook 2010: Developing a Real Outlook Social Connector Provider</h1>
+        <br/>
+        <div id="projectInfo">
+            <div class="section">
+                    <div class="itemBarLong tagsContainer">
+                        <label for="Technologies">Technologies</label>
+                        <div id="Technologies">
+                            Microsoft Office Outlook 2007, Outlook 2010, Office 2010, Microsoft Office Outlook 2003
+                        </div>
+                    </div>
+                    <div class="itemBarLong tagsContainer">
+                        <label for="Topics">Topics</label>
+                        <div id="Topics">
+                            Outlook Social Connector, OSC provider
+                        </div>
+                    </div>
+                <div class="itemBarLong">
+                    <label for="Platforms">Platforms</label>
+                    <div id="Platforms">
+                        Desktop
+                    </div>
+                </div>
+                <div class="itemBarLong">
+                    <label for="Requirements">Requirements</label>
+                    <div id="Requirements">
+                        
+                    </div>
+                </div>
+                <div class="itemBar">
+                    <label for="LastUpdated">Primary Language</label>
+                    <div id="LastUpdated">en-US</div>
+                </div>
+                <div class="itemBar">
+                    <label for="LastUpdated">Last Updated</label>
+                    <div id="LastUpdated">8/1/2011</div>
+                </div>
+                <div class="itemBarLong">
+                    <label for="License">License</label>
+                    <div id="License">
+                        <a href="license.rtf">Apache License, Version 2.0</a></div>
+                </div>
+                <div class="itemBar">
+                    <div class="viewonlinecont">
+                        <a data-link="online" href="http://code.msdn.microsoft.com/Outlook-2010-Developing-a-223f37f2">View this sample online</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+                   
+<script type="text/javascript">
+    function initializePage() {
+        var otherTabClass = 'otherTab';
+        var hiddenPreClass = 'hidden';
+
+        var htmlDecode = function(encodedData) {
+            var decodedData = "";
+            if (encodedData) {
+                var div = document.createElement('div');
+                div.innerHTML = encodedData;
+                decodedData = div.firstChild.nodeValue.replace( /\\r\\n/ig , '\r\n');
+            }
+            return decodedData;
+        };
+                
+        Galleries.iterateElem(Galleries.findElem(null, 'div', 'scriptcode'), function (index, scriptBlock) {
+            var titleElem = Galleries.findElem(scriptBlock, 'div', 'title')[0];
+            var labelElems = Galleries.findElem(titleElem, 'span');
+            if (labelElems.length == 0) {
+                labelElems = titleElem;
+            }
+            var languageSpans = Galleries.findElem(scriptBlock, 'span', 'hidden');
+            var pres = Galleries.findElem(scriptBlock, 'pre');
+            if (languageSpans.length > 0 && pres.length > 1) {
+                Galleries.iterateElem(labelElems, function(index, elem) {
+                    var codePre = pres[index];
+                    var labelSpan = elem;
+                    var languageSpan = languageSpans[index];
+                            
+                    elem.code = codePre.innerHTML.replace( /(\r(\n)?)|((\r)?\n)/ig , '\\r\\n');
+                            
+                    codePre.className = codePre.className.replace(hiddenPreClass, '');
+                            
+                    languageSpan.parentNode.removeChild(languageSpan);
+                });
+
+                pres = Galleries.findElem(scriptBlock, 'pre');
+                Galleries.iterateElem(labelElems, function(index, elem) {
+                    var codePre = pres[index];
+                    var labelSpan = elem;
+                    if (index == 0) {
+                        scriptBlock.activeTab = 0;
+                    }
+                    else {
+                        labelSpan.className += otherTabClass;
+                        codePre.className += hiddenPreClass;
+                    }
+                    Galleries.attachEventHandler(labelSpan, 'click', function(e) {
+                        var activeTab = scriptBlock.activeTab;
+                        labelElems[activeTab].className += otherTabClass;
+                        pres[activeTab].className += hiddenPreClass;
+
+                        codePre.className = codePre.className.replace(hiddenPreClass, '');
+                        labelSpan.className = labelSpan.className.replace(otherTabClass, '');
+                        scriptBlock.activeTab = index;
+                    });
+                });
+
+                var preview = Galleries.findElem(scriptBlock, 'div', 'preview');
+                if (preview.length == 0) {
+                    preview.push(pres[pres.length - 1]);
+                }
+                Galleries.iterateElem(preview, function(index, elem) {
+                    elem.parentNode.removeChild(elem);
+                });
+
+                if (window.clipboardData && clipboardData.setData) {
+                    var copyLink = document.createElement('a');
+                    copyLink.href = 'javascript:void(0);';
+                    copyLink.className = 'copyCode';
+                    copyLink.innerHTML = 'Copy Code';
+                    Galleries.attachEventHandler(copyLink, 'click', function (e) {
+                        clipboardData.setData("Text", htmlDecode(labelElems[scriptBlock.activeTab].code));
+                        return false;
+                    });
+                    scriptBlock.insertBefore(copyLink, scriptBlock.childNodes[0]);
+                }
+            }
+        });
+    }
+
+    Galleries.onWindowLoad(function(){
+        initializePage();
+    });
+
+</script>
+<div id="longDesc">
+    
+<h2><strong>Introduction</strong></h2>
+<p>Learn how to develop a real provider for the Microsoft Outlook Social Connector (OSC) by using the OSC Provider Proxy Library. This sample accompanies a series of four Visual How-To articles,
+<a href="http://msdn.microsoft.com/en-us/library/gg585217.aspx">Developing a Real Outlook Social Connector Provider</a>, in the MSDN Library.</p>
+<h2><strong>Description</strong></h2>
+<p>The Microsoft Outlook Social Connector (OSC) provides a communication hub for personal and professional communications. Just by selecting an Outlook item such as an email or meeting request and clicking the sender or a recipient of that item, users can see,
+ in the People Pane, activities, photos, and status updates for the person on their favorite social networks.</p>
+<p>The OSC obtains social network data by calling an OSC provider, which behaves like a translation layer between Outlook and the social network. The OSC provider model is open, and you can develop a custom OSC provider by implementing the required OSC provider
+ extensibility interfaces. To retrieve social network data, the OSC makes calls to the OSC provider through these interface members. The OSC provider communicates with the social network and returns the social network data to the OSC as a string or as XML that
+ conforms to the Outlook Social Connector XML schema.</p>
+<p>This sample solution shows the procedures to create a custom OSC provider for OfficeTalk. OfficeTalk is a social network in a private corporate environment and is not publicly available. Nonetheless, it is a good example of the kind of social network that
+ you might want to develop a custom OSC provider for. You can use the procedures for creating the OSC provider for OfficeTalk to create a custom OSC provider for any social network.</p>
+<p>The OfficeTalk provider uses the Outlook Social Connector Provider Proxy Library to simplify the implementation of the OSC provider extensibility interfaces. The OSC Provider Proxy Library implements all of the OSC provider extensibility interface members.
+ These interface members, in turn, call a consolidated set of abstract and virtual methods that provide the social network data that the OSC requires.</p>
+<p>The sample solution contains two projects:</p>
+<ul>
+<li>OSCProvider&mdash;This project is an unmodified version of the OSC Provider Proxy Library that is used to simplify the creation of the OfficeTalk OSC provider.
+</li><li>OfficeTalkOSCProvider&mdash;This project includes the source code files that are specific to the OfficeTalk OSC provider.
+</li></ul>
+<p>The OfficeTalkOSCProvider project includes the following source code files:</p>
+<ul>
+<li>OfficeTalkHelper&mdash;This class contains helper methods that are used throughout the sample solution.
+</li><li>OTProvider&mdash;This is a partial class that contains the OSC Provider Proxy Library override methods that return information about the OSC provider, information about the social network, and information for the currently logged-on user.
+</li><li>OTProvider_Activities&mdash;This is a partial class that contains the OSC Provider Proxy Library override methods that return activity information.
+</li><li>OTProvider_Friends&mdash;This is a partial class that contains the OSC Provider Proxy Library override methods that return friends information.
+</li></ul>
+
+</div>
+
+
+    </div>
+</body>
+</html>

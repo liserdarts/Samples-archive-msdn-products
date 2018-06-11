@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Product
+    xmlns="http://schemas.microsoft.com/developer/2004/01/bootstrapper"
+    ProductCode="OSC.Install_V1.1">
+
+    <RelatedProducts>
+        <DependsOnProduct Code="Microsoft.Windows.Installer.3.1"/>
+    </RelatedProducts>
+
+    <InstallChecks>
+        <!--Outlook Social Connector version-->
+        <RegistryCheck Property="OSCVersion"
+                       Key="HKLM\Software\Microsoft\Office\Outlook\SocialConnector"
+                       Value="OSCVersion"/>
+        <!--Office version-->
+        <RegistryCheck Property="OfficeVersion"
+                       Key="HKLM\Software\Microsoft\Office\Common"
+                       Value="LastAccessInstall"/>
+        <!--Outlook 2010 bitness-->
+        <RegistryCheck Property="Outlook14Bitness"
+                       Key="HKLM\Software\Microsoft\Office\14.0\Outlook"
+                       Value="Bitness"/>
+    </InstallChecks>
+</Product>
