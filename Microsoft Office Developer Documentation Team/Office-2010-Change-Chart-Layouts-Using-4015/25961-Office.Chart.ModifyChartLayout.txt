@@ -1,0 +1,71 @@
+' Microsoft Word 2010/Charting
+
+' Change the layout or style of a chart.
+
+' Add a module to the document, and copy the following code
+' into the new module. Add a breakpoint after the call to the AddChart
+' method and press F5 to run the procedure. After hitting the breakpoint,
+' single step through the code (press F8 for each line) to see the
+' behavior of the chart. This will be easiest to see if you
+' arrange the Word window and the VBA window so they're side-by-side
+' on the screen.
+
+' Note that this procedure creates an exceedingly ugly chart!
+
+' You could easily modify this demonstration to work with PowerPoint:
+' replace the reference to ActiveDocument with ActivePresentation.Slides(1) and
+' change the enumerations that start with "wd" to start with "mso" instead.
+
+Sub ModifyChart()
+    Dim shp As Shape
+    Set shp = ActiveDocument.Shapes.AddChart(xl3DColumn)
+   
+    Dim cht As Chart
+    Set cht = shp.Chart
+
+    ' Now, modify the various properties of the chart.
+    Dim i As Integer
+   
+    ' Apply numbered layouts, from 1 to 10.
+    For i = 1 To 10
+        cht.ApplyLayout i
+        ' You can't set the ChartTitle.Text property
+        ' unless the chart has a title. Not all layouts
+        ' include a title. You could force the layout to
+        ' include a title by setting the HasTitle property
+        ' to True (it's read/write), but it's interesting
+        ' to see which layouts include titles and which don't.
+        If cht.HasTitle Then
+            cht.ChartTitle.Text = "Layout " & i
+        End If
+    Next i
+   
+    ' Applying all these data labels will make the chart very ugly.
+    ' You can use one of the enumerated values to set simple data labels:
+    cht.SeriesCollection(1).ApplyDataLabels xlDataLabelsShowLabel
+    cht.SeriesCollection(2).ApplyDataLabels xlDataLabelsShowValue
+   
+    ' You can supply other values individually to have more control over the data labels:
+    cht.SeriesCollection(3).ApplyDataLabels ShowCategoryName:=True, ShowValue:=True, Separator:=": "
+   
+    ' Adjust the thickness of the back wall.
+    cht.BackWall.Thickness = 25
+   
+    ' Change the chart type:
+    cht.ChartType = xl3DBarStacked
+   
+    ' Change the 3D rotation. This property applies only to 3D charts:
+    cht.Rotation = 30
+   
+    ' Modify the chart fill, using a theme color:
+    shp.Fill.ForeColor.ObjectThemeColor = wdThemeColorAccent1
+ 
+    ' Add a gradient:
+    shp.Fill.PresetGradient msoGradientHorizontal, 1, msoGradientLateSunset
+   
+    ' Modify other shape settings:
+    shp.Line.ForeColor.ObjectThemeColor = wdThemeColorAccent2
+    shp.ThreeD.BevelTopType = msoBevelRelaxedInset
+    shp.Glow.Color.ObjectThemeColor = wdThemeColorAccent3
+    shp.Shadow.Type = msoShadow32
+End Sub
