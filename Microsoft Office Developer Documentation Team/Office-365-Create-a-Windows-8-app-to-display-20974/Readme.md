@@ -1,0 +1,171 @@
+# Office 365: Create a Windows 8 app to display videos from SharePoint Online
+## Requires
+* Visual Studio 2012
+## License
+* Apache License, Version 2.0
+## Technologies
+* Office 365
+## Topics
+* Authentication
+* cloud development
+* My Site
+## IsPublished
+* True
+## ModifiedDate
+* 2013-02-27 07:27:27
+## Description
+
+<p id="header"><span class="label">Summary:</span> The solution in this sample demonstrates how to create a Windows 8 app that authenticates with a site in SharePoint Online, and then displays videos from a SharePoint asset library.</p>
+<div id="mainSection">
+<div id="mainBody">
+<div class="introduction">
+<div>&nbsp;</div>
+</div>
+<h1 class="heading">Description of the sample</h1>
+<div class="section" id="sectionSection0">
+<p>The main purpose of this sample is to demonstrate how a Windows 8 app authenticates with SharePoint Online in an Office 365 installation. The sample uses the username, password, and site URI entered on a browser to obtain a security token from the SharePoint
+ security token service (STS). This token is then sent to SharePoint Online, and authorization cookies are sent back to the Windows 8 app.</p>
+<p>A secondary purpose is to demonstrate how the app receives the appropriate authorization cookies, then includes them in calls to the REST services of SharePoint Online to read data from a SharePoint asset library. For this sample, the library contains video
+ files, which are displayed back to the user in a selection list within the app.</p>
+</div>
+<h1 class="heading">Prerequisites</h1>
+<div class="section" id="sectionSection1">
+<div>This sample requires the following:</div>
+<ul>
+<li>
+<div>An Office 365 Developer Site.</div>
+</li><li>
+<div>Visual Studio 2012 and Office Developer Tools for Visual Studio 2012 installed on your computer.</div>
+</li></ul>
+</div>
+<h1 class="heading">Key components of the sample</h1>
+<div class="section" id="sectionSection2">
+<div>The sample zip file contains the following:</div>
+<ul>
+<li>
+<div>A Visual Studio 2012 solution named O365_win8app_cs that contains the code for the Windows 8 app.</div>
+</li></ul>
+</div>
+<h1 class="heading">Configure the sample</h1>
+<div class="section" id="sectionSection3">
+<ol>
+<li>
+<div>Open Visual Studio 2012 with administrator privileges.</div>
+</li><li>
+<div>On the <span class="ui">File</span> menu, click <span class="ui">Open</span>, click
+<span class="ui">Project/Solution</span> and then navigate to the folder where you unzipped the O365_win8app_cs.sln file, select it and click
+<span class="ui">Open</span>.</div>
+</li></ol>
+</div>
+<h1 class="heading">Build the sample</h1>
+<div class="section" id="sectionSection4">
+<p>Press F6 to build the sample.</p>
+</div>
+<h1 class="heading">Run and test the sample</h1>
+<div class="section" id="sectionSection5">
+<ol>
+<li>
+<div>In an Office 365 Developer Site, create a SharePoint asset library. Upload one or more video files (.mp3, .mp4, or .wmv extensions only) to the library. Note the name of the site collection and the name of the asset library.</div>
+</li><li>
+<div>Press F5 to run the app. A login screen will be displayed to enter the following credentials:</div>
+<ol>
+<li>
+<div>For <span class="ui">User Name</span> and <span class="ui">Password</span>, enter your Office 365 user name and password.</div>
+</li><li>
+<div>For <span class="ui">SharePoint Site Url</span>, enter the site collection name where the video asset library was created.</div>
+</li><li>
+<div>For <span class="ui">Library Name</span>, enter the name of the asset library which you created to store videos.</div>
+</li></ol>
+<div><img id="76632" src="http://i1.code.msdn.s-msft.com/office-365-create-windows-5a88ccfc/image/file/76632/1/o365_win8appdispvideosentryscreen.jpg" alt="Win8App_To_Display_Videos_Entry_Screen" width="532" height="436"></div>
+<div>&nbsp;</div>
+</li><li>
+<div>Click the <span class="ui">Login</span> button to authenticate by using your Office 365 credentials; if valid, the next page displays a list of video files in the asset library.</div>
+<div><img id="76633" src="http://i1.code.msdn.s-msft.com/office-365-create-windows-5a88ccfc/image/file/76633/1/o365_win8appdispvideosdisplayscreen.jpg" alt="O365_Win8App_To_Display_Videos_Display_Screen" width="513" height="359"></div>
+</li><li>
+<div>Click any video link to navigate to the video player page, on which the app will begin playing the selected video.</div>
+</li></ol>
+</div>
+<h1 class="heading">Troubleshooting</h1>
+<div class="section" id="sectionSection6">
+<p>The following table lists common configuration and environment errors that prevent the sample from running or deploying properly, and how you can solve them.</p>
+<div class="caption"></div>
+<div class="tableSection">
+<table cellspacing="2" cellpadding="5" width="50%" frame="lhs">
+<tbody>
+<tr>
+<th>
+<div>Problem</div>
+</th>
+<th>
+<div>Solution</div>
+</th>
+</tr>
+<tr>
+<td>
+<div>Message displayed on bottom of login screen: &quot;Your credentials did not work or the service is down. Please try again.&quot;</div>
+</td>
+<td>
+<div>Make sure that the username and password are correct. It may be useful to use a tool to debug the HTTP GET and POST requests and responses to SharePoint Online Services.</div>
+</td>
+</tr>
+<tr>
+<td>
+<div>Message displayed on bottom of login screen: &quot;This App can't be activated using the Built-in administrator&quot;.</div>
+</td>
+<td>
+<div>Make sure that the username is not an Administrator account; Windows 8 apps cannot run under a full administrator token. Windows 8 apps require that the User Account Control (UAC) be enabled and functioning; the Built-in Administrator account bypasses
+ the UAC, so apps cannot be opened under that account.</div>
+</td>
+</tr>
+<tr>
+<td>
+<div>Screen is shown, but no videos are listed.</div>
+</td>
+<td>
+<div>Make sure that the URL entered on the login screen is the name of the site collection where the video asset library was created.</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<h1 class="heading">Change log</h1>
+<div class="section" id="sectionSection7">
+<div class="caption"></div>
+<div class="tableSection">
+<table cellspacing="2" cellpadding="5" width="50%" frame="lhs">
+<tbody>
+<tr>
+<th>
+<div>Version</div>
+</th>
+<th>
+<div>Date</div>
+</th>
+</tr>
+<tr>
+<td>
+<div>First version</div>
+</td>
+<td>
+<div>February 28, 2013</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<h1 class="heading">Related content</h1>
+<div class="section" id="sectionSection8">
+<ul>
+<li>
+<div><a href="http://blogs.msdn.com/b/omarv/archive/2012/10/25/windows-8-store-apps-office-365-enterprise-preview-sharepoint-online.aspx" target="_blank">Windows 8 Store Apps &#43; new Office 365 Enterprise Preview (SharePoint Online)</a></div>
+</li><li>
+<div><a href="http://msdn.microsoft.com/en-us/library/fp142385(v=office.15).aspx" target="_blank">Programming using the SharePoint 2013 REST service</a></div>
+</li><li>
+<div><a href="http://msdn.microsoft.com/en-us/library/windows/apps/br229583.aspx" target="_blank">Roadmap for Windows Store apps using C# or Visual Basic (Windows)</a></div>
+</li></ul>
+</div>
+</div>
+</div>
+<p>&nbsp;</p>

@@ -1,0 +1,30 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Package xmlns="http://schemas.microsoft.com/appx/2010/manifest">
+  <Identity Name="928e17d5-013c-42d1-ad31-51ef2ee9911s" Publisher="CN=ivenado" Version="1.0.0.1" />
+  <Properties>
+    <DisplayName>O365_Win8App</DisplayName>
+    <PublisherDisplayName>ivenado</PublisherDisplayName>
+    <Logo>Assets\StoreLogo.png</Logo>
+  </Properties>
+  <Prerequisites>
+    <OSMinVersion>6.2.1</OSMinVersion>
+    <OSMaxVersionTested>6.2.1</OSMaxVersionTested>
+  </Prerequisites>
+  <Resources>
+    <Resource Language="x-generate" />
+  </Resources>
+  <Applications>
+    <Application Id="App" Executable="$targetnametoken$.exe" EntryPoint="O365_Win8App_cs.App">
+      <VisualElements DisplayName="O365_Win8App_cs" Logo="Assets\Logo.png" SmallLogo="Assets\SmallLogo.png" Description="O365_Win8App" ForegroundText="light" BackgroundColor="#464646">
+        <DefaultTile ShowName="allLogos" />
+        <SplashScreen Image="Assets\SplashScreen.png" />
+      </VisualElements>
+    </Application>
+  </Applications>
+  <Capabilities>
+    <Capability Name="musicLibrary" />
+    <Capability Name="picturesLibrary" />
+    <Capability Name="videosLibrary" />
+    <Capability Name="internetClient" />
+  </Capabilities>
+</Package>
