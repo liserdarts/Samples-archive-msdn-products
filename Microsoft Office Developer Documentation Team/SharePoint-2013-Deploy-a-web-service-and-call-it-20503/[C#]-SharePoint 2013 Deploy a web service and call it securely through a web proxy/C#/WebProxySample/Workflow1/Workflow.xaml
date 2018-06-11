@@ -1,0 +1,214 @@
+﻿<Activity mc:Ignorable="sap sap2010 sads" x:Class="WebProxySample.Workflow1.Workflow" sap2010:ExpressionActivityEditor.ExpressionActivityEditor="C#" sap2010:WorkflowViewState.IdRef="WebProxySample.Workflow1.Workflow_1"
+ xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities"
+ xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+ xmlns:mca="clr-namespace:Microsoft.CSharp.Activities;assembly=System.Activities"
+ xmlns:p="http://schemas.microsoft.com/workflow/2012/07/xaml/activities"
+ xmlns:p1="wf://workflow.windows.net/$Activities"
+ xmlns:p2="wf://workflow.windows.net/$Current/$Activities/WebProxySample"
+ xmlns:sads="http://schemas.microsoft.com/netfx/2010/xaml/activities/debugger"
+ xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation"
+ xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation"
+ xmlns:scg="clr-namespace:System.Collections.Generic;assembly=mscorlib"
+ xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=mscorlib"
+ xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <TextExpression.NamespacesForImplementation>
+    <sco:Collection x:TypeArguments="x:String">
+      <x:String>System</x:String>
+      <x:String>System.Collections.Generic</x:String>
+      <x:String>System.Data</x:String>
+      <x:String>System.Text</x:String>
+      <x:String>Microsoft.Activities</x:String>
+    </sco:Collection>
+  </TextExpression.NamespacesForImplementation>
+  <TextExpression.ReferencesForImplementation>
+    <sco:Collection x:TypeArguments="AssemblyReference">
+      <AssemblyReference>mscorlib</AssemblyReference>
+      <AssemblyReference>System</AssemblyReference>
+      <AssemblyReference>System.Core</AssemblyReference>
+      <AssemblyReference>System.Data</AssemblyReference>
+      <AssemblyReference>System.ServiceModel</AssemblyReference>
+      <AssemblyReference>System.Xml</AssemblyReference>
+      <AssemblyReference>System.Xml.Linq</AssemblyReference>
+      <AssemblyReference>WebProxySample</AssemblyReference>
+    </sco:Collection>
+  </TextExpression.ReferencesForImplementation>
+  <Sequence sap2010:WorkflowViewState.IdRef="Sequence_1">
+    <Sequence.Variables>
+      <Variable x:TypeArguments="x:String" Name="spWebUrl" />
+      <Variable x:TypeArguments="p:DynamicValue" Name="variable1" />
+      <Variable x:TypeArguments="x:String" Name="remoteAppUrl" />
+      <Variable x:TypeArguments="p:DynamicValue" Name="serviceArgs" />
+      <Variable x:TypeArguments="x:String" Name="result" />
+    </Sequence.Variables>
+    <p1:WebUri sap2010:Annotation.AnnotationText="Get the App Web URL." sap2010:WorkflowViewState.IdRef="WebUri_1">
+      <p1:WebUri.Result>
+        <OutArgument x:TypeArguments="x:String">
+          <mca:CSharpReference x:TypeArguments="x:String">spWebUrl</mca:CSharpReference>
+        </OutArgument>
+      </p1:WebUri.Result>
+    </p1:WebUri>
+    <p2:GetRemoteAppWeb sap2010:Annotation.AnnotationText="Get the Remote App URL" sap2010:WorkflowViewState.IdRef="GetRemoteAppWeb_1">
+      <p2:GetRemoteAppWeb.remoteAppUrl>
+        <OutArgument x:TypeArguments="x:String">
+          <mca:CSharpReference x:TypeArguments="x:String">remoteAppUrl</mca:CSharpReference>
+        </OutArgument>
+      </p2:GetRemoteAppWeb.remoteAppUrl>
+    </p2:GetRemoteAppWeb>
+    <p:BuildDynamicValue sap2010:Annotation.AnnotationText="Prepare the web proxy call. Assign the URL of the service and parameters." sap2010:WorkflowViewState.IdRef="BuildDynamicValue_1">
+      <p:BuildDynamicValue.Result>
+        <InOutArgument x:TypeArguments="p:DynamicValue">
+          <mca:CSharpReference x:TypeArguments="p:DynamicValue">serviceArgs</mca:CSharpReference>
+        </InOutArgument>
+      </p:BuildDynamicValue.Result>
+      <scg:Dictionary x:TypeArguments="x:String, InArgument">
+        <InArgument x:TypeArguments="x:String" x:Key="requestInfo/__metadata/type">SP.WebRequestInfo</InArgument>
+        <InArgument x:TypeArguments="x:String" x:Key="requestInfo/Url">
+          <mca:CSharpValue x:TypeArguments="x:String">remoteAppUrl + "My/"</mca:CSharpValue>
+        </InArgument>
+        <InArgument x:TypeArguments="x:String" x:Key="requestInfo/Method">POST</InArgument>
+        <InArgument x:TypeArguments="x:String" x:Key="requestInfo/Headers/results(0)/__metadata/type">SP.KeyValue</InArgument>
+        <InArgument x:TypeArguments="x:String" x:Key="requestInfo/Headers/results(0)/Key">SPAppWebUrl</InArgument>
+        <InArgument x:TypeArguments="x:String" x:Key="requestInfo/Headers/results(0)/Value">
+          <mca:CSharpValue x:TypeArguments="x:String">spWebUrl</mca:CSharpValue>
+        </InArgument>
+        <InArgument x:TypeArguments="x:String" x:Key="requestInfo/Headers/results(0)/ValueType">Edm.String</InArgument>
+      </scg:Dictionary>
+    </p:BuildDynamicValue>
+    <p:HttpSend sap2010:Annotation.AnnotationText="Call the web service through the web proxy." DisplayName=" CallWebService (HttpSend)" sap2010:WorkflowViewState.IdRef="HttpSend_4" Method="POST" RetryOnConnectionFailure="False">
+      <p:HttpSend.RequestContent>
+        <InArgument x:TypeArguments="p:DynamicValue">
+          <mca:CSharpValue x:TypeArguments="p:DynamicValue">serviceArgs</mca:CSharpValue>
+        </InArgument>
+      </p:HttpSend.RequestContent>
+      <p:HttpSend.RequestHeaders>
+        <InArgument x:TypeArguments="p:DynamicValue">
+          <p:SetDynamicValueProperties>
+            <scg:Dictionary x:TypeArguments="x:String, InArgument">
+              <InArgument x:TypeArguments="x:String" x:Key="Content-Type">application/json;odata=verbose</InArgument>
+              <InArgument x:TypeArguments="x:String" x:Key="Accept">application/json;odata=verbose</InArgument>
+            </scg:Dictionary>
+          </p:SetDynamicValueProperties>
+        </InArgument>
+      </p:HttpSend.RequestHeaders>
+      <p:HttpSend.ResponseContent>
+        <OutArgument x:TypeArguments="p:DynamicValue">
+          <mca:CSharpReference x:TypeArguments="p:DynamicValue">variable1</mca:CSharpReference>
+        </OutArgument>
+      </p:HttpSend.ResponseContent>
+      <p:HttpSend.Uri>
+        <InArgument x:TypeArguments="x:String">
+          <mca:CSharpValue x:TypeArguments="x:String">spWebUrl + "_api/SP.WebProxy.invoke"</mca:CSharpValue>
+        </InArgument>
+      </p:HttpSend.Uri>
+    </p:HttpSend>
+    <p:GetDynamicValueProperty x:TypeArguments="x:String" sap2010:Annotation.AnnotationText="Retrieve the body of the response. It will contain the JSON representation of the web service's result." sap2010:WorkflowViewState.IdRef="GetDynamicValueProperty`1_1" PropertyName="d/Invoke/Body">
+      <p:GetDynamicValueProperty.Result>
+        <OutArgument x:TypeArguments="x:String">
+          <mca:CSharpReference x:TypeArguments="x:String">result</mca:CSharpReference>
+        </OutArgument>
+      </p:GetDynamicValueProperty.Result>
+      <p:GetDynamicValueProperty.Source>
+        <InArgument x:TypeArguments="p:DynamicValue">
+          <mca:CSharpValue x:TypeArguments="p:DynamicValue">variable1</mca:CSharpValue>
+        </InArgument>
+      </p:GetDynamicValueProperty.Source>
+    </p:GetDynamicValueProperty>
+    <p:ParseDynamicValue sap2010:Annotation.AnnotationText="Parse the JSON string into a DynamicValue." sap2010:WorkflowViewState.IdRef="ParseDynamicValue_1">
+      <p:ParseDynamicValue.Result>
+        <OutArgument x:TypeArguments="p:DynamicValue">
+          <mca:CSharpReference x:TypeArguments="p:DynamicValue">variable1</mca:CSharpReference>
+        </OutArgument>
+      </p:ParseDynamicValue.Result>
+      <InArgument x:TypeArguments="x:String">
+        <mca:CSharpValue x:TypeArguments="x:String">result</mca:CSharpValue>
+      </InArgument>
+    </p:ParseDynamicValue>
+    <p:GetDynamicValueProperty x:TypeArguments="x:String" sap2010:Annotation.AnnotationText="Read field(s) from the response. Our sample service returns a string, so we leave the PropertyName empty." sap2010:WorkflowViewState.IdRef="GetDynamicValueProperty`1_2">
+      <p:GetDynamicValueProperty.Result>
+        <OutArgument x:TypeArguments="x:String">
+          <mca:CSharpReference x:TypeArguments="x:String">result</mca:CSharpReference>
+        </OutArgument>
+      </p:GetDynamicValueProperty.Result>
+      <p:GetDynamicValueProperty.Source>
+        <InArgument x:TypeArguments="p:DynamicValue">
+          <mca:CSharpValue x:TypeArguments="p:DynamicValue">variable1</mca:CSharpValue>
+        </InArgument>
+      </p:GetDynamicValueProperty.Source>
+    </p:GetDynamicValueProperty>
+    <p1:SetField FieldValueDynamicValue="{x:Null}" sap2010:Annotation.AnnotationText="Set the title of the current list item to the result of the web service call." sap2010:WorkflowViewState.IdRef="SetField_1">
+      <p1:SetField.FieldName>
+        <InArgument x:TypeArguments="x:String">
+          <mca:CSharpValue x:TypeArguments="x:String">"Title"</mca:CSharpValue>
+        </InArgument>
+      </p1:SetField.FieldName>
+      <p1:SetField.FieldValue>
+        <InArgument x:TypeArguments="x:Object">
+          <mca:CSharpValue x:TypeArguments="x:Object">result</mca:CSharpValue>
+        </InArgument>
+      </p1:SetField.FieldValue>
+    </p1:SetField>
+    <sads:DebugSymbol.Symbol>d0hFOlxQZXJzb25hbFxzcmNcaW91cmlzXFdlYlByb3h5V0ZcV2ViUHJveHlTYW1wbGVcV29ya2Zsb3cxXFdvcmtmbG93LnhhbWwjIwOXAQ4CAQErBTERAgFtMgU4GgIBZjkFTBsCAU5NBWcSAgE3aAVzIQIBKXQFfRsCARx+BYkBIQIBD4oBBZUBEwIBAi4LLlkCAW41CzVdAgFnRltGZgIBZUVnRXICAWRCC0JdAgFeQFRAZQIBXTwLPGICAVdIC0hRAgFRREtETwIBUEphSmsCAU9VC1opAgFLUAtQWgIBRWQLZG0CAT9fC19gAgE5Tb4BTcQBAgE4awtrVwIBMXALcFgCAStokgJooQICASp3C3dgAgEjewl7TQIBHYEBC4EBVwIBFoYBC4YBWAIBEJIBC5IBTwIBCY0BC40BUAIBA1hFWGMCAU1XS1dpAgFM</sads:DebugSymbol.Symbol>
+  </Sequence>
+  <sap2010:WorkflowViewState.ViewStateManager>
+    <sap2010:ViewStateManager>
+      <sap2010:ViewStateData Id="WebUri_1" sap:VirtualizedContainerService.HintSize="247,45">
+        <sap:WorkflowViewStateService.ViewState>
+          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+            <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
+          </scg:Dictionary>
+        </sap:WorkflowViewStateService.ViewState>
+      </sap2010:ViewStateData>
+      <sap2010:ViewStateData Id="GetRemoteAppWeb_1" sap:VirtualizedContainerService.HintSize="247,45">
+        <sap:WorkflowViewStateService.ViewState>
+          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+            <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
+          </scg:Dictionary>
+        </sap:WorkflowViewStateService.ViewState>
+      </sap2010:ViewStateData>
+      <sap2010:ViewStateData Id="BuildDynamicValue_1" sap:VirtualizedContainerService.HintSize="247,130">
+        <sap:WorkflowViewStateService.ViewState>
+          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+            <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
+          </scg:Dictionary>
+        </sap:WorkflowViewStateService.ViewState>
+      </sap2010:ViewStateData>
+      <sap2010:ViewStateData Id="HttpSend_4" sap:VirtualizedContainerService.HintSize="247,100">
+        <sap:WorkflowViewStateService.ViewState>
+          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+            <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
+          </scg:Dictionary>
+        </sap:WorkflowViewStateService.ViewState>
+      </sap2010:ViewStateData>
+      <sap2010:ViewStateData Id="GetDynamicValueProperty`1_1" sap:VirtualizedContainerService.HintSize="247,90">
+        <sap:WorkflowViewStateService.ViewState>
+          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+            <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
+          </scg:Dictionary>
+        </sap:WorkflowViewStateService.ViewState>
+      </sap2010:ViewStateData>
+      <sap2010:ViewStateData Id="ParseDynamicValue_1" sap:VirtualizedContainerService.HintSize="247,60">
+        <sap:WorkflowViewStateService.ViewState>
+          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+            <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
+          </scg:Dictionary>
+        </sap:WorkflowViewStateService.ViewState>
+      </sap2010:ViewStateData>
+      <sap2010:ViewStateData Id="GetDynamicValueProperty`1_2" sap:VirtualizedContainerService.HintSize="247,90">
+        <sap:WorkflowViewStateService.ViewState>
+          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+            <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
+          </scg:Dictionary>
+        </sap:WorkflowViewStateService.ViewState>
+      </sap2010:ViewStateData>
+      <sap2010:ViewStateData Id="SetField_1" sap:VirtualizedContainerService.HintSize="247,22" />
+      <sap2010:ViewStateData Id="Sequence_1" sap:VirtualizedContainerService.HintSize="269,986">
+        <sap:WorkflowViewStateService.ViewState>
+          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+            <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+          </scg:Dictionary>
+        </sap:WorkflowViewStateService.ViewState>
+      </sap2010:ViewStateData>
+      <sap2010:ViewStateData Id="WebProxySample.Workflow1.Workflow_1" sap:VirtualizedContainerService.HintSize="309,1066" />
+    </sap2010:ViewStateManager>
+  </sap2010:WorkflowViewState.ViewStateManager>
+</Activity>
