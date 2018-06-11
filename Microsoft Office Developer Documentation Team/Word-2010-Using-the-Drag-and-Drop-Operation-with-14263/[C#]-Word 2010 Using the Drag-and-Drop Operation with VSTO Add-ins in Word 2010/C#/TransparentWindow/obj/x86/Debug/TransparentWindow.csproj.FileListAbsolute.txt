@@ -1,0 +1,9 @@
+c:\users\nagavo\documents\visual studio 2010\Projects\dragdrop\TransparentWindow\bin\Debug\TransparentWindow.exe
+c:\users\nagavo\documents\visual studio 2010\Projects\dragdrop\TransparentWindow\bin\Debug\TransparentWindow.pdb
+c:\users\nagavo\documents\visual studio 2010\Projects\dragdrop\TransparentWindow\obj\x86\Debug\ResolveAssemblyReference.cache
+c:\users\nagavo\documents\visual studio 2010\Projects\dragdrop\TransparentWindow\obj\x86\Debug\TransparentWindow.Form1.resources
+c:\users\nagavo\documents\visual studio 2010\Projects\dragdrop\TransparentWindow\obj\x86\Debug\TransparentWindow.Properties.Resources.resources
+c:\users\nagavo\documents\visual studio 2010\Projects\dragdrop\TransparentWindow\obj\x86\Debug\GenerateResource.read.1.tlog
+c:\users\nagavo\documents\visual studio 2010\Projects\dragdrop\TransparentWindow\obj\x86\Debug\GenerateResource.write.1.tlog
+c:\users\nagavo\documents\visual studio 2010\Projects\dragdrop\TransparentWindow\obj\x86\Debug\TransparentWindow.exe
+c:\users\nagavo\documents\visual studio 2010\Projects\dragdrop\TransparentWindow\obj\x86\Debug\TransparentWindow.pdb

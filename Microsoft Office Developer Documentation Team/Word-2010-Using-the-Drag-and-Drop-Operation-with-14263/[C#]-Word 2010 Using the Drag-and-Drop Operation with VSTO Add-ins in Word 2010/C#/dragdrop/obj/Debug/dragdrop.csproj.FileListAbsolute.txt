@@ -1,0 +1,41 @@
+c:\users\nagavo\documents\visual studio 2010\Projects\dragdrop\dragdrop\bin\Debug\dragdrop.dll
+c:\users\nagavo\documents\visual studio 2010\Projects\dragdrop\dragdrop\bin\Debug\dragdrop.pdb
+c:\users\nagavo\documents\visual studio 2010\Projects\dragdrop\dragdrop\bin\Debug\dragdrop.dll.manifest
+c:\users\nagavo\documents\visual studio 2010\Projects\dragdrop\dragdrop\bin\Debug\dragdrop.vsto
+c:\users\nagavo\documents\visual studio 2010\Projects\dragdrop\dragdrop\bin\Debug\Microsoft.Office.Tools.Common.v4.0.Utilities.dll
+c:\users\nagavo\documents\visual studio 2010\Projects\dragdrop\dragdrop\bin\Debug\Microsoft.Office.Tools.Common.v4.0.Utilities.xml
+c:\users\nagavo\documents\visual studio 2010\Projects\dragdrop\dragdrop\obj\Debug\ResolveAssemblyReference.cache
+c:\users\nagavo\documents\visual studio 2010\Projects\dragdrop\dragdrop\obj\Debug\dragdrop.Properties.Resources.resources
+c:\users\nagavo\documents\visual studio 2010\Projects\dragdrop\dragdrop\obj\Debug\dragdrop.WordContainerControl.resources
+c:\users\nagavo\documents\visual studio 2010\Projects\dragdrop\dragdrop\obj\Debug\GenerateResource.read.1.tlog
+c:\users\nagavo\documents\visual studio 2010\Projects\dragdrop\dragdrop\obj\Debug\GenerateResource.write.1.tlog
+c:\users\nagavo\documents\visual studio 2010\Projects\dragdrop\dragdrop\obj\Debug\dragdrop.dll
+c:\users\nagavo\documents\visual studio 2010\Projects\dragdrop\dragdrop\obj\Debug\dragdrop.pdb
+D:\LMOBuilds\dragdrop\dragdrop\dragdrop\bin\Debug\dragdrop.dll
+D:\LMOBuilds\dragdrop\dragdrop\dragdrop\bin\Debug\dragdrop.pdb
+D:\LMOBuilds\dragdrop\dragdrop\dragdrop\bin\Debug\dragdrop.dll.manifest
+D:\LMOBuilds\dragdrop\dragdrop\dragdrop\bin\Debug\dragdrop.vsto
+D:\LMOBuilds\dragdrop\dragdrop\dragdrop\bin\Debug\Microsoft.Office.Tools.Common.v4.0.Utilities.dll
+D:\LMOBuilds\dragdrop\dragdrop\dragdrop\bin\Debug\Microsoft.Office.Tools.Common.v4.0.Utilities.xml
+D:\LMOBuilds\dragdrop\dragdrop\dragdrop\obj\Debug\ResolveAssemblyReference.cache
+D:\LMOBuilds\dragdrop\dragdrop\dragdrop\obj\Debug\dragdrop.Form1.resources
+D:\LMOBuilds\dragdrop\dragdrop\dragdrop\obj\Debug\dragdrop.Properties.Resources.resources
+D:\LMOBuilds\dragdrop\dragdrop\dragdrop\obj\Debug\dragdrop.WordContainerControl.resources
+D:\LMOBuilds\dragdrop\dragdrop\dragdrop\obj\Debug\GenerateResource.read.1.tlog
+D:\LMOBuilds\dragdrop\dragdrop\dragdrop\obj\Debug\GenerateResource.write.1.tlog
+D:\LMOBuilds\dragdrop\dragdrop\dragdrop\obj\Debug\dragdrop.dll
+D:\LMOBuilds\dragdrop\dragdrop\dragdrop\obj\Debug\dragdrop.pdb
+C:\Users\saulc\Documents\Word 15\Drag and Drop Article\dragdrop\dragdrop\dragdrop\bin\Debug\dragdrop.dll
+C:\Users\saulc\Documents\Word 15\Drag and Drop Article\dragdrop\dragdrop\dragdrop\bin\Debug\dragdrop.pdb
+C:\Users\saulc\Documents\Word 15\Drag and Drop Article\dragdrop\dragdrop\dragdrop\bin\Debug\dragdrop.dll.manifest
+C:\Users\saulc\Documents\Word 15\Drag and Drop Article\dragdrop\dragdrop\dragdrop\bin\Debug\dragdrop.vsto
+C:\Users\saulc\Documents\Word 15\Drag and Drop Article\dragdrop\dragdrop\dragdrop\bin\Debug\Microsoft.Office.Tools.Common.v4.0.Utilities.dll
+C:\Users\saulc\Documents\Word 15\Drag and Drop Article\dragdrop\dragdrop\dragdrop\bin\Debug\Microsoft.Office.Tools.Common.v4.0.Utilities.xml
+C:\Users\saulc\Documents\Word 15\Drag and Drop Article\dragdrop\dragdrop\dragdrop\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\saulc\Documents\Word 15\Drag and Drop Article\dragdrop\dragdrop\dragdrop\obj\Debug\dragdrop.OverlayForm.resources
+C:\Users\saulc\Documents\Word 15\Drag and Drop Article\dragdrop\dragdrop\dragdrop\obj\Debug\dragdrop.Properties.Resources.resources
+C:\Users\saulc\Documents\Word 15\Drag and Drop Article\dragdrop\dragdrop\dragdrop\obj\Debug\dragdrop.OrdersListUserControl.resources
+C:\Users\saulc\Documents\Word 15\Drag and Drop Article\dragdrop\dragdrop\dragdrop\obj\Debug\GenerateResource.read.1.tlog
+C:\Users\saulc\Documents\Word 15\Drag and Drop Article\dragdrop\dragdrop\dragdrop\obj\Debug\GenerateResource.write.1.tlog
+C:\Users\saulc\Documents\Word 15\Drag and Drop Article\dragdrop\dragdrop\dragdrop\obj\Debug\dragdrop.dll
+C:\Users\saulc\Documents\Word 15\Drag and Drop Article\dragdrop\dragdrop\dragdrop\obj\Debug\dragdrop.pdb
