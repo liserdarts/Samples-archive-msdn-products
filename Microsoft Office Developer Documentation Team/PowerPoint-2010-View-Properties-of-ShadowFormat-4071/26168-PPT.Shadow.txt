@@ -1,0 +1,82 @@
+' PowerPoint 2010/2007
+' Investigate some properties of the ShadowFormat class, new in PowerPoint 2007:
+' Size, Blur, and RotateWithShape
+
+' Copy this code into a module in a new presentation.
+' Display the VBA window side-by-side with the PowerPoint window
+' and press F8 to single step through this
+' code for the most effective use of this demonstration.
+
+
+Sub ShadowFormatDemo()
+    ' Work with new ShadowFormat features.
+   
+    ' Create a blank slide.
+    Dim sld As Slide
+    Set sld = ActivePresentation.Slides.Add(2, ppLayoutBlank)
+  
+    ' Add a shape to the new slide.
+    Dim shp As Shape
+    Set shp = sld.Shapes.AddShape(msoShapeGear9, 100, 100, 200, 200)
+  
+    sld.Select
+  
+    With shp.Shadow
+        ' Set values to demonstrate blur:
+        .Size = 120
+        .ForeColor.ObjectThemeColor = msoThemeColorAccent6
+        .Transparency = 0.8
+       
+        .OffsetX = 20
+        .OffsetY = 40
+       
+        ' Work with the Blur property, which indicates the
+        ' amount of blur in the shadow, measured in points:
+        .Blur = 1
+        .Blur = 5
+        .Blur = 10
+       
+        ' Now try varying the Size property, which measures the
+        ' size as a percentage of the size of the shape, times 100:
+        .Size = 100
+        .Size = 120
+        .Size = 140
+        .Size = 160
+        .Size = 180
+    End With
+   
+    ' The RotateWithShape property is misleading:
+    ' The shadow always rotates with the shape. The behavior
+    ' is subtly different, depending on the shape and the
+    ' offset of the shadow. Try it both ways to compare.
+    ' You should see a different when stepping through
+    ' these two versions of the code. When the property is true,
+    ' it looks like the source of the light casting the shadow
+    ' rotates with the shape. When false, it looks like the source
+    ' of the light doesn't move.
+    shp.Shadow.RotateWithShape = msoTrue
+    shp.Rotation = 30
+    shp.Rotation = 60
+    shp.Rotation = 90
+    shp.Rotation = 120
+    shp.Rotation = 150
+    shp.Rotation = 180
+    shp.Rotation = 210
+    shp.Rotation = 240
+    shp.Rotation = 270
+    shp.Rotation = 300
+    shp.Rotation = 330
+   
+    shp.Shadow.RotateWithShape = msoFalse
+    shp.Rotation = 30
+    shp.Rotation = 60
+    shp.Rotation = 90
+    shp.Rotation = 120
+    shp.Rotation = 150
+    shp.Rotation = 180
+    shp.Rotation = 210
+    shp.Rotation = 240
+    shp.Rotation = 270
+    shp.Rotation = 300
+    shp.Rotation = 330
+End Sub
