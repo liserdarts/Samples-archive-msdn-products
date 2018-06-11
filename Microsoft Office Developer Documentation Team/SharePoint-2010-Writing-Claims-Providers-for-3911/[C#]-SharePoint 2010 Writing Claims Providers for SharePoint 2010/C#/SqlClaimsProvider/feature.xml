@@ -1,0 +1,6 @@
+﻿<Feature   Id="3E864B5C-D855-43e4-B41A-6E054C6C0352" 
+           Title="Sql Claims Provider Feature" 
+           Scope="Farm" 
+           ReceiverAssembly="SqlClaimsProvider, Version=1.0.0.0, Culture=neutral, PublicKeyToken=eaf1ba21464322ae" 
+           ReceiverClass="SqlClaimsProvider.SqlClaimsReceiver" 
+           xmlns="http://schemas.microsoft.com/sharepoint/" />

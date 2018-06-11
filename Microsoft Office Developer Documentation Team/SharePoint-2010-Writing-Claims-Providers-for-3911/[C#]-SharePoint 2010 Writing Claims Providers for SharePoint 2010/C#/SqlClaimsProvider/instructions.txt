@@ -1,0 +1,8 @@
+﻿1.  Install assembly to GAC.
+
+To Install Feature:
+1a.  install-spfeature -path SqlClaimsProvider
+NOTE:  No need to enable / activate because it is a farm-scoped feature.
+
+To Uninstall Feature:
+1b.  uninstall-spfeature -identity SqlClaimsProvider

@@ -1,0 +1,22 @@
+﻿To augment claims:
+SupportsEntityInformation
+FillClaimsForEntity
+FillClaimTypes
+FillClaimValueTypes
+
+To show a hierarchy of names in the left pane of people picker:
+SupportsHierarchy
+FillHierarchy
+
+
+To search for claims:
+SupportsSearch
+SupportsResolve
+FillSearch
+FillSchema
+FillEntityTypes
+FillResolve  (the overload with SPClaim as an input parameter)
+
+To resolve names in type-in control:
+SupportsResolve
+FillResolve (both overloads)
