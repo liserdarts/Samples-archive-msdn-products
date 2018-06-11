@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">
+  <ListInstance Title="Settings" OnQuickLaunch="TRUE" TemplateType="10000" Url="Lists/Settings" Description="My List Instance">
+    <Data>
+      <Rows>
+        <Row>
+          <Field Name="Title">ShowDirectReports</Field>
+          <Field Name="Value">Yes</Field>
+        </Row>
+      </Rows>
+    </Data>
+  </ListInstance>
+</Elements>

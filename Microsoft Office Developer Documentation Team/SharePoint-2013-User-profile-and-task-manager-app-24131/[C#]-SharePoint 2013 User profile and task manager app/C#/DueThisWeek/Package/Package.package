@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package dslVersion="1.0.0.0" 
+        Id="ffcafe0c-ad26-42e7-8c1a-2759812a8096" 
+        solutionId="ffcafe0c-ad26-42e7-8c1a-2759812a8096" 
+        xmlns="http://schemas.microsoft.com/VisualStudio/2008/SharePointTools/PackageModel" 
+        name="DueThisWeek"
+        sharePointProductVersion="15.0">
+  <features>
+        <featureReference itemId="bfe87e78-07b1-4e8c-9f47-b733aa352f3a" />
+  </features>
+</package>
