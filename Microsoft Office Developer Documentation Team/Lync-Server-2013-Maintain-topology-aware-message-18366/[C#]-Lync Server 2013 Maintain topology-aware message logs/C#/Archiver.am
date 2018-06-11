@@ -1,0 +1,48 @@
+<?xml version="1.0"?>
+<r:applicationManifest
+ r:appUri="http://www.microsoft.com/LCS/Samples/Archiver"
+ xmlns:r="http://schemas.microsoft.com/lcs/2006/05">
+
+<!--
+  - Handle all IMs, including those with strict routes
+  - and those with request URIs that don't match this server's
+  - domain.
+  -->
+<r:requestFilter methodNames="MESSAGE,INVITE,ACK,BYE"
+                 strictRoute="true"
+                 domainSupported="false"/>
+
+<!--
+  - Handle all responses.
+  -->
+<r:responseFilter reasonCodes="ALL"/>
+
+<r:splScript><![CDATA[
+
+/*++
+
+Script:
+
+    Archiver.am
+
+Abstract:
+
+    This script dispatches incoming requests and responses to the
+    managed part of the archiver sample, found in Archiver.cs.
+
+--*/
+
+/*
+ * Dispatch all requests to the managed part of this application.
+ */
+if (sipRequest)
+{
+    Dispatch("OnRequest");
+}
+else
+{
+    Dispatch("OnResponse");
+}
+
+]]></r:splScript>
+</r:applicationManifest>

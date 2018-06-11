@@ -1,0 +1,7 @@
+C:\Users\kdeding\Desktop\MyApps\LyncServerApps\Archiver\bin\Debug\ArchiverReadme.txt
+C:\Users\kdeding\Desktop\MyApps\LyncServerApps\Archiver\bin\Debug\Archiver.am
+C:\Users\kdeding\Desktop\MyApps\LyncServerApps\Archiver\bin\Debug\Archiver.exe
+C:\Users\kdeding\Desktop\MyApps\LyncServerApps\Archiver\bin\Debug\Archiver.pdb
+C:\Users\kdeding\Desktop\MyApps\LyncServerApps\Archiver\bin\Debug\ServerAgent.dll
+C:\Users\kdeding\Desktop\MyApps\LyncServerApps\Archiver\obj\x86\Debug\Archiver.exe
+C:\Users\kdeding\Desktop\MyApps\LyncServerApps\Archiver\obj\x86\Debug\Archiver.pdb
