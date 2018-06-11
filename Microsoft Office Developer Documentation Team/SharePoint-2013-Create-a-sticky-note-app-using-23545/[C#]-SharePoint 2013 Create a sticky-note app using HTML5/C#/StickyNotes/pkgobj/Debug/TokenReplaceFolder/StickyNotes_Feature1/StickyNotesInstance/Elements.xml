@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">
+  <ListInstance Title="StickyNotes"
+                OnQuickLaunch="TRUE"
+                TemplateType="10000"
+                Url="Lists/StickyNotes"
+                Description="My List Instance">
+    <Data>
+      <Rows>
+        <Row>
+          <Field Name="Title">Get groceries after work</Field>
+        </Row>
+        <Row>
+          <Field Name="Title">Pick up dog food</Field>
+        </Row>
+        <Row>
+          <Field Name="Title">Doctor's appointment</Field>
+        </Row>
+      </Rows>
+    </Data>
+  </ListInstance>
+</Elements>

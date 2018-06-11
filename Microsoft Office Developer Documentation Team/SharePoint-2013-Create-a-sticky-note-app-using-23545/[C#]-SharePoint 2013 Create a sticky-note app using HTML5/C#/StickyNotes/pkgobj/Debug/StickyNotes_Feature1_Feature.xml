@@ -1,0 +1,35 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Feature xmlns="http://schemas.microsoft.com/sharepoint/" Description="SharePoint App Feature" Id="772f98dc-ebc7-44e6-8b07-cb2a744f846d" Scope="Web" Title="StickyNotes Feature1" Version="1.0.0.0">
+  <ElementManifests>
+    <ElementManifest Location="Pages\Elements.xml" />
+    <ElementFile Location="Pages\Default.aspx" />
+    <ElementManifest Location="Scripts\Elements.xml" />
+    <ElementFile Location="Scripts\App.js" />
+    <ElementFile Location="Scripts\jquery-1.8.2.min.js" />
+    <ElementFile Location="Scripts\jquery-1.8.2.js" />
+    <ElementFile Location="Scripts\jquery-1.8.2.intellisense.js" />
+    <ElementFile Location="Scripts\wingtip.stickynote.js" />
+    <ElementFile Location="Scripts\knockout-2.2.1.js" />
+    <ElementFile Location="Scripts\knockout-2.2.1.debug.js" />
+    <ElementFile Location="Scripts\wingtip.viewmodel.js" />
+    <ElementManifest Location="Content\Elements.xml" />
+    <ElementFile Location="Content\App.css" />
+    <ElementManifest Location="Images\Elements.xml" />
+    <ElementFile Location="Images\AppIcon.png" />
+    <ElementManifest Location="StickyNotesInstance\Elements.xml" />
+    <ElementManifest Location="StickyNotes\Elements.xml" />
+    <ElementFile Location="StickyNotes\Schema.xml" />
+  </ElementManifests>
+  <UpgradeActions>
+    <VersionRange>
+      <ApplyElementManifests>
+        <ElementManifest Location="Pages\Elements.xml" />
+        <ElementManifest Location="Scripts\Elements.xml" />
+        <ElementManifest Location="Content\Elements.xml" />
+        <ElementManifest Location="Images\Elements.xml" />
+        <ElementManifest Location="StickyNotesInstance\Elements.xml" />
+        <ElementManifest Location="StickyNotes\Elements.xml" />
+      </ApplyElementManifests>
+    </VersionRange>
+  </UpgradeActions>
+</Feature>
