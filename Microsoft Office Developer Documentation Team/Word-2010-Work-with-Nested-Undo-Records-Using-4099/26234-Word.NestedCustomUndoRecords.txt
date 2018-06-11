@@ -1,0 +1,69 @@
+' Microsoft Word 2010
+
+' Work with nested undo records.
+
+' Copy all of this code into a new module in a
+' Microsoft Word document.
+
+' You can nest undo records, either intentionally or unintentionally.
+' Only the name of the outermost custom undo record shows up in the
+' list of actions to be undone in Word. When you undo the outermost
+' undo record, you undo all the nested ones, as well.
+
+' You can use the UndoRecord.IsRecordingCustomRecord and CustomRecordLevel
+' properties to determine if you're currently creating a custom undo record,
+' and if so, how many levels deep you are the nesting.
+
+' The following sample includes three "helper" procedures. One procedure
+' starts recording a custom undo record, and might be called several times
+' in succession (thus, nesting undo records several levels deep). The second
+' helper procedure "unwinds" the undo record recording, and ensures that you
+' start a new custom undo record, so that a new item appears in Word on the list
+' of actions to undo. The third procedure simply ends all undo record recording.
+
+' The example is slightly contrived, but it demonstrates how
+' you can use the various methods of the undo record.
+
+Sub TestNestedUndo()
+    CreateUndoRecord "Record 1"
+    CreateUndoRecord "Record 2"
+    CreateUndoRecord "Record 3"
+    CreateUndoRecord "Record 4"
+    StartNewUndoRecord "Record 5"
+    CreateUndoRecord "Record 6"
+    CreateUndoRecord "Record 7"
+    CreateUndoRecord "Record 8"
+    CreateUndoRecord "Record 9"
+    StartNewUndoRecord "Record 10"
+    EndUndoRecords
+End Sub
+
+Sub CreateUndoRecord(urName As String)
+    ' Create a new undo record and insert some text.
+    Dim ur As UndoRecord
+
+    Set ur = Application.UndoRecord
+    ur.StartCustomRecord urName
+    ActiveDocument.Range.InsertAfter urName & " started."
+    ActiveDocument.Range.InsertParagraphAfter
+End Sub
+
+Sub StartNewUndoRecord(urName As String)
+    EndUndoRecords
+    CreateUndoRecord urName
+End Sub
+
+Sub EndUndoRecords()
+    Dim ur As UndoRecord
+
+    Set ur = Application.UndoRecord
+    If ur.IsRecordingCustomRecord Then
+        Do While ur.CustomRecordLevel > 0
+            ' Note that CustomRecordName only returns the
+            ' outermost undo record level name.
+            ActiveDocument.Range.InsertAfter ur.CustomRecordName & " ended."
+            ActiveDocument.Range.InsertParagraphAfter
+            ur.EndCustomRecord
+        Loop
+    End If
+End Sub
