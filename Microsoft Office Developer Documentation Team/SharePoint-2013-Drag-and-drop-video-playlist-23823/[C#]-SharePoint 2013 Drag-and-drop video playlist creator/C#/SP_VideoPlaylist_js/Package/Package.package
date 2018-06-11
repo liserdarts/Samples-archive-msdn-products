@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package dslVersion="1.0.0.0" 
+        Id="f39c8429-38b0-47e8-b40b-c06c8db2bb37" 
+        solutionId="f39c8429-38b0-47e8-b40b-c06c8db2bb37" 
+        xmlns="http://schemas.microsoft.com/VisualStudio/2008/SharePointTools/PackageModel" 
+        name="SP_VideoPlaylist_js"
+        sharePointProductVersion="15.0">
+  <features>
+        <featureReference itemId="9ce68149-0705-487a-926d-28ae2976f64b" />
+  </features>
+</package>
