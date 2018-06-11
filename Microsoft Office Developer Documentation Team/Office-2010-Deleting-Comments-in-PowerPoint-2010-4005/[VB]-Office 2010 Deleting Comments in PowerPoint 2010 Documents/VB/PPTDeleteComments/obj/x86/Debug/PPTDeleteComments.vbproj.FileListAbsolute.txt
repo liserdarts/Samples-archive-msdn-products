@@ -1,0 +1,10 @@
+I:\DropBox\My Dropbox\Office 2010 VHTs\Sep 2010\VHT1 -- PPTDeleteComments\Demo\VB\PPTDeleteComments\PPTDeleteComments\bin\Debug\PPTDeleteComments.exe
+I:\DropBox\My Dropbox\Office 2010 VHTs\Sep 2010\VHT1 -- PPTDeleteComments\Demo\VB\PPTDeleteComments\PPTDeleteComments\bin\Debug\PPTDeleteComments.pdb
+I:\DropBox\My Dropbox\Office 2010 VHTs\Sep 2010\VHT1 -- PPTDeleteComments\Demo\VB\PPTDeleteComments\PPTDeleteComments\bin\Debug\PPTDeleteComments.xml
+I:\DropBox\My Dropbox\Office 2010 VHTs\Sep 2010\VHT1 -- PPTDeleteComments\Demo\VB\PPTDeleteComments\PPTDeleteComments\obj\x86\Debug\ResolveAssemblyReference.cache
+I:\DropBox\My Dropbox\Office 2010 VHTs\Sep 2010\VHT1 -- PPTDeleteComments\Demo\VB\PPTDeleteComments\PPTDeleteComments\obj\x86\Debug\PPTDeleteComments.Resources.resources
+I:\DropBox\My Dropbox\Office 2010 VHTs\Sep 2010\VHT1 -- PPTDeleteComments\Demo\VB\PPTDeleteComments\PPTDeleteComments\obj\x86\Debug\GenerateResource.read.1.tlog
+I:\DropBox\My Dropbox\Office 2010 VHTs\Sep 2010\VHT1 -- PPTDeleteComments\Demo\VB\PPTDeleteComments\PPTDeleteComments\obj\x86\Debug\GenerateResource.write.1.tlog
+I:\DropBox\My Dropbox\Office 2010 VHTs\Sep 2010\VHT1 -- PPTDeleteComments\Demo\VB\PPTDeleteComments\PPTDeleteComments\obj\x86\Debug\PPTDeleteComments.exe
+I:\DropBox\My Dropbox\Office 2010 VHTs\Sep 2010\VHT1 -- PPTDeleteComments\Demo\VB\PPTDeleteComments\PPTDeleteComments\obj\x86\Debug\PPTDeleteComments.xml
+I:\DropBox\My Dropbox\Office 2010 VHTs\Sep 2010\VHT1 -- PPTDeleteComments\Demo\VB\PPTDeleteComments\PPTDeleteComments\obj\x86\Debug\PPTDeleteComments.pdb
