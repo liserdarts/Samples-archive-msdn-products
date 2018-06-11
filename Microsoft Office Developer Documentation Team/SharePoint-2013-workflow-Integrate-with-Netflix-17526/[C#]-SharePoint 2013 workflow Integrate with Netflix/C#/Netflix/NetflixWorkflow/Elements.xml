@@ -1,0 +1,51 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">
+  <Module Name="NetflixWorkflow" Url="wfsvc/2a7411808eb7493a84e47a037822a44c">
+    <File Url="Workflow.xaml" Type="GhostableInLibrary" Path="NetflixWorkflow\Workflow.xaml" DoGUIDFixUp="TRUE">
+      <Property Name="ContentType" Value="WorkflowServiceDefinition" />
+      <Property Name="isReusable" Value="true" />
+      <Property Name="Visibility" Value="Public" />
+      <Property Name="RequiresInitiationForm" Value="False" />
+      <Property Name="RequiresAssociationForm" Value="False" />
+      <Property Name="WSPublishState" Value="3" />
+      <Property Name="WSDisplayName" Value="NetflixWorkflow" />
+      <Property Name="WSDescription" Value="My 'NetflixWorkflow' workflow" />
+      <Property Name="RestrictToType" Value="List" />
+      <!--<Property Name="RestrictToScope" Value="{$ListId:Lists/MovieList;}" />-->
+    </File>
+    <File Url="WorkflowStartAssociation" Path="NetflixWorkflow\WorkflowStartAssociation" Type="GhostableInLibrary">
+      <Property Name="WSDisplayName" Value="NetflixWorkflow - WorkflowStart" />
+      <Property Name="ContentType" Value="WorkflowServiceSubscription" />
+      <Property Name="WSPublishState" Value="3" />
+      <Property Name="WSEventType" Value="WorkflowStart" />
+      <Property Name="WSEnabled" Value="true" />
+      <Property Name="WSEventSourceGUID" Value="{$ListId:Lists/MovieList;}" />
+      <Property Name="ListId" Value="{$ListId:Lists/MovieList;}" />
+      <Property Name="Microsoft.SharePoint.ActivationProperties.ListId" Value="{$ListId:Lists/MovieList;}" />
+      <!--<Property Name="Microsoft.SharePoint.ActivationProperties.HistoryListId" Value="{$ListId:Lists/WorkflowHistoryList;}" />
+      <Property Name="Microsoft.SharePoint.ActivationProperties.TaskListId" Value="{$ListId:Lists/WorkflowTaskList;;}" />-->
+      <Property Name="HistoryListId" Value="{$ListId:WorkflowHistoryList;}" />
+      <Property Name="TaskListId" Value="{$ListId:WorkflowTaskList;}" />
+    </File>
+    <File Url="ItemAddedAssociation" Path="NetflixWorkflow\ItemAddedAssociation" Type="GhostableInLibrary">
+      <Property Name="WSDisplayName" Value="NetflixWorkflow - ItemAdded" />
+      <Property Name="ContentType" Value="WorkflowServiceSubscription" />
+      <Property Name="WSPublishState" Value="3" />
+      <Property Name="WSEventType" Value="ItemAdded" />
+      <Property Name="WSEnabled" Value="true" />
+      <Property Name="WSEventSourceGUID" Value="{$ListId:Lists/MovieList;}" />
+      <Property Name="ListId" Value="{$ListId:Lists/MovieList;}" />
+      <Property Name="HistoryListId" Value="{$ListId:WorkflowHistoryList;}" />
+      <Property Name="TaskListId" Value="{$ListId:WorkflowTaskList;}" />
+      <Property Name="Microsoft.SharePoint.ActivationProperties.ListId" Value="{$ListId:Lists/MovieList;}" />
+      <!--<Property Name="Microsoft.SharePoint.ActivationProperties.HistoryListId" Value="{$ListId:Lists/WorkflowHistoryList;}" />
+      <Property Name="Microsoft.SharePoint.ActivationProperties.TaskListId" Value="{$ListId:Lists/WorkflowTaskList;;}" />-->
+    </File>
+    </Module>
+  <ListInstance FeatureId="{2c63df2b-ceab-42c6-aeff-b3968162d4b1}"
+                TemplateType="4501"
+                Title="wfsvc"
+                Description="This list instance is used by SharePoint to keep track of workflows. Do not modify."
+                Url="wfsvc"
+                RootWebOnly="FALSE" />
+</Elements>

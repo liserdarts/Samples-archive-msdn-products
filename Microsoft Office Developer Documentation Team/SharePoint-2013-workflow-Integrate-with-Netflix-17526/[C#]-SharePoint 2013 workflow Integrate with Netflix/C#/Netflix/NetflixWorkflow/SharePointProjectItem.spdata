@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ProjectItem Type="Microsoft.VisualStudio.SharePoint.Workflow4" DefaultFile="Workflow.xaml" FeatureReceiverClass="Microsoft.SharePoint.WorkflowServices.SPWorkflowPackageFeatureReceiver" FeatureReceiverAssembly="Microsoft.SharePoint.WorkflowServices, Version=15.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c" SupportedTrustLevels="All" SupportedDeploymentScopes="Web, Site, WebApplication, Farm, Package" xmlns="http://schemas.microsoft.com/VisualStudio/2010/SharePointTools/SharePointProjectItemModel">
+  <Files>
+    <ProjectItemFile Source="Elements.xml" Target="NetflixWorkflow\" Type="ElementManifest" />
+    <ProjectItemFile Source="Workflow.xaml" Target="NetflixWorkflow\" Type="ElementFile" />
+    <ProjectItemFile Source="WorkflowStartAssociation" Target="NetflixWorkflow\" Type="ElementFile" />
+    <ProjectItemFile Source="ItemAddedAssociation" Target="NetflixWorkflow\" Type="ElementFile" />
+  </Files>
+  <FeatureActivationDependencies>
+    <FeatureActivationDependency>2c63df2b-ceab-42c6-aeff-b3968162d4b1</FeatureActivationDependency>
+  </FeatureActivationDependencies>
+</ProjectItem>

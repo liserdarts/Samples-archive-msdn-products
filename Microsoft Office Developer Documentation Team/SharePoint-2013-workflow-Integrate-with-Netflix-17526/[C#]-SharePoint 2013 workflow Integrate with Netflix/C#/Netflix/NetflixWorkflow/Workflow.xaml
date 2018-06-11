@@ -1,0 +1,224 @@
+﻿<Activity mc:Ignorable="sap sap2010 sads" x:Class="Netflix.NetflixWorkflow.Workflow" sap2010:ExpressionActivityEditor.ExpressionActivityEditor="C#" sap2010:WorkflowViewState.IdRef="Netflix.NetflixWorkflow.Workflow_1"
+ xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities"
+ xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+ xmlns:mca="clr-namespace:Microsoft.CSharp.Activities;assembly=System.Activities"
+ xmlns:p="http://schemas.microsoft.com/workflow/2012/xaml/activities"
+ xmlns:p1="wf://workflow.windows.net/$Activities"
+ xmlns:s="clr-namespace:System;assembly=mscorlib"
+ xmlns:sads="http://schemas.microsoft.com/netfx/2010/xaml/activities/debugger"
+ xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation"
+ xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation"
+ xmlns:scg="clr-namespace:System.Collections.Generic;assembly=mscorlib"
+ xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=mscorlib"
+ xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <TextExpression.NamespacesForImplementation>
+    <sco:Collection x:TypeArguments="x:String">
+      <x:String>System</x:String>
+      <x:String>System.Collections.Generic</x:String>
+      <x:String>System.Data</x:String>
+      <x:String>System.Linq</x:String>
+      <x:String>System.Text</x:String>
+      <x:String>Microsoft.Activities</x:String>
+    </sco:Collection>
+  </TextExpression.NamespacesForImplementation>
+  <TextExpression.ReferencesForImplementation>
+    <sco:Collection x:TypeArguments="AssemblyReference">
+      <AssemblyReference>Microsoft.Activities</AssemblyReference>
+      <AssemblyReference>Microsoft.SharePoint.WorkflowServices.Activities</AssemblyReference>
+      <AssemblyReference>PresentationFramework</AssemblyReference>
+      <AssemblyReference>System</AssemblyReference>
+      <AssemblyReference>System.Activities</AssemblyReference>
+      <AssemblyReference>System.Data</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization</AssemblyReference>
+      <AssemblyReference>System.ServiceModel.Activities</AssemblyReference>
+      <AssemblyReference>System.Xaml</AssemblyReference>
+      <AssemblyReference>System.Xml</AssemblyReference>
+      <AssemblyReference>System.Xml.Linq</AssemblyReference>
+      <AssemblyReference>System.Core</AssemblyReference>
+      <AssemblyReference>mscorlib</AssemblyReference>
+      <AssemblyReference>Netflix</AssemblyReference>
+    </sco:Collection>
+  </TextExpression.ReferencesForImplementation>
+  <Sequence sap2010:WorkflowViewState.IdRef="Sequence_1">
+    <Sequence.Variables>
+      <Variable x:TypeArguments="x:Int32" Name="topItems" />
+      <Variable x:TypeArguments="x:String" Name="videoStr" />
+      <Variable x:TypeArguments="x:String" Name="searchkeyword" />
+      <Variable x:TypeArguments="x:String" Name="title" />
+      <Variable x:TypeArguments="p:DynamicValue" Name="videoDV" />
+      <Variable x:TypeArguments="s:Guid" Name="currentListItemGuid" />
+    </Sequence.Variables>
+    <p1:GetCurrentItemGuid sap2010:WorkflowViewState.IdRef="GetCurrentItemGuid_1">
+      <p1:GetCurrentItemGuid.Result>
+        <OutArgument x:TypeArguments="s:Guid">
+          <mca:CSharpReference x:TypeArguments="s:Guid">currentListItemGuid</mca:CSharpReference>
+        </OutArgument>
+      </p1:GetCurrentItemGuid.Result>
+    </p1:GetCurrentItemGuid>
+    <p1:LookupSPListItemStringProperty sap2010:WorkflowViewState.IdRef="LookupSPListItemStringProperty_1">
+      <p1:LookupSPListItemStringProperty.ItemGuid>
+        <InArgument x:TypeArguments="s:Guid">
+          <mca:CSharpValue x:TypeArguments="s:Guid">currentListItemGuid</mca:CSharpValue>
+        </InArgument>
+      </p1:LookupSPListItemStringProperty.ItemGuid>
+      <p1:LookupSPListItemStringProperty.ListId>
+        <InArgument x:TypeArguments="s:Guid">
+          <mca:CSharpValue x:TypeArguments="s:Guid">System.Guid.Parse("{$ListId:Lists/MovieList;}")</mca:CSharpValue>
+        </InArgument>
+      </p1:LookupSPListItemStringProperty.ListId>
+      <p1:LookupSPListItemStringProperty.PropertyName>
+        <InArgument x:TypeArguments="x:String">
+          <mca:CSharpValue x:TypeArguments="x:String">"Title"</mca:CSharpValue>
+        </InArgument>
+      </p1:LookupSPListItemStringProperty.PropertyName>
+      <p1:LookupSPListItemStringProperty.Result>
+        <OutArgument x:TypeArguments="x:String">
+          <mca:CSharpReference x:TypeArguments="x:String">searchkeyword</mca:CSharpReference>
+        </OutArgument>
+      </p1:LookupSPListItemStringProperty.Result>
+    </p1:LookupSPListItemStringProperty>
+    <WriteLine sap2010:WorkflowViewState.IdRef="WriteLine_1">
+      <InArgument x:TypeArguments="x:String">
+        <mca:CSharpValue x:TypeArguments="x:String">"Keyword is: " + searchkeyword</mca:CSharpValue>
+      </InArgument>
+    </WriteLine>
+    <Assign sap2010:WorkflowViewState.IdRef="Assign_1">
+      <Assign.To>
+        <OutArgument x:TypeArguments="x:Int32">
+          <mca:CSharpReference x:TypeArguments="x:Int32">topItems</mca:CSharpReference>
+        </OutArgument>
+      </Assign.To>
+      <Assign.Value>
+        <InArgument x:TypeArguments="x:Int32">3</InArgument>
+      </Assign.Value>
+    </Assign>
+    <p:HttpGet sap2010:WorkflowViewState.IdRef="HttpGet_1" RetryOnConnectionFailure="True">
+      <p:HttpGet.ResponseContent>
+        <OutArgument x:TypeArguments="p:DynamicValue">
+          <mca:CSharpReference x:TypeArguments="p:DynamicValue">videoDV</mca:CSharpReference>
+        </OutArgument>
+      </p:HttpGet.ResponseContent>
+      <p:HttpGet.Uri>
+        <InArgument x:TypeArguments="x:String">
+          <mca:CSharpValue x:TypeArguments="x:String">"http://odata.netflix.com/Catalog/Titles?$filter=substringof('" + searchkeyword + "', Name)&amp;$format=json&amp;$top=" + topItems + "&amp;$select=Name"</mca:CSharpValue>
+        </InArgument>
+      </p:HttpGet.Uri>
+    </p:HttpGet>
+    <While sap2010:WorkflowViewState.IdRef="While_1">
+      <While.Variables>
+        <Variable x:TypeArguments="x:Int32" Default="0" Name="item" />
+      </While.Variables>
+      <While.Condition>
+        <mca:CSharpValue x:TypeArguments="x:Boolean">item &lt; topItems</mca:CSharpValue>
+      </While.Condition>
+      <Sequence sap2010:WorkflowViewState.IdRef="Sequence_2">
+        <p:GetDynamicValueProperty x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="GetDynamicValueProperty`1_1">
+          <p:GetDynamicValueProperty.PropertyName>
+            <InArgument x:TypeArguments="x:String">
+              <mca:CSharpValue x:TypeArguments="x:String">"d(" + item.ToString() + ")/Name"</mca:CSharpValue>
+            </InArgument>
+          </p:GetDynamicValueProperty.PropertyName>
+          <p:GetDynamicValueProperty.Result>
+            <OutArgument x:TypeArguments="x:String">
+              <mca:CSharpReference x:TypeArguments="x:String">title</mca:CSharpReference>
+            </OutArgument>
+          </p:GetDynamicValueProperty.Result>
+          <p:GetDynamicValueProperty.Source>
+            <InArgument x:TypeArguments="p:DynamicValue">
+              <mca:CSharpValue x:TypeArguments="p:DynamicValue">videoDV</mca:CSharpValue>
+            </InArgument>
+          </p:GetDynamicValueProperty.Source>
+        </p:GetDynamicValueProperty>
+        <Assign sap2010:WorkflowViewState.IdRef="Assign_2">
+          <Assign.To>
+            <OutArgument x:TypeArguments="x:String">
+              <mca:CSharpReference x:TypeArguments="x:String">videoStr</mca:CSharpReference>
+            </OutArgument>
+          </Assign.To>
+          <Assign.Value>
+            <InArgument x:TypeArguments="x:String">
+              <mca:CSharpValue x:TypeArguments="x:String">videoStr + title + ","</mca:CSharpValue>
+            </InArgument>
+          </Assign.Value>
+        </Assign>
+        <Assign sap2010:WorkflowViewState.IdRef="Assign_3">
+          <Assign.To>
+            <OutArgument x:TypeArguments="x:Int32">
+              <mca:CSharpReference x:TypeArguments="x:Int32">item</mca:CSharpReference>
+            </OutArgument>
+          </Assign.To>
+          <Assign.Value>
+            <InArgument x:TypeArguments="x:Int32">
+              <mca:CSharpValue x:TypeArguments="x:Int32">item + 1</mca:CSharpValue>
+            </InArgument>
+          </Assign.Value>
+        </Assign>
+      </Sequence>
+    </While>
+    <p1:SetField sap2010:WorkflowViewState.IdRef="SetField_1">
+      <p1:SetField.FieldName>
+        <InArgument x:TypeArguments="x:String">
+          <mca:CSharpValue x:TypeArguments="x:String">"TopMovies"</mca:CSharpValue>
+        </InArgument>
+      </p1:SetField.FieldName>
+      <p1:SetField.FieldValue>
+        <InArgument x:TypeArguments="x:Object">
+          <mca:CSharpValue x:TypeArguments="x:Object">videoStr</mca:CSharpValue>
+        </InArgument>
+      </p1:SetField.FieldValue>
+    </p1:SetField>
+    <WriteLine sap2010:WorkflowViewState.IdRef="WriteLine_2">
+      <InArgument x:TypeArguments="x:String">
+        <mca:CSharpValue x:TypeArguments="x:String">"Done ::" + videoStr</mca:CSharpValue>
+      </InArgument>
+    </WriteLine>
+    <sads:DebugSymbol.Symbol>d0RDOlxVc2Vyc1xydXhpZVxEZXNrdG9wXE5ldGZsaXhcTmV0ZmxpeFxOZXRmbGl4V29ya2Zsb3dcV29ya2Zsb3cueGFtbCMqA7ABDgIBATMFOR0DAZwBOgVPKQIBf1AFVBECAXdVBV4OAgFuXwVqEQIBX2sFnQENAgEZngEFqQETAgEKqgEFrgERAgECNgs2YgMBnQFCC0J2AwGVAUwLTF4DAY4BPQs9WgMBhwFHC0dQAwGAAVIJUmUCAXhcL1wwAgF2WAtYWAIBb2cLZ+EBAgFnYgtiXgIBYG01bTgCARpyB5wBEgIBI3AJcFoCARumAQumAVECARKhAQuhAVQCAQusAQmsAVsCAQNzCYMBJQIBRoQBCY8BEgIBNZABCZsBEgIBJHsPe1oCAVeAAQ+AAVoCAU92D3ZuAgFHjAEPjAFjAgE+hwEPhwFdAgE2mAEPmAFUAgEtkwEPkwFYAgEl</sads:DebugSymbol.Symbol>
+  </Sequence>
+  <sap2010:WorkflowViewState.ViewStateManager>
+    <sap2010:ViewStateManager>
+      <sap2010:ViewStateData Id="GetCurrentItemGuid_1" sap:VirtualizedContainerService.HintSize="464,22" />
+      <sap2010:ViewStateData Id="LookupSPListItemStringProperty_1" sap:VirtualizedContainerService.HintSize="464,22">
+        <sap:WorkflowViewStateService.ViewState>
+          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+            <scg:Dictionary x:TypeArguments="x:String, x:String" x:Key="SPLocalizedDisplayNames">
+              <x:String x:Key="ListId">MovieList</x:String>
+              <x:String x:Key="PropertyName">Title</x:String>
+            </scg:Dictionary>
+          </scg:Dictionary>
+        </sap:WorkflowViewStateService.ViewState>
+      </sap2010:ViewStateData>
+      <sap2010:ViewStateData Id="WriteLine_1" sap:VirtualizedContainerService.HintSize="464,59" />
+      <sap2010:ViewStateData Id="Assign_1" sap:VirtualizedContainerService.HintSize="464,59" />
+      <sap2010:ViewStateData Id="HttpGet_1" sap:VirtualizedContainerService.HintSize="464,120" />
+      <sap2010:ViewStateData Id="GetDynamicValueProperty`1_1" sap:VirtualizedContainerService.HintSize="242,22" />
+      <sap2010:ViewStateData Id="Assign_2" sap:VirtualizedContainerService.HintSize="242,59" />
+      <sap2010:ViewStateData Id="Assign_3" sap:VirtualizedContainerService.HintSize="242,59" />
+      <sap2010:ViewStateData Id="Sequence_2" sap:VirtualizedContainerService.HintSize="264,344">
+        <sap:WorkflowViewStateService.ViewState>
+          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+            <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+          </scg:Dictionary>
+        </sap:WorkflowViewStateService.ViewState>
+      </sap2010:ViewStateData>
+      <sap2010:ViewStateData Id="While_1" sap:VirtualizedContainerService.HintSize="464,497" />
+      <sap2010:ViewStateData Id="SetField_1" sap:VirtualizedContainerService.HintSize="464,22">
+        <sap:WorkflowViewStateService.ViewState>
+          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+            <scg:Dictionary x:TypeArguments="x:String, x:String" x:Key="SPLocalizedDisplayNames">
+              <x:String x:Key="FieldName">TopMovies</x:String>
+            </scg:Dictionary>
+          </scg:Dictionary>
+        </sap:WorkflowViewStateService.ViewState>
+      </sap2010:ViewStateData>
+      <sap2010:ViewStateData Id="WriteLine_2" sap:VirtualizedContainerService.HintSize="464,59" />
+      <sap2010:ViewStateData Id="Sequence_1" sap:VirtualizedContainerService.HintSize="486,1264">
+        <sap:WorkflowViewStateService.ViewState>
+          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+            <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+          </scg:Dictionary>
+        </sap:WorkflowViewStateService.ViewState>
+      </sap2010:ViewStateData>
+      <sap2010:ViewStateData Id="Netflix.NetflixWorkflow.Workflow_1" sap:VirtualizedContainerService.HintSize="526,1542" />
+    </sap2010:ViewStateManager>
+  </sap2010:WorkflowViewState.ViewStateManager>
+</Activity>

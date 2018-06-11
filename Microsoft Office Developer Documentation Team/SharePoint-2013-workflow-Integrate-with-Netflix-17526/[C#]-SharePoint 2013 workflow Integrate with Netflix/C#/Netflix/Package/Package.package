@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package dslVersion="1.0.0.0" 
+        Id="01cec112-b6a2-4a78-b1de-d961a5f6ef80" 
+        solutionId="01cec112-b6a2-4a78-b1de-d961a5f6ef80" 
+        xmlns="http://schemas.microsoft.com/VisualStudio/2008/SharePointTools/PackageModel" 
+        name="Netflix"
+        sharePointProductVersion="15.0">
+  <features>
+        <featureReference itemId="61e33116-9a16-44df-9ba3-aac70ae8e307" />
+  </features>
+</package>
