@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<vxml version="2.0" xmlns="http://www.w3.org/2001/vxml" xml:lang="en-US" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.w3.org/2001/vxml http://www.w3.org/TR/voicexml21/vxml.xsd" >
+  <form>
+    <script>
+      <![CDATA[
+      var now = new Date();
+      var localHour = now.getHours();
+      ]]>
+    </script>
+    <field name="City">
+      <prompt bargein="true" bargeintype="speech" timeout="10s">
+       Say the name of a city to find the present time there.
+      </prompt>
+      <grammar mode="voice" src="http://localhost/VoiceXmlTime/CityTimeOffsets.grxml" type="application/srgs+xml" root="Main"/>
+      
+
+        <nomatch>
+            <prompt bargein="true" bargeintype="speech" timeout="3s">
+                Sorry, I don't know that city.
+            </prompt>
+        <exit/>
+      </nomatch>    
+
+      <noinput>
+          <prompt bargein="true" bargeintype="speech" timeout="3s">
+              I didn't hear you.
+          </prompt>
+        <exit/>
+      </noinput>
+
+      <filled>
+        <script>
+        <![CDATA[
+          var timeAtRequestedCity = localHour + City + ':' + now.getMinutes();
+        ]]>
+
+        </script>
+
+          <prompt>
+             <!-- The time in <value expr="City$.utterance"/> is <value expr="timeAtRequestedCity"/>  -->
+             The time is 8 o'clock
+          </prompt>
+        <exit/> 
+      </filled> 
+
+     </field>
+  </form>
+</vxml>
+ 
