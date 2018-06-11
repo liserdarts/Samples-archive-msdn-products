@@ -1,0 +1,59 @@
+' PowerPoint 2010 / Charting
+
+' Paste the following code into a module in a new presentation. 
+' Select Tools, then Reference, and add a reference to the Microsoft Excel 14.0 Object Model.
+
+' (You could easily modify it to work in a Word document, as well: 
+' simply replace ActivePresentation.Slides(1) with ActiveDocument. All
+' the remainder of the code works exactly the same in Word.)
+
+' Run the CreateChart procedure to create a simple bar chart.
+
+Sub CreateChart()
+    ' Create a very simple chart.
+    Dim cht As Chart
+    Dim chtData As ChartData
+    Dim wb As Excel.Workbook
+    Dim ws As Excel.Worksheet
+
+    ' Create the chart and set a reference to the chart data.
+    Dim shp As Shape
+    Set shp = ActivePresentation.Slides(1).Shapes.AddChart(xlBarClustered, 10, 10, 500, 200)
+   
+    ' You can interact with the Shape object here, if you need to.
+   
+    ' Retrieve the chart contained within the shape. Although you know the
+    ' shape contains a chart in this example, you can always
+    ' use the Type property to verify that the shape you're working
+    ' with is indeed a chart before you try to retrieve its Chart
+    ' property:
+    If shp.Type <> msoChart Then
+        Exit Sub
+    End If
+   
+    Set cht = shp.Chart
+   
+    ' Every new chart has an Excel workbook that contains its data.
+    Set wb = cht.ChartData.Workbook
+    Set ws = wb.Worksheets(1)
+
+     ' Add the data to the workbook.
+    
+    ' Resize the table, which is always called Table 1:
+    ws.ListObjects("Table1").Resize ws.Range("A1:B5")
+   
+    ' Set the title for the series:
+    ws.Range("B1").Value = "Regional Sales"
+   
+    ' Put the data in the rows of the worksheet:
+    ws.Range("A2:B2").Value = Array("North", 125)
+    ws.Range("A3:B3").Value = Array("South", 12)
+    ws.Range("A4:B4").Value = Array("East", 97)
+    ws.Range("A5:B5").Value = Array("West", 150)
+   
+    ' Force the chart to retrieve its data and redraw itself:
+    cht.ApplyDataLabels xlDataLabelsShowValue
+   
+    ' If you want to quit Excel, uncomment this line:
+    ' wb.Application.Quit
+End Sub
