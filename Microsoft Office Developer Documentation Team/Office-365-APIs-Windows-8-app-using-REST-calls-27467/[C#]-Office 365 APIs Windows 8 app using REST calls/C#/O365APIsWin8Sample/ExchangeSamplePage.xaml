@@ -1,0 +1,101 @@
+﻿<Page
+    x:Name="pageRoot"
+    x:Class="O365APIsWin8Sample.ExchangeSamplePage"
+    DataContext="{Binding DefaultViewModel, RelativeSource={RelativeSource Self}}"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:O365APIsWin8Sample"
+    xmlns:common="using:O365APIsWin8Sample.Common"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d">
+
+    <Page.Resources>
+        <!-- Collection of items displayed by this page -->
+        <CollectionViewSource
+            x:Name="itemsViewSource"
+            Source="{Binding Items}"/>
+
+        <x:String x:Key="PageTitle">Exchange Sample</x:String>
+    </Page.Resources>
+
+    <!--
+        This grid acts as a root panel for the page that defines two rows:
+        * Row 0 contains the back button and page title
+        * Row 1 contains the rest of the page layout
+    -->
+    <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+        <Grid.ChildrenTransitions>
+            <TransitionCollection>
+                <EntranceThemeTransition/>
+            </TransitionCollection>
+        </Grid.ChildrenTransitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="140"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+
+        <!--Exchange Sample-->
+        <Grid Grid.Row="1" Margin="120,0,50,50">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="60"/>
+                <RowDefinition Height="60"/>
+                <RowDefinition Height="*"/>
+            </Grid.RowDefinitions>
+
+            <StackPanel Orientation="Horizontal" Margin="-3,0,0,0">
+                <Button x:Name="calendarButton" Width="100" Click="CalendarButton_Click" VerticalAlignment="Top">Calendar</Button>
+                <Button x:Name="mailButton" Margin="5,0,0,0" Width="100" Click="MailButton_Click" VerticalAlignment="Top" Content="Mail"/>
+                <Button x:Name="contactsButton" Margin="5,0,0,0" Width="100" Click="ContactsButton_Click" VerticalAlignment="Top" Content="Contacts"/>
+            </StackPanel>
+            
+            <TextBlock Grid.Row="1"
+                Text="{Binding Subtitle}"
+                Style="{StaticResource SubheaderTextBlockStyle}" />
+
+            <ScrollViewer Grid.Row="2" VerticalScrollBarVisibility="Auto">
+                <ItemsControl ItemsSource="{Binding Source={StaticResource itemsViewSource}}">
+                    <ItemsControl.ItemTemplate>
+                        <DataTemplate>
+                            <Grid Margin="0,0,0,10" Background="{ThemeResource ListViewItemPlaceholderBackgroundThemeBrush}" >
+                                <Grid.RowDefinitions>
+                                    <RowDefinition Height="*"/>
+                                    <RowDefinition Height="*"/>
+                                </Grid.RowDefinitions>
+                                <TextBlock 
+                                    Text="{Binding Secondary}"
+                                    Foreground="{ThemeResource ListViewItemOverlaySecondaryForegroundThemeBrush}" 
+                                    Style="{StaticResource BaseTextBlockStyle}" 
+                                    TextWrapping="NoWrap" Padding="10,3,3,10" />
+                                <TextBlock
+                                    Text="{Binding Primary}"
+                                    Foreground="{ThemeResource ListViewItemOverlaySecondaryForegroundThemeBrush}"
+                                    Style="{StaticResource BaseTextBlockStyle}" FontWeight="SemiBold" FontSize="18"
+                                    TextWrapping="NoWrap" Padding="10,3,3,10" Grid.Row="1" />
+                            </Grid>
+                        </DataTemplate>
+                    </ItemsControl.ItemTemplate>
+                </ItemsControl>
+            </ScrollViewer>
+        </Grid>
+
+        <!-- Back button and page title -->
+        <Grid>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="120"/>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="Auto"/>
+            </Grid.ColumnDefinitions>
+            <Button x:Name="backButton" Margin="39,59,39,0" Command="{Binding NavigationHelper.GoBackCommand, ElementName=pageRoot}"
+                        Style="{StaticResource NavigationBackButtonNormalStyle}"
+                        VerticalAlignment="Top"
+                        AutomationProperties.Name="Back"
+                        AutomationProperties.AutomationId="BackButton"
+                        AutomationProperties.ItemType="Navigation Button"/>
+            <TextBlock x:Name="pageTitle" Text="{StaticResource PageTitle}" Style="{StaticResource HeaderTextBlockStyle}" Grid.Column="1" 
+                        IsHitTestVisible="false" TextWrapping="NoWrap" VerticalAlignment="Bottom" Margin="0,0,30,40"/>
+            <Button x:Name="signoutButton" Content="Sign out" Grid.Column="2" 
+                    VerticalAlignment="Bottom" Margin="0,0,47,40" Click="SignoutButton_Click"  />
+        </Grid>
+    </Grid>
+</Page>
