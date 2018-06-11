@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Customers NextCustomerId="3">
+  <Customer ID="0">
+    <CustomerFName>Customer</CustomerFName>
+    <CustomerLName>Zero</CustomerLName>
+  </Customer>
+  <Customer ID="1">
+    <CustomerFName>Customer</CustomerFName>
+    <CustomerLName>One</CustomerLName>
+  </Customer>
+  <Customer ID="2">
+    <CustomerFName>Customer</CustomerFName>
+    <CustomerLName>Two</CustomerLName>
+  </Customer>
+</Customers>
