@@ -1,0 +1,39 @@
+' Excel 2010
+
+' Work with new properties of the TextFrame class.
+
+' To investigate the code, in a new workbook, copy this entire sample into the
+' Sheet1 module in the VBA editor. Arrange the VBA window and the Excel window
+' side by side so you can see the code and its actions simultaneously. Place
+' the cursor within the TestClearHyperlinks procedure, and press F8 to single step
+' through the code. (You must single step to see the modifications
+' that the various property values make.)
+
+Sub TestTextFrame()
+    Dim tf As TextFrame
+    Dim shp As Shape
+    Set shp = Shapes.AddShape(msoShapeRectangle, 0, 0, 90, 30)
+    shp.TextFrame.Characters.Font.Color = vbBlack
+    shp.Fill.BackColor.ObjectThemeColor = msoThemeColorBackground1
+    Set tf = shp.TextFrame
+   
+    ' Horizontal overflow only has effect if the WordWrap
+    ' property is set to msoFalse:
+    shp.TextFrame2.WordWrap = msoFalse
+    tf.Characters.Text = "How will this text lay out in the text frame?"
+    ' This is the default value:
+    tf.HorizontalOverflow = xlOartHorizontalOverflowClip
+    ' Cause the text that doesn't fit to overflow the shape:
+    tf.HorizontalOverflow = xlOartHorizontalOverflowOverflow
+   
+    ' Vertical overflow only has effect if the WordWrap property
+    ' is set to msoTrue, and the AutoSize property is set to msoAutoSizeNone.
+    shp.TextFrame2.WordWrap = msoTrue
+    shp.TextFrame2.AutoSize = msoAutoSizeNone
+    ' This is the default value:
+    tf.VerticalOverflow = xlOartVerticalOverflowClip
+    ' Display an ellipsis for overflow:
+    tf.VerticalOverflow = xlOartVerticalOverflowEllipsis
+    ' Simply allow the text to overflow the shape:
+    tf.VerticalOverflow = xlOartVerticalOverflowOverflow
+End Sub
