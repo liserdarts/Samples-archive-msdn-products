@@ -1,0 +1,81 @@
+' Excel 2007/2010
+' Working with Sparklines
+
+' In Excel 2010, in a new workbook, copy all this code into
+' the Sheet1 class module. Place the cursor in the
+' WorkWithSparklines procedure, and then press F8 to start debugging, then Shift+F8 to
+' single-step through the code (stepping over any called procedures).
+' Arrange the VBA and Excel windows
+' side by side so you can see the results of running the code.
+
+Sub WorkWithSparklines()
+    ' Make sure you press Shift+F8 to step over this procedure.
+    FillRandomData
+   
+    Dim rng As Range
+    Set rng = Range("C2", "N11")
+   
+    ' Add sparklines to the second column
+    Dim slg As SparklineGroup
+    Dim slRng As Range
+    Set slRng = Range("B2", "B11")
+    Set slg = slRng.SparklineGroups.Add(XlSparkType.xlSparkLine, rng.Address)
+    slg.Points.Highpoint.Visible = True
+   
+    ' Settings for the series:
+    With slg.SeriesColor
+        .ThemeColor = 5
+        .TintAndShade = 0
+    End With
+   
+    ' Marker settings:
+    With slg.Points.Markers
+        .Visible = True
+        With .Color
+            .ThemeColor = 6
+            .TintAndShade = 0.5
+        End With
+    End With
+   
+    ' High point settings:
+    With slg.Points.Highpoint
+        .Visible = True
+        With .Color
+            .ThemeColor = 7
+            .TintAndShade = 0.5
+        End With
+    End With
+   
+    ' Low point settings:
+    With slg.Points.Lowpoint
+        .Visible = True
+        With .Color
+            .ThemeColor = 2
+            .TintAndShade = 0.5
+        End With
+    End With
+   
+    ' Now change the spark line type:
+    slg.Type = xlSparkColumn
+End Sub
+
+Function FillRandomData() As Range
+    ' No need to stop through this procedure.
+    Dim month As Integer
+    For month = 1 To 12
+        Cells(1, month + 2).Value = MonthName(month, True)
+    Next month
+  
+    ' Fill in rows with random data.
+    Dim i As Integer
+    Dim j As Integer
+    For i = 1 To 10
+        Cells(i + 1, 1).Value = "Sales " & i
+        For j = 1 To 12
+            Cells(i + 1, j + 2) = Round(Rnd * 100)
+        Next j
+    Next i
+   
+    Range("C1").CurrentRegion.HorizontalAlignment = xlCenter
+    Range("B:B").ColumnWidth = 15
+End Function
