@@ -1,0 +1,37 @@
+' Excel 2010
+
+' Investigate the Range.ClearHyperlinks method.
+
+' To investigate the code, in a new workbook, copy this entire sample into the
+' Sheet1 module in the VBA editor. Arrange the VBA window and the Excel window
+' side by side so you can see the code and its actions simultaneously. Place
+' the cursor within the TestClearHyperlinks procedure, and press F8 to single step
+' through the code.
+
+Sub TestClearHyperlinks()
+    ' Add a few hyperlinks, and then clear the hyperlinks in a particular range.
+    Hyperlinks.Add Range("A1"), _
+        Address:="http://www.microsoft.com/", _
+        TextToDisplay:="Microsoft"
+    Hyperlinks.Add Range("A2"), _
+        Address:="http://msdn.microsoft.com", _
+        TextToDisplay:="Microsoft Developer Network"
+    Hyperlinks.Add Range("A3"), _
+        Address:="http://msdn.microsoft.com/office", _
+        TextToDisplay:="Office Developer"
+    Dim rng As Range
+    Set rng = Range("A:A")
+    Columns("A").AutoFit
+   
+    ' Work with a subset of the range of links
+    ' you created:
+    Set rng = Range("A1:A2")
+    ' Note that this command clears the hyperlinks, but
+    ' leaves the cells formatted as if they were hyperlinks.
+    rng.ClearHyperlinks
+   
+    ' In a real application, you might want to also clear the formatting
+    ' for cells that had been hyperlinks that are now cleared:
+    ' This code is optional, of course:
+    rng.ClearFormats
+End Sub
