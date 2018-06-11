@@ -1,0 +1,24 @@
+﻿<Application
+	xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+	xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+	x:Class="ProductBrowser.App"
+    xmlns:local="clr-namespace:ProductBrowser"
+	StartupUri="MainWindow.xaml">
+	<Application.Resources>
+        <local:ListItemConverter x:Key="ListItemConverter" />
+        
+        <DataTemplate x:Key="ProductCategorySelectorTemplate">
+            <StackPanel>
+                <TextBlock x:Name="ProductCategoryTextBlock"
+                           Text="{Binding Converter={StaticResource ListItemConverter}, ConverterParameter='Title'}" />
+            </StackPanel>
+        </DataTemplate>
+
+        <DataTemplate x:Key="ProductSelectorTemplate">
+            <StackPanel>
+                <TextBlock x:Name="ProductTextBlock"
+                           Text="{Binding Converter={StaticResource ListItemConverter}, ConverterParameter='Title'}" />
+            </StackPanel>
+        </DataTemplate>
+    </Application.Resources>
+</Application>

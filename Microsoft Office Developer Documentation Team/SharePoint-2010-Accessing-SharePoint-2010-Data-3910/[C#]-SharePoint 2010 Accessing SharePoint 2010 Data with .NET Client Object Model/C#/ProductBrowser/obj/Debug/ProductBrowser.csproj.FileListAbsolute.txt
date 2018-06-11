@@ -1,0 +1,56 @@
+C:\Dev\Clients\Microsoft\MSDN Content Authoring\2009-12\AC - .NET ClientOM - VHT\ProductBrowser\ProductBrowser\bin\Debug\ProductBrowser.exe
+C:\Dev\Clients\Microsoft\MSDN Content Authoring\2009-12\AC - .NET ClientOM - VHT\ProductBrowser\ProductBrowser\bin\Debug\ProductBrowser.pdb
+C:\Dev\Clients\Microsoft\MSDN Content Authoring\2009-12\AC - .NET ClientOM - VHT\ProductBrowser\ProductBrowser\obj\Debug\ResolveAssemblyReference.cache
+C:\Dev\Clients\Microsoft\MSDN Content Authoring\2009-12\AC - .NET ClientOM - VHT\ProductBrowser\ProductBrowser\obj\Debug\MainWindow.baml
+C:\Dev\Clients\Microsoft\MSDN Content Authoring\2009-12\AC - .NET ClientOM - VHT\ProductBrowser\ProductBrowser\obj\Debug\MainWindow.g.cs
+C:\Dev\Clients\Microsoft\MSDN Content Authoring\2009-12\AC - .NET ClientOM - VHT\ProductBrowser\ProductBrowser\obj\Debug\App.g.cs
+C:\Dev\Clients\Microsoft\MSDN Content Authoring\2009-12\AC - .NET ClientOM - VHT\ProductBrowser\ProductBrowser\obj\Debug\ProductBrowser_MarkupCompile.cache
+C:\Dev\Clients\Microsoft\MSDN Content Authoring\2009-12\AC - .NET ClientOM - VHT\ProductBrowser\ProductBrowser\obj\Debug\ProductBrowser.g.resources
+C:\Dev\Clients\Microsoft\MSDN Content Authoring\2009-12\AC - .NET ClientOM - VHT\ProductBrowser\ProductBrowser\obj\Debug\ProductBrowser.exe
+C:\Dev\Clients\Microsoft\MSDN Content Authoring\2009-12\AC - .NET ClientOM - VHT\ProductBrowser\ProductBrowser\obj\Debug\ProductBrowser.pdb
+C:\Dev\Clients\Microsoft\MSDN Content Authoring\2009-12\AC - .NET ClientOM - VHT\ProductBrowser\ProductBrowser\obj\Debug\ProductDetails.baml
+C:\Dev\Clients\Microsoft\MSDN Content Authoring\2009-12\AC - .NET ClientOM - VHT\ProductBrowser\ProductBrowser\obj\Debug\ProductDetails.g.cs
+C:\Dev\Clients\Microsoft\MSDN Content Authoring\2009-12\AC - .NET ClientOM - VHT\ProductBrowser\ProductBrowser\obj\Debug\GeneratedInternalTypeHelper.g.cs
+C:\Dev\Clients\Microsoft\MSDN Content Authoring\2009-12\AC - .NET ClientOM - VHT\ProductBrowser\ProductBrowser\obj\Debug\ProductBrowser_MarkupCompile.lref
+C:\Dev\Clients\Microsoft\MSDN Content Authoring\2009-12\AC - .NET ClientOM - VHT\ProductBrowser\ProductBrowser\obj\Debug\StatusBarControl.baml
+C:\Dev\Clients\Microsoft\MSDN Content Authoring\2009-12\AC - .NET ClientOM - VHT\ProductBrowser\ProductBrowser\obj\Debug\StatusBarControl.g.cs
+C:\Dev\Clients\Microsoft\MSDN Content Authoring\2009-12\AC - .NET ClientOM - VHT\ProductBrowser\ProductBrowser\obj\Debug\ProductEditor.baml
+C:\Dev\Clients\Microsoft\MSDN Content Authoring\2009-12\AC - .NET ClientOM - VHT\ProductBrowser\ProductBrowser\obj\Debug\ProductEditor.g.cs
+C:\Dev\WPF_ProductBrowser\ProductBrowser\obj\Debug\ProductBrowser.exe
+C:\Dev\WPF_ProductBrowser\ProductBrowser\obj\Debug\ProductBrowser.pdb
+C:\Dev\WPF_ProductBrowser\ProductBrowser\bin\Debug\ProductBrowser.exe
+C:\Dev\WPF_ProductBrowser\ProductBrowser\bin\Debug\ProductBrowser.pdb
+C:\Dev\WPF_ProductBrowser\ProductBrowser\obj\Debug\ResolveAssemblyReference.cache
+C:\Dev\WPF_ProductBrowser\ProductBrowser\obj\Debug\ProductDetails.baml
+C:\Dev\WPF_ProductBrowser\ProductBrowser\obj\Debug\ProductEditor.baml
+C:\Dev\WPF_ProductBrowser\ProductBrowser\obj\Debug\StatusBarControl.baml
+C:\Dev\WPF_ProductBrowser\ProductBrowser\obj\Debug\MainWindow.g.cs
+C:\Dev\WPF_ProductBrowser\ProductBrowser\obj\Debug\ProductDetails.g.cs
+C:\Dev\WPF_ProductBrowser\ProductBrowser\obj\Debug\ProductEditor.g.cs
+C:\Dev\WPF_ProductBrowser\ProductBrowser\obj\Debug\StatusBarControl.g.cs
+C:\Dev\WPF_ProductBrowser\ProductBrowser\obj\Debug\App.g.cs
+C:\Dev\WPF_ProductBrowser\ProductBrowser\obj\Debug\GeneratedInternalTypeHelper.g.cs
+C:\Dev\WPF_ProductBrowser\ProductBrowser\obj\Debug\ProductBrowser_MarkupCompile.cache
+C:\Dev\WPF_ProductBrowser\ProductBrowser\obj\Debug\ProductBrowser_MarkupCompile.lref
+C:\Dev\WPF_ProductBrowser\ProductBrowser\obj\Debug\MainWindow.baml
+C:\Dev\WPF_ProductBrowser\ProductBrowser\obj\Debug\ProductBrowser.g.resources
+C:\Dev\WPF_ProductBrowser\ProductBrowser\obj\Debug\App.baml
+C:\Users\Administrator\Desktop\WPF_ProductBrowser\ProductBrowser\obj\Debug\ProductBrowser.exe
+C:\Users\Administrator\Desktop\WPF_ProductBrowser\ProductBrowser\obj\Debug\ProductBrowser.pdb
+C:\Users\Administrator\Desktop\WPF_ProductBrowser\ProductBrowser\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\Administrator\Desktop\WPF_ProductBrowser\ProductBrowser\obj\Debug\ProductEditor.baml
+C:\Users\Administrator\Desktop\WPF_ProductBrowser\ProductBrowser\obj\Debug\StatusBarControl.baml
+C:\Users\Administrator\Desktop\WPF_ProductBrowser\ProductBrowser\obj\Debug\MainWindow.g.cs
+C:\Users\Administrator\Desktop\WPF_ProductBrowser\ProductBrowser\obj\Debug\ProductDetails.g.cs
+C:\Users\Administrator\Desktop\WPF_ProductBrowser\ProductBrowser\obj\Debug\ProductEditor.g.cs
+C:\Users\Administrator\Desktop\WPF_ProductBrowser\ProductBrowser\obj\Debug\StatusBarControl.g.cs
+C:\Users\Administrator\Desktop\WPF_ProductBrowser\ProductBrowser\obj\Debug\App.g.cs
+C:\Users\Administrator\Desktop\WPF_ProductBrowser\ProductBrowser\obj\Debug\GeneratedInternalTypeHelper.g.cs
+C:\Users\Administrator\Desktop\WPF_ProductBrowser\ProductBrowser\obj\Debug\ProductBrowser_MarkupCompile.cache
+C:\Users\Administrator\Desktop\WPF_ProductBrowser\ProductBrowser\obj\Debug\ProductBrowser_MarkupCompile.lref
+C:\Users\Administrator\Desktop\WPF_ProductBrowser\ProductBrowser\obj\Debug\App.baml
+C:\Users\Administrator\Desktop\WPF_ProductBrowser\ProductBrowser\obj\Debug\MainWindow.baml
+C:\Users\Administrator\Desktop\WPF_ProductBrowser\ProductBrowser\bin\Debug\ProductBrowser.exe
+C:\Users\Administrator\Desktop\WPF_ProductBrowser\ProductBrowser\bin\Debug\ProductBrowser.pdb
+C:\Users\Administrator\Desktop\WPF_ProductBrowser\ProductBrowser\obj\Debug\ProductDetails.baml
+C:\Users\Administrator\Desktop\WPF_ProductBrowser\ProductBrowser\obj\Debug\ProductBrowser.g.resources

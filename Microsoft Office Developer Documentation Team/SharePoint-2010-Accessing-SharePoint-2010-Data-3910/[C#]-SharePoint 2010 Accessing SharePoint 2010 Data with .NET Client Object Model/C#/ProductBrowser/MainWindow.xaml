@@ -1,0 +1,67 @@
+﻿<Window
+	xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+	xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+	xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+    xmlns:local="clr-namespace:ProductBrowser"
+	x:Class="ProductBrowser.MainWindow"
+	x:Name="Window"
+	Title="Wingtip Product Browser"
+	Width="640" mc:Ignorable="d" Height="425" ResizeMode="NoResize" WindowStartupLocation="CenterScreen">
+
+    <Border x:Name="ApplicationContainer" Margin="5,2" VerticalAlignment="Top" CornerRadius="5">
+        <Border.Background>
+            <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                <GradientStop Color="#FFBDBDBD" Offset="0"/>
+                <GradientStop Color="#FF505050" Offset="1"/>
+            </LinearGradientBrush>
+        </Border.Background>
+
+        <Grid x:Name="LayoutRoot">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="60"/>
+                <RowDefinition/>
+                <RowDefinition Height="0*"/>
+                <RowDefinition Height="150"/>
+                <RowDefinition Height="115"/>
+                <RowDefinition Height="33"/>
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+            </Grid.ColumnDefinitions>
+
+            <TextBlock x:Name="ProductBrowserTextBlock" Margin="10" Grid.Row="0" Text="Wingtip Product Browser" FontSize="26.667" FontWeight="Bold" Grid.ColumnSpan="2"/>
+            <StackPanel x:Name="SiteConnectionContainer" Margin="5,0" Orientation="Horizontal" Grid.Row="1" Grid.ColumnSpan="2" VerticalAlignment="Top">
+                <TextBlock x:Name="WingtipSiteUrlTextBlock" Margin="0,0,10,0" VerticalAlignment="Center" Text="Wingtip Site URL:" TextWrapping="Wrap"/>
+                <TextBox x:Name="WingtipSiteUrlTextBox" Margin="0" Text="http://intranet.wingtip.com" TextWrapping="Wrap" VerticalAlignment="Center" Width="337.68" />
+                <Button x:Name="ConnectSiteButton" Margin="5,0" Content="Connect to SharePoint Site" Padding="5,1" Click="ConnectSiteButton_Click"/>
+            </StackPanel>
+
+            <StackPanel x:Name="ProductCategoriesContainer" Margin="5,5,5,0" VerticalAlignment="Top" Grid.Row="3">
+                <TextBlock x:Name="ProductCategoriesTextBlock" HorizontalAlignment="Left" Text="Product Categories:" TextWrapping="Wrap" FontSize="13.333" FontWeight="Bold"/>
+                <ListBox x:Name="ProductCategoriesListBox" Margin="2" MinHeight="100" 
+                         ScrollViewer.HorizontalScrollBarVisibility="Disabled" ScrollViewer.VerticalScrollBarVisibility="Visible" 
+                         IsEnabled="{Binding ElementName=Window, Path=IsConnected}" 
+                         ItemTemplate="{StaticResource ProductCategorySelectorTemplate}"
+                         SelectionChanged="ProductCategoriesListBox_SelectionChanged" />
+            </StackPanel>
+
+            <StackPanel x:Name="ProductsContainer" Margin="5,5,5,0" VerticalAlignment="Top" Grid.Column="1" Grid.Row="3">
+                <TextBlock x:Name="ProductsTextBlock" Margin="0" Text="Products:" TextWrapping="Wrap" FontSize="13.333" FontWeight="Bold" HorizontalAlignment="Left"/>
+                <ListBox x:Name="ProductsListBox" Margin="2" VerticalAlignment="Top" MinHeight="100" 
+                         ScrollViewer.HorizontalScrollBarVisibility="Disabled" ScrollViewer.VerticalScrollBarVisibility="Visible" 
+                         IsEnabled="{Binding ElementName=Window, Path=IsConnected}" 
+                         ItemTemplate="{StaticResource ProductSelectorTemplate}"
+                         SelectionChanged="ProductsListBox_SelectionChanged" />
+            </StackPanel>
+
+            <local:ProductDetails x:Name="ProductDetails" Margin="5" Grid.Row="4" Grid.ColumnSpan="2"
+                                  IsEnabled="{Binding ElementName=Window, Path=IsConnected}" 
+                                  ProductChanged="ProductDetails_ProductChanged" />
+
+            <local:StatusBarControl Grid.ColumnSpan="2" Grid.Row="5" Margin="5,5" x:Name="StatusBar" />
+
+        </Grid>
+    </Border>
+</Window>
