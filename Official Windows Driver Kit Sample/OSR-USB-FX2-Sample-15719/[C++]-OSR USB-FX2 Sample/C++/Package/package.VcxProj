@@ -1,0 +1,210 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Win8 beta Debug|Win32">
+      <Configuration>Win8 beta Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Win8 beta Release|Win32">
+      <Configuration>Win8 beta Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Win7 Debug|Win32">
+      <Configuration>Win7 Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Win7 Release|Win32">
+      <Configuration>Win7 Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Vista Debug|Win32">
+      <Configuration>Vista Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Vista Release|Win32">
+      <Configuration>Vista Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Win8 beta Debug|x64">
+      <Configuration>Win8 beta Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Win8 beta Release|x64">
+      <Configuration>Win8 beta Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Win7 Debug|x64">
+      <Configuration>Win7 Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Win7 Release|x64">
+      <Configuration>Win7 Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Vista Debug|x64">
+      <Configuration>Vista Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Vista Release|x64">
+      <Configuration>Vista Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="PropertySheets">
+    <PlatformToolset>WindowsKernelModeDriver8.0</PlatformToolset>
+    <ConfigurationType>Utility</ConfigurationType>
+    <DriverType>Package</DriverType>
+    <DisableFastUpToDateCheck>true</DisableFastUpToDateCheck>
+    <Configuration>Win8 beta Debug</Configuration>
+  </PropertyGroup>
+  <PropertyGroup Label="Globals">
+    <VCTargetsPath Condition="'$(VCTargetsPath11)' != '' and '$(VisualStudioVersion)' == '11.0'">$(VCTargetsPath11)</VCTargetsPath>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{09936AA5-01E3-4BEF-B821-E5A6EA0C826E}</ProjectGuid>
+    <SampleGuid>{29EDC019-E29E-40F4-9526-386ADF737DF0}</SampleGuid>
+    <ConfigurationName>$(Configuration.Replace(' ',''))</ConfigurationName>
+    <ProjectDir Condition=" '$(ProjectDir)' == '' ">$(MSBuildProjectDirectory)\</ProjectDir>
+    <SolutionDir Condition="'$(SolutionDir)'==''">$(ProjectDir)</SolutionDir>
+    <IntDir Condition="'$(Platform)' == 'Win32' OR '$(Platform)' == ''">$(ConfigurationName)\</IntDir>
+    <IntDir Condition="'$(Platform)' != 'Win32'">$(Platform)\$(ConfigurationName)\</IntDir>
+    <OutDir>$(IntDir)</OutDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Win8 beta Debug|Win32'" Label="Configuration">
+    <TargetVersion>Windows8</TargetVersion>
+    <UseDebugLibraries>true</UseDebugLibraries>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Win8 beta Release|Win32'" Label="Configuration">
+    <TargetVersion>Windows8</TargetVersion>
+    <UseDebugLibraries>false</UseDebugLibraries>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Win7 Debug|Win32'" Label="Configuration">
+    <TargetVersion>Windows7</TargetVersion>
+    <UseDebugLibraries>true</UseDebugLibraries>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Win7 Release|Win32'" Label="Configuration">
+    <TargetVersion>Windows7</TargetVersion>
+    <UseDebugLibraries>false</UseDebugLibraries>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Vista Debug|Win32'" Label="Configuration">
+    <TargetVersion>Vista</TargetVersion>
+    <UseDebugLibraries>true</UseDebugLibraries>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Vista Release|Win32'" Label="Configuration">
+    <TargetVersion>Vista</TargetVersion>
+    <UseDebugLibraries>false</UseDebugLibraries>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Win8 beta Debug|x64'" Label="Configuration">
+    <TargetVersion>Windows8</TargetVersion>
+    <UseDebugLibraries>true</UseDebugLibraries>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Win8 beta Release|x64'" Label="Configuration">
+    <TargetVersion>Windows8</TargetVersion>
+    <UseDebugLibraries>false</UseDebugLibraries>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Win7 Debug|x64'" Label="Configuration">
+    <TargetVersion>Windows7</TargetVersion>
+    <UseDebugLibraries>true</UseDebugLibraries>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Win7 Release|x64'" Label="Configuration">
+    <TargetVersion>Windows7</TargetVersion>
+    <UseDebugLibraries>false</UseDebugLibraries>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Vista Debug|x64'" Label="Configuration">
+    <TargetVersion>Vista</TargetVersion>
+    <UseDebugLibraries>true</UseDebugLibraries>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Vista Release|x64'" Label="Configuration">
+    <TargetVersion>Vista</TargetVersion>
+    <UseDebugLibraries>false</UseDebugLibraries>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup />
+  <PropertyGroup>
+    <DebuggerFlavor>DbgengKernelDebugger</DebuggerFlavor>
+    <EnableDeployment>False</EnableDeployment>
+    <ImportToStore>False</ImportToStore>
+    <InstallMode>None</InstallMode>
+    <HardwareIdString />
+    <CommandLine />
+    <ScriptPath />
+    <DeployFiles />
+    <ScriptName />
+    <ScriptDeviceQuery>%PathToInf%</ScriptDeviceQuery>
+    <EnableVerifier>False</EnableVerifier>
+    <AllDrivers>False</AllDrivers>
+    <VerifyProjectOutput>True</VerifyProjectOutput>
+    <VerifyDrivers />
+    <VerifyFlags>133563</VerifyFlags>
+    <PackageDir>$(OutDir)\Package</PackageDir>
+  </PropertyGroup>
+  <ItemDefinitionGroup>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <!--Inf Include="DriverInf.inv" /-->
+    <FilesToPackage Include="@(Inf->'%(CopyOutput)')" Condition="'@(Inf)'!=''" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\kmdf\sys\enumswitches\osrusbfx2.vcxproj">
+      <Project>{E67093DC-4ABD-4F5F-A932-EB6B282DD4E9}</Project>
+    </ProjectReference>
+    <ProjectReference Include="..\kmdf\sys\final\osrusbfx2.vcxproj">
+      <Project>{018E9AEC-AD77-4AE5-A021-FA6288B4A770}</Project>
+    </ProjectReference>
+    <ProjectReference Include="..\kmdf\sys\step1\osrusbfx2.vcxproj">
+      <Project>{9A45E27B-4DC4-45EF-BB54-13D2B58E2EE9}</Project>
+    </ProjectReference>
+    <ProjectReference Include="..\kmdf\sys\step2\osrusbfx2.vcxproj">
+      <Project>{132DAA1A-DB02-465B-8488-A18F8E29338E}</Project>
+    </ProjectReference>
+    <ProjectReference Include="..\kmdf\sys\step3\osrusbfx2.vcxproj">
+      <Project>{78C03B9D-D948-4455-80A1-C9A208B1ADAD}</Project>
+    </ProjectReference>
+    <ProjectReference Include="..\kmdf\sys\step4\osrusbfx2.vcxproj">
+      <Project>{3379D084-FCC0-4D19-9B9D-777159FA504C}</Project>
+    </ProjectReference>
+    <ProjectReference Include="..\kmdf\sys\step5\osrusbfx2.vcxproj">
+      <Project>{1050A2BB-30AF-4008-A1FF-EF6FA131AB12}</Project>
+    </ProjectReference>
+    <ProjectReference Include="..\umdf\echo_driver\WUDFOsrUsbDriver.vcxproj">
+      <Project>{84A8C6DC-1382-4921-A5AA-3C549C07A6C0}</Project>
+    </ProjectReference>
+    <ProjectReference Include="..\umdf\filter\WUDFOsrUsbFilter.vcxproj">
+      <Project>{00DDC85C-8BC6-4737-89C9-C6C22D339E02}</Project>
+    </ProjectReference>
+    <ProjectReference Include="..\umdf\fx2_driver\final\WUDFOsrUsbFx2.vcxproj">
+      <Project>{BD91E9D2-BCC6-4299-95AC-31DC0D2ECDF9}</Project>
+    </ProjectReference>
+    <ProjectReference Include="..\umdf\fx2_driver\IdleWake\IdleWake_Non-PPO\WUDFOsrUsbFx2_IdleWake_Non-PPO.vcxproj">
+      <Project>{7DED1534-8570-4D00-B0A7-F04B6BC3B8DC}</Project>
+    </ProjectReference>
+    <ProjectReference Include="..\umdf\fx2_driver\IdleWake\IdleWake_PPO\WUDFOsrUsbFx2_IdleWake_PPO.vcxproj">
+      <Project>{D5CA2433-851B-490A-8885-FB2B2BA4A9C7}</Project>
+    </ProjectReference>
+    <ProjectReference Include="..\umdf\fx2_driver\impersonation\WUDFOsrUsbFx2_Imp.vcxproj">
+      <Project>{3ED7B98D-D193-49E4-8B14-A55B1E6D1DDA}</Project>
+    </ProjectReference>
+    <ProjectReference Include="..\umdf\fx2_driver\step1\WUDFOsrUsbFx2_1.vcxproj">
+      <Project>{0CDE18FF-2CBD-4526-9A40-80F26C7983ED}</Project>
+    </ProjectReference>
+    <ProjectReference Include="..\umdf\fx2_driver\step2\WUDFOsrUsbFx2_2.vcxproj">
+      <Project>{6E6CCB81-0088-45AD-B890-6439F341A439}</Project>
+    </ProjectReference>
+    <ProjectReference Include="..\umdf\fx2_driver\step3\WUDFOsrUsbFx2_3.vcxproj">
+      <Project>{B716FB4B-C406-45B5-ABF9-F9FC59E6915A}</Project>
+    </ProjectReference>
+    <ProjectReference Include="..\umdf\fx2_driver\step4\WUDFOsrUsbFx2_4.vcxproj">
+      <Project>{4011DB95-49BA-4C36-A7FF-68C35E1EDD89}</Project>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
