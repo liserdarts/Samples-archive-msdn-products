@@ -1,0 +1,54 @@
+D:\MSDNProjects\BCSPowerpointAddin\BCSPowerPointAddin\BCSPowerPointAddin\bin\Debug\BCSPowerPointAddin.dll
+D:\MSDNProjects\BCSPowerpointAddin\BCSPowerPointAddin\BCSPowerPointAddin\bin\Debug\BCSPowerPointAddin.pdb
+D:\MSDNProjects\BCSPowerpointAddin\BCSPowerPointAddin\BCSPowerPointAddin\bin\Debug\BCSPowerPointAddin.dll.manifest
+D:\MSDNProjects\BCSPowerpointAddin\BCSPowerPointAddin\BCSPowerPointAddin\bin\Debug\BCSPowerPointAddin.vsto
+D:\MSDNProjects\BCSPowerpointAddin\BCSPowerPointAddin\BCSPowerPointAddin\bin\Debug\Microsoft.Office.Tools.Common.v4.0.Utilities.dll
+D:\MSDNProjects\BCSPowerpointAddin\BCSPowerPointAddin\BCSPowerPointAddin\bin\Debug\Microsoft.Office.Tools.Common.v4.0.Utilities.xml
+D:\MSDNProjects\BCSPowerpointAddin\BCSPowerPointAddin\BCSPowerPointAddin\obj\Debug\ResolveAssemblyReference.cache
+D:\MSDNProjects\BCSPowerpointAddin\BCSPowerPointAddin\BCSPowerPointAddin\obj\Debug\BCSPowerPointAddin.BCSChartInfo.resources
+D:\MSDNProjects\BCSPowerpointAddin\BCSPowerPointAddin\BCSPowerPointAddin\obj\Debug\BCSPowerPointAddin.Properties.Resources.resources
+D:\MSDNProjects\BCSPowerpointAddin\BCSPowerPointAddin\BCSPowerPointAddin\obj\Debug\GenerateResource.read.1.tlog
+D:\MSDNProjects\BCSPowerpointAddin\BCSPowerPointAddin\BCSPowerPointAddin\obj\Debug\GenerateResource.write.1.tlog
+D:\MSDNProjects\BCSPowerpointAddin\BCSPowerPointAddin\BCSPowerPointAddin\obj\Debug\BCSPowerPointAddin.dll
+D:\MSDNProjects\BCSPowerpointAddin\BCSPowerPointAddin\BCSPowerPointAddin\obj\Debug\BCSPowerPointAddin.pdb
+C:\Users\Administrator\Desktop\Anil\BCSPowerPointAddin\BCSPowerPointAddin\BCSPowerPointAddin\bin\Debug\BCSPowerPointAddin.dll
+C:\Users\Administrator\Desktop\Anil\BCSPowerPointAddin\BCSPowerPointAddin\BCSPowerPointAddin\bin\Debug\BCSPowerPointAddin.pdb
+C:\Users\Administrator\Desktop\Anil\BCSPowerPointAddin\BCSPowerPointAddin\BCSPowerPointAddin\bin\Debug\BCSPowerPointAddin.dll.manifest
+C:\Users\Administrator\Desktop\Anil\BCSPowerPointAddin\BCSPowerPointAddin\BCSPowerPointAddin\bin\Debug\BCSPowerPointAddin.vsto
+C:\Users\Administrator\Desktop\Anil\BCSPowerPointAddin\BCSPowerPointAddin\BCSPowerPointAddin\bin\Debug\microsoft.office.businessdata.dll
+C:\Users\Administrator\Desktop\Anil\BCSPowerPointAddin\BCSPowerPointAddin\BCSPowerPointAddin\bin\Debug\Microsoft.Office.Tools.Common.v4.0.Utilities.dll
+C:\Users\Administrator\Desktop\Anil\BCSPowerPointAddin\BCSPowerPointAddin\BCSPowerPointAddin\bin\Debug\Microsoft.Office.Tools.Common.v4.0.Utilities.xml
+C:\Users\Administrator\Desktop\Anil\BCSPowerPointAddin\BCSPowerPointAddin\BCSPowerPointAddin\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\Administrator\Desktop\Anil\BCSPowerPointAddin\BCSPowerPointAddin\BCSPowerPointAddin\obj\Debug\BCSPowerPointAddin.BCSChartInfo.resources
+C:\Users\Administrator\Desktop\Anil\BCSPowerPointAddin\BCSPowerPointAddin\BCSPowerPointAddin\obj\Debug\BCSPowerPointAddin.Properties.Resources.resources
+C:\Users\Administrator\Desktop\Anil\BCSPowerPointAddin\BCSPowerPointAddin\BCSPowerPointAddin\obj\Debug\GenerateResource.read.1.tlog
+C:\Users\Administrator\Desktop\Anil\BCSPowerPointAddin\BCSPowerPointAddin\BCSPowerPointAddin\obj\Debug\GenerateResource.write.1.tlog
+C:\Users\Administrator\Desktop\Anil\BCSPowerPointAddin\BCSPowerPointAddin\BCSPowerPointAddin\obj\Debug\BCSPowerPointAddin.dll
+C:\Users\Administrator\Desktop\Anil\BCSPowerPointAddin\BCSPowerPointAddin\BCSPowerPointAddin\obj\Debug\BCSPowerPointAddin.pdb
+D:\Brads Review\Juans Review\BCSPowerPointAddin\BCSPowerPointAddin\BCSPowerPointAddin\bin\Debug\BCSPowerPointAddin.dll
+D:\Brads Review\Juans Review\BCSPowerPointAddin\BCSPowerPointAddin\BCSPowerPointAddin\bin\Debug\BCSPowerPointAddin.pdb
+D:\Brads Review\Juans Review\BCSPowerPointAddin\BCSPowerPointAddin\BCSPowerPointAddin\bin\Debug\BCSPowerPointAddin.dll.manifest
+D:\Brads Review\Juans Review\BCSPowerPointAddin\BCSPowerPointAddin\BCSPowerPointAddin\bin\Debug\BCSPowerPointAddin.vsto
+D:\Brads Review\Juans Review\BCSPowerPointAddin\BCSPowerPointAddin\BCSPowerPointAddin\bin\Debug\Microsoft.Office.Tools.Common.v4.0.Utilities.dll
+D:\Brads Review\Juans Review\BCSPowerPointAddin\BCSPowerPointAddin\BCSPowerPointAddin\bin\Debug\Microsoft.Office.Tools.Common.v4.0.Utilities.xml
+D:\Brads Review\Juans Review\BCSPowerPointAddin\BCSPowerPointAddin\BCSPowerPointAddin\obj\Debug\ResolveAssemblyReference.cache
+D:\Brads Review\Juans Review\BCSPowerPointAddin\BCSPowerPointAddin\BCSPowerPointAddin\obj\Debug\BCSPowerPointAddin.BCSChartInfo.resources
+D:\Brads Review\Juans Review\BCSPowerPointAddin\BCSPowerPointAddin\BCSPowerPointAddin\obj\Debug\BCSPowerPointAddin.Properties.Resources.resources
+D:\Brads Review\Juans Review\BCSPowerPointAddin\BCSPowerPointAddin\BCSPowerPointAddin\obj\Debug\GenerateResource.read.1.tlog
+D:\Brads Review\Juans Review\BCSPowerPointAddin\BCSPowerPointAddin\BCSPowerPointAddin\obj\Debug\GenerateResource.write.1.tlog
+D:\Brads Review\Juans Review\BCSPowerPointAddin\BCSPowerPointAddin\BCSPowerPointAddin\obj\Debug\BCSPowerPointAddin.dll
+D:\Brads Review\Juans Review\BCSPowerPointAddin\BCSPowerPointAddin\BCSPowerPointAddin\obj\Debug\BCSPowerPointAddin.pdb
+C:\Users\Administrator\Documents\Visual Studio 2010\Projects\BCSPowerPointAddin\BCSPowerPointAddin\bin\Debug\BCSPowerPointAddin.dll
+C:\Users\Administrator\Documents\Visual Studio 2010\Projects\BCSPowerPointAddin\BCSPowerPointAddin\bin\Debug\BCSPowerPointAddin.pdb
+C:\Users\Administrator\Documents\Visual Studio 2010\Projects\BCSPowerPointAddin\BCSPowerPointAddin\bin\Debug\BCSPowerPointAddin.dll.manifest
+C:\Users\Administrator\Documents\Visual Studio 2010\Projects\BCSPowerPointAddin\BCSPowerPointAddin\bin\Debug\BCSPowerPointAddin.vsto
+C:\Users\Administrator\Documents\Visual Studio 2010\Projects\BCSPowerPointAddin\BCSPowerPointAddin\bin\Debug\microsoft.office.businessdata.dll
+C:\Users\Administrator\Documents\Visual Studio 2010\Projects\BCSPowerPointAddin\BCSPowerPointAddin\bin\Debug\Microsoft.Office.Tools.Common.v4.0.Utilities.dll
+C:\Users\Administrator\Documents\Visual Studio 2010\Projects\BCSPowerPointAddin\BCSPowerPointAddin\bin\Debug\Microsoft.Office.Tools.Common.v4.0.Utilities.xml
+C:\Users\Administrator\Documents\Visual Studio 2010\Projects\BCSPowerPointAddin\BCSPowerPointAddin\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\Administrator\Documents\Visual Studio 2010\Projects\BCSPowerPointAddin\BCSPowerPointAddin\obj\Debug\BCSPowerPointAddin.BCSChartInfo.resources
+C:\Users\Administrator\Documents\Visual Studio 2010\Projects\BCSPowerPointAddin\BCSPowerPointAddin\obj\Debug\BCSPowerPointAddin.Properties.Resources.resources
+C:\Users\Administrator\Documents\Visual Studio 2010\Projects\BCSPowerPointAddin\BCSPowerPointAddin\obj\Debug\GenerateResource.read.1.tlog
+C:\Users\Administrator\Documents\Visual Studio 2010\Projects\BCSPowerPointAddin\BCSPowerPointAddin\obj\Debug\GenerateResource.write.1.tlog
+C:\Users\Administrator\Documents\Visual Studio 2010\Projects\BCSPowerPointAddin\BCSPowerPointAddin\obj\Debug\BCSPowerPointAddin.dll
+C:\Users\Administrator\Documents\Visual Studio 2010\Projects\BCSPowerPointAddin\BCSPowerPointAddin\obj\Debug\BCSPowerPointAddin.pdb

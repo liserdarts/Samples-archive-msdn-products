@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<customUI xmlns="http://schemas.microsoft.com/office/2006/01/customui" onLoad="Ribbon_Load">
+  <ribbon>
+    <tabs>
+      <tab id="tabBCS" label="BCS">
+        <group id="grpBCS" label="BCS">
+          <button id="btnBCS"
+        size="large"
+        imageMso="MeetingsWorkspace"
+        enabled="true"
+        visible="true"
+         
+        label="Add External Data to Chart" onAction="OnClick"/>
+
+        </group>
+      </tab>
+    </tabs>
+  </ribbon>
+</customUI>
+
