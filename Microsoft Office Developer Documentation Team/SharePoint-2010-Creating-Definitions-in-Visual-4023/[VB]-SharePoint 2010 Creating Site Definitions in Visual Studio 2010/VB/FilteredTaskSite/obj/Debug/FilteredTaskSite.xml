@@ -1,0 +1,27 @@
+﻿<?xml version="1.0"?>
+<doc>
+<assembly>
+<name>
+FilteredTaskSite
+</name>
+</assembly>
+<members>
+<member name="F:FilteredTaskSite.VisualWebPart1UserControl.DateTimeControl1">
+	<summary>
+DateTimeControl1 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:FilteredTaskSite.VisualWebPart1UserControl.taskView">
+	<summary>
+taskView control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+</members>
+</doc>

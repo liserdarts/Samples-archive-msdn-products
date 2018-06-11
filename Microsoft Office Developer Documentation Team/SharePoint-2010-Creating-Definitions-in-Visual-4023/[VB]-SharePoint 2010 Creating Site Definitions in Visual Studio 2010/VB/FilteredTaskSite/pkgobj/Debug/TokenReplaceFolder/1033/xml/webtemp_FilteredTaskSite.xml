@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Templates xmlns:ows="Microsoft SharePoint">
+  <Template Name="FilteredTaskSite" ID="10000">
+    <Configuration ID="0" Title="FilteredTaskSite" Hidden="FALSE" ImageUrl="/_layouts/images/CPVW.gif" Description="FilteredTaskSite" DisplayCategory="SharePoint Customizations">
+    </Configuration>
+  </Template>
+</Templates>
