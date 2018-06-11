@@ -1,0 +1,36 @@
+﻿To use anything, start by adding the DLL to the global assembly cache.
+
+To use the HTTP module, do the following:
+1. Add the module entry to the httpModules element under system.web; add it as the last 
+module in the list:
+  <system.web>
+.
+.
+.
+    <httpModules>
+      <add name="SharePointClaims" type="SharePointClaims.ClaimEnum, SharePointClaims, Version=1.0.0.0, Culture=neutral, PublicKeyToken=d01fae4d46160aca" />
+2. Add the assembly to the assemblies element under system.web:
+  <system.web>
+  .
+  .
+  .
+    <compilation batch="false" debug="true">
+      <assemblies>
+		<add assembly="SharePointClaims, Version=1.0.0.0, Culture=neutral, PublicKeyToken=d01fae4d46160aca" />
+
+3. Add the module entry to the modules element under system.webServer; add it as the last 
+module in the list:
+ <system.webServer>
+ .
+ .
+ .
+    <modules runAllManagedModulesForAllRequests="true">
+      <add name="SharePointClaims" type="SharePointClaims.ClaimEnum, SharePointClaims, Version=1.0.0.0, Culture=neutral, PublicKeyToken=d01fae4d46160aca" />
+
+Once added you can filter the ULS log for items in the "SharePoint Claims Enumeration" category.  You would want to use the module rather than the web part if the user could not log in and you wanted to know what claims Sharepoint is getting for him or her.
+
+To use the web part, do the following:
+1. Add the following SafeControl entry to the web.config file of the web application on all web front ends you are using:
+      <SafeControl Assembly="SharePointClaims, Version=1.0.0.0, Culture=neutral, PublicKeyToken=d01fae4d46160aca" Namespace="SharePointClaims" TypeName="ClaimWP" Safe="True" AllowRemoteDesigner="True" SafeAgainstScript="False" />
+2. Upload the SharePointClaims.webpart file to the web part gallery of the site.
+3. Add the web part to a page.

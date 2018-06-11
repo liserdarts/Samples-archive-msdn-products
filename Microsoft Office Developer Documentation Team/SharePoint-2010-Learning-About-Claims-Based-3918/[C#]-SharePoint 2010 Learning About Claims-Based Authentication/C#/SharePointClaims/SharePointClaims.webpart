@@ -1,0 +1,14 @@
+﻿<webParts>
+  <webPart xmlns="http://schemas.microsoft.com/WebPart/v3">
+    <metaData>
+      <type name="SharePointClaims.ClaimWP, SharePointClaims, Version=1.0.0.0, Culture=neutral, PublicKeyToken=d01fae4d46160aca" />
+      <importErrorMessage>Cannot import  Web Part.</importErrorMessage>
+    </metaData>
+    <data>
+      <properties>
+        <property name="Title" type="string">SharePoint Claims Web Part</property>
+        <property name="Description" type="string">Enumerates claims that have been provided for user for troubleshooting purposes.</property>
+      </properties>
+    </data>
+  </webPart>
+</webParts>

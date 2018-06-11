@@ -1,0 +1,5 @@
+C:\Users\administrator.CONTOSO\Documents\Visual Studio 2008\Projects\SharePointClaims\SharePointClaims\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\administrator.CONTOSO\Documents\Visual Studio 2008\Projects\SharePointClaims\SharePointClaims\bin\Debug\SharePointClaims.dll
+C:\Users\administrator.CONTOSO\Documents\Visual Studio 2008\Projects\SharePointClaims\SharePointClaims\bin\Debug\SharePointClaims.pdb
+C:\Users\administrator.CONTOSO\Documents\Visual Studio 2008\Projects\SharePointClaims\SharePointClaims\obj\Debug\SharePointClaims.dll
+C:\Users\administrator.CONTOSO\Documents\Visual Studio 2008\Projects\SharePointClaims\SharePointClaims\obj\Debug\SharePointClaims.pdb
