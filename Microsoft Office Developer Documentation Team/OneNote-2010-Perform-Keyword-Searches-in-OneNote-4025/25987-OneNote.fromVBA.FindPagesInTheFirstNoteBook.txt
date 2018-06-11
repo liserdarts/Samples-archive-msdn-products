@@ -1,0 +1,93 @@
+' OneNote 2010
+
+' Use any VBA host including Excel 2010, PowerPoint 2010, or Word 2010
+' OneNote 2010 is not a VBA host.
+
+' In your VBA host, add references to the following
+' external libraries using the Add References dialog:
+' Microsoft OneNote 14.0 Object Library
+' Microsoft XML, v6.0
+
+' OneNote's GetHierarchy method allows you
+' to get meta-data and data about the OneNote
+' Notebooks.
+
+' Paste all this code into a module and run the
+' FindPagesInTheFirstNoteBook
+' to search for a user provided string
+' in the first notebook.
+
+' Works with the FindPages method.
+
+Sub FindPagesInTheFirstNoteBook()
+    ' Connect to OneNote 2010
+    ' OneNote will be started if it's not running.
+    Dim oneNote As OneNote14.Application
+    Set oneNote = New OneNote14.Application
+    
+    ' Get all of the Notebook nodes.
+    Dim nodes As MSXML2.IXMLDOMNodeList
+    Set nodes = GetFirstOneNoteNotebookNodes(oneNote)
+    If Not nodes Is Nothing Then
+        ' Get the first notebook found.
+        Dim node As MSXML2.IXMLDOMNode
+        Set node = nodes(0)
+        ' Get the ID.
+        Dim notebookID As String
+        notebookID = node.Attributes.getNamedItem("ID").Text
+                
+        ' Ask the user for a string for which to search
+        ' with a default search string of "Microsoft".
+        Dim searchString As String
+        searchString = InputBox$("Enter a search string.", "Search", "Microsoft")
+        
+        Dim searchResultsAsXml As String
+        ' The FindPages method search a OneNote object (in this example, the first
+        ' open Notebook). You provide the search string and the results are
+        ' provided as an XML document listing the objects where the search
+        ' string is found. You can control whether OneNote searches non-indexed data (this
+        ' example passes False). You can also choose whether OneNote enables
+        ' the User Interface to show the found items (this example passes False).
+        ' This example instructs OneNote to return the XML data in the 2010 schema format.
+        oneNote.FindPages notebookID, searchString, searchResultsAsXml, False, False, xs2010
+        
+        ' Output the returned XML to the Immediate Window.
+        ' If no search items are found, the XML contains the
+        ' XML hierarchy data for the searched item.
+        Debug.Print searchResultsAsXml
+    Else
+        MsgBox "OneNote 2010 XML data failed to load."
+    End If
+    
+End Sub
+
+Private Function GetAttributeValueFromNode(node As MSXML2.IXMLDOMNode, attributeName As String) As String
+    If node.Attributes.getNamedItem(attributeName) Is Nothing Then
+        GetAttributeValueFromNode = "Not found."
+    Else
+        GetAttributeValueFromNode = node.Attributes.getNamedItem(attributeName).Text
+    End If
+End Function
+
+Private Function GetFirstOneNoteNotebookNodes(oneNote As OneNote14.Application) As MSXML2.IXMLDOMNodeList
+    ' Get the XML that represents the OneNote notebooks available.
+    Dim notebookXml As String
+    ' Fill notebookXml with an XML document providing information
+    ' about available OneNote notebooks.
+    ' To get all the data, provide an empty string
+    ' for the bstrStartNodeID parameter.
+    oneNote.GetHierarchy "", hsNotebooks, notebookXml, xs2010
+    
+    ' Use the MSXML Library to parse the XML.
+    Dim doc As MSXML2.DOMDocument
+    Set doc = New MSXML2.DOMDocument
+    
+    If doc.LoadXML(notebookXml) Then
+        Set GetFirstOneNoteNotebookNodes = doc.DocumentElement.SelectNodes("//one:Notebook")
+    Else
+        Set GetFirstOneNoteNotebookNodes = Nothing
+    End If
+End Function
+
+
+
