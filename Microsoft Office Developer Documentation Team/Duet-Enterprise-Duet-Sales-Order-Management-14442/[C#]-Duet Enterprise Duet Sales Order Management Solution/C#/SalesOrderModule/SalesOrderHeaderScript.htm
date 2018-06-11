@@ -1,0 +1,63 @@
+﻿<script language="ecmascript" type="text/ecmascript">
+
+    var headerItems; // List of header items obtained by querying the Sales Order Headers list.
+
+    /**
+    * This function adds the new ECB menu item command.
+    **/
+    function Custom_AddListMenuItems(m, ctx) {
+
+        CAMOpt(m, "Show Related Sales Order Items", "openSalesItemsForHeader('" + ctx.ListTitle + "','" + currentItemID + "');", "~/_layouts/images/DETAIL.gif");
+        CAMSep(m);
+
+        return false; // Render the default menu items, too.
+    }
+
+    /**
+    * This method queries the Headers list to obtain a SalesOrderSclKey for the item on which ECB menu has been invoked.
+    **/
+    function openSalesItemsForHeader(listTitle, itemId) {
+
+        var viewXml = '<View><Query><Where><Eq><FieldRef Name="BdcIdentity" /><Value Type="Text">'
+            + itemId
+            + '</Value></Eq></Where></Query><ViewFields><FieldRef Name="BdcIdentity" /><FieldRef Name="SalesOrderSclKey"/></ViewFields></View>';
+        var ctx = new SP.ClientContext.get_current();
+        var web = ctx.get_web();
+        var list = web.get_lists().getByTitle(listTitle);
+
+        var camlQuery = new SP.CamlQuery();
+
+        camlQuery.set_viewXml(viewXml);
+        headerItems = list.getItems(camlQuery);
+        ctx.load(headerItems, 'Include(BdcIdentity, SalesOrderSclKey)');
+
+        ctx.executeQueryAsync(Function.createDelegate(this, openSalesItemsForHeaderSuccess),
+                        Function.createDelegate(this, openSalesItemsForHeaderFail));
+    }
+
+
+    function openSalesItemsForHeaderFail(sender, args) {
+        alert('Failed to open sales order items:' + args.get_message());
+    }
+
+    /**
+    * This function opens the appropriate list of sales order items
+    * based upon the item on which ECB menu has been invoked.
+    **/
+    function openSalesItemsForHeaderSuccess(sender, args) {
+
+        var headerEnumerator = headerItems.getEnumerator();
+        var currentHeader; // There will be one and only one.
+
+        while (headerEnumerator.moveNext()) {
+            currentHeader = headerEnumerator.get_current();
+            break;
+        }
+
+        // Open the page using a URL with the required query string.
+        var pageurl = L_Menu_BaseUrl
+            + "/Lists/SalesOrderItems/SalesOrderItems.aspx?FilterField1=SalesOrderSclKey&FilterValue1="
+            + currentHeader.get_item("SalesOrderSclKey");
+        window.location.href = pageurl;
+    } 
+</script>

@@ -1,0 +1,160 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{EF050E86-A33C-4692-9467-63414684D0F9}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>DuetSalesOrderSolution</RootNamespace>
+    <AssemblyName>DuetSalesOrderSolution</AssemblyName>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <ProjectTypeGuids>{BB1F664B-9266-4fd6-B973-E1E44974B511};{14822709-B5A1-4724-98CA-57A101D1B079};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <SandboxedSolution>False</SandboxedSolution>
+    <ActiveDeploymentConfiguration>Default</ActiveDeploymentConfiguration>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignAssembly>true</SignAssembly>
+  </PropertyGroup>
+  <PropertyGroup>
+    <AssemblyOriginatorKeyFile>key.snk</AssemblyOriginatorKeyFile>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.Web.CommandUI, Version=14.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c, processorArchitecture=MSIL" />
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="Microsoft.SharePoint" />
+    <Reference Include="Microsoft.SharePoint.Security" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Customizations\CurrencyList.cs" />
+    <Compile Include="Customizations\ListCustomizations.cs" />
+    <Compile Include="Features\SalesOrderSiteFeature\SalesOrderSiteFeature.EventReceiver.cs">
+      <DependentUpon>SalesOrderSiteFeature.feature</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Customizations\Reporting.cs" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="SalesOrderDiagnosticService.cs" />
+    <Compile Include="SalesOrderHeaderVisualWebPart\SalesOrderHeaderVisualWebPart.cs" />
+    <Compile Include="SalesOrderHeaderVisualWebPart\SalesOrderHeaderVisualWebPartUserControl.ascx.cs">
+      <DependentUpon>SalesOrderHeaderVisualWebPartUserControl.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SalesOrderHeaderVisualWebPart\SalesOrderHeaderVisualWebPartUserControl.ascx.designer.cs">
+      <DependentUpon>SalesOrderHeaderVisualWebPartUserControl.ascx.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SalesOrderItemVisualWebPart\SalesOrderItemVisualWebPart.cs" />
+    <Compile Include="SalesOrderItemVisualWebPart\SalesOrderItemVisualWebPartUserControl.ascx.cs">
+      <DependentUpon>SalesOrderItemVisualWebPartUserControl.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SalesOrderItemVisualWebPart\SalesOrderItemVisualWebPartUserControl.ascx.designer.cs">
+      <DependentUpon>SalesOrderItemVisualWebPartUserControl.ascx.cs</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Features\SalesOrderWebPartsFeature\SalesOrderWebPartsFeature.feature">
+      <FeatureId>{ba19f612-ee5b-4d35-b8d0-271101a83ddb}</FeatureId>
+    </None>
+    <None Include="SalesOrderModule\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{a990d02b-8b77-42bc-b60c-8e86db1dd81d}</SharePointProjectItemId>
+    </None>
+    <None Include="Features\SalesOrderSiteFeature\SalesOrderSiteFeature.feature">
+      <FeatureId>{cac7e649-0404-4fba-aa90-9afa8ba4a49f}</FeatureId>
+    </None>
+    <None Include="key.snk" />
+    <None Include="Package\Package.package">
+      <PackageId>{670dd7b8-22b7-42b3-a42f-9e3d7c9f24d6}</PackageId>
+    </None>
+    <None Include="Package\Package.Template.xml">
+      <DependentUpon>Package.package</DependentUpon>
+    </None>
+    <None Include="SalesOrderHeaders\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{ef128d7f-20ac-4b57-baa2-83a143af099a}</SharePointProjectItemId>
+    </None>
+    <None Include="SalesOrderHeaderVisualWebPart\SalesOrderHeaderVisualWebPart.webpart" />
+    <None Include="SalesOrderHeaderVisualWebPart\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{1139d85e-3a6b-4c84-9ce1-ce5dd758939d}</SharePointProjectItemId>
+    </None>
+    <None Include="SalesOrderItems\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{79d2d4a2-db1e-4612-b9c5-c986b8a04b64}</SharePointProjectItemId>
+    </None>
+    <None Include="SalesOrderItemVisualWebPart\SalesOrderItemVisualWebPart.webpart" />
+    <None Include="SalesOrderItemVisualWebPart\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{55a31711-5128-4461-ae29-522b1bc013cb}</SharePointProjectItemId>
+    </None>
+  </ItemGroup>
+  <ItemGroup />
+  <ItemGroup>
+    <Content Include="Features\SalesOrderWebPartsFeature\SalesOrderWebPartsFeature.Template.xml">
+      <DependentUpon>SalesOrderWebPartsFeature.feature</DependentUpon>
+    </Content>
+    <Content Include="SalesOrderModule\SalesOrderHeaderScript.htm" />
+    <Content Include="SalesOrderModule\Elements.xml">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="SalesOrderModule\SalesOrderItemScript.htm" />
+    <Content Include="Features\SalesOrderSiteFeature\SalesOrderSiteFeature.Template.xml">
+      <DependentUpon>SalesOrderSiteFeature.feature</DependentUpon>
+    </Content>
+    <EmbeddedResource Include="ListData\CurrencyData.xml" />
+    <Content Include="SalesOrderHeaders\Elements.xml" />
+    <Content Include="SalesOrderHeaders\Schema.xml">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="SalesOrderHeaderVisualWebPart\Elements.xml">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="SalesOrderHeaderVisualWebPart\SalesOrderHeaderVisualWebPartUserControl.ascx">
+      <SubType>ASPXCodeBehind</SubType>
+    </Content>
+    <Content Include="SalesOrderItems\Elements.xml" />
+    <Content Include="SalesOrderItems\Schema.xml">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="SalesOrderItemVisualWebPart\Elements.xml" />
+    <Content Include="SalesOrderItemVisualWebPart\SalesOrderItemVisualWebPartUserControl.ascx">
+      <SubType>ASPXCodeBehind</SubType>
+    </Content>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <SubType>Designer</SubType>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\SharePointTools\Microsoft.VisualStudio.SharePoint.targets" />
+</Project>

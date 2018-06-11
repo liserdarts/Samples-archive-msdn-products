@@ -1,0 +1,7 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Currencies>
+  <Currency Title="US Dollars" Identifier="USD" />
+  <Currency Title="Pounds" Identifier="GBP" />
+  <Currency Title="Rupees" Identifier="INR" />
+  <Currency Title="Euros" Identifier="EUR" />
+</Currencies>

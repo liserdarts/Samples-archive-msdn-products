@@ -1,0 +1,142 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<List Title="Sales Order Items" Direction="none" Url="Lists/SalesOrderItems" BaseType="0" Type="100" FolderCreation="FALSE" DisableAttachments="TRUE" DefaultItemOpen="1" xmlns:ows="Microsoft SharePoint">
+  <MetaData>
+    <Forms>
+      <Form
+        Type="DisplayForm"
+        Url="DispForm.aspx"
+        SetupPath="pages\form.aspx"
+        WebPartZoneID="Main"
+        UseDefaultListFormWebPart="False"
+        Default="TRUE">
+
+        <WebParts>
+          <AllUsersWebPart WebPartZoneID="Main" WebPartOrder="3">
+            <![CDATA[
+            <WebPart xmlns="http://schemas.microsoft.com/WebPart/v2">
+              <Assembly>Microsoft.SharePoint, Version=14.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c</Assembly>
+              <TypeName>Microsoft.SharePoint.WebPartPages.ListFormWebPart</TypeName>
+              <PageType>PAGE_DISPLAYFORM</PageType>
+              <IsVisible>false</IsVisible>
+            </WebPart>]]>
+          </AllUsersWebPart>
+
+          <AllUsersWebPart WebPartZoneID="Main" WebPartOrder="2">
+            <![CDATA[
+            <webParts>
+              <webPart xmlns="http://schemas.microsoft.com/WebPart/v3">
+                <metaData>
+                  <type name="DuetSalesOrderSolution.SalesOrderItemVisualWebPart.SalesOrderItemVisualWebPart, $SharePoint.Project.AssemblyFullName$"/>
+                  <importErrorMessage>$Resources:core,ImportErrorMessage;</importErrorMessage>
+                </metaData>
+                <data>
+                  <properties>
+                    <property name="Title" type="string">Sales Order Item Visual Web Part</property>
+                    <property name="PageType" type="string">PAGE_DISPLAYFORM</property>
+                   </properties>
+                </data>
+            </webPart>
+            </webParts>]]>
+          </AllUsersWebPart>
+        </WebParts>
+      </Form>
+      
+      <Form Type="EditForm"
+            Url="EditForm.aspx"
+            SetupPath="pages\form.aspx"
+            WebPartZoneID="Main"
+            UseDefaultListFormWebPart="False"
+            Default="TRUE" >
+
+        <WebParts>
+          <AllUsersWebPart WebPartZoneID="Main" WebPartOrder="3">
+            <![CDATA[
+           <WebPart xmlns="http://schemas.microsoft.com/WebPart/v2">
+             <Assembly>Microsoft.SharePoint, Version=14.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c</Assembly>            
+             <TypeName>Microsoft.SharePoint.WebPartPages.ListFormWebPart</TypeName>
+             <PageType>PAGE_EDITFORM</PageType>
+             <IsVisible>false</IsVisible>
+           </WebPart>]]>
+          </AllUsersWebPart>
+
+          <AllUsersWebPart WebPartZoneID="Main" WebPartOrder="2">
+            <![CDATA[
+            <webParts>
+              <webPart xmlns="http://schemas.microsoft.com/WebPart/v3">
+                <metaData>
+                  <type name="DuetSalesOrderSolution.SalesOrderItemVisualWebPart.SalesOrderItemVisualWebPart, $SharePoint.Project.AssemblyFullName$"/>
+                  <importErrorMessage>$Resources:core,ImportErrorMessage;</importErrorMessage>
+                </metaData>
+                <data>
+                  <properties>
+                    <property name="Title" type="string">Sales Order Item Visual Web Part</property>
+                    <property name="PageType" type="string">PAGE_EDITFORM</property>
+                   </properties>
+                </data>
+            </webPart>
+            </webParts>]]>
+          </AllUsersWebPart>
+        </WebParts>
+      </Form>
+      
+      <Form Type="NewForm"
+            Url="NewForm.aspx"
+            SetupPath="pages\form.aspx"
+            WebPartZoneID="Main"
+            UseDefaultListFormWebPart="False"
+            Default="TRUE" >
+
+        <WebParts>
+          <AllUsersWebPart WebPartZoneID="Main" WebPartOrder="3">
+            <![CDATA[
+           <WebPart xmlns="http://schemas.microsoft.com/WebPart/v2">
+             <Assembly>Microsoft.SharePoint, Version=14.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c</Assembly>            
+             <TypeName>Microsoft.SharePoint.WebPartPages.ListFormWebPart</TypeName>
+             <PageType>PAGE_NEWFORM</PageType>
+             <IsVisible>false</IsVisible>
+           </WebPart>]]>
+          </AllUsersWebPart>
+
+          <AllUsersWebPart WebPartZoneID="Main" WebPartOrder="2">
+            <![CDATA[
+            <webParts>
+              <webPart xmlns="http://schemas.microsoft.com/WebPart/v3">
+                <metaData>
+                  <type name="DuetSalesOrderSolution.SalesOrderItemVisualWebPart.SalesOrderItemVisualWebPart, $SharePoint.Project.AssemblyFullName$"/>
+                  <importErrorMessage>$Resources:core,ImportErrorMessage;</importErrorMessage>
+                </metaData>
+                <data>
+                  <properties>
+                    <property name="Title" type="string">Sales Order Item Visual Web Part</property>
+                    <property name="PageType" type="string">PAGE_NEWFORM</property>
+                   </properties>
+                </data>
+            </webPart>
+            </webParts>]]>
+          </AllUsersWebPart>
+        </WebParts>
+      </Form>
+    </Forms>
+
+    <Views>
+      <View DisplayName="Sales Order Items Default View" DefaultView="TRUE" BaseViewID="1" Type="HTML" MobileView="TRUE" ImageUrl="/_layouts/images/generic.png" WebPartZoneID="Main" WebPartOrder="0" Url="SalesOrderItems.aspx" SetupPath="pages\viewpage.aspx">
+        <XslLink>main.xsl</XslLink>
+        <Method Name="QuerySalesOrderItem" />
+        <ViewFields>
+          <FieldRef Name="ItemSclKey" />
+          <FieldRef Name="ItemNumber" />
+          <FieldRef Name="SalesOrderSclKey" />
+          <FieldRef Name="MaterialSclKey" />
+          <FieldRef Name="MaterialShortText" />
+          <FieldRef Name="Quantity" />
+          <FieldRef Name="SalesUnit" />
+          <FieldRef Name="NetPrice" />
+          <FieldRef Name="Currency" />
+          <FieldRef Name="NetValue" />
+          <FieldRef Name="Plant" />
+        </ViewFields>
+        <RowLimit Paged="TRUE">100</RowLimit>
+      </View>
+    </Views>
+  </MetaData>
+</List>

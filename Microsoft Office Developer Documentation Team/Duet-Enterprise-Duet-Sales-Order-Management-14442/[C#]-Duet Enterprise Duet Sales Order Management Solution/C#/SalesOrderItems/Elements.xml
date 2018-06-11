@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">
+  <ListInstance Title="Sales Order Items"
+                OnQuickLaunch="TRUE"
+                TemplateType="600"
+                FeatureId="00BFEA71-9549-43f8-B978-E47E54A10600"
+                Url="Lists/SalesOrderItems"
+                Description="External List for Sales Order Items."
+                CustomSchema="SalesOrderItems\Schema.xml">
+
+    <DataSource>
+      <Property Name="Entity" Value="Sales Order Item" />
+      <Property Name="EntityNamespace" Value="SAP.Office.DuetEnterprise.DevGuide.SalesOrder" />
+      <Property Name="LobSystemInstance" Value="SCLManageSalesOrderItem" />
+      <Property Name="SpecificFinder" Value="ReadSalesOrderItem" />
+      <Property Name="Service" Value="Business Data Catalog" />
+    </DataSource>
+    
+  </ListInstance>
+</Elements>

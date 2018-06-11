@@ -1,0 +1,68 @@
+﻿<table id="idAddSalesOrderItem" width="100%" cellpadding="0" cellspacing="0" border="0">
+    <tr>
+        <td colspan="2" class="ms-partline">
+            <img src="/_layouts/images/blank.gif" width="1" height="1" alt="" />
+        </td>
+    </tr>
+    <tr>
+        <td class="ms-addnew" style="padding-bottom: 3px">
+            <span style="height:10px;width:10px;position:relative;display:inline-block;overflow:hidden;" class="s4-clust">
+                <img src="/_layouts/images/fgimg.png" alt="" style="left:-0px !important;top:-128px !important;position:absolute;" />
+            </span>&nbsp;<a class="ms-addnew" href="javascript:createSalesOrderItem()" target="_self">Add Related Sales Order Item</a>
+        </td>
+    </tr>
+</table>
+
+<script language="ecmascript" type="text/ecmascript">
+
+/**
+* Gets the query string value for a given key.
+**/
+function getQueryString(queryKey) {
+    var queryString = window.location.search.substring(1);
+    var queryPairs = queryString.split("&");
+    for (var i = 0; i < queryPairs.length; i++) {
+        var queryPair = queryPairs[i].split("=");
+        if (queryPair[0] == queryKey) {
+            return queryPair[1];
+        }
+    }
+    return "";
+}
+
+/**
+* Invokes dialog with SalesOrderSclKey as query string.
+**/
+function createSalesOrderItem()
+{
+
+    var siteUrl = SP.PageContextInfo.get_webServerRelativeUrl();
+
+    if (siteUrl == "/") {
+        siteUrl = "";
+    }
+
+    if(getQueryString("FilterField1")=="SalesOrderSclKey") {
+
+        pageurl = siteUrl + "/Lists/SalesOrderItems/NewForm.aspx?RootFolder=&IsDlg=1&SalesOrderSclKey=" + getQueryString("FilterValue1");
+    }
+    else {
+        pageurl = siteUrl + "/Lists/SalesOrderItems/NewForm.aspx?RootFolder=IsDlg=1";
+    }
+
+    var options = SP.UI.$create_DialogOptions();
+    options.url = pageurl;
+    options.autoSize = true;
+    options.dialogReturnValueCallback = Function.createDelegate(null, closeCallback);
+    SP.UI.ModalDialog.showModalDialog(options);
+}
+
+/**
+* This callback function is invoked after Save command on dialog is executed.
+**/
+function closeCallback(result, target) {
+    if (result == SP.UI.DialogResult.OK) {
+        window.location.reload(true);
+    }
+}
+</script>

@@ -1,0 +1,7 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" dslVersion="1.0.0.0" Id="670dd7b8-22b7-42b3-a42f-9e3d7c9f24d6" solutionId="670dd7b8-22b7-42b3-a42f-9e3d7c9f24d6" resetWebServer="false" name="DuetSalesOrderSolution" xmlns="http://schemas.microsoft.com/VisualStudio/2008/SharePointTools/PackageModel">
+  <features>
+    <featureReference itemId="cac7e649-0404-4fba-aa90-9afa8ba4a49f" />
+    <featureReference itemId="ba19f612-ee5b-4d35-b8d0-271101a83ddb" />
+  </features>
+</package>
