@@ -1,0 +1,306 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
+    <head><link rel="stylesheet" type="text/css" href="https://i-msdn.sec.s-msft.com/Combined.css?resources=0:Header,0:sprite;/Areas/Epx/Themes/Windows/Content:0&amp;amp;v=0DA1B1BCE2D1E0D3671139F045B5767A" xmlns="http://www.w3.org/1999/xhtml" />
+<link rel="stylesheet" type="text/css" href="https://i-msdn.sec.s-msft.com/Combined.css?resources=0:Footer,0:sprite,1:LinkList,1:SelectLocaleFromPopUp;/Areas/Epx/Themes/Windows/Content:0,/Areas/Epx/Themes/Base/Content:1&amp;amp;v=F92EC3BD6A747845906D580A8E701B2D" xmlns="http://www.w3.org/1999/xhtml" />
+<link type="text/css" rel="stylesheet" />
+
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <title>Driver MFT Sample</title>
+        <link href="description/Galleries.css" type="text/css" rel="Stylesheet" /><link href="description/Layout.css" type="text/css" rel="Stylesheet" /><link href="description/Brand.css" type="text/css" rel="Stylesheet" /><link href="description/2c29e03e-d336-4af7-a454-16688355d0c6Brand.css" type="text/css" rel="Stylesheet" />
+        <link href="https://i1.code.msdn.s-msft.com/windowshardware/content/common/iframedescription.css" rel="Stylesheet" type="text/css" />
+        <script src="https://i1.code.msdn.s-msft.com/windowshardware/content/common/offline.js" type="text/javascript"></script>
+        <style type="text/css">
+            #projectInfo {
+                overflow: auto;
+            }
+            #longDesc {
+                clear:both;
+                margin: 25px 0 10px 0;
+            }
+
+            #SampleIndexList{
+                margin-left: 15px;
+            }
+        </style>
+    </head>
+<body>
+    <div id="offlineDescription">
+        <h1>Driver MFT Sample</h1>
+        <br/>
+        <div id="projectInfo">
+            <div class="section">
+                    <div class="itemBarLong tagsContainer">
+                        <label for="Technologies">Technologies</label>
+                        <div id="Technologies">
+                            Windows Driver
+                        </div>
+                    </div>
+                    <div class="itemBarLong tagsContainer">
+                        <label for="Topics">Topics</label>
+                        <div id="Topics">
+                            other
+                        </div>
+                    </div>
+                <div class="itemBarLong">
+                    <label for="Platforms">Platforms</label>
+                    <div id="Platforms">
+                        Desktop
+                    </div>
+                </div>
+                <div class="itemBarLong">
+                    <label for="Requirements">Requirements</label>
+                    <div id="Requirements">
+                        
+                    </div>
+                </div>
+                <div class="itemBar">
+                    <label for="LastUpdated">Primary language</label>
+                    <div id="LastUpdated">en-US</div>
+                </div>
+                <div class="itemBar">
+                    <label for="LastUpdated">Updated</label>
+                    <div id="LastUpdated">2/11/2015</div>
+                </div>
+                <div class="itemBarLong">
+                    <label for="License">License</label>
+                    <div id="License">
+                        <a href="license.rtf">MS-LPL</a></div>
+                </div>
+                <div class="itemBar">
+                    <div class="viewonlinecont">
+                        <a data-link="online" href="https://code.msdn.microsoft.com/windowshardware/Driver-MFT-Sample-34ecfecb">View this sample online</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+                   
+<script type="text/javascript">
+    function initializePage() {
+        var otherTabClass = 'otherTab';
+        var hiddenPreClass = 'hidden';
+
+        var htmlDecode = function(encodedData) {
+            var decodedData = "";
+            if (encodedData) {
+                var div = document.createElement('div');
+                div.innerHTML = encodedData;
+                decodedData = div.firstChild.nodeValue.replace( /\\r\\n/ig , '\r\n');
+            }
+            return decodedData;
+        };
+                
+        Galleries.iterateElem(Galleries.findElem(null, 'div', 'scriptcode'), function (index, scriptBlock) {
+            var titleElem = Galleries.findElem(scriptBlock, 'div', 'title')[0];
+            var labelElems = Galleries.findElem(titleElem, 'span');
+            if (labelElems.length == 0) {
+                labelElems = titleElem;
+            }
+            var languageSpans = Galleries.findElem(scriptBlock, 'span', 'hidden');
+            var pres = Galleries.findElem(scriptBlock, 'pre');
+            if (languageSpans.length > 0 && pres.length > 1) {
+                Galleries.iterateElem(labelElems, function(index, elem) {
+                    var codePre = pres[index];
+                    var labelSpan = elem;
+                    var languageSpan = languageSpans[index];
+                            
+                    elem.code = codePre.innerHTML.replace( /(\r(\n)?)|((\r)?\n)/ig , '\\r\\n');
+                            
+                    codePre.className = codePre.className.replace(hiddenPreClass, '');
+                            
+                    languageSpan.parentNode.removeChild(languageSpan);
+                });
+
+                pres = Galleries.findElem(scriptBlock, 'pre');
+                Galleries.iterateElem(labelElems, function(index, elem) {
+                    var codePre = pres[index];
+                    var labelSpan = elem;
+                    if (index == 0) {
+                        scriptBlock.activeTab = 0;
+                    }
+                    else {
+                        labelSpan.className += otherTabClass;
+                        codePre.className += hiddenPreClass;
+                    }
+                    Galleries.attachEventHandler(labelSpan, 'click', function(e) {
+                        var activeTab = scriptBlock.activeTab;
+                        labelElems[activeTab].className += otherTabClass;
+                        pres[activeTab].className += hiddenPreClass;
+
+                        codePre.className = codePre.className.replace(hiddenPreClass, '');
+                        labelSpan.className = labelSpan.className.replace(otherTabClass, '');
+                        scriptBlock.activeTab = index;
+                    });
+                });
+
+                var preview = Galleries.findElem(scriptBlock, 'div', 'preview');
+                if (preview.length == 0) {
+                    preview.push(pres[pres.length - 1]);
+                }
+                Galleries.iterateElem(preview, function(index, elem) {
+                    elem.parentNode.removeChild(elem);
+                });
+
+                if (window.clipboardData && clipboardData.setData) {
+                    var copyLink = document.createElement('a');
+                    copyLink.href = 'javascript:void(0);';
+                    copyLink.className = 'copyCode';
+                    copyLink.innerHTML = 'Copy code';
+                    Galleries.attachEventHandler(copyLink, 'click', function (e) {
+                        clipboardData.setData("Text", htmlDecode(labelElems[scriptBlock.activeTab].code));
+                        return false;
+                    });
+                    scriptBlock.insertBefore(copyLink, scriptBlock.childNodes[0]);
+                }
+            }
+        });
+    }
+
+    Galleries.onWindowLoad(function(){
+        initializePage();
+    });
+
+</script>
+<div id="longDesc">
+    
+<div id="mainSection">
+<p>Provides a <em>driver MFT</em> for use with a camera's Windows Store device app. A
+<em>driver MFT</em> is a Media Foundation Transform that's used with a specific camera when capturing video. The driver MFT is also known as MFT0 because it is the first MFT applied to the video stream captured from the camera. This MFT can provide a video
+ effect or other processing when capturing photos or video from the camera. It can be distributed along with the driver package for a camera.</p>
+<p>In this sample, the driver MFT, when enabled, replaces a portion of the captured video with a green box. To test this sample, download the
+<a href="http://go.microsoft.com/fwlink/p/?linkid=249442">Windows Store device app for camera sample</a> and the
+<a href="http://go.microsoft.com/fwlink/p/?linkid=249441">Camera Capture UI sample</a>. The
+<a href="http://go.microsoft.com/fwlink/p/?linkid=249442">Windows Store device app for camera sample</a> provides a
+<em>Windows Store device app</em> that controls the effect implemented by the driver MFT. The
+<a href="http://go.microsoft.com/fwlink/p/?linkid=249441">Camera Capture UI sample</a> provides a way to invoke the
+<em>Windows Store device app</em>.</p>
+<p>This sample is designed to be used with a specific camera. To run the sample, you need the your camera's device ID and device metadata package.</p>
+<p class="note"><strong>Note</strong>&nbsp;&nbsp;</p>
+<p class="note">To build this sample, you can use Microsoft Visual Studio&nbsp;2013 (Professional, or Ultimate) and Windows Driver Kit (WDK)&nbsp;8.1 Update. This sample will not build with Microsoft Visual Studio Express&nbsp;2013 for Windows Desktop, because
+ the sample uses Active Template Library (ATL). You can get Visual Studio&nbsp;2013 and WDK&nbsp;8.1 Update
+<a href="http://go.microsoft.com/fwlink/p/?LInkID=239721">here</a>.</p>
+<p class="note">You can also build this sample with Visual Studio&nbsp;2013 (Professional or Ultimate) and
+<a href="http://go.microsoft.com/fwlink/p/?LInkID=391348">Windows Driver Kit (WDK)&nbsp;8.1</a>.</p>
+<p class="note">For Windows Driver Kit (WDK)&nbsp;8 samples, download the <a href="https://code.msdn.microsoft.com/windowshardware/Driver-MFT-Sample-34ecfecb/ http://go.microsoft.com/fwlink/?LinkId=317090">
+WDK&nbsp;8 samples pack</a>. The samples in the WDK&nbsp;8 samples pack will build only with Microsoft Visual Studio Professional&nbsp;2012 (Professional or Ultimate) and WDK&nbsp;8.</p>
+<p>&nbsp;</p>
+<h2><a id="related_topics"></a>Related topics</h2>
+<dl><dt><strong>Concepts</strong> </dt><dt><a href="http://go.microsoft.com/fwlink/p/?LinkId=306683">Windows Store device apps for cameras</a>
+</dt><dt><a href="http://go.microsoft.com/fwlink/p/?linkid=241442">Windows 8 device experience</a>
+</dt><dt><a href="http://msdn.microsoft.com/en-us/library/windows/hardware/ms703138">Media Foundation Transforms</a>
+</dt><dt><a href="http://msdn.microsoft.com/en-us/library/windows/hardware/ff568130">Roadmap for Developing Streaming Media Drivers</a>
+</dt><dt><strong>Samples</strong></dt><dt><a href="http://go.microsoft.com/fwlink/p/?linkid=249441 ">Camera Capture UI sample</a>
+</dt></dl>
+<h2>Operating system requirements</h2>
+<table>
+<tbody>
+<tr>
+<th>Client</th>
+<td><dt>Windows&nbsp;8.1 </dt></td>
+</tr>
+<tr>
+<th>Server</th>
+<td><dt>Windows Server&nbsp;2012&nbsp;R2 </dt></td>
+</tr>
+</tbody>
+</table>
+<h2>Build the sample</h2>
+<p>The following steps explain how to build the sample and register the DLL so that a Windows Store device app for your camera can use it.</p>
+<ol>
+<li>Make sure you have the prerequisites installed. This sample requires Visual Studio Professional&nbsp;2013 or Visual Studio Ultimate&nbsp;2013, and the WDK&nbsp;8.1.
+</li><li>Open and build the SampleMft0 Solution.
+<p class="note"><strong>Note</strong>&nbsp;&nbsp;To build for ARM, follow these steps:</p>
+<ol>
+<li>Using Configuration Manager, from the drop-down box for <strong>Active solution platform</strong>, select
+<strong>&lt;New...&gt;</strong>. In the <strong>New Project Platform</strong> dialog box, under
+<strong>New platform</strong>, select <strong>ARM</strong> and click <strong>OK</strong>.
+</li><li>Open project properties for the SampleMft0 project, and follow these steps:
+<ul>
+<li>Under <strong>Configuration Properties &gt; General</strong>, set <strong>Use of ATL</strong> to
+<strong>Static Link to ATL</strong>. </li><li>Under <strong>Configuration Properties &gt; C/C&#43;&#43; &gt; Code Generation</strong>, set
+<strong>Runtime Library</strong> to <strong>Multi-threaded (/MT)</strong>. </li><li>Under <strong>Linker &gt; Input</strong>, edit <strong>Ignore Specific Default Libraries</strong> to include shlwapi.lib and urlmon.lib.
+</li></ul>
+</li></ol>
+<p>&nbsp;</p>
+</li><li>Copy SampleMft0.dll to C:\Program Files (x86)\SampleMft0 (or C:\Program Files\SampleMft0) on a 32-bit system).
+</li><li>Open an administrator command prompt and navigate to the new location of DLL.
+</li><li>Run regsvr32 on SampleMft0.dll. </li><li>On an x64 system, build the x64 version of the DLL and repeat steps 3 to 5, copying the 64-bit DLL to C:\Program Files\SampleMft0).
+</li><li>Run regedit, and open the device registry key for your camera, under <strong>
+HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\DeviceClasses\</strong>.
+<ul>
+<li>The following example shows a path to a device registry key for a camera. Your camera has a different device ID and may have a different device class:
+<div class="code"><span>
+<table>
+<tbody>
+<tr>
+<th>Text</th>
+</tr>
+<tr>
+<td>
+<pre>HKEY_LOCAL_MACHINE\
+  SYSTEM\
+    CurrentControlSet\
+      Control\
+        DeviceClasses\
+          {E5323777-F976-4f5b-9B55-B94699C46E44}\
+             ##?#USB#VID_045E&amp;PID_075D&amp;MI_00#8&amp;23C3DB65&amp;0&amp;0000#{E5323777-F976-4f5b-9B55-B94699C46E44}\
+</pre>
+</td>
+</tr>
+</tbody>
+</table>
+</span></div>
+</li><li>In Registry Editor, under the <strong>GLOBAL#\Device Parameters</strong> key, add a
+<strong>CameraPostProcessingPluginCLSID</strong> value, and set its value to <strong>
+{7BB640D9-33A4-4759-B290-F41A31DCF848}</strong>. This is the CLSID of the Driver MFT defined in the SampleMFT0 project.
+<p><img src="description/image.png" alt="" align="middle"></p>
+</li></ul>
+</li></ol>
+<h2>Run the sample</h2>
+<h2><a id="Install_the_Windows_Store_device_app"></a><a id="install_the_windows_store_device_app"></a><a id="INSTALL_THE_WINDOWS_STORE_DEVICE_APP"></a>Install the Windows Store device app</h2>
+<p>Follow the instructions for building and running the <a href="http://go.microsoft.com/fwlink/p/?linkid=249442">
+Device app for camera sample</a>. You need a copy of the device metadata package for your camera. If you don&rsquo;t have device metadata, you can build it using the
+<strong>Device Metadata Authoring Wizard</strong>. For more info, see Step 2 of the step-by-step guide:
+<a href="http://go.microsoft.com/fwlink/p/?LinkId=313644">Create device metadata for your Windows Store device app</a>.</p>
+<h2><a id="Test_the_sample"></a><a id="test_the_sample"></a><a id="TEST_THE_SAMPLE"></a>Test the sample</h2>
+<ol>
+<li>With your camera attached, build and run the <a href="http://go.microsoft.com/fwlink/p/?linkid=249441 ">
+Camera Capture UI sample</a>. </li><li>When the Camera Capture UI is displayed, tap the <strong>Camera options</strong> button and then click
+<strong>More </strong>in the <strong>Options</strong> flyout.
+<ul>
+<li>If the Windows Store device app is correctly installed, the <strong>More options</strong> flyout that is shown should contain
+<strong>Effect On/Off</strong> and <strong>Effect</strong> controls.. </li><li>If the Driver MFT is installed, the bottom half of the video preview will be green. Modify the effect by adjusting the
+<strong>Effect On/Off</strong> and <strong>Effect</strong> switches in the <strong>
+More options</strong> flyout.
+<p><img src="description/d238dce4-cd7a-474a-a5f4-16b1b5b2f970image.png" alt="" align="middle"></p>
+</li></ul>
+</li></ol>
+<h2><a id="Troubleshooting"></a><a id="troubleshooting"></a><a id="TROUBLESHOOTING"></a>Troubleshooting</h2>
+<p>If the <strong>More options</strong> flyout doesn't contain <strong>Effect On/Off</strong> and
+<strong>Effect</strong> controls, check the following:</p>
+<ul>
+<li>Make sure you enabled test signing before installing the <a href="http://go.microsoft.com/fwlink/p/?linkid=249442">
+Windows Store device app for camera sample</a>. Enable test signing by running <code>
+bcdedit -set testsigning on</code> in a command prompt. </li><li>Make sure Package Name, Publisher Name, and App ID in the device metadata match the fields defined in the package.appxmanifest file of the
+<a href="http://go.microsoft.com/fwlink/p/?linkid=249442">Device app for camera sample</a>.
+</li><li>Make sure you are using the <a href="http://go.microsoft.com/fwlink/p/?linkid=249441 ">
+Camera Capture UI sample</a> to test. </li><li>If you have an internal camera (rather than an externally connected one), follow the requirements for your camera described in &quot;Appendix A: Requirements for identifying internal cameras&quot; in the
+<a href="http://go.microsoft.com/fwlink/p/?linkid=249184">Developing Windows Store device apps for Cameras</a> white paper. Note that you don&rsquo;t have to provide the PLD information described in the paper, if your camera does not expose PLD info in its
+ ACPI tables. </li><li>If you have an internal camera, after installing the <a href="http://go.microsoft.com/fwlink/p/?linkid=249441">
+Device app for camera sample</a>, refresh the PC using the <strong>Devices and Printers</strong> folder. Select the PC in the folder, and click the Refresh button. The camera itself should not be visible in the
+<strong>Devices and Printers</strong> folder. This is because internal cameras are enumerated as part of the PC device container.
+<p><img src="description/63286914-54b8-4bdd-af8d-996400bb986dimage.png" alt="" align="middle"></p>
+</li></ul>
+<p>If the green box in the bottom half of the video preview doesn't appear, check the following:</p>
+<ul>
+<li>Check that the <strong>Effect On/Off</strong> switch in the <strong>More Options</strong> flyout is set to
+<strong>On</strong>. </li><li>Check that the SampleMFT0.DLL is registered and that you have entered the CLSID of the Driver MFT under the device registry key for the camera you are using to capture video, as described in
+<strong>Building the sample</strong>. </li><li>Check that SampleMFT0.DLL is in a subdirectory of Program Files. </li></ul>
+</div>
+
+</div>
+
+
+    </div>
+</body>
+</html>
