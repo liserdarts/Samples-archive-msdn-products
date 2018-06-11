@@ -1,0 +1,6 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package dslVersion="1.0.0.0" Id="9a686043-f37b-4ea4-ac6f-6cf20cb50320" solutionId="9a686043-f37b-4ea4-ac6f-6cf20cb50320" xmlns="http://schemas.microsoft.com/VisualStudio/2008/SharePointTools/PackageModel" name="EquipmentAvailability">
+    <features>
+        <featureReference  itemId="9d7cc830-fc4f-47dd-a08d-da56c98a4f75" />
+    </features>
+</package>

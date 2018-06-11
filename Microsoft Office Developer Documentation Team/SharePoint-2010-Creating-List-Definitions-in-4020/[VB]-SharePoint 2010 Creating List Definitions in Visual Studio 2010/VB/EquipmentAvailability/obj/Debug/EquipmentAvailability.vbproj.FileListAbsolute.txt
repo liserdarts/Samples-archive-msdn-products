@@ -1,0 +1,7 @@
+c:\temp\EquipmentAvailability\EquipmentAvailability\bin\Debug\EquipmentAvailability.dll
+c:\temp\EquipmentAvailability\EquipmentAvailability\bin\Debug\EquipmentAvailability.pdb
+c:\temp\EquipmentAvailability\EquipmentAvailability\bin\Debug\EquipmentAvailability.xml
+c:\temp\EquipmentAvailability\EquipmentAvailability\obj\Debug\ResolveAssemblyReference.cache
+c:\temp\EquipmentAvailability\EquipmentAvailability\obj\Debug\EquipmentAvailability.dll
+c:\temp\EquipmentAvailability\EquipmentAvailability\obj\Debug\EquipmentAvailability.xml
+c:\temp\EquipmentAvailability\EquipmentAvailability\obj\Debug\EquipmentAvailability.pdb

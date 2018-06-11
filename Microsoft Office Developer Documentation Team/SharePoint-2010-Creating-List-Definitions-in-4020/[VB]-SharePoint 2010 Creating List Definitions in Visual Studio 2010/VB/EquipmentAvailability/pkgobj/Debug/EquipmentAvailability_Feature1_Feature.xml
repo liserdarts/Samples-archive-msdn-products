@@ -1,0 +1,8 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Feature xmlns="http://schemas.microsoft.com/sharepoint/" Description="My List Definition Feature" Id="0d2a5b99-bb77-4291-b785-16562d294a5e" Scope="Web" Title="EquipmentAvailability Feature1">
+  <ElementManifests>
+    <ElementManifest Location="ListDefinition1\Elements.xml" />
+    <ElementFile Location="ListDefinition1\Schema.xml" />
+    <ElementManifest Location="ListInstance1\Elements.xml" />
+  </ElementManifests>
+</Feature>

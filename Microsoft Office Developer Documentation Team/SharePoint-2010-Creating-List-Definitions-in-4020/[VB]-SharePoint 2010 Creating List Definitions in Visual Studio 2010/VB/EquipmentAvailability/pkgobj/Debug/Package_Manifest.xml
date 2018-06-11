@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Solution xmlns="http://schemas.microsoft.com/sharepoint/" SolutionId="7c04f3c7-ac1e-40bd-a0d6-dc138e03d16e" SharePointProductVersion="14.0">
+  <Assemblies>
+    <Assembly Location="EquipmentAvailability.dll" DeploymentTarget="GlobalAssemblyCache" />
+  </Assemblies>
+  <FeatureManifests>
+    <FeatureManifest Location="EquipmentAvailability_Feature1\Feature.xml" />
+  </FeatureManifests>
+</Solution>
