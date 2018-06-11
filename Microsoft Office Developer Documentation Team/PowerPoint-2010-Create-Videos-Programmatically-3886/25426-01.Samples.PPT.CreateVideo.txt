@@ -1,0 +1,61 @@
+' PowerPoint 2010
+
+' Place this code in a module within a PowerPoint 2010 presentation,
+' and run the following test procedure. Modify the output file name
+' as necessary:
+Sub TestCreateSampleVideo()
+    CreateSampleVideo ActivePresentation, "C:\Temp\Video.wmv"
+End Sub
+
+Sub CreateSampleVideo(pres As Presentation, fileName As String)
+    ' Presentation.CreateVideo does its work asynchronously.
+    ' You can use the Presentation.CreateVideoStatus property
+    ' to periodically check the status, and react accordingly.
+   
+    ' Besides the file name, the CreateVideo method accepts the following
+    ' parameters:
+   
+    ' UseTimingsAndNarration indicates whether to use the presentation's
+    '   timings and narrations that you have supplied. If false, the
+    '   conversion disregards this information. The default is True.
+    ' DefaultSlideDuration indicates the default timing for each slide,
+    '   if you have haven't specified a timing or if you set
+    '   UseTimingsAndNarration to false. The default value is 5 seconds.
+    ' VertResolution indicates the vertical resolution for your movie. The
+    '   default is 720. Regular options include 720, 480, and 240, although you
+    '   can specify any reasonable value you like (200 would work, for example,
+    '   although it's not a standard vertical resolution.)
+    ' FramesPerSecond indicates the number of frames per second in the
+    '   output video. The default value is 30, and unless you have a reason
+    '   to change this, leave it alone.
+    ' Quality indicates a relative quality of the video, and the default
+    '   value is 85. The larger the number, the larger the output and the longer
+    '   it takes to create the video. Unless you have a reason, leave this
+    '   at the default value. Try setting the value to a low number: You'll see
+    '   a definite degradation in output quality.
+   
+    pres.CreateVideo fileName, DefaultSlideDuration:=1, VertResolution:=480
+   
+    ' Now wait for the conversion to be complete:
+    Do
+        ' Don't tie up the user interface, add DoEvents
+        ' to give the mouse and keyboard time to keep up.
+        DoEvents
+        Select Case pres.CreateVideoStatus
+            Case PpMediaTaskStatus.ppMediaTaskStatusDone
+                MsgBox "Conversion complete!"
+                Exit Do
+            Case PpMediaTaskStatus.ppMediaTaskStatusFailed
+                MsgBox "Conversion failed!"
+                Exit Do
+            Case PpMediaTaskStatus.ppMediaTaskStatusInProgress
+                Debug.Print "Conversion in progress"
+            Case PpMediaTaskStatus.ppMediaTaskStatusNone
+                ' This shouldn't happen--you'll get this value
+                ' when you ask for the status and no conversion
+                ' is happening or has completed.
+            Case PpMediaTaskStatus.ppMediaTaskStatusQueued
+                Debug.Print "Conversion queued"
+        End Select
+    Loop
+End Sub
