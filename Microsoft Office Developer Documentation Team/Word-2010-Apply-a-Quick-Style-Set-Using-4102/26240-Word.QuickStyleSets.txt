@@ -1,0 +1,39 @@
+' Word 2010
+
+' In a new document, type the following text and then press Enter:
+'
+' =rand(1, 5)
+'
+' This action inserts 5 paragraphs with 5 sentences each into the
+' current document. Then, in the VBA editor, create a new module,
+' copy in this code, and place the cursor within
+' this procedure and press F8 to single step through the code. Arrange
+' the VBA and Word windows side by side on screen so you can view the
+' behavior as you step through the code.
+
+' Note that quick style sets are stored as .dotx files in this folder in Windows 7:
+' C:\Users\<userName>\AppData\Roaming\Microsoft\QuickStyles
+' Delete files from this folder to remove them from the list of quick styles.
+' The location will be different in other operating systems, and in non-default
+' installations of Office 2010.
+
+Sub TestQuickStyles()
+    ' Word 2010 adds the ability to apply a quick style set. Previously
+    ' you could only save a quick style set.
+   
+    ' Apply one of the built-in style sets.
+    ActiveDocument.ApplyQuickStyleSet2 "Elegant"
+   
+    ' Modify the style set:
+    With ActiveDocument.Paragraphs(1)
+        .LineSpacing = 20
+        .LeftIndent = 20
+    End With
+    ActiveDocument.SaveAsQuickStyleSet "New Style"
+   
+    ' Load another style set:
+    ActiveDocument.ApplyQuickStyleSet2 "Word 2010"
+   
+    ' Re-apply your new style set:
+    ActiveDocument.ApplyQuickStyleSet2 "New Style"
+End Sub
