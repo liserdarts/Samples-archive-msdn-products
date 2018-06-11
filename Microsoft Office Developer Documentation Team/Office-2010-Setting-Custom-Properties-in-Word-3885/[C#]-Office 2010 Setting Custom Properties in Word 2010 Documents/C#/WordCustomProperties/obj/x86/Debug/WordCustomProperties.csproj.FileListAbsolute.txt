@@ -1,0 +1,5 @@
+I:\DropBox\My Dropbox\Office 2010 VHTs\VHT A\Demo\CS\WordCustomProperties\WordCustomProperties\obj\x86\Debug\ResolveAssemblyReference.cache
+I:\DropBox\My Dropbox\Office 2010 VHTs\VHT A\Demo\CS\WordCustomProperties\WordCustomProperties\bin\Debug\WordCustomProperties.exe
+I:\DropBox\My Dropbox\Office 2010 VHTs\VHT A\Demo\CS\WordCustomProperties\WordCustomProperties\bin\Debug\WordCustomProperties.pdb
+I:\DropBox\My Dropbox\Office 2010 VHTs\VHT A\Demo\CS\WordCustomProperties\WordCustomProperties\obj\x86\Debug\WordCustomProperties.exe
+I:\DropBox\My Dropbox\Office 2010 VHTs\VHT A\Demo\CS\WordCustomProperties\WordCustomProperties\obj\x86\Debug\WordCustomProperties.pdb
