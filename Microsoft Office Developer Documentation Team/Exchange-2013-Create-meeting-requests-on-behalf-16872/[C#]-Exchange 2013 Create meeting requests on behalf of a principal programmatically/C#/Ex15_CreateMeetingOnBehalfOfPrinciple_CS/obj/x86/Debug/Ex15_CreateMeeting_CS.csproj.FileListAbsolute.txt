@@ -1,0 +1,1 @@
+D:\SourceControl\E15SDK\Exchange 101\Ex15_CreateMeetingOnBehalfOfPrinciple_CS\bin\Debug\Ex15_CreateMeeting_CS.exe.config
