@@ -1,0 +1,364 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
+    <head><link rel="stylesheet" type="text/css" href="description/Combined.css,0:HeaderFooterSprite,0:Header.NonMtps,1:LinkList;/Areas/Centers/Themes/StandardDevCenter/Content:0,/Areas/Epx/Themes/Base/Content:1&amp;amp;hashKey=C9973DA951AE6202C9B348379A1BE49D" xmlns="http://www.w3.org/1999/xhtml" />
+<link type="text/css" rel="stylesheet" xmlns="http://www.w3.org/1999/xhtml" />
+<link rel="stylesheet" type="text/css" href="description/9e116645-9d9a-4566-82a8-7b29a5b324f1Combined.css,0:HeaderFooterSprite,0:Footer.NonMtps,1:LinkList;/Areas/Centers/Themes/StandardDevCenter/Content:0,/Areas/Epx/Themes/Base/Content:1&amp;amp;hashKey=F576C687BC536B84D6E5B3246EE39B49" xmlns="http://www.w3.org/1999/xhtml" />
+<link type="text/css" rel="stylesheet" xmlns="http://www.w3.org/1999/xhtml" />
+
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <title>Office 365: Track which users download a file from a SharePoint 2013 site</title>
+        <link href="description/Galleries.css" type="text/css" rel="Stylesheet" /><link href="description/Layout.css" type="text/css" rel="Stylesheet" /><link href="description/Brand.css" type="text/css" rel="Stylesheet" />
+        <link href="description/iframedescription.css" rel="Stylesheet" type="text/css" />
+        <script src="description/offline.js" type="text/javascript"></script>
+        <style type="text/css">
+            #projectInfo {
+                overflow: auto;
+            }
+            #longDesc {
+                clear:both;
+                margin: 25px 0 10px 0;
+            }
+
+            #SampleIndexList{
+                margin-left: 15px;
+            }
+        </style>
+    </head>
+<body>
+    <div id="offlineDescription">
+        <h1>Office 365: Track which users download a file from a SharePoint 2013 site</h1>
+        <br/>
+        <div id="projectInfo">
+            <div class="section">
+                    <div class="itemBarLong tagsContainer">
+                        <label for="Technologies">Technologies</label>
+                        <div id="Technologies">
+                            Office 365
+                        </div>
+                    </div>
+                    <div class="itemBarLong tagsContainer">
+                        <label for="Topics">Topics</label>
+                        <div id="Topics">
+                            Data Access
+                        </div>
+                    </div>
+                <div class="itemBarLong">
+                    <label for="Platforms">Platforms</label>
+                    <div id="Platforms">
+                        Cloud
+                    </div>
+                </div>
+                <div class="itemBarLong">
+                    <label for="Requirements">Requirements</label>
+                    <div id="Requirements">
+                        
+                    </div>
+                </div>
+                <div class="itemBar">
+                    <label for="LastUpdated">Primary language</label>
+                    <div id="LastUpdated">en-US</div>
+                </div>
+                <div class="itemBar">
+                    <label for="LastUpdated">Updated</label>
+                    <div id="LastUpdated">4/23/2013</div>
+                </div>
+                <div class="itemBarLong">
+                    <label for="License">License</label>
+                    <div id="License">
+                        <a href="license.rtf">Apache License, Version 2.0</a></div>
+                </div>
+                <div class="itemBar">
+                    <div class="viewonlinecont">
+                        <a data-link="online" href="http://code.msdn.microsoft.com/Office-365-Track-which-f4d06334">View this sample online</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+                   
+<script type="text/javascript">
+    function initializePage() {
+        var otherTabClass = 'otherTab';
+        var hiddenPreClass = 'hidden';
+
+        var htmlDecode = function(encodedData) {
+            var decodedData = "";
+            if (encodedData) {
+                var div = document.createElement('div');
+                div.innerHTML = encodedData;
+                decodedData = div.firstChild.nodeValue.replace( /\\r\\n/ig , '\r\n');
+            }
+            return decodedData;
+        };
+                
+        Galleries.iterateElem(Galleries.findElem(null, 'div', 'scriptcode'), function (index, scriptBlock) {
+            var titleElem = Galleries.findElem(scriptBlock, 'div', 'title')[0];
+            var labelElems = Galleries.findElem(titleElem, 'span');
+            if (labelElems.length == 0) {
+                labelElems = titleElem;
+            }
+            var languageSpans = Galleries.findElem(scriptBlock, 'span', 'hidden');
+            var pres = Galleries.findElem(scriptBlock, 'pre');
+            if (languageSpans.length > 0 && pres.length > 1) {
+                Galleries.iterateElem(labelElems, function(index, elem) {
+                    var codePre = pres[index];
+                    var labelSpan = elem;
+                    var languageSpan = languageSpans[index];
+                            
+                    elem.code = codePre.innerHTML.replace( /(\r(\n)?)|((\r)?\n)/ig , '\\r\\n');
+                            
+                    codePre.className = codePre.className.replace(hiddenPreClass, '');
+                            
+                    languageSpan.parentNode.removeChild(languageSpan);
+                });
+
+                pres = Galleries.findElem(scriptBlock, 'pre');
+                Galleries.iterateElem(labelElems, function(index, elem) {
+                    var codePre = pres[index];
+                    var labelSpan = elem;
+                    if (index == 0) {
+                        scriptBlock.activeTab = 0;
+                    }
+                    else {
+                        labelSpan.className += otherTabClass;
+                        codePre.className += hiddenPreClass;
+                    }
+                    Galleries.attachEventHandler(labelSpan, 'click', function(e) {
+                        var activeTab = scriptBlock.activeTab;
+                        labelElems[activeTab].className += otherTabClass;
+                        pres[activeTab].className += hiddenPreClass;
+
+                        codePre.className = codePre.className.replace(hiddenPreClass, '');
+                        labelSpan.className = labelSpan.className.replace(otherTabClass, '');
+                        scriptBlock.activeTab = index;
+                    });
+                });
+
+                var preview = Galleries.findElem(scriptBlock, 'div', 'preview');
+                if (preview.length == 0) {
+                    preview.push(pres[pres.length - 1]);
+                }
+                Galleries.iterateElem(preview, function(index, elem) {
+                    elem.parentNode.removeChild(elem);
+                });
+
+                if (window.clipboardData && clipboardData.setData) {
+                    var copyLink = document.createElement('a');
+                    copyLink.href = 'javascript:void(0);';
+                    copyLink.className = 'copyCode';
+                    copyLink.innerHTML = 'Copy code';
+                    Galleries.attachEventHandler(copyLink, 'click', function (e) {
+                        clipboardData.setData("Text", htmlDecode(labelElems[scriptBlock.activeTab].code));
+                        return false;
+                    });
+                    scriptBlock.insertBefore(copyLink, scriptBlock.childNodes[0]);
+                }
+            }
+        });
+    }
+
+    Galleries.onWindowLoad(function(){
+        initializePage();
+    });
+
+</script>
+<div id="longDesc">
+    
+<div id="header"><span class="label">Summary:</span> This code sample shows which user downloaded a file from a SharePoint 2013 site.</div>
+<div id="mainSection">
+<div id="mainBody">
+<h1 class="heading">Description of the sample</h1>
+<div class="section" id="sectionSection0">
+<p>This is a SharePoint-hosted app for SharePoint 2013. The app displays the name of the file that is downloaded and the name of the user that downloaded it.</p>
+</div>
+<h1 class="heading">Prerequisites</h1>
+<div class="section" id="sectionSection1">
+<p>This sample requires the following:</p>
+<ul>
+<li>
+<p>Windows 8 and Internet Explorer 10</p>
+</li><li>
+<p>Visual Studio 2012</p>
+</li><li>
+<p>Office Developer Tools for Visual Studio 2012 (use the <a href="http://www.microsoft.com/web/downloads/platform.aspx/" >
+Microsoft Web Platform Installer</a>)</p>
+</li><li>
+<p>An Office 365 Developer Site (<a href="http://msdn.microsoft.com/en-us/library/fp179924.aspx/" >Sign up for an Office 365 Developer Site</a>)</p>
+</li><li>
+<p><a href="http://www.microsoft.com/en-us/download/details.aspx?id=30355" >SharePoint Server 2013 Client Components SDK Preview</a></p>
+</li></ul>
+</div>
+<h1 class="heading">Key components of the sample</h1>
+<div class="section" id="sectionSection2">
+<p>This sample contains the following key files:</p>
+<ul>
+<li>
+<p>The UpdateListCA project.</p>
+</li><li>
+<p>App.js, a JavaScript file that contains the app logic.</p>
+</li><li>
+<p>AppManifest.xml, which contains the permission that is required by the app to run successfully.</p>
+</li><li>
+<p>Default.aspx, which contains the HTML and ASP.NET controls for the user interface.</p>
+</li></ul>
+</div>
+<h1 class="heading">Configure the sample</h1>
+<div class="section" id="sectionSection3">
+<p>&nbsp;</p>
+<p>Follow these steps to configure the sample.</p>
+<ol>
+<li>
+<p>Extract the files from UpdateListCA.zip into a folder.</p>
+</li><li>
+<p>Open Visual Studio 2012 with administrator privileges.</p>
+</li><li>
+<p>On the <span class="ui">File</span> menu, click <span class="ui">Open</span>, and then click
+<span class="ui">Project</span>.</p>
+</li><li>
+<p>Navigate to the location of the UpdateListCA solution folder and select the UpdateListCA.sln file.</p>
+</li><li>
+<p>Set the <span class="ui">Site URL</span> property of the UpdateListCA solution to the URL of your SharePoint site collection.</p>
+</li><li>
+<p>Press Ctrl&#43;S to save all the changes.</p>
+</li></ol>
+</div>
+<h1 class="heading">Build the sample</h1>
+<div class="section" id="sectionSection4">
+<p>Follow these steps to build the sample.</p>
+<ol>
+<li>
+<p>Right-click the UpdateListCA solution folder and click <span class="ui">Publish</span>. The following window opens.</p>
+<p><img id="81065" src="description/O365CustomList_Publishsummary.JPG" alt="Publish summary dialog" width="473" height="365"></p>
+<p>&nbsp;</p>
+</li><li>
+<p>Select the <span class="ui">Open output folder after successful packaging</span> check box, and then click
+<span class="ui">Finish</span>. This will create the .app extension file, which will be used to deploy the app on the SharePoint site; note the location of this file.</p>
+</li><li>
+<p>Using a browser, navigate to your Office 365 Developer Site.</p>
+</li><li>
+<p>Click <span class="ui">Apps in testing</span>. A window similar to the following opens.</p>
+<p><img id="81066" src="description/O365_errortypes-AppsinTesting.JPG" alt="O365_errortypes app: Apps in Testing screenshot" width="501" height="163"></p>
+<p>&nbsp;</p>
+</li><li>
+<p>Click <span class="ui">new app to deploy</span>. A dialog box opens, as shown in the following figure.</p>
+<p><img id="81068" src="description/O365_TrackUserDownloading_File_DeployApp.JPG" alt="O365 Upload App to DevSite" width="608" height="405"></p>
+<p>&nbsp;</p>
+</li><li>
+<p>Click the <span class="ui">upload</span> link to upload your .app package file.</p>
+</li><li>
+<p>Browse to the file, select it, and click <span class="ui">OK</span>.</p>
+</li><li>
+<p>Click the <span class="ui">Deploy</span> button.</p>
+</li><li>
+<p>Another dialog box opens, as shown in the following figure.</p>
+<p><img id="81069" src="description/O365_TrackUserDownloading_File_UploadApp.JPG" alt="Upload App to Dev Site" width="548" height="289"></p>
+<p>&nbsp;</p>
+</li><li>
+<p>Click the <span class="ui">Trust It</span> button. The app will be uploaded to your Developer Site.</p>
+</li></ol>
+</div>
+<h1 class="heading">Run and test the sample</h1>
+<div class="section" id="sectionSection5">
+<p>Use the following steps to run and test the sample app.</p>
+<ol>
+<li>
+<p>In the left navigation panel, click <span class="ui">Documents</span>. If there are no documents listed, select the
+<span class="ui">FILES</span> tab and create one.</p>
+</li><li>
+<p>For any document in the list, click the ellipsis button (<span class="ui">&hellip;</span>) to the right of the document name and, in the menu that appears, click the ellipsis button (<span class="ui">&hellip;</span>) at the bottom to get the context
+ menu.</p>
+</li><li>
+<p>In the context menu, click &quot;Track Download&quot;. Your item will be downloaded and the message &quot;Successfully downloaded&quot; will appear.</p>
+</li><li>
+<p>Click the &quot;MyList&quot; link to view the file name of the selected item and the name of the person who downloaded it.</p>
+</li></ol>
+</div>
+<h1 class="heading">Troubleshooting</h1>
+<div class="section" id="sectionSection6">
+<p>The following table lists common configuration and environment errors that prevent the sample from running or deploying properly and how you can solve them.</p>
+<div class="caption"></div>
+<div class="tableSection">
+<table cellspacing="2" cellpadding="5" width="50%" frame="lhs">
+<tbody>
+<tr>
+<th>
+<p>Problem</p>
+</th>
+<th>
+<p>Solution</p>
+</th>
+</tr>
+<tr>
+<td>
+<p>In Visual Studio 2012, when prompted to &quot;Connect to SharePoint&quot;, an error message says, &quot;Access Denied&hellip; You are not a member of this site.&quot;</p>
+</td>
+<td>
+<p>The credentials are not correct for the URL specified in the <span class="ui">
+Site URL</span> property of the app. Correct the logon credentials. If the problem persists, try deleting the browsing history and logging on again.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>You do not see the &quot;Publish Summary&quot; screen when you click <span class="ui">
+Publish</span>.</p>
+</td>
+<td>
+<p>Check to be sure you created your Office 365 subscription account and have configured your account's developer URL in the sample solution, as described in the steps for &quot;Configure the sample&quot;.</p>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<h1 class="heading">Change log</h1>
+<div class="section" id="sectionSection7">
+<div class="caption"></div>
+<div class="tableSection">
+<table cellspacing="2" cellpadding="5" width="50%" frame="lhs">
+<tbody>
+<tr>
+<th>
+<p>Version</p>
+</th>
+<th>
+<p>Date</p>
+</th>
+</tr>
+<tr>
+<td>
+<p>First version</p>
+</td>
+<td>
+<p>April 23, 2013</p>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<h1 class="heading">Related content</h1>
+<div class="section" id="sectionSection8">
+<ul>
+<li>
+<p><a href="http://msdn.microsoft.com/library/1b992485-6efe-4ea4-a18c-221689b0b66f.aspx" >How to: Create a basic SharePoint-hosted app</a></p>
+</li><li>
+<p><a href="http://msdn.microsoft.com/library/f86e2695-4d7a-4fc5-bc23-689de96c4b06.aspx" >SharePoint 2013 development overview</a></p>
+</li><li>
+<p><a href="http://msdn.microsoft.com/library/d07e0a13-1e74-4128-857a-513dedbfef33.aspx" >Get started developing apps for SharePoint</a></p>
+</li><li>
+<p><a href="http://msdn.microsoft.com/library/3038dd73-41ee-436f-8c78-ef8e6869bf7b.aspx" >How to: Create a basic provider-hosted app for SharePoint</a></p>
+</li><li>
+<p><a href="http://msdn.microsoft.com/library/ae96572b-8f06-4fd3-854f-fc312f7f2d88.aspx" >Important aspects of the app for SharePoint architecture and development landscape</a></p>
+</li><li>
+<p><a href="http://blogs.technet.com/b/wbaer/archive/2012/10/10/setting-up-a-sharepoint-2013-development-environment-101.aspx" >Setting up a SharePoint 2013 Development Environment 101</a></p>
+</li></ul>
+</div>
+</div>
+</div>
+
+</div>
+
+
+    </div>
+</body>
+</html>

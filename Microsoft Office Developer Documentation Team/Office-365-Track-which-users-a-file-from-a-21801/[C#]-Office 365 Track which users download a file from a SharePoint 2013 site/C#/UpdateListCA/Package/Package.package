@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package dslVersion="1.0.0.0" 
+        Id="cca79ce2-4f8f-43f2-bc25-a0a9ec2ede60" 
+        solutionId="cca79ce2-4f8f-43f2-bc25-a0a9ec2ede60" 
+        xmlns="http://schemas.microsoft.com/VisualStudio/2008/SharePointTools/PackageModel" 
+        name="UpdateListCA"
+        sharePointProductVersion="15.0">
+  <features>
+        <featureReference itemId="41180054-23c0-4302-b175-c7617f77762c" />
+  </features>
+</package>
