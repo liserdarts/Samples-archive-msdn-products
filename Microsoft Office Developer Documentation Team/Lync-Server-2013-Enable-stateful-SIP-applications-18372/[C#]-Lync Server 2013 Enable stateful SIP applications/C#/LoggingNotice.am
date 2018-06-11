@@ -1,0 +1,40 @@
+<?xml version="1.0"?>
+<r:applicationManifest
+ r:appUri="http://www.microsoft.com/LCS/Samples/LoggingNotice"
+ xmlns:r="http://schemas.microsoft.com/lcs/2006/05">
+
+<!-- 
+  - Handle ACK and MESSAGE requests.
+  -->
+<r:requestFilter methodNames="MESSAGE,ACK"
+                 strictRoute="true"
+                 registrarGenerated="false"
+                 domainSupported="false"/>
+
+<!--
+  - Don't handle responses in this script (proxy automatically)
+  -->
+<r:responseFilter reasonCodes="NONE"/>
+
+<r:splScript><![CDATA[
+
+/*++
+
+Script:
+
+    LoggingNotice.am
+
+Abstract:
+
+    This is the script part of the LoggingNotice application.
+    See LoggingNotice.cs for details.
+
+--*/
+
+/*
+ * Dispatch all requests to the managed application.
+ */
+Dispatch("OnRequest");
+
+]]></r:splScript>
+</r:applicationManifest>

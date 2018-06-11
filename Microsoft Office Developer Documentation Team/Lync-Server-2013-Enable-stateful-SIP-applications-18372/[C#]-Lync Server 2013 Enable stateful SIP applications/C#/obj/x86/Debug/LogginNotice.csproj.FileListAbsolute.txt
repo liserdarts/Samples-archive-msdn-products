@@ -1,0 +1,8 @@
+C:\Users\kdeding\Desktop\MyApps\LyncServerApps\LogginNotice\bin\Debug\LogginNotice.exe
+C:\Users\kdeding\Desktop\MyApps\LyncServerApps\LogginNotice\bin\Debug\LogginNotice.pdb
+C:\Users\kdeding\Desktop\MyApps\LyncServerApps\LogginNotice\bin\Debug\ServerAgent.dll
+C:\Users\kdeding\Desktop\MyApps\LyncServerApps\LogginNotice\obj\x86\Debug\LogginNotice.exe
+C:\Users\kdeding\Desktop\MyApps\LyncServerApps\LogginNotice\obj\x86\Debug\LogginNotice.pdb
+C:\Users\kdeding\Desktop\MyApps\LyncServerApps\LogginNotice\bin\Debug\LoggingNoticeReadme.txt
+C:\Users\kdeding\Desktop\MyApps\LyncServerApps\LogginNotice\bin\Debug\LoggingNotice.am
+C:\Users\kdeding\Desktop\MyApps\LyncServerApps\LogginNotice\obj\x86\Debug\LogginNotice.csprojResolveAssemblyReference.cache
