@@ -1,0 +1,35 @@
+' Excel 2010
+
+' Demonstrate the AddUnique method
+
+' In a new workbook, in the VBA editor, copy this code
+' into the Sheet1 class module. Place the cursor
+' inside the DemoAddUnique procedure, and press F5
+' to run the procedure. View Sheet1 to see the results.
+
+Sub DemoAddUnique()
+  ' Set up a range, and fill it with random numbers.
+  Dim rng As Range
+  Set rng = Range("A1:E10")
+  SetupRangeData rng
+ 
+  ' Clear any existing format conditions.
+  rng.FormatConditions.Delete
+ 
+  ' Display all unique values in red.
+  Dim uv As UniqueValues
+  Set uv = rng.FormatConditions.AddUniqueValues
+  uv.DupeUnique = xlUnique
+  uv.Interior.Color = vbRed
+ 
+  ' Display all duplicate values in yellow and in bold.
+  Set uv = rng.FormatConditions.AddUniqueValues
+  uv.DupeUnique = xlDuplicate
+  uv.Interior.Color = vbYellow
+  uv.Font.Bold = True
+End Sub
+
+Sub SetupRangeData(rng As Range)
+  rng.Formula = "=RANDBETWEEN(1, 100)"
+End Sub
+
