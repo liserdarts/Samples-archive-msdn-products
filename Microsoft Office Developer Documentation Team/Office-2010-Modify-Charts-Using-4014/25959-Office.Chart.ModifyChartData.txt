@@ -1,0 +1,64 @@
+' Microsoft Word 2010/Charting
+
+' Modify the data for a chart.
+
+' Add a module to the document, and copy the following code
+' into the new module. Add a breakpoint where directed in the code
+' and press F5 to run the procedure. After hitting the breakpoint,
+' look at the chart, and then press F5 run again to see the
+' behavior of the chart. This will be easiest to see if you
+' arrange the Word window and the VBA window so they're side-by-side
+' on the screen.
+
+' In order to use this code, within the VBA editor you must also set a reference to the
+' Excel object model: Select Tools and then References, and select
+' Microsoft Excel 14.0 Object Library from the list of references.
+
+' In order to use this code with PowerPoint 2010, simply replace
+' the reference to ActiveDocument with ActivePresentation.Slides(1) in the
+' second line of code.
+
+Sub ModifyChartData()
+    Dim shp As Shape
+    Set shp = ActiveDocument.Shapes.AddChart(xl3DColumn)
+   
+    Dim cht As Chart
+    Set cht = shp.Chart
+
+    Dim wb As Excel.Workbook
+    Dim ws As Excel.Worksheet
+   
+    Set wb = cht.ChartData.Workbook
+    Set ws = wb.Worksheets(1)
+   
+    ' The size and shape of the data will vary depending
+    ' on the type of chart you have created. You will need
+    ' to modify this code, depending on your chart. In every
+    ' case, Excel creates a ListObject named Table1 for your data.
+   
+    ' Add a breakpoint on the next line of code.
+    ws.Range("A2").Value = "North"
+    ws.Range("A3").Value = "South"
+    ws.Range("A4").Value = "East"
+    ws.Range("A5").Value = "West"
+   
+    ws.Range("B1").Value = "2009"
+    ws.Range("C1").Value = "2010"
+    ws.Range("D1").Value = "2011"
+   
+    ' Now expand the table and add more data:
+    ws.ListObjects("Table1").Resize ws.Range("A1:E6")
+    ws.Range("A6").Value = "Canada"
+    ws.Range("B6").Value = "5"
+    ws.Range("C6").Value = "4"
+    ws.Range("D6").Value = "3"
+   
+    ws.Range("E1").Value = "2012"
+    ws.Range("E2").Value = "4"
+    ws.Range("E3").Value = "5"
+    ws.Range("E4").Value = "2"
+    ws.Range("E5").Value = "3"
+    ws.Range("E6").Value = "6"
+   
+    ' Note that the chart now contains more data!
+End Sub
