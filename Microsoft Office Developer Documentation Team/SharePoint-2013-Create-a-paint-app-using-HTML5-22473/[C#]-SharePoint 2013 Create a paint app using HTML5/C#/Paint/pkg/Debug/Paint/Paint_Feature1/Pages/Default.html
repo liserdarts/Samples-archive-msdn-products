@@ -1,0 +1,47 @@
+﻿<html>
+<head>
+    <meta http-equiv="X-UA-Compatible" content="IE=10" />
+    <title>Paint</title>
+    <link href="../content/main.css" rel="stylesheet" type="text/css" />
+    <script src="../scripts/jquery-1.7.1.min.js"></script>
+    <script src="../scripts/sp.ui.controls.js"></script>
+    <script src="../scripts/wingtip.paint.js"></script>
+    <script src="../scripts/main.js"></script>
+</head>
+<body>
+    <header>
+        <nav>
+            <div id="chrome_ctrl_container"
+                data-ms-control="SP.UI.Controls.Navigation"
+                data-ms-options='{  
+                    "appIconUrl" : "../Images/appIcon.png",
+                    "appTitle" : "Paint",
+                 }'>
+            </div>
+        </nav>
+    </header>
+    <div class="easel">
+        <article>
+            <div id="toolbar" style="padding-bottom:10px;">
+                <button id="pencil">Pencil</button>
+                <button id="line">Line</button>
+                <button id="rectangle">Rectangle</button>
+            </div>
+            <canvas id="picker" width="500" height="64"></canvas>
+            <canvas id="main" width="500" height="333"></canvas>
+        </article>
+        <aside>
+            <div>Preview Color</div>
+            <div id="preview"></div>
+            <div id="pick"></div>
+            <div>Current Color</div>
+            <div>Current RGB<input type="text" id="rgbVal" /></div>
+            <div style="margin: 10px;">
+                <button id="clearImage">Start Over!</button></div>
+        </aside>
+    </div>
+    <footer>
+        <h2>Paint</h2>
+    </footer>
+</body>
+</html>

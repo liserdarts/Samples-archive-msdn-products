@@ -1,0 +1,6 @@
+D:\Demos\21 - HTML5 and JavaScript\Paint\Paint\bin\Debug\Paint.pdb
+D:\Demos\21 - HTML5 and JavaScript\Paint\Paint\obj\Debug\Paint.dll
+D:\Demos\21 - HTML5 and JavaScript\Paint\Paint\obj\Debug\Paint.pdb
+E:\Demos\21 - HTML5 and JavaScript\Paint\Paint\bin\Debug\Paint.pdb
+E:\Demos\21 - HTML5 and JavaScript\Paint\Paint\obj\Debug\Paint.dll
+E:\Demos\21 - HTML5 and JavaScript\Paint\Paint\obj\Debug\Paint.pdb

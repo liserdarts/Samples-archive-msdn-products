@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package dslVersion="1.0.0.0" 
+        Id="73a68aea-de94-4429-aecb-a3587fb7f218" 
+        solutionId="73a68aea-de94-4429-aecb-a3587fb7f218" 
+        xmlns="http://schemas.microsoft.com/VisualStudio/2008/SharePointTools/PackageModel" 
+        name="Paint"
+        sharePointProductVersion="15.0">
+  <features>
+        <featureReference itemId="86dba081-dc4c-48bb-8022-3b971aaac36d" />
+  </features>
+</package>
