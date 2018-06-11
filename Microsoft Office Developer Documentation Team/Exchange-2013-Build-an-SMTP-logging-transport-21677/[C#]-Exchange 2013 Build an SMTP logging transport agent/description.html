@@ -1,0 +1,277 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
+    <head><link rel="stylesheet" type="text/css" href="description/Combined.css,0:HeaderFooterSprite,0:Header.NonMtps,1:LinkList;/Areas/Centers/Themes/StandardDevCenter/Content:0,/Areas/Epx/Themes/Base/Content:1&amp;amp;hashKey=C9973DA951AE6202C9B348379A1BE49D" xmlns="http://www.w3.org/1999/xhtml" />
+<link type="text/css" rel="stylesheet" xmlns="http://www.w3.org/1999/xhtml" />
+<link rel="stylesheet" type="text/css" href="description/a7bd86db-8a7a-43ce-8954-21f8f839f51bCombined.css,0:HeaderFooterSprite,0:Footer.NonMtps,1:LinkList;/Areas/Centers/Themes/StandardDevCenter/Content:0,/Areas/Epx/Themes/Base/Content:1&amp;amp;hashKey=F576C687BC536B84D6E5B3246EE39B49" xmlns="http://www.w3.org/1999/xhtml" />
+<link type="text/css" rel="stylesheet" xmlns="http://www.w3.org/1999/xhtml" />
+
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <title>Exchange 2013: Build an SMTP logging transport agent</title>
+        <link href="description/Galleries.css" type="text/css" rel="Stylesheet" /><link href="description/Layout.css" type="text/css" rel="Stylesheet" /><link href="description/Brand.css" type="text/css" rel="Stylesheet" />
+        <link href="description/iframedescription.css" rel="Stylesheet" type="text/css" />
+        <script src="description/offline.js" type="text/javascript"></script>
+        <style type="text/css">
+            #projectInfo {
+                overflow: auto;
+            }
+            #longDesc {
+                clear:both;
+                margin: 25px 0 10px 0;
+            }
+
+            #SampleIndexList{
+                margin-left: 15px;
+            }
+        </style>
+    </head>
+<body>
+    <div id="offlineDescription">
+        <h1>Exchange 2013: Build an SMTP logging transport agent</h1>
+        <br/>
+        <div id="projectInfo">
+            <div class="section">
+                    <div class="itemBarLong tagsContainer">
+                        <label for="Technologies">Technologies</label>
+                        <div id="Technologies">
+                            Microsoft Exchange Server 2013
+                        </div>
+                    </div>
+                    <div class="itemBarLong tagsContainer">
+                        <label for="Topics">Topics</label>
+                        <div id="Topics">
+                            Transport Agent
+                        </div>
+                    </div>
+                <div class="itemBarLong">
+                    <label for="Platforms">Platforms</label>
+                    <div id="Platforms">
+                        Cloud
+                    </div>
+                </div>
+                <div class="itemBarLong">
+                    <label for="Requirements">Requirements</label>
+                    <div id="Requirements">
+                        
+                    </div>
+                </div>
+                <div class="itemBar">
+                    <label for="LastUpdated">Primary language</label>
+                    <div id="LastUpdated">en-US</div>
+                </div>
+                <div class="itemBar">
+                    <label for="LastUpdated">Updated</label>
+                    <div id="LastUpdated">5/20/2013</div>
+                </div>
+                <div class="itemBarLong">
+                    <label for="License">License</label>
+                    <div id="License">
+                        <a href="license.rtf">Apache License, Version 2.0</a></div>
+                </div>
+                <div class="itemBar">
+                    <div class="viewonlinecont">
+                        <a data-link="online" href="http://code.msdn.microsoft.com/Exchange-2013-Build-an-fc23dc33">View this sample online</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+                   
+<script type="text/javascript">
+    function initializePage() {
+        var otherTabClass = 'otherTab';
+        var hiddenPreClass = 'hidden';
+
+        var htmlDecode = function(encodedData) {
+            var decodedData = "";
+            if (encodedData) {
+                var div = document.createElement('div');
+                div.innerHTML = encodedData;
+                decodedData = div.firstChild.nodeValue.replace( /\\r\\n/ig , '\r\n');
+            }
+            return decodedData;
+        };
+                
+        Galleries.iterateElem(Galleries.findElem(null, 'div', 'scriptcode'), function (index, scriptBlock) {
+            var titleElem = Galleries.findElem(scriptBlock, 'div', 'title')[0];
+            var labelElems = Galleries.findElem(titleElem, 'span');
+            if (labelElems.length == 0) {
+                labelElems = titleElem;
+            }
+            var languageSpans = Galleries.findElem(scriptBlock, 'span', 'hidden');
+            var pres = Galleries.findElem(scriptBlock, 'pre');
+            if (languageSpans.length > 0 && pres.length > 1) {
+                Galleries.iterateElem(labelElems, function(index, elem) {
+                    var codePre = pres[index];
+                    var labelSpan = elem;
+                    var languageSpan = languageSpans[index];
+                            
+                    elem.code = codePre.innerHTML.replace( /(\r(\n)?)|((\r)?\n)/ig , '\\r\\n');
+                            
+                    codePre.className = codePre.className.replace(hiddenPreClass, '');
+                            
+                    languageSpan.parentNode.removeChild(languageSpan);
+                });
+
+                pres = Galleries.findElem(scriptBlock, 'pre');
+                Galleries.iterateElem(labelElems, function(index, elem) {
+                    var codePre = pres[index];
+                    var labelSpan = elem;
+                    if (index == 0) {
+                        scriptBlock.activeTab = 0;
+                    }
+                    else {
+                        labelSpan.className += otherTabClass;
+                        codePre.className += hiddenPreClass;
+                    }
+                    Galleries.attachEventHandler(labelSpan, 'click', function(e) {
+                        var activeTab = scriptBlock.activeTab;
+                        labelElems[activeTab].className += otherTabClass;
+                        pres[activeTab].className += hiddenPreClass;
+
+                        codePre.className = codePre.className.replace(hiddenPreClass, '');
+                        labelSpan.className = labelSpan.className.replace(otherTabClass, '');
+                        scriptBlock.activeTab = index;
+                    });
+                });
+
+                var preview = Galleries.findElem(scriptBlock, 'div', 'preview');
+                if (preview.length == 0) {
+                    preview.push(pres[pres.length - 1]);
+                }
+                Galleries.iterateElem(preview, function(index, elem) {
+                    elem.parentNode.removeChild(elem);
+                });
+
+                if (window.clipboardData && clipboardData.setData) {
+                    var copyLink = document.createElement('a');
+                    copyLink.href = 'javascript:void(0);';
+                    copyLink.className = 'copyCode';
+                    copyLink.innerHTML = 'Copy code';
+                    Galleries.attachEventHandler(copyLink, 'click', function (e) {
+                        clipboardData.setData("Text", htmlDecode(labelElems[scriptBlock.activeTab].code));
+                        return false;
+                    });
+                    scriptBlock.insertBefore(copyLink, scriptBlock.childNodes[0]);
+                }
+            }
+        });
+    }
+
+    Galleries.onWindowLoad(function(){
+        initializePage();
+    });
+
+</script>
+<div id="longDesc">
+    
+<div id="header">This sample shows you how to use the <strong>SmtpReceiveAgent</strong> classes to implement an SMTP logging transport agent.</div>
+<div id="mainSection">
+<div id="mainBody">
+<h1 class="heading">Description of the Exchange 2013: Build an SMTP logging transport agent sample</h1>
+<div class="section" id="sectionSection0">
+<p>This sample shows how to create an agent that responds to the <strong>SmtpReceiveAgent.OnEndOfData</strong> protocol event, and asynchronously logs the message to a file on the local hard disk.</p>
+</div>
+<h1 class="heading">Prerequisites</h1>
+<div class="section" id="sectionSection1">
+<p>This sample requires the following:</p>
+<ul>
+<li>
+<p>A target server that is running Exchange Server 2013</p>
+</li><li>
+<p>Visual Studio 2012</p>
+</li><li>
+<p>The .NET Framework version 4.5</p>
+</li><li>
+<p>The following Exchange&nbsp;2013 assembly, copied from your target server:</p>
+<ul>
+<li>
+<p>Microsoft.Exchange.Data.Transport.dll</p>
+</li></ul>
+</li></ul>
+</div>
+<h1 class="heading">Key components of the sample</h1>
+<div class="section" id="sectionSection2">
+<p>This sample contains the following files:</p>
+<ul>
+<li>
+<p>Install.ps1 &mdash; An Exchange Management Shell script that installs the compiled sample.</p>
+</li><li>
+<p>Uninstall.ps1 &mdash; An Exchange Management Shell script that uninstalls the compiled sample.</p>
+</li><li>
+<p>SmtpLogging.csproj &mdash; The Visual Studio C# project file.</p>
+</li><li>
+<p>SmtpLogging.cs &mdash; The C# source code for the sample.</p>
+</li></ul>
+</div>
+<h1 class="heading">Build the sample</h1>
+<div class="section" id="sectionSection3">
+<p>Follow these steps to build the Exchange 2013: Build an SMTP logging transport agent sample.</p>
+<ol>
+<li>
+<p>Open the SmtpLogging.csproj C# project by using Visual Studio.</p>
+</li><li>
+<p>Update the references to the Microsoft.Exchange.Data.* namespaces.</p>
+</li><li>
+<p>Build the project and fix any errors you encounter.</p>
+</li></ol>
+</div>
+<h1 class="heading">Install the sample</h1>
+<div class="section" id="sectionSection4">
+<p>Follow these steps to install and activate the transport agent on your Exchange server.</p>
+<ol>
+<li>
+<p>This sample agent will be installed into the C:\TransportAgentSamples\SmtpLogging folder. If you want to install it in a different location, edit the install.ps1 script to ensure that the $EXDIR variable is set to the correct folder.</p>
+</li><li>
+<p>Copy the following files from your client to the folder C:\TransportAgentSamples\Setup\SmtpLogging on the Exchange server:</p>
+<ul>
+<li>
+<p>SmtpLogging.dll</p>
+</li><li>
+<p>Install.ps1</p>
+</li></ul>
+</li><li>
+<p>Open the Exchange Management Shell and run the install.ps1 script.</p>
+</li><li>
+<p>Exit the Exchange Management Shell.</p>
+</li></ol>
+</div>
+<h1 class="heading">Uninstall the sample</h1>
+<div class="section" id="sectionSection5">
+<p>Follow these steps to uninstall the transport agent on your Exchange server.</p>
+<ol>
+<li>
+<p>If you updated the $EXDIR variable in the install script, ensure that the $EXDIR variable is updated in the uninstall.ps1 script to point to the same directory.</p>
+</li><li>
+<p>Copy the following file from your client to the folder C:\TransportAgentSamples\Setup\SmtpLogging on the Exchange server:</p>
+<ul>
+<li>
+<p>Uninstall.ps1</p>
+</li></ul>
+</li><li>
+<p>Open the Exchange Management Shell and run the uninstall.ps1 script.</p>
+</li><li>
+<p>Exit the Exchange Management Shell.</p>
+</li></ol>
+</div>
+<h1 class="heading">Related content</h1>
+<div class="section" id="sectionSection6">
+<ul>
+<li>
+<p><a href="http://msdn.microsoft.com/en-us/library/exchange/dd877026(v=exchg.150).aspx" >Transport agents in Exchange 2013</a></p>
+</li><li>
+<p><a href="http://msdn.microsoft.com/library/d291ab78-7cdd-4dbe-a5f4-9dc8e9650a33.aspx" >Creating transport agents for Exchange 2013</a></p>
+</li></ul>
+</div>
+<h1 class="heading">Change log</h1>
+<div class="section" id="sectionSection7">
+<p>First release.</p>
+</div>
+</div>
+</div>
+
+</div>
+
+
+    </div>
+</body>
+</html>
