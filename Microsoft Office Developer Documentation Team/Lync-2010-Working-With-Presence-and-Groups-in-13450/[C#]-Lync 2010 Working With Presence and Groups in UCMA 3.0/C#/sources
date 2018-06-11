@@ -1,0 +1,6 @@
+TARGETTYPE=NOTARGET
+MSBUILD_TARGETNAME=UCMASampleCode-AcceptandTerminateIncomingCall
+MSBUILD_TARGETTYPE=exe
+MSBUILD_VERBOSITY=diag
+
+SOURCES=BasicCallHandling.csproj
