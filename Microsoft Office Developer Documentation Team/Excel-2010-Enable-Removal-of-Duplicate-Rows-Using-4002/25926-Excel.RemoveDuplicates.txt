@@ -1,0 +1,33 @@
+' Excel 2010
+
+' The Range.RemoveDuplicates method allows you to
+' remove duplicate rows from a range of data. You can
+' specify whether to treat the first row as a header row,
+' and you can specify which columns provide the unique data.
+' In this example, generate some data, view the data,
+' and then remove all but the unique rows, based on the
+' Name and Price columns.
+
+' In Excel 2010, in a new workbook, copy all this code into
+' the Sheet1 class module. Place the cursor in this procedure,
+' and then press F8 to single-step through the code.
+
+Sub TestRemoveDuplicates()
+  ' Set up the data:
+  Range("A1:C1") = Array("ID", "Name", "Price")
+  Range("A2:C2") = Array(1, "North", 12)
+  Range("A3:C3") = Array(2, "East", 13)
+  Range("A4:C4") = Array(3, "South", 24)
+  Range("A5:C5") = Array(4, "North", 12)
+  Range("A6:C6") = Array(5, "East", 23)
+  Range("A7:C7") = Array(6, "South", 24)
+  Range("A8:C8") = Array(7, "West", 10)
+  Range("A9:C9") = Array(8, "East", 23)
+ 
+  ' Make sure you look at the current state of the data,
+  ' before removing duplicate rows.
+ 
+  ' Remove duplicates, looking for unique values in columns 2 and 3.
+  UsedRange.RemoveDuplicates Columns:=Array(2, 3), Header:=xlYes
+ 
+End Sub
