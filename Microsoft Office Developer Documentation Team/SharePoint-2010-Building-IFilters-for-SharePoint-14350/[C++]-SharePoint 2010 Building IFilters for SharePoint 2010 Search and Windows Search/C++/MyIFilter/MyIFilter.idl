@@ -1,0 +1,39 @@
+// MyIFilter.idl : IDL source for MyIFilter
+//
+
+// This file will be processed by the MIDL tool to
+// produce the type library (MyIFilter.tlb) and marshalling code.
+
+import "filter.idl";
+import "propsys.idl";
+import "oaidl.idl";
+import "ocidl.idl";
+
+[
+	object,
+	uuid(E18A08A4-0667-474F-B8B8-74523292BB75),
+	dual,
+	nonextensible,
+	pointer_default(unique)
+]
+interface IMyIFilter : IDispatch{
+};
+[
+	uuid(A622AC67-C33B-4886-8C2A-10BF8A7C016D),
+	version(1.0),
+]
+library MyIFilterLib
+{
+	importlib("stdole2.tlb");
+	[
+		uuid(A204ECE7-61DD-4F9F-AC89-DD9B7EFB2076)		
+	]
+	coclass MyIFilter
+	{
+		[default] interface IMyIFilter;
+		interface IFilter;
+		interface IPersistFile;
+		interface IPersistStream;
+	};
+};
+

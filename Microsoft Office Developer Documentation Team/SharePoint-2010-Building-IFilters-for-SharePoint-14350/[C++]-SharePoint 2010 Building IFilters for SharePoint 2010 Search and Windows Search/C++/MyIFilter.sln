@@ -1,0 +1,47 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "MyIFilter", "MyIFilter\MyIFilter.vcxproj", "{3E38D2AD-21F4-4A46-AF55-337F867F0F3A}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "MyIFilterPS", "MyIFilter\MyIFilterPS.vcxproj", "{B7DFC570-5FC9-4749-AFFF-8975590DC0AD}"
+	ProjectSection(ProjectDependencies) = postProject
+		{3E38D2AD-21F4-4A46-AF55-337F867F0F3A} = {3E38D2AD-21F4-4A46-AF55-337F867F0F3A}
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(TeamFoundationVersionControl) = preSolution
+		SccNumberOfProjects = 3
+		SccEnterpriseProvider = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
+		SccTeamFoundationServer = https://tfs.codeplex.com/tfs/tfs29
+		SccLocalPath0 = .
+		SccProjectUniqueName1 = MyIFilter\\MyIFilter.vcxproj
+		SccProjectName1 = MyIFilter
+		SccLocalPath1 = MyIFilter
+		SccProjectUniqueName2 = MyIFilter\\MyIFilterPS.vcxproj
+		SccProjectName2 = MyIFilter
+		SccLocalPath2 = MyIFilter
+	EndGlobalSection
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Win32 = Debug|Win32
+		Debug|x64 = Debug|x64
+		Release|Win32 = Release|Win32
+		Release|x64 = Release|x64
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{3E38D2AD-21F4-4A46-AF55-337F867F0F3A}.Debug|Win32.ActiveCfg = Debug|Win32
+		{3E38D2AD-21F4-4A46-AF55-337F867F0F3A}.Debug|Win32.Build.0 = Debug|Win32
+		{3E38D2AD-21F4-4A46-AF55-337F867F0F3A}.Debug|x64.ActiveCfg = Debug|x64
+		{3E38D2AD-21F4-4A46-AF55-337F867F0F3A}.Debug|x64.Build.0 = Debug|x64
+		{3E38D2AD-21F4-4A46-AF55-337F867F0F3A}.Release|Win32.ActiveCfg = Release|Win32
+		{3E38D2AD-21F4-4A46-AF55-337F867F0F3A}.Release|Win32.Build.0 = Release|Win32
+		{3E38D2AD-21F4-4A46-AF55-337F867F0F3A}.Release|x64.ActiveCfg = Release|x64
+		{3E38D2AD-21F4-4A46-AF55-337F867F0F3A}.Release|x64.Build.0 = Release|x64
+		{B7DFC570-5FC9-4749-AFFF-8975590DC0AD}.Debug|Win32.ActiveCfg = Debug|Win32
+		{B7DFC570-5FC9-4749-AFFF-8975590DC0AD}.Debug|x64.ActiveCfg = Debug|x64
+		{B7DFC570-5FC9-4749-AFFF-8975590DC0AD}.Release|Win32.ActiveCfg = Release|Win32
+		{B7DFC570-5FC9-4749-AFFF-8975590DC0AD}.Release|x64.ActiveCfg = Release|x64
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
