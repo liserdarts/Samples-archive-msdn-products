@@ -1,0 +1,61 @@
+<?xml version="1.0"?>
+<r:applicationManifest
+ r:appUri="http://www.microsoft.com/LC/SDK/Samples/SIPSnoop"
+ xmlns:r="http://schemas.microsoft.com/lcs/2006/05"> <!-- V3.0 application -->
+  <r:allowRegistrationBeforeUserServices/>           <!-- Can run before UserServices if applicable -->
+  <r:serverFilter roles="ALL"/>                      <!-- All server roles -->
+  <r:requestFilter methodNames="ALL"/>
+  <r:responseFilter reasonCodes="ALL"/>
+  <r:splScript><![CDATA[
+
+/*++
+
+Copyright © Microsoft Corporation
+
+Module Name:
+
+	SIPSnoop2.am
+
+Abstract:
+
+	Implements the manifest used by the SIPSnoop Live Communications Server application.
+	This manifest makes asynchronous calls. Asynchronous calls dispatch only the specified
+        parameters to the managed application but allow script execution to continue immediately.
+        The script may choose to proxy the request or allow default proxy to happen.
+   
+
+--*/
+
+
+  if (sipRequest)
+  {
+
+	// Basic request info
+	Log("Debug", 1, "We have a request on server ", FQDN, " ", Role);
+	Log("Debug", 1, "Request Uri is ", sipRequest.RequestUri);
+	Log("Debug", 1, "Method is ", sipRequest.Method);
+
+        // Async Dispatch to managed handler
+        DispatchNotification("RequestNotificationHandler", sipRequest.Method, sipRequest.From, sipRequest.To);
+  }
+
+  if (sipResponse)
+  {
+
+	// Basic response info
+	Log("Debug", 1, "We have a response");
+	Log("Debug", 1, "Response code is ", sipResponse.StatusCode);
+	Log("Debug", 1, "Method is ", sipResponse.Transaction.Request.Method);
+
+        // Async Dispatch to managed handler
+        DispatchNotification("ResponseNotificationHandler", sipResponse.StatusCode, sipResponse.From, sipResponse.To);
+  }
+
+
+
+  // we are done, allow default proxy to happen.
+  return; 
+
+  
+]]></r:splScript>
+</r:applicationManifest>
