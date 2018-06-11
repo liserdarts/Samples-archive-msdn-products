@@ -1,0 +1,92 @@
+' PowerPoint 2010 and 2007
+
+' Demonstrate the Shape.Glow and Shape.Reflection properties
+' (and the GlowFormat and ReflectionFormat classes).
+
+' Copy this code into a module in a new presentation.
+' Display the VBA window side-by-side with the PowerPoint window
+' and press F8 (and then Shift+F8) to single step through this
+' code for the most effective use of this demonstration.
+
+Sub GlowAndReflectionDemo()
+    ' Work with Shape Glow and Reflection properties.
+   
+    ' Create a blank slide.
+    Dim sld As Slide
+    Set sld = ActivePresentation.Slides.Add(2, ppLayoutBlank)
+   
+    ' Add a shape to the new slide.
+    Dim shp As Shape
+    Set shp = sld.Shapes.AddShape(msoShape5pointStar, 100, 100, 200, 200)
+   
+    sld.Select
+   
+    With shp.Glow
+        ' This code is only meaningful if you single-step through it.
+        ' Note that the user interface offers presets, which aren't exposed
+        ' through the object model.
+       
+        ' Pick a starting color.
+        .Color.ObjectThemeColor = msoThemeColorAccent2
+       
+        ' Radius corresponds to the Size property in the user interface, and is
+        ' measured in points.
+       
+        ' Try a few sizes:
+        .Radius = 8
+        .Radius = 20
+        .Radius = 50
+       
+        ' Try varying transparencies:
+        .Transparency = 0
+        .Transparency = 0.25
+        .Transparency = 0.5
+        .Transparency = 0.75
+       
+        ' Try a few colors:
+        .Color.ObjectThemeColor = msoThemeColorAccent5
+        .Color.ObjectThemeColor = msoThemeColorAccent6
+        .Color.RGB = RGB(255, 255, 128)
+    End With
+   
+    ' Work with the shape's reflection.
+    ' Single step through this code to see the changes.
+    With shp.Reflection
+        ' Cycle throught the 9 built-in reflection types:
+        .Type = msoReflectionType1
+        .Type = msoReflectionType2
+        .Type = msoReflectionType3
+        .Type = msoReflectionType4
+        .Type = msoReflectionType5
+        .Type = msoReflectionType6
+        .Type = msoReflectionType7
+        .Type = msoReflectionType8
+        .Type = msoReflectionType9
+       
+        ' Transparency is treated as a percentage, with 1 being completely transparent, and 0 being nearly opaque:
+        .Transparency = 0.9
+        .Transparency = 0.7
+        .Transparency = 0.5
+        .Transparency = 0.3
+       
+        ' Size is measured as a percentage of the original shape, times 100:
+        .Size = 10
+        .Size = 25
+        .Size = 50
+        .Size = 75
+        .Size = 100
+        .Size = 60
+       
+        ' Offset corresponds to the Distance property in the user interface, measured in points.
+        ' It indicates how far from the shape to draw the reflection:
+        .Offset = 0
+        .Offset = 10
+        .Offset = 20
+       
+        ' Blur is measured in points, indicating the amount of blur to add to the reflection:
+        .Blur = 2
+        .Blur = 5
+        .Blur = 10
+       
+    End With
+End Sub
