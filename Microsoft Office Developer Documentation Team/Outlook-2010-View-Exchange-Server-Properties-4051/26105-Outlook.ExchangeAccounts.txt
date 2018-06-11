@@ -1,0 +1,53 @@
+' Outlook 2010 provides support for having
+' multiple Exchange Server accounts in a single profile.
+' The new Accounts collection off of the Session object
+' provides access to Account objects. In turn, these
+' instances have been enhanced with new properties that
+' provide information about the Exchange Server to which the 
+' the account is connected.
+' In order to test this code, you need Outlook 2010
+' with at least one Exchange account (two or more preferred).
+' Open the VBA editor and paste this code into the existing
+' ThisOutlookSession module.
+' Open the Immediate window and with the cursor
+' inside this method, press F5.
+Sub GetMultipleExchangeAccounts()
+    
+    Dim host As Outlook.Application
+    Set host = ThisOutlookSession.Application
+        
+    ' Check for Outlook 2010
+    If Left(host.Version, 2) = "14" Then
+        Dim acct As Outlook.Account
+        Dim col As New VBA.Collection
+        
+        ' Enumerate the list of accounts looking for
+        ' those that are Exchange Server accounts
+        ' If an account is found, add it to a
+        ' collection to be used later.
+        For Each acct In host.Session.Accounts
+            If acct.AccountType = olExchange Then
+                col.Add acct
+            End If
+        Next
+        
+        ' Did the code find any accounts of the type olExchange?
+        If col.Count > 0 Then
+            For Each acct In col
+                Debug.Print "ExchangeMailboxServerName: " & acct.ExchangeMailboxServerName
+                Debug.Print "  AutoDiscoverConnectionMode: " & acct.AutoDiscoverConnectionMode
+                ' The following property returns a fairly large XML document
+                ' uncomment if you wish to see this data.
+                ' Debug.Print "  AutoDiscoverXml: " & acct.AutoDiscoverXml
+                Debug.Print "  CurrentUser: " & acct.CurrentUser
+                Debug.Print "  DeliveryStore: " & acct.DeliveryStore
+                Debug.Print "  ExchangeConnectionMode: " & acct.ExchangeConnectionMode
+                Debug.Print "  ExchangeMailboxServerVersion: " & acct.ExchangeMailboxServerVersion
+            Next
+        Else
+            MsgBox "You do not have any accounts configured to use an Exchange Server."
+        End If
+    Else
+        MsgBox "This code only works with Outlook 2010."
+    End If
+End Sub
