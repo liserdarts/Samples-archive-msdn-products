@@ -1,0 +1,148 @@
+# NameChanger File System Minifilter Driver
+## Requires
+* Visual Studio 2012
+## License
+* MS-LPL
+## Technologies
+* File System
+* WDK
+* WDM
+* Windows Driver
+## Topics
+* WDK
+* filesys
+## IsPublished
+* False
+## ModifiedDate
+* 2012-02-29 04:29:43
+## Description
+
+<h3>NameChanger File System Minifilter Driver</h3>
+<p>The <i>NameChanger</i> minifilter grafts a directory from one part of a volume's namespace to another part using a mapping. The minifilter maintains this illusion by acting as a name provider, injecting entries into directory enumerations and forwarding
+ directory change notifications. </p>
+<h3>Operating system requirements</h3>
+<table>
+<tbody>
+<tr>
+<th>Client</th>
+<td><dt>Windows 8 Consumer Preview </dt></td>
+</tr>
+<tr>
+<th>Server</th>
+<td><dt>Windows Server 8 Beta </dt></td>
+</tr>
+</tbody>
+</table>
+<h3>Build the sample</h3>
+<p>You can build the sample in two ways: using Visual Studio&nbsp;11 Ultimate Beta or the command line (<i>MSBuild</i>).</p>
+<h3><a name="building_a_driver_using_visual_studio"></a>Building a Driver Using Visual Studio</h3>
+<p>You build a driver the same way you build any project or solution in Visual Studio. When you create a new driver project using a Windows driver template, the template defines a default (active) project configuration and a default (active) solution build
+ configuration. When you create a project from existing driver sources or convert existing driver code that was built with previous versions of the WDK, the conversion process preserves the target version information (operating systems and platform).</p>
+<p>The default Solution build configuration is Windows&nbsp;8 Consumer Preview Debug and Win32.</p>
+<p class="proch"><b>To select a configuration and build a driver</b> </p>
+<ol>
+<li>Open the driver project or solution in Visual Studio&nbsp;11 Ultimate Beta (find <i>
+filtername</i>.sln or <i>filtername</i>.vcxproj). </li><li>Right-click the solution in the <b>Solutions Explorer</b> and select <b>Configuration Manager</b>.
+</li><li>From the <b>Configuration Manager</b>, select the <b>Active Solution Configuration</b> (for example, Windows&nbsp;8 Debug or Windows&nbsp;8 Release) and the
+<b>Active Solution Platform</b> (for example, Win32) that correspond to the type of build you are interested in.
+</li><li>From the Build menu, click <b>Build Solution</b> (Ctrl&#43;Shift&#43;B). </li></ol>
+<h3><a name="building_a_driver_using_the_command_line__msbuild_"></a>Building a Driver Using the Command Line (MSBuild)</h3>
+<p>You can build a driver from the command line using the Visual Studio Command Prompt window and the Microsoft Build Engine (MSBuild.exe) Previous versions of the WDK used the Windows Build utility (Build.exe) and provided separate build environment windows
+ for each of the supported build configurations. You can now use the Visual Studio Command Prompt window for all build configurations.</p>
+<p class="proch"><b>To select a configuration and build a driver</b> </p>
+<ol>
+<li>Open a Visual Studio Command Prompt window at the <b>Start</b> screen. From this window you can use MsBuild.exe to build any Visual Studio project by specifying the project (.VcxProj) or solutions (.Sln) file.
+</li><li>Navigate to the project directory and enter the <b>MSbuild</b> command for your target. For example, to perform a clean build of a Visual Studio driver project called
+<i>filtername</i>.vcxproj, navigate to the project directory and enter the following MSBuild command:
+<b>msbuild /t:clean /t:build .\</b> <i>filtername</i> <b>.vcxproj</b>. </li></ol>
+<h3>Run the sample</h3>
+<h3><a name="installation"></a>Installation</h3>
+<p>The minifilter samples come with an INF file that will install the minifilter. To install the minifilter, do the following:</p>
+<ol>
+<li>
+<p>Make sure that <i>filtername</i>.sys and <i>filtername</i>.inf are in the same directory.
+</p>
+<p class="note"><b>Note</b>&nbsp;&nbsp;This installation will make the necessary registry updates to register the minifilter service and place
+<i>filtername</i>.sys in the %SystemRoot%\system32\drivers directory.</p>
+</li><li>
+<p>In Windows Explorer, right-click <i>filtername</i>.inf, and click <b>Install</b>.</p>
+</li><li>
+<p>To load the minifilter, run <b>fltmc load </b><i>filtername</i> or <b>net start
+</b><i>filtername</i>. </p>
+</li></ol>
+<h3><a name="design_and_operation"></a>Design and Operation</h3>
+<p>The <i>NameChanger</i> minifilter illustrates how to make one part of a volume's namespace appear as though it belongs to part of another namespace. It accomplishes this by altering the names of files that reside beneath a particular path (called the &quot;real
+ mapping&quot;) to appear as though they actually reside beneath a different path (called the &quot;user mapping&quot;). The .inf file supplied with the sample defines the real and user mappings in the
+<i>[Strings]</i> section. The three strings used for the mappings are:</p>
+<table>
+<tbody>
+<tr>
+<th>String</th>
+<th>Description</th>
+</tr>
+<tr>
+<td>
+<p>UserMapping</p>
+</td>
+<td>
+<p>The location where files will appear to be in when the filter is attached</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>UserMappingFinalComponentShort</p>
+</td>
+<td>
+<p>The&quot;short&quot; (e.g. DOS-compliant 8.3-format) name for the final component of the UserMapping path.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>RealMapping</p>
+</td>
+<td>
+<p>The actual location where files reside.</p>
+</td>
+</tr>
+</tbody>
+</table>
+<p>Before attaching the minifilter to a volume, you must set up the user and real paths. By default the .inf defines the mapping paths like in the following manner:</p>
+<table>
+<tbody>
+<tr>
+<th>String</th>
+<th>Mapping</th>
+</tr>
+<tr>
+<td>
+<p>UserMapping</p>
+</td>
+<td>
+<p>&quot;\X\Y&quot;</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>UserMappingFinalComponentShort</p>
+</td>
+<td>
+<p>&quot;Y&quot;</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>RealMapping</p>
+</td>
+<td>
+<p>&quot;\A\B&quot;</p>
+</td>
+</tr>
+</tbody>
+</table>
+<p>To successfully attach the filter to a volume you must first create a couple of directories. For example, to attach the
+<i>NameChanger</i> minifilter to the F: volume, first create the RealMapping directory (the F:\A\B directory). Next, create the parent of the UserMapping path (the F:\X directory). The following directories are be created:</p>
+<dl><dd>F:\A\B </dd><dd>F:\X </dd></dl>
+<p>Once this is done the <i>NameChanger</i> filter should successfully attach to F:. It will change the directories you created to appear like the following:
+</p>
+<dl><dd>F:\A </dd><dd>F:\X\Y </dd></dl>
+<p>After the minifilter attaches, the &quot;B&quot; subdirectory of F:\A is no longer visible. Its contents now appear under the &quot;Y&quot; subdirectory of F:\X.</p>
