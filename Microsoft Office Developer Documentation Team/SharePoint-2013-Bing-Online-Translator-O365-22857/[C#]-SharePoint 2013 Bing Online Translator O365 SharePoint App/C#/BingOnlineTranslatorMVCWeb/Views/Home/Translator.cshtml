@@ -1,0 +1,30 @@
+﻿@using BingOnlineTranslatorMVCWeb.Models;
+@{
+    ViewBag.Title = "Bing Online Translator O365 SharePoint App";
+}
+
+<div class="langSel">
+    <ul>
+        <li>
+            <label>Translate from: </label>
+            @Html.DropDownList("sourceList", ViewBag.sourceSelList as SelectList)
+        </li>
+        <li>
+            <label>Translate to: </label>
+            <select id="toList">
+                @foreach (Language l in ViewBag.toSelList)
+                {
+                    <option value="@l.LanguageCode" speak="@l.IsSupportedSpeak">@l.LanguageName</option>
+                }
+            </select>
+        </li>
+    </ul>
+    <button>Translate</button>
+</div>
+<div class="text">
+    <textarea id="txtSource"></textarea>
+    <textarea id="txtTo" readonly></textarea>
+    <a id="speak" style="visibility:hidden" title="Speak this translation"></a>
+    <div class="clear"></div>
+</div>
+
