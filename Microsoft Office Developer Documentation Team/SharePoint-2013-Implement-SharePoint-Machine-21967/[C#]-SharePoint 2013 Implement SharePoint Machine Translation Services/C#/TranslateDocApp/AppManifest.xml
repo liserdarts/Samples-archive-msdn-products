@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<!--Created:cb85b80c-f585-40ff-8bfc-12ff4d0e34a9-->
+<App xmlns="http://schemas.microsoft.com/sharepoint/2012/app/manifest"
+     Name="TranslateDocument"
+     ProductID="{9cd864da-2954-499b-b61a-ea96721002bb}"
+     Version="1.0.0.0"
+     SharePointMinVersion="15.0.0.0"
+>
+  <Properties>
+    <Title>Translate Document</Title>
+    <StartPage>~remoteAppUrl/Translate?{StandardTokens}</StartPage>
+  </Properties>
+
+  <AppPrincipal>
+    <RemoteWebApplication ClientId="*" />
+  </AppPrincipal>
+  <AppPermissionRequests>
+    <AppPermissionRequest Scope="http://sharepoint/content/sitecollection" Right="FullControl" />
+  </AppPermissionRequests>
+</App>

@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">
+  <CustomAction Id="17d3e36c-e4d3-4a85-877f-d09a57fac112.TranslateFileAction"
+                RegistrationType="List"
+                RegistrationId="101"
+                Location="CommandUI.Ribbon"
+                Sequence="10001"
+                Title="Invoke &apos;TranslateFileAction&apos; action">
+    <CommandUIExtension>
+      <CommandUIDefinitions>
+        <CommandUIDefinition Location="Ribbon.Documents.Manage.Controls._children">
+          <Button Id="Ribbon.Library.Actions.TranslateFileActionButton"
+                  Alt="Translate"
+                  Sequence="100"
+                  Command="Invoke_TranslateFileActionButtonRequest"
+                  LabelText="Translate"
+                  TemplateAlias="o1"
+                  Image32by32="_layouts/15/images/Noteboard_32x32.png"
+                  Image16by16="_layouts/15/images/Noteboard_16x16.png" />
+        </CommandUIDefinition>
+      </CommandUIDefinitions>
+      <CommandUIHandlers>
+        <CommandUIHandler Command="Invoke_TranslateFileActionButtonRequest"
+                          CommandAction="https://localhost:44314/Translate/Library?{StandardTokens}&amp;SPListId={ListId}"/>
+      </CommandUIHandlers>
+    </CommandUIExtension >
+  </CustomAction>
+</Elements>

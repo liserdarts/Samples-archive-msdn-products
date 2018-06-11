@@ -1,0 +1,105 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{CA15716A-BC3D-4274-AE77-38676E8044F7}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>TranslateDocApp</RootNamespace>
+    <AssemblyName>TranslateDocApp</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <TargetOfficeVersion>15.0</TargetOfficeVersion>
+    <FileAlignment>512</FileAlignment>
+    <ProjectTypeGuids>{C1CDDADD-2546-481F-9697-4EA41081F2FC};{14822709-B5A1-4724-98CA-57A101D1B079};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <IncludeAssemblyInPackage>False</IncludeAssemblyInPackage>
+    <ProjectMode>SharePointApp</ProjectMode>
+    <AppFeaturePartId>{12ce469d-c884-45d4-b126-74a75fca3ce1}</AppFeaturePartId>
+    <WspPartId>{9ce45ba4-0fa3-449a-af48-ba13404f06c7}</WspPartId>
+    <WorkflowPartId>{a57c91f7-8307-4a28-b86c-69a52a7733f9}</WorkflowPartId>
+    <CspkgPartId>{a83442dc-e14c-43a7-baef-83cc1e78cf08}</CspkgPartId>
+    <SqlPackagePartId>{be28ba89-254d-4f52-a044-5e0480239981}</SqlPackagePartId>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+  </PropertyGroup>
+  <ItemGroup>
+    <Content Include="AppIcon.png">
+      <OpcRelationship>manifest-icon</OpcRelationship>
+    </Content>
+    <Content Include="Features\Feature1\Feature1.Template.xml">
+      <DependentUpon>Feature1.feature</DependentUpon>
+    </Content>
+    <Content Include="Package\Package.Template.xml">
+      <DependentUpon>Package.package</DependentUpon>
+    </Content>
+    <Content Include="Settings\Elements.xml" />
+    <Content Include="Settings\Schema.xml" />
+    <Content Include="Settings\SettingsInstance\Elements.xml" />
+    <Content Include="TranslateFileAction\Elements.xml">
+      <OpcRelationship>feature-elementmanifest</OpcRelationship>
+    </Content>
+    <Content Include="TranslateFilesAction\Elements.xml">
+      <OpcRelationship>feature-elementmanifest</OpcRelationship>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <AppManifestFile Include="AppManifest.xml">
+      <SubType>Designer</SubType>
+    </AppManifestFile>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\TranslateDocRemoteWeb\TranslateDocRemoteWeb.csproj">
+      <Project>{E320A687-69F2-4C9F-BF53-70AB2F067A1C}</Project>
+      <Name>TranslateDocRemoteWeb</Name>
+      <Private>True</Private>
+      <RoleType>Web</RoleType>
+      <OutputItemType>SharePointWebProjectOutput</OutputItemType>
+      <RoleName>TranslateDocRemoteWeb</RoleName>
+      <ReferenceOutputAssembly>False</ReferenceOutputAssembly>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Features\Feature1\Feature1.feature">
+      <FeatureId>{f524969e-b24d-411c-bf31-1f513ef7f6e2}</FeatureId>
+    </None>
+    <None Include="Package\Package.package">
+      <PackageId>{cd9227a7-eba3-43d9-bf52-c10c7d99474e}</PackageId>
+    </None>
+    <None Include="Settings\SettingsInstance\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{6166f527-bd49-4078-ad97-1c82eca115a5}</SharePointProjectItemId>
+    </None>
+    <None Include="Settings\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{2e6f2e24-85dc-43d3-b056-d031343fad31}</SharePointProjectItemId>
+    </None>
+    <None Include="TranslateFileAction\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{0e5bb91e-4f2a-4c20-841a-6ac8a1caa74f}</SharePointProjectItemId>
+    </None>
+    <None Include="TranslateFilesAction\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{54a299bd-4073-4077-aebc-a82e21ebe2b4}</SharePointProjectItemId>
+    </None>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == '' or '$(VisualStudioVersion)' &lt; '11.0'">11.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(VSToolsPath)\SharePointTools\Microsoft.VisualStudio.SharePoint.targets" Condition="'$(VSToolsPath)' != ''" />
+</Project>

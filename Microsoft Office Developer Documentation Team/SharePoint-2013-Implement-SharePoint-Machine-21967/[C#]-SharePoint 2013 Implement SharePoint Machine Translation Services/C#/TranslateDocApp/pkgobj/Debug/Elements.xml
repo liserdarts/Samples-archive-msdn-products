@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">
+  <CustomAction Id="66100724-575c-41ef-a4c1-c6d79379974f.TranslateFileAction"
+                RegistrationType="List"
+                RegistrationId="101"
+                Location="EditControlBlock"
+                Sequence="10001"
+                Title="Translate">
+    <UrlAction Url="https://localhost:44314/Translate/File?{StandardTokens}&amp;SPListItemId={ItemId}&amp;SPListId={ListId}" />
+  </CustomAction>
+</Elements>

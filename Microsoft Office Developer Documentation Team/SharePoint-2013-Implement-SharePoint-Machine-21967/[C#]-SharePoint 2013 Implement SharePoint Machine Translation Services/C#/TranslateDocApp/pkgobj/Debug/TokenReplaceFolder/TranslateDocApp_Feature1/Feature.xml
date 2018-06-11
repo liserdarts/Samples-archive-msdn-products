@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Feature xmlns="http://schemas.microsoft.com/sharepoint/" Id="2ab3231c-c42a-4159-aa9f-1eea3d1097fb" Scope="Web" Title="TranslateDocApp Feature1" Version="1.0.0.0">
+  <ElementManifests>
+    <ElementManifest Location="SettingsInstance\Elements.xml" />
+    <ElementManifest Location="Settings\Elements.xml" />
+    <ElementFile Location="Settings\Schema.xml" />
+  </ElementManifests>
+  <UpgradeActions>
+    <VersionRange>
+      <ApplyElementManifests>
+        <ElementManifest Location="SettingsInstance\Elements.xml" />
+        <ElementManifest Location="Settings\Elements.xml" />
+      </ApplyElementManifests>
+    </VersionRange>
+  </UpgradeActions>
+</Feature>

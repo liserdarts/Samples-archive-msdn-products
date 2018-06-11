@@ -1,0 +1,326 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
+    <head><link rel="stylesheet" type="text/css" href="description/Combined.css,0:HeaderFooterSprite,0:Header.NonMtps,1:LinkList;/Areas/Centers/Themes/StandardDevCenter/Content:0,/Areas/Epx/Themes/Base/Content:1&amp;amp;hashKey=E26C1359372FE948C3C39B3F0FB94413" xmlns="http://www.w3.org/1999/xhtml" />
+<link type="text/css" rel="stylesheet" xmlns="http://www.w3.org/1999/xhtml" />
+<link rel="stylesheet" type="text/css" href="description/b24bc822-8ca8-4469-a770-dc6769ec331fCombined.css,0:HeaderFooterSprite,0:Footer.NonMtps,1:LinkList;/Areas/Centers/Themes/StandardDevCenter/Content:0,/Areas/Epx/Themes/Base/Content:1&amp;amp;hashKey=76DF6246C5394201214B48DD1A8F406B" xmlns="http://www.w3.org/1999/xhtml" />
+<link type="text/css" rel="stylesheet" xmlns="http://www.w3.org/1999/xhtml" />
+
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <title>SharePoint 2013: Implement SharePoint Machine Translation Services</title>
+        <link href="description/Galleries.css" type="text/css" rel="Stylesheet" /><link href="description/Layout.css" type="text/css" rel="Stylesheet" /><link href="description/Brand.css" type="text/css" rel="Stylesheet" />
+        <link href="description/iframedescription.css" rel="Stylesheet" type="text/css" />
+        <script src="description/offline.js" type="text/javascript"></script>
+        <style type="text/css">
+            #projectInfo {
+                overflow: auto;
+            }
+            #longDesc {
+                clear:both;
+                margin: 25px 0 10px 0;
+            }
+
+            #SampleIndexList{
+                margin-left: 15px;
+            }
+        </style>
+    </head>
+<body>
+    <div id="offlineDescription">
+        <h1>SharePoint 2013: Implement SharePoint Machine Translation Services</h1>
+        <br/>
+        <div id="projectInfo">
+            <div class="section">
+                    <div class="itemBarLong tagsContainer">
+                        <label for="Technologies">Technologies</label>
+                        <div id="Technologies">
+                            C#, SharePoint Server 2013, SharePoint Foundation 2013, apps for SharePoint
+                        </div>
+                    </div>
+                    <div class="itemBarLong tagsContainer">
+                        <label for="Topics">Topics</label>
+                        <div id="Topics">
+                            data and storage
+                        </div>
+                    </div>
+                <div class="itemBarLong">
+                    <label for="Platforms">Platforms</label>
+                    <div id="Platforms">
+                        Cloud
+                    </div>
+                </div>
+                <div class="itemBarLong">
+                    <label for="Requirements">Requirements</label>
+                    <div id="Requirements">
+                        
+                    </div>
+                </div>
+                <div class="itemBar">
+                    <label for="LastUpdated">Primary language</label>
+                    <div id="LastUpdated">en-US</div>
+                </div>
+                <div class="itemBar">
+                    <label for="LastUpdated">Updated</label>
+                    <div id="LastUpdated">5/13/2014</div>
+                </div>
+                <div class="itemBarLong">
+                    <label for="License">License</label>
+                    <div id="License">
+                        <a href="license.rtf">Apache License, Version 2.0</a></div>
+                </div>
+                <div class="itemBar">
+                    <div class="viewonlinecont">
+                        <a data-link="online" href="http://code.msdn.microsoft.com/SharePoint-2013-Implement-7b48ae36">View this sample online</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+                   
+<script type="text/javascript">
+    function initializePage() {
+        var otherTabClass = 'otherTab';
+        var hiddenPreClass = 'hidden';
+
+        var htmlDecode = function(encodedData) {
+            var decodedData = "";
+            if (encodedData) {
+                var div = document.createElement('div');
+                div.innerHTML = encodedData;
+                decodedData = div.firstChild.nodeValue.replace( /\\r\\n/ig , '\r\n');
+            }
+            return decodedData;
+        };
+                
+        Galleries.iterateElem(Galleries.findElem(null, 'div', 'scriptcode'), function (index, scriptBlock) {
+            var titleElem = Galleries.findElem(scriptBlock, 'div', 'title')[0];
+            var labelElems = Galleries.findElem(titleElem, 'span');
+            if (labelElems.length == 0) {
+                labelElems = titleElem;
+            }
+            var languageSpans = Galleries.findElem(scriptBlock, 'span', 'hidden');
+            var pres = Galleries.findElem(scriptBlock, 'pre');
+            if (languageSpans.length > 0 && pres.length > 1) {
+                Galleries.iterateElem(labelElems, function(index, elem) {
+                    var codePre = pres[index];
+                    var labelSpan = elem;
+                    var languageSpan = languageSpans[index];
+                            
+                    elem.code = codePre.innerHTML.replace( /(\r(\n)?)|((\r)?\n)/ig , '\\r\\n');
+                            
+                    codePre.className = codePre.className.replace(hiddenPreClass, '');
+                            
+                    languageSpan.parentNode.removeChild(languageSpan);
+                });
+
+                pres = Galleries.findElem(scriptBlock, 'pre');
+                Galleries.iterateElem(labelElems, function(index, elem) {
+                    var codePre = pres[index];
+                    var labelSpan = elem;
+                    if (index == 0) {
+                        scriptBlock.activeTab = 0;
+                    }
+                    else {
+                        labelSpan.className += otherTabClass;
+                        codePre.className += hiddenPreClass;
+                    }
+                    Galleries.attachEventHandler(labelSpan, 'click', function(e) {
+                        var activeTab = scriptBlock.activeTab;
+                        labelElems[activeTab].className += otherTabClass;
+                        pres[activeTab].className += hiddenPreClass;
+
+                        codePre.className = codePre.className.replace(hiddenPreClass, '');
+                        labelSpan.className = labelSpan.className.replace(otherTabClass, '');
+                        scriptBlock.activeTab = index;
+                    });
+                });
+
+                var preview = Galleries.findElem(scriptBlock, 'div', 'preview');
+                if (preview.length == 0) {
+                    preview.push(pres[pres.length - 1]);
+                }
+                Galleries.iterateElem(preview, function(index, elem) {
+                    elem.parentNode.removeChild(elem);
+                });
+
+                if (window.clipboardData && clipboardData.setData) {
+                    var copyLink = document.createElement('a');
+                    copyLink.href = 'javascript:void(0);';
+                    copyLink.className = 'copyCode';
+                    copyLink.innerHTML = 'Copy code';
+                    Galleries.attachEventHandler(copyLink, 'click', function (e) {
+                        clipboardData.setData("Text", htmlDecode(labelElems[scriptBlock.activeTab].code));
+                        return false;
+                    });
+                    scriptBlock.insertBefore(copyLink, scriptBlock.childNodes[0]);
+                }
+            }
+        });
+    }
+
+    Galleries.onWindowLoad(function(){
+        initializePage();
+    });
+
+</script>
+<div id="longDesc">
+    
+<div id="header">
+<table id="bottomTable" cellpadding="0" cellspacing="0">
+<tbody>
+<tr id="headerTableRow1">
+<td align="left"><span id="runningHeaderText"></span></td>
+</tr>
+<tr id="headerTableRow2">
+<td align="left"><span id="nsrTitle">SharePoint 2013: Implement SharePoint Machine Translation Services</span>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div id="mainSection">
+<div id="mainBody">
+<p></p>
+<div>
+<p>Demonstrates how to implement the SharePoint 2013<a href="http://msdn.microsoft.com/en-us/library/jj163145.aspx" >Machine Translation Services</a> in a provider-hosted app for SharePoint that will translate a Microsoft Word file.</p>
+</div>
+<div>
+<p><span>Provided by:</span> <a href="http://mvp.microsoft.com/en-us/mvp/Scot%20Hillier-33471" >
+Scott Hillier</a>, <a href="http://www.criticalpathtraining.com/Pages/default.aspx" >
+Critical Path Training</a></p>
+<p>This sample is written as a provider-hosted app that uses <a href="http://www.asp.net/mvc/mvc4" >
+ASP.NET MVC4</a> and the managed client object model. The sample places a <b><span class="ui">Translate</span></b> button in the
+<b><span class="ui">Manage</span></b> group of the <b><span class="ui">Files</span></b> tab on document libraries in the host web. Clicking the
+<b><span class="ui">Translate</span></b> button invokes the translation service and translates an entire library. The app also places a
+<b><span class="ui">Translate</span></b> menu item in the edit control block to use for translating a single document.</p>
+</div>
+<h1>Prerequisites</h1>
+<div id="sectionSection0" name="collapseableSection">
+<p>This sample requires the following:</p>
+<ul>
+<li>
+<p>A SharePoint 2013 development environment</p>
+</li><li>
+<p>Visual Studio 2012 and Office Developer Tools for Visual Studio 2012</p>
+</li><li>
+<p>The <a href="http://msdn.microsoft.com/en-us/library/jj163145.aspx" >
+Machine Translation Services</a> properly set up and configured</p>
+</li></ul>
+</div>
+<h1>Key components</h1>
+<div id="sectionSection1" name="collapseableSection">
+<p>The sample is a provider-hosted app written in C# using the managed client object mode (CSOM). The app is structured using the Model-View-Controller (MVC) design pattern using
+<a href="http://www.asp.net/mvc/mvc4" >ASP.NET MVC4</a>.</p>
+<p>The key code can be found in the <span value="TranslateController"><b><span class="keyword">TranslateController</span></b></span> class, which is implemented in the source file TranslateController.cs. The
+<span value="TranslateController"><b><span class="keyword">TranslateController</span></b></span> class provides all of the translation functionality and settings management.</p>
+<p>The <span value="Index()"><b><span class="keyword">Index()</span></b></span> and
+<span value="SaveSetting()"><b><span class="keyword">SaveSetting()</span></b></span> methods work together to read and write settings for the app. You can select a target translation language and specify the name of a library in the host web where translated
+ documents will be placed. This is a good demonstration of app setting management.</p>
+<p>The <span value="File()"><b><span class="keyword">File()</span></b></span> method contains the code to translate a single file synchronously. The
+<span value="Library()"><b><span class="keyword">Library()</span></b></span> method contains the code to translate an entire document library asynchronously.</p>
+</div>
+<h1>Configure the sample</h1>
+<div id="sectionSection2" name="collapseableSection">
+<p>The app requires that you provide the following certificate information:</p>
+<ul>
+<li>
+<p><span value="ClientSigningCertificatePath"><b><span class="keyword">ClientSigningCertificatePath</span>
+</b></span>- the path to your test certificate .pfx file</p>
+</li><li>
+<p><span value="ClientSigningCertificatePassword"><b><span class="keyword">ClientSigningCertificatePassword</span>
+</b></span>- the password for your test certificate</p>
+</li><li>
+<p><span value="IssuerId"><b><span class="keyword">IssuerId</span> </b></span>- the Issuer ID for your test certificate</p>
+</li></ul>
+<p>You must also create a document library in the host web and name it &quot;Translated Documents&quot;.</p>
+</div>
+<h1>Run and test the sample</h1>
+<div id="sectionSection3" name="collapseableSection">
+<p></p>
+<div>
+<ol>
+<li>
+<p>Open TranslateDocApp.sln in Visual Studio 2012.</p>
+</li><li>
+<p>Edit the <span value="SiteURL"><b><span class="keyword">SiteURL</span></b></span> property to refer to a test site where you will deploy the solution.</p>
+</li><li>
+<p>Edit the web.config file to provide your test certificate information.</p>
+</li><li>
+<p>Press F5.</p>
+</li><li>
+<p>When prompted, grant the app permissions.</p>
+</li><li>
+<p>When the app appears, select a language from the drop-down list.</p>
+</li><li>
+<p>Edit the destination library name, if required.</p>
+</li><li>
+<p>Navigate to a library in the host web.</p>
+</li><li>
+<p>Using the edit control block, select <b><span class="ui">Translate</span></b> for a single document.</p>
+</li><li>
+<p>Using the <b><span class="ui">File</span></b> tab on the ribbon, click the <b>
+<span class="ui">Translate</span></b> button to process the entire library.</p>
+</li></ol>
+</div>
+</div>
+<h1>Troubleshooting</h1>
+<div id="sectionSection4" name="collapseableSection">
+<p>The Machine Translation Service will not run on a domain controller.</p>
+</div>
+<h1>Change log</h1>
+<div id="sectionSection5" name="collapseableSection"><b>
+<div class="caption"></div>
+</b>
+<div>
+<table width="50%" cellspacing="2" cellpadding="5" frame="lhs">
+<tbody>
+<tr>
+<th>
+<p>Version</p>
+</th>
+<th>
+<p>Date</p>
+</th>
+</tr>
+<tr>
+<td>
+<p>First version</p>
+</td>
+<td>
+<p>May 2013</p>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<h1>Related content</h1>
+<div id="sectionSection6" name="collapseableSection">
+<ul>
+<li>
+<p><a href="http://www.asp.net/mvc/mvc4" >ASP.NET MVC 4</a> </p>
+</li><li>
+<p><a href="http://msdn.microsoft.com/en-us/library/jj163145.aspx" >Machine Translation Services in SharePoint 2013</a>
+</p>
+</li><li>
+<p><a href="http://msdn.microsoft.com/en-us/library/fp179930.aspx" >Apps for SharePoint overview</a>
+</p>
+</li><li>
+<p><a href="http://msdn.microsoft.com/en-us/library/fp179924.aspx" >Sign up for an Office 365 Developer Site</a>
+</p>
+</li><li>
+<p><a href="http://msdn.microsoft.com/en-us/library/ff798388.aspx" >Using the Client Object Model</a>
+</p>
+</li><li>
+<p><a href="http://blogs.msdn.com/b/steve_fox/archive/2013/02/18/building-your-first-provider-hosted-app-for-sharepoint-using-windows-azure-part-1.aspx" >Building your first Provider-Hosted App for SharePoint using Microsoft Azure - Part 1</a>
+</p>
+</li></ul>
+</div>
+</div>
+</div>
+
+</div>
+
+
+    </div>
+</body>
+</html>

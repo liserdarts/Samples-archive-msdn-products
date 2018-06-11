@@ -1,0 +1,6 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" dslVersion="1.0.0.0" Id="778f5b84-7a49-4467-93e5-8fb1d29601a6" solutionId="778f5b84-7a49-4467-93e5-8fb1d29601a6" resetWebServer="false" sharePointProductVersion="15.0" name="TranslateDocApp" xmlns="http://schemas.microsoft.com/VisualStudio/2008/SharePointTools/PackageModel">
+  <features>
+    <featureReference itemId="f524969e-b24d-411c-bf31-1f513ef7f6e2" />
+  </features>
+</package>

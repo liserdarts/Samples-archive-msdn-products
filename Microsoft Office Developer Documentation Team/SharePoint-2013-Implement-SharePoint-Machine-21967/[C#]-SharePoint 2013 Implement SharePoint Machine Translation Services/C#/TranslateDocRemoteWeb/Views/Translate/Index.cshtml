@@ -1,0 +1,27 @@
+﻿@{
+    ViewBag.Title = "Translate";
+}
+
+<h2>Translation Settings</h2>
+<p id="messages"></p>
+<div style="margin-top:20px;">
+@{
+    /* This creates a drop-down list of supported languages with arguments:
+     * id of the drop-down list,
+     * set of items to display (items, value field, text field, selected item),
+     * a URL pointing to the controller that updates the settings when a new language is selected.
+     * The library wingtip.events.js traps the "change" event for the list and calles the controller.
+     */
+ }
+<p>Target Language</p>
+@Html.DropDownList("languageList", 
+                        new SelectList(Model.Languages, "Culture", "DisplayName", Model.SelectedCulture),
+                        new { data_url = Url.Action("SaveSetting", "Translate") + "?" + Model.AppWebUrl })
+
+</div>
+<div style="margin-top:20px;">
+<p>Destination Library</p>
+    @Html.TextBox("destinationFolder", 
+                    (String)Model.Destination, 
+                    new { data_url = Url.Action("SaveSetting", "Translate") + "?" + Model.AppWebUrl })
+</div>
