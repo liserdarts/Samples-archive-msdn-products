@@ -1,0 +1,83 @@
+Option Explicit
+
+' Visio 2010
+
+' Demonstrate the SetRasterExportResolution and GetRasterExportResolution methods.
+
+' Visio 2010 has two new methods to read and write
+' Raster Export Resolution settings used by
+' Visio when exporting documents to non-Visio raster
+' file formats.
+'
+' To run this demo, open Visio 2010 and create a blank document.
+' Open the VBA editor and paste this code into the existing 
+' ThisDocument module.
+' With the cursor inside the ReadAndWriteRasterExportResolution
+' method, press F5.
+
+Sub ReadAndWriteRasterExportResolution()
+    ' Access the Visio ApplicationSettings object.
+    Dim appSettings As Visio.ApplicationSettings
+    Set appSettings = Application.Settings
+   
+    ' Write out current Raster Export Resolution settings.
+    Debug.Print "*** Current Settings"
+    WriteOutCurrentExportResolution appSettings
+    
+    ' Use the new SetRasterExportResolution method
+    ' to change the current Raster Export Resolution settings
+    ' to a custom setting of 800x600 using Pixels per Centimeter as the
+    ' units of measurement.
+    appSettings.SetRasterExportResolution _
+        visRasterUseCustomResolution, 800, 600, visRasterPixelsPerCm
+    
+    ' Write out current Raster Export Resolution settings
+    ' after changing the values to a custom setting.
+    Debug.Print "*** Settings after changing"
+    WriteOutCurrentExportResolution appSettings
+    
+    ' Reset the Raster Export Resolution settings
+    ' to the default (the screen).
+    appSettings.SetRasterExportResolution visRasterUseScreenResolution
+    
+    ' Write out current settings after changing
+    ' the values back to the default.
+    Debug.Print "*** Settings after resetting"
+    WriteOutCurrentExportResolution appSettings
+End Sub
+
+Private Sub WriteOutCurrentExportResolution(appSettings As Visio.ApplicationSettings)
+    Dim res As VisRasterExportResolution
+    Dim width As Double
+    Dim height As Double
+    Dim units As VisRasterExportResolutionUnits
+    
+    ' GetRasterExportResolution is a new method to
+    ' let you access the Raster Export Resolution data.
+    appSettings.GetRasterExportResolution res, width, height, units
+    
+    ' Figure out what value was returned for
+    ' VisRasterExportResolution and write out
+    ' the information to the Immediate Window.
+    Select Case res
+        Case VisRasterExportResolution.visRasterUseScreenResolution
+            Debug.Print "RasterExportResolution: visRasterUseScreenResolution"
+        Case VisRasterExportResolution.visRasterUsePrinterResolution
+            Debug.Print "RasterExportResolution: visRasterUseScreenResolution"
+        Case VisRasterExportResolution.visRasterUseSourceResolution
+            Debug.Print "RasterExportResolution: visRasterUseSourceResolution"
+        Case VisRasterExportResolution.visRasterUseCustomResolution
+            Debug.Print "Export Resolution: visRasterUseCustomResolution"
+            ' Only if the VisRasterExportResolution value is visRasterUseCustomResolution
+            ' will the other values return something other than null.
+            Debug.Print "Width: " & width
+            Debug.Print "Height: " & height
+            
+            Select Case units
+                Case VisRasterExportResolutionUnits.visRasterPixelsPerInch
+                    Debug.Print "Export Resolution Units: visRasterPixelsPerInch"
+                Case VisRasterExportResolutionUnits.visRasterPixelsPerCm
+                    Debug.Print "Export Resolution Units: visRasterPixelsPerCm"
+            End Select
+    End Select
+End Sub
