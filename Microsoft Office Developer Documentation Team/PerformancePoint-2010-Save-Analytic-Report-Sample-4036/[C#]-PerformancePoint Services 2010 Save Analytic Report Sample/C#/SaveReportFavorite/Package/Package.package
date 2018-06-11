@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" dslVersion="1.0.0.0" Id="c4a1189a-3cba-454d-a0ba-d47533c857e2" solutionId="c4a1189a-3cba-454d-a0ba-d47533c857e2" resetWebServer="false" name="SaveReportFavoriteButton" xmlns="http://schemas.microsoft.com/VisualStudio/2008/SharePointTools/PackageModel">
+  <features>
+    <featureReference itemId="e627617a-2a4c-4951-b77e-efb17dfed3fa" />
+  </features>
+  <projectItems>
+    <projectItemReference itemId="d7d41f7e-586b-46be-b11d-84f238436490" />
+  </projectItems>
+</package>

@@ -1,0 +1,55 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">
+  <CustomAction
+    Id="Ribbon.WebPartPage.PerfPointGroup"
+    Location="CommandUI.Ribbon">
+    <CommandUIExtension>
+      <CommandUIDefinitions>
+        <CommandUIDefinition
+          Location="Ribbon.WebPartPage.Groups._children">
+          <Group
+            Id="Ribbon.WebPartPage.PerfPointGroup"
+            Sequence="105"
+            Description="PerformancePoint Services Group"
+            Title="PerformancePoint"
+            Command="EnablePerfPointGroup"
+            Template="Ribbon.Templates.Flexible2">
+            <Controls Id="Ribbon.WebPartPage.PerfPointGroup.Controls">
+              <Button
+                Id="Ribbon.WebPartPage.PerfPointGroup.SaveReport"
+                Command="PerfPointSaveReport"
+                Image16by16="/_layouts/images/colleagues_16.png"
+                Image32by32="/_layouts/images/colleagues_32.png"
+                LabelText="Save Analytic Report"
+                ToolTipTitle="Save Analytic Report as a Favorite"
+                ToolTipDescription="Click to select the analytic report to save."
+                TemplateAlias="o2"
+                Sequence="15" />
+            </Controls>
+          </Group>
+        </CommandUIDefinition>
+        <CommandUIDefinition
+          Location="Ribbon.WebPartPage.Scaling._children">
+          <MaxSize
+            Id="Ribbon.WebPartPage.Scaling.PerfPointGroup.MaxSize"
+            Sequence="15"
+            GroupId="Ribbon.WebPartPage.PerfPointGroup"
+            Size="LargeLarge" />
+        </CommandUIDefinition>
+      </CommandUIDefinitions>
+      <CommandUIHandlers>
+        <CommandUIHandler
+          Command="EnablePerfPointGroup"
+          EnabledScript="javascript:findAnalyticReports();"
+          CommandAction="javascript:return true;" />
+        <CommandUIHandler
+          Command="PerfPointSaveReport"
+          CommandAction="javascript:saveAnalyticReports();" />
+      </CommandUIHandlers>
+    </CommandUIExtension>
+  </CustomAction>
+  <CustomAction
+     Id="Ribbon.Library.Actions.Scripts"
+     Location ="ScriptLink"
+     ScriptSrc="/_layouts/SaveReportFavorite/SaveReportFavoriteButtonScript.js" />
+</Elements>
