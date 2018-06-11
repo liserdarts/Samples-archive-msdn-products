@@ -1,0 +1,351 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
+    <head><link rel="stylesheet" type="text/css" href="description/Combined.css,0:HeaderFooterSprite,0:Header.NonMtps,1:LinkList;/Areas/Centers/Themes/StandardDevCenter/Content:0,/Areas/Epx/Themes/Base/Content:1&amp;amp;hashKey=916470BEE9F8DB824145BA6856ECF377" xmlns="http://www.w3.org/1999/xhtml" />
+<link type="text/css" rel="stylesheet" xmlns="http://www.w3.org/1999/xhtml" />
+<link rel="stylesheet" type="text/css" href="description/f9a5bea1-6fd1-48eb-a424-7414f5477469Combined.css,0:HeaderFooterSprite,0:Footer.NonMtps,1:LinkList;/Areas/Centers/Themes/StandardDevCenter/Content:0,/Areas/Epx/Themes/Base/Content:1&amp;amp;hashKey=CE3B6C265D415C9B3DABD6520782A3F7" xmlns="http://www.w3.org/1999/xhtml" />
+<link type="text/css" rel="stylesheet" xmlns="http://www.w3.org/1999/xhtml" />
+
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <title>Windows Driver Kit (WDK) 8.1 Samples</title>
+        <link href="description/Galleries.css" type="text/css" rel="Stylesheet" /><link href="description/Layout.css" type="text/css" rel="Stylesheet" /><link href="description/Brand.css" type="text/css" rel="Stylesheet" />
+        <link href="description/iframedescription.css" rel="Stylesheet" type="text/css" />
+        <script src="description/offline.js" type="text/javascript"></script>
+        <style type="text/css">
+            #projectInfo {
+                overflow: auto;
+            }
+            #longDesc {
+                clear:both;
+                margin: 25px 0 10px 0;
+            }
+
+            #SampleIndexList{
+                margin-left: 15px;
+            }
+        </style>
+    </head>
+<body>
+    <div id="offlineDescription">
+        <h1>Windows Driver Kit (WDK) 8.1 Samples</h1>
+        <br/>
+        <div id="projectInfo">
+            <div class="section">
+                    <div class="itemBarLong tagsContainer">
+                        <label for="Technologies">Technologies</label>
+                        <div id="Technologies">
+                            File System, WFP, printer, WDM, KMDF, UMDF, ndis, StorPort, Windows Driver
+                        </div>
+                    </div>
+                    <div class="itemBarLong tagsContainer">
+                        <label for="Topics">Topics</label>
+                        <div id="Topics">
+                            Audio, input, Printing, Bluetooth, File Systems, Networking, serial, Storage, usb, general, KMDF, UMDF, hid, wpd, Devices and sensors, Static Driver Verifier
+                        </div>
+                    </div>
+                <div class="itemBarLong">
+                    <label for="Platforms">Platforms</label>
+                    <div id="Platforms">
+                        Desktop
+                    </div>
+                </div>
+                <div class="itemBarLong">
+                    <label for="Requirements">Requirements</label>
+                    <div id="Requirements">
+                        
+                    </div>
+                </div>
+                <div class="itemBar">
+                    <label for="LastUpdated">Primary language</label>
+                    <div id="LastUpdated">en-US</div>
+                </div>
+                <div class="itemBar">
+                    <label for="LastUpdated">Updated</label>
+                    <div id="LastUpdated">4/2/2014</div>
+                </div>
+                <div class="itemBarLong">
+                    <label for="License">License</label>
+                    <div id="License">
+                        <a href="license.rtf">MS-LPL</a></div>
+                </div>
+                <div class="itemBar">
+                    <div class="viewonlinecont">
+                        <a data-link="online" href="http://code.msdn.microsoft.com/Windows-8-Driver-Samples-5e1aa62e">View this sample online</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+                   
+<script type="text/javascript">
+    function initializePage() {
+        var otherTabClass = 'otherTab';
+        var hiddenPreClass = 'hidden';
+
+        var htmlDecode = function(encodedData) {
+            var decodedData = "";
+            if (encodedData) {
+                var div = document.createElement('div');
+                div.innerHTML = encodedData;
+                decodedData = div.firstChild.nodeValue.replace( /\\r\\n/ig , '\r\n');
+            }
+            return decodedData;
+        };
+                
+        Galleries.iterateElem(Galleries.findElem(null, 'div', 'scriptcode'), function (index, scriptBlock) {
+            var titleElem = Galleries.findElem(scriptBlock, 'div', 'title')[0];
+            var labelElems = Galleries.findElem(titleElem, 'span');
+            if (labelElems.length == 0) {
+                labelElems = titleElem;
+            }
+            var languageSpans = Galleries.findElem(scriptBlock, 'span', 'hidden');
+            var pres = Galleries.findElem(scriptBlock, 'pre');
+            if (languageSpans.length > 0 && pres.length > 1) {
+                Galleries.iterateElem(labelElems, function(index, elem) {
+                    var codePre = pres[index];
+                    var labelSpan = elem;
+                    var languageSpan = languageSpans[index];
+                            
+                    elem.code = codePre.innerHTML.replace( /(\r(\n)?)|((\r)?\n)/ig , '\\r\\n');
+                            
+                    codePre.className = codePre.className.replace(hiddenPreClass, '');
+                            
+                    languageSpan.parentNode.removeChild(languageSpan);
+                });
+
+                pres = Galleries.findElem(scriptBlock, 'pre');
+                Galleries.iterateElem(labelElems, function(index, elem) {
+                    var codePre = pres[index];
+                    var labelSpan = elem;
+                    if (index == 0) {
+                        scriptBlock.activeTab = 0;
+                    }
+                    else {
+                        labelSpan.className += otherTabClass;
+                        codePre.className += hiddenPreClass;
+                    }
+                    Galleries.attachEventHandler(labelSpan, 'click', function(e) {
+                        var activeTab = scriptBlock.activeTab;
+                        labelElems[activeTab].className += otherTabClass;
+                        pres[activeTab].className += hiddenPreClass;
+
+                        codePre.className = codePre.className.replace(hiddenPreClass, '');
+                        labelSpan.className = labelSpan.className.replace(otherTabClass, '');
+                        scriptBlock.activeTab = index;
+                    });
+                });
+
+                var preview = Galleries.findElem(scriptBlock, 'div', 'preview');
+                if (preview.length == 0) {
+                    preview.push(pres[pres.length - 1]);
+                }
+                Galleries.iterateElem(preview, function(index, elem) {
+                    elem.parentNode.removeChild(elem);
+                });
+
+                if (window.clipboardData && clipboardData.setData) {
+                    var copyLink = document.createElement('a');
+                    copyLink.href = 'javascript:void(0);';
+                    copyLink.className = 'copyCode';
+                    copyLink.innerHTML = 'Copy code';
+                    Galleries.attachEventHandler(copyLink, 'click', function (e) {
+                        clipboardData.setData("Text", htmlDecode(labelElems[scriptBlock.activeTab].code));
+                        return false;
+                    });
+                    scriptBlock.insertBefore(copyLink, scriptBlock.childNodes[0]);
+                }
+            }
+        });
+    }
+
+    Galleries.onWindowLoad(function(){
+        initializePage();
+    });
+
+</script>
+<div id="longDesc">
+    
+<div class="clsServerSDKContent">
+<h1><a id="gallery_samples.sp02_gallery"></a>Windows Driver Kit (WDK) 8.1 Samples</h1>
+</div>
+<p>This samples pack contains all the official Windows Driver Kit code examples prepared for use with Microsoft Visual Studio&nbsp;2013 and the Windows Driver Kit (WDK)&nbsp;8.1. The contents of this pack are described
+<a href="http://go.microsoft.com/fwlink/?LinkID=309481">here</a>.</p>
+<p>The sample pack provides a convenient way to download all the samples at once. These samples are available individually on the Windows Hardware Code Gallery or through Visual Studio&nbsp;2013. The Windows Samples Gallery contains a variety of code samples
+ that exercise the various new programming models, platforms, features, and components available in Windows&nbsp;8.1 and/or Windows Server&nbsp;2012&nbsp;R2. These downloadable samples are provided as compressed ZIP files that contain a Visual Studio solution
+ (SLN) file for the sample, along with the source files, assets, resources, and metadata necessary to successfully compile and run the sample.</p>
+<p>For more information about the programming models, platforms, languages, and APIs demonstrated in this sample, please refer to the guidance, tutorials, and reference topics provided in the Windows&nbsp;8.1 documentation available in the Windows Developer
+ Center. The samples are provided as-is in order to indicate or demonstrate the functionality of the programming models and feature APIs for Windows&nbsp;8.1 and/or Windows Server&nbsp;2012&nbsp;R2.</p>
+<p>This pack may be very large and take some time to download.</p>
+
+</div>
+
+
+            <hr />
+            <div id="sampleIndex">
+                <h2>Sample index</h2>
+                <div id="SampleIndexList">
+                        <!--pe15759-->
+                        <!--pe13081-->
+                        <!--pe15758-->
+                        <!--pe15764-->
+                        <!--pe13097-->
+                        <!--pe15762-->
+                        <!--pe15709-->
+                        <!--pe13111-->
+                        <!--pe13085-->
+                        <!--pe15749-->
+                        <!--pe15998-->
+                        <!--pe15692-->
+                        <!--pe17071-->
+                        <!--pe13110-->
+                        <!--pe17075-->
+                        <!--pe15696-->
+                        <!--pe15721-->
+                        <!--pe15723-->
+                        <!--pe15678-->
+                        <!--pe15715-->
+                        <!--pe15705-->
+                        <!--pe15717-->
+                        <!--pe17079-->
+                        <!--pe15730-->
+                        <!--pe17069-->
+                        <!--pe15691-->
+                        <!--pe15698-->
+                        <!--pe15752-->
+                        <!--pe15733-->
+                        <!--pe15683-->
+                        <!--pe17076-->
+                        <!--pe15718-->
+                        <!--pe15687-->
+                        <!--pe15734-->
+                        <!--pe15663-->
+                        <!--pe15744-->
+                        <!--pe13090-->
+                        <!--pe13077-->
+                        <!--pe13098-->
+                        <!--pe13084-->
+                        <!--pe15773-->
+                        <!--pe15766-->
+                        <!--pe15700-->
+                        <!--pe23530-->
+                        <!--ps15727-->
+                        <div id="item">
+                                <div><a href="Printer Extension Sample/description.html">Printer Extension Sample</a></div>
+                            <div>This sample demonstrates how to use .NET to build a customized, desktop UI for a v4 print driver. This .NET app uses PrintTicket, PrintCapabilities and Bidi in order to communicate with the print system and is suitable for inclusion in a v4 print dri...</div>
+                        </div>
+                        <!--pe15727-->
+                        <!--pe15720-->
+                        <!--pe15689-->
+                        <!--pe15703-->
+                        <!--pe13108-->
+                        <!--pe15750-->
+                        <!--pe15707-->
+                        <!--pe15670-->
+                        <!--pe15740-->
+                        <!--pe17085-->
+                        <!--pe17083-->
+                        <!--pe15714-->
+                        <!--pe15682-->
+                        <!--pe13088-->
+                        <!--pe15679-->
+                        <!--pe15668-->
+                        <!--pe13112-->
+                        <!--pe17080-->
+                        <!--pe15746-->
+                        <!--pe15724-->
+                        <!--pe17064-->
+                        <!--pe15772-->
+                        <!--pe15713-->
+                        <!--pe15743-->
+                        <!--pe15685-->
+                        <!--pe15751-->
+                        <!--pe15742-->
+                        <!--pe15673-->
+                        <!--pe13095-->
+                        <!--pe15708-->
+                        <!--pe15675-->
+                        <!--pe15665-->
+                        <!--pe15681-->
+                        <!--pe15741-->
+                        <!--pe15739-->
+                        <!--pe15667-->
+                        <!--pe15701-->
+                        <!--pe17078-->
+                        <!--pe15760-->
+                        <!--pe15671-->
+                        <!--pe23534-->
+                        <!--pe13079-->
+                        <!--pe17086-->
+                        <!--pe15732-->
+                        <!--pe17072-->
+                        <!--pe23533-->
+                        <!--pe15686-->
+                        <!--pe17077-->
+                        <!--pe15688-->
+                        <!--pe17061-->
+                        <!--pe17063-->
+                        <!--pe25040-->
+                        <!--pe17062-->
+                        <!--pe15736-->
+                        <!--pe15677-->
+                        <!--pe15697-->
+                        <!--pe15699-->
+                        <!--pe16153-->
+                        <!--pe15669-->
+                        <!--pe15666-->
+                        <!--pe17074-->
+                        <!--pe15770-->
+                        <!--pe15729-->
+                        <!--pe15664-->
+                        <!--pe15755-->
+                        <!--pe23547-->
+                        <!--pe17070-->
+                        <!--pe15676-->
+                        <!--pe17073-->
+                        <!--pe15672-->
+                        <!--pe13083-->
+                        <!--pe15684-->
+                        <!--pe17081-->
+                        <!--pe15722-->
+                        <!--pe15767-->
+                        <!--pe13087-->
+                        <!--pe25043-->
+                        <!--pe13078-->
+                        <!--pe15761-->
+                        <!--pe15774-->
+                        <!--pe17068-->
+                        <!--pe23532-->
+                        <!--pe13086-->
+                        <!--pe15769-->
+                        <!--pe15725-->
+                        <!--pe15680-->
+                        <!--pe15771-->
+                        <!--pe15690-->
+                        <!--pe15674-->
+                        <!--pe15695-->
+                        <!--pe15710-->
+                        <!--pe15738-->
+                        <!--pe17084-->
+                        <!--pe15702-->
+                        <!--pe15706-->
+                        <!--pe13109-->
+                        <!--pe15726-->
+                        <!--pe15765-->
+                        <!--pe15716-->
+                        <!--pe15728-->
+                        <!--pe16156-->
+                        <!--pe15694-->
+                        <!--pe16155-->
+                        <!--pe15731-->
+                        <!--pe15763-->
+                        <!--pe17067-->
+                        <!--pe15661-->
+                        <!--pe16154-->
+                        <!--pe25042-->
+                        <!--pe25041-->
+                        <!--pe17082-->
+                        <!--pe23529-->
+                </div>
+            </div>
+    </div>
+</body>
+</html>
