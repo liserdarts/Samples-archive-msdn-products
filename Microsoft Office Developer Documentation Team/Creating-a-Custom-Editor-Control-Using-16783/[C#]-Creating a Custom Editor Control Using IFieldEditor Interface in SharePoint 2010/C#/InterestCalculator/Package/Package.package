@@ -1,0 +1,8 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" dslVersion="1.0.0.0" Id="d61e0850-0bc8-4b46-9e77-7a73c42b9061" solutionId="d61e0850-0bc8-4b46-9e77-7a73c42b9061" resetWebServer="false" name="InterestCalculator" xmlns="http://schemas.microsoft.com/VisualStudio/2008/SharePointTools/PackageModel">
+  <projectItems>
+    <projectItemReference itemId="f4d3fb5b-b183-4c86-8d64-54af236d77a1" />
+    <projectItemReference itemId="5e90a8cb-a079-4e1a-b2b5-d77e344e3ab2" />
+    <projectItemReference itemId="0bafffb8-b842-4b4c-b7b1-03ceba7cacb4" />
+  </projectItems>
+</package>

@@ -1,0 +1,6 @@
+C:\Arvind\InterestCalculator\bin\Debug\SharePoint.CustomControls.InterestCalculator.dll
+C:\Arvind\InterestCalculator\bin\Debug\SharePoint.CustomControls.InterestCalculator.pdb
+C:\Arvind\InterestCalculator\bin\Debug\Microsoft.Sharepoint.Sandbox.dll
+C:\Arvind\InterestCalculator\obj\Debug\ResolveAssemblyReference.cache
+C:\Arvind\InterestCalculator\obj\Debug\SharePoint.CustomControls.InterestCalculator.dll
+C:\Arvind\InterestCalculator\obj\Debug\SharePoint.CustomControls.InterestCalculator.pdb

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Solution xmlns="http://schemas.microsoft.com/sharepoint/" SolutionId="d61e0850-0bc8-4b46-9e77-7a73c42b9061" SharePointProductVersion="14.0">
+  <Assemblies>
+    <Assembly Location="SharePoint.CustomControls.InterestCalculator.dll" DeploymentTarget="GlobalAssemblyCache" />
+  </Assemblies>
+  <TemplateFiles>
+    <TemplateFile Location="CONTROLTEMPLATES\InterestCalculatorEditor.ascx" />
+    <TemplateFile Location="XML\fldtypes_InterestCalculatorField.xml" />
+    <TemplateFile Location="LAYOUTS\XSL\fldtypes_InterestCalculatorField.xsl" />
+  </TemplateFiles>
+</Solution>

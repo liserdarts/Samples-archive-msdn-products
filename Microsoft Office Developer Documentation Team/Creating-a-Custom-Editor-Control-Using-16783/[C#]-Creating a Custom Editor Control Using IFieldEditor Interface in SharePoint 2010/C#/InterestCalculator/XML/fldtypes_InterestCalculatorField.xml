@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<FieldTypes>
+  <FieldType>
+    <Field Name="TypeName">InterestCalculator</Field>
+    <Field Name="ParentType">Text</Field>
+    <Field Name="TypeDisplayName">Interest Calculator</Field>
+    <Field Name="TypeShortDescription">Interest Calculator</Field>
+    <Field Name="UserCreatable">TRUE</Field>
+    <Field Name="ShowOnListCreate">TRUE</Field>
+    <Field Name="ShowOnSurveyCreate">TRUE</Field>
+    <Field Name="ShowOnDocumentLibraryCreate">TRUE</Field>
+    <Field Name="ShowOnColumnTemplateCreate">TRUE</Field>
+    <Field Name="FieldTypeClass">SharePoint.CustomControls.InterestCalculatorField, $SharePoint.Project.AssemblyFullName$</Field>
+    <Field Name="FieldEditorUserControl">/_controltemplates/InterestCalculatorEditor.ascx</Field>
+    <PropertySchema>
+      <Fields>
+        <Field Name="InterestRate" DisplayName="Interest Rate %" Type="Text" Hidden="TRUE">
+        </Field>
+      </Fields>
+    </PropertySchema>
+  </FieldType>
+</FieldTypes>
