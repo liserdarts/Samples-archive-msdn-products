@@ -1,0 +1,72 @@
+' PowerPoint 2010/2007
+
+' Demonstrate the GetClickCount, GetClickIndex, and GotoClick members.
+' Use these members to control the click behavior for animations in presentations.
+
+' Copy the following code into a module in an new PowerPoint presentation.
+' Place the cursor within the CreateShapesAndAnimations procedure,
+' and press F5 to run the procedure.
+
+' Switch to PowerPoint, and run the presentation. Slowly click on the first slide three
+' times to view the complete set of animations, noting that the first animation occurs
+' before you click.
+
+' Reset the presentation, and this time, once the first animation occurs, switch back to the
+' VBA editor window, place your cursor in the SlideShowClicks procedure, and press F5 to
+' run it. Note the results in the Immediate window. The code moves the animation to click number 2.
+' Switch back to the running presentation, and you'll see the animation immediately progress as if you
+' had clicked twice. (Hover the mouse over the presentation so that it updates the screen.)
+' Click the presentation one time to show the final shape.
+
+Sub SlideShowClicks()
+    If SlideShowWindows.Count = 0 Then
+        Exit Sub
+    End If
+   
+    Dim sswView As SlideShowView
+    Set sswView = SlideShowWindows(1).View
+   
+    ' This should return true, because the first animation occurs
+    ' without requiring user input:
+    Debug.Print "First animation is automatic: " & sswView.FirstAnimationIsAutomatic
+   
+    Debug.Print "Click animations: " & sswView.GetClickCount
+
+    'Get the current index of click animations on the slide.
+    Debug.Print "Current click position (before GotoClick):  " & sswView.GetClickIndex
+
+    'Jump to the 2nd mouse click.
+    sswView.GotoClick 2
+   
+    'Get the current index of click animations on the slide.
+    Debug.Print "Current click position (after GotoClick):  " & sswView.GetClickIndex
+   
+End Sub
+
+Sub CreateShapesAndAnimations()
+    Dim sld As Slide
+    Set sld = ActivePresentation.Slides(1)
+    Dim shp As Shape
+   
+    ' Create a shape and add it to the timeline.
+    Set shp = sld.Shapes.AddShape(msoShapeCloud, 10, 10, 200, 200)
+    shp.Fill.ForeColor.RGB = vbRed
+    sld.TimeLine.MainSequence.AddEffect shp, effectId:=msoAnimEffectBoomerang, trigger:=msoAnimTriggerWithPrevious
+       
+    ' Repeat for a second shape.
+    Set shp = sld.Shapes.AddShape(msoShape8pointStar, 150, 240, 200, 200)
+    shp.Fill.PresetGradient msoGradientHorizontal, 1, msoGradientDaybreak
+    sld.TimeLine.MainSequence.AddEffect shp, effectId:=msoAnimEffectAscend
+   
+    ' Add a third shape.
+    Set shp = sld.Shapes.AddShape(msoShapeDecagon, 500, 10, 200, 200)
+    shp.Fill.Solid
+    shp.Fill.ForeColor.ObjectThemeColor = msoThemeColorAccent4
+    sld.TimeLine.MainSequence.AddEffect shp, effectId:=msoAnimEffectDescend
+   
+    ' Add a fourth shape.
+    Set shp = sld.Shapes.AddShape(msoShapeCan, 500, 240, 200, 200)
+    shp.Fill.Solid
+    shp.Fill.ForeColor.ObjectThemeColor = msoThemeColorAccent2
+    sld.TimeLine.MainSequence.AddEffect shp, effectId:=msoAnimEffectCenterRevolve
+End Sub
