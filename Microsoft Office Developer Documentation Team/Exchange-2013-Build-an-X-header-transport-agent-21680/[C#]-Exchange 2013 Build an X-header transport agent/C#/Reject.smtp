@@ -1,0 +1,12 @@
+helo console
+mail from: sender@contoso.com
+rcpt to: recipient@contoso.com
+data
+To: recipient@contoso.com
+From: sender@contoso.com
+Subject: Test Message
+X-RejectMe: RejectMessage
+
+This a test message.
+.
+quit

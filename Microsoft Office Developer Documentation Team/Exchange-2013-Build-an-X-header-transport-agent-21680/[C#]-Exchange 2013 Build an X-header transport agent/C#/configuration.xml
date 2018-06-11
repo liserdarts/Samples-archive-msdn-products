@@ -1,0 +1,6 @@
+<Configuration>
+	<Rules>
+		<XHeaderRule Name="X-RemoveMe" Action="Remove" />
+		<XHeaderRule Name="X-RejectMe" Action="Reject" />
+	</Rules>
+</Configuration>
