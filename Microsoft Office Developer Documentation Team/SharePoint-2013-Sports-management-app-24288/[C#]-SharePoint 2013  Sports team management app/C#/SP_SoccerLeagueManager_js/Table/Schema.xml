@@ -1,0 +1,57 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<List xmlns:ows="Microsoft SharePoint" Title="Table" FolderCreation="FALSE" Direction="$Resources:Direction;" Url="Lists/Table" BaseType="0" xmlns="http://schemas.microsoft.com/sharepoint/">
+  <MetaData>
+    <ContentTypes>
+      
+      
+    <ContentType ID="0x01001e89e53b0c4043cf855ea128d905130d" Name="ListFieldsContentType"><FieldRefs><FieldRef ID="{fa564e0f-0c70-4ab9-b863-0177e6ddd247}" Name="Title" /><FieldRef ID="{90c4b6f4-cd0f-4e4a-baf0-8b8e14a1f80d}" Name="WinPoints" /><FieldRef ID="{edffc3dc-0332-4a46-b14a-89d4319eee90}" Name="LostPoints" /><FieldRef ID="{43b80c6a-115a-4e19-b0fb-c52b928a9a36}" Name="DrawPoints" /><FieldRef ID="{9561777f-c988-4293-a359-8e92575f57c0}" Name="NoScoreDrawPoints" /></FieldRefs></ContentType><ContentTypeRef ID="0x01">
+        <Folder TargetName="Item" />
+      </ContentTypeRef><ContentTypeRef ID="0x0120" /></ContentTypes>
+    <Fields>
+      
+    <Field ID="{fa564e0f-0c70-4ab9-b863-0177e6ddd247}" Type="Text" Name="Title" DisplayName="Table Name" Required="TRUE" SourceID="http://schemas.microsoft.com/sharepoint/v3" StaticName="Title" MaxLength="255" /><Field Name="WinPoints" ID="{90c4b6f4-cd0f-4e4a-baf0-8b8e14a1f80d}" DisplayName="Win Points" Type="Number" /><Field Name="LostPoints" ID="{edffc3dc-0332-4a46-b14a-89d4319eee90}" DisplayName="Lost Points" Type="Number" /><Field Name="DrawPoints" ID="{43b80c6a-115a-4e19-b0fb-c52b928a9a36}" DisplayName="Draw Points" Type="Number" /><Field Name="NoScoreDrawPoints" ID="{9561777f-c988-4293-a359-8e92575f57c0}" DisplayName="No Score Draw Points" Type="Number" /></Fields>
+    <Views>
+      
+      
+    <View BaseViewID="0" Type="HTML" MobileView="TRUE" TabularView="FALSE">
+        <Toolbar Type="Standard" />
+        <XslLink Default="TRUE">main.xsl</XslLink>
+        <RowLimit Paged="TRUE">30</RowLimit>
+        <ViewFields>
+          
+        <FieldRef Name="LinkTitleNoMenu"></FieldRef></ViewFields>
+        <Query>
+          <OrderBy>
+            
+          <FieldRef Name="Modified" Ascending="FALSE"></FieldRef></OrderBy>
+        </Query>
+        <ParameterBindings>
+          <ParameterBinding Name="AddNewAnnouncement" Location="Resource(wss,addnewitem)" />
+          <ParameterBinding Name="NoAnnouncements" Location="Resource(wss,noXinviewofY_LIST)" />
+          <ParameterBinding Name="NoAnnouncementsHowTo" Location="Resource(wss,noXinviewofY_ONET_HOME)" />
+        </ParameterBindings>
+      </View><View BaseViewID="1" Type="HTML" WebPartZoneID="Main" DisplayName="$Resources:core,objectiv_schema_mwsidcamlidC24;" DefaultView="TRUE" MobileView="TRUE" MobileDefaultView="TRUE" SetupPath="pages\viewpage.aspx" ImageUrl="/_layouts/15/images/generic.png?rev=23" Url="AllItems.aspx">
+        <Toolbar Type="Standard" />
+        <XslLink Default="TRUE">main.xsl</XslLink>
+        <JSLink>clienttemplates.js</JSLink>
+        <RowLimit Paged="TRUE">30</RowLimit>
+        <ViewFields>
+          
+        <FieldRef Name="ID" /><FieldRef Name="LinkTitle"></FieldRef><FieldRef Name="WinPoints" /><FieldRef Name="LostPoints" /><FieldRef Name="DrawPoints" /><FieldRef Name="NoScoreDrawPoints" /></ViewFields>
+        <Query>
+          <OrderBy>
+            
+          <FieldRef Name="ID"></FieldRef></OrderBy>
+        </Query>
+        <ParameterBindings>
+          <ParameterBinding Name="NoAnnouncements" Location="Resource(wss,noXinviewofY_LIST)" />
+          <ParameterBinding Name="NoAnnouncementsHowTo" Location="Resource(wss,noXinviewofY_DEFAULT)" />
+        </ParameterBindings>
+      </View></Views>
+    <Forms>
+      <Form Type="DisplayForm" Url="DispForm.aspx" SetupPath="pages\form.aspx" WebPartZoneID="Main" />
+      <Form Type="EditForm" Url="EditForm.aspx" SetupPath="pages\form.aspx" WebPartZoneID="Main" />
+      <Form Type="NewForm" Url="NewForm.aspx" SetupPath="pages\form.aspx" WebPartZoneID="Main" />
+    </Forms>
+  </MetaData>
+</List>

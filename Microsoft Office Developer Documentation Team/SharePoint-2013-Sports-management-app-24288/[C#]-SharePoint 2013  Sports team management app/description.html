@@ -1,0 +1,393 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
+    <head><link rel="stylesheet" type="text/css" href="description/Combined.css,0:HeaderFooterSprite,0:Header.NonMtps,1:LinkList;/Areas/Centers/Themes/StandardDevCenter/Content:0,/Areas/Epx/Themes/Base/Content:1&amp;amp;hashKey=C9973DA951AE6202C9B348379A1BE49D" xmlns="http://www.w3.org/1999/xhtml" />
+<link type="text/css" rel="stylesheet" xmlns="http://www.w3.org/1999/xhtml" />
+<link rel="stylesheet" type="text/css" href="description/1b88b18a-5268-4861-9da2-6c6e2539edaaCombined.css,0:HeaderFooterSprite,0:Footer.NonMtps,1:LinkList;/Areas/Centers/Themes/StandardDevCenter/Content:0,/Areas/Epx/Themes/Base/Content:1&amp;amp;hashKey=F576C687BC536B84D6E5B3246EE39B49" xmlns="http://www.w3.org/1999/xhtml" />
+<link type="text/css" rel="stylesheet" xmlns="http://www.w3.org/1999/xhtml" />
+
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <title>SharePoint 2013:  Sports team management app</title>
+        <link href="description/Galleries.css" type="text/css" rel="Stylesheet" /><link href="description/Layout.css" type="text/css" rel="Stylesheet" /><link href="description/Brand.css" type="text/css" rel="Stylesheet" />
+        <link href="description/iframedescription.css" rel="Stylesheet" type="text/css" />
+        <script src="description/offline.js" type="text/javascript"></script>
+        <style type="text/css">
+            #projectInfo {
+                overflow: auto;
+            }
+            #longDesc {
+                clear:both;
+                margin: 25px 0 10px 0;
+            }
+
+            #SampleIndexList{
+                margin-left: 15px;
+            }
+        </style>
+    </head>
+<body>
+    <div id="offlineDescription">
+        <h1>SharePoint 2013:  Sports team management app</h1>
+        <br/>
+        <div id="projectInfo">
+            <div class="section">
+                    <div class="itemBarLong tagsContainer">
+                        <label for="Technologies">Technologies</label>
+                        <div id="Technologies">
+                            Javascript, SharePoint Server 2013, SharePoint Foundation 2013, apps for SharePoint
+                        </div>
+                    </div>
+                    <div class="itemBarLong tagsContainer">
+                        <label for="Topics">Topics</label>
+                        <div id="Topics">
+                            data and storage
+                        </div>
+                    </div>
+                <div class="itemBarLong">
+                    <label for="Platforms">Platforms</label>
+                    <div id="Platforms">
+                        Cloud
+                    </div>
+                </div>
+                <div class="itemBarLong">
+                    <label for="Requirements">Requirements</label>
+                    <div id="Requirements">
+                        
+                    </div>
+                </div>
+                <div class="itemBar">
+                    <label for="LastUpdated">Primary language</label>
+                    <div id="LastUpdated">en-US</div>
+                </div>
+                <div class="itemBar">
+                    <label for="LastUpdated">Updated</label>
+                    <div id="LastUpdated">8/8/2013</div>
+                </div>
+                <div class="itemBarLong">
+                    <label for="License">License</label>
+                    <div id="License">
+                        <a href="license.rtf">Apache License, Version 2.0</a></div>
+                </div>
+                <div class="itemBar">
+                    <div class="viewonlinecont">
+                        <a data-link="online" href="http://code.msdn.microsoft.com/SharePoint-2013-Sports-7edb8de6">View this sample online</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+                   
+<script type="text/javascript">
+    function initializePage() {
+        var otherTabClass = 'otherTab';
+        var hiddenPreClass = 'hidden';
+
+        var htmlDecode = function(encodedData) {
+            var decodedData = "";
+            if (encodedData) {
+                var div = document.createElement('div');
+                div.innerHTML = encodedData;
+                decodedData = div.firstChild.nodeValue.replace( /\\r\\n/ig , '\r\n');
+            }
+            return decodedData;
+        };
+                
+        Galleries.iterateElem(Galleries.findElem(null, 'div', 'scriptcode'), function (index, scriptBlock) {
+            var titleElem = Galleries.findElem(scriptBlock, 'div', 'title')[0];
+            var labelElems = Galleries.findElem(titleElem, 'span');
+            if (labelElems.length == 0) {
+                labelElems = titleElem;
+            }
+            var languageSpans = Galleries.findElem(scriptBlock, 'span', 'hidden');
+            var pres = Galleries.findElem(scriptBlock, 'pre');
+            if (languageSpans.length > 0 && pres.length > 1) {
+                Galleries.iterateElem(labelElems, function(index, elem) {
+                    var codePre = pres[index];
+                    var labelSpan = elem;
+                    var languageSpan = languageSpans[index];
+                            
+                    elem.code = codePre.innerHTML.replace( /(\r(\n)?)|((\r)?\n)/ig , '\\r\\n');
+                            
+                    codePre.className = codePre.className.replace(hiddenPreClass, '');
+                            
+                    languageSpan.parentNode.removeChild(languageSpan);
+                });
+
+                pres = Galleries.findElem(scriptBlock, 'pre');
+                Galleries.iterateElem(labelElems, function(index, elem) {
+                    var codePre = pres[index];
+                    var labelSpan = elem;
+                    if (index == 0) {
+                        scriptBlock.activeTab = 0;
+                    }
+                    else {
+                        labelSpan.className += otherTabClass;
+                        codePre.className += hiddenPreClass;
+                    }
+                    Galleries.attachEventHandler(labelSpan, 'click', function(e) {
+                        var activeTab = scriptBlock.activeTab;
+                        labelElems[activeTab].className += otherTabClass;
+                        pres[activeTab].className += hiddenPreClass;
+
+                        codePre.className = codePre.className.replace(hiddenPreClass, '');
+                        labelSpan.className = labelSpan.className.replace(otherTabClass, '');
+                        scriptBlock.activeTab = index;
+                    });
+                });
+
+                var preview = Galleries.findElem(scriptBlock, 'div', 'preview');
+                if (preview.length == 0) {
+                    preview.push(pres[pres.length - 1]);
+                }
+                Galleries.iterateElem(preview, function(index, elem) {
+                    elem.parentNode.removeChild(elem);
+                });
+
+                if (window.clipboardData && clipboardData.setData) {
+                    var copyLink = document.createElement('a');
+                    copyLink.href = 'javascript:void(0);';
+                    copyLink.className = 'copyCode';
+                    copyLink.innerHTML = 'Copy code';
+                    Galleries.attachEventHandler(copyLink, 'click', function (e) {
+                        clipboardData.setData("Text", htmlDecode(labelElems[scriptBlock.activeTab].code));
+                        return false;
+                    });
+                    scriptBlock.insertBefore(copyLink, scriptBlock.childNodes[0]);
+                }
+            }
+        });
+    }
+
+    Galleries.onWindowLoad(function(){
+        initializePage();
+    });
+
+</script>
+<div id="longDesc">
+    
+<div id="header">
+<table id="bottomTable" cellspacing="0" cellpadding="0">
+<tbody>
+<tr id="headerTableRow1">
+<td align="left"><span id="runningHeaderText">&nbsp;</span></td>
+</tr>
+<tr id="headerTableRow2">
+<td align="left"><span id="nsrTitle">SharePoint 2013: Sports team management app</span></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div id="mainSection">
+<div id="mainBody">
+<div>
+<p>Demonstrates how to use JavaScript and jQuery in an app for SharePoint that manages soccer leagues, teams, matches, results, match reports, and media attachments such as pictures and videos.</p>
+</div>
+<div>
+<p><span>Provided by:</span> <a href="http://mvp.microsoft.com/en-us/mvp/Martin%20Harwar-4025664" >
+Martin Harwar</a>, <a href="http://point8020.com/Default.aspx" >Point8020.com</a></p>
+<p>This solution is based on the SharePoint-hosted app template provided by Visual Studio 2012. The solution uses the JavaScript implementation of the client object model to read, create, update, and delete data from lists based on user actions.</p>
+<p>The lists included in this solution represent league tables, their teams, and their matches (including results, match reports, and associated media items). The lists are related to each other through lookup fields, and the user interface (UI) ensures that
+ all data operations synchronize with their list items so that the relationships are maintained.</p>
+<p>The UI is implemented with HTML elements and cascading style sheet (CSS) styles to present a modern look and feel. JavaScript and jQuery are used to control all aspects of the UI, and the solution contains no server-side code.</p>
+</div>
+<h1>Prerequisites</h1>
+<div id="sectionSection0">
+<p>This sample requires the following:</p>
+<ul>
+<li>
+<p>Visual Studio 2012</p>
+</li><li>
+<p>Office Developer Tools for Visual Studio 2012</p>
+</li><li>
+<p>Either of the following:</p>
+<ul>
+<li>
+<p>Access to an Office 365 Enterprise site that has been configured to host apps (recommended).</p>
+</li><li>
+<p>SharePoint Server 2013 configured to host apps, and with a Developer Site Collection already created.</p>
+</li></ul>
+</li></ul>
+</div>
+<h1>Key components</h1>
+<div id="sectionSection1">
+<p>The sample app contains the following:</p>
+<ul>
+<li>
+<p>The <strong><span class="keyword">Default.aspx</span></strong> webpage, which is used to present the leagues, teams, and results, and league tables.</p>
+</li><li>
+<p>The <strong><span class="keyword">App.js</span></strong> file in the <strong>
+<span class="keyword">scripts</span></strong> folder, which is used to retrieve and manage leagues, teams, and results data by using the JavaScript implementation of the client object model (JSOM). The
+<strong><span class="keyword">App.js</span></strong> file also contains the UI logic that is implemented in
+<strong><span class="keyword">Default.aspx</span></strong>.</p>
+</li><li>
+<p>The <strong><span class="keyword">App.css</span></strong> file in the <strong>
+<span class="keyword">contents</span></strong> folder, which contains style definitions used by the elements in
+<strong><span class="keyword">Default.aspx</span></strong>.</p>
+</li><li>
+<p>Three list definitions and instances: one for league tables, one for teams, and one for matches. The lists are linked together by lookup fields.</p>
+</li><li>
+<p>All other files are automatically provided by the Visual Studio 2012 project template for apps for SharePoint, and they have not been modified in the development of this sample app.</p>
+</li></ul>
+</div>
+<h1>Configure the sample</h1>
+<div id="sectionSection2">
+<p>Follow these steps to configure the sample.</p>
+<div>
+<ol>
+<li>
+<p>Open the <strong><span class="keyword">SP_SoccerLeagueManager_js.sln</span></strong> file in Visual Studio 2012.</p>
+</li><li>
+<p>In the <strong><span class="keyword">Properties</span></strong> window, add the full URL to your Office 365 Enterprise site or SharePoint Server 2013 Developer Site Collection to the
+<strong><span class="keyword">Site URL</span></strong> property. You may be prompted to provide credentials if you add a URL to an Office 365 site.</p>
+</li><li>
+<p>No other configuration is necessary.</p>
+</li></ol>
+</div>
+</div>
+<h1>Build, run, and test the sample</h1>
+<div id="sectionSection3">
+<p>&nbsp;</p>
+<div>
+<ol>
+<li>
+<p>Press Ctrl&#43;Shift&#43;B to build the solution.</p>
+</li><li>
+<p>Press F5 to run the app.</p>
+</li><li>
+<p>Sign in to your SharePoint Server 2013 or Office 365 Enterprise site if you are prompted to do so by the browser.</p>
+</li><li>
+<p>When the app appears, the starting screen resembles Figure 1.</p>
+<strong>
+<div class="caption">Figure 1. Start screen</div>
+</strong><br>
+&nbsp;<img src="description/image.png" alt=""> </li><li>
+<p>Click <strong><span class="ui">Create New League</span></strong> to enter a new league name as shown in Figure 2.</p>
+<strong>
+<div class="caption">Figure 2. Adding a new league</div>
+</strong><br>
+&nbsp;<img src="description/64e4bbb3-929a-4ab9-a899-ea9b3b380dffimage.png" alt=""> </li><li>
+<p>Click <strong><span class="ui">&#43;Advanced Options</span></strong> to set the league metrics for points to be awarded for different results, as shown in Figure 3. The default metrics are typical of a soccer league.</p>
+<strong>
+<div class="caption">Figure 3. Editing league metrics</div>
+</strong><br>
+&nbsp;<img src="description/69fb7f40-73b7-4545-9bb8-c398b1d381bcimage.png" alt=""> </li><li>
+<p>Click <strong><span class="ui">Add League</span></strong> to save the league as shown in Figure 4. Initially there are no teams or results.</p>
+<strong>
+<div class="caption">Figure 4. Saved league</div>
+</strong><br>
+&nbsp;<img src="description/aa414e72-dd7c-43ad-a735-ec8e32eb8175image.png" alt=""> </li><li>
+<p>Click <strong><span class="ui">View League</span></strong> to see the league statistics table, which is initially empty, as shown in Figure 5.</p>
+<strong>
+<div class="caption">Figure 5. Initial league statistics table</div>
+</strong><br>
+&nbsp;<img src="description/f2903403-de4a-4cad-b1e6-e554adf25125image.png" alt=""> </li><li>
+<p>Click <strong><span class="ui">Add Teams</span></strong> to enter a team name as shown in Figure 6.</p>
+<strong>
+<div class="caption">Figure 6. Adding a team</div>
+</strong><br>
+&nbsp;<img src="description/c8da58a8-46c5-4c73-ac71-af09888e3f7dimage.png" alt=""> </li><li>
+<p>Figure 7 shows that multiple teams have been newly added to the league.</p>
+<strong>
+<div class="caption">Figure 7. Newly added teams</div>
+</strong><br>
+&nbsp;<img src="description/08f8a5b4-80d3-47c7-9fda-c78eb4271947image.png" alt=""> </li><li>
+<p>Now that there are multiple teams, click <strong><span class="ui">View League</span></strong> to see the current league table as shown in Figure 8. No games have been played yet.</p>
+<strong>
+<div class="caption">Figure 8. League statistics table with teams</div>
+</strong><br>
+&nbsp;<img src="description/709a7a0f-b5c1-4203-94e3-071e32efb65dimage.png" alt=""> </li><li>
+<p>Click <strong><span class="ui">Add Results</span></strong> to choose a Home team, an Away team, and enter the score and date. Optionally, you can also provide a match summary and call out any notable performances, as shown in Figure 9.</p>
+<strong>
+<div class="caption">Figure 9. Adding a match result</div>
+</strong><br>
+&nbsp;<img src="description/2444a15f-6683-45a7-bb3d-2f1d8b0240b0image.png" alt=""> </li><li>
+<p>Click <strong><span class="ui">Submit</span></strong> to save the match details. You can then choose to upload media files (such as photos of the game or video clips) using the
+<strong><span class="ui">Add Assets</span></strong> file control in Figure 10.</p>
+<strong>
+<div class="caption">Figure 10. Adding a media asset</div>
+</strong><br>
+&nbsp;<img src="description/fd05ccad-7200-40b5-8456-09b87da5030fimage.png" alt=""> </li><li>
+<p>Figure 11 shows that a photo and a video were uploaded as part of this match report.</p>
+<strong>
+<div class="caption">Figure 11. Match results with media assets</div>
+</strong><br>
+&nbsp;<img src="description/185ed9f7-23a2-45a5-bb19-c02644e3b31bimage.png" alt=""> </li><li>
+<p>Figure 12 shows the league table after a few matches have been played and recorded.</p>
+<strong>
+<div class="caption">Figure 12. League table with scores</div>
+</strong><br>
+&nbsp;<img src="description/15f66f3e-e03a-4f88-999f-3633e68d31f2image.png" alt=""> </li><li>
+<p>Click <strong><span class="ui">Fixture</span></strong> for a given team to see the match reports of all the games they played. For example, Figure 13 shows the summary for the SharePoint PM team.</p>
+<strong>
+<div class="caption">Figure 13. Team match reports</div>
+</strong><br>
+&nbsp;<img src="description/c2d4d831-53ef-4c87-8c40-5da8dfbfed04image.png" alt=""> </li><li>
+<p>Click <strong><span class="ui">Assets</span></strong> for a given match to see any media files that were uploaded as part of a match report. Figure 14 shows that each asset is numbered, and linked to its media file. The first asset is a photo of a goal
+ being scored.</p>
+<strong>
+<div class="caption">Figure 14. Viewing media assets</div>
+</strong><br>
+&nbsp;<img src="description/547972eb-9c4f-48f5-82a6-e4d4581d0205image.png" alt=""> </li><li>
+<p>Figure 15 shows a video for the same match.</p>
+<strong>
+<div class="caption">Figure 15. Match video asset</div>
+</strong><br>
+&nbsp;<img src="description/b9109e7d-71b8-4394-a240-d269ff80d35aimage.png" alt=""> </li><li>
+<p>Finally, Figure 16 shows that a second league was created from the home page, and you can now choose which league to view.</p>
+<strong>
+<div class="caption">Figure 16. View of multiple leagues</div>
+</strong><br>
+&nbsp;<img src="description/0d19d109-52e2-4d93-8d22-bc58ea0b6202image.png" alt=""> </li></ol>
+</div>
+</div>
+<h1>Troubleshooting</h1>
+<div id="sectionSection4">
+<p>Ensure that you have SharePoint Server 2013 properly configured to host apps (with a Developer Site Collection already created), or that you have signed up for an Office 365 Enterprise site configured to host apps.</p>
+</div>
+<h1>Change log</h1>
+<div id="sectionSection5"><strong>
+<div class="caption"></div>
+</strong>
+<div>
+<table cellspacing="2" cellpadding="5" width="50%" frame="lhs">
+<tbody>
+<tr>
+<th>
+<p>Version</p>
+</th>
+<th>
+<p>Date</p>
+</th>
+</tr>
+<tr>
+<td>
+<p>First version</p>
+</td>
+<td>
+<p>August 2013</p>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<h1>Related content</h1>
+<div id="sectionSection6">
+<ul>
+<li>
+<p><a href="http://msdn.microsoft.com/en-us/library/fp179930.aspx" >Apps for SharePoint overview</a></p>
+</li><li>
+<p><a href="http://www.jQuery.com" >jQuery</a></p>
+</li><li>
+<p><a href="http://msdn.microsoft.com/en-us/library/ms970435.aspx" >JavaScript</a></p>
+</li></ul>
+</div>
+</div>
+</div>
+<p>&nbsp;</p>
+
+</div>
+
+
+    </div>
+</body>
+</html>

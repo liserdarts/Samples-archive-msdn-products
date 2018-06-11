@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<!--Created:cb85b80c-f585-40ff-8bfc-12ff4d0e34a9-->
+<App xmlns="http://schemas.microsoft.com/sharepoint/2012/app/manifest"
+     Name="SP_SoccerLeagueManager_js"
+     ProductID="{b5dee9ff-de21-411e-a0dc-d01883d7907c}"
+     Version="1.0.0.0"
+     SharePointMinVersion="15.0.0.0"
+>
+  <Properties>
+    <Title>SP_SoccerLeagueManager_js</Title>
+    <StartPage>~appWebUrl/Pages/Default.aspx?{StandardTokens}</StartPage>
+  </Properties>
+
+  <AppPrincipal>
+    <Internal />
+  </AppPrincipal>
+
+
+</App>

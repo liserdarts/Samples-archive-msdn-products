@@ -1,0 +1,57 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<List xmlns:ows="Microsoft SharePoint" Title="Teams" FolderCreation="FALSE" Direction="$Resources:Direction;" Url="Lists/Teams" BaseType="0" xmlns="http://schemas.microsoft.com/sharepoint/">
+  <MetaData>
+    <ContentTypes>
+      
+      
+    <ContentType ID="0x0100327ecff5a7f0451fa8b0ea8539de4d0d" Name="ListFieldsContentType"><FieldRefs><FieldRef ID="{fa564e0f-0c70-4ab9-b863-0177e6ddd247}" Name="Title" /><FieldRef ID="{3fc0d252-cc6d-4495-beb1-4b24949123b0}" Name="TableLookup" /><FieldRef ID="{a73f75d5-80c7-4398-9e4a-fea6749c2983}" Name="Won" /><FieldRef ID="{2adfffa7-e775-4ee0-9eb4-0ea8d25bd1c4}" Name="Lost" /><FieldRef ID="{449c92ca-1db6-463f-aefe-eb69f81caca8}" Name="Draw" /><FieldRef ID="{bde079c4-a41b-4d04-ad8e-9cdc68e42731}" Name="NoScoreDraw" /><FieldRef ID="{b460d7a9-67ec-44a3-b364-1c2a2deecf99}" Name="For" /><FieldRef ID="{6aa5e44f-258a-4c01-a6cd-f8fe4db32ce5}" Name="Against" /><FieldRef ID="{26274b12-118d-4354-b7ee-1bc0b038e5f6}" Name="Played" /><FieldRef ID="{211ea924-3ce2-4200-a981-7df3bbafb37e}" Name="Points" /></FieldRefs></ContentType><ContentTypeRef ID="0x01">
+        <Folder TargetName="Item" />
+      </ContentTypeRef><ContentTypeRef ID="0x0120" /></ContentTypes>
+    <Fields>
+      
+    <Field ID="{fa564e0f-0c70-4ab9-b863-0177e6ddd247}" Type="Text" Name="Title" DisplayName="Team Name" Required="TRUE" SourceID="http://schemas.microsoft.com/sharepoint/v3" StaticName="Title" MaxLength="255" /><Field Name="TableLookup" ID="{3fc0d252-cc6d-4495-beb1-4b24949123b0}" DisplayName="Table Lookup" Type="Lookup" List="Lists/Table" ShowField="Title" /><Field Name="Won" ID="{a73f75d5-80c7-4398-9e4a-fea6749c2983}" DisplayName="Won" Type="Number" Min="0" /><Field Name="Lost" ID="{2adfffa7-e775-4ee0-9eb4-0ea8d25bd1c4}" DisplayName="Lost" Type="Number" Min="0" /><Field Name="Draw" ID="{449c92ca-1db6-463f-aefe-eb69f81caca8}" DisplayName="Draw" Type="Number" Min="0" /><Field Name="NoScoreDraw" ID="{bde079c4-a41b-4d04-ad8e-9cdc68e42731}" DisplayName="No Score Draw" Type="Number" Min="0" /><Field Name="For" ID="{b460d7a9-67ec-44a3-b364-1c2a2deecf99}" DisplayName="For" Type="Number" Min="0" /><Field Name="Against" ID="{6aa5e44f-258a-4c01-a6cd-f8fe4db32ce5}" DisplayName="Against" Type="Number" Min="0" /><Field Name="Played" ID="{26274b12-118d-4354-b7ee-1bc0b038e5f6}" DisplayName="Played" Type="Number" Min="0" /><Field Name="Points" ID="{211ea924-3ce2-4200-a981-7df3bbafb37e}" DisplayName="Points" Type="Number" Min="0" /></Fields>
+    <Views>
+      
+      
+    <View BaseViewID="0" Type="HTML" MobileView="TRUE" TabularView="FALSE">
+        <Toolbar Type="Standard" />
+        <XslLink Default="TRUE">main.xsl</XslLink>
+        <RowLimit Paged="TRUE">30</RowLimit>
+        <ViewFields>
+          
+        <FieldRef Name="LinkTitleNoMenu"></FieldRef></ViewFields>
+        <Query>
+          <OrderBy>
+            
+          <FieldRef Name="Modified" Ascending="FALSE"></FieldRef></OrderBy>
+        </Query>
+        <ParameterBindings>
+          <ParameterBinding Name="AddNewAnnouncement" Location="Resource(wss,addnewitem)" />
+          <ParameterBinding Name="NoAnnouncements" Location="Resource(wss,noXinviewofY_LIST)" />
+          <ParameterBinding Name="NoAnnouncementsHowTo" Location="Resource(wss,noXinviewofY_ONET_HOME)" />
+        </ParameterBindings>
+      </View><View BaseViewID="1" Type="HTML" WebPartZoneID="Main" DisplayName="$Resources:core,objectiv_schema_mwsidcamlidC24;" DefaultView="TRUE" MobileView="TRUE" MobileDefaultView="TRUE" SetupPath="pages\viewpage.aspx" ImageUrl="/_layouts/15/images/generic.png?rev=23" Url="AllItems.aspx">
+        <Toolbar Type="Standard" />
+        <XslLink Default="TRUE">main.xsl</XslLink>
+        <JSLink>clienttemplates.js</JSLink>
+        <RowLimit Paged="TRUE">30</RowLimit>
+        <ViewFields>
+          
+        <FieldRef Name="ID" /><FieldRef Name="LinkTitle"></FieldRef><FieldRef Name="TableLookup" /><FieldRef Name="Won" /><FieldRef Name="Lost" /><FieldRef Name="Draw" /><FieldRef Name="NoScoreDraw" /><FieldRef Name="For" /><FieldRef Name="Against" /><FieldRef Name="Played" /><FieldRef Name="Points" /></ViewFields>
+        <Query>
+          <OrderBy>
+            
+          <FieldRef Name="ID"></FieldRef></OrderBy>
+        </Query>
+        <ParameterBindings>
+          <ParameterBinding Name="NoAnnouncements" Location="Resource(wss,noXinviewofY_LIST)" />
+          <ParameterBinding Name="NoAnnouncementsHowTo" Location="Resource(wss,noXinviewofY_DEFAULT)" />
+        </ParameterBindings>
+      </View></Views>
+    <Forms>
+      <Form Type="DisplayForm" Url="DispForm.aspx" SetupPath="pages\form.aspx" WebPartZoneID="Main" />
+      <Form Type="EditForm" Url="EditForm.aspx" SetupPath="pages\form.aspx" WebPartZoneID="Main" />
+      <Form Type="NewForm" Url="NewForm.aspx" SetupPath="pages\form.aspx" WebPartZoneID="Main" />
+    </Forms>
+  </MetaData>
+</List>

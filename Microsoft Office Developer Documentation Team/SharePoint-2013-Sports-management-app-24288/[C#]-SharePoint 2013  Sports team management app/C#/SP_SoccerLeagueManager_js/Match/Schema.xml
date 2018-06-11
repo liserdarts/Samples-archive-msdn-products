@@ -1,0 +1,57 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<List xmlns:ows="Microsoft SharePoint" Title="Match" FolderCreation="FALSE" Direction="$Resources:Direction;" Url="Lists/Match" BaseType="0" xmlns="http://schemas.microsoft.com/sharepoint/">
+  <MetaData>
+    <ContentTypes>
+      
+      
+    <ContentType ID="0x010083f0005e69824f29a456d58a31db9e00" Name="ListFieldsContentType"><FieldRefs><FieldRef ID="{890fbc82-1dbd-48ea-bc07-da2d520e7867}" Name="Team1" /><FieldRef ID="{e848e768-3ae7-4b55-a9cb-5760b1ae65fe}" Name="Team2" /><FieldRef ID="{a4f73df7-6852-44f2-b2ca-db23251c3460}" Name="HomeScore" /><FieldRef ID="{b7c2da97-2cab-4e39-8f11-7b05cc791f8b}" Name="AwayScore" /><FieldRef ID="{4706a9be-1d79-4be2-8550-d0d1adcde1a7}" Name="date" /><FieldRef ID="{da74e65d-0767-4dd3-9b61-dcc9caf6e62d}" Name="MatchSummary" /><FieldRef ID="{63d2ceab-700b-4487-a1c1-2edddf591dbb}" Name="NotablePerformance" /><FieldRef ID="{7167b15d-1ce3-44fb-81dd-b6719fc0b38c}" Name="TableLookup" /></FieldRefs></ContentType><ContentTypeRef ID="0x01">
+        <Folder TargetName="Item" />
+      </ContentTypeRef><ContentTypeRef ID="0x0120" /></ContentTypes>
+    <Fields>
+      
+    <Field Name="Team1" ID="{890fbc82-1dbd-48ea-bc07-da2d520e7867}" DisplayName="Team1" Type="Lookup" List="Lists/Teams" ShowField="Title" /><Field Name="Team2" ID="{e848e768-3ae7-4b55-a9cb-5760b1ae65fe}" DisplayName="Team2" Type="Lookup" List="Lists/Teams" ShowField="Title" /><Field Name="HomeScore" ID="{a4f73df7-6852-44f2-b2ca-db23251c3460}" DisplayName="Home Score" Type="Number" /><Field Name="AwayScore" ID="{b7c2da97-2cab-4e39-8f11-7b05cc791f8b}" DisplayName="Away Score" Type="Number" /><Field Name="date" ID="{4706a9be-1d79-4be2-8550-d0d1adcde1a7}" DisplayName="Date" Type="DateTime" Format="DateOnly" /><Field Name="MatchSummary" ID="{da74e65d-0767-4dd3-9b61-dcc9caf6e62d}" DisplayName="Match Summary" Type="Note" /><Field Name="NotablePerformance" ID="{63d2ceab-700b-4487-a1c1-2edddf591dbb}" DisplayName="Notable Performance" Type="Text" /><Field Name="TableLookup" ID="{7167b15d-1ce3-44fb-81dd-b6719fc0b38c}" DisplayName="TableLookup" Type="Lookup" List="Lists/Table" ShowField="Title" /></Fields>
+    <Views>
+      
+      
+    <View BaseViewID="0" Type="HTML" MobileView="TRUE" TabularView="FALSE">
+        <Toolbar Type="Standard" />
+        <XslLink Default="TRUE">main.xsl</XslLink>
+        <RowLimit Paged="TRUE">30</RowLimit>
+        <ViewFields>
+          
+        <FieldRef Name="LinkTitleNoMenu"></FieldRef></ViewFields>
+        <Query>
+          <OrderBy>
+            
+          <FieldRef Name="Modified" Ascending="FALSE"></FieldRef></OrderBy>
+        </Query>
+        <ParameterBindings>
+          <ParameterBinding Name="AddNewAnnouncement" Location="Resource(wss,addnewitem)" />
+          <ParameterBinding Name="NoAnnouncements" Location="Resource(wss,noXinviewofY_LIST)" />
+          <ParameterBinding Name="NoAnnouncementsHowTo" Location="Resource(wss,noXinviewofY_ONET_HOME)" />
+        </ParameterBindings>
+      </View><View BaseViewID="1" Type="HTML" WebPartZoneID="Main" DisplayName="$Resources:core,objectiv_schema_mwsidcamlidC24;" DefaultView="TRUE" MobileView="TRUE" MobileDefaultView="TRUE" SetupPath="pages\viewpage.aspx" ImageUrl="/_layouts/15/images/generic.png?rev=23" Url="AllItems.aspx">
+        <Toolbar Type="Standard" />
+        <XslLink Default="TRUE">main.xsl</XslLink>
+        <JSLink>clienttemplates.js</JSLink>
+        <RowLimit Paged="TRUE">30</RowLimit>
+        <ViewFields>
+          
+        <FieldRef Name="ID" /><FieldRef Name="Team1" /><FieldRef Name="Team2" /><FieldRef Name="HomeScore" /><FieldRef Name="AwayScore" /><FieldRef Name="date" /><FieldRef Name="MatchSummary" /><FieldRef Name="NotablePerformance" /><FieldRef Name="Attachments" /><FieldRef Name="TableLookup" /></ViewFields>
+        <Query>
+          <OrderBy>
+            
+          <FieldRef Name="ID"></FieldRef></OrderBy>
+        </Query>
+        <ParameterBindings>
+          <ParameterBinding Name="NoAnnouncements" Location="Resource(wss,noXinviewofY_LIST)" />
+          <ParameterBinding Name="NoAnnouncementsHowTo" Location="Resource(wss,noXinviewofY_DEFAULT)" />
+        </ParameterBindings>
+      </View></Views>
+    <Forms>
+      <Form Type="DisplayForm" Url="DispForm.aspx" SetupPath="pages\form.aspx" WebPartZoneID="Main" />
+      <Form Type="EditForm" Url="EditForm.aspx" SetupPath="pages\form.aspx" WebPartZoneID="Main" />
+      <Form Type="NewForm" Url="NewForm.aspx" SetupPath="pages\form.aspx" WebPartZoneID="Main" />
+    </Forms>
+  </MetaData>
+</List>

@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package dslVersion="1.0.0.0" 
+        Id="1e61876d-c0d9-42c4-80bb-ce29d86dbee5" 
+        solutionId="1e61876d-c0d9-42c4-80bb-ce29d86dbee5" 
+        xmlns="http://schemas.microsoft.com/VisualStudio/2008/SharePointTools/PackageModel" 
+        name="SP_SoccerLeagueManager_js"
+        sharePointProductVersion="15.0">
+  <features>
+        <featureReference itemId="eb60c66e-a24b-4199-a287-7afa87bfe9f9" />
+  </features>
+</package>
