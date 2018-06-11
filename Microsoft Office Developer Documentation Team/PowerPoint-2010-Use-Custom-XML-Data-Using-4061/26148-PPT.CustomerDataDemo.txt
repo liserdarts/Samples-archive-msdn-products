@@ -1,0 +1,78 @@
+' PowerPoint 2010/2007
+
+' Demonstrate working with custom XML data in a presentation.
+
+' Copy this code into a module in a new presentation.
+' Display the VBA window side-by-side with the PowerPoint window
+' and press F8 to single step through this
+' code for the most effective use of this demonstration.
+
+
+Sub WorkWithCustomerData()
+    ' Although this custom XML part is referred to as "Customer data",
+    ' and the documentation refers to it as being for including information
+    ' about customers, that's clearly not the intended use. The "customer"
+    ' referred to here is actually just the customer of the CustomLayout,
+    ' Master, Presentation, Shape, or Slide. You can add custom data to
+    ' any (and all) of these, so that you can retrieve the data at will. The
+    ' data needn't (and probably won't) be pertinent to customer information.
+   
+    ' The important point is that the data "goes with" the host object. If you
+    ' add customer data to a shape, and then move the shape to a new presentation,
+    ' the customer data tags along. The same can be said for a slide, or any other
+    ' place you add customer data.
+   
+    ' Note that this property works much like the Tag property, except that storing only a
+    ' single string (like the Tag property) the CustomerData property stores a block of
+    ' XML data.
+   
+    ' Add customer data to a shape on a presentation. Then create a new slide,
+    ' copy the shape over, and verify that the customer data went with the shape.
+    ' The same concept could apply to any item to which you can attach a
+    ' CustomerData value.
+   
+    Dim shp As Shape
+    Dim sld As Slide
+    Set sld = ActivePresentation.Slides(1)
+    Set shp = sld.Shapes.AddShape(msoShape7pointStar, 10, 10, 200, 200)
+   
+    ' Add a CustomXMLPart as the CustomerData property of the shape.
+    Dim xmlPart As CustomXMLPart
+    Set xmlPart = shp.CustomerData.Add
+   
+    ' Print out the unique ID:
+    Dim customerDataId As String
+    customerDataId = xmlPart.Id
+    Debug.Print customerDataId
+   
+    ' Put some well-formed XML into the part. You might get this XML from a
+    ' text file, from a database, or from a Web Service:
+    xmlPart.LoadXML "<XMLData TextToDisplay='Title' Date='5/15/2012' Author='Lucy'>Here's some text!</XMLData>"
+    Debug.Print xmlPart.XML
+   
+    ' Make a copy of the shape:
+    shp.Copy
+   
+    ' Create a new slide, and paste the shape into the new slide:
+    Dim sld2 As Slide
+    Set sld2 = ActivePresentation.Slides.Add(2, ppLayoutBlank)
+    sld2.Shapes.Paste
+       
+    ' Retrieve a reference to the new shape:
+    Dim shp2 As Shape
+    Set shp2 = sld2.Shapes(1)
+       
+    ' You can only retrieve CustomerData by its ID, but because
+    ' the code made a copy of the shape, the customer data now has
+    ' a newly assigned ID. Loop through all the CustomerData items
+    ' (each of which is a CustomXMLPart), and find the ID of each.
+    ' There should only be one, and given the ID, you can get at the XML:
+    Dim cxp As CustomXMLPart
+    For Each cxp In shp2.CustomerData
+        customerDataId = cxp.Id
+        Set xmlPart = shp2.CustomerData.Item(customerDataId)
+        ' Verify that the custom XML content in the CustomerData property
+        ' has been propogated with the copied shape:
+        Debug.Print "Newly copied part: " & xmlPart.XML
+    Next cxp
+End Sub
