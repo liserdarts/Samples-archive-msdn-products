@@ -1,0 +1,7 @@
+I:\DropBox\My Dropbox\Office 2010 VHTs\Word--RetrievingComments\Demos\CS\RetrieveComments\RetrieveComments\bin\Debug\RetrieveComments.exe
+I:\DropBox\My Dropbox\Office 2010 VHTs\Word--RetrievingComments\Demos\CS\RetrieveComments\RetrieveComments\bin\Debug\RetrieveComments.pdb
+I:\DropBox\My Dropbox\Office 2010 VHTs\Word--RetrievingComments\Demos\CS\RetrieveComments\RetrieveComments\obj\x86\Debug\ResolveAssemblyReference.cache
+I:\DropBox\My Dropbox\Office 2010 VHTs\Word--RetrievingComments\Demos\CS\RetrieveComments\RetrieveComments\obj\x86\Debug\RetrieveComments.exe
+I:\DropBox\My Dropbox\Office 2010 VHTs\Word--RetrievingComments\Demos\CS\RetrieveComments\RetrieveComments\obj\x86\Debug\RetrieveComments.pdb
+C:\Users\salri\DevDocs\Ken Getz\June 2011\WDRetrieveComments\WDRetrieveComments_DEMO\Demos\CS\RetrieveComments\RetrieveComments\obj\x86\Debug\RetrieveComments.exe
+C:\Users\salri\DevDocs\Ken Getz\June 2011\WDRetrieveComments\WDRetrieveComments_DEMO\Demos\CS\RetrieveComments\RetrieveComments\obj\x86\Debug\RetrieveComments.pdb
