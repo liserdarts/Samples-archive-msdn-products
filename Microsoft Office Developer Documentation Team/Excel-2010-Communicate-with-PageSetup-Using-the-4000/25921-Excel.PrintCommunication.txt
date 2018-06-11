@@ -1,0 +1,39 @@
+' Excel 2010
+
+' The Application.PrintCommunication property toggles communication with the printer,
+' so that you can execute multiple statements that interact with the PageSetup object
+' faster. Setting the PrintCommunication property to False halts Excel from
+' sending commands to the printer, and setting it to True sends all the cached
+' commands at once. This property behaves much like the Application.ScreenUpdating
+' property, which allows you to perform multiple actions on screen without
+' needing to actually update the screen.
+
+' To test out this code, in a new workbook,
+' copy the entire sample into the Sheet1 module in the VBA editor.
+' Place the cursor inside the TestPrintCommunication procedure, and press F5.
+' The sample code doesn't perform any timings to verify that using the
+' PrintCommunication property speeds up the code, but it does show
+' how to make use of the property.
+
+Sub TestPrintCommunication()
+    On Error GoTo HandleErrors
+    Application.PrintCommunication = False
+    With Me.PageSetup
+        .LeftMargin = Application.InchesToPoints(0.5)
+        .RightMargin = Application.InchesToPoints(0.75)
+        .TopMargin = Application.InchesToPoints(1.5)
+        .BottomMargin = Application.InchesToPoints(1)
+        .HeaderMargin = Application.InchesToPoints(0.5)
+        .FooterMargin = Application.InchesToPoints(0.5)
+    End With
+    Application.PrintCommunication = True
+   
+ExitHere:
+    Exit Sub
+   
+HandleErrors:
+    ' If an error occurs, make sure you reset
+    ' print communications.
+    Application.PrintCommunication = True
+    Resume ExitHere
+End Sub
