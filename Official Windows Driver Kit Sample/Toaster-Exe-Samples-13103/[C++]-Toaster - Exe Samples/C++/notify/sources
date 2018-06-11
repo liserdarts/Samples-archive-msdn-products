@@ -1,0 +1,17 @@
+TARGETNAME=notify
+TARGETTYPE=PROGRAM
+UMTYPE=windows
+UMENTRY=winmain
+
+_NT_TARGET_VERSION=$(_NT_TARGET_VERSION_WINXP)
+
+USE_MSVCRT=1
+
+INCLUDES=..\..\kmdf\inc; 
+
+
+TARGETLIBS=$(SDK_LIB_PATH)\setupapi.lib 
+
+SOURCES=notify.rc \
+	    notify.c  \
+

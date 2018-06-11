@@ -1,0 +1,16 @@
+TARGETNAME=Enum
+TARGETTYPE=PROGRAM
+UMTYPE=console
+UMENTRY=main
+
+_NT_TARGET_VERSION=$(_NT_TARGET_VERSION_WINXP)
+
+USE_MSVCRT=1
+
+INCLUDES=..\..\kmdf\inc; 
+
+
+TARGETLIBS=$(SDK_LIB_PATH)\setupapi.lib
+           
+SOURCES= enum.c
+
