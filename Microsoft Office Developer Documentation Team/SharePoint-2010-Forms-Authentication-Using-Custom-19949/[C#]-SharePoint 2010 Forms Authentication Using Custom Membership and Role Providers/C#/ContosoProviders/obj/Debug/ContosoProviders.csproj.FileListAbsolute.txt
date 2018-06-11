@@ -1,0 +1,10 @@
+C:\Users\andyli.REDMOND\Documents\Visual Studio 2008\Projects\ContosoProviders\ContosoProviders\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\andyli.REDMOND\Documents\Visual Studio 2008\Projects\ContosoProviders\ContosoProviders\bin\Debug\ContosoProviders.dll
+C:\Users\andyli.REDMOND\Documents\Visual Studio 2008\Projects\ContosoProviders\ContosoProviders\bin\Debug\ContosoProviders.pdb
+C:\Users\andyli.REDMOND\Documents\Visual Studio 2008\Projects\ContosoProviders\ContosoProviders\obj\Debug\ContosoProviders.dll
+C:\Users\andyli.REDMOND\Documents\Visual Studio 2008\Projects\ContosoProviders\ContosoProviders\obj\Debug\ContosoProviders.pdb
+C:\StudentFiles\Demo\Module_5\ContosoProviders\ContosoProviders\bin\Debug\ContosoProviders.dll
+C:\StudentFiles\Demo\Module_5\ContosoProviders\ContosoProviders\bin\Debug\ContosoProviders.pdb
+C:\StudentFiles\Demo\Module_5\ContosoProviders\ContosoProviders\obj\Debug\ResolveAssemblyReference.cache
+C:\StudentFiles\Demo\Module_5\ContosoProviders\ContosoProviders\obj\Debug\ContosoProviders.dll
+C:\StudentFiles\Demo\Module_5\ContosoProviders\ContosoProviders\obj\Debug\ContosoProviders.pdb

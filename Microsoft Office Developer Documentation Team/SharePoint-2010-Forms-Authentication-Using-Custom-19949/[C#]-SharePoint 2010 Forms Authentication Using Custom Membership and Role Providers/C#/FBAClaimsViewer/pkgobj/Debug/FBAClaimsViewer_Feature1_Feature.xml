@@ -1,0 +1,7 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Feature xmlns="http://schemas.microsoft.com/sharepoint/" Id="d47434cc-2a85-4db8-813e-929b58283255" Scope="Site" Title="FBAClaimsViewer Feature1">
+  <ElementManifests>
+    <ElementManifest Location="FBAClaimsViewer\Elements.xml" />
+    <ElementFile Location="FBAClaimsViewer\FBAClaimsViewer.webpart" />
+  </ElementManifests>
+</Feature>

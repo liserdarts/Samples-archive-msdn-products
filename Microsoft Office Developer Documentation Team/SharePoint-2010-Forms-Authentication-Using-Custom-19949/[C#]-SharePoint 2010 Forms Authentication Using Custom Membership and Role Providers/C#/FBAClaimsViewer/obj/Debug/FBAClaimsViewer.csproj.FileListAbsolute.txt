@@ -1,0 +1,10 @@
+C:\StudentFiles\Demo\Module_5\ContosoProviders\FBAClaimsViewer\obj\Debug\ResolveAssemblyReference.cache
+C:\StudentFiles\Demo\Module_5\ContosoProviders\FBAClaimsViewer\bin\Debug\FBAClaimsViewer.dll
+C:\StudentFiles\Demo\Module_5\ContosoProviders\FBAClaimsViewer\bin\Debug\FBAClaimsViewer.pdb
+C:\StudentFiles\Demo\Module_5\ContosoProviders\FBAClaimsViewer\obj\Debug\FBAClaimsViewer.dll
+C:\StudentFiles\Demo\Module_5\ContosoProviders\FBAClaimsViewer\obj\Debug\FBAClaimsViewer.pdb
+C:\StudentFiles\LabFiles\Module_5\Solution\ContosoProviders\FBAClaimsViewer\bin\Debug\FBAClaimsViewer.dll
+C:\StudentFiles\LabFiles\Module_5\Solution\ContosoProviders\FBAClaimsViewer\bin\Debug\FBAClaimsViewer.pdb
+C:\StudentFiles\LabFiles\Module_5\Solution\ContosoProviders\FBAClaimsViewer\obj\Debug\ResolveAssemblyReference.cache
+C:\StudentFiles\LabFiles\Module_5\Solution\ContosoProviders\FBAClaimsViewer\obj\Debug\FBAClaimsViewer.dll
+C:\StudentFiles\LabFiles\Module_5\Solution\ContosoProviders\FBAClaimsViewer\obj\Debug\FBAClaimsViewer.pdb

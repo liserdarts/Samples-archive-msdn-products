@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Solution xmlns="http://schemas.microsoft.com/sharepoint/" SolutionId="e26e9d02-1996-4ff0-8331-751c01c261d6">
+  <Assemblies>
+    <Assembly Location="FBAClaimsViewer.dll" DeploymentTarget="GlobalAssemblyCache">
+      <SafeControls>
+        <SafeControl Assembly="FBAClaimsViewer, Version=1.0.0.0, Culture=neutral, PublicKeyToken=1362ab5a6a677add" Namespace="FBAClaimsViewer.FBAClaimsViewer" TypeName="*" />
+      </SafeControls>
+    </Assembly>
+  </Assemblies>
+  <FeatureManifests>
+    <FeatureManifest Location="FBAClaimsViewer_Feature1\Feature.xml" />
+  </FeatureManifests>
+</Solution>
