@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" dslVersion="1.0.0.0" Id="7843ff9d-34c3-499e-bb83-b89558231d47" solutionId="7843ff9d-34c3-499e-bb83-b89558231d47" resetWebServer="false" name="FilteredTaskSite" xmlns="http://schemas.microsoft.com/VisualStudio/2008/SharePointTools/PackageModel">
+  <features>
+    <featureReference itemId="3e889df3-ed4d-4ed9-b180-03f0e6ffdafd" />
+  </features>
+  <projectItems>
+    <projectItemReference itemId="47da65b2-ae40-447b-aeb5-cb3ca5d61b0b" />
+  </projectItems>
+</package>

@@ -1,0 +1,10 @@
+c:\users\administrator\documents\visual studio 2010\projects\FilteredTaskSite\FilteredTaskSite\bin\Debug\FilteredTaskSite.dll
+c:\users\administrator\documents\visual studio 2010\projects\FilteredTaskSite\FilteredTaskSite\bin\Debug\FilteredTaskSite.pdb
+c:\users\administrator\documents\visual studio 2010\projects\FilteredTaskSite\FilteredTaskSite\obj\Debug\ResolveAssemblyReference.cache
+c:\users\administrator\documents\visual studio 2010\projects\FilteredTaskSite\FilteredTaskSite\obj\Debug\FilteredTaskSite.dll
+c:\users\administrator\documents\visual studio 2010\projects\FilteredTaskSite\FilteredTaskSite\obj\Debug\FilteredTaskSite.pdb
+C:\Users\Administrator\Documents\Visual Studio 2010\Projects\FilteredTaskSite cs\FilteredTaskSite\bin\Debug\FilteredTaskSite.dll
+C:\Users\Administrator\Documents\Visual Studio 2010\Projects\FilteredTaskSite cs\FilteredTaskSite\bin\Debug\FilteredTaskSite.pdb
+C:\Users\Administrator\Documents\Visual Studio 2010\Projects\FilteredTaskSite cs\FilteredTaskSite\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\Administrator\Documents\Visual Studio 2010\Projects\FilteredTaskSite cs\FilteredTaskSite\obj\Debug\FilteredTaskSite.dll
+C:\Users\Administrator\Documents\Visual Studio 2010\Projects\FilteredTaskSite cs\FilteredTaskSite\obj\Debug\FilteredTaskSite.pdb

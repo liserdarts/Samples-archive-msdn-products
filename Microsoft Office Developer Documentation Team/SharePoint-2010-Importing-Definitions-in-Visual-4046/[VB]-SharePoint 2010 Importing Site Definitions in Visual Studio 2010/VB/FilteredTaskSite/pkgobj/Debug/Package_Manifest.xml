@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Solution xmlns="http://schemas.microsoft.com/sharepoint/" SolutionId="248a0d76-d10a-45b2-a9a0-0816719ab2d7" SharePointProductVersion="14.0">
+  <Assemblies>
+    <Assembly Location="FilteredTaskSite.dll" DeploymentTarget="GlobalAssemblyCache">
+      <SafeControls>
+        <SafeControl Assembly="FilteredTaskSite, Version=1.0.0.0, Culture=neutral, PublicKeyToken=c28c5e33a5cce4c6" Namespace="FilteredTaskSite" TypeName="*" />
+      </SafeControls>
+    </Assembly>
+  </Assemblies>
+  <TemplateFiles>
+    <TemplateFile Location="CONTROLTEMPLATES\FilteredTaskSite\VisualWebPart1\VisualWebPart1UserControl.ascx" />
+    <TemplateFile Location="SiteTemplates\FilteredTaskSite\default.aspx" />
+    <TemplateFile Location="SiteTemplates\FilteredTaskSite\Xml\onet.xml" />
+    <TemplateFile Location="1033\xml\webtemp_FilteredTaskSite.xml" />
+  </TemplateFiles>
+  <FeatureManifests>
+    <FeatureManifest Location="FilteredTaskSite_Feature1\Feature.xml" />
+  </FeatureManifests>
+</Solution>
