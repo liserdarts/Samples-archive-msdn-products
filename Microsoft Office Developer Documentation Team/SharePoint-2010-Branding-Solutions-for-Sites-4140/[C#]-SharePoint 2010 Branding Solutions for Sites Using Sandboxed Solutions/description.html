@@ -1,0 +1,190 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
+    <head><link rel="stylesheet" type="text/css" href="description/Combined.css,1:ImageSprite;/Areas/Epx/Themes/Msdn/Content:0,/Areas/Epx/Content/Css:1&amp;amp;hashKey=E7560C71640616C5057FAEACB58DCB00" xmlns="http://www.w3.org/1999/xhtml" />
+<link rel="stylesheet" type="text/css" href="description/2f95808e-ca34-4249-88ff-44fabe33cdc0Combined.css,1:LinkList,2:ImageSprite,2:SiteFeedbackLink;/Areas/Epx/Themes/Msdn/Content:0,/Areas/Epx/Themes/Base/Content:1,/Areas/Epx/Content/Css:2&amp;amp;hashKey=EEE39C2D6B93379FDAF50337BE99AF8C" xmlns="http://www.w3.org/1999/xhtml" />
+
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <title>SharePoint 2010: Branding Solutions for Sites Using Sandboxed Solutions</title>
+        <link href="description/Galleries.css" type="text/css" rel="Stylesheet" /><link href="description/Layout.css" type="text/css" rel="Stylesheet" /><link href="description/Brand.css" type="text/css" rel="Stylesheet" />
+        <link href="description/iframedescription.css" rel="Stylesheet" type="text/css" />
+        <script src="description/offline.js" type="text/javascript"></script>
+        <style type="text/css">
+            #projectInfo {
+                overflow: auto;
+            }
+            #longDesc {
+                clear:both;
+                margin: 25px 0 10px 0;
+            }
+
+            #SampleIndexList{
+                margin-left: 15px;
+            }
+        </style>
+    </head>
+<body>
+    <div id="offlineDescription">
+        <h1>SharePoint 2010: Branding Solutions for Sites Using Sandboxed Solutions</h1>
+        <br/>
+        <div id="projectInfo">
+            <div class="section">
+                    <div class="itemBarLong tagsContainer">
+                        <label for="Technologies">Technologies</label>
+                        <div id="Technologies">
+                            SharePoint 2010, SharePoint Server 2010, SharePoint Foundation 2010
+                        </div>
+                    </div>
+                    <div class="itemBarLong tagsContainer">
+                        <label for="Topics">Topics</label>
+                        <div id="Topics">
+                            branding solutions, sandboxed solutions
+                        </div>
+                    </div>
+                <div class="itemBarLong">
+                    <label for="Platforms">Platforms</label>
+                    <div id="Platforms">
+                        Web
+                    </div>
+                </div>
+                <div class="itemBarLong">
+                    <label for="Requirements">Requirements</label>
+                    <div id="Requirements">
+                        
+                    </div>
+                </div>
+                <div class="itemBar">
+                    <label for="LastUpdated">Primary Language</label>
+                    <div id="LastUpdated">en-US</div>
+                </div>
+                <div class="itemBar">
+                    <label for="LastUpdated">Last Updated</label>
+                    <div id="LastUpdated">8/9/2011</div>
+                </div>
+                <div class="itemBarLong">
+                    <label for="License">License</label>
+                    <div id="License">
+                        <a href="license.rtf">Apache License, Version 2.0</a></div>
+                </div>
+                <div class="itemBar">
+                    <div class="viewonlinecont">
+                        <a data-link="online" href="http://code.msdn.microsoft.com/SharePoint-2010-Branding-0d521672">View this sample online</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+                   
+<script type="text/javascript">
+    function initializePage() {
+        var otherTabClass = 'otherTab';
+        var hiddenPreClass = 'hidden';
+
+        var htmlDecode = function(encodedData) {
+            var decodedData = "";
+            if (encodedData) {
+                var div = document.createElement('div');
+                div.innerHTML = encodedData;
+                decodedData = div.firstChild.nodeValue.replace( /\\r\\n/ig , '\r\n');
+            }
+            return decodedData;
+        };
+                
+        Galleries.iterateElem(Galleries.findElem(null, 'div', 'scriptcode'), function (index, scriptBlock) {
+            var titleElem = Galleries.findElem(scriptBlock, 'div', 'title')[0];
+            var labelElems = Galleries.findElem(titleElem, 'span');
+            if (labelElems.length == 0) {
+                labelElems = titleElem;
+            }
+            var languageSpans = Galleries.findElem(scriptBlock, 'span', 'hidden');
+            var pres = Galleries.findElem(scriptBlock, 'pre');
+            if (languageSpans.length > 0 && pres.length > 1) {
+                Galleries.iterateElem(labelElems, function(index, elem) {
+                    var codePre = pres[index];
+                    var labelSpan = elem;
+                    var languageSpan = languageSpans[index];
+                            
+                    elem.code = codePre.innerHTML.replace( /(\r(\n)?)|((\r)?\n)/ig , '\\r\\n');
+                            
+                    codePre.className = codePre.className.replace(hiddenPreClass, '');
+                            
+                    languageSpan.parentNode.removeChild(languageSpan);
+                });
+
+                pres = Galleries.findElem(scriptBlock, 'pre');
+                Galleries.iterateElem(labelElems, function(index, elem) {
+                    var codePre = pres[index];
+                    var labelSpan = elem;
+                    if (index == 0) {
+                        scriptBlock.activeTab = 0;
+                    }
+                    else {
+                        labelSpan.className += otherTabClass;
+                        codePre.className += hiddenPreClass;
+                    }
+                    Galleries.attachEventHandler(labelSpan, 'click', function(e) {
+                        var activeTab = scriptBlock.activeTab;
+                        labelElems[activeTab].className += otherTabClass;
+                        pres[activeTab].className += hiddenPreClass;
+
+                        codePre.className = codePre.className.replace(hiddenPreClass, '');
+                        labelSpan.className = labelSpan.className.replace(otherTabClass, '');
+                        scriptBlock.activeTab = index;
+                    });
+                });
+
+                var preview = Galleries.findElem(scriptBlock, 'div', 'preview');
+                if (preview.length == 0) {
+                    preview.push(pres[pres.length - 1]);
+                }
+                Galleries.iterateElem(preview, function(index, elem) {
+                    elem.parentNode.removeChild(elem);
+                });
+
+                if (window.clipboardData && clipboardData.setData) {
+                    var copyLink = document.createElement('a');
+                    copyLink.href = 'javascript:void(0);';
+                    copyLink.className = 'copyCode';
+                    copyLink.innerHTML = 'Copy Code';
+                    Galleries.attachEventHandler(copyLink, 'click', function (e) {
+                        clipboardData.setData("Text", htmlDecode(labelElems[scriptBlock.activeTab].code));
+                        return false;
+                    });
+                    scriptBlock.insertBefore(copyLink, scriptBlock.childNodes[0]);
+                }
+            }
+        });
+    }
+
+    Galleries.onWindowLoad(function(){
+        initializePage();
+    });
+
+</script>
+<div id="longDesc">
+    
+<h2><strong>Introduction</strong></h2>
+<p>Learn how to create sandbox-compatible branding solutions by using custom master pages, CSS files, and images that can be deployed to Microsoft SharePoint 2010 farms. This sample accompanies the article
+<a href="http://msdn.microsoft.com/en-us/library/gg447066.aspx">Deploying Branding Solutions for SharePoint 2010 Sites Using Sandboxed Solutions</a> in the MSDN Library.</p>
+<h2><strong>Description</strong></h2>
+<p>The SharePoint development tools in Microsoft Visual Studio 2010 provide a simple and effective approach to packaging and deploying the files and code that are required to apply branding to Microsoft SharePoint 2010 sites using a sandboxed solution. This
+ sample and the accompanying article demonstrate a best practice for creating sandbox-compatible branding solutions by using custom master pages, cascading style sheets (CSS files), and images that can be deployed to SharePoint 2010 farms that are running either
+ SharePoint Foundation 2010 or SharePoint Server 2010.</p>
+<p>There is only one way to deploy a business solution that is developed for the preceding version of SharePoint Products and Technologies. A SharePoint solution that targets a Windows SharePoint Services 3.0 or an Office SharePoint Server 2007 farm must be
+ deployed at farm-level scope by a farm administrator. Because farm solution deployment requires scoping custom files to front-end web servers, it poses certain risks to the health of the farm. Furthermore, most farm solutions install custom assembly DLLs in
+ the global assembly cache on the web server, which allows the code inside to run with full trust. Therefore, many farm administrators require SharePoint solutions to undergo lengthy code reviews and rigid testing procedures before they can be deployed in a
+ SharePoint farm. Farm administrators in some SharePoint environments go one step further and prohibit farm-level deployment of SharePoint solutions altogether.</p>
+<p>SharePoint 2010 introduces new sandboxing architecture that provides a valuable alternative to farm-level deployment. Unlike farm solution deployment, sandboxed solution deployment does not require a farm administrator. Instead, a SharePoint solution that
+ is developed as a sandboxed solution can be uploaded and activated by a business user within the scope of a site collection. This can significantly speed up the process of getting a custom SharePoint solution into service. Sandboxed solutions also let you
+ develop custom SharePoint solutions in Visual Studio 2010 that target environments that do not allow for farm solution deployment, such as SharePoint Online.</p>
+<p>There is an important point about the new sandbox architecture that you should fully understand. Designing and developing SharePoint solutions that are compatible with the sandbox increases your options for deployment. This is because you can deploy a SharePoint
+ solution that has been developed to target the sandbox as either a sandboxed solution or as a farm solution. Just because you develop a SharePoint solution as a sandboxed solution does not mean that you always have to deploy it as a sandboxed solution.</p>
+<p>This sample and the accompanying article shows how a sandboxed solution provides greater flexibility. In a SharePoint farm that does not allow for farm-level solution deployment, users can upload and activate your SharePoint solution within the context of
+ a site collection. In another SharePoint farm that does not pose these restrictions, the same SharePoint solution can be deployed as a farm solution, which makes it possible to obtain higher levels of performance and maintainability. This provides a design
+ motivation for always targeting the sandbox when the constraints of the sandbox do not prevent you from accomplishing what you want.</p>
+
+</div>
+
+
+    </div>
+</body>
+</html>
