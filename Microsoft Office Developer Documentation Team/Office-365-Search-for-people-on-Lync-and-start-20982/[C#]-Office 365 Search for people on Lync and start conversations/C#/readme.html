@@ -1,0 +1,203 @@
+﻿<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<HTML dir=ltr XMLNS:MSHelp = "http://msdn.microsoft.com/mshelp" xmlns:ddue = 
+"http://ddue.schemas.microsoft.com/authoring/2003/5" xmlns:xlink = 
+"http://www.w3.org/1999/xlink" xmlns:tool = "http://www.microsoft.com/tooltip" 
+XMLNS:[default] http://ddue.schemas.microsoft.com/authoring/2003/5 = 
+"http://ddue.schemas.microsoft.com/authoring/2003/5"><HEAD><TITLE>Office 365: Search people on Lync and start conversations</TITLE>
+<META content="text/html; CHARSET=utf-8" http-equiv=Content-Type></META>
+<META name=save content=history></META><LINK rel=stylesheet type=text/css 
+href="readme_files/Classic.css"></LINK>
+<SCRIPT src="readme_files/script.js"></SCRIPT>
+
+<META name=GENERATOR content="MSHTML 9.00.8112.16464"></HEAD>
+<BODY><INPUT id=userDataCache class=userDataStyle type=hidden></INPUT><INPUT 
+id=hiddenScrollOffset type=hidden></INPUT><IMG 
+style="WIDTH: 0px; DISPLAY: none; HEIGHT: 0px" id=dropDownImage 
+src="readme_files/drpdown.gif"></IMG><IMG 
+style="WIDTH: 0px; DISPLAY: none; HEIGHT: 0px" id=dropDownHoverImage 
+src="readme_files/drpdown_orange.gif"></IMG><IMG 
+style="WIDTH: 0px; DISPLAY: none; HEIGHT: 0px" id=copyImage 
+src="readme_files/copycode.gif"></IMG><IMG 
+style="WIDTH: 0px; DISPLAY: none; HEIGHT: 0px" id=copyHoverImage 
+src="readme_files/copycodeHighlight.gif"></IMG><IMG 
+style="WIDTH: 0px; DISPLAY: none; HEIGHT: 0px" id=collapseImage 
+src="readme_files/collapse.gif"></IMG><IMG 
+style="WIDTH: 0px; DISPLAY: none; HEIGHT: 0px" id=expandImage 
+src="readme_files/exp.gif"></IMG>
+<DIV id=header>
+<TABLE id=topTable width="100%">
+  <TBODY>
+  <TR id=headerTableRow1>
+    <TD align=left><SPAN id=runningHeaderText></SPAN></TD></TR>
+  <TR id=headerTableRow2>
+    <TD align=left><SPAN id=nsrTitle>Office 365: Search people on Lync and 
+      start conversations</SPAN></TD></TR>
+  <TR id=headerTableRow3>
+    <TD></TD></TR></TBODY></TABLE></DIV>
+<DIV id=mainSection>
+<DIV id=mainBody>
+<DIV id=allHistory class=saveHistory onload="loadAll()" 
+onsave="saveAll()"></DIV>
+<P><B>Summary:</B> &nbsp;&nbsp;Learn how to use the Lync 2013 API to search for 
+people in Lync 2013 and start IM conversations with them.</P>
+<P>The Lync 2013 API includes a set of managed classes with methods that you can 
+use to add collaboration functionality to your application. Using this Lync API, 
+you can find users, start conversations, share resources, and initiate a 
+meet-now meeting. This code sample shows you how to use the Lync 2013 API to 
+search for people in Lync 2013 and start IM conversations with them.</P><A 
+name=O15Readme_Description xmlns:cs="urn:the-xml-files:xslt-cs" 
+xmlns:ms="urn:schemas-microsoft-com:xslt"></A><A></A>
+<DIV>
+<H2 class=heading><SPAN style="CURSOR: default" tabIndex=0 
+onkeypress=ExpandCollapse_CheckKey(ID0EOABA) 
+onclick=ExpandCollapse(ID0EOABA)><IMG id=ID0EOABA class=toggle name=toggleSwitch 
+src="readme_files/collapse.gif"></IMG>Description of the sample</SPAN></H2>
+<DIV id=sectionSection0 class=section><content 
+xmlns="http://ddue.schemas.microsoft.com/authoring/2003/5">
+<P xmlns="">The Windows Forms application consists of the following forms:</P>
+<UL xmlns="">
+  <LI class=unordered><B>Login form</B> - Before searching for people in Lync, 
+  you need to sign in to the Lync client by using this form.<BR>
+  <LI class=unordered><B>Search form</B> - After signing in to the Lync client, 
+  use this form to search for people or contacts in Lync and start conversations 
+  with them. This form is shown in the following figure.<BR></LI></UL>
+<P xmlns=""></P><IMG alt="Lync people search window with empty result list" 
+src="readme_files/6b4d4173-483b-4897-98ef-602a244d400d.JPG" xmlns=""></IMG>
+<P xmlns=""></P>
+<P xmlns="">For more information about the Lync 2013 API, see <A 
+href="file:///C:/Users/johnau/AppData/Local/Temp/DxEditor/DduePreview/Default/6450f12b-11ee-439c-b487-38f82304a22b/HTM/html/c46a20f0-2d18-4aa8-b7fb-980fd88135c9">Lync 
+2013 SDK documentation</A>. </P></content></DIV></DIV><A name=O15Readme_Prereq 
+xmlns:cs="urn:the-xml-files:xslt-cs" 
+xmlns:ms="urn:schemas-microsoft-com:xslt"></A><A></A>
+<DIV>
+<H2 class=heading><SPAN style="CURSOR: default" tabIndex=0 
+onkeypress=ExpandCollapse_CheckKey(ID0EMABA) 
+onclick=ExpandCollapse(ID0EMABA)><IMG id=ID0EMABA class=toggle name=toggleSwitch 
+src="readme_files/collapse.gif"></IMG>Prerequisites</SPAN></H2>
+<DIV id=sectionSection1 class=section><content 
+xmlns="http://ddue.schemas.microsoft.com/authoring/2003/5">
+<P xmlns="">This sample requires the following:</P>
+<UL xmlns="">
+  <LI class=unordered>Microsoft Visual Studio 2012.<BR>
+  <LI class=unordered>Windows 7 or Windows 8.<BR>
+  <LI class=unordered>Microsoft Office 2013.<BR>
+  <LI class=unordered>Lync 2013 SDK.<BR></LI></UL></content></DIV></DIV><A 
+name=O15Readme_components xmlns:cs="urn:the-xml-files:xslt-cs" 
+xmlns:ms="urn:schemas-microsoft-com:xslt"></A><A></A>
+<DIV>
+<H2 class=heading><SPAN style="CURSOR: default" tabIndex=0 
+onkeypress=ExpandCollapse_CheckKey(ID0EKABA) 
+onclick=ExpandCollapse(ID0EKABA)><IMG id=ID0EKABA class=toggle name=toggleSwitch 
+src="readme_files/collapse.gif"></IMG>Key components of the sample</SPAN></H2>
+<DIV id=sectionSection2 class=section><content 
+xmlns="http://ddue.schemas.microsoft.com/authoring/2003/5">
+<P xmlns="">The sample contains the following:</P>
+<UL xmlns="">
+  <LI class=unordered>The 0365_Lyncpeoplesearch_cs project.<BR>
+  <LI class=unordered>The login.cs file.<BR>
+  <LI class=unordered>The login.Designer.cs file, which includes the custom 
+  sign-in form that contains the C# code that uses the Lync 2013 API to sign a 
+  user in to Lync.<BR>
+  <LI class=unordered>The Search.cs file.<BR>
+  <LI class=unordered>The Search.Designer.cs file, which declares the custom 
+  sign-in form that contains the C# code that uses the Lync 2013 API to search 
+  for users and start IM conversations.<BR></LI></UL></content></DIV></DIV><A 
+name=O15Readme_config xmlns:cs="urn:the-xml-files:xslt-cs" 
+xmlns:ms="urn:schemas-microsoft-com:xslt"></A><A></A>
+<DIV>
+<H2 class=heading><SPAN style="CURSOR: default" tabIndex=0 
+onkeypress=ExpandCollapse_CheckKey(ID0EIABA) 
+onclick=ExpandCollapse(ID0EIABA)><IMG id=ID0EIABA class=toggle name=toggleSwitch 
+src="readme_files/collapse.gif"></IMG>Configure the sample</SPAN></H2>
+<DIV id=sectionSection3 class=section><content 
+xmlns="http://ddue.schemas.microsoft.com/authoring/2003/5">
+<P xmlns="">Follow these steps to configure the sample app.</P>
+<OL class=ordered xmlns="">
+  <LI>Extract O365_lyncpeoplesearch_cs.zip into a folder.<BR>
+  <LI>Open O365_lyncpeoplesearch_cs.sln by using Visual Studio 2012 as an 
+  administrator.<BR>
+  <LI>Add a reference to the Microsoft.Lync.Model assembly, which you can find 
+  in C:\Program Files (x86)\Microsoft Office 
+  2013\LyncSDK\Assemblies\Desktop.<BR></LI></OL></content></DIV></DIV><A 
+name=O15Readme_build xmlns:cs="urn:the-xml-files:xslt-cs" 
+xmlns:ms="urn:schemas-microsoft-com:xslt"></A><A></A>
+<DIV>
+<H2 class=heading><SPAN style="CURSOR: default" tabIndex=0 
+onkeypress=ExpandCollapse_CheckKey(ID0EGABA) 
+onclick=ExpandCollapse(ID0EGABA)><IMG id=ID0EGABA class=toggle name=toggleSwitch 
+src="readme_files/collapse.gif"></IMG>Build the sample</SPAN></H2>
+<DIV id=sectionSection4 class=section><content 
+xmlns="http://ddue.schemas.microsoft.com/authoring/2003/5">
+<P xmlns="">Press F5 to build and run the sample.</P></content></DIV></DIV>
+<DIV>
+<H2 class=heading><SPAN style="CURSOR: default" tabIndex=0 
+onkeypress=ExpandCollapse_CheckKey(ID0EFABA) 
+onclick=ExpandCollapse(ID0EFABA)><IMG id=ID0EFABA class=toggle name=toggleSwitch 
+src="readme_files/collapse.gif"></IMG>Run and test the sample</SPAN></H2>
+<DIV id=sectionSection5 class=section><content 
+xmlns="http://ddue.schemas.microsoft.com/authoring/2003/5">
+<OL class=ordered xmlns="">
+  <LI>If you are not signed in to Lync, click the <B>Sign In to Lync</B> button, 
+  and then go to step 2. If you are already signed in, go to step 3.<BR><BR><IMG 
+  alt="Lync people search window with empty result list" 
+  src="readme_files/6b4d4173-483b-4897-98ef-602a244d400d.JPG"></IMG> <BR>
+  <LI>Enter your credentials on the <B>Login</B> form, and click the <B>Sign 
+  In</B> button. Use your Office 365 user name. For example: 
+  “&lt;YourName.CompanyName.onmicrosoft.com&gt;”.<BR><BR><IMG 
+  alt="Custom Lync sign in window" 
+  src="readme_files/4b082d71-32fe-43bc-9ac2-7478e899bc60.JPG"></IMG> <BR>
+  <LI>Enter the text (person’s name) to search for, and click the <B>Search</B> 
+  button.<BR><BR><IMG alt="Lync people search window with search name typed" 
+  src="readme_files/c533891b-59b4-4ead-9bf1-4a0b749a39a7.JPG"></IMG> <BR>The 
+  search form shows a list of contacts that match the search text.<BR><BR><IMG 
+  alt="Lync people search window with search results" 
+  src="readme_files/7f9c13da-cdc2-4aab-99d4-7e2147e6199f.JPG"></IMG> <BR>
+  <LI>Select the contact that you want to start a conversation with. Then, in 
+  the <B>Message</B> box, type the message you want to send, and click the 
+  <B>Start Conversation</B> button.<BR><BR><IMG 
+  alt="Lync people search window with selected user" 
+  src="readme_files/2a6473ec-9aac-489b-ae89-cf019d0ec0ba.JPG"></IMG> <BR>The IM 
+  conversation window opens, enabling you to start conversing with the 
+  contact.<BR><BR><IMG alt="Lync conversation window with selected user" 
+  src="readme_files/cd26588f-2cc9-41d5-8df6-0c15f825d6d2.JPG"></IMG></LI></OL></content></DIV></DIV><A 
+name=O15Readme_Changelog xmlns:cs="urn:the-xml-files:xslt-cs" 
+xmlns:ms="urn:schemas-microsoft-com:xslt"></A><A></A>
+<DIV>
+<H2 class=heading><SPAN style="CURSOR: default" tabIndex=0 
+onkeypress=ExpandCollapse_CheckKey(ID0EDABA) 
+onclick=ExpandCollapse(ID0EDABA)><IMG id=ID0EDABA class=toggle name=toggleSwitch 
+src="readme_files/collapse.gif"></IMG>Change log</SPAN></H2>
+<DIV id=sectionSection6 class=section><content 
+xmlns="http://ddue.schemas.microsoft.com/authoring/2003/5">
+<DIV xmlns="">
+<H3 class=subHeading></H3>
+<TABLE>
+  <TBODY>
+  <TR>
+    <TH>Version</TH>
+    <TH>Date</TH></TR>
+  <TR>
+    <TD>
+      <P>First version</P></TD>
+    <TD>
+      <P>February 28, 2013</P></TD></TR></TBODY></TABLE></DIV></content></DIV></DIV><A 
+name=O15Readme_RelatedContent xmlns:cs="urn:the-xml-files:xslt-cs" 
+xmlns:ms="urn:schemas-microsoft-com:xslt"></A><A></A>
+<DIV>
+<H2 class=heading><SPAN style="CURSOR: default" tabIndex=0 
+onkeypress=ExpandCollapse_CheckKey(ID0EBABA) 
+onclick=ExpandCollapse(ID0EBABA)><IMG id=ID0EBABA class=toggle name=toggleSwitch 
+src="readme_files/collapse.gif"></IMG>Related content</SPAN></H2>
+<DIV id=sectionSection7 class=section><content 
+xmlns="http://ddue.schemas.microsoft.com/authoring/2003/5">
+<UL xmlns="">
+  <LI class=unordered><A 
+  href="file:///C:/Users/johnau/AppData/Local/Temp/DxEditor/DduePreview/Default/6450f12b-11ee-439c-b487-38f82304a22b/HTM/html/c46a20f0-2d18-4aa8-b7fb-980fd88135c9">Lync 
+  2013 SDK documentation</A><BR></LI></UL></content></DIV></DIV><!--
+      [if gte IE 5]>
+      <tool:tip element="languageFilterToolTip" avoidmouse="false"/>
+      <![endif]
+    --></DIV>
+<HR>
+</HR>
+<P></P></DIV></BODY></HTML>
