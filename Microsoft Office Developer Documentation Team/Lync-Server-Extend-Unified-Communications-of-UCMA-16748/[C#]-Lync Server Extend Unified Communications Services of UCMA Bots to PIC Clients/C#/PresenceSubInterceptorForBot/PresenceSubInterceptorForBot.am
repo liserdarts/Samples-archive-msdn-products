@@ -1,0 +1,89 @@
+<?xml version="1.0"?>
+<r:applicationManifest
+ r:appUri="http://www.microsoft.com/lyncServer/SDK/Samples/PresenceSubInterceptorForBot"
+ xmlns:r="http://schemas.microsoft.com/lcs/2006/05"> <!-- V3.0 application -->
+  <r:allowRegistrationBeforeUserServices/>           <!-- Can run before UserServices if applicable -->
+  <r:serverFilter roles="ALL"/>                      <!-- All server roles -->
+  <r:requestFilter methodNames="SUBSCRIBE"/>
+  <r:responseFilter reasonCodes="ALL"/>
+  <r:proxyByDefault action="true"/>
+  <r:splScript>
+  <![CDATA[
+
+/*++
+
+Copyright � Microsoft Corporation
+
+Module Name:
+
+	PresenceSubInterceptorForBot.am
+
+Abstract:
+  A SIP NOTIFY message originated from or to a public cloud or federated client will 
+  carry a ms-edge-proxy-message-trust header inserted by the SIP Proxy. One of the parameters
+  of this header is "ms-source-network". The possible value is "federation" or "publiccloud". 
+  (http://msdn.microsoft.com/en-us/library/dd905386(v=office.12).aspx). A SIP NOTIFY message 
+  from a non federated or non public cloud client will not have this header ("ms-edge-proxy-message-trust" ?)
+  specified.  
+  
+--*/
+/*
+  function DebugToFrom(sipRequest)
+  {
+    if (sipRequest)
+    {
+      v ="To: ";
+      foreach(h in GetHeaderValues("to"))
+        v = Concatenate(Concatenate(v, h), "; ");
+      v Concatenate(v, "\r\nFrom: ");
+      foreach(h in GetHeaderValues("from")
+        v = Concatenate(Concatenate(v, h), "; ");
+    }
+    return null;
+  }
+  */
+    if(sipRequest)
+    {
+    Log("Debugr", true, "Enter PresenceSubInterceptorForBot script block...");
+        // Check that the message is from a PIC user
+        isPICUser = false;
+        foreach (header in GetHeaderValues("ms-edge-proxy-message-trust"))
+        {
+            msSourceNetworkType = GetParameterValue(header, "ms-source-network");            
+            if (msSourceNetworkType == null)
+            {
+                // skip - it's not a PIC message
+                return;
+            }
+
+            if (EqualString(msSourceNetworkType, "publiccloud", true))
+            {
+                // This is a SUBSCRIBE request from a PIC user
+                isPICUser = true;
+            }
+            // Not expecting more than one ms-edge-proxy-message-trust header
+            // in a SIP message.
+            break; 
+        }
+
+        // For a PIC user, invoke the managed event handler to process the request.
+        if (isPICUser)
+        {
+            foreach (eventHeader in GetHeaderValues("Event"))
+            {
+                if (ContainsString(eventHeader, "presence", true))
+                {            
+                    Dispatch("OnSubscribe");
+                    break;
+                }
+            }
+        }
+        else
+        {
+        Log("Debugr", false, "not a PIC user, skipping processing PresenceSubInterptorForBot.");
+        }
+    }
+    return;
+    
+]]></r:splScript>
+</r:applicationManifest>
