@@ -1,0 +1,21 @@
+' Word 2010
+
+' Work with check in.
+
+' To demonstrate this code, create a new document on a Sharepoint 2010 server.
+' Create a module in the document containing the following code.
+' Place the cursor within the procedure and press F5.
+
+Sub TestCheckInWithVersion()
+    ActiveDocument.Content.InsertAfter "Here is a change!"
+   
+    ' The following code includes parameter names
+    ' to make it clearer what's going on. All the parameters
+    ' are optional, and you don't need to use named
+    ' parameters.
+    ActiveDocument.CheckInWithVersion _
+        SaveChanges:=True, _
+        Comments:="I made some changes to demonstrate checking in.", _
+        MakePublic:=True, _
+        VersionType:=WdCheckInVersionType.wdCheckInMajorVersion
+End Sub
