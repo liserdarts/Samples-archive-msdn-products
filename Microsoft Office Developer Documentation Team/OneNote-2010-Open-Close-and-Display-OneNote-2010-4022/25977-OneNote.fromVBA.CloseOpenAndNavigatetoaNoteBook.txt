@@ -1,0 +1,97 @@
+Option Explicit
+
+' OneNote 2010
+
+' Demonstrates the CloseNotebook, OpenHierarchy, and NavigateTo methods.
+
+' Use any VBA host including Excel 2010, PowerPoint 2010,
+' or Word 2010.
+' OneNote 2010 is not a VBA host.
+
+' In your VBA host, add references to the following
+' external libraries using the Add References dialog:
+' Microsoft OneNote 14.0 Object Library
+' Microsoft XML, v6.0
+
+' The CloseOpenAndNavigateToANoteBook procedure 
+' uses the MSXML library to parse the returned XML from 
+' OneNote to get the list of Notebooks.
+' It then uses information about the first Notebook found
+' to first close it, then re-open it, and finally navigate to the
+' Notebook in a new Window.
+
+' Paste all this code into a module,
+' place the cursor within the
+' CloseOpenAndNavigateToANoteBook procedure,
+' and press F5.
+
+Sub CloseOpenAndNavigateToANoteBook()
+    ' Connect to OneNote 2010.
+    ' OneNote will be started if it's not running.
+    Dim oneNote As OneNote14.Application
+    Set oneNote = New OneNote14.Application
+    
+    ' Get all of the Notebook nodes.
+    Dim nodes As MSXML2.IXMLDOMNodeList
+    Set nodes = GetFirstOneNoteNotebookNodes(oneNote)
+    If Not nodes Is Nothing Then
+        ' Get the first Notebook found.
+        Dim node As MSXML2.IXMLDOMNode
+        Set node = nodes(0)
+        ' Get the Notebook name.
+        Dim noteBookName As String
+        noteBookName = node.Attributes.getNamedItem("name").Text
+        ' Get the Notebook path.
+        Dim noteBookPath As String
+        noteBookPath = node.Attributes.getNamedItem("path").Text
+        ' Get the Notebook ID.
+        Dim notebookID As String
+        notebookID = node.Attributes.getNamedItem("ID").Text
+                
+        MsgBox "Closing notebook " & noteBookName, vbInformation, "Closing"
+        ' Close the selected notebook.
+        oneNote.CloseNotebook notebookID, False
+        
+        MsgBox "Opening notebook " & noteBookName, vbInformation, "Closing"
+        ' Open the notebook that was just closed by
+        ' passing the path to OneNote. In addition, pass a parameter
+        ' to get the new ID for the notebook which could be used
+        ' for other operations.
+        Dim reOpenedID As String
+        oneNote.OpenHierarchy noteBookPath, "", reOpenedID, cftNone
+        
+        ' Using the reOpenedID to navigate to the re-opened Notebook
+        ' and show it in a new Window.
+        oneNote.NavigateTo reOpenedID, "", True
+    Else
+        MsgBox "OneNote 2010 XML data failed to load."
+    End If
+End Sub
+
+Private Function GetAttributeValueFromNode(node As MSXML2.IXMLDOMNode, attributeName As String) As String
+    If node.Attributes.getNamedItem(attributeName) Is Nothing Then
+        GetAttributeValueFromNode = "Not found."
+    Else
+        GetAttributeValueFromNode = node.Attributes.getNamedItem(attributeName).Text
+    End If
+End Function
+
+Private Function GetFirstOneNoteNotebookNodes(oneNote As OneNote14.Application) As MSXML2.IXMLDOMNodeList
+    ' Get the XML that represents the OneNote notebooks available.
+    Dim notebookXml As String
+    ' OneNote fills notebookXml with an XML document providing information
+    ' about what OneNote notebooks are available.
+    ' You want all the data and thus are providing an empty string
+    ' for the bstrStartNodeID parameter.
+    oneNote.GetHierarchy "", hsNotebooks, notebookXml, xs2010
+    
+    ' Use the MSXML Library to parse the XML.
+    Dim doc As MSXML2.DOMDocument
+    Set doc = New MSXML2.DOMDocument
+    
+    If doc.LoadXML(notebookXml) Then
+        Set GetFirstOneNoteNotebookNodes = doc.DocumentElement.SelectNodes("//one:Notebook")
+    Else
+        Set GetFirstOneNoteNotebookNodes = Nothing
+    End If
+End Function
