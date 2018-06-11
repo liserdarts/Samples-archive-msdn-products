@@ -1,0 +1,91 @@
+' Excel 2010
+
+Sub TestDisplayFormat()
+    ' From the documentation:
+    ' Actions such as changing the conditional formatting or
+    ' table style of a range can cause what is displayed in
+    ' the current user interface to be inconsistent with the
+    ' values in the corresponding properties of the Range object.
+    ' Use the properties of the DisplayFormat object to return
+    ' the values as they are displayed in the current user interface.
+       
+    ' In Excel 2010, in a new workbook, copy all this code into
+    ' the Sheet1 class module. Place the cursor in this procedure,
+    ' and then press F5 to run the procedure full speed. Examine
+    ' the formatting of the cells in Excel, and then examine
+    ' the results of running the procedure in the Immediate window.
+       
+    ' This example places some simple data into Sheet1, and
+    ' then applies conditional formatting.
+    ' Then, it compares the values of various
+    ' formatting properties of the range to the
+    ' formatting properties of the Range.DisplayFormat object:
+
+   
+    Range("A1").Value = -20
+    Range("A2").Value = 10
+   
+    Dim rng As Range
+    Set rng = Range("A1:A2")
+   
+    ' Set up the conditional formatting:
+    rng.FormatConditions.Add Type:=xlCellValue, Operator:=xlLess, Formula1:="=0"
+    With rng.FormatConditions(1)
+        With .Font
+            .Bold = True
+            .Italic = True
+            .Color = vbRed
+        End With
+        With .Borders
+            .LineStyle = xlContinuous
+            .Weight = xlThin
+        End With
+        With .Interior
+            .PatternColorIndex = xlAutomatic
+            .Color = vbYellow
+        End With
+    End With
+   
+    ' Now compare formatting information for the range, and
+    ' what it's actually displaying (using the DisplayFormat property).
+    ' Clearly, without the DisplayFormat property, you have no way
+    ' to find out the formatting that appears to the user. The
+    ' DisplayFormat property is an instance of the DisplayFormat class
+    ' and contains many different members. This code only investigates the
+    ' properties that might have been changed by conditional formatting.
+   
+    ' A1 has had conditional formatting changes because it's negative.
+    ' A2 has not.
+    CompareRangeAndDisplayFormat Range("A1")
+    CompareRangeAndDisplayFormat Range("A2")
+End Sub
+
+Private Sub CompareRangeAndDisplayFormat(rng As Range)
+    ' Show off the differences in properties that have been changed
+    ' by conditional formatting:
+    Debug.Print
+    Debug.Print rng.Address & "======"
+    Debug.Print
+    ' Interior color has been modified for negative values. Therefore,
+    ' note that for cells that aren't changed by conditional formatting,
+    ' the range values and the DisplayFormat values are the same. For those
+    ' that have been altered by conditional formatting, they're different.
+    ' This code doesn't check out all the properties; it just works
+    ' through enough to prove that the properties of the Range object
+    ' may not match those of the Range.DisplayFormat object:
+    Debug.Print " rng.Interior.Color: " & rng.Interior.Color
+    Debug.Print " rng.DisplayFormat.Interior.Color: " & rng.DisplayFormat.Interior.Color
+    Debug.Print
+    Debug.Print " rng.Font.Color: " & rng.Font.Color
+    Debug.Print " rng.DisplayFormat.Font.Color: " & rng.DisplayFormat.Font.Color
+    Debug.Print
+    Debug.Print " rng.Font.Italic: " & rng.Font.Italic
+    Debug.Print " rng.DisplayFormat.Font.Italic: " & rng.DisplayFormat.Font.Italic
+    Debug.Print
+    Debug.Print " rng.Font.Color: " & rng.Font.Color
+    Debug.Print " rng.DisplayFormat.Font.Color: " & rng.DisplayFormat.Font.Color
+    Debug.Print
+    Debug.Print " rng.Borders.LineStyle: " & rng.Borders.LineStyle
+    Debug.Print " rng.DisplayFormat.Borders.LineStyle: " & rng.DisplayFormat.Borders.LineStyle
+   
+End Sub
