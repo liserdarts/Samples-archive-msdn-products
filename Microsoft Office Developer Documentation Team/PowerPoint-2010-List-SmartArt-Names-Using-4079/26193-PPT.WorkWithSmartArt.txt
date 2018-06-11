@@ -1,0 +1,75 @@
+' PowerPoint 2010
+
+' Unfortunately, there's no simple way to map from an index
+' in the collection of smart art layouts to the names of the
+' layouts (which you can see in the Insert | SmartArt ribbon item's list
+' of smart art layouts. To get around this, place your cursor
+' into the CreateSmartArtList procedure, and press F5. This
+' procedure lists all the index values and smart art names
+' into the Debug window. Copy this list from the Debug window
+' to a text file, and use it for reference.
+
+Sub CreateSmartArtList()
+    Dim i As Integer
+    For i = 1 To Application.SmartArtLayouts.Count
+        Debug.Print i, Application.SmartArtLayouts(i).Name
+    Next i
+End Sub
+
+
+' Place the cursor in the following procedure, and press F8 (and then Shift+F8)
+' to single step through the code (press Shift+F8 to step over the
+' calls to the CreateSmartArt procedure, unless you want to step
+' through it several times. Go through it at least once to see the
+' AddSmartArt method at work.
+
+' Once you're done, note the shapes in the first slide, and then look in the
+' Immediate window to see the output results.
+Sub DemonstrateSmartArt()
+    With ActivePresentation.Slides(1)
+        Dim i As Integer
+        ' Clear out existing shapes:
+        For i = .Shapes.Count To 1 Step -1
+            .Shapes(i).Delete
+        Next i
+       
+        Dim shp As Shape
+       
+        Call CreateSmartArt(1, 10, 10, 100, 100)
+        Call .Shapes.AddShape(msoShape12pointStar, 10, 120, 100, 100)
+        Call CreateSmartArt(4, 120, 10, 100, 100)
+        Call .Shapes.AddShape(msoShapeCloud, 120, 120, 100, 100)
+        Call CreateSmartArt(13, 240, 10, 400, 100)
+       
+        For Each shp In .Shapes
+            Debug.Print "Shape " & i & " has smart art: " & shp.HasSmartArt
+        Next shp
+       
+        ' We know that shape 1 has smart art--copy it to a new shape.
+        Call .Shapes.AddSmartArt(.Shapes(1).SmartArt.Layout, 360, 120, 100, 100)
+       
+    End With
+End Sub
+
+Sub CreateSmartArt(smartArtLayoutID As Integer, left As Integer, top As Integer, _
+  width As Integer, height As Integer)
+   
+    ' Create Basic Blocks SmartArt
+    Dim shp As Shape
+    Set shp = ActivePresentation.Slides(1).Shapes. _
+      AddSmartArt(Application.SmartArtLayouts(smartArtLayoutID), left, top)
+    shp.width = width
+    shp.height = height
+    Dim i As Integer
+    With shp.SmartArt
+        ' Add some nodes, then set the text for all of them.
+        .Nodes.Add
+        .Nodes.Add
+        .Nodes.Add
+        .Nodes.Add
+        For i = 1 To .Nodes.Count
+            .Nodes(i).TextFrame2.TextRange.Text = "Cell " & i
+        Next i
+    End With
+    Set CreateBasicBlocks = shp
+End Sub
