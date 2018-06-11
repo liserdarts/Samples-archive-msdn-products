@@ -1,0 +1,88 @@
+Option Explicit
+
+' Visio 2010
+
+' Demonstrate the SetRasterExportSize and GetRasterExportSize methods.
+
+' Visio 2010 has two new methods to read and write
+' Raster Export Size settings used by
+' Visio when exporting documents to non-Visio raster
+' file formats.
+'
+' To run this demo, open Visio 2010 and create a blank document.
+' Open the VBA editor and paste this code into the existing 
+' ThisDocument module.
+' With the cursor inside the ReadAndWriteRasterExportSize
+' method, press F5.
+
+Sub ReadAndWriteRasterExportSize()
+    ' Access the Visio ApplicationSettings object.
+    Dim appSettings As Visio.ApplicationSettings
+    Set appSettings = Application.Settings
+   
+    ' Write out current Raster Export Resolution settings.
+    Debug.Print "*** Current Settings"
+    WriteOutCurrentExportSize appSettings
+    
+    ' Use the new SetRasterExportSize method
+    ' to change the current Raster Export Resolution settings
+    ' to a custom setting of a 4x5 inch document size.
+    appSettings.SetRasterExportSize visRasterFitToCustomSize, 4, 5, visRasterInch
+    
+    ' Write out the Raster Export Size settings
+    ' after changing the values to a custom setting.
+    Debug.Print "*** Settings after changing"
+    WriteOutCurrentExportSize appSettings
+    
+    ' Reset the Raster Export Size settings
+    ' to the default (the source).
+    appSettings.SetRasterExportSize visRasterFitToSourceSize
+    
+    ' Write out current settings after changing
+    ' the values back to the default.
+    Debug.Print "*** Settings after resetting"
+    WriteOutCurrentExportSize appSettings
+End Sub
+
+Private Sub WriteOutCurrentExportSize(appSettings As Visio.ApplicationSettings)
+    Dim expSize As VisRasterExportSize
+    Dim width As Double
+    Dim height As Double
+    Dim units As VisRasterExportSizeUnits
+    
+    ' GetRasterExportSize is a new method to
+    ' let you access the Raster Export Size data.
+    appSettings.GetRasterExportSize expSize, width, height, units
+    
+    Debug.Print expSize
+    Debug.Print width
+    Debug.Print height
+    Debug.Print units
+    
+    ' Figure out what value was returned for
+    ' VisRasterExportSize and write out
+    ' information to the Immediate Window.
+   Select Case expSize
+        Case VisRasterExportSize.visRasterFitToScreenSize
+            Debug.Print "Export Size: visRasterFitToScreenSize"
+        Case VisRasterExportSize.visRasterFitToPrinterSize
+            Debug.Print "Export Size: visRasterFitToPrinterSize"
+        Case VisRasterExportSize.visRasterFitToSourceSize
+            Debug.Print "Export Size: visRasterFitToSourceSize"
+        Case VisRasterExportSize.visRasterFitToCustomSize
+            Debug.Print "Export Size: visRasterFitToCustomSize"
+            ' Only if the VisRasterExportSize value is visRasterFitToCustomSize
+            ' will the other values return something other than null.
+            Debug.Print "Width: " & width
+            Debug.Print "Height: " & height
+            
+            Select Case units
+                Case VisRasterExportSizeUnits.visRasterInch
+                    Debug.Print "Export Size Units: visRasterInch"
+                Case VisRasterExportSizeUnits.visRasterCm
+                    Debug.Print "Export Size Units: visRasterCm"
+                Case VisRasterExportSizeUnits.visRasterPixel
+                    Debug.Print "Export Size Units: visRasterPixel"
+            End Select
+    End Select
+End Sub
