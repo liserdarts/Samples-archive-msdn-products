@@ -1,0 +1,44 @@
+' Excel 2010
+
+' Work with the CustomView and WorksheetView classes.
+
+' In Excel 2010, in a new workbook, copy all this code into
+' the Sheet1 class module. Place the cursor in the
+' TestWorksheetView procedure, and then press F8 to
+' single-step through the code. You'll be able to see the
+' behavior better if you arrange the VBA and Excel windows
+' side by side.
+
+
+Sub TestWorksheetView()
+  Dim wnd As Window
+  Set wnd = ActiveWindow
+ 
+  Dim wbk As Workbook
+  Set wbk = ActiveWorkbook
+ 
+  Dim cv1 As CustomView
+  Dim cv2 As CustomView
+  ' Create a new view, using the print settings and row/col settings from the workbook.
+  Set cv1 = wbk.CustomViews.Add("View1", True, True)
+  ' Create a new view, bypassing the print settings and row/col settings from the workbook.
+  Set cv2 = wbk.CustomViews.Add("View2", False, False)
+ 
+  ' Create a worksheet view, and then
+  ' turn off some display settings:
+  Dim wsv As WorksheetView
+  Set wsv = wnd.SheetViews(1)
+ 
+  ' Display formulas and zeros, but hide
+  ' gridlines, headings, and outlines:
+  wsv.DisplayFormulas = True
+  wsv.DisplayGridlines = False
+  wsv.DisplayHeadings = False
+  wsv.DisplayOutline = False
+  wsv.DisplayZeros = True
+ 
+  ' Display the view that doesn't take into account the current
+  ' print or row/col settings. This puts back the row/col settings:
+  cv2.Show
+End Sub
+
