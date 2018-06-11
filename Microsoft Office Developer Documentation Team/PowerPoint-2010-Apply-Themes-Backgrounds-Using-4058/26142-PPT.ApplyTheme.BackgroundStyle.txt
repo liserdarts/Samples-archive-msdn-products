@@ -1,0 +1,52 @@
+' PowerPoint 2010 and 2007
+
+' Use this procedure to demonstrate working with the ApplyTheme method
+' and the BackgroundStyle property.
+
+' Copy this code into a module in a new presentation.
+' Display the VBA window side-by-side with the PowerPoint window
+' and press F8 to single step through this
+' code for the most effective use of this demonstration.
+
+Sub TestBackgroundStyle()
+    Dim sld As Slide
+    Set sld = ActivePresentation.Slides(1)
+   
+   
+    ' Modify this to match your own environment:
+    Const themePath As String = "C:\Program Files (x86)\Microsoft Office\Document Themes 14\"
+    Const themeName1 As String = themePath & "Angles.thmx"
+    Const themeName2 As String = themePath & "Perspective.thmx"
+    Const themeName3 As String = themePath & "Waveform.thmx"
+   
+    ActivePresentation.ApplyTheme themeName1
+    CycleThroughStyles sld
+   
+    ActivePresentation.ApplyTheme themeName2
+    CycleThroughStyles sld
+
+    ActivePresentation.ApplyTheme themeName3
+    CycleThroughStyles sld
+End Sub
+
+Private Sub CycleThroughStyles(sld As Slide)
+    ' This exercise will only be meaningful if you single step through this code.
+    ' Each style looks slightly different:
+    sld.BackgroundStyle = msoBackgroundStylePreset1
+    sld.BackgroundStyle = msoBackgroundStylePreset2
+    sld.BackgroundStyle = msoBackgroundStylePreset3
+    sld.BackgroundStyle = msoBackgroundStylePreset4
+    sld.BackgroundStyle = msoBackgroundStylePreset5
+    sld.BackgroundStyle = msoBackgroundStylePreset6
+    sld.BackgroundStyle = msoBackgroundStylePreset7
+    sld.BackgroundStyle = msoBackgroundStylePreset8
+    sld.BackgroundStyle = msoBackgroundStylePreset9
+    sld.BackgroundStyle = msoBackgroundStylePreset10
+    sld.BackgroundStyle = msoBackgroundStylePreset11
+    sld.BackgroundStyle = msoBackgroundStylePreset12
+   
+    ' Note that these options are not valid:
+    ' sld.BackgroundStyle = msoBackgroundStyleMixed
+    ' sld.BackgroundStyle = msoBackgroundStyleNotAPreset
+   
+End Sub
