@@ -1,0 +1,54 @@
+' PowerPoint 2010
+
+' Place this code into a module in a new presentation.
+' On the first slide, add a video (on the Insert tab, in the Media Group,
+' select Video and then Video from File). Play the video to ensure
+' everything works, and then place your cursor in the following
+' procedure. Single step through the code, if you like.
+
+Sub ResampleDemo()
+    ' This code works through every shape on the
+    ' first slide in the presentation, and for each
+    ' video it finds, resamples the video to 240x320. If
+    ' the resampling succeeds, the code resizes the video
+    ' shape to match the new resolution.
+    Dim shp As Shape
+    For Each shp In ActivePresentation.Slides(1).Shapes
+        ' Is it a media shape?
+        If shp.Type = msoMedia Then
+            Debug.Print "Media Element: " & shp.Name
+           
+            Dim newWidth As Integer
+            Dim newHeight As Integer
+            newHeight = 240
+            newWidth = 320
+            ' You can specify other parameters, as well, indicating
+            ' the video frame rate, the audio sampling rate, and the
+            ' video bit rate. For now, just resample and reset
+            ' the resolution--the lower the resolution, the smaller the video
+            ' content.
+            shp.MediaFormat.Resample True, newHeight, newWidth
+            Do
+                DoEvents
+                Pause 1
+                Debug.Print "Resample status: " & shp.MediaFormat.ResamplingStatus
+            Loop While shp.MediaFormat.ResamplingStatus = ppMediaTaskStatusInProgress
+            Debug.Print "Resample status: " & shp.MediaFormat.ResamplingStatus
+            If shp.MediaFormat.ResamplingStatus = ppMediaTaskStatusDone Then
+                shp.Width = newWidth
+                shp.Height = newHeight
+            End If
+        End If
+    Next shp
+End Sub
+
+Function Pause(numberOfSeconds As Variant)
+    Dim startTime, endTime As Variant
+
+    startTime = Timer
+    endTime = startTime + numberOfSeconds
+  
+    Do While Timer < endTime
+        DoEvents
+    Loop
+End Function
