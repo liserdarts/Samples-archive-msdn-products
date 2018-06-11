@@ -1,0 +1,23 @@
+<Trace Tag="EwsResponse" Tid="9" Time="2012-05-24 01:11:08Z" Version="14.03.0032.000">
+  <?xml version="1.0" encoding="utf-8"?>
+  <s:Envelope xmlns:s="http://schemas.xmlsoap.org/soap/envelope/">
+    <s:Header>
+      <h:ServerVersionInfo MajorVersion="14" MinorVersion="16" MajorBuildNumber="152" MinorBuildNumber="2" Version="Exchange2010_SP2" xmlns:h="http://schemas.microsoft.com/exchange/services/2006/types" xmlns="http://schemas.microsoft.com/exchange/services/2006/types" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" />
+    </s:Header>
+    <s:Body xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+      <m:GetFolderResponse xmlns:m="http://schemas.microsoft.com/exchange/services/2006/messages" xmlns:t="http://schemas.microsoft.com/exchange/services/2006/types">
+        <m:ResponseMessages>
+          <m:GetFolderResponseMessage ResponseClass="Success">
+            <m:ResponseCode>NoError</m:ResponseCode>
+            <m:Folders>
+              <t:ContactsFolder>
+                <t:FolderId Id="AAMkADZhMmZiNmZiLTliZmUtNGJmZi1iZjk1LTJhZDI1M2Y4MDU5NAAuAAAAAAAqjKLJ2bSLS5N77s9xdxRUAQCI1MayN/6FTZoUW3wKxxqaAAACbNE+AAA=" ChangeKey="AwAAABYAAAB9bvCrJu/IRLgRVUD0xWMUAAAAAwLv" />
+                <t:TotalCount>44</t:TotalCount>
+              </t:ContactsFolder>
+            </m:Folders>
+          </m:GetFolderResponseMessage>
+        </m:ResponseMessages>
+      </m:GetFolderResponse>
+    </s:Body>
+  </s:Envelope>
+</Trace>

@@ -1,0 +1,31 @@
+<Trace Tag="AutodiscoverResponse" Tid="9" Time="2012-05-24 01:11:03Z" Version="14.03.0032.000">
+  <s:Envelope xmlns:s="http://schemas.xmlsoap.org/soap/envelope/" xmlns:a="http://www.w3.org/2005/08/addressing">
+    <s:Header>
+      <a:Action s:mustUnderstand="1">http://schemas.microsoft.com/exchange/2010/Autodiscover/Autodiscover/GetUserSettingsResponse</a:Action>
+      <h:ServerVersionInfo xmlns:h="http://schemas.microsoft.com/exchange/2010/Autodiscover" xmlns:i="http://www.w3.org/2001/XMLSchema-instance">
+        <h:MajorVersion>14</h:MajorVersion>
+        <h:MinorVersion>2</h:MinorVersion>
+        <h:MajorBuildNumber>298</h:MajorBuildNumber>
+        <h:MinorBuildNumber>5</h:MinorBuildNumber>
+        <h:Version>Exchange2010_SP2</h:Version>
+      </h:ServerVersionInfo>
+    </s:Header>
+    <s:Body>
+      <GetUserSettingsResponseMessage xmlns="http://schemas.microsoft.com/exchange/2010/Autodiscover">
+        <Response xmlns:i="http://www.w3.org/2001/XMLSchema-instance">
+          <ErrorCode>NoError</ErrorCode>
+          <ErrorMessage />
+          <UserResponses>
+            <UserResponse>
+              <ErrorCode>RedirectAddress</ErrorCode>
+              <ErrorMessage>Redirection address.</ErrorMessage>
+              <RedirectTarget>robkn@service.microsoft.com</RedirectTarget>
+              <UserSettingErrors />
+              <UserSettings />
+            </UserResponse>
+          </UserResponses>
+        </Response>
+      </GetUserSettingsResponseMessage>
+    </s:Body>
+  </s:Envelope>
+</Trace>

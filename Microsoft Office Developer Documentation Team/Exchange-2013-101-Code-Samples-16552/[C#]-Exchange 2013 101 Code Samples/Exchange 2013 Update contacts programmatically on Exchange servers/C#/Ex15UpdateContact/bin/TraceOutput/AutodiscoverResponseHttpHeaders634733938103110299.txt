@@ -1,0 +1,14 @@
+<Trace Tag="AutodiscoverResponseHttpHeaders" Tid="9" Time="2012-05-24 01:16:50Z">
+200 OK
+Transfer-Encoding: chunked
+RequestId: 8c20ae66-3266-48f2-b539-16a62ca3db6a
+X-DiagInfo: CH1PRD0310CA014
+Cache-Control: private
+Content-Type: text/xml; charset=utf-8
+Date: Thu, 24 May 2012 01:16:49 GMT
+Server: Microsoft-IIS/7.5
+X-AspNet-Version: 2.0.50727
+X-Powered-By: ASP.NET
+
+
+</Trace>

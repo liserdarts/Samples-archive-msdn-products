@@ -1,0 +1,30 @@
+<Trace Tag="EwsRequest" Tid="9" Time="2012-05-24 01:11:08Z" Version="14.03.0032.000">
+  <?xml version="1.0" encoding="utf-8"?>
+  <soap:Envelope xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:m="http://schemas.microsoft.com/exchange/services/2006/messages" xmlns:t="http://schemas.microsoft.com/exchange/services/2006/types" xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/">
+    <soap:Header>
+      <t:RequestServerVersion Version="Exchange2010_SP2" />
+    </soap:Header>
+    <soap:Body>
+      <m:FindItem Traversal="Shallow">
+        <m:ItemShape>
+          <t:BaseShape>IdOnly</t:BaseShape>
+          <t:AdditionalProperties>
+            <t:FieldURI FieldURI="contacts:DisplayName" />
+          </t:AdditionalProperties>
+        </m:ItemShape>
+        <m:IndexedPageItemView MaxEntriesReturned="44" Offset="0" BasePoint="Beginning" />
+        <m:Restriction>
+          <t:IsEqualTo>
+            <t:FieldURI FieldURI="contacts:DisplayName" />
+            <t:FieldURIOrConstant>
+              <t:Constant Value="Brian Johnson" />
+            </t:FieldURIOrConstant>
+          </t:IsEqualTo>
+        </m:Restriction>
+        <m:ParentFolderIds>
+          <t:DistinguishedFolderId Id="contacts" />
+        </m:ParentFolderIds>
+      </m:FindItem>
+    </soap:Body>
+  </soap:Envelope>
+</Trace>

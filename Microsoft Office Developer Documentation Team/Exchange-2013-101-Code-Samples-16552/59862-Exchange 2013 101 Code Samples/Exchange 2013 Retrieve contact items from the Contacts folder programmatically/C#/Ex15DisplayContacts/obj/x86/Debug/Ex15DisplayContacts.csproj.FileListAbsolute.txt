@@ -1,0 +1,13 @@
+C:\E15SDK\Exchange 101\Ex15DisplayContacts\bin\Debug\Ex15DisplayContacts.exe.config
+C:\E15SDK\Exchange 101\Ex15DisplayContacts\bin\Debug\Ex15DisplayContacts.exe
+C:\E15SDK\Exchange 101\Ex15DisplayContacts\bin\Debug\Ex15DisplayContacts.pdb
+C:\E15SDK\Exchange 101\Ex15DisplayContacts\bin\Debug\Authentication.dll
+C:\E15SDK\Exchange 101\Ex15DisplayContacts\bin\Debug\Microsoft.Exchange.WebServices.dll
+C:\E15SDK\Exchange 101\Ex15DisplayContacts\bin\Debug\Authentication.pdb
+C:\E15SDK\Exchange 101\Ex15DisplayContacts\bin\Debug\Microsoft.Exchange.WebServices.xml
+C:\E15SDK\Exchange 101\Ex15DisplayContacts\obj\x86\Debug\ResolveAssemblyReference.cache
+C:\E15SDK\Exchange 101\Ex15DisplayContacts\obj\x86\Debug\Ex15DisplayContacts.exe
+C:\E15SDK\Exchange 101\Ex15DisplayContacts\obj\x86\Debug\Ex15DisplayContacts.pdb
+C:\E15SDK\Exchange 101\Individual Solutions\DisplayContacts\Ex15DisplayContacts\bin\Debug\Ex15DisplayContacts.exe.config
+C:\E15SDK\Exchange 101\Individual Solutions\DisplayContacts\Ex15DisplayContacts\obj\x86\Debug\Ex15DisplayContacts.exe
+C:\E15SDK\Exchange 101\Individual Solutions\DisplayContacts\Ex15DisplayContacts\obj\x86\Debug\Ex15DisplayContacts.pdb

@@ -1,0 +1,1 @@
+C:\E15SDK\Exchange 101\Ex15_ExpandDistributionLists_CS\bin\Debug\DistributionLists.exe.config

@@ -1,0 +1,9 @@
+<Trace Tag="EwsRequestHttpHeaders" Tid="9" Time="2012-05-24 01:19:34Z">
+POST /EWS/Exchange.asmx HTTP/1.1
+Content-Type: text/xml; charset=utf-8
+Accept: text/xml
+User-Agent: ExchangeServicesClient/14.03.0032.000
+Accept-Encoding: gzip,deflate
+
+
+</Trace>

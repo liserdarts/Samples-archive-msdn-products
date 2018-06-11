@@ -1,0 +1,1 @@
+D:\SourceControl\E15SDK\Exchange 101\Ex15_UpdateDelegates_CS\bin\Debug\Ex15_AddDelegates_CS.exe.config

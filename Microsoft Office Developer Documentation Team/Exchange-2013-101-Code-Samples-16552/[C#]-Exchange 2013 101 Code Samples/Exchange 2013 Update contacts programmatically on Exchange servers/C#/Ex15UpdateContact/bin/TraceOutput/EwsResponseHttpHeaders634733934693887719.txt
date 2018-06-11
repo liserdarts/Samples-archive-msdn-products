@@ -1,0 +1,18 @@
+<Trace Tag="EwsResponseHttpHeaders" Tid="9" Time="2012-05-24 01:11:09Z">
+200 OK
+Transfer-Encoding: chunked
+Content-Encoding: gzip
+Vary: Accept-Encoding
+RequestId: 6865d335-9e17-4660-961b-7cb6f2c2ba46
+Persistent-Auth: true
+X-DiagInfo: CH1PRD0310CA002
+Cache-Control: private
+Content-Type: text/xml; charset=utf-8
+Date: Thu, 24 May 2012 01:11:09 GMT
+Set-Cookie: exchangecookie=1d7def9083054cd0a5784be400079181; path=/
+Server: Microsoft-IIS/7.5
+X-AspNet-Version: 2.0.50727
+X-Powered-By: ASP.NET
+
+
+</Trace>
