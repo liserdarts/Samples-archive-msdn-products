@@ -1,0 +1,15 @@
+I:\DropBox\My Dropbox\Office 2010 VHTs\Aug2010\VHT4--ConvertDOCXtoDOCM\Demo\ConvertDOCXtoDOCM\ConvertDOCXtoDOCM\obj\x86\Debug\ResolveAssemblyReference.cache
+I:\DropBox\My Dropbox\Office 2010 VHTs\Aug2010\VHT4--ConvertDOCXtoDOCM\Demo\ConvertDOCXtoDOCM\ConvertDOCXtoDOCM\bin\Debug\ConvertDOCXtoDOCM.exe
+I:\DropBox\My Dropbox\Office 2010 VHTs\Aug2010\VHT4--ConvertDOCXtoDOCM\Demo\ConvertDOCXtoDOCM\ConvertDOCXtoDOCM\bin\Debug\ConvertDOCXtoDOCM.pdb
+I:\DropBox\My Dropbox\Office 2010 VHTs\Aug2010\VHT4--ConvertDOCXtoDOCM\Demo\ConvertDOCXtoDOCM\ConvertDOCXtoDOCM\obj\x86\Debug\ConvertDOCXtoDOCM.exe
+I:\DropBox\My Dropbox\Office 2010 VHTs\Aug2010\VHT4--ConvertDOCXtoDOCM\Demo\ConvertDOCXtoDOCM\ConvertDOCXtoDOCM\obj\x86\Debug\ConvertDOCXtoDOCM.pdb
+I:\DropBox\My Dropbox\Office 2010 VHTs\Aug2010\VHT4--ConvertDOCXtoDOCM\Demo\CS\ConvertDOCXtoDOCM\ConvertDOCXtoDOCM\obj\x86\Debug\ConvertDOCXtoDOCM.exe
+I:\DropBox\My Dropbox\Office 2010 VHTs\Aug2010\VHT4--ConvertDOCXtoDOCM\Demo\CS\ConvertDOCXtoDOCM\ConvertDOCXtoDOCM\obj\x86\Debug\ConvertDOCXtoDOCM.pdb
+I:\DropBox\My Dropbox\Office 2010 VHTs\Aug2010\VHT4--ConvertDOCXtoDOCM\Demo\CS\ConvertDOCXtoDOCM\ConvertDOCXtoDOCM\bin\Debug\ConvertDOCXtoDOCM.exe
+I:\DropBox\My Dropbox\Office 2010 VHTs\Aug2010\VHT4--ConvertDOCXtoDOCM\Demo\CS\ConvertDOCXtoDOCM\ConvertDOCXtoDOCM\bin\Debug\ConvertDOCXtoDOCM.pdb
+I:\DropBox\My Dropbox\Office 2010 VHTs\Aug2010\VHT4--ConvertDOCXtoDOCM\Demo\CS\ConvertDOCXtoDOCM\ConvertDOCXtoDOCM\obj\x86\Debug\ResolveAssemblyReference.cache
+I:\DropBox\My Dropbox\Office 2010 VHTs\Aug2010\VHT 4--ConvertDOCXtoDOCM\Demo\CS\ConvertDOCXtoDOCM\ConvertDOCXtoDOCM\obj\x86\Debug\ConvertDOCXtoDOCM.exe
+I:\DropBox\My Dropbox\Office 2010 VHTs\Aug2010\VHT 4--ConvertDOCXtoDOCM\Demo\CS\ConvertDOCXtoDOCM\ConvertDOCXtoDOCM\obj\x86\Debug\ConvertDOCXtoDOCM.pdb
+I:\DropBox\My Dropbox\Office 2010 VHTs\Aug2010\VHT 4--ConvertDOCXtoDOCM\Demo\CS\ConvertDOCXtoDOCM\ConvertDOCXtoDOCM\bin\Debug\ConvertDOCXtoDOCM.exe
+I:\DropBox\My Dropbox\Office 2010 VHTs\Aug2010\VHT 4--ConvertDOCXtoDOCM\Demo\CS\ConvertDOCXtoDOCM\ConvertDOCXtoDOCM\bin\Debug\ConvertDOCXtoDOCM.pdb
+I:\DropBox\My Dropbox\Office 2010 VHTs\Aug2010\VHT 4--ConvertDOCXtoDOCM\Demo\CS\ConvertDOCXtoDOCM\ConvertDOCXtoDOCM\obj\x86\Debug\ResolveAssemblyReference.cache
