@@ -1,0 +1,5 @@
+C:\Users\alibad\Desktop\DocumentTracking\DocumentTracking\bin\Debug\DocumentTracking.dll
+C:\Users\alibad\Desktop\DocumentTracking\DocumentTracking\bin\Debug\DocumentTracking.pdb
+C:\Users\alibad\Desktop\DocumentTracking\DocumentTracking\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\alibad\Desktop\DocumentTracking\DocumentTracking\obj\Debug\DocumentTracking.dll
+C:\Users\alibad\Desktop\DocumentTracking\DocumentTracking\obj\Debug\DocumentTracking.pdb

@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Solution xmlns="http://schemas.microsoft.com/sharepoint/" SolutionId="63c12c1b-28c2-491e-918a-7793e2c6eaca" SharePointProductVersion="14.0">
+  <Assemblies>
+    <Assembly Location="DocumentTracking.dll" DeploymentTarget="GlobalAssemblyCache" />
+  </Assemblies>
+  <FeatureManifests>
+    <FeatureManifest Location="DocumentTracking_Feature1\Feature.xml" />
+  </FeatureManifests>
+</Solution>

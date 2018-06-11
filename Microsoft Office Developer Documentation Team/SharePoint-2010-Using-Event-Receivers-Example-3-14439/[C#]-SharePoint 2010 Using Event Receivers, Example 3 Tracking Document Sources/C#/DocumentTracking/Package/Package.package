@@ -1,0 +1,6 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package dslVersion="1.0.0.0" Id="63c12c1b-28c2-491e-918a-7793e2c6eaca" solutionId="63c12c1b-28c2-491e-918a-7793e2c6eaca" xmlns="http://schemas.microsoft.com/VisualStudio/2008/SharePointTools/PackageModel" name="DocumentTracking">
+    <features>
+        <featureReference itemId="87e98679-1038-4722-957e-c9414c389aa7" />
+    </features>
+</package>
