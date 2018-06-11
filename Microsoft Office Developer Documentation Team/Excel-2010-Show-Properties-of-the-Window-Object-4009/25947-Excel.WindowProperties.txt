@@ -1,0 +1,72 @@
+' Excel 2010/2007
+   
+' Examine some of the Window properties to include
+' ActiveSheetView, DisplayRuler, DisplayWhiteSpace
+
+' In Excel 2010, in a new workbook, copy all this code into
+' the Sheet1 class module. Place the cursor in the
+' WindowPropertiesDemo procedure, and then press F8 to
+' single-step through the code. Arrange the VBA and Excel windows
+' side by side so you can follow the instructions in the comments.
+
+Sub WindowPropertiesDemo()
+
+    Range("A1", "F10").Formula = "=RANDBETWEEN(1, 100)"
+    Range("G1", "G10").Value = 0
+   
+    Dim wnd As Window
+    Set wnd = ActiveWindow
+   
+    ' Retrieve a reference to the active sheet view:
+    Dim view As WorksheetView
+    Set view = wnd.ActiveSheetView
+   
+    Dim doDisplayFormulas As Boolean
+    Dim doDisplayGridLines As Boolean
+    Dim doDisplayHeadings As Boolean
+    Dim doDisplayZeros As Boolean
+   
+    ' Store away the original values.
+    doDisplayFormulas = view.DisplayFormulas
+    doDisplayGridLines = view.DisplayGridlines
+    doDisplayHeadings = view.DisplayHeadings
+    doDisplayZeros = view.DisplayZeros
+   
+    ' Change the settings for the active sheet view:
+    view.DisplayFormulas = Not view.DisplayFormulas
+    view.DisplayGridlines = Not view.DisplayGridlines
+    view.DisplayHeadings = Not view.DisplayHeadings
+    view.DisplayZeros = Not view.DisplayZeros
+   
+    ' Put things back the way they were originally.
+    view.DisplayFormulas = doDisplayFormulas
+    view.DisplayGridlines = doDisplayGridLines
+    view.DisplayHeadings = doDisplayHeadings
+    view.DisplayZeros = doDisplayZeros
+   
+    ' The DisplayRuler and DisplayWhiteSpace properties
+    ' only have an effect in Page Layout view.
+       
+    ' Store away the current view.
+    Dim currentView As XlWindowView
+    currentView = wnd.view
+   
+    ' Make sure the current window is in Page Layout view.
+    wnd.view = xlPageLayoutView
+   
+    ' Store away the current values:
+    Dim currentDisplayRuler As Boolean
+    Dim currentDisplayWhiteSpace As Boolean
+   
+    currentDisplayRuler = wnd.DisplayRuler
+    currentDisplayWhiteSpace = wnd.DisplayWhitespace
+   
+    ' Set the properties to the opposite of their current state:
+    wnd.DisplayRuler = Not wnd.DisplayRuler
+    wnd.DisplayWhitespace = Not wnd.DisplayWhitespace
+   
+    ' Put things back:
+    wnd.DisplayRuler = currentDisplayRuler
+    wnd.DisplayWhitespace = currentDisplayWhiteSpace
+    wnd.view = currentView
+End Sub
