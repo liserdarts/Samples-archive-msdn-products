@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">
+  <Module Name="MusicBrainzSilverlightApplication">
+    <File Path="MusicBrainzSilverlightApplication\MusicBrainzSilverlightApplication.xap" Url="SiteAssets/MusicBrainzSilverlightApplication.xap" />
+  </Module>
+</Elements>
+

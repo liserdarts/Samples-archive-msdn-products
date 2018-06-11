@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<webParts>
+  <webPart xmlns="http://schemas.microsoft.com/WebPart/v3">
+    <metaData>
+      <type name="MusicBrainzSharePoint.SandboxedVisualWebPart1.vstemplate.SandboxedVisualWebPart1, MusicBrainzSharePoint, Version=1.0.0.0, Culture=neutral, PublicKeyToken=0e7cadb4616debc8" />
+      <importErrorMessage>$Resources:core,ImportErrorMessage;</importErrorMessage>
+    </metaData>
+    <data>
+      <properties>
+        <property name="Title" type="string">MusicBrainz Silverlight Web Part</property>
+        <property name="Description" type="string">MusicBrainz Silverlight Web Part</property>
+      </properties>
+    </data>
+  </webPart>
+</webParts>

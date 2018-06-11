@@ -1,0 +1,5 @@
+C:\Demos\22_Silverlight\MusicBrainzSolution\MusicBrainzSharePoint\bin\Debug\MusicBrainzSharePoint.dll
+C:\Demos\22_Silverlight\MusicBrainzSolution\MusicBrainzSharePoint\bin\Debug\MusicBrainzSharePoint.pdb
+C:\Demos\22_Silverlight\MusicBrainzSolution\MusicBrainzSharePoint\obj\Debug\ResolveAssemblyReference.cache
+C:\Demos\22_Silverlight\MusicBrainzSolution\MusicBrainzSharePoint\obj\Debug\MusicBrainzSharePoint.dll
+C:\Demos\22_Silverlight\MusicBrainzSolution\MusicBrainzSharePoint\obj\Debug\MusicBrainzSharePoint.pdb

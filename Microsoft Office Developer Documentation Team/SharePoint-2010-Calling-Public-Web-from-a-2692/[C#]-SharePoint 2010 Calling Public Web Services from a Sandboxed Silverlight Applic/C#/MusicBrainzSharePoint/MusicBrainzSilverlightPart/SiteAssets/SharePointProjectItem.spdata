@@ -1,0 +1,7 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ProjectItem Type="Microsoft.VisualStudio.SharePoint.Module" DefaultFile="Elements.xml" SupportedTrustLevels="All" SupportedDeploymentScopes="Web, Site" xmlns="http://schemas.microsoft.com/VisualStudio/2010/SharePointTools/SharePointProjectItemModel">
+  <Files>
+    <ProjectItemFile Source="Elements.xml" Target="MusicBrainzSilverlightApplication\" Type="ElementManifest" />
+    <ProjectOutputFile ProjectId="1ba1648d-c4ff-4289-9f5c-5a60652eb9a1" ProjectPath="..\MusicBrainzSilverlightApplication\MusicBrainzSilverlightApplication.csproj" Target="MusicBrainzSilverlightApplication\" Type="ElementFile" />
+  </Files>
+</ProjectItem>

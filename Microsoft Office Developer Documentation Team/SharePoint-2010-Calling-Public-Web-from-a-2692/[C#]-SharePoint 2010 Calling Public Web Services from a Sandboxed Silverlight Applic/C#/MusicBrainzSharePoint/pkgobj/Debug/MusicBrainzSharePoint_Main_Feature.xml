@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Feature xmlns="http://schemas.microsoft.com/sharepoint/" Id="046751ec-ec1b-4b7e-8ce5-a350f700278f" Scope="Site" Title="MusicBrainzSharePoint Feature1">
+  <ElementManifests>
+    <ElementManifest Location="MusicBrainzSandboxedVisualWebPart\Elements.xml" />
+    <ElementFile Location="MusicBrainzSandboxedVisualWebPart\MusicBrainzSandboxedVisualWebPart.webpart" />
+    <ElementManifest Location="MusicBrainzSilverlightApplication\Elements.xml" />
+    <ElementFile Location="MusicBrainzSilverlightApplication\MusicBrainzSilverlightApplication.xap" />
+    <ElementManifest Location="SitePages\Elements.xml" />
+    <ElementFile Location="SitePages\MusicBrainzSilverlightApplicationWebPartPage.aspx" />
+  </ElementManifests>
+</Feature>
