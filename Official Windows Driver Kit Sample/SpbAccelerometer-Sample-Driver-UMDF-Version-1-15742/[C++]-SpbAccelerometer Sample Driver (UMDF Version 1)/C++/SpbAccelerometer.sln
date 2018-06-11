@@ -1,0 +1,43 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0
+MinimumVisualStudioVersion = 12.0
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Package", "Package", "{5725B490-60F6-448C-955C-88BB508CF6D7}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "package", "Package\package.VcxProj", "{C0BF4C2B-D248-4382-9219-36FFE18B4E38}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "SpbAccelerometer", "SpbAccelerometer.vcxproj", "{B3F6B6E7-0AE8-4ABC-8B50-6D882BE331CD}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Win8.1 Debug|Win32 = Win8.1 Debug|Win32
+		Win8.1 Debug|x64 = Win8.1 Debug|x64
+		Win8.1 Release|Win32 = Win8.1 Release|Win32
+		Win8.1 Release|x64 = Win8.1 Release|x64
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{C0BF4C2B-D248-4382-9219-36FFE18B4E38}.Win8.1 Debug|Win32.ActiveCfg = Win8.1 Debug|Win32
+		{C0BF4C2B-D248-4382-9219-36FFE18B4E38}.Win8.1 Debug|Win32.Build.0 = Win8.1 Debug|Win32
+		{C0BF4C2B-D248-4382-9219-36FFE18B4E38}.Win8.1 Debug|x64.ActiveCfg = Win8.1 Debug|x64
+		{C0BF4C2B-D248-4382-9219-36FFE18B4E38}.Win8.1 Debug|x64.Build.0 = Win8.1 Debug|x64
+		{C0BF4C2B-D248-4382-9219-36FFE18B4E38}.Win8.1 Release|Win32.ActiveCfg = Win8.1 Release|Win32
+		{C0BF4C2B-D248-4382-9219-36FFE18B4E38}.Win8.1 Release|Win32.Build.0 = Win8.1 Release|Win32
+		{C0BF4C2B-D248-4382-9219-36FFE18B4E38}.Win8.1 Release|x64.ActiveCfg = Win8.1 Release|x64
+		{C0BF4C2B-D248-4382-9219-36FFE18B4E38}.Win8.1 Release|x64.Build.0 = Win8.1 Release|x64
+		{B3F6B6E7-0AE8-4ABC-8B50-6D882BE331CD}.Win8.1 Debug|Win32.ActiveCfg = Win8.1 Debug|Win32
+		{B3F6B6E7-0AE8-4ABC-8B50-6D882BE331CD}.Win8.1 Debug|Win32.Build.0 = Win8.1 Debug|Win32
+		{B3F6B6E7-0AE8-4ABC-8B50-6D882BE331CD}.Win8.1 Debug|x64.ActiveCfg = Win8.1 Debug|x64
+		{B3F6B6E7-0AE8-4ABC-8B50-6D882BE331CD}.Win8.1 Debug|x64.Build.0 = Win8.1 Debug|x64
+		{B3F6B6E7-0AE8-4ABC-8B50-6D882BE331CD}.Win8.1 Release|Win32.ActiveCfg = Win8.1 Release|Win32
+		{B3F6B6E7-0AE8-4ABC-8B50-6D882BE331CD}.Win8.1 Release|Win32.Build.0 = Win8.1 Release|Win32
+		{B3F6B6E7-0AE8-4ABC-8B50-6D882BE331CD}.Win8.1 Release|x64.ActiveCfg = Win8.1 Release|x64
+		{B3F6B6E7-0AE8-4ABC-8B50-6D882BE331CD}.Win8.1 Release|x64.Build.0 = Win8.1 Release|x64
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{C0BF4C2B-D248-4382-9219-36FFE18B4E38} = {5725B490-60F6-448C-955C-88BB508CF6D7}
+	EndGlobalSection
+EndGlobal
