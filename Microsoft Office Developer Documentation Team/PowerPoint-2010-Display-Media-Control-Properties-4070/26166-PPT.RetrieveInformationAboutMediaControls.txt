@@ -1,0 +1,27 @@
+' PowerPoint 2010
+
+' Place the following code in a standard module.
+
+' In PowerPoint, delete all the shapes from the first slide, and then
+' insert a video file into the slide.
+
+' In PowerPoint, press F5 to start the slide show.
+' On the slide show starts, wait a few seconds for the media to load, then click
+' on the media to ensure that the media controls have loaded.
+' While the video plays, use Windows' Alt-Tab key combination
+' to come back to this window, and press F8 within this
+' procedure to step through the code.
+' When the media controls are visible, you can gather information
+' about them. When they're not, every property returns 0.
+
+Public Sub WorkWithMediaControls()
+    With ActivePresentation.SlideShowWindow.View
+        ActivePresentation.SlideShowSettings.ShowMediaControls = msoTrue
+        Debug.Print "MediaControlsWidth = " & .MediaControlsWidth
+        Debug.Print "MediaControlsHeight = " & .MediaControlsHeight
+        Debug.Print "MediaControlsLeft = " & .MediaControlsLeft
+        Debug.Print "MediaControlsTop = " & .MediaControlsTop
+        Debug.Print "MediaControlsVisible = " & .MediaControlsVisible
+    End With
+  
+End Sub
