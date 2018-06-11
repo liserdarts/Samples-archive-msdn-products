@@ -1,0 +1,74 @@
+' Word 2010
+
+' Demonstrate the Application.CompareDocuments method.
+
+' In a new document, type the following text and then press Enter:
+'
+' =rand(5, 5)
+'
+' This action inserts 5 paragraphs with 5 sentences each into the
+' current document. Then, in the VBA editor, in the ThisDocument class,
+' copy in this code, and place the cursor within
+' the DemoCompare procedure and press F8 to single step through the code. Arrange
+' the VBA and Word windows side by side on screen so you can view the
+' behavior as you step through the code.
+
+Sub DemoCompareDocuments()
+    ' Save the current document, including this code.
+    Const path1 As String = "C:\Temp\Doc1.docm"
+    Const path2 As String = "C:\Temp\Doc2.docm"
+    Const path3 As String = "C:\Temp\Doc3.docm"
+   
+    Dim doc1 As Document
+    Dim doc2 As Document
+    Dim doc3 As Document
+   
+    ' Save with macros enabled, because this code exists within
+    ' the document you're saving. If the document didn't contain
+    ' code, you would not need to specify the file format.
+    Set doc1 = ActiveDocument
+    doc1.SaveAs path1, wdFormatXMLDocumentMacroEnabled
+   
+    ' Make some changes to the current document:
+    Set doc2 = ActiveDocument
+    doc2.ApplyQuickStyleSet2 "Elegant"
+    ChangeTheDocument doc2
+   
+    ' Save the document as Doc2
+    doc2.SaveAs2 path2, wdFormatFlatXMLMacroEnabled
+   
+    ' Open the original document
+    Set doc1 = Documents.Open(path1)
+   
+    Set doc3 = Application.CompareDocuments(doc1, doc2, _
+     Destination:=wdCompareDestinationNew, _
+     Granularity:=wdGranularityWordLevel, _
+     CompareFormatting:=True, _
+     CompareCaseChanges:=True, _
+     CompareWhiteSpace:=True)
+    
+    doc3.SaveAs2 path3, wdFormatFlatXMLMacroEnabled
+    
+End Sub
+
+Private Sub ChangeTheDocument(doc As Document)
+    ' Make some changes to the active document:
+    ' Delete paragraph 3:
+    doc.Paragraphs(3).Range.Delete
+   
+    ' Change a few words:
+    doc.Paragraphs(1).Range.Words(3).Case = wdUpperCase
+    doc.Paragraphs(2).Range.Words(6).Case = wdUpperCase
+    doc.Paragraphs(3).Range.Sentences(2).Case = wdUpperCase
+   
+    ' Delete a few words:
+    doc.Paragraphs(1).Range.Words(8).Delete
+    doc.Paragraphs(1).Range.Words(12).Delete
+    doc.Paragraphs(2).Range.Words(6).Delete
+    doc.Paragraphs(3).Range.Words(10).Delete
+   
+    ' Format a few words:
+    doc.Paragraphs(1).Range.Words(10).Bold = True
+    doc.Paragraphs(2).Range.Words(5).Italic = True
+    doc.Paragraphs(3).Range.Words(6).Underline = True
+End Sub
