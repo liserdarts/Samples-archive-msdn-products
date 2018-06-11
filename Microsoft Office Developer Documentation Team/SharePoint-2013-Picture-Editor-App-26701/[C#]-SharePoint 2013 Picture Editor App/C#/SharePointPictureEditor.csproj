@@ -1,0 +1,174 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{B6EAEF19-1425-445B-B58D-4111D0C1D9F8}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>ContosoPictureEditor</RootNamespace>
+    <AssemblyName>ContosoPictureEditor</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <TargetOfficeVersion>15.0</TargetOfficeVersion>
+    <FileAlignment>512</FileAlignment>
+    <ProjectTypeGuids>{BB1F664B-9266-4fd6-B973-E1E44974B511};{14822709-B5A1-4724-98CA-57A101D1B079};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <IncludeAssemblyInPackage>False</IncludeAssemblyInPackage>
+    <ProjectMode>SharePointApp</ProjectMode>
+    <AppFeaturePartId>{f5442ecf-2875-4d57-a74d-474280611743}</AppFeaturePartId>
+    <WspPartId>{cce3b3c1-d63e-43ee-8f17-a28b91834f1f}</WspPartId>
+    <CspkgPartId>{86f2ff08-f24d-43e1-975d-578821d13922}</CspkgPartId>
+    <SqlPackagePartId>{b482753f-3222-49bd-963a-80242839f7b7}</SqlPackagePartId>
+    <ActiveDeploymentConfiguration>Deploy App for SharePoint</ActiveDeploymentConfiguration>
+    <ActivePublishProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+  </PropertyGroup>
+  <ItemGroup>
+    <Content Include="Images\landingimages\cameragrey.png" />
+    <Content Include="Images\landingimages\dnd.png" />
+    <Content Include="Images\landingimages\folder.png" />
+    <Content Include="Images\landingimages\camera.png" />
+    <Content Include="Images\landingimages\sp2013logo.png" />
+    <Content Include="Images\paintimages\icon_check.png" />
+    <Content Include="Images\paintimages\icon_crop.png" />
+    <Content Include="Images\paintimages\icon_effect.png" />
+    <Content Include="Images\paintimages\icon_effectBright.png" />
+    <Content Include="Images\paintimages\icon_effectDark.png" />
+    <Content Include="Images\paintimages\icon_effectReset.png" />
+    <Content Include="Images\paintimages\icon_effectSepia.png" />
+    <Content Include="Images\paintimages\icon_imagegrey.png" />
+    <Content Include="Images\paintimages\icon_rotateleft_old.png" />
+    <Content Include="Images\paintimages\icon_rotateright_old.png" />
+    <Content Include="Images\paintimages\loading.gif" />
+    <Content Include="Images\paintimages\icon_rotateright.png" />
+    <Content Include="Images\paintimages\icon_rotateleft.png" />
+    <Content Include="Images\toobar_icons\Clear.png" />
+    <Content Include="Images\toobar_icons\Download.png" />
+    <Content Include="Images\toobar_icons\Refresh.png" />
+    <Content Include="Images\toobar_icons\Save.png" />
+    <Content Include="Images\toobar_icons\SaveAs.png" />
+    <Content Include="Images\toobar_icons\SelectNew.png" />
+    <Content Include="Pages\CaptureCam.aspx" />
+    <Content Include="Scripts\EXIF_Library.js" />
+    <Content Include="Content\jquerycontrol\jquery-ui-style.css" />
+    <Content Include="Content\jquerycontrol\jquery-ui.css" />
+    <Content Include="Scripts\paintscripts\jquery-ui.js" />
+    <Content Include="Scripts\paintscripts\jquery-1.9.1.js" />
+    <Content Include="Scripts\paintscripts\jquery.ui.touch-punch.min.js" />
+    <Content Include="Scripts\SPPictureEditor_Cam.js" />
+    <Content Include="Scripts\SPPictureEditor_DragDrop.js" />
+    <Content Include="Scripts\SPPictureEditor_Landing.js" />
+    <None Include="OpenEditor\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{1ecb2aee-a622-4e22-ab96-ba3763ec4df8}</SharePointProjectItemId>
+    </None>
+    <None Include="packages.config" />
+    <None Include="Pages\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{304be705-d535-415c-b896-a24ea441d619}</SharePointProjectItemId>
+    </None>
+    <Content Include="Content\wColorPicker.css" />
+    <Content Include="Content\wPaint.css" />
+    <Content Include="Elements.xml" />
+    <Content Include="Images\AppIcon.png">
+      <OpcRelationship>manifest-icon</OpcRelationship>
+    </Content>
+    <Content Include="Images\paintimages\clear.png" />
+    <Content Include="Images\paintimages\icon_bold.png" />
+    <Content Include="Images\paintimages\icon_ellipse.png" />
+    <Content Include="Images\paintimages\icon_eraser.png" />
+    <Content Include="Images\paintimages\icon_italic.png" />
+    <Content Include="Images\paintimages\icon_line.png" />
+    <Content Include="Images\paintimages\icon_pencil.png" />
+    <Content Include="Images\paintimages\icon_rectangle.png" />
+    <Content Include="Images\paintimages\icon_text.png" />
+    <Content Include="Images\paintimages\icon_underline.png" />
+    <Content Include="Images\paintimages\menu_handle.png" />
+    <Content Include="Images\paintimages\redo.png" />
+    <Content Include="Images\paintimages\redo_inactive.png" />
+    <Content Include="Images\paintimages\undo.png" />
+    <Content Include="Images\paintimages\undo_inactive.png" />
+    <Content Include="OpenEditor\Elements.xml">
+      <SubType>ParentWebElementManifest</SubType>
+      <OpcRelationship>feature-elementmanifest</OpcRelationship>
+    </Content>
+    <Content Include="Pages\Elements.xml" />
+    <Content Include="Pages\Default.aspx" />
+    <None Include="SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{5a37baf9-36ee-4dac-8e76-c870766a48ba}</SharePointProjectItemId>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Scripts\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{b482753f-3222-49bd-963a-80242839f7b7}</SharePointProjectItemId>
+    </None>
+    <Content Include="Pages\FilePickerDialog.aspx" />
+    <Content Include="Pages\PictureLanding.aspx" />
+    <Content Include="Scripts\Elements.xml" />
+    <Content Include="Scripts\paintscripts\wColorPicker.js" />
+    <Content Include="Scripts\SPPictureEditor_AssetPicker.js" />
+    <Content Include="Scripts\SPPictureEditor_CanvasEditor.js" />
+    <Content Include="Scripts\SPPictureEditor_FileBrowser.js" />
+    <Content Include="Scripts\SPPictureEditor_SPDataLibrary.js" />
+    <Content Include="Scripts\paintscripts\wPaint.js" />
+    <Content Include="Scripts\_references.js" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Content\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{23c9c2ce-2bba-43df-9760-bc9485d2215b}</SharePointProjectItemId>
+    </None>
+    <Content Include="Content\Elements.xml" />
+    <Content Include="Content\App.css" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Images\AppIcon_old.png" />
+    <Content Include="Images\Elements.xml" />
+    <None Include="Images\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{4e25e5b3-370e-49e2-9693-bf91d5234100}</SharePointProjectItemId>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Package\Package.package">
+      <PackageId>{6371a2c7-ec31-4e5a-81b2-c5a8365e12f3}</PackageId>
+    </None>
+    <None Include="Package\Package.Template.xml">
+      <DependentUpon>Package.package</DependentUpon>
+    </None>
+    <None Include="Features\SharePointPictureEditor\SharePointPictureEditor.feature">
+      <FeatureId>{3531b72a-aefc-4574-9fbd-478baea1877f}</FeatureId>
+    </None>
+    <None Include="Features\SharePointPictureEditor\SharePointPictureEditor.Template.xml">
+      <DependentUpon>SharePointPictureEditor.feature</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <AppManifestFile Include="AppManifest.xml">
+      <SubType>Designer</SubType>
+    </AppManifestFile>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Properties\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(VSToolsPath)\SharePointTools\Microsoft.VisualStudio.SharePoint.targets" Condition="'$(VSToolsPath)' != ''" />
+</Project>

@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">
+  <Module Name="Pages">
+    <File Path="Pages\Default.aspx" Url="Pages/Default.aspx" />
+    <File Path="Pages\FilePickerDialog.aspx" Url="Pages/FilePickerDialog.aspx" ReplaceContent="TRUE" />
+    <File Path="Pages\PictureLanding.aspx" Url="Pages/PictureLanding.aspx" ReplaceContent="TRUE" />
+    <File Path="Pages\CaptureCam.aspx" Url="Pages/CaptureCam.aspx" ReplaceContent="TRUE" />
+  </Module>
+</Elements>

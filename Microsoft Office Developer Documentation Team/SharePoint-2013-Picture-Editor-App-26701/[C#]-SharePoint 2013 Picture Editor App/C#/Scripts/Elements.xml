@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">
+  <Module Name="Scripts">
+    <File Path="Scripts\paintscripts\wColorPicker.js" Url="Scripts/paintscripts/wColorPicker.js" />
+    <File Path="Scripts\paintscripts\wPaint.js" Url="Scripts/paintscripts/wPaint.js" />
+    <File Path="Scripts\SPPictureEditor_AssetPicker.js" Url="Scripts/SPPictureEditor_AssetPicker.js" />
+    <File Path="Scripts\SPPictureEditor_CanvasEditor.js" Url="Scripts/SPPictureEditor_CanvasEditor.js" />
+    <File Path="Scripts\SPPictureEditor_FileBrowser.js" Url="Scripts/SPPictureEditor_FileBrowser.js" ReplaceContent="TRUE" />
+    <File Path="Scripts\SPPictureEditor_Landing.js" Url="Scripts/SPPictureEditor_Landing.js" ReplaceContent="TRUE" />
+    <File Path="Scripts\SPPictureEditor_SPDataLibrary.js" Url="Scripts/SPPictureEditor_SPDataLibrary.js" ReplaceContent="TRUE" />
+    <File Path="Scripts\SPPictureEditor_DragDrop.js" Url="Scripts/SPPictureEditor_DragDrop.js" ReplaceContent="TRUE" />
+    <File Path="Scripts\SPPictureEditor_Cam.js" Url="Scripts/SPPictureEditor_Cam.js" ReplaceContent="TRUE" />
+    <File Path="Scripts\EXIF_Library.js" Url="Scripts/EXIF_Library.js" ReplaceContent="TRUE" />
+    <File Path="Scripts\paintscripts\jquery-ui.js" Url="Scripts/paintscripts/jquery-ui.js" ReplaceContent="TRUE" />
+    <File Path="Scripts\paintscripts\jquery-1.9.1.js" Url="Scripts/paintscripts/jquery-1.9.1.js" ReplaceContent="TRUE" />
+    <File Path="Scripts\paintscripts\jquery.ui.touch-punch.min.js" Url="Scripts/paintscripts/jquery.ui.touch-punch.min.js" ReplaceContent="TRUE" />
+  </Module>
+</Elements>

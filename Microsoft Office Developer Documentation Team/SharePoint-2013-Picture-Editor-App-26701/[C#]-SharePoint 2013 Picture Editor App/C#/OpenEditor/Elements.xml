@@ -1,0 +1,99 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">
+
+  <!-- Adds an ECB custom action to a list in the host website. -->
+  <!-- Create a new custom list and add a new item to it. This custom action will be on the new item's ECB. -->
+  <CustomAction Id="26136928-b82b-456d-9bda-d098ad1cccd6.OpenEditor"
+    RegistrationType="List"
+    RegistrationId="109"
+    Location="EditControlBlock"
+    Sequence="114"
+    Rights="EditListItems"
+    Title="Open with Picture Editor">
+    <UrlAction Url="~appWebUrl/Pages/Default.aspx?{StandardTokens}&amp;ListURLDir={ListUrlDir}&amp;ListID={ListId}&amp;ItemURL={ItemUrl}&amp;ItemID={ItemId}&amp;IsECB=true"/>
+  </CustomAction>
+
+  <CustomAction Id="1E617150-D276-4BAC-96D5-C66792E2BF9A.OpenEditor"
+            RegistrationType="List"
+            RegistrationId="109"
+            Location="CommandUI.Ribbon"
+            Sequence="115"
+            Rights="EditListItems"
+            Title="Open with Picture Editor">
+    <CommandUIExtension>
+      <CommandUIDefinitions>
+        <CommandUIDefinition Location="Ribbon.Documents.EditCheckout.Controls._children">
+          <Button
+              Id="Ribbon.Library.PictureEditor"
+              Alt="Open with Picture Editor"
+              Sequence="100"
+              Command="Invoke_CustomAction"
+              LabelText="Open with Picture Editor"
+              TemplateAlias="o1"
+              Image32by32="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAOwwAADsMBx2+oZAAAAh5JREFUWEdjYCg89n9A8YBaDvL8qANGQ2A0BIgNAaOdH/6///XvPy5w89Of/3+B0hHHPpNWrhBywOffqJbC1Gtsew92C8hSZDOQHQgTB4kFHvmE3WG4HLD7xS8Mzzrv/4hhWdrpLzgdoL4V4kgQwOlRbBIwTS5IFr75+e9/69VvGJb9wRECBjs+wC1X2fKeeAcghzi640Ameh6EhMLL739RQujw699wvt3ej3C27KZ3+EMB2RKTXQhXowebwQ5EcOJMiUAJn0Of4NLSGxGWgwT3vvyFGRK4EhDMFE1gYks59RmfnXC5+BMIdeiW40wL2BwAE1PcjOoDfK4oOPcFLi2PFOzoejDSHLoDQo6iZhdivN4CTJwwoIaU8rHpJeiAqbe/48xW2AycDlQPA4bAwgoZfANmkW3Pfv1/B8xBREXBPmAiAQH/w5BQePgVktKRCxRkC1Y8/Ann2iKl/Ptf/mLNdhuf/MSfCEEWIQOQu3El0p3PEQWVL1LKR3YwoVIWLI+uiG3VG6zBtfj+D7j48TeIPB+HlPJBCg5gy2r42p3YXMm0EuGIhUgWgyy4+vEP3CH5SCkfOeSI8jnMUfgUo9cH94BxCwLrgXHZjJTy0RNnGFpOwusgYlwLC+YlD378n3Tr+//JQIwP9NxAzUkUOwA5F/CtfftfYsO7/6FAX4IKH1D9r4yvsiHU7yAmBGiqhqaGE/L9aMdkNAQGQwgAAB7vi9SHf3ALAAAAAElFTkSuQmCC"
+              Image16by16="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABkAAAAZCAMAAADzN3VRAAAABGdBTUEAALGPC/xhBQAAAAFzUkdCAK7OHOkAAAAgY0hSTQAAeiYAAHomAAD6AAAAgOgAAHUwAADqYAAAOpgAABdw4iMqMAAAAk9QTFRFAHHGCXa/AHDGAG/FA3PHFX7MIYPNIIPNIIPOEXzLAHDFAnTIJpLWarnmpNHunNLwotXx2+z42ev4fsHpVqzhiMbrX63gHYTOBHPHLpPWGITPHYvThsfs2fH8/v//yef3IozTDn/Nns/us9zzCnvLAXTIi8fr////xeX2drzn2u/6VqnfM5naxej5tt3zTqTcjMfrptfyB3bJAG3Fe7vmt9/1Dn7NA3bJkMrs9v3/xOv76Pj+v+b4KozSIYnRyej3+f7/R6DbAGvDF4HOwuT2g8PqarTj2e76+f3/sdrypdTw5fb94/b9y+372fL8q9XwEoHOAHLHhsPpf8HpRqPd6Pb89/z+4vX9zO772PL8+///ZbnnEYDNzOj41Oz5eb7ooNTxyej45vX89vz+4fX9zu771vH8rdnyBXbJG4fR1e/7V6nfHIXP1ez5xev74PX9z+/71fH8wd/zC3jJDXzMveL2arXkAHPHK5DU1+761+v37Pb8+P3+xuv73/T90O/81PD89Pv+tNvygLvlgrzlweL1nNDuA3XIAHHHcbvn5PX8p9TwueD1bbbkFYDNjsnsxuz73vT80vD89fv+b7XjCXnKEoDNH4fQrdvzlsvsAXLHJIvTxub3/P7/yOz73PP80/D8zun4E3/NG4jRodPwj8fq0un3+/7/vun6/f7/IorSC3rLW67iv+T2qeL5seX60PD8/f//kcrtCnnKDX3MPZzaj9Tzg9DyhM/yx+b3uuH1nM7tbbPiNJbXJpDWDX7NCXrLEH3MD33MCHrLAXPHvP/DGwAAAAFiS0dEJy0PqCMAAAAJcEhZcwAADsQAAA7EAZUrDhsAAAFISURBVCjPY2DAARgZaASYwABDmJmJhZWNnZ2Dk4WJC8iBi3Nx8/Dy8QsICgmLiIqJS0hKwaWkZWTl5BUUlZRVVNXUNTS1tJmhFujo6ukbGBoZm5iamVtYWlnb2EJkuOzsHRydnF1c3dw9PL28rXx8/fwDwMYFBqnLBSuGhKrLqaurh1mFR0SqR0UHgrTExMbFJyQmqYNAslVKahpQRXoGyL2ZWdnGOblgibC8/IJCkNaiYpD9JaVl5RWVVdXq6jW1dfUNjU3NLa1t7SB7Ojq7unt6+/rVPSZMnDRp8pSpzMzTpkMcHTBDfeas2XPmzpu/oEB94SKgi4HhAJFavMRl6bLlKxoKU1eqa61iRgo0rtVr1k7OW7d+w0p19Y2bNiOHKhPTlq3btu/Q2Llr9569GahhzcWyb/+Bg4cOH2FmZkAHXNijh/YAAFscWDDXm8l6AAAAJXRFWHRkYXRlOmNyZWF0ZQAyMDEzLTA0LTI0VDEyOjAyOjAwKzAyOjAw+ctvpgAAACV0RVh0ZGF0ZTptb2RpZnkAMjAxMy0wNC0yNFQxMjowMjowMCswMjowMIiW1xoAAAAASUVORK5CYII="
+          />
+        </CommandUIDefinition>
+      </CommandUIDefinitions>
+      <CommandUIHandlers>
+        <CommandUIHandler
+            Command="Invoke_CustomAction"
+            CommandAction="~appWebUrl/Pages/Default.aspx?{StandardTokens}&amp;ListURLDir={ListUrlDir}&amp;ListID={ListId}&amp;ItemID={SelectedItemId}&amp;IsECB=false"
+            EnabledScript="javascript:
+                            function enableCheck() {
+                                var items = SP.ListOperation.Selection.getSelectedItems();
+                                var cdict = CountDictionary(items);
+                                if (cdict == 1) {
+                                    return true;
+                                }
+                                else {
+                                    return false;
+                                }                                
+                            }
+                            
+                            /*
+                            var targetListItem = null;
+                            var result = false;
+                            function enableCheck() {
+                                var clientContext = SP.ClientContext.get_current();
+                                var items = SP.ListOperation.Selection.getSelectedItems();
+                                var listId = SP.ListOperation.Selection.getSelectedList();
+                                var cdict = CountDictionary(items);
+                                if (cdict == 1) {
+                                    var targetList = clientContext.get_web().get_lists().getById(listId);
+                                    this.targetListItem = targetList.getItemById(items[0].id);
+                                    clientContext.load(targetListItem);
+                                    //clientContext.executeQueryAsync(onStatusQuerySucceeded, onQueryFailed);
+                                    clientContext.executeQueryAsync(Function.createDelegate(this, this.onStatusQuerySucceeded), Function.createDelegate(this, this.onQueryFailed));
+                                }
+                                else {
+                                    return false;
+                                }                                
+                            }
+
+                            function onStatusQuerySucceeded(sender, args) {
+                            try{
+                                var itemtype = this.targetListItem.get_fileSystemObjectType();
+                                if (itemtype == 0) {
+                                    //this.IssueRibbonStatus = true;
+                                    //alert(itemtype);
+                                    //RefreshCommandUI(); 
+                                }
+                                else {
+                                    this.IssueRibbonStatus = false;
+                                }
+                                }
+                                catch(e){}
+                                finally{}
+                            }
+
+                            function onQueryFailed(sender, args) {
+                                alert('Request failed. ' + args.get_message() + '\n' + args.get_stackTrace());
+                            }*/
+
+                            enableCheck();"
+            />
+      </CommandUIHandlers>
+    </CommandUIExtension>
+  </CustomAction>
+</Elements>

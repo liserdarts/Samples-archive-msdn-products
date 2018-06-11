@@ -1,0 +1,46 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">
+  <Module Name="Images">
+    <File Path="Images\AppIcon_old.png" Url="Images/AppIcon_old.png" />
+    <File Path="Images\paintimages\clear.png" Url="Images/paintimages/clear.png" />
+    <File Path="Images\paintimages\icon_bold.png" Url="Images/paintimages/icon_bold.png" />
+    <File Path="Images\paintimages\icon_ellipse.png" Url="Images/paintimages/icon_ellipse.png" />
+    <File Path="Images\paintimages\icon_eraser.png" Url="Images/paintimages/icon_eraser.png" />
+    <File Path="Images\paintimages\icon_italic.png" Url="Images/paintimages/icon_italic.png" />
+    <File Path="Images\paintimages\icon_line.png" Url="Images/paintimages/icon_line.png" />
+    <File Path="Images\paintimages\icon_pencil.png" Url="Images/paintimages/icon_pencil.png" />
+    <File Path="Images\paintimages\icon_rectangle.png" Url="Images/paintimages/icon_rectangle.png" />
+    <File Path="Images\paintimages\icon_text.png" Url="Images/paintimages/icon_text.png" />
+    <File Path="Images\paintimages\icon_underline.png" Url="Images/paintimages/icon_underline.png" />
+    <File Path="Images\paintimages\menu_handle.png" Url="Images/paintimages/menu_handle.png" />
+    <File Path="Images\paintimages\redo.png" Url="Images/paintimages/redo.png" />
+    <File Path="Images\paintimages\redo_inactive.png" Url="Images/paintimages/redo_inactive.png" />
+    <File Path="Images\paintimages\undo.png" Url="Images/paintimages/undo.png" />
+    <File Path="Images\paintimages\undo_inactive.png" Url="Images/paintimages/undo_inactive.png" />
+    <File Path="Images\AppIcon.png" Url="Images/AppIcon.png" />
+    <File Path="Images\paintimages\loading.gif" Url="Images/paintimages/loading.gif" ReplaceContent="TRUE" />
+    <File Path="Images\paintimages\icon_crop.png" Url="Images/paintimages/icon_crop.png" ReplaceContent="TRUE" />
+    <File Path="Images\paintimages\icon_check.png" Url="Images/paintimages/icon_check.png" ReplaceContent="TRUE" />
+    <File Path="Images\toobar_icons\Clear.png" Url="Images/toobar_icons/Clear.png" ReplaceContent="TRUE" />
+    <File Path="Images\toobar_icons\Refresh.png" Url="Images/toobar_icons/Refresh.png" ReplaceContent="TRUE" />
+    <File Path="Images\toobar_icons\Save.png" Url="Images/toobar_icons/Save.png" ReplaceContent="TRUE" />
+    <File Path="Images\toobar_icons\SaveAs.png" Url="Images/toobar_icons/SaveAs.png" ReplaceContent="TRUE" />
+    <File Path="Images\toobar_icons\SelectNew.png" Url="Images/toobar_icons/SelectNew.png" ReplaceContent="TRUE" />
+    <File Path="Images\landingimages\sp2013logo.png" Url="Images/landingimages/sp2013logo.png" ReplaceContent="TRUE" />
+    <File Path="Images\landingimages\folder.png" Url="Images/landingimages/folder.png" ReplaceContent="TRUE" />
+    <File Path="Images\landingimages\camera.png" Url="Images/landingimages/camera.png" ReplaceContent="TRUE" />
+    <File Path="Images\landingimages\cameragrey.png" Url="Images/landingimages/cameragrey.png" ReplaceContent="TRUE" />
+    <File Path="Images\landingimages\dnd.png" Url="Images/landingimages/dnd.png" ReplaceContent="TRUE" />
+    <File Path="Images\paintimages\icon_rotateright.png" Url="Images/paintimages/icon_rotateright.png" ReplaceContent="TRUE" />
+    <File Path="Images\paintimages\icon_rotateleft.png" Url="Images/paintimages/icon_rotateleft.png" ReplaceContent="TRUE" />
+    <File Path="Images\paintimages\icon_effect.png" Url="Images/paintimages/icon_effect.png" ReplaceContent="TRUE" />
+    <File Path="Images\paintimages\icon_imagegrey.png" Url="Images/paintimages/icon_imagegrey.png" ReplaceContent="TRUE" />
+    <File Path="Images\paintimages\icon_effectReset.png" Url="Images/paintimages/icon_effectReset.png" ReplaceContent="TRUE" />
+    <File Path="Images\paintimages\icon_effectSepia.png" Url="Images/paintimages/icon_effectSepia.png" ReplaceContent="TRUE" />
+    <File Path="Images\paintimages\icon_effectBright.png" Url="Images/paintimages/icon_effectBright.png" ReplaceContent="TRUE" />
+    <File Path="Images\paintimages\icon_effectDark.png" Url="Images/paintimages/icon_effectDark.png" ReplaceContent="TRUE" />
+    <File Path="Images\paintimages\icon_rotateright_old.png" Url="Images/paintimages/icon_rotateright_old.png" ReplaceContent="TRUE" />
+    <File Path="Images\paintimages\icon_rotateleft_old.png" Url="Images/paintimages/icon_rotateleft_old.png" ReplaceContent="TRUE" />
+    <File Path="Images\toobar_icons\Download.png" Url="Images/toobar_icons/Download.png" ReplaceContent="TRUE" />
+  </Module>
+</Elements>

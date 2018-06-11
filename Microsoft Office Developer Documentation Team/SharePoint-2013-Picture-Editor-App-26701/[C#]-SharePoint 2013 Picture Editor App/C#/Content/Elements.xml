@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">
+  <Module Name="Content">
+    <File Path="Content\App.css" Url="Content/App.css" />
+  <File Path="Content\wPaint.css" Url="Content/wPaint.css" />
+<File Path="Content\wColorPicker.css" Url="Content/wColorPicker.css" />
+    <File Path="Content\jquerycontrol\jquery-ui-style.css" Url="Content/jquerycontrol/jquery-ui-style.css" ReplaceContent="TRUE" />
+    <File Path="Content\jquerycontrol\jquery-ui.css" Url="Content/jquerycontrol/jquery-ui.css" ReplaceContent="TRUE" />
+  </Module>
+</Elements>

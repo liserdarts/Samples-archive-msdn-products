@@ -1,0 +1,350 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
+    <head><link rel="stylesheet" type="text/css" href="description/Combined.css,0:HeaderFooterSprite,0:Header.NonMtps,1:LinkList;/Areas/Centers/Themes/StandardDevCenter/Content:0,/Areas/Epx/Themes/Base/Content:1&amp;amp;hashKey=C9973DA951AE6202C9B348379A1BE49D" xmlns="http://www.w3.org/1999/xhtml" />
+<link type="text/css" rel="stylesheet" xmlns="http://www.w3.org/1999/xhtml" />
+<link rel="stylesheet" type="text/css" href="description/1b88b18a-5268-4861-9da2-6c6e2539edaaCombined.css,0:HeaderFooterSprite,0:Footer.NonMtps,1:LinkList;/Areas/Centers/Themes/StandardDevCenter/Content:0,/Areas/Epx/Themes/Base/Content:1&amp;amp;hashKey=F576C687BC536B84D6E5B3246EE39B49" xmlns="http://www.w3.org/1999/xhtml" />
+<link type="text/css" rel="stylesheet" xmlns="http://www.w3.org/1999/xhtml" />
+
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <title>SharePoint 2013: Picture Editor App</title>
+        <link href="description/Galleries.css" type="text/css" rel="Stylesheet" /><link href="description/Layout.css" type="text/css" rel="Stylesheet" /><link href="description/Brand.css" type="text/css" rel="Stylesheet" />
+        <link href="description/iframedescription.css" rel="Stylesheet" type="text/css" />
+        <script src="description/offline.js" type="text/javascript"></script>
+        <style type="text/css">
+            #projectInfo {
+                overflow: auto;
+            }
+            #longDesc {
+                clear:both;
+                margin: 25px 0 10px 0;
+            }
+
+            #SampleIndexList{
+                margin-left: 15px;
+            }
+        </style>
+    </head>
+<body>
+    <div id="offlineDescription">
+        <h1>SharePoint 2013: Picture Editor App</h1>
+        <br/>
+        <div id="projectInfo">
+            <div class="section">
+                    <div class="itemBarLong tagsContainer">
+                        <label for="Technologies">Technologies</label>
+                        <div id="Technologies">
+                            Sharepoint Online, SharePoint Server 2013, SharePoint Foundation 2013
+                        </div>
+                    </div>
+                    <div class="itemBarLong tagsContainer">
+                        <label for="Topics">Topics</label>
+                        <div id="Topics">
+                            apps for SharePoint
+                        </div>
+                    </div>
+                <div class="itemBarLong">
+                    <label for="Platforms">Platforms</label>
+                    <div id="Platforms">
+                        Cloud
+                    </div>
+                </div>
+                <div class="itemBarLong">
+                    <label for="Requirements">Requirements</label>
+                    <div id="Requirements">
+                        
+                    </div>
+                </div>
+                <div class="itemBar">
+                    <label for="LastUpdated">Primary language</label>
+                    <div id="LastUpdated">en-US</div>
+                </div>
+                <div class="itemBar">
+                    <label for="LastUpdated">Updated</label>
+                    <div id="LastUpdated">1/7/2014</div>
+                </div>
+                <div class="itemBarLong">
+                    <label for="License">License</label>
+                    <div id="License">
+                        <a href="license.rtf">Apache License, Version 2.0</a></div>
+                </div>
+                <div class="itemBar">
+                    <div class="viewonlinecont">
+                        <a data-link="online" href="http://code.msdn.microsoft.com/SharePoint-2013-Picture-836180dc">View this sample online</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+                   
+<script type="text/javascript">
+    function initializePage() {
+        var otherTabClass = 'otherTab';
+        var hiddenPreClass = 'hidden';
+
+        var htmlDecode = function(encodedData) {
+            var decodedData = "";
+            if (encodedData) {
+                var div = document.createElement('div');
+                div.innerHTML = encodedData;
+                decodedData = div.firstChild.nodeValue.replace( /\\r\\n/ig , '\r\n');
+            }
+            return decodedData;
+        };
+                
+        Galleries.iterateElem(Galleries.findElem(null, 'div', 'scriptcode'), function (index, scriptBlock) {
+            var titleElem = Galleries.findElem(scriptBlock, 'div', 'title')[0];
+            var labelElems = Galleries.findElem(titleElem, 'span');
+            if (labelElems.length == 0) {
+                labelElems = titleElem;
+            }
+            var languageSpans = Galleries.findElem(scriptBlock, 'span', 'hidden');
+            var pres = Galleries.findElem(scriptBlock, 'pre');
+            if (languageSpans.length > 0 && pres.length > 1) {
+                Galleries.iterateElem(labelElems, function(index, elem) {
+                    var codePre = pres[index];
+                    var labelSpan = elem;
+                    var languageSpan = languageSpans[index];
+                            
+                    elem.code = codePre.innerHTML.replace( /(\r(\n)?)|((\r)?\n)/ig , '\\r\\n');
+                            
+                    codePre.className = codePre.className.replace(hiddenPreClass, '');
+                            
+                    languageSpan.parentNode.removeChild(languageSpan);
+                });
+
+                pres = Galleries.findElem(scriptBlock, 'pre');
+                Galleries.iterateElem(labelElems, function(index, elem) {
+                    var codePre = pres[index];
+                    var labelSpan = elem;
+                    if (index == 0) {
+                        scriptBlock.activeTab = 0;
+                    }
+                    else {
+                        labelSpan.className += otherTabClass;
+                        codePre.className += hiddenPreClass;
+                    }
+                    Galleries.attachEventHandler(labelSpan, 'click', function(e) {
+                        var activeTab = scriptBlock.activeTab;
+                        labelElems[activeTab].className += otherTabClass;
+                        pres[activeTab].className += hiddenPreClass;
+
+                        codePre.className = codePre.className.replace(hiddenPreClass, '');
+                        labelSpan.className = labelSpan.className.replace(otherTabClass, '');
+                        scriptBlock.activeTab = index;
+                    });
+                });
+
+                var preview = Galleries.findElem(scriptBlock, 'div', 'preview');
+                if (preview.length == 0) {
+                    preview.push(pres[pres.length - 1]);
+                }
+                Galleries.iterateElem(preview, function(index, elem) {
+                    elem.parentNode.removeChild(elem);
+                });
+
+                if (window.clipboardData && clipboardData.setData) {
+                    var copyLink = document.createElement('a');
+                    copyLink.href = 'javascript:void(0);';
+                    copyLink.className = 'copyCode';
+                    copyLink.innerHTML = 'Copy code';
+                    Galleries.attachEventHandler(copyLink, 'click', function (e) {
+                        clipboardData.setData("Text", htmlDecode(labelElems[scriptBlock.activeTab].code));
+                        return false;
+                    });
+                    scriptBlock.insertBefore(copyLink, scriptBlock.childNodes[0]);
+                }
+            }
+        });
+    }
+
+    Galleries.onWindowLoad(function(){
+        initializePage();
+    });
+
+</script>
+<div id="longDesc">
+    
+<div id="header"><span>Provided by:</span> Vivek Soni, <a href="http://www.microsoft.com/india/msindia/msindia_aboutus_msgd.aspx" >
+Microsoft Services Global Delivery</a></div>
+<div id="mainSection">
+<div id="mainBody">
+<div>
+<p>This sample picture editor app enables you to select an image and perform basic image editing operations without using a standalone image editor.</p>
+<ul>
+<li>
+<p>You can select an image from the parent site's picture libraries, capture from the device's webcam, or browse or drag an image file from the file system. The image can be saved to a picture library in the parent site, or can be downloaded locally.</p>
+</li><li>
+<p>This app uses the new HTML5 capabilities for the <strong><span class="keyword">Canvas</span></strong> to enable image editing operations such as drawing objects, changing the color palette, and adding image effects. HTML5 also supports client-side image
+ renditions such as scaling and touch-enabled devices.</p>
+</li><li>
+<p>The app attempts to read geolocation data from the image binary's Exchangeable image file format (Exif) record. If the host SharePoint library has a geolocation field, the data is saved there.</p>
+</li><li>
+<p>The app also adds two custom actions and places them on the <strong><span class="ui">Edit Control Block</span></strong> (ECB) and in the
+<strong><span class="ui">Files</span></strong> tab in the ribbon on the parent site's
+<strong><span class="ui">Picture</span></strong> libraries. These custom actions will start the app for the selected picture.</p>
+</li></ul>
+</div>
+<h1>Prerequisites</h1>
+<div id="sectionSection0">
+<p>This sample app requires the following:</p>
+<ul>
+<li>
+<p>Microsoft Visual Studio 2012</p>
+</li><li>
+<p>Microsoft Office Developer Tools for Visual Studio 2012</p>
+</li><li>
+<p>SharePoint Server 2013</p>
+</li><li>
+<p>A team or publishing site with a Picture library (not a Document library). Optionally, the picture library should contain a geolocation field.</p>
+</li><li>
+<p>An HTML5-compliant browser, such as Internet Explorer 10 (or later), Google Chrome, or FireFox.</p>
+</li></ul>
+</div>
+<h1>Key components</h1>
+<div id="sectionSection1">
+<p>The sample app contains the following key components:</p>
+<ul>
+<li>
+<p>The <strong><span class="keyword">Default.aspx</span></strong> webpage, which is used to open, edit, and save images.</p>
+</li><li>
+<p>The <strong><span class="keyword">scripts</span></strong> folder, which contains several scripts that can be reused for other apps for SharePoint.</p>
+<ul>
+<li>
+<p><strong><span class="keyword">SPPictureEditor_CanvasEditor.js</span> </strong>
+leverages the <a href="http://jquer.in/jquery-plugins-for-html5-canvas/websanova-paint/" >
+Websanova Paint jQuery plug-in</a>, extended with additional tools.</p>
+</li><li>
+<p><strong><span class="keyword">SPPictureEditor_AssetPicker.js</span> </strong>
+, <strong><span class="keyword">SPPictureEditor_FileBrowser.js</span></strong>,
+<strong><span class="keyword">SPPictureEditor_DragDrop.js</span></strong>, and <strong>
+<span class="keyword">SPPictureEditor_Cam.js</span></strong> provide the data sources from SharePoint, the browser, the file system, or the camera.</p>
+</li><li>
+<p><strong><span class="keyword">SPPictureEditor_SPDataLibrary.js</span> </strong>
+loads and saves an image in a SharePoint site and attempts to add the geolocation data.</p>
+</li></ul>
+</li></ul>
+</div>
+<h1>Build the sample</h1>
+<div id="sectionSection2">
+<p>Follow these steps to build the sample.</p>
+<div>
+<ol>
+<li>
+<p>Press Ctrl&#43;Shift&#43;B to build the solution.</p>
+</li><li>
+<p>Press F5 to run the app.</p>
+</li><li>
+<p>If you are prompted by the browser, sign in to your SharePoint Server 2013 or Office 365 Enterprise site.</p>
+</li></ol>
+</div>
+</div>
+<h1>Run and test the sample</h1>
+<div id="sectionSection3">
+<p>&nbsp;</p>
+<div>
+<ol>
+<li>
+<p>Select one of the displayed image sources.</p>
+<div>
+<table cellspacing="0" cellpadding="0" width="100%">
+<tbody>
+<tr>
+<th align="left"><strong>Note</strong> </th>
+</tr>
+<tr>
+<td>
+<p>Some HTML5 Web browsers do not support capturing Webcam devices, so the <strong>
+<span class="ui">Device</span></strong> camera option will be disabled if you are using such as browser (for example Internet Explorer 10), or you may be notified that the feature is not supported (for example Firefox).</p>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<strong>
+<div class="caption">Figure 1. Start screen</div>
+</strong><br>
+<strong></strong><img src="description/image.png" alt=""> </li><li>
+<p>For example, using the SharePoint asset picker, you can browse and select an image file from any of the Picture libraries on the host site.</p>
+<strong>
+<div class="caption">Figure 2. Select an image file</div>
+</strong><br>
+<strong>&nbsp;</strong><img src="description/1f4e9cd0-84fc-4c45-b90a-1b51c40968deimage.png" alt=""> </li><li>
+<p>Use the HTML5 canvas editor to draw objects and lines, add text, and choose colors.</p>
+<strong>
+<div class="caption">Figure 3. Canvas editor</div>
+</strong><br>
+<strong>&nbsp;</strong><img src="description/0a6ace3c-2294-4d56-b52e-f5c089feaf66image.png" alt=""> </li><li>
+<p>Save the edited image back to the source library or another picture library.</p>
+<strong>
+<div class="caption">Figure 4. Edited image saved</div>
+</strong><br>
+<strong>&nbsp;</strong><img src="description/ffdbf01b-0724-4072-a348-dec8f46c87d2image.png" alt=""> </li><li>
+<p>The app installs some custom actions on the host site's Picture libraries for quick image selection. For example, notice the new action on the
+<strong><span class="ui">Edit Control</span></strong> block:</p>
+<strong>
+<div class="caption">Figure 5. Custom action in the Edit Control Block</div>
+</strong><br>
+<strong>&nbsp;</strong><img src="description/79b7471a-b959-4e6f-9866-93a44416f565image.png" alt="">
+<p>Note also the change on the Ribbon:</p>
+<strong>
+<div class="caption">Figure 6. Custom action in the Picture library ribbon</div>
+</strong><br>
+<strong>&nbsp;</strong><img src="description/62316f04-349b-4b71-a7cd-1809e6a23433image.png" alt=""> </li></ol>
+</div>
+</div>
+<h1>Troubleshooting</h1>
+<div id="sectionSection4">
+<p>Verify that you have access to a SharePoint site.</p>
+</div>
+<h1>Change log</h1>
+<div id="sectionSection5"><strong>
+<div class="caption"></div>
+</strong>
+<div>
+<table cellspacing="2" cellpadding="5" width="50%" frame="lhs">
+<tbody>
+<tr>
+<th>
+<p>Version</p>
+</th>
+<th>
+<p>Date</p>
+</th>
+</tr>
+<tr>
+<td>
+<p>First version</p>
+</td>
+<td>
+<p>January 2014</p>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<h1>Related content</h1>
+<div id="sectionSection6">
+<ul>
+<li>
+<p><a href="http://msdn.microsoft.com/en-us/library/fp179930.aspx" >Apps for SharePoint overview</a></p>
+</li><li>
+<p><a href="http://www.jQuery.com" >jQuery</a></p>
+</li><li>
+<p><a href="http://bing.com?q=HTML5" >HTML5</a></p>
+</li><li>
+<p><a href="http://jquer.in/jquery-plugins-for-html5-canvas/websanova-paint/" >Websanova Paint jQuery plug-in</a></p>
+</li><li>
+<p><a href="http://blog.nihilogic.dk/2008/05/reading-exif-data-with-javascript.html" >Exif Reader library</a></p>
+</li></ul>
+</div>
+</div>
+</div>
+<p>&nbsp;</p>
+
+</div>
+
+
+    </div>
+</body>
+</html>

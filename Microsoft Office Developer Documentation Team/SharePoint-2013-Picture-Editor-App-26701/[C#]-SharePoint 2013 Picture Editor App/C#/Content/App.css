@@ -1,0 +1,208 @@
+﻿/* Place custom styles below */
+
+.enableanchor {
+    font-size: 12px;
+    font-family: Segoe UI,Segoe,Tahoma,Helvetica,Arial,sans-serif;
+    color:black;
+    /*padding-right: 20px;*/
+}
+
+div.enableanchor {
+    padding-top: 7px;
+}
+
+.loadingContainer {
+    display: none;
+    height: 100%;
+    background-color: rgb(242, 242, 242);
+    opacity: 0.7;
+    z-index: 1000;
+}
+
+.menucontainer {
+    width: 800px;
+    border-color: black;
+    border-style: solid;
+    border-width: 1px;
+    background-color: #efefef;
+}
+
+.wPaint {
+    position: relative;
+    width: 900px;
+    height: 480px;
+    background: transparent;
+    border: solid black 1px;
+    overflow: hidden;
+    display: none;
+}
+
+.imgactive {
+    height: 30px;
+}
+
+td.toolbar {
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 5px;
+}
+
+.disableanchor {
+    font-size: 12px;
+    text-decoration: none;
+    color: grey;
+    font-family: Segoe UI,Segoe,Tahoma,Helvetica,Arial,sans-serif;
+    /*padding-right: 20px;*/
+}
+
+.disableimage {
+    opacity: 0.4;
+    filter: alpha(opacity=40); /* msie */
+    background-color: #000;
+}
+
+a.disableanchor:link {
+    font-size: 12px;
+    text-decoration: none;
+    color: grey;
+    font-family: Segoe UI,Segoe,Tahoma,Helvetica,Arial,sans-serif;
+}
+
+a.disableanchor:visited {
+    font-size: 12px;
+    text-decoration: none;
+    color: grey;
+    font-family: Segoe UI,Segoe,Tahoma,Helvetica,Arial,sans-serif;
+}
+
+a.disableanchor:hover {
+    font-size: 12px;
+    text-decoration: none;
+    color: grey;
+    font-family: Segoe UI,Segoe,Tahoma,Helvetica,Arial,sans-serif;
+}
+
+.ui-menu {
+    position: absolute;
+    width: 100px;
+}
+
+.downloadBox {
+    width: 400px;
+    height: 100px;
+    display: none;
+    position: absolute;
+    font-family: "Segoe UI", "Segoe", Tahoma;
+    top: 35%;
+    left: 37%;
+    color: black;
+    background-color: rgb(242, 242, 242);
+    opacity: 0.9;
+    border-style: solid;
+    border-width: 1px;
+    border-color: black;
+    z-index: 2000;
+    font-size: 14px;
+}
+
+.browsefolderop {
+    width: 190px;
+    height: 180px;
+    background-color: #de2314;
+    background-image: url(../Images/landingimages/folder.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    cursor: pointer;
+    cursor: hand;
+}
+
+.cameraop {
+    width: 190px;
+    height: 180px;
+    background-color: #40ad16;
+    background-image: url(../Images/landingimages/cameragrey.png);
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.spop {
+    width: 190px;
+    height: 180px;
+    background-color: #0072c6;
+    background-image: url(../Images/landingimages/sp2013logo.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    cursor: pointer;
+    cursor: hand;
+}
+
+.dndop {
+    width: 190px;
+    height: 180px;
+    background-color: #ffbb00;
+    background-image: url(../Images/landingimages/dnd.png);
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+#drop_zone {
+    color: #bbb;
+    height: 100%;
+    width: 100%;
+}
+
+.landingcube {
+    color: white;
+    position: absolute;
+}
+
+.fileloading {
+    margin-left: 35%;
+    padding-top: 5px;
+    display: none;
+    width: 65%;
+    height: 25%;
+    background-color: rgb(242, 242, 242);
+    opacity: 0.7;
+    z-index: 1000;
+}
+
+.msbtn {
+    color: #444;
+    padding-top: 7px;
+    padding-right: 10px;
+    padding-bottom: 7px;
+    padding-left: 7px;
+    font-family: "Segoe UI", "Segoe", Tahoma;
+    font-size: 11px;
+    margin-left: 10px;
+    border-color: #ababab;
+    border-width: 1px;
+    border-style: solid;
+    background-color: rgb(253,253,253);
+    width: 60px;
+}
+
+.filenamebox {
+    width: 300px;
+    display: none;
+    position: absolute;
+    font-family: "Segoe UI", "Segoe", Tahoma;
+    top: 35%;
+    left: 25%;
+    color: black;
+    background-color: rgb(242, 242, 242);
+    opacity: 0.7;
+    border-style: solid;
+    border-width: 1px;
+    border-color: black;
+}
+
+.videotag {
+    border: 2px dashed #bbb;
+}
+
+.fontcss{
+    font-family: Segoe UI,Segoe,Tahoma,Helvetica,Arial,sans-serif;
+    font-size: 13px;
+}

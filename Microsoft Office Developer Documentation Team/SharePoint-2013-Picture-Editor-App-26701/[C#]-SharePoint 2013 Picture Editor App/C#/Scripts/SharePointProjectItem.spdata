@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ProjectItem Type="Microsoft.VisualStudio.SharePoint.Module" DefaultFile="Elements.xml" SupportedTrustLevels="All" SupportedDeploymentScopes="Web, Site" xmlns="http://schemas.microsoft.com/VisualStudio/2010/SharePointTools/SharePointProjectItemModel">
+  <Files>
+    <ProjectItemFile Source="Elements.xml" Target="Scripts\" Type="ElementManifest" />
+    <ProjectItemFile Source="paintscripts\wColorPicker.js" Target="Scripts\paintscripts\" Type="ElementFile" />
+    <ProjectItemFile Source="paintscripts\wPaint.js" Target="Scripts\paintscripts\" Type="ElementFile" />
+    <ProjectItemFile Source="SPPictureEditor_AssetPicker.js" Target="Scripts\" Type="ElementFile" />
+    <ProjectItemFile Source="SPPictureEditor_CanvasEditor.js" Target="Scripts\" Type="ElementFile" />
+    <ProjectItemFile Source="SPPictureEditor_FileBrowser.js" Target="Scripts\" Type="ElementFile" />
+    <ProjectItemFile Source="SPPictureEditor_Landing.js" Target="Scripts\" Type="ElementFile" />
+    <ProjectItemFile Source="SPPictureEditor_SPDataLibrary.js" Target="Scripts\" Type="ElementFile" />
+    <ProjectItemFile Source="SPPictureEditor_DragDrop.js" Target="Scripts\" Type="ElementFile" />
+    <ProjectItemFile Source="SPPictureEditor_Cam.js" Target="Scripts\" Type="ElementFile" />
+    <ProjectItemFile Source="EXIF_Library.js" Target="Scripts\" Type="ElementFile" />
+    <ProjectItemFile Source="paintscripts\jquery-ui.js" Target="Scripts\paintscripts\" Type="ElementFile" />
+    <ProjectItemFile Source="paintscripts\jquery-1.9.1.js" Target="Scripts\paintscripts\" Type="ElementFile" />
+    <ProjectItemFile Source="paintscripts\jquery.ui.touch-punch.min.js" Target="Scripts\paintscripts\" Type="ElementFile" />
+  </Files>
+</ProjectItem>

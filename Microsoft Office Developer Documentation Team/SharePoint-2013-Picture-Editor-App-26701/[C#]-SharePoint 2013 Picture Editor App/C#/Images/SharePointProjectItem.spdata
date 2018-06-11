@@ -1,0 +1,47 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ProjectItem Type="Microsoft.VisualStudio.SharePoint.Module" DefaultFile="Elements.xml" SupportedTrustLevels="All" SupportedDeploymentScopes="Web, Site" xmlns="http://schemas.microsoft.com/VisualStudio/2010/SharePointTools/SharePointProjectItemModel">
+  <Files>
+    <ProjectItemFile Source="Elements.xml" Target="Images\" Type="ElementManifest" />
+    <ProjectItemFile Source="AppIcon_old.png" Target="Images\" Type="ElementFile" />
+    <ProjectItemFile Source="paintimages\clear.png" Target="Images\paintimages\" Type="ElementFile" />
+    <ProjectItemFile Source="paintimages\icon_bold.png" Target="Images\paintimages\" Type="ElementFile" />
+    <ProjectItemFile Source="paintimages\icon_ellipse.png" Target="Images\paintimages\" Type="ElementFile" />
+    <ProjectItemFile Source="paintimages\icon_eraser.png" Target="Images\paintimages\" Type="ElementFile" />
+    <ProjectItemFile Source="paintimages\icon_italic.png" Target="Images\paintimages\" Type="ElementFile" />
+    <ProjectItemFile Source="paintimages\icon_line.png" Target="Images\paintimages\" Type="ElementFile" />
+    <ProjectItemFile Source="paintimages\icon_pencil.png" Target="Images\paintimages\" Type="ElementFile" />
+    <ProjectItemFile Source="paintimages\icon_rectangle.png" Target="Images\paintimages\" Type="ElementFile" />
+    <ProjectItemFile Source="paintimages\icon_text.png" Target="Images\paintimages\" Type="ElementFile" />
+    <ProjectItemFile Source="paintimages\icon_underline.png" Target="Images\paintimages\" Type="ElementFile" />
+    <ProjectItemFile Source="paintimages\menu_handle.png" Target="Images\paintimages\" Type="ElementFile" />
+    <ProjectItemFile Source="paintimages\redo.png" Target="Images\paintimages\" Type="ElementFile" />
+    <ProjectItemFile Source="paintimages\redo_inactive.png" Target="Images\paintimages\" Type="ElementFile" />
+    <ProjectItemFile Source="paintimages\undo.png" Target="Images\paintimages\" Type="ElementFile" />
+    <ProjectItemFile Source="paintimages\undo_inactive.png" Target="Images\paintimages\" Type="ElementFile" />
+    <ProjectItemFile Source="AppIcon.png" Target="Images\" Type="ElementFile" />
+    <ProjectItemFile Source="paintimages\loading.gif" Target="Images\paintimages\" Type="ElementFile" />
+    <ProjectItemFile Source="paintimages\icon_crop.png" Target="Images\paintimages\" Type="ElementFile" />
+    <ProjectItemFile Source="paintimages\icon_check.png" Target="Images\paintimages\" Type="ElementFile" />
+    <ProjectItemFile Source="toobar_icons\Clear.png" Target="Images\toobar_icons\" Type="ElementFile" />
+    <ProjectItemFile Source="toobar_icons\Refresh.png" Target="Images\toobar_icons\" Type="ElementFile" />
+    <ProjectItemFile Source="toobar_icons\Save.png" Target="Images\toobar_icons\" Type="ElementFile" />
+    <ProjectItemFile Source="toobar_icons\SaveAs.png" Target="Images\toobar_icons\" Type="ElementFile" />
+    <ProjectItemFile Source="toobar_icons\SelectNew.png" Target="Images\toobar_icons\" Type="ElementFile" />
+    <ProjectItemFile Source="landingimages\sp2013logo.png" Target="Images\landingimages\" Type="ElementFile" />
+    <ProjectItemFile Source="landingimages\folder.png" Target="Images\landingimages\" Type="ElementFile" />
+    <ProjectItemFile Source="landingimages\camera.png" Target="Images\landingimages\" Type="ElementFile" />
+    <ProjectItemFile Source="landingimages\cameragrey.png" Target="Images\landingimages\" Type="ElementFile" />
+    <ProjectItemFile Source="landingimages\dnd.png" Target="Images\landingimages\" Type="ElementFile" />
+    <ProjectItemFile Source="paintimages\icon_rotateright.png" Target="Images\paintimages\" Type="ElementFile" />
+    <ProjectItemFile Source="paintimages\icon_rotateleft.png" Target="Images\paintimages\" Type="ElementFile" />
+    <ProjectItemFile Source="paintimages\icon_effect.png" Target="Images\paintimages\" Type="ElementFile" />
+    <ProjectItemFile Source="paintimages\icon_imagegrey.png" Target="Images\paintimages\" Type="ElementFile" />
+    <ProjectItemFile Source="paintimages\icon_effectReset.png" Target="Images\paintimages\" Type="ElementFile" />
+    <ProjectItemFile Source="paintimages\icon_effectSepia.png" Target="Images\paintimages\" Type="ElementFile" />
+    <ProjectItemFile Source="paintimages\icon_effectBright.png" Target="Images\paintimages\" Type="ElementFile" />
+    <ProjectItemFile Source="paintimages\icon_effectDark.png" Target="Images\paintimages\" Type="ElementFile" />
+    <ProjectItemFile Source="paintimages\icon_rotateright_old.png" Target="Images\paintimages\" Type="ElementFile" />
+    <ProjectItemFile Source="paintimages\icon_rotateleft_old.png" Target="Images\paintimages\" Type="ElementFile" />
+    <ProjectItemFile Source="toobar_icons\Download.png" Target="Images\toobar_icons\" Type="ElementFile" />
+  </Files>
+</ProjectItem>

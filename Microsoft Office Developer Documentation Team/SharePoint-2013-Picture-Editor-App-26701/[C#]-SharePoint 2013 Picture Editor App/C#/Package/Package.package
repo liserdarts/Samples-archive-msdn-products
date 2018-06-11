@@ -1,0 +1,6 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" dslVersion="1.0.0.0" Id="6371a2c7-ec31-4e5a-81b2-c5a8365e12f3" solutionId="6371a2c7-ec31-4e5a-81b2-c5a8365e12f3" resetWebServer="false" sharePointProductVersion="15.0" name="SharePointPictureEditor" xmlns="http://schemas.microsoft.com/VisualStudio/2008/SharePointTools/PackageModel">
+  <features>
+    <featureReference itemId="3531b72a-aefc-4574-9fbd-478baea1877f" />
+  </features>
+</package>
