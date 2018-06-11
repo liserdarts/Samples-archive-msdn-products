@@ -1,0 +1,19 @@
+﻿<?xml version="1.0"?>
+<doc>
+<assembly>
+<name>
+VerifyJob
+</name>
+</assembly>
+<members>
+<member name="M:VerifyJob.EventReceiver1.ItemAdding(Microsoft.SharePoint.SPItemEventProperties)">
+	<summary>
+ An item is being added.
+ </summary>
+</member><member name="M:VerifyJob.EventReceiver1.ItemUpdating(Microsoft.SharePoint.SPItemEventProperties)">
+	<summary>
+ An item is being updated.
+ </summary>
+</member>
+</members>
+</doc>

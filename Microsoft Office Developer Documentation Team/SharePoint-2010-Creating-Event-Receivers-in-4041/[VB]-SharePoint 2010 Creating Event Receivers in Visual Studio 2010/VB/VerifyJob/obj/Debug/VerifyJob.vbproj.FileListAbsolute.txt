@@ -1,0 +1,7 @@
+c:\users\administrator\documents\visual studio 2010\projects\VerifyJob\VerifyJob\bin\Debug\VerifyJob.dll
+c:\users\administrator\documents\visual studio 2010\projects\VerifyJob\VerifyJob\bin\Debug\VerifyJob.pdb
+c:\users\administrator\documents\visual studio 2010\projects\VerifyJob\VerifyJob\bin\Debug\VerifyJob.xml
+c:\users\administrator\documents\visual studio 2010\projects\VerifyJob\VerifyJob\obj\Debug\ResolveAssemblyReference.cache
+c:\users\administrator\documents\visual studio 2010\projects\VerifyJob\VerifyJob\obj\Debug\VerifyJob.dll
+c:\users\administrator\documents\visual studio 2010\projects\VerifyJob\VerifyJob\obj\Debug\VerifyJob.xml
+c:\users\administrator\documents\visual studio 2010\projects\VerifyJob\VerifyJob\obj\Debug\VerifyJob.pdb

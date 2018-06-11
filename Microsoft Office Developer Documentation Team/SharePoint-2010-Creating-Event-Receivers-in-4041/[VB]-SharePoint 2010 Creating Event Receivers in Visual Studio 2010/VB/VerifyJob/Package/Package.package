@@ -1,0 +1,6 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package dslVersion="1.0.0.0" Id="1b5a0736-a2cc-4da5-9662-680fd31b435e" solutionId="1b5a0736-a2cc-4da5-9662-680fd31b435e" xmlns="http://schemas.microsoft.com/VisualStudio/2008/SharePointTools/PackageModel" name="VerifyJob">
+    <features>
+        <featureReference itemId="72b315d7-3c91-4724-b276-b773a291b4a2" />
+    </features>
+</package>
