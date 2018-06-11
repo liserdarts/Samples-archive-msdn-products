@@ -1,0 +1,56 @@
+' Excel 2010
+
+' Work with the gradient fill features new to the FillFormat object in Excel 2007.
+
+' In Excel 2010, in a new workbook, copy all this code into
+' the Sheet1 class module. Place the cursor in the
+' GradientDemo procedure, and then press F8 to
+' single-step through the code. Arrange the VBA and Excel windows
+' side by side so you can follow the instructions in the comments.
+
+Sub GradientDemo()
+    Dim rng As Range
+  
+    Set rng = Range("B2:C10")
+    rng.Cells.Merge
+    Dim grd1 As LinearGradient
+  
+    rng.Interior.Pattern = XlPattern.xlPatternLinearGradient
+    Set grd1 = rng.Interior.Gradient
+  
+    Dim cs As ColorStop
+    ' Set the gradient to be tilted by 10 degrees:
+    grd1.Degree = 10
+  
+    ' Add a color stop at 25% of the width:
+    Set cs = grd1.ColorStops.Add(0.25)
+    cs.Color = vbYellow
+    ' Set the shading: -1 is black, 1 is white, 0 is the full color.
+    ' Setting this to 0.25 makes it a little paler.
+    cs.TintAndShade = 0.25
+  
+    ' Add a color stop at 100% of the width:
+    Set cs = grd1.ColorStops.Add(1)
+    cs.Color = vbRed
+  
+    ' Repeat with a rectangular gradient:
+  
+    Set rng = Range("E2:F10")
+    Dim grd2 As RectangularGradient
+    rng.Interior.Pattern = XlPattern.xlPatternRectangularGradient
+    rng.Cells.Merge
+  
+    Set grd2 = rng.Interior.Gradient
+    ' Set the offset for the rectangular gradient
+    ' to the center of the region:
+    grd2.RectangleLeft = 0.5
+    grd2.RectangleTop = 0.5
+  
+    ' Add color stops at 25% and 100%:
+    Set cs = grd2.ColorStops.Add(0.25)
+    cs.Color = vbRed
+  
+    Set cs = grd2.ColorStops.Add(1)
+    cs.Color = vbYellow
+End Sub
+
