@@ -1,0 +1,47 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Automation Master="Invoice Master" Printer="Microsoft XPS Document Writer">
+	<Records>
+		<Record>
+			<InvoiceNum>200</InvoiceNum>
+			<Name>John Smith</Name>
+			<CompanyName>ABC Company</CompanyName>
+			<StreetAddress>5522 N. Maple St.</StreetAddress>
+			<City>Boston</City>
+			<State>MA</State>
+			<ZipCode>04444</ZipCode>
+			<Phone>555-555-3322</Phone>
+			<CustID>7733-99</CustID>
+			<Salesperson>White</Salesperson>
+			<DueDate>5/31/2008</DueDate>
+			<Total>4,556.88</Total>
+		</Record>
+		<Record>
+			<InvoiceNum>201</InvoiceNum>
+			<Name>Betty Johnson</Name>
+			<CompanyName>XYZ Company</CompanyName>
+			<StreetAddress>3434 W. Main St.</StreetAddress>
+			<City>Los Angeles</City>
+			<State>CA</State>
+			<ZipCode>95858</ZipCode>
+			<Phone>777-555-9000</Phone>
+			<CustID>7736-94</CustID>
+			<Salesperson>McClellan</Salesperson>
+			<DueDate>6/30/2008</DueDate>
+			<Total>1,200.00</Total>
+		</Record>
+		<Record>
+			<InvoiceNum>202</InvoiceNum>
+			<Name>Jimmy James</Name>
+			<CompanyName>Apex Company</CompanyName>
+			<StreetAddress>4777 E. 84th Ave.</StreetAddress>
+			<City>New York</City>
+			<State>NY</State>
+			<ZipCode>01212</ZipCode>
+			<Phone>212-555-2628</Phone>
+			<CustID>7653-00</CustID>
+			<Salesperson>White</Salesperson>
+			<DueDate>5/15/2008</DueDate>
+			<Total>9,554.22</Total>
+		</Record>
+	</Records>
+</Automation>
