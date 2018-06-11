@@ -1,0 +1,22 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AppPartsApp", "AppPartsApp\AppPartsApp.csproj", "{450D1A70-9F16-4563-B352-210CD33C3D57}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{450D1A70-9F16-4563-B352-210CD33C3D57}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{450D1A70-9F16-4563-B352-210CD33C3D57}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{450D1A70-9F16-4563-B352-210CD33C3D57}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{450D1A70-9F16-4563-B352-210CD33C3D57}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{450D1A70-9F16-4563-B352-210CD33C3D57}.Release|Any CPU.Build.0 = Release|Any CPU
+		{450D1A70-9F16-4563-B352-210CD33C3D57}.Release|Any CPU.Deploy.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
