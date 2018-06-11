@@ -1,0 +1,57 @@
+Option Explicit
+
+' Visio 2010 with the US Units stencils installed.
+
+' Demonstrate the DropConnected method.
+
+' Visio 2010 allows you to create connected shapes as you
+' drop them on to a page using the DropConnected method.
+' The following code creates a new Visio document and adds
+' three shapes--a rectangle, circle, and triangle--to the first
+' page of the document.
+' As it adds the circle and the triangle, it creates them
+' as connected items to the previously added shape using
+' the Page's DropConnected method.
+'
+' To run this demo, open Visio 2010 and create a blank document.
+' Open the VBA editor and paste this code into the existing 
+' ThisDocument module.
+' With the cursor inside the ConnectShapesWithDropConnected
+' method, press F5.
+
+Sub ConnectShapesWithDropConnected()
+    ' Access objects on the current document.
+    Dim doc As Visio.Document
+    Set doc = Application.ActiveDocument
+    Dim thePage As Visio.Page
+    Set thePage = doc.Pages(1)
+    
+    ' Open the built-in Basic Shapes stencil.
+    ' If the stencil is already open, the code
+    ' activates the stencil.
+    Dim stencil As Visio.Document
+    Dim stencilName As String
+    stencilName = "Basic Shapes (US units).vss"
+    Set stencil = Application.Documents.OpenEx(stencilName, visOpenDocked)
+    
+    ' Create a rectangle master shape from the stencil.
+    Dim rectangleMaster As Visio.Master
+    Set rectangleMaster = stencil.Masters("Rectangle")
+    ' Create a circle master sharpe from the stencil
+    Dim circleMaster As Visio.Master
+    Set circleMaster = stencil.Masters("Circle")
+    ' Create a triangle master sharpe from the stencil
+    Dim triangleMaster As Visio.Master
+    Set triangleMaster = stencil.Masters("Triangle")
+    
+    ' Define and create three shapes on the document's first page.
+    Dim rectangle1 As Visio.Shape
+    Dim circle1 As Visio.Shape
+    Dim triangle1 As Visio.Shape
+    
+    ' Add the first object with the Drop method.
+    Set rectangle1 = thePage.Drop(rectangleMaster, 2, 10)
+    ' Add the second and third objects using the new DropConnected method.
+    Set circle1 = thePage.DropConnected(circleMaster, rectangle1, visAutoConnectDirRight)
+    Set triangle1 = thePage.DropConnected(triangleMaster, circle1, visAutoConnectDirDown)
+End Sub
