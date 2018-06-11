@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Solution xmlns="http://schemas.microsoft.com/sharepoint/" SolutionId="e3c61b27-c9fd-4df0-8fda-a5bd202868ea" SharePointProductVersion="14.0">
+  <Assemblies>
+    <Assembly Location="MusicBrainzSharePoint.dll" DeploymentTarget="GlobalAssemblyCache">
+      <SafeControls>
+        <SafeControl Assembly="MusicBrainzSharePoint, Version=1.0.0.0, Culture=neutral, PublicKeyToken=0e7cadb4616debc8" Namespace="MusicBrainzSharePoint.SandboxedVisualWebPart1.vstemplate" TypeName="*" />
+      </SafeControls>
+    </Assembly>
+  </Assemblies>
+  <FeatureManifests>
+    <FeatureManifest Location="MusicBrainzSharePoint_Main\Feature.xml" />
+  </FeatureManifests>
+</Solution>
