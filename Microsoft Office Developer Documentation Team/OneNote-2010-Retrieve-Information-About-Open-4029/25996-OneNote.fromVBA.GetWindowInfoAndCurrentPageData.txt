@@ -1,0 +1,104 @@
+Option Explicit
+
+' OneNote 2010
+
+' Demonstrates using the Windows and Window objects.
+
+
+' Use any VBA host including Excel 2010, PowerPoint 2010,
+' or Word 2010.
+' OneNote 2010 is not a VBA host.
+
+' In your VBA host, add references to the following
+' external libraries using the Add References dialog:
+' Microsoft OneNote 14.0 Object Library
+' Microsoft XML, v6.0
+
+' OneNote 2010 provides the ability to interact with
+' the open OneNote User Interface.
+' This procedure gets info about the currently
+' open window(s) and outputs the information to
+' the Immediate window of your VBA host.
+' It then opens a new OneNote window.
+
+' Paste all this code into a module,
+' and place the cursor within the
+' GetWindowInfoAndCurrentPageData procedure,
+' and press F5.
+
+Public Sub GetWindowInfoAndCurrentPageData()
+    ' Connect to OneNote 2010.
+    ' OneNote will be started if it's not running.
+    ' However, for this code to do something interesting,
+    ' you should manually start OneNote first so at least
+    ' one OneNote window is visible.
+    Dim oneNote As OneNote14.Application
+    Set oneNote = New OneNote14.Application
+    
+    Dim intCurrentWindowCount As Integer
+    intCurrentWindowCount = 0
+        
+    ' Walk the list of current windows.
+    Dim oneNoteWindow As OneNote14.Window
+    For Each oneNoteWindow In oneNote.Windows
+        intCurrentWindowCount = intCurrentWindowCount + 1
+        With oneNoteWindow
+            Debug.Print "Window " & intCurrentWindowCount
+            Debug.Print "  Active: " & .Active
+            ' You can use the next of IDs to get more information
+            ' using the GetHierarchy method.
+            Debug.Print "  Current Notebook ID: " & .CurrentNotebookId
+            Debug.Print "  Current Page ID: " & .CurrentPageId
+            Debug.Print "  Current Section ID: " & .CurrentSectionId
+            Debug.Print "  Current Section Group ID: " & .CurrentSectionGroupId
+            Debug.Print "  Docked Location: " & .DockedLocation
+            Debug.Print "  Full Page View: " & .FullPageView
+            Debug.Print "  Side Note: " & .SideNote
+        End With
+    Next
+    
+    If intCurrentWindowCount = 0 Then
+        Debug.Print "No visible OneNote windows."
+    Else
+        ' Get the Current Window.
+        Set oneNoteWindow = oneNote.Windows.CurrentWindow
+        
+        ' If the current Window isn't a SideNote window, continue.
+        If Not oneNoteWindow.SideNote Then
+            ' Get the active page's xml.
+            Dim pageXml As String
+            oneNote.GetPageContent oneNoteWindow.CurrentPageId, pageXml, piBasic, xs2010
+            
+            Dim pageDoc As MSXML2.DOMDocument
+            Set pageDoc = New MSXML2.DOMDocument
+            
+            Dim pageName As String
+            If pageDoc.LoadXML(pageXml) Then
+                Dim nodes As MSXML2.IXMLDOMNodeList
+                Set nodes = pageDoc.DocumentElement.SelectNodes("//one:Page")
+                        
+                If Not nodes Is Nothing Then
+                    Dim pageNode As MSXML2.IXMLDOMNode
+                    Set pageNode = nodes(0)
+        
+                    pageName = GetAttributeValueFromNode(pageNode, "name")
+    
+                    ' Output information about the current page.
+                    Debug.Print "Current Page Name: " & pageName
+                    Debug.Print "Current Page ID: " & oneNoteWindow.CurrentPageId
+                    Debug.Print "Current Page XML Below: "
+                    
+                    Debug.Print pageXml
+                End If
+            End If
+        End If
+    End If
+End Sub
+
+Private Function GetAttributeValueFromNode(node As MSXML2.IXMLDOMNode, attributeName As String) As String
+    If node.Attributes.getNamedItem(attributeName) Is Nothing Then
+        GetAttributeValueFromNode = "Not found."
+    Else
+        GetAttributeValueFromNode = node.Attributes.getNamedItem(attributeName).Text
+    End If
+End Function
