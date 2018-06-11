@@ -1,0 +1,157 @@
+Option Explicit
+
+' OneNote 2010
+
+' Demonstrate the GetHierarchy and Publish methods.
+
+' Use any VBA host including Excel 2010, PowerPoint 2010,
+' or Word 2010.
+' OneNote 2010 is not a VBA host.
+
+' In your VBA host, add references to the following
+' external libraries using the Add References dialog:
+' Microsoft OneNote 14.0 Object Library
+' Microsoft XML, v6.0
+
+' Paste all this code into a module.
+' Start OneNote 2010 before running the code.
+' In the VBA editor, place the cursor within the
+' PublishFirstPageOfFirstSectionOfFirstNotebookToPdf procedure,
+' and press F5.
+ 
+' The PublishFirstPageOfOfFirstSectionOfFirstNotebookToPdf
+' procedure uses the MSXML library to
+' iterate through the first Notebook, its first Section,
+' and finally get the first page and outputs the page's content
+' to a PDF file in the directory specified.
+
+' Change this value to a valid folder on your computer.
+Const FILE_PATH = "C:\Windows\Temp\"
+
+Sub PublishFirstPageOfFirstSectionOfFirstNotebookToPdf()
+    ' Connect to OneNote 2010.
+    Dim oneNote As OneNote14.Application
+    Set oneNote = New OneNote14.Application
+    
+    ' Get all of the Notebook nodes.
+    Dim nodes As MSXML2.IXMLDOMNodeList
+    Set nodes = GetFirstOneNoteNotebookNodes(oneNote)
+    If Not nodes Is Nothing Then
+        ' Get the first OneNote Notebook in the XML document.
+        Dim node As MSXML2.IXMLDOMNode
+        Set node = nodes(0)
+        Dim noteBookName As String
+        noteBookName = node.Attributes.getNamedItem("name").Text
+        
+        ' Get the ID for the Notebook so the code can retrieve
+        ' the list of sections.
+        Dim notebookID As String
+        notebookID = node.Attributes.getNamedItem("ID").Text
+        
+        ' Load the XML for the Sections for the Notebook requested.
+        Dim sectionsXml As String
+        oneNote.GetHierarchy notebookID, hsSections, sectionsXml, xs2010
+        
+        Dim secDoc As MSXML2.DOMDocument
+        Set secDoc = New MSXML2.DOMDocument
+    
+        If secDoc.LoadXML(sectionsXml) Then
+            Dim secNodes As MSXML2.IXMLDOMNodeList
+            Set secNodes = secDoc.DocumentElement.SelectNodes("//one:Section")
+
+            If Not secNodes Is Nothing Then
+                Dim secNode As MSXML2.IXMLDOMNode
+                Set secNode = secNodes(0)
+                
+                Dim sectionID As String
+                sectionID = GetAttributeValueFromNode(secNode, "ID")
+                                
+                ' Load the XML for the Pages for the Section requested.
+                Dim pagesXml As String
+                oneNote.GetHierarchy sectionID, hsPages, pagesXml, xs2010
+                
+                Dim pagesDoc As MSXML2.DOMDocument
+                Set pagesDoc = New MSXML2.DOMDocument
+                
+                If pagesDoc.LoadXML(pagesXml) Then
+                    Dim pageNodes As MSXML2.IXMLDOMNodeList
+                    Set pageNodes = pagesDoc.DocumentElement.SelectNodes("//one:Page")
+                    
+                    If Not pageNodes Is Nothing Then
+                        Dim pageNode As MSXML2.IXMLDOMNode
+                        Set pageNode = pageNodes(0)
+
+                        Dim pageName As String
+                        Dim pageID As String
+                        
+                        pageName = GetAttributeValueFromNode(pageNode, "name")
+                        pageID = GetAttributeValueFromNode(pageNode, "ID")
+
+                        ' Get the user's specified output folder.
+                        Dim outputFolder As String
+                        outputFolder = FILE_PATH
+                        
+                        ' Create a file name using the page's name.
+                        Dim fileName As String
+                        fileName = pageName & ".pdf"
+                        
+                        ' Combine the two values into a single
+                        ' Variable so it's easier to use twice.
+                        Dim publishContentTo As String
+                        publishContentTo = outputFolder & fileName
+                        
+                        ' Publish the page content to a PDF file
+                        ' in the user specified folder.
+                        ' The last parameter is not necessary unless you use the
+                        ' pfEmf enum.
+                        ' Note this method will fail if the file already exists
+                        ' at the location specified.
+                        oneNote.Publish pageID, publishContentTo, pfPDF
+                        
+                        ' Display where the file was published to the user.
+                        MsgBox "Page " & pageName & " was published to " & publishContentTo, vbInformation, "Publish OK"
+                    Else
+                        MsgBox "OneNote 2010 Page nodes not found."
+                    End If
+                Else
+                    MsgBox "OneNote 2010 Pages XML data failed to load."
+                End If
+            Else
+                MsgBox "OneNote 2010 Section nodes not found."
+            End If
+        Else
+            MsgBox "OneNote 2010 Section XML data failed to load."
+        End If
+    Else
+        MsgBox "OneNote 2010 XML data failed to load."
+    End If
+    
+End Sub
+
+Private Function GetAttributeValueFromNode(node As MSXML2.IXMLDOMNode, attributeName As String) As String
+    If node.Attributes.getNamedItem(attributeName) Is Nothing Then
+        GetAttributeValueFromNode = "Not found."
+    Else
+        GetAttributeValueFromNode = node.Attributes.getNamedItem(attributeName).Text
+    End If
+End Function
+
+Private Function GetFirstOneNoteNotebookNodes(oneNote As OneNote14.Application) As MSXML2.IXMLDOMNodeList
+    ' Get the XML that represents the OneNote notebooks available.
+    Dim notebookXml As String
+    ' OneNote fills notebookXml with an XML document providing information
+    ' about what OneNote notebooks are available.
+    ' You want all the data and thus are providing an empty string
+    ' for the bstrStartNodeID parameter.
+    oneNote.GetHierarchy "", hsNotebooks, notebookXml, xs2010
+    
+    ' Use the MSXML Library to parse the XML.
+    Dim doc As MSXML2.DOMDocument
+    Set doc = New MSXML2.DOMDocument
+    
+    If doc.LoadXML(notebookXml) Then
+        Set GetFirstOneNoteNotebookNodes = doc.DocumentElement.SelectNodes("//one:Notebook")
+    Else
+        Set GetFirstOneNoteNotebookNodes = Nothing
+    End If
+End Function
