@@ -1,0 +1,12 @@
+C:\Data\UCode\OCOM\MVVM\GroupsAndContacts\GroupsAndContacts2\GroupsAndContacts2\bin\Debug\GroupsAndContacts2.exe
+C:\Data\UCode\OCOM\MVVM\GroupsAndContacts\GroupsAndContacts2\GroupsAndContacts2\bin\Debug\GroupsAndContacts2.pdb
+C:\Data\UCode\OCOM\MVVM\GroupsAndContacts\GroupsAndContacts2\GroupsAndContacts2\bin\Debug\Microsoft.Lync.Model.dll
+C:\Data\UCode\OCOM\MVVM\GroupsAndContacts\GroupsAndContacts2\GroupsAndContacts2\bin\Debug\Microsoft.Office.Uc.dll
+C:\Data\UCode\OCOM\MVVM\GroupsAndContacts\GroupsAndContacts2\GroupsAndContacts2\bin\Debug\Microsoft.Lync.Model.xml
+C:\Data\UCode\OCOM\MVVM\GroupsAndContacts\GroupsAndContacts2\GroupsAndContacts2\obj\x86\Debug\ResolveAssemblyReference.cache
+C:\Data\UCode\OCOM\MVVM\GroupsAndContacts\GroupsAndContacts2\GroupsAndContacts2\obj\x86\Debug\GroupsAndContacts2.Form1.resources
+C:\Data\UCode\OCOM\MVVM\GroupsAndContacts\GroupsAndContacts2\GroupsAndContacts2\obj\x86\Debug\GroupsAndContacts2.Properties.Resources.resources
+C:\Data\UCode\OCOM\MVVM\GroupsAndContacts\GroupsAndContacts2\GroupsAndContacts2\obj\x86\Debug\GenerateResource.read.1.tlog
+C:\Data\UCode\OCOM\MVVM\GroupsAndContacts\GroupsAndContacts2\GroupsAndContacts2\obj\x86\Debug\GenerateResource.write.1.tlog
+C:\Data\UCode\OCOM\MVVM\GroupsAndContacts\GroupsAndContacts2\GroupsAndContacts2\obj\x86\Debug\GroupsAndContacts2.exe
+C:\Data\UCode\OCOM\MVVM\GroupsAndContacts\GroupsAndContacts2\GroupsAndContacts2\obj\x86\Debug\GroupsAndContacts2.pdb
