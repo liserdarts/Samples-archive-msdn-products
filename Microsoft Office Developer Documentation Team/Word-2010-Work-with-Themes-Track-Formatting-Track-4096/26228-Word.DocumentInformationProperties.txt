@@ -1,0 +1,93 @@
+' Word 2010
+
+' Demonstrate some of the new Document class properties, starting in Word 2007.
+
+' In a new document, type the following text and then press Enter:
+'
+' =rand(1, 5)
+'
+' This action inserts 1 paragraph with 5 sentences into the
+' current document. Then, in the VBA editor, in the ThisDocument class,
+' copy in this code, and place the cursor within
+' the DocumentInformationProperties procedure and press F8 to single
+' step through the code. Arrange the VBA and Word windows side
+' by side on screen so you can view the
+' behavior as you step through the code.
+
+Sub DocumentInformationProperties()
+    Dim isFinal As Boolean
+    Dim doLockQuickStyleSet As Boolean
+    Dim doLockTheme As Boolean
+    Dim doTrackFormatting As Boolean
+    Dim doTrackRevisions As Boolean
+    Dim doTrackMoves As Boolean
+
+    With ActiveDocument
+        ' Store away the current state:
+        isFinal = .Final
+        doLockQuickStyleSet = .LockQuickStyleSet
+        doLockTheme = .LockTheme
+        doTrackFormatting = .TrackFormatting
+        doTrackRevisions = .TrackRevisions
+        doTrackMoves = .TrackMoves
+   
+        ' This had better return true!
+        Debug.Print .HasVBProject
+        
+        ' Work with Quick Styles
+        .LockQuickStyleSet = False
+        ' Now, on the Ribbon, go to the Styles
+        ' group, and select Change Styles. Select
+        ' Style Set, and note the list of available quick styles.
+        .LockQuickStyleSet = True
+        ' Repeat the same steps, and now note that the
+        ' menu no longer contains a list of available quick styles.
+       
+        ' Work with the Theme
+        .LockTheme = False
+        ' On the menu, click the Page Layout menu item.
+        ' In the Themes group, note that the Themes drop-down is available.
+        ' You can change the document's theme.
+       
+        .LockTheme = True
+        ' Go to the same location, and note that now the Themes drop-down
+        ' is no longer available.
+       
+        .TrackRevisions = True
+        .TrackFormatting = True
+        ' In the document, change a word to be bold. Note that the
+        ' document tracks formatting changes.
+        .TrackFormatting = False
+        ' Change another word to be bold, and note that the document
+        ' no longer tracks formatting changes.
+       
+        .TrackMoves = True
+        ' In the document, move a word. Note that the
+        ' document tracks moves.
+        .TrackMoves = False
+        ' Move another word, and note that the document
+        ' no longer tracks moves.
+       
+        ' Indicate that the current document is final.
+        ' This forces a save of the document if it's not
+        ' already saved:
+        .Final = True
+        ' Note the banner that appears in the document.
+        ' Click Edit Anyway to continue editing.
+       
+        ' Put things back the way they were:
+        .Final = isFinal
+        .LockQuickStyleSet = doLockQuickStyleSet
+        .LockTheme = doLockTheme
+        .TrackFormatting = doTrackFormatting
+        .TrackRevisions = doTrackRevisions
+        .TrackMoves = doTrackMoves
+       
+        ' Retrieve the contents as an XML stream, using the
+        ' Open XML file format.
+        Dim results As String
+        results = .WordOpenXML
+        MsgBox results
+    End With
+End Sub
+
