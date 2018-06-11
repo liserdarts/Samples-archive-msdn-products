@@ -1,0 +1,54 @@
+' PowerPoint 2010
+
+' Start this procedure in a new PowerPoint presentation. The code
+' selects the first slide, adds a shape to it, and then changes the
+' brightness of the shape's foreground. You'll find it most interesting
+' to watch if you put the VBA editor and PowerPoint itself side by side
+' on your monitor. Set a breakpoint, run the code, and then hold down 
+' the F8 key to step through the code.
+
+Sub TestBrightness()
+    Dim i As Integer
+    Dim shp As Shape
+    Dim sld As Slide
+   
+    Set sld = ActivePresentation.Slides(1)
+   
+    ' Add a new shape: A 200x100 pixel balloon, and set its color:
+    Set shp = sld.Shapes.AddShape(msoShapeBalloon, 10, 10, 200, 100)
+    shp.Fill.ForeColor.RGB = 3487637
+   
+    ' Finally, alter the Brightness of the color. Do not use
+    ' this technique to create animations--PowerPoint handles
+    ' that itself. This is meant only as instructive code that
+    ' demonstrates how modifying the Brightness property
+    ' changes the way a shape looks.
+    For i = 0 To 100
+        SetBrightness shp, i / 100
+        ' Wait 1/10 second or so.
+        Pause 0.1
+    Next i
+End Sub
+
+Sub SetBrightness(shp As Shape, brightnessValue As Single)
+    ' Set the Brightness property of a ColorFormat object.
+    ' You can retrieve a ColorFormat in a number of ways.
+    ' See this page for more information on ways to retrieve
+    ' a reference to a ColorFormat object:
+    ' http://msdn.microsoft.com/en-us/library/ff744611.aspx
+   
+    Dim cf As ColorFormat
+    Set cf = shp.Fill.ForeColor
+    cf.brightness = brightnessValue
+End Sub
+
+Function Pause(numberOfSeconds As Variant)
+    Dim startTime, endTime As Variant
+
+    startTime = Timer
+    endTime = startTime + numberOfSeconds
+   
+    Do While Timer < endTime
+        DoEvents
+    Loop
+End Function
