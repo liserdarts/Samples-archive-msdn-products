@@ -1,0 +1,6 @@
+C:\Demos\UpgradeEventDemo\UpgradeEventDemo\bin\Debug\UpgradeEventDemo.pdb
+C:\Demos\UpgradeEventDemo\UpgradeEventDemo\obj\Debug\UpgradeEventDemo.dll
+C:\Demos\UpgradeEventDemo\UpgradeEventDemo\obj\Debug\UpgradeEventDemo.pdb
+C:\MSDN\UpgradeEventDemo\UpgradeEventDemo_version2.0.0.0\UpgradeEventDemo\bin\Debug\UpgradeEventDemo.pdb
+C:\MSDN\UpgradeEventDemo\UpgradeEventDemo_version2.0.0.0\UpgradeEventDemo\obj\Debug\UpgradeEventDemo.dll
+C:\MSDN\UpgradeEventDemo\UpgradeEventDemo_version2.0.0.0\UpgradeEventDemo\obj\Debug\UpgradeEventDemo.pdb
