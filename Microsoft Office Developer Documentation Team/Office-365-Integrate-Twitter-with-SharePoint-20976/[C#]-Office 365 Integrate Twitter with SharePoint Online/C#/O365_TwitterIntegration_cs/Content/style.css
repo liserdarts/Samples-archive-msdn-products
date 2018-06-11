@@ -1,0 +1,46 @@
+body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,form,fieldset,input,textarea,p,blockquote,th,td { 
+	margin:0;
+	padding:0;
+}
+
+ol,ul {
+	list-style:none;
+}
+
+body {
+	
+	font-size:1.1em;	
+}
+
+#ulTwitterFeeds li {
+	font-size:13px;
+	background:url(../images/twitter.png) no-repeat left ;
+	padding-left:25px;
+	padding-top:4px;
+	margin-left:10px;
+	margin-top:8px;
+	list-style-type:none;
+	height:17px;
+}
+
+#ulTwitterFeeds .hash { color:#0066CC; } 
+
+#ulTwitterFeeds .reply { color:#0066CC; } 
+
+.auto-style1
+{
+    width: 200px;
+}
+
+#txtSearchKey
+{
+    width: 156px;
+    margin-left: 17px;
+}
+
+        
+.auto-style2
+{
+    width: 803px;
+}
+

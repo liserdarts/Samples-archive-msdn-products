@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package dslVersion="1.0.0.0" 
+        Id="8697013e-a57f-48a2-bbe5-80a5119e946e" 
+        solutionId="8697013e-a57f-48a2-bbe5-80a5119e946e" 
+        xmlns="http://schemas.microsoft.com/VisualStudio/2008/SharePointTools/PackageModel" 
+        name="Office_365_Twitter_Feeds"
+        sharePointProductVersion="15.0">
+  <features>
+        <featureReference itemId="1cd50152-7766-4276-9fd1-295d8aa695ed" />
+  </features>
+</package>
