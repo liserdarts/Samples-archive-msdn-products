@@ -1,0 +1,42 @@
+' Microsoft Word 2010
+
+' Work with new properties of the TextFrame object.
+
+' Copy this code into a module in a new document.
+' Then, in the VBA editor, place the cursor within
+' this procedure and press F8 to single step through the code. Arrange
+' the VBA and Word windows side by side on screen so you can view the
+' behavior as you step through the code.
+
+Sub WorkWithTextFrame()
+    Dim shp As Shape
+    With ActiveDocument.Shapes
+        Set shp = .AddShape(MsoAutoShapeType.msoShapeOval, 10, 10, 400, 200)
+        With shp.TextFrame
+            .TextRange.Text = "Here's my shape!"
+           
+            ' Set the location of the anchor: in Word
+            ' note that the anchor is at the top center.
+            .HorizontalAnchor = msoAnchorCenter
+            .VerticalAnchor = msoAnchorTop
+           
+            ' Note that the text doesn't rotate with the shape.
+            ' Unless you set this to msoTrue, when you rotate the
+            ' shape, the text rotates as well.
+            ' Try commenting out this line and running the code
+            ' to see how it affects the behavior.
+            .NoTextRotation = msoTrue
+           
+            ' Set the path format. You can use only one of
+            ' the built-in formats, or msoPathTypeNone, which
+            ' removes the path:
+            .PathFormat = msoPathType2
+           
+            ' Modify the warping of the text, using
+            ' one of the built-in warp formats:
+            .WarpFormat = msoWarpFormat12
+        End With
+        shp.Rotation = 45
+        shp.Top = 100
+    End With
+End Sub
