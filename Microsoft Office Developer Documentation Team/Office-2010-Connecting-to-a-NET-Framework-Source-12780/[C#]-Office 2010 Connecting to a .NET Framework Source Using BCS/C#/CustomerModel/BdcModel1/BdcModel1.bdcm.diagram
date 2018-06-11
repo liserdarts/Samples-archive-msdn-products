@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<minimalLanguageDiagram dslVersion="1.0.0.0" absoluteBounds="0, 0, 11, 8.5" name="$rootname$">
+  <modelRootMoniker Name="/BdcModel1" />
+  <nestedChildShapes>
+    <entityShape Id="aec22927-2aca-44bb-9405-cf5963e9e1ce" absoluteBounds="2.625, 1.75, 1.5, 1.9210009765625">
+      <entityMoniker name="CustomerModel.BdcModel1.Customer" />
+      <nestedChildShapes>
+        <elementListCompartment Id="ffcb41a9-4e92-4fc0-813e-9627817d3dc0" absoluteBounds="2.6399999999999997, 2.16, 1.4700000000000002, 0.37180582682291663" name="Identifiers" titleTextColor="Black" itemTextColor="Black" />
+        <elementListCompartment Id="c8ad1eab-418e-432d-accb-970033d22996" absoluteBounds="2.64, 2.5418058268229169, 1.4700000000000002, 1.0291951497395833" name="Methods" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </entityShape>
+  </nestedChildShapes>
+</minimalLanguageDiagram>

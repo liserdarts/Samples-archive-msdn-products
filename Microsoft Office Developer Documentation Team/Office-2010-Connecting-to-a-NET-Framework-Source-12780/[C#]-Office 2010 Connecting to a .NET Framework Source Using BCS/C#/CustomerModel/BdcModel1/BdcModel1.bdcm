@@ -1,0 +1,72 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Model xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="http://schemas.microsoft.com/windows/2007/BusinessDataCatalog" Name="BdcModel1">
+  <LobSystems>
+    <LobSystem Name="BdcModel1" Type="DotNetAssembly">
+      <LobSystemInstances>
+        <LobSystemInstance Name="BdcModel1" />
+      </LobSystemInstances>
+      <Entities>
+        <Entity Name="Customer" Namespace="CustomerModel.BdcModel1" Version="1.0.0.29">
+          <Properties>
+            <Property Name="Class" Type="System.String">CustomerModel.BdcModel1.CustomerService, BdcModel1</Property></Properties>
+          <Identifiers>
+            <Identifier Name="CustomerID" TypeName="System.Int32" /></Identifiers>
+          <Methods>
+            <Method Name="ReadList">
+              <Parameters>
+                <Parameter Name="customerList" Direction="Return">
+                  <TypeDescriptor Name="CustomerList" TypeName="System.Collections.Generic.IEnumerable`1[CustomerModel.BdcModel1.Customer, BdcModel1]" IsCollection="true">
+                    <TypeDescriptors>
+                      <TypeDescriptor Name="Customer" TypeName="CustomerModel.BdcModel1.Customer, BdcModel1">
+                        <TypeDescriptors>
+                          <TypeDescriptor Name="CustomerID" TypeName="System.Int32" IdentifierName="CustomerID" />
+                          <TypeDescriptor Name="CustomerName" TypeName="System.String" /></TypeDescriptors></TypeDescriptor></TypeDescriptors></TypeDescriptor></Parameter></Parameters>
+              <MethodInstances>
+                <MethodInstance Name="ReadList" Type="Finder" ReturnParameterName="customerList" ReturnTypeDescriptorPath="CustomerList" /></MethodInstances></Method>
+            <Method Name="ReadItem">
+              <Parameters>
+                <Parameter Name="customer" Direction="Return">
+                  <TypeDescriptor Name="Customer" TypeName="CustomerModel.BdcModel1.Customer, BdcModel1">
+                    <TypeDescriptors>
+                      <TypeDescriptor Name="CustomerID" IdentifierName="CustomerID" TypeName="System.Int32" />
+                      <TypeDescriptor Name="CustomerName" TypeName="System.String" /></TypeDescriptors></TypeDescriptor></Parameter>
+                <Parameter Name="customerID" Direction="In">
+                  <TypeDescriptor Name="CustomerID" TypeName="System.Int32" IdentifierEntityName="Customer" IdentifierEntityNamespace="CustomerModel.BdcModel1" IdentifierName="CustomerID" /></Parameter></Parameters>
+              <MethodInstances>
+                <MethodInstance Name="ReadItem" Type="SpecificFinder" ReturnParameterName="customer" ReturnTypeDescriptorPath="Customer" /></MethodInstances></Method>
+            <Method Name="Create">
+              <Parameters>
+                <Parameter Name="returnCustomer" Direction="Return">
+                  <TypeDescriptor Name="ReturnCustomer" TypeName="CustomerModel.BdcModel1.Customer, BdcModel1">
+                    <TypeDescriptors>
+                      <TypeDescriptor Name="CustomerID" IdentifierName="CustomerID" TypeName="System.Int32" />
+                      <TypeDescriptor Name="CustomerName" TypeName="System.String" /></TypeDescriptors></TypeDescriptor></Parameter>
+                <Parameter Name="newCustomer" Direction="In">
+                  <TypeDescriptor Name="NewCustomer" TypeName="CustomerModel.BdcModel1.Customer, BdcModel1">
+                    <TypeDescriptors>
+                      <TypeDescriptor Name="CustomerID" IdentifierName="CustomerID" TypeName="System.Int32" CreatorField="false" />
+                      <TypeDescriptor Name="CustomerName" TypeName="System.String" CreatorField="true" /></TypeDescriptors></TypeDescriptor></Parameter></Parameters>
+              <MethodInstances>
+                <MethodInstance Name="Create" Type="Creator" ReturnParameterName="returnCustomer" ReturnTypeDescriptorPath="ReturnCustomer" /></MethodInstances></Method>
+            <Method Name="Update">
+              <Parameters>
+                <Parameter Name="customer" Direction="In">
+                  <TypeDescriptor Name="Customer" TypeName="CustomerModel.BdcModel1.Customer, BdcModel1">
+                    <TypeDescriptors>
+                      <TypeDescriptor Name="CustomerID" IdentifierName="CustomerID" TypeName="System.Int32" UpdaterField="true" />
+                      <TypeDescriptor Name="CustomerName" TypeName="System.String" UpdaterField="true" /></TypeDescriptors></TypeDescriptor></Parameter>
+                <Parameter Name="customerID" Direction="In">
+                  <TypeDescriptor Name="CustomerID" TypeName="System.Int32" PreUpdaterField="true" /></Parameter></Parameters>
+              <MethodInstances>
+                <MethodInstance Name="Update" Type="Updater" /></MethodInstances></Method>
+            <Method Name="Delete">
+              <Parameters>
+                <Parameter Name="customerID" Direction="In">
+                  <TypeDescriptor Name="CustomerID" TypeName="System.Int32" IdentifierEntityName="Customer" IdentifierEntityNamespace="CustomerModel.BdcModel1" IdentifierName="CustomerID" /></Parameter></Parameters>
+              <MethodInstances>
+                <MethodInstance Name="Delete" Type="Deleter" /></MethodInstances></Method>
+            </Methods>
+          </Entity></Entities>
+    </LobSystem>
+  </LobSystems>
+</Model>
