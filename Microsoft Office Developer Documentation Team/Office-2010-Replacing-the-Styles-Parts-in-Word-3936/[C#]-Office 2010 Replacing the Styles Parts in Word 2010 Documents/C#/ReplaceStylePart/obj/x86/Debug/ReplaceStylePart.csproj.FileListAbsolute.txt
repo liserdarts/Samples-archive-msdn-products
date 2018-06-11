@@ -1,0 +1,12 @@
+I:\DropBox\My Dropbox\Office 2010 VHTs\Dec 2010\ReplaceStylePart\ReplaceStylePart\bin\Debug\ReplaceStylePart.exe
+I:\DropBox\My Dropbox\Office 2010 VHTs\Dec 2010\ReplaceStylePart\ReplaceStylePart\bin\Debug\ReplaceStylePart.pdb
+I:\DropBox\My Dropbox\Office 2010 VHTs\Dec 2010\ReplaceStylePart\ReplaceStylePart\obj\x86\Debug\ResolveAssemblyReference.cache
+I:\DropBox\My Dropbox\Office 2010 VHTs\Dec 2010\ReplaceStylePart\ReplaceStylePart\obj\x86\Debug\ReplaceStylePart.exe
+I:\DropBox\My Dropbox\Office 2010 VHTs\Dec 2010\ReplaceStylePart\ReplaceStylePart\obj\x86\Debug\ReplaceStylePart.pdb
+I:\DropBox\My Dropbox\Office 2010 VHTs\Dec 2010\ReplaceStylePart\Demos\CS\ReplaceStylePart\obj\x86\Debug\ReplaceStylePart.exe
+I:\DropBox\My Dropbox\Office 2010 VHTs\Dec 2010\ReplaceStylePart\Demos\CS\ReplaceStylePart\obj\x86\Debug\ReplaceStylePart.pdb
+I:\DropBox\My Dropbox\Office 2010 VHTs\Dec 2010\ReplaceStylePart\Demos\CS\ReplaceStylePart\bin\Debug\ReplaceStylePart.exe
+I:\DropBox\My Dropbox\Office 2010 VHTs\Dec 2010\ReplaceStylePart\Demos\CS\ReplaceStylePart\bin\Debug\ReplaceStylePart.pdb
+I:\DropBox\My Dropbox\Office 2010 VHTs\Dec 2010\ReplaceStylePart\Demos\CS\ReplaceStylePart\obj\x86\Debug\ResolveAssemblyReference.cache
+C:\Users\salri\DevDocs\Ken Getz\January 2011\WDReplaceStylePart\WDReplaceStyle_Demos\CS\ReplaceStylePart\obj\x86\Debug\ReplaceStylePart.exe
+C:\Users\salri\DevDocs\Ken Getz\January 2011\WDReplaceStylePart\WDReplaceStyle_Demos\CS\ReplaceStylePart\obj\x86\Debug\ReplaceStylePart.pdb
