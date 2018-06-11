@@ -1,0 +1,144 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<WebTest Name="MyTasksNavigate" Id="fc3ae6aa-f681-4fc3-9652-6de7305a8883" Owner="" Priority="2147483647" Enabled="True" CssProjectStructure="" CssIteration="" Timeout="0" WorkItemIds="" xmlns="http://microsoft.com/schemas/VisualStudio/TeamTest/2010" Description="" CredentialUserName="{{TeamMembers.TeamMembers#csv.USERNAME}}" CredentialPassword="mUWKFYLaG6Vkm3Oh2M0WBxspmjpIAY/cZs7qx/82/2LVac0FU6036pyvTPxOAbQ2" PreAuthenticate="True" Proxy="" StopOnError="False" RecordedResultFile="WebTest1.7f01eea4-11be-4c59-a383-ab65337abfd9.rec.webtestresult">
+  <Items>
+    <Request Method="GET" Version="1.1" Url="http://{{Servers.Servers#csv.SERVERNAME}}/{{SiteUrls.SiteUrls#csv.RELATIVESITEURL}}/tasks.aspx" ThinkTime="0" Timeout="300" ParseDependentRequests="False" FollowRedirects="True" RecordResult="True" Cache="False" ResponseTimeGoal="0" Encoding="utf-8" ExpectedHttpStatusCode="0" ExpectedResponseUrl="" ReportingName="TasksPage">
+      <ExtractionRules>
+        <ExtractionRule Classname="Microsoft.VisualStudio.TestTools.WebTesting.Rules.ExtractText, Microsoft.VisualStudio.QualityTools.WebTestFramework, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" VariableName="MyTasksAsyncToken" DisplayName="Extract Text" Description="Extract text from the response and place it into the test context.">
+          <RuleParameters>
+            <RuleParameter Name="StartsWith" Value="&quot;StatusingGetMyWorkForGridJsonAsyncToken&quot;:{&quot;value&quot;:&quot;" />
+            <RuleParameter Name="EndsWith" Value="&quot;" />
+            <RuleParameter Name="IgnoreCase" Value="False" />
+            <RuleParameter Name="UseRegularExpression" Value="False" />
+            <RuleParameter Name="Required" Value="True" />
+            <RuleParameter Name="ExtractRandomMatch" Value="False" />
+            <RuleParameter Name="Index" Value="0" />
+            <RuleParameter Name="HtmlDecode" Value="True" />
+          </RuleParameters>
+        </ExtractionRule>
+        <ExtractionRule Classname="Microsoft.VisualStudio.TestTools.WebTesting.Rules.ExtractText, Microsoft.VisualStudio.QualityTools.WebTestFramework, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" VariableName="DefaultViewUID" DisplayName="Extract Text" Description="Extract text from the response and place it into the test context.">
+          <RuleParameters>
+            <RuleParameter Name="StartsWith" Value="&quot;DefaultViewUid&quot;:{&quot;value&quot;:&quot;" />
+            <RuleParameter Name="EndsWith" Value="&quot;" />
+            <RuleParameter Name="IgnoreCase" Value="False" />
+            <RuleParameter Name="UseRegularExpression" Value="False" />
+            <RuleParameter Name="Required" Value="True" />
+            <RuleParameter Name="ExtractRandomMatch" Value="False" />
+            <RuleParameter Name="Index" Value="0" />
+            <RuleParameter Name="HtmlDecode" Value="True" />
+          </RuleParameters>
+        </ExtractionRule>
+        <ExtractionRule Classname="Microsoft.VisualStudio.TestTools.WebTesting.Rules.ExtractText, Microsoft.VisualStudio.QualityTools.WebTestFramework, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" VariableName="TimephasedStart" DisplayName="Extract Text" Description="Extract text from the response and place it into the test context.">
+          <RuleParameters>
+            <RuleParameter Name="StartsWith" Value="&quot;TimephasedStart&quot;:{&quot;value&quot;:" />
+            <RuleParameter Name="EndsWith" Value="&quot;" />
+            <RuleParameter Name="IgnoreCase" Value="False" />
+            <RuleParameter Name="UseRegularExpression" Value="False" />
+            <RuleParameter Name="Required" Value="True" />
+            <RuleParameter Name="ExtractRandomMatch" Value="False" />
+            <RuleParameter Name="Index" Value="0" />
+            <RuleParameter Name="HtmlDecode" Value="True" />
+          </RuleParameters>
+        </ExtractionRule>
+        <ExtractionRule Classname="Microsoft.VisualStudio.TestTools.WebTesting.Rules.ExtractText, Microsoft.VisualStudio.QualityTools.WebTestFramework, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" VariableName="TimephasedEnd" DisplayName="Extract Text" Description="Extract text from the response and place it into the test context.">
+          <RuleParameters>
+            <RuleParameter Name="StartsWith" Value="&quot;TimephasedEnd&quot;:{&quot;value&quot;:" />
+            <RuleParameter Name="EndsWith" Value="&quot;" />
+            <RuleParameter Name="IgnoreCase" Value="False" />
+            <RuleParameter Name="UseRegularExpression" Value="False" />
+            <RuleParameter Name="Required" Value="True" />
+            <RuleParameter Name="ExtractRandomMatch" Value="False" />
+            <RuleParameter Name="Index" Value="0" />
+            <RuleParameter Name="HtmlDecode" Value="True" />
+          </RuleParameters>
+        </ExtractionRule>
+      </ExtractionRules>
+      <CorrelationExtractionRules>
+        <ExtractionRule Classname="Microsoft.VisualStudio.TestTools.WebTesting.Rules.ExtractText, Microsoft.VisualStudio.QualityTools.WebTestFramework, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" VariableName="QueryStringParam1.culture" DisplayName="" Description="">
+          <RuleParameters>
+            <RuleParameter Name="StartsWith" Value="?culture=" />
+            <RuleParameter Name="EndsWith" Value="&amp;" />
+            <RuleParameter Name="Index" Value="0" />
+            <RuleParameter Name="IgnoreCase" Value="False" />
+            <RuleParameter Name="UseRegularExpression" Value="False" />
+            <RuleParameter Name="HtmlDecode" Value="True" />
+            <RuleParameter Name="Required" Value="False" />
+          </RuleParameters>
+        </ExtractionRule>
+        <ExtractionRule Classname="Microsoft.VisualStudio.TestTools.WebTesting.Rules.ExtractText, Microsoft.VisualStudio.QualityTools.WebTestFramework, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" VariableName="QueryStringParam8.culture" DisplayName="" Description="">
+          <RuleParameters>
+            <RuleParameter Name="StartsWith" Value="?culture=" />
+            <RuleParameter Name="EndsWith" Value="&amp;" />
+            <RuleParameter Name="Index" Value="0" />
+            <RuleParameter Name="IgnoreCase" Value="False" />
+            <RuleParameter Name="UseRegularExpression" Value="False" />
+            <RuleParameter Name="HtmlDecode" Value="True" />
+            <RuleParameter Name="Required" Value="False" />
+          </RuleParameters>
+        </ExtractionRule>
+        <ExtractionRule Classname="Microsoft.VisualStudio.TestTools.WebTesting.Rules.ExtractText, Microsoft.VisualStudio.QualityTools.WebTestFramework, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" VariableName="QueryStringParam15.culture" DisplayName="" Description="">
+          <RuleParameters>
+            <RuleParameter Name="StartsWith" Value="?culture=" />
+            <RuleParameter Name="EndsWith" Value="&amp;" />
+            <RuleParameter Name="Index" Value="0" />
+            <RuleParameter Name="IgnoreCase" Value="False" />
+            <RuleParameter Name="UseRegularExpression" Value="False" />
+            <RuleParameter Name="HtmlDecode" Value="True" />
+            <RuleParameter Name="Required" Value="False" />
+          </RuleParameters>
+        </ExtractionRule>
+        <ExtractionRule Classname="Microsoft.VisualStudio.TestTools.WebTesting.Rules.ExtractText, Microsoft.VisualStudio.QualityTools.WebTestFramework, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" VariableName="QueryStringParam22.culture" DisplayName="" Description="">
+          <RuleParameters>
+            <RuleParameter Name="StartsWith" Value="?culture=" />
+            <RuleParameter Name="EndsWith" Value="&amp;" />
+            <RuleParameter Name="Index" Value="0" />
+            <RuleParameter Name="IgnoreCase" Value="False" />
+            <RuleParameter Name="UseRegularExpression" Value="False" />
+            <RuleParameter Name="HtmlDecode" Value="True" />
+            <RuleParameter Name="Required" Value="False" />
+          </RuleParameters>
+        </ExtractionRule>
+      </CorrelationExtractionRules>
+    </Request>
+    <Request Method="POST" Version="1.1" Url="http://{{Servers.Servers#csv.SERVERNAME}}/{{SiteUrls.SiteUrls#csv.RELATIVESITEURL}}/_vti_bin/PSI/ProjectServer.svc" ThinkTime="0" Timeout="300" ParseDependentRequests="False" FollowRedirects="True" RecordResult="True" Cache="False" ResponseTimeGoal="0" Encoding="utf-8" ExpectedHttpStatusCode="0" ExpectedResponseUrl="" ReportingName="TasksWebServiceCall">
+      <Headers>
+        <Header Name="soapaction" Value="http://schemas.microsoft.com/office/project/server/webservices/PWA/StatusingGetMyWorkForGridJson" />
+      </Headers>
+      <ValidationRules>
+        <ValidationRule Classname="Microsoft.VisualStudio.TestTools.WebTesting.Rules.ValidationRuleFindText, Microsoft.VisualStudio.QualityTools.WebTestFramework, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" DisplayName="Find Text" Description="Verifies the existence of the specified text in the response." Level="High" ExectuionOrder="BeforeDependents">
+          <RuleParameters>
+            <RuleParameter Name="FindText" Value="&lt;StatusingGetMyWorkForGridJsonResult&gt;" />
+            <RuleParameter Name="IgnoreCase" Value="False" />
+            <RuleParameter Name="UseRegularExpression" Value="False" />
+            <RuleParameter Name="PassIfTextFound" Value="True" />
+          </RuleParameters>
+        </ValidationRule>
+      </ValidationRules>
+      <StringHttpBody ContentType="text/xml; charset=utf-8" InsertByteOrderMark="False">PAA/AHgAbQBsACAAdgBlAHIAcwBpAG8AbgA9ACIAMQAuADAAIgAgAGUAbgBjAG8AZABpAG4AZwA9ACIAVQBUAEYALQA4ACIAPwA+ADwAcwBvAGEAcAA6AEUAbgB2AGUAbABvAHAAZQAgAHgAbQBsAG4AcwA6AHgAcwBpAD0AIgBoAHQAdABwADoALwAvAHcAdwB3AC4AdwAzAC4AbwByAGcALwAyADAAMAAxAC8AWABNAEwAUwBjAGgAZQBtAGEALQBpAG4AcwB0AGEAbgBjAGUAIgAgAHgAbQBsAG4AcwA6AHgAcwBkAD0AIgBoAHQAdABwADoALwAvAHcAdwB3AC4AdwAzAC4AbwByAGcALwAyADAAMAAxAC8AWABNAEwAUwBjAGgAZQBtAGEAIgAgAHgAbQBsAG4AcwA6AHMAbwBhAHAAPQAiAGgAdAB0AHAAOgAvAC8AcwBjAGgAZQBtAGEAcwAuAHgAbQBsAHMAbwBhAHAALgBvAHIAZwAvAHMAbwBhAHAALwBlAG4AdgBlAGwAbwBwAGUALwAiAD4APABzAG8AYQBwADoASABlAGEAZABlAHIAPgA8AFAASgBBAHMAeQBuAGMAQwBvAG0AbQBhAG4AZAAgAHgAbQBsAG4AcwA9ACIAaAB0AHQAcAA6AC8ALwBNAGkAYwByAG8AcwBvAGYAdAAuAE8AZgBmAGkAYwBlAC4AUAByAG8AagBlAGMAdAAuAFMAZQByAHYAZQByACIAPgB7AHsATQB5AFQAYQBzAGsAcwBBAHMAeQBuAGMAVABvAGsAZQBuAH0AfQA8AC8AUABKAEEAcwB5AG4AYwBDAG8AbQBtAGEAbgBkAD4APAAvAHMAbwBhAHAAOgBIAGUAYQBkAGUAcgA+ADwAcwBvAGEAcAA6AEIAbwBkAHkAPgA8AFMAdABhAHQAdQBzAGkAbgBnAEcAZQB0AE0AeQBXAG8AcgBrAEYAbwByAEcAcgBpAGQASgBzAG8AbgAgAHgAbQBsAG4AcwA9ACIAaAB0AHQAcAA6AC8ALwBzAGMAaABlAG0AYQBzAC4AbQBpAGMAcgBvAHMAbwBmAHQALgBjAG8AbQAvAG8AZgBmAGkAYwBlAC8AcAByAG8AagBlAGMAdAAvAHMAZQByAHYAZQByAC8AdwBlAGIAcwBlAHIAdgBpAGMAZQBzAC8AUABXAEEALwAiAD4APABnAHIAaQBkAEMAaABhAG4AZwBlAHMASgBzAG8AbgA+ADwALwBnAHIAaQBkAEMAaABhAG4AZwBlAHMASgBzAG8AbgA+ADwAcAByAG8AagBlAGMAdABBAHMAcwBpAGcAbgBtAGUAbgB0AHMATQBhAHAAPgBbAF0APAAvAHAAcgBvAGoAZQBjAHQAQQBzAHMAaQBnAG4AbQBlAG4AdABzAE0AYQBwAD4APAB2AGkAZQB3AFUAaQBkAD4AewB7AEQAZQBmAGEAdQBsAHQAVgBpAGUAdwBVAGkAZAB9AH0APAAvAHYAaQBlAHcAVQBpAGQAPgA8AHcAZQBiAFAAYQByAHQASQBkAD4APAAvAHcAZQBiAFAAYQByAHQASQBkAD4APAB0AGkAbQBlAHAAaABhAHMAZQBkAFMAdABhAHIAdAA+ACIAXAAvAEQAYQB0AGUAKAB7AHsAVABpAG0AZQBwAGgAYQBzAGUAZABTAHQAYQByAHQAfQB9ACkAXAAvACIAPAAvAHQAaQBtAGUAcABoAGEAcwBlAGQAUwB0AGEAcgB0AD4APAB0AGkAbQBlAHAAaABhAHMAZQBkAEUAbgBkAD4AIgBcAC8ARABhAHQAZQAoAHsAewBUAGkAbQBlAHAAaABhAHMAZQBkAEUAbgBkAH0AfQApAFwALwAiADwALwB0AGkAbQBlAHAAaABhAHMAZQBkAEUAbgBkAD4APABkAHUAcgBhAHQAaQBvAG4AVAB5AHAAZQA+ADUAPAAvAGQAdQByAGEAdABpAG8AbgBUAHkAcABlAD4APAB3AG8AcgBrAFQAeQBwAGUAPgAyADwALwB3AG8AcgBrAFQAeQBwAGUAPgA8AGQAYQB0AGUARgBvAHIAbQBhAHQAPgAxADwALwBkAGEAdABlAEYAbwByAG0AYQB0AD4APABjAGwAZQBhAHIAUABlAHIAcwBpAHMAdABlAGQAUAByAG8AcABlAHIAdABpAGUAcwA+AGYAYQBsAHMAZQA8AC8AYwBsAGUAYQByAFAAZQByAHMAaQBzAHQAZQBkAFAAcgBvAHAAZQByAHQAaQBlAHMAPgA8AHIAbwB3AEYAaQBsAHQAZQByAFQAeQBwAGUAPgAwADwALwByAG8AdwBGAGkAbAB0AGUAcgBUAHkAcABlAD4APABnAHIAaQBkAFMAZQByAGkAYQBsAGkAegBlAHIAQQByAGcAcwA+ADwAUABhAGcAaQBuAGcASQBuAGYAbwA+ADwAcwB0AHIAaQBuAGcAPgBGAGkAcgBzAHQAVgBpAHMAaQBiAGwAZQA6ADQAMAA8AC8AcwB0AHIAaQBuAGcAPgA8AC8AUABhAGcAaQBuAGcASQBuAGYAbwA+ADwAUgBlAHEAdQBlAHMAdABUAHkAcABlAD4AMAA8AC8AUgBlAHEAdQBlAHMAdABUAHkAcABlAD4APAAvAGcAcgBpAGQAUwBlAHIAaQBhAGwAaQB6AGUAcgBBAHIAZwBzAD4APAAvAFMAdABhAHQAdQBzAGkAbgBnAEcAZQB0AE0AeQBXAG8AcgBrAEYAbwByAEcAcgBpAGQASgBzAG8AbgA+ADwALwBzAG8AYQBwADoAQgBvAGQAeQA+ADwALwBzAG8AYQBwADoARQBuAHYAZQBsAG8AcABlAD4A</StringHttpBody>
+    </Request>
+  </Items>
+  <DataSources>
+    <DataSource Name="SiteUrls" Provider="Microsoft.VisualStudio.TestTools.DataSource.CSV" Connection="|DataDirectory|\..\SupportFiles\SiteUrls.csv">
+      <Tables>
+        <DataSourceTable Name="SiteUrls#csv" SelectColumns="SelectOnlyBoundColumns" AccessMethod="Random" />
+      </Tables>
+    </DataSource>
+    <DataSource Name="TeamMembers" Provider="Microsoft.VisualStudio.TestTools.DataSource.CSV" Connection="|DataDirectory|\..\SupportFiles\TeamMembers.csv">
+      <Tables>
+        <DataSourceTable Name="TeamMembers#csv" SelectColumns="SelectOnlyBoundColumns" AccessMethod="Random" />
+      </Tables>
+    </DataSource>
+    <DataSource Name="Servers" Provider="Microsoft.VisualStudio.TestTools.DataSource.CSV" Connection="|DataDirectory|\..\SupportFiles\Servers.csv">
+      <Tables>
+        <DataSourceTable Name="Servers#csv" SelectColumns="SelectOnlyBoundColumns" AccessMethod="Random" />
+      </Tables>
+    </DataSource>
+  </DataSources>
+  <ValidationRules>
+    <ValidationRule Classname="Microsoft.VisualStudio.TestTools.WebTesting.Rules.ValidateResponseUrl, Microsoft.VisualStudio.QualityTools.WebTestFramework, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" DisplayName="Response URL" Description="Validates that the response URL after redirects are followed is the same as the recorded response URL.  QueryString parameters are ignored." Level="Low" ExectuionOrder="BeforeDependents" />
+    <ValidationRule Classname="Microsoft.VisualStudio.TestTools.WebTesting.Rules.ValidationRuleResponseTimeGoal, Microsoft.VisualStudio.QualityTools.WebTestFramework, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" DisplayName="Response Time Goal" Description="Validates that the response time for the request is less than or equal to the response time goal as specified on the request.  Response time goals of zero will be ignored." Level="Low" ExectuionOrder="AfterDependents">
+      <RuleParameters>
+        <RuleParameter Name="Tolerance" Value="0" />
+      </RuleParameters>
+    </ValidationRule>
+  </ValidationRules>
+</WebTest>

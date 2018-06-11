@@ -1,0 +1,106 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<WebTest Name="ProjectInformationNavigateFull" Id="88b5df45-db46-4a55-8179-51018c8609c5" Owner="" Priority="0" Enabled="True" CssProjectStructure="" CssIteration="" Timeout="0" WorkItemIds="" xmlns="http://microsoft.com/schemas/VisualStudio/TeamTest/2010" Description="" CredentialUserName="{{ProjectManagers.ProjectManagers#csv.USERNAME}}" CredentialPassword="dBC71N7bS4oVf2SHmblMHg732neol9IoPckmA3P3BEJx214bjzcXqa98Ffos6R8uamFNwl68iUE=" PreAuthenticate="True" Proxy="" StopOnError="False" RecordedResultFile="">
+  <Items>
+    <Request Method="GET" Version="1.1" Url="http://{{Servers.Servers#csv.SERVERNAME}}/{{SiteUrls.SiteUrls#csv.RELATIVESITEURL}}/projects.aspx" ThinkTime="0" Timeout="60" ParseDependentRequests="False" FollowRedirects="True" RecordResult="True" Cache="False" ResponseTimeGoal="0" Encoding="utf-8" ExpectedHttpStatusCode="0" ExpectedResponseUrl="" ReportingName="ProjectCenterPage">
+      <ExtractionRules>
+        <ExtractionRule Classname="Microsoft.VisualStudio.TestTools.WebTesting.Rules.ExtractText, Microsoft.VisualStudio.QualityTools.WebTestFramework, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" VariableName="ProjectCenterAsyncToken" DisplayName="Extract Text" Description="Extract text from the response and place it into the test context.">
+          <RuleParameters>
+            <RuleParameter Name="StartsWith" Value="&quot;ProjectCenterProjectsForGridJsonAsyncToken&quot;:{&quot;value&quot;:&quot;" />
+            <RuleParameter Name="EndsWith" Value="&quot;" />
+            <RuleParameter Name="IgnoreCase" Value="False" />
+            <RuleParameter Name="UseRegularExpression" Value="False" />
+            <RuleParameter Name="Required" Value="True" />
+            <RuleParameter Name="ExtractRandomMatch" Value="False" />
+            <RuleParameter Name="Index" Value="0" />
+            <RuleParameter Name="HtmlDecode" Value="True" />
+          </RuleParameters>
+        </ExtractionRule>
+        <ExtractionRule Classname="Microsoft.VisualStudio.TestTools.WebTesting.Rules.ExtractText, Microsoft.VisualStudio.QualityTools.WebTestFramework, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" VariableName="ProjectCenterDefaultViewUid" DisplayName="Extract Text" Description="Extract text from the response and place it into the test context.">
+          <RuleParameters>
+            <RuleParameter Name="StartsWith" Value="&quot;DefaultViewUid&quot;:{&quot;value&quot;:&quot;" />
+            <RuleParameter Name="EndsWith" Value="&quot;" />
+            <RuleParameter Name="IgnoreCase" Value="False" />
+            <RuleParameter Name="UseRegularExpression" Value="False" />
+            <RuleParameter Name="Required" Value="True" />
+            <RuleParameter Name="ExtractRandomMatch" Value="False" />
+            <RuleParameter Name="Index" Value="0" />
+            <RuleParameter Name="HtmlDecode" Value="True" />
+          </RuleParameters>
+        </ExtractionRule>
+      </ExtractionRules>
+    </Request>
+    <Request Method="POST" Version="1.1" Url="http://{{Servers.Servers#csv.SERVERNAME}}/{{SiteUrls.SiteUrls#csv.RELATIVESITEURL}}/_vti_bin/PSI/ProjectServer.svc" ThinkTime="0" Timeout="60" ParseDependentRequests="False" FollowRedirects="True" RecordResult="True" Cache="False" ResponseTimeGoal="0" Encoding="utf-8" ExpectedHttpStatusCode="0" ExpectedResponseUrl="" ReportingName="ProjectCenterServiceCall">
+      <Headers>
+        <Header Name="soapaction" Value="http://schemas.microsoft.com/office/project/server/webservices/PWA/ProjectGetProjectCenterProjectsForGridJson" />
+      </Headers>
+      <ValidationRules>
+        <ValidationRule Classname="Microsoft.VisualStudio.TestTools.WebTesting.Rules.ValidationRuleFindText, Microsoft.VisualStudio.QualityTools.WebTestFramework, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" DisplayName="Find Text" Description="Verifies the existence of the specified text in the response." Level="High" ExectuionOrder="BeforeDependents">
+          <RuleParameters>
+            <RuleParameter Name="FindText" Value="&lt;ProjectGetProjectCenterProjectsForGridJsonResult&gt;" />
+            <RuleParameter Name="IgnoreCase" Value="False" />
+            <RuleParameter Name="UseRegularExpression" Value="False" />
+            <RuleParameter Name="PassIfTextFound" Value="True" />
+          </RuleParameters>
+        </ValidationRule>
+      </ValidationRules>
+      <ExtractionRules>
+        <ExtractionRule Classname="Microsoft.VisualStudio.TestTools.WebTesting.Rules.ExtractText, Microsoft.VisualStudio.QualityTools.WebTestFramework, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" VariableName="ProjectUIDs" DisplayName="Extract Text" Description="Extract text from the response and place it into the test context.">
+          <RuleParameters>
+            <RuleParameter Name="StartsWith" Value="&quot;ViewInfo&quot;:[" />
+            <RuleParameter Name="EndsWith" Value="]" />
+            <RuleParameter Name="IgnoreCase" Value="False" />
+            <RuleParameter Name="UseRegularExpression" Value="False" />
+            <RuleParameter Name="Required" Value="True" />
+            <RuleParameter Name="ExtractRandomMatch" Value="False" />
+            <RuleParameter Name="Index" Value="0" />
+            <RuleParameter Name="HtmlDecode" Value="True" />
+          </RuleParameters>
+        </ExtractionRule>
+        <ExtractionRule Classname="PWAWebTests.ExtractRegexFromContextParameter, PWAWebTests, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" VariableName="ProjectUID" DisplayName="Extract regular expression from existing context parameter" Description="">
+          <RuleParameters>
+            <RuleParameter Name="InputContextParameter" Value="ProjectUIDs" />
+            <RuleParameter Name="RegexText" Value="[a-fA-F0-9]{8}-([a-fA-F0-9]{4}-){3}[a-fA-F0-9]{12}" />
+            <RuleParameter Name="PickRandomMatch" Value="False" />
+          </RuleParameters>
+        </ExtractionRule>
+      </ExtractionRules>
+      <StringHttpBody ContentType="text/xml; charset=utf-8" InsertByteOrderMark="False">PAA/AHgAbQBsACAAdgBlAHIAcwBpAG8AbgA9ACIAMQAuADAAIgAgAGUAbgBjAG8AZABpAG4AZwA9ACIAVQBUAEYALQA4ACIAPwA+ADwAcwBvAGEAcAA6AEUAbgB2AGUAbABvAHAAZQAgAHgAbQBsAG4AcwA6AHgAcwBpAD0AIgBoAHQAdABwADoALwAvAHcAdwB3AC4AdwAzAC4AbwByAGcALwAyADAAMAAxAC8AWABNAEwAUwBjAGgAZQBtAGEALQBpAG4AcwB0AGEAbgBjAGUAIgAgAHgAbQBsAG4AcwA6AHgAcwBkAD0AIgBoAHQAdABwADoALwAvAHcAdwB3AC4AdwAzAC4AbwByAGcALwAyADAAMAAxAC8AWABNAEwAUwBjAGgAZQBtAGEAIgAgAHgAbQBsAG4AcwA6AHMAbwBhAHAAPQAiAGgAdAB0AHAAOgAvAC8AcwBjAGgAZQBtAGEAcwAuAHgAbQBsAHMAbwBhAHAALgBvAHIAZwAvAHMAbwBhAHAALwBlAG4AdgBlAGwAbwBwAGUALwAiAD4APABzAG8AYQBwADoASABlAGEAZABlAHIAPgA8AFAASgBBAHMAeQBuAGMAQwBvAG0AbQBhAG4AZAAgAHgAbQBsAG4AcwA9ACIAaAB0AHQAcAA6AC8ALwBNAGkAYwByAG8AcwBvAGYAdAAuAE8AZgBmAGkAYwBlAC4AUAByAG8AagBlAGMAdAAuAFMAZQByAHYAZQByACIAPgB7AHsAUAByAG8AagBlAGMAdABDAGUAbgB0AGUAcgBBAHMAeQBuAGMAVABvAGsAZQBuAH0AfQA8AC8AUABKAEEAcwB5AG4AYwBDAG8AbQBtAGEAbgBkAD4APAAvAHMAbwBhAHAAOgBIAGUAYQBkAGUAcgA+ADwAcwBvAGEAcAA6AEIAbwBkAHkAPgA8AFAAcgBvAGoAZQBjAHQARwBlAHQAUAByAG8AagBlAGMAdABDAGUAbgB0AGUAcgBQAHIAbwBqAGUAYwB0AHMARgBvAHIARwByAGkAZABKAHMAbwBuACAAeABtAGwAbgBzAD0AIgBoAHQAdABwADoALwAvAHMAYwBoAGUAbQBhAHMALgBtAGkAYwByAG8AcwBvAGYAdAAuAGMAbwBtAC8AbwBmAGYAaQBjAGUALwBwAHIAbwBqAGUAYwB0AC8AcwBlAHIAdgBlAHIALwB3AGUAYgBzAGUAcgB2AGkAYwBlAHMALwBQAFcAQQAvACIAPgA8AGcAcgBpAGQAUwBlAHIAaQBhAGwAaQB6AGUAcgBBAHIAZwBzAD4APABTAGgAbwB3AFQAaQBtAGUAVwBpAHQAaABEAGEAdABlAHMAPgBmAGEAbABzAGUAPAAvAFMAaABvAHcAVABpAG0AZQBXAGkAdABoAEQAYQB0AGUAcwA+ADwAUgBvAHcAQQB1AHQAbwBGAGkAbAB0AGUAcgBTAHQAYQB0AGUASgBzAG8AbgA+AFsAXQA8AC8AUgBvAHcAQQB1AHQAbwBGAGkAbAB0AGUAcgBTAHQAYQB0AGUASgBzAG8AbgA+ADwAUABhAGcAaQBuAGcASQBuAGYAbwA+ADwAcwB0AHIAaQBuAGcAPgBGAGkAcgBzAHQAVgBpAHMAaQBiAGwAZQA6ADQAMAA8AC8AcwB0AHIAaQBuAGcAPgA8AC8AUABhAGcAaQBuAGcASQBuAGYAbwA+ADwAUgBlAHEAdQBlAHMAdABUAHkAcABlAD4AMAA8AC8AUgBlAHEAdQBlAHMAdABUAHkAcABlAD4APAAvAGcAcgBpAGQAUwBlAHIAaQBhAGwAaQB6AGUAcgBBAHIAZwBzAD4APAB2AGkAZQB3AFUAaQBkAD4AewB7AFAAcgBvAGoAZQBjAHQAQwBlAG4AdABlAHIARABlAGYAYQB1AGwAdABWAGkAZQB3AFUAaQBkAH0AfQA8AC8AdgBpAGUAdwBVAGkAZAA+ADwAcwBoAG8AdwBJAG4AcwBlAHIAdABlAGQAUAByAG8AagBlAGMAdABzAD4AZgBhAGwAcwBlADwALwBzAGgAbwB3AEkAbgBzAGUAcgB0AGUAZABQAHIAbwBqAGUAYwB0AHMAPgA8AHMAdABvAHIAZQA+ADEAPAAvAHMAdABvAHIAZQA+ADwAYwBsAGUAYQByAFAAZQByAHMAaQBzAHQAZQBkAFAAcgBvAHAAZQByAHQAaQBlAHMAPgBmAGEAbABzAGUAPAAvAGMAbABlAGEAcgBQAGUAcgBzAGkAcwB0AGUAZABQAHIAbwBwAGUAcgB0AGkAZQBzAD4APAAvAFAAcgBvAGoAZQBjAHQARwBlAHQAUAByAG8AagBlAGMAdABDAGUAbgB0AGUAcgBQAHIAbwBqAGUAYwB0AHMARgBvAHIARwByAGkAZABKAHMAbwBuAD4APAAvAHMAbwBhAHAAOgBCAG8AZAB5AD4APAAvAHMAbwBhAHAAOgBFAG4AdgBlAGwAbwBwAGUAPgA=</StringHttpBody>
+    </Request>
+    <Condition UniqueStringId="1489e116-394c-4fcd-b10d-4d50d3207908">
+      <ConditionalRule Classname="Microsoft.VisualStudio.TestTools.WebTesting.Rules.ContextParameterExistenceRule, Microsoft.VisualStudio.QualityTools.WebTestFramework, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" DisplayName="Context Parameter Exists" Description="Test whether or not the specified context parameter exists in the current context.">
+        <RuleParameters>
+          <RuleParameter Name="ContextParameterName" Value="ProjectUID" />
+          <RuleParameter Name="CheckForExistence" Value="True" />
+        </RuleParameters>
+      </ConditionalRule>
+      <Then>
+        <Items>
+          <Request Method="GET" Version="1.1" Url="http://{{Servers.Servers#csv.SERVERNAME}}/{{SiteUrls.SiteUrls#csv.RELATIVESITEURL}}/Project%20Detail%20Pages/ProjectInformation.aspx" ThinkTime="0" Timeout="60" ParseDependentRequests="False" FollowRedirects="True" RecordResult="True" Cache="False" ResponseTimeGoal="0" Encoding="utf-8" ExpectedHttpStatusCode="0" ExpectedResponseUrl="" ReportingName="ProjectSchedulePage">
+            <QueryStringParameters>
+              <QueryStringParameter Name="ProjUid" Value="{{ProjectUID}}" RecordedValue="" CorrelationBinding="" UrlEncode="True" UseToGroupResults="False" />
+              <QueryStringParameter Name="ret" Value="0" RecordedValue="" CorrelationBinding="" UrlEncode="True" UseToGroupResults="False" />
+            </QueryStringParameters>
+          </Request>
+        </Items>
+      </Then>
+      <Else />
+    </Condition>
+  </Items>
+  <DataSources>
+    <DataSource Name="Servers" Provider="Microsoft.VisualStudio.TestTools.DataSource.CSV" Connection="|DataDirectory|\..\SupportFiles\Servers.csv">
+      <Tables>
+        <DataSourceTable Name="Servers#csv" SelectColumns="SelectOnlyBoundColumns" AccessMethod="Random" />
+      </Tables>
+    </DataSource>
+    <DataSource Name="SiteUrls" Provider="Microsoft.VisualStudio.TestTools.DataSource.CSV" Connection="|DataDirectory|\..\SupportFiles\SiteUrls.csv">
+      <Tables>
+        <DataSourceTable Name="SiteUrls#csv" SelectColumns="SelectOnlyBoundColumns" AccessMethod="Random" />
+      </Tables>
+    </DataSource>
+    <DataSource Name="ProjectManagers" Provider="Microsoft.VisualStudio.TestTools.DataSource.CSV" Connection="|DataDirectory|\..\..\SupportFiles\ProjectManagers.csv">
+      <Tables>
+        <DataSourceTable Name="ProjectManagers#csv" SelectColumns="SelectOnlyBoundColumns" AccessMethod="Random" />
+      </Tables>
+    </DataSource>
+  </DataSources>
+</WebTest>

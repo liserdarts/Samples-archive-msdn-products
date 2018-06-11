@@ -1,0 +1,39 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<WebTest Name="TaskApprovalsNavigate" Id="bcfcc579-13ef-4adf-ac26-f1210ff2b817" Owner="" Priority="0" Enabled="True" CssProjectStructure="" CssIteration="" Timeout="0" WorkItemIds="" xmlns="http://microsoft.com/schemas/VisualStudio/TeamTest/2010" Description="" CredentialUserName="{{ProjectManagers.ProjectManagers#csv.USERNAME}}" CredentialPassword="dBC71N7bS4oVf2SHmblMHg732neol9IoPckmA3P3BEJx214bjzcXqa98Ffos6R8uamFNwl68iUE=" PreAuthenticate="True" Proxy="" StopOnError="False" RecordedResultFile="">
+  <Items>
+    <Request Method="GET" Version="1.1" Url="http://{{Servers.Servers#csv.SERVERNAME}}/{{SiteUrls.SiteUrls#csv.RELATIVESITEURL}}/approvals.aspx" ThinkTime="0" Timeout="60" ParseDependentRequests="False" FollowRedirects="True" RecordResult="True" Cache="False" ResponseTimeGoal="0" Encoding="utf-8" ExpectedHttpStatusCode="0" ExpectedResponseUrl="" ReportingName="ApprovalsPageRequest" />
+    <Request Method="POST" Version="1.1" Url="http://{{Servers.Servers#csv.SERVERNAME}}/{{SiteUrls.SiteUrls#csv.RELATIVESITEURL}}/_vti_bin/PSI/ProjectServer.svc" ThinkTime="0" Timeout="60" ParseDependentRequests="False" FollowRedirects="True" RecordResult="True" Cache="False" ResponseTimeGoal="0" Encoding="utf-8" ExpectedHttpStatusCode="0" ExpectedResponseUrl="" ReportingName="ApprovalsPageServiceCall">
+      <Headers>
+        <Header Name="soapaction" Value="http://schemas.microsoft.com/office/project/server/webservices/PWA/StatusingReadStatusApprovalsForProjectForGridJson" />
+      </Headers>
+      <ValidationRules>
+        <ValidationRule Classname="Microsoft.VisualStudio.TestTools.WebTesting.Rules.ValidationRuleFindText, Microsoft.VisualStudio.QualityTools.WebTestFramework, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" DisplayName="Find Text" Description="Verifies the existence of the specified text in the response." Level="High" ExectuionOrder="BeforeDependents">
+          <RuleParameters>
+            <RuleParameter Name="FindText" Value="&lt;StatusingReadStatusApprovalsForProjectForGridJsonResult&gt;" />
+            <RuleParameter Name="IgnoreCase" Value="False" />
+            <RuleParameter Name="UseRegularExpression" Value="False" />
+            <RuleParameter Name="PassIfTextFound" Value="True" />
+          </RuleParameters>
+        </ValidationRule>
+      </ValidationRules>
+      <StringHttpBody ContentType="text/xml; charset=utf-8" InsertByteOrderMark="False">PAA/AHgAbQBsACAAdgBlAHIAcwBpAG8AbgA9ACIAMQAuADAAIgAgAGUAbgBjAG8AZABpAG4AZwA9ACIAVQBUAEYALQA4ACIAPwA+ADwAcwBvAGEAcAA6AEUAbgB2AGUAbABvAHAAZQAgAHgAbQBsAG4AcwA6AHgAcwBpAD0AIgBoAHQAdABwADoALwAvAHcAdwB3AC4AdwAzAC4AbwByAGcALwAyADAAMAAxAC8AWABNAEwAUwBjAGgAZQBtAGEALQBpAG4AcwB0AGEAbgBjAGUAIgAgAHgAbQBsAG4AcwA6AHgAcwBkAD0AIgBoAHQAdABwADoALwAvAHcAdwB3AC4AdwAzAC4AbwByAGcALwAyADAAMAAxAC8AWABNAEwAUwBjAGgAZQBtAGEAIgAgAHgAbQBsAG4AcwA6AHMAbwBhAHAAPQAiAGgAdAB0AHAAOgAvAC8AcwBjAGgAZQBtAGEAcwAuAHgAbQBsAHMAbwBhAHAALgBvAHIAZwAvAHMAbwBhAHAALwBlAG4AdgBlAGwAbwBwAGUALwAiAD4APABzAG8AYQBwADoAQgBvAGQAeQA+ADwAUwB0AGEAdAB1AHMAaQBuAGcAUgBlAGEAZABTAHQAYQB0AHUAcwBBAHAAcAByAG8AdgBhAGwAcwBGAG8AcgBQAHIAbwBqAGUAYwB0AEYAbwByAEcAcgBpAGQASgBzAG8AbgAgAHgAbQBsAG4AcwA9ACIAaAB0AHQAcAA6AC8ALwBzAGMAaABlAG0AYQBzAC4AbQBpAGMAcgBvAHMAbwBmAHQALgBjAG8AbQAvAG8AZgBmAGkAYwBlAC8AcAByAG8AagBlAGMAdAAvAHMAZQByAHYAZQByAC8AdwBlAGIAcwBlAHIAdgBpAGMAZQBzAC8AUABXAEEALwAiAD4APABnAHIAaQBkAFMAZQByAGkAYQBsAGkAegBlAHIAQQByAGcAcwA+ADwAUwBvAHIAdABDAG8AbAB1AG0AbgBOAGEAbQBlAHMAPgA8AC8AUwBvAHIAdABDAG8AbAB1AG0AbgBOAGEAbQBlAHMAPgA8AFMAbwByAHQAQwBvAGwAdQBtAG4ATwByAGQAZQByAHMAPgA8AC8AUwBvAHIAdABDAG8AbAB1AG0AbgBPAHIAZABlAHIAcwA+ADwARwByAG8AdQBwAEMAbwBsAHUAbQBuAE4AYQBtAGUAcwA+ADwALwBHAHIAbwB1AHAAQwBvAGwAdQBtAG4ATgBhAG0AZQBzAD4APABTAGgAbwB3AFQAaQBtAGUAVwBpAHQAaABEAGEAdABlAHMAPgBmAGEAbABzAGUAPAAvAFMAaABvAHcAVABpAG0AZQBXAGkAdABoAEQAYQB0AGUAcwA+ADwAUABhAGcAaQBuAGcASQBuAGYAbwA+ADwAcwB0AHIAaQBuAGcAPgBGAGkAcgBzAHQAVgBpAHMAaQBiAGwAZQA6ADQAMAA8AC8AcwB0AHIAaQBuAGcAPgA8AC8AUABhAGcAaQBuAGcASQBuAGYAbwA+ADwAUgBlAHEAdQBlAHMAdABUAHkAcABlAD4AMAA8AC8AUgBlAHEAdQBlAHMAdABUAHkAcABlAD4APAAvAGcAcgBpAGQAUwBlAHIAaQBhAGwAaQB6AGUAcgBBAHIAZwBzAD4APABmAHIAbwBtAEQAYQB0AGUAPgA8AC8AZgByAG8AbQBEAGEAdABlAD4APAB0AG8ARABhAHQAZQA+ADwALwB0AG8ARABhAHQAZQA+ADwALwBTAHQAYQB0AHUAcwBpAG4AZwBSAGUAYQBkAFMAdABhAHQAdQBzAEEAcABwAHIAbwB2AGEAbABzAEYAbwByAFAAcgBvAGoAZQBjAHQARgBvAHIARwByAGkAZABKAHMAbwBuAD4APAAvAHMAbwBhAHAAOgBCAG8AZAB5AD4APAAvAHMAbwBhAHAAOgBFAG4AdgBlAGwAbwBwAGUAPgA=</StringHttpBody>
+    </Request>
+  </Items>
+  <DataSources>
+    <DataSource Name="SiteUrls" Provider="Microsoft.VisualStudio.TestTools.DataSource.CSV" Connection="|DataDirectory|\..\SupportFiles\SiteUrls.csv">
+      <Tables>
+        <DataSourceTable Name="SiteUrls#csv" SelectColumns="SelectOnlyBoundColumns" AccessMethod="Random" />
+      </Tables>
+    </DataSource>
+    <DataSource Name="Servers" Provider="Microsoft.VisualStudio.TestTools.DataSource.CSV" Connection="|DataDirectory|\..\SupportFiles\Servers.csv">
+      <Tables>
+        <DataSourceTable Name="Servers#csv" SelectColumns="SelectOnlyBoundColumns" AccessMethod="Random" />
+      </Tables>
+    </DataSource>
+    <DataSource Name="ProjectManagers" Provider="Microsoft.VisualStudio.TestTools.DataSource.CSV" Connection="|DataDirectory|\..\SupportFiles\ProjectManagers.csv">
+      <Tables>
+        <DataSourceTable Name="ProjectManagers#csv" SelectColumns="SelectOnlyBoundColumns" AccessMethod="Random" />
+      </Tables>
+    </DataSource>
+  </DataSources>
+</WebTest>

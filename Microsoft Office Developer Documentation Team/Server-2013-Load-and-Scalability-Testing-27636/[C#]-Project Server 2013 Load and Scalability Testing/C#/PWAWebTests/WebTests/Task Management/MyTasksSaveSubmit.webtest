@@ -1,0 +1,202 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<WebTest Name="MyTasksSaveSubmit" Id="39d676a1-813e-4bc1-ad42-4bd71c124257" Owner="" Priority="0" Enabled="True" CssProjectStructure="" CssIteration="" Timeout="0" WorkItemIds="" xmlns="http://microsoft.com/schemas/VisualStudio/TeamTest/2010" Description="" CredentialUserName="{{TeamMembers.TeamMembers#csv.USERNAME}}" CredentialPassword="mUWKFYLaG6Vkm3Oh2M0WBxspmjpIAY/cZs7qx/82/2LVac0FU6036pyvTPxOAbQ2" PreAuthenticate="True" Proxy="" StopOnError="False" RecordedResultFile="">
+  <Items>
+    <Request Method="GET" Version="1.1" Url="http://{{Servers.Servers#csv.SERVERNAME}}/{{SiteUrls.SiteUrls#csv.RELATIVESITEURL}}/tasks.aspx" ThinkTime="0" Timeout="60" ParseDependentRequests="False" FollowRedirects="True" RecordResult="True" Cache="False" ResponseTimeGoal="0" Encoding="utf-8" ExpectedHttpStatusCode="0" ExpectedResponseUrl="" ReportingName="TasksPage">
+      <ExtractionRules>
+        <ExtractionRule Classname="Microsoft.VisualStudio.TestTools.WebTesting.Rules.ExtractText, Microsoft.VisualStudio.QualityTools.WebTestFramework, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" VariableName="MyTasksAsyncToken" DisplayName="Extract Text" Description="Extract text from the response and place it into the test context.">
+          <RuleParameters>
+            <RuleParameter Name="StartsWith" Value="&quot;StatusingGetMyWorkForGridJsonAsyncToken&quot;:{&quot;value&quot;:&quot;" />
+            <RuleParameter Name="EndsWith" Value="&quot;" />
+            <RuleParameter Name="IgnoreCase" Value="False" />
+            <RuleParameter Name="UseRegularExpression" Value="False" />
+            <RuleParameter Name="Required" Value="True" />
+            <RuleParameter Name="ExtractRandomMatch" Value="False" />
+            <RuleParameter Name="Index" Value="0" />
+            <RuleParameter Name="HtmlDecode" Value="True" />
+          </RuleParameters>
+        </ExtractionRule>
+        <ExtractionRule Classname="Microsoft.VisualStudio.TestTools.WebTesting.Rules.ExtractText, Microsoft.VisualStudio.QualityTools.WebTestFramework, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" VariableName="DefaultViewUID" DisplayName="Extract Text" Description="Extract text from the response and place it into the test context.">
+          <RuleParameters>
+            <RuleParameter Name="StartsWith" Value="&quot;DefaultViewUid&quot;:{&quot;value&quot;:&quot;" />
+            <RuleParameter Name="EndsWith" Value="&quot;" />
+            <RuleParameter Name="IgnoreCase" Value="False" />
+            <RuleParameter Name="UseRegularExpression" Value="False" />
+            <RuleParameter Name="Required" Value="True" />
+            <RuleParameter Name="ExtractRandomMatch" Value="False" />
+            <RuleParameter Name="Index" Value="0" />
+            <RuleParameter Name="HtmlDecode" Value="True" />
+          </RuleParameters>
+        </ExtractionRule>
+        <ExtractionRule Classname="Microsoft.VisualStudio.TestTools.WebTesting.Rules.ExtractText, Microsoft.VisualStudio.QualityTools.WebTestFramework, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" VariableName="TimephasedStart" DisplayName="Extract Text" Description="Extract text from the response and place it into the test context.">
+          <RuleParameters>
+            <RuleParameter Name="StartsWith" Value="&quot;TimephasedStart&quot;:{&quot;value&quot;:" />
+            <RuleParameter Name="EndsWith" Value=",&quot;" />
+            <RuleParameter Name="IgnoreCase" Value="False" />
+            <RuleParameter Name="UseRegularExpression" Value="False" />
+            <RuleParameter Name="Required" Value="True" />
+            <RuleParameter Name="ExtractRandomMatch" Value="False" />
+            <RuleParameter Name="Index" Value="0" />
+            <RuleParameter Name="HtmlDecode" Value="True" />
+          </RuleParameters>
+        </ExtractionRule>
+        <ExtractionRule Classname="Microsoft.VisualStudio.TestTools.WebTesting.Rules.ExtractText, Microsoft.VisualStudio.QualityTools.WebTestFramework, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" VariableName="TimephasedEnd" DisplayName="Extract Text" Description="Extract text from the response and place it into the test context.">
+          <RuleParameters>
+            <RuleParameter Name="StartsWith" Value="&quot;TimephasedEnd&quot;:{&quot;value&quot;:" />
+            <RuleParameter Name="EndsWith" Value=",&quot;" />
+            <RuleParameter Name="IgnoreCase" Value="False" />
+            <RuleParameter Name="UseRegularExpression" Value="False" />
+            <RuleParameter Name="Required" Value="True" />
+            <RuleParameter Name="ExtractRandomMatch" Value="False" />
+            <RuleParameter Name="Index" Value="0" />
+            <RuleParameter Name="HtmlDecode" Value="True" />
+          </RuleParameters>
+        </ExtractionRule>
+      </ExtractionRules>
+    </Request>
+    <Comment CommentText="If the extraction rule on the web service call fails, it's probably because the user has no assignments." />
+    <Request Method="POST" Version="1.1" Url="http://{{Servers.Servers#csv.SERVERNAME}}/{{SiteUrls.SiteUrls#csv.RELATIVESITEURL}}/_vti_bin/PSI/ProjectServer.svc" ThinkTime="0" Timeout="60" ParseDependentRequests="False" FollowRedirects="True" RecordResult="True" Cache="False" ResponseTimeGoal="0" Encoding="utf-8" ExpectedHttpStatusCode="0" ExpectedResponseUrl="" ReportingName="TasksWebServiceCall">
+      <Headers>
+        <Header Name="soapaction" Value="http://schemas.microsoft.com/office/project/server/webservices/PWA/StatusingGetMyWorkForGridJson" />
+      </Headers>
+      <ExtractionRules>
+        <ExtractionRule Classname="Microsoft.VisualStudio.TestTools.WebTesting.Rules.ExtractRegularExpression, Microsoft.VisualStudio.QualityTools.WebTestFramework, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" VariableName="ProjInfo2" DisplayName="Extract Regular Expression" Description="Extract text from the response matching a regular expression and place it into the test context.">
+          <RuleParameters>
+            <RuleParameter Name="RegularExpression" Value="{&quot;PROJ_UID&quot;:&quot;(.*?)&quot;.*?ASSN_UID&quot;:&quot;(.*?)&quot;" />
+            <RuleParameter Name="IgnoreCase" Value="False" />
+            <RuleParameter Name="Required" Value="True" />
+            <RuleParameter Name="Index" Value="0" />
+            <RuleParameter Name="HtmlDecode" Value="True" />
+          </RuleParameters>
+        </ExtractionRule>
+        <ExtractionRule Classname="PWAWebTests.ExtractSubstringFromContextParameter, PWAWebTests, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" VariableName="PROJ_UID" DisplayName="Extract substring from existing context parameter" Description="">
+          <RuleParameters>
+            <RuleParameter Name="InputContextParameter" Value="ProjInfo2" />
+            <RuleParameter Name="TextBefore" Value="&quot;PROJ_UID&quot;:&quot;" />
+            <RuleParameter Name="TextAfter" Value="&quot;" />
+          </RuleParameters>
+        </ExtractionRule>
+        <ExtractionRule Classname="PWAWebTests.ExtractSubstringFromContextParameter, PWAWebTests, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" VariableName="ASSN_UID" DisplayName="Extract substring from existing context parameter" Description="">
+          <RuleParameters>
+            <RuleParameter Name="InputContextParameter" Value="ProjInfo2" />
+            <RuleParameter Name="TextBefore" Value="&quot;ASSN_UID&quot;:&quot;" />
+            <RuleParameter Name="TextAfter" Value="&quot;" />
+          </RuleParameters>
+        </ExtractionRule>
+      </ExtractionRules>
+      <StringHttpBody ContentType="text/xml; charset=utf-8" InsertByteOrderMark="False">PAA/AHgAbQBsACAAdgBlAHIAcwBpAG8AbgA9ACIAMQAuADAAIgAgAGUAbgBjAG8AZABpAG4AZwA9ACIAVQBUAEYALQA4ACIAPwA+ADwAcwBvAGEAcAA6AEUAbgB2AGUAbABvAHAAZQAgAHgAbQBsAG4AcwA6AHgAcwBpAD0AIgBoAHQAdABwADoALwAvAHcAdwB3AC4AdwAzAC4AbwByAGcALwAyADAAMAAxAC8AWABNAEwAUwBjAGgAZQBtAGEALQBpAG4AcwB0AGEAbgBjAGUAIgAgAHgAbQBsAG4AcwA6AHgAcwBkAD0AIgBoAHQAdABwADoALwAvAHcAdwB3AC4AdwAzAC4AbwByAGcALwAyADAAMAAxAC8AWABNAEwAUwBjAGgAZQBtAGEAIgAgAHgAbQBsAG4AcwA6AHMAbwBhAHAAPQAiAGgAdAB0AHAAOgAvAC8AcwBjAGgAZQBtAGEAcwAuAHgAbQBsAHMAbwBhAHAALgBvAHIAZwAvAHMAbwBhAHAALwBlAG4AdgBlAGwAbwBwAGUALwAiAD4APABzAG8AYQBwADoASABlAGEAZABlAHIAPgA8AFAASgBBAHMAeQBuAGMAQwBvAG0AbQBhAG4AZAAgAHgAbQBsAG4AcwA9ACIAaAB0AHQAcAA6AC8ALwBNAGkAYwByAG8AcwBvAGYAdAAuAE8AZgBmAGkAYwBlAC4AUAByAG8AagBlAGMAdAAuAFMAZQByAHYAZQByACIAPgB7AHsATQB5AFQAYQBzAGsAcwBBAHMAeQBuAGMAVABvAGsAZQBuAH0AfQA8AC8AUABKAEEAcwB5AG4AYwBDAG8AbQBtAGEAbgBkAD4APAAvAHMAbwBhAHAAOgBIAGUAYQBkAGUAcgA+ADwAcwBvAGEAcAA6AEIAbwBkAHkAPgA8AFMAdABhAHQAdQBzAGkAbgBnAEcAZQB0AE0AeQBXAG8AcgBrAEYAbwByAEcAcgBpAGQASgBzAG8AbgAgAHgAbQBsAG4AcwA9ACIAaAB0AHQAcAA6AC8ALwBzAGMAaABlAG0AYQBzAC4AbQBpAGMAcgBvAHMAbwBmAHQALgBjAG8AbQAvAG8AZgBmAGkAYwBlAC8AcAByAG8AagBlAGMAdAAvAHMAZQByAHYAZQByAC8AdwBlAGIAcwBlAHIAdgBpAGMAZQBzAC8AUABXAEEALwAiAD4APABnAHIAaQBkAEMAaABhAG4AZwBlAHMASgBzAG8AbgA+ADwALwBnAHIAaQBkAEMAaABhAG4AZwBlAHMASgBzAG8AbgA+ADwAcAByAG8AagBlAGMAdABBAHMAcwBpAGcAbgBtAGUAbgB0AHMATQBhAHAAPgBbAF0APAAvAHAAcgBvAGoAZQBjAHQAQQBzAHMAaQBnAG4AbQBlAG4AdABzAE0AYQBwAD4APAB2AGkAZQB3AFUAaQBkAD4AewB7AEQAZQBmAGEAdQBsAHQAVgBpAGUAdwBVAGkAZAB9AH0APAAvAHYAaQBlAHcAVQBpAGQAPgA8AHcAZQBiAFAAYQByAHQASQBkAD4APAAvAHcAZQBiAFAAYQByAHQASQBkAD4APAB0AGkAbQBlAHAAaABhAHMAZQBkAFMAdABhAHIAdAA+ACIAXAAvAEQAYQB0AGUAKAB7AHsAVABpAG0AZQBwAGgAYQBzAGUAZABTAHQAYQByAHQAfQB9ACkAXAAvACIAPAAvAHQAaQBtAGUAcABoAGEAcwBlAGQAUwB0AGEAcgB0AD4APAB0AGkAbQBlAHAAaABhAHMAZQBkAEUAbgBkAD4AIgBcAC8ARABhAHQAZQAoAHsAewBUAGkAbQBlAHAAaABhAHMAZQBkAEUAbgBkAH0AfQApAFwALwAiADwALwB0AGkAbQBlAHAAaABhAHMAZQBkAEUAbgBkAD4APABkAHUAcgBhAHQAaQBvAG4AVAB5AHAAZQA+ADUAPAAvAGQAdQByAGEAdABpAG8AbgBUAHkAcABlAD4APAB3AG8AcgBrAFQAeQBwAGUAPgAyADwALwB3AG8AcgBrAFQAeQBwAGUAPgA8AGQAYQB0AGUARgBvAHIAbQBhAHQAPgAxADwALwBkAGEAdABlAEYAbwByAG0AYQB0AD4APABjAGwAZQBhAHIAUABlAHIAcwBpAHMAdABlAGQAUAByAG8AcABlAHIAdABpAGUAcwA+AGYAYQBsAHMAZQA8AC8AYwBsAGUAYQByAFAAZQByAHMAaQBzAHQAZQBkAFAAcgBvAHAAZQByAHQAaQBlAHMAPgA8AHIAbwB3AEYAaQBsAHQAZQByAFQAeQBwAGUAPgAwADwALwByAG8AdwBGAGkAbAB0AGUAcgBUAHkAcABlAD4APABnAHIAaQBkAFMAZQByAGkAYQBsAGkAegBlAHIAQQByAGcAcwA+ADwAUABhAGcAaQBuAGcASQBuAGYAbwA+ADwAcwB0AHIAaQBuAGcAPgBGAGkAcgBzAHQAVgBpAHMAaQBiAGwAZQA6ADQAMAA8AC8AcwB0AHIAaQBuAGcAPgA8AC8AUABhAGcAaQBuAGcASQBuAGYAbwA+ADwAUgBlAHEAdQBlAHMAdABUAHkAcABlAD4AMAA8AC8AUgBlAHEAdQBlAHMAdABUAHkAcABlAD4APAAvAGcAcgBpAGQAUwBlAHIAaQBhAGwAaQB6AGUAcgBBAHIAZwBzAD4APAAvAFMAdABhAHQAdQBzAGkAbgBnAEcAZQB0AE0AeQBXAG8AcgBrAEYAbwByAEcAcgBpAGQASgBzAG8AbgA+ADwALwBzAG8AYQBwADoAQgBvAGQAeQA+ADwALwBzAG8AYQBwADoARQBuAHYAZQBsAG8AcABlAD4A</StringHttpBody>
+    </Request>
+    <Condition UniqueStringId="9e8ed6fc-9db0-40cd-b61d-b4e4f47223cf">
+      <ConditionalRule Classname="Microsoft.VisualStudio.TestTools.WebTesting.Rules.ContextParameterExistenceRule, Microsoft.VisualStudio.QualityTools.WebTestFramework, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" DisplayName="Context Parameter Exists" Description="Test whether or not the specified context parameter exists in the current context.">
+        <RuleParameters>
+          <RuleParameter Name="ContextParameterName" Value="ProjInfo2" />
+          <RuleParameter Name="CheckForExistence" Value="True" />
+        </RuleParameters>
+      </ConditionalRule>
+      <Then>
+        <Items>
+          <Request Method="POST" Version="1.1" Url="http://{{Servers.Servers#csv.SERVERNAME}}/{{SiteUrls.SiteUrls#csv.RELATIVESITEURL}}/_vti_bin/PSI/ProjectServer.svc" ThinkTime="0" Timeout="60" ParseDependentRequests="False" FollowRedirects="True" RecordResult="True" Cache="False" ResponseTimeGoal="0" Encoding="utf-8" ExpectedHttpStatusCode="0" ExpectedResponseUrl="" ReportingName="MyTasksRemoteTextConverter">
+            <Headers>
+              <Header Name="soapaction" Value="http://schemas.microsoft.com/office/project/server/webservices/PWA/RemoteTextConverterConvertGroup" />
+            </Headers>
+            <ValidationRules>
+              <ValidationRule Classname="Microsoft.VisualStudio.TestTools.WebTesting.Rules.ValidationRuleFindText, Microsoft.VisualStudio.QualityTools.WebTestFramework, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" DisplayName="Find Text" Description="Verifies the existence of the specified text in the response." Level="High" ExectuionOrder="BeforeDependents">
+                <RuleParameters>
+                  <RuleParameter Name="FindText" Value="&quot;success&quot;:true" />
+                  <RuleParameter Name="IgnoreCase" Value="False" />
+                  <RuleParameter Name="UseRegularExpression" Value="False" />
+                  <RuleParameter Name="PassIfTextFound" Value="True" />
+                </RuleParameters>
+              </ValidationRule>
+            </ValidationRules>
+            <StringHttpBody ContentType="text/xml; charset=utf-8" InsertByteOrderMark="False">PAA/AHgAbQBsACAAdgBlAHIAcwBpAG8AbgA9ACIAMQAuADAAIgAgAGUAbgBjAG8AZABpAG4AZwA9ACIAVQBUAEYALQA4ACIAPwA+ADwAcwBvAGEAcAA6AEUAbgB2AGUAbABvAHAAZQAgAHgAbQBsAG4AcwA6AHgAcwBpAD0AIgBoAHQAdABwADoALwAvAHcAdwB3AC4AdwAzAC4AbwByAGcALwAyADAAMAAxAC8AWABNAEwAUwBjAGgAZQBtAGEALQBpAG4AcwB0AGEAbgBjAGUAIgAgAHgAbQBsAG4AcwA6AHgAcwBkAD0AIgBoAHQAdABwADoALwAvAHcAdwB3AC4AdwAzAC4AbwByAGcALwAyADAAMAAxAC8AWABNAEwAUwBjAGgAZQBtAGEAIgAgAHgAbQBsAG4AcwA6AHMAbwBhAHAAPQAiAGgAdAB0AHAAOgAvAC8AcwBjAGgAZQBtAGEAcwAuAHgAbQBsAHMAbwBhAHAALgBvAHIAZwAvAHMAbwBhAHAALwBlAG4AdgBlAGwAbwBwAGUALwAiAD4APABzAG8AYQBwADoAQgBvAGQAeQA+ADwAUgBlAG0AbwB0AGUAVABlAHgAdABDAG8AbgB2AGUAcgB0AGUAcgBDAG8AbgB2AGUAcgB0AEcAcgBvAHUAcAAgAHgAbQBsAG4AcwA9ACIAaAB0AHQAcAA6AC8ALwBzAGMAaABlAG0AYQBzAC4AbQBpAGMAcgBvAHMAbwBmAHQALgBjAG8AbQAvAG8AZgBmAGkAYwBlAC8AcAByAG8AagBlAGMAdAAvAHMAZQByAHYAZQByAC8AdwBlAGIAcwBlAHIAdgBpAGMAZQBzAC8AUABXAEEALwAiAD4APABjAG8AbgB2AGUAcgBzAGkAbwBuAFQAeQBwAGUAcwA+ADwAaQBuAHQAPgA1ADwALwBpAG4AdAA+ADwALwBjAG8AbgB2AGUAcgBzAGkAbwBuAFQAeQBwAGUAcwA+ADwAbgBlAHcAVgBhAGwAdQBlAHMAPgA8AHMAdAByAGkAbgBnAD4AewB7AFAAZQByAGMAZQBuAHQAYQBnAGUAVgBhAGwAdQBlAHMALgBQAGUAcgBjAGUAbgB0AGEAZwBlAFYAYQBsAHUAZQBzACMAYwBzAHYALgBOAFUATQBCAEUAUgBWAEEATABVAEUAfQB9ADwALwBzAHQAcgBpAG4AZwA+ADwALwBuAGUAdwBWAGEAbAB1AGUAcwA+ADwAbgBlAHcAVgBhAGwAdQBlAHMATABvAGMAYQBsAGkAegBlAGQAPgA8AGIAbwBvAGwAZQBhAG4APgB0AHIAdQBlADwALwBiAG8AbwBsAGUAYQBuAD4APAAvAG4AZQB3AFYAYQBsAHUAZQBzAEwAbwBjAGEAbABpAHoAZQBkAD4APABmAG8AcgBtAGEAdABUAHkAcABlAHMAPgA8AGkAbgB0AD4ALQAxADwALwBpAG4AdAA+ADwALwBmAG8AcgBtAGEAdABUAHkAcABlAHMAPgA8AHMAZQByAGkAYQBsAGkAegBlAGQAVABlAHgAdABDAG8AbgB2AGUAcgB0AGUAcgBDAG8AbgBmAGkAZwB1AHIAYQB0AGkAbwBuAHMAPgA8AHMAdAByAGkAbgBnAD4AewAiAFAAZQByAGMAZQBuAHQAVgBhAGwAaQBkAGEAdABlAFIAYQBuAGcAZQAiADoAdAByAHUAZQAsACIAQwB1AHIAcgBlAG4AYwB5AEMAbwBkAGUAIgA6ACIAVQBTAEQAIgAsACIARABhAHQAZQBEAGUAZgBhAHUAbAB0AEYAbwByAG0AYQB0ACIAOgAxACwAIgBXAG8AcgBrAEQAZQBmAGEAdQBsAHQARgBvAHIAbQBhAHQAIgA6ADIALAAiAEQAdQByAGEAdABpAG8AbgBEAGUAZgBhAHUAbAB0AEYAbwByAG0AYQB0ACIAOgA1ACwAIgBNAGkAbgB1AHQAZQBzAFAAZQByAEQAYQB5ACIAOgA0ADgAMAAsACIATQBpAG4AdQB0AGUAcwBQAGUAcgBXAGUAZQBrACIAOgAyADQAMAAwACwAIgBEAGEAeQBzAFAAZQByAE0AbwBuAHQAaAAiADoAMgAwAH0APAAvAHMAdAByAGkAbgBnAD4APAAvAHMAZQByAGkAYQBsAGkAegBlAGQAVABlAHgAdABDAG8AbgB2AGUAcgB0AGUAcgBDAG8AbgBmAGkAZwB1AHIAYQB0AGkAbwBuAHMAPgA8AC8AUgBlAG0AbwB0AGUAVABlAHgAdABDAG8AbgB2AGUAcgB0AGUAcgBDAG8AbgB2AGUAcgB0AEcAcgBvAHUAcAA+ADwALwBzAG8AYQBwADoAQgBvAGQAeQA+ADwALwBzAG8AYQBwADoARQBuAHYAZQBsAG8AcABlAD4A</StringHttpBody>
+          </Request>
+          <Request Method="POST" Version="1.1" Url="http://{{Servers.Servers#csv.SERVERNAME}}/{{SiteUrls.SiteUrls#csv.RELATIVESITEURL}}/_vti_bin/PSI/ProjectServer.svc" ThinkTime="0" Timeout="60" ParseDependentRequests="False" FollowRedirects="True" RecordResult="True" Cache="False" ResponseTimeGoal="0" Encoding="utf-8" ExpectedHttpStatusCode="0" ExpectedResponseUrl="" ReportingName="MyTasksNodeConsistency">
+            <Headers>
+              <Header Name="soapaction" Value="http://schemas.microsoft.com/office/project/server/webservices/PWA/StatusingSendGridUpdatesForNodeConsistency" />
+            </Headers>
+            <ValidationRules>
+              <ValidationRule Classname="Microsoft.VisualStudio.TestTools.WebTesting.Rules.ValidationRuleFindText, Microsoft.VisualStudio.QualityTools.WebTestFramework, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" DisplayName="Find Text" Description="Verifies the existence of the specified text in the response." Level="High" ExectuionOrder="BeforeDependents">
+                <RuleParameters>
+                  <RuleParameter Name="FindText" Value="&lt;StatusingSendGridUpdatesForNodeConsistencyResult&gt;" />
+                  <RuleParameter Name="IgnoreCase" Value="False" />
+                  <RuleParameter Name="UseRegularExpression" Value="False" />
+                  <RuleParameter Name="PassIfTextFound" Value="True" />
+                </RuleParameters>
+              </ValidationRule>
+            </ValidationRules>
+            <StringHttpBody ContentType="text/xml; charset=utf-8" InsertByteOrderMark="False">PAA/AHgAbQBsACAAdgBlAHIAcwBpAG8AbgA9ACIAMQAuADAAIgAgAGUAbgBjAG8AZABpAG4AZwA9ACIAVQBUAEYALQA4ACIAPwA+ADwAcwBvAGEAcAA6AEUAbgB2AGUAbABvAHAAZQAgAHgAbQBsAG4AcwA6AHgAcwBpAD0AIgBoAHQAdABwADoALwAvAHcAdwB3AC4AdwAzAC4AbwByAGcALwAyADAAMAAxAC8AWABNAEwAUwBjAGgAZQBtAGEALQBpAG4AcwB0AGEAbgBjAGUAIgAgAHgAbQBsAG4AcwA6AHgAcwBkAD0AIgBoAHQAdABwADoALwAvAHcAdwB3AC4AdwAzAC4AbwByAGcALwAyADAAMAAxAC8AWABNAEwAUwBjAGgAZQBtAGEAIgAgAHgAbQBsAG4AcwA6AHMAbwBhAHAAPQAiAGgAdAB0AHAAOgAvAC8AcwBjAGgAZQBtAGEAcwAuAHgAbQBsAHMAbwBhAHAALgBvAHIAZwAvAHMAbwBhAHAALwBlAG4AdgBlAGwAbwBwAGUALwAiAD4APABzAG8AYQBwADoAQgBvAGQAeQA+ADwAUwB0AGEAdAB1AHMAaQBuAGcAUwBlAG4AZABHAHIAaQBkAFUAcABkAGEAdABlAHMARgBvAHIATgBvAGQAZQBDAG8AbgBzAGkAcwB0AGUAbgBjAHkAIAB4AG0AbABuAHMAPQAiAGgAdAB0AHAAOgAvAC8AcwBjAGgAZQBtAGEAcwAuAG0AaQBjAHIAbwBzAG8AZgB0AC4AYwBvAG0ALwBvAGYAZgBpAGMAZQAvAHAAcgBvAGoAZQBjAHQALwBzAGUAcgB2AGUAcgAvAHcAZQBiAHMAZQByAHYAaQBjAGUAcwAvAFAAVwBBAC8AIgA+ADwAdQBuAHYAYQBsAGkAZABhAHQAZQBkAEMAaABhAG4AZwBlAHMASgBzAG8AbgA+AFsAewAiAHUAcABkAGEAdABlAHMAIgA6AFsAewAiAHQAeQBwAGUAIgA6ADIALAAiAHIAZQBjAG8AcgBkAEsAZQB5ACIAOgAiAHsAewBBAFMAUwBOAF8AVQBJAEQAfQB9ACIALAAiAGYAaQBlAGwAZABLAGUAeQAiADoAIgBBAFMAUwBOAF8AUABDAFQAXwBXAE8AUgBLAF8AQwBPAE0AUABMAEUAVABFACIALAAiAG4AZQB3AFAAcgBvAHAAIgA6AHsAIgBkAGEAdABhAFYAYQBsAHUAZQAiADoAIgB7AHsAUABlAHIAYwBlAG4AdABhAGcAZQBWAGEAbAB1AGUAcwAuAFAAZQByAGMAZQBuAHQAYQBnAGUAVgBhAGwAdQBlAHMAIwBjAHMAdgAuAE4AVQBNAEIARQBSAFYAQQBMAFUARQB9AH0AIgAsACIAaABhAHMARABhAHQAYQBWAGEAbAB1AGUAIgA6AHQAcgB1AGUAfQB9AF0ALAAiAGMAaABhAG4AZwBlAE4AdQBtAGIAZQByACIAOgAxAH0AXQA8AC8AdQBuAHYAYQBsAGkAZABhAHQAZQBkAEMAaABhAG4AZwBlAHMASgBzAG8AbgA+ADwAdgBhAGwAaQBkAGEAdABlAGQAQwBoAGEAbgBnAGUAcwBKAHMAbwBuAD4APAAvAHYAYQBsAGkAZABhAHQAZQBkAEMAaABhAG4AZwBlAHMASgBzAG8AbgA+ADwAcAByAG8AagBlAGMAdABBAHMAcwBpAGcAbgBtAGUAbgB0AHMATQBhAHAAPgBbAHsAIgBLAGUAeQAiADoAIgB7AHsAQQBTAFMATgBfAFUASQBEAH0AfQAiACwAIgBWAGEAbAB1AGUAIgA6ACIAewB7AFAAUgBPAEoAXwBVAEkARAB9AH0AIgB9AF0APAAvAHAAcgBvAGoAZQBjAHQAQQBzAHMAaQBnAG4AbQBlAG4AdABzAE0AYQBwAD4APABjAG8AbQBwAHIAZQBzAHMARwB1AGkAZABzAD4AZgBhAGwAcwBlADwALwBjAG8AbQBwAHIAZQBzAHMARwB1AGkAZABzAD4APAB0AGkAbQBlAHAAaABhAHMAZQBkAFMAdABhAHIAdAA+ACIAXAAvAEQAYQB0AGUAKAB7AHsAVABpAG0AZQBwAGgAYQBzAGUAZABTAHQAYQByAHQAfQB9ACkAXAAvACIAPAAvAHQAaQBtAGUAcABoAGEAcwBlAGQAUwB0AGEAcgB0AD4APAB0AGkAbQBlAHAAaABhAHMAZQBkAEUAbgBkAD4AIgBcAC8ARABhAHQAZQAoAHsAewBUAGkAbQBlAHAAaABhAHMAZQBkAEUAbgBkAH0AfQApAFwALwAiADwALwB0AGkAbQBlAHAAaABhAHMAZQBkAEUAbgBkAD4APABkAHUAcgBhAHQAaQBvAG4AVAB5AHAAZQA+ADUAPAAvAGQAdQByAGEAdABpAG8AbgBUAHkAcABlAD4APAB3AG8AcgBrAFQAeQBwAGUAPgAyADwALwB3AG8AcgBrAFQAeQBwAGUAPgA8AGQAYQB0AGUARgBvAHIAbQBhAHQAPgAxADwALwBkAGEAdABlAEYAbwByAG0AYQB0AD4APABkAG8AUwBhAHYAZQA+AGYAYQBsAHMAZQA8AC8AZABvAFMAYQB2AGUAPgA8AC8AUwB0AGEAdAB1AHMAaQBuAGcAUwBlAG4AZABHAHIAaQBkAFUAcABkAGEAdABlAHMARgBvAHIATgBvAGQAZQBDAG8AbgBzAGkAcwB0AGUAbgBjAHkAPgA8AC8AcwBvAGEAcAA6AEIAbwBkAHkAPgA8AC8AcwBvAGEAcAA6AEUAbgB2AGUAbABvAHAAZQA+AA==</StringHttpBody>
+          </Request>
+          <Request Method="POST" Version="1.1" Url="http://{{Servers.Servers#csv.SERVERNAME}}/{{SiteUrls.SiteUrls#csv.RELATIVESITEURL}}/_vti_bin/PSI/ProjectServer.svc" ThinkTime="0" Timeout="60" ParseDependentRequests="False" FollowRedirects="True" RecordResult="True" Cache="False" ResponseTimeGoal="0" Encoding="utf-8" ExpectedHttpStatusCode="0" ExpectedResponseUrl="" ReportingName="MyTasksSave">
+            <Headers>
+              <Header Name="soapaction" Value="http://schemas.microsoft.com/office/project/server/webservices/PWA/StatusingSendGridUpdatesForNodeConsistency" />
+            </Headers>
+            <ValidationRules>
+              <ValidationRule Classname="Microsoft.VisualStudio.TestTools.WebTesting.Rules.ValidationRuleFindText, Microsoft.VisualStudio.QualityTools.WebTestFramework, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" DisplayName="Find Text" Description="Verifies the existence of the specified text in the response." Level="High" ExectuionOrder="BeforeDependents">
+                <RuleParameters>
+                  <RuleParameter Name="FindText" Value="&lt;StatusingSendGridUpdatesForNodeConsistencyResult&gt;" />
+                  <RuleParameter Name="IgnoreCase" Value="False" />
+                  <RuleParameter Name="UseRegularExpression" Value="False" />
+                  <RuleParameter Name="PassIfTextFound" Value="True" />
+                </RuleParameters>
+              </ValidationRule>
+            </ValidationRules>
+            <StringHttpBody ContentType="text/xml; charset=utf-8" InsertByteOrderMark="False">PAA/AHgAbQBsACAAdgBlAHIAcwBpAG8AbgA9ACIAMQAuADAAIgAgAGUAbgBjAG8AZABpAG4AZwA9ACIAVQBUAEYALQA4ACIAPwA+ADwAcwBvAGEAcAA6AEUAbgB2AGUAbABvAHAAZQAgAHgAbQBsAG4AcwA6AHgAcwBpAD0AIgBoAHQAdABwADoALwAvAHcAdwB3AC4AdwAzAC4AbwByAGcALwAyADAAMAAxAC8AWABNAEwAUwBjAGgAZQBtAGEALQBpAG4AcwB0AGEAbgBjAGUAIgAgAHgAbQBsAG4AcwA6AHgAcwBkAD0AIgBoAHQAdABwADoALwAvAHcAdwB3AC4AdwAzAC4AbwByAGcALwAyADAAMAAxAC8AWABNAEwAUwBjAGgAZQBtAGEAIgAgAHgAbQBsAG4AcwA6AHMAbwBhAHAAPQAiAGgAdAB0AHAAOgAvAC8AcwBjAGgAZQBtAGEAcwAuAHgAbQBsAHMAbwBhAHAALgBvAHIAZwAvAHMAbwBhAHAALwBlAG4AdgBlAGwAbwBwAGUALwAiAD4APABzAG8AYQBwADoAQgBvAGQAeQA+ADwAUwB0AGEAdAB1AHMAaQBuAGcAUwBlAG4AZABHAHIAaQBkAFUAcABkAGEAdABlAHMARgBvAHIATgBvAGQAZQBDAG8AbgBzAGkAcwB0AGUAbgBjAHkAIAB4AG0AbABuAHMAPQAiAGgAdAB0AHAAOgAvAC8AcwBjAGgAZQBtAGEAcwAuAG0AaQBjAHIAbwBzAG8AZgB0AC4AYwBvAG0ALwBvAGYAZgBpAGMAZQAvAHAAcgBvAGoAZQBjAHQALwBzAGUAcgB2AGUAcgAvAHcAZQBiAHMAZQByAHYAaQBjAGUAcwAvAFAAVwBBAC8AIgA+ADwAdQBuAHYAYQBsAGkAZABhAHQAZQBkAEMAaABhAG4AZwBlAHMASgBzAG8AbgA+ADwALwB1AG4AdgBhAGwAaQBkAGEAdABlAGQAQwBoAGEAbgBnAGUAcwBKAHMAbwBuAD4APAB2AGEAbABpAGQAYQB0AGUAZABDAGgAYQBuAGcAZQBzAEoAcwBvAG4APgBbAHsAIgB1AHAAZABhAHQAZQBzACIAOgBbAHsAIgB0AHkAcABlACIAOgAyACwAIgByAGUAYwBvAHIAZABLAGUAeQAiADoAIgB7AHsAQQBTAFMATgBfAFUASQBEAH0AfQAiACwAIgBmAGkAZQBsAGQASwBlAHkAIgA6ACIAQQBTAFMATgBfAFAAQwBUAF8AVwBPAFIASwBfAEMATwBNAFAATABFAFQARQAiACwAIgBuAGUAdwBQAHIAbwBwACIAOgB7ACIAZABhAHQAYQBWAGEAbAB1AGUAIgA6ACIAewB7AFAAZQByAGMAZQBuAHQAYQBnAGUAVgBhAGwAdQBlAHMALgBQAGUAcgBjAGUAbgB0AGEAZwBlAFYAYQBsAHUAZQBzACMAYwBzAHYALgBOAFUATQBCAEUAUgBWAEEATABVAEUAfQB9ACIALAAiAGgAYQBzAEQAYQB0AGEAVgBhAGwAdQBlACIAOgB0AHIAdQBlAH0AfQBdACwAIgBjAGgAYQBuAGcAZQBOAHUAbQBiAGUAcgAiADoAMQB9AF0APAAvAHYAYQBsAGkAZABhAHQAZQBkAEMAaABhAG4AZwBlAHMASgBzAG8AbgA+ADwAcAByAG8AagBlAGMAdABBAHMAcwBpAGcAbgBtAGUAbgB0AHMATQBhAHAAPgBbAHsAIgBLAGUAeQAiADoAIgB7AHsAQQBTAFMATgBfAFUASQBEAH0AfQAiACwAIgBWAGEAbAB1AGUAIgA6ACIAewB7AFAAUgBPAEoAXwBVAEkARAB9AH0AIgB9AF0APAAvAHAAcgBvAGoAZQBjAHQAQQBzAHMAaQBnAG4AbQBlAG4AdABzAE0AYQBwAD4APABjAG8AbQBwAHIAZQBzAHMARwB1AGkAZABzAD4AZgBhAGwAcwBlADwALwBjAG8AbQBwAHIAZQBzAHMARwB1AGkAZABzAD4APAB0AGkAbQBlAHAAaABhAHMAZQBkAFMAdABhAHIAdAA+ACIAXAAvAEQAYQB0AGUAKAB7AHsAVABpAG0AZQBwAGgAYQBzAGUAZABTAHQAYQByAHQAfQB9ACkAXAAvACIAPAAvAHQAaQBtAGUAcABoAGEAcwBlAGQAUwB0AGEAcgB0AD4APAB0AGkAbQBlAHAAaABhAHMAZQBkAEUAbgBkAD4AIgBcAC8ARABhAHQAZQAoAHsAewBUAGkAbQBlAHAAaABhAHMAZQBkAEUAbgBkAH0AfQApAFwALwAiADwALwB0AGkAbQBlAHAAaABhAHMAZQBkAEUAbgBkAD4APABkAHUAcgBhAHQAaQBvAG4AVAB5AHAAZQA+ADUAPAAvAGQAdQByAGEAdABpAG8AbgBUAHkAcABlAD4APAB3AG8AcgBrAFQAeQBwAGUAPgAyADwALwB3AG8AcgBrAFQAeQBwAGUAPgA8AGQAYQB0AGUARgBvAHIAbQBhAHQAPgAxADwALwBkAGEAdABlAEYAbwByAG0AYQB0AD4APABkAG8AUwBhAHYAZQA+AHQAcgB1AGUAPAAvAGQAbwBTAGEAdgBlAD4APAAvAFMAdABhAHQAdQBzAGkAbgBnAFMAZQBuAGQARwByAGkAZABVAHAAZABhAHQAZQBzAEYAbwByAE4AbwBkAGUAQwBvAG4AcwBpAHMAdABlAG4AYwB5AD4APAAvAHMAbwBhAHAAOgBCAG8AZAB5AD4APAAvAHMAbwBhAHAAOgBFAG4AdgBlAGwAbwBwAGUAPgA=</StringHttpBody>
+          </Request>
+          <Request Method="POST" Version="1.1" Url="http://{{Servers.Servers#csv.SERVERNAME}}/{{SiteUrls.SiteUrls#csv.RELATIVESITEURL}}/_vti_bin/PSI/ProjectServer.svc" ThinkTime="0" Timeout="60" ParseDependentRequests="False" FollowRedirects="True" RecordResult="True" Cache="False" ResponseTimeGoal="0" Encoding="utf-8" ExpectedHttpStatusCode="0" ExpectedResponseUrl="" ReportingName="MyTasksSubmit">
+            <Headers>
+              <Header Name="soapaction" Value="http://schemas.microsoft.com/office/project/server/webservices/PWA/StatusingSubmitStatusJson" />
+            </Headers>
+            <ValidationRules>
+              <ValidationRule Classname="Microsoft.VisualStudio.TestTools.WebTesting.Rules.ValidationRuleFindText, Microsoft.VisualStudio.QualityTools.WebTestFramework, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" DisplayName="Find Text" Description="Verifies the existence of the specified text in the response." Level="High" ExectuionOrder="BeforeDependents">
+                <RuleParameters>
+                  <RuleParameter Name="FindText" Value="&lt;StatusingSubmitStatusJsonResult&gt;" />
+                  <RuleParameter Name="IgnoreCase" Value="False" />
+                  <RuleParameter Name="UseRegularExpression" Value="False" />
+                  <RuleParameter Name="PassIfTextFound" Value="True" />
+                </RuleParameters>
+              </ValidationRule>
+            </ValidationRules>
+            <StringHttpBody ContentType="text/xml; charset=utf-8" InsertByteOrderMark="False">PAA/AHgAbQBsACAAdgBlAHIAcwBpAG8AbgA9ACIAMQAuADAAIgAgAGUAbgBjAG8AZABpAG4AZwA9ACIAVQBUAEYALQA4ACIAPwA+ADwAcwBvAGEAcAA6AEUAbgB2AGUAbABvAHAAZQAgAHgAbQBsAG4AcwA6AHgAcwBpAD0AIgBoAHQAdABwADoALwAvAHcAdwB3AC4AdwAzAC4AbwByAGcALwAyADAAMAAxAC8AWABNAEwAUwBjAGgAZQBtAGEALQBpAG4AcwB0AGEAbgBjAGUAIgAgAHgAbQBsAG4AcwA6AHgAcwBkAD0AIgBoAHQAdABwADoALwAvAHcAdwB3AC4AdwAzAC4AbwByAGcALwAyADAAMAAxAC8AWABNAEwAUwBjAGgAZQBtAGEAIgAgAHgAbQBsAG4AcwA6AHMAbwBhAHAAPQAiAGgAdAB0AHAAOgAvAC8AcwBjAGgAZQBtAGEAcwAuAHgAbQBsAHMAbwBhAHAALgBvAHIAZwAvAHMAbwBhAHAALwBlAG4AdgBlAGwAbwBwAGUALwAiAD4APABzAG8AYQBwADoAQgBvAGQAeQA+ADwAUwB0AGEAdAB1AHMAaQBuAGcAUwB1AGIAbQBpAHQAUwB0AGEAdAB1AHMASgBzAG8AbgAgAHgAbQBsAG4AcwA9ACIAaAB0AHQAcAA6AC8ALwBzAGMAaABlAG0AYQBzAC4AbQBpAGMAcgBvAHMAbwBmAHQALgBjAG8AbQAvAG8AZgBmAGkAYwBlAC8AcAByAG8AagBlAGMAdAAvAHMAZQByAHYAZQByAC8AdwBlAGIAcwBlAHIAdgBpAGMAZQBzAC8AUABXAEEALwAiAD4APABjAG8AbQBtAGUAbgB0AD4APAAvAGMAbwBtAG0AZQBuAHQAPgA8AC8AUwB0AGEAdAB1AHMAaQBuAGcAUwB1AGIAbQBpAHQAUwB0AGEAdAB1AHMASgBzAG8AbgA+ADwALwBzAG8AYQBwADoAQgBvAGQAeQA+ADwALwBzAG8AYQBwADoARQBuAHYAZQBsAG8AcABlAD4A</StringHttpBody>
+          </Request>
+          <Request Method="POST" Version="1.1" Url="http://{{Servers.Servers#csv.SERVERNAME}}/{{SiteUrls.SiteUrls#csv.RELATIVESITEURL}}/_vti_bin/PSI/ProjectServer.svc" ThinkTime="0" Timeout="60" ParseDependentRequests="False" FollowRedirects="True" RecordResult="True" Cache="False" ResponseTimeGoal="0" Encoding="utf-8" ExpectedHttpStatusCode="0" ExpectedResponseUrl="" ReportingName="MyTasksNodeConsistency2">
+            <Headers>
+              <Header Name="soapaction" Value="http://schemas.microsoft.com/office/project/server/webservices/PWA/StatusingSendGridUpdatesForNodeConsistency" />
+            </Headers>
+            <StringHttpBody ContentType="text/xml; charset=utf-8" InsertByteOrderMark="False">PAA/AHgAbQBsACAAdgBlAHIAcwBpAG8AbgA9ACIAMQAuADAAIgAgAGUAbgBjAG8AZABpAG4AZwA9ACIAVQBUAEYALQA4ACIAPwA+ADwAcwBvAGEAcAA6AEUAbgB2AGUAbABvAHAAZQAgAHgAbQBsAG4AcwA6AHgAcwBpAD0AIgBoAHQAdABwADoALwAvAHcAdwB3AC4AdwAzAC4AbwByAGcALwAyADAAMAAxAC8AWABNAEwAUwBjAGgAZQBtAGEALQBpAG4AcwB0AGEAbgBjAGUAIgAgAHgAbQBsAG4AcwA6AHgAcwBkAD0AIgBoAHQAdABwADoALwAvAHcAdwB3AC4AdwAzAC4AbwByAGcALwAyADAAMAAxAC8AWABNAEwAUwBjAGgAZQBtAGEAIgAgAHgAbQBsAG4AcwA6AHMAbwBhAHAAPQAiAGgAdAB0AHAAOgAvAC8AcwBjAGgAZQBtAGEAcwAuAHgAbQBsAHMAbwBhAHAALgBvAHIAZwAvAHMAbwBhAHAALwBlAG4AdgBlAGwAbwBwAGUALwAiAD4APABzAG8AYQBwADoAQgBvAGQAeQA+ADwAUwB0AGEAdAB1AHMAaQBuAGcAUwBlAG4AZABHAHIAaQBkAFUAcABkAGEAdABlAHMARgBvAHIATgBvAGQAZQBDAG8AbgBzAGkAcwB0AGUAbgBjAHkAIAB4AG0AbABuAHMAPQAiAGgAdAB0AHAAOgAvAC8AcwBjAGgAZQBtAGEAcwAuAG0AaQBjAHIAbwBzAG8AZgB0AC4AYwBvAG0ALwBvAGYAZgBpAGMAZQAvAHAAcgBvAGoAZQBjAHQALwBzAGUAcgB2AGUAcgAvAHcAZQBiAHMAZQByAHYAaQBjAGUAcwAvAFAAVwBBAC8AIgA+ADwAdQBuAHYAYQBsAGkAZABhAHQAZQBkAEMAaABhAG4AZwBlAHMASgBzAG8AbgA+ADwALwB1AG4AdgBhAGwAaQBkAGEAdABlAGQAQwBoAGEAbgBnAGUAcwBKAHMAbwBuAD4APAB2AGEAbABpAGQAYQB0AGUAZABDAGgAYQBuAGcAZQBzAEoAcwBvAG4APgA8AC8AdgBhAGwAaQBkAGEAdABlAGQAQwBoAGEAbgBnAGUAcwBKAHMAbwBuAD4APABwAHIAbwBqAGUAYwB0AEEAcwBzAGkAZwBuAG0AZQBuAHQAcwBNAGEAcAA+AFsAewAiAEsAZQB5ACIAOgAiAHsAewBBAFMAUwBOAF8AVQBJAEQAfQB9ACIALAAiAFYAYQBsAHUAZQAiADoAIgB7AHsAUABSAE8ASgBfAFUASQBEAH0AfQAiAH0AXQA8AC8AcAByAG8AagBlAGMAdABBAHMAcwBpAGcAbgBtAGUAbgB0AHMATQBhAHAAPgA8AGMAbwBtAHAAcgBlAHMAcwBHAHUAaQBkAHMAPgBmAGEAbABzAGUAPAAvAGMAbwBtAHAAcgBlAHMAcwBHAHUAaQBkAHMAPgA8AHQAaQBtAGUAcABoAGEAcwBlAGQAUwB0AGEAcgB0AD4AIgBcAC8ARABhAHQAZQAoAHsAewBUAGkAbQBlAHAAaABhAHMAZQBkAFMAdABhAHIAdAB9AH0AKQBcAC8AIgA8AC8AdABpAG0AZQBwAGgAYQBzAGUAZABTAHQAYQByAHQAPgA8AHQAaQBtAGUAcABoAGEAcwBlAGQARQBuAGQAPgAiAFwALwBEAGEAdABlACgAewB7AFQAaQBtAGUAcABoAGEAcwBlAGQARQBuAGQAfQB9ACkAXAAvACIAPAAvAHQAaQBtAGUAcABoAGEAcwBlAGQARQBuAGQAPgA8AGQAdQByAGEAdABpAG8AbgBUAHkAcABlAD4ANQA8AC8AZAB1AHIAYQB0AGkAbwBuAFQAeQBwAGUAPgA8AHcAbwByAGsAVAB5AHAAZQA+ADIAPAAvAHcAbwByAGsAVAB5AHAAZQA+ADwAZABhAHQAZQBGAG8AcgBtAGEAdAA+ADEAPAAvAGQAYQB0AGUARgBvAHIAbQBhAHQAPgA8AGQAbwBTAGEAdgBlAD4AZgBhAGwAcwBlADwALwBkAG8AUwBhAHYAZQA+ADwALwBTAHQAYQB0AHUAcwBpAG4AZwBTAGUAbgBkAEcAcgBpAGQAVQBwAGQAYQB0AGUAcwBGAG8AcgBOAG8AZABlAEMAbwBuAHMAaQBzAHQAZQBuAGMAeQA+ADwALwBzAG8AYQBwADoAQgBvAGQAeQA+ADwALwBzAG8AYQBwADoARQBuAHYAZQBsAG8AcABlAD4A</StringHttpBody>
+          </Request>
+        </Items>
+      </Then>
+      <Else />
+    </Condition>
+  </Items>
+  <DataSources>
+    <DataSource Name="PercentageValues" Provider="Microsoft.VisualStudio.TestTools.DataSource.CSV" Connection="|DataDirectory|\..\SupportFiles\PercentageValues.csv">
+      <Tables>
+        <DataSourceTable Name="PercentageValues#csv" SelectColumns="SelectOnlyBoundColumns" AccessMethod="Random" />
+      </Tables>
+    </DataSource>
+    <DataSource Name="SiteUrls" Provider="Microsoft.VisualStudio.TestTools.DataSource.CSV" Connection="|DataDirectory|\..\SupportFiles\SiteUrls.csv">
+      <Tables>
+        <DataSourceTable Name="SiteUrls#csv" SelectColumns="SelectOnlyBoundColumns" AccessMethod="Random" />
+      </Tables>
+    </DataSource>
+    <DataSource Name="TeamMembers" Provider="Microsoft.VisualStudio.TestTools.DataSource.CSV" Connection="|DataDirectory|\..\SupportFiles\TeamMembers.csv">
+      <Tables>
+        <DataSourceTable Name="TeamMembers#csv" SelectColumns="SelectOnlyBoundColumns" AccessMethod="Random" />
+      </Tables>
+    </DataSource>
+    <DataSource Name="Servers" Provider="Microsoft.VisualStudio.TestTools.DataSource.CSV" Connection="|DataDirectory|\..\SupportFiles\Servers.csv">
+      <Tables>
+        <DataSourceTable Name="Servers#csv" SelectColumns="SelectOnlyBoundColumns" AccessMethod="Random" />
+      </Tables>
+    </DataSource>
+  </DataSources>
+  <ValidationRules>
+    <ValidationRule Classname="Microsoft.VisualStudio.TestTools.WebTesting.Rules.ValidateResponseUrl, Microsoft.VisualStudio.QualityTools.WebTestFramework, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" DisplayName="Response URL" Description="Validates that the response URL after redirects are followed is the same as the recorded response URL.  QueryString parameters are ignored." Level="Low" ExectuionOrder="BeforeDependents" />
+    <ValidationRule Classname="Microsoft.VisualStudio.TestTools.WebTesting.Rules.ValidationRuleResponseTimeGoal, Microsoft.VisualStudio.QualityTools.WebTestFramework, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" DisplayName="Response Time Goal" Description="Validates that the response time for the request is less than or equal to the response time goal as specified on the request.  Response time goals of zero will be ignored." Level="Low" ExectuionOrder="AfterDependents">
+      <RuleParameters>
+        <RuleParameter Name="Tolerance" Value="0" />
+      </RuleParameters>
+    </ValidationRule>
+  </ValidationRules>
+</WebTest>
