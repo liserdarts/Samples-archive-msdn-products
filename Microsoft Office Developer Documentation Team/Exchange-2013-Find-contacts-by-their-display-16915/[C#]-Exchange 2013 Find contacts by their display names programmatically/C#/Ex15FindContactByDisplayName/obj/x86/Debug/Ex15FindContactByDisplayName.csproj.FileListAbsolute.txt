@@ -1,0 +1,12 @@
+C:\E15SDK\Exchange 101\Ex15FindContactByDisplayName\bin\Debug\FindContactByDisplayName.exe.config
+C:\E15SDK\Exchange 101\Ex15FindContactByDisplayName\bin\Debug\FindContactByDisplayName.exe
+C:\E15SDK\Exchange 101\Ex15FindContactByDisplayName\bin\Debug\FindContactByDisplayName.pdb
+C:\E15SDK\Exchange 101\Ex15FindContactByDisplayName\bin\Debug\Authentication.dll
+C:\E15SDK\Exchange 101\Ex15FindContactByDisplayName\bin\Debug\Ex15CreateContact.exe
+C:\E15SDK\Exchange 101\Ex15FindContactByDisplayName\bin\Debug\Microsoft.Exchange.WebServices.dll
+C:\E15SDK\Exchange 101\Ex15FindContactByDisplayName\bin\Debug\Authentication.pdb
+C:\E15SDK\Exchange 101\Ex15FindContactByDisplayName\bin\Debug\Ex15CreateContact.pdb
+C:\E15SDK\Exchange 101\Ex15FindContactByDisplayName\bin\Debug\Microsoft.Exchange.WebServices.xml
+C:\E15SDK\Exchange 101\Ex15FindContactByDisplayName\obj\x86\Debug\ResolveAssemblyReference.cache
+C:\E15SDK\Exchange 101\Ex15FindContactByDisplayName\obj\x86\Debug\FindContactByDisplayName.exe
+C:\E15SDK\Exchange 101\Ex15FindContactByDisplayName\obj\x86\Debug\FindContactByDisplayName.pdb
