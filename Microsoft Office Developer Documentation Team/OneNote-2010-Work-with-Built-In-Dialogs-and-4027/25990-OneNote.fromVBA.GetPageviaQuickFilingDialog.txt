@@ -1,0 +1,90 @@
+Option Explicit
+
+' OneNote 2010
+
+' Demonstrate the QuickFiling method.
+
+
+' Use any VBA host including Excel 2010, PowerPoint 2010,
+' or Word 2010.
+' OneNote 2010 is not a VBA host.
+
+' In your VBA host, add references to the following
+' external libraries using the Add References dialog:
+' Microsoft OneNote 14.0 Object Library
+
+' This sample has two blocks of code.
+' To add Block 1, you first Insert a VBA Class Module.
+' Change the (Name) of the class to QFHandler.
+' Mark the Instancing property of the class as 2-PublicNotCreatable.
+' Then place the contents of Block 1 into the class
+' you created and configured.
+' Add Block 2 to the default module of your VBA host.
+
+' To run the sample, place the cursor within the
+' RunQuickFilingDemo procedure, and press F5.
+' You will need to minimize the VBA host to see
+' the OneNote dialog.
+
+' *** Begin Block 1 ***
+Option Explicit
+
+Implements OneNote14.IQuickFilingDialogCallback
+
+Private oneNote As OneNote14.Application
+    
+Public Sub Demo()
+    ' Connect to OneNote 2010.
+    ' OneNote will be started if it's not running.
+    Set oneNote = New OneNote14.Application
+    
+    ' Create an instance of the QuickFiling dialog
+    Dim qf As OneNote14.IQuickFilingDialog
+    Set qf = oneNote.QuickFiling
+    
+    ' Set some properties
+    qf.Title = "Pick Data (Demo)"
+    qf.Description = "Select the page whose data you want to read."
+    ' if you were to run this from a form
+    ' you could provide the form's handle to control focus
+    ' to the WindowHandle property
+    ' qf.WindowHandle = <ID of your window>
+    
+    ' Show the dialog (you'll need to switch to the running screen)
+    qf.Run Me
+End Sub
+
+' When the user clicks OK or Cancel
+' the dialog calls this code.
+Private Sub IQuickFilingDialogCallback_OnDialogClosed( _
+    ByVal dialog As OneNote14.IQuickFilingDialog)
+    
+    If dialog.SelectedItem <> "" Then
+        ' if the user selected something try and read it
+        On Error Resume Next
+        ' There isn't an easy way to check if the ID
+        ' returned is a page or not so continue on error.
+        Dim pagesXml As String
+        oneNote.GetHierarchy dialog.SelectedItem, hsSelf, pagesXml, xs2010
+    
+        Debug.Print pagesXml
+    Else
+        Debug.Print "Nothing was selected"
+    End If
+End Sub
+' *** End Block 1 ***
+
+' *** Begin Block 2 ***
+' This procedure calls code in the QFHandler class.
+' The QuickFiling dialog allows the user to select an object
+' in OneNote using a built-in OneNote dialog.
+' This allows the user to select an item from OneNote, like a Page,
+' and pass the selected item back to your code.
+Option Explicit 
+
+Sub RunQuickFilingDemo()
+    Dim cb As QFHandler
+    Set cb = New QFHandler
+    cb.Demo
+End Sub
+' *** End Block 2 ***
