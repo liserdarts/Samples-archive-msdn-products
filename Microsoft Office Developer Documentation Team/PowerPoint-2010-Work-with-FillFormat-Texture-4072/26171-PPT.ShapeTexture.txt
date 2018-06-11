@@ -1,0 +1,77 @@
+' PowerPoint 2010/2007
+
+' Demonstrate working with the FillFormat class' texture settings.
+
+' Copy this code into a module in a new presentation.
+' Display the VBA window side-by-side with the PowerPoint window
+' and press F8 to single step through this
+' code for the most effective use of this demonstration.
+
+Sub TextureStyleDemo()
+    ' Create a new slide with a simple table:
+    Dim sld As Slide
+    Set sld = ActivePresentation.Slides.Add(2, ppLayoutBlank)
+    sld.Select
+   
+    Dim shp As Shape
+    Set shp = sld.Shapes.AddShape(msoShapeSnipRoundRectangle, 50, 50, 400, 400)
+    shp.Fill.PresetTextured msoTextureFishFossil
+   
+    With shp.Fill
+        ' Set the alignment. There are other options, as well:
+        .TextureAlignment = msoTextureTop
+        .TextureAlignment = msoTextureBottom
+        .TextureAlignment = msoTextureLeft
+        .TextureAlignment = msoTextureRight
+       
+        ' TextureHorizontalScale is a percentage, as a fraction.
+        ' This corresponds to the Scale X setting in the user interface:
+        .TextureHorizontalScale = 1
+        .TextureHorizontalScale = 0.75
+        .TextureHorizontalScale = 0.5
+        .TextureHorizontalScale = 0.25
+        .TextureHorizontalScale = 1
+       
+        ' TextureVerticalScale is a percentage, as a fraction:
+        ' This corresponds to the Scale Y setting in the user interface:
+        .TextureVerticalScale = 1
+        .TextureVerticalScale = 0.75
+        .TextureVerticalScale = 0.5
+        .TextureVerticalScale = 0.25
+        .TextureVerticalScale = 1
+               
+        ' TextureOffsetX is measured in points:
+        .TextureOffsetX = 10
+        .TextureOffsetX = 50
+        .TextureOffsetX = 100
+       
+        ' TextureOffsetY is measured in points:
+        .TextureOffsetY = 10
+        .TextureOffsetY = 50
+        .TextureOffsetY = 100
+       
+        ' If you don't tile the texture, it only appears
+        ' once inside the shape. The texture
+        ' then stretches to fill the entire shape.
+        .TextureTile = msoFalse
+       
+        ' Reset the texture so that it tiles. Notice that this also
+        ' resets the tiling--it now looks different than it did
+        ' previously!
+        .TextureTile = msoTrue
+       
+        ' Reset the texture:
+        .PresetTextured msoTextureFishFossil
+       
+        ' You can determine whether the texture rotates
+        ' with the shape. First, try rotating the shape
+        ' without rotating the texture:
+        .RotateWithObject = msoFalse
+        shp.Rotation = 10
+               
+        ' Changing RotateWithObject immediately rotates
+        ' the texture to match the existing rotation:
+        .RotateWithObject = msoTrue
+        shp.Rotation = 30
+    End With
+End Sub
