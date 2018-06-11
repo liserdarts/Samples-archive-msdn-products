@@ -1,0 +1,57 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<List xmlns:ows="Microsoft SharePoint" Title="Activity" FolderCreation="FALSE" Direction="$Resources:Direction;" Url="Lists/Activity" BaseType="0" xmlns="http://schemas.microsoft.com/sharepoint/">
+  <MetaData>
+    <ContentTypes>
+      
+      
+    <ContentType ID="0x01007d2eab19b2f3402f8ea96c068c75b00e" Name="ListFieldsContentType"><FieldRefs><FieldRef ID="{fa564e0f-0c70-4ab9-b863-0177e6ddd247}" Name="Title" /><FieldRef ID="{71eb86ae-2bf4-4d0c-ab30-009ead2df3b1}" Name="ActivityBudget" /><FieldRef ID="{288F5F32-8462-4175-8F09-DD7BA29359A9}" Name="Location" /><FieldRef ID="{a71affd2-dcc7-4529-81bc-2fe593154a5f}" Name="WebPage" /><FieldRef ID="{411e7f8a-174c-4613-a91b-6cb88208dcd8}" Name="ActivityDescription" /><FieldRef ID="{340650a2-e977-412d-ae80-19b347fac8ca}" Name="Votes" /><FieldRef ID="{1DAB9B48-2D1A-47b3-878C-8E84F0D211BA}" Name="_Status" /><FieldRef ID="{a9e4abb1-f630-486f-a26a-08a5a3c6b289}" Name="OffsiteLookup" /><FieldRef ID="{dc350d09-ed0f-4750-b5c2-be5e5c076e82}" Name="VoteCount" /></FieldRefs></ContentType><ContentTypeRef ID="0x01">
+        <Folder TargetName="Item" />
+      </ContentTypeRef><ContentTypeRef ID="0x0120" /></ContentTypes>
+    <Fields>
+      
+    <Field ID="{fa564e0f-0c70-4ab9-b863-0177e6ddd247}" Type="Text" Name="Title" DisplayName="Activity Name" Required="TRUE" SourceID="http://schemas.microsoft.com/sharepoint/v3" StaticName="Title" MaxLength="255" /><Field Name="ActivityBudget" ID="{71eb86ae-2bf4-4d0c-ab30-009ead2df3b1}" DisplayName="Activity Budget" Type="Currency" Required="TRUE" LCID="1033" Decimals="2" Min="0" /><Field ID="{288F5F32-8462-4175-8F09-DD7BA29359A9}" Type="Text" Group="$Resources:core,Person_Event_Columns;" Name="Location" DisplayName="$Resources:core,Location;" Sealed="TRUE" SourceID="http://schemas.microsoft.com/sharepoint/v3/fields" StaticName="Location" AllowDeletion="TRUE" /><Field ID="{a71affd2-dcc7-4529-81bc-2fe593154a5f}" Name="WebPage" SourceID="http://schemas.microsoft.com/sharepoint/v3" StaticName="WebPage" Group="$Resources:core,Person_Event_Columns;" DisplayName="Web Site" Type="URL" /><Field Name="ActivityDescription" ID="{411e7f8a-174c-4613-a91b-6cb88208dcd8}" DisplayName="Activity Description" Type="Text" /><Field Name="Votes" ID="{340650a2-e977-412d-ae80-19b347fac8ca}" DisplayName="Votes" Type="Text" Min="0" List="Lists\Employee" ShowField="ID" /><Field ID="{1DAB9B48-2D1A-47b3-878C-8E84F0D211BA}" Name="_Status" Group="$Resources:core,Document_Columns;" Type="Choice" DisplayName="$Resources:core,Status;" SourceID="http://schemas.microsoft.com/sharepoint/v3/fields" StaticName="_Status" FillInChoice="FALSE"><CHOICES><CHOICE>Approved</CHOICE><CHOICE>Not Approved</CHOICE></CHOICES><Default>$Resources:core,_Status_NotStarted;</Default></Field><Field Name="OffsiteLookup" ID="{a9e4abb1-f630-486f-a26a-08a5a3c6b289}" DisplayName="Offsite Lookup" Type="Lookup" List="Lists/Offsite" ShowField="ID" /><Field Name="VoteCount" ID="{dc350d09-ed0f-4750-b5c2-be5e5c076e82}" DisplayName="VoteCount" Type="Number" /></Fields>
+    <Views>
+      
+      
+    <View BaseViewID="0" Type="HTML" MobileView="TRUE" TabularView="FALSE">
+        <Toolbar Type="Standard" />
+        <XslLink Default="TRUE">main.xsl</XslLink>
+        <RowLimit Paged="TRUE">30</RowLimit>
+        <ViewFields>
+          
+        <FieldRef Name="LinkTitleNoMenu"></FieldRef></ViewFields>
+        <Query>
+          <OrderBy>
+            
+          <FieldRef Name="Modified" Ascending="FALSE"></FieldRef></OrderBy>
+        </Query>
+        <ParameterBindings>
+          <ParameterBinding Name="AddNewAnnouncement" Location="Resource(wss,addnewitem)" />
+          <ParameterBinding Name="NoAnnouncements" Location="Resource(wss,noXinviewofY_LIST)" />
+          <ParameterBinding Name="NoAnnouncementsHowTo" Location="Resource(wss,noXinviewofY_ONET_HOME)" />
+        </ParameterBindings>
+      </View><View BaseViewID="1" Type="HTML" WebPartZoneID="Main" DisplayName="$Resources:core,objectiv_schema_mwsidcamlidC24;" DefaultView="TRUE" MobileView="TRUE" MobileDefaultView="TRUE" SetupPath="pages\viewpage.aspx" ImageUrl="/_layouts/15/images/generic.png?rev=23" Url="AllItems.aspx">
+        <Toolbar Type="Standard" />
+        <XslLink Default="TRUE">main.xsl</XslLink>
+        <JSLink>clienttemplates.js</JSLink>
+        <RowLimit Paged="TRUE">30</RowLimit>
+        <ViewFields>
+          
+        <FieldRef Name="ID" /><FieldRef Name="LinkTitle"></FieldRef><FieldRef Name="ActivityBudget" /><FieldRef Name="Location" /><FieldRef Name="WebPage" /><FieldRef Name="ActivityDescription" /><FieldRef Name="Votes" /><FieldRef Name="_Status" /><FieldRef Name="OffsiteLookup" /><FieldRef Name="VoteCount" /></ViewFields>
+        <Query>
+          <OrderBy>
+            
+          <FieldRef Name="ID"></FieldRef></OrderBy>
+        </Query>
+        <ParameterBindings>
+          <ParameterBinding Name="NoAnnouncements" Location="Resource(wss,noXinviewofY_LIST)" />
+          <ParameterBinding Name="NoAnnouncementsHowTo" Location="Resource(wss,noXinviewofY_DEFAULT)" />
+        </ParameterBindings>
+      </View></Views>
+    <Forms>
+      <Form Type="DisplayForm" Url="DispForm.aspx" SetupPath="pages\form.aspx" WebPartZoneID="Main" />
+      <Form Type="EditForm" Url="EditForm.aspx" SetupPath="pages\form.aspx" WebPartZoneID="Main" />
+      <Form Type="NewForm" Url="NewForm.aspx" SetupPath="pages\form.aspx" WebPartZoneID="Main" />
+    </Forms>
+  </MetaData>
+</List>

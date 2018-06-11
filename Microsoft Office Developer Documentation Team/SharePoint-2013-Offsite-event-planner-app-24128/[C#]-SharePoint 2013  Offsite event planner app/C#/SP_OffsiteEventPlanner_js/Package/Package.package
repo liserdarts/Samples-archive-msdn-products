@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package dslVersion="1.0.0.0" 
+        Id="cc912e59-0966-4315-9693-ce733b19768f" 
+        solutionId="cc912e59-0966-4315-9693-ce733b19768f" 
+        xmlns="http://schemas.microsoft.com/VisualStudio/2008/SharePointTools/PackageModel" 
+        name="SP_OffsiteEventPlanner_js"
+        sharePointProductVersion="15.0">
+  <features>
+        <featureReference itemId="988f3d05-8935-48a8-a6a5-f864d75db3ea" />
+  </features>
+</package>
