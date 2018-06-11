@@ -1,0 +1,19 @@
+<?xml version="1.0" ?> 
+<GreyListConfig>
+
+	<MaxVerifiedEntries> 100000 </MaxVerifiedEntries>
+
+	<MaxUnverifiedEntries> 1000 </MaxUnverifiedEntries>
+	
+	<BucketSize> 5 </BucketSize>
+
+	<CleanRowCount> 10 </CleanRowCount>
+	
+	<BlockPeriod> 00:02:00 </BlockPeriod>
+
+	<VerifiedLifeTime> 14.00:00:00 </VerifiedLifeTime>
+
+	<UnverifiedLifeTime> 06:00:00 </UnverifiedLifeTime>
+
+
+</GreyListConfig>
