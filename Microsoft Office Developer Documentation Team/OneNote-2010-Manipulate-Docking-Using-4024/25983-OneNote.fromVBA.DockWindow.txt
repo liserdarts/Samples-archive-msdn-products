@@ -1,0 +1,55 @@
+Option Explicit
+
+' OneNote 2010
+
+' Demonstrates the Window object.
+
+' Use any VBA host including Excel 2010, PowerPoint 2010,
+' or Word 2010.
+' OneNote 2010 is not a VBA host.
+
+' In your VBA host, add references to the following
+' external libraries using the Add References dialog:
+' Microsoft OneNote 14.0 Object Library
+
+' OneNote 2010 provides the ability to interact with
+' the open OneNote user interface.
+' DockOneNoteWindow retrieves the current Window.
+' If the current window is not a SideNote window, it checks
+' to see if the Window is not docked.
+' If it's not, it's docked to the right of the screen.
+' Otherwise the Window is undocked.
+
+' Paste all this code into a module.
+' Start OneNote 2010.
+' Then place the cursor within the
+' DockOneNoteWindow procedure,
+' and press F5.
+
+Public Sub DockOneNoteWindow()
+    ' Connect to OneNote 2010.
+    Dim oneNote As OneNote14.Application
+    Set oneNote = New OneNote14.Application
+    
+    If oneNote.Windows.CurrentWindow Is Nothing Then
+        MsgBox "There isn't a visible OneNote 2010 window. Please start OneNote."
+    Else
+        ' Get the Current Window
+        Dim oneNoteWindow As OneNote14.Window
+        Set oneNoteWindow = oneNote.Windows.CurrentWindow
+        
+        ' If the current Window isn't a SideNote window,
+        ' dock to the right of the screen if it's
+        ' not currently docked.
+        ' Otherwise, undock the Window.
+        If Not oneNoteWindow.SideNote Then
+            If oneNoteWindow.DockedLocation = dlNone Then
+                oneNoteWindow.DockedLocation = dlRight
+            Else
+                oneNoteWindow.DockedLocation = dlNone
+            End If
+        Else
+            MsgBox "The current OneNote window is a SideNote."
+        End If
+    End If
+End Sub
