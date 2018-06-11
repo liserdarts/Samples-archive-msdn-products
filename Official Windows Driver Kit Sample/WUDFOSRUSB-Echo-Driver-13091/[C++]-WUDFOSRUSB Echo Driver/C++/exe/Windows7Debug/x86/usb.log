@@ -1,0 +1,22 @@
+﻿Build started 9/8/2011 1:47:41 PM.
+     1>Project "C:\Users\adamsh\Desktop\SRC for BUILD Gallery\usb\osrusbfx2\umdfosrusbfx2\echo_driver\exe\usb.VcxProj" on node 2 (Build target(s)).
+     1>InitializeBuildStatus:
+         Creating "Windows7Debug\x86\usb.unsuccessfulbuild" because "AlwaysCreate" was specified.
+       ClCompile:
+         C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\bin\CL.exe /c /I..\inc /Zi /nologo /W4 /WX /Od /Oy- /D _X86_=1 /D i386=1 /D STD_CALL /D WIN32_LEAN_AND_MEAN=1 /D _WIN32_WINNT=0x0602 /D WINVER=0x0601 /D WINNT=1 /D NTDDI_VERSION=0x06020000 /D DBG=1 /Gm- /RTC1 /MDd /GS /fp:precise /Zc:wchar_t- /Zc:forScope /Fo"Windows7Debug\x86\\" /Fd"Windows7Debug\x86\usb.pdb" /Gz /TP /FI"C:\Program Files (x86)\Windows Kits\8.0\\Include\Shared\warning.h" /analyze- /errorReport:prompt usb.cpp
+         usb.cpp
+       Link:
+         C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"Windows7Debug\x86\usb.exe" /INCREMENTAL:NO /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib setupapi.lib user32.lib /MANIFEST /ManifestFile:"Windows7Debug\x86\usb.exe.intermediate.manifest" /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /PDB:"C:\Users\adamsh\Desktop\SRC for BUILD Gallery\usb\osrusbfx2\umdfosrusbfx2\echo_driver\exe\Windows7Debug\x86\usb.pdb" /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"Windows7Debug\x86\usb.lib" /MACHINE:X86 Windows7Debug\x86\usb.obj /IGNORE:4198,4010,4037,4039,4065,4070,4078,4087,4089,4221 
+         usb.VcxProj -> C:\Users\adamsh\Desktop\SRC for BUILD Gallery\usb\osrusbfx2\umdfosrusbfx2\echo_driver\exe\Windows7Debug\x86\usb.exe
+       Manifest:
+         C:\Program Files (x86)\Windows Kits\8.0\bin\x86\mt.exe /nologo /verbose /outputresource:"Windows7Debug\x86\usb.exe;#1" /manifest Windows7Debug\x86\usb.exe.intermediate.manifest
+       Deploy:
+         Automatic driver deployment to a remote machine is disabled.  To enable automatic driver deployment open the property pages for the project and go to Driver Settings -> Deployment.
+       FinalizeBuildStatus:
+         Deleting file "Windows7Debug\x86\usb.unsuccessfulbuild".
+         Touching "Windows7Debug\x86\usb.lastbuildstate".
+     1>Done Building Project "C:\Users\adamsh\Desktop\SRC for BUILD Gallery\usb\osrusbfx2\umdfosrusbfx2\echo_driver\exe\usb.VcxProj" (Build target(s)).
+
+Build succeeded.
+
+Time Elapsed 00:00:01.23
