@@ -1,0 +1,26 @@
+<Trace Tag="EwsRequest" Tid="9" Time="2012-05-24 01:19:34Z" Version="14.03.0032.000">
+  <?xml version="1.0" encoding="utf-8"?>
+  <soap:Envelope xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:m="http://schemas.microsoft.com/exchange/services/2006/messages" xmlns:t="http://schemas.microsoft.com/exchange/services/2006/types" xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/">
+    <soap:Header>
+      <t:RequestServerVersion Version="Exchange2010_SP2" />
+    </soap:Header>
+    <soap:Body>
+      <m:UpdateItem MessageDisposition="SaveOnly" ConflictResolution="AlwaysOverwrite">
+        <m:ItemChanges>
+          <t:ItemChange>
+            <t:ItemId Id="AAMkADZhMmZiNmZiLTliZmUtNGJmZi1iZjk1LTJhZDI1M2Y4MDU5NABGAAAAAAAqjKLJ2bSLS5N77s9xdxRUBwCI1MayN/6FTZoUW3wKxxqaAAACbNE+AAB9bvCrJu/IRLgRVUD0xWMUAAAjNpdDAAA=" ChangeKey="EQAAABYAAAB9bvCrJu/IRLgRVUD0xWMUAAAjNyaB" />
+            <t:Updates>
+              <t:SetItemField>
+                <t:FieldURI FieldURI="contacts:CompanyName" />
+                <t:Contact>
+                  <t:CompanyName>
+                  </t:CompanyName>
+                </t:Contact>
+              </t:SetItemField>
+            </t:Updates>
+          </t:ItemChange>
+        </m:ItemChanges>
+      </m:UpdateItem>
+    </soap:Body>
+  </soap:Envelope>
+</Trace>
