@@ -1,0 +1,4 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">
+	<ListInstance FeatureId="{00bfea71-a83e-497e-9ba0-7a5c597d0107}" TemplateType="107" Title="Service Request Tasks" Description="" Url="Lists/Service Request Tasks" CustomSchema="Files\Lists\Service Request Tasks\Schema.xml" HyperlinkBaseUrl="http://pv-prestage:40/HelpDesk" RootWebOnly="FALSE" xmlns="http://schemas.microsoft.com/sharepoint/" />
+</Elements>

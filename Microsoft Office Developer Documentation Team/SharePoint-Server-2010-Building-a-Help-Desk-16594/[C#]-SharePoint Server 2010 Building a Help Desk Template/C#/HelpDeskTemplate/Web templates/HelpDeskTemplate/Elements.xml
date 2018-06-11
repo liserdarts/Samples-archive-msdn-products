@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">
+	<WebTemplate AdjustHijriDays="0" AlternateCssUrl="" AlternateHeader="" BaseTemplateID="1"
+               BaseTemplateName="STS" BaseConfigurationID="1" CalendarType="1" Collation="25"
+               ContainsDefaultLists="TRUE" CustomizedCssFiles="" CustomJSUrl="" 
+               ExcludeFromOfflineClient="FALSE" Locale="1033" 
+               Name="HelpDeskTemplate" ParserEnabled="TRUE" PortalName="" PortalUrl="" 
+               PresenceEnabled="TRUE" ProductVersion="4" QuickLaunchEnabled="TRUE" Subweb="TRUE" 
+               SyndicationEnabled="TRUE" Time24="FALSE" TimeZone="13" Title="HelpDesk Template {Sandbox}" 
+               TreeViewEnabled="FALSE" UIVersionConfigurationEnabled="FALSE" DisplayCategory="Application Templates"
+               xmlns="http://schemas.microsoft.com/sharepoint/" />
+</Elements>

@@ -1,0 +1,4 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">
+	<ListInstance FeatureId="{00bfea71-7e6d-4186-9ba8-c047ac750105}" TemplateType="105" Title="Experts" Description="Use the Experts list to store information on area experts." Url="Lists/Experts" CustomSchema="Files\Lists\Experts\Schema.xml" HyperlinkBaseUrl="http://pv-prestage:40/HelpDesk" RootWebOnly="FALSE" xmlns="http://schemas.microsoft.com/sharepoint/" />
+</Elements>

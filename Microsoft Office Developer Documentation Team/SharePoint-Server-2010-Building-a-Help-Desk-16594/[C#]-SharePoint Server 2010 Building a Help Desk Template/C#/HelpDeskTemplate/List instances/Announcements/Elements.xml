@@ -1,0 +1,4 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">
+	<ListInstance FeatureId="{00bfea71-d1ce-42de-9c63-a44004ce0104}" TemplateType="104" Title="Announcements" Description="Use the Announcements list to post messages on the home page of your site." Url="Lists/Announcements" CustomSchema="Files\Lists\Announcements\Schema.xml" HyperlinkBaseUrl="http://pv-prestage:40/HelpDesk" RootWebOnly="FALSE" xmlns="http://schemas.microsoft.com/sharepoint/" />
+</Elements>

@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">
+  <Module Name="Provision" HyperlinkBaseUrl="http://pv-prestage:404" Path="Provision\Files\_cts\HelpDeskDocumentSetsContentType\" Url="_cts/HelpDeskDocumentSetsContentType">
+  <File Path="Mailtemp.xlsx" Url="Mailtemp.xlsx"  />
+  <File Path="JOBS POC.pptx" Url="JOBS POC.pptx" />
+  <File Path="Event.docx" Url="Event.docx" />
+  <File Path="HelpDeskPropsal.docx" Url="HelpDeskPropsal.docx" />
+  <File Path="docsethomepage.aspx" Url="docsethomepage.aspx" />
+ </Module>
+</Elements>

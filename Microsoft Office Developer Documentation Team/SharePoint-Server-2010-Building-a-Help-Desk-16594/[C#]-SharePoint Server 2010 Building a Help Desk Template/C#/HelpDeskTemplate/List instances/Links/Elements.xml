@@ -1,0 +1,4 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">
+	<ListInstance FeatureId="{00bfea71-2062-426c-90bf-714c59600103}" TemplateType="103" Title="Links" Description="Use the Links list for links to Web pages that your team members will find interesting or useful." Url="Lists/Links" CustomSchema="Files\Lists\Links\Schema.xml" HyperlinkBaseUrl="http://pv-prestage:40/HelpDesk" RootWebOnly="FALSE" xmlns="http://schemas.microsoft.com/sharepoint/" />
+</Elements>

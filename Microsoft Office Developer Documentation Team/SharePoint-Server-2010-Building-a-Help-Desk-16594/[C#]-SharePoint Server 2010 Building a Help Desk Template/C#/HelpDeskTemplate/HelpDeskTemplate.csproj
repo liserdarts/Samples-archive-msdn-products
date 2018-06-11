@@ -1,0 +1,240 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{42D7001E-33B6-44B5-9889-A7D8FD7662B3}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>HelpDeskTemplate</RootNamespace>
+    <AssemblyName>HelpDeskTemplate</AssemblyName>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <ProjectTypeGuids>{BB1F664B-9266-4fd6-B973-E1E44974B511};{14822709-B5A1-4724-98CA-57A101D1B079};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignAssembly>true</SignAssembly>
+  </PropertyGroup>
+  <PropertyGroup>
+    <AssemblyOriginatorKeyFile>key.snk</AssemblyOriginatorKeyFile>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.Web.CommandUI, Version=14.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c, processorArchitecture=MSIL" />
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="Microsoft.SharePoint" />
+    <Reference Include="Microsoft.SharePoint.Security" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Built-In List Instances\Master_Page_Gallery\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{28468c51-c2dc-43bf-95b7-afe950d570b9}</SharePointProjectItemId>
+    </None>
+    <None Include="Built-In List Instances\Master_Page_Gallery\_catalogsmasterpage_global\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{3330cf01-d259-479f-966b-5ce9ae59ba1b}</SharePointProjectItemId>
+    </None>
+    <None Include="Content types\HelpDeskDocumentSets\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{fad4c069-1430-4c95-891a-906d04ab835e}</SharePointProjectItemId>
+    </None>
+    <None Include="Features\SandboxListInstances\SandboxListInstances.feature">
+      <FeatureId>{7f0b7585-0ecb-4b4c-8389-9f6eb20f2b89}</FeatureId>
+    </None>
+    <None Include="Features\SandboxSiteTemplates\SandboxSiteTemplates.feature">
+      <FeatureId>{d54e259d-3c47-41af-95b7-534ba57cbf41}</FeatureId>
+    </None>
+    <None Include="Features\SandboxModules\SandboxModules.feature">
+      <FeatureId>{6114d732-c54e-40cb-b338-59221e603a80}</FeatureId>
+    </None>
+    <None Include="Features\SandboxPropertyBags\SandboxPropertyBags.feature">
+      <FeatureId>{a53d6ea0-4b14-4957-8eae-173075b9ff69}</FeatureId>
+    </None>
+    <None Include="key.snk" />
+    <None Include="List instances\Announcements\ListsAnnouncements_pages\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{85b35490-5a09-4e9b-9383-3fae8507e2b2}</SharePointProjectItemId>
+    </None>
+    <None Include="List instances\Announcements\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{5709374b-eedb-4ca3-a98f-7872d84c2210}</SharePointProjectItemId>
+    </None>
+    <None Include="List instances\Application_Pages\Application_Pages_\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{139a6ec1-a7df-4303-9d54-242be55efd66}</SharePointProjectItemId>
+    </None>
+    <None Include="List instances\Application_Pages\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{56a7d720-1b7f-4a90-82ca-33b94a42fff4}</SharePointProjectItemId>
+    </None>
+    <None Include="List instances\Experts\ListsExperts_pages\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{a2a2740e-ea9f-4533-af97-ea82f98602a8}</SharePointProjectItemId>
+    </None>
+    <None Include="List instances\Experts\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{2c792e2e-08eb-4772-9458-e65d29bf16c3}</SharePointProjectItemId>
+    </None>
+    <None Include="List instances\Helpdesk_Documents\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{bd77a3d2-2baa-4c34-8c42-868dc9b99852}</SharePointProjectItemId>
+    </None>
+    <None Include="List instances\Keywords\ListsKeywords_pages\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{138fcc87-bd4c-4688-bc13-0ccff95ce5dd}</SharePointProjectItemId>
+    </None>
+    <None Include="List instances\Keywords\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{b5a0deb8-63d2-422c-869e-ab0758b57397}</SharePointProjectItemId>
+    </None>
+    <None Include="List instances\Knowledge_Base\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{d7d751d6-4225-48f7-a986-f450c0056d75}</SharePointProjectItemId>
+    </None>
+    <None Include="List instances\Links\ListsLinks_pages\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{6184997e-cbbc-484d-85cc-4eb192040f65}</SharePointProjectItemId>
+    </None>
+    <None Include="List instances\Links\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{6b488e0f-08f3-46c7-8150-94b4ab387fcf}</SharePointProjectItemId>
+    </None>
+    <None Include="List instances\Service_Requests\ListsService_Requests_pages\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{ae4af191-b787-4070-89c7-a49dc341dec7}</SharePointProjectItemId>
+    </None>
+    <None Include="List instances\Service_Requests\ListsService_Requests_\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{d3355aea-730a-4464-9838-87e5233268b3}</SharePointProjectItemId>
+    </None>
+    <None Include="List instances\Service_Requests\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{33f26fad-3efc-4724-9650-182479366000}</SharePointProjectItemId>
+    </None>
+    <None Include="List instances\Service_Request_Tasks\ListsService_Request_Tasks_pages\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{00053ad0-f4ce-4cfe-8bc3-68f4cf68d76b}</SharePointProjectItemId>
+    </None>
+    <None Include="List instances\Service_Request_Tasks\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{b60bc98e-8285-487c-87d9-91186990d023}</SharePointProjectItemId>
+    </None>
+    <None Include="List instances\Support_FAQs\ListsSupport_FAQs_pages\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{5b1b0cdf-d057-4af9-b8ff-4dfae71c9978}</SharePointProjectItemId>
+    </None>
+    <None Include="List instances\Support_FAQs\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{2dd84548-4db3-4db5-9bd7-07d164468d74}</SharePointProjectItemId>
+    </None>
+    <None Include="Modules\images_\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{2f549ae0-3fd4-4f3c-b374-3476aea4acb3}</SharePointProjectItemId>
+    </None>
+    <None Include="Modules\Knowledge_BaseForms_Features_WebPageLibrary_webpagelib\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{a15de5bb-2225-4cbc-8e2c-9ff473a54d10}</SharePointProjectItemId>
+    </None>
+    <None Include="Modules\Knowledge_BaseForms_pages\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{73195431-856c-4deb-9fa3-1541b9d03218}</SharePointProjectItemId>
+    </None>
+    <None Include="Modules\Provision\Files\_cts\HelpDeskDocumentSetsContentType\Event.docx" />
+    <None Include="Modules\Provision\Files\_cts\HelpDeskDocumentSetsContentType\HelpDeskPropsal.docx" />
+    <None Include="Modules\Provision\Files\_cts\HelpDeskDocumentSetsContentType\JOBS POC.pptx" />
+    <None Include="Modules\Provision\Files\_cts\HelpDeskDocumentSetsContentType\Mailtemp.xlsx" />
+    <None Include="Modules\Provision\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{0aea50ae-e84c-4fb2-803e-acbaba7614af}</SharePointProjectItemId>
+    </None>
+    <None Include="Modules\Root_Files\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{af17e1de-7aaf-4784-ba04-b385c603a88a}</SharePointProjectItemId>
+    </None>
+    <None Include="Package\Package.package">
+      <PackageId>{9eaf88dc-5ea6-48cc-8982-a8bb0463f481}</PackageId>
+    </None>
+    <None Include="Package\Package.Template.xml">
+      <DependentUpon>Package.package</DependentUpon>
+    </None>
+    <None Include="PropertyBags\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{198df889-169c-481d-ad2a-e5cd95870463}</SharePointProjectItemId>
+    </None>
+    <None Include="Web templates\HelpDeskTemplate\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{def7caeb-8c1a-4faf-9e70-5d3ebfc0078c}</SharePointProjectItemId>
+    </None>
+  </ItemGroup>
+  <ItemGroup />
+  <ItemGroup>
+    <Content Include="Built-In List Instances\Master_Page_Gallery\Elements.xml" />
+    <Content Include="Built-In List Instances\Master_Page_Gallery\Schema.xml" />
+    <Content Include="Built-In List Instances\Master_Page_Gallery\_catalogsmasterpage_global\Elements.xml" />
+    <Content Include="Content types\HelpDeskDocumentSets\Elements.xml" />
+    <Content Include="Features\SandboxListInstances\SandboxListInstances.Template.xml">
+      <DependentUpon>SandboxListInstances.feature</DependentUpon>
+    </Content>
+    <Content Include="Features\SandboxSiteTemplates\SandboxSiteTemplates.Template.xml">
+      <DependentUpon>SandboxSiteTemplates.feature</DependentUpon>
+    </Content>
+    <Content Include="Features\SandboxModules\SandboxModules.Template.xml">
+      <DependentUpon>SandboxModules.feature</DependentUpon>
+    </Content>
+    <Content Include="Features\SandboxPropertyBags\SandboxPropertyBags.Template.xml">
+      <DependentUpon>SandboxPropertyBags.feature</DependentUpon>
+    </Content>
+    <Content Include="List instances\Announcements\Elements.xml" />
+    <Content Include="List instances\Announcements\ListsAnnouncements_pages\Elements.xml" />
+    <Content Include="List instances\Announcements\Schema.xml" />
+    <Content Include="List instances\Application_Pages\Application_Pages_\Elements.xml" />
+    <Content Include="List instances\Application_Pages\Application_Pages_\Files\2ApplicationPages\HelpDeskManager.aspx" />
+    <Content Include="List instances\Application_Pages\Application_Pages_\Files\2ApplicationPages\KnowledgeBaseManager.aspx" />
+    <Content Include="List instances\Application_Pages\Application_Pages_\Files\2ApplicationPages\ServiceRepresentativeHome.aspx" />
+    <Content Include="List instances\Application_Pages\Elements.xml" />
+    <Content Include="List instances\Application_Pages\Schema.xml" />
+    <Content Include="List instances\Experts\Elements.xml" />
+    <Content Include="List instances\Experts\ListsExperts_pages\Elements.xml" />
+    <Content Include="List instances\Experts\Schema.xml" />
+    <Content Include="List instances\Helpdesk_Documents\Elements.xml" />
+    <Content Include="List instances\Helpdesk_Documents\Schema.xml" />
+    <Content Include="List instances\Keywords\Elements.xml" />
+    <Content Include="List instances\Keywords\ListsKeywords_pages\Elements.xml" />
+    <Content Include="List instances\Keywords\Schema.xml" />
+    <Content Include="List instances\Knowledge_Base\Elements.xml" />
+    <Content Include="List instances\Knowledge_Base\Schema.xml" />
+    <Content Include="List instances\Links\Elements.xml" />
+    <Content Include="List instances\Links\ListsLinks_pages\Elements.xml" />
+    <Content Include="List instances\Links\Schema.xml" />
+    <Content Include="List instances\Service_Requests\Elements.xml" />
+    <Content Include="List instances\Service_Requests\ListsService_Requests_pages\Elements.xml" />
+    <Content Include="List instances\Service_Requests\ListsService_Requests_\Elements.xml" />
+    <Content Include="List instances\Service_Requests\ListsService_Requests_\NewForm.aspx" />
+    <Content Include="List instances\Service_Requests\Schema.xml" />
+    <Content Include="List instances\Service_Request_Tasks\Elements.xml" />
+    <Content Include="List instances\Service_Request_Tasks\ListsService_Request_Tasks_pages\Elements.xml" />
+    <Content Include="List instances\Service_Request_Tasks\Schema.xml" />
+    <Content Include="List instances\Support_FAQs\Elements.xml" />
+    <Content Include="List instances\Support_FAQs\ListsSupport_FAQs_pages\Elements.xml" />
+    <Content Include="List instances\Support_FAQs\Schema.xml" />
+    <Content Include="Modules\images_\Elements.xml" />
+    <Content Include="Modules\images_\Files\images\KPI-0.gif" />
+    <Content Include="Modules\images_\Files\images\KPI-1.gif" />
+    <Content Include="Modules\images_\Files\images\KPI-2.gif" />
+    <Content Include="Modules\Knowledge_BaseForms_Features_WebPageLibrary_webpagelib\Elements.xml" />
+    <Content Include="Modules\Knowledge_BaseForms_pages\Elements.xml" />
+    <Content Include="Modules\Provision\Elements.xml" />
+    <Content Include="Modules\Provision\Files\_cts\HelpDeskDocumentSetsContentType\docsethomepage.aspx" />
+    <Content Include="Modules\Root_Files\Elements.xml" />
+    <Content Include="Modules\Root_Files\Files\default.aspx" />
+    <Content Include="PropertyBags\Elements.xml" />
+    <Content Include="Web templates\HelpDeskTemplate\Elements.xml" />
+    <Content Include="Web templates\HelpDeskTemplate\ONet.xml">
+      <SubType>Designer</SubType>
+    </Content>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\SharePointTools\Microsoft.VisualStudio.SharePoint.targets" />
+</Project>

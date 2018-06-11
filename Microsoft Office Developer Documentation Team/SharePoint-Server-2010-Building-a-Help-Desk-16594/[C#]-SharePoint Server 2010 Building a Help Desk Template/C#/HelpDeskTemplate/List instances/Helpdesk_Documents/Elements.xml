@@ -1,0 +1,5 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">
+	<ListInstance FeatureId="{00bfea71-e717-4e80-aa17-d0c71b360101}" TemplateType="101" Title="Helpdesk Documents" Description="All the helping documents are saved here." Url="Helpdesk Documents" CustomSchema="Files\Helpdesk Documents\Schema.xml" HyperlinkBaseUrl="http://pv-prestage:2011/1" RootWebOnly="FALSE" xmlns="http://schemas.microsoft.com/sharepoint/">
+	</ListInstance>
+</Elements>

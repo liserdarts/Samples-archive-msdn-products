@@ -1,0 +1,8 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">
+	<Module Name="images_" Url="images" RootWebOnly="FALSE" Path="Files\images" xmlns="http://schemas.microsoft.com/sharepoint/">
+		<File Url="KPI-0.gif" Path="KPI-0.gif" />
+		<File Url="KPI-1.gif" Path="KPI-1.gif" />
+		<File Url="KPI-2.gif" Path="KPI-2.gif" />
+	</Module>
+</Elements>

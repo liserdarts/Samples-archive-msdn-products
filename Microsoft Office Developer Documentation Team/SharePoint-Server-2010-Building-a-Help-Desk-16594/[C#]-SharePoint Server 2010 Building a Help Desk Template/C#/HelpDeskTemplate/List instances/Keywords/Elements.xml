@@ -1,0 +1,4 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">
+	<ListInstance FeatureId="{00bfea71-d1ce-42de-9c63-a44004ce0104}" TemplateType="104" Title="Keywords" Description="Use this list to manage the keywords that to tag items in your Knowledge Base  " Url="Lists/Keywords" CustomSchema="Files\Lists\Keywords\Schema.xml" HyperlinkBaseUrl="http://pv-prestage:40/HelpDesk" RootWebOnly="FALSE" xmlns="http://schemas.microsoft.com/sharepoint/" />
+</Elements>

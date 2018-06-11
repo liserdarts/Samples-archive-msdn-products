@@ -1,0 +1,4 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">
+	<ListInstance FeatureId="{00bfea71-c796-4402-9f2f-0eb9a6e71b18}" TemplateType="119" Title="Knowledge Base" Description="Use this list to write and store Knowledge Base Articles and Documents to be shared with your team" Url="Knowledge Base" CustomSchema="Files\Knowledge Base\Schema.xml" HyperlinkBaseUrl="http://pv-prestage:40/HelpDesk" RootWebOnly="FALSE" xmlns="http://schemas.microsoft.com/sharepoint/" />
+</Elements>

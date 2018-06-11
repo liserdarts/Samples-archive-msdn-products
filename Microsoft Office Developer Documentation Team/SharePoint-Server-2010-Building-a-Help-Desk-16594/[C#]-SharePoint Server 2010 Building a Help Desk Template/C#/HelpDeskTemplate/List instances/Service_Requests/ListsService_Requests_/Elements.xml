@@ -1,0 +1,6 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">
+	<Module Name="ListsService Requests_" HyperlinkBaseUrl="http://pv-prestage:40/HelpDesk" Url="Lists/Service Requests" RootWebOnly="FALSE" Path="Files\Lists\1ServiceRequests" xmlns="http://schemas.microsoft.com/sharepoint/">
+		<File Url="NewForm.aspx" DoGUIDFixUp="true" Path="NewForm.aspx" />
+	</Module>
+</Elements>

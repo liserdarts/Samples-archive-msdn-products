@@ -1,0 +1,131 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">
+	<Module Name="ListsService Requests_pages" HyperlinkBaseUrl="http://pv-prestage:40/HelpDesk" Url="Lists/Service Requests" SetupPath="pages" RootWebOnly="FALSE" Path="Files\Lists\1ServiceRequests" xmlns="http://schemas.microsoft.com/sharepoint/">
+		<File Url="AllItems.aspx" Type="Ghostable" Path="viewpage.aspx">
+			<View List="Lists/Service Requests" DisplayName="All Service Requests" Url="" DefaultView="TRUE" BaseViewID="1" Type="HTML" WebPartOrder="1" WebPartZoneID="Main" ID="g_fc378a18_af25_4483_a500_d7966e636b98" Hidden="FALSE">
+				<BinarySerializedWebPart>
+					<GUIDMap>
+						<GUID Id="765a1697_1774_4af9_802b_19d1dbef51c8" ListUrl="Lists/Service Requests" />
+					</GUIDMap>
+					<WebPart ID="{2e13c673-db11-4df9-bb44-b5811cd3ac08}" WebPartIdProperty="g_fc378a18_af25_4483_a500_d7966e636b98" List="{$ListId:Lists/Service Requests;}" Type="0" Flags="25165829" DisplayName="All Service Requests" Version="3" Url="/HelpDesk/Lists/Service Requests/AllItems.aspx" WebPartOrder="1" WebPartZoneID="Main" IsIncluded="True" FrameState="0" WPTypeId="{874f5460-71f9-fecc-e894-e7e858d9713e}" SolutionId="{00000000-0000-0000-0000-000000000000}" Assembly="" Class="" Src="" AllUsers="B6Dt/jUAAAABAAAAAAAAAAEAAAAvSGVscERlc2svTGlzdHMvU2VydmljZSBSZXF1ZXN0cwD/ARQrACACAgIDAgMBBAACAQINAQEAAgIFCFZpZXdHdWlkBSZ7MkUxM0M2NzMtREIxMS00REY5LUJCNDQtQjU4MTFDRDNBQzA4fQEAAAIUAn0FIC9IZWxwRGVzay9MaXN0cy9TZXJ2aWNlIFJlcXVlc3RzAkEFBFRSVUUCEAUUQWxsIFNlcnZpY2UgUmVxdWVzdHMCGQUIMjUxNjU4MjkFCVZpZXdGbGFncygpek1pY3Jvc29mdC5TaGFyZVBvaW50LlNQVmlld0ZsYWdzLCBNaWNyb3NvZnQuU2hhcmVQb2ludCwgVmVyc2lvbj0xNC4wLjAuMCwgQ3VsdHVyZT1uZXV0cmFsLCBQdWJsaWNLZXlUb2tlbj03MWU5YmNlMTExZTk0MjljKEh0bWwsIFRhYnVsYXJWaWV3LCBNb2JpbGUsIERlZmF1bHRNb2JpbGUFCFBhZ2VUeXBlCyl3TWljcm9zb2Z0LlNoYXJlUG9pbnQuUEFHRVRZUEUsIE1pY3Jvc29mdC5TaGFyZVBvaW50LCBWZXJzaW9uPTE0LjAuMC4wLCBDdWx0dXJlPW5ldXRyYWwsIFB1YmxpY0tleVRva2VuPTcxZTliY2UxMTFlOTQyOWMAApUBBSZ7NzY1QTE2OTctMTc3NC00QUY5LTgwMkItMTlEMURCRUY1MUM4fQUGTGlzdElkKClYU3lzdGVtLkd1aWQsIG1zY29ybGliLCBWZXJzaW9uPTIuMC4wLjAsIEN1bHR1cmU9bmV1dHJhbCwgUHVibGljS2V5VG9rZW49Yjc3YTVjNTYxOTM0ZTA4OSQ3NjVhMTY5Ny0xNzc0LTRhZjktODAyYi0xOWQxZGJlZjUxYzgFDVhtbERlZmluaXRpb24FqAc8VmlldyBOYW1lPSJ7MkUxM0M2NzMtREIxMS00REY5LUJCNDQtQjU4MTFDRDNBQzA4fSIgRGVmYXVsdFZpZXc9IlRSVUUiIE1vYmlsZVZpZXc9IlRSVUUiIE1vYmlsZURlZmF1bHRWaWV3PSJUUlVFIiBUeXBlPSJIVE1MIiBEaXNwbGF5TmFtZT0iQWxsIFNlcnZpY2UgUmVxdWVzdHMiIFVybD0iL0hlbHBEZXNrL0xpc3RzL1NlcnZpY2UgUmVxdWVzdHMvQWxsSXRlbXMuYXNweCIgTGV2ZWw9IjEiIEJhc2VWaWV3SUQ9IjEiIENvbnRlbnRUeXBlSUQ9IjB4IiBJbWFnZVVybD0iL19sYXlvdXRzL2ltYWdlcy9nZW5lcmljLnBuZyI+PFF1ZXJ5PjxHcm91cEJ5IENvbGxhcHNlPSJGQUxTRSIgR3JvdXBMaW1pdD0iMzAiPjxGaWVsZFJlZiBOYW1lPSJQcmlvcml0eSIvPjwvR3JvdXBCeT48T3JkZXJCeT48RmllbGRSZWYgTmFtZT0iQ3JlYXRlZCIgQXNjZW5kaW5nPSJGQUxTRSIvPjwvT3JkZXJCeT48V2hlcmU+PE5lcT48RmllbGRSZWYgTmFtZT0iU3RhdHVzIi8+PFZhbHVlIFR5cGU9IlRleHQiPkNsb3NlZDwvVmFsdWU+PC9OZXE+PC9XaGVyZT48L1F1ZXJ5PjxWaWV3RmllbGRzPjxGaWVsZFJlZiBOYW1lPSJMaW5rVGl0bGUiLz48RmllbGRSZWYgTmFtZT0iQ3VzdG9tZXIiLz48RmllbGRSZWYgTmFtZT0iUHJpb3JpdHkiLz48RmllbGRSZWYgTmFtZT0iU3RhdHVzIi8+PEZpZWxkUmVmIE5hbWU9IlNlcnZpY2VfeDAwMjBfUmVwcmVzZW50YXRpdmUiLz48RmllbGRSZWYgTmFtZT0iQXNzaWduZWRfeDAwMjBfVG8iLz48RmllbGRSZWYgTmFtZT0iS2V5d29yZHMiLz48RmllbGRSZWYgTmFtZT0iUmVsYXRlZF94MDAyMF9BcnRpY2xlcyIvPjwvVmlld0ZpZWxkcz48Um93TGltaXQgUGFnZWQ9IlRSVUUiPjMwPC9Sb3dMaW1pdD48QWdncmVnYXRpb25zIFZhbHVlPSJPZmYiLz48VG9vbGJhciBUeXBlPSJTdGFuZGFyZCIgU2hvd0Fsd2F5cz0iVFJVRSIvPjwvVmlldz4FEVBhcmFtZXRlckJpbmRpbmdzBa4GPFBhcmFtZXRlckJpbmRpbmcgTmFtZT0iZHZ0X3NvcnRkaXIiIExvY2F0aW9uPSJQb3N0YmFjaztDb25uZWN0aW9uIiAvPjxQYXJhbWV0ZXJCaW5kaW5nIE5hbWU9ImR2dF9zb3J0ZmllbGQiIExvY2F0aW9uPSJQb3N0YmFjaztDb25uZWN0aW9uIiAvPjxQYXJhbWV0ZXJCaW5kaW5nIE5hbWU9ImR2dF9zdGFydHBvc2l0aW9uIiBMb2NhdGlvbj0iUG9zdGJhY2siIERlZmF1bHRWYWx1ZT0iIiAvPjxQYXJhbWV0ZXJCaW5kaW5nIE5hbWU9ImR2dF9maXJzdHJvdyIgTG9jYXRpb249IlBvc3RiYWNrO0Nvbm5lY3Rpb24iIC8+PFBhcmFtZXRlckJpbmRpbmcgTmFtZT0iT3Blbk1lbnVLZXlBY2Nlc3NpYmxlIiBMb2NhdGlvbj0iUmVzb3VyY2Uod3NzLE9wZW5NZW51S2V5QWNjZXNzaWJsZSkiIC8+PFBhcmFtZXRlckJpbmRpbmcgTmFtZT0ib3Blbl9tZW51IiBMb2NhdGlvbj0iUmVzb3VyY2Uod3NzLG9wZW5fbWVudSkiIC8+PFBhcmFtZXRlckJpbmRpbmcgTmFtZT0ic2VsZWN0X2Rlc2VsZWN0X2FsbCIgTG9jYXRpb249IlJlc291cmNlKHdzcyxzZWxlY3RfZGVzZWxlY3RfYWxsKSIgLz48UGFyYW1ldGVyQmluZGluZyBOYW1lPSJpZFByZXNFbmFibGVkIiBMb2NhdGlvbj0iUmVzb3VyY2Uod3NzLGlkUHJlc0VuYWJsZWQpIiAvPjxQYXJhbWV0ZXJCaW5kaW5nIE5hbWU9Ik5vQW5ub3VuY2VtZW50cyIgTG9jYXRpb249IlJlc291cmNlKHdzcyxub1hpbnZpZXdvZllfTElTVCkiIC8+PFBhcmFtZXRlckJpbmRpbmcgTmFtZT0iTm9Bbm5vdW5jZW1lbnRzSG93VG8iIExvY2F0aW9uPSJSZXNvdXJjZSh3c3Msbm9YaW52aWV3b2ZZX0RFRkFVTFQpIiAvPg==" View="qKkwMQwAAACSAgAAeJx9UtFugkAQ/BVyPwBpX5GEmto0tdoCtY/mlBE3PTi6d4j8fQ+LprHEp7vszOzO7F24IrQzgspNFJ7OBDtvIUtMxJyqr4ysgvD/YW9Mmsl2I1BqpW3MGAA+0BbrYxDcBesENcOgcmw6jI2IjaGiQj7wMz3CeUHXas7HpiVQ0l7UMVvaKowRp42xugT3kP93He8NuIvCJ9ZN/dB5U62UrI1TzOJ5+ii8EzCnkuxE3Afi5o78oUsULjkH95drG4zer/Bis0WVU1WcB/Xyi+pzD0YULvB9Y/ErqRp4WVe7aoajFdFUaYPc5esR1++k94dm/pA0LgpG4d5DV8Y7MSdiudv1HV/1hhS83+PZojznFkMtpbJWuKzv6vdkWquN5MGSM1rlkl3WdK/bWLWyM85o8tFn/QGU4d6n" />
+				</BinarySerializedWebPart>
+			</View>
+		</File>
+		<File Url="DispForm.aspx" Type="Ghostable" Path="form.aspx">
+			<AllUsersWebPart WebPartOrder="1" WebPartZoneID="Main" ID="g_8675ee26_ca8e_49a1_ba84_8a0d061c6167"><![CDATA[<WebPart xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="http://schemas.microsoft.com/WebPart/v2">
+  <Title />
+  <FrameType>Default</FrameType>
+  <Description />
+  <IsIncluded>true</IsIncluded>
+  <ZoneID>Main</ZoneID>
+  <PartOrder>1</PartOrder>
+  <FrameState>Normal</FrameState>
+  <Height />
+  <Width />
+  <AllowRemove>true</AllowRemove>
+  <AllowZoneChange>true</AllowZoneChange>
+  <AllowMinimize>true</AllowMinimize>
+  <AllowConnect>true</AllowConnect>
+  <AllowEdit>true</AllowEdit>
+  <AllowHide>true</AllowHide>
+  <IsVisible>true</IsVisible>
+  <DetailLink />
+  <HelpLink />
+  <HelpMode>Modeless</HelpMode>
+  <Dir>Default</Dir>
+  <PartImageSmall />
+  <MissingAssembly>Cannot import this Web Part.</MissingAssembly>
+  <PartImageLarge />
+  <IsIncludedFilter />
+  <Assembly>Microsoft.SharePoint, Version=14.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c</Assembly>
+  <TypeName>Microsoft.SharePoint.WebPartPages.ListFormWebPart</TypeName>
+  <ListName xmlns="http://schemas.microsoft.com/WebPart/v2/ListForm">{$ListId:Lists/Service Requests;}</ListName>
+  <ListId xmlns="http://schemas.microsoft.com/WebPart/v2/ListForm">$ListId:Lists/Service Requests;</ListId>
+  <PageType xmlns="http://schemas.microsoft.com/WebPart/v2/ListForm">PAGE_DISPLAYFORM</PageType>
+  <FormType xmlns="http://schemas.microsoft.com/WebPart/v2/ListForm">4</FormType>
+  <ControlMode xmlns="http://schemas.microsoft.com/WebPart/v2/ListForm">Display</ControlMode>
+  <ViewFlag xmlns="http://schemas.microsoft.com/WebPart/v2/ListForm">1048576</ViewFlag>
+  <ViewFlags xmlns="http://schemas.microsoft.com/WebPart/v2/ListForm">Default</ViewFlags>
+  <ListItemId xmlns="http://schemas.microsoft.com/WebPart/v2/ListForm">0</ListItemId>
+  <TemplateName xmlns="http://schemas.microsoft.com/WebPart/v2/ListForm">ListForm</TemplateName>
+</WebPart>]]></AllUsersWebPart>
+		</File>
+		<File Url="EditForm.aspx" Type="Ghostable" Path="form.aspx">
+			<AllUsersWebPart WebPartOrder="1" WebPartZoneID="Main" ID="g_de72d0ac_e362_4823_b779_89dddab5b1cf"><![CDATA[<WebPart xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="http://schemas.microsoft.com/WebPart/v2">
+  <Title />
+  <FrameType>Default</FrameType>
+  <Description />
+  <IsIncluded>true</IsIncluded>
+  <ZoneID>Main</ZoneID>
+  <PartOrder>1</PartOrder>
+  <FrameState>Normal</FrameState>
+  <Height />
+  <Width />
+  <AllowRemove>true</AllowRemove>
+  <AllowZoneChange>true</AllowZoneChange>
+  <AllowMinimize>true</AllowMinimize>
+  <AllowConnect>true</AllowConnect>
+  <AllowEdit>true</AllowEdit>
+  <AllowHide>true</AllowHide>
+  <IsVisible>true</IsVisible>
+  <DetailLink />
+  <HelpLink />
+  <HelpMode>Modeless</HelpMode>
+  <Dir>Default</Dir>
+  <PartImageSmall />
+  <MissingAssembly>Cannot import this Web Part.</MissingAssembly>
+  <PartImageLarge />
+  <IsIncludedFilter />
+  <Assembly>Microsoft.SharePoint, Version=14.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c</Assembly>
+  <TypeName>Microsoft.SharePoint.WebPartPages.ListFormWebPart</TypeName>
+  <ListName xmlns="http://schemas.microsoft.com/WebPart/v2/ListForm">{$ListId:Lists/Service Requests;}</ListName>
+  <ListId xmlns="http://schemas.microsoft.com/WebPart/v2/ListForm">$ListId:Lists/Service Requests;</ListId>
+  <PageType xmlns="http://schemas.microsoft.com/WebPart/v2/ListForm">PAGE_EDITFORM</PageType>
+  <FormType xmlns="http://schemas.microsoft.com/WebPart/v2/ListForm">6</FormType>
+  <ControlMode xmlns="http://schemas.microsoft.com/WebPart/v2/ListForm">Edit</ControlMode>
+  <ViewFlag xmlns="http://schemas.microsoft.com/WebPart/v2/ListForm">1048576</ViewFlag>
+  <ViewFlags xmlns="http://schemas.microsoft.com/WebPart/v2/ListForm">Default</ViewFlags>
+  <ListItemId xmlns="http://schemas.microsoft.com/WebPart/v2/ListForm">0</ListItemId>
+  <TemplateName xmlns="http://schemas.microsoft.com/WebPart/v2/ListForm">ListForm</TemplateName>
+</WebPart>]]></AllUsersWebPart>
+		</File>
+		<File Url="NewForm_copy(1).aspx" Type="Ghostable" Path="form.aspx">
+			<AllUsersWebPart WebPartOrder="1" WebPartZoneID="Main" ID="g_1939ea69_2d79_4010_b7e1_1da161a940db"><![CDATA[<WebPart xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="http://schemas.microsoft.com/WebPart/v2">
+  <Title />
+  <FrameType>Default</FrameType>
+  <Description />
+  <IsIncluded>true</IsIncluded>
+  <ZoneID>Main</ZoneID>
+  <PartOrder>1</PartOrder>
+  <FrameState>Normal</FrameState>
+  <Height />
+  <Width />
+  <AllowRemove>true</AllowRemove>
+  <AllowZoneChange>true</AllowZoneChange>
+  <AllowMinimize>true</AllowMinimize>
+  <AllowConnect>true</AllowConnect>
+  <AllowEdit>true</AllowEdit>
+  <AllowHide>true</AllowHide>
+  <IsVisible>true</IsVisible>
+  <DetailLink />
+  <HelpLink />
+  <HelpMode>Modeless</HelpMode>
+  <Dir>Default</Dir>
+  <PartImageSmall />
+  <MissingAssembly>Cannot import this Web Part.</MissingAssembly>
+  <PartImageLarge />
+  <IsIncludedFilter />
+  <Assembly>Microsoft.SharePoint, Version=14.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c</Assembly>
+  <TypeName>Microsoft.SharePoint.WebPartPages.ListFormWebPart</TypeName>
+  <ListName xmlns="http://schemas.microsoft.com/WebPart/v2/ListForm">{$ListId:Lists/Service Requests;}</ListName>
+  <ListId xmlns="http://schemas.microsoft.com/WebPart/v2/ListForm">$ListId:Lists/Service Requests;</ListId>
+  <PageType xmlns="http://schemas.microsoft.com/WebPart/v2/ListForm">PAGE_NEWFORM</PageType>
+  <FormType xmlns="http://schemas.microsoft.com/WebPart/v2/ListForm">8</FormType>
+  <ControlMode xmlns="http://schemas.microsoft.com/WebPart/v2/ListForm">New</ControlMode>
+  <ViewFlag xmlns="http://schemas.microsoft.com/WebPart/v2/ListForm">0</ViewFlag>
+  <ListItemId xmlns="http://schemas.microsoft.com/WebPart/v2/ListForm">0</ListItemId>
+  <TemplateName xmlns="http://schemas.microsoft.com/WebPart/v2/ListForm">ListForm</TemplateName>
+</WebPart>]]></AllUsersWebPart>
+		</File>
+	</Module>
+</Elements>

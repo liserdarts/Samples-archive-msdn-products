@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ProjectItem Type="Microsoft.VisualStudio.SharePoint.Module" DefaultFile="Elements.xml" SupportedTrustLevels="All" SupportedDeploymentScopes="Web, Site" xmlns="http://schemas.microsoft.com/VisualStudio/2010/SharePointTools/SharePointProjectItemModel">
+  <Files>
+    <ProjectItemFile Source="Elements.xml" Target="Provision\" Type="ElementManifest" />
+    <ProjectItemFile Source="Files\_cts\HelpDeskDocumentSetsContentType\Mailtemp.xlsx" Target="Provision\Files\_cts\HelpDeskDocumentSetsContentType\" Type="ElementFile" />
+    <ProjectItemFile Source="Files\_cts\HelpDeskDocumentSetsContentType\JOBS POC.pptx" Target="Provision\Files\_cts\HelpDeskDocumentSetsContentType\" Type="ElementFile" />
+    <ProjectItemFile Source="Files\_cts\HelpDeskDocumentSetsContentType\Event.docx" Target="Provision\Files\_cts\HelpDeskDocumentSetsContentType\" Type="ElementFile" />
+    <ProjectItemFile Source="Files\_cts\HelpDeskDocumentSetsContentType\HelpDeskPropsal.docx" Target="Provision\Files\_cts\HelpDeskDocumentSetsContentType\" Type="ElementFile" />
+    <ProjectItemFile Source="Files\_cts\HelpDeskDocumentSetsContentType\docsethomepage.aspx" Target="Provision\Files\_cts\HelpDeskDocumentSetsContentType\" Type="ElementFile" />
+  </Files>
+</ProjectItem>

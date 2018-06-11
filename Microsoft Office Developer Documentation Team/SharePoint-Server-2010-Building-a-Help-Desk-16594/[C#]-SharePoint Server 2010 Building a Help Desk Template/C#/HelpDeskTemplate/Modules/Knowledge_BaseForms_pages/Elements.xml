@@ -1,0 +1,93 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">
+	<Module Name="Knowledge BaseForms_pages" HyperlinkBaseUrl="http://pv-prestage:40/HelpDesk" Url="Knowledge Base/Forms" SetupPath="pages" RootWebOnly="FALSE" Path="Files\4KnowledgeBase\Forms" xmlns="http://schemas.microsoft.com/sharepoint/">
+		<File Url="AllPages.aspx" Type="Ghostable" Path="viewpage.aspx">
+			<View List="Knowledge Base" DisplayName="All Documents" Url="" DefaultView="TRUE" BaseViewID="1" Type="HTML" WebPartOrder="1" WebPartZoneID="Main"  ID="g_813b7fba_431c_49f8_b3e4_839c04dab520" Hidden="FALSE">
+				<BinarySerializedWebPart>
+					<GUIDMap>
+						<GUID Id="4aeed8e9_7911_4aea_8d42_1236b3eaa990" ListUrl="Knowledge Base" />
+					</GUIDMap>
+					<WebPart ID="{95dc85de-7fdc-451a-a0fb-5d9819b1acb3}" WebPartIdProperty="g_813b7fba_431c_49f8_b3e4_839c04dab520" List="{$ListId:Knowledge Base;}" Type="0" Flags="25165829" DisplayName="All Documents" Version="3" Url="/HelpDesk/Knowledge Base/Forms/AllPages.aspx" WebPartOrder="1" WebPartZoneID="Main" IsIncluded="True" FrameState="0" WPTypeId="{874f5460-71f9-fecc-e894-e7e858d9713e}" SolutionId="{00000000-0000-0000-0000-000000000000}" Assembly="" Class="" Src="" AllUsers="B6Dt/i0AAAABAAAAAAAAAAEAAAAvSGVscERlc2svS25vd2xlZGdlIEJhc2UA/wEUKwAgAgICAwIDAQQAAgECDQEBAAICBQhWaWV3R3VpZAUmezk1REM4NURFLTdGREMtNDUxQS1BMEZCLTVEOTgxOUIxQUNCM30BAAACFAJ9BRgvSGVscERlc2svS25vd2xlZGdlIEJhc2UCQQUEVFJVRQIQBQ1BbGwgRG9jdW1lbnRzAhkFCDI1MTY1ODI5BQlWaWV3RmxhZ3MoKXpNaWNyb3NvZnQuU2hhcmVQb2ludC5TUFZpZXdGbGFncywgTWljcm9zb2Z0LlNoYXJlUG9pbnQsIFZlcnNpb249MTQuMC4wLjAsIEN1bHR1cmU9bmV1dHJhbCwgUHVibGljS2V5VG9rZW49NzFlOWJjZTExMWU5NDI5YyhIdG1sLCBUYWJ1bGFyVmlldywgTW9iaWxlLCBEZWZhdWx0TW9iaWxlBQhQYWdlVHlwZQspd01pY3Jvc29mdC5TaGFyZVBvaW50LlBBR0VUWVBFLCBNaWNyb3NvZnQuU2hhcmVQb2ludCwgVmVyc2lvbj0xNC4wLjAuMCwgQ3VsdHVyZT1uZXV0cmFsLCBQdWJsaWNLZXlUb2tlbj03MWU5YmNlMTExZTk0MjljAAKVAQUmezRBRUVEOEU5LTc5MTEtNEFFQS04RDQyLTEyMzZCM0VBQTk5MH0FBkxpc3RJZCgpWFN5c3RlbS5HdWlkLCBtc2NvcmxpYiwgVmVyc2lvbj0yLjAuMC4wLCBDdWx0dXJlPW5ldXRyYWwsIFB1YmxpY0tleVRva2VuPWI3N2E1YzU2MTkzNGUwODkkNGFlZWQ4ZTktNzkxMS00YWVhLThkNDItMTIzNmIzZWFhOTkwBQ1YbWxEZWZpbml0aW9uBcUFPFZpZXcgTmFtZT0iezk1REM4NURFLTdGREMtNDUxQS1BMEZCLTVEOTgxOUIxQUNCM30iIERlZmF1bHRWaWV3PSJUUlVFIiBNb2JpbGVWaWV3PSJUUlVFIiBNb2JpbGVEZWZhdWx0Vmlldz0iVFJVRSIgVHlwZT0iSFRNTCIgRGlzcGxheU5hbWU9IkFsbCBEb2N1bWVudHMiIFVybD0iL0hlbHBEZXNrL0tub3dsZWRnZSBCYXNlL0Zvcm1zL0FsbFBhZ2VzLmFzcHgiIExldmVsPSIxIiBCYXNlVmlld0lEPSIxIiBDb250ZW50VHlwZUlEPSIweCIgVG9vbGJhclRlbXBsYXRlPSJXaWtpTGlicmFyeVZpZXdUb29sQmFyIiBJbWFnZVVybD0iL19sYXlvdXRzL2ltYWdlcy9kbGljb24ucG5nIj48UXVlcnk+PE9yZGVyQnk+PEZpZWxkUmVmIE5hbWU9IkZpbGVMZWFmUmVmIi8+PC9PcmRlckJ5PjwvUXVlcnk+PFZpZXdGaWVsZHM+PEZpZWxkUmVmIE5hbWU9IkRvY0ljb24iLz48RmllbGRSZWYgTmFtZT0iTGlua0ZpbGVuYW1lIi8+PEZpZWxkUmVmIE5hbWU9Ik1vZGlmaWVkIi8+PEZpZWxkUmVmIE5hbWU9IkVkaXRvciIvPjxGaWVsZFJlZiBOYW1lPSJSZWxhdGVkX3gwMDIwX0FydGljbGVzIi8+PEZpZWxkUmVmIE5hbWU9IktleXdvcmRzIi8+PC9WaWV3RmllbGRzPjxSb3dMaW1pdCBQYWdlZD0iVFJVRSI+MzA8L1Jvd0xpbWl0PjxBZ2dyZWdhdGlvbnMgVmFsdWU9Ik9mZiIvPjxUb29sYmFyIFR5cGU9IlN0YW5kYXJkIiBTaG93QWx3YXlzPSJUUlVFIi8+PC9WaWV3PgURUGFyYW1ldGVyQmluZGluZ3MF1gc8UGFyYW1ldGVyQmluZGluZyBOYW1lPSJkdnRfc29ydGRpciIgTG9jYXRpb249IlBvc3RiYWNrO0Nvbm5lY3Rpb24iIC8+PFBhcmFtZXRlckJpbmRpbmcgTmFtZT0iZHZ0X3NvcnRmaWVsZCIgTG9jYXRpb249IlBvc3RiYWNrO0Nvbm5lY3Rpb24iIC8+PFBhcmFtZXRlckJpbmRpbmcgTmFtZT0iZHZ0X3N0YXJ0cG9zaXRpb24iIExvY2F0aW9uPSJQb3N0YmFjayIgRGVmYXVsdFZhbHVlPSIiIC8+PFBhcmFtZXRlckJpbmRpbmcgTmFtZT0iZHZ0X2ZpcnN0cm93IiBMb2NhdGlvbj0iUG9zdGJhY2s7Q29ubmVjdGlvbiIgLz48UGFyYW1ldGVyQmluZGluZyBOYW1lPSJPcGVuTWVudUtleUFjY2Vzc2libGUiIExvY2F0aW9uPSJSZXNvdXJjZSh3c3MsT3Blbk1lbnVLZXlBY2Nlc3NpYmxlKSIgLz48UGFyYW1ldGVyQmluZGluZyBOYW1lPSJvcGVuX21lbnUiIExvY2F0aW9uPSJSZXNvdXJjZSh3c3Msb3Blbl9tZW51KSIgLz48UGFyYW1ldGVyQmluZGluZyBOYW1lPSJzZWxlY3RfZGVzZWxlY3RfYWxsIiBMb2NhdGlvbj0iUmVzb3VyY2Uod3NzLHNlbGVjdF9kZXNlbGVjdF9hbGwpIiAvPjxQYXJhbWV0ZXJCaW5kaW5nIE5hbWU9ImlkUHJlc0VuYWJsZWQiIExvY2F0aW9uPSJSZXNvdXJjZSh3c3MsaWRQcmVzRW5hYmxlZCkiIC8+PFBhcmFtZXRlckJpbmRpbmcgTmFtZT0iTm9Bbm5vdW5jZW1lbnRzIiBMb2NhdGlvbj0iUmVzb3VyY2Uod3NzLG5vWGludmlld29mWV9MSVNUKSIgLz48UGFyYW1ldGVyQmluZGluZyBOYW1lPSJOb0Fubm91bmNlbWVudHNIb3dUbyIgTG9jYXRpb249IlJlc291cmNlKGNvcmUsbm9YaW52aWV3b2ZZX0RFRkFVTFQpIiAvPjxQYXJhbWV0ZXJCaW5kaW5nIE5hbWU9IkFkZE5ld0Fubm91bmNlbWVudCIgTG9jYXRpb249IlJlc291cmNlKHdzcyxhZGRuZXdpdGVtKSIgLz48UGFyYW1ldGVyQmluZGluZyBOYW1lPSJNb3JlQW5ub3VuY2VtZW50cyIgTG9jYXRpb249IlJlc291cmNlKHdzcyxtb3JlSXRlbXNQYXJlbikiIC8+" View="qKkwMQwAAACTAQAAeJxtkNGKwjAQRX8l5Ada1tdW6KKCWFe2rb5KbKbdYdOMTCPd/P3GKiK0T0Pm3BMuk5wQhg2C0f0yGWcBjfhSHaRyRfW2JiujCcnR/m7QgA2vGbwnjQ2CnkFrjY54BhRglAN9/ovjj/icscPaQD8T3IEfiPWIovf23zdgv0wOrIE//cS7981BNWEzqq9c9BSztmVolUOyvTgpcwvSoRnDe7oEWzzG1kGXY4culQv53JXYXQ282kwvVBGZi2JR+Wv4tnTKasVaivKHhswMyveprIrjOmT/Aa+HiRs=" />
+				</BinarySerializedWebPart>
+			</View>
+		</File>
+		<File Url="DispForm.aspx" Type="Ghostable" Path="form.aspx">
+			<AllUsersWebPart WebPartOrder="1" WebPartZoneID="Main" ID="g_6d31b8fa_57b0_4b6b_ae39_456185c6df86"><![CDATA[<WebPart xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="http://schemas.microsoft.com/WebPart/v2">
+  <Title />
+  <FrameType>Default</FrameType>
+  <Description />
+  <IsIncluded>true</IsIncluded>
+  <ZoneID>Main</ZoneID>
+  <PartOrder>1</PartOrder>
+  <FrameState>Normal</FrameState>
+  <Height />
+  <Width />
+  <AllowRemove>true</AllowRemove>
+  <AllowZoneChange>true</AllowZoneChange>
+  <AllowMinimize>true</AllowMinimize>
+  <AllowConnect>true</AllowConnect>
+  <AllowEdit>true</AllowEdit>
+  <AllowHide>true</AllowHide>
+  <IsVisible>true</IsVisible>
+  <DetailLink />
+  <HelpLink />
+  <HelpMode>Modeless</HelpMode>
+  <Dir>Default</Dir>
+  <PartImageSmall />
+  <MissingAssembly>Cannot import this Web Part.</MissingAssembly>
+  <PartImageLarge />
+  <IsIncludedFilter />
+  <Assembly>Microsoft.SharePoint, Version=14.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c</Assembly>
+  <TypeName>Microsoft.SharePoint.WebPartPages.ListFormWebPart</TypeName>
+  <ListName xmlns="http://schemas.microsoft.com/WebPart/v2/ListForm">{$ListId:Knowledge Base;}</ListName>
+  <ListId xmlns="http://schemas.microsoft.com/WebPart/v2/ListForm">$ListId:Knowledge Base;</ListId>
+  <PageType xmlns="http://schemas.microsoft.com/WebPart/v2/ListForm">PAGE_DISPLAYFORM</PageType>
+  <FormType xmlns="http://schemas.microsoft.com/WebPart/v2/ListForm">4</FormType>
+  <ControlMode xmlns="http://schemas.microsoft.com/WebPart/v2/ListForm">Display</ControlMode>
+  <ViewFlag xmlns="http://schemas.microsoft.com/WebPart/v2/ListForm">1048576</ViewFlag>
+  <ViewFlags xmlns="http://schemas.microsoft.com/WebPart/v2/ListForm">Default</ViewFlags>
+  <ListItemId xmlns="http://schemas.microsoft.com/WebPart/v2/ListForm">0</ListItemId>
+  <TemplateName xmlns="http://schemas.microsoft.com/WebPart/v2/ListForm">WikiEditForm</TemplateName>
+</WebPart>]]></AllUsersWebPart>
+		</File>
+		<File Url="EditForm.aspx" Type="Ghostable" Path="form.aspx">
+			<AllUsersWebPart WebPartOrder="1" WebPartZoneID="Main" ID="g_40e8f826_68fc_4f0f_bc4e_4a7957d844a5"><![CDATA[<WebPart xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="http://schemas.microsoft.com/WebPart/v2">
+  <Title />
+  <FrameType>Default</FrameType>
+  <Description />
+  <IsIncluded>true</IsIncluded>
+  <ZoneID>Main</ZoneID>
+  <PartOrder>1</PartOrder>
+  <FrameState>Normal</FrameState>
+  <Height />
+  <Width />
+  <AllowRemove>true</AllowRemove>
+  <AllowZoneChange>true</AllowZoneChange>
+  <AllowMinimize>true</AllowMinimize>
+  <AllowConnect>true</AllowConnect>
+  <AllowEdit>true</AllowEdit>
+  <AllowHide>true</AllowHide>
+  <IsVisible>true</IsVisible>
+  <DetailLink />
+  <HelpLink />
+  <HelpMode>Modeless</HelpMode>
+  <Dir>Default</Dir>
+  <PartImageSmall />
+  <MissingAssembly>Cannot import this Web Part.</MissingAssembly>
+  <PartImageLarge />
+  <IsIncludedFilter />
+  <Assembly>Microsoft.SharePoint, Version=14.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c</Assembly>
+  <TypeName>Microsoft.SharePoint.WebPartPages.ListFormWebPart</TypeName>
+  <ListName xmlns="http://schemas.microsoft.com/WebPart/v2/ListForm">{$ListId:Knowledge Base;}</ListName>
+  <ListId xmlns="http://schemas.microsoft.com/WebPart/v2/ListForm">$ListId:Knowledge Base;</ListId>
+  <PageType xmlns="http://schemas.microsoft.com/WebPart/v2/ListForm">PAGE_EDITFORM</PageType>
+  <FormType xmlns="http://schemas.microsoft.com/WebPart/v2/ListForm">6</FormType>
+  <ControlMode xmlns="http://schemas.microsoft.com/WebPart/v2/ListForm">Edit</ControlMode>
+  <ViewFlag xmlns="http://schemas.microsoft.com/WebPart/v2/ListForm">1048576</ViewFlag>
+  <ViewFlags xmlns="http://schemas.microsoft.com/WebPart/v2/ListForm">Default</ViewFlags>
+  <ListItemId xmlns="http://schemas.microsoft.com/WebPart/v2/ListForm">0</ListItemId>
+  <TemplateName xmlns="http://schemas.microsoft.com/WebPart/v2/ListForm">WikiEditForm</TemplateName>
+</WebPart>]]></AllUsersWebPart>
+		</File>
+	</Module>
+</Elements>
