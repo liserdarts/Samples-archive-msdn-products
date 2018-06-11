@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="Sales" targetNamespace="http://tempuri.org/Sales.xsd" xmlns:mstns="http://tempuri.org/Sales.xsd" xmlns="http://tempuri.org/Sales.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+        </Connections>
+        <Tables>
+        </Tables>
+        <Sources>
+        </Sources>
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="Sales" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:Generator_UserDSName="Sales" msprop:Generator_DataSetName="Sales">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="Event" msprop:Generator_UserTableName="Event" msprop:Generator_RowDeletedName="EventRowDeleted" msprop:Generator_TableClassName="EventDataTable" msprop:Generator_RowChangedName="EventRowChanged" msprop:Generator_RowClassName="EventRow" msprop:Generator_RowChangingName="EventRowChanging" msprop:Generator_RowEvArgName="EventRowChangeEvent" msprop:Generator_RowEvHandlerName="EventRowChangeEventHandler" msprop:Generator_TablePropName="Event" msprop:Generator_TableVarName="tableEvent" msprop:Generator_RowDeletingName="EventRowDeleting">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="EventID" msprop:Generator_UserColumnName="EventID" msprop:Generator_ColumnPropNameInRow="EventID" msprop:Generator_ColumnVarNameInTable="columnEventID" msprop:Generator_ColumnPropNameInTable="EventIDColumn" type="xs:int" />
+              <xs:element name="EventName" msprop:Generator_UserColumnName="EventName" msprop:Generator_ColumnPropNameInRow="EventName" msprop:Generator_ColumnVarNameInTable="columnEventName" msprop:Generator_ColumnPropNameInTable="EventNameColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="GoldPackagePrice" msprop:Generator_UserColumnName="GoldPackagePrice" msprop:Generator_ColumnPropNameInRow="GoldPackagePrice" msprop:Generator_ColumnVarNameInTable="columnGoldPackagePrice" msprop:Generator_ColumnPropNameInTable="GoldPackagePriceColumn" type="xs:decimal" minOccurs="0" />
+              <xs:element name="SilverPackagePrice" msprop:Generator_UserColumnName="SilverPackagePrice" msprop:Generator_ColumnPropNameInRow="SilverPackagePrice" msprop:Generator_ColumnVarNameInTable="columnSilverPackagePrice" msprop:Generator_ColumnPropNameInTable="SilverPackagePriceColumn" type="xs:decimal" minOccurs="0" />
+              <xs:element name="BronzePackagePrice" msprop:Generator_UserColumnName="BronzePackagePrice" msprop:Generator_ColumnPropNameInRow="BronzePackagePrice" msprop:Generator_ColumnVarNameInTable="columnBronzePackagePrice" msprop:Generator_ColumnPropNameInTable="BronzePackagePriceColumn" type="xs:decimal" minOccurs="0" />
+              <xs:element name="GoldPackageCost" msprop:Generator_UserColumnName="GoldPackageCost" msprop:Generator_ColumnPropNameInRow="GoldPackageCost" msprop:Generator_ColumnVarNameInTable="columnGoldPackageCost" msprop:Generator_ColumnPropNameInTable="GoldPackageCostColumn" type="xs:decimal" minOccurs="0" />
+              <xs:element name="SilverPackageCost" msprop:Generator_UserColumnName="SilverPackageCost" msprop:Generator_ColumnPropNameInRow="SilverPackageCost" msprop:Generator_ColumnVarNameInTable="columnSilverPackageCost" msprop:Generator_ColumnPropNameInTable="SilverPackageCostColumn" type="xs:decimal" minOccurs="0" />
+              <xs:element name="BronzePackageCost" msprop:Generator_UserColumnName="BronzePackageCost" msprop:Generator_ColumnPropNameInRow="BronzePackageCost" msprop:Generator_ColumnVarNameInTable="columnBronzePackageCost" msprop:Generator_ColumnPropNameInTable="BronzePackageCostColumn" type="xs:decimal" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="Package" msprop:Generator_UserTableName="Package" msprop:Generator_RowDeletedName="PackageRowDeleted" msprop:Generator_TableClassName="PackageDataTable" msprop:Generator_RowChangedName="PackageRowChanged" msprop:Generator_RowClassName="PackageRow" msprop:Generator_RowChangingName="PackageRowChanging" msprop:Generator_RowEvArgName="PackageRowChangeEvent" msprop:Generator_RowEvHandlerName="PackageRowChangeEventHandler" msprop:Generator_TablePropName="Package" msprop:Generator_TableVarName="tablePackage" msprop:Generator_RowDeletingName="PackageRowDeleting">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="PackageID" msprop:Generator_UserColumnName="PackageID" msprop:Generator_ColumnPropNameInRow="PackageID" msprop:Generator_ColumnVarNameInTable="columnPackageID" msprop:Generator_ColumnPropNameInTable="PackageIDColumn" type="xs:int" />
+              <xs:element name="PackageName" msprop:Generator_UserColumnName="PackageName" msprop:Generator_ColumnPropNameInRow="PackageName" msprop:Generator_ColumnVarNameInTable="columnPackageName" msprop:Generator_ColumnPropNameInTable="PackageNameColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="PackageSale" msprop:Generator_UserTableName="PackageSale" msprop:Generator_RowDeletedName="PackageSaleRowDeleted" msprop:Generator_TableClassName="PackageSaleDataTable" msprop:Generator_RowChangedName="PackageSaleRowChanged" msprop:Generator_RowClassName="PackageSaleRow" msprop:Generator_RowChangingName="PackageSaleRowChanging" msprop:Generator_RowEvArgName="PackageSaleRowChangeEvent" msprop:Generator_RowEvHandlerName="PackageSaleRowChangeEventHandler" msprop:Generator_TablePropName="PackageSale" msprop:Generator_TableVarName="tablePackageSale" msprop:Generator_RowDeletingName="PackageSaleRowDeleting" minOccurs="0" maxOccurs="unbounded">
+                <xs:annotation>
+                  <xs:appinfo>
+                    <msdata:Relationship name="Package_PackageSale" msdata:parent="Package" msdata:child="PackageSale" msdata:parentkey="PackageID" msdata:childkey="PackageID" msprop:Generator_UserRelationName="Package_PackageSale" msprop:Generator_RelationVarName="relationPackage_PackageSale" msprop:Generator_UserChildTable="PackageSale" msprop:Generator_UserParentTable="Package" msprop:Generator_ParentPropName="PackageRow" msprop:Generator_ChildPropName="GetPackageSaleRows" />
+                  </xs:appinfo>
+                </xs:annotation>
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element name="PackageID" msprop:Generator_UserColumnName="PackageID" msprop:Generator_ColumnPropNameInRow="PackageID" msprop:Generator_ColumnVarNameInTable="columnPackageID" msprop:Generator_ColumnPropNameInTable="PackageIDColumn" type="xs:int" />
+                    <xs:element name="EventAttendeeID" msprop:Generator_UserColumnName="EventAttendeeID" msprop:Generator_ColumnPropNameInRow="EventAttendeeID" msprop:Generator_ColumnVarNameInTable="columnEventAttendeeID" msprop:Generator_ColumnPropNameInTable="EventAttendeeIDColumn" type="xs:int" />
+                    <xs:element name="DatePurchased" msprop:Generator_UserColumnName="DatePurchased" msprop:Generator_ColumnPropNameInRow="DatePurchased" msprop:Generator_ColumnVarNameInTable="columnDatePurchased" msprop:Generator_ColumnPropNameInTable="DatePurchasedColumn" type="xs:dateTime" minOccurs="0" />
+                    <xs:element name="AttendeeBirthDate" msprop:Generator_UserColumnName="AttendeeBirthDate" msprop:Generator_ColumnPropNameInRow="AttendeeBirthDate" msprop:Generator_ColumnVarNameInTable="columnAttendeeBirthDate" msprop:Generator_ColumnPropNameInTable="AttendeeBirthDateColumn" type="xs:dateTime" minOccurs="0" />
+                    <xs:element name="CustomerNumber" msprop:Generator_UserColumnName="CustomerNumber" msprop:Generator_ColumnPropNameInRow="CustomerNumber" msprop:Generator_ColumnVarNameInTable="columnCustomerNumber" msprop:Generator_ColumnPropNameInTable="CustomerNumberColumn" type="xs:string" minOccurs="0" />
+                    <xs:element name="Cost" msprop:Generator_UserColumnName="Cost" msprop:Generator_ColumnPropNameInRow="Cost" msprop:Generator_ColumnVarNameInTable="columnCost" msprop:Generator_ColumnPropNameInTable="CostColumn" type="xs:decimal" minOccurs="0" />
+                    <xs:element name="Price" msprop:Generator_UserColumnName="Price" msprop:Generator_ColumnPropNameInRow="Price" msprop:Generator_ColumnVarNameInTable="columnPrice" msprop:Generator_ColumnPropNameInTable="PriceColumn" type="xs:decimal" minOccurs="0" />
+                    <xs:element name="EventSale" msprop:Generator_UserTableName="EventSale" msprop:Generator_RowDeletedName="EventSaleRowDeleted" msprop:Generator_TableClassName="EventSaleDataTable" msprop:Generator_RowChangedName="EventSaleRowChanged" msprop:Generator_RowClassName="EventSaleRow" msprop:Generator_RowChangingName="EventSaleRowChanging" msprop:Generator_RowEvArgName="EventSaleRowChangeEvent" msprop:Generator_RowEvHandlerName="EventSaleRowChangeEventHandler" msprop:Generator_TablePropName="EventSale" msprop:Generator_TableVarName="tableEventSale" msprop:Generator_RowDeletingName="EventSaleRowDeleting" minOccurs="0" maxOccurs="unbounded">
+                      <xs:annotation>
+                        <xs:appinfo>
+                          <msdata:Relationship name="PackageSale_EventSale" msdata:parent="PackageSale" msdata:child="EventSale" msdata:parentkey="PackageID EventAttendeeID" msdata:childkey="PackageID EventAttendeeID" msprop:Generator_UserRelationName="PackageSale_EventSale" msprop:Generator_RelationVarName="relationPackageSale_EventSale" msprop:Generator_UserChildTable="EventSale" msprop:Generator_UserParentTable="PackageSale" msprop:Generator_ParentPropName="PackageSaleRowParent" msprop:Generator_ChildPropName="GetEventSaleRows" />
+                        </xs:appinfo>
+                      </xs:annotation>
+                      <xs:complexType>
+                        <xs:sequence>
+                          <xs:element name="EventID" msprop:Generator_UserColumnName="EventID" msprop:Generator_ColumnPropNameInRow="EventID" msprop:Generator_ColumnVarNameInTable="columnEventID" msprop:Generator_ColumnPropNameInTable="EventIDColumn" type="xs:int" />
+                          <xs:element name="PackageID" msprop:Generator_UserColumnName="PackageID" msprop:Generator_ColumnPropNameInRow="PackageID" msprop:Generator_ColumnVarNameInTable="columnPackageID" msprop:Generator_ColumnPropNameInTable="PackageIDColumn" type="xs:int" />
+                          <xs:element name="EventAttendeeID" msprop:Generator_UserColumnName="EventAttendeeID" msprop:Generator_ColumnPropNameInRow="EventAttendeeID" msprop:Generator_ColumnVarNameInTable="columnEventAttendeeID" msprop:Generator_ColumnPropNameInTable="EventAttendeeIDColumn" type="xs:int" />
+                          <xs:element name="AgencyNumber" msprop:Generator_UserColumnName="AgencyNumber" msprop:Generator_ColumnPropNameInRow="AgencyNumber" msprop:Generator_ColumnVarNameInTable="columnAgencyNumber" msprop:Generator_ColumnPropNameInTable="AgencyNumberColumn" type="xs:string" minOccurs="0" />
+                          <xs:element name="TripNumber" msprop:Generator_UserColumnName="TripNumber" msprop:Generator_ColumnPropNameInRow="TripNumber" msprop:Generator_ColumnVarNameInTable="columnTripNumber" msprop:Generator_ColumnPropNameInTable="TripNumberColumn" type="xs:string" />
+                          <xs:element name="PackageType" msprop:Generator_UserColumnName="PackageType" msprop:Generator_ColumnPropNameInRow="PackageType" msprop:Generator_ColumnVarNameInTable="columnPackageType" msprop:Generator_ColumnPropNameInTable="PackageTypeColumn" type="xs:string" minOccurs="0" />
+                          <xs:element name="Cost" msprop:Generator_UserColumnName="Cost" msprop:Generator_ColumnPropNameInRow="Cost" msprop:Generator_ColumnVarNameInTable="columnCost" msprop:Generator_ColumnPropNameInTable="CostColumn" type="xs:decimal" minOccurs="0" />
+                          <xs:element name="Price" msprop:Generator_UserColumnName="Price" msprop:Generator_ColumnPropNameInRow="Price" msprop:Generator_ColumnVarNameInTable="columnPrice" msprop:Generator_ColumnPropNameInTable="PriceColumn" type="xs:decimal" minOccurs="0" />
+                          <xs:element name="Flight" msprop:Generator_UserTableName="Flight" msprop:Generator_RowDeletedName="FlightRowDeleted" msprop:Generator_TableClassName="FlightDataTable" msprop:Generator_RowChangedName="FlightRowChanged" msprop:Generator_RowClassName="FlightRow" msprop:Generator_RowChangingName="FlightRowChanging" msprop:Generator_RowEvArgName="FlightRowChangeEvent" msprop:Generator_RowEvHandlerName="FlightRowChangeEventHandler" msprop:Generator_TablePropName="Flight" msprop:Generator_TableVarName="tableFlight" msprop:Generator_RowDeletingName="FlightRowDeleting" minOccurs="0" maxOccurs="unbounded">
+                            <xs:annotation>
+                              <xs:appinfo>
+                                <msdata:Relationship name="Event_Flight" msdata:parent="EventSale" msdata:child="Flight" msdata:parentkey="TripNumber" msdata:childkey="TripNumber" msprop:Generator_UserRelationName="Event_Flight" msprop:Generator_RelationVarName="relationEvent_Flight" msprop:Generator_UserChildTable="Flight" msprop:Generator_UserParentTable="EventSale" msprop:Generator_ParentPropName="EventRow" msprop:Generator_ChildPropName="GetFlightRows" />
+                              </xs:appinfo>
+                            </xs:annotation>
+                            <xs:complexType>
+                              <xs:sequence>
+                                <xs:element name="TripNumber" msprop:Generator_UserColumnName="TripNumber" msprop:Generator_ColumnPropNameInRow="TripNumber" msprop:Generator_ColumnVarNameInTable="columnTripNumber" msprop:Generator_ColumnPropNameInTable="TripNumberColumn" type="xs:string" />
+                                <xs:element name="FlightConnection" msprop:Generator_UserColumnName="FlightConnection" msprop:Generator_ColumnPropNameInRow="FlightConnection" msprop:Generator_ColumnVarNameInTable="columnFlightConnection" msprop:Generator_ColumnPropNameInTable="FlightConnectionColumn" type="xs:string" minOccurs="0" />
+                                <xs:element name="FlightDate" msprop:Generator_UserColumnName="FlightDate" msprop:Generator_ColumnPropNameInRow="FlightDate" msprop:Generator_ColumnVarNameInTable="columnFlightDate" msprop:Generator_ColumnPropNameInTable="FlightDateColumn" type="xs:string" minOccurs="0" />
+                                <xs:element name="Class" msprop:Generator_UserColumnName="Class" msprop:Generator_ColumnPropNameInRow="Class" msprop:Generator_ColumnVarNameInTable="columnClass" msprop:Generator_ColumnPropNameInTable="ClassColumn" type="xs:string" minOccurs="0" />
+                                <xs:element name="TicketPrice" msprop:Generator_UserColumnName="TicketPrice" msprop:Generator_ColumnPropNameInRow="TicketPrice" msprop:Generator_ColumnVarNameInTable="columnTicketPrice" msprop:Generator_ColumnPropNameInTable="TicketPriceColumn" type="xs:decimal" minOccurs="0" />
+                                <xs:element name="NumAdult" msprop:Generator_UserColumnName="NumAdult" msprop:Generator_ColumnPropNameInRow="NumAdult" msprop:Generator_ColumnVarNameInTable="columnNumAdult" msprop:Generator_ColumnPropNameInTable="NumAdultColumn" type="xs:int" minOccurs="0" />
+                                <xs:element name="NumChild" msprop:Generator_UserColumnName="NumChild" msprop:Generator_ColumnPropNameInRow="NumChild" msprop:Generator_ColumnVarNameInTable="columnNumChild" msprop:Generator_ColumnPropNameInTable="NumChildColumn" type="xs:int" minOccurs="0" />
+                                <xs:element name="NumInfant" msprop:Generator_UserColumnName="NumInfant" msprop:Generator_ColumnPropNameInRow="NumInfant" msprop:Generator_ColumnVarNameInTable="columnNumInfant" msprop:Generator_ColumnPropNameInTable="NumInfantColumn" type="xs:int" minOccurs="0" />
+                              </xs:sequence>
+                            </xs:complexType>
+                          </xs:element>
+                        </xs:sequence>
+                      </xs:complexType>
+                    </xs:element>
+                  </xs:sequence>
+                </xs:complexType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+    <xs:unique name="Event_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:Event" />
+      <xs:field xpath="mstns:EventID" />
+    </xs:unique>
+    <xs:unique name="Flight_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:Flight" />
+      <xs:field xpath="mstns:TripNumber" />
+    </xs:unique>
+    <xs:unique name="EventSale_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:EventSale" />
+      <xs:field xpath="mstns:EventID" />
+      <xs:field xpath="mstns:PackageID" />
+      <xs:field xpath="mstns:EventAttendeeID" />
+      <xs:field xpath="mstns:TripNumber" />
+    </xs:unique>
+    <xs:unique name="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:PackageSale" />
+      <xs:field xpath="mstns:PackageID" />
+      <xs:field xpath="mstns:EventAttendeeID" />
+    </xs:unique>
+    <xs:unique name="Package_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:Package" />
+      <xs:field xpath="mstns:PackageID" />
+    </xs:unique>
+  </xs:element>
+  <xs:annotation>
+    <xs:appinfo>
+      <msdata:Relationship name="Event_EventSale" msdata:parent="Event" msdata:child="EventSale" msdata:parentkey="EventID" msdata:childkey="EventID" msprop:Generator_UserRelationName="Event_EventSale" msprop:Generator_RelationVarName="relationEvent_EventSale" msprop:Generator_UserChildTable="EventSale" msprop:Generator_UserParentTable="Event" msprop:Generator_ParentPropName="EventRow" msprop:Generator_ChildPropName="GetEventSaleRows" />
+    </xs:appinfo>
+  </xs:annotation>
+</xs:schema>

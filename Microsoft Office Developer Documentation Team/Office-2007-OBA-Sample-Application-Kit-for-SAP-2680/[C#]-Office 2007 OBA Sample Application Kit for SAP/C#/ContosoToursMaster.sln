@@ -1,0 +1,54 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 10.00
+# Visual Studio 2008
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ContosoTours", "ContosoTours\ContosoTours.csproj", "{31927F51-D928-4065-8713-56DCA0B01D4A}"
+EndProject
+Project("{54435603-DBB4-11D2-8724-00A0C9A8B90C}") = "ContosoTours.Setup", "ContosoTours.Setup\ContosoToursSetup", "{49184492-FE66-4558-8B06-45E79AD48244}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ContosoTours.DAL", "ContosoTours.DAL\ContosoTours.DAL.csproj", "{4ED059E0-CA53-4AFF-ABCE-93FD617069DF}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ContosoTours.PPT", "ContosoTours.PPT\ContosoTours.PPT.csproj", "{72867C4B-C858-4C50-B876-6BE431CB4E76}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ContosoTours.SAPServices", "ContosoTours.SAPServices\ContosoTours.SAPServices.csproj", "{C5569DEF-EB34-4968-872C-45AD9F387914}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "BDC", "BDC", "{FC181C97-E7DE-4FE5-9908-589D15CDE49B}"
+	ProjectSection(SolutionItems) = preProject
+		BDC\ContosoSAPLOBSystem.xml = BDC\ContosoSAPLOBSystem.xml
+		BDC\ContosoSQLLOBSystem.xml = BDC\ContosoSQLLOBSystem.xml
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SAPBridgeMaster", "SAPBridgeMaster\SAPBridgeMaster.csproj", "{7A051AB8-BF9C-4215-A50D-E7821723BAEE}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{31927F51-D928-4065-8713-56DCA0B01D4A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{31927F51-D928-4065-8713-56DCA0B01D4A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{31927F51-D928-4065-8713-56DCA0B01D4A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{31927F51-D928-4065-8713-56DCA0B01D4A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{49184492-FE66-4558-8B06-45E79AD48244}.Debug|Any CPU.ActiveCfg = Debug
+		{49184492-FE66-4558-8B06-45E79AD48244}.Release|Any CPU.ActiveCfg = Release
+		{4ED059E0-CA53-4AFF-ABCE-93FD617069DF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4ED059E0-CA53-4AFF-ABCE-93FD617069DF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4ED059E0-CA53-4AFF-ABCE-93FD617069DF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4ED059E0-CA53-4AFF-ABCE-93FD617069DF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{72867C4B-C858-4C50-B876-6BE431CB4E76}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{72867C4B-C858-4C50-B876-6BE431CB4E76}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{72867C4B-C858-4C50-B876-6BE431CB4E76}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{72867C4B-C858-4C50-B876-6BE431CB4E76}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C5569DEF-EB34-4968-872C-45AD9F387914}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C5569DEF-EB34-4968-872C-45AD9F387914}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C5569DEF-EB34-4968-872C-45AD9F387914}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C5569DEF-EB34-4968-872C-45AD9F387914}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7A051AB8-BF9C-4215-A50D-E7821723BAEE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7A051AB8-BF9C-4215-A50D-E7821723BAEE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7A051AB8-BF9C-4215-A50D-E7821723BAEE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7A051AB8-BF9C-4215-A50D-E7821723BAEE}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

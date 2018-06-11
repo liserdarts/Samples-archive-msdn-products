@@ -1,0 +1,15 @@
+﻿<?xml version='1.0' encoding='utf-8'?>
+<SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)" GeneratedClassNamespace="SAPBridgeMaster.Properties" GeneratedClassName="Settings">
+  <Profiles />
+  <Settings>
+    <Setting Name="SAPBridgeMaster_BAPI_FLIGHT_CHECKAVAILIBILITY_BAPI_FLIGHT_CHECKAVAILIBILITYService" Type="(Web Service URL)" Scope="Application">
+      <Value Profile="(Default)">http://localhost:8000/sap/bc/soap/rfc</Value>
+    </Setting>
+    <Setting Name="SAPBridgeMaster_BAPI_FLCUST_GETLIST_BAPI_FLCUST_GETLISTService" Type="(Web Service URL)" Scope="Application">
+      <Value Profile="(Default)">http://localhost:8000/sap/bc/soap/rfc</Value>
+    </Setting>
+    <Setting Name="SAPBridgeMaster_BAPI_FLIGHT_GETLIST_BAPI_FLIGHT_GETLISTService" Type="(Web Service URL)" Scope="Application">
+      <Value Profile="(Default)">http://localhost:8000/sap/bc/soap/rfc</Value>
+    </Setting>
+  </Settings>
+</SettingsFile>

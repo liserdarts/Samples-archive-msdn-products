@@ -1,0 +1,281 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<LobSystem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://schemas.microsoft.com/office/2006/03/BusinessDataCatalog BDCMetadata.xsd" Type="Database" Version="1.0.0" Name="ContosoSQLLOBSystem" DefaultDisplayName="ContosoToursSQL" xmlns="http://schemas.microsoft.com/office/2006/03/BusinessDataCatalog">
+  <Properties>
+    <Property Name="WildcardCharacter" Type="System.String">%</Property>
+  </Properties>
+  <LobSystemInstances>
+    <LobSystemInstance Name="ContosoSQLLOBSystem">
+      <Properties>
+        <Property Name="rdbconnection Data Source" Type="System.String">.\SQLEXPRESS</Property>
+        <Property Name="rdbconnection AttachDbFilename" Type="System.String">C:\Program Files\Microsoft\Contoso Tours (SAPSK)\Database\ContosoToursDB.mdf</Property>
+        <Property Name="rdbconnection Integrated Security" Type="System.String">True</Property>
+        <Property Name="rdbconnection User Instance" Type="System.String">True</Property>
+        <Property Name="DatabaseAccessProvider" Type="Microsoft.Office.Server.ApplicationRegistry.SystemSpecific.Db.DbAccessProvider">SqlServer</Property>
+        <Property Name="AuthenticationMode" Type="Microsoft.Office.Server.ApplicationRegistry.SystemSpecific.Db.DbAuthenticationMode">PassThrough</Property>
+      </Properties>
+    </LobSystemInstance>
+  </LobSystemInstances>
+  <Entities>
+    <Entity EstimatedInstanceCount="10000" Name="Packages">
+      <Identifiers>
+        <Identifier TypeName="System.Int32" Name="PackageID" />
+      </Identifiers>
+      <Methods>
+        <Method Name="GetPackages">
+          <Properties>
+            <Property Name="RdbCommandType" Type="System.Data.CommandType, System.Data, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">Text</Property>
+            <Property Name="RdbCommandText" Type="System.String">SELECT "PackageID","PackageName","PackageDescription" 
+FROM Package
+Where (PackageName LIKE @PackageName) AND
+(PackageID&gt;=@MinPackageID)  AND (PackageID&lt;=@MaxPackageID) </Property>
+          </Properties>
+          <FilterDescriptors>
+            <FilterDescriptor Type="Wildcard" Name="PackageNameFilter" DefaultDisplayName="Package Name" />
+            <FilterDescriptor Type="Comparison" Name="PackageID" DefaultDisplayName="Package ID">
+              <Properties>
+                <Property Name="Comparator" Type="System.String">Equals</Property>
+              </Properties>
+            </FilterDescriptor>
+          </FilterDescriptors>
+          <Parameters>
+            <Parameter Direction="In" Name="@PackageName">
+              <TypeDescriptor TypeName="System.String" AssociatedFilter="PackageNameFilter" Name="PackageName">
+                <DefaultValues>
+                  <DefaultValue MethodInstanceName="PackageFinderMethod" Type="System.String">%</DefaultValue>
+                  <DefaultValue MethodInstanceName="PackageSpecificFinder" Type="System.String">%</DefaultValue>
+                </DefaultValues>
+              </TypeDescriptor>
+            </Parameter>
+            <Parameter Direction="In" Name="@MinPackageID">
+              <TypeDescriptor TypeName="System.Int32" IdentifierName="PackageID" AssociatedFilter="PackageID" Name="MinPackageID">
+                <DefaultValues>
+                  <DefaultValue MethodInstanceName="PackageFinderMethod" Type="System.Int32">0</DefaultValue>
+                </DefaultValues>
+              </TypeDescriptor>
+            </Parameter>
+            <Parameter Direction="In" Name="@MaxPackageID">
+              <TypeDescriptor TypeName="System.Int32" IdentifierName="PackageID" AssociatedFilter="PackageID" Name="MaxPackageID">
+                <DefaultValues>
+                  <DefaultValue MethodInstanceName="PackageFinderMethod" Type="System.Int32">9999</DefaultValue>
+                </DefaultValues>
+              </TypeDescriptor>
+            </Parameter>
+            <Parameter Direction="Return" Name="@Packages">
+              <TypeDescriptor TypeName="System.Data.IDataReader, System.Data, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" IsCollection="true" Name="Reader">
+                <TypeDescriptors>
+                  <TypeDescriptor TypeName="System.Data.IDataRecord, System.Data, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" Name="Record">
+                    <TypeDescriptors>
+                      <TypeDescriptor TypeName="System.Int32" IdentifierName="PackageID" Name="PackageID" DefaultDisplayName="Package ID" />
+                      <TypeDescriptor TypeName="System.String" Name="PackageName" DefaultDisplayName="Package Name" />
+                      <TypeDescriptor TypeName="System.String" Name="PackageDescription" DefaultDisplayName="Package Description" />
+                    </TypeDescriptors>
+                  </TypeDescriptor>
+                </TypeDescriptors>
+              </TypeDescriptor>
+            </Parameter>
+          </Parameters>
+          <MethodInstances>
+            <MethodInstance Type="Finder" ReturnParameterName="@Packages" ReturnTypeDescriptorName="Reader" ReturnTypeDescriptorLevel="0" Name="PackageFinderMethod" DefaultDisplayName="FinderMethod" />
+            <MethodInstance Type="SpecificFinder" ReturnParameterName="@Packages" ReturnTypeDescriptorName="Reader" ReturnTypeDescriptorLevel="0" Name="PackageSpecificFinder" />
+          </MethodInstances>
+        </Method>
+        <Method Name="GetAssociatedEvents">
+          <Properties>
+            <Property Name="RdbCommandType" Type="System.Data.CommandType, System.Data, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">Text</Property>
+            <Property Name="RdbCommandText" Type="System.String">SELECT "PackageID","EventName","EventDescription","EventTypeName","EventDate","VenueName", CAST(GoldPackagePrice as Decimal(18,2)) as "GoldPackagePrice"
+,CAST(SilverPackagePrice as Decimal(18,2)) as "SilverPackagePrice",CAST(BronzePackagePrice as Decimal(18,2)) as "BronzePackagePrice",CAST(GoldPackageTrueCost as Decimal(18,2)) as "GoldPackageTrueCost",CAST(SilverPackageTrueCost as Decimal(18,2)) as "SilverPackageTrueCost",CAST(BronzePackageTrueCost as Decimal(18,2)) as "BronzePackageTrueCost",CAST(EventTotalCost as Decimal(18,2)) as "EventTotalCost"
+FROM PackageEventMap  INNER JOIN EventMaster ON PackageEventMap.EventID=EventMaster.EventID
+Where  (PackageEventMap.PackageID=@PackageID) </Property>
+          </Properties>
+          <Parameters>
+            <Parameter Direction="In" Name="@PackageID">
+              <TypeDescriptor TypeName="System.Int32" IdentifierName="PackageID" Name="PackageID" />
+            </Parameter>
+            <Parameter Direction="Return" Name="@Packages">
+              <TypeDescriptor TypeName="System.Data.IDataReader, System.Data, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" IsCollection="true" Name="Reader">
+                <TypeDescriptors>
+                  <TypeDescriptor TypeName="System.Data.IDataRecord, System.Data, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" Name="Record">
+                    <TypeDescriptors>
+                      <TypeDescriptor TypeName="System.Int32" IdentifierName="PackageID" Name="PackageID" DefaultDisplayName="Package ID" />
+                      <TypeDescriptor TypeName="System.String" Name="EventName" DefaultDisplayName="Event Name" />
+                      <TypeDescriptor TypeName="System.String" Name="EventDescription" DefaultDisplayName="Description" />
+                      <TypeDescriptor TypeName="System.String" Name="EventTypeName" DefaultDisplayName="Event Type" />
+                      <TypeDescriptor TypeName="System.DateTime" Name="EventDate" DefaultDisplayName="Event Date" />
+                      <TypeDescriptor TypeName="System.String" Name="VenueName" DefaultDisplayName="Venue" />
+                      <TypeDescriptor TypeName="System.Decimal" Name="GoldPackagePrice" DefaultDisplayName="Gold Price" />
+                      <TypeDescriptor TypeName="System.Decimal" Name="SilverPackagePrice" DefaultDisplayName="Silver Price" />
+                      <TypeDescriptor TypeName="System.Decimal" Name="BronzePackagePrice" DefaultDisplayName="Bronze Price" />
+                      <TypeDescriptor TypeName="System.Decimal" Name="GoldPackageTrueCost" DefaultDisplayName="Gold True Cost" />
+                      <TypeDescriptor TypeName="System.Decimal" Name="SilverPackageTrueCost" DefaultDisplayName="Silver True Cost" />
+                      <TypeDescriptor TypeName="System.Decimal" Name="BronzePackageTrueCost" DefaultDisplayName="Bronze True Cost" />
+                      <TypeDescriptor TypeName="System.Decimal" Name="EventTotalCost" DefaultDisplayName="Total Cost" />
+                    </TypeDescriptors>
+                  </TypeDescriptor>
+                </TypeDescriptors>
+              </TypeDescriptor>
+            </Parameter>
+          </Parameters>
+        </Method>
+      </Methods>
+      <Actions>
+        <Action Position="1" IsOpenedInNewWindow="false" Url="http://moss:23071/Pages/EventInformation.aspx" ImageUrl="" Name="Browse the complete list of events" />
+        <Action Position="2" IsOpenedInNewWindow="false" Url="http://moss:23071/Pages/FlightInformation.aspx" ImageUrl="" Name="Check available flights" />
+      </Actions>
+    </Entity>
+    <Entity EstimatedInstanceCount="10000" Name="Events">
+      <Identifiers>
+        <Identifier TypeName="System.Int32" Name="EventID" />
+      </Identifiers>
+      <Methods>
+        <Method Name="GetEvents">
+          <Properties>
+            <Property Name="RdbCommandType" Type="System.Data.CommandType, System.Data, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">Text</Property>
+            <Property Name="RdbCommandText" Type="System.String">SELECT "PackageName", EventMaster.EventID as "EventID","EventName","EventDescription","EventTypeName","EventDate","VenueName",
+CAST(GoldPackagePrice as Decimal(18,2)) as "GoldPackagePrice",CAST(SilverPackagePrice as Decimal(18,2)) as "SilverPackagePrice",CAST(BronzePackagePrice as Decimal(18,2)) as "BronzePackagePrice",CAST(GoldPackageTrueCost as Decimal(18,2)) as "GoldPackageTrueCost",CAST(SilverPackageTrueCost as Decimal(18,2)) as "SilverPackageTrueCost",CAST(BronzePackageTrueCost as Decimal(18,2)) as "BronzePackageTrueCost",CAST(EventTotalCost as Decimal(18,2)) as "EventTotalCost"
+FROM PackageEventMapMaster INNER JOIN EventMaster ON PackageEventMapMaster.EventID=EventMaster.EventID 
+WHERE  (EventName LIKE @EventName) AND (EventTypeName LIKE @EventTypeName) AND (PackageName LIKE @PackageName) AND (VenueName LIKE @VenueName) AND (EventDate&gt;=@EventDate) AND (EventMaster.EventID&gt;=@MinEventID) AND (EventMaster.EventID&lt;=@MaxEventID)</Property>
+          </Properties>
+          <FilterDescriptors>
+            <FilterDescriptor Type="Wildcard" Name="EventNameFilter" DefaultDisplayName="Event Name" />
+            <FilterDescriptor Type="Wildcard" Name="EventTypeNameFilter" DefaultDisplayName="Event Type" />
+            <FilterDescriptor Type="Wildcard" Name="VenueNameFilter" DefaultDisplayName="Venue" />
+            <FilterDescriptor Type="Comparison" Name="EventDateFilter" DefaultDisplayName="Event Date">
+              <Properties>
+                <Property Name="Comparator" Type="System.String">GreaterThanEquals</Property>
+              </Properties>
+            </FilterDescriptor>
+            <FilterDescriptor Type="Wildcard" Name="PackageNameFilter" DefaultDisplayName="Package Name" />
+            <FilterDescriptor Type="Comparison" Name="EventIDFilter" DefaultDisplayName="Event ID">
+              <Properties>
+                <Property Name="Comparator" Type="System.String">Equals</Property>
+              </Properties>
+            </FilterDescriptor>
+          </FilterDescriptors>
+          <Parameters>
+            <Parameter Direction="In" Name="@EventName">
+              <TypeDescriptor TypeName="System.String" AssociatedFilter="EventNameFilter" Name="EventName">
+                <DefaultValues>
+                  <DefaultValue MethodInstanceName="EventFinderMethod" Type="System.String">%</DefaultValue>
+                  <DefaultValue MethodInstanceName="EventSpecificFinder" Type="System.String">%</DefaultValue>
+                </DefaultValues>
+              </TypeDescriptor>
+            </Parameter>
+            <Parameter Direction="In" Name="@EventTypeName">
+              <TypeDescriptor TypeName="System.String" AssociatedFilter="EventTypeNameFilter" Name="EventTypeName">
+                <DefaultValues>
+                  <DefaultValue MethodInstanceName="EventFinderMethod" Type="System.String">%</DefaultValue>
+                  <DefaultValue MethodInstanceName="EventSpecificFinder" Type="System.String">%</DefaultValue>
+                </DefaultValues>
+              </TypeDescriptor>
+            </Parameter>
+            <Parameter Direction="In" Name="@VenueName">
+              <TypeDescriptor TypeName="System.String" AssociatedFilter="VenueNameFilter" Name="VenueName">
+                <DefaultValues>
+                  <DefaultValue MethodInstanceName="EventFinderMethod" Type="System.String">%</DefaultValue>
+                  <DefaultValue MethodInstanceName="EventSpecificFinder" Type="System.String">%</DefaultValue>
+                </DefaultValues>
+              </TypeDescriptor>
+            </Parameter>
+            <Parameter Direction="In" Name="@EventDate">
+              <TypeDescriptor TypeName="System.DateTime" AssociatedFilter="EventDateFilter" Name="EventDate">
+                <DefaultValues>
+                  <DefaultValue MethodInstanceName="EventFinderMethod" Type="System.DateTime">1900-01-02 00:00:00Z</DefaultValue>
+                  <DefaultValue MethodInstanceName="EventSpecificFinder" Type="System.DateTime">1900-01-02 00:00:00Z</DefaultValue>
+                </DefaultValues>
+              </TypeDescriptor>
+            </Parameter>
+            <Parameter Direction="In" Name="@PackageName">
+              <TypeDescriptor TypeName="System.String" AssociatedFilter="PackageNameFilter" Name="PackageName">
+                <DefaultValues>
+                  <DefaultValue MethodInstanceName="EventFinderMethod" Type="System.String">%</DefaultValue>
+                  <DefaultValue MethodInstanceName="EventSpecificFinder" Type="System.String">%</DefaultValue>
+                </DefaultValues>
+              </TypeDescriptor>
+            </Parameter>
+            <Parameter Direction="In" Name="@MaxEventID">
+              <TypeDescriptor TypeName="System.Int32" IdentifierName="EventID" AssociatedFilter="EventIDFilter" Name="MaxEventID">
+                <DefaultValues>
+                  <DefaultValue MethodInstanceName="EventFinderMethod" Type="System.Int32">99999</DefaultValue>
+                </DefaultValues>
+              </TypeDescriptor>
+            </Parameter>
+            <Parameter Direction="In" Name="@MinEventID">
+              <TypeDescriptor TypeName="System.Int32" IdentifierName="EventID" AssociatedFilter="EventIDFilter" Name="MinEventID">
+                <DefaultValues>
+                  <DefaultValue MethodInstanceName="EventFinderMethod" Type="System.Int32">0</DefaultValue>
+                </DefaultValues>
+              </TypeDescriptor>
+            </Parameter>
+            <Parameter Direction="Return" Name="@Events">
+              <TypeDescriptor TypeName="System.Data.IDataReader, System.Data, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" IsCollection="true" Name="Reader">
+                <TypeDescriptors>
+                  <TypeDescriptor TypeName="System.Data.IDataRecord, System.Data, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" Name="Record">
+                    <TypeDescriptors>
+                      <TypeDescriptor TypeName="System.Int32" IdentifierName="EventID" Name="EventID" DefaultDisplayName="Event ID" />
+                      <TypeDescriptor TypeName="System.String" Name="PackageName" DefaultDisplayName="Package" />
+                      <TypeDescriptor TypeName="System.String" Name="EventName" DefaultDisplayName="Event Name" />
+                      <TypeDescriptor TypeName="System.String" Name="EventDescription" DefaultDisplayName="Description" />
+                      <TypeDescriptor TypeName="System.String" Name="EventTypeName" DefaultDisplayName="Event Type" />
+                      <TypeDescriptor TypeName="System.DateTime" Name="EventDate" DefaultDisplayName="Event Date" />
+                      <TypeDescriptor TypeName="System.String" Name="VenueName" DefaultDisplayName="Venue" />
+                      <TypeDescriptor TypeName="System.Decimal" Name="GoldPackagePrice" DefaultDisplayName="Gold Price" />
+                      <TypeDescriptor TypeName="System.Decimal" Name="SilverPackagePrice" DefaultDisplayName="Silver Price" />
+                      <TypeDescriptor TypeName="System.Decimal" Name="BronzePackagePrice" DefaultDisplayName="Bronze Price" />
+                      <TypeDescriptor TypeName="System.Decimal" Name="GoldPackageTrueCost" DefaultDisplayName="Gold True Cost" />
+                      <TypeDescriptor TypeName="System.Decimal" Name="SilverPackageTrueCost" DefaultDisplayName="Silver True Cost" />
+                      <TypeDescriptor TypeName="System.Decimal" Name="BronzePackageTrueCost" DefaultDisplayName="Bronze True Cost" />
+                      <TypeDescriptor TypeName="System.Decimal" Name="EventTotalCost" DefaultDisplayName="Total Cost" />
+                    </TypeDescriptors>
+                  </TypeDescriptor>
+                </TypeDescriptors>
+              </TypeDescriptor>
+            </Parameter>
+          </Parameters>
+          <MethodInstances>
+            <MethodInstance Type="Finder" ReturnParameterName="@Events" ReturnTypeDescriptorName="Reader" ReturnTypeDescriptorLevel="0" Name="EventFinderMethod" />
+            <MethodInstance Type="SpecificFinder" ReturnParameterName="@Events" ReturnTypeDescriptorName="Reader" ReturnTypeDescriptorLevel="0" Name="EventSpecificFinder" />
+          </MethodInstances>
+        </Method>
+      </Methods>
+    </Entity>
+    <Entity EstimatedInstanceCount="10000" Name="PackageSummary">
+      <Identifiers>
+        <Identifier TypeName="System.String" Name="PackageName" />
+      </Identifiers>
+      <Methods>
+        <Method Name="GetSummaryOfPackageParticipants">
+          <Properties>
+            <Property Name="RdbCommandType" Type="System.Data.CommandType, System.Data, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">Text</Property>
+            <Property Name="RdbCommandText" Type="System.String">SELECT     Package.PackageName as "PackageName", COUNT(EventAttendee.CustomerNumber) AS "Participants"
+FROM         EventAttendee RIGHT OUTER JOIN
+                      Package ON EventAttendee.PackageID = Package.PackageID
+GROUP BY EventAttendee.PackageID, Package.PackageName</Property>
+          </Properties>
+          <Parameters>
+            <Parameter Direction="Return" Name="@PackageSummary">
+              <TypeDescriptor TypeName="System.Data.IDataReader, System.Data, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" IsCollection="true" Name="Reader">
+                <TypeDescriptors>
+                  <TypeDescriptor TypeName="System.Data.IDataRecord, System.Data, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" Name="Record">
+                    <TypeDescriptors>
+                      <TypeDescriptor TypeName="System.String" IdentifierName="PackageName" Name="PackageName" />
+                      <TypeDescriptor TypeName="System.Int32" Name="Participants" />
+                    </TypeDescriptors>
+                  </TypeDescriptor>
+                </TypeDescriptors>
+              </TypeDescriptor>
+            </Parameter>
+          </Parameters>
+          <MethodInstances>
+            <MethodInstance Type="Finder" ReturnParameterName="@PackageSummary" ReturnTypeDescriptorName="Reader" ReturnTypeDescriptorLevel="0" Name="PackageSummaryFinderMethod" />
+          </MethodInstances>
+        </Method>
+      </Methods>
+    </Entity>
+  </Entities>
+  <Associations>
+    <Association Name="GetAssociatedEventsAssociation" AssociationMethodEntityName="Packages" AssociationMethodName="GetAssociatedEvents" AssociationMethodReturnParameterName="@Packages" AssociationMethodReturnTypeDescriptorName="Reader" AssociationMethodReturnTypeDescriptorLevel="0" IsCached="true">
+      <SourceEntity Name="Packages" />
+      <DestinationEntity Name="Packages" />
+    </Association>
+  </Associations>
+</LobSystem>

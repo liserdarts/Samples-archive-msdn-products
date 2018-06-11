@@ -1,0 +1,730 @@
+﻿<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="3.5">
+  <!-- This section defines project level properties.
+         
+         Configuration : Specifies a default value for debug.
+         Platform : Specifies what CPU the output of this project can run on.
+         OutputType : Must be "Library" for VSTO.
+         NoStandardLibraries : Set to "false" for VSTO.
+         RootNamespace : In C#, this specifies the namespace given to new files. In VB, all objects are wrapped in
+                         this namespace at runtime.
+         AssemblyName : Name of the output assembly. -->
+  <PropertyGroup>
+    <ProjectTypeGuids>{BAA0C2D2-18E2-41B9-852F-F413020CAA33};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{31927F51-D928-4065-8713-56DCA0B01D4A}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <NoStandardLibraries>false</NoStandardLibraries>
+    <RootNamespace>Microsoft.SAPSK.ContosoTours</RootNamespace>
+    <AssemblyName>Microsoft.SAPSK.ContosoTours</AssemblyName>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <OfficeApplication>Excel</OfficeApplication>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <OldToolsVersion>3.5</OldToolsVersion>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <ManifestCertificateThumbprint>950B07532C6D04F0B05BDC2DFEA417C4621C25CA</ManifestCertificateThumbprint>
+    <ManifestKeyFile>ContosoTours_TemporaryKey.pfx</ManifestKeyFile>
+    <SignManifests>true</SignManifests>
+    <IsWebBootstrapper>True</IsWebBootstrapper>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+    <PublishUrl>C:\Documents and Settings\vmuser\My Documents\MSFTSAP\Publish\Excel\</PublishUrl>
+    <InstallUrl>http://MOSS/Microsoft.SAPSK.ContosoTours.VSTO.Excel/</InstallUrl>
+    <TargetCulture>en</TargetCulture>
+    <ApplicationVersion>1.0.0.1</ApplicationVersion>
+    <AutoIncrementApplicationRevision>true</AutoIncrementApplicationRevision>
+    <UpdateEnabled>true</UpdateEnabled>
+    <UpdateInterval>0</UpdateInterval>
+    <UpdateIntervalUnits>days</UpdateIntervalUnits>
+  </PropertyGroup>
+  <PropertyGroup>
+    <!-- 
+        VSTO_TrustAssembliesLocation - If true, VSTO gives the project output full trust in user-
+              level policy when the project is built.
+        VSTO_HostDocumentName - Not used in addins.
+    -->
+    <VSTO_TrustAssembliesLocation>true</VSTO_TrustAssembliesLocation>
+  </PropertyGroup>
+  <PropertyGroup>
+    <!--
+        properites needed to register addins
+        AddinRegistryHive - Root registry hive for the addin
+        AddinRegistryKey  - Registry key where this addin is registered
+    -->
+    <AddinRegistryHive>CurrentUser</AddinRegistryHive>
+    <AddinRegistryKey>Software\Microsoft\Office\Excel\Addins</AddinRegistryKey>
+  </PropertyGroup>
+  <!-- This section defines properties that are set when the "Debug" configuration is 
+       selected. 
+       DebugSymbols - If true, create symbols (.pdb). If false, do not create symbols.
+       Optimize - If true, optimize the build output. If false, do not optimize.
+       OutputPath - Output path of project relative to the project file.
+       EnableUnmanagedDebugging - If true, starting the debugger will attach both managed and unmanaged debuggers.
+       DefineConstants - Constants defined for the preprocessor.
+       Warning Level - Warning level for the compiler.
+  -->
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>.\bin\Debug\</OutputPath>
+    <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <!-- This section defines properties that are set when the "Release" configuration is 
+       selected.
+       DebugSymbols - If true, create symbols (.pdb). If false, do not create symbols.
+       Optimize - If true, optimize the build output. If false, do not optimize.
+       OutputPath - Output path of project relative to the project file.
+       EnableUnmanagedDebugging - If true, starting the debugger will attach both managed and unmanaged debuggers.
+       DefineConstants - Constants defined for the preprocessor.
+       Warning Level - Warning level for the compiler.
+  -->
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>.\bin\Release\</OutputPath>
+    <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
+    <DefineConstants>TRACE</DefineConstants>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <!-- This section enables pre and post build steps. However, 
+       in VSTO use MSBuild tasks instead of these properties.       
+  -->
+  <PropertyGroup>
+    <PreBuildEvent>
+    </PreBuildEvent>
+    <PostBuildEvent>
+    </PostBuildEvent>
+  </PropertyGroup>
+  <!--
+     This sections specifies references for the project.
+  -->
+  <ItemGroup>
+    <Reference Include="Microsoft.Office.DocumentFormat.OpenXml, Version=1.0.531.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\bin\Microsoft.Office.DocumentFormat.OpenXml.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Office.Interop.Excel, Version=12.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.Office.Interop.PowerPoint, Version=12.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.Office.Tools.Common.v9.0, Version=9.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.Office.Tools.Excel.v9.0, Version=9.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.Office.Tools.v9.0, Version=9.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.VisualBasic" />
+    <Reference Include="Microsoft.VisualStudio.Tools.Applications.Runtime.v9.0, Version=9.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL" />
+    <Reference Include="Microsoft.VisualStudio.Tools.Office.Runtime.v9.0, Version=9.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL" />
+    <Reference Include="Office, Version=12.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="stdole, Version=7.0.3300.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+    <Reference Include="SWPDatabaseDriverCommon, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\bin\SWPDatabaseDriverCommon.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.AddIn">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.configuration" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data" />
+    <Reference Include="System.Data.DataSetExtensions">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="System.Security" />
+    <Reference Include="System.Web.Extensions">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.XML" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="Accessibility" />
+    <Reference Include="System.Xml.Linq">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="WindowsBase">
+      <RequiredTargetFramework>3.0</RequiredTargetFramework>
+    </Reference>
+  </ItemGroup>
+  <!--
+     This section specifies COM References for the project (managed assemblies that wrap unmanaged
+     typelibs (tlb)). This is the equivalent of choosing "Add Reference->Com Reference" in the 
+     IDE.
+  -->
+  <!--
+     This section defines the user source files that are part of the
+     project.
+     
+     A compile tag specifies a source file to compile.
+     An EmbeddedResource tag specifies an .resx file for embedded resources.
+     A None tag specifies a file that is not to be passed to the compiler (for instance, 
+     a text file or XML file).
+     The AppDesigner tag specifies the directory where the application properties files can
+     be found.
+  -->
+  <ItemGroup>
+    <Compile Include="BookPackageForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BookPackageForm.Designer.cs">
+      <DependentUpon>BookPackageForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Business Objects\SeedEventDataList.cs" />
+    <Compile Include="Business Objects\StatisticList.cs" />
+    <Compile Include="Controls\BuyPackageControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\BuyPackageControl.Designer.cs">
+      <DependentUpon>BuyPackageControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Business Objects\AssociatedEventList.cs" />
+    <Compile Include="Business Objects\EventList.cs" />
+    <Compile Include="Business Objects\EventTypeList.cs" />
+    <Compile Include="Business Objects\FlightConnectionList.cs" />
+    <Compile Include="ClassCode\Config.cs" />
+    <Compile Include="ClassCode\Message.cs" />
+    <Compile Include="Business Objects\PackageList.cs" />
+    <Compile Include="Business Objects\PackageTypeList.cs" />
+    <Compile Include="Controls\PackageListControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\PackageListControl.Designer.cs">
+      <DependentUpon>PackageListControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ErrorForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ErrorForm.Designer.cs">
+      <DependentUpon>ErrorForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="EventForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EventForm.Designer.cs">
+      <DependentUpon>EventForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\EventListControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\EventListControl.Designer.cs">
+      <DependentUpon>EventListControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PackageEventPickerForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PackageEventPickerForm.Designer.cs">
+      <DependentUpon>PackageEventPickerForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FlightConnectionForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FlightConnectionForm.Designer.cs">
+      <DependentUpon>FlightConnectionForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Helper\DataHelper.cs" />
+    <Compile Include="Helper\ExcelHelper.cs" />
+    <Compile Include="Helper\GridHelper.cs" />
+    <Compile Include="Helper\OpenXMLHelper.cs" />
+    <Compile Include="Helper\PowerPointHelper.cs" />
+    <Compile Include="Helper\SeedDataHelper.cs" />
+    <Compile Include="Helper\UtilityHelper.cs" />
+    <Compile Include="Login.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Login.Designer.cs">
+      <DependentUpon>Login.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ManageEventForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ManageEventForm.Designer.cs">
+      <DependentUpon>ManageEventForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ManagePackageForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ManagePackageForm.Designer.cs">
+      <DependentUpon>ManagePackageForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PackageForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PackageForm.Designer.cs">
+      <DependentUpon>PackageForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <SubType>Designer</SubType>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+      <DependentUpon>Settings.settings</DependentUpon>
+    </Compile>
+    <Compile Include="PseudoProgressForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PseudoProgressForm.Designer.cs">
+      <DependentUpon>PseudoProgressForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ReseedDataForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ReseedDataForm.Designer.cs">
+      <DependentUpon>ReseedDataForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="RibbonExcel.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="RibbonExcel.Designer.cs">
+      <DependentUpon>RibbonExcel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SAPErrorForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SAPErrorForm.Designer.cs">
+      <DependentUpon>SAPErrorForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Schema\Customers.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Customers.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Schema\Events.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Events.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Schema\Flights.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Flights.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Schema\PackageInfo.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>PackageInfo.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Schema\PackagePerPromoType.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>PackagePerPromoType.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Schema\PackageSales.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>PackageSales.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Schema\PackagesRevenue.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>PackagesRevenue.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Schema\Population.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Population.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Schema\Sales.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Sales.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Schema\TicketSales.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>TicketSales.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="SeedDataForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SeedDataForm.Designer.cs">
+      <DependentUpon>SeedDataForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SelectYearForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SelectYearForm.Designer.cs">
+      <DependentUpon>SelectYearForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Splash.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Splash.Designer.cs">
+      <DependentUpon>Splash.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ThisAddIn.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <None Include="ThisAddIn.Designer.xml">
+      <DependentUpon>ThisAddIn.cs</DependentUpon>
+    </None>
+    <Compile Include="ThisAddIn.Designer.cs">
+      <DependentUpon>ThisAddIn.Designer.xml</DependentUpon>
+    </Compile>
+    <Compile Include="VenueForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="VenueForm.Designer.cs">
+      <DependentUpon>VenueForm.cs</DependentUpon>
+    </Compile>
+    <AppDesigner Include="Properties\" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="BookPackageForm.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>BookPackageForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\BuyPackageControl.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>BuyPackageControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EventForm.resx">
+      <DependentUpon>EventForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\EventListControl.resx">
+      <DependentUpon>EventListControl.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Login.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>Login.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ManageEventForm.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>ManageEventForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ManagePackageForm.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>ManagePackageForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PackageForm.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>PackageForm.cs</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\ContosoTours.DAL\ContosoTours.DAL.csproj">
+      <Project>{4ED059E0-CA53-4AFF-ABCE-93FD617069DF}</Project>
+      <Name>ContosoTours.DAL</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\ContosoTours.SAPServices\ContosoTours.SAPServices.csproj">
+      <Project>{C5569DEF-EB34-4968-872C-45AD9F387914}</Project>
+      <Name>ContosoTours.SAPServices</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icodelete.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icoedit.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\iconew.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <WebReferences Include="Web References\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ContosoTours_TemporaryKey.pfx" />
+    <None Include="PPT\packageTemplate.pptx" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="Resources\uparrows_white.gif" />
+    <None Include="Resources\downarrows_white.gif" />
+    <None Include="Resources\header_bground.PNG" />
+    <None Include="Resources\contoso_splash2.png" />
+    <None Include="Resources\Logo_small_RGB_2.gif" />
+    <None Include="Resources\SoftagonLogoBlue.gif" />
+    <None Include="Resources\vsto.jpg" />
+    <None Include="Resources\msoft.gif" />
+    <None Include="Resources\icospacer.gif" />
+    <None Include="Resources\icopackage.gif" />
+    <None Include="Resources\icoevent.gif" />
+    <None Include="Resources\flight.gif" />
+    <None Include="Resources\ball_yellow_icon.gif" />
+    <None Include="Resources\ball_white_icon.gif" />
+    <None Include="Resources\ball_orange_icon.gif" />
+    <None Include="Resources\tower.gif" />
+    <None Include="Resources\icodelete_disabled.gif" />
+    <None Include="Resources\icoedit_disabled.gif" />
+    <None Include="Resources\wait.gif" />
+    <None Include="Resources\airplane.png" />
+    <None Include="Resources\blank.JPG" />
+    <None Include="Schema\Customers.xsc">
+      <DependentUpon>Customers.xsd</DependentUpon>
+    </None>
+    <None Include="Schema\Customers.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>Customers.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="Schema\Customers.xss">
+      <DependentUpon>Customers.xsd</DependentUpon>
+    </None>
+    <None Include="Schema\Events.xsc">
+      <DependentUpon>Events.xsd</DependentUpon>
+    </None>
+    <None Include="Schema\Events.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>Events.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="Schema\Events.xss">
+      <DependentUpon>Events.xsd</DependentUpon>
+    </None>
+    <None Include="Schema\Flights.xsc">
+      <DependentUpon>Flights.xsd</DependentUpon>
+    </None>
+    <None Include="Schema\Flights.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>Flights.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="Schema\Flights.xss">
+      <DependentUpon>Flights.xsd</DependentUpon>
+    </None>
+    <None Include="Schema\PackageInfo.xsc">
+      <DependentUpon>PackageInfo.xsd</DependentUpon>
+    </None>
+    <None Include="Schema\PackageInfo.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>PackageInfo.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="Schema\PackageInfo.xss">
+      <DependentUpon>PackageInfo.xsd</DependentUpon>
+    </None>
+    <None Include="Schema\PackagePerPromoType.xsc">
+      <DependentUpon>PackagePerPromoType.xsd</DependentUpon>
+    </None>
+    <None Include="Schema\PackagePerPromoType.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>PackagePerPromoType.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Schema\PackagePerPromoType.xss">
+      <DependentUpon>PackagePerPromoType.xsd</DependentUpon>
+    </None>
+    <None Include="Schema\PackageSales.xsc">
+      <DependentUpon>PackageSales.xsd</DependentUpon>
+    </None>
+    <None Include="Schema\PackageSales.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>PackageSales.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="Schema\PackageSales.xss">
+      <DependentUpon>PackageSales.xsd</DependentUpon>
+    </None>
+    <None Include="Schema\PackagesRevenue.xsc">
+      <DependentUpon>PackagesRevenue.xsd</DependentUpon>
+    </None>
+    <None Include="Schema\PackagesRevenue.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>PackagesRevenue.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="Schema\PackagesRevenue.xss">
+      <DependentUpon>PackagesRevenue.xsd</DependentUpon>
+    </None>
+    <None Include="Schema\Population.xsc">
+      <DependentUpon>Population.xsd</DependentUpon>
+    </None>
+    <None Include="Schema\Population.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>Population.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="Schema\Population.xss">
+      <DependentUpon>Population.xsd</DependentUpon>
+    </None>
+    <None Include="Schema\Sales.xsc">
+      <DependentUpon>Sales.xsd</DependentUpon>
+    </None>
+    <None Include="Schema\Sales.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>Sales.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="Schema\Sales.xss">
+      <DependentUpon>Sales.xsd</DependentUpon>
+    </None>
+    <None Include="Schema\TicketSales.xsc">
+      <DependentUpon>TicketSales.xsd</DependentUpon>
+    </None>
+    <None Include="Schema\TicketSales.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>TicketSales.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="Schema\TicketSales.xss">
+      <DependentUpon>TicketSales.xsd</DependentUpon>
+    </None>
+    <None Include="Sheet\EventFlightAvailability.xlsx" />
+    <None Include="Sheet\EventList.xlsx" />
+    <None Include="Sheet\ListOfCustomers.xlsx" />
+    <None Include="Sheet\ListOfFlights.xlsx" />
+    <None Include="Sheet\PackageAvailability.xlsx" />
+    <None Include="Sheet\PackageSalesDistribution.xlsx" />
+    <None Include="Sheet\PackageSalesPerPromoType.xlsx" />
+    <None Include="Sheet\Population.xlsx" />
+    <None Include="Sheet\RevenueForecast.xlsx" />
+    <None Include="Sheet\TicketSalesDistribution.xlsx" />
+    <EmbeddedResource Include="Controls\PackageListControl.resx">
+      <DependentUpon>PackageListControl.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ErrorForm.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>ErrorForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PackageEventPickerForm.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>PackageEventPickerForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FlightConnectionForm.resx">
+      <DependentUpon>FlightConnectionForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PseudoProgressForm.resx">
+      <DependentUpon>PseudoProgressForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReseedDataForm.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>ReseedDataForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RibbonExcel.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>RibbonExcel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SAPErrorForm.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>SAPErrorForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SeedDataForm.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>SeedDataForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SelectYearForm.resx">
+      <DependentUpon>SelectYearForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Splash.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>Splash.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="VenueForm.resx">
+      <DependentUpon>VenueForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Database\ContosoToursDB.mdf">
+    </Content>
+    <Content Include="Database\ContosoToursDB_log.ldf">
+      <DependentUpon>ContosoToursDB.mdf</DependentUpon>
+    </Content>
+    <Content Include="Database\SeedDB.mdf">
+    </Content>
+    <Content Include="Database\SeedDB_log.ldf">
+      <DependentUpon>SeedDB.mdf</DependentUpon>
+    </Content>
+    <None Include="Resources\proj_management.png" />
+    <None Include="Resources\venues3.png" />
+    <None Include="Resources\venues2.png" />
+    <None Include="Resources\package_management2.png" />
+    <None Include="Resources\package_management1.png" />
+    <None Include="Resources\venues1.png" />
+    <None Include="Resources\list_of_flights.png" />
+    <None Include="Resources\package_management.png" />
+    <None Include="Resources\ContosoSplashv2.png" />
+    <None Include="Resources\venues_icon.png" />
+    <None Include="Resources\venues.png" />
+    <None Include="Resources\ValidNames.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.ContosoTours.SAPSK.Database">
+      <Visible>False</Visible>
+      <ProductName>Microsoft.ContosoTours.SAPSK.Database</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.2.0">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 2.0 %28x86%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.0">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.0 %28x86%29</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Sql.Server.Express.9.2">
+      <Visible>False</Visible>
+      <ProductName>SQL Server 2005 Express Edition SP2 %28x86%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.VSTORuntime.3.0">
+      <Visible>False</Visible>
+      <ProductName>Visual Studio Tools for the Office system 3.0 Runtime</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <!-- Include the build rules for a C# project.-->
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <!-- Include additional build rules for an office application addin -->
+  <!-- This section defines VSTO properties that describe the host-changable project properties. -->
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{BAA0C2D2-18E2-41B9-852F-F413020CAA33}">
+        <ProjectProperties HostName="Excel" HostPackage="{D2B20FF5-A6E5-47E1-90E8-463C6860CB05}" OfficeVersion="12.0" VstxVersion="3.0" ApplicationType="Excel" Language="cs" TemplatesPath="VSTOTemplates" DebugInfoExeName="#Software\Microsoft\Office\12.0\Excel\InstallRoot\Path#EXCEL.exe" AddItemTemplatesGuid="{147FB6A7-F239-4523-AE65-B6A4E49B361F}" />
+        <Host Name="Excel" GeneratedCodeNamespace="Microsoft.SAPSK.ContosoTravel" PublishedHash="69C324AB27932AA2FBF2B7EA72250886FF164DE6" IconIndex="0">
+          <HostItem Name="ThisAddIn" Code="ThisAddIn.cs" CanonicalName="AddIn" PublishedHash="2564DE0AF1FC2982A3CBA32897EA1D6B98BD0032" CanActivate="false" IconIndex="1" Blueprint="ThisAddIn.Designer.xml" GeneratedCode="ThisAddIn.Designer.cs" />
+        </Host>
+        <ProjectClient>
+          <VSTO_CompatibleProducts ErrorProduct="This project requires Microsoft Office Excel 2007, but this application is not installed." ErrorPIA="This project references the primary interop assembly for Microsoft Office Excel 2007, but this primary interop assembly is not installed.">
+            <Product Code="{XX12XXXX-XXXX-XXXX-X000-X000000FF1CE}" Feature="EXCELFiles" PIAFeature="EXCEL_PIA" />
+          </VSTO_CompatibleProducts>
+        </ProjectClient>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <Import Project="$(MSBuildExtensionsPath)\Microsoft\VisualStudio\v9.0\OfficeTools\Microsoft.VisualStudio.Tools.Office.Office2007.targets" />
+</Project>

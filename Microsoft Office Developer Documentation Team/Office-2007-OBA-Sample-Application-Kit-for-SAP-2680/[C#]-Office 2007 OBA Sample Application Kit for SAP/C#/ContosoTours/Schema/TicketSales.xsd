@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="TicketSales" targetNamespace="http://tempuri.org/TicketSales.xsd" xmlns:mstns="http://tempuri.org/TicketSales.xsd" xmlns="http://tempuri.org/TicketSales.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+        </Connections>
+        <Tables>
+        </Tables>
+        <Sources>
+        </Sources>
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="TicketSales" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:Generator_UserDSName="TicketSales" msprop:Generator_DataSetName="TicketSales">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="TicketSale" msprop:Generator_UserTableName="TicketSale" msprop:Generator_RowDeletedName="TicketSaleRowDeleted" msprop:Generator_TableClassName="TicketSaleDataTable" msprop:Generator_RowChangedName="TicketSaleRowChanged" msprop:Generator_RowClassName="TicketSaleRow" msprop:Generator_RowChangingName="TicketSaleRowChanging" msprop:Generator_RowEvArgName="TicketSaleRowChangeEvent" msprop:Generator_RowEvHandlerName="TicketSaleRowChangeEventHandler" msprop:Generator_TablePropName="TicketSale" msprop:Generator_TableVarName="tableTicketSale" msprop:Generator_RowDeletingName="TicketSaleRowDeleting">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="AgencyName" msprop:Generator_UserColumnName="AgencyName" msprop:Generator_ColumnPropNameInRow="AgencyName" msprop:Generator_ColumnVarNameInTable="columnAgencyName" msprop:Generator_ColumnPropNameInTable="AgencyNameColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="TicketsSold" msprop:Generator_UserColumnName="TicketsSold" msprop:Generator_ColumnPropNameInRow="TicketsSold" msprop:Generator_ColumnVarNameInTable="columnTicketsSold" msprop:Generator_ColumnPropNameInTable="TicketsSoldColumn" type="xs:int" minOccurs="0" />
+              <xs:element name="TotalTicketPrice" msprop:Generator_UserColumnName="TotalTicketPrice" msprop:Generator_ColumnPropNameInRow="TotalTicketPrice" msprop:Generator_ColumnVarNameInTable="columnTotalTicketPrice" msprop:Generator_ColumnPropNameInTable="TotalTicketPriceColumn" type="xs:decimal" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

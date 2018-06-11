@@ -1,0 +1,31 @@
+<?xml version="1.0" standalone="yes"?>
+<xs:schema id="SAPDataSetPackageEventMap" xmlns="" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+  <xs:element name="SAPDataSetPackageEventMap" msdata:IsDataSet="true" msdata:UseCurrentLocale="true">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="PackageEventMap">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="PackageEventMapID" type="xs:int" />
+              <xs:element name="PackageID" type="xs:int" />
+              <xs:element name="EventID" type="xs:int" />
+              <xs:element name="PackageName">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="255" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+    <xs:unique name="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//PackageEventMap" />
+      <xs:field xpath="PackageID" />
+      <xs:field xpath="EventID" />
+      <xs:field xpath="PackageName" />
+    </xs:unique>
+  </xs:element>
+</xs:schema>

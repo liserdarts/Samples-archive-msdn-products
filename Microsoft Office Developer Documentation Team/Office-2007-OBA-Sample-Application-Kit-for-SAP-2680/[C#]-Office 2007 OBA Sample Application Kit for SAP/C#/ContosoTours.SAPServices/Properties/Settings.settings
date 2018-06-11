@@ -1,0 +1,33 @@
+﻿<?xml version='1.0' encoding='utf-8'?>
+<SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)" GeneratedClassNamespace="Microsoft.SAPSK.ContosoTours.SAPServices.Properties" GeneratedClassName="Settings">
+  <Profiles />
+  <Settings>
+    <Setting Name="ContosoTours_SAPServices_SAP_FLIGHTAVAILIBILITY_BAPI_FLIGHT_CHECKAVAILIBILITYService" Type="(Web Service URL)" Scope="Application">
+      <Value Profile="(Default)">http://localhost:8000/sap/bc/soap/rfc</Value>
+    </Setting>
+    <Setting Name="ContosoTours_SAPServices_SAP_FLIGHTCUSTOMERCREATE_BAPI_FLCUST_CREATEFROMDATAService" Type="(Web Service URL)" Scope="Application">
+      <Value Profile="(Default)">http://localhost:8000/sap/bc/soap/rfc</Value>
+    </Setting>
+    <Setting Name="ContosoTours_SAPServices_SAP_FLIGHTCUSTOMERLIST_BAPI_FLCUST_GETLISTService" Type="(Web Service URL)" Scope="Application">
+      <Value Profile="(Default)">http://localhost:8000/sap/bc/soap/rfc</Value>
+    </Setting>
+    <Setting Name="ContosoTours_SAPServices_SAP_FLIGHTLIST_BAPI_FLIGHT_GETLISTService" Type="(Web Service URL)" Scope="Application">
+      <Value Profile="(Default)">http://localhost:8000/sap/bc/soap/rfc</Value>
+    </Setting>
+    <Setting Name="ContosoTours_SAPServices_SAP_FLIGHTCONNLIST_BAPI_FLCONN_GETLISTService" Type="(Web Service URL)" Scope="Application">
+      <Value Profile="(Default)">http://localhost:8000/sap/bc/soap/rfc</Value>
+    </Setting>
+    <Setting Name="ContosoTours_SAPServices_SAP_FLIGHTCONNDETAIL_BAPI_FLCONN_GETDETAILService" Type="(Web Service URL)" Scope="Application">
+      <Value Profile="(Default)">http://localhost:8000/sap/bc/soap/rfc</Value>
+    </Setting>
+    <Setting Name="ContosoTours_SAPServices_SAP_COMMITWORK_BAPI_TRANSACTION_COMMITService" Type="(Web Service URL)" Scope="Application">
+      <Value Profile="(Default)">http://localhost:8000/sap/bc/soap/rfc</Value>
+    </Setting>
+    <Setting Name="ContosoTours_SAPServices_SAP_FLIGHTTRIPCREATE_BAPI_FLTRIP_CREATEService" Type="(Web Service URL)" Scope="Application">
+      <Value Profile="(Default)">http://localhost:8000/sap/bc/soap/rfc</Value>
+    </Setting>
+    <Setting Name="ContosoTours_SAPServices_SAP_FLIGHTTRIPLIST_BAPI_FLTRIP_GETLISTService" Type="(Web Service URL)" Scope="Application">
+      <Value Profile="(Default)">http://localhost:8000/sap/bc/soap/rfc</Value>
+    </Setting>
+  </Settings>
+</SettingsFile>

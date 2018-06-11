@@ -1,0 +1,146 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<LobSystem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://schemas.microsoft.com/office/2006/03/BusinessDataCatalog BDCMetadata.xsd" Type="WebService" Version="1.0.0" Name="ContosoSAPLOBSystem" xmlns="http://schemas.microsoft.com/office/2006/03/BusinessDataCatalog">
+  <Properties>
+    <Property Name="WsdlFetchUrl" Type="System.String">http://localhost:9990/SAPService.asmx</Property>
+    <Property Name="WebServiceProxyNamespace" Type="System.String">BDC</Property>
+    <Property Name="WildcardCharacter" Type="System.String">*</Property>
+  </Properties>
+  <LobSystemInstances>
+    <LobSystemInstance Name="ContosoSAPLOBSystem">
+      <Properties>
+        <Property Name="LobSystemName" Type="System.String">ContosoSAPLOBSystem</Property>
+        <Property Name="WebServiceAuthenticationMode" Type="Microsoft.Office.Server.ApplicationRegistry.SystemSpecific.WebService.HttpAuthenticationMode">PassThrough</Property>
+      </Properties>
+    </LobSystemInstance>
+  </LobSystemInstances>
+  <Entities>
+    <Entity EstimatedInstanceCount="10000" Name="Customers">
+      <Identifiers>
+        <Identifier TypeName="System.String" Name="CustomerID" />
+      </Identifiers>
+      <Methods>
+        <Method Name="GetCustomerList">
+          <FilterDescriptors>
+            <FilterDescriptor Type="Wildcard" Name="CustomerNameFilter" DefaultDisplayName="Customer Name" />
+            <FilterDescriptor Type="Wildcard" Name="CountryFilter" DefaultDisplayName="Country" />
+          </FilterDescriptors>
+          <Parameters>
+            <Parameter Direction="In" Name="paramCustomerName">
+              <TypeDescriptor TypeName="System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" AssociatedFilter="CustomerNameFilter" Name="paramCustomerName">
+                <DefaultValues>
+                  <DefaultValue MethodInstanceName="CustomerFinderMethod" Type="System.String">*</DefaultValue>
+                </DefaultValues>
+              </TypeDescriptor>
+            </Parameter>
+            <Parameter Direction="In" Name="paramCountry">
+              <TypeDescriptor TypeName="System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" AssociatedFilter="CountryFilter" Name="paramCountry">
+                <DefaultValues>
+                  <DefaultValue MethodInstanceName="CustomerFinderMethod" Type="System.String">*</DefaultValue>
+                </DefaultValues>
+              </TypeDescriptor>
+            </Parameter>
+            <Parameter Direction="Return" Name="Return">
+              <TypeDescriptor TypeName="BDC.Customer[],ContosoSAPLOBSystem" IsCollection="true" Name="Return">
+                <TypeDescriptors>
+                  <TypeDescriptor TypeName="BDC.Customer,ContosoSAPLOBSystem" Name="Item">
+                    <TypeDescriptors>
+                      <TypeDescriptor TypeName="System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" IdentifierName="CustomerID" Name="CustomerID" DefaultDisplayName="Customer ID" />
+                      <TypeDescriptor TypeName="System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" Name="CustomerName" DefaultDisplayName="Customer Name" />
+                      <TypeDescriptor TypeName="System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" Name="Street" />
+                      <TypeDescriptor TypeName="System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" Name="POBox" DefaultDisplayName="PO Box" />
+                      <TypeDescriptor TypeName="System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" Name="PostalCode" DefaultDisplayName="Postal Code" />
+                      <TypeDescriptor TypeName="System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" Name="City" />
+                      <TypeDescriptor TypeName="System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" Name="Country" />
+                      <TypeDescriptor TypeName="System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" Name="PhoneNumber" DefaultDisplayName="Phone Number" />
+                    </TypeDescriptors>
+                  </TypeDescriptor>
+                </TypeDescriptors>
+              </TypeDescriptor>
+            </Parameter>
+          </Parameters>
+          <MethodInstances>
+            <MethodInstance Type="Finder" ReturnParameterName="Return" ReturnTypeDescriptorName="Return" ReturnTypeDescriptorLevel="0" Name="CustomerFinderMethod" />
+          </MethodInstances>
+        </Method>
+      </Methods>
+    </Entity>
+    <Entity EstimatedInstanceCount="10000" Name="Flights">
+      <Identifiers>
+        <Identifier TypeName="System.String" Name="CarrierID" />
+      </Identifiers>
+      <Methods>
+        <Method Name="GetFlightList">
+          <FilterDescriptors>
+            <FilterDescriptor Type="Wildcard" Name="AirlineNameFilter" DefaultDisplayName="Airline Name" />
+            <FilterDescriptor Type="Wildcard" Name="CityFromFilter" DefaultDisplayName="City From" />
+            <FilterDescriptor Type="Wildcard" Name="CityToFilter" DefaultDisplayName="City To" />
+            <FilterDescriptor Type="Comparison" Name="FlightDateFilter" DefaultDisplayName="Flight Date">
+              <Properties>
+                <Property Name="Comparator" Type="System.String">GreaterThanEquals</Property>
+              </Properties>
+            </FilterDescriptor>
+          </FilterDescriptors>
+          <Parameters>
+            <Parameter Direction="In" Name="paramAirlineName">
+              <TypeDescriptor TypeName="System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" AssociatedFilter="AirlineNameFilter" Name="paramAirlineName">
+                <DefaultValues>
+                  <DefaultValue MethodInstanceName="FlightFinderMethod" Type="System.String">*</DefaultValue>
+                </DefaultValues>
+              </TypeDescriptor>
+            </Parameter>
+            <Parameter Direction="In" Name="paramCityFrom">
+              <TypeDescriptor TypeName="System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" AssociatedFilter="CityFromFilter" Name="paramCityFrom">
+                <DefaultValues>
+                  <DefaultValue MethodInstanceName="FlightFinderMethod" Type="System.String">*</DefaultValue>
+                </DefaultValues>
+              </TypeDescriptor>
+            </Parameter>
+            <Parameter Direction="In" Name="paramCityTo">
+              <TypeDescriptor TypeName="System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" AssociatedFilter="CityToFilter" Name="paramCityTo">
+                <DefaultValues>
+                  <DefaultValue MethodInstanceName="FlightFinderMethod" Type="System.String">*</DefaultValue>
+                </DefaultValues>
+              </TypeDescriptor>
+            </Parameter>
+            <Parameter Direction="In" Name="paramFDate">
+              <TypeDescriptor TypeName="System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" AssociatedFilter="FlightDateFilter" Name="paramFDate">
+                <DefaultValues>
+                  <DefaultValue MethodInstanceName="FlightFinderMethod" Type="System.String">01/01/1900</DefaultValue>
+                </DefaultValues>
+              </TypeDescriptor>
+            </Parameter>
+            <Parameter Direction="Return" Name="Return">
+              <TypeDescriptor TypeName="BDC.Flight[],ContosoSAPLOBSystem" IsCollection="true" Name="Return">
+                <TypeDescriptors>
+                  <TypeDescriptor TypeName="BDC.Flight,ContosoSAPLOBSystem" Name="Item">
+                    <TypeDescriptors>
+                      <TypeDescriptor TypeName="System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" IdentifierName="CarrierID" Name="CarrierID" DefaultDisplayName="Carrier ID" />
+                      <TypeDescriptor TypeName="System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" Name="CarrierName" DefaultDisplayName="Carrier Name" />
+                      <TypeDescriptor TypeName="System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" Name="CityFrom" DefaultDisplayName="City From" />
+                      <TypeDescriptor TypeName="System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" Name="CityTo" DefaultDisplayName="City To" />
+                      <TypeDescriptor TypeName="System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" Name="AirportFrom" DefaultDisplayName="Airport From" />
+                      <TypeDescriptor TypeName="System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" Name="AirportTo" DefaultDisplayName="Airport To" />
+                      <TypeDescriptor TypeName="System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" Name="ArrivalDate" DefaultDisplayName="Arrival Date" />
+                      <TypeDescriptor TypeName="System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" Name="ArrivalTime" DefaultDisplayName="Arrival Time" />
+                      <TypeDescriptor TypeName="System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" Name="FlightDate" DefaultDisplayName="Flight Date" />
+                      <TypeDescriptor TypeName="System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" Name="DepartureTime" DefaultDisplayName="Departure Time" />
+                      <TypeDescriptor TypeName="System.Int32, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" Name="FirstClass" DefaultDisplayName="First Class" />
+                      <TypeDescriptor TypeName="System.Int32, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" Name="BusinessClass" DefaultDisplayName="Business Class" />
+                      <TypeDescriptor TypeName="System.Int32, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" Name="EconomyClass" DefaultDisplayName="Economy Class" />
+                    </TypeDescriptors>
+                  </TypeDescriptor>
+                </TypeDescriptors>
+              </TypeDescriptor>
+            </Parameter>
+          </Parameters>
+          <MethodInstances>
+            <MethodInstance Type="Finder" ReturnParameterName="Return" ReturnTypeDescriptorName="Return" ReturnTypeDescriptorLevel="0" Name="FlightFinderMethod" />
+          </MethodInstances>
+        </Method>
+      </Methods>
+      <Actions>
+        <Action Position="1" IsOpenedInNewWindow="false" Url="http://moss:23071/Pages/EventInformation.aspx" ImageUrl="" Name="Look for events" />
+      </Actions>
+    </Entity>
+  </Entities>
+</LobSystem>

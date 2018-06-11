@@ -1,0 +1,887 @@
+﻿<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="3.5">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.21022</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{4ED059E0-CA53-4AFF-ABCE-93FD617069DF}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Microsoft.SAPSK.ContosoTours.DAL</RootNamespace>
+    <AssemblyName>Microsoft.ContosoTours.SAPSK.DAL</AssemblyName>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <OldToolsVersion>3.5</OldToolsVersion>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="SWPDatabaseDriverCommon, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\bin\SWPDatabaseDriverCommon.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="SAPDataSetVenue.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>SAPDataSetVenue.xsd</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="SAPDataSetVenue.xsc">
+      <DependentUpon>SAPDataSetVenue.xsd</DependentUpon>
+    </None>
+    <None Include="SAPDataSetVenue.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>SAPDataSetVenue.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="SAPDataSetVenue.xss">
+      <DependentUpon>SAPDataSetVenue.xsd</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="SAPDataSetRefTravelAgency.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>SAPDataSetRefTravelAgency.xsd</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="SAPDataSetRefTravelAgency.xsc">
+      <DependentUpon>SAPDataSetRefTravelAgency.xsd</DependentUpon>
+    </None>
+    <None Include="SAPDataSetRefTravelAgency.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>SAPDataSetRefTravelAgency.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="SAPDataSetRefTravelAgency.xss">
+      <DependentUpon>SAPDataSetRefTravelAgency.xsd</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="SAPDataSetRefCounter.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>SAPDataSetRefCounter.xsd</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="SAPDataSetRefCounter.xsc">
+      <DependentUpon>SAPDataSetRefCounter.xsd</DependentUpon>
+    </None>
+    <None Include="SAPDataSetRefCounter.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>SAPDataSetRefCounter.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="SAPDataSetRefCounter.xss">
+      <DependentUpon>SAPDataSetRefCounter.xsd</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="SAPDataSetRefCode.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>SAPDataSetRefCode.xsd</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="SAPDataSetRefCode.xsc">
+      <DependentUpon>SAPDataSetRefCode.xsd</DependentUpon>
+    </None>
+    <None Include="SAPDataSetRefCode.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>SAPDataSetRefCode.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="SAPDataSetRefCode.xss">
+      <DependentUpon>SAPDataSetRefCode.xsd</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="SAPDataSetRefCarrier.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>SAPDataSetRefCarrier.xsd</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="SAPDataSetRefCarrier.xsc">
+      <DependentUpon>SAPDataSetRefCarrier.xsd</DependentUpon>
+    </None>
+    <None Include="SAPDataSetRefCarrier.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>SAPDataSetRefCarrier.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="SAPDataSetRefCarrier.xss">
+      <DependentUpon>SAPDataSetRefCarrier.xsd</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="SAPDataSetPackage.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>SAPDataSetPackage.xsd</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="SAPDataSetPackage.xsc">
+      <DependentUpon>SAPDataSetPackage.xsd</DependentUpon>
+    </None>
+    <None Include="SAPDataSetPackage.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>SAPDataSetPackage.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="SAPDataSetPackage.xss">
+      <DependentUpon>SAPDataSetPackage.xsd</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="SAPDataSetPackageEventMap.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>SAPDataSetPackageEventMap.xsd</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="SAPDataSetPackageEventMap.xsc">
+      <DependentUpon>SAPDataSetPackageEventMap.xsd</DependentUpon>
+    </None>
+    <None Include="SAPDataSetPackageEventMap.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>SAPDataSetPackageEventMap.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="SAPDataSetPackageEventMap.xss">
+      <DependentUpon>SAPDataSetPackageEventMap.xsd</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="SAPDataSetEventType.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>SAPDataSetEventType.xsd</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="SAPDataSetEventType.xsc">
+      <DependentUpon>SAPDataSetEventType.xsd</DependentUpon>
+    </None>
+    <None Include="SAPDataSetEventType.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>SAPDataSetEventType.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="SAPDataSetEventType.xss">
+      <DependentUpon>SAPDataSetEventType.xsd</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="SAPDataSetEvent.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>SAPDataSetEvent.xsd</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="SAPDataSetEvent.xsc">
+      <DependentUpon>SAPDataSetEvent.xsd</DependentUpon>
+    </None>
+    <None Include="SAPDataSetEvent.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>SAPDataSetEvent.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="SAPDataSetEvent.xss">
+      <DependentUpon>SAPDataSetEvent.xsd</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="SAPDataSetEventAttendee.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>SAPDataSetEventAttendee.xsd</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="SAPDataSetEventAttendee.xsc">
+      <DependentUpon>SAPDataSetEventAttendee.xsd</DependentUpon>
+    </None>
+    <None Include="SAPDataSetEventAttendee.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>SAPDataSetEventAttendee.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="SAPDataSetEventAttendee.xss">
+      <DependentUpon>SAPDataSetEventAttendee.xsd</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="SAPDataSetEventActor.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>SAPDataSetEventActor.xsd</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="SAPDataSetEventActor.xsc">
+      <DependentUpon>SAPDataSetEventActor.xsd</DependentUpon>
+    </None>
+    <None Include="SAPDataSetEventActor.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>SAPDataSetEventActor.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="SAPDataSetEventActor.xss">
+      <DependentUpon>SAPDataSetEventActor.xsd</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="SAPDataSetEventActorMap.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>SAPDataSetEventActorMap.xsd</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="SAPDataSetEventActorMap.xsc">
+      <DependentUpon>SAPDataSetEventActorMap.xsd</DependentUpon>
+    </None>
+    <None Include="SAPDataSetEventActorMap.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>SAPDataSetEventActorMap.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="SAPDataSetEventActorMap.xss">
+      <DependentUpon>SAPDataSetEventActorMap.xsd</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="SAPVenueReadWrite.Custom.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="SAPVenueReadWrite.DataReader.cs">
+      <DependentUpon>SAPVenueReadWrite.Custom.cs</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="SAPDataReaderVenue.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="SAPVenueReadWrite.Dataset.cs">
+      <DependentUpon>SAPVenueReadWrite.Custom.cs</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="SAPVenueReadWrite.Common.cs">
+      <DependentUpon>SAPVenueReadWrite.Custom.cs</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="SAPRefTravelAgencyReadWrite.Custom.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="SAPRefTravelAgencyReadWrite.DataReader.cs">
+      <DependentUpon>SAPRefTravelAgencyReadWrite.Custom.cs</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="SAPDataReaderRefTravelAgency.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="SAPRefTravelAgencyReadWrite.Dataset.cs">
+      <DependentUpon>SAPRefTravelAgencyReadWrite.Custom.cs</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="SAPRefTravelAgencyReadWrite.Common.cs">
+      <DependentUpon>SAPRefTravelAgencyReadWrite.Custom.cs</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="SAPRefCounterReadWrite.Custom.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="SAPRefCounterReadWrite.DataReader.cs">
+      <DependentUpon>SAPRefCounterReadWrite.Custom.cs</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="SAPDataReaderRefCounter.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="SAPRefCounterReadWrite.Dataset.cs">
+      <DependentUpon>SAPRefCounterReadWrite.Custom.cs</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="SAPRefCounterReadWrite.Common.cs">
+      <DependentUpon>SAPRefCounterReadWrite.Custom.cs</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="SAPRefCodeReadWrite.Custom.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="SAPRefCodeReadWrite.DataReader.cs">
+      <DependentUpon>SAPRefCodeReadWrite.Custom.cs</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="SAPDataReaderRefCode.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="SAPRefCodeReadWrite.Dataset.cs">
+      <DependentUpon>SAPRefCodeReadWrite.Custom.cs</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="SAPRefCodeReadWrite.Common.cs">
+      <DependentUpon>SAPRefCodeReadWrite.Custom.cs</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="SAPRefCarrierReadWrite.Custom.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="SAPRefCarrierReadWrite.DataReader.cs">
+      <DependentUpon>SAPRefCarrierReadWrite.Custom.cs</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="SAPDataReaderRefCarrier.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="SAPRefCarrierReadWrite.Dataset.cs">
+      <DependentUpon>SAPRefCarrierReadWrite.Custom.cs</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="SAPRefCarrierReadWrite.Common.cs">
+      <DependentUpon>SAPRefCarrierReadWrite.Custom.cs</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="SAPPackageReadWrite.Custom.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="SAPPackageReadWrite.DataReader.cs">
+      <DependentUpon>SAPPackageReadWrite.Custom.cs</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="SAPDataReaderPackage.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="SAPPackageReadWrite.Dataset.cs">
+      <DependentUpon>SAPPackageReadWrite.Custom.cs</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="SAPPackageReadWrite.Common.cs">
+      <DependentUpon>SAPPackageReadWrite.Custom.cs</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="SAPPackageEventMapReadWrite.Custom.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="SAPPackageEventMapReadWrite.DataReader.cs">
+      <DependentUpon>SAPPackageEventMapReadWrite.Custom.cs</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="SAPDataReaderPackageEventMap.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="SAPPackageEventMapReadWrite.Dataset.cs">
+      <DependentUpon>SAPPackageEventMapReadWrite.Custom.cs</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="SAPPackageEventMapReadWrite.Common.cs">
+      <DependentUpon>SAPPackageEventMapReadWrite.Custom.cs</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="SAPEventTypeReadWrite.Custom.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="SAPEventTypeReadWrite.DataReader.cs">
+      <DependentUpon>SAPEventTypeReadWrite.Custom.cs</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="SAPDataReaderEventType.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="SAPEventTypeReadWrite.Dataset.cs">
+      <DependentUpon>SAPEventTypeReadWrite.Custom.cs</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="SAPEventTypeReadWrite.Common.cs">
+      <DependentUpon>SAPEventTypeReadWrite.Custom.cs</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="SAPEventReadWrite.Custom.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="SAPEventReadWrite.DataReader.cs">
+      <DependentUpon>SAPEventReadWrite.Custom.cs</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="SAPDataReaderEvent.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="SAPEventReadWrite.Dataset.cs">
+      <DependentUpon>SAPEventReadWrite.Custom.cs</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="SAPEventReadWrite.Common.cs">
+      <DependentUpon>SAPEventReadWrite.Custom.cs</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="SAPEventAttendeeReadWrite.Custom.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="SAPEventAttendeeReadWrite.DataReader.cs">
+      <DependentUpon>SAPEventAttendeeReadWrite.Custom.cs</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="SAPDataReaderEventAttendee.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="SAPEventAttendeeReadWrite.Dataset.cs">
+      <DependentUpon>SAPEventAttendeeReadWrite.Custom.cs</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="SAPEventAttendeeReadWrite.Common.cs">
+      <DependentUpon>SAPEventAttendeeReadWrite.Custom.cs</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="SAPEventActorReadWrite.Custom.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="SAPEventActorReadWrite.DataReader.cs">
+      <DependentUpon>SAPEventActorReadWrite.Custom.cs</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="SAPDataReaderEventActor.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="SAPEventActorReadWrite.Dataset.cs">
+      <DependentUpon>SAPEventActorReadWrite.Custom.cs</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="SAPEventActorReadWrite.Common.cs">
+      <DependentUpon>SAPEventActorReadWrite.Custom.cs</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="SAPEventActorMapReadWrite.Custom.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="SAPEventActorMapReadWrite.DataReader.cs">
+      <DependentUpon>SAPEventActorMapReadWrite.Custom.cs</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="SAPDataReaderEventActorMap.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="SAPEventActorMapReadWrite.Dataset.cs">
+      <DependentUpon>SAPEventActorMapReadWrite.Custom.cs</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="SAPEventActorMapReadWrite.Common.cs">
+      <DependentUpon>SAPEventActorMapReadWrite.Custom.cs</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="SAPDataLimits.Custom.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="SAPDataSetRefLanguage.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>SAPDataSetRefLanguage.xsd</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="SAPDataSetRefLanguage.xsc">
+      <DependentUpon>SAPDataSetRefLanguage.xsd</DependentUpon>
+    </None>
+    <None Include="SAPDataSetRefLanguage.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>SAPDataSetRefLanguage.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="SAPDataSetRefLanguage.xss">
+      <DependentUpon>SAPDataSetRefLanguage.xsd</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="SAPDataSetRefFlightCity.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>SAPDataSetRefFlightCity.xsd</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="SAPDataSetRefFlightCity.xsc">
+      <DependentUpon>SAPDataSetRefFlightCity.xsd</DependentUpon>
+    </None>
+    <None Include="SAPDataSetRefFlightCity.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>SAPDataSetRefFlightCity.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="SAPDataSetRefFlightCity.xss">
+      <DependentUpon>SAPDataSetRefFlightCity.xsd</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="SAPDataSetRefCountry.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>SAPDataSetRefCountry.xsd</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="SAPDataSetRefCountry.xsc">
+      <DependentUpon>SAPDataSetRefCountry.xsd</DependentUpon>
+    </None>
+    <None Include="SAPDataSetRefCountry.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>SAPDataSetRefCountry.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="SAPDataSetRefCountry.xss">
+      <DependentUpon>SAPDataSetRefCountry.xsd</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="SAPRefLanguageReadWrite.Custom.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="SAPRefLanguageReadWrite.DataReader.cs">
+      <DependentUpon>SAPRefLanguageReadWrite.Custom.cs</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="SAPDataReaderRefLanguage.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="SAPRefLanguageReadWrite.Dataset.cs">
+      <DependentUpon>SAPRefLanguageReadWrite.Custom.cs</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="SAPRefLanguageReadWrite.Common.cs">
+      <DependentUpon>SAPRefLanguageReadWrite.Custom.cs</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="SAPRefFlightCityReadWrite.Custom.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="SAPRefFlightCityReadWrite.DataReader.cs">
+      <DependentUpon>SAPRefFlightCityReadWrite.Custom.cs</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="SAPDataReaderRefFlightCity.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="SAPRefFlightCityReadWrite.Dataset.cs">
+      <DependentUpon>SAPRefFlightCityReadWrite.Custom.cs</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="SAPRefFlightCityReadWrite.Common.cs">
+      <DependentUpon>SAPRefFlightCityReadWrite.Custom.cs</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="SAPRefCountryReadWrite.Custom.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="SAPRefCountryReadWrite.DataReader.cs">
+      <DependentUpon>SAPRefCountryReadWrite.Custom.cs</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="SAPDataReaderRefCountry.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="SAPRefCountryReadWrite.Dataset.cs">
+      <DependentUpon>SAPRefCountryReadWrite.Custom.cs</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="SAPRefCountryReadWrite.Common.cs">
+      <DependentUpon>SAPRefCountryReadWrite.Custom.cs</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="SAPDataSetPackageEvent.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>SAPDataSetPackageEvent.xsd</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="SAPDataSetPackageEvent.xsc">
+      <DependentUpon>SAPDataSetPackageEvent.xsd</DependentUpon>
+    </None>
+    <None Include="SAPDataSetPackageEvent.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>SAPDataSetPackageEvent.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="SAPDataSetPackageEvent.xss">
+      <DependentUpon>SAPDataSetPackageEvent.xsd</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="SAPPackageEventReadOnly.Custom.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="SAPPackageEventReadOnly.DataReader.cs">
+      <DependentUpon>SAPPackageEventReadOnly.Custom.cs</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="SAPDataReaderPackageEvent.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="SAPPackageEventReadOnly.Dataset.cs">
+      <DependentUpon>SAPPackageEventReadOnly.Custom.cs</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="SAPPackageEventReadOnly.Common.cs">
+      <DependentUpon>SAPPackageEventReadOnly.Custom.cs</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="SAPDataSetActorEvent.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>SAPDataSetActorEvent.xsd</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="SAPDataSetActorEvent.xsc">
+      <DependentUpon>SAPDataSetActorEvent.xsd</DependentUpon>
+    </None>
+    <None Include="SAPDataSetActorEvent.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>SAPDataSetActorEvent.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="SAPDataSetActorEvent.xss">
+      <DependentUpon>SAPDataSetActorEvent.xsd</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="SAPActorEventReadOnly.Custom.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="SAPActorEventReadOnly.DataReader.cs">
+      <DependentUpon>SAPActorEventReadOnly.Custom.cs</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="SAPDataReaderActorEvent.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="SAPActorEventReadOnly.Dataset.cs">
+      <DependentUpon>SAPActorEventReadOnly.Custom.cs</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="SAPActorEventReadOnly.Common.cs">
+      <DependentUpon>SAPActorEventReadOnly.Custom.cs</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="SAPDataSetPackageAgency.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>SAPDataSetPackageAgency.xsd</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="SAPDataSetPackageAgency.xsc">
+      <DependentUpon>SAPDataSetPackageAgency.xsd</DependentUpon>
+    </None>
+    <None Include="SAPDataSetPackageAgency.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>SAPDataSetPackageAgency.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="SAPDataSetPackageAgency.xss">
+      <DependentUpon>SAPDataSetPackageAgency.xsd</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="SAPDataSetEventAttendeeAgencyMap.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>SAPDataSetEventAttendeeAgencyMap.xsd</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="SAPDataSetEventAttendeeAgencyMap.xsc">
+      <DependentUpon>SAPDataSetEventAttendeeAgencyMap.xsd</DependentUpon>
+    </None>
+    <None Include="SAPDataSetEventAttendeeAgencyMap.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>SAPDataSetEventAttendeeAgencyMap.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="SAPDataSetEventAttendeeAgencyMap.xss">
+      <DependentUpon>SAPDataSetEventAttendeeAgencyMap.xsd</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="SAPPackageAgencyReadOnly.Custom.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="SAPPackageAgencyReadOnly.DataReader.cs">
+      <DependentUpon>SAPPackageAgencyReadOnly.Custom.cs</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="SAPDataReaderPackageAgency.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="SAPPackageAgencyReadOnly.Dataset.cs">
+      <DependentUpon>SAPPackageAgencyReadOnly.Custom.cs</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="SAPPackageAgencyReadOnly.Common.cs">
+      <DependentUpon>SAPPackageAgencyReadOnly.Custom.cs</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="SAPEventAttendeeAgencyMapReadWrite.Custom.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="SAPEventAttendeeAgencyMapReadWrite.DataReader.cs">
+      <DependentUpon>SAPEventAttendeeAgencyMapReadWrite.Custom.cs</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="SAPDataReaderEventAttendeeAgencyMap.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="SAPEventAttendeeAgencyMapReadWrite.Dataset.cs">
+      <DependentUpon>SAPEventAttendeeAgencyMapReadWrite.Custom.cs</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="SAPEventAttendeeAgencyMapReadWrite.Common.cs">
+      <DependentUpon>SAPEventAttendeeAgencyMapReadWrite.Custom.cs</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="SAPDataSetEventAttendeeTrip.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>SAPDataSetEventAttendeeTrip.xsd</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="SAPDataSetEventAttendeeTrip.xsc">
+      <DependentUpon>SAPDataSetEventAttendeeTrip.xsd</DependentUpon>
+    </None>
+    <None Include="SAPDataSetEventAttendeeTrip.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>SAPDataSetEventAttendeeTrip.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="SAPDataSetEventAttendeeTrip.xss">
+      <DependentUpon>SAPDataSetEventAttendeeTrip.xsd</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="SAPEventAttendeeTripReadOnly.Custom.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="SAPEventAttendeeTripReadOnly.DataReader.cs">
+      <DependentUpon>SAPEventAttendeeTripReadOnly.Custom.cs</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="SAPDataReaderEventAttendeeTrip.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="SAPEventAttendeeTripReadOnly.Dataset.cs">
+      <DependentUpon>SAPEventAttendeeTripReadOnly.Custom.cs</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="SAPEventAttendeeTripReadOnly.Common.cs">
+      <DependentUpon>SAPEventAttendeeTripReadOnly.Custom.cs</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="SAPDataLimits.cs">
+      <DependentUpon>SAPDataLimits.Custom.cs</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

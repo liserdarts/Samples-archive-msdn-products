@@ -1,0 +1,20 @@
+<publishData>
+  <publishTarget publishUrl="C:\Inetpub\SAPBridge\">
+    <file relUrl="bin/SAPBridgeMaster.dll" publishTime="01/17/2008 20:24:31" />
+    <file relUrl="SAPService.asmx" publishTime="12/19/2007 20:07:05" />
+    <file relUrl="Web.config" publishTime="01/17/2008 18:01:35" />
+    <file relUrl="bin/SAPBridgeMaster.pdb" publishTime="01/17/2008 20:24:31" />
+    <file relUrl="bin/SAPBridgeMaster.XmlSerializers.dll" publishTime="01/17/2008 20:24:34" />
+  </publishTarget>
+  <publishTarget publishUrl="C:\Inetpub\TestSAP\">
+    <file relUrl="bin/SAPBridgeMaster.dll" publishTime="01/07/2008 17:17:55" />
+    <file relUrl="bin/SAPBridgeMaster.XmlSerializers.dll" publishTime="01/07/2008 17:18:14" />
+    <file relUrl="SAPService.asmx" publishTime="12/19/2007 20:07:05" />
+    <file relUrl="bin/SWPDatabaseDriverCommon.pdb" publishTime="01/03/2008 19:42:08" />
+    <file relUrl="Web.config" publishTime="12/19/2007 23:28:03" />
+    <file relUrl="bin/SAPBridgeMaster.pdb" publishTime="01/07/2008 17:17:55" />
+    <file relUrl="bin/SWPDatabaseDriverCommon.dll" publishTime="01/03/2008 19:42:08" />
+    <file relUrl="bin/Microsoft.ContosoTours.SAPSK.DAL.pdb" publishTime="01/03/2008 19:42:13" />
+    <file relUrl="bin/Microsoft.ContosoTours.SAPSK.DAL.dll" publishTime="01/03/2008 19:42:13" />
+  </publishTarget>
+</publishData>

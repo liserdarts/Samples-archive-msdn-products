@@ -1,0 +1,38 @@
+<?xml version="1.0" standalone="yes"?>
+<xs:schema id="SAPDataSetEventAttendee" xmlns="" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+  <xs:element name="SAPDataSetEventAttendee" msdata:IsDataSet="true" msdata:UseCurrentLocale="true">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="EventAttendee">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="EventAttendeeID" type="xs:int" />
+              <xs:element name="PackageID" type="xs:int" />
+              <xs:element name="CustomerNumber">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="25" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="DateOfBirth" type="xs:dateTime" />
+              <xs:element name="Created" type="xs:dateTime" />
+              <xs:element name="PackageName">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="255" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+    <xs:unique name="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//EventAttendee" />
+      <xs:field xpath="EventAttendeeID" />
+      <xs:field xpath="PackageName" />
+    </xs:unique>
+  </xs:element>
+</xs:schema>

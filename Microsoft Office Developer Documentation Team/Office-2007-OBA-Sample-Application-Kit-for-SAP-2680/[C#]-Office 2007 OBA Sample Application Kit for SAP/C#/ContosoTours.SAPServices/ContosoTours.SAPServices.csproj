@@ -1,0 +1,376 @@
+﻿<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="3.5">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.20706</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{C5569DEF-EB34-4968-872C-45AD9F387914}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Microsoft.SAPSK.ContosoTours.SAPServices</RootNamespace>
+    <AssemblyName>ContosoTours.SAPServices</AssemblyName>
+    <StartupObject>
+    </StartupObject>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <OldToolsVersion>3.5</OldToolsVersion>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="app.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="Web References\SAP_COMMITWORK\BAPIRET2.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\SAP_COMMITWORK\Reference.map">
+      <Generator>MSDiscoCodeGenerator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+    <None Include="Web References\SAP_COMMITWORK\wsdl11.wsdl" />
+    <None Include="Web References\SAP_FLIGHTAVAILIBILITY\BAPIRET2.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\SAP_FLIGHTAVAILIBILITY\BAPISFLAVA.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\SAP_FLIGHTAVAILIBILITY\Reference.map">
+      <Generator>MSDiscoCodeGenerator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+    <None Include="Web References\SAP_FLIGHTAVAILIBILITY\wsdl11.wsdl" />
+    <None Include="Web References\SAP_FLIGHTCONNDETAIL\BAPIPAREX.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\SAP_FLIGHTCONNDETAIL\BAPIRET2.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\SAP_FLIGHTCONNDETAIL\BAPISCOAVA.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\SAP_FLIGHTCONNDETAIL\BAPISCODAT.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\SAP_FLIGHTCONNDETAIL\BAPISCOHOP.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\SAP_FLIGHTCONNDETAIL\BAPISCOPRI.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\SAP_FLIGHTCONNDETAIL\Reference.map">
+      <Generator>MSDiscoCodeGenerator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+    <None Include="Web References\SAP_FLIGHTCONNDETAIL\wsdl11.wsdl" />
+    <None Include="Web References\SAP_FLIGHTCONNLIST\BAPIPAREX.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\SAP_FLIGHTCONNLIST\BAPIRET2.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\SAP_FLIGHTCONNLIST\BAPISCODAT.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\SAP_FLIGHTCONNLIST\BAPISCODRA.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\SAP_FLIGHTCONNLIST\Reference.map">
+      <Generator>MSDiscoCodeGenerator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+    <None Include="Web References\SAP_FLIGHTCONNLIST\wsdl11.wsdl" />
+    <None Include="Web References\SAP_FLIGHTCUSTOMERCREATE\BAPIPAREX.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\SAP_FLIGHTCUSTOMERCREATE\BAPIRET2.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\SAP_FLIGHTCUSTOMERCREATE\Reference.map">
+      <Generator>MSDiscoCodeGenerator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+    <None Include="Web References\SAP_FLIGHTCUSTOMERCREATE\wsdl11.wsdl" />
+    <None Include="Web References\SAP_FLIGHTCUSTOMERLIST\BAPIPAREX.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\SAP_FLIGHTCUSTOMERLIST\BAPIRET2.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\SAP_FLIGHTCUSTOMERLIST\BAPISCUCRA.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\SAP_FLIGHTCUSTOMERLIST\BAPISCUDAT.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\SAP_FLIGHTCUSTOMERLIST\Reference.map">
+      <Generator>MSDiscoCodeGenerator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+    <None Include="Web References\SAP_FLIGHTCUSTOMERLIST\wsdl11.wsdl" />
+    <None Include="Web References\SAP_FLIGHTLIST\BAPIPAREX.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\SAP_FLIGHTLIST\BAPIRET2.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\SAP_FLIGHTLIST\BAPISFLDAT.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\SAP_FLIGHTLIST\BAPISFLDRA.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\SAP_FLIGHTLIST\Reference.map">
+      <Generator>MSDiscoCodeGenerator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+    <None Include="Web References\SAP_FLIGHTLIST\wsdl11.wsdl" />
+    <None Include="Web References\SAP_FLIGHTTRIPCREATE\BAPIPAREX.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\SAP_FLIGHTTRIPCREATE\BAPIRET2.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\SAP_FLIGHTTRIPCREATE\BAPISTRPAS.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\SAP_FLIGHTTRIPCREATE\BAPISTRPRI.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\SAP_FLIGHTTRIPCREATE\Reference.map">
+      <Generator>MSDiscoCodeGenerator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+    <None Include="Web References\SAP_FLIGHTTRIPCREATE\wsdl11.wsdl" />
+    <None Include="Web References\SAP_FLIGHTTRIPLIST\BAPIPAREX.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\SAP_FLIGHTTRIPLIST\BAPIRET2.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\SAP_FLIGHTTRIPLIST\BAPISCODRA.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\SAP_FLIGHTTRIPLIST\BAPISTRDAT.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\SAP_FLIGHTTRIPLIST\Reference.map">
+      <Generator>MSDiscoCodeGenerator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+    <None Include="Web References\SAP_FLIGHTTRIPLIST\wsdl11.wsdl" />
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="SAPCredential.cs" />
+    <Compile Include="SAPCustomer.cs" />
+    <Compile Include="SAPFlight.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="SAPFlightConnection.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="SAPFlightTrip.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Web References\SAP_COMMITWORK\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.map</DependentUpon>
+    </Compile>
+    <Compile Include="Web References\SAP_FLIGHTAVAILIBILITY\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.map</DependentUpon>
+    </Compile>
+    <Compile Include="Web References\SAP_FLIGHTCONNDETAIL\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.map</DependentUpon>
+    </Compile>
+    <Compile Include="Web References\SAP_FLIGHTCONNLIST\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.map</DependentUpon>
+    </Compile>
+    <Compile Include="Web References\SAP_FLIGHTCUSTOMERCREATE\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.map</DependentUpon>
+    </Compile>
+    <Compile Include="Web References\SAP_FLIGHTCUSTOMERLIST\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.map</DependentUpon>
+    </Compile>
+    <Compile Include="Web References\SAP_FLIGHTLIST\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.map</DependentUpon>
+    </Compile>
+    <Compile Include="Web References\SAP_FLIGHTTRIPCREATE\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.map</DependentUpon>
+    </Compile>
+    <Compile Include="Web References\SAP_FLIGHTTRIPLIST\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.map</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <WebReferences Include="Web References\" />
+  </ItemGroup>
+  <ItemGroup>
+    <WebReferenceUrl Include="http://localhost:8000/sap/bc/soap/wsdl11%3fservices=BAPI_FLCONN_GETDETAIL">
+      <UrlBehavior>Dynamic</UrlBehavior>
+      <RelPath>Web References\SAP_FLIGHTCONNDETAIL\</RelPath>
+      <UpdateFromURL>http://localhost:8000/sap/bc/soap/wsdl11%3fservices=BAPI_FLCONN_GETDETAIL</UpdateFromURL>
+      <ServiceLocationURL>
+      </ServiceLocationURL>
+      <CachedDynamicPropName>
+      </CachedDynamicPropName>
+      <CachedAppSettingsObjectName>Settings</CachedAppSettingsObjectName>
+      <CachedSettingsPropName>ContosoTours_SAPServices_SAP_FLIGHTCONNDETAIL_BAPI_FLCONN_GETDETAILService</CachedSettingsPropName>
+    </WebReferenceUrl>
+    <WebReferenceUrl Include="http://localhost:8000/sap/bc/soap/wsdl11%3fservices=BAPI_FLCONN_GETLIST">
+      <UrlBehavior>Dynamic</UrlBehavior>
+      <RelPath>Web References\SAP_FLIGHTCONNLIST\</RelPath>
+      <UpdateFromURL>http://localhost:8000/sap/bc/soap/wsdl11%3fservices=BAPI_FLCONN_GETLIST</UpdateFromURL>
+      <ServiceLocationURL>
+      </ServiceLocationURL>
+      <CachedDynamicPropName>
+      </CachedDynamicPropName>
+      <CachedAppSettingsObjectName>Settings</CachedAppSettingsObjectName>
+      <CachedSettingsPropName>ContosoTours_SAPServices_SAP_FLIGHTCONNLIST_BAPI_FLCONN_GETLISTService</CachedSettingsPropName>
+    </WebReferenceUrl>
+    <WebReferenceUrl Include="http://localhost:8000/sap/bc/soap/wsdl11%3fservices=BAPI_FLCUST_CREATEFROMDATA">
+      <UrlBehavior>Dynamic</UrlBehavior>
+      <RelPath>Web References\SAP_FLIGHTCUSTOMERCREATE\</RelPath>
+      <UpdateFromURL>http://localhost:8000/sap/bc/soap/wsdl11%3fservices=BAPI_FLCUST_CREATEFROMDATA</UpdateFromURL>
+      <ServiceLocationURL>
+      </ServiceLocationURL>
+      <CachedDynamicPropName>
+      </CachedDynamicPropName>
+      <CachedAppSettingsObjectName>Settings</CachedAppSettingsObjectName>
+      <CachedSettingsPropName>ContosoTours_SAPServices_SAP_FLIGHTCUSTOMERCREATE_BAPI_FLCUST_CREATEFROMDATAService</CachedSettingsPropName>
+    </WebReferenceUrl>
+    <WebReferenceUrl Include="http://localhost:8000/sap/bc/soap/wsdl11%3fservices=BAPI_FLCUST_GETLIST">
+      <UrlBehavior>Dynamic</UrlBehavior>
+      <RelPath>Web References\SAP_FLIGHTCUSTOMERLIST\</RelPath>
+      <UpdateFromURL>http://localhost:8000/sap/bc/soap/wsdl11%3fservices=BAPI_FLCUST_GETLIST</UpdateFromURL>
+      <ServiceLocationURL>
+      </ServiceLocationURL>
+      <CachedDynamicPropName>
+      </CachedDynamicPropName>
+      <CachedAppSettingsObjectName>Settings</CachedAppSettingsObjectName>
+      <CachedSettingsPropName>ContosoTours_SAPServices_SAP_FLIGHTCUSTOMERLIST_BAPI_FLCUST_GETLISTService</CachedSettingsPropName>
+    </WebReferenceUrl>
+    <WebReferenceUrl Include="http://localhost:8000/sap/bc/soap/wsdl11%3fservices=BAPI_FLIGHT_CHECKAVAILIBILITY">
+      <UrlBehavior>Dynamic</UrlBehavior>
+      <RelPath>Web References\SAP_FLIGHTAVAILIBILITY\</RelPath>
+      <UpdateFromURL>http://localhost:8000/sap/bc/soap/wsdl11%3fservices=BAPI_FLIGHT_CHECKAVAILIBILITY</UpdateFromURL>
+      <ServiceLocationURL>
+      </ServiceLocationURL>
+      <CachedDynamicPropName>
+      </CachedDynamicPropName>
+      <CachedAppSettingsObjectName>Settings</CachedAppSettingsObjectName>
+      <CachedSettingsPropName>ContosoTours_SAPServices_SAP_FLIGHTAVAILIBILITY_BAPI_FLIGHT_CHECKAVAILIBILITYService</CachedSettingsPropName>
+    </WebReferenceUrl>
+    <WebReferenceUrl Include="http://localhost:8000/sap/bc/soap/wsdl11%3fservices=BAPI_FLIGHT_GETLIST">
+      <UrlBehavior>Dynamic</UrlBehavior>
+      <RelPath>Web References\SAP_FLIGHTLIST\</RelPath>
+      <UpdateFromURL>http://localhost:8000/sap/bc/soap/wsdl11%3fservices=BAPI_FLIGHT_GETLIST</UpdateFromURL>
+      <ServiceLocationURL>
+      </ServiceLocationURL>
+      <CachedDynamicPropName>
+      </CachedDynamicPropName>
+      <CachedAppSettingsObjectName>Settings</CachedAppSettingsObjectName>
+      <CachedSettingsPropName>ContosoTours_SAPServices_SAP_FLIGHTLIST_BAPI_FLIGHT_GETLISTService</CachedSettingsPropName>
+    </WebReferenceUrl>
+    <WebReferenceUrl Include="http://localhost:8000/sap/bc/soap/wsdl11%3fservices=BAPI_FLTRIP_CREATE">
+      <UrlBehavior>Dynamic</UrlBehavior>
+      <RelPath>Web References\SAP_FLIGHTTRIPCREATE\</RelPath>
+      <UpdateFromURL>http://localhost:8000/sap/bc/soap/wsdl11%3fservices=BAPI_FLTRIP_CREATE</UpdateFromURL>
+      <ServiceLocationURL>
+      </ServiceLocationURL>
+      <CachedDynamicPropName>
+      </CachedDynamicPropName>
+      <CachedAppSettingsObjectName>Settings</CachedAppSettingsObjectName>
+      <CachedSettingsPropName>ContosoTours_SAPServices_SAP_FLIGHTTRIPCREATE_BAPI_FLTRIP_CREATEService</CachedSettingsPropName>
+    </WebReferenceUrl>
+    <WebReferenceUrl Include="http://localhost:8000/sap/bc/soap/wsdl11%3fservices=BAPI_FLTRIP_GETLIST">
+      <UrlBehavior>Dynamic</UrlBehavior>
+      <RelPath>Web References\SAP_FLIGHTTRIPLIST\</RelPath>
+      <UpdateFromURL>http://localhost:8000/sap/bc/soap/wsdl11%3fservices=BAPI_FLTRIP_GETLIST</UpdateFromURL>
+      <ServiceLocationURL>
+      </ServiceLocationURL>
+      <CachedDynamicPropName>
+      </CachedDynamicPropName>
+      <CachedAppSettingsObjectName>Settings</CachedAppSettingsObjectName>
+      <CachedSettingsPropName>ContosoTours_SAPServices_SAP_FLIGHTTRIPLIST_BAPI_FLTRIP_GETLISTService</CachedSettingsPropName>
+    </WebReferenceUrl>
+    <WebReferenceUrl Include="http://localhost:8000/sap/bc/soap/wsdl11%3fservices=BAPI_TRANSACTION_COMMIT">
+      <UrlBehavior>Dynamic</UrlBehavior>
+      <RelPath>Web References\SAP_COMMITWORK\</RelPath>
+      <UpdateFromURL>http://localhost:8000/sap/bc/soap/wsdl11%3fservices=BAPI_TRANSACTION_COMMIT</UpdateFromURL>
+      <ServiceLocationURL>
+      </ServiceLocationURL>
+      <CachedDynamicPropName>
+      </CachedDynamicPropName>
+      <CachedAppSettingsObjectName>Settings</CachedAppSettingsObjectName>
+      <CachedSettingsPropName>ContosoTours_SAPServices_SAP_COMMITWORK_BAPI_TRANSACTION_COMMITService</CachedSettingsPropName>
+    </WebReferenceUrl>
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

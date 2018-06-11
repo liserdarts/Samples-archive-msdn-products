@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="PackagePerPromoType" targetNamespace="http://tempuri.org/PackagePerPackageType.xsd" xmlns:mstns="http://tempuri.org/PackagePerPackageType.xsd" xmlns="http://tempuri.org/PackagePerPackageType.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+        </Connections>
+        <Tables>
+        </Tables>
+        <Sources>
+        </Sources>
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="PackagePerPromoType" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:Generator_UserDSName="PackagePerPromoType" msprop:Generator_DataSetName="PackagePerPromoType">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="Package" msprop:Generator_UserTableName="Package" msprop:Generator_RowDeletedName="PackageRowDeleted" msprop:Generator_RowChangedName="PackageRowChanged" msprop:Generator_RowClassName="PackageRow" msprop:Generator_RowChangingName="PackageRowChanging" msprop:Generator_RowEvArgName="PackageRowChangeEvent" msprop:Generator_RowEvHandlerName="PackageRowChangeEventHandler" msprop:Generator_TableClassName="PackageDataTable" msprop:Generator_TableVarName="tablePackage" msprop:Generator_RowDeletingName="PackageRowDeleting" msprop:Generator_TablePropName="Package">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="PackageID" msprop:Generator_UserColumnName="PackageID" msprop:Generator_ColumnPropNameInRow="PackageID" msprop:Generator_ColumnVarNameInTable="columnPackageID" msprop:Generator_ColumnPropNameInTable="PackageIDColumn" type="xs:int" />
+              <xs:element name="PackageName" msprop:Generator_UserColumnName="PackageName" msprop:Generator_ColumnPropNameInRow="PackageName" msprop:Generator_ColumnVarNameInTable="columnPackageName" msprop:Generator_ColumnPropNameInTable="PackageNameColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="GoldPackageCount" msprop:Generator_UserColumnName="GoldPackageCount" msprop:Generator_ColumnPropNameInRow="GoldPackageCount" msprop:Generator_ColumnVarNameInTable="columnGoldPackageCount" msprop:Generator_ColumnPropNameInTable="GoldPackageCountColumn" type="xs:int" minOccurs="0" />
+              <xs:element name="GoldPackageTotalSales" msprop:Generator_UserColumnName="GoldPackageTotalSales" msprop:Generator_ColumnPropNameInRow="GoldPackageTotalSales" msprop:Generator_ColumnVarNameInTable="columnGoldPackageTotalSales" msprop:Generator_ColumnPropNameInTable="GoldPackageTotalSalesColumn" type="xs:decimal" minOccurs="0" />
+              <xs:element name="SilverPackageCount" msprop:Generator_UserColumnName="SilverPackageCount" msprop:Generator_ColumnPropNameInRow="SilverPackageCount" msprop:Generator_ColumnVarNameInTable="columnSilverPackageCount" msprop:Generator_ColumnPropNameInTable="SilverPackageCountColumn" type="xs:int" minOccurs="0" />
+              <xs:element name="SilverPackageTotalSales" msprop:Generator_UserColumnName="SilverPackageTotalSales" msprop:Generator_ColumnPropNameInRow="SilverPackageTotalSales" msprop:Generator_ColumnVarNameInTable="columnSilverPackageTotalSales" msprop:Generator_ColumnPropNameInTable="SilverPackageTotalSalesColumn" type="xs:decimal" minOccurs="0" />
+              <xs:element name="BronzePackageCount" msprop:Generator_UserColumnName="BronzePackageCount" msprop:Generator_ColumnPropNameInRow="BronzePackageCount" msprop:Generator_ColumnVarNameInTable="columnBronzePackageCount" msprop:Generator_ColumnPropNameInTable="BronzePackageCountColumn" type="xs:int" minOccurs="0" />
+              <xs:element name="BronzePackageTotalSales" msprop:Generator_UserColumnName="BronzePackageTotalSales" msprop:Generator_ColumnPropNameInRow="BronzePackageTotalSales" msprop:Generator_ColumnVarNameInTable="columnBronzePackageTotalSales" msprop:Generator_ColumnPropNameInTable="BronzePackageTotalSalesColumn" type="xs:decimal" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+    <xs:unique name="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:Package" />
+      <xs:field xpath="mstns:PackageID" />
+    </xs:unique>
+  </xs:element>
+</xs:schema>
