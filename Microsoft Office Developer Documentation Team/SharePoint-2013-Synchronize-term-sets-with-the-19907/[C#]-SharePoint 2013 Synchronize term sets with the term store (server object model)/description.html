@@ -1,0 +1,272 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
+    <head><link rel="stylesheet" type="text/css" href="description/Combined.css,0:HeaderFooterSprite,0:Header.NonMtps,1:LinkList;/Areas/Centers/Themes/StandardDevCenter/Content:0,/Areas/Epx/Themes/Base/Content:1&amp;amp;hashKey=C9973DA951AE6202C9B348379A1BE49D" xmlns="http://www.w3.org/1999/xhtml" />
+<link type="text/css" rel="stylesheet" xmlns="http://www.w3.org/1999/xhtml" />
+<link rel="stylesheet" type="text/css" href="description/1b88b18a-5268-4861-9da2-6c6e2539edaaCombined.css,0:HeaderFooterSprite,0:Footer.NonMtps,1:LinkList;/Areas/Centers/Themes/StandardDevCenter/Content:0,/Areas/Epx/Themes/Base/Content:1&amp;amp;hashKey=F576C687BC536B84D6E5B3246EE39B49" xmlns="http://www.w3.org/1999/xhtml" />
+<link type="text/css" rel="stylesheet" xmlns="http://www.w3.org/1999/xhtml" />
+
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <title>SharePoint 2013: Synchronize term sets with the term store (server object model)</title>
+        <link href="description/Galleries.css" type="text/css" rel="Stylesheet" /><link href="description/Layout.css" type="text/css" rel="Stylesheet" /><link href="description/Brand.css" type="text/css" rel="Stylesheet" />
+        <link href="description/iframedescription.css" rel="Stylesheet" type="text/css" />
+        <script src="description/offline.js" type="text/javascript"></script>
+        <style type="text/css">
+            #projectInfo {
+                overflow: auto;
+            }
+            #longDesc {
+                clear:both;
+                margin: 25px 0 10px 0;
+            }
+
+            #SampleIndexList{
+                margin-left: 15px;
+            }
+        </style>
+    </head>
+<body>
+    <div id="offlineDescription">
+        <h1>SharePoint 2013: Synchronize term sets with the term store (server object model)</h1>
+        <br/>
+        <div id="projectInfo">
+            <div class="section">
+                    <div class="itemBarLong tagsContainer">
+                        <label for="Technologies">Technologies</label>
+                        <div id="Technologies">
+                            SharePoint Server 2013
+                        </div>
+                    </div>
+                    <div class="itemBarLong tagsContainer">
+                        <label for="Topics">Topics</label>
+                        <div id="Topics">
+                            metadata, enterprise content management (ECM), taxonomy, content management, knowledge management
+                        </div>
+                    </div>
+                <div class="itemBarLong">
+                    <label for="Platforms">Platforms</label>
+                    <div id="Platforms">
+                        Web
+                    </div>
+                </div>
+                <div class="itemBarLong">
+                    <label for="Requirements">Requirements</label>
+                    <div id="Requirements">
+                        
+                    </div>
+                </div>
+                <div class="itemBar">
+                    <label for="LastUpdated">Primary language</label>
+                    <div id="LastUpdated">en-US</div>
+                </div>
+                <div class="itemBar">
+                    <label for="LastUpdated">Updated</label>
+                    <div id="LastUpdated">2/6/2013</div>
+                </div>
+                <div class="itemBarLong">
+                    <label for="License">License</label>
+                    <div id="License">
+                        <a href="license.rtf">Apache License, Version 2.0</a></div>
+                </div>
+                <div class="itemBar">
+                    <div class="viewonlinecont">
+                        <a data-link="online" href="http://code.msdn.microsoft.com/SharePoint-2013-Synchronize-4c191e68">View this sample online</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+                   
+<script type="text/javascript">
+    function initializePage() {
+        var otherTabClass = 'otherTab';
+        var hiddenPreClass = 'hidden';
+
+        var htmlDecode = function(encodedData) {
+            var decodedData = "";
+            if (encodedData) {
+                var div = document.createElement('div');
+                div.innerHTML = encodedData;
+                decodedData = div.firstChild.nodeValue.replace( /\\r\\n/ig , '\r\n');
+            }
+            return decodedData;
+        };
+                
+        Galleries.iterateElem(Galleries.findElem(null, 'div', 'scriptcode'), function (index, scriptBlock) {
+            var titleElem = Galleries.findElem(scriptBlock, 'div', 'title')[0];
+            var labelElems = Galleries.findElem(titleElem, 'span');
+            if (labelElems.length == 0) {
+                labelElems = titleElem;
+            }
+            var languageSpans = Galleries.findElem(scriptBlock, 'span', 'hidden');
+            var pres = Galleries.findElem(scriptBlock, 'pre');
+            if (languageSpans.length > 0 && pres.length > 1) {
+                Galleries.iterateElem(labelElems, function(index, elem) {
+                    var codePre = pres[index];
+                    var labelSpan = elem;
+                    var languageSpan = languageSpans[index];
+                            
+                    elem.code = codePre.innerHTML.replace( /(\r(\n)?)|((\r)?\n)/ig , '\\r\\n');
+                            
+                    codePre.className = codePre.className.replace(hiddenPreClass, '');
+                            
+                    languageSpan.parentNode.removeChild(languageSpan);
+                });
+
+                pres = Galleries.findElem(scriptBlock, 'pre');
+                Galleries.iterateElem(labelElems, function(index, elem) {
+                    var codePre = pres[index];
+                    var labelSpan = elem;
+                    if (index == 0) {
+                        scriptBlock.activeTab = 0;
+                    }
+                    else {
+                        labelSpan.className += otherTabClass;
+                        codePre.className += hiddenPreClass;
+                    }
+                    Galleries.attachEventHandler(labelSpan, 'click', function(e) {
+                        var activeTab = scriptBlock.activeTab;
+                        labelElems[activeTab].className += otherTabClass;
+                        pres[activeTab].className += hiddenPreClass;
+
+                        codePre.className = codePre.className.replace(hiddenPreClass, '');
+                        labelSpan.className = labelSpan.className.replace(otherTabClass, '');
+                        scriptBlock.activeTab = index;
+                    });
+                });
+
+                var preview = Galleries.findElem(scriptBlock, 'div', 'preview');
+                if (preview.length == 0) {
+                    preview.push(pres[pres.length - 1]);
+                }
+                Galleries.iterateElem(preview, function(index, elem) {
+                    elem.parentNode.removeChild(elem);
+                });
+
+                if (window.clipboardData && clipboardData.setData) {
+                    var copyLink = document.createElement('a');
+                    copyLink.href = 'javascript:void(0);';
+                    copyLink.className = 'copyCode';
+                    copyLink.innerHTML = 'Copy code';
+                    Galleries.attachEventHandler(copyLink, 'click', function (e) {
+                        clipboardData.setData("Text", htmlDecode(labelElems[scriptBlock.activeTab].code));
+                        return false;
+                    });
+                    scriptBlock.insertBefore(copyLink, scriptBlock.childNodes[0]);
+                }
+            }
+        });
+    }
+
+    Galleries.onWindowLoad(function(){
+        initializePage();
+    });
+
+</script>
+<div id="longDesc">
+    
+<h1 id="header">Description of the sample</h1>
+<div id="mainSection">
+<div id="mainBody">
+<div class="section" id="sectionSection0">
+<p>This sample is part of a series that demonstrates how to use the managed metadata service to create taxonomy hierarchies and apply tags to documents. This code extends the functionality found in the
+<span><a href="http://code.msdn.microsoft.com/SharePoint-2013-Synchronize-4c191e68/8b4ce4a4-664e-4524-b674-a60d1f5692a7.htm">SharePoint 2013: Import a term set from an external source</a></span> sample by incorporating a three-step algorithm for performing incremental updates.</p>
+<h3 class="subHeading">Prerequisites</h3>
+<div class="subsection">
+<p>This sample requires the following:</p>
+<ul>
+<li>
+<p>Visual Studio 2012</p>
+</li><li>
+<p>SharePoint development tools in Visual Studio 2012</p>
+</li><li>
+<p>A SharePoint 2013 development environment</p>
+</li><li>
+<p>A publishing site</p>
+</li></ul>
+</div>
+<h3 class="subHeading">Key components of the sample</h3>
+<div class="subsection">
+<p>This sample contains the following files:</p>
+<ul>
+<li>
+<p>Program.cs, which contains all of the C# code for the sample</p>
+</li><li>
+<p>ExternalTaxonomyData.xml, which contains test data that represents taxonomy data from an external source</p>
+</li><li>
+<p>1.xml, which is the first of four input files that you can use to demonstrate incremental updates</p>
+</li><li>
+<p>2.xml, which extends 1.xml and demonstrates incremental updates</p>
+</li><li>
+<p>3.xml, which extends 2.xml and demonstrates incremental updates</p>
+</li><li>
+<p>4.xml, which extends 3.xml and demonstrates incremental updates</p>
+</li></ul>
+</div>
+<h3 class="subHeading">Configure the sample</h3>
+<div class="subsection">
+<p>Follow these steps to configure the sample:</p>
+<ul>
+<li>
+<p>Open the Program.cs file and, if applicable, change the URL of the SharePoint <span>
+<span class="keyword">SPSite</span></span> object from http://localhost/ to your site URL.</p>
+</li><li>
+<p>If you want this sample to create a sample input file, uncomment the code block that generates an example XML file. This is useful if the XML schema has changed.</p>
+</li><li>
+<p>If you want to test the incremental synching algorithm, you can copy 1.xml, 2.xml, 3.xml, or 4.xml over ExternalTaxonomyData.xml.</p>
+</li></ul>
+</div>
+<h3 class="subHeading">Run and test the sample</h3>
+<div class="subsection">
+<p>This sample was designed to be run locally on the computer running SharePoint 2013.</p>
+<ul>
+<li>
+<p>Press <span class="ui">F5</span> to compile and run the sample.</p>
+</li></ul>
+<p>The sample parses the taxonomy hierarchy in the input file (ExternalTaxonomyData.xml or another file, such as 1.xml, if you want to test the incremental synching algorithm) and creates the corresponding objects in the SharePoint 2013 term store.</p>
+</div>
+<h3 class="subHeading">Change log</h3>
+<div class="subsection">
+<div class="caption"></div>
+<div class="tableSection">
+<table cellspacing="2" cellpadding="5" width="50%" frame="lhs">
+<tbody>
+<tr>
+<th>
+<p>Version</p>
+</th>
+<th>
+<p>Date</p>
+</th>
+</tr>
+<tr>
+<td>
+<p>First release</p>
+</td>
+<td>
+<p>December 6, 2012</p>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+<h1 class="heading">Related content</h1>
+<div class="section" id="seeAlsoSection">
+<div class="seeAlsoStyle"><span><a href="http://code.msdn.microsoft.com/SharePoint-2013-Import-a-4d3d900b" >SharePoint 2013: Import a term set from an external source</a></span></div>
+<div class="seeAlsoStyle"><span><a href="http://code.msdn.microsoft.com/SharePoint-2013-Synchronize-d40638d1" >SharePoint 2013: Synchronize term sets with the term store using the client object model</a></span></div>
+<div class="seeAlsoStyle"><span><a href="http://code.msdn.microsoft.com/SharePoint-2013-Automate-c0f4a10e" >SharePoint 2013: Automate tagging fields with terms by using the server object model</a></span></div>
+<div class="seeAlsoStyle"><span><a href="http://code.msdn.microsoft.com/SharePoint-2013-Automate-579cfc54" >SharePoint 2013: Automate tagging fields with terms by using the client object model</a></span></div>
+<div class="seeAlsoStyle"><a href="http://msdn.microsoft.com/library/113a5d75-ac4d-498b-8436-725e04fb685d(Office.15).aspx" >A Brief Introduction to Enterprise Metadata Management in SharePoint Server 2010
+</a></div>
+<div class="seeAlsoStyle"><a href="http://msdn.microsoft.com/library/08e4e4e1-d960-43fa-85df-f3c279ed6927.aspx" >Start: Set up the development environment for SharePoint 2013</a></div>
+</div>
+</div>
+</div>
+
+</div>
+
+
+    </div>
+</body>
+</html>
