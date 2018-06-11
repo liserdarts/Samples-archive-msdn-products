@@ -1,0 +1,6 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" dslVersion="1.0.0.0" Id="0992584f-9b5f-420b-8568-907e88cdc053" solutionId="0992584f-9b5f-420b-8568-907e88cdc053" resetWebServer="false" name="SPClaimViewer" xmlns="http://schemas.microsoft.com/VisualStudio/2008/SharePointTools/PackageModel">
+  <features>
+    <featureReference itemId="237e86c3-cc1c-4f6e-b047-d3b7bcd8ae91" />
+  </features>
+</package>

@@ -1,0 +1,15 @@
+C:\StudentFiles\LabFiles\Module_6\Lab\ContosoClaimProviders\ContosoClaimProviders\obj\Debug\ResolveAssemblyReference.cache
+C:\StudentFiles\LabFiles\Module_6\Lab\ContosoClaimProviders\ContosoClaimProviders\bin\Debug\ContosoClaimProviders.dll
+C:\StudentFiles\LabFiles\Module_6\Lab\ContosoClaimProviders\ContosoClaimProviders\bin\Debug\ContosoClaimProviders.pdb
+C:\StudentFiles\LabFiles\Module_6\Lab\ContosoClaimProviders\ContosoClaimProviders\obj\Debug\ContosoClaimProviders.dll
+C:\StudentFiles\LabFiles\Module_6\Lab\ContosoClaimProviders\ContosoClaimProviders\obj\Debug\ContosoClaimProviders.pdb
+C:\StudentFiles\LabFiles\Module_6\Solution\ContosoClaimProviders\ContosoClaimProviders\bin\Debug\ContosoClaimProviders.dll
+C:\StudentFiles\LabFiles\Module_6\Solution\ContosoClaimProviders\ContosoClaimProviders\bin\Debug\ContosoClaimProviders.pdb
+C:\StudentFiles\LabFiles\Module_6\Solution\ContosoClaimProviders\ContosoClaimProviders\obj\Debug\ResolveAssemblyReference.cache
+C:\StudentFiles\LabFiles\Module_6\Solution\ContosoClaimProviders\ContosoClaimProviders\obj\Debug\ContosoClaimProviders.dll
+C:\StudentFiles\LabFiles\Module_6\Solution\ContosoClaimProviders\ContosoClaimProviders\obj\Debug\ContosoClaimProviders.pdb
+C:\StudentFiles\LabFiles\Module_5\Solution\ContosoClaimProviders\ContosoClaimProviders\bin\Debug\ContosoClaimProviders.dll
+C:\StudentFiles\LabFiles\Module_5\Solution\ContosoClaimProviders\ContosoClaimProviders\bin\Debug\ContosoClaimProviders.pdb
+C:\StudentFiles\LabFiles\Module_5\Solution\ContosoClaimProviders\ContosoClaimProviders\obj\Debug\ResolveAssemblyReference.cache
+C:\StudentFiles\LabFiles\Module_5\Solution\ContosoClaimProviders\ContosoClaimProviders\obj\Debug\ContosoClaimProviders.dll
+C:\StudentFiles\LabFiles\Module_5\Solution\ContosoClaimProviders\ContosoClaimProviders\obj\Debug\ContosoClaimProviders.pdb

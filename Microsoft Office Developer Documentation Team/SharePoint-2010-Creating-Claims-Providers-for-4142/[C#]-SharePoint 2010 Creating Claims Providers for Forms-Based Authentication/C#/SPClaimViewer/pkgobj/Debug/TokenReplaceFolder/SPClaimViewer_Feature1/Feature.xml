@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Feature xmlns="http://schemas.microsoft.com/sharepoint/" Id="e8a2645f-2d4d-4355-8f9f-3622456639a1" Scope="Site" Title="Sample SharePoint Claim Viewer">
+  <ElementManifests>
+    <ElementManifest Location="SampleClaimViewer\Elements.xml" />
+    <ElementFile Location="SampleClaimViewer\ClaimViewer.webpart" />
+  </ElementManifests>
+</Feature>

@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Solution xmlns="http://schemas.microsoft.com/sharepoint/" SolutionId="0992584f-9b5f-420b-8568-907e88cdc053">
+  <Assemblies>
+    <Assembly Location="SPClaimViewer.dll" DeploymentTarget="GlobalAssemblyCache">
+      <SafeControls>
+        <SafeControl Assembly="SPClaimViewer, Version=1.0.0.0, Culture=neutral, PublicKeyToken=5ba45f449c800d58" Namespace="SPClaimViewer.ClaimViewer" TypeName="*" />
+      </SafeControls>
+    </Assembly>
+  </Assemblies>
+  <FeatureManifests>
+    <FeatureManifest Location="SPClaimViewer_Feature1\Feature.xml" />
+  </FeatureManifests>
+</Solution>

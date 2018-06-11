@@ -1,0 +1,15 @@
+C:\StudentFiles\LabFiles\Module_6\Lab\ContosoClaimProviders\SPClaimViewer\bin\Debug\SPClaimViewer.dll
+C:\StudentFiles\LabFiles\Module_6\Lab\ContosoClaimProviders\SPClaimViewer\bin\Debug\SPClaimViewer.pdb
+C:\StudentFiles\LabFiles\Module_6\Lab\ContosoClaimProviders\SPClaimViewer\obj\Debug\ResolveAssemblyReference.cache
+C:\StudentFiles\LabFiles\Module_6\Lab\ContosoClaimProviders\SPClaimViewer\obj\Debug\SPClaimViewer.dll
+C:\StudentFiles\LabFiles\Module_6\Lab\ContosoClaimProviders\SPClaimViewer\obj\Debug\SPClaimViewer.pdb
+C:\StudentFiles\LabFiles\Module_6\Solution\ContosoClaimProviders\SPClaimViewer\bin\Debug\SPClaimViewer.dll
+C:\StudentFiles\LabFiles\Module_6\Solution\ContosoClaimProviders\SPClaimViewer\bin\Debug\SPClaimViewer.pdb
+C:\StudentFiles\LabFiles\Module_6\Solution\ContosoClaimProviders\SPClaimViewer\obj\Debug\ResolveAssemblyReference.cache
+C:\StudentFiles\LabFiles\Module_6\Solution\ContosoClaimProviders\SPClaimViewer\obj\Debug\SPClaimViewer.dll
+C:\StudentFiles\LabFiles\Module_6\Solution\ContosoClaimProviders\SPClaimViewer\obj\Debug\SPClaimViewer.pdb
+C:\StudentFiles\LabFiles\Module_5\Solution\ContosoClaimProviders\SPClaimViewer\bin\Debug\SPClaimViewer.dll
+C:\StudentFiles\LabFiles\Module_5\Solution\ContosoClaimProviders\SPClaimViewer\bin\Debug\SPClaimViewer.pdb
+C:\StudentFiles\LabFiles\Module_5\Solution\ContosoClaimProviders\SPClaimViewer\obj\Debug\ResolveAssemblyReference.cache
+C:\StudentFiles\LabFiles\Module_5\Solution\ContosoClaimProviders\SPClaimViewer\obj\Debug\SPClaimViewer.dll
+C:\StudentFiles\LabFiles\Module_5\Solution\ContosoClaimProviders\SPClaimViewer\obj\Debug\SPClaimViewer.pdb
