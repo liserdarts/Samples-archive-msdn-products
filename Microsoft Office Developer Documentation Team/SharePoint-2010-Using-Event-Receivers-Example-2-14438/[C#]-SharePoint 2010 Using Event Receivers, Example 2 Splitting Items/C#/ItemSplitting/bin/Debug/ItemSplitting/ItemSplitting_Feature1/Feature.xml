@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Feature xmlns="http://schemas.microsoft.com/sharepoint/" Id="68c43686-560a-4158-b6ac-035a3744519c" Scope="Web" Title="ItemSplitting Feature1">
+  <ElementManifests>
+    <ElementManifest Location="XBox360Bundle\Elements.xml" />
+    <ElementManifest Location="XBox360\Elements.xml" />
+    <ElementManifest Location="Kinect\Elements.xml" />
+  </ElementManifests>
+</Feature>

@@ -1,0 +1,6 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" dslVersion="1.0.0.0" Id="b5906afc-bcf4-4123-92ee-aa4597dc23d7" solutionId="b5906afc-bcf4-4123-92ee-aa4597dc23d7" resetWebServer="false" name="ItemSplitting" xmlns="http://schemas.microsoft.com/VisualStudio/2008/SharePointTools/PackageModel">
+  <features>
+    <featureReference itemId="a4ddbf94-95ae-4586-a23b-c334c1ca47ae" />
+  </features>
+</package>

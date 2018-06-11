@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Solution xmlns="http://schemas.microsoft.com/sharepoint/" SolutionId="b5906afc-bcf4-4123-92ee-aa4597dc23d7" SharePointProductVersion="14.0">
+  <Assemblies>
+    <Assembly Location="ItemSplitting.dll" DeploymentTarget="GlobalAssemblyCache" />
+  </Assemblies>
+  <FeatureManifests>
+    <FeatureManifest Location="ItemSplitting_Feature1\Feature.xml" />
+  </FeatureManifests>
+</Solution>

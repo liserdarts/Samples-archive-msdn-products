@@ -1,0 +1,5 @@
+C:\Users\alibad\Desktop\ItemSplitting\ItemSplitting\bin\Debug\ItemSplitting.dll
+C:\Users\alibad\Desktop\ItemSplitting\ItemSplitting\bin\Debug\ItemSplitting.pdb
+C:\Users\alibad\Desktop\ItemSplitting\ItemSplitting\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\alibad\Desktop\ItemSplitting\ItemSplitting\obj\Debug\ItemSplitting.dll
+C:\Users\alibad\Desktop\ItemSplitting\ItemSplitting\obj\Debug\ItemSplitting.pdb

@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">
+  <!-- Parent ContentType: Item (0x01) -->
+  <ContentType ID="0x01004497ac28eb9a47fbabee43f48c3f5973"
+               Name="XBox360Bundle"
+               Group="Custom Content Types"
+               Description="My Content Type"
+               Inherits="TRUE"
+               Version="0">
+    <FieldRefs>
+    </FieldRefs>
+    <XmlDocuments>
+      <XmlDocument NamespaceURI="http://schemas.microsoft.com/sharepoint/events">
+        <spe:Receivers xmlns:spe="http://schemas.microsoft.com/sharepoint/events">
+          <Receiver>
+            <Name>Item Adding Event</Name>
+            <Type>ItemAdding</Type>
+            <Assembly>ItemSplitting, Version=1.0.0.0, Culture=neutral, PublicKeyToken=5263ed8f10f8387b</Assembly>
+            <Class>ItemSplitting.BundleEventReceiver.BundleEventReceiver</Class>
+            <SequenceNumber>10000</SequenceNumber>
+          </Receiver>
+        </spe:Receivers>
+      </XmlDocument>
+    </XmlDocuments>
+  </ContentType>
+</Elements>
