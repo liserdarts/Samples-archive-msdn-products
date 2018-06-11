@@ -1,0 +1,16 @@
+C:\Users\nahopp\AppData\Local\Microsoft\VisualStudio\10.0Exp\Extensions\Microsoft\VisualStudioSearchExtension\1.0\\VisualStudioSearchExtension.dll
+C:\Users\nahopp\AppData\Local\Microsoft\VisualStudio\10.0Exp\Extensions\Microsoft\VisualStudioSearchExtension\1.0\\Microsoft.Lync.Controls.dll
+C:\Users\nahopp\AppData\Local\Microsoft\VisualStudio\10.0Exp\Extensions\Microsoft\VisualStudioSearchExtension\1.0\\Microsoft.Lync.Controls.Framework.dll
+C:\Users\nahopp\AppData\Local\Microsoft\VisualStudio\10.0Exp\Extensions\Microsoft\VisualStudioSearchExtension\1.0\\Microsoft.Lync.Model.dll
+C:\Users\nahopp\AppData\Local\Microsoft\VisualStudio\10.0Exp\Extensions\Microsoft\VisualStudioSearchExtension\1.0\\Microsoft.Lync.Utilities.dll
+C:\Users\nahopp\AppData\Local\Microsoft\VisualStudio\10.0Exp\Extensions\Microsoft\VisualStudioSearchExtension\1.0\\Microsoft.Office.Uc.dll
+C:\Users\nahopp\AppData\Local\Microsoft\VisualStudio\10.0Exp\Extensions\Microsoft\VisualStudioSearchExtension\1.0\\extension.vsixmanifest
+C:\Users\nahopp\AppData\Local\Microsoft\VisualStudio\10.0Exp\Extensions\Microsoft\VisualStudioSearchExtension\1.0\\VisualStudioSearchExtension.pdb
+C:\Users\a-kaistr\AppData\Local\Microsoft\VisualStudio\10.0Exp\Extensions\Microsoft\VisualStudioSearchExtension\1.0\\VisualStudioSearchExtension.dll
+C:\Users\a-kaistr\AppData\Local\Microsoft\VisualStudio\10.0Exp\Extensions\Microsoft\VisualStudioSearchExtension\1.0\\Microsoft.Lync.Controls.dll
+C:\Users\a-kaistr\AppData\Local\Microsoft\VisualStudio\10.0Exp\Extensions\Microsoft\VisualStudioSearchExtension\1.0\\Microsoft.Lync.Controls.Framework.dll
+C:\Users\a-kaistr\AppData\Local\Microsoft\VisualStudio\10.0Exp\Extensions\Microsoft\VisualStudioSearchExtension\1.0\\Microsoft.Lync.Model.dll
+C:\Users\a-kaistr\AppData\Local\Microsoft\VisualStudio\10.0Exp\Extensions\Microsoft\VisualStudioSearchExtension\1.0\\Microsoft.Lync.Utilities.dll
+C:\Users\a-kaistr\AppData\Local\Microsoft\VisualStudio\10.0Exp\Extensions\Microsoft\VisualStudioSearchExtension\1.0\\Microsoft.Office.Uc.dll
+C:\Users\a-kaistr\AppData\Local\Microsoft\VisualStudio\10.0Exp\Extensions\Microsoft\VisualStudioSearchExtension\1.0\\extension.vsixmanifest
+C:\Users\a-kaistr\AppData\Local\Microsoft\VisualStudio\10.0Exp\Extensions\Microsoft\VisualStudioSearchExtension\1.0\\VisualStudioSearchExtension.pdb
