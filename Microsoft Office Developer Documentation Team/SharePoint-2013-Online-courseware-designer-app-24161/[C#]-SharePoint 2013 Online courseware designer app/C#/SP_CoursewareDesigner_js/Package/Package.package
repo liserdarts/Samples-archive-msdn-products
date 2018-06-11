@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package dslVersion="1.0.0.0" 
+        Id="20b3bf4b-6548-46f2-9ee0-bc6f00952720" 
+        solutionId="20b3bf4b-6548-46f2-9ee0-bc6f00952720" 
+        xmlns="http://schemas.microsoft.com/VisualStudio/2008/SharePointTools/PackageModel" 
+        name="SP_CoursewareDesigner_js"
+        sharePointProductVersion="15.0">
+  <features>
+        <featureReference itemId="230fd5a3-b8da-4d78-8af1-a23e81a21a42" />
+  </features>
+</package>
