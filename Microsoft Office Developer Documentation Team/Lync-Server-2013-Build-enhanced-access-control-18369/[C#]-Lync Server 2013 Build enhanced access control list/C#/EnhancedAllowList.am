@@ -1,0 +1,291 @@
+﻿<?xml version="1.0"?>
+<r:applicationManifest
+ r:appUri="http://www.microsoft.com/LC/SDK/Samples/EnhancedAllowList"
+ xmlns:r="http://schemas.microsoft.com/lcs/2006/05">
+
+    <!-- We need to look at all requests which do not have Route headers.
+        The presence of Route header implies that we have authorized
+        the dialog
+    -->        
+    <r:requestFilter methodNames="ALL" strictRoute="false"/>
+
+    <!-- We can ignore responses since we need to authorize requests only. -->  
+    <r:responseFilter reasonCodes="NONE"/>
+
+    <!-- Enhanced Allow List Configuration File.
+        
+            <domain>   <action>
+        where 
+        
+        <domain> is a string that identifies a SIP domain (e.g., contoso.com).
+    
+        <action> can be allow | deny (case sensitive).
+        
+        If the action is allow, then the message will be considered authorized and proxied.
+        If the action is deny, then the message will be rejected with a 403 Forbidden.
+        
+        If the domain is not present in the list then the message will be handled based on the
+        UnknownDomainConfig file specified below.
+        
+    -->
+
+    <r:file name="EnhancedAllowList" path="EnhancedAllowListConfig.txt" delimitedBy="whitespace" keyColumnName="Domain" static="false">
+        <r:column name="Domain" />
+        <r:column name="Action" />
+    </r:file>  
+    
+    <!-- Unknown domain configuration File. Used only if the domain of the request is not present
+        in EnhancedAllowList.
+        
+        <edge>  <action> 
+        where no
+
+        <edge> is a string that identifies the network edge. It can have values, external or internal.
+            This identifies the network edge from where the request is received. There can be exactly
+            two entries in this file.
+
+        <action> can be respond-403 | respond-504 | dispatch | allow.
+
+            If the action is respond-403, the script generates a 403 Forbidden.
+            If the action is respond-504, the script generates a 504 Server Timeout.
+            If the action is allow, the script allows the request to go through.
+            If the action is dispatch, the script dispatches it to managed code to the handler
+                named OnRequest.
+    -->
+    <r:file name="UnknownDomainConfig" path="UnknownDomainConfig.txt" delimitedBy="whitespace" keyColumnName="Edge" static="false">
+        <r:column name="Edge" /> <!-- external or internal -->
+        <r:column name="Action" />
+    </r:file>  
+    
+  <r:splScript><![CDATA[
+
+/*++
+
+Copyright � Microsoft Corporation
+
+Module Name:
+
+	EnhancedAllowList.am
+
+Abstract:
+
+    The EnhancedAllowList application provides enhanced filtering and domain authorization
+    using application supplied allow list on the access proxy. It is designed to be 
+    used with enhanced federation. Its functionality is summarized below:
+    
+    1) When requests arrive from internal edge, the target domain (To domain) is validated. 
+    If it is an unknown domain, the action specified in the UnknownDomainConfig file for 
+    internal edge is carried out.
+    
+    2) When requests arrive from external edge, the source domain (From domain) is validated.
+    If it is an unknown domain, the action specified in the UnknownDomainConfig file for 
+    external edge is carried out.
+    
+    A domain is considered known if it belongs to the Server's internal server list or the block list
+    or the EnhancedAllowList config file maintained by this application. New(er) domains are
+    added to EnhancedAllowList based on policy rules implemented in the managed handler.  
+    
+--*/
+
+    //
+    // This routine looks up a domain in the EnhancedAllowList.
+    //
+    
+    function LookupDomainInEnhancedAllowList(domain)
+    {
+        action = EnhancedAllowList[domain].Action;
+        if (action == "deny") {
+            return 1;
+        }
+        else if (action == "allow") {
+            return 0;
+        }
+        else {
+            return -1;
+        }
+    }
+    
+    //
+    // This routine checks the UnknownDomainConfig file and carries out
+    // the action it specifies.
+    //
+    
+    function ExecuteUnknownDomainConfigRule()
+    {
+        if (sipMessage.Origin == MessageOrigin.NetworkExternal) {
+            edge = "external";
+        }
+        else if (sipMessage.Origin == MessageOrigin.NetworkInternal) {
+            edge = "internal";
+        }
+        else {
+            return;
+        }
+        
+        action = UnknownDomainConfig[edge].Action;
+        Log ("Debug", false, "Found action - ", action, " - for edge ", edge);
+        
+        switch (action) {
+            case "respond-504":
+                Log ("Debug", false, "Responding with 504.");
+                Respond (504, "Server Time-Out"); // The ReasonPhrase spelling is intentional.
+                break;
+                
+            case "respond-403":
+                Log ("Debug", false, "Responding with 403.");
+                Respond (403, "FOrbidden"); // The ReasonPhrase spelling is intentional.
+                break;
+                
+            case "allow":
+                Log ("Debug", false, "Allowed - Proxying request.");
+                return;
+            
+            default:
+                Log ("Debug", false, "Unknown action - responding with 500.");
+                Respond (500, "Internal Script Error");
+                return;
+                
+            case "dispatch":
+                
+                Log ("Debug", false, "Dispatching to managed code ");
+                dispatched = Dispatch("OnRequest");
+                if (!dispatched) {
+                    Log ("Debug", false, "Dispatch failed - responding with 503.");
+                    Respond (503, "");
+                    break;
+                }
+                return;
+        }
+    }        
+        
+   
+    //
+    // This routine handles request processing for messages arriving from
+    //  internal network and is responsible for dispatching requests 
+    //  destined to unknown domains to managed code for further authorization.
+    //
+    
+    function ProcessRequestFromInternalNetwork()
+    {
+        //
+        // Step 1. Get the target domain.
+        //
+        
+        toDomain = GetHostName(GetUri(sipRequest.To));
+        Log ("Debug", false, "Enter InternalNetwork - ToDomain is ", toDomain);
+        
+        //
+        // Step 2. Check whether To domain is known in the Server's configuration.
+        //
+        
+        if (QueryDomain(Domain.Internal, toDomain)) {
+            Log ("Debug", false, "Exit. Allowing message to known internal domain.");
+            return;
+        }
+        
+        if (QueryDomain(Domain.Deny, toDomain)) {
+            Log ("Debug", false, "Exit. Message to a denied domain - Stack will filter it out.");
+            return;
+        }
+        
+        //
+        // Step 3. Check whether this domain is present in our Enhanced Allow List and 
+        // carry out the action it specifies.
+        //
+        
+        action = LookupDomainInEnhancedAllowList(toDomain);
+        
+        if (action == 1) {
+            Log ("Debug", false, "Exit. Rejected by policy.");
+            Respond(403, "Forbidden");
+            return;
+        }
+        else if (action == 0) {
+            Log ("Debug", false, "Exit. Allowed by policy.");
+            return;
+        }
+         
+        //
+        // Step 4. Carry out action for unknown domain. 
+        //
+        
+        ExecuteUnknownDomainConfigRule();
+        return;
+    }   
+  
+    //
+    // This routine handles request processing for messages arriving from
+    //  external network. Its task is to dispatch requests originating from
+    //  unknown domains to managed code for further authorization.
+    //
+    
+    function ProcessRequestFromExternalNetwork()
+    {
+        //
+        // Step 1. Get the source domain.
+        //
+        
+        fromDomain = GetHostName(GetUri(sipRequest.From));
+        Log ("Debug", false, "Enter ExternalNetwork - FromDomain is ", fromDomain);
+        
+        //
+        // Step 2. Check whether source domain is known in the Server's configuration.
+        //
+        
+        if (QueryDomain(Domain.Internal, fromDomain)) {
+            Log ("Debug", false, "Exit. Allowing message from known internal domain.");
+            return;
+        }
+        
+        if (QueryDomain(Domain.Deny, fromDomain)) {
+            Log ("Debug", false, "Exit. Message from a denied domain - Stack will filter it out.");
+            return;
+        }
+        
+        //
+        // Step 3. Check whether this domain is present in our Enhanced Allow List and 
+        // carry out the action it specifies.
+        //
+        
+        action = EnhancedAllowList[fromDomain].Action;
+        
+        if (action == 1) {
+            Log ("Debug", false, "Exit. Rejected by policy.");
+            Respond(403, "Forbidden");
+            return;
+         }
+         else if (action == 0) {
+            Log ("Debug", false, "Exit. Allowed by policy.");
+            return;
+         }
+         
+        //
+        // Step 4. Carry out action for unknown domain. 
+        //
+        
+        ExecuteUnknownDomainConfigRule();
+        return;
+    }        
+    
+    //
+    // Main program.
+    //
+
+    Log ("Debug", false, "We have a request - ", sipRequest.Method);
+    Log ("Debug", false, "Origin - ", sipMessage.Origin);
+    
+    //
+    // Process this message based on the network origin.
+    //
+    
+    if (sipMessage.Origin == MessageOrigin.NetworkInternal) {
+        ProcessRequestFromInternalNetwork();
+    }
+    else if (sipMessage.Origin == MessageOrigin.NetworkExternal) {
+        ProcessRequestFromExternalNetwork();
+    }
+
+    return;
+   
+]]></r:splScript>
+</r:applicationManifest>

@@ -1,0 +1,13 @@
+C:\Users\kdeding\Desktop\MyApps\LyncServerApps\EnhancedAllowList\obj\x86\Debug\EnhancedAllowList.EnhancedAllowList.resources
+C:\Users\kdeding\Desktop\MyApps\LyncServerApps\EnhancedAllowList\obj\x86\Debug\EnhancedAllowList.csproj.GenerateResource.Cache
+C:\Users\kdeding\Desktop\MyApps\LyncServerApps\EnhancedAllowList\bin\Debug\EnhancedAllowList.exe
+C:\Users\kdeding\Desktop\MyApps\LyncServerApps\EnhancedAllowList\bin\Debug\EnhancedAllowList.pdb
+C:\Users\kdeding\Desktop\MyApps\LyncServerApps\EnhancedAllowList\bin\Debug\ServerAgent.dll
+C:\Users\kdeding\Desktop\MyApps\LyncServerApps\EnhancedAllowList\obj\x86\Debug\EnhancedAllowList.exe
+C:\Users\kdeding\Desktop\MyApps\LyncServerApps\EnhancedAllowList\obj\x86\Debug\EnhancedAllowList.pdb
+C:\Users\kdeding\Desktop\MyApps\LyncServerApps\EnhancedAllowList\bin\Debug\EnhancedAllowList.resx
+C:\Users\kdeding\Desktop\MyApps\LyncServerApps\EnhancedAllowList\bin\Debug\EnhancedAllowList.am
+C:\Users\kdeding\Desktop\MyApps\LyncServerApps\EnhancedAllowList\bin\Debug\EnhancedAllowListConfig.txt
+C:\Users\kdeding\Desktop\MyApps\LyncServerApps\EnhancedAllowList\bin\Debug\EnhancedAllowListReadme.txt
+C:\Users\kdeding\Desktop\MyApps\LyncServerApps\EnhancedAllowList\bin\Debug\UnknownDomainConfig.txt
+C:\Users\kdeding\Desktop\MyApps\LyncServerApps\EnhancedAllowList\bin\Debug\EnhancedAllowList.exe.config

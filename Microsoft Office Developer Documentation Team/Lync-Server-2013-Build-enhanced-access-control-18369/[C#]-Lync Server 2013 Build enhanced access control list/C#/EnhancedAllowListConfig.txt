@@ -1,0 +1,2 @@
+Domain.Example1    deny
+Domain.Example2    allow
