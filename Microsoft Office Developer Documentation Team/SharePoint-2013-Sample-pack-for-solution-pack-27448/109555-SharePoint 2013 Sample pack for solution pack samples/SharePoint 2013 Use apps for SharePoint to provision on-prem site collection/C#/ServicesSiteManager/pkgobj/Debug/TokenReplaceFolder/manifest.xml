@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Solution xmlns="http://schemas.microsoft.com/sharepoint/" SolutionId="cbb7978e-8ccc-4e8e-8525-207327dfece8" SharePointProductVersion="15.0">
+  <Assemblies>
+    <Assembly Location="Contoso.Services.SiteManager.dll" DeploymentTarget="GlobalAssemblyCache" />
+  </Assemblies>
+  <RootFiles>
+    <RootFile Location="ISAPI\Contoso.Services.SiteManager\SiteManager.svc" />
+  </RootFiles>
+  <FeatureManifests>
+    <FeatureManifest Location="Contoso.Services.SiteManager_ApplicationConfigureServices\Feature.xml" />
+  </FeatureManifests>
+</Solution>

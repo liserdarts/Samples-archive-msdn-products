@@ -1,0 +1,2 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Feature xmlns="http://schemas.microsoft.com/sharepoint/" Title="ServicesSiteManager Default WebApplication feature for Configuring Services" Id="d06b4778-80a1-420f-ae27-ce247138476b" ReceiverAssembly="ServicesSiteManager, Version=1.0.0.0, Culture=neutral, PublicKeyToken=63f8f2a54aa514e6" ReceiverClass="ServicesSiteManager.Features.ApplicationConfigureServices.ApplicationConfigureServicesEventReceiver" Scope="WebApplication"></Feature>

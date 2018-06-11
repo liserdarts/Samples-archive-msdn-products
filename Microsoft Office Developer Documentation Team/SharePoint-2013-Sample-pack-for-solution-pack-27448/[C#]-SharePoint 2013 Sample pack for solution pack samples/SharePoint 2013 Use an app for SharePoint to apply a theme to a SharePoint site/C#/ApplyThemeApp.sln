@@ -1,0 +1,28 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ApplyThemeApp", "ApplyThemeApp\ApplyThemeApp.csproj", "{0DBA6F26-6433-4C25-99FF-72D9FE04284D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ApplyThemeAppWeb", "ApplyThemeAppWeb\ApplyThemeAppWeb.csproj", "{E02943EF-1D10-47AA-B073-60655C84D09F}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{0DBA6F26-6433-4C25-99FF-72D9FE04284D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0DBA6F26-6433-4C25-99FF-72D9FE04284D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0DBA6F26-6433-4C25-99FF-72D9FE04284D}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{0DBA6F26-6433-4C25-99FF-72D9FE04284D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0DBA6F26-6433-4C25-99FF-72D9FE04284D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0DBA6F26-6433-4C25-99FF-72D9FE04284D}.Release|Any CPU.Deploy.0 = Release|Any CPU
+		{E02943EF-1D10-47AA-B073-60655C84D09F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E02943EF-1D10-47AA-B073-60655C84D09F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E02943EF-1D10-47AA-B073-60655C84D09F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E02943EF-1D10-47AA-B073-60655C84D09F}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

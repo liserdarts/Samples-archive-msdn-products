@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Solution xmlns="http://schemas.microsoft.com/sharepoint/" SolutionId="cbb7978e-8ccc-4e8e-8525-207327dfece8" SharePointProductVersion="15.0">
+  <Assemblies>
+    <Assembly Location="ServicesSiteManager.dll" DeploymentTarget="GlobalAssemblyCache" />
+  </Assemblies>
+  <RootFiles>
+    <RootFile Location="ISAPI\ServicesSiteManager\SiteManager.svc" />
+  </RootFiles>
+  <FeatureManifests>
+    <FeatureManifest Location="ServicesSiteManager_ApplicationConfigureServices\Feature.xml" />
+  </FeatureManifests>
+</Solution>

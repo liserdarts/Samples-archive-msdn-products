@@ -1,0 +1,521 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
+    <head><link rel="stylesheet" type="text/css" href="description/Combined.css,0:HeaderFooterSprite,0:Header.NonMtps,1:LinkList;/Areas/Centers/Themes/StandardDevCenter/Content:0,/Areas/Epx/Themes/Base/Content:1&amp;amp;hashKey=C9973DA951AE6202C9B348379A1BE49D" xmlns="http://www.w3.org/1999/xhtml" />
+<link type="text/css" rel="stylesheet" xmlns="http://www.w3.org/1999/xhtml" />
+<link rel="stylesheet" type="text/css" href="description/1b88b18a-5268-4861-9da2-6c6e2539edaaCombined.css,0:HeaderFooterSprite,0:Footer.NonMtps,1:LinkList;/Areas/Centers/Themes/StandardDevCenter/Content:0,/Areas/Epx/Themes/Base/Content:1&amp;amp;hashKey=F576C687BC536B84D6E5B3246EE39B49" xmlns="http://www.w3.org/1999/xhtml" />
+<link type="text/css" rel="stylesheet" xmlns="http://www.w3.org/1999/xhtml" />
+
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <title>SharePoint 2013: Use an app for SharePoint to provision a wiki page</title>
+        <link href="description/Galleries.css" type="text/css" rel="Stylesheet" /><link href="description/Layout.css" type="text/css" rel="Stylesheet" /><link href="description/Brand.css" type="text/css" rel="Stylesheet" />
+        <link href="description/iframedescription.css" rel="Stylesheet" type="text/css" />
+        <script src="description/offline.js" type="text/javascript"></script>
+        <style type="text/css">
+            #projectInfo {
+                overflow: auto;
+            }
+            #longDesc {
+                clear:both;
+                margin: 25px 0 10px 0;
+            }
+
+            #SampleIndexList{
+                margin-left: 15px;
+            }
+        </style>
+    </head>
+<body>
+    <div id="offlineDescription">
+        <h1>SharePoint 2013: Use an app for SharePoint to provision a wiki page</h1>
+        <br/>
+        <div id="projectInfo">
+            <div class="section">
+                    <div class="itemBarLong tagsContainer">
+                        <label for="Technologies">Technologies</label>
+                        <div id="Technologies">
+                            SharePoint Server 2013, apps for SharePoint
+                        </div>
+                    </div>
+                    <div class="itemBarLong tagsContainer">
+                        <label for="Topics">Topics</label>
+                        <div id="Topics">
+                            App model, User Experience, Microsoft SharePoint technologies, sites and content
+                        </div>
+                    </div>
+                <div class="itemBarLong">
+                    <label for="Platforms">Platforms</label>
+                    <div id="Platforms">
+                        Cloud
+                    </div>
+                </div>
+                <div class="itemBarLong">
+                    <label for="Requirements">Requirements</label>
+                    <div id="Requirements">
+                        
+                    </div>
+                </div>
+                <div class="itemBar">
+                    <label for="LastUpdated">Primary language</label>
+                    <div id="LastUpdated">en-US</div>
+                </div>
+                <div class="itemBar">
+                    <label for="LastUpdated">Updated</label>
+                    <div id="LastUpdated">2/28/2014</div>
+                </div>
+                <div class="itemBarLong">
+                    <label for="License">License</label>
+                    <div id="License">
+                        <a href="license.rtf">Apache License, Version 2.0</a></div>
+                </div>
+                <div class="itemBar">
+                    <div class="viewonlinecont">
+                        <a data-link="online" href="http://code.msdn.microsoft.com/SharePoint-2013-Use-an-app-5db977e8">View this sample online</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+                   
+<script type="text/javascript">
+    function initializePage() {
+        var otherTabClass = 'otherTab';
+        var hiddenPreClass = 'hidden';
+
+        var htmlDecode = function(encodedData) {
+            var decodedData = "";
+            if (encodedData) {
+                var div = document.createElement('div');
+                div.innerHTML = encodedData;
+                decodedData = div.firstChild.nodeValue.replace( /\\r\\n/ig , '\r\n');
+            }
+            return decodedData;
+        };
+                
+        Galleries.iterateElem(Galleries.findElem(null, 'div', 'scriptcode'), function (index, scriptBlock) {
+            var titleElem = Galleries.findElem(scriptBlock, 'div', 'title')[0];
+            var labelElems = Galleries.findElem(titleElem, 'span');
+            if (labelElems.length == 0) {
+                labelElems = titleElem;
+            }
+            var languageSpans = Galleries.findElem(scriptBlock, 'span', 'hidden');
+            var pres = Galleries.findElem(scriptBlock, 'pre');
+            if (languageSpans.length > 0 && pres.length > 1) {
+                Galleries.iterateElem(labelElems, function(index, elem) {
+                    var codePre = pres[index];
+                    var labelSpan = elem;
+                    var languageSpan = languageSpans[index];
+                            
+                    elem.code = codePre.innerHTML.replace( /(\r(\n)?)|((\r)?\n)/ig , '\\r\\n');
+                            
+                    codePre.className = codePre.className.replace(hiddenPreClass, '');
+                            
+                    languageSpan.parentNode.removeChild(languageSpan);
+                });
+
+                pres = Galleries.findElem(scriptBlock, 'pre');
+                Galleries.iterateElem(labelElems, function(index, elem) {
+                    var codePre = pres[index];
+                    var labelSpan = elem;
+                    if (index == 0) {
+                        scriptBlock.activeTab = 0;
+                    }
+                    else {
+                        labelSpan.className += otherTabClass;
+                        codePre.className += hiddenPreClass;
+                    }
+                    Galleries.attachEventHandler(labelSpan, 'click', function(e) {
+                        var activeTab = scriptBlock.activeTab;
+                        labelElems[activeTab].className += otherTabClass;
+                        pres[activeTab].className += hiddenPreClass;
+
+                        codePre.className = codePre.className.replace(hiddenPreClass, '');
+                        labelSpan.className = labelSpan.className.replace(otherTabClass, '');
+                        scriptBlock.activeTab = index;
+                    });
+                });
+
+                var preview = Galleries.findElem(scriptBlock, 'div', 'preview');
+                if (preview.length == 0) {
+                    preview.push(pres[pres.length - 1]);
+                }
+                Galleries.iterateElem(preview, function(index, elem) {
+                    elem.parentNode.removeChild(elem);
+                });
+
+                if (window.clipboardData && clipboardData.setData) {
+                    var copyLink = document.createElement('a');
+                    copyLink.href = 'javascript:void(0);';
+                    copyLink.className = 'copyCode';
+                    copyLink.innerHTML = 'Copy code';
+                    Galleries.attachEventHandler(copyLink, 'click', function (e) {
+                        clipboardData.setData("Text", htmlDecode(labelElems[scriptBlock.activeTab].code));
+                        return false;
+                    });
+                    scriptBlock.insertBefore(copyLink, scriptBlock.childNodes[0]);
+                }
+            }
+        });
+    }
+
+    Galleries.onWindowLoad(function(){
+        initializePage();
+    });
+
+</script>
+<div id="longDesc">
+    
+<div id="header">This sample demonstrates two basic techniques for provisioning wiki pages: creating a wiki page in a wiki library, and then manipulating it.</div>
+<div id="mainSection">
+<div id="mainBody">
+<h1>Description of the sample</h1>
+<div id="sectionSection0">
+<p>The sample uses the <strong><span class="keyword">SitePages</span></strong> library which is default available in non-publishing sites, but the same sample can be easily adapted to create pages in a custom wiki page library.</p>
+<p>In the last step, the empty wiki page is filled with HTML content. In the sample you can specify your HTML content and then click
+<strong><span class="keyword">Run scenario 1</span></strong> to create the wiki page and add the HTML.</p>
+<h3>Scenario 1: Create and insert content into a wiki page</h3>
+<div>
+<p>The following code adds a wiki page.</p>
+<div><span>
+<table cellspacing="0" cellpadding="0" width="100%">
+<tbody>
+<tr>
+<th>C# </th>
+<th>&nbsp;</th>
+</tr>
+<tr>
+<td colspan="2">
+<pre>string scenario1Page = String.Format(&quot;scenario1-{0}.aspx&quot;, DateTime.Now.Ticks);</pre>
+</td>
+</tr>
+</tbody>
+</table>
+</span></div>
+<p>&nbsp;</p>
+<div><span>
+<table cellspacing="0" cellpadding="0" width="100%">
+<tbody>
+<tr>
+<th>C# </th>
+<th>&nbsp;</th>
+</tr>
+<tr>
+<td colspan="2">
+<pre>string scenario1PageUrl = csomService.AddWikiPage(&quot;Site Pages&quot;, scenario1Page);</pre>
+</td>
+</tr>
+</tbody>
+</table>
+</span></div>
+<p>&nbsp;</p>
+<p>The following code adds HTML to a wiki page:</p>
+<div><span>
+<table cellspacing="0" cellpadding="0" width="100%">
+<tbody>
+<tr>
+<th>C# </th>
+<th>&nbsp;</th>
+</tr>
+<tr>
+<td colspan="2">
+<pre>csomService.AddHtmlToWikiPage(&quot;SitePages&quot;, txtHtml.Text, scenario1Page);</pre>
+</td>
+</tr>
+</tbody>
+</table>
+</span></div>
+<p>&nbsp;</p>
+<p>Adding HTML to a wiki page is simple: just put your HTML in the WikiField cell.</p>
+<div><span>
+<table cellspacing="0" cellpadding="0" width="100%">
+<tbody>
+<tr>
+<th>C# </th>
+<th>&nbsp;</th>
+</tr>
+<tr>
+<td colspan="2">
+<pre>listItem[&quot;WikiField&quot;] = html;</pre>
+</td>
+</tr>
+</tbody>
+</table>
+</span></div>
+<p>&nbsp;</p>
+</div>
+<h3>Scenario 2: Advanced wiki page manipulation</h3>
+<div>
+<p>This scenario extends the first scenario, providing the option to create wiki pages that use other layouts.</p>
+<p>This sample reuses existing out-of-the-box layouts, but it's possible to use custom layouts as well. Once the layout is created, a table with rows and columns and, optionally, headers and footers are created. Next, the sample shows how to place a web part
+ or HTML content into a table cell. When you click <strong><span class="keyword">Run scenario 2</span></strong>, a wiki page will be created with the layout you've selected and:</p>
+<ul>
+<li>
+<p>Place an <strong><span class="keyword">XsltListViewWebPart</span></strong> in the first content row on column 1. If there's no header, then the first row is row1, column 1. If there's a layout with a header, then the first row is row 2, column 1. The
+<strong><span class="keyword">XsltListView</span></strong> web part is created for a promoted links list that will be automatically created if it doesn't already exist.</p>
+</li><li>
+<p>If there are two or more columns, the HTML content listed for scenario 1 will be inserted in the column next to the web part.</p>
+</li></ul>
+<p>After the page is created, you can use the link to show the created page.</p>
+<p>Once a page has been created the button <strong><span class="keyword">Remove webpart from the last page created during scenario 2 run</span></strong> is enabled. Clicking on this button removes the
+<strong><span class="keyword">XsltListViewWebPart</span></strong> web part from the page.</p>
+</div>
+<h3>Apply layouts to a wiki page</h3>
+<div>
+<p>Once you've created new layouts, you can apply them to the wiki page. This example shows how to insert two columns with header and footer layout into a created wiki page.</p>
+<div><span>
+<table cellspacing="0" cellpadding="0" width="100%">
+<tbody>
+<tr>
+<th>C# </th>
+<th>&nbsp;</th>
+</tr>
+<tr>
+<td colspan="2">
+<pre>csomService.AddLayoutToWikiPage(&quot;SitePages&quot;, WikiPageLayout.TwoColumnsHeaderFooter, scenario2Page);</pre>
+</td>
+</tr>
+</tbody>
+</table>
+</span></div>
+<p>&nbsp;</p>
+<p>Technically, this is nothing more than inserting the correct HTML table structure as HTML content. The HTML table structure for out-of-the-box layouts is included in the
+<strong><span class="keyword">ClientSideSharePointService</span></strong> class.</p>
+</div>
+<h3>Insert a web part</h3>
+<div>
+<p>To insert a web part you need to create a webpartentity class instance, fill it with the web part data and insert it.</p>
+<div><span>
+<table cellspacing="0" cellpadding="0" width="100%">
+<tbody>
+<tr>
+<th>C# </th>
+<th>&nbsp;</th>
+</tr>
+<tr>
+<td colspan="2">
+<pre>Guid linksID = csomService.GetListID(&quot;Links&quot;);
+WebPartEntity wp2 = new WebPartEntity();
+wp2.WebPartXml = csomService.WpPromotedLinks(linksID, string.Format(&quot;{0}/Lists/{1}&quot;, Request.QueryString[&quot;SPHostUrl&quot;], &quot;Links&quot;), string.Format(&quot;{0}/{1}&quot;, Request.QueryString[&quot;SPHostUrl&quot;], scenario2PageUrl), &quot;$Resources:core,linksList&quot;);
+wp2.WebPartIndex = 1;
+wp2.WebPartTitle = &quot;Links&quot;;
+
+csomService.AddWebPartToWikiPage(&quot;SitePages&quot;, wp2, scenario2Page, 1, 1, false);
+</pre>
+</td>
+</tr>
+</tbody>
+</table>
+</span></div>
+<p>&nbsp;</p>
+<div>
+<table cellspacing="0" cellpadding="0" width="100%">
+<tbody>
+<tr>
+<th align="left"><strong>Note</strong> </th>
+</tr>
+<tr>
+<td>
+<p>1, 1 in the example code tell the method to insert on row 1, column 1.</p>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<p>&nbsp;</p>
+<p>In the example above, the webpart XML for the promoted links list is adapted to work for the created list.</p>
+<div>
+<table cellspacing="0" cellpadding="0" width="100%">
+<tbody>
+<tr>
+<th align="left"><strong>Note</strong> </th>
+</tr>
+<tr>
+<td>
+<p>The example does not show how to add a web part to a layouts page, but this is possible using the
+<strong><span class="keyword">AddWebPartToWebPartPage</span></strong> method.</p>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div><span>
+<table cellspacing="0" cellpadding="0" width="100%">
+<tbody>
+<tr>
+<th>C# </th>
+<th>&nbsp;</th>
+</tr>
+<tr>
+<td colspan="2">
+<pre>public void AddWebPartToWebPartPage(WebPartEntity webPart, string page)</pre>
+</td>
+</tr>
+</tbody>
+</table>
+</span></div>
+<p>&nbsp;</p>
+</div>
+<h3>Insert HTML into a wiki page cell</h3>
+<div>
+<p>Insert HTML to a wiki page cell.</p>
+<div><span>
+<table cellspacing="0" cellpadding="0" width="100%">
+<tbody>
+<tr>
+<th>C# </th>
+<th>&nbsp;</th>
+</tr>
+<tr>
+<td colspan="2">
+<pre>csomService.AddHtmlToWikiPage(&quot;SitePages&quot;, txtHtml.Text, scenario2Page, 1, 2);</pre>
+</td>
+</tr>
+</tbody>
+</table>
+</span></div>
+<p>&nbsp;</p>
+<div>
+<table cellspacing="0" cellpadding="0" width="100%">
+<tbody>
+<tr>
+<th align="left"><strong>Note</strong> </th>
+</tr>
+<tr>
+<td>
+<p>1, 2 in the above sample tell the method to insert on row 1, column 2.</p>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<p>&nbsp;</p>
+</div>
+<h3>Delete a web part</h3>
+<div>
+<p>To delete a web part use the following code:</p>
+<div><span>
+<table cellspacing="0" cellpadding="0" width="100%">
+<tbody>
+<tr>
+<th>C# </th>
+<th>&nbsp;</th>
+</tr>
+<tr>
+<td colspan="2">
+<pre>csomService.DeleteWebPart(&quot;SitePages&quot;, &quot;Links&quot;, &quot;LastPageName.aspx&quot;);</pre>
+</td>
+</tr>
+</tbody>
+</table>
+</span></div>
+<p>&nbsp;</p>
+<p>This method deletes the Links webpart from the page LastPageName.aspx which is stored in the wiki page library &quot;SitePages&quot;.</p>
+<div>
+<table cellspacing="0" cellpadding="0" width="100%">
+<tbody>
+<tr>
+<th align="left"><strong>Note</strong> </th>
+</tr>
+<tr>
+<td>
+<p>This method can also be used to remove a web part from a layouts page. In this case you should specify an empty library name.</p>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div><span>
+<table cellspacing="0" cellpadding="0" width="100%">
+<tbody>
+<tr>
+<th>C# </th>
+<th>&nbsp;</th>
+</tr>
+<tr>
+<td colspan="2">
+<pre>csomService.DeleteWebPart(&quot;&quot;, &quot;About this blog&quot;, &quot;Default.aspx&quot;);</pre>
+</td>
+</tr>
+</tbody>
+</table>
+</span></div>
+<p>&nbsp;</p>
+<p>This sample removes the &quot;About this blog&quot; web part from the blog site home page.</p>
+</div>
+</div>
+<h1>Prerequisites</h1>
+<div id="sectionSection1">
+<p>This sample requires the following:</p>
+<ul>
+<li>
+<p>Visual Studio 2012 or Visual Studio 2013</p>
+</li><li>
+<p>Microsoft Office Developer tools for Visual Studio 2012 or Visual Studio 2013</p>
+</li><li>
+<p>A SharePoint 2013 development environment</p>
+</li><li>
+<p>For debugging, a connection string for a Windows Azure Service Bus namespace is required. See
+<a href="http://msdn.microsoft.com/library/21de092e-27f2-4000-bbb7-cb5cbfeaf195(Office.15).aspx" >
+How to: Debug a remote event receiver in an app for SharePoint 2013</a> to learn more.</p>
+</li></ul>
+</div>
+<h1>Configure the sample</h1>
+<div id="sectionSection2">
+<p>Follow these steps to configure the sample:</p>
+<ul>
+<li>
+<p>Open the <strong><span class="keyword">ProvisionWikiPage.sln</span></strong> file in Visual Studio.</p>
+<p>In <strong><span class="keyword">Properties</span></strong> pane of Visual Studio, change the
+<strong><span class="keyword">Site URL</span></strong> property. It is the absolute URL of your SharePoint test site collection on Office 365. For example, &quot;https://&lt;my tenant&gt;.sharepoint.com/sites/dev/&quot;</p>
+</li><li>
+<p>Press F5 to begin debugging.</p>
+</li></ul>
+</div>
+<h1>Remove the sample</h1>
+<div id="sectionSection3">
+<p>If you use the sample a lot, you create a lot of pages in the <strong><span class="keyword">sitepages</span></strong> library that you may want to delete later. Click
+<strong><span class="keyword">Cleanup created pages</span></strong> to remove these pages. The
+<strong><span class="keyword">Promoted Links</span></strong> list that the sample creates will not be deleted.</p>
+</div>
+<h1>Change log</h1>
+<div id="sectionSection4"><strong>
+<div class="caption"></div>
+</strong>
+<div>
+<table cellspacing="2" cellpadding="5" width="50%" frame="lhs">
+<tbody>
+<tr>
+<th>
+<p>Version</p>
+</th>
+<th>
+<p>Date</p>
+</th>
+</tr>
+<tr>
+<td>
+<p>First version</p>
+</td>
+<td>
+<p>February 26, 2014</p>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<h1>Related content</h1>
+<div id="sectionSection5">
+<ul>
+<li>
+<p><a href="http://www.microsoft.com/downloads/details.aspx?FamilyID=2c8011b0-441a-4bab-bf19-6b1009c7d8dd" >SharePoint 2013 and SharePoint Online solution pack for branding and site provisioning</a></p>
+</li></ul>
+</div>
+</div>
+</div>
+
+</div>
+
+
+    </div>
+</body>
+</html>

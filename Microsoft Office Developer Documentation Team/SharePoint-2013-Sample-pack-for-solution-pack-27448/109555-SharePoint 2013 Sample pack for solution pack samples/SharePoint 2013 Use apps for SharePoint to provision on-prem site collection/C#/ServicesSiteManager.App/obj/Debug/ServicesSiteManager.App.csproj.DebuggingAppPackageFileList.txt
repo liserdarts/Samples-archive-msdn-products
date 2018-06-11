@@ -1,0 +1,1 @@
+C:\TFS-GAPPS\O365AssessmentTools\GAPPS\Contoso.Services.SiteManager\Contoso.Services.SiteManager.App\bin\Debug\Contoso.Services.SiteManager.App.debugapp

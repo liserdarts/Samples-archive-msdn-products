@@ -1,0 +1,6 @@
+C:\TFS-GAPPS\O365AssessmentTools\GAPPS\Contoso.Services.SiteManager\Contoso.Services.SiteManager\bin\Debug\Contoso.Services.SiteManager.dll
+C:\TFS-GAPPS\O365AssessmentTools\GAPPS\Contoso.Services.SiteManager\Contoso.Services.SiteManager\bin\Debug\Contoso.Services.SiteManager.pdb
+C:\TFS-GAPPS\O365AssessmentTools\GAPPS\Contoso.Services.SiteManager\Contoso.Services.SiteManager\obj\Debug\Contoso.Services.SiteManager.dll
+C:\TFS-GAPPS\O365AssessmentTools\GAPPS\Contoso.Services.SiteManager\Contoso.Services.SiteManager\obj\Debug\Contoso.Services.SiteManager.pdb
+C:\Users\kenmilne\Desktop\BrandingSamples\ServicesSiteManager\Contoso.Services.SiteManager\Contoso.Services.SiteManager\obj\Debug\Contoso.Services.SiteManager.dll
+C:\Users\kenmilne\Desktop\BrandingSamples\ServicesSiteManager\Contoso.Services.SiteManager\Contoso.Services.SiteManager\obj\Debug\Contoso.Services.SiteManager.pdb

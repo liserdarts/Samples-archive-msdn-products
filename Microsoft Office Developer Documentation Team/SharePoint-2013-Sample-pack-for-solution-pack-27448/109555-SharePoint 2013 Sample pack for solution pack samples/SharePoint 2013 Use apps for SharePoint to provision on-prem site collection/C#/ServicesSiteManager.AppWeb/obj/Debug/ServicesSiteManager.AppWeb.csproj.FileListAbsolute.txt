@@ -1,0 +1,10 @@
+C:\Users\kenmilne\Desktop\0226 test\BrandingAndSiteProvisioningSolutionPack\Samples\ServSiteMan_test\ServicesSiteManager\ServicesSiteManager.AppWeb\bin\Contoso.Services.SiteManager.AppWeb.dll
+C:\Users\kenmilne\Desktop\0226 test\BrandingAndSiteProvisioningSolutionPack\Samples\ServSiteMan_test\ServicesSiteManager\ServicesSiteManager.AppWeb\bin\Contoso.Services.SiteManager.AppWeb.pdb
+C:\Users\kenmilne\Desktop\0226 test\BrandingAndSiteProvisioningSolutionPack\Samples\ServSiteMan_test\ServicesSiteManager\ServicesSiteManager.AppWeb\bin\Microsoft.IdentityModel.dll
+C:\Users\kenmilne\Desktop\0226 test\BrandingAndSiteProvisioningSolutionPack\Samples\ServSiteMan_test\ServicesSiteManager\ServicesSiteManager.AppWeb\bin\Microsoft.IdentityModel.Extensions.dll
+C:\Users\kenmilne\Desktop\0226 test\BrandingAndSiteProvisioningSolutionPack\Samples\ServSiteMan_test\ServicesSiteManager\ServicesSiteManager.AppWeb\bin\Microsoft.SharePoint.Client.dll
+C:\Users\kenmilne\Desktop\0226 test\BrandingAndSiteProvisioningSolutionPack\Samples\ServSiteMan_test\ServicesSiteManager\ServicesSiteManager.AppWeb\bin\Microsoft.SharePoint.Client.Runtime.dll
+C:\Users\kenmilne\Desktop\0226 test\BrandingAndSiteProvisioningSolutionPack\Samples\ServSiteMan_test\ServicesSiteManager\ServicesSiteManager.AppWeb\bin\en\Microsoft.IdentityModel.resources.dll
+C:\Users\kenmilne\Desktop\0226 test\BrandingAndSiteProvisioningSolutionPack\Samples\ServSiteMan_test\ServicesSiteManager\ServicesSiteManager.AppWeb\obj\Debug\ServicesSiteManager.AppWeb.csprojResolveAssemblyReference.cache
+C:\Users\kenmilne\Desktop\0226 test\BrandingAndSiteProvisioningSolutionPack\Samples\ServSiteMan_test\ServicesSiteManager\ServicesSiteManager.AppWeb\obj\Debug\Contoso.Services.SiteManager.AppWeb.dll
+C:\Users\kenmilne\Desktop\0226 test\BrandingAndSiteProvisioningSolutionPack\Samples\ServSiteMan_test\ServicesSiteManager\ServicesSiteManager.AppWeb\obj\Debug\Contoso.Services.SiteManager.AppWeb.pdb

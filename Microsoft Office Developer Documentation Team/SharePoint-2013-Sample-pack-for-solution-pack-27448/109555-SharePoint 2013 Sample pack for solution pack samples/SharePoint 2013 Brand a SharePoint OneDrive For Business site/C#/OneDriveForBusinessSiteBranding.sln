@@ -1,0 +1,33 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OneDriveForBusinessSiteBranding", "OneDriveForBusinessSiteBranding\OneDriveForBusinessSiteBranding.csproj", "{C5E788BC-4349-4252-B421-2B29862824BA}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OneDriveForBusinessSiteBrandingWeb", "OneDriveForBusinessSiteBrandingWeb\OneDriveForBusinessSiteBrandingWeb.csproj", "{CC8A31F7-19F7-437A-BB58-967F3933B8AD}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{16FF915D-4CB6-4EA3-93E9-9A5379D9DCBD}"
+	ProjectSection(SolutionItems) = preProject
+		Readme.txt = Readme.txt
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{C5E788BC-4349-4252-B421-2B29862824BA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C5E788BC-4349-4252-B421-2B29862824BA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C5E788BC-4349-4252-B421-2B29862824BA}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{C5E788BC-4349-4252-B421-2B29862824BA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C5E788BC-4349-4252-B421-2B29862824BA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C5E788BC-4349-4252-B421-2B29862824BA}.Release|Any CPU.Deploy.0 = Release|Any CPU
+		{CC8A31F7-19F7-437A-BB58-967F3933B8AD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CC8A31F7-19F7-437A-BB58-967F3933B8AD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CC8A31F7-19F7-437A-BB58-967F3933B8AD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CC8A31F7-19F7-437A-BB58-967F3933B8AD}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

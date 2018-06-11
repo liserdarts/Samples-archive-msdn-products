@@ -1,0 +1,18 @@
+C:\TFS-GAPPS\O365AssessmentTools\GAPPS\Contoso.Services.SiteManager\Contoso.Services.SiteManager.FormTester\bin\Debug\Contoso.Services.SiteManager.FormTester.exe.config
+C:\TFS-GAPPS\O365AssessmentTools\GAPPS\Contoso.Services.SiteManager\Contoso.Services.SiteManager.FormTester\bin\Debug\Contoso.Services.SiteManager.FormTester.exe
+C:\TFS-GAPPS\O365AssessmentTools\GAPPS\Contoso.Services.SiteManager\Contoso.Services.SiteManager.FormTester\bin\Debug\Contoso.Services.SiteManager.FormTester.pdb
+C:\TFS-GAPPS\O365AssessmentTools\GAPPS\Contoso.Services.SiteManager\Contoso.Services.SiteManager.FormTester\obj\Debug\Contoso.Services.SiteManager.FormTester.Properties.Resources.resources
+C:\TFS-GAPPS\O365AssessmentTools\GAPPS\Contoso.Services.SiteManager\Contoso.Services.SiteManager.FormTester\obj\Debug\Contoso.Services.SiteManager.FormTester.csproj.GenerateResource.Cache
+C:\TFS-GAPPS\O365AssessmentTools\GAPPS\Contoso.Services.SiteManager\Contoso.Services.SiteManager.FormTester\obj\Debug\Contoso.Services.SiteManager.FormTester.exe
+C:\TFS-GAPPS\O365AssessmentTools\GAPPS\Contoso.Services.SiteManager\Contoso.Services.SiteManager.FormTester\obj\Debug\Contoso.Services.SiteManager.FormTester.pdb
+C:\TFS-GAPPS\O365AssessmentTools\GAPPS\Contoso.Services.SiteManager\Contoso.Services.SiteManager.FormTester\obj\Debug\Contoso.Services.SiteManager.FormTester.frmMain.resources
+C:\TFS-GAPPS\O365AssessmentTools\GAPPS\Contoso.Services.SiteManager\Contoso.Services.SiteManager.FormTester\obj\Debug\Contoso.Services.SiteManager.FormTester.csprojResolveAssemblyReference.cache
+C:\Users\kenmilne\Desktop\0226 test\BrandingAndSiteProvisioningSolutionPack\Samples\ServSiteMan_test\ServicesSiteManager\ServicesSiteManager.FormTester\bin\Debug\Contoso.Services.SiteManager.FormTester.exe.config
+C:\Users\kenmilne\Desktop\0226 test\BrandingAndSiteProvisioningSolutionPack\Samples\ServSiteMan_test\ServicesSiteManager\ServicesSiteManager.FormTester\bin\Debug\Contoso.Services.SiteManager.FormTester.exe
+C:\Users\kenmilne\Desktop\0226 test\BrandingAndSiteProvisioningSolutionPack\Samples\ServSiteMan_test\ServicesSiteManager\ServicesSiteManager.FormTester\bin\Debug\Contoso.Services.SiteManager.FormTester.pdb
+C:\Users\kenmilne\Desktop\0226 test\BrandingAndSiteProvisioningSolutionPack\Samples\ServSiteMan_test\ServicesSiteManager\ServicesSiteManager.FormTester\obj\Debug\ServicesSiteManager.FormTester.csprojResolveAssemblyReference.cache
+C:\Users\kenmilne\Desktop\0226 test\BrandingAndSiteProvisioningSolutionPack\Samples\ServSiteMan_test\ServicesSiteManager\ServicesSiteManager.FormTester\obj\Debug\Contoso.Services.SiteManager.FormTester.frmMain.resources
+C:\Users\kenmilne\Desktop\0226 test\BrandingAndSiteProvisioningSolutionPack\Samples\ServSiteMan_test\ServicesSiteManager\ServicesSiteManager.FormTester\obj\Debug\Contoso.Services.SiteManager.FormTester.Properties.Resources.resources
+C:\Users\kenmilne\Desktop\0226 test\BrandingAndSiteProvisioningSolutionPack\Samples\ServSiteMan_test\ServicesSiteManager\ServicesSiteManager.FormTester\obj\Debug\ServicesSiteManager.FormTester.csproj.GenerateResource.Cache
+C:\Users\kenmilne\Desktop\0226 test\BrandingAndSiteProvisioningSolutionPack\Samples\ServSiteMan_test\ServicesSiteManager\ServicesSiteManager.FormTester\obj\Debug\Contoso.Services.SiteManager.FormTester.exe
+C:\Users\kenmilne\Desktop\0226 test\BrandingAndSiteProvisioningSolutionPack\Samples\ServSiteMan_test\ServicesSiteManager\ServicesSiteManager.FormTester\obj\Debug\Contoso.Services.SiteManager.FormTester.pdb

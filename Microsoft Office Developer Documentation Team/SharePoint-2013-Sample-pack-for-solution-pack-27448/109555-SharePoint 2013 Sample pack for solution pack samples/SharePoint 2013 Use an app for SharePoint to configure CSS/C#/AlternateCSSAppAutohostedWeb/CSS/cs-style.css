@@ -1,0 +1,8 @@
+﻿
+        a:link, a:visited {
+            color: #FF7F2A;
+            text-decoration: none;
+        }
+            a > img {
+                border: none;
+            }
