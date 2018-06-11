@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<customUI xmlns="http://schemas.microsoft.com/office/2009/07/customui"
+          onLoad="Ribbon_Load">
+<ribbon>
+    <tabs>
+    <tab idMso="TabMail">
+        <group id="CustomSearch" label="Custom Search">
+            <box id="SearchControls">
+                <editBox id="SearchEditBox" screentip="Enter search text"
+                            label="Search for:" showLabel="true" maxLength="64"
+                            onChange="TextChanged" getText="GetText"/>
+                <button id="SearchButton" label="Search" showLabel="false"
+                        imageMso="AllModuleNameItems" showImage="true"
+                        visible="true"/>
+            </box>
+            <button id="OpenMessageButton" label ="Open Message with Highlights"
+                    screentip="Opens the selected message"
+                    onAction="OpenMessage"/>
+        </group>
+    </tab>
+    </tabs>
+</ribbon>
+</customUI>
