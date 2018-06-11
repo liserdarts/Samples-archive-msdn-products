@@ -1,0 +1,6 @@
+C:\MyFileConnector\MyFileConnector\MyFileConnector\bin\Debug\MyFileConnector.dll
+C:\MyFileConnector\MyFileConnector\MyFileConnector\bin\Debug\MyFileConnector.pdb
+C:\MyFileConnector\MyFileConnector\MyFileConnector\bin\Debug\Microsoft.Sharepoint.Sandbox.dll
+C:\MyFileConnector\MyFileConnector\MyFileConnector\obj\Debug\ResolveAssemblyReference.cache
+C:\MyFileConnector\MyFileConnector\MyFileConnector\obj\Debug\MyFileConnector.dll
+C:\MyFileConnector\MyFileConnector\MyFileConnector\obj\Debug\MyFileConnector.pdb

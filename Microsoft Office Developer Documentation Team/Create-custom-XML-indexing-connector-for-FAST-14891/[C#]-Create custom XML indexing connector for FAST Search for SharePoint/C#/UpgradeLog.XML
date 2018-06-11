@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?><?xml-stylesheet type='text/xsl' href='_UpgradeReport_Files/UpgradeReport.xslt'?><UpgradeLog>
+<Properties><Property Name="Solution" Value="MyFileConnector">
+</Property><Property Name="Solution File" Value="C:\MyFileConnector\MyFileConnector\MyFileConnector.sln">
+</Property><Property Name="User Options File" Value="C:\MyFileConnector\MyFileConnector\MyFileConnector.suo">
+</Property><Property Name="Date" Value="Tuesday, October 18, 2011">
+</Property><Property Name="Time" Value="19:00 PM">
+</Property></Properties><Event ErrorLevel="0" Project="" Source="MyFileConnector.sln" Description="File successfully backed up as C:\MyFileConnector\MyFileConnector\Backup\MyFileConnector.sln">
+</Event><Event ErrorLevel="0" Project="" Source="MyFileConnector.suo" Description="File successfully backed up as C:\MyFileConnector\MyFileConnector\Backup\MyFileConnector.suo">
+</Event><Event ErrorLevel="0" Project="MyFileConnector" Source="MyFileConnector\MyFileConnector.csproj" Description="Project file successfully backed up as C:\MyFileConnector\MyFileConnector\Backup\MyFileConnector\MyFileConnector.csproj">
+</Event><Event ErrorLevel="0" Project="MyFileConnector" Source="MyFileConnector\MyFile.cs" Description="File successfully backed up as C:\MyFileConnector\MyFileConnector\Backup\MyFileConnector\MyFile.cs">
+</Event><Event ErrorLevel="0" Project="MyFileConnector" Source="MyFileConnector\MyFileConnector.cs" Description="File successfully backed up as C:\MyFileConnector\MyFileConnector\Backup\MyFileConnector\MyFileConnector.cs">
+</Event><Event ErrorLevel="0" Project="MyFileConnector" Source="MyFileConnector\MyFileLobUri.cs" Description="File successfully backed up as C:\MyFileConnector\MyFileConnector\Backup\MyFileConnector\MyFileLobUri.cs">
+</Event><Event ErrorLevel="0" Project="MyFileConnector" Source="MyFileConnector\MyFileNamingContainer.cs" Description="File successfully backed up as C:\MyFileConnector\MyFileConnector\Backup\MyFileConnector\MyFileNamingContainer.cs">
+</Event><Event ErrorLevel="0" Project="MyFileConnector" Source="MyFileConnector\Properties\AssemblyInfo.cs" Description="File successfully backed up as C:\MyFileConnector\MyFileConnector\Backup\MyFileConnector\Properties\AssemblyInfo.cs">
+</Event><Event ErrorLevel="0" Project="MyFileConnector" Source="MyFileConnector\Test.snk" Description="File successfully backed up as C:\MyFileConnector\MyFileConnector\Backup\MyFileConnector\Test.snk">
+</Event><Event ErrorLevel="0" Project="MyFileConnector" Source="MyFileConnector\MyFileModel.xml" Description="File successfully backed up as C:\MyFileConnector\MyFileConnector\Backup\MyFileConnector\MyFileModel.xml">
+</Event><Event ErrorLevel="0" Project="MyFileConnector" Source="MyFileConnector\MyFileConnector.csproj" Description="Project converted successfully">
+</Event><Event ErrorLevel="3" Project="MyFileConnector" Source="MyFileConnector\MyFileConnector.csproj" Description="Converted">
+</Event><Event ErrorLevel="0" Project="" Source="MyFileConnector.sln" Description="Solution converted successfully">
+</Event><Event ErrorLevel="3" Project="" Source="MyFileConnector.sln" Description="Converted">
+</Event><Event ErrorLevel="0" Project="MyFileConnector" Source="MyFileConnector\MyFileConnector.csproj" Description="Scan complete: Upgrade not required for project files.">
+</Event></UpgradeLog>
