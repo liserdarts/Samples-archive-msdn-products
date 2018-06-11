@@ -1,0 +1,54 @@
+' Excel 2010
+
+' Work with new members of the Point class.
+' You can now retrieve information about the points in a chart, including
+'   Name
+'   Top
+'   Left
+'   Width
+'   Height
+
+' Points in a chart are numbered from left to right on the series. Given
+' the information about the point, you could write code to place other information
+' on the chart, or interact with the points.
+
+' To test this code, in a new workbook, copy the entire sample into the Sheet1 class
+' in the VBA editor. Place the cursor inside the test procedure, and press F5 to run the sample.
+' Look in the Immediate window for the results.
+
+Sub TestPointClass()
+    ' First, create a simple chart that contains points.
+    Range("A1:B1").Value = Array("Region", "Sales")
+    Range("A2:B2").Value = Array("North", 100)
+    Range("A3:B3").Value = Array("South", 200)
+    Range("A4:B4").Value = Array("East", 300)
+    Range("A5:B5").Value = Array("West", 400)
+   
+    Dim cht As Chart
+    Set cht = Shapes.AddChart.Chart
+    cht.ChartType = xlLineMarkers
+    cht.SetSourceData Source:=Range("A1:B5")
+    With cht.SeriesCollection(1)
+        .Points(1).MarkerStyle = xlMarkerStyleDiamond
+        .Points(2).MarkerStyle = xlMarkerStyleCircle
+        .Points(3).MarkerStyle = xlMarkerStyleDash
+        .Points(4).MarkerStyle = xlMarkerStyleSquare
+       
+        Dim i As Integer
+        For i = 1 To 4
+            DisplayPointProperties .Points(i)
+        Next i
+    End With
+   
+End Sub
+
+Sub DisplayPointProperties(pt As Point)
+    ' Display information about the selected
+    ' point in the Immediate window:
+    Debug.Print "========"
+    Debug.Print "Name:   " & pt.Name
+    Debug.Print "Left:   " & pt.Left
+    Debug.Print "Top :   " & pt.Top
+    Debug.Print "Width:  " & pt.Width
+    Debug.Print "Height: " & pt.Height
+End Sub
