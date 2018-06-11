@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Package
+  xmlns="http://schemas.microsoft.com/developer/2004/01/bootstrapper"
+  Name="DisplayName"
+  Culture="Culture"
+  LicenseAgreement="ContosoLicenseTerms.rtf"
+>
+
+    <PackageFiles>
+        <PackageFile Name="ContosoLicenseTerms.rtf"/>
+    </PackageFiles>
+
+    <!-- Defines a localizable string table for error messages-->
+    <Strings>
+        <String Name="DisplayName">Contoso Custom IM Application</String>
+        <String Name="Culture">en</String>
+        <String Name="AdminRequired">Administrator permissions are required to install the Contoso Custom IM Application. Contact your administrator.</String>
+        <String Name="DotNetFxRequired">Installation of Contoso Custom IM Application and Microsoft Lync 2010 SDK Runtime requires Microsoft .NET Framework 3.5. Contact your application vendor.</String>
+        <String Name="WindowsInstallerImproperInstall">Due to an error with Windows Installer, the installation of Contoso Custom IM Application cannot proceed.</String>
+        <String Name="AnotherInstanceRunning">Another instance of setup is already running. The running instance must complete before this setup can proceed.</String>
+        <String Name="BetaProductFailure">A beta version of Contoso Custom IM Application was detected on the computer. Uninstall any previous beta versions of Contoso Custom IM Application before continuing.</String>
+        <String Name="GeneralFailure">A failure occurred attempting to install Contoso Custom IM Application.</String>
+    </Strings>
+
+</Package>

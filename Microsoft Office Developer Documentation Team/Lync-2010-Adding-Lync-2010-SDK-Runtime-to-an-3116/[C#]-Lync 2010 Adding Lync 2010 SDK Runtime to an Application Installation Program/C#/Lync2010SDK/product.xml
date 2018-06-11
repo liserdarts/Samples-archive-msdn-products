@@ -1,0 +1,38 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Product
+  xmlns="http://schemas.microsoft.com/developer/2004/01/bootstrapper"
+  ProductCode="Custom.Bootstrapper.Package">
+
+  <RelatedProducts>
+    <DependsOnProduct Code="Microsoft.Windows.Installer.3.1" />
+  </RelatedProducts>
+
+  <PackageFiles>
+    <PackageFile Name="LyncSdkRedist.msi"/>
+  </PackageFiles>
+
+  <InstallChecks>
+    <MsiProductCheck Product="IsMsiInstalled"
+      Property="{364DDCC9-8181-4149-91EF-4E20384171B8}"/>
+  </InstallChecks>
+
+  <Commands>
+    <Command PackageFile="LyncSdkRedist.msi" Arguments="">
+
+      <InstallConditions>
+        <BypassIf Property="IsMsiInstalled"
+          Compare="ValueGreaterThan" Value="0"/>
+        <FailIf Property="AdminUser"
+          Compare="ValueNotEqualTo" Value="True"
+         String="NotAnAdmin"/>
+      </InstallConditions>
+
+      <ExitCodes>
+        <ExitCode Value="0" Result="Success"/>
+        <ExitCode Value="1641" Result="SuccessReboot"/>
+        <ExitCode Value="3010" Result="SuccessReboot"/>
+        <DefaultExitCode Result="Fail" String="GeneralFailure"/>
+      </ExitCodes>
+    </Command>
+  </Commands>
+</Product>

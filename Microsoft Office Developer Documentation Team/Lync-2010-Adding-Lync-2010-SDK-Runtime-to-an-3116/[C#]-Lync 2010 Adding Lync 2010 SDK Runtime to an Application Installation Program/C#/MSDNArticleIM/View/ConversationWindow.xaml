@@ -1,0 +1,29 @@
+﻿<Window x:Class="MSDNArticleIM.ConversationWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="IM Conversation Window" Height="510" Width="571" Initialized="Window_Initialized" Closed="Window_Closed">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="226*" />
+            <ColumnDefinition Width="323*" />
+        </Grid.ColumnDefinitions>
+        <Label Content="Conversation with:" Height="28" HorizontalAlignment="Left" Margin="12,37,0,0" Name="label1" VerticalAlignment="Top" />
+        <Label Content="Label" Height="28" HorizontalAlignment="Left" Margin="141,37,0,0" Name="RemoteSIP_Label" VerticalAlignment="Top" Grid.ColumnSpan="2" Width="387" />
+        <TextBox Height="47" HorizontalAlignment="Left" Margin="12,93,0,0" Name="Message_TextBox" VerticalAlignment="Top" Width="525" Grid.ColumnSpan="2"  TextChanged="Message_TextBox_TextChanged" TextWrapping="WrapWithOverflow" FontFamily="Comic Sans MS" FontSize="15" Foreground="BlueViolet" />
+        <Button Content="Spell Check" Height="23" HorizontalAlignment="Left" Margin="12,156,0,0" Name="SpellCheck_Button" VerticalAlignment="Top" Width="75" Click="SpellCheck_Button_Click" />
+        <Button Content="Send Message" Height="23" HorizontalAlignment="Left" Margin="222,160,0,0" Name="Send_Button" VerticalAlignment="Top" Width="89" Grid.Column="1" Click="Send_Button_Click" />
+        <Label Content="Spell Check Results" Height="28" HorizontalAlignment="Left" Margin="101,155,0,0" Name="SpellCheckStatus_String" VerticalAlignment="Top" Grid.ColumnSpan="2" Width="341" />
+        <Label Content="Type a Message" Height="28" HorizontalAlignment="Left" Margin="12,58,0,0" Name="TypeMessage_Label" VerticalAlignment="Top" />
+        <WebBrowser Height="203" HorizontalAlignment="Left" Margin="12,190,0,0" Name="History_WebBrowser" VerticalAlignment="Top" Width="525" Grid.ColumnSpan="2" />
+        <Label Content="--" Height="28" HorizontalAlignment="Left" Margin="12,437,0,0" Name="ActivityText_Label" VerticalAlignment="Top" />
+        <Button Content="End Conversation" Height="23" HorizontalAlignment="Left" Margin="207,399,0,0" Name="EndConversation_Button" VerticalAlignment="Top" Width="104" Grid.Column="1" Click="EndConversation_Button_Click" />
+        <Button Content="Close" Height="23" HorizontalAlignment="Left" Margin="236,442,0,0" Name="Close_Button" VerticalAlignment="Top" Width="75" Click="Close_Button_Click" Grid.Column="1" />
+        <Label Content="Remote User SIP Uri" Height="28" HorizontalAlignment="Left" Margin="12,12,0,0" Name="RemoteUserSIP_Label" VerticalAlignment="Top" />
+        <TextBox Grid.ColumnSpan="2" Height="23" HorizontalAlignment="Left" Margin="141,12,0,0" Name="SIPEntry_TextBox" VerticalAlignment="Top" Width="120" TouchLeave="SIPEntry_TextBox_TouchLeave" LostKeyboardFocus="SIPEntry_TextBox_LostKeyboardFocus" TextChanged="SIPEntry_TextBox_TextChanged" />
+        <Label Content="Label" Grid.Column="1" Height="28" HorizontalAlignment="Left" Margin="49,443,0,0" Name="lblFindStatus" VerticalAlignment="Top" />
+        <Label Content="Lync Status" Grid.ColumnSpan="2" Height="28" HorizontalAlignment="Left" Margin="194,442,0,0" Name="LyncStatus_Label" VerticalAlignment="Top" />
+        <Button Content="Sign In" Height="23" HorizontalAlignment="Left" Margin="12,399,0,0" Name="SignIn_Button" VerticalAlignment="Top" Width="75" Click="SignIn_Button_Click" IsEnabled="False"/>
+        <Label Content="Alerts" Grid.Column="1" Height="28" HorizontalAlignment="Left" Margin="60,7,0,0" Name="label2" VerticalAlignment="Top" />
+        <Label Content="--" Grid.Column="1" Height="28" HorizontalAlignment="Left" Margin="120,7,0,0" Name="Alerts_Label" VerticalAlignment="Top" Width="182" />
+    </Grid>
+</Window>
