@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package dslVersion="1.0.0.0" 
+        Id="0d19c457-9126-4bd4-9529-0872924cf367" 
+        solutionId="0d19c457-9126-4bd4-9529-0872924cf367" 
+        xmlns="http://schemas.microsoft.com/VisualStudio/2008/SharePointTools/PackageModel" 
+        name="SP_TrainingEventManager_js"
+        sharePointProductVersion="15.0">
+  <features>
+        <featureReference itemId="80db7e25-86db-46fb-b1d8-f9334a9b4195" />
+  </features>
+</package>
