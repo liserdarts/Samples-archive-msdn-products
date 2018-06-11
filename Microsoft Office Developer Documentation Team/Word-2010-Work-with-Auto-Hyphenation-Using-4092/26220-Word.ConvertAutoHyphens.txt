@@ -1,0 +1,50 @@
+' Word 2010
+
+Sub AutoHyphenDemo()
+    ' In a new document, type the following text and then press Enter:
+    '
+    ' =rand(5, 5)
+    '
+    ' This action inserts 5 paragraphs with 5 sentences each into the
+    ' current document. Then, in the VBA editor, place the cursor within
+    ' this procedure and press F8 to single step through the code. Arrange
+    ' the VBA and Word windows side by side on screen so you can view the
+    ' behavior as you step through the code.
+   
+    With ActiveDocument
+        ' Make the margins a little larger than normal.
+        .PageSetup.LeftMargin = 100
+        .PageSetup.RightMargin = 100
+       
+        ' Make the text justified so the hyphens stand out more:
+        .Range.ParagraphFormat.Alignment = wdAlignParagraphJustify
+       
+        ' Turn on auto-hyphenation.
+        .AutoHyphenation = True
+       
+        ' In Word, try to select just a hyphen at the end of a line:
+        ' you can't because the hyphens aren't really there. Word has
+        ' inserted these automatically. You may want real hyphens in your
+        ' text, and the following line of code converts automatic
+        ' hyphens into real hyphens:
+       
+        .ConvertAutoHyphens
+       
+        ' Note that you can now select a hyphen, as if you had inserted
+        ' it yourself. Make a mental note where one of the hyphens is,
+        ' and the next block of code changes the margins. Note the
+        ' behavior.
+        .PageSetup.LeftMargin = 15
+        .PageSetup.RightMargin = 15
+   
+        ' Show all content in the window, and find the hyphens, which now
+        ' may not appear as hyphens. They're still there!
+        ActiveWindow.ActivePane.View.ShowAll = True
+   
+        ' Put the margins back the way they were, and notice the hyphen behavior:
+        ' your hyphens are back!
+        .PageSetup.LeftMargin = 100
+        .PageSetup.RightMargin = 100
+    End With
+   
+End Sub
