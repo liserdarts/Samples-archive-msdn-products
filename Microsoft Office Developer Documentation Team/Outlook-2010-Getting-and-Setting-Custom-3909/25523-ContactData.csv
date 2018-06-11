@@ -1,0 +1,24 @@
+Last Name,First Name,Company,email,Encounter Date,Purchase Estimate,Sales Rep,Sales Value,Trade Show
+Andrews,Lisa,A. Datum Corporation ,Lisa@adatum.com,8/7/2006,"$201,000.00","Abu-Dayah, Ahmad",1,FALSE
+Beasley,Shaun,A. Datum Corporation ,Shaun@adatum.com,2/13/2008,"$233,000.00","Abu-Dayah, Ahmad",3,TRUE
+Abercrombie,Kim,Adventure Works ,Kim@adventure-works.com,12/29/2009,"$229,000.00","Abu-Dayah, Ahmad",3,TRUE
+Axford,Kai,Adventure Works ,Kai@adventure-works.com,3/7/2007,"$24,000.00","Abu-Dayah, Ahmad",2,FALSE
+Ackerman,Pilar,Alpine Ski House ,Pilar@alpineskihouse.com,8/3/2008,"$223,000.00","Alexieff, Mark",1,TRUE
+Alexander,Michelle,Alpine Ski House ,Michelle@alpineskihouse.com,3/24/2009,"$191,000.00","Alexieff, Mark",3,FALSE
+Argrow,NeKeta,Alpine Ski House ,NeKeta@alpineskihouse.com,8/27/2005,"$163,000.00","Alexieff, Mark",2,TRUE
+Barnett,Dave,Alpine Ski House ,Dave@alpineskihouse.com,8/7/2009,"$220,000.00","Alexieff, Mark",2,TRUE
+Dalia,Apurva,Alpine Ski House ,Apurva@alpineskihouse.com,5/17/2009,"$132,000.00","Alexieff, Mark",3,TRUE
+Achong,Gustavo,Blue Yonder Airlines ,Gustavo@blueyonderairlines.com,8/14/2004,"$102,000.00","Asbari, Roya",2,FALSE
+Arifin,Zainal,Blue Yonder Airlines ,Zainal@blueyonderairlines.com,12/30/2007,"$14,000.00","Asbari, Roya",3,FALSE
+Aviv-Reuven,Shir,Blue Yonder Airlines ,Shir@blueyonderairlines.com,11/24/2006,"$169,000.00","Asbari, Roya",3,FALSE
+Bahrami,Anahita,Blue Yonder Airlines ,Anahita@blueyonderairlines.com,12/28/2007,"$123,000.00","Asbari, Roya",1,FALSE
+Basalik,Evan,Blue Yonder Airlines ,Evan@blueyonderairlines.com,8/12/2007,"$30,000.00","Asbari, Roya",3,TRUE
+Alvord,James,City Power & Light ,James@cpandl.com,10/24/2005,"$193,000.00","Berg, Karen",3,TRUE
+Apacible,Johnson,City Power & Light ,Johnson@cpandl.com,3/2/2009,"$178,000.00","Berg, Karen",1,FALSE
+Bechynsky,Stepan,City Power & Light ,Stepan@cpandl.com,4/26/2004,"$78,000.00","Berg, Karen",3,TRUE
+Bentley,Sean,City Power & Light ,Sean@cpandl.com,12/25/2006,"$122,000.00","Berg, Karen",2,TRUE
+Athalye,Sameer,Coho Vineyard ,Sameer@cohovineyard.com,4/29/2008,"$160,000.00","Berg, Karen",3,TRUE
+Balicek,Alois,Coho Vineyard ,Alois@cohovineyard.com,2/7/2004,"$21,000.00","Berg, Karen",2,FALSE
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
