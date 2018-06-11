@@ -1,0 +1,4 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">
+	<ListInstance FeatureId="{00bfea71-de22-43b2-a848-c05709900100}" TemplateType="100" Title="Resource Types" Description="Use the resource types list to categorize your team's resources. " Url="Lists/Resource Types" CustomSchema="Files\Lists\Resource Types\Schema.xml" HyperlinkBaseUrl="http://win-u1uxno4lt1e:28281" RootWebOnly="FALSE" xmlns="http://schemas.microsoft.com/sharepoint/" />
+</Elements>

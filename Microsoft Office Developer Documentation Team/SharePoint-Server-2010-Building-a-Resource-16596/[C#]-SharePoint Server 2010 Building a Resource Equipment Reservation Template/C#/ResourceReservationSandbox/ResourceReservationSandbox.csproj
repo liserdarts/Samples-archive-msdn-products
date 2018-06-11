@@ -1,0 +1,155 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{B4194AE9-B3E6-4964-9426-83A23E92737C}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>ResourceReservationSandbox</RootNamespace>
+    <AssemblyName>ResourceReservationSandbox</AssemblyName>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <ProjectTypeGuids>{BB1F664B-9266-4fd6-B973-E1E44974B511};{14822709-B5A1-4724-98CA-57A101D1B079};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignAssembly>true</SignAssembly>
+  </PropertyGroup>
+  <PropertyGroup>
+    <AssemblyOriginatorKeyFile>key.snk</AssemblyOriginatorKeyFile>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="Microsoft.SharePoint" />
+    <Reference Include="Microsoft.SharePoint.Security" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Built-In List Instances\Master_Page_Gallery\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{626899b5-179f-4599-86eb-ada0db2ee379}</SharePointProjectItemId>
+    </None>
+    <None Include="Built-In List Instances\Master_Page_Gallery\_catalogsmasterpage_global\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{061606af-a6bd-4b35-9af3-8cbde077bc1b}</SharePointProjectItemId>
+    </None>
+    <None Include="Features\ListInstances\ListInstances.feature">
+      <FeatureId>{dc5d7dba-a8ec-4825-bd70-a41d21b71aa9}</FeatureId>
+    </None>
+    <None Include="Features\Modules\Modules.feature">
+      <FeatureId>{385df6f2-bb33-46b0-91a4-61c837c99897}</FeatureId>
+    </None>
+    <None Include="Features\WebTemplateFeature\WebTemplateFeature.feature">
+      <FeatureId>{0cc2f86d-897a-4616-a3ee-da4f897af311}</FeatureId>
+    </None>
+    <None Include="key.snk" />
+    <None Include="List instances\Reservations\ListsReservations_page\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{b581ff8e-e216-4ab1-b567-302521a2cf98}</SharePointProjectItemId>
+    </None>
+    <None Include="List instances\Reservations\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{996bd97a-e763-40af-8994-62a2dda6b022}</SharePointProjectItemId>
+    </None>
+    <None Include="List instances\Resources\ListsResources_pages\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{4cc75aa7-116b-46ef-a072-970bfe792f75}</SharePointProjectItemId>
+    </None>
+    <None Include="List instances\Resources\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{794ca37b-c611-4542-85fc-92cc99fca387}</SharePointProjectItemId>
+    </None>
+    <None Include="List instances\Resource_Types\ListsResource_Types_pages\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{f991bd26-fb6e-47de-be15-13694f914cb2}</SharePointProjectItemId>
+    </None>
+    <None Include="List instances\Resource_Types\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{0105815f-d9c3-4b9e-8214-a9ad905424bb}</SharePointProjectItemId>
+    </None>
+    <None Include="List instances\Style_Library\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{5a9f4125-6186-4a29-b897-d4c79e887fd7}</SharePointProjectItemId>
+    </None>
+    <None Include="List instances\Waitlist\ListsWaitlist_pages\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{e7dfb499-8b12-46c2-a7d7-88990909696d}</SharePointProjectItemId>
+    </None>
+    <None Include="List instances\Waitlist\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{e855c071-8eb6-4b79-8dba-5bc2560051cf}</SharePointProjectItemId>
+    </None>
+    <None Include="Modules\DefaultPage\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{0e83df64-ff93-440d-badc-b3939cd2444b}</SharePointProjectItemId>
+    </None>
+    <None Include="Modules\ResourceAdminPage\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{42161332-e5a0-491a-9c58-908f9ed8ccf4}</SharePointProjectItemId>
+    </None>
+    <None Include="Package\Package.package">
+      <PackageId>{f4cbc047-e91b-4f4a-b957-868340f11a8a}</PackageId>
+    </None>
+    <None Include="Package\Package.Template.xml">
+      <DependentUpon>Package.package</DependentUpon>
+    </None>
+    <None Include="Web template\RersourceReservations\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{d64e7d1e-d17c-4eaa-9395-148a315c6382}</SharePointProjectItemId>
+    </None>
+  </ItemGroup>
+  <ItemGroup />
+  <ItemGroup>
+    <Content Include="Built-In List Instances\Master_Page_Gallery\Elements.xml" />
+    <Content Include="Built-In List Instances\Master_Page_Gallery\Schema.xml" />
+    <Content Include="Built-In List Instances\Master_Page_Gallery\_catalogsmasterpage_global\Elements.xml" />
+    <Content Include="Features\ListInstances\ListInstances.Template.xml">
+      <DependentUpon>ListInstances.feature</DependentUpon>
+    </Content>
+    <Content Include="Features\Modules\Modules.Template.xml">
+      <DependentUpon>Modules.feature</DependentUpon>
+    </Content>
+    <Content Include="Features\WebTemplateFeature\WebTemplateFeature.Template.xml">
+      <DependentUpon>WebTemplateFeature.feature</DependentUpon>
+    </Content>
+    <Content Include="List instances\Reservations\Elements.xml" />
+    <Content Include="List instances\Reservations\ListsReservations_page\Elements.xml" />
+    <Content Include="List instances\Reservations\Schema.xml" />
+    <Content Include="List instances\Resources\Elements.xml" />
+    <Content Include="List instances\Resources\ListsResources_pages\Elements.xml" />
+    <Content Include="List instances\Resources\Schema.xml" />
+    <Content Include="List instances\Resource_Types\Elements.xml" />
+    <Content Include="List instances\Resource_Types\ListsResource_Types_pages\Elements.xml" />
+    <Content Include="List instances\Resource_Types\Schema.xml" />
+    <Content Include="List instances\Style_Library\Elements.xml" />
+    <Content Include="List instances\Style_Library\Schema.xml" />
+    <Content Include="List instances\Waitlist\Elements.xml" />
+    <Content Include="List instances\Waitlist\ListsWaitlist_pages\Elements.xml" />
+    <Content Include="List instances\Waitlist\Schema.xml" />
+    <Content Include="Modules\DefaultPage\default.aspx" />
+    <Content Include="Modules\DefaultPage\Elements.xml" />
+    <Content Include="Modules\ResourceAdminPage\Elements.xml" />
+    <Content Include="Modules\ResourceAdminPage\ResourceAdmin.aspx" />
+    <Content Include="Web template\RersourceReservations\Elements.xml" />
+    <Content Include="Web template\RersourceReservations\ONet.xml" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\SharePointTools\Microsoft.VisualStudio.SharePoint.targets" />
+</Project>

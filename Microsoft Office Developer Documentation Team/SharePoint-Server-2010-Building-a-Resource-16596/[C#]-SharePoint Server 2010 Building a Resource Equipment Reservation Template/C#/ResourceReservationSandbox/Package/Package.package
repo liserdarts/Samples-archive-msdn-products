@@ -1,0 +1,8 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" dslVersion="1.0.0.0" Id="f4cbc047-e91b-4f4a-b957-868340f11a8a" solutionId="f4cbc047-e91b-4f4a-b957-868340f11a8a" resetWebServer="false" name="ResourceReservationSandbox" xmlns="http://schemas.microsoft.com/VisualStudio/2008/SharePointTools/PackageModel">
+  <features>
+    <featureReference itemId="dc5d7dba-a8ec-4825-bd70-a41d21b71aa9" />
+    <featureReference itemId="385df6f2-bb33-46b0-91a4-61c837c99897" />
+    <featureReference itemId="0cc2f86d-897a-4616-a3ee-da4f897af311" />
+  </features>
+</package>

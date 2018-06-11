@@ -1,0 +1,4 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">
+	<ListInstance FeatureId="{00bfea71-de22-43b2-a848-c05709900100}" TemplateType="100" Title="Resources" Description="Use the resources list to manage your team's rooms and equipment. " Url="Lists/Resources" CustomSchema="Files\Lists\Resources\Schema.xml" HyperlinkBaseUrl="http://pv-prestage:48076/11111111" RootWebOnly="FALSE" xmlns="http://schemas.microsoft.com/sharepoint/" />
+</Elements>
