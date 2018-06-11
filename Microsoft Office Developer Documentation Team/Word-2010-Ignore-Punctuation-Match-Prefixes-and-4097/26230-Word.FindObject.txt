@@ -1,0 +1,59 @@
+' Word 2010
+
+' Demonstrate some of the features new to the Find object starting in Word 2007:
+'   IgnorePunct
+'   IgnoreSpace
+'   MatchPrefix
+'   MatchSuffix
+'   ClearHitHighlight
+'   HitHighlight
+
+' In a new document, type the following text and then press Enter:
+'
+' =rand(5, 5)
+'
+' This action inserts 5 paragraphs with 5 sentences each into the
+' current document. Then, in the VBA editor, in the ThisDocument class,
+' copy in this code, and place the cursor within
+' this procedure and press F8 to single step through the code. Arrange
+' the VBA and Word windows side by side on screen so you can view the
+' behavior as you step through the code.
+
+Sub DemoFind()
+    ' Set up a search, in the random text, for
+    ' "tab Most"
+    Dim fnd As Find
+    Set fnd = Content.Find
+    fnd.Text = "tab Most"
+    ' Ignore punctuation and white space. In the document,
+    ' the text appears as "tab. Most". This will still find
+    ' a match.
+    fnd.IgnorePunct = True
+    fnd.IgnoreSpace = True
+   
+    ' Highlight the found text.
+    fnd.HitHighlight fnd.Text, vbYellow, vbRed
+   
+    ' Now clear the highlighting. This is only meaningful
+    ' if you are single-stepping through the code.
+    fnd.ClearHitHighlight
+       
+    ' Match the text "th" only when it appears at the beginning
+    ' of a word:
+    fnd.MatchPrefix = True
+    fnd.Text = "th"
+    fnd.HitHighlight fnd.Text, vbYellow, vbRed
+    ' Now clear the highlighting. This is only meaningful
+    ' if you are single-stepping through the code.
+    fnd.ClearHitHighlight
+
+    ' Match the text "th" only when it appears at the end
+    ' of a word:
+    fnd.MatchPrefix = False
+    fnd.MatchSuffix = True
+    fnd.Text = "th"
+    fnd.HitHighlight fnd.Text, vbYellow, vbRed
+    ' Now clear the highlighting. This is only meaningful
+    ' if you are single-stepping through the code.
+    fnd.ClearHitHighlight
+End Sub
