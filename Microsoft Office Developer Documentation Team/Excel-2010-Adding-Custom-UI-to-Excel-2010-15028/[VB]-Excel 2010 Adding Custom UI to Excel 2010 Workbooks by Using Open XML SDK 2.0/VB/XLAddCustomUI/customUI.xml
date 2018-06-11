@@ -1,0 +1,11 @@
+<customUI xmlns="http://schemas.microsoft.com/office/2006/01/customui">
+    <ribbon>
+        <tabs>
+            <tab idMso="TabAddIns">
+                <group id="group1" label="group1">
+                    <button id="button1" label="Click Me!" showImage="false" onAction="SampleMacro" />
+                </group>
+            </tab>
+        </tabs>
+    </ribbon>
+</customUI>

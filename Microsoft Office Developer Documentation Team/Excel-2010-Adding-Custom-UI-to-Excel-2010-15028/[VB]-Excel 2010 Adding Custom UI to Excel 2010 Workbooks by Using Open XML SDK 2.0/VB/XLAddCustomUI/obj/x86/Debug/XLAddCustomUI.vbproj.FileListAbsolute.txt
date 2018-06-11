@@ -1,0 +1,10 @@
+C:\Users\salri\DevDocs\Ken Getz\January 2012\XLAddCustomUI\XLAddCustomUI_DEMOS\Demos\VB\XLAddCustomUI\XLAddCustomUI\bin\Debug\XLAddCustomUI.exe
+C:\Users\salri\DevDocs\Ken Getz\January 2012\XLAddCustomUI\XLAddCustomUI_DEMOS\Demos\VB\XLAddCustomUI\XLAddCustomUI\bin\Debug\XLAddCustomUI.pdb
+C:\Users\salri\DevDocs\Ken Getz\January 2012\XLAddCustomUI\XLAddCustomUI_DEMOS\Demos\VB\XLAddCustomUI\XLAddCustomUI\bin\Debug\XLAddCustomUI.xml
+C:\Users\salri\DevDocs\Ken Getz\January 2012\XLAddCustomUI\XLAddCustomUI_DEMOS\Demos\VB\XLAddCustomUI\XLAddCustomUI\obj\x86\Debug\ResolveAssemblyReference.cache
+C:\Users\salri\DevDocs\Ken Getz\January 2012\XLAddCustomUI\XLAddCustomUI_DEMOS\Demos\VB\XLAddCustomUI\XLAddCustomUI\obj\x86\Debug\XLAddCustomUI.Resources.resources
+C:\Users\salri\DevDocs\Ken Getz\January 2012\XLAddCustomUI\XLAddCustomUI_DEMOS\Demos\VB\XLAddCustomUI\XLAddCustomUI\obj\x86\Debug\GenerateResource.read.1.tlog
+C:\Users\salri\DevDocs\Ken Getz\January 2012\XLAddCustomUI\XLAddCustomUI_DEMOS\Demos\VB\XLAddCustomUI\XLAddCustomUI\obj\x86\Debug\GenerateResource.write.1.tlog
+C:\Users\salri\DevDocs\Ken Getz\January 2012\XLAddCustomUI\XLAddCustomUI_DEMOS\Demos\VB\XLAddCustomUI\XLAddCustomUI\obj\x86\Debug\XLAddCustomUI.exe
+C:\Users\salri\DevDocs\Ken Getz\January 2012\XLAddCustomUI\XLAddCustomUI_DEMOS\Demos\VB\XLAddCustomUI\XLAddCustomUI\obj\x86\Debug\XLAddCustomUI.xml
+C:\Users\salri\DevDocs\Ken Getz\January 2012\XLAddCustomUI\XLAddCustomUI_DEMOS\Demos\VB\XLAddCustomUI\XLAddCustomUI\obj\x86\Debug\XLAddCustomUI.pdb
