@@ -1,0 +1,33 @@
+' Word 2010
+
+' Demonstrate the Document.ApplyDocumentTheme and ApplyQuickStyleSet methods
+
+' In a new document, type the following text and then press Enter:
+'
+' =rand(5, 5)
+'
+' This action inserts 5 paragraphs with 5 sentences each into the
+' current document. Then, in the VBA editor, in the ThisDocument class,
+' copy in this code, and place the cursor within
+' the DemoThemeAndQuickStyle procedure and press F8 to single step through the code. Arrange
+' the VBA and Word windows side by side on screen so you can view the
+' behavior as you step through the code.
+
+Sub DemoThemeAndQuickStyle()
+    ' Modify this path for your own installation of Microsoft Office:
+    Const themeFolder As String = "C:\Program Files (x86)\Microsoft Office\Document Themes 14\"
+   
+    ' Single step through this code to see the changes as they occur.
+    ' Look at the list of Quick Styles in the user interface
+    ' for more quick style names:
+    ActiveDocument.ApplyQuickStyleSet "Distinctive"
+    ActiveDocument.ApplyQuickStyleSet "Elegant"
+    ActiveDocument.ApplyQuickStyleSet "Manuscript"
+   
+    ' These are just a few of the many available themes:
+    ActiveDocument.ApplyDocumentTheme themeFolder & "Verve.thmx"
+    ActiveDocument.ApplyDocumentTheme themeFolder & "Clarity.thmx"
+    ActiveDocument.ApplyDocumentTheme themeFolder & "Newsprint.thmx"
+    ActiveDocument.ApplyDocumentTheme themeFolder & "Solstice.thmx"
+   
+End Sub
