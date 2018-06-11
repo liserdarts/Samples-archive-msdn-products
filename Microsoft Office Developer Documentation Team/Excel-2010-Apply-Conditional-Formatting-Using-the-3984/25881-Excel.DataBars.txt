@@ -1,0 +1,97 @@
+' Excel 2010
+
+' Examine new features for interacting with data bars.
+
+' In a new workbook, in the VBA editor, copy this code into the Sheet1 class.
+' Place the cursor inside the TestDataBars procedure, and press F8 to single-step
+' through the code. Place the VBA and Excel windows side by side so you can
+' see the results of running the code as you step through the code.
+
+Sub TestDataBars()
+    ' Demonstrate DataBar:
+    '   BarFillType               
+    '   AxisPosition
+    '   AxisColor
+    '   Direction
+    '   NegativeBarFormat
+    '   BarBorder
+
+    Dim rng As Range
+    Set rng = FillRange(-25, 25, 20)
+   
+    rng.FormatConditions.Delete
+   
+    Dim db As dataBar
+    Set db = rng.FormatConditions.AddDatabar
+    ' Set the endpoints for the data bars:
+    db.MinPoint.Modify xlConditionValueNumber, -25
+    db.MaxPoint.Modify xlConditionValueNumber, 25
+   
+    ' Set the axis position.
+    ' The options are automatic, midpoint, or none.
+    ' By default, if there are negative values, the
+    ' axis will appear in the middle. Force it to
+    ' use the midpoint:
+    db.AxisPosition = xlDataBarAxisMidpoint
+   
+    ' You can use a gradient or a solid fill type.
+    db.BarFillType = xlDataBarFillSolid
+    Dim fc As FormatColor
+    With db.BarColor
+        .Color = vbBlue
+        .TintAndShade = -0.2
+    End With
+   
+    ' Modify the behavior of positive and negative
+    ' bar borders:
+    With db.BarBorder
+        .Type = xlDataBarBorderSolid
+        ' Unfortunately, the BarBorder.Color property returns
+        ' a ColorFormat object, so you'll end up setting
+        ' the Color property of the Color property:
+        .Color.Color = vbGreen
+    End With
+   
+    ' Don't be mislead: The AxisColor property is read-only.
+    ' But it is, itself, a FormatColor object. Therefore, the
+    ' reference to the FormatColor object is read-only, but the
+    ' properties of that object are not read-only. You can
+    ' modify any of the FormatColor object's properties:
+    db.AxisColor.Color = vbRed
+   
+    ' You can set the direction of the bars.
+    ' The default value is xlContext, which uses the
+    ' direction of the current locale. If you want to
+    ' force right-to-left direction (in other words, force
+    ' the values to be reversed for left-to-right languages such
+    ' as English), specify xlRTL. To do the same for RTL
+    ' language such as Arabic or Hebrew, specify xlLTR.
+    ' The following forces the negative/positive values to
+    ' be reverse from their normal direction, for LTR languages:
+    db.Direction = xlRTL
+   
+    ' You can set negative bars to appear different than positive bars.
+    ' You can modify BorderColor, BorderColorType, Color, ColorType:
+    With db.NegativeBarFormat
+        ' Specify that you want to use the same, or a a different color, than the positive bars.
+        ' Note that you must specify this before you specify the BorderColor
+        ' property value, if you want to alter the color:
+        .BorderColorType = xlDataBarSameAsPositive
+       
+        ' Specify that you want to use the same, or a a different color, than the positive bars.
+        ' Note that you must specify this before you specify the BorderColor
+        ' property value, if you want to alter the color:
+        .ColorType = xlDataBarColor
+        .Color.Color = vbRed
+    End With
+End Sub
+
+Function FillRange(minValue As Integer, maxValue As Integer, count As Integer) As Range
+    Dim i As Integer
+   
+    For i = 1 To count
+        ' Generate random numbers between minValue and maxValue
+        Me.Range("A" & i).Value = Int((maxValue - minValue + 1) * Rnd + minValue)
+    Next i
+    Set FillRange = Me.Range("A1", "A" & count)
+End Function
