@@ -1,0 +1,28 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CreateTeamSite", "CreateTeamSite\CreateTeamSite.csproj", "{14D8C4E7-1C3B-416B-B631-41BF73AFD397}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CreateTeamSiteWeb", "CreateTeamSiteWeb\CreateTeamSiteWeb.csproj", "{C47FA88A-12AB-4FAD-82A7-4D5D1EE3A8C0}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{14D8C4E7-1C3B-416B-B631-41BF73AFD397}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{14D8C4E7-1C3B-416B-B631-41BF73AFD397}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{14D8C4E7-1C3B-416B-B631-41BF73AFD397}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{14D8C4E7-1C3B-416B-B631-41BF73AFD397}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{14D8C4E7-1C3B-416B-B631-41BF73AFD397}.Release|Any CPU.Build.0 = Release|Any CPU
+		{14D8C4E7-1C3B-416B-B631-41BF73AFD397}.Release|Any CPU.Deploy.0 = Release|Any CPU
+		{C47FA88A-12AB-4FAD-82A7-4D5D1EE3A8C0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C47FA88A-12AB-4FAD-82A7-4D5D1EE3A8C0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C47FA88A-12AB-4FAD-82A7-4D5D1EE3A8C0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C47FA88A-12AB-4FAD-82A7-4D5D1EE3A8C0}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
