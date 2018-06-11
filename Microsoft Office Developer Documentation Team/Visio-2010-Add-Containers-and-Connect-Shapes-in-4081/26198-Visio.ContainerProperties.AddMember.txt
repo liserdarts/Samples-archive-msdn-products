@@ -1,0 +1,73 @@
+' Visio 2010 with the US Units stencils installed.
+' Demonstrate the ContainerProperties.AddMember method.
+' Visio 2010 allows you to create container objects that can
+' contain other shapes and then add shapes to the container.
+' You can add shapes before or after the container is created.
+' The following code creates a new Visio document and adds
+' a Container object to the document. It then creates
+' three shapes--a rectangle, circle, and triangle.
+' After the code creates the shapes, the code adds the
+' shapes to the container (which effectively moves them).
+'
+' To run this demo, open Visio 2010 and create a blank document.
+' Open the VBA editor and paste this code into the existing
+' ThisDocument module.
+' With the cursor inside the ConnectShapesWithDropConnected
+' method, press F5.
+Sub ConnectShapesWithDropConnected()
+    ' Access objects on the current document.
+    Dim doc As Visio.Document
+    Set doc = Application.ActiveDocument
+    Dim thePage As Visio.Page
+    Set thePage = doc.Pages(1)
+    
+    ' Access the new Containers collection by opening the built-in
+    ' stencil file for containers. You can access these objects in the
+    ' Visio user interface by selecting the Insert tab.
+    Dim containersDoc As Visio.Document
+    Set containersDoc = Application.Documents.OpenEx( _
+        Application.GetBuiltInStencilFile(visBuiltInStencilContainers, _
+        visMSUS), visOpenHidden)
+    
+    ' Next, use the new DropContainer method to add
+    ' the container specified by the containerToAdd to the page.
+    Dim containerToAdd As String
+    containerToAdd = "Container 2"
+    Dim containerShape As Visio.Shape
+    Set containerShape = thePage.DropContainer(containersDoc.Masters.ItemU(containerToAdd), Nothing)
+    containerShape.Text = "Shapes added via ContainerProperties.AddMember"
+    containersDoc.Close
+    
+    ' Open the built-in Basic Shapes stencil.
+    ' If the stencil is already open, the code
+    ' activates the stencil.
+    Dim stencil As Visio.Document
+    Dim stencilName As String
+    stencilName = "Basic Shapes (US units).vss"
+    Set stencil = Application.Documents.OpenEx(stencilName, visOpenDocked)
+    
+    ' Create a rectangle master shape from the stencil.
+    Dim rectangleMaster As Visio.Master
+    Set rectangleMaster = stencil.Masters("Rectangle")
+    ' Create a circle master shape from the stencil
+    Dim circleMaster As Visio.Master
+    Set circleMaster = stencil.Masters("Circle")
+    ' Create a triangle master shape from the stencil
+    Dim triangleMaster As Visio.Master
+    Set triangleMaster = stencil.Masters("Triangle")
+    
+    ' Define and create three shapes
+    Dim rectangle1 As Visio.Shape
+    Dim circle1 As Visio.Shape
+    Dim triangle1 As Visio.Shape
+    
+    ' Add the each object with the Page's Drop method.
+    Set rectangle1 = thePage.Drop(rectangleMaster, 2, 5)
+    Set circle1 = thePage.Drop(circleMaster, 4, 5)
+    Set triangle1 = thePage.Drop(triangleMaster, 6, 5)
+    ' Now "move" the shapes from the page inside the
+    ' container object created earlier.
+    containerShape.ContainerProperties.AddMember rectangle1, visMemberAddExpandContainer
+    containerShape.ContainerProperties.AddMember circle1, visMemberAddExpandContainer
+    containerShape.ContainerProperties.AddMember triangle1, visMemberAddExpandContainer
+End Sub
