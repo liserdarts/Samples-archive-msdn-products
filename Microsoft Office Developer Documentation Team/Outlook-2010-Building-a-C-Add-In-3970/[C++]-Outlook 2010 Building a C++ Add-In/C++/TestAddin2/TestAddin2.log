@@ -1,0 +1,43 @@
+﻿Build started 9/25/2009 9:22:38 AM.
+     1>Project "C:\Users\Administrator.WIN-VZVL4QWI840\Documents\Visual Studio 10\Projects\TestAddin2\TestAddin2\TestAddin2.vcxproj" on node 30 (build target(s)).
+       Skipping target "IsProjectFileNewer" because all output files are up-to-date with respect to the input files.
+     1>_PrepareForBuild:
+         Touching "X64\Debug\lastbuild.timestamp".
+       Midl:
+         Skipping task because its outputs are up-to-date.
+       ClCompile:
+         Skipping task because its outputs are up-to-date.
+     1>cl : Command line warning D9038: /ZI is not supported on this platform; enabling /Zi instead
+     1>cl : Command line warning D9007: '/Gm' requires '/Zi'; option ignored
+         FormRegionWrapper.cpp
+     1>FormRegionWrapper.cpp(115): warning C4800: 'BOOL' : forcing value to bool 'true' or 'false' (performance warning)
+     1>FormRegionWrapper.cpp(194): warning C4390: ';' : empty controlled statement found; is this the intent?
+     1>FormRegionWrapper.cpp(195): warning C4390: ';' : empty controlled statement found; is this the intent?
+     1>FormRegionWrapper.cpp(198): warning C4390: ';' : empty controlled statement found; is this the intent?
+     1>FormRegionWrapper.cpp(202): warning C4390: ';' : empty controlled statement found; is this the intent?
+     1>FormRegionWrapper.cpp(203): warning C4390: ';' : empty controlled statement found; is this the intent?
+     1>FormRegionWrapper.cpp(210): warning C4390: ';' : empty controlled statement found; is this the intent?
+     1>cl : Command line warning D9038: /ZI is not supported on this platform; enabling /Zi instead
+     1>cl : Command line warning D9007: '/Gm' requires '/Zi'; option ignored
+         dllmain.cpp
+     1>c:\users\administrator.win-vzvl4qwi840\documents\visual studio 10\projects\testaddin2\testaddin2\stdafx.h(39): warning C4192: automatically excluding 'IFont' while importing type library '0D452EE1-E08F-101A-852E-02608C4D0BB4'
+         Skipping task because its outputs are up-to-date.
+       ResourceCompile:
+         Skipping task because its outputs are up-to-date.
+       ManifestResourceCompile:
+         Skipping task because its outputs are up-to-date.
+       Link:
+            Creating library C:\Users\Administrator.WIN-VZVL4QWI840\Documents\Visual Studio 10\Projects\TestAddin2\X64\Debug\TestAddin2.lib and object C:\Users\Administrator.WIN-VZVL4QWI840\Documents\Visual Studio 10\Projects\TestAddin2\X64\Debug\TestAddin2.exp
+         TestAddin2.vcxproj -> C:\Users\Administrator.WIN-VZVL4QWI840\Documents\Visual Studio 10\Projects\TestAddin2\X64\Debug\TestAddin2.dll
+       Manifest:
+         Skipping task because its outputs are up-to-date.
+       LinkEmbedManifest:
+         Skipping task because its outputs are up-to-date.
+         TestAddin2.vcxproj -> C:\Users\Administrator.WIN-VZVL4QWI840\Documents\Visual Studio 10\Projects\TestAddin2\X64\Debug\TestAddin2.dll
+       _AfterBuild:
+         Touching "X64\Debug\LastSuccessfulBuild.timestamp".
+     1>Done Building Project "C:\Users\Administrator.WIN-VZVL4QWI840\Documents\Visual Studio 10\Projects\TestAddin2\TestAddin2\TestAddin2.vcxproj" (build target(s)).
+
+Build succeeded.
+
+Time Elapsed 00:00:04.44
