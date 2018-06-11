@@ -1,0 +1,6 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package dslVersion="1.0.0.0" Id="557e464d-991a-4016-9ebf-f228af91df50" solutionId="557e464d-991a-4016-9ebf-f228af91df50" xmlns="http://schemas.microsoft.com/VisualStudio/2008/SharePointTools/PackageModel" name="BroasdcastAnnouncements">
+    <features>
+        <featureReference itemId="23f5faa7-b0b3-4b00-9b0a-b6e304669cb4" />
+    </features>
+</package>
