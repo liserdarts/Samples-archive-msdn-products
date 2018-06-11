@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" dslVersion="1.0.0.0" Id="340efdd8-eb72-4b87-bcb7-8b3131499600" solutionId="340efdd8-eb72-4b87-bcb7-8b3131499600" resetWebServer="false" name="SharePoint2010CustomTabWebPart" xmlns="http://schemas.microsoft.com/VisualStudio/2008/SharePointTools/PackageModel">
+  <features>
+    <featureReference itemId="d8df297d-a368-4e14-8aa9-38d97c08f977" />
+  </features>
+  <projectItems>
+    <projectItemReference itemId="cf6ffb61-01d6-4b17-abea-4217df6b93ae" />
+  </projectItems>
+</package>

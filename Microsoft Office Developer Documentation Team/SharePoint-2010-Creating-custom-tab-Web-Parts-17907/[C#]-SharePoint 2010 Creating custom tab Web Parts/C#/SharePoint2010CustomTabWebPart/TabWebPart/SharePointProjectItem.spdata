@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ProjectItem Type="Microsoft.VisualStudio.SharePoint.VisualWebPart" DefaultFile="TabWebPartUserControl.ascx" SupportedTrustLevels="FullTrust" SupportedDeploymentScopes="Site" xmlns="http://schemas.microsoft.com/VisualStudio/2010/SharePointTools/SharePointProjectItemModel">
+  <Files>
+    <ProjectItemFile Source="Elements.xml" Target="TabWebPart\" Type="ElementManifest" />
+    <ProjectItemFile Source="TabWebPart.webpart" Target="TabWebPart\" Type="ElementFile" />
+    <ProjectItemFile Source="TabWebPartUserControl.ascx" Target="CONTROLTEMPLATES\SharePoint2010CustomTabWebPart\TabWebPart\" Type="TemplateFile" />
+  </Files>
+  <SafeControls>
+    <SafeControl Name="SafeControlEntry1" Assembly="$SharePoint.Project.AssemblyFullName$" Namespace="SharePoint2010CustomTabWebPart.TabWebPart" TypeName="*" IsSafe="true" IsSafeAgainstScript="false" />
+  </SafeControls>
+</ProjectItem>
