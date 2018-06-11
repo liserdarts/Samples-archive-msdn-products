@@ -1,0 +1,73 @@
+' Microsoft Word 2010/Charting
+
+' Modify the chart axis text.
+
+' Add a module to the document, and copy the following code
+' into the new module. Add a breakpoint after the call to the AddChart
+' method and press F5 to run the procedure. After hitting the breakpoint,
+' single step through the code (press F8 for each line) to see the
+' behavior of the chart. This will be easiest to see if you
+' arrange the Word window and the VBA window so they're side-by-side
+' on the screen.
+
+' You could easily modify this demonstration to work with PowerPoint:
+' replace the reference to ActiveDocument with ActivePresentation.Slides(1).
+
+Sub WorkWithAxisTitles()
+    Dim shp As Shape
+   
+    ' Create a chart.
+    Set shp = ActiveDocument.Shapes.AddChart(xlBarClustered)
+  
+    Dim cht As Chart
+    ' You can check the shp.HasChart property to determine if
+    ' the shape has a chart before continuing, but you can
+    ' be sure this particular shape has a chart because you
+    ' just created it.
+    Set cht = shp.Chart
+   
+    ' Warning: The HasAxis method is strange, and requires
+    ' you to read the documentation in order to call it.
+    ' There is no way to infer its use from the VBA editor.
+    cht.HasAxis(xlCategory) = True
+   
+    ' Warning: The Axes method returns an Object.
+    ' If you want to make use of IntelliSense in the
+    ' VBA editor, you must create an Axis variable, and
+    ' assign it to the result of calling the Axes method.
+    Dim ax As Axis
+   
+    ' Work with the category axis:
+    Set ax = cht.Axes(xlCategory)
+    With ax
+        .CategoryType = xlAutomaticScale
+        .MajorTickMark = xlInside
+        .TickLabelPosition = xlTickLabelPositionNextToAxis
+    End With
+    SetTitleProperties ax, "Categories"
+   
+    ' Work with the value axis:
+    cht.HasAxis(xlValue) = True
+    Set ax = cht.Axes(xlValue)
+    With ax
+        .HasDisplayUnitLabel = False
+        .DisplayUnit = xlCustom
+        .DisplayUnitCustom = 500
+        .HasTitle = True
+        .AxisTitle.Caption = "Milligrams"
+    End With
+    SetTitleProperties ax, "Values"
+End Sub
+
+Sub SetTitleProperties(ax As Axis, title As String)
+    With ax
+        .HasTitle = True
+        With .AxisTitle
+            .Text = title
+            With .Characters.Font
+                .Size = 14
+                .Color = xlRed
+            End With
+        End With
+    End With
+End Sub
