@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<customUI xmlns="http://schemas.microsoft.com/office/2006/01/customui" onLoad="Ribbon_Load" loadImage="GetImage">
+  <ribbon>
+    <tabs>
+      <tab idMso="TabInsert">
+        <group id="CCInsert" label="SharePoint" insertAfterMso="GroupInclude">
+          <button id="CCAttachButton"
+                  label ="Attach Document"
+                  description="Attaches documents from SharePoint."
+                  onAction="Control_Clicked"
+                  size="large"
+                  image="SiteAttach"/>
+        </group>
+      </tab>
+      <tab idMso="TabNewMailMessage">
+        <group id="CCInsert2" label="SharePoint" insertAfterMso="GroupInclude">
+          <button id="CCAttachButton2"
+                  label ="Attach Document"
+                  description="Attaches documents from SharePoint."
+                  onAction="Control_Clicked"
+                  size="large"
+                  image="SiteAttach"/>
+        </group>
+      </tab>
+    </tabs>
+  </ribbon>
+</customUI>
+
