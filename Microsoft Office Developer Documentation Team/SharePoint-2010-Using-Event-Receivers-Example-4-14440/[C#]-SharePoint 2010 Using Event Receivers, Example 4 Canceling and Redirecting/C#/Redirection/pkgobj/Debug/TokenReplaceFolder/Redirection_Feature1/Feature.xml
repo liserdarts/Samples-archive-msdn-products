@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Feature xmlns="http://schemas.microsoft.com/sharepoint/" Description="My Event Receiver Feature" Id="a2114591-21d6-49cf-8253-f044778fd9a5" Scope="Site" Title="Redirection Feature1">
+  <Properties>
+    <Property Key="GloballyAvailable" Value="true" />
+  </Properties>
+  <ElementManifests>
+    <ElementManifest Location="EventReceiver1\Elements.xml" />
+  </ElementManifests>
+</Feature>

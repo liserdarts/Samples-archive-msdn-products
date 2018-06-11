@@ -1,0 +1,5 @@
+C:\Users\alibad\Desktop\Redirection\Redirection\bin\Debug\Redirection.dll
+C:\Users\alibad\Desktop\Redirection\Redirection\bin\Debug\Redirection.pdb
+C:\Users\alibad\Desktop\Redirection\Redirection\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\alibad\Desktop\Redirection\Redirection\obj\Debug\Redirection.dll
+C:\Users\alibad\Desktop\Redirection\Redirection\obj\Debug\Redirection.pdb

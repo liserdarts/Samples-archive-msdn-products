@@ -1,0 +1,6 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package dslVersion="1.0.0.0" Id="9bd6960b-fde4-48c0-93ee-72bf5a5a02a8" solutionId="9bd6960b-fde4-48c0-93ee-72bf5a5a02a8" xmlns="http://schemas.microsoft.com/VisualStudio/2008/SharePointTools/PackageModel" name="Redirection">
+    <features>
+        <featureReference itemId="a2114591-21d6-49cf-8253-f044778fd9a5" />
+    </features>
+</package>
