@@ -1,0 +1,28 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "JoinACommunity", "JoinACommunity\JoinACommunity.csproj", "{B57DBA42-968F-49B1-9CE4-93AAABE65789}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "JoinACommunityRemoteWeb", "JoinACommunityRemoteWeb\JoinACommunityRemoteWeb.csproj", "{0080B8E3-3E2C-40C7-BAE7-A4397301469F}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{B57DBA42-968F-49B1-9CE4-93AAABE65789}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B57DBA42-968F-49B1-9CE4-93AAABE65789}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B57DBA42-968F-49B1-9CE4-93AAABE65789}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{B57DBA42-968F-49B1-9CE4-93AAABE65789}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B57DBA42-968F-49B1-9CE4-93AAABE65789}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B57DBA42-968F-49B1-9CE4-93AAABE65789}.Release|Any CPU.Deploy.0 = Release|Any CPU
+		{0080B8E3-3E2C-40C7-BAE7-A4397301469F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0080B8E3-3E2C-40C7-BAE7-A4397301469F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0080B8E3-3E2C-40C7-BAE7-A4397301469F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0080B8E3-3E2C-40C7-BAE7-A4397301469F}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

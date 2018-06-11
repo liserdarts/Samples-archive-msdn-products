@@ -1,0 +1,46 @@
+﻿@{
+    ViewBag.Title = "Top 25 Communities";
+}
+
+<div id="communitySearchBox">
+    <input id="searchText" type="text" autofocus placeholder="Search for Communities" />
+    <button type="button" id="searchButton">Search</button>
+</div>
+<div id="communityList">
+    @foreach (var community in ViewBag.Communities) {
+        string siteLinkId = "siteLink" + community.Id;
+        string activityLinkId = "activityLink" + community.Id;
+    <div>
+        <div class="inlineBlock">
+            @if (community.CurrentUserIsMember) {
+                  <text><img src="../images/ismember.gif" /></text>
+            }
+            else {
+                  <text><img src="../images/blank.gif" /></text>
+            }
+        </div>
+        <div class="inlineBlock" style="width:400px;">
+            <h3>
+                <a href="@community.FullUrl" data-siteRelativeUrl="@community.SiteRelativeUrl" id="@siteLinkId">
+                    @community.Title
+                </a>
+            </h3>
+        </div>
+        <div class="inlineBlock" >
+            (@community.Membership members)
+        </div>
+    </div>
+    <div style="padding-left:60px;padding-right:10px;">
+        <p>@community.Description</p>
+    </div>
+    <div style="padding-left:60px;">
+        <a href="#" id="@activityLinkId" title="Displays the top 10 questions in the community" >Show Top Questions</a>
+    </div>
+        
+    }
+    <div id="activityDialog">
+        <div id="activityBar" ><a href="#" id="closeActivityLink" title="Close"><img style="border:0px" src="../images/close.gif" /></a></div>
+        <div id="activityListTitle"><h1>Top Questions</h1></div>
+        <div id="activityList"></div>
+    </div> 
+</div>

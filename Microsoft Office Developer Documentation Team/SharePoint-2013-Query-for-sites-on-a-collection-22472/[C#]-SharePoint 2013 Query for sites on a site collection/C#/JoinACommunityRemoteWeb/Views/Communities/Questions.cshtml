@@ -1,0 +1,5 @@
+﻿@foreach (var question in ViewBag.Questions)
+{
+    <h3>@question.Title</h3>
+    <div style="font-style: italic">@Html.Raw(question.Body)</div>
+}
