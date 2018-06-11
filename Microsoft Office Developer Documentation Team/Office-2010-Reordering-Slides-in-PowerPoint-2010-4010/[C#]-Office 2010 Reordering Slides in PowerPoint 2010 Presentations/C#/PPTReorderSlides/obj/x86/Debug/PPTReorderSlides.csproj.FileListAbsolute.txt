@@ -1,0 +1,5 @@
+I:\DropBox\My Dropbox\Office 2010 VHTs\Sep 2010\VHT2 -- PPTReorderSlides\Demo\CS\PPTReorderSlides\PPTReorderSlides\bin\Debug\PPTReorderSlides.exe
+I:\DropBox\My Dropbox\Office 2010 VHTs\Sep 2010\VHT2 -- PPTReorderSlides\Demo\CS\PPTReorderSlides\PPTReorderSlides\bin\Debug\PPTReorderSlides.pdb
+I:\DropBox\My Dropbox\Office 2010 VHTs\Sep 2010\VHT2 -- PPTReorderSlides\Demo\CS\PPTReorderSlides\PPTReorderSlides\obj\x86\Debug\ResolveAssemblyReference.cache
+I:\DropBox\My Dropbox\Office 2010 VHTs\Sep 2010\VHT2 -- PPTReorderSlides\Demo\CS\PPTReorderSlides\PPTReorderSlides\obj\x86\Debug\PPTReorderSlides.exe
+I:\DropBox\My Dropbox\Office 2010 VHTs\Sep 2010\VHT2 -- PPTReorderSlides\Demo\CS\PPTReorderSlides\PPTReorderSlides\obj\x86\Debug\PPTReorderSlides.pdb

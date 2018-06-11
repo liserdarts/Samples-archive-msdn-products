@@ -1,0 +1,10 @@
+I:\DropBox\My Dropbox\Office 2010 VHTs\Sep 2010\VHT2 -- PPTReorderSlides\Demo\VB\PPTReorderSlides\PPTReorderSlides\bin\Debug\PPTReorderSlides.exe
+I:\DropBox\My Dropbox\Office 2010 VHTs\Sep 2010\VHT2 -- PPTReorderSlides\Demo\VB\PPTReorderSlides\PPTReorderSlides\bin\Debug\PPTReorderSlides.pdb
+I:\DropBox\My Dropbox\Office 2010 VHTs\Sep 2010\VHT2 -- PPTReorderSlides\Demo\VB\PPTReorderSlides\PPTReorderSlides\bin\Debug\PPTReorderSlides.xml
+I:\DropBox\My Dropbox\Office 2010 VHTs\Sep 2010\VHT2 -- PPTReorderSlides\Demo\VB\PPTReorderSlides\PPTReorderSlides\obj\x86\Debug\ResolveAssemblyReference.cache
+I:\DropBox\My Dropbox\Office 2010 VHTs\Sep 2010\VHT2 -- PPTReorderSlides\Demo\VB\PPTReorderSlides\PPTReorderSlides\obj\x86\Debug\PPTReorderSlides.Resources.resources
+I:\DropBox\My Dropbox\Office 2010 VHTs\Sep 2010\VHT2 -- PPTReorderSlides\Demo\VB\PPTReorderSlides\PPTReorderSlides\obj\x86\Debug\GenerateResource.read.1.tlog
+I:\DropBox\My Dropbox\Office 2010 VHTs\Sep 2010\VHT2 -- PPTReorderSlides\Demo\VB\PPTReorderSlides\PPTReorderSlides\obj\x86\Debug\GenerateResource.write.1.tlog
+I:\DropBox\My Dropbox\Office 2010 VHTs\Sep 2010\VHT2 -- PPTReorderSlides\Demo\VB\PPTReorderSlides\PPTReorderSlides\obj\x86\Debug\PPTReorderSlides.exe
+I:\DropBox\My Dropbox\Office 2010 VHTs\Sep 2010\VHT2 -- PPTReorderSlides\Demo\VB\PPTReorderSlides\PPTReorderSlides\obj\x86\Debug\PPTReorderSlides.xml
+I:\DropBox\My Dropbox\Office 2010 VHTs\Sep 2010\VHT2 -- PPTReorderSlides\Demo\VB\PPTReorderSlides\PPTReorderSlides\obj\x86\Debug\PPTReorderSlides.pdb
