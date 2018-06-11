@@ -1,0 +1,73 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ProjectItem Type="Microsoft.VisualStudio.SharePoint.Module" DefaultFile="Elements.xml" SupportedTrustLevels="All" SupportedDeploymentScopes="Web, Site" xmlns="http://schemas.microsoft.com/VisualStudio/2010/SharePointTools/SharePointProjectItemModel">
+  <Files>
+    <ProjectItemFile Source="Elements.xml" Target="Images\" Type="ElementManifest" />
+    <ProjectItemFile Source="AppIcon.png" Target="Images\" Type="ElementFile" />
+    <ProjectItemFile Source="home-background.jpg" Target="Images\" Type="ElementFile" />
+    <ProjectItemFile Source="HomepageEquationBtn.png" Target="Images\" Type="ElementFile" />
+    <ProjectItemFile Source="HomepageAnswerBtn.png" Target="Images\" Type="ElementFile" />
+    <ProjectItemFile Source="equation.png" Target="Images\" Type="ElementFile" />
+    <ProjectItemFile Source="answer.png" Target="Images\" Type="ElementFile" />
+    <ProjectItemFile Source="addition.jpg" Target="Images\" Type="ElementFile" />
+    <ProjectItemFile Source="substractions.jpg" Target="Images\" Type="ElementFile" />
+    <ProjectItemFile Source="multiplication.jpg" Target="Images\" Type="ElementFile" />
+    <ProjectItemFile Source="division.jpg" Target="Images\" Type="ElementFile" />
+    <ProjectItemFile Source="blank-box-blue.png" Target="Images\" Type="ElementFile" />
+    <ProjectItemFile Source="blank-box-red.png" Target="Images\" Type="ElementFile" />
+    <ProjectItemFile Source="blank-box-yellow.png" Target="Images\" Type="ElementFile" />
+    <ProjectItemFile Source="equals.png" Target="Images\" Type="ElementFile" />
+    <ProjectItemFile Source="answer-question.png" Target="Images\" Type="ElementFile" />
+    <ProjectItemFile Source="navigation-buttons\home.png" Target="Images\navigation-buttons\" Type="ElementFile" />
+    <ProjectItemFile Source="navigation-buttons\selected\tutorial.png" Target="Images\navigation-buttons\selected\" Type="ElementFile" />
+    <ProjectItemFile Source="navigation-buttons\answer.png" Target="Images\navigation-buttons\" Type="ElementFile" />
+    <ProjectItemFile Source="navigation-buttons\equation.png" Target="Images\navigation-buttons\" Type="ElementFile" />
+    <ProjectItemFile Source="blank-box-orange.png" Target="Images\" Type="ElementFile" />
+    <ProjectItemFile Source="answer\answer-background-1.jpg" Target="Images\answer\" Type="ElementFile" />
+    <ProjectItemFile Source="answer\answer-background-2.jpg" Target="Images\answer\" Type="ElementFile" />
+    <ProjectItemFile Source="answer\answer-background-3.jpg" Target="Images\answer\" Type="ElementFile" />
+    <ProjectItemFile Source="operator icons\addition-orange.jpg" Target="Images\operator icons\" Type="ElementFile" />
+    <ProjectItemFile Source="operator icons\division-orange.jpg" Target="Images\operator icons\" Type="ElementFile" />
+    <ProjectItemFile Source="operator icons\multiplication-orange.jpg" Target="Images\operator icons\" Type="ElementFile" />
+    <ProjectItemFile Source="operator icons\substractions-orange.jpg" Target="Images\operator icons\" Type="ElementFile" />
+    <ProjectItemFile Source="box-large-blank-grey.png" Target="Images\" Type="ElementFile" />
+    <ProjectItemFile Source="blank.png" Target="Images\" Type="ElementFile" />
+    <ProjectItemFile Source="blank-question.png" Target="Images\" Type="ElementFile" />
+    <ProjectItemFile Source="smileys\smiley-happy.png" Target="Images\smileys\" Type="ElementFile" />
+    <ProjectItemFile Source="smileys\smiley-normal.png" Target="Images\smileys\" Type="ElementFile" />
+    <ProjectItemFile Source="small-question.png" Target="Images\" Type="ElementFile" />
+    <ProjectItemFile Source="navigation-buttons\tutorial.png" Target="Images\navigation-buttons\" Type="ElementFile" />
+    <ProjectItemFile Source="navigation-buttons\selected\answer.png" Target="Images\navigation-buttons\selected\" Type="ElementFile" />
+    <ProjectItemFile Source="navigation-buttons\selected\equation.png" Target="Images\navigation-buttons\selected\" Type="ElementFile" />
+    <ProjectItemFile Source="navigation-buttons\selected\home.png" Target="Images\navigation-buttons\selected\" Type="ElementFile" />
+    <ProjectItemFile Source="equation\equation-background-1.jpg" Target="Images\equation\" Type="ElementFile" />
+    <ProjectItemFile Source="equation\equation-background-2.jpg" Target="Images\equation\" Type="ElementFile" />
+    <ProjectItemFile Source="equation\equation-background-3.jpg" Target="Images\equation\" Type="ElementFile" />
+    <ProjectItemFile Source="equation\EquationModeAnswer.PNG" Target="Images\equation\" Type="ElementFile" />
+    <ProjectItemFile Source="smileys\happy.png" Target="Images\smileys\" Type="ElementFile" />
+    <ProjectItemFile Source="smileys\sad.png" Target="Images\smileys\" Type="ElementFile" />
+    <ProjectItemFile Source="clock.png" Target="Images\" Type="ElementFile" />
+    <ProjectItemFile Source="Instructions\instructions.png" Target="Images\Instructions\" Type="ElementFile" />
+    <ProjectItemFile Source="Instructions\instructions-background.jpg" Target="Images\Instructions\" Type="ElementFile" />
+    <ProjectItemFile Source="navigation-buttons\instructions.png" Target="Images\navigation-buttons\" Type="ElementFile" />
+    <ProjectItemFile Source="navigation-buttons\selected\instructions.png" Target="Images\navigation-buttons\selected\" Type="ElementFile" />
+    <ProjectItemFile Source="paper.png" Target="Images\" Type="ElementFile" />
+    <ProjectItemFile Source="timer-icon.png" Target="Images\" Type="ElementFile" />
+    <ProjectItemFile Source="wrong-icon.png" Target="Images\" Type="ElementFile" />
+    <ProjectItemFile Source="correct-icon.png" Target="Images\" Type="ElementFile" />
+    <ProjectItemFile Source="happy-face-small.png" Target="Images\" Type="ElementFile" />
+    <ProjectItemFile Source="sad-face-small.png" Target="Images\" Type="ElementFile" />
+    <ProjectItemFile Source="equation-icon-small.jpg" Target="Images\" Type="ElementFile" />
+    <ProjectItemFile Source="answer-icon-small.jpg" Target="Images\" Type="ElementFile" />
+    <ProjectItemFile Source="AnswerPageIcon.png" Target="Images\" Type="ElementFile" />
+    <ProjectItemFile Source="equationPageIcon.png" Target="Images\" Type="ElementFile" />
+    <ProjectItemFile Source="Instructions\instructionPageIcon.png" Target="Images\Instructions\" Type="ElementFile" />
+    <ProjectItemFile Source="MathTech.png" Target="Images\" Type="ElementFile" />
+    <ProjectItemFile Source="blank-box-blue-smaller.png" Target="Images\" Type="ElementFile" />
+    <ProjectItemFile Source="blank-box-grey-smaller.png" Target="Images\" Type="ElementFile" />
+    <ProjectItemFile Source="blank-box-orange-smaller.png" Target="Images\" Type="ElementFile" />
+    <ProjectItemFile Source="blank-box-red-smaller.png" Target="Images\" Type="ElementFile" />
+    <ProjectItemFile Source="blank-box-yellow-smaller.png" Target="Images\" Type="ElementFile" />
+    <ProjectItemFile Source="box-large-blank-grey-medium.png" Target="Images\" Type="ElementFile" />
+    <ProjectItemFile Source="equals-smaller.png" Target="Images\" Type="ElementFile" />
+  </Files>
+</ProjectItem>

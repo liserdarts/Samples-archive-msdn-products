@@ -1,0 +1,72 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">
+  <Module Name="Images">
+    <File Path="Images\AppIcon.png" Url="Images/AppIcon.png" ReplaceContent="TRUE" />
+    <File Path="Images\home-background.jpg" Url="Images/home-background.jpg" ReplaceContent="TRUE" />
+    <File Path="Images\HomepageEquationBtn.png" Url="Images/HomepageEquationBtn.png" ReplaceContent="TRUE" />
+    <File Path="Images\HomepageAnswerBtn.png" Url="Images/HomepageAnswerBtn.png" ReplaceContent="TRUE" />
+    <File Path="Images\equation.png" Url="Images/equation.png" ReplaceContent="TRUE" />
+    <File Path="Images\answer.png" Url="Images/answer.png" ReplaceContent="TRUE" />
+    <File Path="Images\addition.jpg" Url="Images/addition.jpg" ReplaceContent="TRUE" />
+    <File Path="Images\substractions.jpg" Url="Images/substractions.jpg" ReplaceContent="TRUE" />
+    <File Path="Images\multiplication.jpg" Url="Images/multiplication.jpg" ReplaceContent="TRUE" />
+    <File Path="Images\division.jpg" Url="Images/division.jpg" ReplaceContent="TRUE" />
+    <File Path="Images\blank-box-blue.png" Url="Images/blank-box-blue.png" ReplaceContent="TRUE" />
+    <File Path="Images\blank-box-red.png" Url="Images/blank-box-red.png" ReplaceContent="TRUE" />
+    <File Path="Images\blank-box-yellow.png" Url="Images/blank-box-yellow.png" ReplaceContent="TRUE" />
+    <File Path="Images\equals.png" Url="Images/equals.png" ReplaceContent="TRUE" />
+    <File Path="Images\answer-question.png" Url="Images/answer-question.png" ReplaceContent="TRUE" />
+    <File Path="Images\navigation-buttons\home.png" Url="Images/navigation-buttons/home.png" ReplaceContent="TRUE" />
+    <File Path="Images\navigation-buttons\selected\tutorial.png" Url="Images/navigation-buttons/selected/tutorial.png" ReplaceContent="TRUE" />
+    <File Path="Images\navigation-buttons\answer.png" Url="Images/navigation-buttons/answer.png" ReplaceContent="TRUE" />
+    <File Path="Images\navigation-buttons\equation.png" Url="Images/navigation-buttons/equation.png" ReplaceContent="TRUE" />
+    <File Path="Images\blank-box-orange.png" Url="Images/blank-box-orange.png" ReplaceContent="TRUE" />
+    <File Path="Images\answer\answer-background-1.jpg" Url="Images/answer/answer-background-1.jpg" ReplaceContent="TRUE" />
+    <File Path="Images\answer\answer-background-2.jpg" Url="Images/answer/answer-background-2.jpg" ReplaceContent="TRUE" />
+    <File Path="Images\answer\answer-background-3.jpg" Url="Images/answer/answer-background-3.jpg" ReplaceContent="TRUE" />
+    <File Path="Images\operator icons\addition-orange.jpg" Url="Images/operator icons/addition-orange.jpg" ReplaceContent="TRUE" />
+    <File Path="Images\operator icons\division-orange.jpg" Url="Images/operator icons/division-orange.jpg" ReplaceContent="TRUE" />
+    <File Path="Images\operator icons\multiplication-orange.jpg" Url="Images/operator icons/multiplication-orange.jpg" ReplaceContent="TRUE" />
+    <File Path="Images\operator icons\substractions-orange.jpg" Url="Images/operator icons/substractions-orange.jpg" ReplaceContent="TRUE" />
+    <File Path="Images\box-large-blank-grey.png" Url="Images/box-large-blank-grey.png" ReplaceContent="TRUE" />
+    <File Path="Images\blank.png" Url="Images/blank.png" ReplaceContent="TRUE" />
+    <File Path="Images\blank-question.png" Url="Images/blank-question.png" ReplaceContent="TRUE" />
+    <File Path="Images\smileys\smiley-happy.png" Url="Images/smileys/smiley-happy.png" ReplaceContent="TRUE" />
+    <File Path="Images\smileys\smiley-normal.png" Url="Images/smileys/smiley-normal.png" ReplaceContent="TRUE" />
+    <File Path="Images\small-question.png" Url="Images/small-question.png" ReplaceContent="TRUE" />
+    <File Path="Images\navigation-buttons\tutorial.png" Url="Images/navigation-buttons/tutorial.png" ReplaceContent="TRUE" />
+    <File Path="Images\navigation-buttons\selected\answer.png" Url="Images/navigation-buttons/selected/answer.png" ReplaceContent="TRUE" />
+    <File Path="Images\navigation-buttons\selected\equation.png" Url="Images/navigation-buttons/selected/equation.png" ReplaceContent="TRUE" />
+    <File Path="Images\navigation-buttons\selected\home.png" Url="Images/navigation-buttons/selected/home.png" ReplaceContent="TRUE" />
+    <File Path="Images\equation\equation-background-1.jpg" Url="Images/equation/equation-background-1.jpg" ReplaceContent="TRUE" />
+    <File Path="Images\equation\equation-background-2.jpg" Url="Images/equation/equation-background-2.jpg" ReplaceContent="TRUE" />
+    <File Path="Images\equation\equation-background-3.jpg" Url="Images/equation/equation-background-3.jpg" ReplaceContent="TRUE" />
+    <File Path="Images\equation\EquationModeAnswer.PNG" Url="Images/equation/EquationModeAnswer.PNG" ReplaceContent="TRUE" />
+    <File Path="Images\smileys\happy.png" Url="Images/smileys/happy.png" ReplaceContent="TRUE" />
+    <File Path="Images\smileys\sad.png" Url="Images/smileys/sad.png" ReplaceContent="TRUE" />
+    <File Path="Images\clock.png" Url="Images/clock.png" ReplaceContent="TRUE" />
+    <File Path="Images\Instructions\instructions.png" Url="Images/Instructions/instructions.png" ReplaceContent="TRUE" />
+    <File Path="Images\Instructions\instructions-background.jpg" Url="Images/Instructions/instructions-background.jpg" ReplaceContent="TRUE" />
+    <File Path="Images\navigation-buttons\instructions.png" Url="Images/navigation-buttons/instructions.png" ReplaceContent="TRUE" />
+    <File Path="Images\navigation-buttons\selected\instructions.png" Url="Images/navigation-buttons/selected/instructions.png" ReplaceContent="TRUE" />
+    <File Path="Images\paper.png" Url="Images/paper.png" ReplaceContent="TRUE" />
+    <File Path="Images\timer-icon.png" Url="Images/timer-icon.png" ReplaceContent="TRUE" />
+    <File Path="Images\wrong-icon.png" Url="Images/wrong-icon.png" ReplaceContent="TRUE" />
+    <File Path="Images\correct-icon.png" Url="Images/correct-icon.png" ReplaceContent="TRUE" />
+    <File Path="Images\happy-face-small.png" Url="Images/happy-face-small.png" ReplaceContent="TRUE" />
+    <File Path="Images\sad-face-small.png" Url="Images/sad-face-small.png" ReplaceContent="TRUE" />
+    <File Path="Images\equation-icon-small.jpg" Url="Images/equation-icon-small.jpg" ReplaceContent="TRUE" />
+    <File Path="Images\answer-icon-small.jpg" Url="Images/answer-icon-small.jpg" ReplaceContent="TRUE" />
+    <File Path="Images\AnswerPageIcon.png" Url="Images/AnswerPageIcon.png" ReplaceContent="TRUE" />
+    <File Path="Images\equationPageIcon.png" Url="Images/equationPageIcon.png" ReplaceContent="TRUE" />
+    <File Path="Images\Instructions\instructionPageIcon.png" Url="Images/Instructions/instructionPageIcon.png" ReplaceContent="TRUE" />
+    <File Path="Images\MathTech.png" Url="Images/MathTech.png" ReplaceContent="TRUE" />
+    <File Path="Images\blank-box-blue-smaller.png" Url="Images/blank-box-blue-smaller.png" ReplaceContent="TRUE" />
+    <File Path="Images\blank-box-grey-smaller.png" Url="Images/blank-box-grey-smaller.png" ReplaceContent="TRUE" />
+    <File Path="Images\blank-box-orange-smaller.png" Url="Images/blank-box-orange-smaller.png" ReplaceContent="TRUE" />
+    <File Path="Images\blank-box-red-smaller.png" Url="Images/blank-box-red-smaller.png" ReplaceContent="TRUE" />
+    <File Path="Images\blank-box-yellow-smaller.png" Url="Images/blank-box-yellow-smaller.png" ReplaceContent="TRUE" />
+    <File Path="Images\box-large-blank-grey-medium.png" Url="Images/box-large-blank-grey-medium.png" ReplaceContent="TRUE" />
+    <File Path="Images\equals-smaller.png" Url="Images/equals-smaller.png" ReplaceContent="TRUE" />
+  </Module>
+</Elements>

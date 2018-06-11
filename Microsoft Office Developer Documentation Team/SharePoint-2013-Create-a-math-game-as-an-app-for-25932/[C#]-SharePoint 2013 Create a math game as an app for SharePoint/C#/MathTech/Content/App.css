@@ -1,0 +1,369 @@
+﻿@charset "utf-8";
+/* Place custom styles below */
+/* CSS Document */
+
+table {
+	boder-width:0px;
+	margin:0 auto;
+	}
+
+
+body {
+font-family:"Segoe Print";
+	}
+
+.home {
+	background:url(../images/home-background.jpg) no-repeat top center;
+	width:600px;
+	height:600px;
+	}
+.mode {
+	color: #0050a2;
+	font-size:1.3em;
+	line-height:1em;
+	font-weight:bolder;
+	text-transform:uppercase;
+	}
+
+.tableHome {
+    width:100%;
+    height:600px;
+   text-align:center;
+   padding:0;
+   border:0;
+    
+}	
+.header {
+	height:90px;
+	display:block;
+	}
+.main {
+    padding-left:25px;
+	height:386px;
+	display:block;
+    width:550px;
+	}
+
+/*INSTRUCTIONS - SCROLL*/
+.instructionNavTable {   
+    width:93%;
+    height:110px;
+    border-spacing:0;
+	padding:0;
+	border:0;
+	margin:0 auto;
+	}
+.instructions {
+	background:url(../images/instructions/instructions-background.jpg) no-repeat top center;
+	width:600px;
+	height:600px;
+	}
+.tableinstructions {
+    width:92%; 
+    height:386px;
+    text-align:left;
+	margin:0 auto;
+	overflow:auto;
+	display:block;
+	padding: 15px;
+	border-width: 0;
+}
+.tableinstructions p strong {
+	font-size:16px;
+	font-weight:bolder;
+	color:#333;
+	}
+
+.tableinstructions p {
+	font-size:14px;
+	line-height: 1.5em;
+	}
+	
+.innertableInstructionTable {
+	border-width:5px;
+    padding:15px;
+    border-spacing:0;
+
+	}
+.innertableInstructionTableData {
+	border: 1px solid #CCCCCC;
+    width:50%;
+    vertical-align:top;
+	}
+.InnerLowerTable {
+	text-align:left;
+	
+	}
+
+/*INSTRUCTIONS - SCROLL ENDS*/
+
+/*INSTRUCTIONS - USING LINK*/
+.instructions2 {
+	background:url(instructions-background.jpg) no-repeat top center;
+	width:600px;
+	height:600px;
+	}
+.tableinstructions2 {
+    width:93%;
+    height:70%;
+	text-align:left;
+	margin:0 auto;
+}
+.tableinstructions2 p strong {
+	font-size:14px;
+	font-weight:bolder;
+	color:#333;
+	}
+
+.tableinstructions2 p {
+	font-size:12px;
+	line-height: 1.5em;
+	}
+/*INSTRUCTIONS - USING LINK ENDS*/
+
+/*EQUATION MODE*/
+
+.EquationNav {
+	border-width: 0;
+    height: 110px;
+    margin: 0 auto;
+    padding: 0;
+    width: 93%;
+}
+.EquationMain {
+	width:92%;
+	height:45%;
+	padding:0;
+	border-width:0;
+	border:0;
+	margin:0 auto;
+	}
+.EquationMain2 {
+	width:92%;
+	height:30%;
+	padding:0;
+	border-width:0;
+	border:0;
+	margin:0 auto;
+	}
+.EquationMain3 {
+	width:92%;
+	height:5%;
+	padding:0;
+	border-width:0;
+	border:0;
+	margin:0 auto;
+	}
+
+.equation1 {
+	background:url(../images/equation/equation-background-1.jpg) no-repeat top center;
+	width:600px;
+	height:600px;
+	}
+.equation2 {
+	background:url(../images/equation/equation-background-2.jpg) no-repeat top center;
+	width:600px;
+	height:600px;
+	}
+.equation3 {
+	background:url(../images/equation/equation-background-3.jpg) no-repeat top center;
+	width:600px;
+	height:600px;
+	}
+.equationModeOptions {
+   	background: url("../images/box-large-blank-grey.png") repeat scroll 0 0 transparent;
+    background-repeat: no-repeat;
+    color: black;
+    display: block;
+    float: none;
+    font-size: 20px;
+    height: 90px;
+    line-height: 70px;
+    min-height: 60px;
+    min-width: 60px;
+    text-align: center;
+    vertical-align: middle;
+    width: 90px; 
+}
+.equationModeOperands {
+   
+    background-image: url("../images/blank-box-yellow.png");
+    background-repeat: no-repeat;
+    color: black;
+    display: block;
+    float: none;
+    font-size: 20px;
+    height: 70px;
+    line-height: 70px;
+    min-height: 60px;
+    min-width: 60px;
+    text-align: center;
+    vertical-align: middle;
+    width: 70px;
+}
+.equationModeAnswer {
+	
+	background-image: url("../images/blank-box-orange.png");
+    color: white;
+    display: block;
+    font-size: 30px;
+    font-weight: bolder;
+    height: 70px;
+    line-height: 67px;
+    text-align: center;
+    width: 70px;
+}
+.equationModeOperator {
+ 
+	background-image: url("../images/blank-box-blue.png");
+    background-position: center top;
+    background-repeat: no-repeat;
+    border: medium none;
+    color: white;
+    display: block;
+    float: none;
+    font-size: 27px;
+    font-weight: 900;
+    height: 70px;
+    line-height: 77px;
+    text-align: center;
+    width: 70px;
+}
+/*EQUATION MODE ENDS*/
+
+/*ANSWER MODE*/
+.AnswerMain1 {
+    border-spacing:0;
+    padding:1px;
+    border-width:0;
+	border:0;
+	margin:0 auto;
+	margin-top:10px;
+	}
+.AnswerMain2 {
+	height:10%;
+	width:87%;
+	padding:1px;
+	border-width:0;
+	border:0;
+	margin:0 auto;
+	}
+.AnswerMain3 {
+	height:10%;
+	width:92%;
+	padding:1px;
+	border-width:0;
+	border:0;
+	margin:0 auto;
+	}
+
+
+.AnswerNav {
+	border-width: 0;
+    height: 110px;
+    margin: 0 auto;
+    padding: 0;
+    width: 93%;
+}
+.answer1 {
+	background:url(../images/answer/answer-background-1.jpg) no-repeat top center;
+	width:600px;
+	height:600px;
+	}
+.answer2 {
+	background:url(../images/answer/answer-background-2.jpg) no-repeat top center;
+	width:600px;
+	height:600px;
+	}
+.answer3 {
+	background:url(../images/answer/answer-background-3.jpg) no-repeat top center;
+	width:600px;
+	height:600px;
+	}
+	
+.answernModeOperators {
+    background:url("../images/box-large-blank-grey.png") none repeat scroll 0 0 #C94C00;
+    color: white;
+    font-size: 30px;
+    height: 50px;
+    width: 50px; 
+}
+
+.answernModeOperands {
+    background: url("../images/box-large-blank-grey-medium.png") no-repeat top center;
+   	background-repeat: no-repeat;
+    color: black;
+    display: block;
+    float: none;
+    font-size: 20px;
+    line-height: 57px;
+    min-height: 55px;
+    min-width: 60px;
+    text-align: center;
+    vertical-align: middle;
+    height: 55px;
+    width: 120px;
+}
+.answerModeOptionSelected {
+    background: url("../images/blank-box-yellow-smaller.png") no-repeat scroll 0 0 transparent;
+    border: medium none;
+    color: black;
+    display: block;
+    float: none;
+    font-size: 32px;
+    font-weight: bold;
+    height: 43px;
+    line-height: 40px;
+    text-align: center;
+    width: 49px;
+    padding:0;
+}
+.tmode {
+	text-align:center;
+	vertical-align:middle;
+	}
+.emode {
+	text-align:center;
+	vertical-align:middle;
+	}
+.amode {
+	text-align:center;
+	vertical-align:middle;
+	}
+TdataQ {
+	text-align:left;
+	vertical-align:middle;
+	}
+TdataQ2 {
+	text-align:center;
+	vertical-align:middle;
+	}
+
+/*ANSWER MODE ENDS*/
+
+/*TIMER and COUNTERS*/
+#Timer {
+     background: url("../images/clock.png") no-repeat scroll 0 0 transparent;
+    display: block;
+    font-size: 20px;
+    height: 45px;
+    padding-left: 78px;
+    width: 126px;
+}
+#correctCounterLabel {
+    font-size: 18px;
+}
+
+#wrongCounterLabel {
+    font-size: 18px;
+}
+
+/*TIMER and COUNTERS ENDS*/
+body {
+     height:100%;
+     margin:0;
+     padding:0;
+}
+
+
+

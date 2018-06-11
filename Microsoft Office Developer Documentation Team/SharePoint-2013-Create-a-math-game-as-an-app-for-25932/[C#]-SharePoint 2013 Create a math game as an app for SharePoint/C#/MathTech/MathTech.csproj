@@ -1,0 +1,189 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{FC8B74BC-6D27-4649-BB67-1A0AA277C8BF}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>MathTech</RootNamespace>
+    <AssemblyName>MathTech</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <TargetOfficeVersion>15.0</TargetOfficeVersion>
+    <FileAlignment>512</FileAlignment>
+    <ProjectTypeGuids>{C1CDDADD-2546-481F-9697-4EA41081F2FC};{14822709-B5A1-4724-98CA-57A101D1B079};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <IncludeAssemblyInPackage>False</IncludeAssemblyInPackage>
+    <ProjectMode>SharePointApp</ProjectMode>
+    <AppFeaturePartId>{0a6c4c38-ed96-491e-a190-935479f4d8c6}</AppFeaturePartId>
+    <WspPartId>{5950fbc9-f5f8-4e08-89de-1b706b34fe47}</WspPartId>
+    <WorkflowPartId>{c7e72dd1-72d9-4d80-8235-20dd342e0429}</WorkflowPartId>
+    <CspkgPartId>{f7ad17fa-08d8-4a9c-95c1-fd305bf946fa}</CspkgPartId>
+    <SqlPackagePartId>{e1feaba8-4289-4772-9039-165d4c1a2c16}</SqlPackagePartId>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+  </PropertyGroup>
+  <ItemGroup>
+    <None Include="Content\SEGOESCB_2.TTF" />
+    <None Include="Content\SEGOESC_2.TTF" />
+    <None Include="packages.config" />
+    <None Include="Pages\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{241303fd-f70d-4449-b8cf-187ec56c78d4}</SharePointProjectItemId>
+    </None>
+    <Content Include="Content\jquery-ui.css" />
+    <Content Include="Images\addition.jpg" />
+    <Content Include="Images\answer-icon-small.jpg" />
+    <Content Include="Images\answer-question.png" />
+    <Content Include="Images\answer.png" />
+    <Content Include="Images\AnswerPageIcon.png" />
+    <Content Include="Images\answer\answer-background-1.jpg" />
+    <Content Include="Images\answer\answer-background-2.jpg" />
+    <Content Include="Images\answer\answer-background-3.jpg" />
+    <Content Include="Images\blank-box-blue-smaller.png" />
+    <Content Include="Images\blank-box-blue.png" />
+    <Content Include="Images\blank-box-grey-smaller.png" />
+    <Content Include="Images\blank-box-orange-smaller.png" />
+    <Content Include="Images\blank-box-orange.png" />
+    <Content Include="Images\blank-box-red-smaller.png" />
+    <Content Include="Images\blank-box-red.png" />
+    <Content Include="Images\blank-box-yellow-smaller.png" />
+    <Content Include="Images\blank-box-yellow.png" />
+    <Content Include="Images\blank-question.png" />
+    <Content Include="Images\blank.png" />
+    <Content Include="Images\box-large-blank-grey-medium.png" />
+    <Content Include="Images\box-large-blank-grey.png" />
+    <Content Include="Images\clock.png" />
+    <Content Include="Images\correct-icon.png" />
+    <Content Include="Images\division.jpg" />
+    <Content Include="Images\equals-smaller.png" />
+    <Content Include="Images\equals.png" />
+    <Content Include="Images\equation-icon-small.jpg" />
+    <Content Include="Images\equation.png" />
+    <Content Include="Images\equationPageIcon.png" />
+    <Content Include="Images\equation\equation-background-1.jpg" />
+    <Content Include="Images\equation\equation-background-2.jpg" />
+    <Content Include="Images\equation\equation-background-3.jpg" />
+    <Content Include="Images\equation\EquationModeAnswer.PNG" />
+    <Content Include="Images\happy-face-small.png" />
+    <Content Include="Images\HomepageAnswerBtn.png" />
+    <Content Include="Images\HomepageEquationBtn.png" />
+    <Content Include="Images\home-background.jpg" />
+    <Content Include="Images\Instructions\instructionPageIcon.png" />
+    <Content Include="Images\Instructions\instructions.png" />
+    <Content Include="Images\Instructions\instructions-background.jpg" />
+    <Content Include="Images\MathTech.png" />
+    <Content Include="Images\multiplication.jpg" />
+    <Content Include="Images\navigation-buttons\answer.png" />
+    <Content Include="Images\navigation-buttons\equation.png" />
+    <Content Include="Images\navigation-buttons\home.png" />
+    <Content Include="Images\navigation-buttons\instructions.png" />
+    <Content Include="Images\navigation-buttons\selected\answer.png" />
+    <Content Include="Images\navigation-buttons\selected\equation.png" />
+    <Content Include="Images\navigation-buttons\selected\home.png" />
+    <Content Include="Images\navigation-buttons\selected\instructions.png" />
+    <Content Include="Images\navigation-buttons\selected\tutorial.png" />
+    <Content Include="Images\navigation-buttons\tutorial.png" />
+    <Content Include="Images\operator icons\addition-orange.jpg" />
+    <Content Include="Images\operator icons\division-orange.jpg" />
+    <Content Include="Images\operator icons\multiplication-orange.jpg" />
+    <Content Include="Images\operator icons\substractions-orange.jpg" />
+    <Content Include="Images\paper.png" />
+    <Content Include="Images\sad-face-small.png" />
+    <Content Include="Images\small-question.png" />
+    <Content Include="Images\smileys\happy.png" />
+    <Content Include="Images\smileys\sad.png" />
+    <Content Include="Images\smileys\smiley-happy.png" />
+    <Content Include="Images\smileys\smiley-normal.png" />
+    <Content Include="Images\substractions.jpg" />
+    <Content Include="Images\timer-icon.png" />
+    <Content Include="Images\wrong-icon.png" />
+    <Content Include="Pages\Answer.aspx" />
+    <Content Include="Pages\Elements.xml" />
+    <Content Include="Pages\Default.aspx" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Score\ScoreInstance\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{d0f23802-f4fc-4c53-9aab-9536215d15a3}</SharePointProjectItemId>
+    </None>
+    <None Include="Score\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{a7d1279d-ead5-4d64-8f8c-9faf083dfd86}</SharePointProjectItemId>
+    </None>
+    <None Include="Scripts\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{e1feaba8-4289-4772-9039-165d4c1a2c16}</SharePointProjectItemId>
+    </None>
+    <Content Include="Pages\Equation.aspx" />
+    <Content Include="Pages\Instructions.aspx" />
+    <Content Include="Score\Elements.xml" />
+    <Content Include="Score\Schema.xml" />
+    <Content Include="Score\ScoreInstance\Elements.xml" />
+    <Content Include="Scripts\Answer.js" />
+    <Content Include="Scripts\Elements.xml" />
+    <Content Include="Scripts\App.js" />
+    <Content Include="Scripts\Equation.js" />
+    <Content Include="Scripts\Instructions.js" />
+    <Content Include="Scripts\jquery-1.7.1.intellisense.js" />
+    <Content Include="Scripts\jquery-1.7.1.js" />
+    <Content Include="Scripts\jquery-1.7.1.min.js" />
+    <Content Include="Scripts\jquery-ui.js" />
+    <Content Include="Scripts\_references.js" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Content\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{5b9f9f75-029b-454f-b7ee-12ca3515fb89}</SharePointProjectItemId>
+    </None>
+    <Content Include="Content\Elements.xml" />
+    <Content Include="Content\App.css" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Images\AppIcon.png">
+      <OpcRelationship>manifest-icon</OpcRelationship>
+    </Content>
+    <Content Include="Images\Elements.xml" />
+    <None Include="Images\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{0d1e1c2c-135d-4ef5-9a09-f1a8d842a972}</SharePointProjectItemId>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Package\Package.package">
+      <PackageId>{4c825f95-58f3-4033-bba4-4d41718fc465}</PackageId>
+    </None>
+    <None Include="Package\Package.Template.xml">
+      <DependentUpon>Package.package</DependentUpon>
+    </None>
+    <None Include="Features\Feature1\Feature1.feature">
+      <FeatureId>{85d0cec5-f07f-4350-8dbc-440df74d1546}</FeatureId>
+    </None>
+    <None Include="Features\Feature1\Feature1.Template.xml">
+      <DependentUpon>Feature1.feature</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <AppManifestFile Include="AppManifest.xml">
+      <SubType>Designer</SubType>
+    </AppManifestFile>
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == '' or '$(VisualStudioVersion)' &lt; '11.0'">11.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(VSToolsPath)\SharePointTools\Microsoft.VisualStudio.SharePoint.targets" Condition="'$(VSToolsPath)' != ''" />
+</Project>

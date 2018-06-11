@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package dslVersion="1.0.0.0" 
+        Id="4c825f95-58f3-4033-bba4-4d41718fc465" 
+        solutionId="4c825f95-58f3-4033-bba4-4d41718fc465" 
+        xmlns="http://schemas.microsoft.com/VisualStudio/2008/SharePointTools/PackageModel" 
+        name="MathTech"
+        sharePointProductVersion="15.0">
+  <features>
+        <featureReference itemId="85d0cec5-f07f-4350-8dbc-440df74d1546" />
+  </features>
+</package>
