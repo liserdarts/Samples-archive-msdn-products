@@ -1,0 +1,6 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package dslVersion="1.0.0.0" Id="c8fbfa79-dcba-41db-8c65-1ff5f13e8ba2" solutionId="c8fbfa79-dcba-41db-8c65-1ff5f13e8ba2" xmlns="http://schemas.microsoft.com/VisualStudio/2008/SharePointTools/PackageModel" name="SharePoint.Workflow.ExcelGenerator">
+    <features>
+        <featureReference itemId="38a86ca7-ab55-4ac6-b595-22c58129c516" />
+    </features>
+</package>

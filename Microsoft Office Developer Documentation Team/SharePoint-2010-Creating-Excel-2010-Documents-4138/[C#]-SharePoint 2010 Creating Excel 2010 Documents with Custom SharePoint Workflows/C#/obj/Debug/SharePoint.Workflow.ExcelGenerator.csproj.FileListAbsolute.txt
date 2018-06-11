@@ -1,0 +1,5 @@
+C:\WhitePapers\SharePoint.Workflow.ExcelGenerator\obj\Debug\ResolveAssemblyReference.cache
+C:\WhitePapers\SharePoint.Workflow.ExcelGenerator\bin\Debug\SharePoint.Workflow.ExcelGenerator.dll
+C:\WhitePapers\SharePoint.Workflow.ExcelGenerator\bin\Debug\SharePoint.Workflow.ExcelGenerator.pdb
+C:\WhitePapers\SharePoint.Workflow.ExcelGenerator\obj\Debug\SharePoint.Workflow.ExcelGenerator.dll
+C:\WhitePapers\SharePoint.Workflow.ExcelGenerator\obj\Debug\SharePoint.Workflow.ExcelGenerator.pdb
