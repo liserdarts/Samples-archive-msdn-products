@@ -1,0 +1,76 @@
+' PowerPoint 2010/2007
+
+' Work with Table properties.
+
+' Copy this code into a module in a new presentation.
+' Display the VBA window side-by-side with the PowerPoint window,
+' place the cursor into the TableProperties procedure,
+' and press F8 (and then Shift+F8) to single step through this
+' code for the most effective use of this demonstration.
+
+Sub TableProperties()
+    Dim pres As Presentation
+    Set pres = ActivePresentation
+   
+    Dim sld As Slide
+    Set sld = pres.Slides.Add(2, ppLayoutTable)
+    sld.Select
+    Dim tbl As Table
+    Set tbl = sld.Shapes.AddTable(4, 4).Table
+    FillTable tbl
+   
+    ' Variables to maintain the state:
+    Dim savedFirstRow As Boolean
+    Dim savedFirstCol As Boolean
+    Dim savedHorizBanding As Boolean
+    Dim savedLastCol As Boolean
+    Dim savedLastRow As Boolean
+    Dim savedVertBanding As Boolean
+   
+    ' Store the current state:
+    savedFirstRow = tbl.FirstRow
+    savedFirstCol = tbl.FirstCol
+    savedHorizBanding = tbl.HorizBanding
+    savedLastCol = tbl.LastCol
+    savedLastRow = tbl.LastRow
+    savedVertBanding = tbl.VertBanding
+   
+    ' Alter all settings:
+    tbl.HorizBanding = Not savedHorizBanding
+    tbl.VertBanding = Not savedVertBanding
+    tbl.FirstRow = Not savedFirstRow
+    tbl.FirstCol = Not savedFirstCol
+    tbl.LastCol = Not savedLastCol
+    tbl.LastRow = Not savedLastRow
+   
+    ' Scale the table to half size:
+    tbl.ScaleProportionally 0.5
+   
+    ' Put it back the way it was (twice as big as it is currently):
+    tbl.ScaleProportionally 2
+
+    ' Put things back the way they were:
+    tbl.HorizBanding = savedHorizBanding
+    tbl.VertBanding = savedVertBanding
+    tbl.FirstRow = savedFirstRow
+    tbl.FirstCol = savedFirstCol
+    tbl.LastCol = savedLastCol
+    tbl.LastRow = savedLastRow
+   
+End Sub
+
+Sub FillTable(tbl As Table)
+    ' Fill a table with sample data.
+    Dim row As Integer
+    Dim col As Integer
+   
+    For col = 1 To tbl.Columns.Count
+        tbl.Cell(1, col).Shape.TextFrame.TextRange.Text = "Heading " & col
+    Next col
+   
+    For row = 2 To tbl.Rows.Count
+        For col = 1 To tbl.Columns.Count
+            tbl.Cell(row, col).Shape.TextFrame.TextRange.Text = "Cell " & row & ", " & col
+        Next col
+    Next row
+End Sub
