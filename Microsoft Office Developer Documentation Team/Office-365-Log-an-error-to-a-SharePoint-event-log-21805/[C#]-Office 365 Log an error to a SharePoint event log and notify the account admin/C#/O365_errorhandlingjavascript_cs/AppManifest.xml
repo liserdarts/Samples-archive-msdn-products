@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<App xmlns="http://schemas.microsoft.com/sharepoint/2012/app/manifest"
+     Name="O365_errorhandlingjavascript_cs"
+     ProductID="{2995b1bc-9771-4a99-aa2d-65dea1d7ace6}"
+     Version="1.0.0.0"
+     SharePointMinVersion="15.0.0.0"
+>
+  <Properties>
+    <Title>List Description Update App</Title>
+    <StartPage>~appWebUrl/Pages/Default.aspx?{StandardTokens}</StartPage>
+  </Properties>
+
+  <AppPrincipal>
+    <Internal />
+  </AppPrincipal>
+
+
+<AppPermissionRequests><AppPermissionRequest 
+  Scope="http://sharepoint/content/sitecollection" Right="Manage" />
+  </AppPermissionRequests></App>

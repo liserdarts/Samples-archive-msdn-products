@@ -1,0 +1,461 @@
+<html xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:mtps="http://msdn2.microsoft.com/mtps" xmlns:mshelp="http://msdn.microsoft.com/mshelp" xmlns:ddue="http://ddue.schemas.microsoft.com/authoring/2003/5" xmlns:msxsl="urn:schemas-microsoft-com:xslt"><head><META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=UTF-8" /><META NAME="BuildDateTime" CONTENT="2013-04-22 14:08:21" /><META NAME="BuildVersion" CONTENT="1.0.13112.1408" /><META NAME="save" CONTENT="history" /><META NAME="DCSext.Title" CONTENT="Office 365: Log an error to a SharePoint event log and notify the account administrator" /><title>Office 365: Log an error to a SharePoint event log and notify the account administrator</title><meta name="Language" content="en-us" /><meta name="Microsoft.Help.Id" content="2c284579-b60d-47f0-9a2e-99da7bda3eb5" /><meta name="Microsoft.Help.ContentType" content="Concepts" /><style type="text/css">
+                        .userDataStyle {
+                        BEHAVIOR: url(#default#userData)
+                        }
+                        DIV.saveHistory {
+                        BEHAVIOR: url(#default#savehistory)
+                        }
+                        IMG.toggle {
+                        BORDER-BOTTOM: 0px; BORDER-LEFT: 0px; BORDER-TOP: 0px; MARGIN-RIGHT: 5px; BORDER-RIGHT: 0px
+                        }
+                        IMG#toggleAllImage {
+                        MARGIN-LEFT: 0px; VERTICAL-ALIGN: middle
+                        }
+                        MSHelp\:link {
+                        COLOR: #0000ff; CURSOR: hand; TEXT-DECORATION: underline; hoverColor: #3366ff
+                        }
+                        MSHelp\:link:visited {
+                        COLOR: #0481da
+                        }
+                        BODY {
+                        FONT-STYLE: normal; MARGIN: 0px; WIDTH: 100%; FONT-FAMILY: Verdana; BACKGROUND: #ffffff; COLOR: #000000; FONT-SIZE: medium; FONT-WEIGHT: normal
+                        }
+                        DL {
+                        MARGIN-TOP: 15px; PADDING-LEFT: 1px; MARGIN-BOTTOM: 5px
+                        }
+                        DL.authored DT {
+                        MARGIN-TOP: 2px
+                        }
+                        DD {
+                        MARGIN-LEFT: 0px
+                        }
+                        UL {
+                        LIST-STYLE-TYPE: disc; MARGIN-TOP: 0px; MARGIN-BOTTOM: 0px; MARGIN-LEFT: 17px
+                        }
+                        UL UL {
+                        LIST-STYLE-TYPE: disc; MARGIN-TOP: 3px; MARGIN-BOTTOM: 4px; MARGIN-LEFT: 17px
+                        }
+                        OL {
+                        LIST-STYLE-TYPE: decimal; MARGIN-TOP: 0px; MARGIN-BOTTOM: 0px; MARGIN-LEFT: 28px
+                        }
+                        OL OL {
+                        LIST-STYLE-TYPE: lower-alpha; MARGIN-TOP: 3px; MARGIN-BOTTOM: 4px; MARGIN-LEFT: 28px
+                        }
+                        OL OL OL {
+                        LIST-STYLE-TYPE: lower-roman; MARGIN-TOP: 3px; MARGIN-BOTTOM: 4px; MARGIN-LEFT: 28px
+                        }
+                        LI {
+                        MARGIN-TOP: 5px; MARGIN-BOTTOM: 5px
+                        }
+                        P {
+                        MARGIN-TOP: 10px; MARGIN-BOTTOM: 5px
+                        }
+                        A:link {
+                        COLOR: #0000ff
+                        }
+                        A:visited {
+                        COLOR: #dd7c3b
+                        }
+                        A:hover {
+                        COLOR: #3366ff
+                        }
+                        CODE {
+                        FONT-FAMILY: Monospace, Courier New, Courier; COLOR: #000066; FONT-SIZE: 105%
+                        }
+                        SPAN.parameter {
+                        FONT-STYLE: italic
+                        }
+                        SPAN.italic {
+                        FONT-STYLE: italic
+                        }
+                        SPAN.selflink {
+                        FONT-WEIGHT: bold
+                        }
+                        SPAN.nolink {
+                        FONT-WEIGHT: bold
+                        }
+                        DIV#mainSection {
+                        WIDTH: 100%; FONT-SIZE: 62.5%
+                        }
+                        HTML &gt; BODY #mainSection {
+                        WIDTH: 100%; FONT-SIZE: 73%
+                        }
+                        DIV#mainBody {
+                        MARGIN-TOP: 10px; MARGIN-LEFT: 15px; FONT-SIZE: 100%
+                        }
+                        HTML &gt; BODY #mainBody {
+                        PADDING-BOTTOM: 20px; MARGIN-TOP: 10px; MARGIN-LEFT: 15px; FONT-SIZE: 93%
+                        }
+                        DIV#mainBody P {
+                        PADDING-RIGHT: 5px
+                        }
+                        DIV#mainBody OL {
+                        PADDING-RIGHT: 5px
+                        }
+                        DIV#mainBody UL {
+                        PADDING-RIGHT: 5px
+                        }
+                        DIV#mainBody DL {
+                        PADDING-RIGHT: 5px
+                        }
+                        DIV#header {
+                        PADDING-BOTTOM: 0px; BACKGROUND-COLOR: #ffffff; PADDING-LEFT: 0px; WIDTH: 100%; PADDING-RIGHT: 0px; PADDING-TOP: 0px
+                        }
+                        DIV#header TABLE {
+                        WIDTH: 100%
+                        }
+                        DIV#header TABLE TD {
+                        MARGIN-TOP: 0px; PADDING-RIGHT: 20px; MARGIN-BOTTOM: 0px; COLOR: #0000ff; FONT-SIZE: 70%
+                        }
+                        DIV#header TABLE TR#headerTableRow2 TD {
+                        PADDING-LEFT: 13px
+                        }
+                        DIV#header TABLE TR#headerTableRow3 TD {
+                        PADDING-LEFT: 15px; PADDING-TOP: 2px
+                        }
+                        DIV#header TABLE#bottomTable {
+                        TEXT-ALIGN: left; PADDING-BOTTOM: 5px; PADDING-LEFT: 15px; BORDER-TOP: #ffffff 1px solid; PADDING-TOP: 5px
+                        }
+                        DIV#mainSection TABLE TD.imageCell {
+                        WHITE-SPACE: nowrap
+                        }
+                        DIV#mainBody DIV.alert {
+                        WIDTH: 98.9%
+                        }
+                        DIV#mainBody DIV.code {
+                        WIDTH: 98.9%
+                        }
+                        DIV#mainBody DIV.tableSection {
+                        WIDTH: 98.9%
+                        }
+                        DIV#mainBody DIV.section DIV.alert {
+                        WIDTH: 100%
+                        }
+                        DIV#mainBody DIV.section DIV.code {
+                        WIDTH: 100%
+                        }
+                        DIV#mainBody DIV.section DIV.tableSection {
+                        WIDTH: 100%
+                        }
+                        DIV#mainBody DIV.section UL DIV.alert {
+                        WIDTH: 100%
+                        }
+                        DIV#mainBody DIV.section UL DIV.code {
+                        WIDTH: 100%
+                        }
+                        DIV#mainBody DIV.section UL DIV.tableSection {
+                        WIDTH: 100%
+                        }
+                        DIV#mainBody DIV.section OL DIV.alert {
+                        WIDTH: 100%
+                        }
+                        DIV#mainBody DIV.section OL DIV.code {
+                        WIDTH: 100%
+                        }
+                        DIV#mainBody DIV.section OL DIV.tableSection {
+                        WIDTH: 100%
+                        }
+                        DIV.alert P {
+                        MARGIN-TOP: 5px; MARGIN-BOTTOM: 8px
+                        }
+                        DIV.code P {
+                        MARGIN-TOP: 5px; MARGIN-BOTTOM: 8px
+                        }
+                        DD P {
+                        MARGIN-TOP: 2px; MARGIN-BOTTOM: 8px
+                        }
+                        DIV.tableSection P {
+                        MARGIN-TOP: 1px; MARGIN-BOTTOM: 4px
+                        }
+                        LI P {
+                        MARGIN-TOP: 2px; MARGIN-BOTTOM: 2px
+                        }
+                        DIV.seeAlsoNoToggleSection DL {
+                        MARGIN-TOP: 8px; PADDING-LEFT: 1px; MARGIN-BOTTOM: 1px
+                        }
+                        DIV.seeAlsoNoToggleSection DD P {
+                        MARGIN-TOP: 2px; MARGIN-BOTTOM: 8px
+                        }
+                        DIV.section DL {
+                        MARGIN-TOP: 8px; PADDING-LEFT: 1px; MARGIN-BOTTOM: 1px
+                        }
+                        DIV.section DD P {
+                        MARGIN-TOP: 2px; MARGIN-BOTTOM: 8px
+                        }
+                        DIV.code TABLE {
+                        BORDER-BOTTOM: 0px; BORDER-LEFT: 0px; MARGIN-TOP: -0.4em; WIDTH: 100%; MARGIN-BOTTOM: 5px; FONT-SIZE: 95%; BORDER-TOP: 0px; BORDER-RIGHT: 0px
+                        }
+                        DIV.code TABLE TH {
+                        BORDER-BOTTOM: #c8cdde 1px solid; PADDING-LEFT: 5px; PADDING-RIGHT: 5px; BACKGROUND: #efeff7; COLOR: #000066; FONT-WEIGHT: bold
+                        }
+                        DIV.code TABLE TD {
+                        PADDING-LEFT: 5px; PADDING-RIGHT: 5px; BACKGROUND: #f7f7ff; BORDER-TOP: #ffffff 1px solid; PADDING-TOP: 5px
+                        }
+                        SPAN#runningHeaderText {
+                        PADDING-LEFT: 13px; COLOR: #8c8c8c; FONT-SIZE: 90%
+                        }
+                        SPAN#nsrTitle {
+                        FONT-FAMILY: arial; COLOR: #000000; FONT-SIZE: 160%; FONT-WEIGHT: 400
+                        }
+                        DIV#footer {
+                        PADDING-BOTTOM: 6px; MARGIN: 0px; PADDING-LEFT: 1px; WIDTH: 100%; PADDING-RIGHT: 1px; FONT-SIZE: 80%; PADDING-TOP: 8px
+                        }
+                        HTML &gt; BODY DIV#footer {
+                        PADDING-BOTTOM: 6px; MARGIN: 0px; PADDING-LEFT: 1px; WIDTH: 98%; PADDING-RIGHT: 1px; FONT-SIZE: 80%; PADDING-TOP: 2px
+                        }
+                        DIV.seeAlsoNoToggleSection {
+                        PADDING-BOTTOM: 2px; PADDING-LEFT: 0px; WIDTH: 100%; PADDING-RIGHT: 15px; MARGIN-LEFT: 0px; PADDING-TOP: 2px
+                        }
+                        DIV.section {
+                        PADDING-BOTTOM: 0px; PADDING-LEFT: 16px; WIDTH: 100%; PADDING-RIGHT: 15px; MARGIN-LEFT: 0px; PADDING-TOP: 0px
+                        }
+                        HTML &gt; BODY DIV.section {
+                        PADDING-BOTTOM: 2px; PADDING-LEFT: 16px; WIDTH: 97%; PADDING-RIGHT: 15px; MARGIN-LEFT: 0px; PADDING-TOP: 2px
+                        }
+                        DIV.seeSection {
+                        PADDING-BOTTOM: 2px; PADDING-LEFT: 16px; WIDTH: 100%; PADDING-RIGHT: 15px; MARGIN-LEFT: 0px; PADDING-TOP: 0px
+                        }
+                        .heading {
+                        MARGIN-TOP: 18px; MARGIN-BOTTOM: 8px; FONT-WEIGHT: bold
+                        }
+                        H1.heading {
+                        COLOR: #003399; FONT-SIZE: 145%
+                        }
+                        .subHeading {
+                        MARGIN-BOTTOM: 4px; FONT-WEIGHT: bold
+                        }
+                        .procedureSubHeading {
+                        MARGIN-BOTTOM: 4px; FONT-WEIGHT: bold
+                        }
+                        H3.subHeading {
+                        COLOR: #003399; FONT-SIZE: 125%; FONT-WEIGHT: 800
+                        }
+                        H3.procedureSubHeading {
+                        COLOR: #003399; FONT-SIZE: 100%
+                        }
+                        H4.subHeading {
+                        FONT-VARIANT: small-caps; COLOR: #003399; FONT-SIZE: 110%; FONT-WEIGHT: 800
+                        }
+                        SPAN.labelheading {
+                        COLOR: #003399; FONT-SIZE: 100%
+                        }
+                        DIV.labelheading {
+                        COLOR: #003399; FONT-SIZE: 100%
+                        }
+                        IMG.copyCodeImage {
+                        BORDER-BOTTOM: 0px; BORDER-LEFT: 0px; MARGIN: 1px 3px 1px 1px; BORDER-TOP: 0px; BORDER-RIGHT: 0px
+                        }
+                        IMG.downloadCodeImage {
+                        BORDER-BOTTOM: 0px; BORDER-LEFT: 0px; BORDER-TOP: 0px; MARGIN-RIGHT: 3px; BORDER-RIGHT: 0px
+                        }
+                        IMG.viewCodeImage {
+                        BORDER-BOTTOM: 0px; BORDER-LEFT: 0px; BORDER-TOP: 0px; MARGIN-RIGHT: 3px; BORDER-RIGHT: 0px
+                        }
+                        IMG.note {
+                        BORDER-BOTTOM: 0px; BORDER-LEFT: 0px; BORDER-TOP: 0px; MARGIN-RIGHT: 3px; BORDER-RIGHT: 0px
+                        }
+                        DIV#mainSection TABLE {
+                        BORDER-BOTTOM: 0px; BORDER-LEFT: 0px; MARGIN-TOP: 5px; WIDTH: 98.9%; MARGIN-BOTTOM: 5px; FONT-SIZE: 100%; BORDER-TOP: 0px; BORDER-RIGHT: 0px
+                        }
+                        DIV#mainSection TABLE TR {
+                        VERTICAL-ALIGN: top
+                        }
+                        DIV#mainSection TABLE TH {
+                        BORDER-BOTTOM: #c8cdde 1px solid; TEXT-ALIGN: left; BORDER-LEFT: #d5d5d3 1px; BACKGROUND-COLOR: #efeff7; PADDING-LEFT: 5px; PADDING-RIGHT: 5px; COLOR: #000066
+                        }
+                        DIV#mainSection TABLE TD {
+                        BORDER-BOTTOM: #d5d5d3 1px solid; BORDER-LEFT: #d5d5d3 1px; BACKGROUND-COLOR: #f7f7ff; PADDING-LEFT: 5px; PADDING-RIGHT: 5px
+                        }
+                        DIV#mainSection TABLE TD.imageCell {
+                        WHITE-SPACE: nowrap
+                        }
+                        DIV.code TABLE {
+                        BORDER-BOTTOM: 0px; BORDER-LEFT: 0px; WIDTH: 100%; MARGIN-BOTTOM: 5px; FONT-SIZE: 95%; BORDER-TOP: 0px; BORDER-RIGHT: 0px
+                        }
+                        DIV.code TABLE TH {
+                        BORDER-BOTTOM: #c8cdde 1px solid; PADDING-LEFT: 5px; PADDING-RIGHT: 5px; BACKGROUND: #efeff7; COLOR: #000066; FONT-WEIGHT: bold
+                        }
+                        DIV.code TABLE TD {
+                        PADDING-LEFT: 5px; PADDING-RIGHT: 5px; BACKGROUND: #f7f7ff; BORDER-TOP: #ffffff 1px solid; PADDING-TOP: 5px
+                        }
+                        DIV.alert TABLE {
+                        BORDER-BOTTOM: 0px; BORDER-LEFT: 0px; WIDTH: 100%; FONT-SIZE: 100%; BORDER-TOP: 0px; BORDER-RIGHT: 0px
+                        }
+                        DIV.alert TABLE TH {
+                        PADDING-LEFT: 5px; PADDING-RIGHT: 5px; BACKGROUND: #efeff7; BORDER-BOTTOM-WIDTH: 0px; COLOR: #000066
+                        }
+                        DIV.alert TABLE TD {
+                        PADDING-LEFT: 5px; PADDING-RIGHT: 5px; BACKGROUND: #f7f7ff; BORDER-TOP: #ffffff 1px solid
+                        }
+                        SPAN.copyCode {
+                        TEXT-ALIGN: right; DISPLAY: inline; FLOAT: right; COLOR: #0000ff; FONT-SIZE: 90%; CURSOR: pointer; FONT-WEIGHT: normal; TEXT-DECORATION: underline
+                        }
+                        SPAN.copyCodeOnHover {
+                        TEXT-ALIGN: right; DISPLAY: inline; FLOAT: right; COLOR: #e85f17; FONT-SIZE: xx-small; CURSOR: pointer; FONT-WEIGHT: normal; TEXT-DECORATION: underline
+                        }
+                        .downloadCode {
+                        COLOR: #0000ff; FONT-SIZE: 90%; CURSOR: pointer; FONT-WEIGHT: normal
+                        }
+                        .viewCode {
+                        COLOR: #0000ff; FONT-SIZE: 90%; CURSOR: pointer; FONT-WEIGHT: normal
+                        }
+                        DIV.code PRE {
+                        FONT-FAMILY: Monospace, Courier New, Courier; WORD-WRAP: break-word; BACKGROUND: #f7f7ff; COLOR: #000066; FONT-SIZE: 105%
+                        }
+                        .tip {
+                        FONT-STYLE: italic; COLOR: #0000ff; CURSOR: pointer; TEXT-DECORATION: underline
+                        }
+                        .math {
+                        FONT-FAMILY: Times New Roman; FONT-SIZE: 125%
+                        }
+                        #devlangsMenu {
+                        BORDER-BOTTOM: #f3cbb5 1px solid; POSITION: absolute; BORDER-LEFT: #f3cbb5 1px solid; PADDING-BOTTOM: 4px; PADDING-LEFT: 4px; PADDING-RIGHT: 8px; BACKGROUND: #fcece4; VISIBILITY: hidden; FONT-SIZE: 70%; BORDER-TOP: #f3cbb5 1px solid; BORDER-RIGHT: #f3cbb5 1px solid; PADDING-TOP: 4px
+                        }
+                        #memberOptionsMenu {
+                        BORDER-BOTTOM: #f3cbb5 1px solid; POSITION: absolute; BORDER-LEFT: #f3cbb5 1px solid; PADDING-BOTTOM: 4px; PADDING-LEFT: 4px; PADDING-RIGHT: 8px; BACKGROUND: #fcece4; VISIBILITY: hidden; FONT-SIZE: 70%; BORDER-TOP: #f3cbb5 1px solid; BORDER-RIGHT: #f3cbb5 1px solid; PADDING-TOP: 4px
+                        }
+                        #memberFrameworksMenu {
+                        BORDER-BOTTOM: #f3cbb5 1px solid; POSITION: absolute; BORDER-LEFT: #f3cbb5 1px solid; PADDING-BOTTOM: 4px; PADDING-LEFT: 4px; PADDING-RIGHT: 8px; BACKGROUND: #fcece4; VISIBILITY: hidden; FONT-SIZE: 70%; BORDER-TOP: #f3cbb5 1px solid; BORDER-RIGHT: #f3cbb5 1px solid; PADDING-TOP: 4px
+                        }
+                        .checkboxLabel {
+                        PADDING-BOTTOM: 4px; COLOR: #0000ff; FONT-SIZE: 90%; CURSOR: pointer; TEXT-DECORATION: underline
+                        }
+                        IMG#devlangsDropdownImage {
+                        BORDER-BOTTOM: 0px; BORDER-LEFT: 0px; MARGIN-LEFT: 0px; VERTICAL-ALIGN: middle; BORDER-TOP: 0px; BORDER-RIGHT: 0px
+                        }
+                        IMG#memberOptionsDropdownImage {
+                        BORDER-BOTTOM: 0px; BORDER-LEFT: 0px; MARGIN-LEFT: 0px; VERTICAL-ALIGN: middle; BORDER-TOP: 0px; BORDER-RIGHT: 0px
+                        }
+                        IMG#memberFrameworksDropdownImage {
+                        BORDER-BOTTOM: 0px; BORDER-LEFT: 0px; MARGIN-LEFT: 0px; VERTICAL-ALIGN: middle; BORDER-TOP: 0px; BORDER-RIGHT: 0px
+                        }
+                        DIV.footerLine {
+                        PADDING-BOTTOM: 6px; MARGIN: 0px; WIDTH: 100%; PADDING-TOP: 8px
+                        }
+                        DIV.hr1 {
+                        PADDING-BOTTOM: 0px; MARGIN: 0px; PADDING-LEFT: 0px; WIDTH: 100%; PADDING-RIGHT: 0px; BACKGROUND: #c8cdde; HEIGHT: 1px; FONT-SIZE: 1px; PADDING-TOP: 0px
+                        }
+                        DIV.hr2 {
+                        PADDING-BOTTOM: 0px; MARGIN: 0px; PADDING-LEFT: 0px; WIDTH: 100%; PADDING-RIGHT: 0px; BACKGROUND: #d4dfff; HEIGHT: 1px; FONT-SIZE: 1px; PADDING-TOP: 0px
+                        }
+                        DIV.hr3 {
+                        PADDING-BOTTOM: 0px; MARGIN: 0px; PADDING-LEFT: 0px; WIDTH: 100%; PADDING-RIGHT: 0px; BACKGROUND: #eeeeff; HEIGHT: 1px; FONT-SIZE: 1px; PADDING-TOP: 0px
+                        }
+                        SPAN.cs {
+                        DISPLAY: none
+                        }
+                        SPAN.vb {
+                        DISPLAY: none
+                        }
+                        SPAN.cpp {
+                        DISPLAY: none
+                        }
+                        SPAN.nu {
+                        DISPLAY: inline
+                        }
+                        SPAN.fs {
+                        DISPLAY: none
+                        }
+                        SPAN.code {
+                        FONT-FAMILY: Monospace, Courier New, Courier; COLOR: #000066; FONT-SIZE: 105%
+                        }
+                        SPAN.ui {
+                        FONT-WEIGHT: bold
+                        }
+                        SPAN.math {
+                        FONT-STYLE: italic
+                        }
+                        SPAN.input {
+                        FONT-WEIGHT: bold
+                        }
+                        SPAN.term {
+                        FONT-STYLE: italic
+                        }
+                        SPAN.label {
+                        FONT-WEIGHT: bold
+                        }
+                        SPAN.foreignPhrase {
+                        FONT-STYLE: italic
+                        }
+                        SPAN.placeholder {
+                        FONT-STYLE: italic
+                        }
+                        SPAN.keyword {
+                        FONT-WEIGHT: bold
+                        }
+                        SPAN.typeparameter {
+                        FONT-STYLE: italic
+                        }
+                        DIV.caption {
+                        COLOR: #003399; FONT-SIZE: 100%; FONT-WEIGHT: bold
+                        }
+                        DIV.code SPAN.identifier {
+
+                        }
+                        DIV.code SPAN.keyword {
+                        COLOR: #871f78
+                        }
+                        DIV.code SPAN.parameter {
+                        FONT-STYLE: italic
+                        }
+                        DIV.code SPAN.literal {
+                        COLOR: #8b0000
+                        }
+                        DIV.code SPAN.comment {
+                        COLOR: #006400
+                        }
+                        SPAN.syntaxLabel {
+                        COLOR: #0481da; FONT-WEIGHT: bold
+                        }
+                        SPAN.introStyle {
+                        COLOR: darkgray
+                        }
+                        DIV.seeAlsoStyle {
+                        PADDING-TOP: 5px
+                        }
+                        TD.nsrBottom {
+                        WIDTH: 100%; HEIGHT: 0.6em
+                        }
+                        SPAN.clsGlossary {
+                        COLOR: #509950; CURSOR: default; FONT-WEIGHT: bold
+                        }
+                        DIV.clsTooltip {
+                        BORDER-BOTTOM: black 1px solid; POSITION: absolute; BORDER-LEFT: black 1px solid; PADDING-BOTTOM: 2px; BACKGROUND-COLOR: #ffffaa; PADDING-LEFT: 2px; PADDING-RIGHT: 2px; DISPLAY: none; FONT-FAMILY: Arial; COLOR: black; FONT-SIZE: 8pt; BORDER-TOP: black 1px solid; BORDER-RIGHT: black 1px solid; PADDING-TOP: 2px; TOP: 0px; LEFT: 0px
+                        }
+                        SPAN.feedbackcss {
+                        WIDTH: 100%; MARGIN-LEFT: 15px; FONT-SIZE: 110%
+                        }
+                        DIV#feedbackarea TABLE {
+                        BORDER-RIGHT-WIDTH: 0px; MARGIN-TOP: 0px; WIDTH: 300px; MARGIN-BOTTOM: 0px; BORDER-TOP-WIDTH: 0px; BORDER-BOTTOM-WIDTH: 0px; MARGIN-LEFT: 0px; BORDER-LEFT-WIDTH: 0px
+                        }
+                        DIV#feedbackarea TABLE TD {
+                        BORDER-BOTTOM: 0px; TEXT-ALIGN: center; FONT-FAMILY: Verdana; FONT-SIZE: 100%
+                        }
+                        DIV#feedbackarea P {
+                        MARGIN: 0px 5px 0px 6px; WIDTH: 100%; FONT-SIZE: 100%
+                        }
+                        DIV#feedbackarea H5 {
+                        MARGIN-TOP: 0px; MARGIN-BOTTOM: 0.7em; MARGIN-LEFT: 6px; FONT-SIZE: 10pt
+                        }
+                        P.feedbackarea {
+                        BACKGROUND-COLOR: #d4dfff; ; WIDTH: expression(document.body.clientWidth-27); FONT-SIZE: 100%
+                        }
+                        INPUT#submitFeedback {
+                        TEXT-ALIGN: center; FONT-SIZE: 100%
+                        }
+                        SPAN#feedbackarea {
+                        WIDTH: 100%
+                        }
+                        DIV#feedbackarea {
+                        WIDTH: 100%
+                        }
+                        SPAN.filterOnHover {
+                        COLOR: #e85f17
+                        }
+                        SPAN.filter {
+                        COLOR: #0000ff
+                        }
+                        A IMG {
+                        BORDER-BOTTOM: 0px; BORDER-LEFT: 0px; BORDER-TOP: 0px; BORDER-RIGHT: 0px
+                        }
+                    </style></head><body><div id="header"><table id="bottomTable" cellpadding="0" cellspacing="0"><tr id="headerTableRow1"><td align="left"><span id="runningHeaderText" /></td></tr><tr id="headerTableRow2"><td align="left"><span id="nsrTitle">Office 365: Log an error to a SharePoint event log and notify the account administrator</span></td></tr></table></div><div id="mainSection"><div id="mainBody"><font color="DarkGray"></font><p /><div class="summary"><p><span class="label">Summary:</span> This sample demonstrates how to log an error to a SharePoint custom list and how to send an email message notifying the Office 365 administrator about the error.</p></div><div class="introduction"><p /></div><a name="O15Readme_Description" /><h1 class="heading">Description of the sample</h1><div id="sectionSection0" class="section" name="collapseableSection" style=""><p>This sample is a SharePoint-hosted app using the JavaScript object model (JSOM). It shows how to create a custom list, how to update its description, how to log an error to it, and how to send an email message to the Office 365 administrator about the error. </p></div><a name="O15Readme_Prereq" /><h1 class="heading">Prerequisites</h1><div id="sectionSection1" class="section" name="collapseableSection" style=""><p>The solution in this sample requires the following:</p><ul><li><p>Visual Studio 2012.</p></li><li><p>Office Developer Tools for Visual Studio 2012 (use the <a href="http://www.microsoft.com/web/downloads/platform.aspx/" target="_blank">Microsoft Web Platform Installer</a>).</p></li><li><p>An Office 365 Developer Site. You can sign up <a href="http://msdn.microsoft.com/en-us/library/fp179924.aspx/" target="_blank">here</a>.</p></li><li><p>SharePoint Designer 2013.</p></li></ul></div><a name="O15Readme_components" /><h1 class="heading">Key components of the sample</h1><div id="sectionSection2" class="section" name="collapseableSection" style=""><p>This sample contains the following key files:</p><ul><li><p>The O365_errorhandlingjavascript_cs project.</p></li><li><p>App.js, a JavaScript file that contains the app logic using the client-side object model.</p></li><li><p>AppManifest.xml, which contains the permission that is required by the app to run successfully.</p></li><li><p>Default.aspx, which contains the HTML and ASP.NET controls for the user interface.</p></li></ul></div><h1 class="heading">Configure the sample</h1><div id="sectionSection3" class="section" name="collapseableSection" style=""><p>Follow these steps to first create a custom list and a custom workflow, and then configure the O365_errorhandlingjavascript_cs SharePoint app.</p><p><b>Create a custom list</b></p><ol><li><p>Navigate to your Office 365 Developer Site.</p></li><li><p>Click <span class="ui">Site Contents</span>, and then click <span class="ui">add an app</span>.</p></li><li><p>Click <span class="ui">Custom List</span>. A dialog box opens, as shown in the following figure.</p><p /><img alt="Adding a custom list" src="O365CustomListaddcustomlist.JPG" /><p /></li><li><p>In the <span class="ui">Name</span> box, type "ErrorLog" and click <span class="ui">Create</span>. The ErrorLog list will be displayed in <span class="ui">Site Contents</span>.</p></li><li><p>Click the ErrorLog list to select it.</p></li><li><p>On the <span class="ui">List</span> tab, in the <span class="ui">Settings</span> group, click <span class="ui">List Settings</span>.</p></li><li><p>Click <span class="ui">Create column</span>.</p></li><li><p>In the <span class="ui">Column name</span> field, type "ErrorMessage", select <span class="ui">Multiple lines of text</span> as the type of information, and then click <span class="ui">OK</span>.</p></li><li><p>Similarly, create another column named "Source", select <span class="ui">Single line of text</span> as the type of information, and then click <span class="ui">OK</span>.</p></li><li><p>Set the <span class="ui">Title</span> field as not mandatory by clicking the <span class="ui">Title</span> column.</p></li></ol><p><b>Create a custom workflow</b></p><p>Create a custom workflow in SharePoint Designer 2013 to send an email message to the Office 365 administrator when an error is logged in the ErrorLog list.</p><ol><li><p>In SharePoint Designer, open your Office 365 Developer Site.</p></li><li><p>In the <span class="ui">Site Objects</span> list, click <span class="ui">Workflows</span>.</p></li><li><p>On the <span class="ui">WORKFLOWS</span> tab, click <span class="ui">List Workflow</span>, and then in the <span class="ui">Lists</span> list click <span class="ui">ErrorLog</span>.</p></li><li><p>A dialog box prompts you for the workflow <span class="ui">Name</span> and <span class="ui">Description</span>, as shown in the following figure. Enter the name and description, and click <span class="ui">OK</span>.</p><p /><img alt="Create the list workflow for a custom list" src="O365CustomListCreateListWorkflow.JPG" /><p /></li><li><p>The <span class="ui">Stage 1</span> window opens, as shown in the following figure.</p><p /><img alt="O365: adding Stage 1 information" src="O365CustomList_Stage1.JPG" /><p /></li><li><p>Double-click the orange line shown in the previous figure.</p></li><li><p>In the text box that opens, type "Email", press Enter, and then click <span class="ui">Email these users</span>. The following window opens, where you configure the email message.</p><p /><img alt="O365: Defining the parts of an email message" src="O365CustomList_DefineEmail.JPG" /><p /><ol><li><p>Enter an address in the <span class="ui">To</span> line by clicking the "open book" button on the right side of this line. In the left list, select <span class="ui">Administrator</span>, and then click <span class="ui">Add&gt;&gt;</span>.</p></li><li><p>Enter text for the <span class="ui">Subject</span> line as follows:</p><ol><li><p>On the right side of the <span class="ui">Subject</span> line, click the ellipsis button (<span class="ui">…</span>).</p></li><li><p>In the <span class="ui">String Builder</span> dialog box, type "Microsoft Office 365 error in ".</p></li><li><p>At the bottom of the dialog box, click <span class="ui">Add or Change Lookup</span>.</p></li><li><p>In the <span class="ui">Lookup for String</span> dialog box, in the <span class="ui">Field from source</span> list, click <span class="ui">Source</span>, and then click <span class="ui">OK</span>.</p></li></ol></li><li><p>To enter text for the body of the email message, type the message text as shown in the previous figure. However, any text of the form "[%Current Item:…%]" is inserted by placing the cursor where "[%Current Item:…%]" should go and then clicking the <span class="ui">Add or Change Lookup</span> button. Add the <span class="ui">User</span>, <span class="ui">Source App</span>, and <span class="ui">Error Message</span> information as necessary:</p><ul><li><p><b>User information</b>. In the <span class="ui">Field from source</span> list, click <span class="ui">Created By</span>, and in the <span class="ui">Return field as</span> list, click <span class="ui">Display Name</span>. Click <span class="ui">OK</span>.</p></li><li><p><b>Source App information</b>. In the <span class="ui">Field from source</span> list, click <span class="ui">Source</span>, and then click <span class="ui">OK</span>.</p></li><li><p><b>Error Message information</b>. In the <span class="ui">Field from source</span> list, click <span class="ui">ErrorMessage</span>, and then click <span class="ui">OK</span>.</p></li></ul></li></ol></li><li><p>Add a new step in the workflow for logging a message to the history list:</p><ol><li><p>In the upper <span class="ui">Stage: Stage 1</span> section, point to the area under the "Email…" line to see the orange line for inserting another step in the workflow.</p></li><li><p>Double-click the line. In the text box, type "Log to history list" and press Enter.</p></li><li><p>Click the <span class="ui">message</span> link to open a text box. Type "Send mail successful", and then press Enter.</p></li></ol></li><li><p>Add a step in the workflow for the transition stage:</p><ol><li><p>Point to the bottom of the <span class="ui">Transition to stage</span> section to see the orange line, and then double-click the line.</p></li><li><p>In the text box, type "Go to a stage", and then press Enter.</p></li><li><p>Click the <span class="ui">a stage</span> link. In the drop-down list that opens, click <span class="ui">End of Workflow</span>.</p></li><li><p>On the <span class="ui">WORKFLOW</span> tab, click <span class="ui">Save</span>. The ErrorLog workflow name is displayed in the <span class="ui">Workflows</span> list under <span class="ui">List Workflow</span>.</p><p /><p>A screen shot of the complete workflow is provided in the following figure.</p><p /><img alt="O365: Showing the completed workflow" src="O365CustomList_Completedworkflow.JPG" /><p /></li></ol></li><li><p>Click the workflow name in the <span class="ui">Navigation</span> list, and then, in the <span class="ui">Start Options</span> section, select the <span class="ui">Start Workflow automatically when an item is created</span> check box.</p><p /><img alt="O365: Set the workflow start options" src="O365CustomList_Workflowstartoptions.JPG" /><p /></li><li><p>On the <span class="ui">WORKFLOW_SETTINGS</span> tab, click <span class="ui">Save</span>, and then click <span class="ui">Publish</span>.</p></li></ol><p><b>Configure the O365_errortypes_cs SharePoint app</b></p><ol><li><p>Extract the files from O365_errorhandlingjavascript_cs.zip into a folder.</p></li><li><p>Open Visual Studio 2012 with administrator privileges.</p></li><li><p>On the <span class="ui">File</span> menu, click <span class="ui">Open</span>, and then click <span class="ui">Project</span>.</p></li><li><p>Navigate to the location of the O365_errorhandlingjavascript_cs solution folder and select the O365_errorhandlingjavascript_cs.sln file.</p></li><li><p>Set the <span class="ui">Site URL</span> property of the solution to the URL of your SharePoint site collection.</p></li><li><p>Press Ctrl+S to save all the changes.</p></li></ol></div><h1 class="heading">Build the sample</h1><div id="sectionSection4" class="section" name="collapseableSection" style=""><p>Follow these steps to build and deploy the app.</p><ol><li><p>In Visual Studio, right-click the O365_errorhandlingjavascript_cs file, and then click <span class="ui">Build</span>.</p></li><li><p>Right-click the solution, and then click <span class="ui">Publish</span>. The following window opens.</p><p /><img alt="Publish summary dialog" src="O365CustomList_Publishsummary.JPG" /><p /></li><li><p>Select the <span class="ui">Open output folder after successful packaging</span> check box, and then click <span class="ui">Finish</span>.</p></li><li><p>This will create the .app extension file, which will be used to deploy the app on the SharePoint site; note the location of this file.</p></li><li><p>Using a browser, navigate to your Office 365 Developer Site. </p></li><li><p>Click <span class="ui">Apps in testing</span>. The following window opens.</p><p /><img alt="O365_errortypes app: Apps in Testing screenshot" src="O365_errortypes-AppsinTesting.JPG" /><p /></li><li><p>Click <span class="ui">new app to deploy</span>.</p></li><li><p>A dialog box opens, as shown in the following figure.</p><p /><img alt="Dialog to upload and deploy app" src="O365CustomList_DeployUpload.JPG" /><p /></li><li><p>Click the <span class="ui">upload</span> link to upload your .app package file.</p></li><li><p>Browse to the file, select it, and then click <span class="ui">OK</span>.</p></li><li><p>Click the <span class="ui">Deploy</span> button.</p></li><li><p>Another dialog box opens, as shown in the following figure.</p><p /><img alt="O365: Trust it dialog for any app" src="O365CustomList_Trustitdialog.JPG" /><p /></li><li><p>Click the <span class="ui">Trust It</span> button. The app will be uploaded to your Developer Site.</p></li></ol></div><h1 class="heading">Run and test the sample</h1><div id="sectionSection5" class="section" name="collapseableSection" style=""><p>Follow these steps to run and test the O365_errorhandlingjavascript_cs sample app.</p><ol><li><p>On your Developer Site, click <span class="ui">Site Contents</span>, and then click the app name <span class="ui">List Description Update App</span>, which opens a window as follows.</p><p /><img alt="O365: How the app looks when it runs" src="O365CustomList_Runningapp.JPG" /><p /></li><li><p>Enter the list name and an updated description for the list. Click <span class="ui">Update</span> to update the list description.</p><ul><li><p>If you use the list name created earlier (ErrorLog), a message will say, "List description updated successfully." No error will be logged to the ErrorLog list and no email will be sent.</p></li><li><p>If a nonexistent list name is used or if there is any exception while updating the description of the list, a message will say "Failed to update list description. Please check ErrorLog list." An error will be logged to the ErrorLog list and an email message will be sent to the administrator.</p></li><li><p>To see the ErrorLog list, on your Office 365 Developer Site, click <span class="ui">Site Contents</span>, and then click <span class="ui">ErrorLog</span>.</p></li></ul></li><li><p>The app recovers from any error so you can continue the test with other list names.</p></li></ol></div><a name="O15Readme_Troubleshoot" /><h1 class="heading">Troubleshooting</h1><div id="sectionSection6" class="section" name="collapseableSection" style=""><p>The following table lists common configuration and environment errors that prevent the sample from running or deploying properly and how you can solve them.</p><div class="caption"></div><div class="tableSection"><table width="50%" cellspacing="2" cellpadding="5" frame="lhs"><tr><th><p>Problem</p></th><th><p>Solution</p></th></tr><tr><td><p>In Visual Studio 2012, when prompted to "Connect to SharePoint", an error message says, "Access Denied… You are not a member of this site."</p></td><td><p>The credentials are not correct for the URL specified in the <span class="ui">Site URL</span> property of the app. Correct the logon credentials. If the problem persists, try deleting the browsing history and logging on again.</p></td></tr><tr><td><p>You do not see the "Publish Summary" screen when you click <span class="ui">Publish</span>. </p></td><td><p>Check to be sure you created your Office 365 subscription account and have configured your account's developer URL in the sample solution, as described in the steps for "Configure the sample".</p></td></tr></table></div></div><a name="O15Readme_Changelog" /><h1 class="heading">Change log</h1><div id="sectionSection7" class="section" name="collapseableSection" style=""><div class="caption"></div><div class="tableSection"><table width="50%" cellspacing="2" cellpadding="5" frame="lhs"><tr><th><p>Version</p></th><th><p>Date</p></th></tr><tr><td><p>First version</p></td><td><p>April 23, 2013</p></td></tr></table></div></div><a name="O15Readme_RelatedContent" /><h1 class="heading">Related content</h1><div id="sectionSection8" class="section" name="collapseableSection" style=""><ul><li><p><a href="http://msdn.microsoft.com/library/e3000415-50a0-426e-b304-b7de18f2f7d9.aspx" target="_blank">How to: Complete basic operations using SharePoint 2013 REST endpoints</a></p></li><li><p><a href="http://msdn.microsoft.com/library/1b992485-6efe-4ea4-a18c-221689b0b66f.aspx" target="_blank">How to: Create a basic SharePoint-hosted app</a></p></li><li><p><a href="http://msdn.microsoft.com/library/f86e2695-4d7a-4fc5-bc23-689de96c4b06.aspx" target="_blank">SharePoint 2013 development overview</a></p></li><li><p><a href="http://msdn.microsoft.com/library/d07e0a13-1e74-4128-857a-513dedbfef33.aspx" target="_blank">Get started developing apps for SharePoint</a></p></li><li><p><a href="http://msdn.microsoft.com/library/3038dd73-41ee-436f-8c78-ef8e6869bf7b.aspx" target="_blank">How to: Create a basic provider-hosted app for SharePoint</a></p></li><li><p><a href="http://msdn.microsoft.com/library/ae96572b-8f06-4fd3-854f-fc312f7f2d88.aspx" target="_blank">Important aspects of the app for SharePoint architecture and development landscape</a></p></li></ul></div></div></div></body></html>

@@ -1,0 +1,6 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" dslVersion="1.0.0.0" Id="276a7547-eeb3-4041-8a23-c2b35e05ee42" solutionId="276a7547-eeb3-4041-8a23-c2b35e05ee42" resetWebServer="false" sharePointProductVersion="15.0" name="O365_errorhandlingjavascript_cs" xmlns="http://schemas.microsoft.com/VisualStudio/2008/SharePointTools/PackageModel">
+  <features>
+    <featureReference itemId="f2d3a595-e832-4216-914c-a77216dfeeb2" />
+  </features>
+</package>
