@@ -1,0 +1,10 @@
+I:\DropBox\My Dropbox\Office 2010 VHTs\Aug2010\VHT 5--WordDeleteComments\Demo\VB\WordDeleteComments\WordDeleteComments\bin\Debug\WordDeleteComments.exe
+I:\DropBox\My Dropbox\Office 2010 VHTs\Aug2010\VHT 5--WordDeleteComments\Demo\VB\WordDeleteComments\WordDeleteComments\bin\Debug\WordDeleteComments.pdb
+I:\DropBox\My Dropbox\Office 2010 VHTs\Aug2010\VHT 5--WordDeleteComments\Demo\VB\WordDeleteComments\WordDeleteComments\bin\Debug\WordDeleteComments.xml
+I:\DropBox\My Dropbox\Office 2010 VHTs\Aug2010\VHT 5--WordDeleteComments\Demo\VB\WordDeleteComments\WordDeleteComments\obj\x86\Debug\ResolveAssemblyReference.cache
+I:\DropBox\My Dropbox\Office 2010 VHTs\Aug2010\VHT 5--WordDeleteComments\Demo\VB\WordDeleteComments\WordDeleteComments\obj\x86\Debug\WordDeleteComments.Resources.resources
+I:\DropBox\My Dropbox\Office 2010 VHTs\Aug2010\VHT 5--WordDeleteComments\Demo\VB\WordDeleteComments\WordDeleteComments\obj\x86\Debug\GenerateResource.read.1.tlog
+I:\DropBox\My Dropbox\Office 2010 VHTs\Aug2010\VHT 5--WordDeleteComments\Demo\VB\WordDeleteComments\WordDeleteComments\obj\x86\Debug\GenerateResource.write.1.tlog
+I:\DropBox\My Dropbox\Office 2010 VHTs\Aug2010\VHT 5--WordDeleteComments\Demo\VB\WordDeleteComments\WordDeleteComments\obj\x86\Debug\WordDeleteComments.exe
+I:\DropBox\My Dropbox\Office 2010 VHTs\Aug2010\VHT 5--WordDeleteComments\Demo\VB\WordDeleteComments\WordDeleteComments\obj\x86\Debug\WordDeleteComments.xml
+I:\DropBox\My Dropbox\Office 2010 VHTs\Aug2010\VHT 5--WordDeleteComments\Demo\VB\WordDeleteComments\WordDeleteComments\obj\x86\Debug\WordDeleteComments.pdb

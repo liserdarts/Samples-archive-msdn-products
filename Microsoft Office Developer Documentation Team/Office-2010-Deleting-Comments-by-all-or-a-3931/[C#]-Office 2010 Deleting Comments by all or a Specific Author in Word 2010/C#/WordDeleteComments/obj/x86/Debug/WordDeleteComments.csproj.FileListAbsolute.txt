@@ -1,0 +1,5 @@
+I:\DropBox\My Dropbox\Office 2010 VHTs\Aug2010\VHT 5--WordDeleteComments\Demo\CS\WordDeleteComments\WordDeleteComments\bin\Debug\WordDeleteComments.exe
+I:\DropBox\My Dropbox\Office 2010 VHTs\Aug2010\VHT 5--WordDeleteComments\Demo\CS\WordDeleteComments\WordDeleteComments\bin\Debug\WordDeleteComments.pdb
+I:\DropBox\My Dropbox\Office 2010 VHTs\Aug2010\VHT 5--WordDeleteComments\Demo\CS\WordDeleteComments\WordDeleteComments\obj\x86\Debug\ResolveAssemblyReference.cache
+I:\DropBox\My Dropbox\Office 2010 VHTs\Aug2010\VHT 5--WordDeleteComments\Demo\CS\WordDeleteComments\WordDeleteComments\obj\x86\Debug\WordDeleteComments.exe
+I:\DropBox\My Dropbox\Office 2010 VHTs\Aug2010\VHT 5--WordDeleteComments\Demo\CS\WordDeleteComments\WordDeleteComments\obj\x86\Debug\WordDeleteComments.pdb
