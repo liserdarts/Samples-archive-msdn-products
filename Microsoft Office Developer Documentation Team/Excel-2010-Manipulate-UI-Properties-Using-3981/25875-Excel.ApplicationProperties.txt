@@ -1,0 +1,98 @@
+' Excel 2010
+ 
+' In Excel 2010, in a new workbook, copy all this code into
+' the Sheet1 class module. Place the cursor in the
+' TestApplicationProperties procedure, and then press F8 to
+' single-step through the code. Arrange the VBA and Excel windows
+' side by side so you can follow the instructions in the comments.
+ 
+ 
+Sub TestApplicationProperties()
+  Dim saveDisplayFormulaAutoComplete As Boolean
+  Dim saveShowDevTools As Boolean
+  Dim saveShowMenuFloaties As Boolean
+  Dim saveShowSelectionFloaties As Boolean
+  Dim saveDisplayDocumentInformationPanel As Boolean
+  Dim saveEnableLivePreview As Boolean
+  Dim saveFormulaBarHeight As Integer
+ 
+  With Application
+    ' Preserve the current state of things, so the code
+    ' can put them back when done.
+    saveDisplayFormulaAutoComplete = .DisplayFormulaAutoComplete
+    saveShowDevTools = .ShowDevTools
+    saveShowMenuFloaties = .ShowMenuFloaties
+    saveShowSelectionFloaties = .ShowMenuFloaties
+    saveDisplayDocumentInformationPanel = .DisplayDocumentInformationPanel
+    saveEnableLivePreview = .EnableLivePreview
+    saveWarnOnFunctionNameConflict = .WarnOnFunctionNameConflict
+    saveFormulaBarHeight = .FormulaBarHeight
+   
+    ' Try out the various features added in Excel 2007:
+    .DisplayFormulaAutoComplete = True
+    ' In Excel, select cell A1, and then in the formula bar,
+    ' start entering a formula like =RandBetween(1, 100), and
+    ' watch the help you get in a formula drop-down list as you type.
+    ' Execute the next line of code, and repeat the test: This time
+    ' you won't see the dropdown:
+    .DisplayFormulaAutoComplete = False
+   
+    .ShowDevTools = True
+    ' In Excel, note that the Development Ribbon item
+    ' now is visible. Execute the next line, and note that it's
+    ' now hidden:
+    .ShowDevTools = False
+   
+   
+    .ShowMenuFloaties = False
+    ' In Excel, right-click in a cell. Note the "floatie" menu
+    ' that appears. Execute the next line, and verify that you
+    ' no longer see that menu when you right-click. Note that
+    ' the boolean value is the opposite of what you would expect.
+    ' If the ShowMenuFloaties property is True, the floaties
+    ' DO NOT appear; if False, they do.
+    .ShowMenuFloaties = True
+   
+    .ShowSelectionFloaties = False
+    ' Enter text into a cell, and then select a few characters. You
+    ' see a floatie menu with formatting options. Then execute
+    ' the next line, and verify that the same actions do not display
+    ' the floatie menu. Note that the boolean value is the
+    ' opposite of what you would expect.
+    ' If the ShowSelectionFloaties property is True, the floaties
+    ' DO NOT appear; if False, they do.
+    .ShowSelectionFloaties = True
+   
+    .DisplayDocumentInformationPanel = True
+    ' After executing the previous line of code, you see the
+    ' document information panel. Execute the next line to hide this panel:
+    .DisplayDocumentInformationPanel = False
+   
+    .EnableLivePreview = False
+    ' After executing the previous line of code, enter some text
+    ' into a cell, and select a font. As you scroll through the font list,
+    ' the formatting won't update as you select fonts. When you select
+    ' a font and dismiss the menu, the font will change in the cell. Execute
+    ' the following line, and try again--now the font updates as you
+    ' scroll through the font menu. The same concept applies to all
+    ' other formatting changes.
+    .EnableLivePreview = True
+   
+    .FormulaBarHeight = 2
+    ' After executing the previous line of code, the formula bar
+    ' height should be changed. Execute the following line to
+    ' set it to 1, the default height.
+    .FormulaBarHeight = 1
+   
+   
+    ' Put things back the way they were originally.
+    .DisplayFormulaAutoComplete = saveDisplayFormulaAutoComplete
+    .ShowDevTools = saveShowDevTools
+    .ShowMenuFloaties = saveShowMenuFloaties
+    .ShowMenuFloaties = saveShowSelectionFloaties
+    .DisplayDocumentInformationPanel = saveDisplayDocumentInformationPanel
+    .EnableLivePreview = saveEnableLivePreview
+    .FormulaBarHeight = saveFormulaBarHeight
+  End With
+End Sub
+  
