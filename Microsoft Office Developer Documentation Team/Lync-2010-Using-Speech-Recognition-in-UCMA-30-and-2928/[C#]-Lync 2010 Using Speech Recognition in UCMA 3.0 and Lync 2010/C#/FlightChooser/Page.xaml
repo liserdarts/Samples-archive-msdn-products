@@ -1,0 +1,23 @@
+<UserControl x:Class="FlightChooser.MainPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable= "d"
+    d:DesignHeight="359" d:DesignWidth="500">
+
+    <Grid x:Name="LayoutRoot" Background="White" Width="490">
+        <TextBlock Height="23" HorizontalAlignment="Left" Margin="23,15,0,0" Name="Channel" Text="Channel status" VerticalAlignment="Top" />
+        <TextBox Height="23" HorizontalAlignment="Left" Margin="113,12,0,0" Name="channelStatus" Text="Not ready" Foreground="red" VerticalAlignment="Top" Width="66" IsEnabled="true" />
+        <TextBox Height="23" HorizontalAlignment="Left" Margin="133,114,0,0" Name="fltDestination" VerticalAlignment="Top" Width="120" IsEnabled="true"/>
+        <TextBox Height="23" HorizontalAlignment="Left" Margin="133,78,0,0" Name="fltOrigination" VerticalAlignment="Top" Width="120" IsEnabled="true" />
+        <TextBlock Height="23" HorizontalAlignment="Left" Margin="22,117,0,0" Name="textBlock1" Text="Destination city" VerticalAlignment="Top" Width="89" />
+        <TextBlock Height="23" HorizontalAlignment="Left" Margin="22,81,0,0" Name="textBlock2" Text="Origination city" VerticalAlignment="Top" Width="89" />
+        <TextBlock Height="23" HorizontalAlignment="Left" Margin="22,48,0,0" Name="textBlock5" Text="Tell me which flight you want." VerticalAlignment="Top" Width="206" />
+        <Button Content="Exit" Height="23" HorizontalAlignment="Left" Margin="23,192,0,0" Name="SendAdditionalData" Click="SendAdditionalData_Click" VerticalAlignment="Top" Width="75" />
+        <TextBox Height="90" HorizontalAlignment="Left" Margin="74,229,0,0" Name="LoggerTextBox" VerticalAlignment="Top" Width="410" />
+        <TextBlock Height="23" HorizontalAlignment="Left" Margin="30,249,0,0" Name="textBlock3" Text="Logger" VerticalAlignment="Top" />
+        <TextBox Height="23" HorizontalAlignment="Left" Margin="135,150,0,0" Name="fltCost" VerticalAlignment="Top" Width="120" />
+        <TextBlock Height="23" HorizontalAlignment="Left" Margin="22,149,0,0" Name="textBlock6" Text="Ticket price" VerticalAlignment="Top" Width="74" />
+    </Grid>
+</UserControl>
