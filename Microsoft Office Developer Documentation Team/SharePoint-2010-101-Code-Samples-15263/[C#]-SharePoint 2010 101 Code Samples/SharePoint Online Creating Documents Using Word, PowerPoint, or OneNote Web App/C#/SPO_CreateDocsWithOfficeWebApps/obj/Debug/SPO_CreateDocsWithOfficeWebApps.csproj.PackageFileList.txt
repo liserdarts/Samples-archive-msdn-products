@@ -1,0 +1,1 @@
+bin\Debug\SPO_CreateDocsWithOfficeWebApps.wsp
