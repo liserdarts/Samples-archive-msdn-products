@@ -1,0 +1,26 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Contoso.IncidentDashboard", "Contoso.IncidentDashboard\Contoso.IncidentDashboard.csproj", "{619A2DF9-8AFD-43A9-A43B-8AAC1313370A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Contoso.IncidentDashboard.Web", "Contoso.IncidentDashboard.Web\Contoso.IncidentDashboard.Web.csproj", "{DFB80EE2-4CF1-43A2-A72D-F79FB382750A}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{619A2DF9-8AFD-43A9-A43B-8AAC1313370A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{619A2DF9-8AFD-43A9-A43B-8AAC1313370A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{619A2DF9-8AFD-43A9-A43B-8AAC1313370A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{619A2DF9-8AFD-43A9-A43B-8AAC1313370A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DFB80EE2-4CF1-43A2-A72D-F79FB382750A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DFB80EE2-4CF1-43A2-A72D-F79FB382750A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DFB80EE2-4CF1-43A2-A72D-F79FB382750A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DFB80EE2-4CF1-43A2-A72D-F79FB382750A}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

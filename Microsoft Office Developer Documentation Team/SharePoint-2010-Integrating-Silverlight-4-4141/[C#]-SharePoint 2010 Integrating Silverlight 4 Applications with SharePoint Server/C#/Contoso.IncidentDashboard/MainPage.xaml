@@ -1,0 +1,80 @@
+﻿<UserControl x:Class="Contoso.IncidentDashboard.MainPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:local="clr-namespace:Contoso.IncidentDashboard"
+    xmlns:dataControls="clr-namespace:System.Windows.Controls;assembly=System.Windows.Controls.Data"
+    mc:Ignorable="d" d:DesignHeight="600" d:DesignWidth="800">
+
+    <Grid x:Name="LayoutRoot" 
+          Background="White" 
+          MouseRightButtonDown="LayoutRoot_MouseRightButtonDown" 
+          MouseRightButtonUp="LayoutRoot_MouseRightButtonUp" 
+          MouseLeftButtonDown="LayoutRoot_MouseLeftButtonDown">
+        
+        <Grid.RowDefinitions>
+            <RowDefinition Height="50"/>
+            <RowDefinition Height="75"/>
+            <RowDefinition Height="*" />
+            <RowDefinition Height="30" />
+        </Grid.RowDefinitions>
+
+        <Image Grid.Row="0" Source="/Contoso.IncidentDashboard;component/Images/ttl_cust_serv_dash.png" HorizontalAlignment="Left" VerticalAlignment="Top" />
+
+        <Border CornerRadius="10" Background="LightGray" HorizontalAlignment="Left" BorderThickness="2" BorderBrush="Black" Width="725" Height="75" Grid.Row="1">
+            <Grid Margin="5">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="30" />
+                    <RowDefinition Height="30" />
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="200" />
+                    <ColumnDefinition Width="200" />
+                    <ColumnDefinition Width="200" />
+                    <ColumnDefinition Width="130" />
+                </Grid.ColumnDefinitions>
+                <local:StatusHeader x:Name="hdrNewClaims" Status="New"  Label="New Claims" Image="/Contoso.IncidentDashboard;component/Images/icon_new_claim.png" Grid.Row="0" Grid.Column="0" MouseLeftButtonUp="Status_Click" />
+                <local:StatusHeader x:Name="hdrAgentAssigned" Status="Agent Assigned" Label="Agent Assigned" Image="/Contoso.IncidentDashboard;component/Images/icon_pending_agent.png" Grid.Row="0" Grid.Column="1" MouseLeftButtonUp="Status_Click" />
+                <local:StatusHeader x:Name="hdrClaimApproved" Status="Claim Approved" Label="Claim Approved" Image="/Contoso.IncidentDashboard;component/Images/icon_pending_work.png" Grid.Row="0" Grid.Column="2" MouseLeftButtonUp="Status_Click" />
+                <local:StatusHeader x:Name="hdrBidReceived" Status="Bid Received" Label="Bid Received" Image="/Contoso.IncidentDashboard;component/Images/icon_waiting.png" Grid.Row="1" Grid.Column="0" MouseLeftButtonUp="Status_Click" />
+                <local:StatusHeader x:Name="hdrShopAssigned" Status="Repair Shop Assigned" Label="Repair Shop Assigned" Image="/Contoso.IncidentDashboard;component/Images/icon_repair_shop.png" Grid.Row="1" Grid.Column="1" MouseLeftButtonUp="Status_Click" />
+                <local:StatusHeader x:Name="hdrRepairComplete" Status="Repair Compelte" Label="Repair Complete" Image="/Contoso.IncidentDashboard;component/Images/icon_repair_complete.png" Grid.Row="1" Grid.Column="2" MouseLeftButtonUp="Status_Click" />
+                <local:StatusHeader Selected="True" Status="Total" x:Name="hdrTotal" Label="All Claims" Grid.Row="0" Grid.Column="3" Grid.RowSpan="2" MouseLeftButtonUp="Status_Click" />
+            </Grid>
+        </Border>
+        
+        <StackPanel Grid.Row="2">
+            <TextBlock Text="Incident Claims" FontSize="16" Margin="10,10,0,0" />
+            
+            <dataControls:DataGrid x:Name="grdIncidents" AutoGenerateColumns="False" Margin="20,5,0,0" HorizontalAlignment="Left" Width="652">
+                <dataControls:DataGrid.Columns>
+                    <dataControls:DataGridTextColumn Binding="{Binding ID}" Header="ID" Width="50" FontSize="14" />
+                    <dataControls:DataGridTextColumn Binding="{Binding Customer}" Header="Customer" Width="200" FontSize="14" />
+                    <dataControls:DataGridTextColumn Binding="{Binding Agent}" Header="Agent" Width="200" />
+                    <dataControls:DataGridTextColumn Binding="{Binding Status}" Header="Staus" Width="200" />
+                </dataControls:DataGrid.Columns>
+            </dataControls:DataGrid>
+        </StackPanel>
+        
+        <Canvas x:Name="pnlPop" 
+                Background="Transparent" 
+                Visibility="Collapsed">
+            <Popup x:Name="popMenu" IsOpen="False">
+                <Border Background="LightGray" 
+                        CornerRadius="5">
+                    <StackPanel Margin="5">
+                        <Button Content="Escalate to Supervisor" />
+                        <Button Content="Email Customer" />
+                    </StackPanel>
+                </Border>
+            </Popup>
+        </Canvas>
+        
+
+        <StackPanel Grid.Row="3" x:Name="pnlBodyContents">
+            <Button x:Name="bttnPrint" Content="Print" Click="bttnPrint_Click" />
+            <Button x:Name="bttnCopyToClipboard" Content="Copy To Clipboard" Click="bttnCopyToClipboard_Click" Visibility="Collapsed" />
+        </StackPanel>
+    </Grid>
+</UserControl>
