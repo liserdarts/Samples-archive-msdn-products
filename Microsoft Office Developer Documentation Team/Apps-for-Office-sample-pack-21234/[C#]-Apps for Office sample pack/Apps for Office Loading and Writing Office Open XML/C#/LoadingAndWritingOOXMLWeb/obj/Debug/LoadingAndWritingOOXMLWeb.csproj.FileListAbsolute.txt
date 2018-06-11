@@ -1,0 +1,5 @@
+X:\O2013 Apps\OOXML white paper\LoadingAndWritingOOXML\LoadingAndWritingOOXMLWeb\bin\LoadingAndWritingOOXMLWeb.dll
+X:\O2013 Apps\OOXML white paper\LoadingAndWritingOOXML\LoadingAndWritingOOXMLWeb\bin\LoadingAndWritingOOXMLWeb.pdb
+X:\O2013 Apps\OOXML white paper\LoadingAndWritingOOXML\LoadingAndWritingOOXMLWeb\obj\Debug\LoadingAndWritingOOXMLWeb.csprojResolveAssemblyReference.cache
+X:\O2013 Apps\OOXML white paper\LoadingAndWritingOOXML\LoadingAndWritingOOXMLWeb\obj\Debug\LoadingAndWritingOOXMLWeb.dll
+X:\O2013 Apps\OOXML white paper\LoadingAndWritingOOXML\LoadingAndWritingOOXMLWeb\obj\Debug\LoadingAndWritingOOXMLWeb.pdb

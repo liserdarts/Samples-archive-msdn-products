@@ -1,0 +1,172 @@
+﻿/* Page-specific styling */
+
+#books header {
+    padding: 4px;
+    margin: 2px;
+    font-size: large;
+}
+
+#styleLabel {
+    padding-left:12px;
+}
+
+#StyleDropDown {
+    width:75px;
+    height:25px;
+}
+
+#RefreshButton {
+    position: absolute;
+    right: 15px;
+    top: 12px;
+    background: url(../../Images/appbar.refresh.rest.png) no-repeat center transparent;
+    background-color: #990000;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    -webkit-background-size: cover;
+    background-size: cover;
+    border:none;
+    height: 24px;
+    width: 24px;
+}
+
+#RefreshButton:hover {
+    background-color:#CC0000;
+}
+
+#BooksHeader {
+    font-size:16px;
+}
+
+#AddBooksButton {
+    margin-left:12px;
+    margin-bottom:10px;
+}
+
+#BookListDiv {
+    position:relative;
+    padding:0px;
+    margin:0px;
+}
+
+#LoadingGif {
+    position:absolute;
+    top:50%;
+    bottom:50%;
+    left:50%;
+    right:50%;
+}
+
+#logoutLink {
+    position:absolute;
+    right:20px;
+    top:7px;
+    cursor:pointer;
+    color:#CFCFCF;
+}
+
+#logoutLink:hover {
+    color:#FFFFFF;
+}
+
+ul {
+    max-height:500px;
+    overflow:auto;
+}
+
+li span {
+    display:inline-block;
+    padding-right:25px;
+    -ms-word-wrap: break-word;
+    word-wrap: break-word;
+}
+
+.horizontalCenterText {
+    text-align:center;
+}
+
+.verticalCenter {
+    display:inline-block;
+    line-height:30px;
+    padding-left:5px;
+}
+
+.mainHeader {
+    background-color:#333;
+    color:white;
+    height:30px;
+    font-size:12px;
+    position:relative;
+}
+
+.relative {
+    position:relative;
+    padding-top:10px;
+}
+
+.entry {
+    padding: 2px;
+    margin-bottom:2px;
+    background-color: #cfcfcf;
+    position:relative;
+    list-style:none;
+}
+
+.entryTitle {
+
+}
+
+.entryCheckBox {
+    position:absolute;
+    top:1px;
+    right:1px;
+}
+
+.entryAuthorAndYear {
+
+}
+
+.entryInsertButton {
+    position: absolute;
+    bottom: 3px;
+    right: 11px;
+    height: 14px;
+    width: 14px;
+    font-size: 14px;
+    padding: 0px;
+    background: url(../../Images/appbar.add.png) no-repeat center transparent;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    -webkit-background-size: cover;
+    background-size: cover;
+    background-color: #990000;
+    color: white;
+    cursor: pointer;
+}
+
+.entryInsertButton:hover {
+    background-color:#CC0000;
+}
+
+/* Sticky footer - credit to Ryan Fait, 2013*/
+
+.Wrapper {
+    min-height:100%;
+    margin: 0 auto -70px;
+}
+
+.Push {
+    height:70px;
+}
+
+footer{
+    height:70px;
+    text-align:center;
+}
+
+form {
+    height:100%;
+}
+
+
+

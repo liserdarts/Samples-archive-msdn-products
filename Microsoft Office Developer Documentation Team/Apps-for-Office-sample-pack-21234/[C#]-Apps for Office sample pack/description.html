@@ -1,0 +1,403 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <title>Apps for Office sample pack</title>
+        <link href="description/Galleries.css" type="text/css" rel="Stylesheet" /><link href="description/Layout.css" type="text/css" rel="Stylesheet" /><link href="description/Brand.css" type="text/css" rel="Stylesheet" />
+        <link href="description/IFrameDescription.css" rel="Stylesheet" type="text/css" />
+        <script src="description/offline.js" type="text/javascript"></script>
+        <style type="text/css">
+            #projectInfo {
+                overflow: auto;
+            }
+            #longDesc {
+                clear:both;
+                margin: 25px 0 10px 0;
+            }
+
+            #SampleIndexList{
+                margin-left: 15px;
+            }
+        </style>
+    </head>
+<body>
+    <div id="offlineDescription">
+        <h1>Apps for Office sample pack</h1>
+        <br/>
+        <div id="projectInfo">
+            <div class="section">
+                    <div class="itemBarLong tagsContainer">
+                        <label for="Technologies">Technologies</label>
+                        <div id="Technologies">
+                            C#, Javascript, Open XML, Outlook Web App, Word 2013, Excel 2013, Project Professional 2013, Outlook 2013, apps for Office, PowerPoint 2013, Exchange Server 2013, Excel Web App
+                        </div>
+                    </div>
+                    <div class="itemBarLong tagsContainer">
+                        <label for="Topics">Topics</label>
+                        <div id="Topics">
+                            Authentication, mail, Binding, data and storage, sites and content, social computing, error checking
+                        </div>
+                    </div>
+                <div class="itemBarLong">
+                    <label for="Platforms">Platforms</label>
+                    <div id="Platforms">
+                        Desktop, Web, Cloud, Data
+                    </div>
+                </div>
+                <div class="itemBarLong">
+                    <label for="Requirements">Requirements</label>
+                    <div id="Requirements">
+                        
+                    </div>
+                </div>
+                <div class="itemBar">
+                    <label for="LastUpdated">Primary language</label>
+                    <div id="LastUpdated">en-US</div>
+                </div>
+                <div class="itemBar">
+                    <label for="LastUpdated">Updated</label>
+                    <div id="LastUpdated">3/25/2014</div>
+                </div>
+                <div class="itemBarLong">
+                    <label for="License">License</label>
+                    <div id="License">
+                        <a href="license.rtf">Apache License, Version 2.0</a></div>
+                </div>
+                <div class="itemBar">
+                    <div class="viewonlinecont">
+                        <a data-link="online" href="https://codegmain.redmond.corp.microsoft.com/Apps-for-Office-code-d04762b7">View this sample online</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+                   
+<script type="text/javascript">
+    function initializePage() {
+        var otherTabClass = 'otherTab';
+        var hiddenPreClass = 'hidden';
+
+        var htmlDecode = function(encodedData) {
+            var decodedData = "";
+            if (encodedData) {
+                var div = document.createElement('div');
+                div.innerHTML = encodedData;
+                decodedData = div.firstChild.nodeValue.replace( /\\r\\n/ig , '\r\n');
+            }
+            return decodedData;
+        };
+                
+        Galleries.iterateElem(Galleries.findElem(null, 'div', 'scriptcode'), function (index, scriptBlock) {
+            var titleElem = Galleries.findElem(scriptBlock, 'div', 'title')[0];
+            var labelElems = Galleries.findElem(titleElem, 'span');
+            if (labelElems.length == 0) {
+                labelElems = titleElem;
+            }
+            var languageSpans = Galleries.findElem(scriptBlock, 'span', 'hidden');
+            var pres = Galleries.findElem(scriptBlock, 'pre');
+            if (languageSpans.length > 0 && pres.length > 1) {
+                Galleries.iterateElem(labelElems, function(index, elem) {
+                    var codePre = pres[index];
+                    var labelSpan = elem;
+                    var languageSpan = languageSpans[index];
+                            
+                    elem.code = codePre.innerHTML.replace( /(\r(\n)?)|((\r)?\n)/ig , '\\r\\n');
+                            
+                    codePre.className = codePre.className.replace(hiddenPreClass, '');
+                            
+                    languageSpan.parentNode.removeChild(languageSpan);
+                });
+
+                pres = Galleries.findElem(scriptBlock, 'pre');
+                Galleries.iterateElem(labelElems, function(index, elem) {
+                    var codePre = pres[index];
+                    var labelSpan = elem;
+                    if (index == 0) {
+                        scriptBlock.activeTab = 0;
+                    }
+                    else {
+                        labelSpan.className += otherTabClass;
+                        codePre.className += hiddenPreClass;
+                    }
+                    Galleries.attachEventHandler(labelSpan, 'click', function(e) {
+                        var activeTab = scriptBlock.activeTab;
+                        labelElems[activeTab].className += otherTabClass;
+                        pres[activeTab].className += hiddenPreClass;
+
+                        codePre.className = codePre.className.replace(hiddenPreClass, '');
+                        labelSpan.className = labelSpan.className.replace(otherTabClass, '');
+                        scriptBlock.activeTab = index;
+                    });
+                });
+
+                var preview = Galleries.findElem(scriptBlock, 'div', 'preview');
+                if (preview.length == 0) {
+                    preview.push(pres[pres.length - 1]);
+                }
+                Galleries.iterateElem(preview, function(index, elem) {
+                    elem.parentNode.removeChild(elem);
+                });
+
+                if (window.clipboardData && clipboardData.setData) {
+                    var copyLink = document.createElement('a');
+                    copyLink.href = 'javascript:void(0);';
+                    copyLink.className = 'copyCode';
+                    copyLink.innerHTML = 'Copy code';
+                    Galleries.attachEventHandler(copyLink, 'click', function (e) {
+                        clipboardData.setData("Text", htmlDecode(labelElems[scriptBlock.activeTab].code));
+                        return false;
+                    });
+                    scriptBlock.insertBefore(copyLink, scriptBlock.childNodes[0]);
+                }
+            }
+        });
+    }
+
+    Galleries.onWindowLoad(function(){
+        initializePage();
+    });
+
+</script>
+<div id="longDesc">
+    
+<h1><span style="font-size:small">Apps for Office code samples</span></h1>
+<p><span style="font-size:small">The apps for Office platform lets you create engaging new consumer and enterprise experiences that run within supported Office 2013 applications. An app for Office is basically a webpage that is hosted inside an Office application
+ and can extend the functionality of a document, email message, meeting request, or appointment. Apps for Office combine cloud services with standard web technologies such as HTML5, CSS3, JavaScript, XML, and REST.</span></p>
+<p><span style="font-size:small">The code samples in this sample pack demonstrate the following types of apps:</span></p>
+<ul>
+<li><span style="font-size:small">Task pane apps for Excel 2013, PowerPoint 2013, Project</span><br>
+<span style="font-size:small">Professional 2013, and Word 2013.</span> </li><li><span style="font-size:small">Content apps for Excel 2013 and Excel Web App.</span>
+</li><li><span style="font-size:small">Mail apps for Outlook 2013 and Outlook Web App.</span>
+</li></ul>
+<p><span style="font-size:small">This sample pack includes all of the code samples developed for apps for Office. You can download a single ZIP file that contains all of the samples by choosing one of the
+<strong>Download </strong>buttons. You can also download the individual samples or read
+</span><span style="font-size:small">more about them by choosing the <strong>View samples</strong> tab.</span></p>
+<p><span style="font-size:small">For more information about how to start developing apps for Office, see the
+<a href="http://msdn.microsoft.com/en-US/office/apps" >Apps for Office and SharePoint Dev Center</a>. For in-depth developer documentation, see
+<a href="http://msdn.microsoft.com/en-us/library/office/apps/jj220060.aspx" >
+Build apps for Office</a>.</span></p>
+
+</div>
+
+
+            <hr />
+            <div id="sampleIndex">
+                <h2>Sample index</h2>
+                <div id="SampleIndexList">
+                        <!--ps17351-->
+                        <div id="item">
+                                <div><a href="Apps for Office Enable communication between apps/description.html">Apps for Office Enable communication between apps</a></div>
+                            <div>This sample for Excel demonstrates how to send data from a task pane app to a content app in the same document. The task pane app makes changes to a data source that the content app is monitoring for changes. The content app also responds when the user selects different cells.</div>
+                        </div>
+                        <!--pe17351-->
+                        <!--ps17353-->
+                        <div id="item">
+                                <div><a href="Apps for Office Enable offline apps using browser caching/description.html">Apps for Office Enable offline apps using browser caching</a></div>
+                            <div>This sample shows how to create a calculator app for Word and PowerPoint that is available even when the host machine is an unconnected state. The app uses the HTML5 Application Cache API that is part of Internet Explorer 10 Preview to cache the files required to use the app.</div>
+                        </div>
+                        <!--pe17353-->
+                        <!--pe17354-->
+                        <!--ps17356-->
+                        <div id="item">
+                                <div><a href="Apps for Office Insert Twitter search results/description.html">Apps for Office Insert Twitter search results</a></div>
+                            <div>This sample shows how you can create a task pane app for Excel or Word that uses the Twitter API to retrieve and insert a set of tweets into a table on an Excel 2013 worksheet or in a Word 2013 document.</div>
+                        </div>
+                        <!--pe17356-->
+                        <!--ps17357-->
+                        <div id="item">
+                                <div><a href="Apps for Office Interact with Facebook APIs/description.html">Apps for Office Interact with Facebook APIs</a></div>
+                            <div>This sample task pane app for Excel shows how to log on to Facebook from an Excel 2013 task pane, and then how to retrieve some basic user data from Facebook by using the Facebook API.</div>
+                        </div>
+                        <!--pe17357-->
+                        <!--ps17358-->
+                        <div id="item">
+                                <div><a href="Apps for Office Persist custom settings/description.html">Apps for Office Persist custom settings</a></div>
+                            <div>This sample app for Office demonstrates how to save custom settings in an app in Word 2013, Excel 2013, PowerPoint 2013, or Project Professional 2013. </div>
+                        </div>
+                        <!--pe17358-->
+                        <!--ps17360-->
+                        <div id="item">
+                                <div><a href="Apps for Office Surface and display errors in an app/description.html">Apps for Office Surface and display errors in an app</a></div>
+                            <div>This sample app for Office shows how to surface errors and programmatically generated messages to the user in Word 2013, Excel 2013, PowerPoint 2013, or Project Professional 2013. The app uses a dynamically created div to display messages at the bottom of the task pane app.</div>
+                        </div>
+                        <!--pe17360-->
+                        <!--ps17361-->
+                        <div id="item">
+                                <div><a href="Apps for Office Work with custom XML parts/description.html">Apps for Office Work with custom XML parts</a></div>
+                            <div>This sample writes user-specified text to a custom XML part that is bound to a content control within a Word 2013 document.</div>
+                        </div>
+                        <!--pe17361-->
+                        <!--ps17368-->
+                        <div id="item">
+                                <div><a href="Mail apps for Outlook Use a client identity token/description.html">Mail apps for Outlook Use a client identity token</a></div>
+                            <div>This sample shows you how to identify the clients of your mail app for Office.</div>
+                        </div>
+                        <!--pe17368-->
+                        <!--pe17369-->
+                        <!--pe17370-->
+                        <!--ps17384-->
+                        <div id="item">
+                                <div><a href="Mail apps for Outlook Make an EWS request/description.html">Mail apps for Outlook Make an EWS request</a></div>
+                            <div>This sample shows you how to request information by using Exchange Web Services (EWS) from your mail app for Office.  </div>
+                        </div>
+                        <!--pe17384-->
+                        <!--ps17385-->
+                        <div id="item">
+                                <div><a href="Mail apps for Outlook Store custom properties on an Exchange server/description.html">Mail apps for Outlook Store custom properties on an Exchange server</a></div>
+                            <div>This sample shows you how to use an Exchange server to store state information for your mail app for Outlook.</div>
+                        </div>
+                        <!--pe17385-->
+                        <!--ps17903-->
+                        <div id="item">
+                                <div><a href="Mail apps for Outlook Validate a client identity token using the .NET Framework/description.html">Mail apps for Outlook Validate a client identity token using the .NET Framework</a></div>
+                            <div>End-to-end sample for using identity tokens in mail apps for Outlook.</div>
+                        </div>
+                        <!--pe17903-->
+                        <!--ps18957-->
+                        <div id="item">
+                                <div><a href="Apps for Office Create an Invoice Manager/description.html">Apps for Office Create an Invoice Manager</a></div>
+                            <div>This sample shows how to create a task pane app for Office that manages invoices in Word 2013.</div>
+                        </div>
+                        <!--pe18957-->
+                        <!--pe18958-->
+                        <!--ps20983-->
+                        <div id="item">
+                                <div><a href="Outlook Online Integrate YouTube with Outlook Online/description.html">Outlook Online Integrate YouTube with Outlook Online</a></div>
+                            <div>This code sample automatically detects a YouTube URL in an email message and enables inline playback of the video. </div>
+                        </div>
+                        <!--pe20983-->
+                        <!--ps21024-->
+                        <div id="item">
+                                <div><a href="Apps for Office Bind an app to a table inserted into Excel or Word/description.html">Apps for Office Bind an app to a table inserted into Excel or Word</a></div>
+                            <div>This code sample demonstrates how to use the JavaScript API for Office to bind an app to a named table in Excel or Word 2013, extract data from the table, react to events in the table, and set data back into the table. </div>
+                        </div>
+                        <!--pe21024-->
+                        <!--ps21254-->
+                        <div id="item">
+                                <div><a href="Mail apps for Outlook Get attachments from an Exchange server/description.html">Mail apps for Outlook Get attachments from an Exchange server</a></div>
+                            <div>Learn how to use your mail app for Outlook service to get message attachments from an Exchange server.</div>
+                        </div>
+                        <!--pe21254-->
+                        <!--ps21619-->
+                        <div id="item">
+                                <div><a href="Apps for Office Slicing a PowerPoint presentation into chunks/description.html">Apps for Office Slicing a PowerPoint presentation into chunks</a></div>
+                            <div>This sample app demonstrates how to use JavaScript in a PowerPoint 2013 task pane app to get the current presentation and slice it into user-defined chunks of data. The data could then be submitted to a service (such as an e-book publishing service). 
+</div>
+                        </div>
+                        <!--pe21619-->
+                        <!--ps21620-->
+                        <div id="item">
+                                <div><a href="Apps for Office Binding to and validating content controls in Word 2013/description.html">Apps for Office Binding to and validating content controls in Word 2013</a></div>
+                            <div>Learn how to use JavaScript in a Word 2013 task pane app to bind to content controls in a document. The sample shows the binding process, and how to retrieve the content from those bindings so you can validate their values and submit them to a back-end data store or other system.</div>
+                        </div>
+                        <!--pe21620-->
+                        <!--ps21621-->
+                        <div id="item">
+                                <div><a href="Apps for Office Getting and setting complex document content using Open XML/description.html">Apps for Office Getting and setting complex document content using Open XML</a></div>
+                            <div>This sample app shows how to use JavaScript in a Word 2013 task pane app to extract Open XML from a potentially complex document. It also shows how to insert a fragment of Open XML into a document.</div>
+                        </div>
+                        <!--pe21621-->
+                        <!--ps21623-->
+                        <div id="item">
+                                <div><a href="Apps for Office Slicing a Word document into chunks/description.html">Apps for Office Slicing a Word document into chunks</a></div>
+                            <div>This sample app shows how to use JavaScript in a Word 2013 task pane app to get the current document and slice it into user-defined chunks of data. The data could then be submitted to a service (such as an editing service, a translation service, or an e-book publishing service).</div>
+                        </div>
+                        <!--pe21623-->
+                        <!--ps21624-->
+                        <div id="item">
+                                <div><a href="Apps for Office Visualizing and interacting with Excel data/description.html">Apps for Office Visualizing and interacting with Excel data</a></div>
+                            <div>This sample app shows how to use JavaScript in both an Excel 2013 task pane app and a content app to bind to data in an Excel workbook, retrieve the content from those bindings, and respond to changes in the Excel data.</div>
+                        </div>
+                        <!--pe21624-->
+                        <!--ps21772-->
+                        <div id="item">
+                                <div><a href="Apps for Office Use Microsoft Translator and ASP.NET in an app/description.html">Apps for Office Use Microsoft Translator and ASP.NET in an app</a></div>
+                            <div>Demonstrates an app for Excel or Word that translates text by calling an ASP.NET web service from client code and calling the Microsoft Translator web service from server-side code.</div>
+                        </div>
+                        <!--pe21772-->
+                        <!--pe21802-->
+                        <!--ps21988-->
+                        <div id="item">
+                                <div><a href="Apps for Office Create a date picker in Excel/description.html">Apps for Office Create a date picker in Excel</a></div>
+                            <div>This sample app for Office shows how to use HTML, CSS, and JavaScript in an Excel 2013 task pane app to demonstrate a date picker.</div>
+                        </div>
+                        <!--pe21988-->
+                        <!--ps21989-->
+                        <div id="item">
+                                <div><a href="Apps for Office Create a vertically scrolling menu in Excel/description.html">Apps for Office Create a vertically scrolling menu in Excel</a></div>
+                            <div>This sample app for Office shows how to use cascading style sheets and JavaScript in an Excel 2013 task pane app to create a stacked tabbed menu that vertically scrolls up to reveal more options.</div>
+                        </div>
+                        <!--pe21989-->
+                        <!--ps21990-->
+                        <div id="item">
+                                <div><a href="Apps for Office Display an animated dashboard in Excel/description.html">Apps for Office Display an animated dashboard in Excel</a></div>
+                            <div>This sample app for Office shows how to use cascading style sheets and JavaScript in an Excel 2013 task pane app to create an animated dashboard that is retractable along the side of the task pane.</div>
+                        </div>
+                        <!--pe21990-->
+                        <!--ps21991-->
+                        <div id="item">
+                                <div><a href="Apps for Office Create a tab menu in Excel/description.html">Apps for Office Create a tab menu in Excel</a></div>
+                            <div>This sample app for Office shows how to use cascading style sheets and JavaScript in an Excel 2013 task pane app to create a tab menu. JavaScript is also used to enable a button to insert data into the spreadsheet from an individual tab.</div>
+                        </div>
+                        <!--pe21991-->
+                        <!--ps21992-->
+                        <div id="item">
+                                <div><a href="Apps for Office Display tooltips in Excel/description.html">Apps for Office Display tooltips in Excel</a></div>
+                            <div>This sample app for Office shows how to use JavaScript in an Excel 2013 task pane app to create and position tooltips that are linked to keywords located within a body of text.</div>
+                        </div>
+                        <!--pe21992-->
+                        <!--ps21993-->
+                        <div id="item">
+                                <div><a href="Apps for Office Create a news ticker display in Excel/description.html">Apps for Office Create a news ticker display in Excel</a></div>
+                            <div>This sample app for Office shows how to use cascading style sheets and JavaScript in an Excel 2013 task pane app to create a news ticker type display.</div>
+                        </div>
+                        <!--pe21993-->
+                        <!--pe22009-->
+                        <!--ps22023-->
+                        <div id="item">
+                                <div><a href="Mail apps for Outlook Display hierarchy information from Active Directory/description.html">Mail apps for Outlook Display hierarchy information from Active Directory</a></div>
+                            <div>View the code of this prototype mail app to learn how to access basic hierarchy information from Active Directory and display it in Outlook and Outlook Web App. Extend this prototype to customize the mail app for your organization. </div>
+                        </div>
+                        <!--pe22023-->
+                        <!--ps22327-->
+                        <div id="item">
+                                <div><a href="Apps for Office Getting user data from the Zotero web service/description.html">Apps for Office Getting user data from the Zotero web service</a></div>
+                            <div>Shows how to authenticate to and retrieve data from the Zotero online research service and then shows how to insert that data into a Microsoft Word 2013 document.</div>
+                        </div>
+                        <!--pe22327-->
+                        <!--ps22474-->
+                        <div id="item">
+                                <div><a href="Apps for Office  Create a web service using the ASP.NET Web API/description.html">Apps for Office  Create a web service using the ASP.NET Web API</a></div>
+                            <div>Learn how to create and query an ASP.NET Web API service from an apps for Office.</div>
+                        </div>
+                        <!--pe22474-->
+                        <!--ps23769-->
+                        <div id="item">
+                                <div><a href="Connecting Apps for Office with SAP - Part I Sample Vendor Lookup App/description.html">Connecting Apps for Office with SAP - Part I Sample Vendor Lookup App</a></div>
+                            <div>This sample demonstrates how to develop an&#160;app for Office that connects to an SAP ERP system. The sample is the&#160;SAP Vendor Lookup app, a task pane app in Word, which illustrates the capabilities of the app for Office platform and the enterprise productivity solutions it enables.</div>
+                        </div>
+                        <!--pe23769-->
+                        <!--ps24402-->
+                        <div id="item">
+                                <div><a href="Apps for Office Get, Set, and Edit Office Open XML/description.html">Apps for Office Get, Set, and Edit Office Open XML</a></div>
+                            <div>This sample app shows you how to use the Office.js library to get or set a variety of rich content types in a Word document. It also can act as a scratch pad to provide you with an easy way to get the Office Open XML for your content and test your edited Office Open XML code.</div>
+                        </div>
+                        <!--pe24402-->
+                        <!--ps24403-->
+                        <div id="item">
+                                <div><a href="Apps for Office Loading and Writing Office Open XML/description.html">Apps for Office Loading and Writing Office Open XML</a></div>
+                            <div>This sample app shows you how to add a variety of rich content types to a Word document using the setSelectedDataAsync method with OOXML coercion type. The app also gives you the ability to show the Office Open XML markup for each sample content type right on the page. 
+</div>
+                        </div>
+                        <!--pe24403-->
+                        <!--ps24404-->
+                        <div id="item">
+                                <div><a href="Apps for Office Add and Populate a Binding in Word/description.html">Apps for Office Add and Populate a Binding in Word</a></div>
+                            <div>This sample app shows you how to add and bind to a named rich text content control in Word, and then insert content at the binding. It uses setSelectedDataAsync method with the ooxml coercion type to add and populate the control and addFromNamedItemAsync to bind to the control.</div>
+                        </div>
+                        <!--pe24404-->
+                </div>
+            </div>
+    </div>
+</body>
+</html>

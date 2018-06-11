@@ -1,0 +1,5 @@
+C:\Visual Studio Projects\DatePickerSample\DatePickerSampleWeb\bin\DatePickerSampleWeb.dll
+C:\Visual Studio Projects\DatePickerSample\DatePickerSampleWeb\bin\DatePickerSampleWeb.pdb
+C:\Visual Studio Projects\DatePickerSample\DatePickerSampleWeb\obj\Debug\DatePickerSampleWeb.dll
+C:\Visual Studio Projects\DatePickerSample\DatePickerSampleWeb\obj\Debug\DatePickerSampleWeb.pdb
+C:\Visual Studio Projects\DatePickerSample\DatePickerSampleWeb\obj\Debug\DatePickerSampleWeb.csprojResolveAssemblyReference.cache
