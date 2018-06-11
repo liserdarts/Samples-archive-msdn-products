@@ -1,0 +1,26 @@
+﻿@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title></title>
+</head>
+<body>
+    <div>
+    
+        <ul>
+            @foreach (ContosoEventsWeb.Controllers.ViewDataUploadFilesResult v in this.ViewData.Model)
+            {
+                <li>Uploaded: @v.Name<br/>@v.Length</li>
+            }
+        </ul>
+
+
+
+    </div>
+</body>
+</html>

@@ -1,0 +1,72 @@
+﻿body {
+    font-family: 'Segoe UI';
+    color:#2A2A2A;
+    background-color:#ffffff;
+    width:1000px;
+    margin-left:12px;
+}
+.blockDarker {
+ background-color:#30273A;
+ width:1000px;
+ min-height:70px;
+}
+.blockLighter {
+ background-color:#3D3644;
+  width:1000px;
+   min-height:100px;
+}
+
+.title {
+    font-size:xx-large;
+    font-family:"Segoe UI";
+    font-weight:100;
+    color:#FFFFFF;
+    padding-left:40px;
+    padding-top:1px;
+    padding-bottom:10px;
+    
+}
+.whitetitle {
+    font-size:x-large;
+    font-family:"Segoe UI";
+    font-weight:100;
+    color:#FFFFFF;
+    padding-bottom:10px;
+    
+
+}
+
+.whiteTitleSmaller {
+    font-size:medium;
+    font-family:"Segoe UI";
+    font-weight:100;
+    color:#FFFFFF;
+    padding-bottom:0px;
+ }
+.smallerText {
+    font-size:small;
+    padding-bottom:10px;
+}
+button {
+cursor:pointer;
+font-size:smaller;
+}
+.btn {
+cursor:pointer;
+font-size:smaller;
+
+}
+
+
+.hotSpot {
+float:left;
+cursor:pointer;
+}
+
+.clr {
+clear:both;
+}
+
+.scroller {
+overflow-y:scroll;
+}

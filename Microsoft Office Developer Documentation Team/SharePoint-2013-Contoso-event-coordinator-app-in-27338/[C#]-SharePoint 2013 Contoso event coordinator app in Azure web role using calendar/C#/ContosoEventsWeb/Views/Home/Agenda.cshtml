@@ -1,0 +1,237 @@
+﻿<link href="../content/jquery-ui-1.10.3.custom.min.css" rel="stylesheet" />
+<script src="../Scripts/jquery-1.9.1.js"></script>
+<script src="../Scripts/jquery-ui-1.10.3.custom.js"></script>
+<script src="//jqueryui.com/resources/demos/external/jquery.mousewheel.js"></script>
+<script src="//jqueryui.com/resources/demos/external/globalize.js"></script>
+<style>
+   .column {
+        float: left;
+        padding-bottom: 20px;
+        font-size: small;
+    }
+    .ui-sortable-placeholder {
+        border: 1px dotted black;
+        visibility: visible !important;
+        height: 50px !important;
+    }
+    .ui-sortable-placeholder * {
+            visibility: hidden;
+        }
+</style>
+<script>
+    $(function () {
+        $(".column").sortable({
+            connectWith: ".column"
+        });
+        $(".column").disableSelection();
+        $('#SaveNewItem').click(function () {
+            if ($('#newItemTitle').val() == "") {
+                $('#newFormValidator').fadeIn(250, null);
+                return (false);
+            }
+            $('#SaveNewItem').attr("href", $('#SaveNewItem').attr("href").replace("P8020ID", $('#newFormEventID').text()));
+            $('#SaveNewItem').attr("href", $('#SaveNewItem').attr("href").replace("P8020Title", $('#newItemTitle').val()));
+            $('#SaveNewItem').attr("href", $('#SaveNewItem').attr("href").replace("P8020Description", $('#newItemDescription').val()));
+            return (true);
+        });
+        $('#SaveEditItem').click(function () {
+            if ($('#editItemTitle').val() == "") {
+                $('#editFormValidator').fadeIn(250, null);
+                return (false);
+            }
+            $('#SaveEditItem').attr("href", $('#SaveEditItem').attr("href").replace("P8020EventID", $('#editFormEventID').val()));
+            $('#SaveEditItem').attr("href", $('#SaveEditItem').attr("href").replace("P8020ID", $('#editItemID').val()));
+            $('#SaveEditItem').attr("href", $('#SaveEditItem').attr("href").replace("P8020Title", $('#editItemTitle').val()));
+            $('#SaveEditItem').attr("href", $('#SaveEditItem').attr("href").replace("P8020Description", $('#editItemDescription').val()));
+            return (true);
+        });
+        $('#DeleteItem').click(function () {
+            $('#DeleteItem').attr("href", $('#DeleteItem').attr("href").replace("P8020ID", $('#ItemToDelete').val()));
+            $('#DeleteItem').attr("href", $('#DeleteItem').attr("href").replace("P8020EventID", $('#EventToReturnTo').val()));
+            return (true);
+        });
+        
+
+        $('#SaveAgenda').click(function () {
+            var idsInOrder = [];
+            idsInOrder = $("#agendaItems").sortable("toArray");           
+            $('#SaveAgenda').attr("href", $('#SaveAgenda').attr("href").replace("P8020Array", idsInOrder));
+            return (true);
+        });
+    });
+    function addNewItem(eventID) {
+        clearNewForm();
+        $('#newFormEventID').text(eventID);
+        $('#allAgendaItems').fadeOut(500, function () { $('#newForm').fadeIn(500, null); });
+    }
+    function hideNewForm() {
+        $('#newForm').fadeOut(500, function () { $('#allAgendaItems').fadeIn(500, null); clearNewForm(); });
+    }
+    function clearNewForm() {
+        $('#newItemTitle').val("");
+        $('#newItemDescription').val("");
+        $('#NewFormValidator').hide();
+    }
+    function editItem(eventID, itemID, title, descritpion) {
+
+        $('#editFormEventID').val(eventID);
+        
+        $('#editItemID').val(itemID);
+        $('#editItemTitle').val(title);
+        $('#editItemDescription').val(descritpion);
+        $('#EditFormValidator').hide();
+        $('#allAgendaItems').fadeOut(500, function () { $('#editForm').fadeIn(500, function () { $('#editFormEventID').val(eventID); }); });
+    }
+    function clearEditForm() {
+        $('#editItemTitle').val("");
+        $('#editItemDescription').val("");
+        $('#editFormValidator').hide();
+    }
+    function hideEditForm() {
+        $('#editForm').fadeOut(500, function () { $('#allAgendaItems').fadeIn(500, null); clearEditForm(); });
+    }
+    function deleteItem(eventID, itemID, title)
+    {
+        $('#DeleteTitle').text("Delete Item: " + title + "?");
+        $('#ItemToDelete').val(itemID);
+        $('#allAgendaItems').fadeOut(500, function () { $('#deleteForm').fadeIn(500, null); });
+    }
+    function hideDeleteForm() {
+        $('#deleteForm').fadeOut(500, function () { $('#allAgendaItems').fadeIn(500, null); });
+    }
+
+</script>
+<div class="clearfix">&nbsp;</div>
+<div id="newForm" class="form-inline" style="display:none;">
+    <div class="clearfix">&nbsp;</div>
+    Add New Agenda Item
+    <div class="form-inline" style="background-color:#ffffff;">
+        <table style="width:800px;font-size:small;" border="0">
+            <tr>
+                <td style="width:100px;padding:5px;vertical-align:top;">Title*</td>
+                <td style="padding:5px;">
+                    <input type="text" id="newItemTitle" placeholder="Title" style="width:100%;" />
+                </td>
+            </tr>
+            <tr>
+                <td style="width:100px; padding: 5px; vertical-align: top;">Description</td>
+                <td style="padding:5px;"><textarea id="newItemDescription" style="min-width:625px;" rows="3"></textarea></td>
+            </tr>
+            <tr>
+                <td colspan="2">
+                    <div class="ActionLinkButton" onclick="hideNewForm();" style="width:100px;margin-right:65px;">
+                        Cancel
+                    </div>
+                    @Html.ActionLink("Save", "CreateAgendaItem", "Home", new {EventID = "P8020ID", Title = "P8020Title", Description = "P8020Description" }, new { id = "SaveNewItem", @class = "ActionLinkButton", @style = "width:100px;" })
+                    <div id="newFormValidator" class="alert-warning" style="padding: 5px; display: none; width: 418px; text-align: left; float: right;">Title is required!</div>
+                </td>
+                <td valign='top'><div style="display:none;" id="newFormEventID" /></td>
+            </tr>
+        </table>
+    </div>
+</div>
+<div id="editForm" class="form-inline" style="display:none;">
+    <div class="clearfix">&nbsp;</div>
+    Edit Agenda Item
+    <div class="form-inline" style="background-color:#ffffff;">
+        <table style="width:800px;font-size:small;" border="0">
+            <tr>
+                <td style="width:100px;padding:5px;vertical-align:top;">Title*</td>
+                <td style="padding:5px;">
+                    <input type="text" id="editItemTitle" placeholder="Title" style="width:100%;" />
+                </td>
+            </tr>
+            <tr>
+                <td style="width:100px; padding: 5px; vertical-align: top;">Description</td>
+                <td style="padding:5px;"><textarea id="editItemDescription" style="min-width:625px;" rows="3"></textarea></td>
+            </tr>
+            <tr>
+                <td colspan="2">
+                    <div class="ActionLinkButton" onclick="hideEditForm();" style="width:100px;margin-right:65px;">
+                        Cancel
+                    </div>
+                    @Html.ActionLink("Save", "SaveAgendaItem", "Home", new {EventID = "P8020EventID",  ItemID = "P8020ID", Title = "P8020Title", Description = "P8020Description" }, new { id = "SaveEditItem", @class = "ActionLinkButton", @style = "width:100px;" })
+                    <div id="editFormValidator" class="alert-warning" style="padding: 5px; display: none; width: 418px; text-align: left; float: right;">Title is required!</div>
+                </td>
+                <td valign='top'>
+                    <input type="hidden" id="editItemID" /><input type="hidden" id="editFormEventID" />
+                </td>
+            </tr>
+        </table>
+    </div>
+</div>
+<div id="deleteForm" class="form-inline" style="display:none;z-index:1000;">
+    <div class="h2" id="DeleteTitle"></div>
+    <div style="background-color:#ffffff;">
+        <div>Item will be permanently deleted. Are you sure you want to continue?</div>
+        <div class="clearfix">&nbsp;</div>
+        <input type="hidden" id="ItemToDelete" /><input type="hidden" id="EventToReturnTo" value="@ViewBag.EventID"/>
+        @Html.ActionLink("Yes", "DeleteAgendaItem", "Home", new {EventID="P8020EventID", ItemID = "P8020ID" }, new { id = "DeleteItem", @class = "ActionLinkButton", @style = "width:100px;float:left;" })
+        <div class="ActionLinkButton" onclick="hideDeleteForm();" style="width:100px;float:left;">
+            No
+        </div>
+    </div>
+</div>
+<div id="allAgendaItems">
+    @if (ViewBag.AgendaItems.Count == 0)
+    {
+        <div class="clearfix">&nbsp;</div>
+        <div>There are currently no Agenda Items.</div>
+        <div class="clearfix">&nbsp;</div>
+         if ((ViewBag.IsSiteOwner) || (ViewBag.IsCoordinator))
+            {
+                <div id="addNew" class="ActionLinkButton" onclick="addNewItem('@ViewBag.EventID');" style="float: left; width: 150px;">
+                    Add Agenda Item
+                </div>
+            }
+            @Html.ActionLink("Back to Events", "Events", "Home", null, new { @class = "ActionLinkButton", @style = "width:150px;float:left;" })
+    }
+    else
+    {
+        if ((ViewBag.IsSiteOwner) || (ViewBag.IsCoordinator))
+        {
+            <div class="clearfix" style="margin-bottom:20px;">&nbsp;</div>
+            <label class="list-group-item-heading" style="width: 200px; padding-left: 30px;">Agenda Item</label>
+            <label class="list-group-item-heading" style="margin-left: 45px;">Description</label>
+            <div class="column" id="agendaItems" style="width:100%">
+            @foreach (ContosoEventsWeb.Models.EventAgenda agendaItem in @ViewBag.AgendaItems)
+            {
+                <div id="@agendaItem.AgendaItemID" class="form-inline list-item-grabber" title="Drag to Reorder" style="width:900px;border-bottom:dashed 1px #7A7A7A;">
+                    
+                    <div style="width: 200px; float: left; margin-right: 20px; height:30px;padding-top:10px;">@agendaItem.Title</div>
+                    <div style="min-width: 550px;width:550px; overflow-y:hidden; float: left;height:30px; padding-top: 10px;">@agendaItem.Description</div>
+                    <img src="../Images/EditAgenda.png" title="Edit" style="margin:5px;cursor:pointer;float:left;" onclick="editItem('@ViewBag.EventID','@agendaItem.AgendaItemID', '@agendaItem.Title','@agendaItem.Description');" />
+                    <img src="../Images/DeleteAgenda.png" title="Delete" style="margin:5px;cursor:pointer;float:left;" onclick="deleteItem('@ViewBag.EventID','@agendaItem.AgendaItemID', '@agendaItem.Title');" />
+                    <div class="clearfix">&nbsp;</div>
+                </div>
+            }
+            </div>
+            <div>Drag & drop items to reorder them.</div>
+            <div class="clearfix" style="margin-bottom:20px;">&nbsp;</div>
+            if ((ViewBag.IsSiteOwner) || (ViewBag.IsCoordinator))
+            {
+                <div id="addNew" class="ActionLinkButton" onclick="addNewItem('@ViewBag.EventID');" style="float: left; width: 150px;">
+                    Add Agenda Item
+                </div>
+                @Html.ActionLink("Save Order", "SaveAgenda", "Home", new { EventID = ViewBag.EventID, Items = "P8020Array" }, new { id = "SaveAgenda", @class = "ActionLinkButton", @style = "width:150px;float:left;" })
+            }
+            @Html.ActionLink("Back to Events", "Events", "Home", null, new { @class = "ActionLinkButton", @style = "width:150px;float:left;" })
+        }
+        else
+        {
+            <div class="clearfix" style="margin-bottom:20px;">&nbsp;</div>
+            <label class="list-group-item-heading" style="width: 200px;">Agenda Item</label>
+            <label class="list-group-item-heading" style="margin-left: 20px;">Description</label>
+            <div class="list-group" id="agendaItems" style="width:900px">
+            @foreach (ContosoEventsWeb.Models.EventAgenda agendaItem in @ViewBag.AgendaItems)
+            {
+                <div style="width:200px;float:left;margin-right:20px;">@agendaItem.Title</div>
+                <div style="min-width:600px;float:left">@agendaItem.Description</div>
+                <div class="clearfix">&nbsp;</div>
+            }
+            </div>
+            @Html.ActionLink("Back to Events", "Events", "Home", null, new { @class = "ActionLinkButton", @style = "width:150px;float:left;" })        
+        }
+    }
+</div>
+

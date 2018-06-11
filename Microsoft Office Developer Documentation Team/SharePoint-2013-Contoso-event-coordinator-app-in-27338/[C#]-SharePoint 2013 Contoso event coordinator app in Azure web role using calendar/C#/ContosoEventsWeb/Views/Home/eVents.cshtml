@@ -1,0 +1,753 @@
+﻿<link href="../content/jquery-ui-1.10.3.custom.min.css" rel="stylesheet" />
+<script src="../Scripts/jquery-1.9.1.js"></script>
+<script src="../Scripts/jquery-ui-1.10.3.custom.js"></script>
+<script src="//jqueryui.com/resources/demos/external/jquery.mousewheel.js"></script>
+<script src="//jqueryui.com/resources/demos/external/globalize.js"></script>
+<script charset="UTF-8" type="text/javascript" src="https://ecn.dev.virtualearth.net/mapcontrol/mapcontrol.ashx?v=7.0&s=1"></script>
+<script>
+    var BINGCreds = "{Your Bing Maps API Key}"; //Enter your Bing API key here. See readme for details.
+    var latlong = [];
+    var locationsList = [];
+    var positions = [];
+    var locationsToGeocode = "";
+    var latLngList = '';
+    var map = null;
+    var pinInfobox = null;
+    function mapIt() {
+        if ($('#newEventPostalCode').val() == "")
+        {
+            alert("Please enter a postal code.");
+            return;
+        }
+        locationsList = [];
+        locationsList.push($('#newEventPostalCode').val());
+        // Call the following function to get the Latitude/Longitude values
+        getLatLngLocations("New");
+    }
+    function mapItEdit() {
+        if ($('#editEventPostalCode').val() == "") {
+            alert("Please enter a postal code.");
+            return;
+        }
+        locationsList = [];
+        locationsList.push($('#editEventPostalCode').val());
+        // Call the following function to get the Latitude/Longitude values
+        getLatLngLocations("Edit");
+    }
+    function getLatLngLocations(mapMode) {
+        latLngList = '';
+        // The latitude and longitude of each of the addresses are stored in a global array for later use
+        // in the showMap() function
+        latlong = [];
+        for (j = 0; j < locationsList.length; j++) {
+            $.ajax({
+                url: "https://dev.virtualearth.net/REST/v1/Locations",
+                dataType: "jsonp",
+                data: {
+                    key: BINGCreds,
+                    q: locationsList[j]
+                },
+                jsonp: "jsonp",
+                success: function (result) {
+                    if (result &&
+                     result.resourceSets &&
+                     result.resourceSets.length > 0 &&
+                     result.resourceSets[0].resources &&
+                     result.resourceSets[0].resources.length > 0) {
+                        latitude = result.resourceSets[0].resources[0].point.coordinates[0];
+                        longitude = result.resourceSets[0].resources[0].point.coordinates[1]
+                        latLngList = latitude + "," + longitude;
+                        latlong.push(latLngList);
+                    }
+                    else {
+                        latitude = "N/A";
+                        longitude = "N/A";
+                        latLngList = latitude + "," + longitude;
+                        latlong.push(latLngList);
+                    }
+                    showMap(mapMode);
+                }
+            });
+        }
+    }
+    function showMap(mapMode) {
+        $('#newEventMapDiv').empty();
+        $('#editEventMapDiv').empty();
+        map = null;
+        if (latlong.length > 0) {
+            console.log(latlong.length);
+            if (mapMode == "New") {
+                map = new Microsoft.Maps.Map(document.getElementById("newEventMapDiv"),
+                {
+                    credentials: BINGCreds, height: 184, width: 285, mapTypeId: Microsoft.Maps.MapTypeId.road
+                }
+                );
+            }
+            else
+            {
+                map = new Microsoft.Maps.Map(document.getElementById("editEventMapDiv"),
+                {
+                    credentials: BINGCreds, height: 184, width: 285, mapTypeId: Microsoft.Maps.MapTypeId.road
+                }
+                );
+            }
+            // Creates a collection to store multiple pins
+            var pins = new Microsoft.Maps.EntityCollection();
+            positions.length = 0;
+            // Creates pins & determine zoom level to show all locations within map
+            for (var j = 0; j < latlong.length; j++) {
+                //the latitude and longitude which fetched as a comma seperated string are broken to be used as parameters
+                var coords = latlong[j].split(",");
+                positions[j] = new Microsoft.Maps.Location(coords[0], coords[1]);
+                // Create a Pushpin
+                var pin = new Microsoft.Maps.Pushpin(positions[j]);
+                // Adds the pin to the collection instead of adding it directly to the Map
+                pins.push(pin);
+            }
+            var viewBoundaries = Microsoft.Maps.LocationRect.fromLocations(positions);
+            map.setView({ bounds: viewBoundaries });
+            // Adds all pins at once
+            map.entities.push(pins);
+        }
+    }
+    function cancelEvent(EventID, EventName) {
+        $('#DeleteTitle').text("Delete Event: " + EventName + "?");
+        $('#EventToDelete').val(EventID);
+        $('#allEvents').fadeOut(500, function () { $('#deleteForm').fadeIn(500, null); });
+    }
+    function hideDeleteForm() {
+        $('#deleteForm').fadeOut(500, function () { $('#allEvents').fadeIn(500, null); });
+    }
+    function showNewForm() {
+        clearNewForm();
+        $('#allEvents').fadeOut(500, function () { $('#newForm').fadeIn(500, null); });
+    }
+    function hideNewForm() {
+        $('#newForm').fadeOut(500, function () { $('#allEvents').fadeIn(500, null); clearNewForm(); });
+    }
+    function clearNewForm() {
+        $('#newEventTitle').val("");
+        $('#newEventVenue').val("");
+        $('#newEventAddress1').val("");
+        $('#newEventAddress2').val("");
+        $('#newEventCity').val("");
+        $('#newEventState').val("");
+        $('#newEventDateFromPicker').val("");
+        $('#newEventPostalCode').val("");
+        $('#newEventDateToPicker').val("");
+        $('#newEventDescription').val("");
+        $('#NewFormValidator').hide();
+        $('#newEventFromTime').val("08:30");
+        $('#newEventToTime').val("16:30");
+        $('#NewFormValidator').hide();
+    }
+    $(function () {
+        $('#SaveNewEvent').click(function () {
+            if ($('#newEventTitle').val() == "") {
+                $('#newFormValidator').fadeIn(250, null);
+                return (false);
+            }
+            $('#SaveNewEvent').attr("href", $('#SaveNewEvent').attr("href").replace("P8020Title", $('#newEventTitle').val()));
+            $('#SaveNewEvent').attr("href", $('#SaveNewEvent').attr("href").replace("P8020Venue", $('#newEventVenue').val()));
+            $('#SaveNewEvent').attr("href", $('#SaveNewEvent').attr("href").replace("P8020Address1", $('#newEventAddress1').val()));
+            $('#SaveNewEvent').attr("href", $('#SaveNewEvent').attr("href").replace("P8020Address2", $('#newEventAddress2').val()));
+            $('#SaveNewEvent').attr("href", $('#SaveNewEvent').attr("href").replace("P8020City", $('#newEventCity').val()));
+            $('#SaveNewEvent').attr("href", $('#SaveNewEvent').attr("href").replace("P8020State", $('#newEventState').val()));
+            $('#SaveNewEvent').attr("href", $('#SaveNewEvent').attr("href").replace("P8020PostalCode", $('#newEventPostalCode').val()));
+            $('#SaveNewEvent').attr("href", $('#SaveNewEvent').attr("href").replace("P8020StartDateTime", $('#newEventDateFromPicker').val() + " " + $('#newEventFromTime').val()));
+            $('#SaveNewEvent').attr("href", $('#SaveNewEvent').attr("href").replace("P8020EndDateTime", $('#newEventDateToPicker').val() + " " + $('#newEventToTime').val()));
+            $('#SaveNewEvent').attr("href", $('#SaveNewEvent').attr("href").replace("P8020Description", $('#newEventDescription').val()));
+            return (true);
+        });
+        $("#newEventDateFromPicker").datepicker({dateFormat: 'mm-dd-yy'});
+        $("#newEventDateToPicker").datepicker({ dateFormat: 'mm-dd-yy' });
+        $("#editEventDateFromPicker").datepicker({ dateFormat: 'mm-dd-yy' });
+        $("#editEventDateToPicker").datepicker({ dateFormat: 'mm-dd-yy' });
+    });
+    function editEvent(CurrentUserCanEdit, ID, Title, Venue, Address1, Address2, City, State, PostalCode, StartDateTime, EndDateTime, Description) {
+        $('#editEventID').text(ID);
+        $('#editEventTitle').val(Title);
+        $('#editEventVenue').val(Venue);
+        $('#editEventAddress1').val(Address1);
+        $('#editEventAddress2').val(Address2);
+        $('#editEventCity').val(City);
+        $('#editEventState').val(State);
+        $('#editEventPostalCode').val(PostalCode);
+        if ($('#editEventPostalCode').val() != "") {
+            mapItEdit();
+        }
+        else
+        {
+            $('#editEventMapDiv').empty();
+            var img = document.createElement("img");
+            img.setAttribute("src", "../images/map.png");
+            img.setAttribute("width", "285");
+            img.setAttribute("id","dynMap");
+            $('#editEventMapDiv').append(img);
+
+        }
+        $('#editEventDateFromPicker').val(getDateComponent(StartDateTime,'Date'));
+        $('#editEventFromTime').val(getDateComponent(StartDateTime,'Time'));
+        $('#editEventDateToPicker').val(getDateComponent(EndDateTime,'Date'));
+        $('#editEventToTime').val(getDateComponent(EndDateTime,'Time'));
+        $('#editEventDescription').val(Description);
+        $('#EditFormValidator').hide();
+        if (CurrentUserCanEdit != "True") {
+            $('#editEventMapIt').attr('disabled', 'disabled');
+            $('#editEventTitle').attr('disabled', 'disabled');
+            $('#editEventVenue').attr('disabled', 'disabled');
+            $('#editEventAddress1').attr('disabled', 'disabled');
+            $('#editEventAddress2').attr('disabled', 'disabled');
+            $('#editEventCity').attr('disabled', 'disabled');
+            $('#editEventState').attr('disabled', 'disabled');
+            $('#editEventPostalCode').attr('disabled', 'disabled');
+            $('#editEventDateFromPicker').attr('disabled', 'disabled');
+            $('#editEventFromTime').attr('disabled', 'disabled');
+            $('#editEventDateToPicker').attr('disabled', 'disabled');
+            $('#editEventToTime').attr('disabled', 'disabled');
+            $('#editEventDescription').attr('disabled', 'disabled');
+            $('#Cancel').hide();
+            $('#SaveEditEvent').hide();
+            $('#OK').show();
+        }
+        else {
+            $('#editEventMapIt').removeAttr('disabled');
+            $('#editEventTitle').removeAttr('disabled');
+            $('#editEventVenue').removeAttr('disabled');
+            $('#editEventAddress1').removeAttr('disabled');
+            $('#editEventAddress2').removeAttr('disabled');
+            $('#editEventCity').removeAttr('disabled');
+            $('#editEventState').removeAttr('disabled');
+            $('#editEventPostalCode').removeAttr('disabled');
+            $('#editEventDateFromPicker').removeAttr('disabled');
+            $('#editEventFromTime').removeAttr('disabled');
+            $('#editEventDateToPicker').removeAttr('disabled');
+            $('#editEventToTime').removeAttr('disabled');
+            $('#editEventDescription').removeAttr('disabled');
+            $('#SaveEditEvent').show();
+            $('#Cancel').show();
+            $('#OK').hide();
+        }
+        $('#allEvents').fadeOut(500, function () { $('#editForm').fadeIn(500, null); });
+    }
+
+    function getDateComponent(dateTime, option) {
+        var iPos = dateTime.lastIndexOf(" ");
+        if(option=='Time')
+        {
+            var timeComponent = dateTime.substr(iPos + 1);
+            if (timeComponent.length > 5){
+                timeComponent = timeComponent.substr(0, 5);
+            }
+            return (timeComponent);
+        }
+        else
+        {
+            return (dateTime.substr(0,iPos));
+        }
+    }
+
+    function hideEditForm() {
+        $('#editForm').fadeOut(500, function () { $('#allEvents').fadeIn(500, null); clearEditForm(); });
+    }
+
+    function clearEditForm() {
+        $('#editEventID').text("");
+        $('#editEventTitle').val("");
+        $('#editEventVenue').val("");
+        $('#editEventAddress1').val("");
+        $('#editEventAddress2').val("");
+        $('#editEventCity').val("");
+        $('#editEventState').val("");
+        $('#editEventPostalCode').val("");
+        $('#editEventDateFromPicker').val(new Date().toDateString());
+        $('#editEventFromTime').val("08:30");
+        $('#editEventDateToPicker').val(new Date().toDateString());
+        $('#editEventToTime').val("16:30");
+        $('#editEventDescription').val("");
+        $('#EditFormValidator').hide();
+        $('#editForm').fadeOut(500, function () { $('#allEvents').fadeIn(500, null); });
+    }
+    
+    $(function () {
+        $('#DeleteEvent').click(function () {
+            var eventID = $('#EventToDelete').val();
+            $('#DeleteEvent').attr("href", $('#DeleteEvent').attr("href").replace("P8020EventID", eventID));
+            return (true);
+        });
+        $('#SaveEditEvent').click(function () {
+            if ($('#editEventTitle').val() == "") {
+                $('#editFormValidator').fadeIn(250, null);
+                return (false);
+            }
+            $('#SaveEditEvent').attr("href", $('#SaveEditEvent').attr("href").replace("P8020ID", $('#editEventID').text()));
+            $('#SaveEditEvent').attr("href", $('#SaveEditEvent').attr("href").replace("P8020Title", $('#editEventTitle').val()));
+            $('#SaveEditEvent').attr("href", $('#SaveEditEvent').attr("href").replace("P8020Venue", $('#editEventVenue').val()));
+            $('#SaveEditEvent').attr("href", $('#SaveEditEvent').attr("href").replace("P8020Address1", $('#editEventAddress1').val()));
+            $('#SaveEditEvent').attr("href", $('#SaveEditEvent').attr("href").replace("P8020Address2", $('#editEventAddress2').val()));
+            $('#SaveEditEvent').attr("href", $('#SaveEditEvent').attr("href").replace("P8020City", $('#editEventCity').val()));
+            $('#SaveEditEvent').attr("href", $('#SaveEditEvent').attr("href").replace("P8020State", $('#editEventState').val()));
+            $('#SaveEditEvent').attr("href", $('#SaveEditEvent').attr("href").replace("P8020PostalCode", $('#editEventPostalCode').val()));
+            $('#SaveEditEvent').attr("href", $('#SaveEditEvent').attr("href").replace("P8020StartDateTime", $('#editEventDateFromPicker').val() + " " + $('#editEventFromTime').val()));
+            $('#SaveEditEvent').attr("href", $('#SaveEditEvent').attr("href").replace("P8020EndDateTime", $('#editEventDateToPicker').val() + " " + $('#editEventToTime').val()));
+            $('#SaveEditEvent').attr("href", $('#SaveEditEvent').attr("href").replace("P8020Description", $('#editEventDescription').val()));
+            return (true);
+        });
+       
+    });
+
+</script>
+<div class="clearfix">&nbsp;</div>
+<div id="newForm" class="form-inline" style="display:none;">
+    <div class="clearfix">&nbsp;</div>
+    Add New Event
+    <div class="form-inline" style="background-color:#ffffff;">
+        <table style="width:800px;font-size:small;" border="0">
+            <tr>
+                <td style="width:100px;padding:5px;vertical-align:top;">Title*</td>
+                <td style="padding:5px;">
+                    <input type="text" id="newEventTitle" placeholder="Event Title" style="width:100%;" />
+                </td>
+            </tr>
+            <tr>
+                <td style="width:100px; padding: 5px; vertical-align: top;">Location</td>
+                <td style="padding:2px;">
+                    <table style="width:100%;" border="0">
+                        <tr>
+                            <td style="width:50%"><input type="text" id="newEventVenue" placeholder="Name of Venue" style="width:90%;padding:5px;" /></td>
+                            <td style="width:50%;vertical-align:top;text-align:left;padding:0;" rowspan="4">
+                                <div id="newEventMapDiv" style="width:285px;padding:0;margin:0;">
+                                    <img src="../images/map.png" alt="Map" width="285" />
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><input type="text" id="newEventAddress1" placeholder="Address Line 1" style="width:90%;padding:5px;" /></td>
+                        </tr>
+                        <tr>
+                            <td><input type="text" id="newEventAddress2" placeholder="Address Line 2" style="width:90%;padding:5px;" /></td>
+                        </tr>
+                        <tr>
+                            <td><input type="text" id="newEventCity" placeholder="City" style="width:90%;padding:5px;" /></td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <input type="text" id="newEventState" placeholder="State" style="width:90%;padding:5px;" />
+                                
+                            </td>
+                            <td>
+                                <input id="newEventPostalCode" type="text" placeholder="Postal/Zip Code" style="width:235px;padding:5px;float:left;" />
+                                <span id="newEventMapIt" class="ActionLinkButton" onclick="mapIt();" style="float:left;">
+                                    Map
+                                </span>
+                            </td>
+                        </tr>
+                    </table>
+
+                </td>
+            </tr>
+            <tr>
+                <td style="width:100px; padding: 5px; vertical-align: top;">Date & time*</td>
+                <td style="padding:5px;">
+                    <table style="width:100%;" border="0">
+                        <tr>
+                            <td style="width:50%">From:</td>
+                            <td style="width:50%;">To:</td>
+                        </tr>
+                        <tr>
+                            <td style="width:50%">
+                                <input id="newEventDateFromPicker" type="date" style="cursor:pointer;width:200px;margin-bottom:5px;margin-right:5px;float:left;" />
+                                <select id="newEventFromTime" style="width:75px;float:left;height:23px;padding:2px;">
+                                    <option value='00:00'>00:00</option>
+                                    <option value='00:30'>00:30</option>
+                                    <option value='01:00'>01:00</option>
+                                    <option value='01:30'>01:30</option>
+                                    <option value='02:00'>02:00</option>
+                                    <option value='02:30'>02:30</option>
+                                    <option value='03:00'>03:00</option>
+                                    <option value='03:30'>03:30</option>
+                                    <option value='04:00'>04:00</option>
+                                    <option value='04:30'>04:30</option>
+                                    <option value='05:00'>05:00</option>
+                                    <option value='05:30'>05:30</option>
+                                    <option value='06:00'>06:00</option>
+                                    <option value='06:30'>06:30</option>
+                                    <option value='07:00'>07:00</option>
+                                    <option value='07:30'>07:30</option>
+                                    <option value='08:00'>08:00</option>
+                                    <option value='08:30'>08:30</option>
+                                    <option value='09:00'>09:00</option>
+                                    <option value='09:30'>09:30</option>
+                                    <option value='10:00'>10:00</option>
+                                    <option value='10:30'>10:30</option>
+                                    <option value='11:00'>11:00</option>
+                                    <option value='11:30'>11:30</option>
+                                    <option value='12:00'>12:00</option>
+                                    <option value='12:30'>12:30</option>
+                                    <option value='13:00'>13:00</option>
+                                    <option value='13:30'>13:30</option>
+                                    <option value='14:00'>14:00</option>
+                                    <option value='14:30'>14:30</option>
+                                    <option value='15:00'>15:00</option>
+                                    <option value='15:30'>15:30</option>
+                                    <option value='16:00'>16:00</option>
+                                    <option value='16:30'>16:30</option>
+                                    <option value='17:00'>17:00</option>
+                                    <option value='17:30'>17:30</option>
+                                    <option value='18:00'>18:00</option>
+                                    <option value='18:30'>18:30</option>
+                                    <option value='19:00'>19:00</option>
+                                    <option value='19:30'>19:30</option>
+                                    <option value='20:00'>20:00</option>
+                                    <option value='20:30'>20:30</option>
+                                    <option value='21:00'>21:00</option>
+                                    <option value='21:30'>21:30</option>
+                                    <option value='22:00'>22:00</option>
+                                    <option value='22:30'>22:30</option>
+                                    <option value='23:00'>23:00</option>
+                                    <option value='23:30'>23:30</option>
+                                </select>
+                            </td>
+                            <td style="width:50%;">
+                                <input id="newEventDateToPicker" type="date" style="cursor:pointer;width:200px;margin-bottom:5px;margin-right:5px;float:left;" />
+                                <select id="newEventToTime" style="width:75px;float:left;height:23px;padding:2px;">
+                                    <option value='00:00'>00:00</option>
+                                    <option value='00:30'>00:30</option>
+                                    <option value='01:00'>01:00</option>
+                                    <option value='01:30'>01:30</option>
+                                    <option value='02:00'>02:00</option>
+                                    <option value='02:30'>02:30</option>
+                                    <option value='03:00'>03:00</option>
+                                    <option value='03:30'>03:30</option>
+                                    <option value='04:00'>04:00</option>
+                                    <option value='04:30'>04:30</option>
+                                    <option value='05:00'>05:00</option>
+                                    <option value='05:30'>05:30</option>
+                                    <option value='06:00'>06:00</option>
+                                    <option value='06:30'>06:30</option>
+                                    <option value='07:00'>07:00</option>
+                                    <option value='07:30'>07:30</option>
+                                    <option value='08:00'>08:00</option>
+                                    <option value='08:30'>08:30</option>
+                                    <option value='09:00'>09:00</option>
+                                    <option value='09:30'>09:30</option>
+                                    <option value='10:00'>10:00</option>
+                                    <option value='10:30'>10:30</option>
+                                    <option value='11:00'>11:00</option>
+                                    <option value='11:30'>11:30</option>
+                                    <option value='12:00'>12:00</option>
+                                    <option value='12:30'>12:30</option>
+                                    <option value='13:00'>13:00</option>
+                                    <option value='13:30'>13:30</option>
+                                    <option value='14:00'>14:00</option>
+                                    <option value='14:30'>14:30</option>
+                                    <option value='15:00'>15:00</option>
+                                    <option value='15:30'>15:30</option>
+                                    <option value='16:00'>16:00</option>
+                                    <option value='16:30'>16:30</option>
+                                    <option value='17:00'>17:00</option>
+                                    <option value='17:30'>17:30</option>
+                                    <option value='18:00'>18:00</option>
+                                    <option value='18:30'>18:30</option>
+                                    <option value='19:00'>19:00</option>
+                                    <option value='19:30'>19:30</option>
+                                    <option value='20:00'>20:00</option>
+                                    <option value='20:30'>20:30</option>
+                                    <option value='21:00'>21:00</option>
+                                    <option value='21:30'>21:30</option>
+                                    <option value='22:00'>22:00</option>
+                                    <option value='22:30'>22:30</option>
+                                    <option value='23:00'>23:00</option>
+                                    <option value='23:30'>23:30</option>
+                                </select>
+                            </td>
+                        </tr>
+
+                    </table>
+                </td>
+            </tr>
+            <tr>
+                <td style="width:100px; padding: 5px; vertical-align: top;">Description</td>
+                <td style="padding:5px;"><textarea id="newEventDescription" style="min-width:625px;" rows="7"></textarea></td>
+            </tr>
+            <tr>
+                <td colspan="2">
+                    <div class="ActionLinkButton" onclick="hideNewForm();" style="width:100px;margin-right:65px;">
+                        Cancel
+                    </div>
+                    @Html.ActionLink("Save", "CreateEvent", "Home", new { EventTitle = "P8020Title", EventVenue = "P8020Venue", EventAddress1 = "P8020Address1", EventAddress2 = "P8020Address2", EventCity = "P8020City", EventState = "P8020State", EventPostalCode = "P8020PostalCode", EventStartDateTime = "P8020StartDateTime", EventEndDateTime = "P8020EndDateTime", EventDescription = "P8020Description" }, new { id = "SaveNewEvent", @class = "ActionLinkButton", @style = "width:100px;" })
+                    <div id="newFormValidator" class="alert-warning" style="padding: 5px; display: none; width: 418px; text-align: left; float: right;">Title, From Date and To Date are all required fields!</div>
+                </td>
+                <td valign='top'></td>
+            </tr>
+        </table>
+    </div>
+</div>
+<div id="editForm" class="form-inline" style="display:none;">
+    <div class="clearfix">&nbsp;</div>
+    Edit Event
+    <div class="form-inline" style="background-color:#ffffff;">
+        <table style="width:800px;font-size:small;" border="0">
+            <tr style="display:none;">
+                <td style="width:10%">Event ID:</td>
+                <td colspan="2"><div id="editEventID" /></td>
+            </tr>
+            <tr>
+                <td style="width:100px;padding:5px;vertical-align:top;">Title*</td>
+                <td style="padding:5px;">
+                    <input type="text" id="editEventTitle" placeholder="Event Title" style="width:100%;" />
+                </td>
+            </tr>
+            <tr>
+                <td style="width:100px; padding: 5px; vertical-align: top;">Location</td>
+                <td style="padding:2px;">
+                    <table style="width:100%;" border="0">
+                        <tr>
+                            <td style="width:50%"><input type="text" id="editEventVenue" placeholder="Name of Venue" style="width:90%;padding:5px;" /></td>
+                            <td style="width:50%;vertical-align:top;text-align:left;padding:0;" rowspan="4">
+                                <div id="editEventMapDiv" style="width:285px;padding:0;margin:0;">
+                                    <img src="../images/map.png" alt="Map" width="285" />
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><input type="text" id="editEventAddress1" placeholder="Address Line 1" style="width:90%;padding:5px;" /></td>
+                        </tr>
+                        <tr>
+                            <td><input type="text" id="editEventAddress2" placeholder="Address Line 2" style="width:90%;padding:5px;" /></td>
+                        </tr>
+                        <tr>
+                            <td><input type="text" id="editEventCity" placeholder="City" style="width:90%;padding:5px;" /></td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <input type="text" id="editEventState" placeholder="State" style="width:90%;padding:5px;" />
+
+                            </td>
+                            <td>
+                                <input id="editEventPostalCode" type="text" placeholder="Postal/Zip Code" style="width:235px;padding:5px;float:left;" />
+                                <span id="editEventMapIt" class="ActionLinkButton" onclick="mapItEdit();" style="float:left;">
+                                    Map
+                                </span>
+                            </td>
+                        </tr>
+                    </table>
+
+                </td>
+            </tr>
+            <tr>
+                <td style="width:100px; padding: 5px; vertical-align: top;">Date & time*</td>
+                <td style="padding:5px;">
+                    <table style="width:100%;" border="0">
+                        <tr>
+                            <td style="width:50%">From:</td>
+                            <td style="width:50%;">To:</td>
+                        </tr>
+                        <tr>
+                            <td style="width:50%">
+                                <input id="editEventDateFromPicker" type="date" style="cursor:pointer;width:200px;margin-bottom:5px;margin-right:5px;float:left;" />
+                                <select id="editEventFromTime" style="width:75px;float:left;height:23px;padding:2px;">
+                                    <option value='00:00'>00:00</option>
+                                    <option value='00:30'>00:30</option>
+                                    <option value='01:00'>01:00</option>
+                                    <option value='01:30'>01:30</option>
+                                    <option value='02:00'>02:00</option>
+                                    <option value='02:30'>02:30</option>
+                                    <option value='03:00'>03:00</option>
+                                    <option value='03:30'>03:30</option>
+                                    <option value='04:00'>04:00</option>
+                                    <option value='04:30'>04:30</option>
+                                    <option value='05:00'>05:00</option>
+                                    <option value='05:30'>05:30</option>
+                                    <option value='06:00'>06:00</option>
+                                    <option value='06:30'>06:30</option>
+                                    <option value='07:00'>07:00</option>
+                                    <option value='07:30'>07:30</option>
+                                    <option value='08:00'>08:00</option>
+                                    <option value='08:30'>08:30</option>
+                                    <option value='09:00'>09:00</option>
+                                    <option value='09:30'>09:30</option>
+                                    <option value='10:00'>10:00</option>
+                                    <option value='10:30'>10:30</option>
+                                    <option value='11:00'>11:00</option>
+                                    <option value='11:30'>11:30</option>
+                                    <option value='12:00'>12:00</option>
+                                    <option value='12:30'>12:30</option>
+                                    <option value='13:00'>13:00</option>
+                                    <option value='13:30'>13:30</option>
+                                    <option value='14:00'>14:00</option>
+                                    <option value='14:30'>14:30</option>
+                                    <option value='15:00'>15:00</option>
+                                    <option value='15:30'>15:30</option>
+                                    <option value='16:00'>16:00</option>
+                                    <option value='16:30'>16:30</option>
+                                    <option value='17:00'>17:00</option>
+                                    <option value='17:30'>17:30</option>
+                                    <option value='18:00'>18:00</option>
+                                    <option value='18:30'>18:30</option>
+                                    <option value='19:00'>19:00</option>
+                                    <option value='19:30'>19:30</option>
+                                    <option value='20:00'>20:00</option>
+                                    <option value='20:30'>20:30</option>
+                                    <option value='21:00'>21:00</option>
+                                    <option value='21:30'>21:30</option>
+                                    <option value='22:00'>22:00</option>
+                                    <option value='22:30'>22:30</option>
+                                    <option value='23:00'>23:00</option>
+                                    <option value='23:30'>23:30</option>
+                                </select>
+                            </td>
+                            <td style="width:50%;">
+                                <input id="editEventDateToPicker" type="date" style="cursor:pointer;width:200px;margin-bottom:5px;margin-right:5px;float:left;" />
+                                <select id="editEventToTime" style="width:75px;float:left;height:23px;padding:2px;">
+                                    <option value='00:00'>00:00</option>
+                                    <option value='00:30'>00:30</option>
+                                    <option value='01:00'>01:00</option>
+                                    <option value='01:30'>01:30</option>
+                                    <option value='02:00'>02:00</option>
+                                    <option value='02:30'>02:30</option>
+                                    <option value='03:00'>03:00</option>
+                                    <option value='03:30'>03:30</option>
+                                    <option value='04:00'>04:00</option>
+                                    <option value='04:30'>04:30</option>
+                                    <option value='05:00'>05:00</option>
+                                    <option value='05:30'>05:30</option>
+                                    <option value='06:00'>06:00</option>
+                                    <option value='06:30'>06:30</option>
+                                    <option value='07:00'>07:00</option>
+                                    <option value='07:30'>07:30</option>
+                                    <option value='08:00'>08:00</option>
+                                    <option value='08:30'>08:30</option>
+                                    <option value='09:00'>09:00</option>
+                                    <option value='09:30'>09:30</option>
+                                    <option value='10:00'>10:00</option>
+                                    <option value='10:30'>10:30</option>
+                                    <option value='11:00'>11:00</option>
+                                    <option value='11:30'>11:30</option>
+                                    <option value='12:00'>12:00</option>
+                                    <option value='12:30'>12:30</option>
+                                    <option value='13:00'>13:00</option>
+                                    <option value='13:30'>13:30</option>
+                                    <option value='14:00'>14:00</option>
+                                    <option value='14:30'>14:30</option>
+                                    <option value='15:00'>15:00</option>
+                                    <option value='15:30'>15:30</option>
+                                    <option value='16:00'>16:00</option>
+                                    <option value='16:30'>16:30</option>
+                                    <option value='17:00'>17:00</option>
+                                    <option value='17:30'>17:30</option>
+                                    <option value='18:00'>18:00</option>
+                                    <option value='18:30'>18:30</option>
+                                    <option value='19:00'>19:00</option>
+                                    <option value='19:30'>19:30</option>
+                                    <option value='20:00'>20:00</option>
+                                    <option value='20:30'>20:30</option>
+                                    <option value='21:00'>21:00</option>
+                                    <option value='21:30'>21:30</option>
+                                    <option value='22:00'>22:00</option>
+                                    <option value='22:30'>22:30</option>
+                                    <option value='23:00'>23:00</option>
+                                    <option value='23:30'>23:30</option>
+                                </select>
+                            </td>
+                        </tr>
+
+                    </table>
+                </td>
+            </tr>
+            <tr>
+                <td style="width:100px; padding: 5px; vertical-align: top;">Description</td>
+                <td style="padding:5px;"><textarea id="editEventDescription" style="min-width:640px;" rows="7"></textarea></td>
+            </tr>
+            <tr>
+                <td colspan="2">
+                    <div id="OK" class="ActionLinkButton" onclick="hideEditForm();" style="width:100px;margin-right:70px;display:none">
+                        OK
+                    </div>
+                    <div id="Cancel" class="ActionLinkButton" onclick="hideEditForm();" style="width:100px;margin-right:70px;">
+                        Cancel
+                    </div>
+                    @Html.ActionLink("Save", "SaveEvent", "Home", new { EventID = "P8020ID", EventTitle = "P8020Title", EventVenue = "P8020Venue", EventAddress1 = "P8020Address1", EventAddress2 = "P8020Address2", EventCity = "P8020City", EventState = "P8020State", EventPostalCode = "P8020PostalCode", EventStartDateTime = "P8020StartDateTime", EventEndDateTime = "P8020EndDateTime", EventDescription = "P8020Description" }, new { id = "SaveEditEvent", @class = "ActionLinkButton", @style = "width:100px;" })
+                    <div id="editFormValidator" class="alert-warning" style="padding: 5px; display: none; width: 418px; text-align: left; float: right;">Title, From Date and To Date are all required fields!</div>
+                </td>
+                <td valign='top'></td>
+            </tr>
+        </table>
+    </div>
+</div>
+<div id="deleteForm" class="form-inline" style="display:none;z-index:1000;">
+    <div class="clearfix">&nbsp;</div>
+    <div class="h2" id="DeleteTitle"></div>
+    <div style="background-color:#ffffff;">
+        <div>All associated data will also be deleted. Are you sure you want to continue?</div>
+        <div class="clearfix">&nbsp;</div>
+        <input type="hidden" id="EventToDelete" />
+        @Html.ActionLink("Yes", "DeleteEvent", "Home", new { EventID = "P8020EventID" }, new { id = "DeleteEvent", @class = "ActionLinkButton", @style = "width:100px;float:left;" })
+        <div class="ActionLinkButton" onclick="hideDeleteForm();" style="width:100px;float:left;">
+            No
+        </div>
+    </div>
+</div>
+<div id="allEvents">
+    <div class="clearfix">&nbsp;</div>
+    @if (ViewBag.Events.Count == 0)
+    {
+        <div class="clearfix">&nbsp;</div>
+        
+        <div>There are currently no events.</div>
+        <div class="clearfix">&nbsp;</div>
+    }
+    else
+    {
+       <table id="UC2" style="width:100%;font-size:small;background-color:#ffffff;color:#2A2A2A" border="0">
+        <thead>
+            <tr>
+                <th style="padding:5px;vertical-align:top;text-align:left;">Event</th>
+                <th style="width:300px;padding:5px;vertical-align:top;text-align:left;">At-A-Glance</th>
+                <th style="width:75px;padding:5px;vertical-align:top;text-align:center;">Details</th>
+                <th style="width: 75px; padding: 5px; vertical-align: top; text-align: center;">Agenda</th>
+                <th style="width: 75px; padding: 5px; vertical-align: top; text-align: center;">Audience</th>
+                <th style="width: 75px; padding: 5px; vertical-align: top; text-align: center;">Presenters</th>
+                <th style="width: 75px; padding: 5px; vertical-align: top; text-align: center;">Catering</th>
+                <th style="width: 75px; padding: 5px; vertical-align: top; text-align: center;">Collateral</th>
+                @if(ViewBag.IsSiteOwner) {
+                    <th style="width: 75px; padding: 5px; vertical-align: top; text-align: center;">Coordinators</th>
+                }
+                <th style="width: 75px; padding: 5px; vertical-align: top; text-align: center;">Cancel</th>
+            </tr>
+        </thead>
+        @foreach (ContosoEventsWeb.Models.Event evt in @ViewBag.Events)
+        {
+            <tr>
+                <td style="padding:5px;vertical-align:top;">@evt.Title</td>
+                <td style="padding:5px;vertical-align:top;text-align:left;">@evt.City<br/>@evt.StartDateTime - @evt.EndDateTime</td>
+                <td style="padding:5px;vertical-align:top;text-align:center;"><img src="../Images/Schedule.png" style="margin:5px;cursor:pointer;" onclick="editEvent('@evt.CurrentUserCanEdit.ToString()', '@evt.EventID','@evt.Title','@evt.Venue','@evt.Address1','@evt.Address2','@evt.City','@evt.State','@evt.PostalCode','@evt.StartDateTime','@evt.EndDateTime','@evt.Description');" /></td>
+                <td style="padding:5px;vertical-align:top;text-align:center;">@Html.ActionLink(" ", "Agenda", "Home", new { EventID = evt.EventID }, new { @class = "AgendaLinkButton" })</td>
+                <td style="padding:5px;vertical-align:top;text-align:center;">@Html.ActionLink(" ", "Attendees", "Home", new { EventID = evt.EventID }, new { @class = "AudienceLinkButton" })</td>
+                <td style="padding:5px;vertical-align:top;text-align:center;">@Html.ActionLink(" ", "Presenters", "Home", new { EventID = evt.EventID }, new { @class = "PresentersLinkButton" })</td>
+                <td style="padding:5px;vertical-align:top;text-align:center;">@Html.ActionLink(" ", "Catering", "Home", new { EventID = evt.EventID }, new { @class = "CateringLinkButton" })</td>
+                <td style="padding:5px;vertical-align:top;text-align:center;">@Html.ActionLink(" ", "Attachments", "Home", new { EventID = evt.EventID }, new { @class = "AttachmentLinkButton" })</td>
+                @if(ViewBag.IsSiteOwner) {
+                <td style="padding:5px;vertical-align:top;text-align:center;">@Html.ActionLink(" ", "Roles", "Home", new { EventID = evt.EventID }, new { @class = "RolesLinkButton" })</td>
+                }
+                <td style="padding:5px;vertical-align:top;text-align:center;">
+                    @if(evt.CurrentUserCanEdit)
+                    { 
+                        <img src="../Images/Cancel.png" style="margin:5px;cursor:pointer;" onclick="cancelEvent('@evt.EventID', '@evt.Title');" />
+                    }
+                    else
+                    {
+                        <img src="../Images/CancelDisabled.png" style="margin:5px;cursor:pointer;" />
+                    }
+                </td>
+            </tr>  
+        }
+        </table>
+    }
+    @if (ViewBag.IsSiteOwner)
+    {
+        <div id="addNew" class="ActionLinkButton" onclick="showNewForm();" style="float: left; width: 150px;">
+            Add Event
+        </div>
+    }
+</div>

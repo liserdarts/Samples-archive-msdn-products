@@ -1,0 +1,28 @@
+﻿<div class="row">
+    <h2>Setup checklist</h2>
+    <table border="0" cellpadding="10" class="small">
+        <thead>
+            <tr>
+                <th>Check</th>
+                <th>Status</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td style="white-space:nowrap;vertical-align:top;">Database connection:</td>
+                <td valign='top'>@ViewBag.DatabaseCheck</td>
+            </tr>
+            <tr>
+                <td style="white-space:nowrap;vertical-align:top;">'Contoso Events Calendar' exists in host site:</td>
+                <td valign='top'>@if (@ViewBag.CalendarCheck)
+                                 {
+                                    <div>Success!</div>
+                                 }
+                                 else
+                                 {
+                                     <div>Calendar does not exist!<br/>@Html.ActionLink("CREATE", "CreateCalendar", "Home", null, new { id = "CreateCalendar", @class = "ActionLinkButton", @style = "width:100px;" }) </div>
+                                 }</td>
+            </tr>
+        </tbody>
+    </table>
+</div>

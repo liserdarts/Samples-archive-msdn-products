@@ -1,0 +1,38 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">
+  <CustomAction Id="842468f7-9c61-42b2-a25f-11a4fd11b05d.EventCalendarRibbon"
+                RegistrationType="List"
+                RegistrationId="106"
+                Location="CommandUI.Ribbon"
+                Sequence="10001"
+                Title="Coordinate Event">
+    <CommandUIExtension>
+      <CommandUIDefinitions>
+        <CommandUIDefinition Location="Ribbon.Calendar.Events.Manage.Controls._children">
+          <Button Id="Ribbon.Calendar.Events.Manage.EventCalendarRibbonButtonCalendar"
+                  Alt="Event Plans"
+                  Sequence="100"
+                  Command="Invoke_EventCalendarRibbonButtonRequest"
+                  LabelText="Coordinate Event"
+                  TemplateAlias="o1"
+                  Image32by32="_layouts/15/images/centraladmin_security_informationpolicy_32x32.png"
+                  Image16by16="_layouts/15/images/centraladmin_security_informationpolicy_32x32.png" />
+        </CommandUIDefinition>
+        <CommandUIDefinition Location="Ribbon.ListItem.Manage.Controls._children">
+          <Button Id="Ribbon.Calendar.Events.Manage.EventCalendarRibbonButtonList"
+                  Alt="Event Plans"
+                  Sequence="100"
+                  Command="Invoke_EventCalendarRibbonButtonRequest"
+                  LabelText="Coordinate Event"
+                  TemplateAlias="o1"
+                  Image32by32="_layouts/15/images/centraladmin_security_informationpolicy_32x32.png"
+                  Image16by16="_layouts/15/images/centraladmin_security_informationpolicy_32x32.png" />
+        </CommandUIDefinition>
+      </CommandUIDefinitions>
+      <CommandUIHandlers>
+        <CommandUIHandler Command="Invoke_EventCalendarRibbonButtonRequest"
+                          CommandAction="~remoteAppUrl/Home/Events?{StandardTokens}&amp;SPListItemId={SelectedItemId}&amp;SPListId={SelectedListId}"/>
+      </CommandUIHandlers>
+    </CommandUIExtension >
+  </CustomAction>
+</Elements>

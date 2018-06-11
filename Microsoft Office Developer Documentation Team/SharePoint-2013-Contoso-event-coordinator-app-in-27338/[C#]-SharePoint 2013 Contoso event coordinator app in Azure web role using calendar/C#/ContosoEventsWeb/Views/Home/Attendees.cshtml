@@ -1,0 +1,200 @@
+﻿<script>
+    $(function () {
+        $('#SaveNewItem').click(function () {
+            if ($('#newItemName').val() == "") {
+                $('#newFormValidator').fadeIn(250, null);
+                return (false);
+            }
+            $('#SaveNewItem').attr("href", $('#SaveNewItem').attr("href").replace("P8020ID", $('#newFormEventID').text()));
+            $('#SaveNewItem').attr("href", $('#SaveNewItem').attr("href").replace("P8020Name", $('#newItemName').val()));
+            $('#SaveNewItem').attr("href", $('#SaveNewItem').attr("href").replace("P8020Email", $('#newItemAttendeeEmail').val()));
+            return (true);
+        });
+        $('#SaveEditItem').click(function () {
+            if ($('#editItemName').val() == "") {
+                $('#editFormValidator').fadeIn(250, null);
+                return (false);
+            }
+            $('#SaveEditItem').attr("href", $('#SaveEditItem').attr("href").replace("P8020EventID", $('#editFormEventID').val()));
+            $('#SaveEditItem').attr("href", $('#SaveEditItem').attr("href").replace("P8020ID", $('#editItemID').val()));
+            $('#SaveEditItem').attr("href", $('#SaveEditItem').attr("href").replace("P8020Name", $('#editItemName').val()));
+            $('#SaveEditItem').attr("href", $('#SaveEditItem').attr("href").replace("P8020AttendeeEmail", $('#editItemAttendeeEmail').val()));
+            return (true);
+        });
+        $('#DeleteItem').click(function () {
+            $('#DeleteItem').attr("href", $('#DeleteItem').attr("href").replace("P8020ID", $('#ItemToDelete').val()));
+            $('#DeleteItem').attr("href", $('#DeleteItem').attr("href").replace("P8020EventID", $('#EventToReturnTo').val()));
+            return (true);
+        });
+    });
+    function addNewItem(eventID) {
+        clearNewForm();
+        $('#newFormEventID').text(eventID);
+        $('#allAttendeeItems').fadeOut(500, function () { $('#newForm').fadeIn(500, null); });
+    }
+    function hideNewForm() {
+        $('#newForm').fadeOut(500, function () { $('#allAttendeeItems').fadeIn(500, null); clearNewForm(); });
+    }
+    function clearNewForm() {
+        $('#newItemName').val("");
+        $('#newItemAttendeeEmail').val("");
+        $('#NewFormValidator').hide();
+    }
+    function editItem(eventID, itemID, title, descritpion) {
+
+        $('#editFormEventID').val(eventID);
+
+        $('#editItemID').val(itemID);
+        $('#editItemName').val(title);
+        $('#editItemAttendeeEmail').val(descritpion);
+        $('#EditFormValidator').hide();
+        $('#allAttendeeItems').fadeOut(500, function () { $('#editForm').fadeIn(500, function () { $('#editFormEventID').val(eventID); }); });
+    }
+    function clearEditForm() {
+        $('#editItemName').val("");
+        $('#editItemAttendeeEmail').val("");
+        $('#editFormValidator').hide();
+    }
+    function hideEditForm() {
+        $('#editForm').fadeOut(500, function () { $('#allAttendeeItems').fadeIn(500, null); clearEditForm(); });
+    }
+    function deleteItem(eventID, itemID, title) {
+        $('#DeleteName').text("Delete Item: " + title + "?");
+        $('#ItemToDelete').val(itemID);
+        $('#allAttendeeItems').fadeOut(500, function () { $('#deleteForm').fadeIn(500, null); });
+    }
+    function hideDeleteForm() {
+        $('#deleteForm').fadeOut(500, function () { $('#allAttendeeItems').fadeIn(500, null); });
+    }
+
+</script>
+<div class="clearfix">&nbsp;</div>
+<div id="newForm" class="form-inline" style="display:none;">
+    <div class="clearfix">&nbsp;</div>
+    Add New Attendee
+    <div class="form-inline" style="background-color:#ffffff;">
+        <table style="width:800px;font-size:small;" border="0">
+            <tr>
+                <td style="width:100px;padding:5px;vertical-align:top;">Name*</td>
+                <td style="padding:5px;">
+                    <input type="text" id="newItemName" placeholder="Name" style="width:100%;" />
+                </td>
+            </tr>
+            <tr>
+                <td style="width:100px; padding: 5px; vertical-align: top;">Attendee Email</td>
+                <td style="padding:5px;"><input type="text" id="newItemAttendeeEmail" style="min-width:625px;" /></td>
+            </tr>
+            <tr>
+                <td colspan="2">
+                    <div class="ActionLinkButton" onclick="hideNewForm();" style="width:100px;margin-right:65px;">
+                        Cancel
+                    </div>
+                    @Html.ActionLink("Save", "CreateAttendeeItem", "Home", new { EventID = "P8020ID", Name = "P8020Name", Email = "P8020Email" }, new { id = "SaveNewItem", @class = "ActionLinkButton", @style = "width:100px;" })
+                    <div id="newFormValidator" class="alert-warning" style="padding: 5px; display: none; width: 418px; text-align: left; float: right;">Name is required!</div>
+                </td>
+                <td valign='top'><div style="display:none;" id="newFormEventID" /></td>
+            </tr>
+        </table>
+    </div>
+</div>
+<div id="editForm" class="form-inline" style="display:none;">
+    <div class="clearfix">&nbsp;</div>
+    Edit Attendee
+    <div class="form-inline" style="background-color:#ffffff;">
+        <table style="width:800px;font-size:small;" border="0">
+            <tr>
+                <td style="width:100px;padding:5px;vertical-align:top;">Name*</td>
+                <td style="padding:5px;">
+                    <input type="text" id="editItemName" placeholder="Name" style="width:100%;" />
+                </td>
+            </tr>
+            <tr>
+                <td style="width:100px; padding: 5px; vertical-align: top;">Attendee Email</td>
+                <td style="padding:5px;"><input type="text" id="editItemAttendeeEmail" style="min-width:625px;" /></td>
+            </tr>
+            <tr>
+                <td colspan="2">
+                    <div class="ActionLinkButton" onclick="hideEditForm();" style="width:100px;margin-right:65px;">
+                        Cancel
+                    </div>
+                    @Html.ActionLink("Save", "SaveAttendeeItem", "Home", new { EventID = "P8020EventID", ItemID = "P8020ID", Name = "P8020Name", Email = "P8020AttendeeEmail" }, new { id = "SaveEditItem", @class = "ActionLinkButton", @style = "width:100px;" })
+                    <div id="editFormValidator" class="alert-warning" style="padding: 5px; display: none; width: 418px; text-align: left; float: right;">Name is required!</div>
+                </td>
+                <td valign='top'>
+                    <input type="hidden" id="editItemID" /><input type="hidden" id="editFormEventID" />
+                </td>
+            </tr>
+        </table>
+    </div>
+</div>
+<div id="deleteForm" class="form-inline" style="display:none;z-index:1000;">
+    <div class="h2" id="DeleteName"></div>
+    <div style="background-color:#ffffff;">
+        <div>Item will be permanently deleted. Are you sure you want to continue?</div>
+        <div class="clearfix">&nbsp;</div>
+        <input type="hidden" id="ItemToDelete" /><input type="hidden" id="EventToReturnTo" value="@ViewBag.EventID" />
+        @Html.ActionLink("Yes", "DeleteAttendeeItem", "Home", new { EventID = "P8020EventID", ItemID = "P8020ID" }, new { id = "DeleteItem", @class = "ActionLinkButton", @style = "width:100px;float:left;" })
+        <div class="ActionLinkButton" onclick="hideDeleteForm();" style="width:100px;float:left;">
+            No
+        </div>
+    </div>
+</div>
+<div id="allAttendeeItems">
+    @if (ViewBag.AttendeeItems.Count == 0)
+    {
+        <div class="clearfix">&nbsp;</div>
+        <div>There are currently no Attendees.</div>
+        <div class="clearfix">&nbsp;</div>
+        if ((ViewBag.IsSiteOwner) || (ViewBag.IsCoordinator))
+        {
+            <div id="addNew" class="ActionLinkButton" onclick="addNewItem('@ViewBag.EventID');" style="float: left; width: 150px;">
+                Add Attendee
+            </div>
+        }
+        @Html.ActionLink("Back to Events", "Events", "Home", null, new { @class = "ActionLinkButton", @style = "width:150px;float:left;" })
+    }
+    else
+    {
+        if ((ViewBag.IsSiteOwner) || (ViewBag.IsCoordinator))
+        {
+            <div class="clearfix" style="margin-bottom:20px;">&nbsp;</div>
+            <label class="list-group-item-heading" style="width: 200px; padding-left:0;">Attendee</label>
+            <label class="list-group-item-heading" style="margin-left: 15px;">Attendee Email</label>
+            <div class="column" id="attendeeItems" style="width:100%">
+                @foreach (ContosoEventsWeb.Models.EventAttendee attendeeItem in @ViewBag.AttendeeItems)
+                {
+                    <div id="@attendeeItem.AttendeeID" class="form-inline" style="width:900px;">
+
+                        <div style="width: 200px; float: left; margin-right: 20px; height:30px;padding-top:10px;">@attendeeItem.AttendeeName</div>
+                        <div style="min-width: 550px;width:550px; overflow-y:hidden; float: left;height:30px; padding-top: 10px;">@attendeeItem.AttendeeEmail</div>
+                        <img src="../Images/EditPresenter.png" title="Edit" style="margin:5px;cursor:pointer;float:left;" onclick="editItem('@ViewBag.EventID','@attendeeItem.AttendeeID', '@attendeeItem.AttendeeName','@attendeeItem.AttendeeEmail');" />
+                        <img src="../Images/DeletePresenter.png" title="Delete" style="margin:5px;cursor:pointer;float:left;" onclick="deleteItem('@ViewBag.EventID','@attendeeItem.AttendeeID', '@attendeeItem.AttendeeName');" />
+                        <div class="clearfix">&nbsp;</div>
+                    </div>
+                }
+            </div>
+            <div class="clearfix" style="margin-bottom:20px;">&nbsp;</div>
+            <div id="addNew" class="ActionLinkButton" onclick="addNewItem('@ViewBag.EventID');" style="float: left; width: 150px;">
+                Add Attendee
+            </div>
+            @Html.ActionLink("Back to Events", "Events", "Home", null, new { @class = "ActionLinkButton", @style = "width:150px;float:left;" })
+        }
+        else
+        {
+            <div class="clearfix" style="margin-bottom:20px;">&nbsp;</div>
+            <label class="list-group-item-heading" style="width: 200px;">Attendee</label>
+            <label class="list-group-item-heading" style="margin-left: 20px;">Attendee Email</label>
+            <div class="list-group" id="presenterItems" style="width:900px">
+                @foreach (ContosoEventsWeb.Models.EventAttendee attendeeItem in @ViewBag.AttendeeItems)
+                {
+                    <div style="width:200px;float:left;margin-right:20px;">@attendeeItem.AttendeeName</div>
+                    <div style="min-width:600px;float:left">@attendeeItem.AttendeeEmail</div>
+                    <div class="clearfix">&nbsp;</div>
+                }
+            </div>
+            @Html.ActionLink("Back to Events", "Events", "Home", null, new { @class = "ActionLinkButton", @style = "width:150px;float:left;" })
+        }
+    }
+</div>
+
+
