@@ -1,0 +1,57 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<List xmlns:ows="Microsoft SharePoint" Title="Prospects" FolderCreation="FALSE" Direction="$Resources:Direction;" Url="Lists/Prospects" BaseType="0" xmlns="http://schemas.microsoft.com/sharepoint/">
+  <MetaData>
+    <ContentTypes>
+      
+      
+    <ContentType ID="0x01005258f29d95c644fe8a35b6ae2bb64173" Name="ListFieldsContentType"><FieldRefs><FieldRef ID="{fa564e0f-0c70-4ab9-b863-0177e6ddd247}" Name="Title" /><FieldRef ID="{f0dd04c0-0770-4d2c-98e4-830750a0ec28}" Name="ContactPerson" /><FieldRef ID="{2082015b-99cc-474a-86e3-3dab44d6b6bf}" Name="ContactNumber" /><FieldRef ID="{8213799d-a4df-4d67-be36-86d7ab8ddb3d}" Name="Email" /><FieldRef ID="{1DAB9B48-2D1A-47b3-878C-8E84F0D211BA}" Name="_Status" /><FieldRef ID="{471fc999-417b-4fc1-aa2d-23d0d2f50ba1}" Name="DealAmount" /></FieldRefs></ContentType><ContentTypeRef ID="0x01">
+        <Folder TargetName="Item" />
+      </ContentTypeRef><ContentTypeRef ID="0x0120" /></ContentTypes>
+    <Fields>
+      
+    <Field ID="{fa564e0f-0c70-4ab9-b863-0177e6ddd247}" Type="Text" Name="Title" DisplayName="$Resources:core,Title;" Required="TRUE" SourceID="http://schemas.microsoft.com/sharepoint/v3" StaticName="Title" MaxLength="255" /><Field Name="ContactPerson" ID="{f0dd04c0-0770-4d2c-98e4-830750a0ec28}" DisplayName="Contact Person" Type="Text" /><Field Name="ContactNumber" ID="{2082015b-99cc-474a-86e3-3dab44d6b6bf}" DisplayName="Contact Number" Type="Text" /><Field Name="Email" ID="{8213799d-a4df-4d67-be36-86d7ab8ddb3d}" DisplayName="Email" Type="Text" /><Field ID="{1DAB9B48-2D1A-47b3-878C-8E84F0D211BA}" Name="_Status" Group="$Resources:core,Document_Columns;" Type="Choice" DisplayName="$Resources:core,Status;" SourceID="http://schemas.microsoft.com/sharepoint/v3/fields" StaticName="_Status" FillInChoice="FALSE" Format="Dropdown" Required="TRUE"><CHOICES><CHOICE>Lead</CHOICE><CHOICE>Opportunity</CHOICE><CHOICE>Sale</CHOICE><CHOICE>Lost Sale</CHOICE></CHOICES><Default>$Resources:core,_Status_NotStarted;</Default></Field><Field Name="DealAmount" ID="{471fc999-417b-4fc1-aa2d-23d0d2f50ba1}" DisplayName="Deal Amount" Type="Currency" LCID="1033" Decimals="2" Min="0" Required="TRUE" /></Fields>
+    <Views>
+      
+      
+    <View BaseViewID="0" Type="HTML" MobileView="TRUE" TabularView="FALSE">
+        <Toolbar Type="Standard" />
+        <XslLink Default="TRUE">main.xsl</XslLink>
+        <RowLimit Paged="TRUE">30</RowLimit>
+        <ViewFields>
+          
+        <FieldRef Name="LinkTitleNoMenu"></FieldRef></ViewFields>
+        <Query>
+          <OrderBy>
+            
+          <FieldRef Name="Modified" Ascending="FALSE"></FieldRef></OrderBy>
+        </Query>
+        <ParameterBindings>
+          <ParameterBinding Name="AddNewAnnouncement" Location="Resource(wss,addnewitem)" />
+          <ParameterBinding Name="NoAnnouncements" Location="Resource(wss,noXinviewofY_LIST)" />
+          <ParameterBinding Name="NoAnnouncementsHowTo" Location="Resource(wss,noXinviewofY_ONET_HOME)" />
+        </ParameterBindings>
+      </View><View BaseViewID="1" Type="HTML" WebPartZoneID="Main" DisplayName="$Resources:core,objectiv_schema_mwsidcamlidC24;" DefaultView="TRUE" MobileView="TRUE" MobileDefaultView="TRUE" SetupPath="pages\viewpage.aspx" ImageUrl="/_layouts/15/images/generic.png?rev=23" Url="AllItems.aspx">
+        <Toolbar Type="Standard" />
+        <XslLink Default="TRUE">main.xsl</XslLink>
+        <JSLink>clienttemplates.js</JSLink>
+        <RowLimit Paged="TRUE">30</RowLimit>
+        <ViewFields>
+          
+        <FieldRef Name="ID" /><FieldRef Name="LinkTitle"></FieldRef><FieldRef Name="ContactPerson" /><FieldRef Name="ContactNumber" /><FieldRef Name="Email" /><FieldRef Name="_Status" /><FieldRef Name="DealAmount" /><FieldRef Name="Attachments" /></ViewFields>
+        <Query>
+          <OrderBy>
+            
+          <FieldRef Name="ID"></FieldRef></OrderBy>
+        </Query>
+        <ParameterBindings>
+          <ParameterBinding Name="NoAnnouncements" Location="Resource(wss,noXinviewofY_LIST)" />
+          <ParameterBinding Name="NoAnnouncementsHowTo" Location="Resource(wss,noXinviewofY_DEFAULT)" />
+        </ParameterBindings>
+      </View></Views>
+    <Forms>
+      <Form Type="DisplayForm" Url="DispForm.aspx" SetupPath="pages\form.aspx" WebPartZoneID="Main" />
+      <Form Type="EditForm" Url="EditForm.aspx" SetupPath="pages\form.aspx" WebPartZoneID="Main" />
+      <Form Type="NewForm" Url="NewForm.aspx" SetupPath="pages\form.aspx" WebPartZoneID="Main" />
+    </Forms>
+  </MetaData>
+</List>

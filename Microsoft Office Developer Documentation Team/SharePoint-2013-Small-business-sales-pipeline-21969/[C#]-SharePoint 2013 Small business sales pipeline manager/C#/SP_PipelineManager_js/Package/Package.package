@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package dslVersion="1.0.0.0" 
+        Id="b6a86e0a-f506-4651-8ab6-f29fb3a34090" 
+        solutionId="b6a86e0a-f506-4651-8ab6-f29fb3a34090" 
+        xmlns="http://schemas.microsoft.com/VisualStudio/2008/SharePointTools/PackageModel" 
+        name="SP_PipelineManager_js"
+        sharePointProductVersion="15.0">
+  <features>
+        <featureReference itemId="91c8d9e5-6131-49aa-847c-3dd684ad1666" />
+  </features>
+</package>

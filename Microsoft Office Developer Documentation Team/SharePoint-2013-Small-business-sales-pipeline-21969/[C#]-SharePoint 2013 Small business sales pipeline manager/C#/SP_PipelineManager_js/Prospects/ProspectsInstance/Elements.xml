@@ -1,0 +1,57 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">
+  <ListInstance Title="Prospects" OnQuickLaunch="TRUE" TemplateType="10000" Url="Lists/Prospects" Description="Prospects List">
+    <Data>
+      <Rows>
+        <Row>
+          <Field Name="Title">Adventure Works Cycles</Field>
+          <Field Name="ContactPerson">Someone</Field>
+          <Field Name="ContactNumber">555-5555</Field>
+          <Field Name="Email">someone@adventure-works.com</Field>
+          <Field Name="_Status">Lead</Field>
+          <Field Name="DealAmount">4551</Field>
+        </Row>
+        <Row>
+          <Field Name="Title">Contoso, Ltd.</Field>
+          <Field Name="ContactPerson">Someone</Field>
+          <Field Name="ContactNumber">555-5555</Field>
+          <Field Name="Email">someone@contoso.com</Field>
+          <Field Name="_Status">Lead</Field>
+          <Field Name="DealAmount">4515</Field>
+        </Row>
+        <Row>
+          <Field Name="Title">Graphic Design Institute</Field>
+          <Field Name="ContactPerson">Someone</Field>
+          <Field Name="ContactNumber">555-5555</Field>
+          <Field Name="Email">someone@graphic-design-institute.com</Field>
+          <Field Name="_Status">Opportunity</Field>
+          <Field Name="DealAmount">5515</Field>
+        </Row>
+        <Row>
+          <Field Name="Title">Alpine Ski House</Field>
+          <Field Name="ContactPerson">Someone</Field>
+          <Field Name="ContactNumber">555-5555</Field>
+          <Field Name="Email">someone@alpineskihouse.com</Field>
+          <Field Name="_Status">Lost Sale</Field>
+          <Field Name="DealAmount">455</Field>
+        </Row>
+        <Row>
+          <Field Name="Title">Blue Yonder Airlines</Field>
+          <Field Name="ContactPerson">Someone</Field>
+          <Field Name="ContactNumber">555-5555</Field>
+          <Field Name="Email">someone@blueyonderairlines.com</Field>
+          <Field Name="_Status">Sale</Field>
+          <Field Name="DealAmount">4416</Field>
+        </Row>
+        <Row>
+          <Field Name="Title">Contoso Pharmaceuticals</Field>
+          <Field Name="ContactPerson">Someone</Field>
+          <Field Name="ContactNumber">555-5555</Field>
+          <Field Name="Email">someone@contoso-pharmaceuticals.com</Field>
+          <Field Name="_Status">Sale</Field>
+          <Field Name="DealAmount">561</Field>
+        </Row>
+      </Rows>
+    </Data>
+  </ListInstance>
+</Elements>
