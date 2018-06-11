@@ -1,0 +1,86 @@
+' Word 2010 adds a series of new Application-level events, allowing
+' you to react to events surrounding the use of protected-view windows.
+' Whether you open a document from the internet, or select to open a local
+' document in protected view, the following events can occur as you
+' interact with the protected-view document:
+'
+' ProtectedViewWindowActivate
+' ProtectedViewWindowBeforeClose
+' ProtectedViewWindowBeforeEdit
+' ProtectedViewWIndowDeactivate
+' ProtectedViewWindowOpen
+' ProtectedViewWindowSize
+
+' In order to test these events, first create a new document and 
+' in the VBA editor, add all the following code to the ThisDocument
+' class module. Close the document, and reopen it (running the code
+' in the document's Open event, which sets up the necessary event hooks).
+
+' Then, open one or more documents in protected view. Either open documents
+' from the Internet, or select File and then Open. In the Open dialog box,
+' locate an existing document, but don't open it yet. Click the arrow next
+' to the Open button, and select Open in Protected View from the menu
+' (this opens the document in Protected View).
+
+' Interact with the document that's open in protected view: resize it,
+' switch the focus away and then back to the document, close it, and so on.
+' Watch the text that appears in the current document as you do.
+
+Private WithEvents app As Word.Application
+Private doc As Word.Document
+
+Private Sub AddText(text As String)
+    doc.Content.InsertParagraphAfter
+    doc.Content.InsertAfter (text)
+End Sub
+
+Private Sub app_ProtectedViewWindowActivate(ByVal PvWindow As ProtectedViewWindow)
+    AddText "ProtectedViewWindowActivate: " & PvWindow.Caption
+End Sub
+
+Private Sub app_ProtectedViewWindowBeforeClose(ByVal PvWindow As ProtectedViewWindow, ByVal CloseReason As Long, Cancel As Boolean)
+    ' You can cancel the ProtectedViewWindowBeforeClose event.
+    Dim reason As String
+    reason = "None"
+
+    Select Case CloseReason
+      Case wdProtectedViewCloseEdit
+        reason = "Edit"
+      Case wdProtectedViewCloseForced
+        reason = "Forced"
+      Case wdProtectedViewCloseNormal
+        reason = "Normal"
+    End Select
+   
+    Dim text As String
+    text = "ProtectedViewWindowBeforeClose: " & _
+        PvWindow.Caption & "(" & reason & ")"
+
+    AddText text
+    Cancel = (MsgBox(text, vbOKCancel, "Event") = vbCancel)
+End Sub
+
+Private Sub app_ProtectedViewWindowBeforeEdit(ByVal PvWindow As ProtectedViewWindow, Cancel As Boolean)
+    ' You can cancel the ProtectedViewWindowBeforeEdit event.
+    Dim text As String
+    text = "ProtectedViewWindowBeforeEdit: " & PvWindow.Caption
+    AddText text
+    Cancel = (MsgBox(text, vbOKCancel, "Event") = vbCancel)
+End Sub
+
+Private Sub app_ProtectedViewWindowDeactivate(ByVal PvWindow As ProtectedViewWindow)
+    AddText "ProtectedViewWindowDeactivate: " & PvWindow.Caption
+End Sub
+
+Private Sub app_ProtectedViewWindowOpen(ByVal PvWindow As ProtectedViewWindow)
+    AddText "ProtectedViewWindowOpen: " & PvWindow.Caption
+End Sub
+
+Private Sub app_ProtectedViewWindowSize(ByVal PvWindow As ProtectedViewWindow)
+    AddText "ProtectedViewWindowSize: " & PvWindow.Caption
+End Sub
+
+Private Sub Document_Open()
+    Set doc = Word.ActiveDocument
+    Set app = Word.Application
+End Sub
