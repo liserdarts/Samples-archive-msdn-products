@@ -1,0 +1,52 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="X-UA-Compatible" content="IE=10" />
+    <title>System Alerts</title>
+    <link href="~/favicon.ico" rel="shortcut icon" type="image/x-icon" />
+    <meta name="viewport" content="width=device-width" />
+    @Styles.Render("~/Content/themes/base/css", "~/Content/css")
+    @Scripts.Render("~/bundles/modernizr")
+    @Scripts.Render("~/Scripts/sp.ui.controls.js")
+    @Scripts.Render("~/bundles/jquery")
+    @Scripts.Render("~/Scripts/wingtip.chromecontrol.js")
+</head>
+<body>
+
+    <nav>
+        <div id="chrome_ctrl_placeholder"></div>
+    </nav>
+
+    <article id="body" style="height:800px;width:100%">
+        <section class="content-wrapper main-content clear-fix">
+            <table id="alertsTable">
+                <caption>All Alerts</caption>
+                <thead>
+                    <th>ID</th>
+                    <th>Title</th>
+                    <th>Body</th>
+                    <th>Expires</th>
+                </thead>
+                @foreach (var alert in ViewBag.Alerts)
+                {
+                    <tr>
+                        <td>@alert.ID</td>
+                        <td>@alert.Title</td>
+                        <td>@Html.Raw(alert.Body)</td>
+                        <td>@alert.ExpiresFormatted</td>
+                    </tr>
+                }
+            </table>
+            <a href="@ViewBag.AlertsListLink">Manage Alerts</a>
+        </section>
+    </article>
+    <footer style="position:fixed;left:0;bottom:0;height:50px;width:100%">
+        <div class="content-wrapper">
+            <div class="float-left">
+                <p>&copy; @DateTime.Now.Year Wingtip Toys</p>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>

@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">
+  <ClientWebPart Name="SystemAlertsPart"
+                 Title="System Alerts"
+                 Description="Displays informational alerts"
+                 DefaultWidth="300"
+                 DefaultHeight="450">
+
+    <Content Type="html" Src="https://localhost:44312/Alerts/AppPart?{StandardTokens}" />
+
+    <Properties>
+    </Properties>
+
+  </ClientWebPart>
+</Elements>

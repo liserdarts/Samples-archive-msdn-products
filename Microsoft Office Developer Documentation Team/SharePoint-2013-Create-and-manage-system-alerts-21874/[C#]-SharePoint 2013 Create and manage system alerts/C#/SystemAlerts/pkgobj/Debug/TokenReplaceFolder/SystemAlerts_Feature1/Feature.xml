@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Feature xmlns="http://schemas.microsoft.com/sharepoint/" Id="8265fc58-32d3-4367-b7e7-390e9514da2d" Scope="Web" Title="SystemAlerts Feature1" Version="1.0.0.0">
+  <ElementManifests>
+    <ElementManifest Location="AlertsInstance\Elements.xml" />
+    <ElementManifest Location="Alerts\Elements.xml" />
+    <ElementFile Location="Alerts\Schema.xml" />
+  </ElementManifests>
+  <UpgradeActions>
+    <VersionRange>
+      <ApplyElementManifests>
+        <ElementManifest Location="AlertsInstance\Elements.xml" />
+        <ElementManifest Location="Alerts\Elements.xml" />
+      </ApplyElementManifests>
+    </VersionRange>
+  </UpgradeActions>
+</Feature>

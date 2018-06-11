@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">
+  <ListInstance Title="Alerts"
+                OnQuickLaunch="TRUE"
+                TemplateType="10000"
+                Url="Lists/Alerts"
+                Description="My List Instance">
+    <Data>
+      <Rows>
+        <Row>
+          <Field Name="Title">Server Upgrades</Field>
+          <Field Name="Body">The SharePoint intranet will be unavailable this weekend while an upgrade is performed.</Field>
+          <Field Name="Expires">12/31/2013</Field>
+        </Row>
+        <Row>
+          <Field Name="Title">Mailbox Migration</Field>
+          <Field Name="Body">User mailboxes will be migrated to O365 through the year</Field>
+        </Row>
+        <Row>
+          <Field Name="Title">Personal Mapped Drives</Field>
+          <Field Name="Body">Personal mapped drives will be deleted by the end of the year.</Field>
+          <Field Name="Expires">12/1/2013</Field>
+        </Row>
+      </Rows>
+    </Data>
+  </ListInstance>
+</Elements>
