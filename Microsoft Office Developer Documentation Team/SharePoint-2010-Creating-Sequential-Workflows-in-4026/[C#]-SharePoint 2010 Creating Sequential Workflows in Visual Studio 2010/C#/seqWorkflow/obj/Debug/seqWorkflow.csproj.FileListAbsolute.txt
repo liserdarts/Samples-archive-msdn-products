@@ -1,0 +1,5 @@
+c:\temp\seqWorkflow\seqWorkflow\bin\Debug\seqWorkflow.dll
+c:\temp\seqWorkflow\seqWorkflow\bin\Debug\seqWorkflow.pdb
+c:\temp\seqWorkflow\seqWorkflow\obj\Debug\ResolveAssemblyReference.cache
+c:\temp\seqWorkflow\seqWorkflow\obj\Debug\seqWorkflow.dll
+c:\temp\seqWorkflow\seqWorkflow\obj\Debug\seqWorkflow.pdb

@@ -1,0 +1,6 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package dslVersion="1.0.0.0" Id="72b315d7-3c91-4724-b276-b773a291b4a2" solutionId="72b315d7-3c91-4724-b276-b773a291b4a2" xmlns="http://schemas.microsoft.com/VisualStudio/2008/SharePointTools/PackageModel" name="seqWorkflow">
+    <features>
+        <featureReference itemId="745de7d9-eb2a-4d89-aa50-9b212efbd028" />
+    </features>
+</package>
