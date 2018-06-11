@@ -1,0 +1,61 @@
+Option Explicit
+
+' Visio 2010 with the US Units stencils installed.
+
+' Demonstrate the ContainerProperties object.
+
+' Visio 2010 makes it easy to add a visual boundary around shapes,
+' using the new feature, Containers.
+' The following code creates a Container object and adds
+' it to the page.
+' The code then works with the ContainerProperties object.
+'
+' To run this demo, open Visio 2010 and create a blank document.
+' Open the VBA editor and paste this code into the existing 
+' ThisDocument module.
+' With the cursor inside the WorkWithContainerProps
+' method, press F5.
+
+Sub WorkWithContainerProps()
+    ' Access objects on the current document.
+    Dim doc As Visio.Document
+    Set doc = Application.ActiveDocument
+    Dim thePage As Visio.Page
+    Set thePage = doc.Pages(1)
+    
+    ' From VBA, access the new Containers collection by opening the built-in
+    ' stencil file for Containers. 
+    ' You can access these objects in the
+    ' Visio user interface by selecting the Insert tab.
+    Dim containersDoc As Visio.Document
+    Set containersDoc = Application.Documents.OpenEx( _
+        Application.GetBuiltInStencilFile(visBuiltInStencilContainers, _
+        visMSUS), visOpenHidden)
+    
+    ' Use the new DropContainer method to add
+    ' the container specified by the containerToAdd text to the page.
+    Dim containerToAdd As String
+    containerToAdd = "Container 1"
+    Dim containerShape As Visio.Shape
+    Set containerShape = thePage.DropContainer( _
+        containersDoc.Masters.ItemU(containerToAdd), Nothing)
+    containersDoc.Close
+    
+    ' Once you have a container on the page, you
+    ' access its ContainerProperties object.
+    Dim props As ContainerProperties
+    Set props = containerShape.ContainerProperties
+    
+    ' Once you have the ContainerProperties object,
+    ' you can read properties.
+    MsgBox "ContainerStyle=" & props.ContainerStyle
+    
+    ' You can also change properties.
+    props.ContainerStyle = 2
+    MsgBox "ContainerStyle=" & props.ContainerStyle
+End Sub
+
+ 
+
+
+
