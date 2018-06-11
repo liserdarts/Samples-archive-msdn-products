@@ -1,0 +1,50 @@
+' PowerPoint 2010
+
+' Create a new presentation, add a module, and
+' paste the following procedure into the new module.
+' Arrange the VBA and PowerPoint windows side by side
+' on your screen. In the PowerPoint presentation, on the
+' first slide, select Insert and in the Illustrations group,
+' select Chart. Pick a chart type, and click OK to insert
+' the chart. Then place your cursor inside the following
+' procedure and single-step through the code.
+
+Sub InteractWithChartLocation()
+    ' Use this procedure to demonstrate
+    ' working with the location of a chart.
+   
+    Dim shp As Shape
+    Dim cht As Chart
+   
+    ' If there isn't already a second slide, create one now:
+    If ActivePresentation.Slides.Count < 2 Then
+        ActivePresentation.Slides.Add 2, ppLayoutBlank
+    End If
+   
+    ' Loop through all the shapes on the first slide,
+    ' looking for the first chart shape:
+    For Each shp In ActivePresentation.Slides(1).Shapes
+        If shp.Type = msoChart Then
+            Exit For
+        End If
+    Next shp
+   
+    ' If you found a chart, keep going:
+    If shp.Type = msoChart Then
+        ' Cut the shape to the clipboard:
+        shp.Cut
+       
+        Dim rng As ShapeRange
+        Dim shpNew As Shape
+       
+        ' Paste the shape from the clipboard onto the second slide.
+        ' This method returns a ShapeRange--you need a
+        ' reference to the first pasted shape:
+        Set rng = ActivePresentation.Slides(2).Shapes.Paste
+        Set shpNew = rng.Item(1)
+       
+        ' Set the location of the new shape:
+        shpNew.Top = 10
+        shpNew.Left = 10
+    End If
+End Sub
