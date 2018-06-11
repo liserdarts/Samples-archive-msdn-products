@@ -1,0 +1,10 @@
+C:\Users\salri\DevDocs\Ken Getz\January 2012\WDGetCustomProperty\WDGetCustomProperty_DEMOS\Demos\VB\WDGetCustomProperty\WDGetCustomProperty\bin\Debug\WDGetCustomProperty.exe
+C:\Users\salri\DevDocs\Ken Getz\January 2012\WDGetCustomProperty\WDGetCustomProperty_DEMOS\Demos\VB\WDGetCustomProperty\WDGetCustomProperty\bin\Debug\WDGetCustomProperty.pdb
+C:\Users\salri\DevDocs\Ken Getz\January 2012\WDGetCustomProperty\WDGetCustomProperty_DEMOS\Demos\VB\WDGetCustomProperty\WDGetCustomProperty\bin\Debug\WDGetCustomProperty.xml
+C:\Users\salri\DevDocs\Ken Getz\January 2012\WDGetCustomProperty\WDGetCustomProperty_DEMOS\Demos\VB\WDGetCustomProperty\WDGetCustomProperty\obj\x86\Debug\ResolveAssemblyReference.cache
+C:\Users\salri\DevDocs\Ken Getz\January 2012\WDGetCustomProperty\WDGetCustomProperty_DEMOS\Demos\VB\WDGetCustomProperty\WDGetCustomProperty\obj\x86\Debug\WDGetCustomProperty.Resources.resources
+C:\Users\salri\DevDocs\Ken Getz\January 2012\WDGetCustomProperty\WDGetCustomProperty_DEMOS\Demos\VB\WDGetCustomProperty\WDGetCustomProperty\obj\x86\Debug\GenerateResource.read.1.tlog
+C:\Users\salri\DevDocs\Ken Getz\January 2012\WDGetCustomProperty\WDGetCustomProperty_DEMOS\Demos\VB\WDGetCustomProperty\WDGetCustomProperty\obj\x86\Debug\GenerateResource.write.1.tlog
+C:\Users\salri\DevDocs\Ken Getz\January 2012\WDGetCustomProperty\WDGetCustomProperty_DEMOS\Demos\VB\WDGetCustomProperty\WDGetCustomProperty\obj\x86\Debug\WDGetCustomProperty.exe
+C:\Users\salri\DevDocs\Ken Getz\January 2012\WDGetCustomProperty\WDGetCustomProperty_DEMOS\Demos\VB\WDGetCustomProperty\WDGetCustomProperty\obj\x86\Debug\WDGetCustomProperty.xml
+C:\Users\salri\DevDocs\Ken Getz\January 2012\WDGetCustomProperty\WDGetCustomProperty_DEMOS\Demos\VB\WDGetCustomProperty\WDGetCustomProperty\obj\x86\Debug\WDGetCustomProperty.pdb
