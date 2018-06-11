@@ -1,0 +1,41 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">
+	<Receivers ListUrl="Workflows" Scope="Web" xmlns="http://schemas.microsoft.com/sharepoint/">
+		<Receiver>
+			<Name>Workflow Library Item Added</Name>
+			<Synchronization>Asynchronous</Synchronization>
+			<Type>ItemAdded</Type>
+			<SequenceNumber>1</SequenceNumber>
+			<Assembly>Microsoft.SharePoint, Version=14.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c</Assembly>
+			<Class>Microsoft.SharePoint.Workflow.SPWorkflowLibraryEventReceiver</Class>
+			<Data />
+			<Filter />
+			<SourceId>0x8824DC5690E743428407656F2B7D4662</SourceId>
+			<SourceType>2</SourceType>
+		</Receiver>
+		<Receiver>
+			<Name>Workflow Library Item Updated</Name>
+			<Synchronization>Asynchronous</Synchronization>
+			<Type>ItemUpdated</Type>
+			<SequenceNumber>3</SequenceNumber>
+			<Assembly>Microsoft.SharePoint, Version=14.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c</Assembly>
+			<Class>Microsoft.SharePoint.Workflow.SPWorkflowLibraryEventReceiver</Class>
+			<Data />
+			<Filter />
+			<SourceId>0x8824DC5690E743428407656F2B7D4662</SourceId>
+			<SourceType>2</SourceType>
+		</Receiver>
+		<Receiver>
+			<Name>Workflow Library Item Moved</Name>
+			<Synchronization>Asynchronous</Synchronization>
+			<Type>ItemFileMoved</Type>
+			<SequenceNumber>2</SequenceNumber>
+			<Assembly>Microsoft.SharePoint, Version=14.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c</Assembly>
+			<Class>Microsoft.SharePoint.Workflow.SPWorkflowLibraryEventReceiver</Class>
+			<Data />
+			<Filter />
+			<SourceId>0x8824DC5690E743428407656F2B7D4662</SourceId>
+			<SourceType>2</SourceType>
+		</Receiver>
+	</Receivers>
+</Elements>

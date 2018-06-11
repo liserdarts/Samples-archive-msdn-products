@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ProjectItem Type="Microsoft.VisualStudio.SharePoint.Module" DefaultFile="Elements.xml" SupportedTrustLevels="All" SupportedDeploymentScopes="Web, Site" xmlns="http://schemas.microsoft.com/VisualStudio/2010/SharePointTools/SharePointProjectItemModel">
+  <Files>
+    <ProjectItemFile Source="Files\Lists\8TimeLog\DispForm.aspx" Target="Files\Lists\8TimeLog\" Type="ElementFile" />
+    <ProjectItemFile Source="Files\Lists\8TimeLog\EditForm.aspx" Target="Files\Lists\8TimeLog\" Type="ElementFile" />
+    <ProjectItemFile Source="Files\Lists\8TimeLog\MyHours.aspx" Target="Files\Lists\8TimeLog\" Type="ElementFile" />
+    <ProjectItemFile Source="Files\Lists\8TimeLog\MyHoursByWeek.aspx" Target="Files\Lists\8TimeLog\" Type="ElementFile" />
+    <ProjectItemFile Source="Files\Lists\8TimeLog\MyHoursToday.aspx" Target="Files\Lists\8TimeLog\" Type="ElementFile" />
+    <ProjectItemFile Source="Files\Lists\8TimeLog\NewForm.aspx" Target="Files\Lists\8TimeLog\" Type="ElementFile" />
+    <ProjectItemFile Source="Files\Lists\8TimeLog\PersonDetails.aspx" Target="Files\Lists\8TimeLog\" Type="ElementFile" />
+    <ProjectItemFile Source="Files\Lists\8TimeLog\ProjectDetails.aspx" Target="Files\Lists\8TimeLog\" Type="ElementFile" />
+    <ProjectItemFile Source="Files\Lists\8TimeLog\PunchIn.aspx" Target="Files\Lists\8TimeLog\" Type="ElementFile" />
+    <ProjectItemFile Source="Files\Lists\8TimeLog\PunchOut.aspx" Target="Files\Lists\8TimeLog\" Type="ElementFile" />
+    <ProjectItemFile Source="Elements.xml" Target="ListsTime_Log\" Type="ElementManifest" />
+  </Files>
+</ProjectItem>

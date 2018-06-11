@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">
+	<WebTemplate AdjustHijriDays="0" AlternateCssUrl="" AlternateHeader="" BaseTemplateID="1" DisplayCategory="Application Templates"
+               BaseTemplateName="STS" BaseConfigurationID="0" CalendarType="1" Collation="25" 
+               ContainsDefaultLists="TRUE" CustomizedCssFiles="" CustomJSUrl="" Description="TimecardManagemenetTemplate"
+               ExcludeFromOfflineClient="FALSE" Locale="1033" Name="TimecardManagemenetTemplate" ParserEnabled="TRUE" 
+               PortalName="" PortalUrl="" PresenceEnabled="TRUE" ProductVersion="4" QuickLaunchEnabled="TRUE" 
+               Subweb="TRUE" SyndicationEnabled="TRUE" Time24="FALSE" TimeZone="13" Title="Timecard Managemenet Template(Sandbox)"
+               TreeViewEnabled="FALSE" UIVersionConfigurationEnabled="FALSE" xmlns="http://schemas.microsoft.com/sharepoint/" />
+</Elements>

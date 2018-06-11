@@ -1,0 +1,38 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">
+	<Module Name="WorkflowsPunchOut Reminder_" Url="Workflows/PunchOut Reminder" RootWebOnly="FALSE" Path="Files\Workflows\6PunchOutReminder" xmlns="http://schemas.microsoft.com/sharepoint/">
+		<File Url="PunchOut Reminder.xoml.wfconfig.xml" DoGUIDFixUp="true" Type="GhostableInLibrary" Path="5PunchOutReminder.xoml.wfconfig.xml">
+			<Property Name="ID" Value="19" />
+			<Property Name="ContentTypeId" Value="0x010107008210840B85DD9840B4A4F8CBFA727E37" />
+			<Property Name="ContentType" Value="User Workflow Document" />
+			<Property Name="_ModerationStatus" Value="0" />
+			<Property Name="FileDirRef" Value="TImecardManagement1/Workflows/PunchOut Reminder" />
+			<Property Name="FSObjType" Value="0" />
+			<Property Name="FileLeafRef" Value="PunchOut Reminder.xoml.wfconfig.xml" />
+			<Property Name="MetaInfo" Value="19;#BaseAssociationGuid:SW|{6313CDFC-C87F-47FC-B714-407FB7CF812D}&#xD;&#xA;WorkflowDisplayName:SW|PunchOut Reminder&#xD;&#xA;vti_parserversion:SR|14.0.0.4762&#xD;&#xA;AssociatedListId:SW|{$ListId:Lists/Team Status;}&#xD;&#xA;vti_cachedcustomprops:VX|BaseAssociationGuid WorkflowDisplayName AssociatedListId vti_title ContentTypeId ContentType XomlUrl NoCodeVisibility RulesUrl RestrictContentTypeId&#xD;&#xA;vti_modifiedby:SR|SHAREPOINT\\system&#xD;&#xA;vti_privatelistexempt:BW|true&#xD;&#xA;vti_cachedtitle:SR|PunchOut Reminder.xoml.wfconfig.xml&#xD;&#xA;vti_charset:SR|utf-8&#xD;&#xA;vti_title:SR|PunchOut Reminder.xoml.wfconfig.xml&#xD;&#xA;ContentTypeId:SW|0x010107008210840B85DD9840B4A4F8CBFA727E37&#xD;&#xA;ContentType:SW|User Workflow Document&#xD;&#xA;XomlUrl:SW|Workflows/PunchOut Reminder/PunchOut Reminder.xoml&#xD;&#xA;NoCodeVisibility:SW|&#xD;&#xA;RulesUrl:SW|&#xD;&#xA;RestrictContentTypeId:SW|&#xD;&#xA;vti_author:SR|SHAREPOINT\\system&#xD;&#xA;" />
+			<Property Name="Order" Value="1900.00000000000" />
+		</File>
+		<File Url="PunchOut Reminder.xoml" Type="GhostableInLibrary" Path="7PunchOutReminder.xoml">
+			<Property Name="ID" Value="18" />
+			<Property Name="ContentTypeId" Value="0x010107008210840B85DD9840B4A4F8CBFA727E37" />
+			<Property Name="ContentType" Value="User Workflow Document" />
+			<Property Name="_ModerationStatus" Value="0" />
+			<Property Name="FileDirRef" Value="TImecardManagement1/Workflows/PunchOut Reminder" />
+			<Property Name="FSObjType" Value="0" />
+			<Property Name="FileLeafRef" Value="PunchOut Reminder.xoml" />
+			<Property Name="MetaInfo" Value="18;#vti_parserversion:SR|14.0.0.4762&#xD;&#xA;vti_modifiedby:SR|SHAREPOINT\\system&#xD;&#xA;ContentTypeId:SW|0x010107008210840B85DD9840B4A4F8CBFA727E37&#xD;&#xA;vti_author:SR|SHAREPOINT\\system&#xD;&#xA;" />
+			<Property Name="Order" Value="1800.00000000000" />
+		</File>
+		<File Url="PunchOut Reminder.xsn" Type="GhostableInLibrary" Path="8PunchOutReminder.xsn">
+			<Property Name="ID" Value="17" />
+			<Property Name="ContentTypeId" Value="0x010107008210840B85DD9840B4A4F8CBFA727E37" />
+			<Property Name="ContentType" Value="User Workflow Document" />
+			<Property Name="_ModerationStatus" Value="0" />
+			<Property Name="FileDirRef" Value="TImecardManagement1/Workflows/PunchOut Reminder" />
+			<Property Name="FSObjType" Value="0" />
+			<Property Name="FileLeafRef" Value="PunchOut Reminder.xsn" />
+			<Property Name="MetaInfo" Value="17;#vti_parserversion:SR|14.0.0.4762&#xD;&#xA;vti_modifiedby:SR|SHAREPOINT\\system&#xD;&#xA;ipfs_streamhash:SW|5AOvzMamjVvyYWD99IY/R5azXLp6WCYfiRZ9tOAX86I=&#xD;&#xA;vti_folderitemcount:IW|0&#xD;&#xA;vti_foldersubfolderitemcount:IW|0&#xD;&#xA;vti_privatelistexempt:BW|true&#xD;&#xA;ContentTypeId:SW|0x010107008210840B85DD9840B4A4F8CBFA727E37&#xD;&#xA;vti_author:SR|SHAREPOINT\\system&#xD;&#xA;" />
+			<Property Name="Order" Value="1700.00000000000" />
+		</File>
+	</Module>
+</Elements>

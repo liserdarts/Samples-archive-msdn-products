@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">
+	<Module Name="_catalogsfpdatasources_" Url="_catalogs/fpdatasources" RootWebOnly="FALSE" Path="Files\_catalogs\fpdatasources" xmlns="http://schemas.microsoft.com/sharepoint/">
+		<File Url="LinkedProjectsandTimeLog.xml" Type="GhostableInLibrary" Path="LinkedProjectsandTimeLog.xml">
+			<Property Name="ID" Value="2" />
+			<Property Name="ContentTypeId" Value="0x007CC1022C21D2B34899128058960933B1" />
+			<Property Name="ContentType" Value="fpdatasources" />
+			<Property Name="_ModerationStatus" Value="0" />
+			<Property Name="FileDirRef" Value="TimecardManagement/_catalogs/fpdatasources" />
+			<Property Name="FSObjType" Value="0" />
+			<Property Name="FileLeafRef" Value="LinkedProjectsandTimeLog.xml" />
+			<Property Name="MetaInfo" Value="2;#FSObjType:SW|0&#xD;&#xA;Order:SW|200.000000000000&#xD;&#xA;vti_parserversion:SR|14.0.0.4762&#xD;&#xA;vti_folderitemcount:IW|0&#xD;&#xA;FileDirRef:SW|_catalogs/fpdatasources&#xD;&#xA;vti_charset:SR|utf-8&#xD;&#xA;DSTooltipInfo:SW|&#xD;&#xA;DSType20:SW|AggSrc&#xD;&#xA;vti_author:SR|SHAREPOINT\\system&#xD;&#xA;DSDescription:SW|&#xD;&#xA;MetaInfo:SW|2;#DSSourceTitle:SW|Linked Projects and Time Log\r\nvti_parserversion:SR|12.0.0.6421\r\nDSType10:SW|\r\nDSVersion:IW|2\r\nvti_cachedcustomprops:VX|DSSourceTitle DSType10 DSVersion vti_title DSTooltipInfo DSType20 DSDescription DSKeywords\r\nvti_modifiedby:SR|SHAREPOINT\\\\system\r\nContentType:SW|fpdatasources\r\nContentTypeId:SW|0x00B566CC3B96C73B45B5FC95C189589F7C\r\nvti_cachedtitle:SR|LinkedProjectsandTimeLog.xml\r\nvti_charset:SR|utf-8\r\nvti_title:SR|LinkedProjectsandTimeLog.xml\r\nDSTooltipInfo:SW|\r\nDSType20:SW|AggSrc\r\nDSDescription:SW|\r\nDSKeywords:SW|\r\nvti_author:SR|SHAREPOINT\\\\system\r\n&#xD;&#xA;DSSourceTitle:SW|Linked Projects and Time Log&#xD;&#xA;vti_foldersubfolderitemcount:IW|0&#xD;&#xA;vti_modifiedby:SR|SHAREPOINT\\system&#xD;&#xA;DSType10:SW|&#xD;&#xA;DSVersion:IW|2&#xD;&#xA;vti_cachedcustomprops:VX|DSSourceTitle DSType10 DSVersion DSTooltipInfo DSType20 DSDescription DSKeywords&#xD;&#xA;FileLeafRef:SW|LinkedProjectsandTimeLog.xml&#xD;&#xA;vti_title:SW|LinkedProjectsandTimeLog.xml&#xD;&#xA;ContentTypeId:SW|0x007CC1022C21D2B34899128058960933B1&#xD;&#xA;ContentType:SW|fpdatasources&#xD;&#xA;DSKeywords:SW|&#xD;&#xA;" />
+			<Property Name="Order" Value="200.000000000000" />
+		</File>
+	</Module>
+</Elements>

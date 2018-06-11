@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ProjectItem Type="Microsoft.VisualStudio.SharePoint.Module" SupportedTrustLevels="All" SupportedDeploymentScopes="Web, Site" xmlns="http://schemas.microsoft.com/VisualStudio/2010/SharePointTools/SharePointProjectItemModel">
+  <Files>
+    <ProjectItemFile Source="Files\Workflows\3PunchInTracking\2PunchInTracking.xoml.wfconfig.xml" Target="Files\Workflows\3PunchInTracking\" Type="ElementFile" />
+    <ProjectItemFile Source="Files\Workflows\3PunchInTracking\5PunchInTracking.xoml.rules" Target="Files\Workflows\3PunchInTracking\" Type="ElementFile" />
+    <ProjectItemFile Source="Files\Workflows\3PunchInTracking\6PunchInTracking.xoml" Target="Files\Workflows\3PunchInTracking\" Type="ElementFile" />
+    <ProjectItemFile Source="Elements.xml" Target="WorkflowsPunchIn_Tracking_\" Type="ElementManifest" />
+    <ProjectItemFile Source="Files\Workflows\3PunchInTracking\4PunchInTracking.xsn" Target="Files\Workflows\3PunchInTracking\" Type="ElementFile" />
+  </Files>
+</ProjectItem>

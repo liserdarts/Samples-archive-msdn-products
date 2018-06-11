@@ -1,0 +1,276 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{C7D26673-A740-445C-B8F9-117AE95F1E0A}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>TimecardManagementTemplate</RootNamespace>
+    <AssemblyName>TimecardManagementTemplate</AssemblyName>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <ProjectTypeGuids>{BB1F664B-9266-4fd6-B973-E1E44974B511};{14822709-B5A1-4724-98CA-57A101D1B079};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignAssembly>true</SignAssembly>
+  </PropertyGroup>
+  <PropertyGroup>
+    <AssemblyOriginatorKeyFile>key.snk</AssemblyOriginatorKeyFile>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="microsoft.sharepoint.WorkflowActions, Version=14.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\Program Files\Common Files\Microsoft Shared\Web Server Extensions\14\ISAPI\microsoft.sharepoint.WorkflowActions.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Workflow.Activities" />
+    <Reference Include="System.Workflow.ComponentModel" />
+    <Reference Include="System.Workflow.Runtime" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="Microsoft.SharePoint" />
+    <Reference Include="Microsoft.SharePoint.Security" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Built-In List Instances\Master_Page_Gallery\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{56a30353-6c24-4612-ba70-860596b2e69b}</SharePointProjectItemId>
+    </None>
+    <None Include="Built-In List Instances\Master_Page_Gallery\_catalogsmasterpage_global\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{a101e298-412f-43a0-b81b-2529273f4ba1}</SharePointProjectItemId>
+    </None>
+    <None Include="Features\TimecardSandboxListInstancesFeature\TimecardSandboxListInstancesFeature.feature">
+      <FeatureId>{47acc78a-7f66-48b1-8df9-2dc05e808fb1}</FeatureId>
+    </None>
+    <None Include="Features\TimecardSandboxModuleFeature\TimecardSandboxModuleFeature.feature">
+      <FeatureId>{7380e7b8-43b5-45f6-b2fc-b22249c194b2}</FeatureId>
+    </None>
+    <None Include="Features\TimecardSandboxWorkflowFeature\TimecardSandboxWorkflowFeature.feature">
+      <FeatureId>{187f4ea0-d4b3-4a01-a784-52974975025d}</FeatureId>
+    </None>
+    <None Include="Features\TimecardSandboxPropertyBagFeature\TimecardSandboxPropertyBagFeature.feature">
+      <FeatureId>{9ae2b84b-464f-400d-b31c-dac3b1b9fd9f}</FeatureId>
+    </None>
+    <None Include="Features\TimecardSandboxWebTemplateFeature\TimecardSandboxWebTemplateFeature.feature">
+      <FeatureId>{46c27912-6c04-4589-9720-f14ef43e75b0}</FeatureId>
+    </None>
+    <None Include="Fields\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{cc32bbd9-0845-4edf-a502-a6e592e78030}</SharePointProjectItemId>
+    </None>
+    <None Include="key.snk" />
+    <None Include="List instances\fpdatasources\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{c123f545-6277-494e-8673-5fa70b51cc11}</SharePointProjectItemId>
+    </None>
+    <None Include="List instances\fpdatasources\_catalogsfpdatasources_\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{9b32352b-2ed7-4d4b-9878-22c338953d22}</SharePointProjectItemId>
+    </None>
+    <None Include="List instances\Projects\ListsProjects_pages\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{72c8484f-e66f-4af0-8016-8bd794d66a9b}</SharePointProjectItemId>
+    </None>
+    <None Include="List instances\Projects\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{151c6f88-45c6-4949-88d4-9d7c09c04e64}</SharePointProjectItemId>
+    </None>
+    <None Include="List instances\Site_Assets\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{9e4bf457-10ce-4679-a085-5f957d7ff4f7}</SharePointProjectItemId>
+    </None>
+    <None Include="List instances\Tasks\ListsTasks_pages\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{364346a1-cd76-47a6-973f-99b7576d674d}</SharePointProjectItemId>
+    </None>
+    <None Include="List instances\Tasks\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{f0c722b1-3d53-41df-9cf4-3726b17cfe03}</SharePointProjectItemId>
+    </None>
+    <None Include="List instances\Team_Status\ListsTeam_Status_pages\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{ef95b9c6-d0f0-4fa7-8c7f-2f7a4a48f832}</SharePointProjectItemId>
+    </None>
+    <None Include="List instances\Team_Status\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{bb067e13-4eb9-4db6-8c18-92940653c1bf}</SharePointProjectItemId>
+    </None>
+    <None Include="List instances\Time_Log\ListsTime_Log\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{e01e095a-4b37-4e1e-a6d4-da2119690d37}</SharePointProjectItemId>
+    </None>
+    <None Include="List instances\Time_Log\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{f1c66b6e-d534-4591-8f13-b38a7f5a12bb}</SharePointProjectItemId>
+    </None>
+    <None Include="List instances\Workflows\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{e87cac2c-5b6c-4c07-997f-9e4ed4e1a8c4}</SharePointProjectItemId>
+    </None>
+    <None Include="List instances\Workflow_History\ListsWorkflow_History_pages\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{18135d7a-7658-4c91-85d9-ca5c37b58119}</SharePointProjectItemId>
+    </None>
+    <None Include="List instances\Workflow_History\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{398d6524-cbe3-4c59-98ea-77e825180906}</SharePointProjectItemId>
+    </None>
+    <None Include="Modules\images_\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{b0db4bcd-acca-4f7c-abc2-195b7c585b71}</SharePointProjectItemId>
+    </None>
+    <None Include="Modules\Root_Files\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{e15a0ba6-1995-4a5f-b669-59f69c8fa8a6}</SharePointProjectItemId>
+    </None>
+    <None Include="Modules\SiteAssetsForms_1033_STS_doctemp_word\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{9941119f-9bfb-4c45-8ebb-956f304c1564}</SharePointProjectItemId>
+    </None>
+    <None Include="Modules\SiteAssetsForms_Features_DocumentLibrary_doclib\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{ca96dc16-65c3-4072-88ae-5cd2ae7ed3bf}</SharePointProjectItemId>
+    </None>
+    <None Include="Modules\SiteAssetsForms_pages\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{e6acb8b5-c1f4-4e64-b06a-265db2b30b9a}</SharePointProjectItemId>
+    </None>
+    <None Include="Modules\WorkflowsPunchIn_Tracking_\Files\Workflows\3PunchInTracking\4PunchInTracking.xsn" />
+    <None Include="Modules\WorkflowsPunchIn_Tracking_\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{7ab51f71-7945-4481-bdfa-22b378dbd7c8}</SharePointProjectItemId>
+    </None>
+    <None Include="Modules\WorkflowsPunchOut_Reminder_\Files\Workflows\6PunchOutReminder\8PunchOutReminder.xsn" />
+    <None Include="Modules\WorkflowsPunchOut_Reminder_\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{08a7d872-6290-4ae4-a336-868138d9d1af}</SharePointProjectItemId>
+    </None>
+    <None Include="Modules\_catalogsmasterpageForms_pages\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{3b6b7258-11b8-482a-8bd5-b58ac108c19e}</SharePointProjectItemId>
+    </None>
+    <None Include="Other elements\Receivers1\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{32163ccc-3a9d-468d-898d-217b3343561c}</SharePointProjectItemId>
+    </None>
+    <None Include="Other elements\Receivers2\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{54042e81-33f9-4ae9-9022-23d86172debd}</SharePointProjectItemId>
+    </None>
+    <None Include="Other elements\Receivers\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{493b1de1-8bfd-4c95-9645-c212647f492d}</SharePointProjectItemId>
+    </None>
+    <None Include="Package\Package.package">
+      <PackageId>{6103dfca-719c-43cd-9bd6-adf42ea3f3da}</PackageId>
+    </None>
+    <None Include="Package\Package.Template.xml">
+      <DependentUpon>Package.package</DependentUpon>
+    </None>
+    <None Include="PropertyBags\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{64e1bc45-1acf-456a-bd23-ddfc1cc99f4a}</SharePointProjectItemId>
+    </None>
+    <None Include="Web templates\TimecardManagemenetTemplate\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{f5d1946b-515e-404b-a33b-4560336d992d}</SharePointProjectItemId>
+    </None>
+    <None Include="Workflow associations\PunchIn_Tracking\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{cc90f97b-f8ac-45cc-a825-1002d3f52513}</SharePointProjectItemId>
+    </None>
+    <None Include="Workflow associations\PunchOut_Reminder\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{256270bc-4d51-44d7-9afd-4ab3a57df2fd}</SharePointProjectItemId>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Content types\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Built-In List Instances\Master_Page_Gallery\Elements.xml" />
+    <Content Include="Built-In List Instances\Master_Page_Gallery\Schema.xml" />
+    <Content Include="Built-In List Instances\Master_Page_Gallery\_catalogsmasterpage_global\Elements.xml" />
+    <Content Include="Features\TimecardSandboxListInstancesFeature\TimecardSandboxListInstancesFeature.Template.xml">
+      <DependentUpon>TimecardSandboxListInstancesFeature.feature</DependentUpon>
+    </Content>
+    <Content Include="Features\TimecardSandboxModuleFeature\TimecardSandboxModuleFeature.Template.xml">
+      <DependentUpon>TimecardSandboxModuleFeature.feature</DependentUpon>
+    </Content>
+    <Content Include="Features\TimecardSandboxWorkflowFeature\TimecardSandboxWorkflowFeature.Template.xml">
+      <DependentUpon>TimecardSandboxWorkflowFeature.feature</DependentUpon>
+    </Content>
+    <Content Include="Features\TimecardSandboxPropertyBagFeature\TimecardSandboxPropertyBagFeature.Template.xml">
+      <DependentUpon>TimecardSandboxPropertyBagFeature.feature</DependentUpon>
+    </Content>
+    <Content Include="Features\TimecardSandboxWebTemplateFeature\TimecardSandboxWebTemplateFeature.Template.xml">
+      <DependentUpon>TimecardSandboxWebTemplateFeature.feature</DependentUpon>
+    </Content>
+    <Content Include="Fields\Elements.xml" />
+    <Content Include="List instances\fpdatasources\Elements.xml" />
+    <Content Include="List instances\fpdatasources\Schema.xml" />
+    <Content Include="List instances\fpdatasources\_catalogsfpdatasources_\Elements.xml" />
+    <Content Include="List instances\fpdatasources\_catalogsfpdatasources_\Files\_catalogs\fpdatasources\LinkedProjectsandTimeLog.xml" />
+    <Content Include="List instances\Projects\Elements.xml" />
+    <Content Include="List instances\Projects\ListsProjects_pages\Elements.xml" />
+    <Content Include="List instances\Projects\Schema.xml" />
+    <Content Include="List instances\Site_Assets\Elements.xml" />
+    <Content Include="List instances\Site_Assets\Schema.xml" />
+    <Content Include="List instances\Tasks\Elements.xml" />
+    <Content Include="List instances\Tasks\ListsTasks_pages\Elements.xml" />
+    <Content Include="List instances\Tasks\Schema.xml" />
+    <Content Include="List instances\Team_Status\Elements.xml" />
+    <Content Include="List instances\Team_Status\ListsTeam_Status_pages\Elements.xml" />
+    <Content Include="List instances\Team_Status\Schema.xml" />
+    <Content Include="List instances\Time_Log\Elements.xml" />
+    <Content Include="List instances\Time_Log\ListsTime_Log\Elements.xml" />
+    <Content Include="List instances\Time_Log\ListsTime_Log\Files\Lists\8TimeLog\DispForm.aspx" />
+    <Content Include="List instances\Time_Log\ListsTime_Log\Files\Lists\8TimeLog\EditForm.aspx" />
+    <Content Include="List instances\Time_Log\ListsTime_Log\Files\Lists\8TimeLog\MyHours.aspx" />
+    <Content Include="List instances\Time_Log\ListsTime_Log\Files\Lists\8TimeLog\MyHoursByWeek.aspx" />
+    <Content Include="List instances\Time_Log\ListsTime_Log\Files\Lists\8TimeLog\MyHoursToday.aspx" />
+    <Content Include="List instances\Time_Log\ListsTime_Log\Files\Lists\8TimeLog\NewForm.aspx" />
+    <Content Include="List instances\Time_Log\ListsTime_Log\Files\Lists\8TimeLog\PersonDetails.aspx" />
+    <Content Include="List instances\Time_Log\ListsTime_Log\Files\Lists\8TimeLog\ProjectDetails.aspx" />
+    <Content Include="List instances\Time_Log\ListsTime_Log\Files\Lists\8TimeLog\PunchIn.aspx" />
+    <Content Include="List instances\Time_Log\ListsTime_Log\Files\Lists\8TimeLog\PunchOut.aspx" />
+    <Content Include="List instances\Time_Log\Schema.xml" />
+    <Content Include="List instances\Workflows\Elements.xml" />
+    <Content Include="List instances\Workflows\Schema.xml" />
+    <Content Include="List instances\Workflow_History\Elements.xml" />
+    <Content Include="List instances\Workflow_History\ListsWorkflow_History_pages\Elements.xml" />
+    <Content Include="List instances\Workflow_History\Schema.xml" />
+    <Content Include="Modules\images_\Elements.xml" />
+    <Content Include="Modules\images_\Files\images\homepage.gif" />
+    <Content Include="Modules\Root_Files\Elements.xml" />
+    <Content Include="Modules\Root_Files\Files\dateutil.js" />
+    <Content Include="Modules\Root_Files\Files\default.aspx" />
+    <Content Include="Modules\SiteAssetsForms_1033_STS_doctemp_word\Elements.xml" />
+    <Content Include="Modules\SiteAssetsForms_Features_DocumentLibrary_doclib\Elements.xml" />
+    <Content Include="Modules\SiteAssetsForms_pages\Elements.xml" />
+    <Content Include="Modules\WorkflowsPunchIn_Tracking_\Elements.xml" />
+    <Content Include="Modules\WorkflowsPunchIn_Tracking_\Files\Workflows\3PunchInTracking\2PunchInTracking.xoml.wfconfig.xml" />
+    <Content Include="Modules\WorkflowsPunchIn_Tracking_\Files\Workflows\3PunchInTracking\6PunchInTracking.xoml">
+      <SubType>Component</SubType>
+    </Content>
+    <Content Include="Modules\WorkflowsPunchOut_Reminder_\Elements.xml" />
+    <Content Include="Modules\WorkflowsPunchOut_Reminder_\Files\Workflows\6PunchOutReminder\5PunchOutReminder.xoml.wfconfig.xml" />
+    <None Include="Modules\WorkflowsPunchOut_Reminder_\Files\Workflows\6PunchOutReminder\7PunchOutReminder.xoml" />
+    <Content Include="Modules\_catalogsmasterpageForms_pages\Elements.xml" />
+    <Content Include="Other elements\Receivers1\Elements.xml" />
+    <Content Include="Other elements\Receivers2\Elements.xml" />
+    <Content Include="Other elements\Receivers\Elements.xml" />
+    <Content Include="PropertyBags\Elements.xml" />
+    <Content Include="Web templates\TimecardManagemenetTemplate\Elements.xml" />
+    <Content Include="Web templates\TimecardManagemenetTemplate\ONet.xml" />
+    <Content Include="Workflow associations\PunchIn_Tracking\Elements.xml" />
+    <Content Include="Workflow associations\PunchOut_Reminder\Elements.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Modules\WorkflowsPunchIn_Tracking_\Files\Workflows\3PunchInTracking\5PunchInTracking.xoml.rules">
+      <DependentUpon>6PunchInTracking.xoml</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\SharePointTools\Microsoft.VisualStudio.SharePoint.targets" />
+</Project>

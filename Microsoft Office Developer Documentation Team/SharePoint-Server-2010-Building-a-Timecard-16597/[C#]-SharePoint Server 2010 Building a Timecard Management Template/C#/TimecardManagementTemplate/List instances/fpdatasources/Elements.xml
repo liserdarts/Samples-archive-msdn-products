@@ -1,0 +1,4 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">
+	<ListInstance FeatureId="{00bfea71-f381-423d-b9d1-da7a54c50110}" TemplateType="110" Title="fpdatasources" Description="" Url="_catalogs/fpdatasources" CustomSchema="Files\_catalogs\fpdatasources\Schema.xml" HyperlinkBaseUrl="http://pv-prestage:407/TimecardManagement" RootWebOnly="FALSE" xmlns="http://schemas.microsoft.com/sharepoint/" />
+</Elements>

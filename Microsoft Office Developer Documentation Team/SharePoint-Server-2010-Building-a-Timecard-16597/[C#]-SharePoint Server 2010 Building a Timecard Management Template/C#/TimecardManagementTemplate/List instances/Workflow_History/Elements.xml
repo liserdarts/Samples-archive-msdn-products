@@ -1,0 +1,36 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">
+	<ListInstance FeatureId="{00bfea71-4ea5-48d4-a4ad-305cf7030140}" 
+                TemplateType="140" 
+                Title="Workflow History" 
+                Description="History list for workflow." 
+                Url="Lists/Workflow History" 
+                CustomSchema="Files\Lists\Workflow History\Schema.xml" 
+                HyperlinkBaseUrl="http://pv-prestage:407/TimecardManagement" 
+                RootWebOnly="FALSE" xmlns="http://schemas.microsoft.com/sharepoint/">
+
+    <Data>
+      <Rows>
+        <Row>
+          <Field Name="ID">1</Field>
+          <Field Name="ContentTypeId">0x0109006F3259ED400C804780F811C583309E89</Field>
+          <Field Name="_ModerationStatus">0</Field>
+          <Field Name="Order">100.000000000000</Field>
+          <Field Name="FSObjType">0</Field>
+          <Field Name="FileLeafRef">1_.000</Field>
+          <Field Name="MetaInfo">1;#</Field>
+          <Field Name="Event">11</Field>
+          <Field Name="WorkflowInstance">{8df36f7a-8444-4f6f-ae60-cf8c10592202}</Field>
+          <Field Name="WorkflowAssociation">{3ee3871f-a254-46f6-850f-e9e2447f5547}</Field>
+          <Field Name="WorkflowTemplate">{9aa7c96c-4362-466e-8587-f7261faa526b}</Field>
+          <Field Name="List">{$ListId:Lists/Team%20Status;}</Field>
+          <Field Name="Item">1</Field>
+          <Field Name="Occurred">2011-06-20T11:22:28Z</Field>
+          <Field Name="Group">0</Field>
+          <Field Name="Duration">0</Field>
+          <Field Name="Description">Pausing for 480 minutes</Field>
+        </Row>
+      </Rows>
+    </Data>
+	</ListInstance>
+</Elements>

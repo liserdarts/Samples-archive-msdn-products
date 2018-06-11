@@ -1,0 +1,4 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">
+	<ListInstance FeatureId="{00bfea71-a83e-497e-9ba0-7a5c597d0107}" TemplateType="107" Title="Tasks" Description="Task list for workflow." Url="Lists/Tasks" CustomSchema="Files\Lists\Tasks\Schema.xml" HyperlinkBaseUrl="http://pv-prestage:407/TimecardManagement" RootWebOnly="FALSE" xmlns="http://schemas.microsoft.com/sharepoint/" />
+</Elements>

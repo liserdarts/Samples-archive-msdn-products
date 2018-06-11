@@ -1,0 +1,50 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">
+	<Module Name="WorkflowsPunchIn Tracking_" Url="Workflows/PunchIn Tracking" RootWebOnly="FALSE" Path="Files\Workflows\3PunchInTracking" xmlns="http://schemas.microsoft.com/sharepoint/">
+		<File Url="PunchIn Tracking.xoml.wfconfig.xml" DoGUIDFixUp="true" Type="GhostableInLibrary" Path="2PunchInTracking.xoml.wfconfig.xml">
+			<Property Name="ID" Value="14" />
+			<Property Name="ContentTypeId" Value="0x01010700B980E5858C208649830709B05DB2F9D0" />
+			<Property Name="ContentType" Value="User Workflow Document" />
+			<Property Name="_ModerationStatus" Value="0" />
+			<Property Name="FileDirRef" Value="TC44/Workflows/PunchIn Tracking" />
+			<Property Name="FSObjType" Value="0" />
+			<Property Name="FileLeafRef" Value="PunchIn Tracking.xoml.wfconfig.xml" />
+			<Property Name="MetaInfo" Value="14;#WorkflowDisplayName:SW|PunchIn Tracking&#xD;&#xA;FSObjType:SW|0&#xD;&#xA;Order:SW|1400.00000000000&#xD;&#xA;vti_parserversion:SR|14.0.0.4762&#xD;&#xA;vti_folderitemcount:IR|0&#xD;&#xA;FileDirRef:SW|Workflows/PunchIn Tracking&#xD;&#xA;vti_charset:SR|utf-8&#xD;&#xA;XomlUrl:SW|Workflows/PunchIn Tracking/PunchIn Tracking.xoml&#xD;&#xA;NoCodeVisibility:SW|&#xD;&#xA;vti_author:SR|SHAREPOINT\\system&#xD;&#xA;MetaInfo:SW|14;#BaseAssociationGuid:SW|{3A4F847E-1004-41D1-8C52-FC440EE41055}\r\nvti_contentversionisdirty:BW|true\r\nvti_parserversion:SR|12.0.0.6421\r\nvti_contenttag:SW|{1FA1224F-5DF4-4C7A-8888-C8E714E9FD24},1,0\r\nvti_folderitemcount:IW|0\r\nXomlUrl:SW|Workflows/PunchIn Tracking/PunchIn Tracking.xoml\r\nRulesUrl:SW|Workflows/PunchIn Tracking/PunchIn Tracking.xoml.rules\r\nvti_author:SR|SHAREPOINT\\\\system\r\nvti_cachedcustomprops:VX|BaseAssociationGuid vti_title ContentTypeId ContentType XomlUrl RulesUrl\r\nvti_modifiedby:SR|WIN-U1UXNO4LT1E\\\\Administrator\r\nvti_docstoreversion:IR|1\r\nvti_metainfoversion:IW|1\r\nvti_foldersubfolderitemcount:IW|0\r\nvti_cachedtitle:SR|PunchIn Tracking.xoml.wfconfig.xml\r\nvti_title:SW|PunchIn Tracking.xoml.wfconfig.xml\r\nContentTypeId:SW|0x01010700559CD9FA31A32D43997419FDC28591C0\r\nContentType:SW|User Workflow Document\r\nvti_privatelistexempt:BW|TRUE\r\n&#xD;&#xA;vti_foldersubfolderitemcount:IR|0&#xD;&#xA;AssociatedListId:SW|{$ListId:Lists/Time Log;}&#xD;&#xA;vti_cachedcustomprops:VX|BaseAssociationGuid WorkflowDisplayName AssociatedListId XomlUrl NoCodeVisibility RulesUrl RestrictContentTypeId&#xD;&#xA;vti_modifiedby:SR|SHAREPOINT\\system&#xD;&#xA;FileLeafRef:SW|PunchIn Tracking.xoml.wfconfig.xml&#xD;&#xA;vti_privatelistexempt:BW|true&#xD;&#xA;vti_title:SW|PunchIn Tracking.xoml.wfconfig.xml&#xD;&#xA;ContentTypeId:SW|0x01010700B980E5858C208649830709B05DB2F9D0&#xD;&#xA;ContentType:SW|User Workflow Document&#xD;&#xA;RulesUrl:SW|Workflows/PunchIn Tracking/PunchIn Tracking.xoml.rules&#xD;&#xA;RestrictContentTypeId:SW|&#xD;&#xA;BaseAssociationGuid:SW|{3A4F847E-1004-41D1-8C52-FC440EE41055}&#xD;&#xA;" />
+			<Property Name="Order" Value="1400.00000000000" />
+		</File>
+		<File Url="PunchIn Tracking.xoml.rules" Type="GhostableInLibrary" Path="5PunchInTracking.xoml.rules">
+			<Property Name="ID" Value="13" />
+			<Property Name="ContentTypeId" Value="0x01010700B980E5858C208649830709B05DB2F9D0" />
+			<Property Name="ContentType" Value="User Workflow Document" />
+			<Property Name="_ModerationStatus" Value="0" />
+			<Property Name="FileDirRef" Value="TC44/Workflows/PunchIn Tracking" />
+			<Property Name="FSObjType" Value="0" />
+			<Property Name="FileLeafRef" Value="PunchIn Tracking.xoml.rules" />
+			<Property Name="MetaInfo" Value="13;#FSObjType:SW|0&#xD;&#xA;Order:SW|1300.00000000000&#xD;&#xA;vti_parserversion:SR|14.0.0.4762&#xD;&#xA;vti_folderitemcount:IR|0&#xD;&#xA;ContentTypeId:SW|0x01010700B980E5858C208649830709B05DB2F9D0&#xD;&#xA;FileLeafRef:SW|PunchIn Tracking.xoml.rules&#xD;&#xA;ContentType:SW|User Workflow Document&#xD;&#xA;FileDirRef:SW|Workflows/PunchIn Tracking&#xD;&#xA;vti_author:SR|SHAREPOINT\\system&#xD;&#xA;MetaInfo:SW|13;#vti_parserversion:SR|12.0.0.6421\r\nvti_modifiedby:SR|SHAREPOINT\\\\system\r\nContentTypeId:SW|0x01010700559CD9FA31A32D43997419FDC28591C0\r\nvti_author:SR|SHAREPOINT\\\\system\r\n&#xD;&#xA;vti_foldersubfolderitemcount:IR|0&#xD;&#xA;vti_modifiedby:SR|SHAREPOINT\\system&#xD;&#xA;" />
+			<Property Name="Order" Value="1300.00000000000" />
+		</File>
+		<File Url="PunchIn Tracking.xoml" DoGUIDFixUp="true" Type="GhostableInLibrary" Path="6PunchInTracking.xoml">
+			<Property Name="ID" Value="12" />
+			<Property Name="ContentTypeId" Value="0x01010700B980E5858C208649830709B05DB2F9D0" />
+			<Property Name="ContentType" Value="User Workflow Document" />
+			<Property Name="_ModerationStatus" Value="0" />
+			<Property Name="FileDirRef" Value="TC44/Workflows/PunchIn Tracking" />
+			<Property Name="FSObjType" Value="0" />
+			<Property Name="FileLeafRef" Value="PunchIn Tracking.xoml" />
+			<Property Name="MetaInfo" Value="12;#FSObjType:SW|0&#xD;&#xA;Order:SW|1200.00000000000&#xD;&#xA;vti_parserversion:SR|14.0.0.4762&#xD;&#xA;vti_folderitemcount:IR|0&#xD;&#xA;ContentTypeId:SW|0x01010700B980E5858C208649830709B05DB2F9D0&#xD;&#xA;FileLeafRef:SW|PunchIn Tracking.xoml&#xD;&#xA;ContentType:SW|User Workflow Document&#xD;&#xA;FileDirRef:SW|Workflows/PunchIn Tracking&#xD;&#xA;vti_author:SR|SHAREPOINT\\system&#xD;&#xA;MetaInfo:SW|12;#vti_parserversion:SR|12.0.0.6421\r\nvti_modifiedby:SR|SHAREPOINT\\\\system\r\nContentTypeId:SW|0x01010700559CD9FA31A32D43997419FDC28591C0\r\nvti_author:SR|SHAREPOINT\\\\system\r\n&#xD;&#xA;vti_foldersubfolderitemcount:IR|0&#xD;&#xA;vti_modifiedby:SR|SHAREPOINT\\system&#xD;&#xA;" />
+			<Property Name="Order" Value="1200.00000000000" />
+		</File>
+    <File Url="PunchIn Tracking.xsn" Type="GhostableInLibrary" Path="4PunchInTracking.xsn">
+      <Property Name="ID" Value="16" />
+      <Property Name="ContentTypeId" Value="0x010107004939E206207CAC4E94C788BD57B03C75" />
+      <Property Name="ContentType" Value="User Workflow Document" />
+      <Property Name="_ModerationStatus" Value="0" />
+      <Property Name="FileDirRef" Value="TCY1/Workflows/PunchIn Tracking" />
+      <Property Name="FSObjType" Value="0" />
+      <Property Name="FileLeafRef" Value="PunchIn Tracking.xsn" />
+      <Property Name="MetaInfo" Value="16;#FSObjType:SW|0&#xD;&#xA;Order:SW|1600.00000000000&#xD;&#xA;vti_parserversion:SR|14.0.0.4762&#xD;&#xA;vti_folderitemcount:IW|0&#xD;&#xA;FileDirRef:SW|TC44/Workflows/PunchIn Tracking&#xD;&#xA;ContentTypeId:SW|0x010107004939E206207CAC4E94C788BD57B03C75&#xD;&#xA;ContentType:SW|User Workflow Document&#xD;&#xA;FileLeafRef:SW|PunchIn Tracking.xsn&#xD;&#xA;vti_author:SR|SHAREPOINT\\system&#xD;&#xA;MetaInfo:SW|16;#vti_parserversion:SR|14.0.0.4762\r\nvti_modifiedby:SR|SHAREPOINT\\\\system\r\nipfs_streamhash:SW|1HwQXIm+UttuZ1ZEH0MP00gikWc//cJj2WaCrYgPzlA=\r\nvti_folderitemcount:IW|0\r\nvti_foldersubfolderitemcount:IW|0\r\nvti_privatelistexempt:BW|true\r\nContentTypeId:SW|0x01010700B980E5858C208649830709B05DB2F9D0\r\nvti_author:SR|SHAREPOINT\\\\system\r\n&#xD;&#xA;vti_foldersubfolderitemcount:IW|0&#xD;&#xA;vti_modifiedby:SR|SHAREPOINT\\system&#xD;&#xA;ipfs_streamhash:SW|THwKXHr0waHWCBcBKW9Hkac1RYDyF5b1aLbQnz/L0L8=&#xD;&#xA;" />
+      <Property Name="Order" Value="1600.00000000000" />
+    </File>
+	</Module>
+
+</Elements>

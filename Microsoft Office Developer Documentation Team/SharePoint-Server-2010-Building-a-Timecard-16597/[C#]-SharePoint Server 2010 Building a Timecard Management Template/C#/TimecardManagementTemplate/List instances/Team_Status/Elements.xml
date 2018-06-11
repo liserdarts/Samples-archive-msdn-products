@@ -1,0 +1,4 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">
+	<ListInstance FeatureId="{00bfea71-de22-43b2-a848-c05709900100}" TemplateType="100" Title="Team Status" Description="" Url="Lists/Team Status" CustomSchema="Files\Lists\Team Status\Schema.xml" HyperlinkBaseUrl="http://pv-prestage:407/TImecardManagement1" RootWebOnly="FALSE" xmlns="http://schemas.microsoft.com/sharepoint/" />
+</Elements>

@@ -1,0 +1,41 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">
+	<Module Name="_catalogsmasterpage_global" Url="_catalogs/masterpage" SetupPath="global" RootWebOnly="FALSE" Path="Files\_catalogs\masterpage" xmlns="http://schemas.microsoft.com/sharepoint/">
+		<File Url="default.master" Type="GhostableInLibrary" Path="default.master">
+			<Property Name="ID" Value="1" />
+			<Property Name="ContentTypeId" Value="0x01010500C8EB9F73A2B7E04E96F35075B738FCF1" />
+			<Property Name="ContentType" Value="Master Page" />
+			<Property Name="_ModerationStatus" Value="0" />
+			<Property Name="FileDirRef" Value="TimecardManagement/_catalogs/masterpage" />
+			<Property Name="FSObjType" Value="0" />
+			<Property Name="FileLeafRef" Value="default.master" />
+			<Property Name="MetaInfo" Value="1;#vti_parserversion:SR|14.0.0.4762&#xD;&#xA;Order:SW|100.000000000000&#xD;&#xA;vti_folderitemcount:IW|0&#xD;&#xA;FSObjType:SW|0&#xD;&#xA;FileDirRef:SW|_catalogs/masterpage&#xD;&#xA;vti_charset:SR|utf-8&#xD;&#xA;vti_author:SR|SHAREPOINT\\system&#xD;&#xA;vti_setuppath:SR|global\\default.master&#xD;&#xA;UIVersion:SW|;#3;#&#xD;&#xA;MetaInfo:SW|1;#vti_parserversion:SR|14.0.0.5050\r\nvti_folderitemcount:IR|0\r\nvti_charset:SR|utf-8\r\nUIVersion:SW|;#3;#\r\nvti_author:SR|SHAREPOINT\\\\system\r\nvti_setuppath:SR|global\\\\default.master\r\nvti_cachedbodystyle:SR|&lt;body scroll=&quot;yes&quot; onload=&quot;javascript:if (typeof(_spBodyOnLoadWrapper) != 'undefined') _spBodyOnLoadWrapper();&quot;&gt;\r\nvti_cachedneedsrewrite:BR|false\r\nvti_generator:SR|Microsoft SharePoint\r\nvti_foldersubfolderitemcount:IR|0\r\nvti_modifiedby:SR|WIN-U1UXNO4LT1E\\\\Administrator\r\nvti_cachedhastheme:BR|false\r\nvti_cachedcustomprops:VX|vti_title\r\nvti_cachedtitle:SR|&lt;asp:ContentPlaceHolder id=&quot;PlaceHolderPageTitle&quot; runat=&quot;server&quot;/&gt;\r\nvti_metatags:VR|GENERATOR Microsoft\\\\ SharePoint progid SharePoint.WebPartPage.Document HTTP-EQUIV=Content-Type text/html;\\\\ charset=utf-8 HTTP-EQUIV=Expires 0\r\nvti_title:SR|&lt;asp:ContentPlaceHolder id=&quot;PlaceHolderPageTitle&quot; runat=&quot;server&quot;/&gt;\r\nContentTypeId:SW|0x01010500A4D9E5F2C406174C83CBAA5C06A04F9C\r\n&#xD;&#xA;vti_cachedneedsrewrite:BR|false&#xD;&#xA;vti_generator:SR|Microsoft SharePoint&#xD;&#xA;vti_foldersubfolderitemcount:IW|0&#xD;&#xA;vti_modifiedby:SR|SHAREPOINT\\system&#xD;&#xA;vti_cachedhastheme:BR|false&#xD;&#xA;vti_cachedcustomprops:VX|vti_title&#xD;&#xA;FileLeafRef:SW|default.master&#xD;&#xA;ContentTypeId:SW|0x01010500C8EB9F73A2B7E04E96F35075B738FCF1&#xD;&#xA;ContentType:SW|Master Page&#xD;&#xA;vti_cachedtitle:SR|&lt;asp:ContentPlaceHolder id=&quot;PlaceHolderPageTitle&quot; runat=&quot;server&quot;/&gt;&#xD;&#xA;vti_metatags:VR|GENERATOR Microsoft\\ SharePoint progid SharePoint.WebPartPage.Document HTTP-EQUIV=Content-Type text/html;\\ charset=utf-8 HTTP-EQUIV=Expires 0&#xD;&#xA;vti_title:SR|&lt;asp:ContentPlaceHolder id=&quot;PlaceHolderPageTitle&quot; runat=&quot;server&quot;/&gt;&#xD;&#xA;vti_cachedbodystyle:SR|&lt;body scroll=&quot;yes&quot; onload=&quot;javascript:if (typeof(_spBodyOnLoadWrapper) != 'undefined') _spBodyOnLoadWrapper();&quot;&gt;&#xD;&#xA;" />
+			<Property Name="Order" Value="100.000000000000" />
+			<Property Name="UIVersion" Value=";#3;#" />
+		</File>
+		<File Url="minimal.master" Type="GhostableInLibrary" Path="minimal.master">
+			<Property Name="ID" Value="2" />
+			<Property Name="ContentTypeId" Value="0x01010500C8EB9F73A2B7E04E96F35075B738FCF1" />
+			<Property Name="ContentType" Value="Master Page" />
+			<Property Name="_ModerationStatus" Value="0" />
+			<Property Name="FileDirRef" Value="TimecardManagement/_catalogs/masterpage" />
+			<Property Name="FSObjType" Value="0" />
+			<Property Name="FileLeafRef" Value="minimal.master" />
+			<Property Name="MetaInfo" Value="2;#vti_parserversion:SR|14.0.0.4762&#xD;&#xA;Order:SW|200.000000000000&#xD;&#xA;vti_folderitemcount:IW|0&#xD;&#xA;FSObjType:SW|0&#xD;&#xA;FileDirRef:SW|_catalogs/masterpage&#xD;&#xA;vti_charset:SR|utf-8&#xD;&#xA;vti_author:SR|SHAREPOINT\\system&#xD;&#xA;vti_setuppath:SR|global\\minimal.master&#xD;&#xA;UIVersion:SW|4&#xD;&#xA;MetaInfo:SW|2;#&#xD;&#xA;vti_cachedneedsrewrite:BR|false&#xD;&#xA;vti_generator:SR|Microsoft SharePoint&#xD;&#xA;vti_foldersubfolderitemcount:IW|0&#xD;&#xA;vti_modifiedby:SR|SHAREPOINT\\system&#xD;&#xA;vti_cachedhastheme:BR|false&#xD;&#xA;vti_cachedcustomprops:VX|vti_title&#xD;&#xA;FileLeafRef:SW|minimal.master&#xD;&#xA;ContentTypeId:SW|0x01010500C8EB9F73A2B7E04E96F35075B738FCF1&#xD;&#xA;ContentType:SW|Master Page&#xD;&#xA;vti_cachedtitle:SR|&lt;asp:ContentPlaceHolder id=&quot;PlaceHolderPageTitle&quot; runat=&quot;server&quot;/&gt;&#xD;&#xA;vti_metatags:VR|HTTP-EQUIV=X-UA-Compatible IE=8 GENERATOR Microsoft\\ SharePoint progid SharePoint.WebPartPage.Document HTTP-EQUIV=Content-Type text/html;\\ charset=utf-8 HTTP-EQUIV=Expires 0&#xD;&#xA;vti_title:SR|&lt;asp:ContentPlaceHolder id=&quot;PlaceHolderPageTitle&quot; runat=&quot;server&quot;/&gt;&#xD;&#xA;vti_cachedbodystyle:SR|&lt;body onload=&quot;javascript:if (typeof(_spBodyOnLoadWrapper) != 'undefined') _spBodyOnLoadWrapper();&quot;&gt;&#xD;&#xA;" />
+			<Property Name="Order" Value="200.000000000000" />
+			<Property Name="UIVersion" Value="4" />
+		</File>
+		<File Url="v4.master" Type="GhostableInLibrary" Path="v4.master">
+			<Property Name="ID" Value="3" />
+			<Property Name="ContentTypeId" Value="0x01010500C8EB9F73A2B7E04E96F35075B738FCF1" />
+			<Property Name="ContentType" Value="Master Page" />
+			<Property Name="_ModerationStatus" Value="0" />
+			<Property Name="FileDirRef" Value="TimecardManagement/_catalogs/masterpage" />
+			<Property Name="FSObjType" Value="0" />
+			<Property Name="FileLeafRef" Value="v4.master" />
+			<Property Name="MetaInfo" Value="3;#vti_parserversion:SR|14.0.0.4762&#xD;&#xA;Order:SW|300.000000000000&#xD;&#xA;vti_folderitemcount:IW|0&#xD;&#xA;FSObjType:SW|0&#xD;&#xA;FileDirRef:SW|_catalogs/masterpage&#xD;&#xA;vti_charset:SR|utf-8&#xD;&#xA;vti_author:SR|SHAREPOINT\\system&#xD;&#xA;vti_setuppath:SR|global\\v4.master&#xD;&#xA;UIVersion:SW|4&#xD;&#xA;MetaInfo:SW|3;#&#xD;&#xA;vti_cachedneedsrewrite:BR|false&#xD;&#xA;vti_generator:SR|Microsoft SharePoint&#xD;&#xA;vti_foldersubfolderitemcount:IW|0&#xD;&#xA;vti_modifiedby:SR|SHAREPOINT\\system&#xD;&#xA;vti_cachedhastheme:BR|false&#xD;&#xA;vti_cachedcustomprops:VX|vti_title&#xD;&#xA;FileLeafRef:SW|v4.master&#xD;&#xA;ContentTypeId:SW|0x01010500C8EB9F73A2B7E04E96F35075B738FCF1&#xD;&#xA;ContentType:SW|Master Page&#xD;&#xA;vti_cachedtitle:SR|&lt;asp:ContentPlaceHolder id=&quot;PlaceHolderPageTitle&quot; runat=&quot;server&quot;/&gt;&#xD;&#xA;vti_metatags:VR|HTTP-EQUIV=X-UA-Compatible IE=8 GENERATOR Microsoft\\ SharePoint progid SharePoint.WebPartPage.Document HTTP-EQUIV=Content-Type text/html;\\ charset=utf-8 HTTP-EQUIV=Expires 0&#xD;&#xA;vti_title:SR|&lt;asp:ContentPlaceHolder id=&quot;PlaceHolderPageTitle&quot; runat=&quot;server&quot;/&gt;&#xD;&#xA;vti_cachedbodystyle:SR|&lt;body scroll=&quot;no&quot; onload=&quot;if (typeof(_spBodyOnLoadWrapper) != 'undefined') _spBodyOnLoadWrapper();&quot; class=&quot;v4master&quot;&gt;&#xD;&#xA;" />
+			<Property Name="Order" Value="300.000000000000" />
+			<Property Name="UIVersion" Value="4" />
+		</File>
+	</Module>
+</Elements>

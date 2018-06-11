@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" dslVersion="1.0.0.0" Id="6103dfca-719c-43cd-9bd6-adf42ea3f3da" solutionId="6103dfca-719c-43cd-9bd6-adf42ea3f3da" resetWebServer="false" name="TimecardManagementSandbox" xmlns="http://schemas.microsoft.com/VisualStudio/2008/SharePointTools/PackageModel">
+  <features>
+    <featureReference itemId="47acc78a-7f66-48b1-8df9-2dc05e808fb1" />
+    <featureReference itemId="7380e7b8-43b5-45f6-b2fc-b22249c194b2" />
+    <featureReference itemId="187f4ea0-d4b3-4a01-a784-52974975025d" />
+    <featureReference itemId="46c27912-6c04-4589-9720-f14ef43e75b0" />
+    <featureReference itemId="9ae2b84b-464f-400d-b31c-dac3b1b9fd9f" />
+  </features>
+</package>

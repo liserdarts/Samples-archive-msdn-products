@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">
+  <WorkflowAssociation Name="PunchIn Tracking" Description="" 
+                       Id="{2502f942-7087-4109-80fa-59d3d0ff55f7}" 
+                       BaseTemplateId="{3a4f847e-1004-41d1-8c52-fc440ee41055}" 
+                       ParentContentType="List" 
+                       ParentList="Lists/Time Log" 
+                       ParentWeb="TRUE" TaskList="Lists/Tasks" 
+                       TaskListTitle="Tasks" 
+                       HistoryList="Lists/Workflow History" 
+                       HistoryListTitle="Workflow History" 
+                       StatusColumnShown="FALSE" 
+                       InternalNameStatusField="PunchInT" 
+                       RequireManagePermission="EditListItems" 
+                       Configuration="4179" AssociationData="" 
+                       ContentTypeName="" 
+                       ContentTypeId="0x" 
+                       xmlns="http://schemas.microsoft.com/sharepoint/" />
+</Elements>

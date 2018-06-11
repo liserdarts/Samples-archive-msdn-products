@@ -1,0 +1,136 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">
+
+  <PropertyBag Url="Workflows/PunchOut Reminder" ParentType="Folder" RootWebOnly="FALSE" xmlns="http://schemas.microsoft.com/sharepoint/">
+    <Property Name="vti_folderitemcount" Value="3" Type="int" />
+    <Property Name="vti_isexecutable" Value="false" Type="string" />
+    <Property Name="vti_etag" Value="&quot;{69C7E56A-5EA6-4A52-ACA1-0F9F683EC265},0&quot;" Type="string" />
+    <Property Name="vti_isscriptable" Value="false" Type="string" />
+    <Property Name="vti_level" Value="1" Type="int" />
+    <Property Name="vti_listrequirecheckout" Value="false" Type="string" />
+    <Property Name="vti_docstoretype" Value="1" Type="int" />
+    <Property Name="vti_listenableminorversions" Value="false" Type="string" />
+    <Property Name="vti_nexttolasttimemodified" Value="2011-06-20T05:42:27Z" Type="DateTime" />
+    <Property Name="vti_metainfoversion" Value="2" Type="int" />
+    <Property Name="vti_listname" Value="{$ListId:Workflows;}" Type="string" />
+    <Property Name="vti_modifiedby" Value="SHAREPOINT\system" Type="string" />
+    <Property Name="vti_listservertemplate" Value="117" Type="int" />
+    <Property Name="vti_foldersubfolderitemcount" Value="0" Type="int" />
+    <Property Name="vti_timecreated" Value="2011-06-20T05:42:24Z" Type="DateTime" />
+    <Property Name="vti_dirlateststamp" Value="2011-06-20T11:19:38Z" Type="DateTime" />
+    <Property Name="vti_listbasetype" Value="1" Type="int" />
+    <Property Name="vti_listenablemoderation" Value="false" Type="string" />
+    <Property Name="vti_contentversionisdirty" Value="false" Type="string" />
+    <Property Name="vti_replid" Value="rid:{69C7E56A-5EA6-4A52-ACA1-0F9F683EC265}" Type="string" />
+    <Property Name="vti_timelastmodified" Value="2011-06-20T11:21:49Z" Type="DateTime" />
+    <Property Name="vti_isbrowsable" Value="true" Type="string" />
+    <Property Name="vti_candeleteversion" Value="true" Type="string" />
+    <Property Name="vti_hassubdirs" Value="false" Type="string" />
+    <Property Name="vti_rtag" Value="rt:69C7E56A-5EA6-4A52-ACA1-0F9F683EC265@00000000000" Type="string" />
+    <Property Name="vti_listenableversioning" Value="true" Type="string" />
+  </PropertyBag>
+  <PropertyBag Url="Workflows/PunchOut Reminder/PunchOut Reminder.xoml" ParentType="File" RootWebOnly="FALSE" HyperlinkBaseUrl="http://pv-prestage:407/TimecardManagement" xmlns="http://schemas.microsoft.com/sharepoint/">
+    <Property Name="vti_folderitemcount" Value="0" Type="int" />
+    <Property Name="vti_docstoretype" Value="0" Type="int" />
+    <Property Name="MetaInfo" Value="9;#vti_parserversion:SR|12.0.0.6421&#xD;&#xA;vti_modifiedby:SR|SHAREPOINT\\system&#xD;&#xA;ContentTypeId:SW|0x01010700559CD9FA31A32D43997419FDC28591C0&#xD;&#xA;vti_author:SR|SHAREPOINT\\system&#xD;&#xA;" Type="string" />
+    <Property Name="vti_etag" Value="&quot;{18582287-E76B-4CB9-AA8B-9125A07F9F9D},3&quot;" Type="string" />
+    <Property Name="FSObjType" Value="0" Type="string" />
+    <Property Name="vti_setuppathversion" Value="4" Type="int" />
+    <Property Name="ContentType" Value="User Workflow Document" Type="string" />
+    <Property Name="FileDirRef" Value="Workflows/PunchOut Reminder" Type="string" />
+    <Property Name="vti_canmaybeedit" Value="true" Type="string" />
+    <Property Name="vti_parserversion" Value="14.0.0.4762" Type="string" />
+    <Property Name="vti_author" Value="SHAREPOINT\system" Type="string" />
+    <Property Name="vti_metainfoversion" Value="3" Type="int" />
+    <Property Name="ContentTypeId" Value="0x01010700D11C220CAE9E924D820C869EDAA00DDD" Type="string" />
+    <Property Name="vti_level" Value="1" Type="int" />
+    <Property Name="vti_replid" Value="rid:{18582287-E76B-4CB9-AA8B-9125A07F9F9D}" Type="string" />
+    <Property Name="vti_sourcecontrolcookie" Value="fp_internal" Type="string" />
+    <Property Name="Order" Value="900.000000000000" Type="string" />
+    <Property Name="vti_timecreated" Value="2011-06-20T05:42:27Z" Type="DateTime" />
+    <Property Name="vti_foldersubfolderitemcount" Value="0" Type="int" />
+    <Property Name="vti_contentversionisdirty" Value="false" Type="string" />
+    <Property Name="vti_filesize" Value="4263" Type="int" />
+    <Property Name="vti_contenttag" Value="{18582287-E76B-4CB9-AA8B-9125A07F9F9D},3,2" Type="string" />
+    <Property Name="vti_timelastmodified" Value="2011-06-20T11:21:57Z" Type="DateTime" />
+    <Property Name="vti_docstoreversion" Value="3" Type="int" />
+    <Property Name="FileLeafRef" Value="PunchOut Reminder.xoml" Type="string" />
+    <Property Name="vti_candeleteversion" Value="true" Type="string" />
+    <Property Name="vti_modifiedby" Value="SHAREPOINT\system" Type="string" />
+    <Property Name="vti_nexttolasttimemodified" Value="2011-06-20T05:42:29Z" Type="DateTime" />
+    <Property Name="vti_rtag" Value="rt:18582287-E76B-4CB9-AA8B-9125A07F9F9D@00000000003" Type="string" />
+    <Property Name="vti_sourcecontrolversion" Value="V3.0" Type="string" />
+  </PropertyBag>
+  <PropertyBag Url="Workflows/PunchOut Reminder/PunchOut Reminder.xoml.wfconfig.xml" ParentType="File" RootWebOnly="FALSE" HyperlinkBaseUrl="http://pv-prestage:407/TimecardManagement" xmlns="http://schemas.microsoft.com/sharepoint/">
+    <Property Name="vti_charset" Value="utf-8" Type="string" />
+    <Property Name="vti_candeleteversion" Value="true" Type="string" />
+    <Property Name="vti_nexttolasttimemodified" Value="2011-06-20T05:42:29Z" Type="DateTime" />
+    <Property Name="vti_level" Value="1" Type="int" />
+    <Property Name="NoCodeVisibility" Value="" Type="string" />
+    <Property Name="vti_rtag" Value="rt:CE51A2CC-55D6-4618-B152-FB0E676C54A1@00000000003" Type="string" />
+    <Property Name="FileDirRef" Value="Workflows/PunchOut Reminder" Type="string" />
+    <Property Name="XomlUrl" Value="Workflows/PunchOut Reminder/PunchOut Reminder.xoml" Type="string" />
+    <Property Name="vti_title" Value="PunchOut Reminder.xoml.wfconfig.xml" Type="string" />
+    <Property Name="vti_parserversion" Value="14.0.0.4762" Type="string" />
+    <Property Name="vti_etag" Value="&quot;{CE51A2CC-55D6-4618-B152-FB0E676C54A1},3&quot;" Type="string" />
+    <Property Name="vti_contentversionisdirty" Value="false" Type="string" />
+    <Property Name="AssociatedListId" Value="{$ListId:Lists/Team Status;}" Type="string" />
+    <Property Name="RestrictContentTypeId" Value="" Type="string" />
+    <Property Name="Order" Value="1000.00000000000" Type="string" />
+    <Property Name="vti_setuppathversion" Value="4" Type="int" />
+    <Property Name="BaseAssociationGuid" Value="{9AA7C96C-4362-466E-8587-F7261FAA526B}" Type="string" />
+    <Property Name="vti_metainfoversion" Value="3" Type="int" />
+    <Property Name="vti_canmaybeedit" Value="true" Type="string" />
+    <Property Name="ContentType" Value="User Workflow Document" Type="string" />
+    <Property Name="vti_contenttag" Value="{CE51A2CC-55D6-4618-B152-FB0E676C54A1},3,2" Type="string" />
+    <Property Name="vti_modifiedby" Value="SHAREPOINT\system" Type="string" />
+    <Property Name="vti_foldersubfolderitemcount" Value="0" Type="int" />
+    <Property Name="RulesUrl" Value="" Type="string" />
+    <Property Name="vti_timelastmodified" Value="2011-06-20T11:22:02Z" Type="DateTime" />
+    <Property Name="vti_privatelistexempt" Value="true" Type="string" />
+    <Property Name="FileLeafRef" Value="PunchOut Reminder.xoml.wfconfig.xml" Type="string" />
+    <Property Name="FSObjType" Value="0" Type="string" />
+    <Property Name="vti_timecreated" Value="2011-06-20T05:42:27Z" Type="DateTime" />
+    <Property Name="vti_folderitemcount" Value="0" Type="int" />
+    <Property Name="vti_docstoretype" Value="0" Type="int" />
+    <Property Name="ContentTypeId" Value="0x01010700D11C220CAE9E924D820C869EDAA00DDD" Type="string" />
+    <Property Name="vti_filesize" Value="1851" Type="int" />
+    <Property Name="vti_sourcecontrolcookie" Value="fp_internal" Type="string" />
+    <Property Name="WorkflowDisplayName" Value="PunchOut Reminder" Type="string" />
+    <Property Name="vti_author" Value="SHAREPOINT\system" Type="string" />
+    <Property Name="MetaInfo" Value="10;#BaseAssociationGuid:SW|{9AA7C96C-4362-466E-8587-F7261FAA526B}&#xD;&#xA;vti_contentversionisdirty:BW|true&#xD;&#xA;vti_parserversion:SR|12.0.0.6421&#xD;&#xA;vti_contenttag:SW|{55D9BB38-05B7-49BA-A97A-D407E83A3D2C},1,0&#xD;&#xA;vti_folderitemcount:IW|0&#xD;&#xA;XomlUrl:SW|Workflows/PunchOut Reminder/PunchOut Reminder.xoml&#xD;&#xA;RulesUrl:SW|&#xD;&#xA;vti_author:SR|SHAREPOINT\\system&#xD;&#xA;vti_cachedcustomprops:VX|BaseAssociationGuid vti_title ContentTypeId ContentType XomlUrl RulesUrl&#xD;&#xA;vti_modifiedby:SR|WIN-U1UXNO4LT1E\\Administrator&#xD;&#xA;vti_docstoreversion:IR|1&#xD;&#xA;vti_metainfoversion:IW|1&#xD;&#xA;vti_foldersubfolderitemcount:IW|0&#xD;&#xA;vti_cachedtitle:SR|PunchOut Reminder.xoml.wfconfig.xml&#xD;&#xA;vti_title:SW|PunchOut Reminder.xoml.wfconfig.xml&#xD;&#xA;ContentTypeId:SW|0x01010700559CD9FA31A32D43997419FDC28591C0&#xD;&#xA;ContentType:SW|User Workflow Document&#xD;&#xA;vti_privatelistexempt:BW|TRUE&#xD;&#xA;" Type="string" />
+    <Property Name="vti_replid" Value="rid:{CE51A2CC-55D6-4618-B152-FB0E676C54A1}" Type="string" />
+    <Property Name="vti_sourcecontrolversion" Value="V3.0" Type="string" />
+    <Property Name="vti_docstoreversion" Value="3" Type="int" />
+    <Property Name="vti_cachedcustomprops" Value="BaseAssociationGuid WorkflowDisplayName AssociatedListId XomlUrl NoCodeVisibility RulesUrl RestrictContentTypeId" Type="string" />
+  </PropertyBag>
+  <PropertyBag Url="Workflows/PunchOut Reminder/PunchOut Reminder.xsn" ParentType="File" RootWebOnly="FALSE" HyperlinkBaseUrl="http://pv-prestage:407/TimecardManagement" xmlns="http://schemas.microsoft.com/sharepoint/">
+    <Property Name="vti_folderitemcount" Value="0" Type="int" />
+    <Property Name="vti_docstoretype" Value="0" Type="int" />
+    <Property Name="vti_etag" Value="&quot;{45F6C983-6A61-477C-B2B9-6C51FDC190F0},2&quot;" Type="string" />
+    <Property Name="vti_level" Value="1" Type="int" />
+    <Property Name="vti_setuppathversion" Value="4" Type="int" />
+    <Property Name="vti_canmaybeedit" Value="true" Type="string" />
+    <Property Name="vti_parserversion" Value="14.0.0.4762" Type="string" />
+    <Property Name="vti_privatelistexempt" Value="true" Type="string" />
+    <Property Name="vti_author" Value="SHAREPOINT\system" Type="string" />
+    <Property Name="vti_metainfoversion" Value="2" Type="int" />
+    <Property Name="ContentTypeId" Value="0x01010700D11C220CAE9E924D820C869EDAA00DDD" Type="string" />
+    <Property Name="vti_replid" Value="rid:{45F6C983-6A61-477C-B2B9-6C51FDC190F0}" Type="string" />
+    <Property Name="vti_modifiedby" Value="SHAREPOINT\system" Type="string" />
+    <Property Name="vti_timecreated" Value="2011-06-20T11:21:49Z" Type="DateTime" />
+    <Property Name="vti_foldersubfolderitemcount" Value="0" Type="int" />
+    <Property Name="vti_contentversionisdirty" Value="false" Type="string" />
+    <Property Name="vti_filesize" Value="7175" Type="int" />
+    <Property Name="vti_contenttag" Value="{45F6C983-6A61-477C-B2B9-6C51FDC190F0},2,1" Type="string" />
+    <Property Name="vti_timelastmodified" Value="2011-06-20T11:21:50Z" Type="DateTime" />
+    <Property Name="ipfs_streamhash" Value="8yMUhWR6ff1rdSC2uMekJbok+cMV7JUy/TrtT04IlEw=" Type="string" />
+    <Property Name="vti_docstoreversion" Value="2" Type="int" />
+    <Property Name="vti_candeleteversion" Value="true" Type="string" />
+    <Property Name="vti_sourcecontrolcookie" Value="fp_internal" Type="string" />
+    <Property Name="vti_nexttolasttimemodified" Value="2011-06-20T11:21:49Z" Type="DateTime" />
+    <Property Name="vti_rtag" Value="rt:45F6C983-6A61-477C-B2B9-6C51FDC190F0@00000000002" Type="string" />
+    <Property Name="vti_sourcecontrolversion" Value="V2.0" Type="string" />
+  </PropertyBag>
+  
+</Elements>
