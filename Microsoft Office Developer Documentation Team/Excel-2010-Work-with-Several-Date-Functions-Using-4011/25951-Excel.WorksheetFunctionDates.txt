@@ -1,0 +1,83 @@
+' Excel 2010
+
+' Work with the WorksheetFunction object, focusing on date functions.
+
+' In Excel 2010, in a new workbook, copy all this code into
+' the Sheet1 class module. Place the cursor in the
+' TestWorksheetFunctionDates procedure,
+' and then press F8 to single-step through the code.
+
+Sub TestWorksheetFunctionDates()
+  ' Determine the date a specified number of workdays in the future:
+  Dim newDate As Date
+ 
+  ' Look at a calendar to verify the results.
+ 
+  ' Calculate the date 10 work days from the current date.
+  ' This doesn't take holidays into account:
+  newDate = WorksheetFunction.WorkDay(#11/20/2011#, 10)
+  Debug.Print newDate
+ 
+  ' To take holidays into account, you can specify an array
+  ' containing a list of holiday dates, or you can specify
+  ' a range containing holiday dates. The ordering of the dates
+  ' doesn't matter, but you must specify the full date, including
+  ' the year. Obviously, you would want to include all the holidays
+  ' in your actual work calendar in this array or range:
+  Dim holidays As Variant
+  holidays = Array(#11/24/2011#, #12/25/2011#)
+  newDate = WorksheetFunction.WorkDay(#11/20/2011#, 10, holidays)
+  ' Once you take Thanksgiving Day in the US into account, ten
+  ' work days pushes you out to Dec 5 2011:
+  Debug.Print newDate
+ 
+  ' What if your business doesn't use traditional weekends?
+  ' The WorksheetFunction.Workday_Intl function allows you to specify
+  ' not only holidays, but also specific weekend days. The default for the
+  ' third parameter is 1 (Saturday/Sunday), but you can specify many
+  ' predefined combinations of dates, or any custom combination. See the documentation
+  ' for the Workday_Intl function for full details on the options:
+ 
+  holidays = Array(#11/24/2011#, #12/25/2011#)
+  ' Assume Saturday/Sunday weekends:
+  newDate = WorksheetFunction.WorkDay_Intl(#11/20/2011#, 10, 1, holidays)
+  Debug.Print newDate
+  ' Use Sunday/Monday as weekend dates:
+  newDate = WorksheetFunction.WorkDay_Intl(#11/20/2011#, 10, 2, holidays)
+  Debug.Print newDate
+ 
+  ' Use Friday through Monday as weekend dates. Note that the custom
+  ' weekend date parameter includes 1 for each weekend date, and the string
+  ' starts with Monday. In other words, specify 1 for weekend dates, 0 for
+  ' work dates, in the format MTWTFSS. The string "1000111" represents
+  ' weeked days of Friday through Monday:
+  newDate = WorksheetFunction.WorkDay_Intl(#11/20/2011#, 10, "1000111", holidays)
+  Debug.Print newDate
+ 
+  ' The WorksheetFunction.NetworkDays and WorksheetFunction.NetworkDays_Intl
+  ' functions work like the WorkDay and WorkDay_Intl functions,
+  ' except that they return the number of work days between two dates.
+  ' This example demonstrates the NetworkDays_Intl function. Find the
+  ' number of work days between #11/1/2011# and #1/1/2012#, taking into
+  ' account holiday, and treating Friday through Monday as weekend days:
+  Dim workDays As Integer
+  holidays = Array(#11/24/2011#, #12/25/2011#, #1/1/2012#)
+  workDays = WorksheetFunction.NetworkDays_Intl(#11/1/2011#, #1/1/2012#, "1000111", holidays)
+  Debug.Print "There are " & workDays & " workdays between 11/1 and 1/1"
+ 
+  ' Try out the WorksheetFunction.WeekNum function. which returns
+  ' the week number containing the specified date. Note that this function
+  ' considers the week containing Jan 1 to be the first week of the year.
+  ' This differs from a standard European method of calculating the
+  ' week number for a date, so the function returns dates that are
+  ' incorrect for countries that use the differing standard.
+  ' Indicate the first day of the week in the second parameter (1
+  ' for Sunday, the default value; 2 for Monday):
+ 
+  Dim weekNum As Integer
+  weekNum = WorksheetFunction.weekNum(Date, 1)
+  Debug.Print "The current week number is: " & weekNum
+ 
+End Sub
+
+
