@@ -1,0 +1,60 @@
+' PowerPoint 2010
+
+Sub TestMergeWithBaseline()
+    ' To test the Presentation.MergeWithBaseline method, you must first
+    ' create three sample presentations. Start by creating Baseline.pptx,
+    ' so that you end up a title slide and five other slides, titled:
+    '
+    ' Title, Slide 1, Slide 2, Slide 3, Slide 4, Slide 5.
+    '
+    ' Save Baseline.pptx as BaseLine1.pptx, and delete Slide 1, Slide 4, and Slide 5.
+    ' In BaseLine1.pptx, modify Slide 3 to be Slide 3a.
+    ' Once you're done, BaseLine1.pptx contains the following slides:
+    '
+    ' Title, Slide 2, Slide 3a
+    '
+    ' Close BaseLine1.pptx, and save BaseLine.pptx as BaseLine2.pptx.
+    ' In BaseLine2.pptx, delete Slide 5, so that you end up with:
+    '
+    ' Title, Slide 1, Slide 2, Slide 3, Slide 4
+    '
+    ' Run the following code, which demonstrates the Presentation.MergeWithBaseLine,
+    ' AcceptAll, RejectAll, and InMergeMode members. If you choose to reject all
+    ' modifications, you won't be able to test the results of the merge.
+   
+    ' Place this code in a module in BaseLine2.pptx, and press F8 with the
+    ' selection within this procedure to run the code and watch what's going
+    ' on within PowerPoint.
+   
+    ' Fix up these constants to match your own environment:
+    Const withPresentation As String = "C:\Temp\BaseLine1.pptx"
+    Const baseLinePresentation As String = "C:\Temp\BaseLine.pptx"
+       
+    If ActivePresentation.InMergeMode Then
+        ' If you're currently in Merge mode, you must
+        ' end the review before starting the merge.
+        ActivePresentation.EndReview
+    Else
+   
+    ActivePresentation.MergeWithBaseline withPresentation, baseLinePresentation
+    ' If single-stepping, look now in PowerPoint to see what it has done.
+    ' On Slide 1, you'll see an indicator that the slide has been deleted.
+    ' On Slide 3, you'll see an indicator that the title has been changed.
+    ' In the slide tray, you'll see an indicator that Slide 4 has been deleted and
+    ' after Slide 4, you'll see an indicator that Slide 5 has been deleted.
+        If ActivePresentation.InMergeMode Then
+            ' In case you ended merge mode in the user interface,
+            ' there's nothing to do here. Can't hurt to check.
+            If MsgBox("Accept all changes?", vbOKCancel, "MergeWithBaseline") = vbOK Then
+                ActivePresentation.AcceptAll
+            Else
+                ActivePresentation.RejectAll
+            End If
+        End If
+    End If
+    ' If you accepted revisions, in PowerPoint you can now see the Revision pane
+    ' indicating the changes:
+    ' Slide 1 was deleted.
+    ' Slide 3 has a title change.
+    ' Slide 4 and Slide 5 were deleted.
+End Sub
