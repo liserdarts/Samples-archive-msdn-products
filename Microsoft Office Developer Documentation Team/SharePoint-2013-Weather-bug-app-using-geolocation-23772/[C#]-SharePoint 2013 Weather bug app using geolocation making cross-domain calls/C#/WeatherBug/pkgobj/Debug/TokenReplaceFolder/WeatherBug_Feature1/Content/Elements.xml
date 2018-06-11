@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">
+  <Module Name="Content">
+    <File Path="Content\main.css" Url="Content/main.css" />
+    <File Path="Content\fonts\georgia_0-webfont.eot" Url="Content/fonts/georgia_0-webfont.eot" />
+    <File Path="Content\fonts\georgia_0-webfont.svg" Url="Content/fonts/georgia_0-webfont.svg" />
+    <File Path="Content\fonts\georgia_0-webfont.ttf" Url="Content/fonts/georgia_0-webfont.ttf" />
+    <File Path="Content\fonts\georgia_0-webfont.woff" Url="Content/fonts/georgia_0-webfont.woff" />
+    <File Path="Content\fonts\helveticaneueltstd-thex-webfont.eot" Url="Content/fonts/helveticaneueltstd-thex-webfont.eot" />
+    <File Path="Content\fonts\helveticaneueltstd-thex-webfont.svg" Url="Content/fonts/helveticaneueltstd-thex-webfont.svg" />
+    <File Path="Content\fonts\helveticaneueltstd-thex-webfont.ttf" Url="Content/fonts/helveticaneueltstd-thex-webfont.ttf" />
+    <File Path="Content\fonts\helveticaneueltstd-thex-webfont.woff" Url="Content/fonts/helveticaneueltstd-thex-webfont.woff" />
+  </Module>
+</Elements>

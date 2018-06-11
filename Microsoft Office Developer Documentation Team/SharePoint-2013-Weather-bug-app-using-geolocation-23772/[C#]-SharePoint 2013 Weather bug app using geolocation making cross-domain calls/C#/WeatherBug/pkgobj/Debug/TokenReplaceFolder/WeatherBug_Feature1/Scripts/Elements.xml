@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">
+  <Module Name="Scripts">
+    <File Path="Scripts\wingtip.geolocation.js" Url="Scripts/wingtip.geolocation.js" />
+    <File Path="Scripts\wingtip.weatherbug.js" Url="Scripts/wingtip.weatherbug.js" />
+    <File Path="Scripts\main.js" Url="Scripts/main.js" />
+    <File Path="Scripts\wingtip.forecast.js" Url="Scripts/wingtip.forecast.js" />
+    <File Path="Scripts\knockout-2.1.0.js" Url="Scripts/knockout-2.1.0.js" />
+    <File Path="Scripts\wingtip.chromecontrol.js" Url="Scripts/wingtip.chromecontrol.js" />
+    <File Path="Scripts\wingtip.contextinfo.js" Url="Scripts/wingtip.contextinfo.js" />
+  </Module>
+</Elements>

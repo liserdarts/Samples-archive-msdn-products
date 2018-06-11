@@ -1,0 +1,52 @@
+﻿<html>
+<head>
+    <meta http-equiv="X-UA-Compatible" content="IE=10" />
+    <title>My Weather</title>
+
+    <link rel="Stylesheet" href="../Content/main.css" />
+
+    <script src="http://ajax.aspnetcdn.com/ajax/jQuery/jquery-1.8.0.js"></script>
+    <script src="../scripts/knockout-2.1.0.js"></script>
+    <script src="../scripts/wingtip.contextinfo.js"></script>
+    <script src="../scripts/wingtip.chromecontrol.js"></script>
+    <script src="../scripts/wingtip.forecast.js"></script>
+    <script src="../scripts/wingtip.geolocation.js"></script>
+    <script src="../scripts/wingtip.weatherbug.js"></script>
+    <script src="../scripts/main.js"></script>
+
+</head>
+<body>
+    <div>
+        <header>
+            <nav>
+                <div id="chrome_ctrl_placeholder_id"></div>
+            </nav>
+        </header>
+        <article>
+            <div>
+                <p id="weatherTableCaption" data-bind="text: get_city()"></p>
+                <table>
+                    <tbody id="weatherTableBody" data-bind="foreach: get_forecasts()">
+                        <tr>
+                            <td>
+                                <span class="forecast-title" data-bind="text: get_title()"></span>
+                            </td>
+                            <td>
+                                <span class="forecast-description" data-bind="text: get_description()"></span>
+                            </td>
+                            <td>
+                                <img data-bind="attr: { src: get_iconUrl() }" />
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+       </article>
+       <footer>
+        <div>
+            Copyright 2012 Wingtip Toys
+        </div>
+    </footer>
+    </div>
+</body>
+</html>

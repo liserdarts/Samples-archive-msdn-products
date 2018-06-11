@@ -1,0 +1,43 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Feature xmlns="http://schemas.microsoft.com/sharepoint/" Description="SharePoint App Feature" Id="bb9fba17-1798-45a1-b3c5-a9456b899e41" Scope="Web" Title="WeatherBug Feature1" Version="1.0.0.0">
+  <ElementManifests>
+    <ElementManifest Location="Pages\Elements.xml" />
+    <ElementFile Location="Pages\Default.html" />
+    <ElementManifest Location="Scripts\Elements.xml" />
+    <ElementFile Location="Scripts\wingtip.geolocation.js" />
+    <ElementFile Location="Scripts\wingtip.weatherbug.js" />
+    <ElementFile Location="Scripts\main.js" />
+    <ElementFile Location="Scripts\wingtip.forecast.js" />
+    <ElementFile Location="Scripts\knockout-2.1.0.js" />
+    <ElementFile Location="Scripts\wingtip.chromecontrol.js" />
+    <ElementFile Location="Scripts\wingtip.contextinfo.js" />
+    <ElementManifest Location="Content\Elements.xml" />
+    <ElementFile Location="Content\main.css" />
+    <ElementFile Location="Content\fonts\georgia_0-webfont.eot" />
+    <ElementFile Location="Content\fonts\georgia_0-webfont.svg" />
+    <ElementFile Location="Content\fonts\georgia_0-webfont.ttf" />
+    <ElementFile Location="Content\fonts\georgia_0-webfont.woff" />
+    <ElementFile Location="Content\fonts\helveticaneueltstd-thex-webfont.eot" />
+    <ElementFile Location="Content\fonts\helveticaneueltstd-thex-webfont.svg" />
+    <ElementFile Location="Content\fonts\helveticaneueltstd-thex-webfont.ttf" />
+    <ElementFile Location="Content\fonts\helveticaneueltstd-thex-webfont.woff" />
+    <ElementManifest Location="Images\Elements.xml" />
+    <ElementFile Location="Images\AppIcon.png" />
+    <ElementFile Location="Images\Day_clear.jpg" />
+    <ElementFile Location="Images\Day_rain.jpg" />
+    <ElementFile Location="Images\Day_snow.jpg" />
+    <ElementFile Location="Images\Night_storm.jpg" />
+    <ElementFile Location="Images\Night_clear.jpg" />
+    <ElementFile Location="Images\Night_snow.jpg" />
+  </ElementManifests>
+  <UpgradeActions>
+    <VersionRange>
+      <ApplyElementManifests>
+        <ElementManifest Location="Pages\Elements.xml" />
+        <ElementManifest Location="Scripts\Elements.xml" />
+        <ElementManifest Location="Content\Elements.xml" />
+        <ElementManifest Location="Images\Elements.xml" />
+      </ApplyElementManifests>
+    </VersionRange>
+  </UpgradeActions>
+</Feature>

@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ProjectItem Type="Microsoft.VisualStudio.SharePoint.Module" DefaultFile="Elements.xml" SupportedTrustLevels="All" SupportedDeploymentScopes="Web, Site" xmlns="http://schemas.microsoft.com/VisualStudio/2010/SharePointTools/SharePointProjectItemModel">
+  <Files>
+    <ProjectItemFile Source="Elements.xml" Target="Scripts\" Type="ElementManifest" />
+    <ProjectItemFile Source="wingtip.geolocation.js" Target="Scripts\" Type="ElementFile" />
+    <ProjectItemFile Source="wingtip.weatherbug.js" Target="Scripts\" Type="ElementFile" />
+    <ProjectItemFile Source="main.js" Target="Scripts\" Type="ElementFile" />
+    <ProjectItemFile Source="wingtip.forecast.js" Target="Scripts\" Type="ElementFile" />
+    <ProjectItemFile Source="knockout-2.1.0.js" Target="Scripts\" Type="ElementFile" />
+    <ProjectItemFile Source="wingtip.chromecontrol.js" Target="Scripts\" Type="ElementFile" />
+    <ProjectItemFile Source="wingtip.contextinfo.js" Target="Scripts\" Type="ElementFile" />
+  </Files>
+</ProjectItem>

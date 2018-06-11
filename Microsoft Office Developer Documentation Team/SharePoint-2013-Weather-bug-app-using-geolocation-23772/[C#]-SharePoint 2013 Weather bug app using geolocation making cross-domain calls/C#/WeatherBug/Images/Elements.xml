@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">
+  <Module Name="Images">
+    <File Path="Images\AppIcon.png" Url="Images/AppIcon.png" />
+    <File Path="Images\Day_clear.jpg" Url="Images/Day_clear.jpg" />
+    <File Path="Images\Day_rain.jpg" Url="Images/Day_rain.jpg" />
+    <File Path="Images\Day_snow.jpg" Url="Images/Day_snow.jpg" />
+    <File Path="Images\Night_storm.jpg" Url="Images/Night_storm.jpg" />
+    <File Path="Images\Night_clear.jpg" Url="Images/Night_clear.jpg" />
+    <File Path="Images\Night_snow.jpg" Url="Images/Night_snow.jpg" />
+  </Module>
+</Elements>

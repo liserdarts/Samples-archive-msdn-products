@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package dslVersion="1.0.0.0" 
+        Id="6915a162-77c5-4e63-bcb8-4c853b332af2" 
+        solutionId="6915a162-77c5-4e63-bcb8-4c853b332af2" 
+        xmlns="http://schemas.microsoft.com/VisualStudio/2008/SharePointTools/PackageModel" 
+        name="WeatherBug"
+        sharePointProductVersion="15.0">
+  <features>
+        <featureReference itemId="bb9fba17-1798-45a1-b3c5-a9456b899e41" />
+  </features>
+</package>
