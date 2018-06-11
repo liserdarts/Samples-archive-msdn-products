@@ -1,0 +1,62 @@
+' Microsoft Word 2010/Charting
+
+' Modify the chart title.
+
+' Add a module to the document, and copy the following code
+' into the new module. Add a breakpoint after the call to the AddChart
+' method and press F5 to run the procedure. After hitting the breakpoint,
+' single step through the code (press F8 for each line) to see the
+' behavior of the chart. This will be easiest to see if you
+' arrange the Word window and the VBA window so they're side-by-side
+' on the screen.
+
+' You could easily modify this demonstration to work with PowerPoint by simply
+' replacing the reference to ActiveDocument with ActivePresentation.Slides(1) and
+' changing the enumerations that start with "wd" to start with "mso" instead.
+
+Sub WorkWithTitles()
+    Dim shp As Shape
+    Set shp = ActiveDocument.Shapes.AddChart(xlBarClustered)
+   
+    Dim cht As Chart
+    ' You can check the shp.HasChart property to determine if
+    ' the shape has a chart before continuing, but you can
+    ' be sure this particular shape has a chart because you
+    ' just created it.
+    Set cht = shp.Chart
+   
+    ' Add a title.
+    cht.HasTitle = True
+    With cht.ChartTitle
+        .Text = "Sample Chart"
+       
+        ' Set the orientation of the title, if you like.
+        ' Horizontal is the default, but you can change it
+        ' to something else.
+        .Orientation = XlOrientation.xlHorizontal
+       
+        ' You can format individual characters, or
+        ' the entire title:
+        With .Characters(1, 1).Font
+            .Size = 24
+            .Color = xlRed
+        End With
+       
+        .Characters(2).Font.Size = 14
+       
+        With .Format
+            ' You can modify many other options.
+            ' See the ChartFormat class for more information.
+            .Fill.ForeColor.ObjectThemeColor = wdThemeColorAccent1
+            With .Shadow
+                .ForeColor.ObjectThemeColor = wdThemeColorAccent4
+                .Style = msoShadowStyleOuterShadow
+                .OffsetX = 4
+                .OffsetY = 4
+            End With
+        End With
+       
+        ' Make sure and leave room for the title in the chart.
+        .IncludeInLayout = True
+    End With
+End Sub
