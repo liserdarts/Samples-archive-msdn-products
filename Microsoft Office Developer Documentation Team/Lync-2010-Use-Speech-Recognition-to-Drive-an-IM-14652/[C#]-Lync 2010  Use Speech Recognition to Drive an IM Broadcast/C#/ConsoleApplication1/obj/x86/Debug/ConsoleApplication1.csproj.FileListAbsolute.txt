@@ -1,0 +1,9 @@
+C:\Data\VideoDemo\ConsoleApplication1\ConsoleApplication1\bin\Debug\ConsoleApplication1.exe.config
+C:\Data\VideoDemo\ConsoleApplication1\ConsoleApplication1\bin\Debug\ConsoleApplication1.exe
+C:\Data\VideoDemo\ConsoleApplication1\ConsoleApplication1\bin\Debug\ConsoleApplication1.pdb
+C:\Data\VideoDemo\ConsoleApplication1\ConsoleApplication1\bin\Debug\Microsoft.Lync.Model.dll
+C:\Data\VideoDemo\ConsoleApplication1\ConsoleApplication1\bin\Debug\Microsoft.Office.Uc.dll
+C:\Data\VideoDemo\ConsoleApplication1\ConsoleApplication1\bin\Debug\Microsoft.Lync.Model.xml
+C:\Data\VideoDemo\ConsoleApplication1\ConsoleApplication1\obj\x86\Debug\ResolveAssemblyReference.cache
+C:\Data\VideoDemo\ConsoleApplication1\ConsoleApplication1\obj\x86\Debug\ConsoleApplication1.exe
+C:\Data\VideoDemo\ConsoleApplication1\ConsoleApplication1\obj\x86\Debug\ConsoleApplication1.pdb
