@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Solution xmlns="http://schemas.microsoft.com/sharepoint/" SolutionId="b2353372-729b-46b7-9c9d-771a4c270a86" SharePointProductVersion="14.0">
+  <Assemblies>
+    <Assembly Location="Contoso.SharePoint.Administration.dll" DeploymentTarget="GlobalAssemblyCache" />
+  </Assemblies>
+  <TemplateFiles>
+    <TemplateFile Location="Layouts\Contoso.SharePoint.Administration\ContosoError.aspx" />
+  </TemplateFiles>
+  <FeatureManifests>
+    <FeatureManifest Location="Contoso.SharePoint.Administration_SandboxedSolutionValidator\Feature.xml" />
+  </FeatureManifests>
+</Solution>

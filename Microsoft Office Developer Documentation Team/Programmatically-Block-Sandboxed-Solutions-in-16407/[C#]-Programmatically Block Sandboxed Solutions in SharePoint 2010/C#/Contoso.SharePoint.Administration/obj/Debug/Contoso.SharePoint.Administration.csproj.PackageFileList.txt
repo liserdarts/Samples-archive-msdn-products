@@ -1,0 +1,1 @@
+bin\Debug\Contoso.SharePoint.Administration.wsp

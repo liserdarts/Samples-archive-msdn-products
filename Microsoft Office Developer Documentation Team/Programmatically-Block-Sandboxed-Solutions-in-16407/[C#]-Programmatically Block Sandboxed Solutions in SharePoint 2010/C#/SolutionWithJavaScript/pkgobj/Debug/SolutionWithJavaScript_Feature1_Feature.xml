@@ -1,0 +1,7 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Feature xmlns="http://schemas.microsoft.com/sharepoint/" Title="SolutionWithJavaScript Feature1" Id="b2a6ee5c-72e1-4bba-a2b8-d05158139ee5" Scope="Web">
+  <ElementManifests>
+    <ElementManifest Location="JavaScripts\Elements.xml" />
+    <ElementFile Location="JavaScripts\HelloWorld.js" />
+  </ElementManifests>
+</Feature>

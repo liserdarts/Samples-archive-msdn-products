@@ -1,0 +1,2 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Feature xmlns="http://schemas.microsoft.com/sharepoint/" Title="Contoso Sandboxed Solution Validator" Description="Validates/Blocks sandboxed solutions containing JavaScript files." Id="46463ce8-b13e-4100-8577-51b092e6a549" ReceiverAssembly="Contoso.SharePoint.Administration, Version=1.0.0.0, Culture=neutral, PublicKeyToken=d71e4f7a026b3ae3" ReceiverClass="Contoso.SharePoint.Administration.Features.SandboxedSolutionValidator.SandboxedSolutionValidatorEventReceiver" Scope="Farm"></Feature>

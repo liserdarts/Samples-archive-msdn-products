@@ -1,0 +1,6 @@
+C:\Contoso\Contoso.SharePoint.Administration\obj\Debug\ResolveAssemblyReference.cache
+C:\Contoso\Contoso.SharePoint.Administration\bin\Debug\Contoso.SharePoint.Administration.dll
+C:\Contoso\Contoso.SharePoint.Administration\bin\Debug\Contoso.SharePoint.Administration.pdb
+C:\Contoso\Contoso.SharePoint.Administration\bin\Debug\Microsoft.Sharepoint.Sandbox.dll
+C:\Contoso\Contoso.SharePoint.Administration\obj\Debug\Contoso.SharePoint.Administration.dll
+C:\Contoso\Contoso.SharePoint.Administration\obj\Debug\Contoso.SharePoint.Administration.pdb

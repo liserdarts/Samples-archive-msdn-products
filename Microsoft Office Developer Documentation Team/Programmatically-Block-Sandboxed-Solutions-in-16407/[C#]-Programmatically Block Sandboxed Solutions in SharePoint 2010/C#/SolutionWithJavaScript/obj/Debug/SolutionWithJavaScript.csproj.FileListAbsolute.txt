@@ -1,0 +1,6 @@
+C:\Contoso\SolutionWithJavaScript\bin\Debug\SolutionWithJavaScript.dll
+C:\Contoso\SolutionWithJavaScript\bin\Debug\SolutionWithJavaScript.pdb
+C:\Contoso\SolutionWithJavaScript\bin\Debug\Microsoft.Sharepoint.Sandbox.dll
+C:\Contoso\SolutionWithJavaScript\obj\Debug\ResolveAssemblyReference.cache
+C:\Contoso\SolutionWithJavaScript\obj\Debug\SolutionWithJavaScript.dll
+C:\Contoso\SolutionWithJavaScript\obj\Debug\SolutionWithJavaScript.pdb
