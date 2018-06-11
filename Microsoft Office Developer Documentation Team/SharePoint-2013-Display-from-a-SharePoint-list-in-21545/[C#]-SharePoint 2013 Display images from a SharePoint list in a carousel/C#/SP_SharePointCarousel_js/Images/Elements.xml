@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">
+  <Module Name="Images">
+    <File Path="Images\AppIcon.png" Url="Images/AppIcon.png" />
+    <File Path="Images\1.jpg" Url="Images/1.jpg" />
+    <File Path="Images\2.jpg" Url="Images/2.jpg" />
+    <File Path="Images\3.jpg" Url="Images/3.jpg" />
+    <File Path="Images\4.jpg" Url="Images/4.jpg" />
+    <File Path="Images\5.jpg" Url="Images/5.jpg" />
+    <File Path="Images\6.jpg" Url="Images/6.jpg" />
+    <File Path="Images\7.jpg" Url="Images/7.jpg" />
+    <File Path="Images\8.jpg" Url="Images/8.jpg" />
+    <File Path="Images\9.jpg" Url="Images/9.jpg" />
+    <File Path="Images\10.jpg" Url="Images/10.jpg" />
+    <File Path="Images\11.jpg" Url="Images/11.jpg" />
+    <File Path="Images\12.jpg" Url="Images/12.jpg" />
+    <File Path="Images\13.jpg" Url="Images/13.jpg" />
+    <File Path="Images\14.jpg" Url="Images/14.jpg" />
+    <File Path="Images\15.jpg" Url="Images/15.jpg" />
+    <File Path="Images\16.jpg" Url="Images/16.jpg" />
+    <File Path="Images\next.png" Url="Images/next.png" />
+    <File Path="Images\previous.png" Url="Images/previous.png" />
+  </Module>
+</Elements>

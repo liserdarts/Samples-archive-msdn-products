@@ -1,0 +1,27 @@
+.carousel {
+	border:2px solid #AAAAAA;
+	padding:10px 0;
+}
+.carousel .previous {
+	display:block;
+	height:126px;
+	width:64px;
+	background-image:url('../images/previous.png');
+	float:left;
+	margin:0;
+	padding:0;
+}
+.carousel .next {
+	display:block;
+	height:126px;
+	width:64px;
+	background-image:url('../images/next.png');
+	float:right;
+	margin:0;
+	padding:0;
+}
+.carousel ul li {
+	width:126px;
+	padding:0 2px;
+	margin:0;
+}
