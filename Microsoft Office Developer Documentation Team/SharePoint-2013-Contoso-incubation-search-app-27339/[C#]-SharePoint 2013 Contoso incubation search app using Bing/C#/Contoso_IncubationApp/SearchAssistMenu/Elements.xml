@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">
+  <CustomAction Id="ContosoIncubationApp.SearchAssistMenu"
+                RegistrationType="List"
+                RegistrationId="100"
+                Location="EditControlBlock"
+                Sequence="10001"
+                Title="Find Research Tags">
+    <UrlAction Url="~appWebUrl/Pages/Default.aspx?{StandardTokens}&amp;SPListItemId={ItemId}&amp;SPListId={ListId}&amp;Operation=Search" />
+  </CustomAction>
+    <CustomAction Id="ContosoIncubationApp.TagAssistMenu"
+                RegistrationType="List"
+                RegistrationId="100"
+                Location="EditControlBlock"
+                Sequence="10002"
+                Title="View Research Tags">
+    <UrlAction Url="~appWebUrl/Pages/Default.aspx?{StandardTokens}&amp;SPListItemId={ItemId}&amp;SPListId={ListId}&amp;Operation=Tags" />
+  </CustomAction>
+
+</Elements>

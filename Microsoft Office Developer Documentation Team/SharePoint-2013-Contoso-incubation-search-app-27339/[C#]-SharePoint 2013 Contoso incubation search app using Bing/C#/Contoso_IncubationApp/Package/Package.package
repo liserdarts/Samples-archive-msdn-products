@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package dslVersion="1.0.0.0" 
+        Id="4b3a7d9d-b46a-45f1-b023-1b48b1e1a51a" 
+        solutionId="4b3a7d9d-b46a-45f1-b023-1b48b1e1a51a" 
+        xmlns="http://schemas.microsoft.com/VisualStudio/2008/SharePointTools/PackageModel" 
+        name="Contoso_IncubationApp"
+        sharePointProductVersion="15.0">
+  <features>
+        <featureReference itemId="8fb91d2e-325a-4758-87c4-a8d3971ce8fa" />
+  </features>
+</package>

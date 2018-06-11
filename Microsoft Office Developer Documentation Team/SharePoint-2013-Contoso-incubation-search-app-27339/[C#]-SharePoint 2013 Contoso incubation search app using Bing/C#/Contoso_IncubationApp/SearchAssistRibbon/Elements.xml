@@ -1,0 +1,77 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">
+  <CustomAction Id="ContosoIncubationApp.SearchAssistRibbon"
+                RegistrationType="List"
+                RegistrationId="100"
+                Location="CommandUI.Ribbon"
+                Sequence="10001"
+                Title="Search Assist">
+    <CommandUIExtension>
+      <!-- 
+      Update the UI definitions below with the controls and the command actions
+      that you want to enable for the custom action.
+      -->
+      <CommandUIDefinitions>
+        <CommandUIDefinition Location="Ribbon.Tabs._children">
+          <Tab Id="Ribbon.SearchAssist" Sequence="1000" Description="" Title="Research">
+            <Scaling Id="Ribbon.SearchAssist.Scaling">
+              <MaxSize Id="Ribbon.SearchAssist.Scaling.SearchAssist.MaxSize" Sequence="15" GroupId="Ribbon.SearchAssist" Size="LargeMedium" />
+            </Scaling>
+            <Groups Id="Ribbon.SearchAssist.Groups">
+              <Group Id="Ribbon.SearchAssist" Sequence="15" Description="Contoso Incubation App" Template="Ribbon.Templates.Point8020.CustomTemplate" Title="Research Assistant">
+                <Controls Id="Ribbon.SearchAssist.Controls">
+                  <Button Id="Ribbon.ListItem.Actions.SearchAssistRibbonButton"
+                          Alt="Search"
+                          Sequence="100"
+                          Command="Invoke_SearchAssistRibbonButtonRequest"
+                          LabelText="Find Research Tags"
+                          TemplateAlias="o1"
+                          Image32by32="_layouts/images/versionsHH.png"
+                          Image16by16="/_layouts/images/versionsHH.png" />
+                  <Button Id="Ribbon.ListItem.Actions.TagAssistRibbonButton"
+                          Alt="Tags"
+                          Sequence="100"
+                          Command="Invoke_TagAssistRibbonButtonRequest"
+                          LabelText="View Research Tags"
+                          TemplateAlias="o1"
+                          Image32by32="_layouts/images/centraladmin_security_informationpolicy_32x32.png"
+                          Image16by16="/_layouts/images/centraladmin_security_informationpolicy_32x32.png" />
+                </Controls>
+              </Group>
+            </Groups>
+          </Tab>
+        </CommandUIDefinition>
+        <CommandUIDefinition Location="Ribbon.Templates._children">
+          <GroupTemplate Id="Ribbon.Templates.Point8020.CustomTemplate">
+            <Layout Title="LargeMedium">
+              <OverflowSection Type="OneRow" TemplateAlias="o1" DisplayMode="Large" />
+              <OverflowSection Type="ThreeRow" TemplateAlias="o2" DisplayMode="Medium" />
+            </Layout>
+          </GroupTemplate>
+        </CommandUIDefinition>
+      </CommandUIDefinitions>
+      <CommandUIHandlers>
+        <CommandUIHandler Command="Invoke_SearchAssistRibbonButtonRequest"
+                          CommandAction="~appWebUrl/Pages/Default.aspx?{StandardTokens}&amp;SPListItemId={SelectedItemId}&amp;SPListId={SelectedListId}&amp;Operation=Search"
+                          EnabledScript="javascript: var shouldEnable = function(){
+                            this.clientContext = SP.ClientContext.get_current();
+                            this.selectedItems = SP.ListOperation.Selection.getSelectedItems(this.clientContext);
+                            var selectedCount = CountDictionary(this.selectedItems);
+                            return(selectedCount == 1);  
+                          };
+                          shouldEnable();"
+      />
+        <CommandUIHandler Command="Invoke_TagAssistRibbonButtonRequest"
+                          CommandAction="~appWebUrl/Pages/Default.aspx?{StandardTokens}&amp;SPListItemId={SelectedItemId}&amp;SPListId={SelectedListId}&amp;Operation=Tags"
+                          EnabledScript="javascript: var shouldEnable = function(){
+                            this.clientContext = SP.ClientContext.get_current();
+                            this.selectedItems = SP.ListOperation.Selection.getSelectedItems(this.clientContext);
+                            var selectedCount = CountDictionary(this.selectedItems);
+                            return(selectedCount == 1);  
+                          };
+                          shouldEnable();"
+      />
+      </CommandUIHandlers>
+    </CommandUIExtension >
+  </CustomAction>
+</Elements>

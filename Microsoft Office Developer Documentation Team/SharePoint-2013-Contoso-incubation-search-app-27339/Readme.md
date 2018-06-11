@@ -1,0 +1,250 @@
+# SharePoint 2013: Contoso incubation search app using Bing
+## Requires
+* Visual Studio 2013
+## License
+* Apache License, Version 2.0
+## Technologies
+* Sharepoint Online
+* SharePoint Server 2013
+* apps for SharePoint
+## Topics
+* Javascript
+* Development
+* UI Design
+* apps for SharePoint
+* Cloud Computing
+## IsPublished
+* True
+## ModifiedDate
+* 2014-02-28 04:28:37
+## Description
+
+<div id="header">
+<table id="bottomTable" cellspacing="0" cellpadding="0">
+<tbody>
+<tr id="headerTableRow1">
+<td align="left"><span id="runningHeaderText">&nbsp;</span></td>
+</tr>
+<tr id="headerTableRow2">
+<td align="left"><span id="nsrTitle">SharePoint 2013: Contoso incubation search app using Bing</span></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div id="mainSection">
+<div id="mainBody">
+<div>
+<p>This sample demonstrates how to use JavaScript, jQuery, the SharePoint JavaScript object model, the SharePoint Search REST API, and the Windows Azure Marketplace Bing Search API in a SharePoint-hosted app.</p>
+</div>
+<div>
+<p><strong>Last modified: </strong>February 23, 2014</p>
+<p><strong>In this article</strong> <br>
+<a href="#sectionSection0">The app in action</a> <br>
+<a href="#sectionSection1">Prerequisites</a> <br>
+<a href="#sectionSection2">Key components of the sample</a> <br>
+<a href="#sectionSection3">Configure the sample</a> <br>
+<a href="#sectionSection4">Troubleshooting</a> <br>
+<a href="#sectionSection5">Features in this sample</a> <br>
+<a href="#sectionSection6">Change log</a> <br>
+<a href="#sectionSection7">Additional resources</a></p>
+<p>Wouldn't it be great to incorporate the power of Bing search and SharePoint search in your app? The Contoso incubate search app shows exactly how to do that.</p>
+<p>Contoso has a team of researchers, and they're always having bright ideas that they store in a SharePoint list. To save time in the incubation process, they want as much relevant information as possible to be associated with the ideas. They know that they
+ can use Bing to search for publicly available documents on the web, and they can always leverage previous work they've done in-house by using SharePoint search. But they want the search to be easily accessible when they're actually working on an idea. They'd
+ love to see results from the web displayed alongside their own SharePoint search results so they can quickly tag the information they think might be relevant to each idea. Of course, they want to share their research findings with the rest of the team, so
+ they'd like to store those tagged items so the whole team can benefit.</p>
+<p>This sample is the app that Contoso built to help their research team. The ideas are stored in a SharePoint list that provides ribbon controls and menu items you use to access the app's search page. You can search SharePoint data (by using the SharePoint
+ Search REST API), the Internet (by using the Bing Search API), or both. You can preview search results, and then tag useful results so you can quickly access them later. The URLs of tagged results are stored in a hidden list that is related to the
+<strong><span class="ui">Ideas</span></strong> list by a SharePoint lookup field. Therefore implementing the app as a SharePoint-hosted app is the best approach.</p>
+</div>
+<h1>The app in action</h1>
+<div id="sectionSection0">
+<p>The app opens and displays a link to the <strong><span class="ui">Ideas</span></strong> list, as shown in Figure 1.</p>
+<strong>
+<div class="caption">Figure 1. Link to the Ideas list</div>
+</strong><br>
+<strong>&nbsp;</strong><img src="/site/view/file/109691/1/image.png" alt="">
+<p>You can find or view research tags from the ribbon or from a list item menu, as shown in Figure 2.</p>
+<strong>
+<div class="caption">Figure 2. Find Research Tags and View Research Tags ribbon buttons and list menu items</div>
+</strong><br>
+<strong>&nbsp;</strong><img src="/site/view/file/109692/1/image.png" alt="">
+<p>Figure 3 shows the page that opens when you choose <strong><span class="ui">Find Research Tags</span></strong>. Here you can choose your search parameters.</p>
+<strong>
+<div class="caption">Figure 3. The search page</div>
+</strong><br>
+<strong>&nbsp;</strong><img src="/site/view/file/109693/1/image.png" alt="">
+<p>Figure 4 shows the search results.</p>
+<strong>
+<div class="caption">Figure 4. Search results include SharePoint results and Bing results</div>
+</strong><br>
+<strong>&nbsp;</strong><img src="/site/view/file/109694/1/image.png" alt="">
+<p>You can tag results, as shown in Figure 5. This links them to the current list item in the
+<strong><span class="ui">Ideas</span></strong> list.</p>
+<strong>
+<div class="caption">Figure 5. Tagging results that you want to save</div>
+</strong><br>
+<strong>&nbsp;</strong><img src="/site/view/file/109695/1/image.png" alt="">
+<p>Figure 6 shows the Tagged Results list.</p>
+<strong>
+<div class="caption">Figure 6. A list of tagged results</div>
+</strong><br>
+<strong>&nbsp;</strong><img src="/site/view/file/109696/1/image.png" alt="">
+<p>You can remove a tag from the Tagged Results list. Figure 7 shows the confirmation dialog box for removing a tag.</p>
+<strong>
+<div class="caption">Figure 7. Confirmation to remove a tag</div>
+</strong><br>
+<strong>&nbsp;</strong><img src="/site/view/file/109697/1/image.png" alt=""></div>
+<h1>Prerequisites</h1>
+<div id="sectionSection1">
+<p>This sample requires the following:</p>
+<ul>
+<li>
+<p>A developer key for the Windows Azure Marketplace Bing Search API</p>
+</li><li>
+<p>Visual Studio 2013 (Professional or Ultimate edition)</p>
+</li><li>
+<p>An Office 365 Developer Site, or a SharePoint 2013 environment configured to host apps. You can get a free trial here:
+<a href="http://msdn.microsoft.com/en-us/library/office/fp179924.aspx" target="_blank">
+Sign up for an Office 365 Developer Site</a></p>
+</li></ul>
+</div>
+<h1>Key components of the sample</h1>
+<div id="sectionSection2">
+<p>The <strong><span class="ui">Contoso_IncubationApp</span></strong> project in the sample contains the following key components:</p>
+<ul>
+<li>
+<p>App.css style sheet in the <strong><span class="ui">Content</span></strong> folder</p>
+</li><li>
+<p>AppManifest.xml manifest file</p>
+</li><li>
+<p>Various images in the <strong><span class="ui">Images</span></strong> folder</p>
+</li><li>
+<p>Default.aspx file in the <strong><span class="ui">Pages</span></strong> folder</p>
+</li><li>
+<p>App.js file in the <strong><span class="ui">Scripts</span></strong> folder</p>
+</li><li>
+<p><strong><span class="ui">SearchAssistMenu</span> </strong>custom action definition</p>
+</li><li>
+<p><strong><span class="ui">SearchAssistRibbon</span> </strong>custom action definition</p>
+</li></ul>
+<p>All other files are automatically provided by the Visual Studio project template for SharePoint-hosted apps, and they have not been modified for this sample app.</p>
+</div>
+<h1>Configure the sample</h1>
+<div id="sectionSection3">
+<p>Follow these steps to configure, build, and run the sample app.</p>
+<h3>To configure and build the sample</h3>
+<div>
+<ol>
+<li>
+<p>Browse to the <a href="http://datamarket.azure.com/dataset/bing/search" target="_blank">
+Windows Azure Marketplace</a> (http://datamarket.azure.com/dataset/bing/search) and sign in using your Microsoft account credentials.</p>
+</li><li>
+<p>On the <strong><span class="ui">My Account</span></strong> tab, in the <strong>
+<span class="ui">my account</span></strong> section, choose <strong><span class="ui">ACCOUNT KEYS</span></strong>.</p>
+</li><li>
+<p>Choose the <strong><span class="ui">Add</span></strong> button.</p>
+</li><li>
+<p>Enter a description (such as <span>IncubationApp</span>) and then choose <strong>
+<span class="ui">Save</span></strong>. Copy the new key to the clipboard.</p>
+</li><li>
+<p>Open the <strong>Contoso_IncubationApp.sln</strong> file in Visual Studio.</p>
+</li><li>
+<p>In <strong><span class="ui">Solution Explorer</span></strong>, choose the <strong>
+<span class="ui">Contoso_IncubationApp</span></strong> project.</p>
+</li><li>
+<p>In the <strong><span class="ui">Properties</span></strong> window, in the <strong>
+<span class="ui">Site URL</span></strong> property, enter the URL of the SharePoint site to deploy the app to. Be sure to include the closing forward slash.</p>
+<p>If prompted, log on with your SharePoint or Office 365 credentials.</p>
+</li><li>
+<p>In <strong><span class="ui">Solution Explorer</span></strong>, expand the <strong>
+<span class="ui">Scripts</span></strong> folder, and then open the App.js file.</p>
+</li><li>
+<p>Enter the key that you copied in Step 4 as the value for the <strong><span class="keyword">accountKey</span></strong> variable.</p>
+</li><li>
+<p>On the menu bar, choose <strong><span class="ui">File</span></strong>&gt;<strong><span class="ui">Save All</span></strong>.</p>
+</li><li>
+<p>On the menu bar, choose <strong><span class="ui">Build</span></strong>&gt;<strong><span class="ui">Build Solution</span></strong> to build the solution.</p>
+</li></ol>
+</div>
+<h3>To run and test the sample</h3>
+<div>
+<ol>
+<li>
+<p>Choose the <strong><span class="ui">F5</span></strong> key to run the app.</p>
+<p>If prompted, log on with your SharePoint or Office 365 credentials.</p>
+</li><li>
+<p>In the <strong><span class="ui">Do you trust</span></strong> page, choose the
+<strong><span class="ui">Trust It</span></strong> button to grant the app the required permissions.</p>
+</li><li>
+<p>Use the app as shown in <a href="#AppInAction">The app in action</a>.</p>
+</li></ol>
+</div>
+</div>
+<h1>Troubleshooting</h1>
+<div id="sectionSection4">
+<p>Ensure you have completed all the steps in the <a href="#ConfigureTheSample">
+Configure the sample</a> section.</p>
+</div>
+<h1>Features in this sample</h1>
+<div id="sectionSection5">
+<p>The sample demonstrates how to use:</p>
+<ul>
+<li>
+<p>HTML and Cascading Style Sheets (CSS) to define the basic UI for an app.</p>
+</li><li>
+<p>jQuery to add fluidity and a professional look-and-feel to the UI.</p>
+</li><li>
+<p>JavaScript and the SharePoint JavaScript object model to create lists on the SharePoint host site.</p>
+</li><li>
+<p>SharePoint Search REST API to search for SharePoint items.</p>
+</li><li>
+<p>Windows Azure Marketplace Bing Search API to search for items on the Internet.</p>
+</li><li>
+<p>JavaScript and the SharePoint JavaScript object model to read and write data to lists on the host site</p>
+</li></ul>
+</div>
+<h1>Change log</h1>
+<div id="sectionSection6"><strong>
+<div class="caption"></div>
+</strong>
+<div>
+<table cellspacing="2" cellpadding="5" width="50%" frame="lhs">
+<tbody>
+<tr>
+<th>
+<p>Version</p>
+</th>
+<th>
+<p>Date</p>
+</th>
+</tr>
+<tr>
+<td>
+<p>First version</p>
+</td>
+<td>
+<p>March 2014</p>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<h1>Additional resources</h1>
+<div id="sectionSection7">
+<ul>
+<li>
+<p><a href="http://msdn.microsoft.com/en-us/office/dn594490" target="_blank">Showcase: Contoso incubation search</a></p>
+</li><li>
+<p><a href="http://msdn.microsoft.com/en-us/library/office/fp142379.aspx" target="_blank">How to: Create a basic SharePoint-hosted app</a></p>
+</li><li>
+<p><a href="http://msdn.microsoft.com/en-us/library/fp179933.aspx" target="_blank">Deploying and installing apps for SharePoint: methods and options</a></p>
+</li><li>
+<p><a href="http://msdn.microsoft.com/en-us/library/fp179912.aspx" target="_blank">How to: Complete basic operations using SharePoint 2013 client library code</a></p>
+</li><li>
+<p><a href="http://msdn.microsoft.com/en-us/library/jj163980.aspx" target="_blank">Get started developing apps for SharePoint</a></p>
+</li></ul>
+</div>
+</div>
+</div>
+<p>&nbsp;</p>
