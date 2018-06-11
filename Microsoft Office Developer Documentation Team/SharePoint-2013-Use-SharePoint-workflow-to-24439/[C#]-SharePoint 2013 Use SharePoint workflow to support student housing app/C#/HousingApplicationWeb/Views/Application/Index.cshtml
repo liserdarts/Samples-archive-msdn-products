@@ -1,0 +1,69 @@
+﻿@model HousingApplicationWeb.ViewModels.ApplicationViewModel
+
+@{
+    ViewBag.Title = "Apply for Housing";
+}
+
+<script type="text/javascript">
+    $(document).ready(function () {
+        $("#submitButton").click(function () {
+            var id = $("#studentId").val();
+            var lastName = $("#lastName").val();
+            var firstName = $("#firstName").val();
+            var request = $("#Facilities_Keys :selected").text();
+            var appWebUrl = $("#appWebUrl").val();
+            var hostWebUrl = $("#hostWebUrl").val();
+            window.location = "/Application/SubmitApplication?Id=" + id + "&LastName=" + lastName + "&FirstName=" + firstName + "&Request=" + request + "&SPAppWebUrl=" + appWebUrl + "&SPHostUrl=" + hostWebUrl;
+            return false;
+        });
+    });
+</script>
+
+<input type="hidden" id="appWebUrl" value="@Model.AppWebUrl" />
+<input type="hidden" id="hostWebUrl" value="@Model.HostWebUrl" />
+
+<form>
+<table>
+    <tr>
+        <td>Student ID</td>
+        <td>
+            <input id="studentId" type="text" value="@Model.StudentId" autofocus required placeholder="111-111-1111" />
+            <div class="error">Student ID is required</div>
+        </td>
+    </tr>
+    <tr>
+        <td>First Name</td>
+        <td>
+            <input id="firstName" type="text" required placeholder="John" />
+            <div class="error">First Name is required</div>
+        </td>
+    </tr>
+    <tr>
+        <td>Last Name</td>
+        <td>
+            <input id="lastName" type="text" required placeholder="Doe" />
+            <div class="error">Last Name is required</div>
+        </td>
+    </tr>
+    <tr>
+        <td>Requested Housing</td>
+        <td>
+            @Html.DropDownListFor(m=>m.Facilities.Keys, new SelectList(Model.Facilities,"Key","Value"))
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <div style="margin-top:5px;padding-top:5px;">
+                <input id="resetButton" type="reset" class="app-button" />
+            </div>
+        </td>
+        <td>
+            <div style="margin-top:5px;padding-top:5px;">
+                <button id="submitButton"  value="Submit" class="app-button">
+                    Submit
+                </button>
+            </div>
+        </td>
+    </tr>
+</table>
+</form>

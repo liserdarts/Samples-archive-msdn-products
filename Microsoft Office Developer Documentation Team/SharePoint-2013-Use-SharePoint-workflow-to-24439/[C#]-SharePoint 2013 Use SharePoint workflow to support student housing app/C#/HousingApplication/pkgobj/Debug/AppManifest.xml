@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!--Created:cb85b80c-f585-40ff-8bfc-12ff4d0e34a9-->
+<App xmlns="http://schemas.microsoft.com/sharepoint/2012/app/manifest" Name="HousingApplication" ProductID="{2faee708-b353-4048-9a99-70742c0a0728}" Version="1.0.0.0" SharePointMinVersion="15.0.0.0">
+  <Properties>
+    <Title>Housing Application</Title>
+    <StartPage>https://localhost:44327/Welcome?{StandardTokens}</StartPage>
+  </Properties>
+  <AppPrincipal>
+    <AutoDeployedWebApplication>
+      <DebugInfo ClientSecret="YO8/N0RULb6p02n5Gv0uKATgdXmRQoM8O7OQPXgVr5c=" AppUrl="https://localhost:44327/" />
+    </AutoDeployedWebApplication>
+  </AppPrincipal>
+  <AppPrerequisites>
+    <AppPrerequisite Type="Capability" ID="CDD8F991-B459-4512-8048-03D5A03FF27E" />
+  </AppPrerequisites>
+</App>

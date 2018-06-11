@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Feature xmlns="http://schemas.microsoft.com/sharepoint/" Id="f10e8c11-e4fe-4e79-96d2-e8ca3227fd65" Scope="Web" Title="HousingApplication Feature1" Version="1.0.0.0">
+  <ElementManifests>
+    <ElementManifest Location="HousingInstance\Elements.xml" />
+    <ElementManifest Location="Housing\Elements.xml" />
+    <ElementFile Location="Housing\Schema.xml" />
+    <ElementManifest Location="ApplicationInstance\Elements.xml" />
+    <ElementManifest Location="Application\Elements.xml" />
+    <ElementFile Location="Application\Schema.xml" />
+    <ElementManifest Location="WorkflowHistoryList\Elements.xml" />
+    <ElementManifest Location="WorkflowTaskList\Elements.xml" />
+  </ElementManifests>
+  <UpgradeActions>
+    <VersionRange>
+      <ApplyElementManifests>
+        <ElementManifest Location="HousingInstance\Elements.xml" />
+        <ElementManifest Location="Housing\Elements.xml" />
+        <ElementManifest Location="ApplicationInstance\Elements.xml" />
+        <ElementManifest Location="Application\Elements.xml" />
+        <ElementManifest Location="WorkflowHistoryList\Elements.xml" />
+        <ElementManifest Location="WorkflowTaskList\Elements.xml" />
+      </ApplyElementManifests>
+    </VersionRange>
+  </UpgradeActions>
+</Feature>

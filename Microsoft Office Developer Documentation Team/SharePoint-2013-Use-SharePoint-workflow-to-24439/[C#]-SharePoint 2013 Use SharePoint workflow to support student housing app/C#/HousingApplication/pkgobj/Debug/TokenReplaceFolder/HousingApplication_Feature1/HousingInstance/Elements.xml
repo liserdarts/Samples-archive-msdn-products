@@ -1,0 +1,81 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">
+  <ListInstance Title="Housing" OnQuickLaunch="TRUE" TemplateType="10000" Url="Lists/Housing" Description="Available housing">
+    <Data>
+      <Rows>
+        <Row>
+          <Field Name="Title">Alumni Quad</Field>
+          <Field Name="RequiredStanding">Freshman</Field>
+        </Row>
+        <Row>
+          <Field Name="Title">Burke Hall</Field>
+          <Field Name="RequiredStanding">Sophomore</Field>
+        </Row>
+        <Row>
+          <Field Name="Title">Campus Apartments</Field>
+          <Field Name="RequiredStanding">Junior</Field>
+        </Row>
+        <Row>
+          <Field Name="Title">Doyle Suites</Field>
+          <Field Name="RequiredStanding">Senior</Field>
+        </Row>
+        <Row>
+          <Field Name="Title">East Campus</Field>
+          <Field Name="RequiredStanding">Graduate</Field>
+        </Row>
+        <Row>
+          <Field Name="Title">Erickson Commons</Field>
+          <Field Name="RequiredStanding">Freshman</Field>
+        </Row>
+        <Row>
+          <Field Name="Title">Hilltop Residence</Field>
+          <Field Name="RequiredStanding">Sophomore</Field>
+        </Row>
+        <Row>
+          <Field Name="Title">Hilltop Apartments</Field>
+          <Field Name="RequiredStanding">Junior</Field>
+        </Row>
+        <Row>
+          <Field Name="Title">Holt Suites</Field>
+          <Field Name="RequiredStanding">Senior</Field>
+        </Row>
+        <Row>
+          <Field Name="Title">Huff Village</Field>
+          <Field Name="RequiredStanding">Graduate</Field>
+        </Row>
+        <Row>
+          <Field Name="Title">Madsen Apartments</Field>
+          <Field Name="RequiredStanding">Freshman</Field>
+        </Row>
+        <Row>
+          <Field Name="Title">Mahood Hall</Field>
+          <Field Name="RequiredStanding">Sophomore</Field>
+        </Row>
+        <Row>
+          <Field Name="Title">Northwest</Field>
+          <Field Name="RequiredStanding">Junior</Field>
+        </Row>
+        <Row>
+          <Field Name="Title">North Campus</Field>
+          <Field Name="RequiredStanding">Senior</Field>
+        </Row>
+        <Row>
+          <Field Name="Title">Shirley</Field>
+          <Field Name="RequiredStanding">Graduate</Field>
+        </Row>
+        <Row>
+          <Field Name="Title">South Campus</Field>
+          <Field Name="RequiredStanding">Freshman</Field>
+        </Row>
+        <Row>
+          <Field Name="Title">Towers</Field>
+          <Field Name="RequiredStanding">Sophomore</Field>
+        </Row>
+        <Row>
+          <Field Name="Title">West Campus</Field>
+          <Field Name="RequiredStanding">Junior</Field>
+        </Row>
+      </Rows>
+    </Data>
+  </ListInstance>
+</Elements>

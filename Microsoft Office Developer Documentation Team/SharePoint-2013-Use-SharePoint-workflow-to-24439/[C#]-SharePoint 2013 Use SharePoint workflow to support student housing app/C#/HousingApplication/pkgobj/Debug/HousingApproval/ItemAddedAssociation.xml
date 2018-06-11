@@ -1,0 +1,10 @@
+﻿<WorkflowAssociation xmlns="http://schemas.microsoft.com/sharepoint/2012/app/workflow">
+  <Description>HousingApproval - ItemAdded</Description>
+  <DisplayName>HousingApproval - ItemAdded</DisplayName>
+  <Enabled>true</Enabled>
+  <EventSourceGUID>Lists/Application</EventSourceGUID>
+  <EventType>ItemAdded</EventType>
+  <HistoryListId>Lists/WorkflowHistoryList</HistoryListId>
+  <Id>0d171e77-c001-484f-9cc0-88248f834876</Id>
+  <TaskListId>Lists/WorkflowTaskList</TaskListId>
+</WorkflowAssociation>

@@ -1,0 +1,297 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
+    <head><link rel="stylesheet" type="text/css" href="description/Combined.css,0:HeaderFooterSprite,0:Header.NonMtps,1:LinkList;/Areas/Centers/Themes/StandardDevCenter/Content:0,/Areas/Epx/Themes/Base/Content:1&amp;amp;hashKey=C9973DA951AE6202C9B348379A1BE49D" xmlns="http://www.w3.org/1999/xhtml" />
+<link type="text/css" rel="stylesheet" xmlns="http://www.w3.org/1999/xhtml" />
+<link rel="stylesheet" type="text/css" href="description/1b88b18a-5268-4861-9da2-6c6e2539edaaCombined.css,0:HeaderFooterSprite,0:Footer.NonMtps,1:LinkList;/Areas/Centers/Themes/StandardDevCenter/Content:0,/Areas/Epx/Themes/Base/Content:1&amp;amp;hashKey=F576C687BC536B84D6E5B3246EE39B49" xmlns="http://www.w3.org/1999/xhtml" />
+<link type="text/css" rel="stylesheet" xmlns="http://www.w3.org/1999/xhtml" />
+
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <title>SharePoint 2013: Use SharePoint workflow to support student housing app</title>
+        <link href="description/Galleries.css" type="text/css" rel="Stylesheet" /><link href="description/Layout.css" type="text/css" rel="Stylesheet" /><link href="description/Brand.css" type="text/css" rel="Stylesheet" />
+        <link href="description/iframedescription.css" rel="Stylesheet" type="text/css" />
+        <script src="description/offline.js" type="text/javascript"></script>
+        <style type="text/css">
+            #projectInfo {
+                overflow: auto;
+            }
+            #longDesc {
+                clear:both;
+                margin: 25px 0 10px 0;
+            }
+
+            #SampleIndexList{
+                margin-left: 15px;
+            }
+        </style>
+    </head>
+<body>
+    <div id="offlineDescription">
+        <h1>SharePoint 2013: Use SharePoint workflow to support student housing app</h1>
+        <br/>
+        <div id="projectInfo">
+            <div class="section">
+                    <div class="itemBarLong tagsContainer">
+                        <label for="Technologies">Technologies</label>
+                        <div id="Technologies">
+                            Javascript, Sharepoint Online, SharePoint Server 2013, SharePoint Foundation 2013
+                        </div>
+                    </div>
+                    <div class="itemBarLong tagsContainer">
+                        <label for="Topics">Topics</label>
+                        <div id="Topics">
+                            Workflows
+                        </div>
+                    </div>
+                <div class="itemBarLong">
+                    <label for="Platforms">Platforms</label>
+                    <div id="Platforms">
+                        Cloud
+                    </div>
+                </div>
+                <div class="itemBarLong">
+                    <label for="Requirements">Requirements</label>
+                    <div id="Requirements">
+                        
+                    </div>
+                </div>
+                <div class="itemBar">
+                    <label for="LastUpdated">Primary language</label>
+                    <div id="LastUpdated">en-US</div>
+                </div>
+                <div class="itemBar">
+                    <label for="LastUpdated">Updated</label>
+                    <div id="LastUpdated">8/19/2013</div>
+                </div>
+                <div class="itemBarLong">
+                    <label for="License">License</label>
+                    <div id="License">
+                        <a href="license.rtf">Apache License, Version 2.0</a></div>
+                </div>
+                <div class="itemBar">
+                    <div class="viewonlinecont">
+                        <a data-link="online" href="http://code.msdn.microsoft.com/SharePoint-2013-Use-20309ec5">View this sample online</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+                   
+<script type="text/javascript">
+    function initializePage() {
+        var otherTabClass = 'otherTab';
+        var hiddenPreClass = 'hidden';
+
+        var htmlDecode = function(encodedData) {
+            var decodedData = "";
+            if (encodedData) {
+                var div = document.createElement('div');
+                div.innerHTML = encodedData;
+                decodedData = div.firstChild.nodeValue.replace( /\\r\\n/ig , '\r\n');
+            }
+            return decodedData;
+        };
+                
+        Galleries.iterateElem(Galleries.findElem(null, 'div', 'scriptcode'), function (index, scriptBlock) {
+            var titleElem = Galleries.findElem(scriptBlock, 'div', 'title')[0];
+            var labelElems = Galleries.findElem(titleElem, 'span');
+            if (labelElems.length == 0) {
+                labelElems = titleElem;
+            }
+            var languageSpans = Galleries.findElem(scriptBlock, 'span', 'hidden');
+            var pres = Galleries.findElem(scriptBlock, 'pre');
+            if (languageSpans.length > 0 && pres.length > 1) {
+                Galleries.iterateElem(labelElems, function(index, elem) {
+                    var codePre = pres[index];
+                    var labelSpan = elem;
+                    var languageSpan = languageSpans[index];
+                            
+                    elem.code = codePre.innerHTML.replace( /(\r(\n)?)|((\r)?\n)/ig , '\\r\\n');
+                            
+                    codePre.className = codePre.className.replace(hiddenPreClass, '');
+                            
+                    languageSpan.parentNode.removeChild(languageSpan);
+                });
+
+                pres = Galleries.findElem(scriptBlock, 'pre');
+                Galleries.iterateElem(labelElems, function(index, elem) {
+                    var codePre = pres[index];
+                    var labelSpan = elem;
+                    if (index == 0) {
+                        scriptBlock.activeTab = 0;
+                    }
+                    else {
+                        labelSpan.className += otherTabClass;
+                        codePre.className += hiddenPreClass;
+                    }
+                    Galleries.attachEventHandler(labelSpan, 'click', function(e) {
+                        var activeTab = scriptBlock.activeTab;
+                        labelElems[activeTab].className += otherTabClass;
+                        pres[activeTab].className += hiddenPreClass;
+
+                        codePre.className = codePre.className.replace(hiddenPreClass, '');
+                        labelSpan.className = labelSpan.className.replace(otherTabClass, '');
+                        scriptBlock.activeTab = index;
+                    });
+                });
+
+                var preview = Galleries.findElem(scriptBlock, 'div', 'preview');
+                if (preview.length == 0) {
+                    preview.push(pres[pres.length - 1]);
+                }
+                Galleries.iterateElem(preview, function(index, elem) {
+                    elem.parentNode.removeChild(elem);
+                });
+
+                if (window.clipboardData && clipboardData.setData) {
+                    var copyLink = document.createElement('a');
+                    copyLink.href = 'javascript:void(0);';
+                    copyLink.className = 'copyCode';
+                    copyLink.innerHTML = 'Copy code';
+                    Galleries.attachEventHandler(copyLink, 'click', function (e) {
+                        clipboardData.setData("Text", htmlDecode(labelElems[scriptBlock.activeTab].code));
+                        return false;
+                    });
+                    scriptBlock.insertBefore(copyLink, scriptBlock.childNodes[0]);
+                }
+            }
+        });
+    }
+
+    Galleries.onWindowLoad(function(){
+        initializePage();
+    });
+
+</script>
+<div id="longDesc">
+    
+<div id="header">
+<table id="bottomTable" cellpadding="0" cellspacing="0">
+<tbody>
+<tr id="headerTableRow1">
+<td align="left"><span id="runningHeaderText"></span></td>
+</tr>
+<tr id="headerTableRow2">
+<td align="left"><span id="nsrTitle">SharePoint 2013: Use SharePoint workflow to support student housing app</span>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div id="mainSection">
+<div id="mainBody">
+<div>
+<p>Demonstrates how to use a SharePoint workflow and custom REST service to power an app that manages student housing applications.</p>
+</div>
+<div>
+<p><span>Provided by:</span> <a href="http://mvp.microsoft.com/en-us/mvp/Scot%20Hillier-33471" >
+Scot Hillier</a>, <a href="http://www.criticalpathtraining.com/Pages/default.aspx" >
+Critical Path Training</a></p>
+<p>This sample demonstrates a provider-hosted app written in ASP.NET MVC 4 using a SharePoint workflow that calls a custom Representational State Transfer (REST) service.</p>
+<p>This sample simulates a college student applying for housing. The student provides some personal information and selects a housing facility. The SharePoint workflow calls the REST service to get the applicant's completed credit hours. The workflow then compares
+ the completed credit hours with the required standing for the requested facility. Approval or rejection of the request is based on the applicant's current standing compared to the required standing.</p>
+</div>
+<h1>Prerequisites</h1>
+<div id="sectionSection0" name="collapseableSection">
+<p>This sample requires the following:</p>
+<ul>
+<li>
+<p>A SharePoint 2013 development environment</p>
+</li><li>
+<p>Visual Studio 2012 and Office Developer Tools for Visual Studio 2012</p>
+</li></ul>
+</div>
+<h1>Key components</h1>
+<div id="sectionSection1" name="collapseableSection">
+<p>The sample is a provider-hosted app written using the <b><span class="ui">ASP.NET MVC 4 Web Application</span></b> project template in Visual Studio. The app consists of a user interface and a REST service. This demonstrates how a provider-hosted app can
+ also host a REST service, which in turn can be called by a workflow defined in the app.
+</p>
+<p>The REST service in the sample assigns a random number of completed credits. The
+<b><span class="keyword">HousingApplicationWeb</span></b> project is the MVC 4 application, which contains the key code in the
+<b><span class="keyword">Controllers</span></b> folder. The <b><span class="keyword">HousingApplication</span></b> project contains the list definitions and the approval workflow.</p>
+</div>
+<h1>Configure the sample</h1>
+<div id="sectionSection2" name="collapseableSection">
+<p>No special configuration is required. The REST call made from the workflow is hard-coded to call into the debugging URI of the
+<b><span class="keyword">HousingApplicationWeb</span></b> project.</p>
+</div>
+<h1>Build, run, and test the sample</h1>
+<div id="sectionSection3" name="collapseableSection">
+<div>
+<ol>
+<li>
+<p>Open the <b><span class="keyword">HousingApplication.sln</span></b> solution in Visual Studio 2012.</p>
+</li><li>
+<p>Edit the <b><span class="keyword">Site URL</span></b> property to refer to a test site where you will deploy the solution.</p>
+</li><li>
+<p>Edit the <b><span class="keyword">web.config</span></b><b><span class="keyword">appSettings</span></b> to refer to your test certificate.</p>
+</li><li>
+<p>Press F5.</p>
+</li><li>
+<p>When prompted, grant permissions for the app.</p>
+</li><li>
+<p>When the app appears, you will see a welcome page.</p>
+</li><li>
+<p>Use the menu associated with the gear icon and select <b><span class="ui">Apply</span></b>.</p>
+</li><li>
+<p>Fill out the application and submit. The app then displays the <b><span class="ui">Status</span></b> page.</p>
+</li><li>
+<p>Refresh the <b><span class="ui">Status</span></b> page several times until the workflow finishes. You will see an acceptance or rejection notice.</p>
+</li></ol>
+</div>
+</div>
+<h1>Troubleshooting</h1>
+<div id="sectionSection4" name="collapseableSection">
+<p>If the workflow is not called properly, check the hard-coded URI in the workflow.</p>
+</div>
+<h1>Change log</h1>
+<div id="sectionSection5" name="collapseableSection"><b>
+<div class="caption"></div>
+</b>
+<div>
+<table width="50%" cellspacing="2" cellpadding="5" frame="lhs">
+<tbody>
+<tr>
+<th>
+<p>Version</p>
+</th>
+<th>
+<p>Date</p>
+</th>
+</tr>
+<tr>
+<td>
+<p>First version</p>
+</td>
+<td>
+<p>August 2013</p>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<h1>Related content</h1>
+<div id="sectionSection6" name="collapseableSection">
+<ul>
+<li>
+<p><a href="http://msdn.microsoft.com/en-us/library/fp179887.aspx#Self_hosted" >SharePoint 2013 provider-hosted apps</a>
+</p>
+</li><li>
+<p><a href="http://msdn.microsoft.com/en-us/library/jj163986.aspx" >SharePoint 2013 workflows</a>
+</p>
+</li><li>
+<p><a href="http://msdn.microsoft.com/en-us/library/fp142380.aspx" >Get started with the SharePoint 2013 REST service</a>
+</p>
+</li><li>
+<p><a href="http://www.asp.net/mvc/mvc4" >ASP.NET MVC 4</a> </p>
+</li></ul>
+</div>
+</div>
+</div>
+
+</div>
+
+
+    </div>
+</body>
+</html>
