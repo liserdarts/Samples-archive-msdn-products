@@ -1,0 +1,183 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<List xmlns:ows="Microsoft SharePoint" Title="Initiative" Direction="$Resources:Direction;" Url="Lists/Initiative" EnableContentTypes="TRUE" MultipleTypes="TRUE" BaseType="0" xmlns="http://schemas.microsoft.com/sharepoint/">
+  <MetaData>
+    <ContentTypes>
+      
+    <ContentType ID="0x0100992c6ec2ecc24f85a12b95b1a469a909" Name="ListFieldsContentType"><FieldRefs><FieldRef ID="{fa564e0f-0c70-4ab9-b863-0177e6ddd247}" Name="Title" /><FieldRef ID="{64cd368d-2f95-4bfc-a1f9-8d4324ecb007}" Name="EventDate" /><FieldRef ID="{2684f9f2-54be-429f-ba06-76754fc056bf}" Name="EndDate" /><FieldRef ID="{2f365e6e-3e90-49c8-90bc-9caad2f291c2}" Name="FundTargets" /><FieldRef ID="{a580f4ea-0637-4a13-9725-c806f781268d}" Name="ManHours" /><FieldRef ID="{1f3d76d1-527a-4fe7-ab22-57f6510034f4}" Name="Roles" /><FieldRef ID="{584be194-e33d-4238-bfb3-f358b1c0c5e3}" Name="Volunteers" /><FieldRef ID="{8150b046-93aa-46ca-a9e5-02ecc225d137}" Name="Initiator" /><FieldRef ID="{1DAB9B48-2D1A-47b3-878C-8E84F0D211BA}" Name="_Status" /></FieldRefs></ContentType><ContentTypeRef ID="0x0102">
+        <Folder TargetName="Event" />
+      </ContentTypeRef></ContentTypes>
+    <Fields>
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+    <Field ID="{fa564e0f-0c70-4ab9-b863-0177e6ddd247}" Type="Text" Name="Title" DisplayName="Initiative Name" Required="TRUE" SourceID="http://schemas.microsoft.com/sharepoint/v3" StaticName="Title" MaxLength="255" /><Field Type="DateTime" ID="{64cd368d-2f95-4bfc-a1f9-8d4324ecb007}" Name="EventDate" DisplayName="$Resources:core,Start_Time;" Format="DateOnly" Sealed="TRUE" Required="TRUE" FromBaseType="TRUE" Filterable="FALSE" FilterableNoRecurrence="TRUE" SourceID="http://schemas.microsoft.com/sharepoint/v3" StaticName="EventDate">
+        <Default>[today]</Default>
+        <FieldRefs>
+          <FieldRef Name="fAllDayEvent" RefType="AllDayEvent" />
+        </FieldRefs>
+      </Field><Field ID="{2684f9f2-54be-429f-ba06-76754fc056bf}" Type="DateTime" Name="EndDate" DisplayName="$Resources:core,End_Time;" Format="DateOnly" Sealed="TRUE" Required="TRUE" Filterable="FALSE" FilterableNoRecurrence="TRUE" Indexed="TRUE" SourceID="http://schemas.microsoft.com/sharepoint/v3" StaticName="EndDate">
+        <Default>[today]</Default>
+        <FieldRefs>
+          <FieldRef Name="fAllDayEvent" RefType="AllDayEvent" />
+        </FieldRefs>
+      </Field><Field Name="FundTargets" ID="{2f365e6e-3e90-49c8-90bc-9caad2f291c2}" DisplayName="Fund Targets" Type="Currency" LCID="1033" Decimals="2" Min="0" /><Field Name="ManHours" ID="{a580f4ea-0637-4a13-9725-c806f781268d}" DisplayName="Man Hours" Type="Number" /><Field Name="Roles" ID="{1f3d76d1-527a-4fe7-ab22-57f6510034f4}" DisplayName="Roles" Type="Text" FillInChoice="TRUE" /><Field Name="Volunteers" ID="{584be194-e33d-4238-bfb3-f358b1c0c5e3}" DisplayName="Volunteers" Type="Number" /><Field Name="Initiator" ID="{8150b046-93aa-46ca-a9e5-02ecc225d137}" DisplayName="Initiator" Type="Text" /><Field ID="{1DAB9B48-2D1A-47b3-878C-8E84F0D211BA}" Name="_Status" Group="$Resources:core,Document_Columns;" Type="Choice" DisplayName="$Resources:core,Status;" SourceID="http://schemas.microsoft.com/sharepoint/v3/fields" StaticName="_Status" FillInChoice="FALSE" Format="Dropdown"><CHOICES><CHOICE>Not Achieved</CHOICE><CHOICE>Achieved</CHOICE></CHOICES><Default>$Resources:core,_Status_NotStarted;</Default></Field></Fields>
+    <Views>
+      
+      
+      
+      
+    <View BaseViewID="0" Type="HTML" RecurrenceRowset="TRUE" TabularView="FALSE" MobileView="TRUE">
+        <Toolbar Type="Standard" />
+        <XslLink>main.xsl</XslLink>
+        <Query>
+          <Where>
+            <DateRangesOverlap>
+              <FieldRef Name="EventDate"></FieldRef>
+              <FieldRef Name="EndDate"></FieldRef>
+              <FieldRef Name="RecurrenceID"></FieldRef>
+              <Value Type="DateTime">
+                <Now />
+              </Value>
+            </DateRangesOverlap>
+          </Where>
+        </Query>
+        <ParameterBindings>
+          <ParameterBinding Name="NoAnnouncements" Location="Resource(wss,noevents_toaddeventclickaddnewevent)" />
+          <ParameterBinding Name="NoAnnouncementsHowTo" Location="Resource(wss,noevents_toaddeventclickaddnewevent_howto)" />
+          <ParameterBinding Name="AddNewAnnouncement" Location="Resource(wss,AddNewEvent)" />
+          <ParameterBinding Name="MoreAnnouncements" Location="Resource(wss,more_events)" />
+        </ParameterBindings>
+        <ViewFields>
+          
+          
+          
+          
+        <FieldRef Name="EventDate" Explicit="TRUE"></FieldRef><FieldRef Name="LinkTitleNoMenu" Explicit="TRUE"></FieldRef><FieldRef Name="Description" Explicit="TRUE"></FieldRef><FieldRef Name="fRecurrence" Explicit="TRUE"></FieldRef></ViewFields>
+        <RowLimit>10</RowLimit>
+        <Query>
+          <OrderBy>
+            <FieldRef Name="EventDate"></FieldRef>
+          </OrderBy>
+        </Query>
+      </View><View BaseViewID="1" Type="HTML" WebPartZoneID="Main" DisplayName="$Resources:core,userinfo_schema_alleventsview;" MobileView="TRUE" SetupPath="pages\viewpage.aspx" ImageUrl="/_layouts/15/images/events.png?rev=23" Url="AllItems.aspx" DefaultBaseView="TRUE">
+        <Toolbar Type="Standard" />
+        <XslLink Default="TRUE">main.xsl</XslLink>
+        <JSLink>clienttemplates.js</JSLink>
+        <RowLimit Paged="TRUE">30</RowLimit>
+        <ParameterBindings>
+          <ParameterBinding Name="NoAnnouncements" Location="Resource(wss,noXinviewofY_LIST)" />
+          <ParameterBinding Name="NoAnnouncementsHowTo" Location="Resource(wss,noXinviewofY_DEFAULT)" />
+        </ParameterBindings>
+        <ViewFields>
+          
+          
+          
+          
+          
+          
+          
+        <FieldRef Name="ID" /><FieldRef Name="LinkTitle"></FieldRef><FieldRef Name="EventDate"></FieldRef><FieldRef Name="EndDate"></FieldRef><FieldRef Name="FundTargets" /><FieldRef Name="Roles" /><FieldRef Name="Volunteers" /><FieldRef Name="ManHours" /></ViewFields>
+        <Query>
+          <OrderBy>
+            
+          <FieldRef Name="EventDate"></FieldRef></OrderBy>
+        </Query>
+      </View><View BaseViewID="2" Type="CALENDAR" WebPartZoneID="Main" DisplayName="$Resources:core,userinfo_schema_calendarview;" MobileView="TRUE" MobileDefaultView="TRUE" SetupPath="pages\viewpage.aspx" ImageUrl="/_layouts/15/images/events.png?rev=23" TabularView="FALSE" Url="calendar.aspx" RecurrenceRowset="TRUE" DefaultView="TRUE" MobileUrl="_layouts/15/mobile/viewdaily.aspx">
+        <Toolbar Type="Standard" />
+        <ParameterBindings>
+          <ParameterBinding Name="NoAnnouncements" Location="Resource(wss,noXinviewofY_LIST)" />
+          <ParameterBinding Name="NoAnnouncementsHowTo" Location="Resource(wss,noXinviewofY_DEFAULT)" />
+        </ParameterBindings>
+        <ViewFields>
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+        <FieldRef Name="EventDate"></FieldRef><FieldRef Name="EndDate"></FieldRef><FieldRef Name="Title"></FieldRef><FieldRef Name="FundTargets" /><FieldRef Name="ManHours" /><FieldRef Name="Roles" /><FieldRef Name="Volunteers" /><FieldRef Name="Initiator" /><FieldRef Name="_Status" /></ViewFields>
+        <ViewData>
+          <FieldRef Name="Title" Type="CalendarMonthTitle"></FieldRef>
+          <FieldRef Name="Title" Type="CalendarWeekTitle"></FieldRef>
+          <FieldRef Name="Location" Type="CalendarWeekLocation"></FieldRef>
+          <FieldRef Name="Title" Type="CalendarDayTitle"></FieldRef>
+          <FieldRef Name="Location" Type="CalendarDayLocation"></FieldRef>
+        </ViewData>
+        <Query>
+          <Where>
+            <DateRangesOverlap>
+              <FieldRef Name="EventDate"></FieldRef>
+              <FieldRef Name="EndDate"></FieldRef>
+              <FieldRef Name="RecurrenceID"></FieldRef>
+              <Value Type="DateTime">
+                <Month></Month>
+              </Value>
+            </DateRangesOverlap>
+          </Where>
+        </Query>
+      </View><View BaseViewID="3" Type="HTML" WebPartZoneID="Main" DisplayName="$Resources:core,userinfo_schema_curreventsview;" MobileView="TRUE" SetupPath="pages\viewpage.aspx" ImageUrl="/_layouts/15/images/events.png?rev=23" Url="MyItems.aspx" ReqAuth="TRUE" RecurrenceRowset="TRUE">
+        <Toolbar Type="Standard" />
+        <XslLink Default="TRUE">main.xsl</XslLink>
+        <JSLink>clienttemplates.js</JSLink>
+        <ParameterBindings>
+          <ParameterBinding Name="NoAnnouncements" Location="Resource(wss,noXinviewofY_LIST)" />
+          <ParameterBinding Name="NoAnnouncementsHowTo" Location="Resource(wss,noXinviewofY_DEFAULT)" />
+        </ParameterBindings>
+        <ViewFields>
+          
+          
+          
+          
+          
+          
+          
+        <FieldRef Name="LinkTitle"></FieldRef><FieldRef Name="EventDate"></FieldRef><FieldRef Name="EndDate"></FieldRef></ViewFields>
+        <Query>
+          <Where>
+            <DateRangesOverlap>
+              <FieldRef Name="EventDate" />
+              <FieldRef Name="EndDate" />
+              <FieldRef Name="RecurrenceID" />
+              <Value Type="DateTime">
+                <Now></Now>
+              </Value>
+            </DateRangesOverlap>
+          </Where>
+          <OrderBy>
+            
+          <FieldRef Name="EventDate"></FieldRef></OrderBy>
+        </Query>
+      </View></Views>
+    <Forms>
+      <Form Type="DisplayForm" Url="DispForm.aspx" SetupPath="pages\form.aspx" WebPartZoneID="Main" />
+      <Form Type="EditForm" Url="EditForm.aspx" SetupPath="pages\form.aspx" WebPartZoneID="Main" />
+      <Form Type="NewForm" Url="NewForm.aspx" SetupPath="pages\form.aspx" WebPartZoneID="Main" />
+    </Forms>
+  </MetaData>
+</List>
