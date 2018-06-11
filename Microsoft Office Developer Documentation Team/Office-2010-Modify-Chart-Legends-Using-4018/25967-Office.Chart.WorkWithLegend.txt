@@ -1,0 +1,49 @@
+' Microsoft Word 2010/Charting
+
+' Modify the chart legend.
+
+' Add a module to the document, and copy the following code
+' into the new module. Add a breakpoint where directed in the code
+' and press F5 to run the procedure. After hitting the breakpoint,
+' look at the chart, and then press F5 run again to see the
+' behavior of the chart. This will be easiest to see if you
+' arrange the Word window and the VBA window so they're side-by-side
+' on the screen.
+
+' You could easily modify this demonstration to work with PowerPoint by simply
+' replacing the reference to ActiveDocument with ActivePresentation.Slides(1) and
+' changing the enumerations that start with "wd" to start with "mso" instead.
+
+Sub ModifyChartLegend()
+    Dim shp As Shape
+    Set shp = ActiveDocument.Shapes.AddChart(xl3DPie)
+   
+    Dim cht As Chart
+    Set cht = shp.Chart
+   
+    With cht.Legend
+        .Position = xlLegendPositionTop
+        .IncludeInLayout = True
+        ' The next sections make arbitrary (and perhaps unattractive)
+        ' changes to the formatting of the legend.
+        With .Format
+            With .Fill
+                .ForeColor.ObjectThemeColor = wdThemeColorBackground2
+            End With
+            With .Line
+                .ForeColor.ObjectThemeColor = wdThemeColorAccent1
+                .Style = msoLineThinThin
+                .Weight = 2
+            End With
+            With .Shadow
+                .Type = msoShadow21
+                .Style = msoShadowStyleOuterShadow
+                .ForeColor.ObjectThemeColor = wdThemeColorAccent4
+            End With
+            With .Glow
+                .Color.ObjectThemeColor = wdThemeColorAccent2
+                .Radius = 11
+            End With
+        End With
+    End With
+End Sub
