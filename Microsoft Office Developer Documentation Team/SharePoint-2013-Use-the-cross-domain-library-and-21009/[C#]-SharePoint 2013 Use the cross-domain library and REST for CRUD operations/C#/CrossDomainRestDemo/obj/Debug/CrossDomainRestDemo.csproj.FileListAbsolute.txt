@@ -1,0 +1,4 @@
+C:\Demos_Samples\CrossDomainRestDemo\CrossDomainRestDemo\bin\Debug\CrossDomainRestDemo.pdb
+C:\Demos_Samples\CrossDomainRestDemo\CrossDomainRestDemo\obj\Debug\CrossDomainRestDemo.dll
+C:\Demos_Samples\CrossDomainRestDemo\CrossDomainRestDemo\obj\Debug\CrossDomainRestDemo.pdb
+C:\Demos_Samples\CrossDomainRestDemo\CrossDomainRestDemo\obj\Debug\CrossDomainRestDemo.csprojResolveAssemblyReference.cache
