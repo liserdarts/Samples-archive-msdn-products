@@ -1,0 +1,75 @@
+' Outlook 2010
+
+' This demo uses the new Office 2010 PickerDialog
+' from Outlook 2010. The code accesses a SharePoint
+' server to get a list of 'people'. These people can
+' be users, distribution lists, etc.
+
+' This code only looks for users. Assuming the user
+' picks at least one user, the code enumerates the
+' results and creates an e-mail message adding each
+' selected user's display name to the mail message’s
+' Recipients collection. It then displays the mail
+' message using the Outlook user interface for mail messages.
+
+Public Sub PickerDialogDemo()
+    Dim dlg As Office.PickerDialog
+    Set dlg = Application.PickerDialog
+    dlg.Title = "Select a user to e-mail"
+
+    ' PEOPLEDATAHANDLER.DLL is an in-process COM DLL that provides 
+    ' the data handler implementation used in this example.
+    ' Currently this is the only documented handler available for use. 
+    Dim peopleDataHandlerServerCLSID As String
+    peopleDataHandlerServerCLSID = "{000CDF0A-0000-0000-C000-000000000046}"
+    dlg.DataHandlerId = peopleDataHandlerServerCLSID
+    
+    Dim pickerProps As Office.PickerProperties
+    Set pickerProps = dlg.Properties
+    Dim pickerProp As Office.PickerProperty
+    Dim pickerID As String
+    pickerID = "SiteUrl"
+    Dim sharepointURL As String
+    ' Change the following URL to a valid
+    ' SharePoint server URL to which you have access rights.
+    ' This example was tested against a SharePont 2010 Server.
+    sharepointURL = "http://my"
+    Set pickerProp = pickerProps.Add(pickerID, sharepointURL, _
+        Office.MsoPickerField.msoPickerFieldText)
+    
+    Dim dlgResults As Office.PickerResults
+    ' When the code shows the dialog, search for at least one user
+    ' and then add at least one user before closing the PickerDialog.
+    ‘ What does that True parameter mean?
+    Set dlgResults = dlg.Show(True)
+    
+    If Not dlgResults Is Nothing Then
+        ' The user selected at least one item so the
+        ' code will create a new MailItem.
+        Dim newMail As Outlook.MailItem
+        Set newMail = Application.CreateItem(olMailItem)
+        newMail.Subject = "PickerDialog Demo"
+        
+        Dim result As Office.PickerResult
+        For Each result In dlgResults
+            ' If the result is a user, add them as a recipient
+            ' to the new mail message.
+            If result.Type = "User" Then
+                newMail.Recipients.Add result.DisplayName
+            End If
+        Next
+        ' Validate the users’ display names added to the list
+        ' of mail recipients.
+        newMail.Recipients.ResolveAll
+        
+        ' Retrieve a reference to the Inspector for the mail message
+        ' and display it. Note that you might need to navigate away from
+        ' the VBA editor to see the message.
+        Dim mailInspector As Outlook.Inspector
+        Set mailInspector = newMail.GetInspector
+        mailInspector.Display
+    Else
+        ' If you click Cancel, the code falls through here.
+    End If
+End Sub
+
