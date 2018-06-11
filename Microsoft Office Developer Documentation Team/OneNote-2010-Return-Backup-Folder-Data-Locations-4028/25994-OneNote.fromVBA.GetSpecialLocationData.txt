@@ -1,0 +1,52 @@
+Option Explicit
+
+' OneNote 2010
+
+' Demonstrate the GetSpecialLocation method.
+
+' Use any VBA host including Excel 2010, PowerPoint 2010,
+' or Word 2010.
+' OneNote 2010 is not a VBA host.
+
+' In your VBA host, add references to the following
+' external libraries using the Add References dialog:
+' Microsoft OneNote 14.0 Object Library
+' Microsoft XML, v6.0
+
+' OneNote's GetSpecialLocation provides you with the location
+' of two special folders for OneNote.
+' One is the Backups folder that OneNote uses to store
+' the automatic and manual backups of your OneNote files.
+' The second is the default local file location for new
+' OneNote notebooks.
+' In addition, GetSpecialLocation provides you with the
+' full path and filename of the Notebook used for
+' unfiled notes.
+
+' Paste all this code into a module,
+' place the cursor within the
+' GetSpecialLocationData procedure,
+' and press F5.
+
+Sub GetSpecialLocationData()
+    ' Connect to OneNote 2010.
+    ' OneNote starts if it's not running.
+    Dim oneNote As OneNote14.Application
+    Set oneNote = New OneNote14.Application
+    
+    Dim backupFolder As String
+    Dim defaultNotebookFolder As String
+    Dim unfiledNotesSection As String
+    
+    oneNote.GetSpecialLocation slBackUpFolder, backupFolder
+    oneNote.GetSpecialLocation slDefaultNotebookFolder, defaultNotebookFolder
+    oneNote.GetSpecialLocation slUnfiledNotesSection, unfiledNotesSection
+    
+    Dim msg As String
+    msg = "OneNote 2010 Special Locations are: " & vbCrLf & _
+        "Backup: " & vbCrLf & "  " & backupFolder & vbCrLf & _
+        "Default Notebook: " & vbCrLf & "  " & defaultNotebookFolder & vbCrLf & _
+        "Unfiled Notes: " & vbCrLf & "  " & unfiledNotesSection
+    
+    MsgBox msg, vbInformation, "GetSpecialLocation"
+End Sub
