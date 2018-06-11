@@ -1,0 +1,3 @@
+C:\Users\cgranger\AppData\Local\Microsoft\VisualStudio\10.0Exp\Extensions\Microsoft\Caret Fish Eye\0.1\\CaretFisheye.dll
+C:\Users\cgranger\AppData\Local\Microsoft\VisualStudio\10.0Exp\Extensions\Microsoft\Caret Fish Eye\0.1\\extension.vsixmanifest
+C:\Users\cgranger\AppData\Local\Microsoft\VisualStudio\10.0Exp\Extensions\Microsoft\Caret Fish Eye\0.1\\CaretFisheye.pdb

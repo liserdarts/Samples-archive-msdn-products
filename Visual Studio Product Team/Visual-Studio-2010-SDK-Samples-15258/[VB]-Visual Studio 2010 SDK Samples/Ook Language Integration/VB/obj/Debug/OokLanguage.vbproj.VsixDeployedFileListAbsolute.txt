@@ -1,0 +1,6 @@
+C:\Users\cgranger\AppData\Local\Microsoft\VisualStudio\10.0Exp\Extensions\OokLanguage\1.0\\OokLanguage.dll
+C:\Users\cgranger\AppData\Local\Microsoft\VisualStudio\10.0Exp\Extensions\OokLanguage\1.0\\extension.vsixmanifest
+C:\Users\cgranger\AppData\Local\Microsoft\VisualStudio\10.0Exp\Extensions\OokLanguage\1.0\\OokLanguage.pdb
+C:\Users\cswenton\AppData\Local\Microsoft\VisualStudio\10.0Exp\Extensions\OokLanguage\1.0\\OokLanguage.dll
+C:\Users\cswenton\AppData\Local\Microsoft\VisualStudio\10.0Exp\Extensions\OokLanguage\1.0\\extension.vsixmanifest
+C:\Users\cswenton\AppData\Local\Microsoft\VisualStudio\10.0Exp\Extensions\OokLanguage\1.0\\OokLanguage.pdb

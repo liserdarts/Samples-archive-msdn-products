@@ -1,0 +1,10 @@
+C:\Users\cgranger\Documents\Public\Samples\tempRC\HighlightWord\bin\Debug\source.extension.vsixmanifest
+C:\Users\cgranger\Documents\Public\Samples\tempRC\HighlightWord\bin\Debug\beta2fix.pkgdef
+C:\Users\cgranger\Documents\Public\Samples\tempRC\HighlightWord\bin\Debug\HighlightWord.dll
+C:\Users\cgranger\Documents\Public\Samples\tempRC\HighlightWord\bin\Debug\HighlightWord.pdb
+C:\Users\cgranger\Documents\Public\Samples\tempRC\HighlightWord\bin\Debug\HighlightWord.vsix
+C:\Users\cgranger\Documents\Public\Samples\tempRC\HighlightWord\bin\Debug\extension.vsixmanifest
+C:\Users\cgranger\Documents\Public\Samples\tempRC\HighlightWord\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\cgranger\Documents\Public\Samples\tempRC\HighlightWord\obj\Debug\HighlightWord.dll
+C:\Users\cgranger\Documents\Public\Samples\tempRC\HighlightWord\obj\Debug\HighlightWord.pdb
+C:\Users\cgranger\Documents\Public\Samples\tempRC\HighlightWord\obj\Debug\extension.vsixmanifest

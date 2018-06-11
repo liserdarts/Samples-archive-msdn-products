@@ -1,0 +1,3 @@
+C:\Users\cgranger\AppData\Local\Microsoft\VisualStudio\10.0Exp\Extensions\Microsoft\Highlight Word Sample\0.1\\HighlightWord.dll
+C:\Users\cgranger\AppData\Local\Microsoft\VisualStudio\10.0Exp\Extensions\Microsoft\Highlight Word Sample\0.1\\extension.vsixmanifest
+C:\Users\cgranger\AppData\Local\Microsoft\VisualStudio\10.0Exp\Extensions\Microsoft\Highlight Word Sample\0.1\\HighlightWord.pdb

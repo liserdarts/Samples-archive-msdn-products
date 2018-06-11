@@ -1,0 +1,10 @@
+C:\Users\cgranger\Documents\Public\Samples\RTM\VB\InlineXPSViewer\bin\Debug\InlineXPS_ScreenShot.png
+C:\Users\cgranger\Documents\Public\Samples\RTM\VB\InlineXPSViewer\bin\Debug\InlineXPS_small.png
+C:\Users\cgranger\Documents\Public\Samples\RTM\VB\InlineXPSViewer\bin\Debug\InlineXPSViewer.dll
+C:\Users\cgranger\Documents\Public\Samples\RTM\VB\InlineXPSViewer\bin\Debug\InlineXPSViewer.pdb
+C:\Users\cgranger\Documents\Public\Samples\RTM\VB\InlineXPSViewer\bin\Debug\InlineXPSViewer.vsix
+C:\Users\cgranger\Documents\Public\Samples\RTM\VB\InlineXPSViewer\bin\Debug\extension.vsixmanifest
+C:\Users\cgranger\Documents\Public\Samples\RTM\VB\InlineXPSViewer\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\cgranger\Documents\Public\Samples\RTM\VB\InlineXPSViewer\obj\Debug\InlineXPSViewer.dll
+C:\Users\cgranger\Documents\Public\Samples\RTM\VB\InlineXPSViewer\obj\Debug\InlineXPSViewer.pdb
+C:\Users\cgranger\Documents\Public\Samples\RTM\VB\InlineXPSViewer\obj\Debug\extension.vsixmanifest

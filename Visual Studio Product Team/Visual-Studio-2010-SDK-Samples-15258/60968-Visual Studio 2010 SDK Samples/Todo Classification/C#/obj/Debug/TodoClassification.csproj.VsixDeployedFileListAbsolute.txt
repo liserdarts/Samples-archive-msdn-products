@@ -1,0 +1,4 @@
+C:\Users\cgranger\AppData\Local\Microsoft\VisualStudio\10.0Exp\Extensions\Chris Granger\Todo Glyph\1.0\\TodoClassification.dll
+C:\Users\cgranger\AppData\Local\Microsoft\VisualStudio\10.0Exp\Extensions\Chris Granger\Todo Glyph\1.0\\extension.vsixmanifest
+C:\Users\cgranger\AppData\Local\Microsoft\VisualStudio\10.0Exp\Extensions\Chris Granger\Todo Glyph\1.0\\beta2fix.pkgdef
+C:\Users\cgranger\AppData\Local\Microsoft\VisualStudio\10.0Exp\Extensions\Chris Granger\Todo Glyph\1.0\\TodoClassification.pdb

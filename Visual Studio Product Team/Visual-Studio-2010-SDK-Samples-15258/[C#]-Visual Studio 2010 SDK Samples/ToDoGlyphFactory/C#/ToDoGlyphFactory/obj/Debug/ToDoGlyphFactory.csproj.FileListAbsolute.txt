@@ -1,0 +1,9 @@
+C:\Users\lukewest\Desktop\ToDoGlyphFactory\ToDoGlyphFactory\ToDoGlyphFactory\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\lukewest\Desktop\ToDoGlyphFactory\ToDoGlyphFactory\ToDoGlyphFactory\bin\Debug\ToDoGlyph.png
+C:\Users\lukewest\Desktop\ToDoGlyphFactory\ToDoGlyphFactory\ToDoGlyphFactory\bin\Debug\ToDoGlyphFactory.dll
+C:\Users\lukewest\Desktop\ToDoGlyphFactory\ToDoGlyphFactory\ToDoGlyphFactory\bin\Debug\ToDoGlyphFactory.pdb
+C:\Users\lukewest\Desktop\ToDoGlyphFactory\ToDoGlyphFactory\ToDoGlyphFactory\obj\Debug\ToDoGlyphFactory.dll
+C:\Users\lukewest\Desktop\ToDoGlyphFactory\ToDoGlyphFactory\ToDoGlyphFactory\obj\Debug\ToDoGlyphFactory.pdb
+C:\Users\lukewest\Desktop\ToDoGlyphFactory\ToDoGlyphFactory\ToDoGlyphFactory\bin\Debug\ToDoGlyphFactory.vsix
+C:\Users\lukewest\Desktop\ToDoGlyphFactory\ToDoGlyphFactory\ToDoGlyphFactory\bin\Debug\extension.vsixmanifest
+C:\Users\lukewest\Desktop\ToDoGlyphFactory\ToDoGlyphFactory\ToDoGlyphFactory\obj\Debug\extension.vsixmanifest

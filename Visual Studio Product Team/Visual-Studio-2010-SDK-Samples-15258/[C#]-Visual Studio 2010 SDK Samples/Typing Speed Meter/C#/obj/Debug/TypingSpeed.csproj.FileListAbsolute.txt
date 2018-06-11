@@ -1,0 +1,14 @@
+C:\Users\cgranger\Documents\Public\Samples\tempRC\TypingSpeed\bin\Debug\Adornment_large.png
+C:\Users\cgranger\Documents\Public\Samples\tempRC\TypingSpeed\bin\Debug\Adornment_small.png
+C:\Users\cgranger\Documents\Public\Samples\tempRC\TypingSpeed\bin\Debug\TypingSpeed.dll
+C:\Users\cgranger\Documents\Public\Samples\tempRC\TypingSpeed\bin\Debug\TypingSpeed.pdb
+C:\Users\cgranger\Documents\Public\Samples\tempRC\TypingSpeed\bin\Debug\TypingSpeed.vsix
+C:\Users\cgranger\Documents\Public\Samples\tempRC\TypingSpeed\bin\Debug\extension.vsixmanifest
+C:\Users\cgranger\Documents\Public\Samples\tempRC\TypingSpeed\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\cgranger\Documents\Public\Samples\tempRC\TypingSpeed\obj\Debug\TypingSpeedControl.baml
+C:\Users\cgranger\Documents\Public\Samples\tempRC\TypingSpeed\obj\Debug\TypingSpeedControl.g.cs
+C:\Users\cgranger\Documents\Public\Samples\tempRC\TypingSpeed\obj\Debug\TypingSpeed_MarkupCompile.cache
+C:\Users\cgranger\Documents\Public\Samples\tempRC\TypingSpeed\obj\Debug\TypingSpeed.g.resources
+C:\Users\cgranger\Documents\Public\Samples\tempRC\TypingSpeed\obj\Debug\TypingSpeed.dll
+C:\Users\cgranger\Documents\Public\Samples\tempRC\TypingSpeed\obj\Debug\TypingSpeed.pdb
+C:\Users\cgranger\Documents\Public\Samples\tempRC\TypingSpeed\obj\Debug\extension.vsixmanifest

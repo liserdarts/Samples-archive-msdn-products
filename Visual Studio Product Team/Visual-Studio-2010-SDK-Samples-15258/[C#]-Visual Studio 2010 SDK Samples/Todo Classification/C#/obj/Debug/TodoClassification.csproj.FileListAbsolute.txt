@@ -1,0 +1,13 @@
+C:\Users\cgranger\Documents\Public\Samples\tempRC\TodoClassification\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\cgranger\Documents\Public\Samples\tempRC\TodoClassification\obj\Debug\TodoGlyph.baml
+C:\Users\cgranger\Documents\Public\Samples\tempRC\TodoClassification\obj\Debug\TodoGlyph.g.cs
+C:\Users\cgranger\Documents\Public\Samples\tempRC\TodoClassification\obj\Debug\TodoClassification_MarkupCompile.cache
+C:\Users\cgranger\Documents\Public\Samples\tempRC\TodoClassification\obj\Debug\TodoClassification.g.resources
+C:\Users\cgranger\Documents\Public\Samples\tempRC\TodoClassification\bin\Debug\beta2fix.pkgdef
+C:\Users\cgranger\Documents\Public\Samples\tempRC\TodoClassification\bin\Debug\TodoClassification.dll
+C:\Users\cgranger\Documents\Public\Samples\tempRC\TodoClassification\bin\Debug\TodoClassification.pdb
+C:\Users\cgranger\Documents\Public\Samples\tempRC\TodoClassification\bin\Debug\TodoClassification.vsix
+C:\Users\cgranger\Documents\Public\Samples\tempRC\TodoClassification\bin\Debug\extension.vsixmanifest
+C:\Users\cgranger\Documents\Public\Samples\tempRC\TodoClassification\obj\Debug\TodoClassification.dll
+C:\Users\cgranger\Documents\Public\Samples\tempRC\TodoClassification\obj\Debug\TodoClassification.pdb
+C:\Users\cgranger\Documents\Public\Samples\tempRC\TodoClassification\obj\Debug\extension.vsixmanifest

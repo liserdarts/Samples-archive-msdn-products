@@ -1,0 +1,16 @@
+C:\Users\cgranger\Documents\Public\Samples\RTM\VB\OokLanguage\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\cgranger\Documents\Public\Samples\RTM\VB\OokLanguage\bin\Debug\OokLanguage.dll
+C:\Users\cgranger\Documents\Public\Samples\RTM\VB\OokLanguage\bin\Debug\OokLanguage.pdb
+C:\Users\cgranger\Documents\Public\Samples\RTM\VB\OokLanguage\bin\Debug\OokLanguage.vsix
+C:\Users\cgranger\Documents\Public\Samples\RTM\VB\OokLanguage\bin\Debug\extension.vsixmanifest
+C:\Users\cgranger\Documents\Public\Samples\RTM\VB\OokLanguage\obj\Debug\OokLanguage.dll
+C:\Users\cgranger\Documents\Public\Samples\RTM\VB\OokLanguage\obj\Debug\OokLanguage.pdb
+C:\Users\cgranger\Documents\Public\Samples\RTM\VB\OokLanguage\obj\Debug\extension.vsixmanifest
+C:\VS Pro Samples\OokLanguage_VB\OokLanguage_VB\bin\Debug\OokLanguage.dll
+C:\VS Pro Samples\OokLanguage_VB\OokLanguage_VB\bin\Debug\OokLanguage.pdb
+C:\VS Pro Samples\OokLanguage_VB\OokLanguage_VB\bin\Debug\OokLanguage.vsix
+C:\VS Pro Samples\OokLanguage_VB\OokLanguage_VB\bin\Debug\extension.vsixmanifest
+C:\VS Pro Samples\OokLanguage_VB\OokLanguage_VB\obj\Debug\ResolveAssemblyReference.cache
+C:\VS Pro Samples\OokLanguage_VB\OokLanguage_VB\obj\Debug\OokLanguage.dll
+C:\VS Pro Samples\OokLanguage_VB\OokLanguage_VB\obj\Debug\OokLanguage.pdb
+C:\VS Pro Samples\OokLanguage_VB\OokLanguage_VB\obj\Debug\extension.vsixmanifest

@@ -1,0 +1,16 @@
+C:\Users\cgranger\Documents\Public\Samples\RTM\VB\EditorToolwindow\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\cgranger\Documents\Public\Samples\RTM\VB\EditorToolwindow\obj\Debug\VSPackage.resources
+C:\Users\cgranger\Documents\Public\Samples\RTM\VB\EditorToolwindow\obj\Debug\Resources.resources
+C:\Users\cgranger\Documents\Public\Samples\RTM\VB\EditorToolwindow\obj\Debug\GenerateResource.read.1.tlog
+C:\Users\cgranger\Documents\Public\Samples\RTM\VB\EditorToolwindow\obj\Debug\GenerateResource.write.1.tlog
+C:\Users\cgranger\Documents\Public\Samples\RTM\VB\EditorToolwindow\obj\Debug\EditorToolwindow.cto
+C:\Users\cgranger\Documents\Public\Samples\RTM\VB\EditorToolwindow\bin\Debug\EditorToolwindow.dll
+C:\Users\cgranger\Documents\Public\Samples\RTM\VB\EditorToolwindow\bin\Debug\EditorToolwindow.pdb
+C:\Users\cgranger\Documents\Public\Samples\RTM\VB\EditorToolwindow\bin\Debug\EditorToolwindow.pkgdef
+C:\Users\cgranger\Documents\Public\Samples\RTM\VB\EditorToolwindow\bin\Debug\EditorToolwindow.vsix
+C:\Users\cgranger\Documents\Public\Samples\RTM\VB\EditorToolwindow\bin\Debug\extension.vsixmanifest
+C:\Users\cgranger\Documents\Public\Samples\RTM\VB\EditorToolwindow\obj\Debug\EditorToolwindow.dll
+C:\Users\cgranger\Documents\Public\Samples\RTM\VB\EditorToolwindow\obj\Debug\EditorToolwindow.pdb
+C:\Users\cgranger\Documents\Public\Samples\RTM\VB\EditorToolwindow\obj\Debug\EditorToolwindow.pkgdef
+C:\Users\cgranger\Documents\Public\Samples\RTM\VB\EditorToolwindow\obj\Debug\EditorToolwindow.latest.pkgdef
+C:\Users\cgranger\Documents\Public\Samples\RTM\VB\EditorToolwindow\obj\Debug\extension.vsixmanifest
