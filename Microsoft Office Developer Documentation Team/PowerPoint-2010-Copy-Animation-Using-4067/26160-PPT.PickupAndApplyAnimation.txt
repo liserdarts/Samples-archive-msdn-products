@@ -1,0 +1,34 @@
+' PowerPoint 2010
+
+Sub TestPickupAnimation()
+    ' It's easy to copy an animation from one shape to another.
+    ' The PickupAnimation method places the animation information
+    ' for a specific shape in a "holding area". The ApplyAnimation
+    ' method allows you to apply the animation to a specific shape.
+   
+    ' Execute the following code in a new presentation. This code creates
+    ' a shape and adds three animations to it, picks up the animation, and then
+    ' applies the animation to two other shapes.
+    
+    ' Once you have run the code, run the presentation to view the animations.
+   
+    With ActivePresentation.Slides(1)
+        Dim shp1, shp2, shp3 As Shape
+        Set shp1 = .Shapes.AddShape(msoShape12pointStar, 20, 20, 100, 100)
+       
+        .TimeLine.MainSequence.AddEffect shp1, msoAnimEffectFadedSwivel, , msoAnimTriggerAfterPrevious
+        .TimeLine.MainSequence.AddEffect shp1, msoAnimEffectPathBounceRight, , msoAnimTriggerAfterPrevious
+        .TimeLine.MainSequence.AddEffect shp1, msoAnimEffectSpin, , msoAnimTriggerAfterPrevious
+       
+        ' Now create a second shape, and apply the same animation to it:
+        shp1.PickupAnimation
+       
+        Set shp2 = .Shapes.AddShape(msoShapeHexagon, 100, 20, 100, 100)
+        shp2.ApplyAnimation
+       
+        ' And one more:
+        Set shp3 = .Shapes.AddShape(msoShapeCloud, 180, 20, 100, 100)
+        shp3.ApplyAnimation
+       
+    End With
+End Sub
