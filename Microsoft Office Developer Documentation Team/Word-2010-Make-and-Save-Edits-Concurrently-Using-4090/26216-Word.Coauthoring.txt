@@ -1,0 +1,67 @@
+' Word 2010
+
+' Work with co-authoring.
+
+' To demonstrate this code, create a new document on a Sharepoint server. Edit
+' the document, and have a co-worker edit the document at the same time.
+' Both of you should make edits concurrently, saving the document
+' as you edit. The results of the sample procedure will vary based on
+' how many authors are currently editing and how many concurrent changes you make.
+' Place the cursor within the following procedure and press F5.
+' The results will show in the Immediate window.
+
+Sub TestCoauthoring()
+    ' Ensure that you're seeing other authors' changes:
+    ActiveDocument.ActiveWindow.View.ShowOtherAuthors = True
+   
+    ' Work with the document's CoAuthoring property:
+    With ActiveDocument.CoAuthoring
+        DisplayText "Can merge: " & .CanMerge
+        DisplayText "Can share: " & .CanShare
+   
+        ' Retrieve a reference to the collection
+        ' of current authors and display the count:
+        Dim currentAuthors As CoAuthors
+        Set currentAuthors = .Authors
+        DisplayText "There are " & currentAuthors.Count & " current authors."
+       
+        ' Iterate through all the current authors:
+        Dim currentAuthor As CoAuthor
+        For Each currentAuthor In currentAuthors
+            DisplayText "Current author: " & currentAuthor.Name & IIf(currentAuthor.IsMe, " (is me)", "")
+            DisplayText vbTab & currentAuthor.EmailAddress, 1
+        Next currentAuthor
+       
+        ' Are there pending updates?
+        If .PendingUpdates Then
+            ' Iterate through all the pending changes:
+            DisplayText "Pending Updates:"
+            Dim upd As CoAuthUpdate
+            For Each upd In .Updates
+                DisplayText upd.Range.text, 1
+            Next upd
+        End If
+       
+        ' Check out any current locks:
+        Dim lck As CoAuthLock
+        DisplayText "Locks:"
+        For Each lck In .Locks
+            DisplayText lck.Range.text, 2
+        Next lck
+       
+        ' Check out any existing conflicts:
+        Dim cft As Conflict
+        DisplayText "Conflicts:"
+        For Each cft In .Conflicts
+            DisplayText cft.Range.text, 1
+        Next cft
+    End With
+End Sub
+
+Private Sub DisplayText(text As String, Optional indentLevel As Integer = 0)
+    Dim i As Integer
+    For i = 0 To indentLevel - 1
+        Debug.Print vbTab;
+    Next i
+    Debug.Print text
+End Sub
