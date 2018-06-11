@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Feature xmlns="http://schemas.microsoft.com/sharepoint/" Description="My List Definition Feature" Id="8e46948a-8d16-4e4b-bb96-af2f4b0a213c" Scope="Web" Title="ConvertWordToPDF Feature1">
+  <ElementManifests>
+    <ElementManifest Location="ListDefinition1\Elements.xml" />
+    <ElementFile Location="ListDefinition1\Schema.xml" />
+    <ElementFile Location="ListDefinition1\EditDlg.htm" />
+    <ElementFile Location="ListDefinition1\FileDlg.htm" />
+    <ElementFile Location="ListDefinition1\Repair.aspx" />
+    <ElementFile Location="ListDefinition1\Upload.aspx" />
+    <ElementManifest Location="ListInstance1\Elements.xml" />
+    <ElementManifest Location="ConvertWordToPDFEventReceiver\Elements.xml" />
+  </ElementManifests>
+</Feature>

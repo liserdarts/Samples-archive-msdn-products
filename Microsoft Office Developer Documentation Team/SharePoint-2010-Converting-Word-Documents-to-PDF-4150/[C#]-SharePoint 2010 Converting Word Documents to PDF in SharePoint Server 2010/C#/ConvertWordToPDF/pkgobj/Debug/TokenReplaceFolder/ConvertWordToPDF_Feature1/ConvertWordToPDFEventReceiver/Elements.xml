@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">
+  <Receivers ListTemplateId="10000">
+      <Receiver>
+        <Name>ConvertWordToPDFEventReceiverItemAdded</Name>
+        <Type>ItemAdded</Type>
+        <Assembly>ConvertWordToPDF, Version=1.0.0.0, Culture=neutral, PublicKeyToken=81854d908ac145ca</Assembly>
+        <Class>ConvertWordToPDF.ConvertWordToPDFEventReceiver.ConvertWordToPDFEventReceiver</Class>
+        <SequenceNumber>10000</SequenceNumber>
+      </Receiver>
+
+  </Receivers>
+</Elements>

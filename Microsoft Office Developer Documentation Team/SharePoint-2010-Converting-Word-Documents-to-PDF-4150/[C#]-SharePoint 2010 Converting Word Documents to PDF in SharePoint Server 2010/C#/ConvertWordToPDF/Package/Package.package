@@ -1,0 +1,6 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package dslVersion="1.0.0.0" Id="a75dba7f-ed78-4756-b549-c92e8a6143f4" solutionId="a75dba7f-ed78-4756-b549-c92e8a6143f4" xmlns="http://schemas.microsoft.com/VisualStudio/2008/SharePointTools/PackageModel" name="ConvertWordToPDF">
+    <features>
+        <featureReference  itemId="8e46948a-8d16-4e4b-bb96-af2f4b0a213c" />
+    </features>
+</package>

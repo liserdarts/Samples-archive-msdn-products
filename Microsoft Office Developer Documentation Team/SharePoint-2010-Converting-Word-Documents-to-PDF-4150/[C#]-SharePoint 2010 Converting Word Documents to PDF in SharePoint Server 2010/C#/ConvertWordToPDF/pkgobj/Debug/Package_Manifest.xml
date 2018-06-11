@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Solution xmlns="http://schemas.microsoft.com/sharepoint/" SolutionId="a75dba7f-ed78-4756-b549-c92e8a6143f4">
+  <Assemblies>
+    <Assembly Location="ConvertWordToPDF.dll" DeploymentTarget="GlobalAssemblyCache" />
+  </Assemblies>
+  <FeatureManifests>
+    <FeatureManifest Location="ConvertWordToPDF_Feature1\Feature.xml" />
+  </FeatureManifests>
+</Solution>
