@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package dslVersion="1.0.0.0" 
+        Id="476f2f47-6a13-4b98-b292-c32361437ad8" 
+        solutionId="476f2f47-6a13-4b98-b292-c32361437ad8" 
+        xmlns="http://schemas.microsoft.com/VisualStudio/2008/SharePointTools/PackageModel" 
+        name="SP_TestCenter_js"
+        sharePointProductVersion="15.0">
+  <features>
+        <featureReference itemId="d90fc9c8-48b2-4440-aecc-4ddc1889a463" />
+  </features>
+</package>
