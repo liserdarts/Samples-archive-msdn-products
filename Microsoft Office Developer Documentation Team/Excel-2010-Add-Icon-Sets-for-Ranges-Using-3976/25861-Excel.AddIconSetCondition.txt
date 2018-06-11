@@ -1,0 +1,91 @@
+' Excel 2010
+
+' Work with Icon sets
+
+' In a new workbook, in the VBA editor, copy this code
+' into the Sheet1 class module. Place the cursor
+' inside the TestAddIconSet procedure, and press F5
+' to run the procedure. View Sheet1 to see the results.
+
+Sub TestAddIconSet()
+  Dim i As Integer
+  Dim rng As Range
+  For i = 1 To 20
+    ' Set up ranges
+    Set rng = SetupRange(i)
+    Select Case i
+      Case 1
+        SetUpIconSet rng, xl3Arrows
+      Case 2
+        SetUpIconSet rng, xl3ArrowsGray
+      Case 3
+        SetUpIconSet rng, xl3Flags
+      Case 4
+        SetUpIconSet rng, xl3Signs
+      Case 5
+        SetUpIconSet rng, xl3Stars
+      Case 6
+        SetUpIconSet rng, xl3Symbols
+      Case 7
+        SetUpIconSet rng, xl3Symbols2
+      Case 8
+        SetUpIconSet rng, xl3TrafficLights1
+      Case 9
+        SetUpIconSet rng, xl3TrafficLights2
+      Case 10
+        SetUpIconSet rng, xl3Triangles
+      Case 11
+        SetUpIconSet rng, xl4Arrows
+      Case 12
+        ' Reverse the order on this one:
+        SetUpIconSet rng, xl4ArrowsGray, True
+      Case 13
+        SetUpIconSet rng, xl4CRV
+      Case 14
+        SetUpIconSet rng, xl4RedToBlack
+      Case 15
+        SetUpIconSet rng, xl4TrafficLights
+      Case 16
+        SetUpIconSet rng, xl5Arrows
+      Case 17
+        ' Reverse the order on this one:
+        SetUpIconSet rng, xl5ArrowsGray, True
+      Case 18
+        SetUpIconSet rng, xl5Boxes
+      Case 19
+        SetUpIconSet rng, xl5CRV
+      Case 20
+        SetUpIconSet rng, xl5Quarters
+    End Select
+  Next i
+End Sub
+
+Function SetupRange(col As Integer) As Range
+    ' Set up ranges, filled with numbers from 1 to 10.
+    Set rng = Range(Cells(1, col), Cells(10, col))
+   
+    Dim rng1 As Range
+    Set rng1 = Cells(1, col)
+    rng1.Value = 1
+
+    Dim rng2 As Range
+    Set rng2 = Cells(2, col)
+    rng2.Value = 2
+   
+    Range(rng1, rng2).AutoFill Destination:=rng
+    Set SetupRange = rng
+End Function
+
+Sub SetUpIconSet(rng As Range, iconSet As XlIconSet, Optional ReverseOrder As Boolean = False)
+    ' Set up an icon set for the supplied range.
+    rng.FormatConditions.Delete
+    Dim isc As IconSetCondition
+    Set isc = rng.FormatConditions.AddIconSetCondition
+    With isc
+        ' If specified, show the icons in the reverse ordering:
+        .ReverseOrder = ReverseOrder
+        .ShowIconOnly = False
+        ' Select the requested icon set:
+        .iconSet = ActiveWorkbook.IconSets(iconSet)
+    End With
+End Sub
