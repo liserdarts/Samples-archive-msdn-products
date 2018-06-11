@@ -1,0 +1,44 @@
+﻿<?xml version="1.0"?>
+<doc>
+<assembly>
+<name>
+CodeSample_ExportVisio
+</name>
+</assembly>
+<members>
+<member name="P:CodeSample_ExportVisio.My.Resources.Resources.ResourceManager">
+	<summary>
+  Returns the cached ResourceManager instance used by this class.
+</summary>
+</member><member name="P:CodeSample_ExportVisio.My.Resources.Resources.Culture">
+	<summary>
+  Overrides the current thread's CurrentUICulture property for all
+  resource lookups using this strongly typed resource class.
+</summary>
+</member><member name="T:CodeSample_ExportVisio.My.Resources.Resources">
+	<summary>
+  A strongly-typed resource class, for looking up localized strings, etc.
+</summary>
+</member><member name="M:CodeSample_ExportVisio.ThisAddIn.#ctor(Microsoft.Office.Tools.Factory,System.IServiceProvider)">
+</member><member name="M:CodeSample_ExportVisio.ThisAddIn.Initialize">
+</member><member name="M:CodeSample_ExportVisio.ThisAddIn.FinishInitialization">
+</member><member name="M:CodeSample_ExportVisio.ThisAddIn.InitializeDataBindings">
+</member><member name="M:CodeSample_ExportVisio.ThisAddIn.InitializeCachedData">
+</member><member name="M:CodeSample_ExportVisio.ThisAddIn.InitializeData">
+</member><member name="M:CodeSample_ExportVisio.ThisAddIn.BindToData">
+</member><member name="M:CodeSample_ExportVisio.ThisAddIn.StartCaching(System.String)">
+</member><member name="M:CodeSample_ExportVisio.ThisAddIn.StopCaching(System.String)">
+</member><member name="M:CodeSample_ExportVisio.ThisAddIn.IsCached(System.String)">
+</member><member name="M:CodeSample_ExportVisio.ThisAddIn.BeginInitialization">
+</member><member name="M:CodeSample_ExportVisio.ThisAddIn.EndInitialization">
+</member><member name="M:CodeSample_ExportVisio.ThisAddIn.InitializeControls">
+</member><member name="M:CodeSample_ExportVisio.ThisAddIn.InitializeComponents">
+</member><member name="M:CodeSample_ExportVisio.ThisAddIn.NeedsFill(System.String)">
+</member><member name="T:CodeSample_ExportVisio.ThisAddIn">
+</member><member name="M:CodeSample_ExportVisio.Globals.#ctor">
+</member><member name="T:CodeSample_ExportVisio.Globals">
+</member><member name="M:CodeSample_ExportVisio.ThisRibbonCollection.#ctor(Microsoft.Office.Tools.Ribbon.RibbonFactory)">
+</member><member name="T:CodeSample_ExportVisio.ThisRibbonCollection">
+</member>
+</members>
+</doc>

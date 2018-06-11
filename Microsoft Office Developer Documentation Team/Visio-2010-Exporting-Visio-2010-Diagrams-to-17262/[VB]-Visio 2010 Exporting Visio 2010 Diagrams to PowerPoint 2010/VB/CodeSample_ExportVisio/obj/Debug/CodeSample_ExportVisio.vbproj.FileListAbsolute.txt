@@ -1,0 +1,15 @@
+c:\users\erschmid\documents\visual studio 2010\Projects\CodeSample_ExportVisio\CodeSample_ExportVisio\bin\Debug\CodeSample_ExportVisio.dll
+c:\users\erschmid\documents\visual studio 2010\Projects\CodeSample_ExportVisio\CodeSample_ExportVisio\bin\Debug\CodeSample_ExportVisio.pdb
+c:\users\erschmid\documents\visual studio 2010\Projects\CodeSample_ExportVisio\CodeSample_ExportVisio\bin\Debug\CodeSample_ExportVisio.xml
+c:\users\erschmid\documents\visual studio 2010\Projects\CodeSample_ExportVisio\CodeSample_ExportVisio\bin\Debug\CodeSample_ExportVisio.dll.manifest
+c:\users\erschmid\documents\visual studio 2010\Projects\CodeSample_ExportVisio\CodeSample_ExportVisio\bin\Debug\CodeSample_ExportVisio.vsto
+c:\users\erschmid\documents\visual studio 2010\Projects\CodeSample_ExportVisio\CodeSample_ExportVisio\bin\Debug\Microsoft.Office.Tools.Common.v4.0.Utilities.dll
+c:\users\erschmid\documents\visual studio 2010\Projects\CodeSample_ExportVisio\CodeSample_ExportVisio\bin\Debug\Microsoft.Office.Tools.Common.v4.0.Utilities.xml
+c:\users\erschmid\documents\visual studio 2010\Projects\CodeSample_ExportVisio\CodeSample_ExportVisio\obj\Debug\ResolveAssemblyReference.cache
+c:\users\erschmid\documents\visual studio 2010\Projects\CodeSample_ExportVisio\CodeSample_ExportVisio\obj\Debug\CodeSample_ExportVisio.Resources.resources
+c:\users\erschmid\documents\visual studio 2010\Projects\CodeSample_ExportVisio\CodeSample_ExportVisio\obj\Debug\GenerateResource.read.1.tlog
+c:\users\erschmid\documents\visual studio 2010\Projects\CodeSample_ExportVisio\CodeSample_ExportVisio\obj\Debug\GenerateResource.write.1.tlog
+c:\users\erschmid\documents\visual studio 2010\Projects\CodeSample_ExportVisio\CodeSample_ExportVisio\obj\Debug\CodeSample_ExportVisio.dll
+c:\users\erschmid\documents\visual studio 2010\Projects\CodeSample_ExportVisio\CodeSample_ExportVisio\obj\Debug\CodeSample_ExportVisio.xml
+c:\users\erschmid\documents\visual studio 2010\Projects\CodeSample_ExportVisio\CodeSample_ExportVisio\obj\Debug\CodeSample_ExportVisio.pdb
+c:\users\erschmid\documents\visual studio 2010\Projects\CodeSample_ExportVisio\CodeSample_ExportVisio\bin\Debug\ShapeConversion.xml
