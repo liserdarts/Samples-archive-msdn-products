@@ -1,0 +1,39 @@
+﻿Build started 9/7/2011 3:17:34 PM.
+     1>Project "C:\Users\adamsh\Desktop\SRC for BUILD Gallery\general\toaster\kmdf\toastmon\wdftoastmon.VcxProj" on node 2 (Build target(s)).
+     1>InitializeBuildStatus:
+         Creating "Windows7Debug\x86\wdftoastmon.unsuccessfulbuild" because "AlwaysCreate" was specified.
+       StampInf:
+         Copying file from ".\wdftoastmon.inx" to ".\Windows7Debug\x86\\wdftoastmon.inf".
+         C:\Program Files (x86)\Windows Kits\8.0\\bin\x86\stampinf.exe -a "x86" -k "1.11" -f .\Windows7Debug\x86\\wdftoastmon.inf 
+         Using version information from C:\Program Files (x86)\Windows Kits\8.0\\Include\shared\ntverp.h
+         Stamping .\Windows7Debug\x86\\wdftoastmon.inf [Version] section with DriverVer=09/07/2011,6.2.8096.0
+         Copying file from ".\Windows7Debug\x86\\wdftoastmon.inf" to "Windows7Debug\x86\wdftoastmon.inf".
+       ClCompile:
+         C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\bin\CL.exe /c /I..\inc /Zi /nologo /W3 /WX /Od /Oi /Oy- /D _X86_=1 /D i386=1 /D STD_CALL /D DEPRECATE_DDK_FUNCTIONS=1 /D MSC_NOOPT /D WIN32_LEAN_AND_MEAN=1 /D _WIN32_WINNT=0x0601 /D WINVER=0x0601 /D WINNT=1 /D NTDDI_VERSION=0x06010000 /D DBG=1 /D KMDF_VERSION_MAJOR=1 /D KMDF_VERSION_MINOR=11 /GF /Gm- /Zp8 /GS /Gy /fp:precise /hotpatch /Zc:wchar_t- /Zc:forScope- /GR- /Fo"Windows7Debug\x86\\" /Fd"Windows7Debug\x86\wdftoastmon.pdb" /Gz /wd4748 /wd4603 /wd4627 /wd4986 /wd4987 /wd4996 /FI"C:\Program Files (x86)\Windows Kits\8.0\\Include\Shared\warning.h" /analyze- /errorReport:prompt toastmon.c wmi.c /kernel -cbstring /d1import_no_registry /d2AllowCompatibleILVersions /d2Zi+ 
+         toastmon.c
+         wmi.c
+         Generating Code...
+       ResourceCompile:
+         C:\Program Files (x86)\Windows Kits\8.0\\bin\x86\rc.exe /D _X86_=1 /D i386=1 /D STD_CALL /D DEPRECATE_DDK_FUNCTIONS=1 /D MSC_NOOPT /D WIN32_LEAN_AND_MEAN=1 /D _WIN32_WINNT=0x0601 /D WINVER=0x0601 /D WINNT=1 /D NTDDI_VERSION=0x06010000 /D DBG=1 /l"0x0409" /I"C:\Program Files (x86)\Windows Kits\8.0\\Include\UM" /I..\inc /nologo /fo"Windows7Debug\x86\toastmon.res" toastmon.rc 
+       Link:
+         C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"Windows7Debug\x86\wdftoastmon.sys" /VERSION:"6.2" /INCREMENTAL:NO /NOLOGO /WX /FUNCTIONPADMIN:5 /SECTION:"INIT,d" "C:\Program Files (x86)\Windows Kits\8.0\\lib\win7\KM\x86\memcmp.lib" "C:\Program Files (x86)\Windows Kits\8.0\\lib\win7\KM\x86\ntstrsafe.lib" "C:\Program Files (x86)\Windows Kits\8.0\\lib\win7\KM\x86\BufferOverflowK.lib" "C:\Program Files (x86)\Windows Kits\8.0\\lib\win7\KM\x86\ntoskrnl.lib" "C:\Program Files (x86)\Windows Kits\8.0\\lib\win7\KM\x86\hal.lib" "C:\Program Files (x86)\Windows Kits\8.0\\lib\win7\KM\x86\wmilib.lib" "C:\Program Files (x86)\Windows Kits\8.0\\lib\wdf\kmdf\x86\1.11\WdfLdr.lib" "C:\Program Files (x86)\Windows Kits\8.0\\lib\wdf\kmdf\x86\1.11\WdfDriverEntry.lib" /NODEFAULTLIB /MANIFEST /DEBUG /PDB:"C:\Users\adamsh\Desktop\SRC for BUILD Gallery\general\toaster\kmdf\toastmon\Windows7Debug\x86\wdftoastmon.pdb" /SUBSYSTEM:NATIVE,"6.01" /Driver /OPT:REF /OPT:ICF /ENTRY:"FxDriverEntry@8" /RELEASE /IMPLIB:"Windows7Debug\x86\wdftoastmon.lib" /MERGE:"_TEXT=.text;_PAGE=PAGE" /MACHINE:X86 /SAFESEH Windows7Debug\x86\toastmon.res
+         Windows7Debug\x86\toastmon.obj
+         Windows7Debug\x86\wmi.obj /IGNORE:4198,4010,4037,4039,4065,4070,4078,4087,4089,4221 /osversion:6.2 /pdbcompress /debugtype:pdata 
+         wdftoastmon.VcxProj -> C:\Users\adamsh\Desktop\SRC for BUILD Gallery\general\toaster\kmdf\toastmon\Windows7Debug\x86\wdftoastmon.sys
+       DriverTestSign:
+         C:\Program Files (x86)\Windows Kits\8.0\\bin\x86\signtool.exe sign /ph /sha1 "DD9E781E5AE28D1A6F55948CA7B2A3DDD5D83EC1" 
+         Done Adding Additional Store
+         Successfully signed: Windows7Debug\x86\\wdftoastmon.sys
+         
+         Certificate used for signing: issued to = WDKTestCert adamsh,129579295884634316 and thumbprint = DD9E781E5AE28D1A6F55948CA7B2A3DDD5D83EC1
+         Exported Certificate: C:\Users\adamsh\AppData\Local\Microsoft\WindowsDriverKit\8.0\WDKTestCert adamsh,129579295884634316.cer
+       Deploy:
+         Automatic driver deployment to a remote machine is disabled.  To enable automatic driver deployment open the property pages for the project and go to Driver Settings -> Deployment.
+       FinalizeBuildStatus:
+         Deleting file "Windows7Debug\x86\wdftoastmon.unsuccessfulbuild".
+         Touching "Windows7Debug\x86\wdftoastmon.lastbuildstate".
+     1>Done Building Project "C:\Users\adamsh\Desktop\SRC for BUILD Gallery\general\toaster\kmdf\toastmon\wdftoastmon.VcxProj" (Build target(s)).
+
+Build succeeded.
+
+Time Elapsed 00:00:01.39

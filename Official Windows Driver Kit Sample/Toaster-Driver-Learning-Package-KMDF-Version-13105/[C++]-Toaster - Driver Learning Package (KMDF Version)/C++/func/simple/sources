@@ -1,0 +1,14 @@
+TARGETNAME=wdfsimple
+TARGETTYPE=DRIVER
+
+
+KMDF_VERSION_MAJOR=1
+
+INF_NAME=wdfsimple
+NTTARGETFILE0=$(OBJ_PATH)\$(O)\$(INF_NAME).inf
+INCLUDES=$(INCLUDES);..\..\inc;..\shared
+
+SOURCES=toaster.c \
+
+TARGET_DESTINATION=wdf
+
