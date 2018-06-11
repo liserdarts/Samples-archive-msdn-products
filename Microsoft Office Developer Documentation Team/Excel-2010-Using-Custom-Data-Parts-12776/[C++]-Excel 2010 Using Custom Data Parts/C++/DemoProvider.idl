@@ -1,0 +1,26 @@
+// DemoProvider.idl : IDL source for DemoProvider
+//
+
+// This file will be processed by the MIDL tool to
+// produce the type library (DemoProvider.tlb) and marshalling code.
+
+import "oaidl.idl";
+import "ocidl.idl";
+
+[
+	uuid(0FA51EAB-2BDE-4777-BF62-B4122C9C2604),
+	version(1.0),
+	helpstring("DemoProvider 1.0 Type Library")
+]
+library DemoProviderLib
+{
+	importlib("stdole2.tlb");
+	[
+		uuid(58FC4998-E801-4A1F-A6A1-AA9C13B529BE),
+		helpstring("MyProvider Class")
+	]
+	coclass MyProvider
+	{
+		interface IUnknown;
+	};
+};

@@ -1,0 +1,28 @@
+HKCR
+{
+	DemoProvider.MyProvider.1 = s 'MyProvider Class'
+	{
+		CLSID = s '{58FC4998-E801-4A1F-A6A1-AA9C13B529BE}'
+	}
+	DemoProvider.MyProvider = s 'MyProvider Class'
+	{
+		CLSID = s '{58FC4998-E801-4A1F-A6A1-AA9C13B529BE}'
+		CurVer = s 'DemoProvider.MyProvider.1'
+	}
+	NoRemove CLSID
+	{
+		ForceRemove {58FC4998-E801-4A1F-A6A1-AA9C13B529BE} = s 'MyProvider Class'
+		{
+			ProgID = s 'DemoProvider.MyProvider.1'
+			VersionIndependentProgID = s 'DemoProvider.MyProvider'
+			InprocServer32 = s '%MODULE%'
+			{
+				val ThreadingModel = s 'Apartment'
+			}
+			'OLE DB Provider' = s 'MyProvider Class'
+			val AppID = s '%APPID%'
+			OLEDB_SERVICES = d '4294967295'
+			'TypeLib' = s '{0FA51EAB-2BDE-4777-BF62-B4122C9C2604}'
+		}
+	}
+}
