@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package dslVersion="1.0.0.0" 
+        Id="16e135a0-7e1e-4124-bcf2-02fdc0702980" 
+        solutionId="16e135a0-7e1e-4124-bcf2-02fdc0702980" 
+        xmlns="http://schemas.microsoft.com/VisualStudio/2008/SharePointTools/PackageModel" 
+        name="O365_YammerFeedIntegration"
+        sharePointProductVersion="15.0">
+  <features>
+        <featureReference itemId="1fc30d21-a121-4856-884a-44f4e90e4568" />
+  </features>
+</package>
