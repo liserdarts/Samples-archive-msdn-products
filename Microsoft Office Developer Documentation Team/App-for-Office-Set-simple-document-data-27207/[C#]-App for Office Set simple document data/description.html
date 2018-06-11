@@ -1,0 +1,282 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
+    <head><link rel="stylesheet" type="text/css" href="description/Combined.css,0:HeaderFooterSprite,0:Header.NonMtps,1:LinkList;/Areas/Centers/Themes/StandardDevCenter/Content:0,/Areas/Epx/Themes/Base/Content:1&amp;amp;hashKey=C9973DA951AE6202C9B348379A1BE49D" xmlns="http://www.w3.org/1999/xhtml" />
+<link type="text/css" rel="stylesheet" xmlns="http://www.w3.org/1999/xhtml" />
+<link rel="stylesheet" type="text/css" href="description/04f9c26e-88fd-4dfd-b715-9733d17420b6Combined.css,0:HeaderFooterSprite,0:Footer.NonMtps,1:LinkList;/Areas/Centers/Themes/StandardDevCenter/Content:0,/Areas/Epx/Themes/Base/Content:1&amp;amp;hashKey=F576C687BC536B84D6E5B3246EE39B49" xmlns="http://www.w3.org/1999/xhtml" />
+<link type="text/css" rel="stylesheet" xmlns="http://www.w3.org/1999/xhtml" />
+
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <title>App for Office: Set simple document data</title>
+        <link href="description/Galleries.css" type="text/css" rel="Stylesheet" /><link href="description/Layout.css" type="text/css" rel="Stylesheet" /><link href="description/Brand.css" type="text/css" rel="Stylesheet" />
+        <link href="description/iframedescription.css" rel="Stylesheet" type="text/css" />
+        <script src="description/offline.js" type="text/javascript"></script>
+        <style type="text/css">
+            #projectInfo {
+                overflow: auto;
+            }
+            #longDesc {
+                clear:both;
+                margin: 25px 0 10px 0;
+            }
+
+            #SampleIndexList{
+                margin-left: 15px;
+            }
+        </style>
+    </head>
+<body>
+    <div id="offlineDescription">
+        <h1>App for Office: Set simple document data</h1>
+        <br/>
+        <div id="projectInfo">
+            <div class="section">
+                    <div class="itemBarLong tagsContainer">
+                        <label for="Technologies">Technologies</label>
+                        <div id="Technologies">
+                            Word 2013, Excel 2013, PowerPoint 2013
+                        </div>
+                    </div>
+                    <div class="itemBarLong tagsContainer">
+                        <label for="Topics">Topics</label>
+                        <div id="Topics">
+                            apps for Office
+                        </div>
+                    </div>
+                <div class="itemBarLong">
+                    <label for="Platforms">Platforms</label>
+                    <div id="Platforms">
+                        Desktop
+                    </div>
+                </div>
+                <div class="itemBarLong">
+                    <label for="Requirements">Requirements</label>
+                    <div id="Requirements">
+                        
+                    </div>
+                </div>
+                <div class="itemBar">
+                    <label for="LastUpdated">Primary language</label>
+                    <div id="LastUpdated">en-US</div>
+                </div>
+                <div class="itemBar">
+                    <label for="LastUpdated">Updated</label>
+                    <div id="LastUpdated">2/26/2014</div>
+                </div>
+                <div class="itemBarLong">
+                    <label for="License">License</label>
+                    <div id="License">
+                        <a href="license.rtf">Apache License, Version 2.0</a></div>
+                </div>
+                <div class="itemBar">
+                    <div class="viewonlinecont">
+                        <a data-link="online" href="http://code.msdn.microsoft.com/App-for-Office-Set-simple-2a0e91da">View this sample online</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+                   
+<script type="text/javascript">
+    function initializePage() {
+        var otherTabClass = 'otherTab';
+        var hiddenPreClass = 'hidden';
+
+        var htmlDecode = function(encodedData) {
+            var decodedData = "";
+            if (encodedData) {
+                var div = document.createElement('div');
+                div.innerHTML = encodedData;
+                decodedData = div.firstChild.nodeValue.replace( /\\r\\n/ig , '\r\n');
+            }
+            return decodedData;
+        };
+                
+        Galleries.iterateElem(Galleries.findElem(null, 'div', 'scriptcode'), function (index, scriptBlock) {
+            var titleElem = Galleries.findElem(scriptBlock, 'div', 'title')[0];
+            var labelElems = Galleries.findElem(titleElem, 'span');
+            if (labelElems.length == 0) {
+                labelElems = titleElem;
+            }
+            var languageSpans = Galleries.findElem(scriptBlock, 'span', 'hidden');
+            var pres = Galleries.findElem(scriptBlock, 'pre');
+            if (languageSpans.length > 0 && pres.length > 1) {
+                Galleries.iterateElem(labelElems, function(index, elem) {
+                    var codePre = pres[index];
+                    var labelSpan = elem;
+                    var languageSpan = languageSpans[index];
+                            
+                    elem.code = codePre.innerHTML.replace( /(\r(\n)?)|((\r)?\n)/ig , '\\r\\n');
+                            
+                    codePre.className = codePre.className.replace(hiddenPreClass, '');
+                            
+                    languageSpan.parentNode.removeChild(languageSpan);
+                });
+
+                pres = Galleries.findElem(scriptBlock, 'pre');
+                Galleries.iterateElem(labelElems, function(index, elem) {
+                    var codePre = pres[index];
+                    var labelSpan = elem;
+                    if (index == 0) {
+                        scriptBlock.activeTab = 0;
+                    }
+                    else {
+                        labelSpan.className += otherTabClass;
+                        codePre.className += hiddenPreClass;
+                    }
+                    Galleries.attachEventHandler(labelSpan, 'click', function(e) {
+                        var activeTab = scriptBlock.activeTab;
+                        labelElems[activeTab].className += otherTabClass;
+                        pres[activeTab].className += hiddenPreClass;
+
+                        codePre.className = codePre.className.replace(hiddenPreClass, '');
+                        labelSpan.className = labelSpan.className.replace(otherTabClass, '');
+                        scriptBlock.activeTab = index;
+                    });
+                });
+
+                var preview = Galleries.findElem(scriptBlock, 'div', 'preview');
+                if (preview.length == 0) {
+                    preview.push(pres[pres.length - 1]);
+                }
+                Galleries.iterateElem(preview, function(index, elem) {
+                    elem.parentNode.removeChild(elem);
+                });
+
+                if (window.clipboardData && clipboardData.setData) {
+                    var copyLink = document.createElement('a');
+                    copyLink.href = 'javascript:void(0);';
+                    copyLink.className = 'copyCode';
+                    copyLink.innerHTML = 'Copy code';
+                    Galleries.attachEventHandler(copyLink, 'click', function (e) {
+                        clipboardData.setData("Text", htmlDecode(labelElems[scriptBlock.activeTab].code));
+                        return false;
+                    });
+                    scriptBlock.insertBefore(copyLink, scriptBlock.childNodes[0]);
+                }
+            }
+        });
+    }
+
+    Galleries.onWindowLoad(function(){
+        initializePage();
+    });
+
+</script>
+<div id="longDesc">
+    
+<div id="header">
+<table id="bottomTable" cellspacing="0" cellpadding="0">
+<tbody>
+<tr id="headerTableRow1">
+<td align="left"><span id="runningHeaderText">&nbsp;</span></td>
+</tr>
+<tr id="headerTableRow2">
+<td align="left"><span id="nsrTitle">Apps for Office: Set simple document data</span></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div id="mainSection">
+<div id="mainBody">
+<div>
+<p><span>Summary:</span> Demonstrates an app for Excel, Word, or PowerPoint that inserts simple document data (text, matrix, table, or HTML) into a document.</p>
+</div>
+<h1>Description</h1>
+<div id="sectionSection0">
+<p>The app in this code sample inserts 4 types of simple document data into an Office document: text, matrix, table, or HTML. The user chooses the button corresponding to the kind of data that should be inserted. You can customize the content for each type
+ of data by editing the code in the Home.js file that is in the Visual Studio solution file. This code sample is useful for those just getting started with the apps for Office API.</p>
+<p>Figure 1 shows the completed app after it has been inserted into the Office application.</p>
+<strong></strong>
+<div class="caption"><strong>Figure 1. The Simple Content Insertion sample app running in Word 2013.
+</strong></div>
+<strong></strong><br>
+<img src="description/image.png" alt=""><br>
+<br>
+<div>
+<table cellspacing="0" cellpadding="0" width="100%">
+<tbody>
+<tr>
+<th align="left"><strong>Note</strong> </th>
+</tr>
+<tr>
+<td>
+<p>Only Microsoft Word supports inserting each one of the types of data listed above into a document. If you use the sample app to try to insert a type of data that isn't supported into one of the other Office document types, such as a PowerPoint slide, an
+ error message will be displayed.</p>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<p>&nbsp;</p>
+</div>
+<h1>Prerequisites</h1>
+<div id="sectionSection1">
+<p>This sample requires the following:</p>
+<ul>
+<li>
+<p>Word 2013, Excel 2013, or PowerPoint 2013</p>
+</li><li>
+<p>Visual Studio 2012 with Office Developer Tools for Visual Studio 2012, or vsdev12short</p>
+</li><li>
+<p>Internet Explorer 9 or higher</p>
+</li></ul>
+</div>
+<h1>Key components</h1>
+<div id="sectionSection2">
+<p>&nbsp;</p>
+<ul>
+<li>
+<p>data_insertion project</p>
+<ul>
+<li>
+<p>data_insertion.xml manifest file</p>
+</li></ul>
+</li><li>
+<p>data_insertionWeb project</p>
+<ul>
+<li>
+<p>Home.html file, which contains the HTML control for the app's user interface.</p>
+</li><li>
+<p>Home.js file, which contains the event handler for the <strong><span class="keyword">Office.initialize</span></strong> event of the app, and handles the button click event for the app's button.</p>
+</li><li>
+<p>Home.css file, which contains the styling for the elements shown in the app UI.</p>
+</li></ul>
+</li></ul>
+</div>
+<h1>Configure the sample</h1>
+<div id="sectionSection3">
+<p>No configuration is necessary.</p>
+</div>
+<h1>Build the sample</h1>
+<div id="sectionSection4">
+<p>Choose the F5 key to build and deploy the app.</p>
+</div>
+<h1>Run and test the sample</h1>
+<div id="sectionSection5">
+<p>Choose the F5 key to build and deploy the app.</p>
+</div>
+<h1>Troubleshooting</h1>
+<div id="sectionSection6">
+<p>If the app fails to install, ensure that the XML in your <strong>AppManifest.xml</strong> file parses correctly.</p>
+</div>
+<h1>Change log</h1>
+<div id="sectionSection7">
+<p>First release: Feb 2014</p>
+</div>
+<h1>Related content</h1>
+<div id="sectionSection8">
+<ul>
+<li>
+<p><a href="http://msdn.microsoft.com/en-us/library/office/apps/fp123513.aspx" >Reading and writing data to the active selection in a document or spreadsheet</a></p>
+</li></ul>
+</div>
+</div>
+</div>
+<p>&nbsp;</p>
+
+</div>
+
+
+    </div>
+</body>
+</html>
