@@ -1,0 +1,5 @@
+I:\DropBox\My Dropbox\Office 2010 VHTs\Aug2010\VHT 6--ChangePrintOrientation\Demo\CS\ChangePrintOrientation\ChangePrintOrientation\bin\Debug\ChangePrintOrientation.exe
+I:\DropBox\My Dropbox\Office 2010 VHTs\Aug2010\VHT 6--ChangePrintOrientation\Demo\CS\ChangePrintOrientation\ChangePrintOrientation\bin\Debug\ChangePrintOrientation.pdb
+I:\DropBox\My Dropbox\Office 2010 VHTs\Aug2010\VHT 6--ChangePrintOrientation\Demo\CS\ChangePrintOrientation\ChangePrintOrientation\obj\x86\Debug\ResolveAssemblyReference.cache
+I:\DropBox\My Dropbox\Office 2010 VHTs\Aug2010\VHT 6--ChangePrintOrientation\Demo\CS\ChangePrintOrientation\ChangePrintOrientation\obj\x86\Debug\ChangePrintOrientation.exe
+I:\DropBox\My Dropbox\Office 2010 VHTs\Aug2010\VHT 6--ChangePrintOrientation\Demo\CS\ChangePrintOrientation\ChangePrintOrientation\obj\x86\Debug\ChangePrintOrientation.pdb
