@@ -1,0 +1,6 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package dslVersion="1.0.0.0" Id="5297f01d-dafb-4116-b715-89485a30b5ee" solutionId="5297f01d-dafb-4116-b715-89485a30b5ee" xmlns="http://schemas.microsoft.com/VisualStudio/2008/SharePointTools/PackageModel" name="InterviewSummary">
+    <features>
+        <featureReference itemId="c2a9635f-09eb-4726-ab6c-e5a37c0b8713" />
+    </features>
+</package>

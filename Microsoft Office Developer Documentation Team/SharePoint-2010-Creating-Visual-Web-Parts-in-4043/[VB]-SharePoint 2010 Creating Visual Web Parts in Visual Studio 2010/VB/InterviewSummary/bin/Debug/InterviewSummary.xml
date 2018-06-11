@@ -1,0 +1,223 @@
+﻿<?xml version="1.0"?>
+<doc>
+<assembly>
+<name>
+InterviewSummary
+</name>
+</assembly>
+<members>
+<member name="P:InterviewSummary.EntitiesDataContext.Announcements">
+	<summary>
+Use this list to track upcoming events, status updates or other team news.
+</summary>
+</member><member name="P:InterviewSummary.EntitiesDataContext.Calendar">
+	<summary>
+Use the Calendar list to keep informed of upcoming meetings, deadlines, and other important events.
+</summary>
+</member><member name="P:InterviewSummary.EntitiesDataContext.ContentAndStructureReports">
+	<summary>
+Use the reports list to customize the queries that appear in the Content and Structure Tool views
+</summary>
+</member><member name="P:InterviewSummary.EntitiesDataContext.CustomizedReports">
+	<summary>
+This Document library has the templates to create Web Analytics custom reports for this site collection
+</summary>
+</member><member name="P:InterviewSummary.EntitiesDataContext.FormTemplates">
+	<summary>
+This library contains administrator-approved form templates that were activated to this site collection.
+</summary>
+</member><member name="P:InterviewSummary.EntitiesDataContext.Links">
+	<summary>
+Use the Links list for links to Web pages that your team members will find interesting or useful.
+</summary>
+</member><member name="P:InterviewSummary.EntitiesDataContext.ReusableContent">
+	<summary>
+Items in this list contain HTML or text content which can be inserted into web pages. If an item has automatic update selected, the content will be inserted into web pages as a read-only reference, and the content will update if the item is changed. If the item does not have automatic update selected, the content will be inserted as a copy in the web page, and the content will not update if the item is changed.
+</summary>
+</member><member name="P:InterviewSummary.EntitiesDataContext.SharedDocuments">
+	<summary>
+Share a document with the team by adding it to this document library.
+</summary>
+</member><member name="P:InterviewSummary.EntitiesDataContext.SiteAssets">
+	<summary>
+Use this library to store files which are included on pages within this site, such as images on Wiki pages.
+</summary>
+</member><member name="P:InterviewSummary.EntitiesDataContext.SiteCollectionDocuments">
+	<summary>
+This system library was created by the Publishing Resources feature to store documents that are used throughout the site collection.
+</summary>
+</member><member name="P:InterviewSummary.EntitiesDataContext.SiteCollectionImages">
+	<summary>
+This system library was created by the Publishing Resources feature to store images that are used throughout the site collection.
+</summary>
+</member><member name="P:InterviewSummary.EntitiesDataContext.SitePages">
+	<summary>
+Use this library to create and store pages on this site.
+</summary>
+</member><member name="P:InterviewSummary.EntitiesDataContext.StyleLibrary">
+	<summary>
+Use the style library to store style sheets, such as CSS or XSL files. The style sheets in this gallery can be used by this site or any of its subsites.
+</summary>
+</member><member name="P:InterviewSummary.EntitiesDataContext.Tasks">
+	<summary>
+Use the Tasks list to keep track of work that you or your team needs to complete.
+</summary>
+</member><member name="P:InterviewSummary.EntitiesDataContext.TeamDiscussion">
+	<summary>
+Use the Team Discussion list to hold newsgroup-style discussions on topics relevant to your team.
+</summary>
+</member><member name="P:InterviewSummary.EntitiesDataContext.WorkflowTasks">
+	<summary>
+This system library was created by the Publishing feature to store workflow tasks that are created in this site.
+</summary>
+</member><member name="T:InterviewSummary.Item">
+	<summary>
+Create a new list item.
+</summary>
+</member><member name="T:InterviewSummary.Announcement">
+	<summary>
+Create a new news item, status or other short piece of information.
+</summary>
+</member><member name="T:InterviewSummary.Folder">
+	<summary>
+Create a new folder.
+</summary>
+</member><member name="T:InterviewSummary.Event">
+	<summary>
+Create a new meeting, deadline or other event.
+</summary>
+</member><member name="T:InterviewSummary.Document">
+	<summary>
+Create a new document.
+</summary>
+</member><member name="T:InterviewSummary.Link">
+	<summary>
+Create a new link to a Web page or other resource.
+</summary>
+</member><member name="T:InterviewSummary.Task">
+	<summary>
+Track a work item that you or your team needs to complete.
+</summary>
+</member><member name="T:InterviewSummary.Message">
+	<summary>
+Create a new message.
+</summary>
+</member><member name="T:InterviewSummary.WikiPage">
+	<summary>
+Create a new wiki page.
+</summary>
+</member><member name="T:InterviewSummary.SummaryTask">
+	<summary>
+Group and describe related tasks that you or your team needs to complete.
+</summary>
+</member><member name="T:InterviewSummary.Discussion">
+	<summary>
+Create a new discussion topic.
+</summary>
+</member><member name="T:InterviewSummary.CandidatesItem">
+	<summary>
+Create a new list item.
+</summary>
+</member><member name="P:InterviewSummary.ContentAndStructureReportsItem.CAMLListType">
+	<summary>
+Type the name of the list template for the CAML list type, or leave blank to search document library template
+</summary>
+</member><member name="P:InterviewSummary.ContentAndStructureReportsItem.CAMLQuery">
+	<summary>
+Type the CAML markup for the report query
+</summary>
+</member><member name="T:InterviewSummary.ContentAndStructureReportsItem">
+	<summary>
+Create a new list item.
+</summary>
+</member><member name="T:InterviewSummary.InterviewsItem">
+	<summary>
+Create a new list item.
+</summary>
+</member><member name="P:InterviewSummary.ReusableHTML.AutomaticUpdate">
+	<summary>
+If this option is selected, the content of this list item will be inserted into web pages as a read-only reference. New versions of this item will automatically appear in the web pages. If the option is not selected, the content of this list item will be inserted into web pages as a copy that page authors can then modify. New versions of this item will not appear in the web pages. Any change to this setting will not affect existing web pages that are using this item.
+</summary>
+</member><member name="P:InterviewSummary.ReusableHTML.ShowInDropDownMenu">
+	<summary>
+Select this option if you want this reusable content item to appear in a drop-down menu available during page editing. This will offer authors a quick way to add this item to a page.
+</summary>
+</member><member name="P:InterviewSummary.ReusableText.AutomaticUpdate">
+	<summary>
+If this option is selected, the content of this list item will be inserted into web pages as a read-only reference. New versions of this item will automatically appear in the web pages. If the option is not selected, the content of this list item will be inserted into web pages as a copy that page authors can then modify. New versions of this item will not appear in the web pages. Any change to this setting will not affect existing web pages that are using this item.
+</summary>
+</member><member name="P:InterviewSummary.ReusableText.ShowInDropDownMenu">
+	<summary>
+Select this option if you want this reusable content item to appear in a drop-down menu available during page editing. This will offer authors a quick way to add this item to a page.
+</summary>
+</member><member name="T:InterviewSummary.CalendarEvent">
+	<summary>
+Create a new meeting, deadline or other event.
+</summary>
+</member><member name="T:InterviewSummary.RichMediaAsset">
+	<summary>
+Upload an asset.
+</summary>
+</member><member name="T:InterviewSummary.TasksTask">
+	<summary>
+Track a work item that you or your team needs to complete.
+</summary>
+</member><member name="T:InterviewSummary.WorkflowTasksTask">
+	<summary>
+Track a work item that you or your team needs to complete.
+</summary>
+</member><member name="T:InterviewSummary.TasksSummaryTask">
+	<summary>
+Group and describe related tasks that you or your team needs to complete.
+</summary>
+</member><member name="T:InterviewSummary.WorkflowTasksSummaryTask">
+	<summary>
+Group and describe related tasks that you or your team needs to complete.
+</summary>
+</member><member name="P:InterviewSummary.Image.Comments">
+	<summary>
+A summary of this resource
+</summary>
+</member><member name="P:InterviewSummary.Image.Author">
+	<summary>
+The primary author
+</summary>
+</member><member name="T:InterviewSummary.Image">
+	<summary>
+Upload an image.
+</summary>
+</member><member name="P:InterviewSummary.Audio.Author">
+	<summary>
+The primary author
+</summary>
+</member><member name="P:InterviewSummary.Audio.Comments">
+	<summary>
+A summary of this resource
+</summary>
+</member><member name="T:InterviewSummary.Audio">
+	<summary>
+Upload an audio file.
+</summary>
+</member><member name="P:InterviewSummary.Video.Author">
+	<summary>
+The primary author
+</summary>
+</member><member name="P:InterviewSummary.Video.Comments">
+	<summary>
+A summary of this resource
+</summary>
+</member><member name="T:InterviewSummary.Video">
+	<summary>
+Upload a video file.
+</summary>
+</member><member name="F:InterviewSummary.VisualWebPart1UserControl.TreeView1">
+	<summary>
+TreeView1 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+</members>
+</doc>

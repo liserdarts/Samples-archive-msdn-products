@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Solution xmlns="http://schemas.microsoft.com/sharepoint/" SolutionId="5297f01d-dafb-4116-b715-89485a30b5ee" SharePointProductVersion="14.0">
+  <Assemblies>
+    <Assembly Location="InterviewSummary.dll" DeploymentTarget="GlobalAssemblyCache">
+      <SafeControls>
+        <SafeControl Assembly="InterviewSummary, Version=1.0.0.0, Culture=neutral, PublicKeyToken=af567ff429865cab" Namespace="InterviewSummary.VisualWebPart1" TypeName="*" />
+      </SafeControls>
+    </Assembly>
+  </Assemblies>
+  <TemplateFiles>
+    <TemplateFile Location="CONTROLTEMPLATES\InterviewSummary\VisualWebPart1\VisualWebPart1UserControl.ascx" />
+  </TemplateFiles>
+  <FeatureManifests>
+    <FeatureManifest Location="InterviewSummary_Feature1\Feature.xml" />
+  </FeatureManifests>
+</Solution>

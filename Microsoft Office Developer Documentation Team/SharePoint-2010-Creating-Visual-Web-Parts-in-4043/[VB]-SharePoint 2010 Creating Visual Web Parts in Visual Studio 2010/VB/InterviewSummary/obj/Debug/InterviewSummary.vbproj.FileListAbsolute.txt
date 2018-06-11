@@ -1,0 +1,21 @@
+c:\users\administrator\documents\visual studio 2010\projects\InterviewSummary\InterviewSummary\bin\Debug\InterviewSummary.dll
+c:\users\administrator\documents\visual studio 2010\projects\InterviewSummary\InterviewSummary\bin\Debug\InterviewSummary.pdb
+c:\users\administrator\documents\visual studio 2010\projects\InterviewSummary\InterviewSummary\bin\Debug\InterviewSummary.xml
+c:\users\administrator\documents\visual studio 2010\projects\InterviewSummary\InterviewSummary\obj\Debug\ResolveAssemblyReference.cache
+c:\users\administrator\documents\visual studio 2010\projects\InterviewSummary\InterviewSummary\obj\Debug\InterviewSummary.dll
+c:\users\administrator\documents\visual studio 2010\projects\InterviewSummary\InterviewSummary\obj\Debug\InterviewSummary.xml
+c:\users\administrator\documents\visual studio 2010\projects\InterviewSummary\InterviewSummary\obj\Debug\InterviewSummary.pdb
+C:\temp\InterviewSummary vb\InterviewSummary\bin\Debug\InterviewSummary.dll
+C:\temp\InterviewSummary vb\InterviewSummary\bin\Debug\InterviewSummary.pdb
+C:\temp\InterviewSummary vb\InterviewSummary\bin\Debug\InterviewSummary.xml
+C:\temp\InterviewSummary vb\InterviewSummary\obj\Debug\ResolveAssemblyReference.cache
+C:\temp\InterviewSummary vb\InterviewSummary\obj\Debug\InterviewSummary.dll
+C:\temp\InterviewSummary vb\InterviewSummary\obj\Debug\InterviewSummary.xml
+C:\temp\InterviewSummary vb\InterviewSummary\obj\Debug\InterviewSummary.pdb
+C:\temp\InterviewSummary\InterviewSummary\bin\Debug\InterviewSummary.dll
+C:\temp\InterviewSummary\InterviewSummary\bin\Debug\InterviewSummary.pdb
+C:\temp\InterviewSummary\InterviewSummary\bin\Debug\InterviewSummary.xml
+C:\temp\InterviewSummary\InterviewSummary\obj\Debug\ResolveAssemblyReference.cache
+C:\temp\InterviewSummary\InterviewSummary\obj\Debug\InterviewSummary.dll
+C:\temp\InterviewSummary\InterviewSummary\obj\Debug\InterviewSummary.xml
+C:\temp\InterviewSummary\InterviewSummary\obj\Debug\InterviewSummary.pdb
