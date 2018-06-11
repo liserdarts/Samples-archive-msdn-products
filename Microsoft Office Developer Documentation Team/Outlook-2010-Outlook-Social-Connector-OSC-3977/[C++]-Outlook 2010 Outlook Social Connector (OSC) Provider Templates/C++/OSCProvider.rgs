@@ -1,0 +1,52 @@
+HKCR
+{
+	%PROVIDER_PROGID%.1 = s '%PROVIDER_CLASS_FRIENDLY_NAME%'
+	{
+		CLSID = s '{%PROVIDER_CLSID%}'
+	}
+	%PROVIDER_PROGID% = s '%PROVIDER_CLASS_FRIENDLY_NAME%'
+	{
+		CLSID = s '{%PROVIDER_CLSID%}'
+		CurVer = s '%PROVIDER_PROGID%.1'
+	}
+	NoRemove CLSID
+	{
+		ForceRemove '{%PROVIDER_CLSID%}' = s '%PROVIDER_CLASS_FRIENDLY_NAME%'
+		{
+			ProgID = s '%PROVIDER_PROGID%.1'
+			VersionIndependentProgID = s '%PROVIDER_PROGID%'
+			ForceRemove 'Programmable'
+			InprocServer32 = s '%MODULE%'
+			{
+				val ThreadingModel = s 'Apartment'
+			}
+			'TypeLib' = s '{%TYPELIB_GUID%}'
+		}
+	}
+}
+HKLM
+{
+    Software
+    {
+        Microsoft
+        {
+            Office
+            {
+                Outlook
+                {
+                    SocialConnector
+                    {
+                        SocialProviders
+                        {
+                            ForceRemove %PROVIDER_PROGID%
+                            {
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+

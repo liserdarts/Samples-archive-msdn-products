@@ -1,0 +1,10 @@
+; OSCProvider_CPP.def : Declares the module parameters.
+
+LIBRARY      "OSCProvider_CPP.DLL"
+
+EXPORTS
+	DllCanUnloadNow		PRIVATE
+	DllGetClassObject	PRIVATE
+	DllRegisterServer	PRIVATE
+	DllUnregisterServer	PRIVATE
+	DllInstall			PRIVATE
