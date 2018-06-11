@@ -1,0 +1,358 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
+    <head><link rel="stylesheet" type="text/css" href="description/Combined.css,0:ImageSprite;/Areas/Epx/Themes/Office/Content:0&amp;amp;hashKey=E1FC421F1D5AE3E6B1DA86D200AF8596" xmlns="http://www.w3.org/1999/xhtml" />
+<link rel="stylesheet" type="text/css" href="description/5199af4a-1b79-4d99-a23e-6e1dd2219787Combined.css,0:ImageSprite,1:LinkList;/Areas/Epx/Themes/Office/Content:0,/Areas/Epx/Themes/Base/Content:1&amp;amp;hashKey=BDE597850AE0D71AF6777C4790E98E75" xmlns="http://www.w3.org/1999/xhtml" />
+
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <title>SharePoint 2013: Hello World remote app using CSOM</title>
+        <link href="description/Galleries.css" type="text/css" rel="Stylesheet" /><link href="description/Layout.css" type="text/css" rel="Stylesheet" /><link href="description/Brand.css" type="text/css" rel="Stylesheet" /><link href="description/ae502470-a1d8-4ca1-a6e8-41194b35fdbcBrand.css" type="text/css" rel="Stylesheet" />
+        <link href="description/iframedescription.css" rel="Stylesheet" type="text/css" />
+        <script src="description/offline.js" type="text/javascript"></script>
+        <style type="text/css">
+            #projectInfo {
+                overflow: auto;
+            }
+            #longDesc {
+                clear:both;
+                margin: 25px 0 10px 0;
+            }
+
+            #SampleIndexList{
+                margin-left: 15px;
+            }
+        </style>
+    </head>
+<body>
+    <div id="offlineDescription">
+        <h1>SharePoint 2013: Hello World remote app using CSOM</h1>
+        <br/>
+        <div id="projectInfo">
+            <div class="section">
+                    <div class="itemBarLong tagsContainer">
+                        <label for="Technologies">Technologies</label>
+                        <div id="Technologies">
+                            C#, SharePoint Server 2013, SharePoint Foundation 2013, apps for SharePoint
+                        </div>
+                    </div>
+                    <div class="itemBarLong tagsContainer">
+                        <label for="Topics">Topics</label>
+                        <div id="Topics">
+                            Authentication, data and storage
+                        </div>
+                    </div>
+                <div class="itemBarLong">
+                    <label for="Platforms">Platforms</label>
+                    <div id="Platforms">
+                        Web, Cloud
+                    </div>
+                </div>
+                <div class="itemBarLong">
+                    <label for="Requirements">Requirements</label>
+                    <div id="Requirements">
+                        
+                    </div>
+                </div>
+                <div class="itemBar">
+                    <label for="LastUpdated">Primary language</label>
+                    <div id="LastUpdated">en-US</div>
+                </div>
+                <div class="itemBar">
+                    <label for="LastUpdated">Updated</label>
+                    <div id="LastUpdated">6/13/2014</div>
+                </div>
+                <div class="itemBarLong">
+                    <label for="License">License</label>
+                    <div id="License">
+                        <a href="license.rtf">Apache License, Version 2.0</a></div>
+                </div>
+                <div class="itemBar">
+                    <div class="viewonlinecont">
+                        <a data-link="online" href="http://code.msdn.microsoft.com/sharepoint/SharePoint-2013-Hello-0fd15fbf">View this sample online</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+                   
+<script type="text/javascript">
+    function initializePage() {
+        var otherTabClass = 'otherTab';
+        var hiddenPreClass = 'hidden';
+
+        var htmlDecode = function(encodedData) {
+            var decodedData = "";
+            if (encodedData) {
+                var div = document.createElement('div');
+                div.innerHTML = encodedData;
+                decodedData = div.firstChild.nodeValue.replace( /\\r\\n/ig , '\r\n');
+            }
+            return decodedData;
+        };
+                
+        Galleries.iterateElem(Galleries.findElem(null, 'div', 'scriptcode'), function (index, scriptBlock) {
+            var titleElem = Galleries.findElem(scriptBlock, 'div', 'title')[0];
+            var labelElems = Galleries.findElem(titleElem, 'span');
+            if (labelElems.length == 0) {
+                labelElems = titleElem;
+            }
+            var languageSpans = Galleries.findElem(scriptBlock, 'span', 'hidden');
+            var pres = Galleries.findElem(scriptBlock, 'pre');
+            if (languageSpans.length > 0 && pres.length > 1) {
+                Galleries.iterateElem(labelElems, function(index, elem) {
+                    var codePre = pres[index];
+                    var labelSpan = elem;
+                    var languageSpan = languageSpans[index];
+                            
+                    elem.code = codePre.innerHTML.replace( /(\r(\n)?)|((\r)?\n)/ig , '\\r\\n');
+                            
+                    codePre.className = codePre.className.replace(hiddenPreClass, '');
+                            
+                    languageSpan.parentNode.removeChild(languageSpan);
+                });
+
+                pres = Galleries.findElem(scriptBlock, 'pre');
+                Galleries.iterateElem(labelElems, function(index, elem) {
+                    var codePre = pres[index];
+                    var labelSpan = elem;
+                    if (index == 0) {
+                        scriptBlock.activeTab = 0;
+                    }
+                    else {
+                        labelSpan.className += otherTabClass;
+                        codePre.className += hiddenPreClass;
+                    }
+                    Galleries.attachEventHandler(labelSpan, 'click', function(e) {
+                        var activeTab = scriptBlock.activeTab;
+                        labelElems[activeTab].className += otherTabClass;
+                        pres[activeTab].className += hiddenPreClass;
+
+                        codePre.className = codePre.className.replace(hiddenPreClass, '');
+                        labelSpan.className = labelSpan.className.replace(otherTabClass, '');
+                        scriptBlock.activeTab = index;
+                    });
+                });
+
+                var preview = Galleries.findElem(scriptBlock, 'div', 'preview');
+                if (preview.length == 0) {
+                    preview.push(pres[pres.length - 1]);
+                }
+                Galleries.iterateElem(preview, function(index, elem) {
+                    elem.parentNode.removeChild(elem);
+                });
+
+                if (window.clipboardData && clipboardData.setData) {
+                    var copyLink = document.createElement('a');
+                    copyLink.href = 'javascript:void(0);';
+                    copyLink.className = 'copyCode';
+                    copyLink.innerHTML = 'Copy code';
+                    Galleries.attachEventHandler(copyLink, 'click', function (e) {
+                        clipboardData.setData("Text", htmlDecode(labelElems[scriptBlock.activeTab].code));
+                        return false;
+                    });
+                    scriptBlock.insertBefore(copyLink, scriptBlock.childNodes[0]);
+                }
+            }
+        });
+    }
+
+    Galleries.onWindowLoad(function(){
+        initializePage();
+    });
+
+</script>
+<div id="longDesc">
+    
+<div id="header">
+<table id="bottomTable" cellspacing="0" cellpadding="0">
+<tbody>
+<tr id="headerTableRow1">
+<td align="left"><span id="runningHeaderText">&nbsp;</span></td>
+</tr>
+<tr id="headerTableRow2">
+<td align="left"><span id="nsrTitle">SharePoint 2013: Hello World remote app using CSOM</span></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div id="mainSection">
+<div id="mainBody">
+<div class="summary">
+<p><span class="label">Summary:</span>&nbsp;&nbsp;Learn how to create a basic &quot;hello world&quot; provider-hosted app for SharePoint that uses the SharePoint CSOM to read information about a SharePoint 2013 site from a remote web application.</p>
+</div>
+<div class="introduction">
+<p><strong>Last modified: </strong>July 01, 2012</p>
+<p><strong>In this article</strong><br>
+<a href="#sectionSection0">Description of the sample</a><br>
+<a href="#sectionSection1">Prerequisites</a><br>
+<a href="#sectionSection2">Key components of the sample</a><br>
+<a href="#sectionSection3">Configure the sample</a><br>
+<a href="#sectionSection4">Build the sample</a><br>
+<a href="#sectionSection5">Run and test the sample</a><br>
+<a href="#sectionSection6">Troubleshooting</a><br>
+<a href="#sectionSection7">Change log</a><br>
+<a href="#sectionSection8">Related content</a></p>
+<p>&nbsp;</p>
+</div>
+<a name="O15Readme_Description"></a><a name="sectionSection0"></a>
+<h2 class="heading">Description of the sample</h2>
+<div class="section" id="sectionSection0">
+<p>The sample demonstrates how to read data about the parent SharePoint site on which the app is installed by using OAuth and the SharePoint CSOM.</p>
+<p>The code that uses the SharePoint CSOM is located in the Home.aspx.cs file of the BasicSelfHostedAppWeb project. The following screen shot shows how the Home.aspx page of the app appears after you install and launch the app.</p>
+<div class="caption"><strong>Figure 1. Home.aspx page in the Hello World remote app for SharePoint using CSOM</strong></div>
+<br>
+<img id="116784" src="description/SP15_basicself-hostedapp.gif" alt="Basic self-hosted app launch page" width="197" height="320"></div>
+<a name="O15Readme_Prereq"></a><a name="sectionSection1"></a>
+<h2 class="heading">Prerequisites</h2>
+<div class="section" id="sectionSection1">
+<p>This sample requires the following:</p>
+<ul>
+<li>
+<p>A SharePoint 2013 development environment that is configured for app isolation and OAuth</p>
+</li><li>
+<p>Visual Studio 2012 and Office Developer Tools for Visual Studio 2012 installed on your developer computer</p>
+</li></ul>
+</div>
+<a name="O15Readme_components"></a><a name="sectionSection2"></a>
+<h2 class="heading">Key components of the sample</h2>
+<div class="section" id="sectionSection2">
+<p>The sample app contains the following:</p>
+<ul>
+<li>
+<p>BasicSelfHostedApp project, which contains the AppManifest.xml file</p>
+</li><li>
+<p>BasicSelfHostedAppWeb project, which contains the following:</p>
+<ul>
+<li>
+<p>Home.aspx file, which contains the HTML and ASP.NET controls for the app's user interface</p>
+</li><li>
+<p>Home.aspx.cs file, which contains the C# code that uses the CSOM to read and write data to and from the parent web</p>
+</li><li>
+<p>web.config file</p>
+</li></ul>
+</li></ul>
+</div>
+<a name="O15Readme_config"></a><a name="sectionSection3"></a>
+<h2 class="heading">Configure the sample</h2>
+<div class="section" id="sectionSection3">
+<p>To configure the hello world remote app using CSOM sample, update the <strong>
+SiteUrl</strong> property of the solution with the URL of the home page of your SharePoint 2013 site.</p>
+</div>
+<a name="O15Readme_build"></a><a name="sectionSection4"></a>
+<h2 class="heading">Build the sample</h2>
+<div class="section" id="sectionSection4">
+<p>Press the F5 key to build and deploy the app.</p>
+</div>
+<a name="O15Readme_test"></a><a name="sectionSection5"></a>
+<h2 class="heading">Run and test the sample</h2>
+<div class="section" id="sectionSection5">
+<p>&nbsp;</p>
+<ol>
+<li>
+<p>Choose <span class="ui">Trust It</span> on the consent page to grant permissions to the app.</p>
+</li><li>
+<p>Choose <span class="ui">Populate Data</span> to see some basic information about the parent web.</p>
+</li></ol>
+<h3 class="subHeading">Example</h3>
+<div class="subsection">
+<p>The following figure shows an example of the kinds of information that this sample app can read and display.</p>
+<div class="caption"><strong>Figure 2. View populated data about the parent web</strong></div>
+<br>
+<img id="116785" src="description/SP15_BasicSelfHostedPopulated.gif" alt="Basic self-hosted app with data populated" width="735" height="746"></div>
+</div>
+<a name="O15Readme_Troubleshoot"></a><a name="sectionSection6"></a>
+<h2 class="heading">Troubleshooting</h2>
+<div class="section" id="sectionSection6">
+<p>The following table lists common configuration and environment errors that prevent the sample from running or deploying properly and how you can solve them.</p>
+<div class="caption"></div>
+<div class="tableSection">
+<table cellspacing="2" cellpadding="5" width="50%" frame="lhs">
+<tbody>
+<tr>
+<th>
+<p>Problem</p>
+</th>
+<th>
+<p>Solution</p>
+</th>
+</tr>
+<tr>
+<td>
+<p>Visual Studio does not open the browser after you press the F5 key.</p>
+</td>
+<td>
+<p>Set the app for SharePoint project as the startup project.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>HTTP error 405 <strong>Method not allowed</strong>.</p>
+</td>
+<td>
+<p>Locate the <span class="keyword">applicationhost.config</span> file in %userprofile%\Documents\IISExpress\config.</p>
+<p>Locate the handler entry for <strong>StaticFile</strong>, and add the verbs <span class="keyword">
+GET</span>, <span class="keyword">HEAD</span>, <span class="keyword">POST</span>,
+<span class="keyword">DEBUG</span>, and <span class="keyword">TRACE</span>.</p>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<a name="O15Readme_Changelog"></a><a name="sectionSection7"></a>
+<h2 class="heading">Change log</h2>
+<div class="section" id="sectionSection7">
+<div class="caption"></div>
+<div class="tableSection">
+<table cellspacing="2" cellpadding="5" width="50%" frame="lhs">
+<tbody>
+<tr>
+<th>
+<p>Version</p>
+</th>
+<th>
+<p>Date</p>
+</th>
+</tr>
+<tr>
+<td>
+<p>First version</p>
+</td>
+<td>
+<p>July 16, 2012</p>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<a name="O15Readme_RelatedContent"></a><a name="sectionSection8"></a>
+<h2 class="heading">Related content</h2>
+<div class="section" id="sectionSection8">
+<ul>
+<li>
+<p><a href="http://msdn.microsoft.com/library/3038dd73-41ee-436f-8c78-ef8e6869bf7b.aspx" >How to: Create a basic provider-hosted app for SharePoint</a></p>
+</li><li>
+<p><a href="http://msdn.microsoft.com/library/f86e2695-4d7a-4fc5-bc23-689de96c4b06.aspx" >SharePoint 2013 development overview</a></p>
+</li><li>
+<p><a href="http://msdn.microsoft.com/library/d07e0a13-1e74-4128-857a-513dedbfef33.aspx" >Getting started developing SharePoint apps</a></p>
+</li><li>
+<p><a href="http://msdn.microsoft.com/library/1b992485-6efe-4ea4-a18c-221689b0b66f.aspx" >Building a basic SharePoint-hosted app</a></p>
+</li><li>
+<p><a href="http://msdn.microsoft.com/library/bde5647a-fff1-4b51-b67b-2139de79ce4a.aspx" >OAuth in SharePoint 2013 Preview</a></p>
+</li><li>
+<p><a href="http://msdn.microsoft.com/library/ae96572b-8f06-4fd3-854f-fc312f7f2d88.aspx" >Architecture of the app for SharePoint model</a></p>
+</li><li>
+<p><a href="http://msdn.microsoft.com/library/ae96572b-8f06-4fd3-854f-fc312f7f2d88.aspx" >Apps for SharePoint vs. classic SharePoint solutions</a></p>
+</li><li>
+<p><a href="http://msdn.microsoft.com/library/ae96572b-8f06-4fd3-854f-fc312f7f2d88.aspx" >Detailed introduction to the SharePoint app model</a></p>
+</li></ul>
+</div>
+</div>
+</div>
+
+</div>
+
+
+    </div>
+</body>
+</html>
