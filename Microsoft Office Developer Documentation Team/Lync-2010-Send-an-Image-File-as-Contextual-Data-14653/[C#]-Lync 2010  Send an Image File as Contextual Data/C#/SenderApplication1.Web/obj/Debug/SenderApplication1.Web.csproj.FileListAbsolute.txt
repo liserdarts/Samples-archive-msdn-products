@@ -1,0 +1,5 @@
+C:\Data\UCode\OCOM\ImageTransfer\SenderApplication1\SenderApplication1.Web\bin\SenderApplication1.Web.dll
+C:\Data\UCode\OCOM\ImageTransfer\SenderApplication1\SenderApplication1.Web\bin\SenderApplication1.Web.pdb
+C:\Data\UCode\OCOM\ImageTransfer\SenderApplication1\SenderApplication1.Web\obj\Debug\ResolveAssemblyReference.cache
+C:\Data\UCode\OCOM\ImageTransfer\SenderApplication1\SenderApplication1.Web\obj\Debug\SenderApplication1.Web.dll
+C:\Data\UCode\OCOM\ImageTransfer\SenderApplication1\SenderApplication1.Web\obj\Debug\SenderApplication1.Web.pdb
