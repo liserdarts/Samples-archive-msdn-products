@@ -1,0 +1,5 @@
+C:\Data\Workflow\Solution1\ConsoleAppDotNET35\bin\Debug\ConsoleAppDotNET35.exe
+C:\Data\Workflow\Solution1\ConsoleAppDotNET35\bin\Debug\ConsoleAppDotNET35.pdb
+C:\Data\Workflow\Solution1\ConsoleAppDotNET35\obj\x86\Debug\ResolveAssemblyReference.cache
+C:\Data\Workflow\Solution1\ConsoleAppDotNET35\obj\x86\Debug\ConsoleAppDotNET35.exe
+C:\Data\Workflow\Solution1\ConsoleAppDotNET35\obj\x86\Debug\ConsoleAppDotNET35.pdb

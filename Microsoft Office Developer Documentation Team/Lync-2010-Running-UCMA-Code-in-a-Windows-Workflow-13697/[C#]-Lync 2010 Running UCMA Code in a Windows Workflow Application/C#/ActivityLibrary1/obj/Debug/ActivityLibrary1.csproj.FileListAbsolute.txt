@@ -1,0 +1,7 @@
+C:\Data\Workflow\Solution1\ActivityLibrary1\bin\Debug\ActivityLibrary1.dll
+C:\Data\Workflow\Solution1\ActivityLibrary1\bin\Debug\ActivityLibrary1.pdb
+C:\Data\Workflow\Solution1\ActivityLibrary1\bin\Debug\ConsoleAppDotNET35.exe
+C:\Data\Workflow\Solution1\ActivityLibrary1\bin\Debug\ConsoleAppDotNET35.pdb
+C:\Data\Workflow\Solution1\ActivityLibrary1\obj\Debug\ResolveAssemblyReference.cache
+C:\Data\Workflow\Solution1\ActivityLibrary1\obj\Debug\ActivityLibrary1.dll
+C:\Data\Workflow\Solution1\ActivityLibrary1\obj\Debug\ActivityLibrary1.pdb
