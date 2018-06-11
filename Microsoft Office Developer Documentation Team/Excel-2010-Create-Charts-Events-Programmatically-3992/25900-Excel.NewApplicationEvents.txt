@@ -1,0 +1,46 @@
+' Excel 2010 adds a series of new Application-level events.
+' Several of these events deal with events surrounding the
+' use of protected-view windows. Those events have been
+' covered in a different sample for Microsoft Word, and they
+' work equivalently in Microsoft Excel. This sample focuses
+' on these Excel-specific events:
+'   WorkbookNewChart
+'   WorkbookAfterSave
+
+' The following events, new in Excel 2010, deal with pivot tables
+' and won't be covered here:
+'   SheetPivotTableBeforeCommitChanges
+'   SheetPivotTableBeforeDiscardChanges
+'   SheetPivotTableAfterValueChange
+'   SheetPivotTableBeforeAllocateChanges
+'
+' In order to test these events, first create a new workbook and
+' in the VBA editor, add all the following code to the ThisWorkbook
+' class module. Close the workbook, and reopen it (running the code
+' in the workbooks's Open event, which sets up the necessary event hooks).
+
+' With the workbook open, try creating a new worksheet, and creating
+' a new chart. Both actions should trigger new events, and you can come back
+' to the VBA editor to see the results in the Immediate window.
+
+Private WithEvents app As Excel.Application
+Private wbk As Excel.Workbook
+
+Private Sub app_WorkbookNewChart(ByVal Wb As Workbook, ByVal Ch As Chart)
+    Debug.Print "WorkbookNewChart event"
+    Debug.Print "  " & Wb.Name
+    If Ch.HasTitle Then
+        Debug.Print "  " & Ch.ChartTitle.text
+    End If
+End Sub
+
+Private Sub app_WorkbookNewSheet(ByVal Wb As Workbook, ByVal Sh As Object)
+    Debug.Print "WorkbookNewSheet event"
+    Debug.Print "  " & Wb.Name
+    Debug.Print "  " & Sh.Name
+End Sub
+
+Private Sub Workbook_Open()
+    Set wbk = Excel.ActiveWorkbook
+    Set app = Excel.Application
+End Sub
