@@ -1,0 +1,47 @@
+' Word 2010/2007
+
+' In a new document, type the following text and then press Enter:
+'
+' =rand(5, 3)
+'
+' This action inserts 5 paragraphs with 3 sentences each into the
+' current document. Then, in the VBA editor, in the ThisDocument class,
+' copy in this code, and place the cursor within
+' the RangeExportImportFragments
+' procedure and press F8 to single step through the code. Arrange
+' the VBA and Word windows side by side on screen so you can view the
+' behavior as you step through the code.
+
+
+Sub RangeExportImportFragments()
+    ' Word 2007 and later allows you to export ranges of text as a fragments.
+    ' You can them reimport these fragments and use them in any document.
+   
+    ' Given the sample document with 5 paragraphs, try exporting a fragment,
+    ' then modifying the format and reimporting the fragment to see the behavior.
+   
+    ' Change this path to match your own situation.
+    Const FRAGMENT_FILE As String = "C:\Temp\Fragment.docx"
+   
+    Dim rng As Range
+    Set rng = Range(15, 150)
+    rng.Bold = True
+   
+    rng.ExportFragment FRAGMENT_FILE, wdFormatDocumentDefault
+   
+    ' Take a moment and load the fragment file into Microsoft Word.
+    ' It should load like any other document.
+   
+    ' Set formatting back to normal.
+    rng.Bold = False
+   
+    ' Although the second paramter indicates style behavior for the incoming
+    ' fragment, it doesn't appear to make any different which option
+    ' you choose. Both True and False give the same result. If False, the
+    ' fragment should use the formatting from the original document, not the
+    ' current document, but this doesn't appear to be the case. The ImportFragment
+    ' method uses the formatting from the source document, no matter how this
+    ' parameter has been set:
+    Words(1).ImportFragment FRAGMENT_FILE, False
+    Words(100).ImportFragment FRAGMENT_FILE, True
+End Sub
