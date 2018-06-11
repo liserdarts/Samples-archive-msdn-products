@@ -1,0 +1,84 @@
+' Excel 2010
+
+' Demonstrate the AddColorScale method
+
+' In a new workbook, in the VBA editor, copy this code
+' into the Sheet1 class module. Place the cursor
+' inside the TestColorScale procedure, and press F5
+' to run the procedure.
+
+Sub TestColorScale()
+    ' Fill a range with numbers from 1 to 50.
+    Dim rng As Range
+    Set rng = Range("A1:A50")
+
+    Range("A1") = 1
+    Range("A2") = 2
+    Range("A1:A2").AutoFill Destination:=rng
+   
+    rng.FormatConditions.Delete
+   
+   ' Add a 2-color scale.
+    Dim cs As ColorScale
+    Set cs = rng.FormatConditions.AddColorScale(ColorScaleType:=2)
+
+    ' Format the first color as light red
+    With cs.ColorScaleCriteria(1)
+        .Type = xlConditionValueLowestValue
+        With .FormatColor
+            .Color = vbRed
+            ' TintAndShade takes a value between -1 and 1.
+            ' -1 is darkest, 1 is lightest.
+            .TintAndShade = -0.25
+        End With
+    End With
+   
+    ' Format the second color as green, at the highest value.
+    With cs.ColorScaleCriteria(2)
+        .Type = xlConditionValueHighestValue
+        With .FormatColor
+            .Color = vbGreen
+            .TintAndShade = 0
+        End With
+    End With
+   
+    ' Try again with a rectangular range of values.
+    ' Lowest values should be red, values at the 50th percentile
+    ' should be red/green, high values are green.
+    Set rng = Range("D1", "H10")
+    rng.Formula = "=RANDBETWEEN(1, 99)"
+    rng.FormatConditions.Delete
+    Set cs = rng.FormatConditions.AddColorScale(ColorScaleType:=3)
+   
+    ' Set the color of the lowest value, with a range up to
+    ' the next scale criteria. The color should be red.
+    With cs.ColorScaleCriteria(1)
+        .Type = xlConditionValueLowestValue
+        With .FormatColor
+            .Color = &H6B69F8
+            .TintAndShade = 0
+        End With
+    End With
+   
+    ' At the 50th percentile, the color should be red/green.
+    ' Note that you can't set the Value property for all
+    ' values of Type.
+    With cs.ColorScaleCriteria(2)
+        .Type = xlConditionValuePercentile
+        .Value = 50
+        With .FormatColor
+            .Color = &H84EBFF
+            .TintAndShade = 0
+        End With
+    End With
+   
+    ' At the highest value, the color should be green.
+    With cs.ColorScaleCriteria(3)
+        .Type = xlConditionValueHighestValue
+        With .FormatColor
+            .Color = &H7BBE63
+            .TintAndShade = 0
+        End With
+    End With
+End Sub
+
