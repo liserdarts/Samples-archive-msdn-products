@@ -1,0 +1,76 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">
+  <CustomAction
+    Id="Ribbon.List.PerfPointGroup"
+    RegistrationType="List"
+    RegistrationId="450"
+    Location="CommandUI.Ribbon.ListView">
+    <CommandUIExtension>
+      <CommandUIDefinitions>
+        <CommandUIDefinition
+          Location="Ribbon.List.Groups._children">
+          <Group
+            Id="Ribbon.List.PerfPointGroup"
+            Sequence="105"
+            Description="PerformancePoint Services Group"
+            Title="PerformancePoint"
+            Command="EnablePerfPointGroup"
+            Template="Ribbon.Templates.Flexible2">
+            <Controls Id="Ribbon.List.PerfPointGroup.Controls">
+              <Button
+                Id="Ribbon.List.PerfPointGroup.ChangeDataSource"
+                Command="PerfPointChangeDataSource"
+                Image16by16="/_layouts/images/colleagues_16.png"
+                Image32by32="/_layouts/images/colleagues_32.png"
+                LabelText="Change Data Source"
+                ToolTipTitle="Change the data source of analytic reports"
+                ToolTipDescription="Point the selected analytic reports to a different PerformancePoint ADOMD data source."
+                TemplateAlias="o2"
+                Sequence="18" />
+            </Controls>
+          </Group>
+        </CommandUIDefinition>
+        <CommandUIDefinition
+          Location="Ribbon.List.Scaling._children">
+          <MaxSize
+            Id="Ribbon.List.Scaling.PerfPointGroup.MaxSize"
+            Sequence="15"
+            GroupId="Ribbon.List.PerfPointGroup"
+            Size="LargeLarge" />
+        </CommandUIDefinition>
+      </CommandUIDefinitions>
+      <CommandUIHandlers>
+        <CommandUIHandler
+          Command="EnablePerfPointGroup"
+          CommandAction="" />
+        <CommandUIHandler
+          Command="PerfPointChangeDataSource"
+          EnabledScript="javascript:function EnableDataSourceButton() {  
+            var items = SP.ListOperation.Selection.getSelectedItems();  
+            return (items.length >= 1); 
+          }
+          EnableDataSourceButton();"
+          CommandAction="javascript:function ChangeDataSource() {
+            var items = SP.ListOperation.Selection.getSelectedItems('{ListId}');
+            if (items &amp;&amp; items.length > 0) {
+              var itemIds = '';
+              var i;
+              for (i in items) {
+                itemIds += items[i].id + ',';
+              }
+              var options = {
+              url: '/_layouts/ChangeDataSource/ChangeDataSource.aspx?listId=' + '{ListId}' + '&amp;itemIds=' + itemIds,
+              width: 500,
+              height: 550
+              };
+              SP.UI.ModalDialog.showModalDialog(options);
+            }
+            else {
+              alert('Please select at least one analytic report on this page.');
+            }
+          }
+          ChangeDataSource()" />
+      </CommandUIHandlers>
+    </CommandUIExtension>
+  </CustomAction>
+</Elements>

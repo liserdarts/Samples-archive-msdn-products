@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" dslVersion="1.0.0.0" Id="8f21c9c1-95be-4e3a-a093-8c2b7feac4fc" solutionId="8f21c9c1-95be-4e3a-a093-8c2b7feac4fc" resetWebServer="false" name="ChangeDataSourceButton" xmlns="http://schemas.microsoft.com/VisualStudio/2008/SharePointTools/PackageModel">
+  <features>
+    <featureReference itemId="4a5ef109-fc11-4cf7-96b9-9f0c1972fc47" />
+  </features>
+  <projectItems>
+    <projectItemReference itemId="b6050f2b-8d2d-4fd5-818e-4f999f58c3a8" />
+  </projectItems>
+</package>
