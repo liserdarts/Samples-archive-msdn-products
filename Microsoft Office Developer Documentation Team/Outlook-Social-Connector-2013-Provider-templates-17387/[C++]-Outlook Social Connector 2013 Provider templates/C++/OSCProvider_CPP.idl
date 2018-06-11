@@ -1,0 +1,28 @@
+// OSCProvider_CPP.idl : IDL source for OSCProvider_CPP
+//
+
+// This file will be processed by the MIDL tool to
+// produce the type library (OSCProvider_CPP.tlb) and marshalling code.
+
+import "oaidl.idl";
+import "ocidl.idl";
+#include "ids.h"
+
+[
+	uuid(TYPELIB_GUID),
+	version(1.0),
+	helpstring("OSCProvider_CPP 1.0 Type Library")
+]
+library OSCProvider_CPPLib
+{
+	importlib("stdole2.tlb");
+
+	[
+		uuid(PROVIDER_CLSID),
+		helpstring("OSCProvider Class")
+	]
+	coclass OSCProvider
+	{
+		[default] interface IUnknown;
+	};
+};

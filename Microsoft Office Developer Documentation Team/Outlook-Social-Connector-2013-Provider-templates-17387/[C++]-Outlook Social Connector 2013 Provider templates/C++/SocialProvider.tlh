@@ -1,0 +1,195 @@
+﻿// Created by Microsoft (R) C/C++ Compiler Version 15.00.30729.01 (0263f62f).
+//
+// d:\sample\oscprovider_cpp\debug\socialprovider.tlh
+//
+// C++ source equivalent of Win32 type library socialprovider.tlb
+// compiler-generated file created 05/24/10 at 15:20:55 - DO NOT EDIT!
+
+#pragma once
+#pragma pack(push, 8)
+
+#include <comdef.h>
+
+namespace OutlookSocialProvider {
+
+//
+// Forward references and typedefs
+//
+
+struct __declspec(uuid("1f8e79ba-9268-4889-adf3-6d2aabb3c32c"))
+/* LIBID */ __OutlookSocialProvider;
+struct __declspec(uuid("5afe10c7-cab3-4b77-89c9-2e4fd62e7a1f"))
+/* interface */ ISocialSession;
+struct __declspec(uuid("359702a5-52c8-4eda-b9d0-47d95174057a"))
+/* interface */ ISocialProfile;
+struct __declspec(uuid("b252a037-5455-429d-a380-b5e9ada3d423"))
+/* interface */ ISocialPerson;
+struct __declspec(uuid("90d17471-0e8e-415b-ade0-8b414cb3b96e"))
+/* interface */ ISocialProvider;
+struct __declspec(uuid("33a54789-8c4e-4b56-8452-ee3e0dbb0372"))
+/* interface */ ISocialSession2;
+
+//
+// Smart pointer typedef declarations
+//
+
+_COM_SMARTPTR_TYPEDEF(ISocialPerson, __uuidof(ISocialPerson));
+_COM_SMARTPTR_TYPEDEF(ISocialProfile, __uuidof(ISocialProfile));
+_COM_SMARTPTR_TYPEDEF(ISocialSession, __uuidof(ISocialSession));
+_COM_SMARTPTR_TYPEDEF(ISocialProvider, __uuidof(ISocialProvider));
+_COM_SMARTPTR_TYPEDEF(ISocialSession2, __uuidof(ISocialSession2));
+
+//
+// Type library items
+//
+
+struct __declspec(uuid("b252a037-5455-429d-a380-b5e9ada3d423"))
+ISocialPerson : IUnknown
+{
+    //
+    // Raw methods provided by interface
+    //
+
+      virtual HRESULT __stdcall GetActivities (
+        /*[in]*/ DATE startTime,
+        /*[out,retval]*/ BSTR * activities ) = 0;
+      virtual HRESULT __stdcall GetFriendsAndColleagues (
+        /*[out,retval]*/ BSTR * personsCollection ) = 0;
+      virtual HRESULT __stdcall GetFriendsAndColleaguesIDs (
+        /*[out,retval]*/ SAFEARRAY * * friendsIDs ) = 0;
+      virtual HRESULT __stdcall GetPicture (
+        /*[out,retval]*/ SAFEARRAY * * picture ) = 0;
+      virtual HRESULT __stdcall GetStatus (
+        /*[out,retval]*/ BSTR * status ) = 0;
+      virtual HRESULT __stdcall GetDetails (
+        /*[out,retval]*/ BSTR * details ) = 0;
+};
+
+struct __declspec(uuid("359702a5-52c8-4eda-b9d0-47d95174057a"))
+ISocialProfile : ISocialPerson
+{
+    //
+    // Raw methods provided by interface
+    //
+
+      virtual HRESULT __stdcall AreFriendsOrColleagues (
+        SAFEARRAY * userIDs,
+        /*[out,retval]*/ SAFEARRAY * * results ) = 0;
+      virtual HRESULT __stdcall GetActivitiesOfFriendsAndColleagues (
+        /*[in]*/ DATE startTime,
+        /*[out,retval]*/ BSTR * activitiesCollection ) = 0;
+      virtual HRESULT __stdcall SetStatus (
+        BSTR status ) = 0;
+};
+
+struct __declspec(uuid("5afe10c7-cab3-4b77-89c9-2e4fd62e7a1f"))
+ISocialSession : IUnknown
+{
+    //
+    // Raw methods provided by interface
+    //
+
+      virtual HRESULT __stdcall Logon (
+        /*[in]*/ BSTR userName,
+        /*[in]*/ BSTR password ) = 0;
+      virtual HRESULT __stdcall put_SiteUrl (
+        /*[in]*/ BSTR _arg1 ) = 0;
+      virtual HRESULT __stdcall LogonWeb (
+        /*[in]*/ BSTR connectIn,
+        /*[out]*/ BSTR * connectOut ) = 0;
+      virtual HRESULT __stdcall GetLogonUrl (
+        /*[out,retval]*/ BSTR * url ) = 0;
+      virtual HRESULT __stdcall GetNetworkIdentifier (
+        /*[out,retval]*/ BSTR * networkIdentifier ) = 0;
+      virtual HRESULT __stdcall GetLoggedOnUser (
+        /*[out,retval]*/ struct ISocialProfile * * user ) = 0;
+      virtual HRESULT __stdcall get_LoggedOnUserID (
+        /*[out,retval]*/ BSTR * userID ) = 0;
+      virtual HRESULT __stdcall get_LoggedOnUserName (
+        /*[out,retval]*/ BSTR * userName ) = 0;
+      virtual HRESULT __stdcall GetPerson (
+        /*[in]*/ BSTR userID,
+        /*[out,retval]*/ struct ISocialPerson * * person ) = 0;
+      virtual HRESULT __stdcall FindPerson (
+        /*[in]*/ BSTR userID,
+        /*[out,retval]*/ BSTR * result ) = 0;
+      virtual HRESULT __stdcall GetActivities (
+        /*[in]*/ SAFEARRAY * emailAddresses,
+        /*[in]*/ DATE startTime,
+        /*[out,retval]*/ BSTR * activities ) = 0;
+      virtual HRESULT __stdcall FollowPerson (
+        /*[in]*/ BSTR emailAddress ) = 0;
+      virtual HRESULT __stdcall UnFollowPerson (
+        /*[in]*/ BSTR userID ) = 0;
+};
+
+struct __declspec(uuid("90d17471-0e8e-415b-ade0-8b414cb3b96e"))
+ISocialProvider : IUnknown
+{
+    //
+    // Raw methods provided by interface
+    //
+
+      virtual HRESULT __stdcall GetCapabilities (
+        /*[out,retval]*/ BSTR * capabilities ) = 0;
+      virtual HRESULT __stdcall get_Version (
+        /*[out,retval]*/ BSTR * Version ) = 0;
+      virtual HRESULT __stdcall GetSession (
+        /*[out,retval]*/ struct ISocialSession * * session ) = 0;
+      virtual HRESULT __stdcall GetAutoConfiguredSession (
+        /*[out,retval]*/ struct ISocialSession * * session ) = 0;
+      virtual HRESULT __stdcall get_DefaultSiteUrls (
+        /*[out,retval]*/ SAFEARRAY * * siteURLs ) = 0;
+      virtual HRESULT __stdcall get_SocialNetworkIcon (
+        /*[out,retval]*/ SAFEARRAY * * networkIcon ) = 0;
+      virtual HRESULT __stdcall get_SocialNetworkName (
+        /*[out,retval]*/ BSTR * networkName ) = 0;
+      virtual HRESULT __stdcall get_SocialNetworkGuid (
+        /*[out,retval]*/ GUID * guid ) = 0;
+      virtual HRESULT __stdcall GetStatusSettings (
+        /*[out]*/ BSTR * statusDefault,
+        /*[out]*/ int * maxStatusLength ) = 0;
+      virtual HRESULT __stdcall Load (
+        /*[in]*/ BSTR socialProviderInterfaceVersion,
+        /*[in]*/ BSTR languageTag ) = 0;
+};
+
+struct __declspec(uuid("33a54789-8c4e-4b56-8452-ee3e0dbb0372"))
+ISocialSession2 : IUnknown
+{
+    //
+    // Raw methods provided by interface
+    //
+
+      virtual HRESULT __stdcall GetPeopleDetails (
+        /*[in]*/ BSTR personsAddresses,
+        /*[out,retval]*/ BSTR * personsCollection ) = 0;
+      virtual HRESULT __stdcall GetActivitiesEx (
+        /*[in]*/ SAFEARRAY * hashedAddresses,
+        /*[in]*/ DATE startTime,
+        /*[out,retval]*/ BSTR * activities ) = 0;
+      virtual HRESULT __stdcall FollowPersonEx (
+        /*[in]*/ SAFEARRAY * emailAddresses,
+        /*[in]*/ BSTR displayName ) = 0;
+      virtual HRESULT __stdcall LogonCached (
+        /*[in]*/ BSTR connectIn,
+        /*[in]*/ BSTR userName,
+        /*[in]*/ BSTR password,
+        /*[out]*/ BSTR * connectOut ) = 0;
+};
+
+// OSC specific error codes
+#define  OSC_E_OUT_OF_MEMORY                 E_OUTOFMEMORY
+#define  OSC_E_INVALIDARG                    E_INVALIDARG
+#define  OSC_E_NOT_IMPLEMENTED               E_NOTIMPL
+#define  OSC_E_INTERNAL_ERROR                MAKE_HRESULT(SEVERITY_ERROR,FACILITY_ITF,0x1400)
+#define  OSC_E_VERSION                       MAKE_HRESULT(SEVERITY_ERROR,FACILITY_ITF,0x1401)
+#define  OSC_E_COULDNOTCONNECT               MAKE_HRESULT(SEVERITY_ERROR,FACILITY_ITF,0x1402)
+#define  OSC_E_PERMISSION_DENIED             MAKE_HRESULT(SEVERITY_ERROR,FACILITY_ITF,0x1403)
+#define  OSC_E_AUTH_ERROR                    MAKE_HRESULT(SEVERITY_ERROR,FACILITY_ITF,0x1404)
+#define  OSC_E_NOT_FOUND                     MAKE_HRESULT(SEVERITY_ERROR,FACILITY_ITF,0x1405)
+#define  OSC_E_NO_CHANGES					 MAKE_HRESULT(SEVERITY_ERROR,FACILITY_ITF,0x1406)
+
+} // namespace OutlookSocialProvider
+
+#pragma pack(pop)
