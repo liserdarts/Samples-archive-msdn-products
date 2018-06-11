@@ -1,0 +1,32 @@
+' PowerPoint 2010
+
+' Start with an empty PowerPoint presentation. Add a module, and insert
+' this code. Modify the two constants to represent two files in your
+' file system. Put the cursor in the AddMedia procedure, and press F5 to
+' run the code. You should end up with video and audio media elements on the
+' first slide. Note the linking/embedding information in the Immediate window.
+' Note that the new AddMediaObject2 method allows you to specify whether
+' the media object is linked or embedded.
+
+Const videoFileName As String = "C:\Users\Public\Videos\Sample Videos\WildLife.wmv"
+Const audioFileName As String = "C:\Users\Public\Music\Sample Music\Sleep Away.mp3"
+Sub AddMedia()
+    With ActivePresentation.Slides(1).Shapes
+        Dim shp As Shape
+        ' Set only one of height and width--PowerPoint will maintain the correct
+        ' aspect ratio for the video. This video is linked (as opposed to embedded).
+        Set shp = .AddMediaObject2(videoFileName, msoTrue, msoFalse, 10, 10, 320)
+        DisplayMediaInfo shp
+       
+        ' This audio is embedded, not linked.
+        Set shp = .AddMediaObject2(audioFileName, msoFalse, msoTrue, 350, 10)
+        DisplayMediaInfo shp
+    End With
+End Sub
+
+Private Sub DisplayMediaInfo(shp As Shape)
+    If shp.Type = msoMedia Then
+        Debug.Print "Embedded: " & shp.MediaFormat.IsEmbedded
+        Debug.Print "Linked: " & shp.MediaFormat.IsLinked
+    End If
+End Sub
