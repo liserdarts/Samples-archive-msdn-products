@@ -1,0 +1,7 @@
+C:\Users\shansen\Documents\Visual Studio 2010\Projects\PortfolioReportGeneratorSolution\PortfolioReportGenerator\bin\Debug\PortfolioReportGenerator.exe
+C:\Users\shansen\Documents\Visual Studio 2010\Projects\PortfolioReportGeneratorSolution\PortfolioReportGenerator\bin\Debug\PortfolioReportGenerator.pdb
+C:\Users\shansen\Documents\Visual Studio 2010\Projects\PortfolioReportGeneratorSolution\PortfolioReportGenerator\obj\x86\Debug\ResolveAssemblyReference.cache
+C:\Users\shansen\Documents\Visual Studio 2010\Projects\PortfolioReportGeneratorSolution\PortfolioReportGenerator\obj\x86\Debug\PortfolioReportGenerator.exe
+C:\Users\shansen\Documents\Visual Studio 2010\Projects\PortfolioReportGeneratorSolution\PortfolioReportGenerator\obj\x86\Debug\PortfolioReportGenerator.pdb
+C:\Steve Hansen\PortfolioReportGeneratorSolution\PortfolioReportGeneratorSolution\PortfolioReportGenerator\obj\x86\Debug\PortfolioReportGenerator.exe
+C:\Steve Hansen\PortfolioReportGeneratorSolution\PortfolioReportGeneratorSolution\PortfolioReportGenerator\obj\x86\Debug\PortfolioReportGenerator.pdb
