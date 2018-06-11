@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" dslVersion="1.0.0.0" Id="26fb9cd6-05cf-4bc3-af26-055a8b8f7c6f" solutionId="26fb9cd6-05cf-4bc3-af26-055a8b8f7c6f" resetWebServer="false" name="MSDN.SilverlightClientOM" xmlns="http://schemas.microsoft.com/VisualStudio/2008/SharePointTools/PackageModel">
+  <features>
+    <featureReference itemId="a03a82fd-d103-4268-a941-799d724fd495" />
+  </features>
+  <projectItems>
+    <projectItemReference itemId="a8fb2cb3-2a03-4338-b51c-711980772286" />
+  </projectItems>
+</package>

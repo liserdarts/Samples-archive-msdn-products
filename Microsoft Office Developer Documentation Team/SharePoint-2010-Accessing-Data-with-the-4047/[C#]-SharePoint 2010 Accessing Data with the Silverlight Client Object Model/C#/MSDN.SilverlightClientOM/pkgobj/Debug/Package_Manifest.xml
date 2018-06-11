@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Solution xmlns="http://schemas.microsoft.com/sharepoint/" SolutionId="26fb9cd6-05cf-4bc3-af26-055a8b8f7c6f">
+  <Assemblies>
+    <Assembly Location="MSDN.SharePoint.Samples.SilverlightClientOM.dll" DeploymentTarget="GlobalAssemblyCache" />
+  </Assemblies>
+  <TemplateFiles>
+    <TemplateFile Location="Layouts\MSDN.WingtipProductBrowser\ProductBrowser.aspx" />
+    <TemplateFile Location="Layouts\MSDN.WingtipProductBrowser\ProductBrowser.xap" />
+    <TemplateFile Location="Layouts\MSDN.WingtipProductBrowser\Silverlight.js" />
+  </TemplateFiles>
+  <FeatureManifests>
+    <FeatureManifest Location="MSDN.SilverlightClientOM_ProductBrowser\Feature.xml" />
+  </FeatureManifests>
+</Solution>

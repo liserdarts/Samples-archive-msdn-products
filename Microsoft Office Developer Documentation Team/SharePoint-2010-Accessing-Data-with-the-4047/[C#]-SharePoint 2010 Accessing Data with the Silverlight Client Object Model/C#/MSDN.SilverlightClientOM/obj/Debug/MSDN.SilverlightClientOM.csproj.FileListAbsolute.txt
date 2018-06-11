@@ -1,0 +1,5 @@
+C:\Dev\ProductBrowser\MSDN.SilverlightClientOM\obj\Debug\ResolveAssemblyReference.cache
+C:\Dev\ProductBrowser\MSDN.SilverlightClientOM\bin\Debug\MSDN.SharePoint.Samples.SilverlightClientOM.dll
+C:\Dev\ProductBrowser\MSDN.SilverlightClientOM\bin\Debug\MSDN.SharePoint.Samples.SilverlightClientOM.pdb
+C:\Dev\ProductBrowser\MSDN.SilverlightClientOM\obj\Debug\MSDN.SharePoint.Samples.SilverlightClientOM.dll
+C:\Dev\ProductBrowser\MSDN.SilverlightClientOM\obj\Debug\MSDN.SharePoint.Samples.SilverlightClientOM.pdb

@@ -1,0 +1,27 @@
+﻿<Application
+	xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+	xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+	xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+	xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+	xmlns:local="clr-namespace:MSDN.SharePoint.Samples.ProductBrowser"
+    x:Class="MSDN.SharePoint.Samples.ProductBrowser.App" mc:Ignorable="d">
+    
+    <Application.Resources>
+        <local:ListItemConverter x:Key="ListItemConverter" />
+        
+        <DataTemplate x:Key="ProductCategorySelectorTemplate">
+            <StackPanel>
+                <TextBlock x:Name="ProductCategoryTextBlock" 
+                           Text="{Binding Converter={StaticResource ListItemConverter}, ConverterParameter='Title'}" />
+            </StackPanel>
+        </DataTemplate>
+
+        <DataTemplate x:Key="ProductSelectorTemplate">
+            <StackPanel>
+                <TextBlock x:Name="ProductTextBlock" 
+                           Text="{Binding Converter={StaticResource ListItemConverter}, ConverterParameter='Title'}" />
+            </StackPanel>
+        </DataTemplate>
+    </Application.Resources>
+    
+</Application>

@@ -1,0 +1,2 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Feature xmlns="http://schemas.microsoft.com/sharepoint/" Description="Upon activation, adds a navigation item to the top nav bar pointing to the product browser page." Id="e3e278c0-36a1-46d9-8c63-3c94c8d00e5a" ReceiverAssembly="MSDN.SharePoint.Samples.SilverlightClientOM, Version=1.0.0.0, Culture=neutral, PublicKeyToken=cda5365944e374c4" ReceiverClass="MSDN.SharePoint.Samples.SilverlightClientOM.Features.ProductBrowser.ProductBrowserEventReceiver" Scope="Web" Title="Wingtip Silverlight Product Browser"></Feature>

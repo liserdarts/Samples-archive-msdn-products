@@ -1,0 +1,58 @@
+C:\Dev\Clients\Microsoft\MSDN Content Authoring\2009-12\AC - Silverlight ClientOM - VHT\ProductBrowser\ProductBrowser\Bin\Debug\AppManifest.xaml
+C:\Dev\Clients\Microsoft\MSDN Content Authoring\2009-12\AC - Silverlight ClientOM - VHT\ProductBrowser\ProductBrowser\Bin\Debug\ProductBrowser.dll
+C:\Dev\Clients\Microsoft\MSDN Content Authoring\2009-12\AC - Silverlight ClientOM - VHT\ProductBrowser\ProductBrowser\Bin\Debug\ProductBrowser.pdb
+C:\Dev\Clients\Microsoft\MSDN Content Authoring\2009-12\AC - Silverlight ClientOM - VHT\ProductBrowser\ProductBrowser\Bin\Debug\ProductBrowser.xap
+C:\Dev\Clients\Microsoft\MSDN Content Authoring\2009-12\AC - Silverlight ClientOM - VHT\ProductBrowser\ProductBrowser\Bin\Debug\TestPage.html
+C:\Dev\Clients\Microsoft\MSDN Content Authoring\2009-12\AC - Silverlight ClientOM - VHT\ProductBrowser\ProductBrowser\obj\Debug\ResolveAssemblyReference.cache
+C:\Dev\Clients\Microsoft\MSDN Content Authoring\2009-12\AC - Silverlight ClientOM - VHT\ProductBrowser\ProductBrowser\obj\Debug\App.g.cs
+C:\Dev\Clients\Microsoft\MSDN Content Authoring\2009-12\AC - Silverlight ClientOM - VHT\ProductBrowser\ProductBrowser\obj\Debug\MainPage.g.cs
+C:\Dev\Clients\Microsoft\MSDN Content Authoring\2009-12\AC - Silverlight ClientOM - VHT\ProductBrowser\ProductBrowser\obj\Debug\ProductBrowser.g.resources
+C:\Dev\Clients\Microsoft\MSDN Content Authoring\2009-12\AC - Silverlight ClientOM - VHT\ProductBrowser\ProductBrowser\obj\Debug\ProductBrowser.dll
+C:\Dev\Clients\Microsoft\MSDN Content Authoring\2009-12\AC - Silverlight ClientOM - VHT\ProductBrowser\ProductBrowser\obj\Debug\ProductBrowser.pdb
+C:\Dev\Clients\Microsoft\MSDN Content Authoring\2009-12\AC - Silverlight ClientOM - VHT\ProductBrowser\ProductBrowser\obj\Debug\XapCacheFile.xml
+C:\Dev\Clients\Microsoft\MSDN Content Authoring\2009-12\AC - Silverlight ClientOM - VHT\ProductBrowser\ProductBrowser\Bin\Debug\System.Windows.Controls.dll
+C:\Dev\Clients\Microsoft\MSDN Content Authoring\2009-12\AC - Silverlight ClientOM - VHT\ProductBrowser\ProductBrowser\Bin\Debug\System.Windows.Controls.xml
+C:\Dev\Clients\Microsoft\MSDN Content Authoring\2009-12\AC - Silverlight ClientOM - VHT\ProductBrowser\ProductBrowser\Bin\Debug\de\System.Windows.Controls.resources.dll
+C:\Dev\Clients\Microsoft\MSDN Content Authoring\2009-12\AC - Silverlight ClientOM - VHT\ProductBrowser\ProductBrowser\Bin\Debug\es\System.Windows.Controls.resources.dll
+C:\Dev\Clients\Microsoft\MSDN Content Authoring\2009-12\AC - Silverlight ClientOM - VHT\ProductBrowser\ProductBrowser\Bin\Debug\fr\System.Windows.Controls.resources.dll
+C:\Dev\Clients\Microsoft\MSDN Content Authoring\2009-12\AC - Silverlight ClientOM - VHT\ProductBrowser\ProductBrowser\Bin\Debug\it\System.Windows.Controls.resources.dll
+C:\Dev\Clients\Microsoft\MSDN Content Authoring\2009-12\AC - Silverlight ClientOM - VHT\ProductBrowser\ProductBrowser\Bin\Debug\ja\System.Windows.Controls.resources.dll
+C:\Dev\Clients\Microsoft\MSDN Content Authoring\2009-12\AC - Silverlight ClientOM - VHT\ProductBrowser\ProductBrowser\Bin\Debug\ko\System.Windows.Controls.resources.dll
+C:\Dev\Clients\Microsoft\MSDN Content Authoring\2009-12\AC - Silverlight ClientOM - VHT\ProductBrowser\ProductBrowser\Bin\Debug\zh-Hans\System.Windows.Controls.resources.dll
+C:\Dev\Clients\Microsoft\MSDN Content Authoring\2009-12\AC - Silverlight ClientOM - VHT\ProductBrowser\ProductBrowser\Bin\Debug\zh-Hant\System.Windows.Controls.resources.dll
+C:\Dev\Clients\Microsoft\MSDN Content Authoring\2009-12\AC - Silverlight ClientOM - VHT\ProductBrowser\ProductBrowser\obj\Debug\ProductDetails.g.cs
+C:\Dev\Clients\Microsoft\MSDN Content Authoring\2009-12\AC - Silverlight ClientOM - VHT\ProductBrowser\ProductBrowser\obj\Debug\ProductEditor.g.cs
+C:\Dev\Clients\Microsoft\MSDN Content Authoring\2009-12\AC - Silverlight ClientOM - VHT\ProductBrowser\ProductBrowser\obj\Debug\StatusBarControl.g.cs
+C:\Dev\ProductBrowser\ProductBrowser\Bin\Debug\AppManifest.xaml
+C:\Dev\ProductBrowser\ProductBrowser\Bin\Debug\ProductBrowser.xap
+C:\Dev\ProductBrowser\ProductBrowser\Bin\Debug\TestPage.html
+C:\Dev\ProductBrowser\ProductBrowser\Bin\Debug\Microsoft.SharePoint.Client.Silverlight.dll
+C:\Dev\ProductBrowser\ProductBrowser\Bin\Debug\Microsoft.SharePoint.Client.Silverlight.Runtime.dll
+C:\Dev\ProductBrowser\ProductBrowser\Bin\Debug\System.Windows.Controls.dll
+C:\Dev\ProductBrowser\ProductBrowser\Bin\Debug\System.Windows.Controls.xml
+C:\Dev\ProductBrowser\ProductBrowser\Bin\Debug\en-us\Microsoft.SharePoint.Client.Silverlight.Runtime.resources.dll
+C:\Dev\ProductBrowser\ProductBrowser\Bin\Debug\de\System.Windows.Controls.resources.dll
+C:\Dev\ProductBrowser\ProductBrowser\Bin\Debug\es\System.Windows.Controls.resources.dll
+C:\Dev\ProductBrowser\ProductBrowser\Bin\Debug\fr\System.Windows.Controls.resources.dll
+C:\Dev\ProductBrowser\ProductBrowser\Bin\Debug\it\System.Windows.Controls.resources.dll
+C:\Dev\ProductBrowser\ProductBrowser\Bin\Debug\ja\System.Windows.Controls.resources.dll
+C:\Dev\ProductBrowser\ProductBrowser\Bin\Debug\ko\System.Windows.Controls.resources.dll
+C:\Dev\ProductBrowser\ProductBrowser\Bin\Debug\zh-Hans\System.Windows.Controls.resources.dll
+C:\Dev\ProductBrowser\ProductBrowser\Bin\Debug\zh-Hant\System.Windows.Controls.resources.dll
+C:\Dev\ProductBrowser\ProductBrowser\obj\Debug\ResolveAssemblyReference.cache
+C:\Dev\ProductBrowser\ProductBrowser\obj\Debug\App.g.cs
+C:\Dev\ProductBrowser\ProductBrowser\obj\Debug\MainPage.g.cs
+C:\Dev\ProductBrowser\ProductBrowser\obj\Debug\ProductDetails.g.cs
+C:\Dev\ProductBrowser\ProductBrowser\obj\Debug\ProductEditor.g.cs
+C:\Dev\ProductBrowser\ProductBrowser\obj\Debug\StatusBarControl.g.cs
+C:\Dev\ProductBrowser\ProductBrowser\obj\Debug\XapCacheFile.xml
+C:\Dev\ProductBrowser\ProductBrowser\obj\Debug\MSDN.SharePoint.Samples.ProductBrowser.g.resources
+C:\Dev\ProductBrowser\ProductBrowser\Bin\Debug\MSDN.SharePoint.Samples.ProductBrowser.dll
+C:\Dev\ProductBrowser\ProductBrowser\Bin\Debug\MSDN.SharePoint.Samples.ProductBrowser.pdb
+C:\Dev\ProductBrowser\ProductBrowser\obj\Debug\MSDN.SharePoint.Samples.ProductBrowser.dll
+C:\Dev\ProductBrowser\ProductBrowser\obj\Debug\MSDN.SharePoint.Samples.ProductBrowser.pdb
+C:\Dev\ProductBrowser\MSDN.SilverlightClientOM\Layouts\MSDN.WingtipProductBrowser\MSDN.SharePoint.Samples.ProductBrowser.dll
+C:\Dev\ProductBrowser\MSDN.SilverlightClientOM\Layouts\MSDN.WingtipProductBrowser\MSDN.SharePoint.Samples.ProductBrowser.pdb
+C:\Dev\ProductBrowser\MSDN.SilverlightClientOM\Layouts\MSDN.WingtipProductBrowser\AppManifest.xaml
+C:\Dev\ProductBrowser\MSDN.SilverlightClientOM\Layouts\MSDN.WingtipProductBrowser\ProductBrowser.xap
+C:\Dev\ProductBrowser\MSDN.SilverlightClientOM\Layouts\MSDN.WingtipProductBrowser\TestPage.html
