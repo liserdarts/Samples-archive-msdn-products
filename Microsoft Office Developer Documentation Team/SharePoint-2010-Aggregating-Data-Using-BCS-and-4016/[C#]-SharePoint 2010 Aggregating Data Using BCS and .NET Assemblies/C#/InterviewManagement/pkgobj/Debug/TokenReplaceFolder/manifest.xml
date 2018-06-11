@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Solution xmlns="http://schemas.microsoft.com/sharepoint/" SolutionId="fa643e08-0d3c-4919-b23e-abd136f8869c" SharePointProductVersion="14.0">
+  <Assemblies>
+    <Assembly Location="InterviewManagement.dll" DeploymentTarget="GlobalAssemblyCache" />
+  </Assemblies>
+  <FeatureManifests>
+    <FeatureManifest Location="InterviewManagement_Feature1\Feature.xml" />
+  </FeatureManifests>
+</Solution>

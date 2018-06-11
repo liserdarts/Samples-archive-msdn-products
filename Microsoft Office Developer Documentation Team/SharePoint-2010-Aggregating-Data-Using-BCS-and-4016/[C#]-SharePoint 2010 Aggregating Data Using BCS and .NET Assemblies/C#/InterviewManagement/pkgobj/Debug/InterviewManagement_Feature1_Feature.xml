@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Feature xmlns="http://schemas.microsoft.com/sharepoint/" Description="My SharePoint BDC Feature" Id="18b7486c-1673-4508-8d26-00c13eaa3893" ReceiverAssembly="Microsoft.Office.SharePoint.ClientExtensions, Version=14.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c" ReceiverClass="Microsoft.Office.SharePoint.ClientExtensions.Deployment.ImportModelReceiver" Scope="Farm" Title="InterviewManagement Feature1">
+  <Properties>
+    <Property Key="GloballyAvailable" Value="true" />
+    <Property Key="BdcModel1" Value="BdcAssemblies\InterviewManagement.dll" />
+    <Property Key="IncrementalUpdate" Value="true" />
+    <Property Key="ModelFileName" Value="BdcModel1\BdcModel1.bdcm" />
+    <Property Key="SiteUrl" Value="http://ab004-20/" />
+  </Properties>
+  <ElementManifests>
+    <ElementFile Location="BdcModel1\BdcModel1.bdcm" />
+    <ElementFile Location="BdcAssemblies\InterviewManagement.dll" />
+  </ElementManifests>
+</Feature>

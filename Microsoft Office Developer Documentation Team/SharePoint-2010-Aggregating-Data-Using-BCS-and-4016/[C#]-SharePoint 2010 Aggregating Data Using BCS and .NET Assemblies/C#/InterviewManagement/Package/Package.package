@@ -1,0 +1,6 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package dslVersion="1.0.0.0" Id="fa643e08-0d3c-4919-b23e-abd136f8869c" solutionId="fa643e08-0d3c-4919-b23e-abd136f8869c" xmlns="http://schemas.microsoft.com/VisualStudio/2008/SharePointTools/PackageModel" name="InterviewManagement">
+    <features>
+        <featureReference itemId="18b7486c-1673-4508-8d26-00c13eaa3893" />
+    </features>
+</package>

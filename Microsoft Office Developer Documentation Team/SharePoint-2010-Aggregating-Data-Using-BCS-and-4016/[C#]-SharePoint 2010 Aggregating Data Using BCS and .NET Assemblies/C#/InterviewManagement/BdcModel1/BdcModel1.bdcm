@@ -1,0 +1,117 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Model xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://schemas.microsoft.com/windows/2007/BusinessDataCatalog BDCMetadata.xsd" Name="BdcModel1" IsCached="false" xmlns="http://schemas.microsoft.com/windows/2007/BusinessDataCatalog">
+  <LobSystems>
+    <LobSystem Type="DotNetAssembly" Name="BdcModel1">
+      <LobSystemInstances>
+        <LobSystemInstance Name="BdcModel1">
+          <Properties>
+            <Property Name="SsoProviderImplementation" Type="System.String">Microsoft.Office.SecureStoreService.Server.SecureStoreProvider, Microsoft.Office.SecureStoreService, Version=14.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c</Property>
+            <Property Name="SecondarySsoApplicationId" Type="System.String">DBCredentials</Property>
+            <Property Name="SiteUrl" Type="System.String">http://localhost</Property>
+            <Property Name="FolderName" Type="System.String">CandidateArtifacts</Property>
+          </Properties>
+        </LobSystemInstance>
+      </LobSystemInstances>
+      <Entities>
+        <Entity Namespace="InterviewManagement.BdcModel1" Version="1.0.0.194" EstimatedInstanceCount="1000" Name="Candidate">
+          <Properties>
+            <Property Name="Class" Type="System.String">InterviewManagement.BdcModel1.CandidateService, BdcModel1</Property>
+          </Properties>
+          <Identifiers>
+            <Identifier TypeName="System.Int32" Name="CandidateId" />
+          </Identifiers>
+          <Methods>
+            <Method Name="ReadList">
+              <FilterDescriptors>
+                <FilterDescriptor Type="Username" Name="userFilterDescriptor" />
+                <FilterDescriptor Type="Password" Name="passwordFilterDescriptor" />
+              </FilterDescriptors>
+              <Parameters>
+                <Parameter Direction="Return" Name="returnParameter">
+                  <TypeDescriptor TypeName="InterviewManagement.BdcNetModel.Candidate[], BdcModel1" IsCollection="true" Name="CandidateList">
+                    <TypeDescriptors>
+                      <TypeDescriptor TypeName="InterviewManagement.BdcNetModel.Candidate, BdcModel1" Name="Candidate">
+                        <TypeDescriptors>
+                          <TypeDescriptor TypeName="System.Int32" IdentifierName="CandidateId" Name="CandidateId" />
+                          <TypeDescriptor TypeName="System.String" Name="FirstName" />
+                          <TypeDescriptor TypeName="System.String" Name="LastName" />
+                          <TypeDescriptor TypeName="System.String" Name="MiddleName" />
+                          <TypeDescriptor TypeName="System.String" Name="PrimaryContactNo" />
+                          <TypeDescriptor TypeName="System.String" Name="SecondaryContactNo" />
+                          <TypeDescriptor TypeName="System.String" Name="PrimaryEmail" />
+                          <TypeDescriptor TypeName="System.String" Name="SecondaryEmail" />
+                        </TypeDescriptors>
+                      </TypeDescriptor>
+                    </TypeDescriptors>
+                  </TypeDescriptor>
+                </Parameter>
+                <Parameter Direction="In" Name="username">
+                  <TypeDescriptor TypeName="System.String" AssociatedFilter="userFilterDescriptor" Name="usernameTypeDescriptor" />
+                </Parameter>
+                <Parameter Direction="In" Name="password">
+                  <TypeDescriptor TypeName="System.String" AssociatedFilter="passwordFilterDescriptor" Name="passwordTypeDescriptor" />
+                </Parameter>
+              </Parameters>
+              <MethodInstances>
+                <MethodInstance Type="Finder" ReturnParameterName="returnParameter" Default="true" Name="ReadList" DefaultDisplayName="Entity1 List" />
+              </MethodInstances>
+            </Method>
+            <Method Name="ReadItem">
+              <FilterDescriptors>
+                <FilterDescriptor Type="Username" Name="usernameFilter" />
+                <FilterDescriptor Type="Password" Name="passwordFilter" />
+              </FilterDescriptors>
+              <Parameters>
+                <Parameter Direction="In" Name="id">
+                  <TypeDescriptor TypeName="System.Int32" IdentifierName="CandidateId" Name="CandidateId" />
+                </Parameter>
+                <Parameter Direction="Return" Name="returnParameter">
+                  <TypeDescriptor TypeName="InterviewManagement.BdcNetModel.Candidate, BdcModel1" Name="Candidate">
+                    <TypeDescriptors>
+                      <TypeDescriptor TypeName="System.Int32" IdentifierName="CandidateId" Name="CandidateId" />
+                      <TypeDescriptor TypeName="System.String" Name="FirstName" />
+                      <TypeDescriptor TypeName="System.String" Name="LastName" />
+                      <TypeDescriptor TypeName="System.String" Name="MiddleName" />
+                      <TypeDescriptor TypeName="System.String" Name="PrimaryContactNo" />
+                      <TypeDescriptor TypeName="System.String" Name="SecondaryContactNo" />
+                      <TypeDescriptor TypeName="System.String" Name="PrimaryEmail" />
+                      <TypeDescriptor TypeName="System.String" Name="SecondaryEmail" />
+                    </TypeDescriptors>
+                  </TypeDescriptor>
+                </Parameter>
+                <Parameter Direction="In" Name="username">
+                  <TypeDescriptor TypeName="System.String" AssociatedFilter="usernameFilter" Name="usernameTypeDescriptor" />
+                </Parameter>
+                <Parameter Direction="In" Name="password">
+                  <TypeDescriptor TypeName="System.String" AssociatedFilter="passwordFilter" Name="passwordTypeDescriptor" />
+                </Parameter>
+              </Parameters>
+              <MethodInstances>
+                <MethodInstance Type="SpecificFinder" ReturnParameterName="returnParameter" Default="true" Name="ReadItem" DefaultDisplayName="Read Entity1" />
+              </MethodInstances>
+            </Method>
+             <Method Name="GetResumeDetails" IsStatic="true">
+              <Parameters>
+                <Parameter Name="candidateId" Direction="In">
+                  <TypeDescriptor TypeName="System.Int32" IdentifierName="CandidateId" Name="CandidateId" />
+                </Parameter>
+                <Parameter Name="stream" Direction="Return">
+                  <TypeDescriptor TypeName="System.IO.Stream" Name="Stream" />
+                </Parameter>
+              </Parameters>
+              <MethodInstances>
+                <MethodInstance Name="ResumeStream" Type="StreamAccessor" ReturnParameterName="stream"> 
+                 <Properties>
+                    <Property Name="MimeType" Type="System.String">application/vnd.openxmlformats-officedocument.wordprocessingml.document</Property>
+                    <Property Name="FileName" Type="System.String">ResumeFile.docx</Property>
+                    <Property Name="MaxFileSizeInKB" Type="System.Int32">120</Property>
+                  </Properties>
+                </MethodInstance>
+              </MethodInstances>
+            </Method>
+          </Methods>
+        </Entity>
+      </Entities>
+    </LobSystem>
+  </LobSystems>
+</Model>

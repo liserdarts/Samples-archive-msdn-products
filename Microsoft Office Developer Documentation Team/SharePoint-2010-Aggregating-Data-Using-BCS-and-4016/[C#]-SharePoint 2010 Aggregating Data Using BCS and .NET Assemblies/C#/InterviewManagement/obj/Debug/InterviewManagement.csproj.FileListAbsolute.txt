@@ -1,0 +1,5 @@
+D:\Users\PKMACCT\documents\visual studio 2010\Projects\InterviewManagement\InterviewManagement\bin\Debug\InterviewManagement.dll
+D:\Users\PKMACCT\documents\visual studio 2010\Projects\InterviewManagement\InterviewManagement\bin\Debug\InterviewManagement.pdb
+D:\Users\PKMACCT\documents\visual studio 2010\Projects\InterviewManagement\InterviewManagement\obj\Debug\ResolveAssemblyReference.cache
+D:\Users\PKMACCT\documents\visual studio 2010\Projects\InterviewManagement\InterviewManagement\obj\Debug\InterviewManagement.dll
+D:\Users\PKMACCT\documents\visual studio 2010\Projects\InterviewManagement\InterviewManagement\obj\Debug\InterviewManagement.pdb
