@@ -1,0 +1,24 @@
+HKCR
+{
+	ComMessageLogger.1 = s 'Com Message Logger'
+	{
+		CLSID = s '{D011BB07-3839-4583-86D2-F64AC66451B2}'
+	}
+	ComMessageLogger = s 'Com Message Logger'
+	{
+		CLSID = s '{D011BB07-3839-4583-86D2-F64AC66451B2}'
+		CurVer = s 'ComMessageLogger.1'
+	}
+	NoRemove CLSID
+	{
+		ForceRemove {D011BB07-3839-4583-86D2-F64AC66451B2} = s 'Com Message Logger'
+		{
+			ProgID = s 'ComMessageLogger.1'
+			VersionIndependentProgID = s 'ComMessageLogger'
+			ForceRemove 'Programmable'
+			LocalServer32 = s '%MODULE%'
+			val AppID = s '%APPID%'
+			'TypeLib' = s '{F3C074A1-05FC-4089-9C67-80DF7D44F25B}'
+		}
+	}
+}

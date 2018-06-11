@@ -1,0 +1,11 @@
+HKCR
+{
+	NoRemove AppID
+	{
+		'%APPID%' = s 'ComMessageLoggingService'
+		'ComMessageLoggingService.EXE'
+		{
+			val AppID = s '%APPID%'
+		}
+	}
+}

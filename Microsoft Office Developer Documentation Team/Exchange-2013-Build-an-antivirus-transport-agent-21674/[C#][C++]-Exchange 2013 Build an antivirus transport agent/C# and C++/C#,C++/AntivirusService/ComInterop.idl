@@ -1,0 +1,48 @@
+// ***************************************************************
+// <copyright file="ComInterop.idl" company="Microsoft">
+//     Copyright (C) Microsoft Corporation.  All rights reserved.
+// </copyright>
+// <summary>
+// COM interface description for the antivirus sample agent
+// </summary>
+// ***************************************************************
+
+[
+  uuid(5B616628-563E-4d4d-94DE-A9024D1CFB04),
+  version(8.0),
+]
+library ComInterop
+{
+    // TLib :     // TLib : OLE Automation : {00020430-0000-0000-C000-000000000046}
+    importlib("STDOLE2.TLB");
+
+    // Forward declare all types defined in this typelib
+    interface IComInvoke;
+    interface IComCallback;
+
+    [
+      odl,
+      uuid(7578C871-D9B3-455a-8371-A82F7D864D0D),
+      version(1.0),
+      oleautomation,
+      custom(0F21F359-AB84-41E8-9A78-36D110E6D2F9, 
+	  "Microsoft.Exchange.Samples.Antivirus.IComInvoke")
+    ]
+    interface IComInvoke : IUnknown {
+        HRESULT _stdcall BeginVirusScan([in] IComCallback* callback);
+    };
+
+    [
+      odl,
+      uuid(3E0D4ED3-898B-470f-AD77-921F2AE29F74),
+      version(1.0),
+      oleautomation,
+      custom(0F21F359-AB84-41E8-9A78-36D110E6D2F9, 
+	  "Microsoft.Exchange.Samples.Antivirus.IComCallback")
+    ]
+    interface IComCallback : IUnknown {
+        HRESULT _stdcall VirusScanCompleted();
+		HRESULT _stdcall GetContentStream([out] IStream** stream);
+        HRESULT _stdcall SetContentStream([in] IUnknown* stream);
+    };
+};

@@ -1,0 +1,24 @@
+HKCR
+{
+	VirusScanner.1 = s 'Virus Scanner'
+	{
+		CLSID = s '{B71FEE9E-25EF-4e50-A1D2-545361C90E88}'
+	}
+	VirusScanner = s 'Virus Scanner'
+	{
+		CLSID = s '{B71FEE9E-25EF-4e50-A1D2-545361C90E88}'
+		CurVer = s 'VirusScanner.1'
+	}
+	NoRemove CLSID
+	{
+		ForceRemove {B71FEE9E-25EF-4e50-A1D2-545361C90E88} = s 'VirusScanner'
+		{
+			ProgID = s 'VirusScanner.1'
+			VersionIndependentProgID = s 'VirusScanner'
+			ForceRemove 'Programmable'
+			LocalServer32 = s '%MODULE%'
+			val AppID = s '%APPID%'
+			'TypeLib' = s '{9484023D-7A6C-4d16-9465-281347E2F351}'
+		}
+	}
+}
