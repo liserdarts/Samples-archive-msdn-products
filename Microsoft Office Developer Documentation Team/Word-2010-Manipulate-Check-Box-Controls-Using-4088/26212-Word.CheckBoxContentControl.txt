@@ -1,0 +1,33 @@
+Sub CheckedSymbolDemo()
+   
+    ' How do you know what number to use for the CharacterNumber
+    ' property? In Word 2010, select the Insert menu item.
+    ' In the Symbols group, select Symbol, and choose More Symbols.
+    ' In the Symbol dialog box, the display of symbols always starts
+    ' with character 32. You can either add 31 to the position of the
+    ' the character in the list of characters (counting from left to right),
+    ' or you can set the from: dropdown list in the lower-right corner to
+    ' ASCII (decimal) and then use the value you see in the Character code
+    ' text box. Althought the Font parameter is optional, it's probably
+    ' best that you always include it, to avoid any ambiguity.
+   
+    ' The following example sets the checked and unchecked symbols of a
+    ' new check box content control. It also sets the new Checked property.
+   
+    ' Place this code into a module in a new document, place the cursor inside
+    ' the procedure, and press F5 to run the demo. Switch to Microsoft Word 2010
+    ' to compare the behavior of the two check box content controls.
+   
+    Dim cc As ContentControl
+    Set cc = ActiveDocument.ContentControls.Add(wdContentControlCheckBox)
+    cc.Title = "Fancy Check Box"
+    cc.SetCheckedSymbol CharacterNumber:=74, Font:="Wingdings"
+    cc.SetUncheckedSymbol CharacterNumber:=76, Font:="Wingdings"
+    cc.Checked = True
+   
+    ' Display a plain check box, too.
+    Dim cc1 As ContentControl
+    Set cc1 = ActiveDocument.ContentControls.Add(wdContentControlCheckBox)
+    cc1.Title = "Plain Old Check Box"
+    cc1.Checked = True
+End Sub
