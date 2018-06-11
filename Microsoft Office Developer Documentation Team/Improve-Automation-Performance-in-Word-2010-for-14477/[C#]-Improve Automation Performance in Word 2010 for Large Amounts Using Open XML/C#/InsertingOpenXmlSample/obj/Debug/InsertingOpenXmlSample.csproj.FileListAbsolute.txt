@@ -1,0 +1,23 @@
+C:\Users\ankumar\Documents\Visual Studio 2008\Projects\InsertingOpenXmlSample\InsertingOpenXmlSample\bin\Debug\Source.docx
+C:\Users\ankumar\Documents\Visual Studio 2008\Projects\InsertingOpenXmlSample\InsertingOpenXmlSample\bin\Debug\InsertingOpenXmlSample.dll
+C:\Users\ankumar\Documents\Visual Studio 2008\Projects\InsertingOpenXmlSample\InsertingOpenXmlSample\bin\Debug\InsertingOpenXmlSample.pdb
+C:\Users\ankumar\Documents\Visual Studio 2008\Projects\InsertingOpenXmlSample\InsertingOpenXmlSample\bin\Debug\InsertingOpenXmlSample.dll.manifest
+C:\Users\ankumar\Documents\Visual Studio 2008\Projects\InsertingOpenXmlSample\InsertingOpenXmlSample\bin\Debug\InsertingOpenXmlSample.vsto
+C:\Users\ankumar\Documents\Visual Studio 2008\Projects\InsertingOpenXmlSample\InsertingOpenXmlSample\bin\Debug\Target.docx
+C:\Users\ankumar\Documents\Visual Studio 2008\Projects\InsertingOpenXmlSample\InsertingOpenXmlSample\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\ankumar\Documents\Visual Studio 2008\Projects\InsertingOpenXmlSample\InsertingOpenXmlSample\obj\Debug\InsertingOpenXmlSample.Properties.Resources.resources
+C:\Users\ankumar\Documents\Visual Studio 2008\Projects\InsertingOpenXmlSample\InsertingOpenXmlSample\obj\Debug\InsertingOpenXmlSample.ThisDocument.resources
+C:\Users\ankumar\Documents\Visual Studio 2008\Projects\InsertingOpenXmlSample\InsertingOpenXmlSample\obj\Debug\InsertingOpenXmlSample.csproj.GenerateResource.Cache
+C:\Users\ankumar\Documents\Visual Studio 2008\Projects\InsertingOpenXmlSample\InsertingOpenXmlSample\obj\Debug\InsertingOpenXmlSample.dll
+C:\Users\ankumar\Documents\Visual Studio 2008\Projects\InsertingOpenXmlSample\InsertingOpenXmlSample\obj\Debug\InsertingOpenXmlSample.pdb
+C:\Users\ericwhit\Documents\09-12-16-Anil\InsertingOpenXmlSample\InsertingOpenXmlSample\bin\Debug\InsertingOpenXmlSample.dll
+C:\Users\ericwhit\Documents\09-12-16-Anil\InsertingOpenXmlSample\InsertingOpenXmlSample\bin\Debug\InsertingOpenXmlSample.pdb
+C:\Users\ericwhit\Documents\09-12-16-Anil\InsertingOpenXmlSample\InsertingOpenXmlSample\bin\Debug\InsertingOpenXmlSample.dll.manifest
+C:\Users\ericwhit\Documents\09-12-16-Anil\InsertingOpenXmlSample\InsertingOpenXmlSample\bin\Debug\InsertingOpenXmlSample.vsto
+C:\Users\ericwhit\Documents\09-12-16-Anil\InsertingOpenXmlSample\InsertingOpenXmlSample\bin\Debug\Target.docx
+C:\Users\ericwhit\Documents\09-12-16-Anil\InsertingOpenXmlSample\InsertingOpenXmlSample\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\ericwhit\Documents\09-12-16-Anil\InsertingOpenXmlSample\InsertingOpenXmlSample\obj\Debug\InsertingOpenXmlSample.Properties.Resources.resources
+C:\Users\ericwhit\Documents\09-12-16-Anil\InsertingOpenXmlSample\InsertingOpenXmlSample\obj\Debug\InsertingOpenXmlSample.ThisDocument.resources
+C:\Users\ericwhit\Documents\09-12-16-Anil\InsertingOpenXmlSample\InsertingOpenXmlSample\obj\Debug\InsertingOpenXmlSample.csproj.GenerateResource.Cache
+C:\Users\ericwhit\Documents\09-12-16-Anil\InsertingOpenXmlSample\InsertingOpenXmlSample\obj\Debug\InsertingOpenXmlSample.dll
+C:\Users\ericwhit\Documents\09-12-16-Anil\InsertingOpenXmlSample\InsertingOpenXmlSample\obj\Debug\InsertingOpenXmlSample.pdb

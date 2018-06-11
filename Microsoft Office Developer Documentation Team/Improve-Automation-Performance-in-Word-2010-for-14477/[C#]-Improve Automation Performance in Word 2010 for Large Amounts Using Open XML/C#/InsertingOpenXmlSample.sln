@@ -1,0 +1,20 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 10.00
+# Visual Studio 2008
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "InsertingOpenXmlSample", "InsertingOpenXmlSample\InsertingOpenXmlSample.csproj", "{2369F68D-A49C-4476-8C6D-B764BCB8EB6F}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{2369F68D-A49C-4476-8C6D-B764BCB8EB6F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2369F68D-A49C-4476-8C6D-B764BCB8EB6F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2369F68D-A49C-4476-8C6D-B764BCB8EB6F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2369F68D-A49C-4476-8C6D-B764BCB8EB6F}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
