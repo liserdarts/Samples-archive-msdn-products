@@ -1,0 +1,377 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
+    <head><link rel="stylesheet" type="text/css" href="description/Combined.css,0:HeaderFooterSprite,0:Header.NonMtps,1:LinkList;/Areas/Centers/Themes/StandardDevCenter/Content:0,/Areas/Epx/Themes/Base/Content:1&amp;amp;hashKey=C9973DA951AE6202C9B348379A1BE49D" xmlns="http://www.w3.org/1999/xhtml" />
+<link type="text/css" rel="stylesheet" xmlns="http://www.w3.org/1999/xhtml" />
+<link rel="stylesheet" type="text/css" href="description/4f0db316-e33e-4e5c-b975-0f6de635f8e4Combined.css,0:HeaderFooterSprite,0:Footer.NonMtps,1:LinkList;/Areas/Centers/Themes/StandardDevCenter/Content:0,/Areas/Epx/Themes/Base/Content:1&amp;amp;hashKey=F576C687BC536B84D6E5B3246EE39B49" xmlns="http://www.w3.org/1999/xhtml" />
+<link type="text/css" rel="stylesheet" xmlns="http://www.w3.org/1999/xhtml" />
+
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <title>SonyDCam 1394 Webcam Driver</title>
+        <link href="description/Galleries.css" type="text/css" rel="Stylesheet" /><link href="description/Layout.css" type="text/css" rel="Stylesheet" /><link href="description/Brand.css" type="text/css" rel="Stylesheet" />
+        <link href="description/iframedescription.css" rel="Stylesheet" type="text/css" />
+        <script src="description/offline.js" type="text/javascript"></script>
+        <style type="text/css">
+            #projectInfo {
+                overflow: auto;
+            }
+            #longDesc {
+                clear:both;
+                margin: 25px 0 10px 0;
+            }
+
+            #SampleIndexList{
+                margin-left: 15px;
+            }
+        </style>
+    </head>
+<body>
+    <div id="offlineDescription">
+        <h1>SonyDCam 1394 Webcam Driver</h1>
+        <br/>
+        <div id="projectInfo">
+            <div class="section">
+                    <div class="itemBarLong tagsContainer">
+                        <label for="Technologies">Technologies</label>
+                        <div id="Technologies">
+                            WDK, WDM, Windows Driver
+                        </div>
+                    </div>
+                    <div class="itemBarLong tagsContainer">
+                        <label for="Topics">Topics</label>
+                        <div id="Topics">
+                            WDK, videocap
+                        </div>
+                    </div>
+                <div class="itemBarLong">
+                    <label for="Platforms">Platforms</label>
+                    <div id="Platforms">
+                        Desktop
+                    </div>
+                </div>
+                <div class="itemBarLong">
+                    <label for="Requirements">Requirements</label>
+                    <div id="Requirements">
+                        
+                    </div>
+                </div>
+                <div class="itemBar">
+                    <label for="LastUpdated">Primary language</label>
+                    <div id="LastUpdated">en-US</div>
+                </div>
+                <div class="itemBar">
+                    <label for="LastUpdated">Updated</label>
+                    <div id="LastUpdated">2/29/2012</div>
+                </div>
+                <div class="itemBarLong">
+                    <label for="License">License</label>
+                    <div id="License">
+                        <a href="license.rtf">MS-LPL</a></div>
+                </div>
+                <div class="itemBar">
+                    <div class="viewonlinecont">
+                        <a data-link="online" href="http://code.msdn.microsoft.com/SonyDCam-1394-Webcam-Driver-173ff664">View this sample online</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+                   
+<script type="text/javascript">
+    function initializePage() {
+        var otherTabClass = 'otherTab';
+        var hiddenPreClass = 'hidden';
+
+        var htmlDecode = function(encodedData) {
+            var decodedData = "";
+            if (encodedData) {
+                var div = document.createElement('div');
+                div.innerHTML = encodedData;
+                decodedData = div.firstChild.nodeValue.replace( /\\r\\n/ig , '\r\n');
+            }
+            return decodedData;
+        };
+                
+        Galleries.iterateElem(Galleries.findElem(null, 'div', 'scriptcode'), function (index, scriptBlock) {
+            var titleElem = Galleries.findElem(scriptBlock, 'div', 'title')[0];
+            var labelElems = Galleries.findElem(titleElem, 'span');
+            if (labelElems.length == 0) {
+                labelElems = titleElem;
+            }
+            var languageSpans = Galleries.findElem(scriptBlock, 'span', 'hidden');
+            var pres = Galleries.findElem(scriptBlock, 'pre');
+            if (languageSpans.length > 0 && pres.length > 1) {
+                Galleries.iterateElem(labelElems, function(index, elem) {
+                    var codePre = pres[index];
+                    var labelSpan = elem;
+                    var languageSpan = languageSpans[index];
+                            
+                    elem.code = codePre.innerHTML.replace( /(\r(\n)?)|((\r)?\n)/ig , '\\r\\n');
+                            
+                    codePre.className = codePre.className.replace(hiddenPreClass, '');
+                            
+                    languageSpan.parentNode.removeChild(languageSpan);
+                });
+
+                pres = Galleries.findElem(scriptBlock, 'pre');
+                Galleries.iterateElem(labelElems, function(index, elem) {
+                    var codePre = pres[index];
+                    var labelSpan = elem;
+                    if (index == 0) {
+                        scriptBlock.activeTab = 0;
+                    }
+                    else {
+                        labelSpan.className += otherTabClass;
+                        codePre.className += hiddenPreClass;
+                    }
+                    Galleries.attachEventHandler(labelSpan, 'click', function(e) {
+                        var activeTab = scriptBlock.activeTab;
+                        labelElems[activeTab].className += otherTabClass;
+                        pres[activeTab].className += hiddenPreClass;
+
+                        codePre.className = codePre.className.replace(hiddenPreClass, '');
+                        labelSpan.className = labelSpan.className.replace(otherTabClass, '');
+                        scriptBlock.activeTab = index;
+                    });
+                });
+
+                var preview = Galleries.findElem(scriptBlock, 'div', 'preview');
+                if (preview.length == 0) {
+                    preview.push(pres[pres.length - 1]);
+                }
+                Galleries.iterateElem(preview, function(index, elem) {
+                    elem.parentNode.removeChild(elem);
+                });
+
+                if (window.clipboardData && clipboardData.setData) {
+                    var copyLink = document.createElement('a');
+                    copyLink.href = 'javascript:void(0);';
+                    copyLink.className = 'copyCode';
+                    copyLink.innerHTML = 'Copy code';
+                    Galleries.attachEventHandler(copyLink, 'click', function (e) {
+                        clipboardData.setData("Text", htmlDecode(labelElems[scriptBlock.activeTab].code));
+                        return false;
+                    });
+                    scriptBlock.insertBefore(copyLink, scriptBlock.childNodes[0]);
+                }
+            }
+        });
+    }
+
+    Galleries.onWindowLoad(function(){
+        initializePage();
+    });
+
+</script>
+<div id="longDesc">
+    
+<h3>SonyDCam 1394 Webcam Driver</h3>
+<p>The SonyDCam 1394 Webcam Driver sample is a Microsoft Windows Driver Model (WDM) Stream class video capture driver that supports IEEE 1394-based digital cameras that conform to the Digital Camera Specification from the
+<a href="http://www.1394ta.org/index.html">1394 Trade Association</a>. Such cameras include the Sony 1394 CCM-DS250 and Texas Instruments 1394 MC680-DCC desktop cameras.
+</p>
+<p><b>Theory of Operation</b> </p>
+<p>Sonydcam.sys supports a digital camera that is a data source that produces digital image data without any other input connection. SonyDCam displays as a WDM Streaming Capture Device, and its capture filter produces a 320 x 240 pixel capture stream in a UYVY
+ color space. You can convert the output capture stream to another format by using one of the filters that the Msyuv.dll decompressor provides. Msyuv.dll is part of the Microsoft&nbsp;Windows operating system, and can convert the image data format from UYVY to RGB16
+ or RGB8 or to a Microsoft DirectDraw surface if the video card supports UYVY format.</p>
+<h3>Operating system requirements</h3>
+<table>
+<tbody>
+<tr>
+<th>Client</th>
+<td><dt>Windows&nbsp;2000 Professional </dt></td>
+</tr>
+<tr>
+<th>Server</th>
+<td><dt>Windows Server&nbsp;2003 </dt></td>
+</tr>
+</tbody>
+</table>
+<h3>Build the sample</h3>
+<h3>Run the sample</h3>
+<h3><a name="operation"></a>Operation</h3>
+<p>The <a href="http://msdn.microsoft.com/en-us/library/windows/hardware/Ff558717">
+<b>DriverEntry</b> </a>routine in SonyDCam.c initializes a <a href="http://msdn.microsoft.com/en-us/library/windows/hardware/Ff559682">
+<b>HW_INITIALIZATION_DATA</b> </a>structure with the entry points of driver-implemented functions.</p>
+<p>The <b>HwReceivePacket</b> member of the <a href="http://msdn.microsoft.com/en-us/library/windows/hardware/Ff559682">
+<b>HW_INITIALIZATION_DATA</b> </a>structure points to the driver-implemented entry point for receiving Stream Request Packets or Blocks (SRBs) from the Stream class driver. For example, SonyDCam might receive the following sequence of SRBs:
+</p>
+<dl><dt><a href="http://msdn.microsoft.com/en-us/library/windows/hardware/Ff568185"><b>SRB_INITIALIZE_DEVICE</b>
+</a></dt><dd>
+<p>Initialize the device. This SRB is called after <a href="http://msdn.microsoft.com/en-us/library/windows/hardware/Ff558717">
+<b>DriverEntry</b> </a>.</p>
+</dd><dt><a href="http://msdn.microsoft.com/en-us/library/windows/hardware/Ff568173"><b>SRB_GET_STREAM_INFO</b>
+</a></dt><dd>
+<p>Get supported stream formats.</p>
+</dd><dt><a href="http://msdn.microsoft.com/en-us/library/windows/hardware/Ff568168"><b>SRB_GET_DATA_INTERSECTION</b>
+</a></dt><dd>
+<p>Query a supported format that some specific data types use.</p>
+</dd><dt><a href="http://msdn.microsoft.com/en-us/library/windows/hardware/Ff568191"><b>SRB_OPEN_STREAM</b>
+</a></dt><dd>
+<p>Open a stream with a format that <a href="http://msdn.microsoft.com/en-us/library/windows/hardware/Ff568168">
+<b>SRB_GET_DATA_INTERSECTION</b> </a>supplied. SonyDCam registers two additional entry points for the newly opened stream to control the streaming state (<i>pSrb</i>-&gt;<i>StreamObject</i>-&gt;<b>ReceiveControlPacket</b>) and streaming data (<i>pSrb</i>-&gt;<i>StreamObject</i>-&gt;<b>ReceiveDataPacket</b>).</p>
+</dd><dt><a href="http://msdn.microsoft.com/en-us/library/windows/hardware/Ff568165"><b>SRB_CLOSE_STREAM</b>
+</a></dt><dd>
+<p>Close the open stream.</p>
+</dd><dt><a href="http://msdn.microsoft.com/en-us/library/windows/hardware/Ff568215"><b>SRB_UNINITIALIZE_DEVICE</b>
+</a></dt><dd>
+<p>Indicate that a device has been unloaded or removed.</p>
+</dd></dl>
+<p></p>
+<p>The <b>HwCancelPacket</b> member of the <a href="http://msdn.microsoft.com/en-us/library/windows/hardware/Ff559682">
+<b>HW_INITIALIZATION_DATA</b> </a>structure points to the driver-implemented entry point that the Stream class driver calls in order to cancel packets that it has already sent to SonyDCam. If a packet has been queued for too long and has timed out, the
+<b>HwRequestTimeoutHandler</b> member of the <b>HW_INITIALIZATION_DATA</b> structure points to the driver-implemented entry point to call.</p>
+<p>SonyDCam implements two additional callback functions. The 1394 controller driver calls
+<b>DCamIsochCallback</b> when an attached buffer is filled with data, and the 1394 controller driver calls
+<b>DCamBusResetNotification</b> to indicate that a 1394 bus reset has occurred. Both of these functions execute at IRQL =
+<b>DISPATCH_LEVEL</b>.</p>
+<h3><a name="bus_reset"></a>Bus reset</h3>
+<p>There are some special cases that SonyCDam must handle because it supports a Plug and Play (PnP) device. This special cases include unplugging the camera while streaming, and plugging a second device into the same 1394 controller where a device is already
+ streaming. In either of these cases, the 1394 controller triggers a bus reset. After a bus reset, the controller invalidates its clients' bandwidth and channel. However, after the bus reset, the streaming device should continue to source isochronous video
+ data according to the IEEE 1394 digital camera specification.</p>
+<p>SonyDCam receives <a href="http://msdn.microsoft.com/en-us/library/windows/hardware/Ff568212">
+<b>SRB_SURPRISE_REMOVAL</b> </a>when its device has been removed. SonyDCam must then cancel all pending reads and prepare to be unloaded. In this situation, SonyDCam will likely receive
+<a href="http://msdn.microsoft.com/en-us/library/windows/hardware/Ff568215"><b>SRB_UNINITIALIZE_DEVICE</b>
+</a>before <a href="http://msdn.microsoft.com/en-us/library/windows/hardware/Ff568165">
+<b>SRB_CLOSE_STREAM</b> </a>. If a driver still has pending read SRBs, the Stream class driver does not send
+<b>SRB_CLOSE_STREAM</b> even after its client application is closed.</p>
+<p>For a device that is still plugged in, SonyDCam receives a notification callback from the 1394 controller to restore to its original state, including freeing and reallocating channel and bandwidth (but not the resource), and to restore to its original streaming
+ state. SonyDCam then reinitializes and restarts the device. This step is necessary only if the device stops sourcing isochronous video data. SonyDCam also reinitializes the device if a device was attached but suspended (that is, transitioned to a lower device
+ power state) and then awakened (transitioned to a higher device power state). In this situation, SonyDCam also receives a bus reset callback notification.</p>
+<h3><a name="frame_rate_and_dropped_frames"></a>Frame rate and dropped frames</h3>
+<p>Digital cameras support discrete frame rates. However, a client application can send a request to a stream at any rate. WDM video capture drivers must match the requested rate or select the next lower rate from the requested frame rate because oversampling
+ the rate can cause synchronization problems.</p>
+<p>The number of dropped frames must be calculated because after a buffer is attached to the 1394 controller driver, SonyDCam waits for the data buffer to be filled. If the 1394 controller does not fill the buffer because it misses the data (resulting in a
+ dropped frame), the controller does not report that information back to SonyDCam, and SonyDCam cannot detect the number of dropped frames. The calculation of dropped frames is based on the capture rate and the actual count of captured frames.</p>
+<h3><a name="limitations"></a>Limitations</h3>
+<p>SonyDCam does not save to the registry changes that are made to property settings between restarts. SonyDCam also does not support power management, such as power transitions from device power states D3 to D0, or D0 to D3. The device installation file specifies
+ &quot;DontSuspendIfStreamsAreRunning&quot; because of this limitation.</p>
+<h3><a name="installation_notes"></a>Installation notes</h3>
+<p>You cannot manually install SonyDCam because it is a PnP driver. The Image.inf device installation file that is shipped with the Windows operating system installs detected devices, including SonyDCam, for the cameras that are listed earlier in this topic.
+ The sample SonyDCam.inf device installation file is a subset of the Image.inf device installation file. You can use SonyDCam.inf as a template to create a device installation file for your own hardware.</p>
+<p>SonyDCam compiles on Windows&nbsp;98 and later versions of the operating system, on either 32-bit or 64-bit platforms.</p>
+<h3><a name="code_tour"></a>Code tour</h3>
+<p><b>File manifest</b> </p>
+<table>
+<tbody>
+<tr>
+<th>File</th>
+<th>Description</th>
+</tr>
+<tr>
+<td>Callback.c </td>
+<td>
+<p>Process callback functions from controller driver for either a filled buffer or a bus reset</p>
+</td>
+</tr>
+<tr>
+<td>CapProp.c </td>
+<td>
+<p>Process <b>KSPROPERTY_VIDEOPROCAMP_XXX</b> and <b>KSPROPERTY_VIDCAP_CAMERACONTROL</b> Kernel Streaming (KS) properties</p>
+</td>
+</tr>
+<tr>
+<td>CapProp.h </td>
+<td>
+<p>Function prototypes for CapProp.c</p>
+</td>
+</tr>
+<tr>
+<td>CtrlPkt.c </td>
+<td>
+<p>Process stream control packet, such as querying and setting streaming state</p>
+</td>
+</tr>
+<tr>
+<td>DataPkt.c </td>
+<td>
+<p>Process stream read data packet</p>
+</td>
+</tr>
+<tr>
+<td>Dbg.c </td>
+<td>
+<p>Debug functions</p>
+</td>
+</tr>
+<tr>
+<td>Dbg.h </td>
+<td>
+<p>Debug preprocessor</p>
+</td>
+</tr>
+<tr>
+<td>DcamDef.h </td>
+<td>
+<p>Function prototypes</p>
+</td>
+</tr>
+<tr>
+<td>DCamPkt.c </td>
+<td>
+<p>Process Stream class driver's <a href="http://msdn.microsoft.com/en-us/library/windows/hardware/Ff568295">
+<b>SRB_Xxx</b> </a>packets </p>
+</td>
+</tr>
+<tr>
+<td>DcamPkt.h </td>
+<td>
+<p>Function prototypes and major structure definition</p>
+</td>
+</tr>
+<tr>
+<td>Device.c </td>
+<td>
+<p>Process reading and writing to device's registers</p>
+</td>
+</tr>
+<tr>
+<td>PropData.h </td>
+<td>
+<p>Static KS properties for a digital camera</p>
+</td>
+</tr>
+<tr>
+<td>SonyDCam.c </td>
+<td>
+<p><a href="http://msdn.microsoft.com/en-us/library/windows/hardware/Ff558717"><b>DriverEntry</b>
+</a>and device initialization and uninitialization functions</p>
+</td>
+</tr>
+<tr>
+<td>SonyDCam.h </td>
+<td>
+<p>Function prototypes for SonyDCam.c</p>
+</td>
+</tr>
+<tr>
+<td>SonyDCam.inf </td>
+<td>
+<p>Sample installation file</p>
+</td>
+</tr>
+<tr>
+<td>SonyDCam.rc </td>
+<td>
+<p>Resource file, mainly to provide version information</p>
+</td>
+</tr>
+<tr>
+<td>SOURCES </td>
+<td>
+<p>Generic file for building the code sample</p>
+</td>
+</tr>
+<tr>
+<td>StrmData.h </td>
+<td>
+<p>Supported stream formats</p>
+</td>
+</tr>
+</tbody>
+</table>
+
+</div>
+
+
+    </div>
+</body>
+</html>
