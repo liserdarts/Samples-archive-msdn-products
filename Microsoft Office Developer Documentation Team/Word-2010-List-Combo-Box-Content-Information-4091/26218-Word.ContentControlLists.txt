@@ -1,0 +1,39 @@
+' Word 2010/2007
+
+' Work with ContentControl.ContentControlListEntries
+
+' Create a new Word document, and in the VBA editor, copy the following
+' code into the ThisDocument class. Place the cursor inside the SetPlaceHolderText
+' procedure, and press F5 to run the code. Look in the Immediate window
+' for the results. Examine the document, as well, which will contain a
+' combo box content control containing a list of colors.
+
+Sub SetPlaceholderText()
+    ' Delete all the current contents of the document.
+    Range.Delete
+   
+    ' Create a combo box content control:
+    Dim ccList As ContentControl
+    Set ccList = ContentControls.Add(wdContentControlComboBox)
+    
+    ccList.Title = "Select a Color"
+    ccList.SetPlaceholderText Text:="Please select the color"
+    
+    ' Add items to the list:
+    ccList.DropdownListEntries.Add "Red", RGB(255, 0, 0)
+    ccList.DropdownListEntries.Add "Orange", RGB(255, 165, 0)
+    ccList.DropdownListEntries.Add "Yellow", RGB(255, 255, 0)
+    ccList.DropdownListEntries.Add "Green", RGB(0, 255, 0)
+    ccList.DropdownListEntries.Add "Blue", RGB(0, 0, 255)
+    ccList.DropdownListEntries.Add "Indigo", RGB(75, 0, 130)
+    ccList.DropdownListEntries.Add "Violet", RGB(238, 130, 238)
+
+    ' Display the contents of each item:
+    Dim ccListEntry As ContentControlListEntry
+    For Each ccListEntry In ccList.DropdownListEntries
+        Debug.Print ccListEntry.Text, Hex$(ccListEntry.Value)
+    Next ccListEntry
+
+    ' Select the first item in the list.
+    ccList.DropdownListEntries(1).Select
+End Sub
