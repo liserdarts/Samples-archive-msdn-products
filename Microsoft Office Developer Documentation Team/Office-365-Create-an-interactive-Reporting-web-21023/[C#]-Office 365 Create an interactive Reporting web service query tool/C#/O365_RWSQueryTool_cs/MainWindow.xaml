@@ -1,0 +1,77 @@
+﻿<Window x:Name="O365RWSQ" x:Class="O365_RWSQueryTool_cs.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Office 365 Reporting web service query tool 0.9" Height="753.971" Width="525" VerticalAlignment="Top" Loaded="O365RWSQ_Loaded">
+    <Grid RenderTransformOrigin="0.499,0.485">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="148*"/>
+            <RowDefinition Height="248*"/>
+            <RowDefinition Height="301*"/>
+        </Grid.RowDefinitions>
+        <Label x:Name="fqdnLabel" Content="2) Set and check the Office 365 Reporting web service endpoint" HorizontalAlignment="Left" Margin="39,91,0,0" VerticalAlignment="Top" Width="436" Height="26"/>
+        <ComboBox x:Name="rptSelection" HorizontalAlignment="Left" Margin="39,64,0,0" VerticalAlignment="Top" Width="436" Grid.Row="1" ToolTip="Select one of the reports in the list" SelectionChanged="rptSelection_SelectionChanged" Height="22">
+            <ComboBoxItem Content=""/>
+            <ComboBoxItem Content="GroupActivityDaily" Tag="$select=Date,GroupCreated,GroupDeleted,TenantGuid,TenantName&amp;$filter=Date gt datetime'2012-01-01T00:00:00'"/>
+            <ComboBoxItem Content="GroupActivityWeekly" Tag="$select=Date,GroupCreated,GroupDeleted,TenantGuid,TenantName&amp;$filter=Date gt datetime'2012-01-01T00:00:00'"/>
+            <ComboBoxItem Content="GroupActivityMonthly" Tag="$select=Date,GroupCreated,GroupDeleted,TenantGuid,TenantName&amp;$filter=Date gt datetime'2012-01-01T00:00:00'"/>
+            <ComboBoxItem Content="GroupActivityYearly" Tag="$select=Date,GroupCreated,GroupDeleted,TenantGuid,TenantName&amp;$filter=Date gt datetime'2012-01-01T00:00:00'"/>
+            <ComboBoxItem Content="MailboxActivityDaily" Tag="$select=Date,TenantName,TenantGuid,AccountCreated,AccountDeleted,TotalNumberOfActiveMailboxes"/>
+            <ComboBoxItem Content="MailboxActivityWeekly" Tag="$select=Date,TenantName,TenantGuid,AccountCreated,AccountDeleted,TotalNumberOfActiveMailboxes"/>
+            <ComboBoxItem Content="MailboxActivityMonthly" Tag="$select=Date,TenantName,TenantGuid,AccountCreated,AccountDeleted,TotalNumberOfActiveMailboxes"/>
+            <ComboBoxItem Content="MailboxActivityYearly" Tag="$select=Date,TenantName,TenantGuid,AccountCreated,AccountDeleted,TotalNumberOfActiveMailboxes"/>
+            <ComboBoxItem Content="MailDetail" Tag="$select=AggregateBy,Date,Direction,Domain,EndDate,EventType,Index,MessageId,MessageSize,MessageTraceId,Organization,RecipientAddress,SenderAddress,SenderIP,StartDate,Subject"/>
+            <ComboBoxItem Content="MailDetailDlpPolicy" Tag="$select=Action,Date,Direction,DlpPolicy,Domain,EndDate,EventType,Index,Justification,MessageId,MessageSize,MessageTraceId,Organization,RecipientAddress,SenderAddress,SensitiveInformationConfidence,SensitiveInformationCount,SensitiveInformationType,StartDate,Subject,TransportRule,UserAction"/>
+            <ComboBoxItem Content="MailDetailMalware" Tag="$select=Action,Date,Direction,Domain,EndDate,EventType,FileName,Index,MalwareName,MessageId,MessageSize,MessageTraceId,Organization,RecipientAddress,SenderAddress,StartDate,Subject"/>
+            <ComboBoxItem Content="MailDetailSpam" Tag="$select=Action,Date,Direction,Domain,EndDate,EventType,Index,MessageId,MessageSize,MessageTraceId,Organization,RecipientAddress,SenderAddress,StartDate,Subject"/>
+            <ComboBoxItem Content="MailDetailTransportRule (inbound)" Tag="$select=Action,Date,Direction,Domain,EndDate,EventType,Index,MessageId,MessageSize,MessageTraceId,Organization,RecipientAddress,SenderAddress,StartDate,Subject,TransportRule&amp;$filter=Direction eq 'Inbound'"/>
+            <ComboBoxItem Content="MailDetailTransportRule (outbound)" Tag="$select=Action,Date,Direction,Domain,EndDate,EventType,Index,MessageId,MessageSize,MessageTraceId,Organization,RecipientAddress,SenderAddress,StartDate,Subject,TransportRule&amp;$filter=Direction eq 'Outbound'"/>
+            <ComboBoxItem Content="MailFilterList" Tag="$select=Display,Domain,Organization,ParentTarget,ParentValue,SelectionTarget"/>
+            <ComboBoxItem Content="MailTraffic (inbound)" Tag="$select=Action,AggregateBy,Date,Direction,Domain,EndDate,EventType,Index,MessageCount,Organization,StartDate,SummarizeBy&amp;$filter=Direction eq 'Inbound'"/>
+            <ComboBoxItem Content="MailTraffic (outbound)" Tag="$select=Action,AggregateBy,Date,Direction,Domain,EndDate,EventType,Index,MessageCount,Organization,StartDate,SummarizeBy&amp;$filter=Direction eq 'Outbound'"/>
+            <ComboBoxItem Content="MailTrafficPolicy (inbound)" Tag="$select=Action,AggregateBy,Date,Direction,DlpPolicy,Domain,EndDate,EventType,Index,MessageCount,Organization,StartDate,SummarizeBy,TransportRule&amp;$filter=Direction eq 'Inbound'"/>
+            <ComboBoxItem Content="MailTrafficPolicy (outbound)" Tag="$select=Action,AggregateBy,Date,Direction,DlpPolicy,Domain,EndDate,EventType,Index,MessageCount,Organization,StartDate,SummarizeBy,TransportRule&amp;$filter=Direction eq 'Outbound'"/>
+            <ComboBoxItem Content="MailTrafficSummary (TopMailSender)" Tag="$select=C1,C2,C3,C4,C5,C6,C7,C8,C9,C10,C11,C12,C13,C14,C15,C16,C17,C18,C19,C20,Category,DlpPolicy,Domain,EndDate,Index,StartDate,TransportRule&amp;$filter=Category eq 'TopMailSender'"/>
+            <ComboBoxItem Content="MailTrafficSummary (TopMalware)" Tag="$select=C1,C2,C3,C4,C5,C6,C7,C8,C9,C10,C11,C12,C13,C14,C15,C16,C17,C18,C19,C20,Category,DlpPolicy,Domain,EndDate,Index,StartDate,TransportRule&amp;$filter=Category eq 'TopMalware'"/>
+            <ComboBoxItem Content="MailTrafficTop (inbound)" Tag="$select=AggregateBy,Date,Direction,Domain,EndDate,EventType,Index,MessageCount,Name,Organization,StartDate,SummarizeBy&amp;$filter=Direction eq 'Inbound'"/>
+            <ComboBoxItem Content="MailTrafficTop (outbound)" Tag="$select=AggregateBy,Date,Direction,Domain,EndDate,EventType,Index,MessageCount,Name,Organization,StartDate,SummarizeBy&amp;$filter=Direction eq 'Outbound'"/>
+            <ComboBoxItem Content="MessageTrace" Tag="$select=EndDate,FromIP,Index,MessageId,MessageTraceId,Organization,Received,RecipientAddress,SenderAddress,Size,StartDate,Status,Subject,ToIP"/>
+            <ComboBoxItem Content="MessageTraceDetail" Tag="$select=Action,Data,Date,Detail,EndDate,Event,Index,MessageId,MessageTraceId,Organization,RecipientAddress,SenderAddress,StartDate"/>
+            <ComboBoxItem Content="StaleMailbox" Tag="$select=ActiveMailboxes,Date,InactiveMailboxes31To60Days,InactiveMailboxes61To90Days,InactiveMailboxes91To1460Days,TenantGuid,TenantName"/>
+            <ComboBoxItem Content="StaleMailboxDetail" Tag="$select=Date,DaysInactive,LastLogin,TenantGuid,TenantName,UserName,WindowsLiveID"/>
+        </ComboBox>
+        <Label x:Name="rptSelectionLabel" Content="3) Choose a report (the reports available vary by subscription and permission)" HorizontalAlignment="Left" Margin="39,40,0,0" VerticalAlignment="Top" Width="436" Grid.Row="1" Height="26"/>
+        <Label x:Name="parametersLabel" Content="4) Set parameters, one per line" HorizontalAlignment="Left" Margin="39,106,0,0" VerticalAlignment="Top" Width="250" Grid.Row="1" Height="26"/>
+        <Label x:Name="builtRequestUrl" Content="&lt;&lt;resulting URL appears here&gt;&gt;" HorizontalAlignment="Left" Margin="39,37,0,0" VerticalAlignment="Top" Width="436" Height="27" BorderBrush="Black" FontSize="10" Grid.Row="2" FontFamily="Miriam Fixed" />
+        <Button x:Name="copyRestUrl" Content="Copy REST URL" HorizontalAlignment="Left" Margin="343,10,0,0" VerticalAlignment="Top" Width="132" Grid.Row="2" Height="22" Click="copyRestUrl_Click"/>
+        <Button x:Name="enterCredentials" Content="1) Enter administrator credentials" HorizontalAlignment="Left" Margin="39,57,0,0" VerticalAlignment="Top" Width="436" Click="enterCredentials_Click" Height="22"/>
+        <Button x:Name="sendRequest" Content="6) Send Request" HorizontalAlignment="Left" Margin="39,81,0,0" VerticalAlignment="Top" Width="271" Grid.Row="2" Height="22" Click="sendRequest_Click"/>
+        <Button x:Name="copyFullResults" Content="Copy full results" HorizontalAlignment="Left" Margin="343,81,0,0" VerticalAlignment="Top" Width="132" Grid.Row="2" Height="22" Click="copyFullResults_Click"/>
+        <TextBox x:Name="resultsDisplay" HorizontalAlignment="Left" Height="88" Margin="39,134,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="436" FontSize="10" Grid.Row="2" FontFamily="Miriam Fixed"/>
+        <Label x:Name="resultsLabel" Content="Results (contents cleared each request/response)" HorizontalAlignment="Left" Margin="39,108,0,0" VerticalAlignment="Top" Width="436" Grid.Row="2" Height="26"/>
+        <Button x:Name="appendToLog" Content="Append results to My Documents\O365RWSLog-&lt;date&gt;.txt" HorizontalAlignment="Left" Margin="39,232,0,0" VerticalAlignment="Top" Width="436" Grid.Row="2" Height="22" Click="AppendToLog_Click"/>
+        <Button x:Name="parametersDefault" Content="Defaults" HorizontalAlignment="Left" Margin="400,108,0,0" VerticalAlignment="Top" Width="75" Grid.Row="1" Height="22" Click="parametersDefault_Click" ToolTip="Set parameters to defaults set in this program."/>
+        <Button x:Name="parametersClear" Content="Clear" HorizontalAlignment="Left" Margin="307,108,0,0" VerticalAlignment="Top" Width="75" Grid.Row="1" Click="parametersClear_Click" Height="22"/>
+        <RadioButton x:Name="jsonFormat" Content="JSON" HorizontalAlignment="Left" Margin="144,222,0,0" Grid.Row="1" VerticalAlignment="Top" Width="61" GroupName="resultsFormatGroup" Height="16" Checked="jsonFormat_Checked"/>
+        <RadioButton x:Name="atomFormat" Content="Atom" HorizontalAlignment="Left" Margin="219,222,0,0" Grid.Row="1" VerticalAlignment="Top" Width="80" GroupName="resultsFormatGroup" IsChecked="True" Height="16" Checked="atomFormat_Checked"/>
+        <Label x:Name="resultsFormatLabel" Content="Results format:" HorizontalAlignment="Left" Margin="39,217,0,0" Grid.Row="1" VerticalAlignment="Top" Width="100" Height="26"/>
+        <TextBlock HorizontalAlignment="Left" Margin="39,270,0,-1" TextWrapping="Wrap" VerticalAlignment="Top" Width="436" Height="32" TextAlignment="Center" FontSize="9" Grid.Row="2" FontWeight="Bold"><Run Text="Office 365 Reporting web service query tool, version 1.0, Feb 2013"/><LineBreak/><Run Text="Copyright Microsoft Corporation. Not suitable for use in a production environment."/></TextBlock>
+        <Button x:Name="generateRestUrl" Content="5) Generate REST URL" HorizontalAlignment="Left" Margin="39,10,0,0" VerticalAlignment="Top" Width="271" Grid.Row="2" Height="22" Click="generateRestUrl_Click"/>
+        <TextBox x:Name="fqdnReportingServer" HorizontalAlignment="Left" Height="23" Margin="39,120,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="436" ToolTip="Enter the FQDN of the reporting service, usually your domain.outlook.com" Text="reports.office365.com" GotFocus="fqdnReportingServer_GotFocus" TextChanged="fqdnReportingServer_TextChanged"/>
+        <Button x:Name="fqdnLookup" Content="Check endpoint" HorizontalAlignment="Left" Margin="39,0,0,222" Width="139" Click="fqdnLookup_Click" Grid.Row="1" Height="22" VerticalAlignment="Bottom"/>
+        <Label x:Name="fqdnLookupResult" Content="" HorizontalAlignment="Left" Margin="196,10,0,0" VerticalAlignment="Top" Width="279" Grid.Row="1" Height="26"/>
+        <Label Content="The sections of the UI are enabled as you successfully complete the steps. &#xD;&#xA;Check the mouse-over tool tips for more information, especially errors." HorizontalAlignment="Left" Margin="39,0,0,0" VerticalAlignment="Top" Width="436" Height="52"/>
+        <RichTextBox x:Name="parameters" HorizontalAlignment="Left" Height="71" Margin="39,137,0,0" Grid.Row="1" VerticalAlignment="Top" Width="436" FontFamily="Courier New" HorizontalScrollBarVisibility="Auto" VerticalScrollBarVisibility="Auto" TextChanged="parameters_TextChanged">
+            <RichTextBox.Resources>
+                <Style TargetType="{x:Type Paragraph}">
+                    <Setter Property="Margin" Value="0"/>
+                </Style>
+            </RichTextBox.Resources>
+            <FlowDocument PageWidth="65535">
+                <Paragraph LineHeight="10">
+                    <Run Text=""/>
+                </Paragraph>
+            </FlowDocument>
+        </RichTextBox>
+
+    </Grid>
+</Window>

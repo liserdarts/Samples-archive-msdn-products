@@ -1,0 +1,557 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
+    <head><link rel="stylesheet" type="text/css" href="description/Combined.css,0:HeaderFooterSprite,0:Header.NonMtps,1:LinkList;/Areas/Centers/Themes/StandardDevCenter/Content:0,/Areas/Epx/Themes/Base/Content:1&amp;amp;hashKey=C9973DA951AE6202C9B348379A1BE49D" xmlns="http://www.w3.org/1999/xhtml" />
+<link type="text/css" rel="stylesheet" xmlns="http://www.w3.org/1999/xhtml" />
+<link rel="stylesheet" type="text/css" href="description/9e116645-9d9a-4566-82a8-7b29a5b324f1Combined.css,0:HeaderFooterSprite,0:Footer.NonMtps,1:LinkList;/Areas/Centers/Themes/StandardDevCenter/Content:0,/Areas/Epx/Themes/Base/Content:1&amp;amp;hashKey=F576C687BC536B84D6E5B3246EE39B49" xmlns="http://www.w3.org/1999/xhtml" />
+<link type="text/css" rel="stylesheet" xmlns="http://www.w3.org/1999/xhtml" />
+
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <title>Office 365: Create an interactive Reporting web service query tool</title>
+        <link href="description/Galleries.css" type="text/css" rel="Stylesheet" /><link href="description/Layout.css" type="text/css" rel="Stylesheet" /><link href="description/Brand.css" type="text/css" rel="Stylesheet" />
+        <link href="description/iframedescription.css" rel="Stylesheet" type="text/css" />
+        <script src="description/offline.js" type="text/javascript"></script>
+        <style type="text/css">
+            #projectInfo {
+                overflow: auto;
+            }
+            #longDesc {
+                clear:both;
+                margin: 25px 0 10px 0;
+            }
+
+            #SampleIndexList{
+                margin-left: 15px;
+            }
+        </style>
+    </head>
+<body>
+    <div id="offlineDescription">
+        <h1>Office 365: Create an interactive Reporting web service query tool</h1>
+        <br/>
+        <div id="projectInfo">
+            <div class="section">
+                    <div class="itemBarLong tagsContainer">
+                        <label for="Technologies">Technologies</label>
+                        <div id="Technologies">
+                            Office 365, Visual Studio 2012
+                        </div>
+                    </div>
+                    <div class="itemBarLong tagsContainer">
+                        <label for="Topics">Topics</label>
+                        <div id="Topics">
+                            Web Services
+                        </div>
+                    </div>
+                <div class="itemBarLong">
+                    <label for="Platforms">Platforms</label>
+                    <div id="Platforms">
+                        Cloud
+                    </div>
+                </div>
+                <div class="itemBarLong">
+                    <label for="Requirements">Requirements</label>
+                    <div id="Requirements">
+                        
+                    </div>
+                </div>
+                <div class="itemBar">
+                    <label for="LastUpdated">Primary language</label>
+                    <div id="LastUpdated">en-US</div>
+                </div>
+                <div class="itemBar">
+                    <label for="LastUpdated">Updated</label>
+                    <div id="LastUpdated">2/28/2013</div>
+                </div>
+                <div class="itemBarLong">
+                    <label for="License">License</label>
+                    <div id="License">
+                        <a href="license.rtf">Apache License, Version 2.0</a></div>
+                </div>
+                <div class="itemBar">
+                    <div class="viewonlinecont">
+                        <a data-link="online" href="http://code.msdn.microsoft.com/Office-365-Create-an-f93f8d8a">View this sample online</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+                   
+<script type="text/javascript">
+    function initializePage() {
+        var otherTabClass = 'otherTab';
+        var hiddenPreClass = 'hidden';
+
+        var htmlDecode = function(encodedData) {
+            var decodedData = "";
+            if (encodedData) {
+                var div = document.createElement('div');
+                div.innerHTML = encodedData;
+                decodedData = div.firstChild.nodeValue.replace( /\\r\\n/ig , '\r\n');
+            }
+            return decodedData;
+        };
+                
+        Galleries.iterateElem(Galleries.findElem(null, 'div', 'scriptcode'), function (index, scriptBlock) {
+            var titleElem = Galleries.findElem(scriptBlock, 'div', 'title')[0];
+            var labelElems = Galleries.findElem(titleElem, 'span');
+            if (labelElems.length == 0) {
+                labelElems = titleElem;
+            }
+            var languageSpans = Galleries.findElem(scriptBlock, 'span', 'hidden');
+            var pres = Galleries.findElem(scriptBlock, 'pre');
+            if (languageSpans.length > 0 && pres.length > 1) {
+                Galleries.iterateElem(labelElems, function(index, elem) {
+                    var codePre = pres[index];
+                    var labelSpan = elem;
+                    var languageSpan = languageSpans[index];
+                            
+                    elem.code = codePre.innerHTML.replace( /(\r(\n)?)|((\r)?\n)/ig , '\\r\\n');
+                            
+                    codePre.className = codePre.className.replace(hiddenPreClass, '');
+                            
+                    languageSpan.parentNode.removeChild(languageSpan);
+                });
+
+                pres = Galleries.findElem(scriptBlock, 'pre');
+                Galleries.iterateElem(labelElems, function(index, elem) {
+                    var codePre = pres[index];
+                    var labelSpan = elem;
+                    if (index == 0) {
+                        scriptBlock.activeTab = 0;
+                    }
+                    else {
+                        labelSpan.className += otherTabClass;
+                        codePre.className += hiddenPreClass;
+                    }
+                    Galleries.attachEventHandler(labelSpan, 'click', function(e) {
+                        var activeTab = scriptBlock.activeTab;
+                        labelElems[activeTab].className += otherTabClass;
+                        pres[activeTab].className += hiddenPreClass;
+
+                        codePre.className = codePre.className.replace(hiddenPreClass, '');
+                        labelSpan.className = labelSpan.className.replace(otherTabClass, '');
+                        scriptBlock.activeTab = index;
+                    });
+                });
+
+                var preview = Galleries.findElem(scriptBlock, 'div', 'preview');
+                if (preview.length == 0) {
+                    preview.push(pres[pres.length - 1]);
+                }
+                Galleries.iterateElem(preview, function(index, elem) {
+                    elem.parentNode.removeChild(elem);
+                });
+
+                if (window.clipboardData && clipboardData.setData) {
+                    var copyLink = document.createElement('a');
+                    copyLink.href = 'javascript:void(0);';
+                    copyLink.className = 'copyCode';
+                    copyLink.innerHTML = 'Copy code';
+                    Galleries.attachEventHandler(copyLink, 'click', function (e) {
+                        clipboardData.setData("Text", htmlDecode(labelElems[scriptBlock.activeTab].code));
+                        return false;
+                    });
+                    scriptBlock.insertBefore(copyLink, scriptBlock.childNodes[0]);
+                }
+            }
+        });
+    }
+
+    Galleries.onWindowLoad(function(){
+        initializePage();
+    });
+
+</script>
+<div id="longDesc">
+    
+<p id="header"><span class="label">Summary:</span> This application uses Windows Presentation Foundation (WPF) and simple HTTP request/response classes to create an interactive Office 365 Reporting web service query tool in Visual Studio 2012. Users must
+ have Office 365 administrative privileges.</p>
+<div id="mainSection">
+<div id="mainBody">
+<div class="introduction">
+<h1 class="heading">Description of the sample</h1>
+<div class="section" id="sectionSection0">
+<p>The sample is a Windows Presentation Foundation application written in C# and Visual Studio 2012. The sample allows an Office 365 user with administrator permissions to easily construct and modify queries for the Office 365 Reporting web service. The tool
+ is intended for developers to:</p>
+<ul>
+<li>
+<p>Learn the overall program flow for building REST URI requests for the Reporting web service.</p>
+</li><li>
+<p>Understand the structure, parameters and options of the REST URI.</p>
+</li><li>
+<p>Obtain usable query strings for use in static-reporting dashboards.</p>
+</li><li>
+<p>Learn how report data is returned in Atom and JSON (JavaScript Object Notation) formats.</p>
+</li><li>
+<p>Record the full results of the headers, request, and response to help in troubleshooting.</p>
+</li></ul>
+</div>
+<h1 class="heading">Prerequisites</h1>
+<div class="section" id="sectionSection1">
+<p>The sample requires the following:</p>
+<ul>
+<li>
+<p>Visual Studio 2012 with the .NET Framework 4.5 installed on your computer.</p>
+</li><li>
+<p>Office 365 Enterprise subscription.</p>
+</li><li>
+<p>Office 365 account with administrator privileges of Global, Password, Service, or User management administrator.</p>
+</li></ul>
+</div>
+<h1 class="heading">Key components of the sample</h1>
+<div class="section" id="sectionSection2">
+<p>The sample is a self-contained Windows Presentation Foundation application.</p>
+</div>
+<h1 class="heading">Build the sample</h1>
+<div class="section" id="sectionSection3">
+<div class="subSection">
+<ol>
+<li>
+<p>Open Visual Studio 2012.</p>
+</li><li>
+<p>On the <strong>File</strong> menu, click <strong>Open</strong>, click <strong>
+Project/Solution</strong> and then navigate to the folder where you unzipped the O365RWS_QueryTool files. Locate and select the file O365RWS_QueryTool.sln. Click
+<strong>Open</strong>.</p>
+</li><li>
+<p>On the <strong>Build</strong> menu, click <strong>Build All</strong>. No errors or warning should be reported. If you receive any, the most likely cause is some part of the .NET Framework is missing.</p>
+</li></ol>
+</div>
+<p>If the sample builds with no errors and warnings, it is ready to run. No further configuration is needed.</p>
+</div>
+<h1 class="heading">Run and test the sample</h1>
+<div class="section" id="sectionSection4">
+<div class="subSection">
+<ol>
+<li>
+<p>In Visual Studio 2012, open the solution file and press <strong>F5</strong> to start the application. The application opens as shown in the following screen shot. Notice that only the
+<strong>1) Enter administrator credentials</strong> button is enabled. The application will enable the other steps as you enter and verify information required for the Reporting web service calls to succeed.</p>
+<div class="caption">Figure 1. Enter administrator credentials button.</div>
+<br>
+<img id="76719" src="description/O365RWS_Sample_Step1.png" alt="O365 Reporting web service query tool step 1" width="525" height="754">
+<p>&nbsp;</p>
+<p>Click <strong>1) Enter administrator credentials</strong>. The credentials dialog displays, as shown in the following screen shot:</p>
+<div class="caption">Figure 2. Enter Office 365 Credentials dialog box.</div>
+<br>
+<img id="76720" src="description/O365RWS_Sample_Step1a.png" alt="O365 Reporting web service query tool step 1a" width="330" height="231">
+<p>&nbsp;</p>
+<p>Enter your administrator user name and password and click <strong>OK</strong>.</p>
+</li><li>
+<p>The query tool will now have the parts used in step 2 enabled, as shown in the following screen shot:</p>
+<div class="caption">Figure 3. Step 2 Check Endpoint.</div>
+<br>
+<img id="76721" src="description/O365RWS_Sample_Step2.png" alt="O365 Reporting web service query tool step 1a" width="525" height="754">
+<p>&nbsp;</p>
+<p>Verify that the domain name reads <span class="code">reports.office365.com</span>. There are rare cases when you might need to change this, for example when your subscription is in a preview datacenter deployment. But for now, leave this at the default
+ value. Click <strong>Check endpoint</strong>. It normally takes a few moments for the query tool to obtain the service description document using the credentials and domain endpoint. When the Reporting web service replies, the result will be displayed to the
+ right of the <strong>Check endpoint</strong> button. A detailed result status is available if you hover the cursor over the short status, as shown in the following screen shot:</p>
+<div class="caption">Figure 4. Detailed result status.</div>
+<br>
+<img id="76722" src="description/O365RWS_Sample_Step2a.png" alt="O365 Reporting web service query tool step 2a" width="511" height="185">
+<p>&nbsp;</p>
+</li><li>
+<p>If the query tool retrieved the service document, step 3 will be enabled. The drop-down list will be enabled, allowing you to select a report. For this procedure, select the
+<strong>MailFilterList </strong>report item, as shown in the following screen shot.</p>
+<div class="caption">Figure 5. Choose a report drop-down list.</div>
+<br>
+<img id="76723" src="description/O365RWS_Sample_Step3.png" alt="O365 Reporting web service query tool step 3" width="532" height="760">
+<p>&nbsp;</p>
+<p>If your administrator account is one of the lesser-privileged accounts, you might see one or more of the report names in the drop-down list disabled, shown in a lighter text. The tool parses the service description document retrieved during the
+<span class="ui">Check endpoint</span> step 2, and disables any reports that are unavailable to your administrator account. The following screen shot shows an example of how this looks, with the
+<strong>MailDetailDlpPolicy</strong> report disabled.</p>
+<div class="caption">Figure 6. MailDetailDlpPolicy disabled in the drop-down list.</div>
+<br>
+<img id="76724" src="description/O365RWS_Sample_Step3a.png" alt="O365 Reporting web service query tool step 3a" width="241" height="240">
+<p>&nbsp;</p>
+</li><li>
+<p>After you've selected a report, the query tool enables the parts needed to set the query options. When you select a report, the options box shows the default options for that report. The default options provided are only defined in the tool, and are intended
+ to provide a list of parameters and fields for that report type. Click <strong>Clear</strong> to empty the options box, and click
+<strong>Defaults</strong> to reset them. You can either leave the original default options in place, or replace the options as shown in the following screen shot.</p>
+<div class="caption">Figure 7. Default options.</div>
+<br>
+<img id="76725" src="description/O365RWS_Sample_Step4.png" alt="O365 Reporting web service query tool step 4" width="482" height="153">
+<p>&nbsp;</p>
+<p>The Reporting web service can return results as either Atom or JSON (JavaScript Object Notation) format. Use Atom format if you are using an XML parser, and use JSON if you're using the report information directly in a JavaScript-driven web page or browser
+ window.</p>
+</li><li>
+<p>After you have the query options as you want them, the tool should look like the following screen shot:</p>
+<div class="caption">Figure 8. Query options screen shot.</div>
+<br>
+<img id="76726" src="description/O365RWS_Sample_Step5.png" alt="O365 Reporting web service query tool step 5" width="525" height="754">
+<p>&nbsp;</p>
+<p>Click <strong>5) Generate REST URL</strong>.</p>
+<p>The beginning of the fully-formed URL that will be passed to the Reporting web service is displayed below the button, as shown in the following screen shot. Click the
+<strong>Copy REST URL</strong> button to copy the REST URL to the Windows clipboard.</p>
+<div class="caption">Figure 9. REST URL screen shot.</div>
+<br>
+<img id="76727" src="description/O365RWS_Sample_Step5a.png" alt="O365 Reporting web service query tool step 5a" width="490" height="70">
+</li><li>
+<p>You are now ready to submit the query to the Reporting web service. You've verified your credentials and that the service is available, you've set your options and format, and constructed the full REST URL. Click
+<strong>6) Send Request</strong>, as shown in the following screen shot.</p>
+<div class="caption">Figure 10. Send Request button.</div>
+<br>
+<img id="76728" src="description/O365RWS_Sample_Step6.png" alt="O365 Reporting web service query tool step 6" width="525" height="754">
+<p>&nbsp;</p>
+<p>The report will take a few moments to return. Some of the delay is consumed by the tool formatting the Atom or JSON data for easier reading. If the request is successful, the top three lines of the display will look like the following screen shot (shown
+ with the lines selected for clarity):</p>
+<div class="caption">Figure 11. Successful results screen shot.</div>
+<br>
+<img id="76729" src="description/O365RWS_Sample_Step6b.png" alt="O365 Reporting web service query tool step 6b" width="466" height="105">
+<p>&nbsp;</p>
+</li><li>
+<p>To append the results to a log file, click the <strong>Append results</strong> button at the bottom of the tool, as shown in the following screen shot.</p>
+<div class="caption">Figure 12. Append results button.</div>
+<br>
+<img id="76730" src="description/O365RWS_Sample_Step6a.png" alt="O365 Reporting web service query tool step 6a" width="525" height="754">
+<p>&nbsp;</p>
+</li><li>
+<p>To view the contents of the log file, navigate to the <strong>My Documents</strong> folder and locate the file named as shown on the button, with today's date at the end. The file contains all the results you added, in chronological order (earliest report
+ is first in the file). There are five sections to each report record:</p>
+<ul>
+<li>
+<p>Basic information about the report request and whether it was successful.</p>
+</li><li>
+<p>The full request URL.</p>
+</li><li>
+<p>The headers sent in the HTTP request.</p>
+</li><li>
+<p>The HTTP headers returned by the Reporting web service.</p>
+</li><li>
+<p>The formatted results. Note that if you select JSON format, the formatting may have introduced syntactical errors into the data. To use the JSON data properly, you need to take the stream and use it in a browser.</p>
+</li></ul>
+<p>The following is an example of the file, with lines removed for clarity.</p>
+<div class="code"><span>
+<table cellspacing="0" cellpadding="0" width="100%">
+<tbody>
+<tr>
+<th>&nbsp;</th>
+<th>&nbsp;</th>
+</tr>
+<tr>
+<td colspan="2">
+<pre>==========================================================
+====               SUCCESSFUL                         ====
+==========================================================
+Type:              MailFilterList
+Request sent:      2/5/2013 8:22:59 PM
+Response received: 2/5/2013 8:23:22 PM
+Response time:     23004 ms
+User name:         user@example.onmicrosoft.com
+HTTP response:     200 OK
+==== REQUEST URL =========================================
+https://reports.office365.com/ecp/reportingwebservice/reporting.svc/MailFilterList?
+$select=Display,SelectionTarget&amp;$filter=SelectionTarget%20eq%20'Actions'&amp;$format=Atom
+==== HEADERS SENT ========================================
+DataServiceVersion:2.0
+MaxDataServiceVersion:2.0
+Accept-Language:EN-US
+X-RWS-Version:2013-V1
+Authorization:Basic dXNlcnR3b0BleG9kZW1vMS5vbm1pY3Jvc29mdC5jb206ZXJkN0pVSjA=
+Host:reports.office365.com
+==== HEADERS RCVD ========================================
+Pragma:no-cache
+request-id:2365e97e-f42b-4774-b238-5e673c857df8
+X-CalculatedBETarget:server.domain.com
+X-Content-Type-Options:nosniff
+DataServiceVersion:2.0;
+X-RWS-Version:2013-V1
+X-DiagInfo:SN2PR03MB030
+X-BEServer:SN2PR03MB030
+X-UA-Compatible:IE=10
+X-FEServer:BLUPR03CA003
+Content-Length:14402
+Cache-Control:no-cache, no-store
+Content-Type:application/atom&#43;xml;type=feed;charset=utf-8
+Date:Wed, 06 Feb 2013 04:23:21 GMT
+Expires:-1
+Set-Cookie:X-BackEndCookie=S-1-5-21-2412119505-3560892057-1500426294-....
+Server:Microsoft-IIS/7.5
+X-AspNet-Version:4.0.30319
+X-Powered-By:ASP.NET
+==== RESULTS DOCUMENT ====================================
+&lt;?xml version=&quot;1.0&quot; encoding=&quot;utf-8&quot;?&gt;
+&lt;feed xml:base=&quot;https://reports.office365.com/ecp/ReportingWebService/Reporting.svc/&quot; 
+xmlns=&quot;http://www.w3.org/2005/Atom&quot; xmlns:d=&quot;http://schemas.microsoft.com/ado/2007/08/dataservices&quot;
+ xmlns:m=&quot;http://schemas.microsoft.com/ado/2007/08/dataservices/metadata&quot;&gt;
+  &lt;id&gt;https://reports.office365.com/ecp/reportingwebservice/reporting.svc/MailFilterList&lt;/id&gt;
+  &lt;title type=&quot;text&quot;&gt;MailFilterList&lt;/title&gt;
+  &lt;updated&gt;2013-02-06T04:23:22Z&lt;/updated&gt;
+  &lt;link rel=&quot;self&quot; title=&quot;MailFilterList&quot; href=&quot;MailFilterList&quot; /&gt;
+  &lt;entry&gt;
+    &lt;id&gt;https://reports.office365.com/ecp/ReportingWebService/Reporting.svc/MailFilterList('Actions')&lt;/id&gt;
+    &lt;category term=&quot;TenantReporting.MailFilterListReport&quot; 
+        scheme=&quot;http://schemas.microsoft.com/ado/2007/08/dataservices/scheme&quot; /&gt;
+    &lt;link rel=&quot;edit&quot; title=&quot;MailFilterListReport&quot; href=&quot;MailFilterList('Actions')&quot; /&gt;
+    &lt;title /&gt;
+    &lt;updated&gt;2013-02-06T04:23:22Z&lt;/updated&gt;
+    &lt;author&gt;
+      &lt;name /&gt;
+    &lt;/author&gt;
+    &lt;content type=&quot;application/xml&quot;&gt;
+      &lt;m:properties&gt;
+        &lt;d:SelectionTarget&gt;Actions&lt;/d:SelectionTarget&gt;
+        &lt;d:Display&gt;AddBccRecipient&lt;/d:Display&gt;
+      &lt;/m:properties&gt;
+    &lt;/content&gt;
+  &lt;/entry&gt;
+  [[ LINES REMOVED FOR CLARITY ]]
+  &lt;entry&gt;
+    &lt;id&gt;https://reports.office365.com/ecp/ReportingWebService/Reporting.svc/MailFilterList('Actions')&lt;/id&gt;
+    &lt;category term=&quot;TenantReporting.MailFilterListReport&quot; 
+        scheme=&quot;http://schemas.microsoft.com/ado/2007/08/dataservices/scheme&quot; /&gt;
+    &lt;link rel=&quot;edit&quot; title=&quot;MailFilterListReport&quot; href=&quot;MailFilterList('Actions')&quot; /&gt;
+    &lt;title /&gt;
+    &lt;updated&gt;2013-02-06T04:23:22Z&lt;/updated&gt;
+    &lt;author&gt;
+      &lt;name /&gt;
+    &lt;/author&gt;
+    &lt;content type=&quot;application/xml&quot;&gt;
+      &lt;m:properties&gt;
+        &lt;d:SelectionTarget&gt;Actions&lt;/d:SelectionTarget&gt;
+        &lt;d:Display&gt;StopRuleProcessing&lt;/d:Display&gt;
+      &lt;/m:properties&gt;
+    &lt;/content&gt;
+  &lt;/entry&gt;
+&lt;/feed&gt;
+==========================================================
+==========================================================
+</pre>
+</td>
+</tr>
+</tbody>
+</table>
+</span></div>
+</li></ol>
+</div>
+</div>
+<h1 class="heading">Troubleshooting</h1>
+<div class="section" id="sectionSection5">
+<div class="subSection">
+<ol>
+<li>
+<p>Entering your user credentials</p>
+<ul>
+<li>
+<p>The credentials dialog box displays an error message box if the user name is not detected as a standard SMTP email address, also known as a User Principal Name (UPN). International characters are not supported for user names in this sample.</p>
+</li><li>
+<p>The user name and password fields may not be left blank.</p>
+</li></ul>
+<p>&nbsp;</p>
+</li><li>
+<p>Checking the Reporting web service endpoint</p>
+<ul>
+<li>
+<p>The status label, just to the right of the <span class="ui">Check endpoint</span> button provides additional information about the successful or failed request. Hover the cursor over the label to read the additional details.</p>
+</li><li>
+<p>If the endpoint check fails, make sure the user name and password are correct, and that the account has the required permissions. The best way to check this is to log onto the admin center at
+<a href="http://code.msdn.microsoft.com/Office-365-Create-an-f93f8d8a/https://portal.microsoftonline.com/default.aspx" >http://code.msdn.microsoft.com/Office-365-Create-an-f93f8d8a/https://portal.microsoftonline.com/default.aspx</a> and verify that account can access the reports interactively.</p>
+</li><li>
+<p>If no response is received, it is possible that the Reporting web service is temporarily unavailable.</p>
+</li><li>
+<p>Remember to read the tooltip on the status label; it contains specific results information that may help you solve the problem.</p>
+</li></ul>
+<p>&nbsp;</p>
+</li><li>
+<p>Selecting the report</p>
+<ul>
+<li>
+<p>If the <strong>MailDetailDlpPolicy</strong> is disabled, but your account is a Global or Compliance administrator, double-check the user name and password, and verify you can see that report in the admin console.</p>
+</li><li>
+<p>Note that although the <strong>MailDetail</strong> report is present in the drop-down list, the report will always return no results. As of early February 2013, it is disabled in the datacenter, but the service description document erroneously reports that
+ it is present.</p>
+</li></ul>
+<p>&nbsp;</p>
+</li><li>
+<p>Setting the report options</p>
+<ul>
+<li>
+<p>Many failed report requests are likely caused by incorrectly setting the report options. The syntax of complex
+<span class="code">$filter</span> clauses is sometimes difficult to get right.</p>
+</li><li>
+<p>Check that you are using the legal ODATA comparison operators (for example, &quot;eq&quot; for equals, &quot;lt&quot; for less than, &quot;ge&quot; for greater than or equal, and so on).</p>
+</li><li>
+<p>The only places where the equals sign (=) is allowed are immediately after the option name (for example, $filter=, $select=).</p>
+</li><li>
+<p>Be sure you have the column names entered correctly.</p>
+</li><li>
+<p>If you're using StartDate and EndDate in a $filter option to restrict the reporting duration, use the long-date format, and remember to cast it into the datetime type. For example:
+<span class="code">$filter=StartDate eq datetime'2013-01-01T00:00:00Z' and EndDate eq datetime'2013-01-31T11:59:59T'</span></p>
+</li><li>
+<p>Put each ODATA query option on a separate line; the application will combine them and add the &amp; separators when it builds the REST URL.</p>
+</li><li>
+<p>There is no need to include the StartDate and EndDate fields in the $select= option. The sample includes them so you have a complete and accurate list of the field names.</p>
+</li></ul>
+<p>&nbsp;</p>
+</li><li>
+<p>Generate the REST URL</p>
+<ul>
+<li>
+<p>The displayed string is cut off at the right. Use the <span class="ui">Copy REST URL</span> button to paste the URL into a browser or editor to view the full REST request URL. The full REST URL is included in the log file.</p>
+</li></ul>
+<p>&nbsp;</p>
+</li><li>
+<p>Send the request</p>
+<ul>
+<li>
+<p>The sample catches exceptions thrown by the HTTP request, but network conditions can also cause the sample to act unexpectedly. But normally the results of failed requests are properly recorded in the transcript area.</p>
+</li><li>
+<p>The most common reasons for failed requests involve the options. Check, double-check and triple check the options. By saving the results to the log file, you can view the full REST URL, including the URI encoding performed on the options.</p>
+</li></ul>
+<p>&nbsp;</p>
+</li><li>
+<p>Append the results to the log file</p>
+<ul>
+<li>
+<p>Errors can occur if you have no disk space or do not have permissions to write in the My Documents folder.</p>
+</li></ul>
+<p>&nbsp;</p>
+</li><li>
+<p>View the results log file</p>
+<ul>
+<li>
+<p>If results are not added to the log file, check whether you have the file open in an editor that locks the file. Windows Notepad locks files in this manner. Other editors do not lock the file, and so results can be added even while you're reading the file.</p>
+</li></ul>
+<p>&nbsp;</p>
+</li></ol>
+</div>
+</div>
+<h1 class="heading">Change log</h1>
+<div class="section" id="sectionSection6">
+<div class="caption"></div>
+<div class="tableSection">
+<table cellspacing="2" cellpadding="5" width="50%" frame="lhs">
+<tbody>
+<tr>
+<th>
+<p>Version</p>
+</th>
+<th>
+<p>Date</p>
+</th>
+</tr>
+<tr>
+<td>
+<p>First version</p>
+</td>
+<td>
+<p>February, 28 2013</p>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<h1 class="heading">Related content</h1>
+<div class="section" id="sectionSection7">
+<p><a href="http://msdn.microsoft.com/library/62592e5b-7933-4d3a-8d72-8b710210f768.aspx" ></a></p>
+<p>&nbsp;</p>
+</div>
+</div>
+</div>
+</div>
+
+</div>
+
+
+    </div>
+</body>
+</html>
