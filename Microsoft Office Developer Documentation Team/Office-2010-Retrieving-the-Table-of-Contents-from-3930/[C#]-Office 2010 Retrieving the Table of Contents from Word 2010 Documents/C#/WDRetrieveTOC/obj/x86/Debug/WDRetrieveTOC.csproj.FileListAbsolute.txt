@@ -1,0 +1,5 @@
+I:\DropBox\My Dropbox\Office 2010 VHTs\Sep 2010\VHT3 -- WDRetrieveTOC\Demos\CS\WDRetrieveTOC\WDRetrieveTOC\bin\Debug\WDRetrieveTOC.exe
+I:\DropBox\My Dropbox\Office 2010 VHTs\Sep 2010\VHT3 -- WDRetrieveTOC\Demos\CS\WDRetrieveTOC\WDRetrieveTOC\bin\Debug\WDRetrieveTOC.pdb
+I:\DropBox\My Dropbox\Office 2010 VHTs\Sep 2010\VHT3 -- WDRetrieveTOC\Demos\CS\WDRetrieveTOC\WDRetrieveTOC\obj\x86\Debug\ResolveAssemblyReference.cache
+I:\DropBox\My Dropbox\Office 2010 VHTs\Sep 2010\VHT3 -- WDRetrieveTOC\Demos\CS\WDRetrieveTOC\WDRetrieveTOC\obj\x86\Debug\WDRetrieveTOC.exe
+I:\DropBox\My Dropbox\Office 2010 VHTs\Sep 2010\VHT3 -- WDRetrieveTOC\Demos\CS\WDRetrieveTOC\WDRetrieveTOC\obj\x86\Debug\WDRetrieveTOC.pdb
