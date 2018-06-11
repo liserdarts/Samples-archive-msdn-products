@@ -1,0 +1,58 @@
+' Word 2010
+
+' Demonstrate Glow, StylisticSet, and Reflection properties.
+
+' In a new document, go to the VBA editor, create a new
+' module, and insert the following code. Place the cursor
+' inside the procedure, and press F8 to single step through
+' the code. Arrange the VBA and Word windows side by side so
+' you can watch the changes as you step through the code.
+
+Sub TestGlowAndReflection()
+    With ActiveDocument.Range
+        .Font.Size = 24
+        .Font.Bold = True
+        .Font.Name = "Gabriola"
+       
+        Dim i As Integer
+        ' Note a few things:
+        ' * The values of the StylisticSet enumerated values
+        '   are powers of two. You can also use the wdStylisticSet01 and
+        '   so on values to set individual stylistic sets.
+        ' * Few fonts provide different stylistic sets. Gabriola provides just
+        '   a few different sets, although you can still request all 20.
+        ' * Fonts can have up to 20 stylistic sets, changing subtle features
+        '   of the font.
+        For i = 1 To 20
+            .InsertAfter i & ": ABCDEFGHIJKLMNOPQRSTUVWXYZ"
+            .InsertParagraphAfter
+            .Paragraphs(i).Range.Font.StylisticSet = 2 ^ (i - 1)
+        Next i
+       
+        .InsertParagraphBefore
+        .InsertBefore "Here is some text."
+    End With
+    With ActiveDocument.Range.Paragraphs(1).Range
+        With .Font
+            .Size = 24
+            .ColorIndex = wdRed
+            ' Work with the Font.Glow property:
+            With .Glow
+                    ' Can also set the Color.RGB property:
+                .Color.ObjectThemeColor = wdThemeColorAccent1
+                .Radius = 10
+                .Transparency = 0.8
+            End With
+            With .Reflection
+                .Offset = 2.4
+                .Blur = 0.5
+                .Size = 100
+                .Transparency = 0.5
+                ' You can also set the Type property, which
+                ' includes settings for the preset Reflection
+                ' types:
+                ' .Type = msoReflectionType1
+            End With
+        End With
+    End With
+End Sub
