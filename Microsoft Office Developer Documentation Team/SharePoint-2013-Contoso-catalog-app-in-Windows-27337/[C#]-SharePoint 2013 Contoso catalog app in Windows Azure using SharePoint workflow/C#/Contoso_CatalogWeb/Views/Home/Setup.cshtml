@@ -1,0 +1,36 @@
+﻿@*
+    Developed by:    Martin Harwar, www.Point8020.com
+    Developed for:   MSDN and SharePoint Product group
+    First released:  14th February, 2014
+
+    The following <div> contains a <table> object that lists the status of various checks that were performed by the MVC controller in HomeController.cs
+*@
+<div class="row">
+    <h2>Setup checklist</h2>
+    <table border="0" cellpadding="10" class="small">
+        <thead>
+            <tr>
+                <th>Check</th>
+                <th>Status</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td style="white-space:nowrap;vertical-align:top;">Database connection:</td>
+                <td valign='top'>@ViewBag.DatabaseCheck</td>
+            </tr>
+            <tr>
+                <td style="white-space:nowrap;vertical-align:top;">At least one Product Director exists:</td>
+                <td valign='top'>@ViewBag.DirectorsCheck</td>
+            </tr>
+            <tr>
+                <td style="white-space:nowrap;vertical-align:top;">At least one Product Manager exists:</td>
+                <td valign='top'>@ViewBag.ManagersCheck</td>
+            </tr>
+            <tr>
+                <td style="white-space:nowrap;vertical-align:top;">'Proposals' list exists:</td>
+                <td valign='top'>@ViewBag.ListCheck</td>
+            </tr>
+        </tbody>
+    </table>
+</div>

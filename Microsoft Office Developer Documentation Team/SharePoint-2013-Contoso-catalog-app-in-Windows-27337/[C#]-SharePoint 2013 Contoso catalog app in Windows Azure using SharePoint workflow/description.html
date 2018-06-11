@@ -1,0 +1,792 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
+    <head><link rel="stylesheet" type="text/css" href="description/Combined.css,0:HeaderFooterSprite,0:Header.NonMtps,1:LinkList;/Areas/Centers/Themes/StandardDevCenter/Content:0,/Areas/Epx/Themes/Base/Content:1&amp;amp;hashKey=C9973DA951AE6202C9B348379A1BE49D" xmlns="http://www.w3.org/1999/xhtml" />
+<link type="text/css" rel="stylesheet" xmlns="http://www.w3.org/1999/xhtml" />
+<link rel="stylesheet" type="text/css" href="description/9bf1b74c-1640-46af-84d3-e440c8f95162Combined.css,0:HeaderFooterSprite,0:Footer.NonMtps,1:LinkList;/Areas/Centers/Themes/StandardDevCenter/Content:0,/Areas/Epx/Themes/Base/Content:1&amp;amp;hashKey=F576C687BC536B84D6E5B3246EE39B49" xmlns="http://www.w3.org/1999/xhtml" />
+<link type="text/css" rel="stylesheet" xmlns="http://www.w3.org/1999/xhtml" />
+
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <title>SharePoint 2013: Contoso catalog app in Windows Azure using SharePoint workflow</title>
+        <link href="description/Galleries.css" type="text/css" rel="Stylesheet" /><link href="description/Layout.css" type="text/css" rel="Stylesheet" /><link href="description/Brand.css" type="text/css" rel="Stylesheet" />
+        <link href="description/iframedescription.css" rel="Stylesheet" type="text/css" />
+        <script src="description/offline.js" type="text/javascript"></script>
+        <style type="text/css">
+            #projectInfo {
+                overflow: auto;
+            }
+            #longDesc {
+                clear:both;
+                margin: 25px 0 10px 0;
+            }
+
+            #SampleIndexList{
+                margin-left: 15px;
+            }
+        </style>
+    </head>
+<body>
+    <div id="offlineDescription">
+        <h1>SharePoint 2013: Contoso catalog app in Windows Azure using SharePoint workflow</h1>
+        <br/>
+        <div id="projectInfo">
+            <div class="section">
+                    <div class="itemBarLong tagsContainer">
+                        <label for="Technologies">Technologies</label>
+                        <div id="Technologies">
+                            SharePoint Server 2013, apps for SharePoint, Windows Azure Cloud Services
+                        </div>
+                    </div>
+                    <div class="itemBarLong tagsContainer">
+                        <label for="Topics">Topics</label>
+                        <div id="Topics">
+                            apps for SharePoint
+                        </div>
+                    </div>
+                <div class="itemBarLong">
+                    <label for="Platforms">Platforms</label>
+                    <div id="Platforms">
+                        Web, Cloud
+                    </div>
+                </div>
+                <div class="itemBarLong">
+                    <label for="Requirements">Requirements</label>
+                    <div id="Requirements">
+                        
+                    </div>
+                </div>
+                <div class="itemBar">
+                    <label for="LastUpdated">Primary language</label>
+                    <div id="LastUpdated">en-US</div>
+                </div>
+                <div class="itemBar">
+                    <label for="LastUpdated">Updated</label>
+                    <div id="LastUpdated">2/27/2014</div>
+                </div>
+                <div class="itemBarLong">
+                    <label for="License">License</label>
+                    <div id="License">
+                        <a href="license.rtf">Apache License, Version 2.0</a></div>
+                </div>
+                <div class="itemBar">
+                    <div class="viewonlinecont">
+                        <a data-link="online" href="http://code.msdn.microsoft.com/SharePoint-2013-Contoso-49907bbf">View this sample online</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+                   
+<script type="text/javascript">
+    function initializePage() {
+        var otherTabClass = 'otherTab';
+        var hiddenPreClass = 'hidden';
+
+        var htmlDecode = function(encodedData) {
+            var decodedData = "";
+            if (encodedData) {
+                var div = document.createElement('div');
+                div.innerHTML = encodedData;
+                decodedData = div.firstChild.nodeValue.replace( /\\r\\n/ig , '\r\n');
+            }
+            return decodedData;
+        };
+                
+        Galleries.iterateElem(Galleries.findElem(null, 'div', 'scriptcode'), function (index, scriptBlock) {
+            var titleElem = Galleries.findElem(scriptBlock, 'div', 'title')[0];
+            var labelElems = Galleries.findElem(titleElem, 'span');
+            if (labelElems.length == 0) {
+                labelElems = titleElem;
+            }
+            var languageSpans = Galleries.findElem(scriptBlock, 'span', 'hidden');
+            var pres = Galleries.findElem(scriptBlock, 'pre');
+            if (languageSpans.length > 0 && pres.length > 1) {
+                Galleries.iterateElem(labelElems, function(index, elem) {
+                    var codePre = pres[index];
+                    var labelSpan = elem;
+                    var languageSpan = languageSpans[index];
+                            
+                    elem.code = codePre.innerHTML.replace( /(\r(\n)?)|((\r)?\n)/ig , '\\r\\n');
+                            
+                    codePre.className = codePre.className.replace(hiddenPreClass, '');
+                            
+                    languageSpan.parentNode.removeChild(languageSpan);
+                });
+
+                pres = Galleries.findElem(scriptBlock, 'pre');
+                Galleries.iterateElem(labelElems, function(index, elem) {
+                    var codePre = pres[index];
+                    var labelSpan = elem;
+                    if (index == 0) {
+                        scriptBlock.activeTab = 0;
+                    }
+                    else {
+                        labelSpan.className += otherTabClass;
+                        codePre.className += hiddenPreClass;
+                    }
+                    Galleries.attachEventHandler(labelSpan, 'click', function(e) {
+                        var activeTab = scriptBlock.activeTab;
+                        labelElems[activeTab].className += otherTabClass;
+                        pres[activeTab].className += hiddenPreClass;
+
+                        codePre.className = codePre.className.replace(hiddenPreClass, '');
+                        labelSpan.className = labelSpan.className.replace(otherTabClass, '');
+                        scriptBlock.activeTab = index;
+                    });
+                });
+
+                var preview = Galleries.findElem(scriptBlock, 'div', 'preview');
+                if (preview.length == 0) {
+                    preview.push(pres[pres.length - 1]);
+                }
+                Galleries.iterateElem(preview, function(index, elem) {
+                    elem.parentNode.removeChild(elem);
+                });
+
+                if (window.clipboardData && clipboardData.setData) {
+                    var copyLink = document.createElement('a');
+                    copyLink.href = 'javascript:void(0);';
+                    copyLink.className = 'copyCode';
+                    copyLink.innerHTML = 'Copy code';
+                    Galleries.attachEventHandler(copyLink, 'click', function (e) {
+                        clipboardData.setData("Text", htmlDecode(labelElems[scriptBlock.activeTab].code));
+                        return false;
+                    });
+                    scriptBlock.insertBefore(copyLink, scriptBlock.childNodes[0]);
+                }
+            }
+        });
+    }
+
+    Galleries.onWindowLoad(function(){
+        initializePage();
+    });
+
+</script>
+<div id="longDesc">
+    
+<div id="header">
+<table id="bottomTable" cellspacing="0" cellpadding="0">
+<tbody>
+<tr id="headerTableRow1">
+<td align="left"><span id="runningHeaderText">&nbsp;</span></td>
+</tr>
+<tr id="headerTableRow2">
+<td align="left"><span id="nsrTitle">SharePoint 2013: Contoso catalog app in Windows Azure using SharePoint workflow</span></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div id="mainSection">
+<div id="mainBody">
+<div>
+<p>This sample demonstrates how to create a provider-hosted app for SharePoint that runs as a Windows Azure Web Site and reads and writes to a Windows Azure SQL Database. The app also provides a custom UI for an integrated SharePoint workflow.</p>
+</div>
+<div>
+<p><strong>Last modified: </strong>February 23, 2014</p>
+<p><strong>In this article</strong> <br>
+<a href="#sectionSection0">The app in action</a> <br>
+<a href="#sectionSection1">Prerequisites</a> <br>
+<a href="#sectionSection2">Key components of the sample</a> <br>
+<a href="#sectionSection3">Configure the sample</a> <br>
+<a href="#sectionSection4">Troubleshooting</a> <br>
+<a href="#sectionSection5">Features in this sample</a> <br>
+<a href="#sectionSection6">Change log</a> <br>
+<a href="#sectionSection7">Additional resources</a></p>
+<p>Wouldn't it be great to integrate line of business solutions with SharePoint features such as security and workflows? The Contoso catalog app shows you just how to do that!</p>
+<p>Contoso has an existing line of business website that contains its product catalog. Salespeople on the road refer to the product catalog for descriptions and prices. Product managers and product directors work on an on-premises SharePoint site and collaborate
+ on products that will go into the catalog. Product managers can propose price changes, but not change them directly. Only a product director can approve a price change. This approval process is handled in a SharePoint workflow. The team would like to create
+ an app for SharePoint that integrates the approval workflow with their product catalog on the website. They also want the app to enforce security by role so that salespeople have a read-only view of the catalog, managers can propose price changes, and directors
+ can approve or reject them.</p>
+<p>This sample is the app that Contoso built to meet the product manager and director's requirements. Since the website is already hosted in Windows Azure, and the product catalog is in a Windows Azure SQL Database, the app was created as a provider-hosted
+ app. The app enforces roles so that salespeople can only view the product catalog. Product managers can create, update, or delete product categories and products. They can propose price changes, but only product directors can approve the changes. The app provides
+ a custom view page that lets product directors see pending approvals, and approve or reject them. The app handles communicating with the underlying SharePoint workflow to reflect product director decisions.</p>
+</div>
+<h1>The app in action</h1>
+<div id="sectionSection0">
+<p>The app opens and displays each product category, as shown in Figure 1. Users logged in as site visitors (salespeople) won't see the
+<strong><span class="ui">Add Category</span></strong> button or the <strong><span class="ui">Edit</span></strong> and
+<strong><span class="ui">Delete</span></strong> buttons on category tiles.</p>
+<strong>
+<div class="caption">Figure 1. The app provides a tile-based UI for browsing product categories</div>
+</strong><br>
+<strong>&nbsp;</strong><img src="description/image.png" alt="">
+<p>Categories contain different products. When you open a category, you can see more information about each product, as shown in Figure 2. Users logged in as site members (product managers) can see the
+<strong><span class="ui">Add Product</span></strong> button and the <strong><span class="ui">Edit</span></strong> and
+<strong><span class="ui">Delete</span></strong> buttons for each product, but not the
+<strong><span class="ui">Workflow</span></strong> column. Only site owners (product directors) can see the
+<strong><span class="ui">Workflow</span></strong> column.</p>
+<strong>
+<div class="caption">Figure 2. Browsing the products in a category</div>
+</strong><br>
+<strong>&nbsp;</strong><img src="description/d2f5b617-8ffe-4462-a00b-0bb6aebce919image.png" alt="">
+<p>Figure 3 shows the <strong><span class="ui">Edit Product</span></strong> page where managers can change categories and products. Changing a product price starts a workflow.</p>
+<strong>
+<div class="caption">Figure 3. Proposing a new price in the Edit Product page</div>
+</strong><br>
+<img src="description/cee2f526-81aa-4f21-bd0e-d1d9c0b84aa8image.png" alt="">
+<p>Figure 4 shows an active workflow. This lets product directors know that a proposed change requires a director's approval.</p>
+<strong>
+<div class="caption">Figure 4. A product director browsing a category can see an active workflow for one of the products</div>
+</strong><br>
+<img src="description/5c88dcee-d616-4545-b012-ed6281216f0fimage.png" alt="">
+<p>When the director opens the workflow, the page displays the current price and the proposed price, as shown in Figure 5.</p>
+<strong>
+<div class="caption">Figure 5. Choosing a workflow button lets the director review the changes and approve or reject a proposed price change</div>
+</strong><br>
+<img src="description/35cf25d6-f3ad-4c6b-9743-1bb74f55a9dbimage.png" alt="">
+<p>The director can approve or reject the proposed change. Figure 6 shows the confirmation dialog box.</p>
+<strong>
+<div class="caption">Figure 6. Prompting a director to confirm an approval</div>
+</strong><br>
+<img src="description/26929a40-a229-48cb-b10b-25c0b128842cimage.png" alt=""></div>
+<h1>Prerequisites</h1>
+<div id="sectionSection1">
+<p>This sample requires the following:</p>
+<ul>
+<li>
+<p>A Windows Azure subscription. You can get a free trial here: <a href="http://www.windowsazure.com/en-us/pricing/free-trial/" >
+Windows Azure Free Trial</a>.</p>
+</li><li>
+<p>A SharePoint environment configured to host apps. You can get a free trial here:
+<a href="http://www.microsoft.com/en-cb/office365/free-office365-trial.aspx" >
+Try Office 365 for business</a>.</p>
+</li><li>
+<p>An App Catalog site created in your SharePoint environment</p>
+</li><li>
+<p>A team site created in your SharePoint environment</p>
+</li><li>
+<p>Visual Studio 2013 (Professional or Ultimate edition)</p>
+</li><li>
+<p>SQL Server Management Studio</p>
+</li></ul>
+</div>
+<h1>Key components of the sample</h1>
+<div id="sectionSection2">
+<p>The sample contains the following key components:</p>
+<ul>
+<li>
+<p>The <strong>Contoso_Catalog</strong> app project, which contains the manifest used to deploy the app to a SharePoint site</p>
+</li><li>
+<p>The <strong>Contoso_CatalogWeb</strong> MVC project that runs as a provider website hosted in Windows Azure</p>
+</li></ul>
+</div>
+<h1>Configure the sample</h1>
+<div id="sectionSection3">
+<p>Follow these steps to configure, build, and run the sample app.</p>
+<h3>To create and configure a SQL Azure database</h3>
+<div>
+<ol>
+<li>
+<p>Log on to the <a href="http://code.msdn.microsoft.com/SharePoint-2013-Contoso-49907bbf/https://manage.windowsazure.com" >Windows Azure Management Portal</a> (<span>http://code.msdn.microsoft.com/SharePoint-2013-Contoso-49907bbf/https://manage.windowsazure.com/</span>), and then choose
+<strong><span class="ui">SQL DATABASES</span></strong> in the navigation pane.</p>
+</li><li>
+<p>On the toolbar at the bottom of the portal page, choose <strong><span class="ui">NEW</span></strong>, and then choose
+<strong><span class="ui">QUICK CREATE</span></strong>.</p>
+</li><li>
+<p>Enter the following values.</p>
+<strong>
+<div class="caption"></div>
+</strong>
+<div>
+<table cellspacing="2" cellpadding="5" width="50%" frame="lhs">
+<tbody>
+<tr>
+<th>
+<p>Setting</p>
+</th>
+<th>
+<p>Value</p>
+</th>
+</tr>
+<tr>
+<td>
+<p>Database name</p>
+</td>
+<td>
+<p>CatalogDB</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Server</p>
+</td>
+<td>
+<p>New SQL database server</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Login name</p>
+</td>
+<td>
+<p>CatalogDBUser</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Password</p>
+</td>
+<td>
+<p>P@ssw0rd</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>REGION</p>
+</td>
+<td>
+<p>Select the region nearest to your location.</p>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li><li>
+<p>Choose <strong><span class="ui">CREATE SQL DATABASE</span></strong>. The server and database are created, which may take several minutes.</p>
+</li><li>
+<p>Open the database from the list of databases, and then choose <strong><span class="ui">Show connection strings</span></strong> in the
+<strong><span class="ui">quick glance</span></strong> section.</p>
+<div>
+<table cellspacing="0" cellpadding="0" width="100%">
+<tbody>
+<tr>
+<th align="left"><strong>Note</strong> </th>
+</tr>
+<tr>
+<td>
+<p>If the <strong><span class="ui">Quick Start</span></strong> page opens, choose
+<strong><span class="ui">Skip Quick Start the next time I visit</span></strong> and then reopen the database.</p>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li><li>
+<p>In the <strong><span class="ui">Connection Strings</span></strong> dialog box, copy the contents of the ADO.NET box.</p>
+<div>
+<table cellspacing="0" cellpadding="0" width="100%">
+<tbody>
+<tr>
+<th align="left"><strong>Important</strong> </th>
+</tr>
+<tr>
+<td>
+<p>Don't choose the <strong><span class="ui">X</span></strong> button at the bottom of the dialog box. Doing so would disallow the connection string in the firewall rules.</p>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li><li>
+<p>Paste the connection string in a text editor, such as Notepad. Replace the <span>
+{your_password_here}</span> placeholder text with <strong>P@ssw0rd</strong>. Be sure to remove the braces.</p>
+</li><li>
+<p>Choose the close icon in the upper-right corner of the dialog box.</p>
+</li><li>
+<p>In the <strong><span class="ui">quick glance</span></strong> section, copy the full server name to your text editor. The name uses the format
+<span>server.database.windows.net</span>.</p>
+</li><li>
+<p>In the <strong><span class="ui">quick glance</span></strong> section, choose
+<strong><span class="ui">Manage allowed IP addresses</span></strong>.</p>
+</li><li>
+<p>Enter the following values.</p>
+<strong>
+<div class="caption"></div>
+</strong>
+<div>
+<table cellspacing="2" cellpadding="5" width="50%" frame="lhs">
+<tbody>
+<tr>
+<th>
+<p>Setting</p>
+</th>
+<th>
+<p>Value</p>
+</th>
+</tr>
+<tr>
+<td>
+<p>Rule name</p>
+</td>
+<td>
+<p>CatalogDB</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Start IP address</p>
+</td>
+<td>
+<p>0.0.0.0</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>End IP address</p>
+</td>
+<td>
+<p>255.255.255.255</p>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li><li>
+<p>On the toolbar at the bottom of the portal page, choose <strong><span class="ui">SAVE</span></strong>.</p>
+<p>Keep the management portal open. You'll use it later.</p>
+</li></ol>
+</div>
+<h3>To run the database script</h3>
+<div>
+<ol>
+<li>
+<p>In SQL Server Management Studio, in the <strong><span class="ui">Connect to Server</span></strong> dialog box, enter the server name that you copied in the previous section.</p>
+</li><li>
+<p>In the <strong><span class="ui">Authentication</span></strong> menu, choose <strong>
+<span class="ui">SQL Server Authentication</span></strong> and then enter <span>
+CatalogDBUser</span> as the login name and <span>P@ssw0rd</span> as the password.</p>
+</li><li>
+<p>Choose the <strong><span class="ui">Remember password</span></strong> check box, and then choose the
+<strong><span class="ui">Connect</span></strong> button.</p>
+</li><li>
+<p>Expand the <strong><span class="ui">Databases</span></strong> folder and choose
+<strong><span class="ui">CatalogDB</span></strong>.</p>
+</li><li>
+<p>On the menu bar, choose <strong><span class="ui">File</span></strong>&gt;<strong><span class="ui">Open</span></strong>&gt;<strong><span class="ui">File</span></strong>.</p>
+</li><li>
+<p>Browse to the <strong><span class="ui">SQL Scripts</span></strong> folder included in the sample files.</p>
+</li><li>
+<p>Choose the <strong><span class="ui">Create CatalogDB Objects.sql</span></strong> script file, and then choose the
+<strong><span class="ui">Open</span></strong> button.</p>
+<p>The script creates one table for category data and one table for product data. It also creates all the stored procedures for inserting, updating, deleting, and running queries against the database. Finally, it inserts sample data into the tables to represent
+ three categories and the products in each category.</p>
+</li><li>
+<p>On the menu bar, choose <strong><span class="ui">Query</span></strong>&gt;<strong><span class="ui">Execute</span></strong>.</p>
+</li><li>
+<p>After the script finishes without any errors, close SQL Server Management Studio.</p>
+</li></ol>
+</div>
+<h3>To create a Windows Azure Web Site</h3>
+<div>
+<ol>
+<li>
+<p>In the Windows Azure management portal, choose <strong><span class="ui">WEB SITES</span></strong> in the navigation pane.</p>
+</li><li>
+<p>On the toolbar at the bottom of the portal page, choose <strong><span class="ui">NEW</span></strong>, and then choose
+<strong><span class="ui">QUICK CREATE</span></strong>.</p>
+</li><li>
+<p>In the <strong><span class="ui">URL</span></strong> box, enter <span>Catalog&lt;Name&gt;</span>, where
+<span>&lt;Name&gt;</span> is a name that other users are unlikely to use. A website name must be unique.</p>
+</li><li>
+<p>In the <strong><span class="ui">REGION</span></strong> box, select the location nearest to you.</p>
+</li><li>
+<p>On the toolbar at the bottom of the portal page, choose <strong><span class="ui">CREATE WEB SITE</span></strong>.</p>
+</li><li>
+<p>When the website is created, copy the URL to your text editor.</p>
+</li><li>
+<p>Open the new website from the list of websites.</p>
+</li><li>
+<p>In the <strong><span class="ui">quick glance</span></strong> section, choose
+<strong><span class="ui">Download the publish profile</span></strong> and save the file to your local computer.</p>
+<div>
+<table cellspacing="0" cellpadding="0" width="100%">
+<tbody>
+<tr>
+<th align="left"><strong>Note</strong> </th>
+</tr>
+<tr>
+<td>
+<p>If the <strong><span class="ui">Quick Start</span></strong> page opens, choose
+<strong><span class="ui">Download the publish profile</span></strong> and save the file to your local computer.</p>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li><li>
+<p>Copy the path of the downloaded file to your text editor.</p>
+</li></ol>
+</div>
+<h3>To register the app in the SharePoint App Catalog</h3>
+<div>
+<ol>
+<li>
+<p>Browse to the <span>/_layouts/15/appregnew.aspx</span> page of your App Catalog site (for example,
+<span>https://MyTenant.sharepoint.com/sites/MyAppCatalog/_layouts/15/appregnew.aspx</span>).</p>
+</li><li>
+<p>Generate a client ID and a client secret, and then enter the following values.</p>
+<strong>
+<div class="caption"></div>
+</strong>
+<div>
+<table cellspacing="2" cellpadding="5" width="50%" frame="lhs">
+<tbody>
+<tr>
+<th>
+<p>Setting</p>
+</th>
+<th>
+<p>Value</p>
+</th>
+</tr>
+<tr>
+<td>
+<p>Title</p>
+</td>
+<td>
+<p>CatalogApp</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>App domain</p>
+</td>
+<td>
+<p>The URL of the website that you created in the previous procedure in the format
+<span>DomainName.azurewebsites.net</span>.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Redirect URI</p>
+</td>
+<td>
+<p>The full URI of the website that you created in the previous procedure in the format
+<span>https://DomainName.azurewebsites.net/</span>. The <strong><span class="keyword">HTTPS</span></strong> protocol is required.</p>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li><li>
+<p>Choose the <strong><span class="ui">Create</span></strong> button. Copy the app identifier information to your text editor.</p>
+</li><li>
+<p>Choose the <strong><span class="ui">OK</span></strong> button, and then browse back to the home page of your App Catalog site. You'll return to this page later to upload the app.</p>
+</li></ol>
+</div>
+<h3>To configure the Visual Studio solution</h3>
+<div>
+<ol>
+<li>
+<p>Open the <strong>Contoso_Catalog.sln</strong> file in Visual Studio.</p>
+</li><li>
+<p>In <strong><span class="ui">Solution Explorer</span></strong>, choose the <strong>
+<span class="ui">Contoso_Catalog</span></strong> project.</p>
+</li><li>
+<p>In the <strong><span class="ui">Properties</span></strong> window, in the <strong>
+<span class="ui">Site URL</span></strong> property, enter the URL of the SharePoint site that you want to deploy the app to. Be sure to include the closing forward slash.</p>
+<p>If prompted, log on with your SharePoint or Office 365 credentials.</p>
+</li><li>
+<p>Expand the <strong><span class="ui">Contoso_Catalog</span></strong> project, and then open the AppManifest.xml file.</p>
+</li><li>
+<p>In the <strong><span class="ui">Start page</span></strong> box, enter the redirect URI for your app that you registered in the previous procedure (for example,
+<span>https://CatalogName.azurewebsites.net/</span>).</p>
+</li><li>
+<p>In <strong><span class="ui">Solution Explorer</span></strong>, expand the <strong>
+<span class="ui">Contoso_CatalogWeb</span></strong> project, and then open the Web.config file.</p>
+</li><li>
+<p>In the <strong><span class="keyword">appSettings</span></strong> section, replace the
+<span>{Your Client Id Here}</span> placeholder text with the client ID that you generated for your app in the previous procedure.</p>
+</li><li>
+<p>In the <strong><span class="keyword">appSettings</span></strong> section, replace the
+<span>{Your Client Secret Here}</span> placeholder text with the client secret that you generated for your app in the previous procedure.</p>
+</li><li>
+<p>In the <strong><span class="keyword">connectionStrings</span></strong> section, replace the
+<span>{Your Connection Here}</span> placeholder text with the ADO.NET connection string that you copied for the SQL Azure database in the first procedure.</p>
+<div>
+<table cellspacing="0" cellpadding="0" width="100%">
+<tbody>
+<tr>
+<th align="left"><strong>Note</strong> </th>
+</tr>
+<tr>
+<td>
+<p>Remove the braces when you replace the placeholder values.</p>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li><li>
+<p>On the menu bar, choose <strong><span class="ui">File</span></strong>&gt;<strong><span class="ui">Save All</span></strong>.</p>
+</li><li>
+<p>On the menu bar, choose <strong><span class="ui">Build</span></strong>&gt;<strong><span class="ui">Build Solution</span></strong>.</p>
+</li></ol>
+</div>
+<h3>To deploy the Windows Azure Web Site</h3>
+<div>
+<ol>
+<li>
+<p>In <strong><span class="ui">Solution Explorer</span></strong>, open the shortcut menu for the
+<strong><span class="ui">Contoso_CatalogWeb</span></strong> project, and then choose
+<strong><span class="ui">Publish</span></strong>.</p>
+<div>
+<table cellspacing="0" cellpadding="0" width="100%">
+<tbody>
+<tr>
+<th align="left"><strong>Note</strong> </th>
+</tr>
+<tr>
+<td>
+<p>If the <strong><span class="ui">Sign in to Windows Azure</span></strong> dialog box opens, log on with the same credentials that you used to sign in to the Windows Azure management portal.</p>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li><li>
+<p>In the <strong><span class="ui">Publish Web</span></strong> dialog box, choose
+<strong><span class="ui">Profile</span></strong>, and then choose the <strong><span class="ui">Import</span></strong> button to import a publish profile.</p>
+</li><li>
+<p>In the <strong><span class="ui">Import Publish Profile</span></strong> dialog box, choose
+<strong><span class="ui">Import from a publish profile file</span></strong>, and then choose
+<strong><span class="ui">Browse</span></strong>.</p>
+</li><li>
+<p>Browse to the folder where you saved the Windows Azure Web Site publish profile, choose the
+<strong>.PublishSettings</strong> file, and then choose the <strong><span class="ui">Open</span></strong> button.</p>
+</li><li>
+<p>Choose the <strong><span class="ui">OK</span></strong> button, and then choose the
+<strong><span class="ui">Publish</span></strong> button.</p>
+<p>The website is published and opens in your browser. You should see an &quot;Unknown User&quot; message. This is the expected behavior for now.</p>
+</li></ol>
+</div>
+<h3>To package the app</h3>
+<div>
+<ol>
+<li>
+<p>In Visual Studio, in <strong><span class="ui">Solution Explorer</span></strong>, open the shortcut menu for the
+<strong><span class="ui">Contoso_Catalog</span></strong> project, and then choose
+<strong><span class="ui">Publish</span></strong>.</p>
+</li><li>
+<p>On the <strong><span class="ui">Publish your app</span></strong> page, choose the
+<strong><span class="ui">Package the app</span></strong> button.</p>
+</li><li>
+<p>Change the protocol of the URL in the <strong><span class="ui">Where is your website hosted?</span></strong> box to use
+<strong>https</strong>, and then verify that the URL is correct for your website.</p>
+</li><li>
+<p>In the <strong><span class="ui">What is the app's Client ID?</span></strong> box, enter the client ID of your app, and then choose the
+<strong><span class="ui">Finish</span></strong> button.</p>
+<p>The app package is created and its parent folder opens in File Explorer. Leave this folder open to use in the next procedure.</p>
+</li></ol>
+</div>
+<h3>To upload the app</h3>
+<div>
+<ol>
+<li>
+<p>On the App Catalog home page, choose the <strong><span class="ui">Distribute apps for SharePoint</span></strong> tile.</p>
+</li><li>
+<p>In File Explorer, drag the Contoso_Catalog.app file from the folder to the <strong>
+<span class="ui">drag files here</span></strong> label on the App Catalog page.</p>
+<p>The app is uploaded to the catalog and is now available to other sites.</p>
+</li></ol>
+</div>
+<h3>To deploy the app</h3>
+<div>
+<ol>
+<li>
+<p>Browse to a SharePoint team site.</p>
+</li><li>
+<p>In the navigation pane, choose <strong><span class="ui">Site Contents</span></strong>.</p>
+</li><li>
+<p>Choose <strong><span class="ui">add an app</span></strong>, and then choose <strong>
+<span class="ui">From Your Organization</span></strong> in the navigation pane.</p>
+</li><li>
+<p>Choose the <strong><span class="ui">Contoso_Catalog</span></strong> app, and then choose
+<strong><span class="ui">Trust It</span></strong>.</p>
+</li><li>
+<p>After the app installs, choose the <strong><span class="ui">Contoso_Catalog</span></strong> tile.</p>
+<p>The app should open in the Windows Azure Web Site and display three categories, as shown in Figure 1. This indicates that the deployment was successful.</p>
+<div>
+<table cellspacing="0" cellpadding="0" width="100%">
+<tbody>
+<tr>
+<th align="left"><strong>Note</strong> </th>
+</tr>
+<tr>
+<td>
+<p>If you still see the &quot;Unknown User&quot; message, review all the procedures in the <a href="#ConfigureTheSample">
+Configure this sample</a> section before you continue with the next step.</p>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li><li>
+<p>At the top of the page, choose <strong><span class="ui">Setup and Configuration</span></strong>. Review the information that is shown, and add test users to groups as needed. This app treats site owners as
+<em>Product Directors</em>, site members as <em>Product Managers</em>, and site visitors as salespeople. To test the app, you might have to add users to these groups in the host site.</p>
+</li></ol>
+</div>
+</div>
+<h1>Troubleshooting</h1>
+<div id="sectionSection4">
+<p>Ensure you have completed all the steps in the <a href="#ConfigureTheSample">
+Configure the sample</a> section.</p>
+</div>
+<h1>Features in this sample</h1>
+<div id="sectionSection5">
+<p>The sample demonstrates how to use:</p>
+<ul>
+<li>
+<p>HTML and Cascading Style Sheets (CSS) to define the basic UI for an app</p>
+</li><li>
+<p>jQuery to add fluidity and a professional look-and-feel to the UI</p>
+</li><li>
+<p>The SharePoint .NET client object model to read and write to a list in the SharePoint app web</p>
+</li><li>
+<p>Workflows in provider-hosted apps</p>
+</li><li>
+<p>A Model-View-Controller (MVC) web application (as the provider) to read and write to SQL Azure databases</p>
+</li></ul>
+</div>
+<h1>Change log</h1>
+<div id="sectionSection6"><strong>
+<div class="caption"></div>
+</strong>
+<div>
+<table cellspacing="2" cellpadding="5" width="50%" frame="lhs">
+<tbody>
+<tr>
+<th>
+<p>Version</p>
+</th>
+<th>
+<p>Date</p>
+</th>
+</tr>
+<tr>
+<td>
+<p>First version</p>
+</td>
+<td>
+<p>March 2014</p>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<h1>Additional resources</h1>
+<div id="sectionSection7">
+<ul>
+<li>
+<p><a href="http://msdn.microsoft.com/en-us/office/dn594488" >Showcase: Contoso catalog</a></p>
+</li><li>
+<p><a href="http://msdn.microsoft.com/library/3038dd73-41ee-436f-8c78-ef8e6869bf7b.aspx" >How to: Create a basic provider-hosted app for SharePoint</a></p>
+</li><li>
+<p><a href="http://msdn.microsoft.com/en-us/library/fp179933.aspx" >Deploying and installing apps for SharePoint: methods and options</a></p>
+</li><li>
+<p><a href="http://msdn.microsoft.com/en-us/library/fp179912.aspx" >How to: Complete basic operations using SharePoint 2013 client library code</a></p>
+</li><li>
+<p><a href="http://msdn.microsoft.com/en-us/library/jj163980.aspx" >Get started developing apps for SharePoint</a></p>
+</li></ul>
+</div>
+</div>
+</div>
+<p>&nbsp;</p>
+
+</div>
+
+
+    </div>
+</body>
+</html>

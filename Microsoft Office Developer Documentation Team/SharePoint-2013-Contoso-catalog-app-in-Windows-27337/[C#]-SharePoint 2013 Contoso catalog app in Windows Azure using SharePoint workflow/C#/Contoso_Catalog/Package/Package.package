@@ -1,0 +1,6 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" dslVersion="1.0.0.0" Id="5227d4a0-9fea-4d12-aea9-68dafd06c80d" solutionId="5227d4a0-9fea-4d12-aea9-68dafd06c80d" resetWebServer="false" sharePointProductVersion="15.0" name="Contoso_Catalog" xmlns="http://schemas.microsoft.com/VisualStudio/2008/SharePointTools/PackageModel">
+  <features>
+    <featureReference itemId="f5cb26e1-6be7-4493-ad4e-81c65c92a0af" />
+  </features>
+</package>

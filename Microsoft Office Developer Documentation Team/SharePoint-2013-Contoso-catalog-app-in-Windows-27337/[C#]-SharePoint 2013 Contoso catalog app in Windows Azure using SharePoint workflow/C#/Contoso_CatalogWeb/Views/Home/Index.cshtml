@@ -1,0 +1,236 @@
+﻿<link href="~/Content/overlaystyles.css" rel="stylesheet" type="text/css" />
+
+@*
+    Developed by:    Martin Harwar, www.Point8020.com
+    Developed for:   MSDN and SharePoint Product group
+    First released:  14th February, 2014
+
+    The functions in the <script> block are used to control the user experience.
+    The functions make use of jQuery to show, hide, animate, and control HTML elements.
+
+    Perhaps the code that needs most explaining are the click functions for DeleteCategory, SaveNewCategory, and SaveEditCategory:
+    The said objects are actually Html.ActionLink elements that MVC will render as <a> tags. The rationale is that we need to build up the
+    target of these links from values in various HTML input controls. So, these functions effectively replace known identifiers in the
+    Html.ActionLink objects with values from HTML input controls. The result of this is that appropriate data is sent via the querystring
+    to the receiving methods in the MVC controller (in HomeController.cs)
+
+*@
+<script>
+    function showDeleteForm(id, name) {
+        $('#DeleteTitle').text("Delete Category: " + name + "?");
+        $('#CategoryToDelete').val(id);
+        $('#allCategories').fadeOut(500, function () { $('#deleteForm').fadeIn(500, null); });
+    }
+
+    function hideDeleteForm() {
+        $('#deleteForm').fadeOut(500, function () { $('#allCategories').fadeIn(500, null); });
+    }
+
+    function showEditForm(id, name, description, imageUrl) {
+        $('#EditCategoryID').text(id);
+        $('#EditCategoryName').val(name);
+        $('#EditCategoryDescription').val(description);
+        $('#EditCategoryImageURL').val(imageUrl);
+        $('#EditFormValidator').hide();
+        $('#allCategories').fadeOut(500, function () { $('#editForm').fadeIn(500, null); });
+
+    }
+
+    function hideEditForm() {
+        $('#editForm').fadeOut(500, function () { $('#allCategories').fadeIn(500, null); clearEditForm(); });
+    }
+
+    function clearEditForm() {
+        $('#EditCategoryName').val("");
+        $('#EditCategoryDescription').val("");
+        $('#EditCategoryImageURL').val("");
+        $('#EditFormValidator').hide();
+    }
+
+    function showNewForm() {
+        clearNewForm();
+        $('#allCategories').fadeOut(500, function () { $('#newForm').fadeIn(500, null); });
+
+    }
+
+    function hideNewForm() {
+        $('#newForm').fadeOut(500, function () { $('#allCategories').fadeIn(500, null); clearNewForm(); });
+
+    }
+
+    function clearNewForm() {
+        $('#NewCategoryName').val("");
+        $('#NewCategoryDescription').val("");
+        $('#NewCategoryImageURL').val("");
+        $('#NewFormValidator').hide();
+    }
+
+    $(function () {
+        $('#DeleteCategory').click(function () {
+            var catID = $('#CategoryToDelete').val();
+            $('#DeleteCategory').attr("href", $('#DeleteCategory').attr("href").replace("P8020CatID", catID));
+            return (true);
+        });
+        $('#SaveNewCategory').click(function () {
+            if ($('#NewCategoryName').val() == "") {
+                $('#NewFormValidator').fadeIn(250, null);
+                return (false);
+            }
+            var catName = $('#NewCategoryName').val();
+            var catDesc = $('#NewCategoryDescription').val();
+            var catImage = $('#NewCategoryImageURL').val();
+            $('#SaveNewCategory').attr("href", $('#SaveNewCategory').attr("href").replace("P8020CatName", catName));
+            $('#SaveNewCategory').attr("href", $('#SaveNewCategory').attr("href").replace("P8020CatDesc", catDesc));
+            $('#SaveNewCategory').attr("href", $('#SaveNewCategory').attr("href").replace("P8020CatImage", catImage));
+            return (true);
+        });
+        $('#SaveEditCategory').click(function () {
+            if ($('#EditCategoryName').val() == "") {
+                $('#EditFormValidator').fadeIn(250, null);
+                return (false);
+            }
+            var catID = $('#EditCategoryID').text();
+            var catName = $('#EditCategoryName').val();
+            var catDesc = $('#EditCategoryDescription').val();
+            var catImage = $('#EditCategoryImageURL').val();
+            $('#SaveEditCategory').attr("href", $('#SaveEditCategory').attr("href").replace("P8020CatID", catID));
+            $('#SaveEditCategory').attr("href", $('#SaveEditCategory').attr("href").replace("P8020CatName", catName));
+            $('#SaveEditCategory').attr("href", $('#SaveEditCategory').attr("href").replace("P8020CatDesc", catDesc));
+            $('#SaveEditCategory').attr("href", $('#SaveEditCategory').attr("href").replace("P8020CatImage", catImage));
+            return (true);
+        });
+    });
+</script>
+<h3>@ViewBag.Title</h3>
+
+@*
+    The following <div> defines the form used to enter data for new categories.
+*@
+<div id="newForm" class="form-inline" style="display:none;">
+    Add New Category
+    <div class="form-inline" style="background-color:#ffffff;">
+        <table border="0" cellpadding="10" class="small" style="width:100%;color:#2a2a2a;">
+            <tr>
+                <td style="width:10%">Name:</td>
+                <td style="width:420px;"><input id="NewCategoryName" type="text" style="min-width:400px;" /></td>
+                <td valign='top'><div id="NewFormValidator" class="alert-warning" style="padding:5px;display:none;width:150px;text-align:center;">Name is required!</div></td>
+            </tr>
+            <tr>
+                <td valign='top'>Description:</td>
+                <td colspan="2"><textarea style="min-width: 400px;" id="NewCategoryDescription" rows="7"></textarea></td>
+            </tr>
+            <tr>
+                <td valign='top'>Image URL:</td>
+                <td colspan="2"><input id="NewCategoryImageURL" type="text" style="min-width: 400px;" /></td>
+            </tr>
+            <tr>
+                <td colspan="2">
+                    <div class="ActionLinkButton" onclick="hideNewForm();" style="width:100px;float:right;">
+                        Cancel
+                    </div>
+                    @Html.ActionLink("Save", "CreateCategory", "Home", new { CategoryName = "P8020CatName", CategoryDescription = "P8020CatDesc", CategoryImageURL = "P8020CatImage" }, new { id = "SaveNewCategory", @class = "ActionLinkButton", @style = "width:100px;float:right;" })
+                </td>
+                <td valign='top'></td>
+            </tr>
+        </table>
+    </div>
+</div>
+
+@*
+    The following <div> defines the form used to update data for existing categories.
+*@
+<div id="editForm" class="form-inline" style="display:none;z-index:1000;">
+    Edit Category
+    <div class="" style="background-color:#ffffff;">
+        <table border="0" cellpadding="10" class="small" style="width:100%;color:#2a2a2a;">
+            <tr style="display:none;">
+                <td style="width:10%">Category ID:</td>
+                <td colspan="2"><div id="EditCategoryID" style="min-width:400px;" /></td>
+            </tr>
+            <tr>
+                <td style="width:10%">Name:</td>
+                <td style="width:420px;"><input id="EditCategoryName" type="text" style="min-width:400px;" /></td>
+                <td valign='top'><div id="EditFormValidator" class="alert-warning" style="padding:5px;display:none;width:150px;text-align:center;">Name is required!</div></td>
+            </tr>
+            <tr>
+                <td valign='top'>Description:</td>
+                <td colspan="2"><textarea style="min-width: 400px;" id="EditCategoryDescription" rows="7"></textarea></td>
+            </tr>
+            <tr>
+                <td valign='top'>Image URL:</td>
+                <td colspan="2"><input id="EditCategoryImageURL" type="text" style="min-width: 400px;" /></td>
+            </tr>
+            <tr>
+                <td colspan="2">
+                    <div class="ActionLinkButton" onclick="hideEditForm();" style="width:100px;float:right">
+                        Cancel
+                    </div>
+                    @Html.ActionLink("Save", "SaveCategory", "Home", new { CategoryID = "P8020CatID", CategoryName = "P8020CatName", CategoryDescription = "P8020CatDesc", CategoryImageURL = "P8020CatImage" }, new { id = "SaveEditCategory", @class = "ActionLinkButton", @style = "width:100px;float:right" })
+                </td>
+                <td valign='top'></td>
+            </tr>
+        </table>
+    </div>
+</div>
+
+@*
+    The following <div> defines the form used to confirm whether a category should be deleted.
+*@
+<div id="deleteForm" class="form-inline" style="display:none;z-index:1000;">
+    <div class="h2" id="DeleteTitle"></div>
+    <div style="background-color:#ffffff;">
+        <div>All products in this category will also be deleted. Are you sure you want to continue?</div>
+        <div class="clearfix">&nbsp;</div>
+        <input type="hidden" id="CategoryToDelete" />
+        @Html.ActionLink("Yes", "DeleteCategory", "Home", new { CategoryID = "P8020CatID" }, new { id = "DeleteCategory", @class = "ActionLinkButton", @style = "width:100px;float:left;" })
+        <div class="ActionLinkButton" onclick="hideDeleteForm();" style="width:100px;float:left;">
+            No
+        </div>
+    </div>
+</div>
+
+@*
+    The following <div> defines the form used to list all categories.
+*@
+<div id="allCategories">
+@if(ViewBag.IsProductDirector || ViewBag.IsProductManager)
+{ 
+    <div id="addNew" class="ActionLinkButton" style="margin-left:10px;width:150px;" onclick="showNewForm();">
+        Add Category
+    </div>
+}
+    <div class="clearfix">&nbsp;</div>
+    <div style="height:100%">
+        @for (int cat = 0; cat < ViewBag.CategoryIDs.Count; cat++)
+        {
+            <div style="float: left; background-color: #30273A; margin-left:10px; margin-top:10px; ">
+            <div class="view view-5 clicker" id="@ViewBag.CategoryIDs[cat]">
+                <img src="@ViewBag.CategoryImages[cat]" alt="" />
+                <div class="mask">
+                    <h2>@ViewBag.CategoryNames[cat]</h2>
+                    <div class="clearfix">&nbsp;</div>
+
+                   
+                </div>
+                
+            </div>
+                <div class="clearfix">&nbsp;</div>
+                <div style="float:left;margin-bottom:5px;padding-left:5px">
+                    @Html.ActionLink("Browse",
+                         "CategoryDetails",
+                         "Home",
+                         new { CategoryID = @ViewBag.CategoryIDs[cat], CategoryName = @ViewBag.CategoryNames[cat], CategoryImageURL = @ViewBag.CategoryImages[cat] },
+        new { id = "BrowseCategory", @class = "ImageLinkButton Browse", @style = "color:#FFFFFF;" })
+                    @if (@ViewBag.IsProductDirector || @ViewBag.IsProductManager)
+                    {
+
+                        <div class="ImageLinkButton Edit" onclick="showEditForm('@ViewBag.CategoryIDs[cat]', '@ViewBag.CategoryNames[cat]', '@ViewBag.CategoryDescriptions[cat]', '@ViewBag.CategoryImages[cat]');">Edit</div>
+
+                        <div class="ImageLinkButton Delete" onclick="showDeleteForm('@ViewBag.CategoryIDs[cat]', '@ViewBag.CategoryNames[cat]');">Delete</div>
+
+                    }
+                </div>
+            </div>
+        }
+    </div>
+</div>

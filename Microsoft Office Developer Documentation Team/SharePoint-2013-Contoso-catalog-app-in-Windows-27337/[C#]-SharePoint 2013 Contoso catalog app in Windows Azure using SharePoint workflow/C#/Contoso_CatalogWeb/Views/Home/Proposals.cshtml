@@ -1,0 +1,126 @@
+﻿@*
+    Developed by:    Martin Harwar, www.Point8020.com
+    Developed for:   MSDN and SharePoint Product group
+    First released:  14th February, 2014
+
+    The functions in the <script> block are used to control the user experience.
+    The functions make use of jQuery to show, hide, animate, and control HTML elements.
+
+    Perhaps the code that needs most explaining are the click functions for ApproveYes and RejectYes:
+    The said objects are actually Html.ActionLink elements that MVC will render as <a> tags. The rationale is that we need to build up the
+    target of these links from values in various HTML input controls. So, these functions effectively replace known identifiers in the
+    Html.ActionLink objects with values from HTML input controls. The result of this is that appropriate data is sent via the querystring
+    to the receiving methods in the MVC controller (in HomeController.cs)
+
+*@
+<script>
+    $(function () {
+        $('#ApproveYes').click(function () {
+            $('#ApproveYes').attr("href", $('#ApproveYes').attr("href").replace("P8020ProposalID", $('#proposalApproveID').val()));
+            $('#ApproveYes').attr("href", $('#ApproveYes').attr("href").replace("P8020ProductID", $('#productApproveID').val()));
+            $('#ApproveYes').attr("href", $('#ApproveYes').attr("href").replace("P8020NewPrice", $('#priceApprove').val()));
+            return (true);
+        });
+    });
+    $(function () {
+        $('#RejectYes').click(function () {
+            $('#RejectYes').attr("href", $('#RejectYes').attr("href").replace("P8020ProposalID", $('#proposalRejectID').val()));
+            $('#RejectYes').attr("href", $('#RejectYes').attr("href").replace("P8020ProductID", $('#productRejectID').val()));
+            return (true);
+        });
+    });
+    function approve(proposalID, productID, productName, productOldPrice, productNewPrice, productNewPriceDisplay) {
+        $('#approveMessage').text("Are you sure you want to APPROVE the price change from " + productOldPrice + " to " + productNewPriceDisplay + " for " + productName + "?");
+        $('#proposalApproveID').val(proposalID);
+        $('#productApproveID').val(productID);
+        $('#priceApprove').val(productNewPrice);
+        removeStyle();
+        $('#approveYes').show();
+        $('#approveNo').show();
+        $('#confirmOverlay').fadeIn(500, null);
+        $('#approveUI').addClass('confirmDlg');
+        $('#approveUI').fadeIn(100, null);
+    }
+
+    function reject(proposalID, productID, productName, productOldPrice, productNewPrice) {
+        $('#rejectMessage').text("Are you sure you want to REJECT the price change from " + productOldPrice + " to " + productNewPrice + " for " + productName + "?");
+        $('#proposalRejectID').val(proposalID);
+        $('#productRejectID').val(productID);
+        removeStyle();
+        $('#rejectYes').show();
+        $('#rejectNo').show();
+        $('#confirmOverlay').fadeIn(500, null);
+        $('#rejectUI').addClass('confirmDlg');
+        $('#rejectUI').fadeIn(100, null);
+    }
+
+    function cancelApprove() {
+        $('#confirmOverlay').fadeOut(200, null);
+        $('#approveUI').fadeOut(200, null);
+    }
+
+    function cancelReject() {
+        $('#confirmOverlay').fadeOut(200, null);
+        $('#rejectUI').fadeOut(200, null);
+    }
+
+    function removeStyle() {
+        $('#approveUI').removeClass('errorDlg');
+        $('#rejectUI').removeClass('errorDlg');
+    }
+</script>
+
+
+<div class="clearfix">&nbsp;</div>
+<h3>@Html.ActionLink("Home", "Index", "Home") | <a style="color:#0059b3;" href="javascript:history.go(-1);">@ViewBag.NameTitle</a> | Price Change Workflow</h3>
+<div class="clearfix">&nbsp;</div>
+
+@*
+    The following <table> defines the layout and data used to list price change proposals for a given product.
+*@
+<table id="UC2" style="width: 100%; font-size: small; background-color: #ffffff; color: #2A2A2A; margin-left: 10px;" border="0">
+    <thead>
+        <tr>
+            <th style="padding:5px;vertical-align:top;text-align:left;">Product</th>
+            <th style="width: 120px; vertical-align: top; text-align: left; padding-top: 5px; padding-left: 5px; ">Original Price</th>
+            <th style="width: 120px; vertical-align: top; text-align: left; padding-top: 5px; padding-left: 5px; ">Proposed Price</th>
+            <th style="padding:5px;vertical-align:top;text-align:left;">Proposed By</th>
+            @if (@ViewBag.IsProductDirector)
+            {
+                <th style="width: 75px; padding: 5px; vertical-align: top; text-align: center;">Approve</th>
+                <th style="width: 75px; padding: 5px; vertical-align: top; text-align: center;">Reject</th>
+            }
+        </tr>
+    </thead>
+    @for (int proposal = 0; proposal < ViewBag.ProductIDs.Count; proposal++)
+    {
+        <tr>
+            <td style="padding:5px;">@ViewBag.ProductNames[proposal]</td>
+            <td style="padding:5px;">@ViewBag.ProductCurrentPrices[proposal]</td>
+            <td style="padding:5px;">$@String.Format("{0:C}", ViewBag.ProductProposedPrices[proposal])</td>
+            <td style="padding:5px;">@ViewBag.ProductProposedBys[proposal]</td>
+            <td style="width: 75px; padding: 5px; vertical-align: top; text-align: center;"><div style="cursor:pointer;" onclick="approve('@ViewBag.ProposalIDs[proposal]', '@ViewBag.ProductIDs[proposal]', '@ViewBag.ProductNames[proposal]', '@ViewBag.ProductCurrentPrices[proposal]', '@ViewBag.ProductProposedPrices[proposal]', '$@String.Format("{0:C}", ViewBag.ProductProposedPrices[proposal])');"><img src="../Images/Approve.png" alt="" /></div></td>
+            <td style="width: 75px; padding: 5px; vertical-align: top; text-align: center;"><div style="cursor:pointer;" onclick="reject('@ViewBag.ProposalIDs[proposal]', '@ViewBag.ProductIDs[proposal]', '@ViewBag.ProductNames[proposal]', '@ViewBag.ProductCurrentPrices[proposal]', '@String.Format("{0:C}", ViewBag.ProductProposedPrices[proposal])');"><img src="../Images/Reject.png" alt="" /></div></td>
+        </tr>
+    }
+</table>
+
+@*
+    The following <div> objects defines the modern-style pop-ups for confirmation of price change approval or rejection.
+*@
+<div id="confirmOverlay" class="overlay" style="display:none;"></div>
+<div id="approveUI" style="display:none; ">
+    <h3 id="approveMessage" style="color:#ffffff;"></h3>
+    <input type="hidden" id="proposalApproveID" />
+    <input type="hidden" id="productApproveID" />
+    <input type="hidden" id="priceApprove" />
+    @Html.ActionLink("Yes", "Approve", "Home", new { ProposalID = "P8020ProposalID", ProductID = "P8020ProductID", NewPrice = "P8020NewPrice" }, new { id = "ApproveYes", @class = "ActionLinkButtonInDlg" })
+    <div id="ApproveNo" onclick="cancelApprove();" class="ActionLinkButtonInDlg">No</div>
+</div>
+<div id="rejectUI" style="display:none; ">
+    <h3 id="rejectMessage" style="color:#ffffff;"></h3>
+    <input type="hidden" id="proposalRejectID" />
+    <input type="hidden" id="productRejectID" />
+    @Html.ActionLink("Yes", "Reject", "Home", new { ProposalID = "P8020ProposalID", ProductID = "P8020ProductID" }, new { id = "RejectYes", @class = "ActionLinkButtonInDlg" })
+    <div id="rejectNo" onclick="cancelReject();" class="ActionLinkButtonInDlg">No</div>
+</div>

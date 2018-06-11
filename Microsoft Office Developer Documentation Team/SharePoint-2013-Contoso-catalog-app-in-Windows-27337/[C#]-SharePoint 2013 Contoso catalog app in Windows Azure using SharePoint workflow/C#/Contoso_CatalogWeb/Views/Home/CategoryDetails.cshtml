@@ -1,0 +1,348 @@
+﻿<link href="~/Content/overlaystyles.css" rel="stylesheet" type="text/css" />
+@*
+    Developed by:    Martin Harwar, www.Point8020.com
+    Developed for:   MSDN and SharePoint Product group
+    First released:  14th February, 2014
+
+    The functions in the <script> block are used to control the user experience.
+    The functions make use of jQuery to show, hide, animate, and control HTML elements.
+
+    Perhaps the code that needs most explaining are the click functions for SaveNewProduct, SaveEditProduct, and DeleteProduct:
+    The said objects are actually Html.ActionLink elements that MVC will render as <a> tags. The rationale is that we need to build up the
+    target of these links from values in various HTML input controls. So, these functions effectively replace known identifiers in the
+    Html.ActionLink objects with values from HTML input controls. The result of this is that appropriate data is sent via the querystring
+    to the receiving methods in the MVC controller (in HomeController.cs)
+
+*@
+<script>
+    function showPreview(imageUrl, productName)
+    {
+        if (imageUrl == "") {
+            $('#previewImage').attr("src", "../Images/NotSet.png");
+        }
+        else {
+            $('#previewImage').attr("src", imageUrl);
+        }
+        $('#previewImageName').text(productName);
+        removeStyle();
+        $('#previewHider').show();
+        $('#overlaydiv').fadeIn(500, null);
+        $('#previewUI').addClass('previewDlg');
+        $('#previewUI').fadeIn(100, null);
+    }
+
+    function hidePreview()
+    {
+        $('#overlaydiv').fadeOut(200, null);
+        $('#previewUI').fadeOut(200, null);
+    }
+
+    function removeStyle() {
+        $('#previewUI').removeClass('previewDlg');
+    }
+
+    function showDeleteForm(id, name) {
+        $('#DeleteTitle').text("Delete Product: " + name + "?");
+        $('#ProductToDelete').val(id);
+        $('#allProducts').fadeOut(500, function () { $('#deleteForm').fadeIn(500, null); });
+    }
+
+    function hideDeleteForm() {
+        $('#deleteForm').fadeOut(500, function () { $('#allProducts').fadeIn(500, null); clearEditForm(); });
+    }
+
+    function showEditForm(id, name, price, description, imageUrl) {
+        $('#EditProductID').text(id);
+        $('#EditProductName').val(name);
+        $('#EditProductPrice').text(price);
+        $('#EditProductDescription').val(description);
+        $('#EditProductImageURL').val(imageUrl);
+        $('#EditFormValidator').hide();
+        $('#allProducts').fadeOut(500, function () { $('#editForm').fadeIn(500, null); });
+
+    }
+
+    function hideEditForm() {
+        $('#editForm').fadeOut(500, function () { $('#allProducts').fadeIn(500, null); clearEditForm(); });
+
+    }
+
+    function clearEditForm() {
+        $('#EditProductName').val("");
+        $('#ProposedPrice').val("");
+        $('#EditProductDescription').val("");
+        $('#EditProductImageURL').val("");
+        $('#EditFormValidator').hide();
+    }
+
+    function showNewForm() {
+        clearNewForm();
+        $('#allProducts').fadeOut(500, function () { $('#newForm').fadeIn(500, null); });
+
+    }
+
+    function hideNewForm() {
+        $('#newForm').fadeOut(500, function () { $('#allProducts').fadeIn(500, null); clearNewForm(); });
+
+    }
+
+    function clearNewForm() {
+        $('#NewProductName').val("");
+        $('#NewProductDescription').val("");
+        $('#NewProductImageURL').val("");
+        $('#NewFormValidator').hide();
+    }
+
+    $(function () {
+        $('#SaveNewProduct').click(function () {
+            if ($('#NewProductName').val() == "") {
+                $('#NewFormValidator').fadeIn(250, null);
+                return (false);
+            }
+            var categoryID = $('#NewProductCategoryID').val();
+            var productName = $('#NewProductName').val();
+            var productDesc = $('#NewProductDescription').val();
+            var productImage = $('#NewProductImageURL').val();
+            $('#SaveNewProduct').attr("href", $('#SaveNewProduct').attr("href").replace("P8020CategoryID", categoryID));
+            $('#SaveNewProduct').attr("href", $('#SaveNewProduct').attr("href").replace("P8020ProductName", productName));
+            $('#SaveNewProduct').attr("href", $('#SaveNewProduct').attr("href").replace("P8020ProductDesc", productDesc));
+            $('#SaveNewProduct').attr("href", $('#SaveNewProduct').attr("href").replace("P8020ProductImage", productImage));
+            return (true);
+        });
+        $('#SaveEditProduct').click(function () {
+            if ($('#EditProductName').val() == "") {
+                $('#EditFormValidator').fadeIn(250, null);
+                return (false);
+            }
+            if ($('#ProposedPrice').val() != "") {
+                if (isNaN($('#ProposedPrice').val() / 1)) {
+                    $('#EditPriceValidator').fadeIn(250, null);
+                    return (false);
+                }
+                if ($('#ProposedPrice').val()<=0) {
+                    $('#EditPriceValidator').fadeIn(250, null);
+                    return (false);
+                }
+            }
+            var productID = $('#EditProductID').text();
+            var productName = $('#EditProductName').val();
+            var productPrice = $('#EditProductPrice').text();
+            var proposedPrice = $('#ProposedPrice').val();
+            var productDesc = $('#EditProductDescription').val();
+            var productImage = $('#EditProductImageURL').val();
+            $('#SaveEditProduct').attr("href", $('#SaveEditProduct').attr("href").replace("P8020ProductID", productID));
+            $('#SaveEditProduct').attr("href", $('#SaveEditProduct').attr("href").replace("P8020ProductName", productName));
+            $('#SaveEditProduct').attr("href", $('#SaveEditProduct').attr("href").replace("P8020ProductPrice", productPrice));
+            $('#SaveEditProduct').attr("href", $('#SaveEditProduct').attr("href").replace("P8020ProposedPrice", proposedPrice));
+            $('#SaveEditProduct').attr("href", $('#SaveEditProduct').attr("href").replace("P8020ProductDesc", productDesc));
+            $('#SaveEditProduct').attr("href", $('#SaveEditProduct').attr("href").replace("P8020ProductImage", productImage));
+            return (true);
+        });
+        $('#DeleteProduct').click(function () {
+            var productID = $('#ProductToDelete').val();
+            $('#DeleteProduct').attr("href", $('#DeleteProduct').attr("href").replace("P8020ProductID", productID));
+            return (true);
+        });
+    });
+</script>
+
+<h3>@Html.ActionLink("Categories", "Index", "Home") | @ViewBag.Title</h3>
+
+@* 
+    The following <div> defines the form used to enter data for new products.
+*@
+<div id="newForm" class="form-inline" style="display:none;">
+    Add New Product
+    <div class="form-inline" style="background-color:#ffffff;">
+        <table border="0" cellpadding="10" class="small" style="width:100%;color:#2a2a2a;">
+            <tr>
+                <td style="width:10%">Name:</td>
+                <td style="width:420px;"><input id="NewProductName" type="text" style="min-width:400px;" /></td>
+                <td valign='top'><div id="NewFormValidator" class="alert-warning" style="padding:5px;display:none;width:150px;text-align:center;">Name is required!</div></td>
+            </tr>
+            <tr>
+                <td valign='top'>Description:</td>
+                <td valign='top'><textarea style="min-width: 400px;" id="NewProductDescription" rows="7"></textarea></td>
+                <td valign='top'><input id="NewProductCategoryID" type="hidden" value="@ViewBag.CategoryID" /></td>
+            </tr>
+            <tr>
+                <td valign='top'>Image URL:</td>
+                <td colspan="2"><input id="NewProductImageURL" type="text" style="min-width: 400px;" /></td>
+            </tr>
+            <tr>
+                <td colspan="2">
+                    <div class="ActionLinkButton" onclick="hideNewForm();" style="width:100px;float:right;">
+                        Cancel
+                    </div>
+                    @Html.ActionLink("Save", "CreateProduct", "Home", new { CategoryID = "P8020CategoryID", ProductName = "P8020ProductName", ProductDescription = "P8020ProductDesc", ProductImageURL = "P8020ProductImage", CategoryName = @ViewBag.Title }, new { id = "SaveNewProduct", @class = "ActionLinkButton", @style = "width:100px;float:right;" })
+                </td>
+                <td valign='top'></td>
+            </tr>
+        </table>
+    </div>
+</div>
+
+@*
+    The following <div> defines the form used to update data for existing products.
+*@
+<div id="editForm" class="form-inline" style="display:none;z-index:1000;">
+    Edit Product
+    <div class="" style="background-color:#ffffff;">
+        <table border="0" cellpadding="10" class="small" style="width:100%;color:#2a2a2a;">
+            <tr style="display:none;">
+                <td style="width:10%">Product ID:</td>
+                <td colspan="2"><div id="EditProductID" style="min-width:400px;" /></td>
+            </tr>
+            <tr>
+                <td style="width:10%">Name:</td>
+                <td style="width:420px;"><input id="EditProductName" type="text" style="min-width:400px;" /></td>
+                <td valign='top'><div id="EditFormValidator" class="alert-warning" style="padding:5px;display:none;width:150px;text-align:center;">Name is required!</div></td>
+            </tr>
+            <tr>
+                <td valign='top'>Price:</td>
+                <td valign='top'>
+                <div id="EditProductPrice" style="float:left;"></div>
+                
+                </td>
+                <td valign='top'></td>
+            </tr>
+            <tr>
+                <td valign='top'>Proposed Price:</td>
+                <td valign='top'>
+                    <input type="text" id="ProposedPrice" style="min-width:400px;" />
+                    <div id="EditPriceValidator" class="alert-warning" style="padding:5px;display:none;width:150px;text-align:center;">Price must be a positive number!</div>
+                <td valign='top'>
+                <td style="color:#7A7A7A">Note: Proposing a new price will start an approval process.<br/>The price will not be effective until a director approves the change.</td>
+            </tr>
+            <tr>
+                <td valign='top'>Description:</td>
+                <td colspan="2"><textarea style="min-width: 400px;" id="EditProductDescription" rows="7"></textarea></td>
+            </tr>
+            <tr>
+                <td valign='top'>Image URL:</td>
+                <td colspan="2"><input id="EditProductImageURL" type="text" style="min-width: 400px;" /></td>
+            </tr>
+            <tr>
+                <td colspan="2">
+                    <div class="ActionLinkButton" onclick="hideEditForm();" style="width: 100px; float: right;">
+                        Cancel
+                    </div>
+                    @Html.ActionLink("Save", "SaveProduct", "Home", new { CategoryID = @ViewBag.CategoryID, ProductID = "P8020ProductID", ProductName = "P8020ProductName", ProductPrice = "P8020ProductPrice", ProposedPrice = "P8020ProposedPrice", ProductDescription = "P8020ProductDesc", ProductImageURL = "P8020ProductImage", CategoryName = @ViewBag.Title }, new { id = "SaveEditProduct", @class = "ActionLinkButton", @style = "width:100px;float:right;" })
+                </td>
+                <td valign='top'></td>
+            </tr>
+        </table>
+    </div>
+</div>
+
+@*
+    The following <div> defines the form used to confirm whether a product should be deleted.
+*@
+<div id="deleteForm" class="form-inline" style="display:none;z-index:1000;">
+    <div class="h2" id="DeleteTitle"></div>
+    <div style="background-color:#ffffff;">
+        <div>This product will be permanently deleted. Are you sure you want to continue?</div>
+        <div class="clearfix">&nbsp;</div>
+        <input type="hidden" id="ProductToDelete" />
+        @Html.ActionLink("Yes", "DeleteProduct", "Home", new { ProductID = "P8020ProductID", CategoryID = @ViewBag.CategoryID, CategoryName = @ViewBag.Title }, new { id = "DeleteProduct", @class = "ActionLinkButton", @style = "width:100px;float:left;" })
+        <div class="ActionLinkButton" onclick="hideDeleteForm();" style="width:100px;float:left;">
+            No
+        </div>
+    </div>
+</div>
+
+@*
+    The following <div> defines the form used to list all products in a category.
+*@
+<div id="allProducts">
+@if(ViewBag.IsProductDirector || ViewBag.IsProductManager)
+{
+    <div id="addNew" class="ActionLinkButton" style="margin-left: 10px; width: 150px;" onclick="showNewForm();">
+        Add Product
+    </div>
+}
+    <div class="clearfix">&nbsp;</div>
+    <div style="height:100%">
+        <div class="clearfix">&nbsp;</div>
+        @if (ViewBag.ProductIDs.Count == 0)
+        {
+                        <div>There are currently no products in this category.</div>
+            <div class="clearfix">&nbsp;</div>
+        }
+        else
+        {
+            <table id="UC2" style="width: 100%; font-size: small; background-color: #ffffff; color: #2A2A2A; margin-left: 10px;" border="0">
+                <thead>
+                    <tr>
+                        <th style="padding:5px;vertical-align:top;text-align:left;">Product</th>
+                        <th style="width:400px;padding:5px;vertical-align:top;text-align:left;">At-A-Glance</th>
+                        <th style="width:75px;padding:5px;vertical-align:top;text-align:center;">View</th>
+                        @if (@ViewBag.IsProductDirector || @ViewBag.IsProductManager)
+                        {
+                        <th style="width: 75px; padding: 5px; vertical-align: top; text-align: center;">Edit</th>
+                        <th style="width: 75px; padding: 5px; vertical-align: top; text-align: center;">Delete</th>
+                        }
+                        @if (@ViewBag.IsProductDirector)
+                        {
+                        <th style="width: 75px; padding: 5px; vertical-align: top; text-align: center;">Workflow</th>
+                        }
+                    </tr>
+                </thead>
+                @for (int product = 0; product < ViewBag.ProductIDs.Count; product++)
+                {
+                    string price = @String.Format("{0:C}", ViewBag.ProductPrices[product]);
+                    <tr id="@ViewBag.ProductIDs[product]">
+                        <td style="padding:5px;vertical-align:top;text-align:left;">
+                            @ViewBag.ProductNames[product]
+                        </td>
+                        <td style="padding:5px;vertical-align:top;text-align:left;">
+                            @ViewBag.ProductDescriptions[product]
+                            @if (@ViewBag.ProductPrices[product] > 0)
+                            {
+                                <br />@price
+                            }
+                            else
+                            {
+                                <br /><i>Price not yet set</i>
+                            }
+                        </td>
+                        <td style="width: 75px; padding: 5px; vertical-align: top; text-align: center;">
+                            <img src="../Images/PreviewProduct.png" style="margin:5px;cursor:pointer;" onclick="showPreview('@ViewBag.ProductImages[product]', '@ViewBag.ProductNames[product]');" />
+                        </td>
+                        @if (ViewBag.IsProductDirector || ViewBag.IsProductManager)
+                        {
+                            <td style="width: 75px; padding: 5px; vertical-align: top; text-align: center;">
+                                <img src="../Images/EditProduct.png" style="margin:5px;cursor:pointer;" onclick="showEditForm('@ViewBag.ProductIDs[product]', '@ViewBag.ProductNames[product]' , '@price' , '@ViewBag.ProductDescriptions[product]' , '@ViewBag.ProductImages[product]' );" />
+                            </td>
+                            <td style="width: 75px; padding: 5px; vertical-align: top; text-align: center;">
+                                <img src="../Images/DeleteProduct.png" style="margin:5px;cursor:pointer;" onclick="showDeleteForm('@ViewBag.ProductIDs[product]', '@ViewBag.ProductNames[product]');" />
+                            </td>
+                        }
+                        @if (ViewBag.IsProductDirector && ViewBag.ProductHasWorkflow[product])
+                        {
+                             <td style="width: 75px; padding: 5px; vertical-align: top; text-align: center;">
+                                @Html.ActionLink(" ", "Proposals", "Home", new { ProductID = ViewBag.ProductIDs[product] }, new { @class = "WorkflowButton", @style = "margin:5px;cursor:pointer;" })
+                            </td>
+                        }
+                        @if (ViewBag.IsProductDirector && !ViewBag.ProductHasWorkflow[product])
+                        {
+                            <td style="width: 75px; padding: 5px; vertical-align: top; text-align: center;">
+                                <img src="../Images/NoWorkflow.png" style="margin:5px;"  />
+                            </td>
+                        }
+                    </tr>
+                    }
+            </table>
+        }
+    </div>
+</div>
+
+@*
+    The following <div> objects defines the modern-style pop-ups for viewing product images.
+*@
+<div id="overlaydiv" class="overlay" style="display:none;"></div>
+<div id="previewUI" style="display:none; ">
+    <div id="previewImageName" style="float:left; width:200px;max-width:200px;max-height:20px; overflow:hidden; text-overflow:ellipsis;text-wrap:none;"></div>
+    <div id="previewHider" onclick="hidePreview();" class="ActionLinkButtonInView"><img src="../Images/HidePreview.png" /></div>
+    <img id="previewImage" style="margin:10px;" src="" alt="" />
+</div>
