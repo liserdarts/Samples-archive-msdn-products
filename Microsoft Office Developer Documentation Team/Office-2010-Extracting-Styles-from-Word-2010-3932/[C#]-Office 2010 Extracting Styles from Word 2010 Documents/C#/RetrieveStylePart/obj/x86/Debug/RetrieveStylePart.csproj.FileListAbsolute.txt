@@ -1,0 +1,10 @@
+I:\DropBox\My Dropbox\Office 2010 VHTs\Dec 2010\RetrieveStylePart\Demos\CS\RetrieveStylePart\RetrieveStylePart\bin\Debug\RetrieveStylePart.exe
+I:\DropBox\My Dropbox\Office 2010 VHTs\Dec 2010\RetrieveStylePart\Demos\CS\RetrieveStylePart\RetrieveStylePart\bin\Debug\RetrieveStylePart.pdb
+I:\DropBox\My Dropbox\Office 2010 VHTs\Dec 2010\RetrieveStylePart\Demos\CS\RetrieveStylePart\RetrieveStylePart\obj\x86\Debug\ResolveAssemblyReference.cache
+I:\DropBox\My Dropbox\Office 2010 VHTs\Dec 2010\RetrieveStylePart\Demos\CS\RetrieveStylePart\RetrieveStylePart\obj\x86\Debug\RetrieveStylePart.exe
+I:\DropBox\My Dropbox\Office 2010 VHTs\Dec 2010\RetrieveStylePart\Demos\CS\RetrieveStylePart\RetrieveStylePart\obj\x86\Debug\RetrieveStylePart.pdb
+C:\Users\salri\DevDocs\Ken Getz\January 2011\WDExtractStylePart\WDExtractStyle_DEMOS\CS\RetrieveStylePart\RetrieveStylePart\obj\x86\Debug\RetrieveStylePart.exe
+C:\Users\salri\DevDocs\Ken Getz\January 2011\WDExtractStylePart\WDExtractStyle_DEMOS\CS\RetrieveStylePart\RetrieveStylePart\obj\x86\Debug\RetrieveStylePart.pdb
+C:\Users\salri\DevDocs\Ken Getz\January 2011\WDExtractStylePart\WDExtractStyle_DEMOS\CS\RetrieveStylePart\RetrieveStylePart\bin\Debug\RetrieveStylePart.exe
+C:\Users\salri\DevDocs\Ken Getz\January 2011\WDExtractStylePart\WDExtractStyle_DEMOS\CS\RetrieveStylePart\RetrieveStylePart\bin\Debug\RetrieveStylePart.pdb
+C:\Users\salri\DevDocs\Ken Getz\January 2011\WDExtractStylePart\WDExtractStyle_DEMOS\CS\RetrieveStylePart\RetrieveStylePart\obj\x86\Debug\ResolveAssemblyReference.cache
