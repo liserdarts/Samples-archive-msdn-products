@@ -1,0 +1,67 @@
+@{
+    ViewBag.Title = "Home Page";
+}
+
+@section featured {
+<section class="featured">
+    <div class="content-wrapper">
+        <hgroup class="title">
+            <h1>@ViewBag.Title.</h1>
+            <h2>@ViewBag.Message</h2>
+        </hgroup>
+        <p>OpenXml Extention Demo</p>
+    </div>
+</section>
+}
+
+@section scripts {
+    <script type="text/javascript">
+        jQuery(document).ready(function () {
+            $('.current').removeClass('current');
+            $('.tab-div').hide();
+            $('#tabsUl a').bind('click', function (e) {
+                $('.tab-div:visible').hide();
+                $(this.hash).show();
+                $(this).addClass('current');
+                e.preventDefault;
+            }).filter(':first').click();
+
+            $('#DownloadConvertBtn').click(
+                function(event){
+                    event.preventDefault();
+                    $('#download-post-iframe').attr('src', '@Url.Action("DownloadConvertedDoc","Home")');
+                });
+         });
+</script>
+    }
+
+<h3>OpenXml Extention Demo</h3>
+
+<iframe id="download-post-iframe" name="download-post-iframe" style="width:0px; height:0px; display:none;"></iframe>
+<div id="tabsDiv">
+    <ul id="tabsUl">
+        <li><a href="#tabs-1">Upload</a></li>
+        <li><a href="#tabs-2">Download</a></li>
+    </ul>
+    
+    @using (Html.BeginForm("UploadDoc", "Home", FormMethod.Post, new { enctype = "multipart/form-data", id = "docForm", name = "docForm", target = "UploadTarget" }))
+    {
+        <div id="tabs-1" class="tab-div">
+            <br />
+            <p>Browse to ..\OpenXMLHtmlConverter\Template\UploadTemplate.docx</p>
+            <input type="file" id="File" name="File" style="width:410px;" />
+            <br />
+            <p>Click on the button to convert to Html</p>
+            <input type="submit" id='UploadBtn' name='UploadBtn' value="Upload UploadTemplate.docx and convert to HTML"/>
+            <br />
+        </div>
+    }
+    <div id="tabs-2" class="tab-div">
+        <br />
+        <p>Click on the button below to generate a new .docx file based on the DownloadTemplate.docx and text from UploadTemplate.docx</p>
+        <input type="submit" id="DownloadConvertBtn" name="DownloadConvertBtn" value="Download and Convert to docx"/>
+        <br />
+    </div>
+</div>
+
+

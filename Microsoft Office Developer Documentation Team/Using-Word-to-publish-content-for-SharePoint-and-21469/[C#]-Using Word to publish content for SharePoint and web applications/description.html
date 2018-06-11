@@ -1,0 +1,289 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
+    <head><link rel="stylesheet" type="text/css" href="description/Combined.css,0:HeaderFooterSprite,0:Header.NonMtps,1:LinkList;/Areas/Centers/Themes/StandardDevCenter/Content:0,/Areas/Epx/Themes/Base/Content:1&amp;amp;hashKey=C9973DA951AE6202C9B348379A1BE49D" xmlns="http://www.w3.org/1999/xhtml" />
+<link type="text/css" rel="stylesheet" xmlns="http://www.w3.org/1999/xhtml" />
+<link rel="stylesheet" type="text/css" href="description/1c1e217c-1475-400e-91a7-b2be1bd6efa0Combined.css,0:HeaderFooterSprite,0:Footer.NonMtps,1:LinkList;/Areas/Centers/Themes/StandardDevCenter/Content:0,/Areas/Epx/Themes/Base/Content:1&amp;amp;hashKey=F576C687BC536B84D6E5B3246EE39B49" xmlns="http://www.w3.org/1999/xhtml" />
+<link type="text/css" rel="stylesheet" xmlns="http://www.w3.org/1999/xhtml" />
+
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <title>Using Word to publish content for SharePoint and web applications</title>
+        <link href="description/Galleries.css" type="text/css" rel="Stylesheet" /><link href="description/Layout.css" type="text/css" rel="Stylesheet" /><link href="description/Brand.css" type="text/css" rel="Stylesheet" />
+        <link href="description/iframedescription.css" rel="Stylesheet" type="text/css" />
+        <script src="description/offline.js" type="text/javascript"></script>
+        <style type="text/css">
+            #projectInfo {
+                overflow: auto;
+            }
+            #longDesc {
+                clear:both;
+                margin: 25px 0 10px 0;
+            }
+
+            #SampleIndexList{
+                margin-left: 15px;
+            }
+        </style>
+    </head>
+<body>
+    <div id="offlineDescription">
+        <h1>Using Word to publish content for SharePoint and web applications</h1>
+        <br/>
+        <div id="projectInfo">
+            <div class="section">
+                    <div class="itemBarLong tagsContainer">
+                        <label for="Technologies">Technologies</label>
+                        <div id="Technologies">
+                            SharePoint, Microsoft Office Word
+                        </div>
+                    </div>
+                    <div class="itemBarLong tagsContainer">
+                        <label for="Topics">Topics</label>
+                        <div id="Topics">
+                            customization, Open XML
+                        </div>
+                    </div>
+                <div class="itemBarLong">
+                    <label for="Platforms">Platforms</label>
+                    <div id="Platforms">
+                        Web, Cloud
+                    </div>
+                </div>
+                <div class="itemBarLong">
+                    <label for="Requirements">Requirements</label>
+                    <div id="Requirements">
+                        
+                    </div>
+                </div>
+                <div class="itemBar">
+                    <label for="LastUpdated">Primary language</label>
+                    <div id="LastUpdated">en-US</div>
+                </div>
+                <div class="itemBar">
+                    <label for="LastUpdated">Updated</label>
+                    <div id="LastUpdated">4/11/2013</div>
+                </div>
+                <div class="itemBarLong">
+                    <label for="License">License</label>
+                    <div id="License">
+                        <a href="license.rtf">Apache License, Version 2.0</a></div>
+                </div>
+                <div class="itemBar">
+                    <div class="viewonlinecont">
+                        <a data-link="online" href="http://code.msdn.microsoft.com/Using-Word-to-publish-6ef27b07">View this sample online</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+                   
+<script type="text/javascript">
+    function initializePage() {
+        var otherTabClass = 'otherTab';
+        var hiddenPreClass = 'hidden';
+
+        var htmlDecode = function(encodedData) {
+            var decodedData = "";
+            if (encodedData) {
+                var div = document.createElement('div');
+                div.innerHTML = encodedData;
+                decodedData = div.firstChild.nodeValue.replace( /\\r\\n/ig , '\r\n');
+            }
+            return decodedData;
+        };
+                
+        Galleries.iterateElem(Galleries.findElem(null, 'div', 'scriptcode'), function (index, scriptBlock) {
+            var titleElem = Galleries.findElem(scriptBlock, 'div', 'title')[0];
+            var labelElems = Galleries.findElem(titleElem, 'span');
+            if (labelElems.length == 0) {
+                labelElems = titleElem;
+            }
+            var languageSpans = Galleries.findElem(scriptBlock, 'span', 'hidden');
+            var pres = Galleries.findElem(scriptBlock, 'pre');
+            if (languageSpans.length > 0 && pres.length > 1) {
+                Galleries.iterateElem(labelElems, function(index, elem) {
+                    var codePre = pres[index];
+                    var labelSpan = elem;
+                    var languageSpan = languageSpans[index];
+                            
+                    elem.code = codePre.innerHTML.replace( /(\r(\n)?)|((\r)?\n)/ig , '\\r\\n');
+                            
+                    codePre.className = codePre.className.replace(hiddenPreClass, '');
+                            
+                    languageSpan.parentNode.removeChild(languageSpan);
+                });
+
+                pres = Galleries.findElem(scriptBlock, 'pre');
+                Galleries.iterateElem(labelElems, function(index, elem) {
+                    var codePre = pres[index];
+                    var labelSpan = elem;
+                    if (index == 0) {
+                        scriptBlock.activeTab = 0;
+                    }
+                    else {
+                        labelSpan.className += otherTabClass;
+                        codePre.className += hiddenPreClass;
+                    }
+                    Galleries.attachEventHandler(labelSpan, 'click', function(e) {
+                        var activeTab = scriptBlock.activeTab;
+                        labelElems[activeTab].className += otherTabClass;
+                        pres[activeTab].className += hiddenPreClass;
+
+                        codePre.className = codePre.className.replace(hiddenPreClass, '');
+                        labelSpan.className = labelSpan.className.replace(otherTabClass, '');
+                        scriptBlock.activeTab = index;
+                    });
+                });
+
+                var preview = Galleries.findElem(scriptBlock, 'div', 'preview');
+                if (preview.length == 0) {
+                    preview.push(pres[pres.length - 1]);
+                }
+                Galleries.iterateElem(preview, function(index, elem) {
+                    elem.parentNode.removeChild(elem);
+                });
+
+                if (window.clipboardData && clipboardData.setData) {
+                    var copyLink = document.createElement('a');
+                    copyLink.href = 'javascript:void(0);';
+                    copyLink.className = 'copyCode';
+                    copyLink.innerHTML = 'Copy code';
+                    Galleries.attachEventHandler(copyLink, 'click', function (e) {
+                        clipboardData.setData("Text", htmlDecode(labelElems[scriptBlock.activeTab].code));
+                        return false;
+                    });
+                    scriptBlock.insertBefore(copyLink, scriptBlock.childNodes[0]);
+                }
+            }
+        });
+    }
+
+    Galleries.onWindowLoad(function(){
+        initializePage();
+    });
+
+</script>
+<div id="longDesc">
+    
+<div id="header"><span class="label">Summary:</span>&nbsp;&nbsp;Demonstrates how to use Microsoft Word to publish formatted contents for SharePoint and web applications by customizing PowerTools for Open XML.</div>
+<div id="mainSection">
+<div id="mainBody">
+<h1 class="heading">Description</h1>
+<div class="section" id="sectionSection0">
+<p>This sample implements a simple solution that uses Word to publish formatted contents, and accompanies an article by the same name on MSDN,
+<a href="http://msdn.microsoft.com/en-us/library/dn151787(v=office.14).aspx" >
+Using Word to publish content for SharePoint and web applications</a>. The solution provides an effective application design alternative when Word is the preferred publication tool for an application, and makes it easy for content authors to prepare contents
+ offline. By customizing the <span><span class="keyword">HtmlConverter</span></span> class in PowerTools for Open XML, the solution lets you convert a specific section of a Word document to HTML. The sample includes a custom helper class that you can use
+ to provide better HTML conversion control and enable users to download the published contents back to another Word document.</p>
+<p>This sample code contains a solution with two projects, a class library and a web project. It also contains the following folders:</p>
+<ul>
+<li>
+<p><strong>External</strong> folder, which contains the Open XML libraries</p>
+</li><li>
+<p><strong>OpenXMLHtmlConverter</strong> folder, which contains the sample code</p>
+</li><li>
+<p><strong>OpenXmlPowerTools_Customized</strong> folder, which contains the customized Open XML power tools</p>
+</li><li>
+<p><strong>Packages</strong> folder, which contains all the libraries for the solution</p>
+</li><li>
+<p><strong>Template</strong> folder, which contains two Word documents: UploadTemplate.docx and DownloadTemplate.docx</p>
+</li></ul>
+</div>
+<h1 class="heading">Prerequisites</h1>
+<div class="section" id="sectionSection1">
+<p>This sample requires the following:</p>
+<ul>
+<li>
+<p>Microsoft Visual Studio 2010 with SP1 for Visual Studio</p>
+</li><li>
+<p>ASP.NET MVC 4</p>
+</li><li>
+<p>Microsoft Word 2010 or Microsoft Word 2013</p>
+</li></ul>
+</div>
+<h1 class="heading">Key components</h1>
+<div class="section" id="sectionSection2">
+<p>This sample has one solution that has the following components:</p>
+<ul>
+<li>
+<p>OpenXML Power Tools Class Library Project</p>
+</li><li>
+<p>OpenXMLHtmlConverter ASP.NET MVC 4 Web Project</p>
+</li></ul>
+</div>
+<h1 class="heading">Configure the sample</h1>
+<div class="section" id="sectionSection3">
+<p>Follow these steps to configure the sample:</p>
+<ol>
+<li>
+<p>Extract the SampleCode.zip file to your hard drive.</p>
+</li><li>
+<p>Open Visual Studio 2010.</p>
+</li><li>
+<p>Click <span class="ui">File</span>, point to <span class="ui">Open</span>, and then click
+<span class="ui">Project/Solution...</span> to open the OpenXMLHtmlConverter.sln file.</p>
+</li></ol>
+</div>
+<h1 class="heading">Build the sample</h1>
+<div class="section" id="sectionSection4">
+<p>Do the following to build the sample.</p>
+<ul>
+<li>
+<p>Right click the solution, and then click <span class="ui">Build Solution</span> or Press F6.</p>
+</li></ul>
+</div>
+<h1 class="heading">Run and test the sample</h1>
+<div class="section" id="sectionSection5">
+<p>Follow these steps to run and test the sample.</p>
+<ol>
+<li>
+<p>Press F5 to run the OpenXMLHtmlConverter web project.</p>
+</li><li>
+<p>After the browser opens, you can click the <span class="ui">Upload</span> or
+<span class="ui">Download</span> tabs.</p>
+<ul>
+<li>
+<p>In the <span class="ui">Upload</span> tab, click the <span class="ui">Browse</span> button, and then choose UploadTemplate.docx in the
+<span class="ui">...\OpenXMLHtmlConverter\Template</span> folder.</p>
+</li><li>
+<p>Next, click the <span class="ui">Upload UploadTemplate.docx and convert to HTML</span> button. A new browser tab opens.</p>
+</li></ul>
+</li><li>
+<p>On the home page, click the <span class="ui">Download</span> tab.</p>
+</li><li>
+<p>Click the <span class="ui">Download and Convert to .docx</span> button. This prompts you to open, save, or save as the DownloadConvertedDoc.docx word document.</p>
+</li><li>
+<p>Click <span class="ui">Open</span> to see the generated Word document.</p>
+</li></ol>
+</div>
+<h1 class="heading">Troubleshooting</h1>
+<div class="section" id="sectionSection6">
+<ol>
+<li>
+<p>Verify that you have Word 2010 or Word 2013 installed.</p>
+</li><li>
+<p>Verify that you have ASP.NET MVC 4 installed.</p>
+</li><li>
+<p>Verify that you have SP1 for Visual Studio 2010 installed.</p>
+</li></ol>
+</div>
+<h1 class="heading">Related content</h1>
+<div class="section" id="sectionSection7">
+<ul>
+<li>
+<p>Accompanying article on MSDN: <a href="http://msdn.microsoft.com/en-us/library/dn151787(v=office.14).aspx" >
+Using Word to publish content for SharePoint and web applications</a></p>
+</li><li>
+<p><a href="http://powertools.codeplex.com/" >PowerTools for Open XML</a></p>
+</li><li>
+<p><a href="http://www.asp.net/mvc/mvc4" >ASP.NET MVC 4 Installer for Visual Studio 2010</a></p>
+</li></ul>
+</div>
+</div>
+</div>
+
+</div>
+
+
+    </div>
+</body>
+</html>

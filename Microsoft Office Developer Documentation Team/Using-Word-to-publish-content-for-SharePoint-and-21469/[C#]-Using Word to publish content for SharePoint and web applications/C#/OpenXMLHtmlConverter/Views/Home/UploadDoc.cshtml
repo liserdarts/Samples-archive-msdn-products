@@ -1,0 +1,28 @@
+﻿@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Converted to Html</title>
+    <link href="@System.Web.Optimization.BundleTable.Bundles.ResolveBundleUrl("~/Content/css")" rel="stylesheet" type="text/css" />
+    <link href="@System.Web.Optimization.BundleTable.Bundles.ResolveBundleUrl("~/Content/themes/base/css")" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div style="margin-left:5%">
+    <h1>HTML</h1>
+    @Html.Raw(ViewBag.HtmlContent)
+
+    <h1>Raw HTML</h1>
+    @ViewBag.HtmlContent
+
+    <h1>Hyperlinks</h1>
+    @ViewBag.Hyperlinks
+
+    <h1>WordML</h1>
+    @ViewBag.WordML
+</div>
+</body>
+</html>
