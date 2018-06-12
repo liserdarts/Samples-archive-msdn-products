@@ -1,0 +1,4 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">
+  <ListInstance Title="SSConfig" OnQuickLaunch="TRUE" TemplateType="10000" Url="SSConfig" Description="List for configuring self-service site creation"></ListInstance>
+</Elements>

@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Feature xmlns="http://schemas.microsoft.com/sharepoint/" Id="4bd9aea7-b342-44eb-826d-58b6f93dcb88" Scope="Web" Title="SelfServiceProvisioning Feature1" Version="1.0.0.0">
+  <ElementManifests>
+    <ElementManifest Location="AppAssets\Elements.xml" />
+    <ElementFile Location="AppAssets\Project.png" />
+    <ElementFile Location="AppAssets\Community.png" />
+    <ElementFile Location="AppAssets\Team.png" />
+    <ElementFile Location="AppAssets\Publishing.png" />
+    <ElementFile Location="AppAssets\Blog.png" />
+    <ElementManifest Location="SSConfigInstance\Elements.xml" />
+    <ElementManifest Location="SSConfig\Elements.xml" />
+    <ElementFile Location="SSConfig\Schema.xml" />
+    <ElementFile Location="SSConfig\EditDlg.htm" />
+    <ElementFile Location="SSConfig\FileDlg.htm" />
+    <ElementFile Location="SSConfig\Repair.aspx" />
+    <ElementFile Location="SSConfig\Upload.aspx" />
+  </ElementManifests>
+  <UpgradeActions>
+    <VersionRange>
+      <ApplyElementManifests>
+        <ElementManifest Location="AppAssets\Elements.xml" />
+        <ElementManifest Location="SSConfigInstance\Elements.xml" />
+        <ElementManifest Location="SSConfig\Elements.xml" />
+      </ApplyElementManifests>
+    </VersionRange>
+  </UpgradeActions>
+</Feature>

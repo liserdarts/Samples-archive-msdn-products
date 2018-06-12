@@ -1,0 +1,11 @@
+C:\Projects\SharePoint\SelfServiceProvisioning\SelfServiceProvisioningWeb\bin\SelfServiceProvisioningWeb.dll
+C:\Projects\SharePoint\SelfServiceProvisioning\SelfServiceProvisioningWeb\bin\SelfServiceProvisioningWeb.pdb
+C:\Projects\SharePoint\SelfServiceProvisioning\SelfServiceProvisioningWeb\bin\Microsoft.IdentityModel.dll
+C:\Projects\SharePoint\SelfServiceProvisioning\SelfServiceProvisioningWeb\bin\Microsoft.IdentityModel.Extensions.dll
+C:\Projects\SharePoint\SelfServiceProvisioning\SelfServiceProvisioningWeb\bin\Microsoft.Online.SharePoint.Client.Tenant.dll
+C:\Projects\SharePoint\SelfServiceProvisioning\SelfServiceProvisioningWeb\bin\Microsoft.SharePoint.Client.dll
+C:\Projects\SharePoint\SelfServiceProvisioning\SelfServiceProvisioningWeb\bin\Microsoft.SharePoint.Client.Runtime.dll
+C:\Projects\SharePoint\SelfServiceProvisioning\SelfServiceProvisioningWeb\bin\en\Microsoft.IdentityModel.resources.dll
+C:\Projects\SharePoint\SelfServiceProvisioning\SelfServiceProvisioningWeb\obj\Debug\SelfServiceProvisioningWeb.dll
+C:\Projects\SharePoint\SelfServiceProvisioning\SelfServiceProvisioningWeb\obj\Debug\SelfServiceProvisioningWeb.pdb
+C:\Projects\SharePoint\SelfServiceProvisioning\SelfServiceProvisioningWeb\obj\Debug\SelfServiceProvisioningWeb.csprojResolveAssemblyReference.cache

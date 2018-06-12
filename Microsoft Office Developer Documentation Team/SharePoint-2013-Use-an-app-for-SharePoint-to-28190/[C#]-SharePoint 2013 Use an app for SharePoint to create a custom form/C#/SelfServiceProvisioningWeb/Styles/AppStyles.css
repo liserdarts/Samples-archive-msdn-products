@@ -1,0 +1,45 @@
+﻿ul {
+    padding: 0px 0px 0px 0px;
+    margin: 0px 0px 0px 0px;
+}
+
+.liSiteType {
+    padding: 5px 5px 5px 5px;
+    margin: 4px 4px 4px 4px;
+    list-style-type: none;
+    height: 84px;
+    width: 64px;
+    display: inline-block;
+}
+
+.liSiteTypeContainer {
+    height: 84px;
+    width: 64px;
+    overflow: hidden;
+    text-align: center;
+}
+
+.imgSiteType {
+    height: 64px;
+    width: 64px;
+}
+
+.liSiteTypeTitle {
+    font-size: 12px;
+}
+
+.txtLookup {
+    font-style: italic;
+}
+
+.txtLookupSelected {
+    text-decoration: underline;
+    font-style: normal !important;
+}
+
+.divUserLookup {
+    height: 50px; 
+    overflow: hidden; 
+    border: 1px solid #99b0c1; 
+    padding: 2px 5px 2px 5px;
+}

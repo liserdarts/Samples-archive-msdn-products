@@ -1,0 +1,107 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{B35DE297-0176-4EBF-A9AD-F3EF00FB3376}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>SelfServiceProvisioning</RootNamespace>
+    <AssemblyName>SelfServiceProvisioning</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <TargetOfficeVersion>15.0</TargetOfficeVersion>
+    <FileAlignment>512</FileAlignment>
+    <ProjectTypeGuids>{C1CDDADD-2546-481F-9697-4EA41081F2FC};{14822709-B5A1-4724-98CA-57A101D1B079};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <IncludeAssemblyInPackage>False</IncludeAssemblyInPackage>
+    <ProjectMode>SharePointApp</ProjectMode>
+    <AppFeaturePartId>{0facc4bc-4902-45c5-9800-3cb8722b7416}</AppFeaturePartId>
+    <WspPartId>{f1838e1b-8fb5-41ad-86f3-52f04c08fb95}</WspPartId>
+    <WorkflowPartId>{df23d7ca-a3d5-426a-8733-9afda2b8a7e7}</WorkflowPartId>
+    <CspkgPartId>{f830b648-e6ba-46e2-b9c2-e7a2519d04e0}</CspkgPartId>
+    <SqlPackagePartId>{f8c19ab0-4df4-4332-8941-9f4139d2c8af}</SqlPackagePartId>
+    <ActivePublishProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+  </PropertyGroup>
+  <ItemGroup>
+    <Content Include="AppAssets\Blog.png" />
+    <Content Include="AppAssets\Community.png" />
+    <Content Include="AppAssets\Elements.xml" />
+    <Content Include="AppAssets\Project.png" />
+    <Content Include="AppAssets\Publishing.png" />
+    <Content Include="AppAssets\Team.png" />
+    <Content Include="AppIcon.png">
+      <OpcRelationship>manifest-icon</OpcRelationship>
+    </Content>
+    <Content Include="Features\AppFeatures\AppFeatures.Template.xml">
+      <DependentUpon>AppFeatures.feature</DependentUpon>
+    </Content>
+    <Content Include="Package\Package.Template.xml">
+      <DependentUpon>Package.package</DependentUpon>
+    </Content>
+    <Content Include="SSConfig\EditDlg.htm" />
+    <Content Include="SSConfig\Elements.xml" />
+    <Content Include="SSConfig\FileDlg.htm" />
+    <Content Include="SSConfig\Repair.aspx" />
+    <Content Include="SSConfig\Schema.xml" />
+    <Content Include="SSConfig\SSConfigInstance\Elements.xml" />
+    <Content Include="SSConfig\Upload.aspx" />
+  </ItemGroup>
+  <ItemGroup>
+    <AppManifestFile Include="AppManifest.xml">
+      <SubType>Designer</SubType>
+    </AppManifestFile>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\SelfServiceProvisioningWeb\SelfServiceProvisioningWeb.csproj">
+      <Project>{297586D1-C251-4EBD-8F12-C9AA87AEB6B5}</Project>
+      <Name>SelfServiceProvisioningWeb</Name>
+      <Private>True</Private>
+      <RoleType>Web</RoleType>
+      <OutputItemType>SharePointWebProjectOutput</OutputItemType>
+      <RoleName>SelfServiceProvisioningWeb</RoleName>
+      <ReferenceOutputAssembly>False</ReferenceOutputAssembly>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="AppAssets\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{2271635e-dea7-4490-aa42-c8804325327a}</SharePointProjectItemId>
+    </None>
+    <None Include="Features\AppFeatures\AppFeatures.feature">
+      <FeatureId>{66d0d78f-ec07-4f9c-81fd-a45d75913a81}</FeatureId>
+    </None>
+    <None Include="Package\Package.package">
+      <PackageId>{a0bf5073-4c57-48cc-a38e-0696da028146}</PackageId>
+    </None>
+    <None Include="SSConfig\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{f8de2d2d-f1df-4c53-92d6-aa85e5079c8c}</SharePointProjectItemId>
+    </None>
+    <None Include="SSConfig\SSConfigInstance\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{7dd5ee17-8939-460f-9b66-401fe7d335a4}</SharePointProjectItemId>
+    </None>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == '' or '$(VisualStudioVersion)' &lt; '11.0'">11.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(VSToolsPath)\SharePointTools\Microsoft.VisualStudio.SharePoint.targets" Condition="'$(VSToolsPath)' != ''" />
+</Project>

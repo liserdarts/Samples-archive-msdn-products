@@ -1,0 +1,50 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">
+  <Module Name="AppAssets">
+    <File Path="AppAssets\Blog.png" Url="SSConfig/Blog.png" ReplaceContent="TRUE">
+      <Property Name="Title" Value="Blog" Type="string"></Property>
+      <Property Name="SiteTemplate" Value="BLOG#0" Type="string"></Property>
+      <Property Name="BasePath" Value="https://richdizzcom.sharepoint.com/sites/Blogs/" Type="string"></Property>
+      <Property Name="SiteType" Value="Subsite" Type="string"></Property>
+      <Property Name="MasterPageUrl" Value="/sites/Blogs/_catalogs/masterpage/DallasMTC.com.master" Type="string"></Property>
+      <Property Name="StorageMaximumLevel" Value="100" Type="string"></Property>
+      <Property Name="UserCodeMaximumLevel" Value="300" Type="string"></Property>
+    </File>
+    <File Path="AppAssets\Community.png" Url="SSConfig/Community.png" ReplaceContent="TRUE">
+      <Property Name="Title" Value="Community" Type="string"></Property>
+      <Property Name="SiteTemplate" Value="COMMUNITY#0" Type="string"></Property>
+      <Property Name="BasePath" Value="https://richdizzcom.sharepoint.com/sites/Communities/" Type="string"></Property>
+      <Property Name="SiteType" Value="Subsite" Type="string"></Property>
+      <Property Name="MasterPageUrl" Value="/sites/Communities/_catalogs/masterpage/DallasMTC.com.master" Type="string"></Property>
+      <Property Name="StorageMaximumLevel" Value="100" Type="string"></Property>
+      <Property Name="UserCodeMaximumLevel" Value="300" Type="string"></Property>
+    </File>
+    <File Path="AppAssets\Project.png" Url="SSConfig/Project.png" ReplaceContent="TRUE">
+      <Property Name="Title" Value="Project" Type="string"></Property>
+      <Property Name="SiteTemplate" Value="PROJECTSITE#0" Type="string"></Property>
+      <Property Name="BasePath" Value="https://richdizzcom.sharepoint.com/teams/" Type="string"></Property>
+      <Property Name="SiteType" Value="Site Collection" Type="string"></Property>
+      <Property Name="MasterPageUrl" Value="https://richdizzcom.sharepoint.com/_catalogs/masterpage/DallasMTC.com.master" Type="string"></Property>
+      <Property Name="StorageMaximumLevel" Value="100" Type="string"></Property>
+      <Property Name="UserCodeMaximumLevel" Value="300" Type="string"></Property>
+    </File>
+    <File Path="AppAssets\Publishing.png" Url="SSConfig/Publishing.png" ReplaceContent="TRUE">
+      <Property Name="Title" Value="Publishing" Type="string"></Property>
+      <Property Name="SiteTemplate" Value="BLANKINTERNET#0" Type="string"></Property>
+      <Property Name="BasePath" Value="https://richdizzcom.sharepoint.com/sites/" Type="string"></Property>
+      <Property Name="SiteType" Value="Site Collection" Type="string"></Property>
+      <Property Name="MasterPageUrl" Value="https://richdizzcom.sharepoint.com/_catalogs/masterpage/DallasMTC.com.master" Type="string"></Property>
+      <Property Name="StorageMaximumLevel" Value="100" Type="string"></Property>
+      <Property Name="UserCodeMaximumLevel" Value="300" Type="string"></Property>
+    </File>
+    <File Path="AppAssets\Team.png" Url="SSConfig/Team.png" ReplaceContent="TRUE">
+      <Property Name="Title" Value="Team" Type="string"></Property>
+      <Property Name="SiteTemplate" Value="STS#0" Type="string"></Property>
+      <Property Name="BasePath" Value="https://richdizzcom.sharepoint.com/teams/" Type="string"></Property>
+      <Property Name="SiteType" Value="Site Collection" Type="string"></Property>
+      <Property Name="MasterPageUrl" Value="https://richdizzcom.sharepoint.com/_catalogs/masterpage/DallasMTC.com.master" Type="string"></Property>
+      <Property Name="StorageMaximumLevel" Value="100" Type="string"></Property>
+      <Property Name="UserCodeMaximumLevel" Value="300" Type="string"></Property>
+    </File>
+  </Module>
+</Elements>

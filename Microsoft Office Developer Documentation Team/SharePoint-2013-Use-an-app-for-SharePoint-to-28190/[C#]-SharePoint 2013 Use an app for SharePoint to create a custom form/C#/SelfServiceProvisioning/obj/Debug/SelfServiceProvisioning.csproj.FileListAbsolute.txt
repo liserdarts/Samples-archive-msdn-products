@@ -1,0 +1,3 @@
+C:\Projects\SharePoint\SelfServiceProvisioning\SelfServiceProvisioning\bin\Debug\SelfServiceProvisioning.pdb
+C:\Projects\SharePoint\SelfServiceProvisioning\SelfServiceProvisioning\obj\Debug\SelfServiceProvisioning.dll
+C:\Projects\SharePoint\SelfServiceProvisioning\SelfServiceProvisioning\obj\Debug\SelfServiceProvisioning.pdb
