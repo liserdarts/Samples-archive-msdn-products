@@ -1,0 +1,30 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.21005.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BingEx", "BingEx\BingEx.csproj", "{AF19092F-FB53-4ABB-BFD8-5A0809187371}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BingExWeb", "BingExWeb\BingExWeb.csproj", "{2C5B9BCB-F8B7-4863-AF1F-4652C19A7CBF}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{AF19092F-FB53-4ABB-BFD8-5A0809187371}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AF19092F-FB53-4ABB-BFD8-5A0809187371}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AF19092F-FB53-4ABB-BFD8-5A0809187371}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{AF19092F-FB53-4ABB-BFD8-5A0809187371}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AF19092F-FB53-4ABB-BFD8-5A0809187371}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AF19092F-FB53-4ABB-BFD8-5A0809187371}.Release|Any CPU.Deploy.0 = Release|Any CPU
+		{2C5B9BCB-F8B7-4863-AF1F-4652C19A7CBF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2C5B9BCB-F8B7-4863-AF1F-4652C19A7CBF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2C5B9BCB-F8B7-4863-AF1F-4652C19A7CBF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2C5B9BCB-F8B7-4863-AF1F-4652C19A7CBF}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
