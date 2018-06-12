@@ -1,0 +1,64 @@
+﻿@using ExchangeRateCalculatorMVCWeb.Models;
+@{
+    ViewBag.Title = "Exchange Rate Calculator";
+    ViewBag.rate = Model.Rate;
+}
+<input id="hiddenfieldRate" type="hidden" value="@ViewBag.rate" />
+<input id="hiddenfieldId" type="hidden" value="@ViewBag.id" />
+<h3 id="baseDis"></h3>
+<h2 id="targDis"></h2>
+<div id="exchangeForm">
+    @using (Html.BeginForm())
+    {
+        <p>
+            <input id="txtBase" type="text" name="txtBase" value="@Model.BaseValue" />
+            <select id="baseUnit" name="baseUnit">
+                <option value="USD">US Dollar</option>
+                <option value="ARS">Argentine Peso</option>
+                <option value="AUD">Australian Dollar</option>
+                <option value="BRL">Brazilian Real</option>
+                <option value="GBP">British Pound Sterling</option>
+                <option value="CAD">Canadian Dollar</option>
+                <option value="CNY">Chinese Yuan</option>
+                <option value="EGP">Egyptian Pound</option>
+                <option value="EUR">Euro</option>
+                <option value="HKD">Hong Kong Dollar</option>
+                <option value="INR">Indian Rupee</option>
+                <option value="JPY">Japanese Yen</option>
+                <option value="MXN">Mexican Peso</option>
+                <option value="TWD">New Taiwan Dollar</option>
+                <option value="RUB">Russian Ruble</option>
+                <option value="ZAR">South African Rand</option>
+                <option value="KRW">South Korean Won</option>
+                <option value="CHF">Swiss Franc</option>
+                <option value="THB">Thai Baht</option>
+            </select>
+        </p>
+        <p>
+            <input id="txtTarg" type="text" name="txtTarg" value="@Model.TargetValue" />
+            <select id="targUnit" name="targUnit">
+                <option value="USD">US Dollar</option>
+                <option value="ARS">Argentine Peso</option>
+                <option value="AUD">Australian Dollar</option>
+                <option value="BRL">Brazilian Real</option>
+                <option value="GBP">British Pound Sterling</option>
+                <option value="CAD">Canadian Dollar</option>
+                <option value="CNY">Chinese Yuan</option>
+                <option value="EGP">Egyptian Pound</option>
+                <option value="EUR">Euro</option>
+                <option value="HKD">Hong Kong Dollar</option>
+                <option value="INR">Indian Rupee</option>
+                <option value="JPY">Japanese Yen</option>
+                <option value="MXN">Mexican Peso</option>
+                <option value="TWD">New Taiwan Dollar</option>
+                <option value="RUB">Russian Ruble</option>
+                <option value="ZAR">South African Rand</option>
+                <option value="KRW">South Korean Won</option>
+                <option value="CHF">Swiss Franc</option>
+                <option value="THB">Thai Baht</option>
+            </select>
+        </p>
+
+    }
+    <img src="@string.Format("http://chart.finance.yahoo.com/w?s={0}%3dX&lang=en-US&region=US",Model.id)" />
+</div>

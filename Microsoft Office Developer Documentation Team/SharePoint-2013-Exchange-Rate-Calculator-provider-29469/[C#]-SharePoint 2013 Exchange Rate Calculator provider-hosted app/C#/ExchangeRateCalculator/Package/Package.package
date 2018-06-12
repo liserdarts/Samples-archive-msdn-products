@@ -1,0 +1,6 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" dslVersion="1.0.0.0" Id="892d247a-43f7-4260-aadb-7ad6952cb19d" solutionId="892d247a-43f7-4260-aadb-7ad6952cb19d" resetWebServer="false" sharePointProductVersion="15.0" name="ExchangeRateCalculator" xmlns="http://schemas.microsoft.com/VisualStudio/2008/SharePointTools/PackageModel">
+  <features>
+    <featureReference itemId="e0086254-4c2c-4be2-ade2-083e4c1d3c57" />
+  </features>
+</package>
