@@ -1,0 +1,48 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+    <title></title>
+    <script src="../../Scripts/jquery-1.9.1.js" type="text/javascript"></script>
+
+    <link href="../../Content/Office.css" rel="stylesheet" type="text/css" />
+    <script src="https://appsforoffice.microsoft.com/lib/1.0/hosted/office.js" type="text/javascript"></script>
+
+    <!-- To enable offline debugging using a local reference to Office.js, use:                        -->
+    <!--    <script src="../../Scripts/Office/MicrosoftAjax.js" type="text/javascript"></script>       -->
+    <!--    <script src="../../Scripts/Office/1.0/office.js" type="text/javascript"></script>          -->
+
+    <link href="../App.css" rel="stylesheet" type="text/css" />
+    <script src="../App.js" type="text/javascript"></script>
+
+    <link href="Home.css" rel="stylesheet" type="text/css" />
+    <script src="Home.js" type="text/javascript"></script>
+    <style type="text/css">
+
+    </style>
+</head>
+<body>
+    <!-- Page content -->
+    <div id="content-header">
+        <div class="padding">
+            <h1>Welcome</h1>
+        </div>
+    </div>
+    <div id="content-main">
+        <div class="padding">
+            <p><strong>Graphic data control sample.</strong></p>
+            <p>Select the gauge and slide back and forth to change the value of the gauge.</p>
+            <p>The currently selected cell in the spreadsheet will update to match the value of the gauge.</p>
+            <p>Change the selection and see how the gauge responds.</p>
+            <p>Select a cell with data in it and the gauge will update to match the cell.</p>  
+            <p>Select an empty cell, and the cell will update to match the gauge.</p>
+
+            <p style="margin-top: 50px;">
+                <a target="_blank" href="http://go.microsoft.com/fwlink/?LinkId=276812">Find more samples online...</a>
+            </p>
+            <canvas id="gauge" height= 200 width = 200> </canvas>
+        </div>
+    </div>
+</body>
+</html>
