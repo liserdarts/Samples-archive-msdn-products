@@ -1,0 +1,28 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EditDataInSQLAzure", "EditDataInSQLAzure\EditDataInSQLAzure.csproj", "{F93275A4-33EC-42FC-9898-27143CFF5BFF}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EditDataInSQLAzureWeb", "EditDataInSQLAzureWeb\EditDataInSQLAzureWeb.csproj", "{A109F06E-E82D-49CC-A2E4-0E346DDE1133}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{F93275A4-33EC-42FC-9898-27143CFF5BFF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F93275A4-33EC-42FC-9898-27143CFF5BFF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F93275A4-33EC-42FC-9898-27143CFF5BFF}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{F93275A4-33EC-42FC-9898-27143CFF5BFF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F93275A4-33EC-42FC-9898-27143CFF5BFF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F93275A4-33EC-42FC-9898-27143CFF5BFF}.Release|Any CPU.Deploy.0 = Release|Any CPU
+		{A109F06E-E82D-49CC-A2E4-0E346DDE1133}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A109F06E-E82D-49CC-A2E4-0E346DDE1133}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A109F06E-E82D-49CC-A2E4-0E346DDE1133}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A109F06E-E82D-49CC-A2E4-0E346DDE1133}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
