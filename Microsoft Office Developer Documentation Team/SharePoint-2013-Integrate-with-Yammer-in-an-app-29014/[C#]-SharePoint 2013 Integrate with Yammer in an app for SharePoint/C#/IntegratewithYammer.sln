@@ -1,0 +1,28 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IntegratewithYammer", "IntegratewithYammer\IntegratewithYammer.csproj", "{AEC193BF-4391-491A-9453-C6682B8E016D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IntegratewithYammerWeb", "IntegratewithYammerWeb\IntegratewithYammerWeb.csproj", "{196F5A0F-D9E0-4B86-8A0C-9F3E324F4EFC}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{AEC193BF-4391-491A-9453-C6682B8E016D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AEC193BF-4391-491A-9453-C6682B8E016D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AEC193BF-4391-491A-9453-C6682B8E016D}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{AEC193BF-4391-491A-9453-C6682B8E016D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AEC193BF-4391-491A-9453-C6682B8E016D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AEC193BF-4391-491A-9453-C6682B8E016D}.Release|Any CPU.Deploy.0 = Release|Any CPU
+		{196F5A0F-D9E0-4B86-8A0C-9F3E324F4EFC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{196F5A0F-D9E0-4B86-8A0C-9F3E324F4EFC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{196F5A0F-D9E0-4B86-8A0C-9F3E324F4EFC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{196F5A0F-D9E0-4B86-8A0C-9F3E324F4EFC}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
