@@ -1,0 +1,52 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">
+  <ListInstance Title="TileList"
+                OnQuickLaunch="TRUE"
+                TemplateType="170"
+                FeatureId="192efa95-e50c-475e-87ab-361cede5dd7f"
+                Url="Lists/TileList"
+                Description="">
+    <Data>
+      <Rows>
+        <Row>
+          <Field Name="Title">Add New Mapping</Field>
+          <Field Name="Description">Add a new property mapping</Field>
+          <Field Name="LinkLocation">~site/Lists/vCardProperties/NewForm.aspx?IsDlg=1</Field>
+          <Field Name="BackgroundImageLocation">~site/Images/icon3.png</Field>
+          <Field Name="LaunchBehavior">Dialog</Field>
+          <Field Name="Order">1</Field>
+        </Row>
+        <Row>
+          <Field Name="Title">View Mappings</Field>
+          <Field Name="Description">View all existing property mappings</Field>
+          <Field Name="LinkLocation">~site/Lists/vCardProperties</Field>
+          <Field Name="BackgroundImageLocation">~site/Images/icon4.png</Field>
+          <Field Name="Order">2</Field>
+        </Row>
+        <Row>
+          <Field Name="Title">View Mapping With User Profile Data</Field>
+          <Field Name="Description">View property mappings with profile data.</Field>
+          <Field Name="LinkLocation">~site/Pages/viewmappingdata.aspx</Field>
+          <Field Name="BackgroundImageLocation">~site/Images/icon5.png</Field>
+          <Field Name="LaunchBehavior">Dialog</Field>
+          <Field Name="Order">3</Field>
+        </Row>
+        <Row>
+          <Field Name="Title">Manage Configurations</Field>
+          <Field Name="Description">Update configurations</Field>
+          <Field Name="LinkLocation">~site/Pages/Configurations.aspx?IsDlg=1</Field>
+          <Field Name="BackgroundImageLocation">~site/Images/icon2.png</Field>
+          <Field Name="LaunchBehavior">Dialog</Field>
+          <Field Name="Order">4</Field>
+        </Row>        
+       <!--<Row>
+          <Field Name="Title">About</Field>
+          <Field Name="Description">More info about this app</Field>
+          <Field Name="LinkLocation">~site/Pages/About.aspx</Field>
+          <Field Name="BackgroundImageLocation">~site/Images/icon6.png</Field>
+          <Field Name="Order">5</Field>
+        </Row>-->
+      </Rows>
+    </Data>
+  </ListInstance>
+</Elements>

@@ -1,0 +1,6 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" dslVersion="1.0.0.0" Id="e8a9c107-cf0a-4c26-b2bd-526401580446" solutionId="e8a9c107-cf0a-4c26-b2bd-526401580446" resetWebServer="false" sharePointProductVersion="15.0" name="vCardForSharePoint" xmlns="http://schemas.microsoft.com/VisualStudio/2008/SharePointTools/PackageModel">
+  <features>
+    <featureReference itemId="da666797-f594-41f7-981a-3215cc48bd12" />
+  </features>
+</package>

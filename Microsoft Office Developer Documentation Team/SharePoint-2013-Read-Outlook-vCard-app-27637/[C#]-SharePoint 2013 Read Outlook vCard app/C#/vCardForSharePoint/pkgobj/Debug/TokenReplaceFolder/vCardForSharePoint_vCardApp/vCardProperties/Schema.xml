@@ -1,0 +1,79 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<List xmlns:ows="Microsoft SharePoint" Title="vCardProperties" FolderCreation="FALSE" Direction="$Resources:Direction;" Url="Lists/vCardProperties" BaseType="0" xmlns="http://schemas.microsoft.com/sharepoint/">
+  <MetaData>
+    <ContentTypes>
+      <ContentType ID="0x01006c9fae17c496485486db26191de96f16" Name="ListFieldsContentType">
+        <FieldRefs>
+          <FieldRef ID="{0a2a92b3-f0c6-4640-9d44-e353f944c632}" Name="UserProfilePropertyName" />
+          <FieldRef ID="{4d071775-627c-44fe-9979-607967e33eba}" Name="OutlookFieldName" />
+          <FieldRef ID="{ADBD1471-10FA-4687-AA8C-D7DD686F50DA}" Name="FormatFunction" />
+        </FieldRefs>
+        <!-- Bind a custom Page to the Content Type when inserting a new item -->
+        <XmlDocuments>
+          <XmlDocument NamespaceURI="http://schemas.microsoft.com/sharepoint/v3/contenttype/forms/url">
+            <FormUrls xmlns="http://schemas.microsoft.com/sharepoint/v3/contenttype/forms/url">
+              <New>vCardForms/NewForm.aspx</New>
+              <Edit>vCardForms/EditForm.aspx</Edit>
+              <Edit>vCardForms/DispForm.aspx</Edit>
+            </FormUrls>
+          </XmlDocument>
+        </XmlDocuments>
+      </ContentType>
+      <!--<ContentTypeRef ID="0x01">
+        <Folder TargetName="Item" />
+      </ContentTypeRef>
+      <ContentTypeRef ID="0x0120" />-->
+    </ContentTypes>
+    <Fields>
+      <Field Name="UserProfilePropertyName" ID="{0a2a92b3-f0c6-4640-9d44-e353f944c632}" DisplayName="User Profile Property Name" Type="Text" Required="TRUE" ListItemMenu="TRUE">
+      </Field>
+      <Field Name="OutlookFieldName" ID="{4d071775-627c-44fe-9979-607967e33eba}" DisplayName="Outlook Field Name" Type="Text" Required="TRUE" />
+      <Field Name="FormatFunction" ID="{ADBD1471-10FA-4687-AA8C-D7DD686F50DA}" DisplayName="Formatting Rule" Type="Text" Required="FALSE"/>
+    </Fields>
+    <Views>
+      <View BaseViewID="0" Type="HTML" MobileView="TRUE" TabularView="FALSE">
+        <Toolbar Type="Standard" />
+        <XslLink Default="TRUE">main.xsl</XslLink>
+        <RowLimit Paged="TRUE">30</RowLimit>
+        <ViewFields>
+          <FieldRef Name="LinkTitleNoMenu"></FieldRef>
+        </ViewFields>
+        <Query>
+          <OrderBy>
+            <FieldRef Name="Modified" Ascending="FALSE"></FieldRef>
+          </OrderBy>
+        </Query>
+        <ParameterBindings>
+          <ParameterBinding Name="AddNewAnnouncement" Location="Resource(wss,addnewitem)" />
+          <ParameterBinding Name="NoAnnouncements" Location="Resource(wss,noXinviewofY_LIST)" />
+          <ParameterBinding Name="NoAnnouncementsHowTo" Location="Resource(wss,noXinviewofY_ONET_HOME)" />
+        </ParameterBindings>
+      </View>
+      <View BaseViewID="1" Name="AllItems" Type="HTML" WebPartZoneID="Main" DisplayName="$Resources:core,objectiv_schema_mwsidcamlidC24;" DefaultView="TRUE" MobileView="TRUE" MobileDefaultView="TRUE" SetupPath="pages\viewpage.aspx" ImageUrl="/_layouts/15/images/generic.png?rev=23" Url="AllItems.aspx">
+        <Toolbar Type="Standard" />
+        <XslLink Default="TRUE">main.xsl</XslLink>
+        <JSLink>~site/Scripts/vcard_clienttemplates.js</JSLink>
+        <RowLimit Paged="TRUE">30</RowLimit>
+        <ViewFields>
+          <FieldRef Name="UserProfilePropertyName" />
+          <FieldRef Name="OutlookFieldName" />
+          <FieldRef Name="FormatFunction" />
+        </ViewFields>
+        <Query>
+          <OrderBy>
+            <FieldRef Name="ID"></FieldRef>
+          </OrderBy>
+        </Query>
+        <ParameterBindings>
+          <ParameterBinding Name="NoAnnouncements" Location="Resource(wss,noXinviewofY_LIST)" />
+          <ParameterBinding Name="NoAnnouncementsHowTo" Location="Resource(wss,noXinviewofY_DEFAULT)" />
+        </ParameterBindings>
+      </View>
+    </Views>
+    <Forms>
+      <Form Type="DisplayForm" Url="DispForm.aspx" SetupPath="pages\form.aspx" WebPartZoneID="Main"/>
+      <Form Type="EditForm" Url="EditForm.aspx" SetupPath="pages\form.aspx" WebPartZoneID="Main" />
+      <Form Type="NewForm" Url="NewForm.aspx" SetupPath="pages\form.aspx" WebPartZoneID="Main" />
+    </Forms>
+  </MetaData>
+</List>

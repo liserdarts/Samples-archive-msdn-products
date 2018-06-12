@@ -1,0 +1,76 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">
+  <ListInstance Title="vCard Properties" OnQuickLaunch="TRUE" TemplateType="10000" Url="Lists/vCardProperties" Description="vCardProperties">
+    <Data>
+      <Rows>
+        <Row>
+          <Field Name='ContentTypeId'>0x01006c9fae17c496485486db26191de96f16</Field>
+          <Field Name='UserProfilePropertyName'>FirstName;LastName</Field>
+          <Field Name='OutlookFieldName'>FN</Field>
+          <Field Name='FormatFunction'></Field>
+        </Row>
+        <Row>
+          <Field Name='ContentTypeId'>0x01006c9fae17c496485486db26191de96f16</Field>
+          <Field Name='UserProfilePropertyName'>Department</Field>
+          <Field Name='OutlookFieldName'>ORG</Field>
+        </Row>
+        <Row>
+          <Field Name='ContentTypeId'>0x01006c9fae17c496485486db26191de96f16</Field>
+          <Field Name='UserProfilePropertyName'>Title</Field>
+          <Field Name='OutlookFieldName'>TITLE</Field>
+        </Row>
+        <Row>
+          <Field Name='ContentTypeId'>0x01006c9fae17c496485486db26191de96f16</Field>
+          <Field Name='UserProfilePropertyName'>WorkPhone</Field>
+          <Field Name='OutlookFieldName'>TEL;WORK;VOICE</Field>
+        </Row>
+        <Row>
+          <Field Name='ContentTypeId'>0x01006c9fae17c496485486db26191de96f16</Field>
+          <Field Name='UserProfilePropertyName'>HomePhone</Field>
+          <Field Name='OutlookFieldName'>TEL;HOME;VOICE</Field>
+        </Row>
+        <Row>
+          <Field Name='ContentTypeId'>0x01006c9fae17c496485486db26191de96f16</Field>
+          <Field Name='UserProfilePropertyName'>CellPhone</Field>
+          <Field Name='OutlookFieldName'>TEL;CELL;VOICE</Field>
+        </Row>
+        <Row>
+          <Field Name='ContentTypeId'>0x01006c9fae17c496485486db26191de96f16</Field>
+          <Field Name='UserProfilePropertyName'>WebSite</Field>
+          <Field Name='OutlookFieldName'>URL;WORK</Field>
+        </Row>
+        <Row>
+          <Field Name='ContentTypeId'>0x01006c9fae17c496485486db26191de96f16</Field>
+          <Field Name='UserProfilePropertyName'>WorkEmail</Field>
+          <Field Name='OutlookFieldName'>EMAIL;PREF;INTERNET</Field>
+        </Row>
+        <Row>
+          <Field Name='ContentTypeId'>0x01006c9fae17c496485486db26191de96f16</Field>
+          <Field Name='UserProfilePropertyName'>SPS-SipAddress</Field>
+          <Field Name='OutlookFieldName'>X-MS-IMADDRESS</Field>
+          <Field Name='FormatFunction'>var index = d.toLowerCase().indexOf(':');if (index != -1) {d = d.substring(index + 1, d.length);}</Field>
+        </Row>
+        <!--<Row>
+          <Field Name='ContentTypeId'>0x01006c9fae17c496485486db26191de96f16</Field>
+          <Field Name='UserProfilePropertyName'>PictureURL</Field>
+          <Field Name='OutlookFieldName'>PHOTO;TYPE=JPEG;ENCODING=BASE64</Field>
+        </Row>-->
+        <Row>
+          <Field Name='ContentTypeId'>0x01006c9fae17c496485486db26191de96f16</Field>
+          <Field Name='UserProfilePropertyName'>Manager</Field>
+          <Field Name='OutlookFieldName'>X-MS-MANAGER</Field>
+        </Row>
+        <Row>
+          <Field Name='ContentTypeId'>0x01006c9fae17c496485486db26191de96f16</Field>
+          <Field Name='UserProfilePropertyName'>Assistant</Field>
+          <Field Name='OutlookFieldName'>X-MS-ASSISTANT</Field>
+        </Row>
+        <Row>
+          <Field Name='ContentTypeId'>0x01006c9fae17c496485486db26191de96f16</Field>
+          <Field Name='UserProfilePropertyName'>SPS-Birthday</Field>
+          <Field Name='OutlookFieldName'>BDAY</Field>
+        </Row>
+      </Rows>
+    </Data>
+  </ListInstance>
+</Elements>

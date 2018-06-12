@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">
+  <CustomAction
+    Id="LoadJQuery"
+    ScriptSrc="~site/scripts/jquery-1.8.2.min.js"
+    Location="ScriptLink"
+    Sequence="100" />
+  <CustomAction
+   Id="LoadJQuery"
+   ScriptSrc="~site/scripts/jquery-ui.js"
+   Location="ScriptLink"
+   Sequence="105" />
+  <CustomAction
+    Id="LoadJQuery"
+    ScriptSrc="~site/scripts/jquery-zmultiselect.js"
+    Location="ScriptLink"
+    Sequence="110" />
+  <CustomAction
+   Location="ScriptLink"
+   ScriptSrc="~site/Scripts/vCard_landing.js" Sequence="120"/>
+  <CustomAction
+   Location="ScriptLink"
+   ScriptSrc="~site/Scripts/vCard_configurations.js" Sequence="131"/>
+  <CustomAction
+   Location="ScriptLink"
+   ScriptSrc="~site/Scripts/vCard_helper.js" Sequence="141"/>
+</Elements>

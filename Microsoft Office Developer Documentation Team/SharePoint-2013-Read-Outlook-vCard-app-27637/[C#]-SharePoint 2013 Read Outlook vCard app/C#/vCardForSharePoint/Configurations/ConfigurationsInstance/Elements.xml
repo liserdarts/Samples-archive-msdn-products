@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">
+  <ListInstance Title="Configurations" OnQuickLaunch="TRUE" TemplateType="10001" Url="Lists/Configurations" Description="Configurations" >
+    <Data>
+      <Rows>
+        <Row>
+          <Field Name="Title">DOWNLOADPROFILEPIC</Field>
+          <Field Name="Value">true</Field>
+        </Row>
+        <Row>
+          <Field Name="Title">VCFFILENAME</Field>
+          <Field Name="Value">FirstName;LastName</Field>
+        </Row>
+        <Row>
+          <Field Name="Title">VCFSEPERATOR</Field>
+          <Field Name="Value">&#160;</Field>
+        </Row>
+        <Row>
+          <Field Name="Title">POSTNEWSFEED</Field>
+          <Field Name="Value">true</Field>
+        </Row>
+      </Rows>
+    </Data>
+  </ListInstance>
+</Elements>

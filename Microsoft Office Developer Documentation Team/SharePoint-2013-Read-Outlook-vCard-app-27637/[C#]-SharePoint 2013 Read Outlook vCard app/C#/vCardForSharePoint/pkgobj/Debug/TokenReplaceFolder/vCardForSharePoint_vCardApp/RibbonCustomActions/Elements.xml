@@ -1,0 +1,158 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">
+
+  <CustomAction
+    Id="RemoveAddNewItemRibbonButton"
+    RegistrationType="List"
+    RegistrationId="10000"
+    Location="CommandUI.Ribbon">
+    <CommandUIExtension>
+      <CommandUIDefinitions>
+        <CommandUIDefinition
+          Location="Ribbon.ListItem.New.NewListItem" />
+      </CommandUIDefinitions>
+    </CommandUIExtension>
+  </CustomAction>
+
+  <!--Removing the OOB New Folder button-->
+  <CustomAction
+    Id="RemoveNewFolderRibbonButton"
+    RegistrationType="List"
+    RegistrationId="10000"
+    Location="CommandUI.Ribbon">
+    <CommandUIExtension>
+      <CommandUIDefinitions>
+        <CommandUIDefinition
+          Location="Ribbon.ListItem.New.NewFolder" />
+      </CommandUIDefinitions>
+    </CommandUIExtension>
+  </CustomAction>
+
+  <CustomAction
+    Id="RemoveAddEditItemRibbonButton"
+    RegistrationType="List"
+    RegistrationId="10000"
+    Location="CommandUI.Ribbon">
+    <CommandUIExtension>
+      <CommandUIDefinitions>
+        <CommandUIDefinition
+          Location="Ribbon.ListItem.Manage.EditProperties" />
+      </CommandUIDefinitions>
+    </CommandUIExtension>
+  </CustomAction>
+
+  <!--Removing the OOB New Folder button-->
+  <CustomAction
+    Id="RemoveAddViewItemRibbonButton"
+    RegistrationType="List"
+    RegistrationId="10000"
+    Location="CommandUI.Ribbon">
+    <CommandUIExtension>
+      <CommandUIDefinitions>
+        <CommandUIDefinition
+          Location="Ribbon.ListItem.Manage.ViewProperties" />
+      </CommandUIDefinitions>
+    </CommandUIExtension>
+  </CustomAction>
+
+  <CustomAction Id="9724f24c-8366-4663-bade-983e179bd45a.RibbonCustomActions"
+                RegistrationType="List"
+                RegistrationId="10000"
+                Location="CommandUI.Ribbon"
+                Sequence="10001"
+                Title="New Item">
+    <CommandUIExtension>
+      <!-- 
+      Update the UI definitions below with the controls and the command actions
+      that you want to enable for the custom action.
+      -->
+      <CommandUIDefinitions>
+        <CommandUIDefinition Location="Ribbon.ListItem.New.Controls._children">
+          <Button Id="Ribbon.ListItem.New.RibbonCustomActionsButton"
+                  Alt="Request RibbonCustomActions"
+                  Sequence="100"
+                  Command="Invoke_RibbonNewItem"
+                  LabelText="New Item"
+                  TemplateAlias="o1"
+                  Image32by32="/_layouts/15/1033/images/formatmap32x32.png" Image32by32Top="-205" Image32by32Left="-341"
+                  Image16by16="/_layouts/15/1033/images/formatmap16x16.png" Image16by16Top="-205" Image16by16Left="-341"/>
+        </CommandUIDefinition>
+      </CommandUIDefinitions>
+      <CommandUIHandlers>
+        <CommandUIHandler Command="Invoke_RibbonNewItem"
+                          CommandAction="javascript:newItemForm()"/>
+      </CommandUIHandlers>
+    </CommandUIExtension >
+  </CustomAction>
+
+  <CustomAction Id="2422a9ad-d2c8-4c66-8981-e43e73e626f2.RibbonCustomAction1"
+                RegistrationType="List"
+                RegistrationId="10000"
+                Location="CommandUI.Ribbon"
+                Sequence="10001"
+                Title="Edit Item">
+    <CommandUIExtension>
+      <!-- 
+      Update the UI definitions below with the controls and the command actions
+      that you want to enable for the custom action.
+      -->
+      <CommandUIDefinitions>
+        <CommandUIDefinition Location="Ribbon.ListItem.Manage.Controls._children">
+          <Button Id="Ribbon.ListItem.Manage.RibbonCustomAction1Button"
+                  Alt="Edit Item"
+                  Sequence="100"
+                  Command="Invoke_RibbonCustomAction1ButtonRequest"
+                  LabelText="Edit Item"
+                  TemplateAlias="o1"
+                    Image32by32="/_layouts/15/1033/images/formatmap32x32.png" Image32by32Top="-103" Image32by32Left="-511"
+                  Image16by16="/_layouts/15/1033/images/formatmap16x16.png" Image16by16Top="-103" Image16by16Left="-511"/>
+        </CommandUIDefinition>
+      </CommandUIDefinitions>
+      <CommandUIHandlers>
+        <CommandUIHandler Command="Invoke_RibbonCustomAction1ButtonRequest"
+                          EnabledScript="javascript:
+                            SP.ListOperation.Selection.getSelectedItems().length == 1;"
+                          CommandAction="javascript:
+                                        var item = SP.ListOperation.Selection.getSelectedItems()[0];
+                                        editItemForm(item.id)"
+                         />
+      </CommandUIHandlers>
+    </CommandUIExtension >
+  </CustomAction>
+
+  <CustomAction Id="82BCCBDE-4D8B-42BB-8DDE-A156386E4265.RibbonCustomAction1"
+                RegistrationType="List"
+                RegistrationId="10000"
+                Location="CommandUI.Ribbon"
+                Sequence="10002"
+                Title="View Item">
+    <CommandUIExtension>
+      <!-- 
+      Update the UI definitions below with the controls and the command actions
+      that you want to enable for the custom action.
+      -->
+      <CommandUIDefinitions>
+        <CommandUIDefinition Location="Ribbon.ListItem.Manage.Controls._children">
+          <Button Id="Ribbon.ListItem.Manage.RibbonCustomActionViewButton"
+                  Alt="View Item"
+                  Sequence="100"
+                  Command="Invoke_RibbonViewCustomActionButtonRequest"
+                  LabelText="View Item"
+                  TemplateAlias="o1"
+                    Image32by32="/_layouts/15/1033/images/formatmap32x32.png" Image32by32Top="-103" Image32by32Left="-511"
+                  Image16by16="/_layouts/15/1033/images/formatmap16x16.png" Image16by16Top="-103" Image16by16Left="-511"/>
+        </CommandUIDefinition>
+      </CommandUIDefinitions>
+      <CommandUIHandlers>
+        <CommandUIHandler Command="Invoke_RibbonViewCustomActionButtonRequest"
+                          EnabledScript="javascript:
+                            SP.ListOperation.Selection.getSelectedItems().length == 1;"
+                          CommandAction="javascript:
+                                        var item = SP.ListOperation.Selection.getSelectedItems()[0];
+                                        viewItemForm(item.id)"
+                         />
+      </CommandUIHandlers>
+    </CommandUIExtension >
+  </CustomAction>
+
+</Elements>

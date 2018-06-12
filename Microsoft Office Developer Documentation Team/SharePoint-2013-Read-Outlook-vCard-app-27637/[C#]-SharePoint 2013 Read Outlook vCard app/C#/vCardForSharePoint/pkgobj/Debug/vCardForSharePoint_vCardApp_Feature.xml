@@ -1,0 +1,68 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Feature xmlns="http://schemas.microsoft.com/sharepoint/" Description=" vCard App" Id="da666797-f594-41f7-981a-3215cc48bd12" Scope="Web" Title="vCard App" Version="1.0.0.0">
+  <ElementManifests>
+    <ElementManifest Location="Pages\Elements.xml" />
+    <ElementFile Location="Pages\Default.aspx" />
+    <ElementFile Location="Pages\DownloadvCard.aspx" />
+    <ElementFile Location="Pages\Configurations.aspx" />
+    <ElementFile Location="Pages\viewmappingdata.aspx" />
+    <ElementManifest Location="Scripts\Elements.xml" />
+    <ElementFile Location="Scripts\jquery-1.8.2.min.js" />
+    <ElementFile Location="Scripts\jquery-1.8.2.js" />
+    <ElementFile Location="Scripts\jquery-1.8.2.intellisense.js" />
+    <ElementFile Location="Scripts\vCard_landing.js" />
+    <ElementFile Location="Scripts\vCard_configurations.js" />
+    <ElementFile Location="Scripts\vCard_vcfCreator.js" />
+    <ElementFile Location="Scripts\jquery-ui.js" />
+    <ElementFile Location="Scripts\jquery-1.10.2.min.js" />
+    <ElementFile Location="Scripts\jquery-zmultiselect.js" />
+    <ElementFile Location="Scripts\vcard_clienttemplates.js" />
+    <ElementFile Location="Scripts\vCard_helper.js" />
+    <ElementFile Location="Scripts\jsrender.js" />
+    <ElementFile Location="Scripts\vCard_viewDataMappings.js" />
+    <ElementManifest Location="Content\Elements.xml" />
+    <ElementFile Location="Content\App.css" />
+    <ElementFile Location="Content\jquery.multiselect.css" />
+    <ElementFile Location="Content\jquery-ui.css" />
+    <ElementManifest Location="Images\Elements.xml" />
+    <ElementFile Location="Images\AppIcon.png" />
+    <ElementFile Location="Images\icon2.png" />
+    <ElementFile Location="Images\icon1.png" />
+    <ElementFile Location="Images\icon3.png" />
+    <ElementFile Location="Images\siteicon.png" />
+    <ElementFile Location="Images\arrow_animation.gif" />
+    <ElementFile Location="Images\posticon.png" />
+    <ElementFile Location="Images\icon4.png" />
+    <ElementFile Location="Images\icon5.png" />
+    <ElementFile Location="Images\icon6.png" />
+    <ElementManifest Location="vCardPropertiesInstance\Elements.xml" />
+    <ElementManifest Location="vCardProperties\Elements.xml" />
+    <ElementFile Location="vCardProperties\Schema.xml" />
+    <ElementManifest Location="vCardForms\Elements.xml" />
+    <ElementFile Location="vCardForms\form.aspx" />
+    <ElementManifest Location="RibbonCustomActions\Elements.xml" />
+    <ElementManifest Location="CustomActions\Elements.xml" />
+    <ElementManifest Location="TileList\Elements.xml" />
+    <ElementManifest Location="ConfigurationsInstance\Elements.xml" />
+    <ElementManifest Location="Configurations\Elements.xml" />
+    <ElementFile Location="Configurations\Schema.xml" />
+  </ElementManifests>
+  <UpgradeActions>
+    <VersionRange>
+      <ApplyElementManifests>
+        <ElementManifest Location="Pages\Elements.xml" />
+        <ElementManifest Location="Scripts\Elements.xml" />
+        <ElementManifest Location="Content\Elements.xml" />
+        <ElementManifest Location="Images\Elements.xml" />
+        <ElementManifest Location="vCardPropertiesInstance\Elements.xml" />
+        <ElementManifest Location="vCardProperties\Elements.xml" />
+        <ElementManifest Location="vCardForms\Elements.xml" />
+        <ElementManifest Location="RibbonCustomActions\Elements.xml" />
+        <ElementManifest Location="CustomActions\Elements.xml" />
+        <ElementManifest Location="TileList\Elements.xml" />
+        <ElementManifest Location="ConfigurationsInstance\Elements.xml" />
+        <ElementManifest Location="Configurations\Elements.xml" />
+      </ApplyElementManifests>
+    </VersionRange>
+  </UpgradeActions>
+</Feature>

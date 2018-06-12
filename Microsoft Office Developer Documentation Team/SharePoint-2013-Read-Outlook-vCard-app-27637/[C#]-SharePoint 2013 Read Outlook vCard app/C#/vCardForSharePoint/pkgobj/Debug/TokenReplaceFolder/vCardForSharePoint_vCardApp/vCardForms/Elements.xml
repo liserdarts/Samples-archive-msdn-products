@@ -1,0 +1,58 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">
+  <Module Name="VacationRequestsPages">
+    <File Path="vCardForms\form.aspx" Url="vCardForms/NewForm.aspx" ReplaceContent="TRUE" >
+      <AllUsersWebPart WebPartZoneID="Main" WebPartOrder="1">
+        <![CDATA[<WebPart xmlns="http://schemas.microsoft.com/WebPart/v2" xmlns:lfwp="http://schemas.microsoft.com/WebPart/v2/ListForm">
+                        <Assembly>Microsoft.SharePoint, Version=15.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c</Assembly>
+                        <TypeName>Microsoft.SharePoint.WebPartPages.ListFormWebPart</TypeName>
+                        <Title>New Form</Title>
+                        <Description>New Form</Description> 
+                        <FrameType>None</FrameType>
+                        <lfwp:TemplateName>ListForm</lfwp:TemplateName>
+                        <lfwp:FormType>8</lfwp:FormType>
+                        <lfwp:ViewFlag>1048576</lfwp:ViewFlag>
+                        <lfwp:ListTitle>vCard Properties</lfwp:ListTitle>
+                        <lfwp:ControlMode>New</lfwp:ControlMode>
+                        <lfwp:HideIfNoPermissions>true</lfwp:HideIfNoPermissions>
+                        <lfwp:DisableInitialFocus>true</lfwp:DisableInitialFocus>
+                     </WebPart>]]>
+      </AllUsersWebPart>
+    </File>
+    <File Path="vCardForms\form.aspx" Url="vCardForms/EditForm.aspx" ReplaceContent="TRUE" >
+      <AllUsersWebPart WebPartZoneID="Main" WebPartOrder="1">
+        <![CDATA[<WebPart xmlns="http://schemas.microsoft.com/WebPart/v2" xmlns:lfwp="http://schemas.microsoft.com/WebPart/v2/ListForm">
+                        <Assembly>Microsoft.SharePoint, Version=15.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c</Assembly>
+                        <TypeName>Microsoft.SharePoint.WebPartPages.ListFormWebPart</TypeName>
+                        <Title>Edit Form</Title>
+                        <Description>Edit Form</Description> 
+                        <FrameType>None</FrameType>
+                        <lfwp:TemplateName>ListForm</lfwp:TemplateName>
+                        <lfwp:PageType>PAGE_EDITFORM</lfwp:PageType>
+                        <lfwp:FormType>6</lfwp:FormType>
+                        <lfwp:ViewFlag>1048576</lfwp:ViewFlag>
+                        <lfwp:ListTitle>vCard Properties</lfwp:ListTitle>
+                        <lfwp:ControlMode>Edit</lfwp:ControlMode>
+                     </WebPart>]]>
+      </AllUsersWebPart>
+    </File>
+    <File Path="vCardForms\form.aspx" Url="vCardForms/DispForm.aspx" ReplaceContent="TRUE" >
+      <AllUsersWebPart WebPartZoneID="Main" WebPartOrder="1">
+        <![CDATA[<WebPart xmlns="http://schemas.microsoft.com/WebPart/v2" xmlns:lfwp="http://schemas.microsoft.com/WebPart/v2/ListForm">
+                        <Assembly>Microsoft.SharePoint, Version=15.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c</Assembly>
+                        <TypeName>Microsoft.SharePoint.WebPartPages.ListFormWebPart</TypeName>
+                        <Title>Edit Form</Title>
+                        <Description>Edit Form</Description> 
+                        <FrameType>None</FrameType>
+                        <lfwp:TemplateName>ListForm</lfwp:TemplateName>
+                        <lfwp:PageType>PAGE_DISPLAYFORM</lfwp:PageType>
+                        <lfwp:FormType>4</lfwp:FormType>
+                        <lfwp:ViewFlag>1048576</lfwp:ViewFlag>
+                        <lfwp:ControlMode>Display</lfwp:ControlMode>
+                        <lfwp:ListTitle>vCard Properties</lfwp:ListTitle>
+                        <lfwp:ControlMode>Edit</lfwp:ControlMode>
+                     </WebPart>]]>
+      </AllUsersWebPart>
+    </File>
+  </Module>
+</Elements>

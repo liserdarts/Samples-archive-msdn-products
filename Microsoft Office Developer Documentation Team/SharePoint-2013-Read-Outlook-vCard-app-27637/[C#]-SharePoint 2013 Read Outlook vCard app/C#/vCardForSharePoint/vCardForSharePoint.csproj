@@ -1,0 +1,174 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{47E957DC-C259-47D7-9912-DFB31FD40707}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>vCardForSharePoint</RootNamespace>
+    <AssemblyName>vCardForSharePoint</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <TargetOfficeVersion>15.0</TargetOfficeVersion>
+    <FileAlignment>512</FileAlignment>
+    <ProjectTypeGuids>{C1CDDADD-2546-481F-9697-4EA41081F2FC};{14822709-B5A1-4724-98CA-57A101D1B079};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <IncludeAssemblyInPackage>False</IncludeAssemblyInPackage>
+    <ProjectMode>SharePointApp</ProjectMode>
+    <AppFeaturePartId>{9c82f7b4-fb64-44d2-81b3-daf0881ea298}</AppFeaturePartId>
+    <WspPartId>{59dfdb06-3834-4138-b062-38fe2231f665}</WspPartId>
+    <WorkflowPartId>{bd000474-bca6-4ad3-afc9-aa98025af302}</WorkflowPartId>
+    <CspkgPartId>{1735a35e-cbf8-4fe4-ad93-09e642d2f7be}</CspkgPartId>
+    <SqlPackagePartId>{dd3dff19-d49a-4a8a-a6ba-aeceffcd0851}</SqlPackagePartId>
+    <ActivePublishProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+  </PropertyGroup>
+  <ItemGroup>
+    <Content Include="Configurations\ConfigurationsInstance\Elements.xml" />
+    <Content Include="Configurations\Elements.xml" />
+    <Content Include="Configurations\Schema.xml" />
+    <Content Include="Content\jquery-ui.css" />
+    <Content Include="Content\jquery.multiselect.css" />
+    <Content Include="CustomActions\Elements.xml">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="DownloadvCard\Elements.xml">
+      <OpcRelationship>feature-elementmanifest</OpcRelationship>
+    </Content>
+    <Content Include="Images\arrow_animation.gif" />
+    <Content Include="Images\icon1.png" />
+    <Content Include="Images\icon2.png" />
+    <Content Include="Images\icon3.png" />
+    <Content Include="Images\icon4.png" />
+    <Content Include="Images\icon5.png" />
+    <Content Include="Images\icon6.png" />
+    <Content Include="Images\posticon.png" />
+    <Content Include="Images\siteicon.png" />
+    <Content Include="Pages\Configurations.aspx" />
+    <Content Include="Pages\DownloadvCard.aspx" />
+    <Content Include="Pages\viewmappingdata.aspx" />
+    <Content Include="RibbonCustomActions\Elements.xml" />
+    <Content Include="Scripts\jquery-1.10.2.min.js" />
+    <Content Include="Scripts\jquery-ui.js" />
+    <Content Include="Scripts\jquery-zmultiselect.js" />
+    <Content Include="Scripts\jsrender.js" />
+    <Content Include="Scripts\vcard_clienttemplates.js" />
+    <Content Include="Scripts\vCard_helper.js" />
+    <Content Include="Scripts\vCard_configurations.js" />
+    <Content Include="Scripts\vCard_vcfCreator.js" />
+    <Content Include="Scripts\vCard_viewDataMappings.js" />
+    <Content Include="TileList\Elements.xml" />
+    <Content Include="vCardProperties\Elements.xml" />
+    <Content Include="vCardProperties\Schema.xml">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="vCardProperties\vCardPropertiesInstance\vCardForms\Elements.xml" />
+    <Content Include="vCardProperties\vCardPropertiesInstance\Elements.xml">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="vCardProperties\vCardPropertiesInstance\vCardForms\form.aspx" />
+    <None Include="Configurations\ConfigurationsInstance\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{fc12370a-d8ad-4ef5-98cb-e98c8e49ea59}</SharePointProjectItemId>
+    </None>
+    <None Include="Configurations\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{403e7c9c-3356-4fb9-ac92-2998a0a8c9fc}</SharePointProjectItemId>
+    </None>
+    <None Include="CustomActions\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{028d609a-f7b8-4d82-af9b-45f13a16e740}</SharePointProjectItemId>
+    </None>
+    <None Include="DownloadvCard\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{48948aec-ef00-459b-9dbe-1e0d6d66b170}</SharePointProjectItemId>
+    </None>
+    <None Include="packages.config" />
+    <None Include="Pages\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{57f58bba-aee7-473e-9e89-37f353424c18}</SharePointProjectItemId>
+    </None>
+    <Content Include="Pages\Elements.xml" />
+    <Content Include="Pages\Default.aspx" />
+    <None Include="RibbonCustomActions\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{0aed39bf-f5cd-4bf9-9b11-504a1da6b89b}</SharePointProjectItemId>
+    </None>
+    <None Include="TileList\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{a34eabc6-a5ee-43cf-a661-9541f89b2891}</SharePointProjectItemId>
+    </None>
+    <None Include="vCardProperties\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{13e92550-0516-49c0-a6a0-c0e6dc003e12}</SharePointProjectItemId>
+    </None>
+    <None Include="vCardProperties\vCardPropertiesInstance\vCardForms\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{2e0f38ef-80f7-47ad-9db0-d34d7b842609}</SharePointProjectItemId>
+    </None>
+    <None Include="vCardProperties\vCardPropertiesInstance\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{cf2452db-4b04-42fb-aa1c-6d7e3e54e127}</SharePointProjectItemId>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Scripts\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{dd3dff19-d49a-4a8a-a6ba-aeceffcd0851}</SharePointProjectItemId>
+    </None>
+    <Content Include="Scripts\Elements.xml" />
+    <Content Include="Scripts\vCard_landing.js" />
+    <Content Include="Scripts\jquery-1.8.2.intellisense.js" />
+    <Content Include="Scripts\jquery-1.8.2.js" />
+    <Content Include="Scripts\jquery-1.8.2.min.js" />
+    <Content Include="Scripts\_references.js" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Content\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{cfdf70aa-aa9a-4a62-bb8d-2d56eb321174}</SharePointProjectItemId>
+    </None>
+    <Content Include="Content\Elements.xml" />
+    <Content Include="Content\App.css" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Images\AppIcon.png">
+      <OpcRelationship>manifest-icon</OpcRelationship>
+    </Content>
+    <Content Include="Images\Elements.xml" />
+    <None Include="Images\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{2cb4ce79-2251-4ce6-96c6-7673de65b545}</SharePointProjectItemId>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Package\Package.package">
+      <PackageId>{e8a9c107-cf0a-4c26-b2bd-526401580446}</PackageId>
+    </None>
+    <None Include="Package\Package.Template.xml">
+      <DependentUpon>Package.package</DependentUpon>
+    </None>
+    <None Include="Features\vCardApp\vCardApp.feature">
+      <FeatureId>{da666797-f594-41f7-981a-3215cc48bd12}</FeatureId>
+    </None>
+    <None Include="Features\vCardApp\vCardApp.Template.xml">
+      <DependentUpon>vCardApp.feature</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <AppManifestFile Include="AppManifest.xml">
+      <SubType>Designer</SubType>
+    </AppManifestFile>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == '' or '$(VisualStudioVersion)' &lt; '11.0'">11.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(VSToolsPath)\SharePointTools\Microsoft.VisualStudio.SharePoint.targets" Condition="'$(VSToolsPath)' != ''" />
+</Project>

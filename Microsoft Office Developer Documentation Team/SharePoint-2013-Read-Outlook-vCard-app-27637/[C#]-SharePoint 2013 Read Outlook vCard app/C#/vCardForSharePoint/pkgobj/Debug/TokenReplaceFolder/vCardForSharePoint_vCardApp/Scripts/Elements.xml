@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">
+  <Module Name="Scripts">
+    <File Path="Scripts\jquery-1.8.2.min.js" Url="Scripts/jquery-1.8.2.min.js" ReplaceContent="TRUE" />
+    <File Path="Scripts\jquery-1.8.2.js" Url="Scripts/jquery-1.8.2.js" ReplaceContent="TRUE" />
+    <File Path="Scripts\jquery-1.8.2.intellisense.js" Url="Scripts/jquery-1.8.2.intellisense.js" ReplaceContent="TRUE" />
+    <File Path="Scripts\vCard_landing.js" Url="Scripts/vCard_landing.js" ReplaceContent="TRUE" />
+    <File Path="Scripts\vCard_configurations.js" Url="Scripts/vCard_configurations.js" ReplaceContent="TRUE" />
+    <File Path="Scripts\VCard_vcfCreator.js" Url="Scripts/VCard_vcfCreator.js" ReplaceContent="TRUE" />
+    <File Path="Scripts\jquery-ui.js" Url="Scripts/jquery-ui.js" ReplaceContent="TRUE" />
+    <File Path="Scripts\jquery-1.10.2.min.js" Url="Scripts/jquery-1.10.2.min.js" ReplaceContent="TRUE" />
+    <File Path="Scripts\jquery-zmultiselect.js" Url="Scripts/jquery-zmultiselect.js" ReplaceContent="TRUE" />
+    <File Path="Scripts\vcard_clienttemplates.js" Url="Scripts/vcard_clienttemplates.js" ReplaceContent="TRUE" />
+    <File Path="Scripts\vCard_helper.js" Url="Scripts/vCard_helper.js" ReplaceContent="TRUE" />
+    <File Path="Scripts\jsrender.js" Url="Scripts/jsrender.js" ReplaceContent="TRUE" />
+    <File Path="Scripts\vCard_viewDataMappings.js" Url="Scripts/vCard_viewDataMappings.js" ReplaceContent="TRUE" />
+  </Module>
+</Elements>

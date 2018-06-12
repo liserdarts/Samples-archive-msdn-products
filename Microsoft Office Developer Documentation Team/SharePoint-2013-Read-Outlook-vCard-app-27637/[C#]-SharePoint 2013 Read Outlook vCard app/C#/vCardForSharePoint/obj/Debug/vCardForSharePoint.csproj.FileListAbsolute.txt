@@ -1,0 +1,3 @@
+C:\Code\vCardForSharePoint\vCardForSharePoint\bin\Debug\vCardForSharePoint.pdb
+C:\Code\vCardForSharePoint\vCardForSharePoint\obj\Debug\vCardForSharePoint.dll
+C:\Code\vCardForSharePoint\vCardForSharePoint\obj\Debug\vCardForSharePoint.pdb
