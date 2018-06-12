@@ -1,0 +1,617 @@
+<html xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:mtps="http://msdn2.microsoft.com/mtps" xmlns:mshelp="http://msdn.microsoft.com/mshelp" xmlns:ddue="http://ddue.schemas.microsoft.com/authoring/2003/5" xmlns:msxsl="urn:schemas-microsoft-com:xslt"><head><META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=UTF-8" /><META NAME="BuildDateTime" CONTENT="2014-05-09 15:46:27" /><META NAME="BuildVersion" CONTENT="1.0.14129.1546" /><META NAME="save" CONTENT="history" /><META NAME="DCSext.Title" CONTENT="Office 365: Bind and manipulate data in a SharePoint Access app" /><title>Office 365: Bind and manipulate data in a SharePoint Access app</title><meta name="Language" content="en-us" /><meta name="Microsoft.Help.Id" content="2fc16fed-ed74-443b-a43f-d972b6734183" /><meta name="Microsoft.Help.ContentType" content="Concepts" /><style type="text/css">
+                        .userDataStyle {
+                        BEHAVIOR: url(#default#userData)
+                        }
+                        DIV.saveHistory {
+                        BEHAVIOR: url(#default#savehistory)
+                        }
+                        IMG.toggle {
+                        BORDER-BOTTOM: 0px; BORDER-LEFT: 0px; BORDER-TOP: 0px; MARGIN-RIGHT: 5px; BORDER-RIGHT: 0px
+                        }
+                        IMG#toggleAllImage {
+                        MARGIN-LEFT: 0px; VERTICAL-ALIGN: middle
+                        }
+                        MSHelp\:link {
+                        COLOR: #0000ff; CURSOR: hand; TEXT-DECORATION: underline; hoverColor: #3366ff
+                        }
+                        MSHelp\:link:visited {
+                        COLOR: #0481da
+                        }
+                        BODY {
+                        FONT-STYLE: normal; MARGIN: 0px; WIDTH: 100%; FONT-FAMILY: Verdana; BACKGROUND: #ffffff; COLOR: #000000; FONT-SIZE: medium; FONT-WEIGHT: normal
+                        }
+                        DL {
+                        MARGIN-TOP: 15px; PADDING-LEFT: 1px; MARGIN-BOTTOM: 5px
+                        }
+                        DL.authored DT {
+                        MARGIN-TOP: 2px
+                        }
+                        DD {
+                        MARGIN-LEFT: 0px
+                        }
+                        UL {
+                        LIST-STYLE-TYPE: disc; MARGIN-TOP: 0px; MARGIN-BOTTOM: 0px; MARGIN-LEFT: 17px
+                        }
+                        UL UL {
+                        LIST-STYLE-TYPE: disc; MARGIN-TOP: 3px; MARGIN-BOTTOM: 4px; MARGIN-LEFT: 17px
+                        }
+                        OL {
+                        LIST-STYLE-TYPE: decimal; MARGIN-TOP: 0px; MARGIN-BOTTOM: 0px; MARGIN-LEFT: 28px
+                        }
+                        OL OL {
+                        LIST-STYLE-TYPE: lower-alpha; MARGIN-TOP: 3px; MARGIN-BOTTOM: 4px; MARGIN-LEFT: 28px
+                        }
+                        OL OL OL {
+                        LIST-STYLE-TYPE: lower-roman; MARGIN-TOP: 3px; MARGIN-BOTTOM: 4px; MARGIN-LEFT: 28px
+                        }
+                        LI {
+                        MARGIN-TOP: 5px; MARGIN-BOTTOM: 5px
+                        }
+                        P {
+                        MARGIN-TOP: 10px; MARGIN-BOTTOM: 5px
+                        }
+                        A:link {
+                        COLOR: #0000ff
+                        }
+                        A:visited {
+                        COLOR: #dd7c3b
+                        }
+                        A:hover {
+                        COLOR: #3366ff
+                        }
+                        CODE {
+                        FONT-FAMILY: Monospace, Courier New, Courier; COLOR: #000066; FONT-SIZE: 105%
+                        }
+                        SPAN.parameter {
+                        FONT-STYLE: italic
+                        }
+                        SPAN.italic {
+                        FONT-STYLE: italic
+                        }
+                        SPAN.selflink {
+                        FONT-WEIGHT: bold
+                        }
+                        SPAN.nolink {
+                        FONT-WEIGHT: bold
+                        }
+                        DIV#mainSection {
+                        WIDTH: 100%; FONT-SIZE: 62.5%
+                        }
+                        HTML &gt; BODY #mainSection {
+                        WIDTH: 100%; FONT-SIZE: 73%
+                        }
+                        DIV#mainBody {
+                        MARGIN-TOP: 10px; MARGIN-LEFT: 15px; FONT-SIZE: 100%
+                        }
+                        HTML &gt; BODY #mainBody {
+                        PADDING-BOTTOM: 20px; MARGIN-TOP: 10px; MARGIN-LEFT: 15px; FONT-SIZE: 93%
+                        }
+                        DIV#mainBody P {
+                        PADDING-RIGHT: 5px
+                        }
+                        DIV#mainBody OL {
+                        PADDING-RIGHT: 5px
+                        }
+                        DIV#mainBody UL {
+                        PADDING-RIGHT: 5px
+                        }
+                        DIV#mainBody DL {
+                        PADDING-RIGHT: 5px
+                        }
+                        DIV#header {
+                        PADDING-BOTTOM: 0px; BACKGROUND-COLOR: #ffffff; PADDING-LEFT: 0px; WIDTH: 100%; PADDING-RIGHT: 0px; PADDING-TOP: 0px
+                        }
+                        DIV#header TABLE {
+                        WIDTH: 100%
+                        }
+                        DIV#header TABLE TD {
+                        MARGIN-TOP: 0px; PADDING-RIGHT: 20px; MARGIN-BOTTOM: 0px; COLOR: #0000ff; FONT-SIZE: 70%
+                        }
+                        DIV#header TABLE TR#headerTableRow2 TD {
+                        PADDING-LEFT: 13px
+                        }
+                        DIV#header TABLE TR#headerTableRow3 TD {
+                        PADDING-LEFT: 15px; PADDING-TOP: 2px
+                        }
+                        DIV#header TABLE#bottomTable {
+                        TEXT-ALIGN: left; PADDING-BOTTOM: 5px; PADDING-LEFT: 15px; BORDER-TOP: #ffffff 1px solid; PADDING-TOP: 5px
+                        }
+                        DIV#mainSection TABLE TD.imageCell {
+                        WHITE-SPACE: nowrap
+                        }
+                        DIV#mainBody DIV.alert {
+                        WIDTH: 98.9%
+                        }
+                        DIV#mainBody DIV.code {
+                        WIDTH: 98.9%
+                        }
+                        DIV#mainBody DIV.tableSection {
+                        WIDTH: 98.9%
+                        }
+                        DIV#mainBody DIV.section DIV.alert {
+                        WIDTH: 100%
+                        }
+                        DIV#mainBody DIV.section DIV.code {
+                        WIDTH: 100%
+                        }
+                        DIV#mainBody DIV.section DIV.tableSection {
+                        WIDTH: 100%
+                        }
+                        DIV#mainBody DIV.section UL DIV.alert {
+                        WIDTH: 100%
+                        }
+                        DIV#mainBody DIV.section UL DIV.code {
+                        WIDTH: 100%
+                        }
+                        DIV#mainBody DIV.section UL DIV.tableSection {
+                        WIDTH: 100%
+                        }
+                        DIV#mainBody DIV.section OL DIV.alert {
+                        WIDTH: 100%
+                        }
+                        DIV#mainBody DIV.section OL DIV.code {
+                        WIDTH: 100%
+                        }
+                        DIV#mainBody DIV.section OL DIV.tableSection {
+                        WIDTH: 100%
+                        }
+                        DIV.alert P {
+                        MARGIN-TOP: 5px; MARGIN-BOTTOM: 8px
+                        }
+                        DIV.code P {
+                        MARGIN-TOP: 5px; MARGIN-BOTTOM: 8px
+                        }
+                        DD P {
+                        MARGIN-TOP: 2px; MARGIN-BOTTOM: 8px
+                        }
+                        DIV.tableSection P {
+                        MARGIN-TOP: 1px; MARGIN-BOTTOM: 4px
+                        }
+                        LI P {
+                        MARGIN-TOP: 2px; MARGIN-BOTTOM: 2px
+                        }
+                        DIV.seeAlsoNoToggleSection DL {
+                        MARGIN-TOP: 8px; PADDING-LEFT: 1px; MARGIN-BOTTOM: 1px
+                        }
+                        DIV.seeAlsoNoToggleSection DD P {
+                        MARGIN-TOP: 2px; MARGIN-BOTTOM: 8px
+                        }
+                        DIV.section DL {
+                        MARGIN-TOP: 8px; PADDING-LEFT: 1px; MARGIN-BOTTOM: 1px
+                        }
+                        DIV.section DD P {
+                        MARGIN-TOP: 2px; MARGIN-BOTTOM: 8px
+                        }
+                        DIV.code TABLE {
+                        BORDER-BOTTOM: 0px; BORDER-LEFT: 0px; MARGIN-TOP: -0.4em; WIDTH: 100%; MARGIN-BOTTOM: 5px; FONT-SIZE: 95%; BORDER-TOP: 0px; BORDER-RIGHT: 0px
+                        }
+                        DIV.code TABLE TH {
+                        BORDER-BOTTOM: #c8cdde 1px solid; PADDING-LEFT: 5px; PADDING-RIGHT: 5px; BACKGROUND: #efeff7; COLOR: #000066; FONT-WEIGHT: bold
+                        }
+                        DIV.code TABLE TD {
+                        PADDING-LEFT: 5px; PADDING-RIGHT: 5px; BACKGROUND: #f7f7ff; BORDER-TOP: #ffffff 1px solid; PADDING-TOP: 5px
+                        }
+                        SPAN#runningHeaderText {
+                        PADDING-LEFT: 13px; COLOR: #8c8c8c; FONT-SIZE: 90%
+                        }
+                        SPAN#nsrTitle {
+                        FONT-FAMILY: arial; COLOR: #000000; FONT-SIZE: 160%; FONT-WEIGHT: 400
+                        }
+                        DIV#footer {
+                        PADDING-BOTTOM: 6px; MARGIN: 0px; PADDING-LEFT: 1px; WIDTH: 100%; PADDING-RIGHT: 1px; FONT-SIZE: 80%; PADDING-TOP: 8px
+                        }
+                        HTML &gt; BODY DIV#footer {
+                        PADDING-BOTTOM: 6px; MARGIN: 0px; PADDING-LEFT: 1px; WIDTH: 98%; PADDING-RIGHT: 1px; FONT-SIZE: 80%; PADDING-TOP: 2px
+                        }
+                        DIV.seeAlsoNoToggleSection {
+                        PADDING-BOTTOM: 2px; PADDING-LEFT: 0px; WIDTH: 100%; PADDING-RIGHT: 15px; MARGIN-LEFT: 0px; PADDING-TOP: 2px
+                        }
+                        DIV.section {
+                        PADDING-BOTTOM: 0px; PADDING-LEFT: 16px; WIDTH: 100%; PADDING-RIGHT: 15px; MARGIN-LEFT: 0px; PADDING-TOP: 0px
+                        }
+                        HTML &gt; BODY DIV.section {
+                        PADDING-BOTTOM: 2px; PADDING-LEFT: 16px; WIDTH: 97%; PADDING-RIGHT: 15px; MARGIN-LEFT: 0px; PADDING-TOP: 2px
+                        }
+                        DIV.seeSection {
+                        PADDING-BOTTOM: 2px; PADDING-LEFT: 16px; WIDTH: 100%; PADDING-RIGHT: 15px; MARGIN-LEFT: 0px; PADDING-TOP: 0px
+                        }
+                        .heading {
+                        MARGIN-TOP: 18px; MARGIN-BOTTOM: 8px; FONT-WEIGHT: bold
+                        }
+                        H1.heading {
+                        COLOR: #003399; FONT-SIZE: 145%
+                        }
+                        .subHeading {
+                        MARGIN-BOTTOM: 4px; FONT-WEIGHT: bold
+                        }
+                        .procedureSubHeading {
+                        MARGIN-BOTTOM: 4px; FONT-WEIGHT: bold
+                        }
+                        H3.subHeading {
+                        COLOR: #003399; FONT-SIZE: 125%; FONT-WEIGHT: 800
+                        }
+                        H3.procedureSubHeading {
+                        COLOR: #003399; FONT-SIZE: 100%
+                        }
+                        H4.subHeading {
+                        FONT-VARIANT: small-caps; COLOR: #003399; FONT-SIZE: 110%; FONT-WEIGHT: 800
+                        }
+                        SPAN.labelheading {
+                        COLOR: #003399; FONT-SIZE: 100%
+                        }
+                        DIV.labelheading {
+                        COLOR: #003399; FONT-SIZE: 100%
+                        }
+                        IMG.copyCodeImage {
+                        BORDER-BOTTOM: 0px; BORDER-LEFT: 0px; MARGIN: 1px 3px 1px 1px; BORDER-TOP: 0px; BORDER-RIGHT: 0px
+                        }
+                        IMG.downloadCodeImage {
+                        BORDER-BOTTOM: 0px; BORDER-LEFT: 0px; BORDER-TOP: 0px; MARGIN-RIGHT: 3px; BORDER-RIGHT: 0px
+                        }
+                        IMG.viewCodeImage {
+                        BORDER-BOTTOM: 0px; BORDER-LEFT: 0px; BORDER-TOP: 0px; MARGIN-RIGHT: 3px; BORDER-RIGHT: 0px
+                        }
+                        IMG.note {
+                        BORDER-BOTTOM: 0px; BORDER-LEFT: 0px; BORDER-TOP: 0px; MARGIN-RIGHT: 3px; BORDER-RIGHT: 0px
+                        }
+                        DIV#mainSection TABLE {
+                        BORDER-BOTTOM: 0px; BORDER-LEFT: 0px; MARGIN-TOP: 5px; WIDTH: 98.9%; MARGIN-BOTTOM: 5px; FONT-SIZE: 100%; BORDER-TOP: 0px; BORDER-RIGHT: 0px
+                        }
+                        DIV#mainSection TABLE TR {
+                        VERTICAL-ALIGN: top
+                        }
+                        DIV#mainSection TABLE TH {
+                        BORDER-BOTTOM: #c8cdde 1px solid; TEXT-ALIGN: left; BORDER-LEFT: #d5d5d3 1px; BACKGROUND-COLOR: #efeff7; PADDING-LEFT: 5px; PADDING-RIGHT: 5px; COLOR: #000066
+                        }
+                        DIV#mainSection TABLE TD {
+                        BORDER-BOTTOM: #d5d5d3 1px solid; BORDER-LEFT: #d5d5d3 1px; BACKGROUND-COLOR: #f7f7ff; PADDING-LEFT: 5px; PADDING-RIGHT: 5px
+                        }
+                        DIV#mainSection TABLE TD.imageCell {
+                        WHITE-SPACE: nowrap
+                        }
+                        DIV.code TABLE {
+                        BORDER-BOTTOM: 0px; BORDER-LEFT: 0px; WIDTH: 100%; MARGIN-BOTTOM: 5px; FONT-SIZE: 95%; BORDER-TOP: 0px; BORDER-RIGHT: 0px
+                        }
+                        DIV.code TABLE TH {
+                        BORDER-BOTTOM: #c8cdde 1px solid; PADDING-LEFT: 5px; PADDING-RIGHT: 5px; BACKGROUND: #efeff7; COLOR: #000066; FONT-WEIGHT: bold
+                        }
+                        DIV.code TABLE TD {
+                        PADDING-LEFT: 5px; PADDING-RIGHT: 5px; BACKGROUND: #f7f7ff; BORDER-TOP: #ffffff 1px solid; PADDING-TOP: 5px
+                        }
+                        DIV.alert TABLE {
+                        BORDER-BOTTOM: 0px; BORDER-LEFT: 0px; WIDTH: 100%; FONT-SIZE: 100%; BORDER-TOP: 0px; BORDER-RIGHT: 0px
+                        }
+                        DIV.alert TABLE TH {
+                        PADDING-LEFT: 5px; PADDING-RIGHT: 5px; BACKGROUND: #efeff7; BORDER-BOTTOM-WIDTH: 0px; COLOR: #000066
+                        }
+                        DIV.alert TABLE TD {
+                        PADDING-LEFT: 5px; PADDING-RIGHT: 5px; BACKGROUND: #f7f7ff; BORDER-TOP: #ffffff 1px solid
+                        }
+                        SPAN.copyCode {
+                        TEXT-ALIGN: right; DISPLAY: inline; FLOAT: right; COLOR: #0000ff; FONT-SIZE: 90%; CURSOR: pointer; FONT-WEIGHT: normal; TEXT-DECORATION: underline
+                        }
+                        SPAN.copyCodeOnHover {
+                        TEXT-ALIGN: right; DISPLAY: inline; FLOAT: right; COLOR: #e85f17; FONT-SIZE: xx-small; CURSOR: pointer; FONT-WEIGHT: normal; TEXT-DECORATION: underline
+                        }
+                        .downloadCode {
+                        COLOR: #0000ff; FONT-SIZE: 90%; CURSOR: pointer; FONT-WEIGHT: normal
+                        }
+                        .viewCode {
+                        COLOR: #0000ff; FONT-SIZE: 90%; CURSOR: pointer; FONT-WEIGHT: normal
+                        }
+                        DIV.code PRE {
+                        FONT-FAMILY: Monospace, Courier New, Courier; WORD-WRAP: break-word; BACKGROUND: #f7f7ff; COLOR: #000066; FONT-SIZE: 105%
+                        }
+                        .tip {
+                        FONT-STYLE: italic; COLOR: #0000ff; CURSOR: pointer; TEXT-DECORATION: underline
+                        }
+                        .math {
+                        FONT-FAMILY: Times New Roman; FONT-SIZE: 125%
+                        }
+                        #devlangsMenu {
+                        BORDER-BOTTOM: #f3cbb5 1px solid; POSITION: absolute; BORDER-LEFT: #f3cbb5 1px solid; PADDING-BOTTOM: 4px; PADDING-LEFT: 4px; PADDING-RIGHT: 8px; BACKGROUND: #fcece4; VISIBILITY: hidden; FONT-SIZE: 70%; BORDER-TOP: #f3cbb5 1px solid; BORDER-RIGHT: #f3cbb5 1px solid; PADDING-TOP: 4px
+                        }
+                        #memberOptionsMenu {
+                        BORDER-BOTTOM: #f3cbb5 1px solid; POSITION: absolute; BORDER-LEFT: #f3cbb5 1px solid; PADDING-BOTTOM: 4px; PADDING-LEFT: 4px; PADDING-RIGHT: 8px; BACKGROUND: #fcece4; VISIBILITY: hidden; FONT-SIZE: 70%; BORDER-TOP: #f3cbb5 1px solid; BORDER-RIGHT: #f3cbb5 1px solid; PADDING-TOP: 4px
+                        }
+                        #memberFrameworksMenu {
+                        BORDER-BOTTOM: #f3cbb5 1px solid; POSITION: absolute; BORDER-LEFT: #f3cbb5 1px solid; PADDING-BOTTOM: 4px; PADDING-LEFT: 4px; PADDING-RIGHT: 8px; BACKGROUND: #fcece4; VISIBILITY: hidden; FONT-SIZE: 70%; BORDER-TOP: #f3cbb5 1px solid; BORDER-RIGHT: #f3cbb5 1px solid; PADDING-TOP: 4px
+                        }
+                        .checkboxLabel {
+                        PADDING-BOTTOM: 4px; COLOR: #0000ff; FONT-SIZE: 90%; CURSOR: pointer; TEXT-DECORATION: underline
+                        }
+                        IMG#devlangsDropdownImage {
+                        BORDER-BOTTOM: 0px; BORDER-LEFT: 0px; MARGIN-LEFT: 0px; VERTICAL-ALIGN: middle; BORDER-TOP: 0px; BORDER-RIGHT: 0px
+                        }
+                        IMG#memberOptionsDropdownImage {
+                        BORDER-BOTTOM: 0px; BORDER-LEFT: 0px; MARGIN-LEFT: 0px; VERTICAL-ALIGN: middle; BORDER-TOP: 0px; BORDER-RIGHT: 0px
+                        }
+                        IMG#memberFrameworksDropdownImage {
+                        BORDER-BOTTOM: 0px; BORDER-LEFT: 0px; MARGIN-LEFT: 0px; VERTICAL-ALIGN: middle; BORDER-TOP: 0px; BORDER-RIGHT: 0px
+                        }
+                        DIV.footerLine {
+                        PADDING-BOTTOM: 6px; MARGIN: 0px; WIDTH: 100%; PADDING-TOP: 8px
+                        }
+                        DIV.hr1 {
+                        PADDING-BOTTOM: 0px; MARGIN: 0px; PADDING-LEFT: 0px; WIDTH: 100%; PADDING-RIGHT: 0px; BACKGROUND: #c8cdde; HEIGHT: 1px; FONT-SIZE: 1px; PADDING-TOP: 0px
+                        }
+                        DIV.hr2 {
+                        PADDING-BOTTOM: 0px; MARGIN: 0px; PADDING-LEFT: 0px; WIDTH: 100%; PADDING-RIGHT: 0px; BACKGROUND: #d4dfff; HEIGHT: 1px; FONT-SIZE: 1px; PADDING-TOP: 0px
+                        }
+                        DIV.hr3 {
+                        PADDING-BOTTOM: 0px; MARGIN: 0px; PADDING-LEFT: 0px; WIDTH: 100%; PADDING-RIGHT: 0px; BACKGROUND: #eeeeff; HEIGHT: 1px; FONT-SIZE: 1px; PADDING-TOP: 0px
+                        }
+                        SPAN.cs {
+                        DISPLAY: none
+                        }
+                        SPAN.vb {
+                        DISPLAY: none
+                        }
+                        SPAN.cpp {
+                        DISPLAY: none
+                        }
+                        SPAN.nu {
+                        DISPLAY: inline
+                        }
+                        SPAN.fs {
+                        DISPLAY: none
+                        }
+                        SPAN.code {
+                        FONT-FAMILY: Monospace, Courier New, Courier; COLOR: #000066; FONT-SIZE: 105%
+                        }
+                        SPAN.ui {
+                        FONT-WEIGHT: bold
+                        }
+                        SPAN.math {
+                        FONT-STYLE: italic
+                        }
+                        SPAN.input {
+                        FONT-WEIGHT: bold
+                        }
+                        SPAN.term {
+                        FONT-STYLE: italic
+                        }
+                        SPAN.label {
+                        FONT-WEIGHT: bold
+                        }
+                        SPAN.foreignPhrase {
+                        FONT-STYLE: italic
+                        }
+                        SPAN.placeholder {
+                        FONT-STYLE: italic
+                        }
+                        SPAN.keyword {
+                        FONT-WEIGHT: bold
+                        }
+                        SPAN.typeparameter {
+                        FONT-STYLE: italic
+                        }
+                        DIV.caption {
+                        COLOR: #003399; FONT-SIZE: 100%; FONT-WEIGHT: bold
+                        }
+                        DIV.code SPAN.identifier {
+
+                        }
+                        DIV.code SPAN.keyword {
+                        COLOR: #871f78
+                        }
+                        DIV.code SPAN.parameter {
+                        FONT-STYLE: italic
+                        }
+                        DIV.code SPAN.literal {
+                        COLOR: #8b0000
+                        }
+                        DIV.code SPAN.comment {
+                        COLOR: #006400
+                        }
+                        SPAN.syntaxLabel {
+                        COLOR: #0481da; FONT-WEIGHT: bold
+                        }
+                        SPAN.introStyle {
+                        COLOR: darkgray
+                        }
+                        DIV.seeAlsoStyle {
+                        PADDING-TOP: 5px
+                        }
+                        TD.nsrBottom {
+                        WIDTH: 100%; HEIGHT: 0.6em
+                        }
+                        SPAN.clsGlossary {
+                        COLOR: #509950; CURSOR: default; FONT-WEIGHT: bold
+                        }
+                        DIV.clsTooltip {
+                        BORDER-BOTTOM: black 1px solid; POSITION: absolute; BORDER-LEFT: black 1px solid; PADDING-BOTTOM: 2px; BACKGROUND-COLOR: #ffffaa; PADDING-LEFT: 2px; PADDING-RIGHT: 2px; DISPLAY: none; FONT-FAMILY: Arial; COLOR: black; FONT-SIZE: 8pt; BORDER-TOP: black 1px solid; BORDER-RIGHT: black 1px solid; PADDING-TOP: 2px; TOP: 0px; LEFT: 0px
+                        }
+                        SPAN.feedbackcss {
+                        WIDTH: 100%; MARGIN-LEFT: 15px; FONT-SIZE: 110%
+                        }
+                        DIV#feedbackarea TABLE {
+                        BORDER-RIGHT-WIDTH: 0px; MARGIN-TOP: 0px; WIDTH: 300px; MARGIN-BOTTOM: 0px; BORDER-TOP-WIDTH: 0px; BORDER-BOTTOM-WIDTH: 0px; MARGIN-LEFT: 0px; BORDER-LEFT-WIDTH: 0px
+                        }
+                        DIV#feedbackarea TABLE TD {
+                        BORDER-BOTTOM: 0px; TEXT-ALIGN: center; FONT-FAMILY: Verdana; FONT-SIZE: 100%
+                        }
+                        DIV#feedbackarea P {
+                        MARGIN: 0px 5px 0px 6px; WIDTH: 100%; FONT-SIZE: 100%
+                        }
+                        DIV#feedbackarea H5 {
+                        MARGIN-TOP: 0px; MARGIN-BOTTOM: 0.7em; MARGIN-LEFT: 6px; FONT-SIZE: 10pt
+                        }
+                        P.feedbackarea {
+                        BACKGROUND-COLOR: #d4dfff; ; WIDTH: expression(document.body.clientWidth-27); FONT-SIZE: 100%
+                        }
+                        INPUT#submitFeedback {
+                        TEXT-ALIGN: center; FONT-SIZE: 100%
+                        }
+                        SPAN#feedbackarea {
+                        WIDTH: 100%
+                        }
+                        DIV#feedbackarea {
+                        WIDTH: 100%
+                        }
+                        SPAN.filterOnHover {
+                        COLOR: #e85f17
+                        }
+                        SPAN.filter {
+                        COLOR: #0000ff
+                        }
+                        A IMG {
+                        BORDER-BOTTOM: 0px; BORDER-LEFT: 0px; BORDER-TOP: 0px; BORDER-RIGHT: 0px
+                        }
+                    </style></head><body><div id="header"><table id="bottomTable" cellpadding="0" cellspacing="0"><tr id="headerTableRow1"><td align="left"><span id="runningHeaderText" /></td></tr><tr id="headerTableRow2"><td align="left"><span id="nsrTitle">Office 365: Bind and manipulate data in a SharePoint Access app</span></td></tr></table></div><div id="mainSection"><div id="mainBody"><div class="introduction"><p><b>Last modified:  </b>May 07, 2014</p><p><b>In this article</b><br /><a href="#sectionSection0">Prerequisites</a><br /><a href="#sectionSection1">Create an app for Access based on the Visual Studio template</a><br /><a href="#sectionSection2">Examine the Home.js file </a><br /><a href="#sectionSection3">Add global variables to contain data that is used across all functions </a><br /><a href="#sectionSection4">Create or detect the binding to the target data</a><br /><a href="#sectionSection5">Using the Bing map control</a><br /><a href="#sectionSection6">Additional resources</a><br /></p><p>This article contains preliminary information, and will be updated in MSDN when the documentation is finalized. A link will be added here when that documentation is available.</p><p>This article is based on the apps for Office and SharePoint sample <span class="label">BingRoute</span>, which uses the <a href="http://msdn.microsoft.com/en-us/library/ff701713.aspx" target="_blank">Bing map REST service</a> to calculate the distance between two geographical points.  You can find the sample on the <a href="http://code.msdn.microsoft.com/officeapps/site/search?f[0].Type=Technology&amp;f[0].Value=apps for Office" target="_blank">Apps for Office and SharePoint samples</a> page, or at the download location:<a href=", http://code.msdn.microsoft.com/Office-365-Bind-and-4876274e" target="_blank">, http://code.msdn.microsoft.com/Office-365-Bind-and-4876274e</a>. The idea for this app came from an original Access app called Mile Tracker that was included with SharePoint Online. This app enabled a user to record miles driven for billing or tax reasons.  In the app the user would record odometer readings for the start and end of a trip, and store that information and a calculated distance traveled in an associated database.  In practice the app was not very usable - it was unreasonable to expect the user to remember those specific numbers after the trip.  This sample simplifies the process by letting the user enter addresses or landmarks, and uses Bing to calculate a route and a driving distance.</p><p>This sample only uses the Bing service to calculate route - it would be an interesting exercise to add code to display the calculated route on a map. Most of the code used to communicate with the Bing control comes with little modification from the <a href="http://msdn.microsoft.com/en-us/library/ff701713.aspx" target="_blank">Bing map REST service</a> documentation page, and you can look there for more information about the service.</p><div class="alert"><table width="100%" cellspacing="0" cellpadding="0"><tr><th align="left"><b>Note</b></th></tr><tr><td><p>This article does not go into the mechanics of creating an app for Office, or using it in a SharePoint Access app. The topic <a href="45f487f1-b34c-41cf-aab2-fcbe13a605b0" target="_blank">How to: Create a content app for Access</a> has detailed information on this and this article assumes that you understand that information and are now ready to add code to communicate with an Access database.</p></td></tr></table></div></div><a name="sectionSection0"></a><h2 class="heading">Prerequisites</h2><div id="sectionSection0" class="section" name="collapseableSection" style=""><p>To write an app for Office targeting Access you need:</p><ul><li><p>Microsoft Visual Studio 2013</p></li><li><p><a href="http://aka.ms/officedevtoolsforvs2013" target="_blank">Microsoft Office Developer Tools for Visual Studio 2013 (March 2014 update)</a></p></li><li><p>A SharePoint Online site (included in many Office 365 subscriptions). This site must have an App Catalog. For more information, see <a href="http://msdn.microsoft.com/en-us/library/office/fp123530.aspx" target="_blank">How to: Set up an App Catalog on SharePoint</a>. Also see <a href="http://msdn.microsoft.com/en-us/library/office/fp179924(v=office.15).aspx" target="_blank">Sign up for an Office 365 Developer Site</a> for more information about getting a test site for SharePoint Online.</p></li><li><p>A valid user ID for the Bing Maps REST Services, see: <a href="http://msdn.microsoft.com/en-us/library/ff428642.aspx" target="_blank">Getting a Bing Maps Key</a></p></li></ul><div class="alert"><table width="100%" cellspacing="0" cellpadding="0"><tr><th align="left"><b>Note</b></th></tr><tr><td><p>This app for Office requires SharePoint Online. The Microsoft Access 2013 desktop client doesn't support apps for Office.</p><p>Apps for Office targeting Access are supported in version 1.1 of Office.js.</p></td></tr></table></div></div><a name="sectionSection1"></a><h2 class="heading">Create an app for Access based on the Visual Studio template</h2><div id="sectionSection1" class="section" name="collapseableSection" style=""><p>When you install the <a href="http://aka.ms/officedevtoolsforvs2013" target="_blank">Microsoft Office Developer Tools for Visual Studio 2013 (March 2014 update)</a> and  Microsoft Visual Studio 2013, you can use Visual Studio to create an app for Office targeting Access. This procedure is described in <span sdata="link"><a href="45f487f1-b34c-41cf-aab2-fcbe13a605b0.htm">How to: Create a content app for Access</a></span>.  Follow the steps in that topic to create and run an Access content app based on the <span class="label">Basic</span> template, and then return to this topic to learn what steps to take to make your app talk to an Access database. The following steps add features to the basic app template to bind to data in the Access app, and communicate with the Bing REST Service.</p></div><a name="sectionSection2"></a><h2 class="heading">Examine the Home.js file </h2><div id="sectionSection2" class="section" name="collapseableSection" style=""><p>to create the app you will modify the Home.js file to add functionality. Open the project in Microsoft Visual Studio 2013, and examine the file as it comes in the basic template project.</p><div class="code"><span codeLanguage="other"><table width="100%" cellspacing="0" cellpadding="0"><tr><th>&nbsp;</th><th></th></tr><tr><td colspan="2"><pre>/// &lt;reference path="../App.js" /&gt;
+
+(function () {
+    "use strict";
+
+    // The initialize function must be run each time a new page is loaded
+    Office.initialize = function (reason) {
+        $(document).ready(function () {
+            app.initialize();
+
+            $('#get-data-from-selection').click(getDataFromSelection);
+        });
+    };
+
+    // Reads data from current document selection and displays a notification
+    function getDataFromSelection() {
+        if (Office.context.document.getSelectedDataAsync) {
+            Office.context.document.getSelectedDataAsync(Office.CoercionType.Text,
+                function (result) {
+                    if (result.status === Office.AsyncResultStatus.Succeeded) {
+                        app.showNotification('The selected text is:', '"' + result.value + '"');
+                    } else {
+                        app.showNotification('Error:', result.error.message);
+                    }
+                }
+            );
+        } else {
+            app.showNotification('Error:', 'Reading selection data is not supported by this host application.');
+        }
+    }
+})();</pre></td></tr></table></span></div><div class="caption">What do the functions in Home.js do?</div><div class="tableSection"><table width="50%" cellspacing="2" cellpadding="5" frame="lhs"><tr><th><p>Function name</p></th><th><p>Function behavior</p></th></tr><tr><td><p><span class="label">Office.initialize</span></p></td><td><p>The initialize function is run on initialization, on start, on page refresh and on insertion.</p></td></tr><tr><td><p><span class="label">getDataFromSelection</span></p></td><td><p>This function is called when the button with the id "get-data-from-selection" is clicked.  It gets data from the selection in the SharePoint OnlineAccess app that hosts the app for Office, and displays that data in the app for Office. This function is not used in the bingroute app, and will be replaced with new functions as you progress through this article.</p></td></tr></table></div><p>In general terms, you will add code to do the following:</p><ul><li><p>Connect (bind) to the data in the Access app that will host the app for Office.</p></li><li><p>Listen for events from the binding when the data in the Access app changes, and react to those changes.</p></li><li><p>Write data back to the users form when the user selects the appropriate button.</p></li></ul><p /></div><a name="sectionSection3"></a><h2 class="heading">Add global variables to contain data that is used across all functions </h2><div id="sectionSection3" class="section" name="collapseableSection" style=""><p>At the very top if the Home.js file add the following global variables.  These values pass information between functions and between the application code and the UI.  All the variables are pretty self-explanatory, other than the <span class="label">BindingName</span>.  This is a value that is used to identify the specific binding when it is saved as part of the Access app.</p><div class="code"><span codeLanguage="other"><table width="100%" cellspacing="0" cellpadding="0"><tr><th>&nbsp;</th><th></th></tr><tr><td colspan="2"><pre>//Variable initialization
+var BindingName = "RouteBinding";
+var ToAddress = "";
+var FromAddress = "";
+var map = null;
+var PostField = "";
+var MilesTraveled = 0;
+</pre></td></tr></table></span></div></div><a name="sectionSection4"></a><h2 class="heading">Create or detect the binding to the target data</h2><div id="sectionSection4" class="section" name="collapseableSection" style=""><p>Apps for Office and SharePoint that target Access are used to manipulate and visualize data in an Access database hosted in SharePoint Online.  to connect the app with the data in the Access database, the data must be bound to variables in the app. These are set in the <span class="label">Office.initialize</span> function that is called in response to the <a href="http://msdn.microsoft.com/en-us/library/office/fp161139(v=office.1501401).aspx" target="_blank">Office.initialize</a> event. A stub for this function is provided in the template that you examined. You will want to modify the stub to include the following code. This code checks for an existing binding, and if a binding with the correct name exists the app registers handlers for binding messages and updates the data.  If the binding does not exist, the code creates a new binding.</p><p>A binding is simply a named pointer to data in the host application. Once created, a binding is saved as part of the host application (form), and is available for all users. In this way end-users do not need to go through the binding process every time. Since the binding may already have been created in a previous session, you must check for it first.</p><p>Access supports table binding, which lets you read and write data to the table or query in the database.  All you need to do is write data to the binding and the host maps the information to the table.The binding also provides events when the data or the selection in the table changes.</p><p>You can use three styles of binding:</p><ul><li><p>Bind by name if you know the name of the table</p></li><li><p>Bind by selection</p></li><li><p>Bind by prompt</p></li></ul><p>This sample uses the third option, bind by prompt. This prompts to the user with a dialog which contains some example data, and lists available data found in the database.  The user browses the available data fields and selects the data that most closely resembles the example data. When all appropriate fields have been filled in the dialog box is closed and the binding is created.  Even if a binding is already present, it is a good idea to add UI that lets the user rebind the data to allow different values to be used.</p><p>In either case (creating or re-using a binding) handlers must be registered.</p><div class="code"><span codeLanguage="other"><table width="100%" cellspacing="0" cellpadding="0"><tr><th>&nbsp;</th><th></th></tr><tr><td colspan="2"><pre>Office.initialize = function (reason) {
+    // This async method will check to see if a binding already exists. 
+    Office.context.document.bindings.getByIdAsync(BindingName, function (callback) {
+        //check the callback.status field to see if the call succeeded. If the callback succeeded we know a binding already exists
+        if (callback.status == Office.AsyncResultStatus.Succeeded) {
+            //We have the binding so call functions to register handlers and update the map
+            RegisterHandlers(callback.value);
+            RecalculateDistance();
+        }
+        else {
+            //We don't have a binding yet so call functions to create a binding
+            BindToData();
+        }
+    });
+    //Register button events
+    $("#btnBind").click(BindToData);
+    $("#setdistance").click(SetDistance);
+};
+</pre></td></tr></table></span></div><p>At the end of the function two button click events are registered to connect the user interface to functions that will be created in the next section.  The UI is very simple and will not be described in this article. To save typing, use the UI code from the sample application, as well as a bitmap of the Bing logo that is used in the UI.</p><p>There are several functions that are mentioned but not defined in the initialize function:</p><ul><li><p><span class="label">BindToData</span></p></li><li><p><span class="label">RegisterHandlers</span></p></li><li><p><span class="label">RecalculateDistance</span></p></li><li><p><span class="label">SetDistance</span></p></li></ul><p><span class="label">BindToData</span> is called if the binding does not exist, or if the user wants to change the binding. This function manages the process of binding by prompt.  It creates the example data mentioned before, and calls <a href="http://msdn.microsoft.com/en-us/library/office/fp142150(v=office.1501401).aspx" target="_blank">Office.context.document.bindings.addFromPromptAsync</a> and creates the new binding when the user has entered the appropriate values. This function also calls the function <span class="label">RegisterHandlers</span>.</p><div class="code"><span codeLanguage="other"><table width="100%" cellspacing="0" cellpadding="0"><tr><th>&nbsp;</th><th></th></tr><tr><td colspan="2"><pre>//Show the binding prompt with sample text and bind to the data the user selects
+function BindToData() {
+    //TableData to hold the sample data
+    var sampleDataTable = new Office.TableData();
+    //Sample headers
+    sampleDataTable.headers = [["From Address", "To Address", "Distance Field"]];
+    //Sample data rows
+    sampleDataTable.rows = [["White House", "Seattle", "2716.2"], ["Houston","Dallas","293.3"], ["400 Broad St., Seattle, WA", "1 Microsoft Way, Redmond WA", "13.3"]];
+
+    //Show the binding promp with the sample data and create a binding with id:BindingName
+    Office.context.document.bindings.addFromPromptAsync(Office.BindingType.Table, {
+        id: BindingName,
+        sampleData: sampleDataTable
+    }, function (bindingCallback) {
+        //Check if the callback succeeded
+        if (bindingCallback.status == Office.AsyncResultStatus.Succeeded) {
+            //Register handlers for events
+            RegisterHandlers(bindingCallback.value)
+        }
+    });
+}</pre></td></tr></table></span></div><p>The <span class="label">RegisterHandlers</span> function does two things - first it adds handlers for two messages that are generated by the binding:  <span class="label">BindingSelectionChanged</span>, and <span class="label">BindingDataChanged</span>. In both cases the handler will call <span class="label">RecalculateDistance</span>. The second thing the function does is to get the appropriate table header value to post data to, and stores that in the string global variable <span class="label">PostField</span>. This value can then be used to update the distance value every time that the route changes.</p><div class="code"><span codeLanguage="other"><table width="100%" cellspacing="0" cellpadding="0"><tr><th>&nbsp;</th><th></th></tr><tr><td colspan="2"><pre>//Register handlers for events
+function RegisterHandlers(binding) {
+    //Map Binding Selection Changed event to the HandleRecordChange function
+    binding.addHandlerAsync(Office.EventType.BindingSelectionChanged, RecalculateDistance);
+    //Map Binding Data Changed event to the HandleRecordChange function
+    binding.addHandlerAsync(Office.EventType.BindingDataChanged, RecalculateDistance);
+
+    //Get the name of the field to set data into. This is the third field in the binding
+    Office.select("bindings#" + BindingName).getDataAsync({
+        coercionType: Office.CoercionType.Table,
+        //Get the data for the current row
+        rows: "thisRow"
+    }, function (callback) {
+        //Check if the call succeeded
+        if (callback.status == Office.AsyncResultStatus.Succeeded) {
+            //Store the name(header) of the field
+            PostField = callback.value.headers[0][2];
+        }
+    });
+}</pre></td></tr></table></span></div><p /></div><a name="sectionSection5"></a><h2 class="heading">Using the Bing map control</h2><div id="sectionSection5" class="section" name="collapseableSection" style=""><p><span class="label">RecalculateDistance</span> is the heart of the sample.  It requests and stores the two addresses that the Bing service needs to calculate the route and the route distance.  The actual call to the Bing service is delegated to the <span class="label">CallBingMapsService</span> function at the bottom of this function.</p><div class="code"><span codeLanguage="other"><table width="100%" cellspacing="0" cellpadding="0"><tr><th>&nbsp;</th><th></th></tr><tr><td colspan="2"><pre>//Recalulate distance with current row's data. To be called on app initial load, selectionchanged or datachanged
+function RecalculateDistance() {
+    //Get the To and From address from the current row
+    Office.select("bindings#" + BindingName).getDataAsync({
+        coercionType: Office.CoercionType.Table,
+        //Specify to get the data from the currently selected data row
+        rows: "thisRow"
+    }, function (callback) {
+        // Check to see if the function was successful
+        if (callback.status == Office.AsyncResultStatus.Succeeded) {
+            //Store the from address
+            FromAddress = callback.value.rows[0][0];
+            //Store the to address
+            ToAddress = callback.value.rows[0][1];
+            //Update the UI to reflect the new data
+            $("#fromaddress").text(FromAddress);
+            $("#toaddress").text(ToAddress);
+            //Call the Bing service
+            CallBingMapsService();
+        }
+    });
+}</pre></td></tr></table></span></div><p>The <span class="label">CallBingMapsService</span> and the <span class="label">MakeRouteRequest</span> functions encapsulate the specific code needed to talk to the Bing service. Note the 'X's in the credentials parameter.  This is where you must insert your own credentials, as described in the Prerequisites section earlier in this article. </p><div class="code"><span codeLanguage="other"><table width="100%" cellspacing="0" cellpadding="0"><tr><th>&nbsp;</th><th></th></tr><tr><td colspan="2"><pre>function CallBingMapsService() {
+    //Create new Microsoft Maps object
+    map = new Microsoft.Maps.Map(document.getElementById("mapDiv"), { credentials: "XXXXXXXXXXXXXX-XXXXXXXXXXXXX_XXXXXXXXXX_XXXXXXX", mapTypeId: Microsoft.Maps.MapTypeId.r });
+    map.getCredentials(MakeRouteRequest);
+}</pre></td></tr></table></span></div><p>Send the REST request to the Bing service by using the helper function <span class="label">CallRestService</span>.    </p><div class="code"><span codeLanguage="other"><table width="100%" cellspacing="0" cellpadding="0"><tr><th>&nbsp;</th><th></th></tr><tr><td colspan="2"><pre>function MakeRouteRequest(credentials) {
+    //Send request to bing. Specify the to and from Address and the callback function
+    var routeRequest = "https://dev.virtualearth.net/REST/v1/Routes?wp.0=" + FromAddress + "&amp;wp.1=" + ToAddress + "&amp;routePathOutput=Points&amp;output=json&amp;jsonp=RouteCallback&amp;key=" + credentials;
+
+    CallRestService(routeRequest);
+}</pre></td></tr></table></span></div><p>This function is called by the Bing service and handles the return values from the service request.  Note that the travel distance is returned in kilometers and is converted to miles using the constant 6.2137119.</p><div class="code"><span codeLanguage="other"><table width="100%" cellspacing="0" cellpadding="0"><tr><th>&nbsp;</th><th></th></tr><tr><td colspan="2"><pre>//To called by Bing Maps Response
+function RouteCallback(result) {
+    //Check to see if all the data we need exists
+    if (result &amp;&amp;
+          result.resourceSets &amp;&amp;
+          result.resourceSets.length &gt; 0 &amp;&amp;
+          result.resourceSets[0].resources &amp;&amp;
+          result.resourceSets[0].resources.length &gt; 0) {
+
+        //Store the distance between addresses
+        MilesTraveled = Math.round(result.resourceSets[0].resources[0].travelDistance * 6.2137119) / 10;
+        //Update the Apps for Office UI
+        $("#distance").text(MilesTraveled);
+    }
+}</pre></td></tr></table></span></div><p>And finally the distance value is posted to the appropriate location in the table in the Access app using <span class="label">PostField</span>.</p><div class="code"><span codeLanguage="other"><table width="100%" cellspacing="0" cellpadding="0"><tr><th>&nbsp;</th><th></th></tr><tr><td colspan="2"><pre>function SetDistance(eventArgs) {
+    if (MilesTraveled !== 0) {
+        //Set data in the host
+        Office.select("bindings#" + BindingName).setDataAsync([[MilesTraveled]], {
+            //On the current row
+            rows: "thisRow",
+            //In the PostField
+            columns: [PostField]
+        }, function (callback) {
+            //Set Data Callback
+        });
+    }
+}</pre></td></tr></table></span></div><p>A convenient helper function for making REST calls.</p><div class="code"><span codeLanguage="other"><table width="100%" cellspacing="0" cellpadding="0"><tr><th>&nbsp;</th><th></th></tr><tr><td colspan="2"><pre>//Function to call rest service by injecting script tag
+function CallRestService(request) {
+    var script = document.createElement("script");
+    script.setAttribute("type", "text/javascript");
+    script.setAttribute("src", request);
+    document.body.appendChild(script);
+}</pre></td></tr></table></span></div><p>All apps for Office work in similar ways, and you can find additional information in the links at the end of this section.</p></div><a name="bk_addresources" /><a name="sectionSection6"></a><h2 class="heading">Additional resources</h2><div id="sectionSection6" class="section" name="collapseableSection" style=""><ul><li><p><a href="http://msdn.microsoft.com/library/http://msdn.microsoft.com/en-us/library/ff701713.aspx.aspx" target="_blank">Bing Maps REST Services</a></p></li><li><p><a href="http://msdn.microsoft.com/library/http://msdn.microsoft.com/en-us/library/office/fp161507(v=office.15).aspx.aspx" target="_blank">Apps for Office and SharePoint</a></p></li><li><p><a href="http://msdn.microsoft.com/library/http://code.msdn.microsoft.com/officeapps/site/search?f[0].Type=Technology&amp;f[0].Value=apps for Office.aspx" target="_blank">Apps for Office and SharePoint samples</a></p></li></ul></div></div></div></body></html>
