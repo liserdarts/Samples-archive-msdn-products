@@ -1,0 +1,46 @@
+﻿Work flow to receive incoming IM messages in UCWA:
+1. Create an application, as the starting point of every UCWA app,
+	to retrieve makeMeAvailable Uri from the embedded me resource
+2. Post makeMeAvailable, specifying "Messaging" for SupportedModalities.  (Necessary for incoming calls)
+	to enable the app to receive incoming messaging invitations
+3. Re-Get application resource updated after posting makeMeAvailable
+	to retrieve the updated dashboard on me, people, onlineMeeting and communication 
+4. Get contacts (as pointed to by the "myContacts" property on People)
+	to retrieve the contact list
+5. Receive and process events (sent by me and communication)
+	to retrieve updated me (with added presence, note, location, etc.)
+	to retrieve updated commnuication (with links to startPhoneAudio, conversations, startMessaing, startOnlineMeeting, joinOnlineMeeting)
+6. Receive and process next events (sent by communication and conversation)  (Necessary for incoming calls)
+	to retrieve (and cache) the accept and decline Uris from a started incoming messagingInvitation sent by communication
+		the messagingInvitation also contains an embedded "from" resource as remote participant (caller)
+	to retrieve (and cache)  messagingUri, audioVideoUri, phoneAudioUri, dataCollaborationUri from an added incoming conversation sent by communication
+	to retrieve (or not) "localParticipant"-added event seny by the incoming conversation 
+7. Receive and process next events (sent by conversation)  (Necessary for incoming calls)
+	to retrieve (remote) "participant"-added event sent by the incoming conversation
+	and cache the participantUri 
+8. Receive and process next events sent by communication 
+	to retrieve updated messagingIvitation that 
+		contains the initial message (as property of messagingInvitation),
+		contains the remote participant info as the embedded "from" resource 
+9. Get (remote) participant resource using the cached participant Uri (from the "from" resource)
+		cache remote participant info
+		This step may not be necessary if the remote participant info is cached previously. A get request will ensure the most up-to-date info is obtained.
+10. POST accept (using the cached acceptUri)
+	to accept the incoming invitation
+	will receive No Content response.
+11. Receive and process events sent by conversation and communication
+	to retrieve updated messaging with Connected state sent by conversation
+	to retrieve updated conversation with Connected state setnt by communication
+	to retrieve added participantMessaging for the invited (local) user sent by conversation
+	to retrieve updated participantMessaging for the inviting (remote) user sent by conversation
+	to retrieve completed messagingInvitation with Success status, Connected state by communication
+	...
+
+12. Receive and process events sent by conversation and communication
+	to retrieve completed incoming message with Success status and embedded plainMessage (the initial message!) sent by conversation
+	to retrieve updated conversation with Connected state and addParticipant link that are sent by communication
+13. Continue the converstaion by keeping sending and receiving message
+	Post sendMesage in plain text on either end of the conversation
+	Receive and process events sent by conversation 
+14. Terminate conversation 
+	Post stopMessaging (uri retrieved from a previously updated messaging sent by conversation)

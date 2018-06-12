@@ -1,0 +1,57 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Machine>KDLAP3</Machine>
+    <WindowsUser>kdeding</WindowsUser>
+    <SolutionConfiguration>Debug|AnyCPU</SolutionConfiguration>
+    <PackageArchitecture>neutral</PackageArchitecture>
+    <PackageIdentityName>6c19c402-cf9f-48bc-a707-68f838901cd8</PackageIdentityName>
+  </PropertyGroup>
+  <ItemGroup>
+    <AppXManifest Include="C:\Users\kdeding\Desktop\UcwaWinStoreAppEvents\UcwaWinStoreAppEvents\bin\Debug\AppxManifest.xml">
+      <PackagePath>AppxManifest.xml</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppXManifest>
+  </ItemGroup>
+  <ItemGroup>
+    <AppxPackagedFile Include="C:\Users\kdeding\Desktop\UcwaWinStoreAppEvents\UcwaWinStoreAppEvents\bin\Debug\WinStoreUcwaAppEvents.exe">
+      <PackagePath>WinStoreUcwaAppEvents.exe</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\kdeding\Desktop\UcwaWinStoreAppEvents\UcwaWinStoreAppEvents\Assets\Logo.scale-100.png">
+      <PackagePath>Assets\Logo.scale-100.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\kdeding\Desktop\UcwaWinStoreAppEvents\UcwaWinStoreAppEvents\Assets\SmallLogo.scale-100.png">
+      <PackagePath>Assets\SmallLogo.scale-100.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\kdeding\Desktop\UcwaWinStoreAppEvents\UcwaWinStoreAppEvents\Assets\SplashScreen.scale-100.png">
+      <PackagePath>Assets\SplashScreen.scale-100.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\kdeding\Desktop\UcwaWinStoreAppEvents\UcwaWinStoreAppEvents\Assets\StoreLogo.scale-100.png">
+      <PackagePath>Assets\StoreLogo.scale-100.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\kdeding\Desktop\UcwaWinStoreAppEvents\UcwaWinStoreAppEvents\Common\ReadMe.txt">
+      <PackagePath>Common\ReadMe.txt</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\kdeding\Desktop\UcwaWinStoreAppEvents\UcwaWinStoreAppEvents\bin\Debug\App.xbf">
+      <PackagePath>App.xbf</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\kdeding\Desktop\UcwaWinStoreAppEvents\UcwaWinStoreAppEvents\bin\Debug\CommunicationPage.xbf">
+      <PackagePath>CommunicationPage.xbf</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\kdeding\Desktop\UcwaWinStoreAppEvents\UcwaWinStoreAppEvents\bin\Debug\MainPage.xbf">
+      <PackagePath>MainPage.xbf</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\kdeding\Desktop\UcwaWinStoreAppEvents\UcwaWinStoreAppEvents\bin\Debug\MePage..xbf">
+      <PackagePath>MePage..xbf</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\kdeding\Desktop\UcwaWinStoreAppEvents\UcwaWinStoreAppEvents\bin\Debug\resources.pri">
+      <PackagePath>resources.pri</PackagePath>
+    </AppxPackagedFile>
+  </ItemGroup>
+  <ItemGroup>
+  </ItemGroup>
+</Project>

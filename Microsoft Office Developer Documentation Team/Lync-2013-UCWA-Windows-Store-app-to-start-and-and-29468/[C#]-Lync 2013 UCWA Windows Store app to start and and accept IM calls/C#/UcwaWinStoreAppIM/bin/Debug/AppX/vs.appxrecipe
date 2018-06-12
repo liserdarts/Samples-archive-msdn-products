@@ -1,0 +1,75 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Machine>KDEDING04</Machine>
+    <WindowsUser>kdeding</WindowsUser>
+    <SolutionConfiguration>Debug|AnyCPU</SolutionConfiguration>
+    <PackageArchitecture>neutral</PackageArchitecture>
+    <PackageIdentityName>6c19c402-cf9f-48bc-a707-68f838901cd8</PackageIdentityName>
+    <RegisteredManifestChecksum>8629A5F05992B4F706226C10CF02CAAAF625CD27E98CF16BDA7448EAA5E79679</RegisteredManifestChecksum>
+    <RegisteredPackageMoniker>6c19c402-cf9f-48bc-a707-68f838901cd8_1.0.0.0_neutral__tsgbydjpr5rdg</RegisteredPackageMoniker>
+    <RegisteredUserModeAppID>6c19c402-cf9f-48bc-a707-68f838901cd8_tsgbydjpr5rdg!App</RegisteredUserModeAppID>
+    <RegisteredPackageID>6c19c402-cf9f-48bc-a707-68f838901cd8</RegisteredPackageID>
+    <RegisteredPackagePublisher>CN=kdeding</RegisteredPackagePublisher>
+    <RegisteredVersion>1.0.0.0</RegisteredVersion>
+  </PropertyGroup>
+  <ItemGroup>
+    <AppXManifest Include="C:\Users\kdeding\SkyDrive %40 Microsoft\UCWA\Apps\ToCodeGallery\UcwaWinStoreAppIM\UcwaWinStoreAppIM\bin\Debug\AppxManifest.xml">
+      <PackagePath>AppxManifest.xml</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2014-06-23T19:45:19.000</Modified>
+    </AppXManifest>
+  </ItemGroup>
+  <ItemGroup>
+    <AppxPackagedFile Include="C:\Users\kdeding\SkyDrive %40 Microsoft\UCWA\Apps\ToCodeGallery\UcwaWinStoreAppIM\UcwaWinStoreAppIM\bin\Debug\WinStoreUcwaAppIM.exe">
+      <PackagePath>WinStoreUcwaAppIM.exe</PackagePath>
+      <Modified>2014-06-23T21:17:52.613</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\kdeding\SkyDrive %40 Microsoft\UCWA\Apps\ToCodeGallery\UcwaWinStoreAppIM\UcwaWinStoreAppIM\Assets\Logo.scale-100.png">
+      <PackagePath>Assets\Logo.scale-100.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2013-07-23T13:01:02.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\kdeding\SkyDrive %40 Microsoft\UCWA\Apps\ToCodeGallery\UcwaWinStoreAppIM\UcwaWinStoreAppIM\Assets\SmallLogo.scale-100.png">
+      <PackagePath>Assets\SmallLogo.scale-100.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2013-07-23T13:01:02.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\kdeding\SkyDrive %40 Microsoft\UCWA\Apps\ToCodeGallery\UcwaWinStoreAppIM\UcwaWinStoreAppIM\Assets\SplashScreen.scale-100.png">
+      <PackagePath>Assets\SplashScreen.scale-100.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2013-07-23T13:01:02.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\kdeding\SkyDrive %40 Microsoft\UCWA\Apps\ToCodeGallery\UcwaWinStoreAppIM\UcwaWinStoreAppIM\Assets\StoreLogo.scale-100.png">
+      <PackagePath>Assets\StoreLogo.scale-100.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2013-07-23T13:01:02.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\kdeding\SkyDrive %40 Microsoft\UCWA\Apps\ToCodeGallery\UcwaWinStoreAppIM\UcwaWinStoreAppIM\Common\ReadMe.txt">
+      <PackagePath>Common\ReadMe.txt</PackagePath>
+      <Modified>2013-11-05T18:43:59.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\kdeding\SkyDrive %40 Microsoft\UCWA\Apps\ToCodeGallery\UcwaWinStoreAppIM\UcwaWinStoreAppIM\bin\Debug\App.xbf">
+      <PackagePath>App.xbf</PackagePath>
+      <Modified>2014-06-23T19:45:18.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\kdeding\SkyDrive %40 Microsoft\UCWA\Apps\ToCodeGallery\UcwaWinStoreAppIM\UcwaWinStoreAppIM\bin\Debug\CommunicationPage.xbf">
+      <PackagePath>CommunicationPage.xbf</PackagePath>
+      <Modified>2014-06-23T19:45:18.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\kdeding\SkyDrive %40 Microsoft\UCWA\Apps\ToCodeGallery\UcwaWinStoreAppIM\UcwaWinStoreAppIM\bin\Debug\MainPage.xbf">
+      <PackagePath>MainPage.xbf</PackagePath>
+      <Modified>2014-06-23T19:45:18.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\kdeding\SkyDrive %40 Microsoft\UCWA\Apps\ToCodeGallery\UcwaWinStoreAppIM\UcwaWinStoreAppIM\bin\Debug\MePage..xbf">
+      <PackagePath>MePage..xbf</PackagePath>
+      <Modified>2014-06-23T19:45:18.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\kdeding\SkyDrive %40 Microsoft\UCWA\Apps\ToCodeGallery\UcwaWinStoreAppIM\UcwaWinStoreAppIM\bin\Debug\resources.pri">
+      <PackagePath>resources.pri</PackagePath>
+      <Modified>2014-06-23T19:45:18.000</Modified>
+    </AppxPackagedFile>
+  </ItemGroup>
+  <ItemGroup>
+  </ItemGroup>
+</Project>

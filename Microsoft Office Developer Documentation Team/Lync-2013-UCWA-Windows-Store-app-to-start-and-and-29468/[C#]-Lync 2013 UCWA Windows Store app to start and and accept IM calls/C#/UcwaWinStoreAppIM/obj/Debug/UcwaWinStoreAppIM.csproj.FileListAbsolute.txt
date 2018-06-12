@@ -1,0 +1,123 @@
+Z:\Ucwa.WinRT\UcwaWinStoreAppIM\UcwaWinStoreAppIM\bin\Debug\App.xbf
+Z:\Ucwa.WinRT\UcwaWinStoreAppIM\UcwaWinStoreAppIM\bin\Debug\CommunicationPage.xbf
+Z:\Ucwa.WinRT\UcwaWinStoreAppIM\UcwaWinStoreAppIM\bin\Debug\MainPage.xbf
+Z:\Ucwa.WinRT\UcwaWinStoreAppIM\UcwaWinStoreAppIM\bin\Debug\MePage..xbf
+Z:\Ucwa.WinRT\UcwaWinStoreAppIM\UcwaWinStoreAppIM\bin\Debug\WinStoreUcwaAppEvents.exe
+Z:\Ucwa.WinRT\UcwaWinStoreAppIM\UcwaWinStoreAppIM\bin\Debug\WinStoreUcwaAppEvents.pdb
+Z:\Ucwa.WinRT\UcwaWinStoreAppIM\UcwaWinStoreAppIM\bin\Debug\resources.pri
+Z:\Ucwa.WinRT\UcwaWinStoreAppIM\UcwaWinStoreAppIM\bin\Debug\AppxManifest.xml
+Z:\Ucwa.WinRT\UcwaWinStoreAppIM\UcwaWinStoreAppIM\bin\Debug\UcwaWinStoreAppIM.build.appxrecipe
+Z:\Ucwa.WinRT\UcwaWinStoreAppIM\UcwaWinStoreAppIM\obj\Debug\App.g.i.cs
+Z:\Ucwa.WinRT\UcwaWinStoreAppIM\UcwaWinStoreAppIM\obj\Debug\App.g.cs
+Z:\Ucwa.WinRT\UcwaWinStoreAppIM\UcwaWinStoreAppIM\obj\Debug\CommunicationPage.g.i.cs
+Z:\Ucwa.WinRT\UcwaWinStoreAppIM\UcwaWinStoreAppIM\obj\Debug\CommunicationPage.g.cs
+Z:\Ucwa.WinRT\UcwaWinStoreAppIM\UcwaWinStoreAppIM\obj\Debug\MainPage.g.i.cs
+Z:\Ucwa.WinRT\UcwaWinStoreAppIM\UcwaWinStoreAppIM\obj\Debug\MainPage.g.cs
+Z:\Ucwa.WinRT\UcwaWinStoreAppIM\UcwaWinStoreAppIM\obj\Debug\MePage..g.i.cs
+Z:\Ucwa.WinRT\UcwaWinStoreAppIM\UcwaWinStoreAppIM\obj\Debug\MePage..g.cs
+Z:\Ucwa.WinRT\UcwaWinStoreAppIM\UcwaWinStoreAppIM\obj\Debug\XamlTypeInfo.g.cs
+Z:\Ucwa.WinRT\UcwaWinStoreAppIM\UcwaWinStoreAppIM\obj\Debug\App.xaml
+Z:\Ucwa.WinRT\UcwaWinStoreAppIM\UcwaWinStoreAppIM\obj\Debug\CommunicationPage.xaml
+Z:\Ucwa.WinRT\UcwaWinStoreAppIM\UcwaWinStoreAppIM\obj\Debug\MainPage.xaml
+Z:\Ucwa.WinRT\UcwaWinStoreAppIM\UcwaWinStoreAppIM\obj\Debug\MePage..xaml
+Z:\Ucwa.WinRT\UcwaWinStoreAppIM\UcwaWinStoreAppIM\obj\Debug\App.xbf
+Z:\Ucwa.WinRT\UcwaWinStoreAppIM\UcwaWinStoreAppIM\obj\Debug\CommunicationPage.xbf
+Z:\Ucwa.WinRT\UcwaWinStoreAppIM\UcwaWinStoreAppIM\obj\Debug\MainPage.xbf
+Z:\Ucwa.WinRT\UcwaWinStoreAppIM\UcwaWinStoreAppIM\obj\Debug\MePage..xbf
+Z:\Ucwa.WinRT\UcwaWinStoreAppIM\UcwaWinStoreAppIM\obj\Debug\XamlSaveStateFile.xml
+Z:\Ucwa.WinRT\UcwaWinStoreAppIM\UcwaWinStoreAppIM\obj\Debug\WinStoreUcwaAppEvents.exe
+Z:\Ucwa.WinRT\UcwaWinStoreAppIM\UcwaWinStoreAppIM\obj\Debug\WinStoreUcwaAppEvents.pdb
+Z:\Ucwa.WinRT\UcwaWinStoreAppIM\UcwaWinStoreAppIM\obj\Debug\priconfig.xml
+Z:\Ucwa.WinRT\UcwaWinStoreAppIM\UcwaWinStoreAppIM\obj\Debug\priconfig.xml.intermediate
+Z:\Ucwa.WinRT\UcwaWinStoreAppIM\UcwaWinStoreAppIM\obj\Debug\layout.resfiles
+Z:\Ucwa.WinRT\UcwaWinStoreAppIM\UcwaWinStoreAppIM\obj\Debug\layout.resfiles.intermediate
+Z:\Ucwa.WinRT\UcwaWinStoreAppIM\UcwaWinStoreAppIM\obj\Debug\resources.resfiles
+Z:\Ucwa.WinRT\UcwaWinStoreAppIM\UcwaWinStoreAppIM\obj\Debug\resources.resfiles.intermediate
+Z:\Ucwa.WinRT\UcwaWinStoreAppIM\UcwaWinStoreAppIM\obj\Debug\pri.resfiles
+Z:\Ucwa.WinRT\UcwaWinStoreAppIM\UcwaWinStoreAppIM\obj\Debug\pri.resfiles.intermediate
+Z:\Ucwa.WinRT\UcwaWinStoreAppIM\UcwaWinStoreAppIM\obj\Debug\qualifiers.txt
+Z:\Ucwa.WinRT\UcwaWinStoreAppIM\UcwaWinStoreAppIM\obj\Debug\qualifiers.txt.intermediate
+Z:\Ucwa.WinRT\UcwaWinStoreAppIM\UcwaWinStoreAppIM\obj\Debug\MultipleQualifiersPerDimensionFound.txt
+Z:\Ucwa.WinRT\UcwaWinStoreAppIM\UcwaWinStoreAppIM\obj\Debug\ProjectArchitectures.txt
+C:\Users\kdeding\Desktop\UcwaWinStoreAppIM\UcwaWinStoreAppIM\bin\Debug\App.xbf
+C:\Users\kdeding\Desktop\UcwaWinStoreAppIM\UcwaWinStoreAppIM\bin\Debug\CommunicationPage.xbf
+C:\Users\kdeding\Desktop\UcwaWinStoreAppIM\UcwaWinStoreAppIM\bin\Debug\MainPage.xbf
+C:\Users\kdeding\Desktop\UcwaWinStoreAppIM\UcwaWinStoreAppIM\bin\Debug\MePage..xbf
+C:\Users\kdeding\Desktop\UcwaWinStoreAppIM\UcwaWinStoreAppIM\bin\Debug\WinStoreUcwaAppIM.exe
+C:\Users\kdeding\Desktop\UcwaWinStoreAppIM\UcwaWinStoreAppIM\bin\Debug\WinStoreUcwaAppIM.pdb
+C:\Users\kdeding\Desktop\UcwaWinStoreAppIM\UcwaWinStoreAppIM\bin\Debug\resources.pri
+C:\Users\kdeding\Desktop\UcwaWinStoreAppIM\UcwaWinStoreAppIM\bin\Debug\AppxManifest.xml
+C:\Users\kdeding\Desktop\UcwaWinStoreAppIM\UcwaWinStoreAppIM\bin\Debug\UcwaWinStoreAppIM.build.appxrecipe
+C:\Users\kdeding\Desktop\UcwaWinStoreAppIM\UcwaWinStoreAppIM\obj\Debug\App.g.i.cs
+C:\Users\kdeding\Desktop\UcwaWinStoreAppIM\UcwaWinStoreAppIM\obj\Debug\App.g.cs
+C:\Users\kdeding\Desktop\UcwaWinStoreAppIM\UcwaWinStoreAppIM\obj\Debug\CommunicationPage.g.i.cs
+C:\Users\kdeding\Desktop\UcwaWinStoreAppIM\UcwaWinStoreAppIM\obj\Debug\CommunicationPage.g.cs
+C:\Users\kdeding\Desktop\UcwaWinStoreAppIM\UcwaWinStoreAppIM\obj\Debug\MainPage.g.i.cs
+C:\Users\kdeding\Desktop\UcwaWinStoreAppIM\UcwaWinStoreAppIM\obj\Debug\MainPage.g.cs
+C:\Users\kdeding\Desktop\UcwaWinStoreAppIM\UcwaWinStoreAppIM\obj\Debug\MePage..g.i.cs
+C:\Users\kdeding\Desktop\UcwaWinStoreAppIM\UcwaWinStoreAppIM\obj\Debug\MePage..g.cs
+C:\Users\kdeding\Desktop\UcwaWinStoreAppIM\UcwaWinStoreAppIM\obj\Debug\XamlTypeInfo.g.cs
+C:\Users\kdeding\Desktop\UcwaWinStoreAppIM\UcwaWinStoreAppIM\obj\Debug\CommunicationPage.xaml
+C:\Users\kdeding\Desktop\UcwaWinStoreAppIM\UcwaWinStoreAppIM\obj\Debug\MainPage.xaml
+C:\Users\kdeding\Desktop\UcwaWinStoreAppIM\UcwaWinStoreAppIM\obj\Debug\MePage..xaml
+C:\Users\kdeding\Desktop\UcwaWinStoreAppIM\UcwaWinStoreAppIM\obj\Debug\CommunicationPage.xbf
+C:\Users\kdeding\Desktop\UcwaWinStoreAppIM\UcwaWinStoreAppIM\obj\Debug\MainPage.xbf
+C:\Users\kdeding\Desktop\UcwaWinStoreAppIM\UcwaWinStoreAppIM\obj\Debug\MePage..xbf
+C:\Users\kdeding\Desktop\UcwaWinStoreAppIM\UcwaWinStoreAppIM\obj\Debug\XamlSaveStateFile.xml
+C:\Users\kdeding\Desktop\UcwaWinStoreAppIM\UcwaWinStoreAppIM\obj\Debug\App.xaml
+C:\Users\kdeding\Desktop\UcwaWinStoreAppIM\UcwaWinStoreAppIM\obj\Debug\App.xbf
+C:\Users\kdeding\Desktop\UcwaWinStoreAppIM\UcwaWinStoreAppIM\obj\Debug\WinStoreUcwaAppIM.exe
+C:\Users\kdeding\Desktop\UcwaWinStoreAppIM\UcwaWinStoreAppIM\obj\Debug\WinStoreUcwaAppIM.pdb
+C:\Users\kdeding\Desktop\UcwaWinStoreAppIM\UcwaWinStoreAppIM\obj\Debug\priconfig.xml
+C:\Users\kdeding\Desktop\UcwaWinStoreAppIM\UcwaWinStoreAppIM\obj\Debug\priconfig.xml.intermediate
+C:\Users\kdeding\Desktop\UcwaWinStoreAppIM\UcwaWinStoreAppIM\obj\Debug\layout.resfiles
+C:\Users\kdeding\Desktop\UcwaWinStoreAppIM\UcwaWinStoreAppIM\obj\Debug\layout.resfiles.intermediate
+C:\Users\kdeding\Desktop\UcwaWinStoreAppIM\UcwaWinStoreAppIM\obj\Debug\resources.resfiles
+C:\Users\kdeding\Desktop\UcwaWinStoreAppIM\UcwaWinStoreAppIM\obj\Debug\resources.resfiles.intermediate
+C:\Users\kdeding\Desktop\UcwaWinStoreAppIM\UcwaWinStoreAppIM\obj\Debug\pri.resfiles
+C:\Users\kdeding\Desktop\UcwaWinStoreAppIM\UcwaWinStoreAppIM\obj\Debug\pri.resfiles.intermediate
+C:\Users\kdeding\Desktop\UcwaWinStoreAppIM\UcwaWinStoreAppIM\obj\Debug\qualifiers.txt
+C:\Users\kdeding\Desktop\UcwaWinStoreAppIM\UcwaWinStoreAppIM\obj\Debug\qualifiers.txt.intermediate
+C:\Users\kdeding\Desktop\UcwaWinStoreAppIM\UcwaWinStoreAppIM\obj\Debug\MultipleQualifiersPerDimensionFound.txt
+C:\Users\kdeding\Desktop\UcwaWinStoreAppIM\UcwaWinStoreAppIM\obj\Debug\ProjectArchitectures.txt
+C:\Users\kdeding\SkyDrivePro\SkyDrive @ Microsoft\UCWA\Apps\ToCodeGallery\UcwaWinStoreAppIM\UcwaWinStoreAppIM\bin\Debug\App.xbf
+C:\Users\kdeding\SkyDrivePro\SkyDrive @ Microsoft\UCWA\Apps\ToCodeGallery\UcwaWinStoreAppIM\UcwaWinStoreAppIM\bin\Debug\CommunicationPage.xbf
+C:\Users\kdeding\SkyDrivePro\SkyDrive @ Microsoft\UCWA\Apps\ToCodeGallery\UcwaWinStoreAppIM\UcwaWinStoreAppIM\bin\Debug\MainPage.xbf
+C:\Users\kdeding\SkyDrivePro\SkyDrive @ Microsoft\UCWA\Apps\ToCodeGallery\UcwaWinStoreAppIM\UcwaWinStoreAppIM\bin\Debug\MePage..xbf
+C:\Users\kdeding\SkyDrivePro\SkyDrive @ Microsoft\UCWA\Apps\ToCodeGallery\UcwaWinStoreAppIM\UcwaWinStoreAppIM\bin\Debug\WinStoreUcwaAppIM.exe
+C:\Users\kdeding\SkyDrivePro\SkyDrive @ Microsoft\UCWA\Apps\ToCodeGallery\UcwaWinStoreAppIM\UcwaWinStoreAppIM\bin\Debug\WinStoreUcwaAppIM.pdb
+C:\Users\kdeding\SkyDrivePro\SkyDrive @ Microsoft\UCWA\Apps\ToCodeGallery\UcwaWinStoreAppIM\UcwaWinStoreAppIM\bin\Debug\resources.pri
+C:\Users\kdeding\SkyDrivePro\SkyDrive @ Microsoft\UCWA\Apps\ToCodeGallery\UcwaWinStoreAppIM\UcwaWinStoreAppIM\bin\Debug\AppxManifest.xml
+C:\Users\kdeding\SkyDrivePro\SkyDrive @ Microsoft\UCWA\Apps\ToCodeGallery\UcwaWinStoreAppIM\UcwaWinStoreAppIM\bin\Debug\UcwaWinStoreAppIM.build.appxrecipe
+C:\Users\kdeding\SkyDrivePro\SkyDrive @ Microsoft\UCWA\Apps\ToCodeGallery\UcwaWinStoreAppIM\UcwaWinStoreAppIM\obj\Debug\App.g.i.cs
+C:\Users\kdeding\SkyDrivePro\SkyDrive @ Microsoft\UCWA\Apps\ToCodeGallery\UcwaWinStoreAppIM\UcwaWinStoreAppIM\obj\Debug\App.g.cs
+C:\Users\kdeding\SkyDrivePro\SkyDrive @ Microsoft\UCWA\Apps\ToCodeGallery\UcwaWinStoreAppIM\UcwaWinStoreAppIM\obj\Debug\CommunicationPage.g.i.cs
+C:\Users\kdeding\SkyDrivePro\SkyDrive @ Microsoft\UCWA\Apps\ToCodeGallery\UcwaWinStoreAppIM\UcwaWinStoreAppIM\obj\Debug\CommunicationPage.g.cs
+C:\Users\kdeding\SkyDrivePro\SkyDrive @ Microsoft\UCWA\Apps\ToCodeGallery\UcwaWinStoreAppIM\UcwaWinStoreAppIM\obj\Debug\MainPage.g.i.cs
+C:\Users\kdeding\SkyDrivePro\SkyDrive @ Microsoft\UCWA\Apps\ToCodeGallery\UcwaWinStoreAppIM\UcwaWinStoreAppIM\obj\Debug\MainPage.g.cs
+C:\Users\kdeding\SkyDrivePro\SkyDrive @ Microsoft\UCWA\Apps\ToCodeGallery\UcwaWinStoreAppIM\UcwaWinStoreAppIM\obj\Debug\MePage..g.i.cs
+C:\Users\kdeding\SkyDrivePro\SkyDrive @ Microsoft\UCWA\Apps\ToCodeGallery\UcwaWinStoreAppIM\UcwaWinStoreAppIM\obj\Debug\MePage..g.cs
+C:\Users\kdeding\SkyDrivePro\SkyDrive @ Microsoft\UCWA\Apps\ToCodeGallery\UcwaWinStoreAppIM\UcwaWinStoreAppIM\obj\Debug\XamlTypeInfo.g.cs
+C:\Users\kdeding\SkyDrivePro\SkyDrive @ Microsoft\UCWA\Apps\ToCodeGallery\UcwaWinStoreAppIM\UcwaWinStoreAppIM\obj\Debug\App.xaml
+C:\Users\kdeding\SkyDrivePro\SkyDrive @ Microsoft\UCWA\Apps\ToCodeGallery\UcwaWinStoreAppIM\UcwaWinStoreAppIM\obj\Debug\CommunicationPage.xaml
+C:\Users\kdeding\SkyDrivePro\SkyDrive @ Microsoft\UCWA\Apps\ToCodeGallery\UcwaWinStoreAppIM\UcwaWinStoreAppIM\obj\Debug\MainPage.xaml
+C:\Users\kdeding\SkyDrivePro\SkyDrive @ Microsoft\UCWA\Apps\ToCodeGallery\UcwaWinStoreAppIM\UcwaWinStoreAppIM\obj\Debug\MePage..xaml
+C:\Users\kdeding\SkyDrivePro\SkyDrive @ Microsoft\UCWA\Apps\ToCodeGallery\UcwaWinStoreAppIM\UcwaWinStoreAppIM\obj\Debug\App.xbf
+C:\Users\kdeding\SkyDrivePro\SkyDrive @ Microsoft\UCWA\Apps\ToCodeGallery\UcwaWinStoreAppIM\UcwaWinStoreAppIM\obj\Debug\CommunicationPage.xbf
+C:\Users\kdeding\SkyDrivePro\SkyDrive @ Microsoft\UCWA\Apps\ToCodeGallery\UcwaWinStoreAppIM\UcwaWinStoreAppIM\obj\Debug\MainPage.xbf
+C:\Users\kdeding\SkyDrivePro\SkyDrive @ Microsoft\UCWA\Apps\ToCodeGallery\UcwaWinStoreAppIM\UcwaWinStoreAppIM\obj\Debug\MePage..xbf
+C:\Users\kdeding\SkyDrivePro\SkyDrive @ Microsoft\UCWA\Apps\ToCodeGallery\UcwaWinStoreAppIM\UcwaWinStoreAppIM\obj\Debug\XamlSaveStateFile.xml
+C:\Users\kdeding\SkyDrivePro\SkyDrive @ Microsoft\UCWA\Apps\ToCodeGallery\UcwaWinStoreAppIM\UcwaWinStoreAppIM\obj\Debug\WinStoreUcwaAppIM.exe
+C:\Users\kdeding\SkyDrivePro\SkyDrive @ Microsoft\UCWA\Apps\ToCodeGallery\UcwaWinStoreAppIM\UcwaWinStoreAppIM\obj\Debug\WinStoreUcwaAppIM.pdb
+C:\Users\kdeding\SkyDrivePro\SkyDrive @ Microsoft\UCWA\Apps\ToCodeGallery\UcwaWinStoreAppIM\UcwaWinStoreAppIM\obj\Debug\priconfig.xml
+C:\Users\kdeding\SkyDrivePro\SkyDrive @ Microsoft\UCWA\Apps\ToCodeGallery\UcwaWinStoreAppIM\UcwaWinStoreAppIM\obj\Debug\priconfig.xml.intermediate
+C:\Users\kdeding\SkyDrivePro\SkyDrive @ Microsoft\UCWA\Apps\ToCodeGallery\UcwaWinStoreAppIM\UcwaWinStoreAppIM\obj\Debug\layout.resfiles
+C:\Users\kdeding\SkyDrivePro\SkyDrive @ Microsoft\UCWA\Apps\ToCodeGallery\UcwaWinStoreAppIM\UcwaWinStoreAppIM\obj\Debug\layout.resfiles.intermediate
+C:\Users\kdeding\SkyDrivePro\SkyDrive @ Microsoft\UCWA\Apps\ToCodeGallery\UcwaWinStoreAppIM\UcwaWinStoreAppIM\obj\Debug\resources.resfiles
+C:\Users\kdeding\SkyDrivePro\SkyDrive @ Microsoft\UCWA\Apps\ToCodeGallery\UcwaWinStoreAppIM\UcwaWinStoreAppIM\obj\Debug\resources.resfiles.intermediate
+C:\Users\kdeding\SkyDrivePro\SkyDrive @ Microsoft\UCWA\Apps\ToCodeGallery\UcwaWinStoreAppIM\UcwaWinStoreAppIM\obj\Debug\pri.resfiles
+C:\Users\kdeding\SkyDrivePro\SkyDrive @ Microsoft\UCWA\Apps\ToCodeGallery\UcwaWinStoreAppIM\UcwaWinStoreAppIM\obj\Debug\pri.resfiles.intermediate
+C:\Users\kdeding\SkyDrivePro\SkyDrive @ Microsoft\UCWA\Apps\ToCodeGallery\UcwaWinStoreAppIM\UcwaWinStoreAppIM\obj\Debug\qualifiers.txt
+C:\Users\kdeding\SkyDrivePro\SkyDrive @ Microsoft\UCWA\Apps\ToCodeGallery\UcwaWinStoreAppIM\UcwaWinStoreAppIM\obj\Debug\qualifiers.txt.intermediate
+C:\Users\kdeding\SkyDrivePro\SkyDrive @ Microsoft\UCWA\Apps\ToCodeGallery\UcwaWinStoreAppIM\UcwaWinStoreAppIM\obj\Debug\MultipleQualifiersPerDimensionFound.txt
+C:\Users\kdeding\SkyDrivePro\SkyDrive @ Microsoft\UCWA\Apps\ToCodeGallery\UcwaWinStoreAppIM\UcwaWinStoreAppIM\obj\Debug\ProjectArchitectures.txt
