@@ -1,0 +1,66 @@
+﻿@using WeatherReportMvcWeb.Models;
+@{
+    ViewBag.Title = "Weather Report";
+}
+<div class="location">
+    @using (Html.BeginForm("PostLocation", "Weather", FormMethod.Post))
+    {
+        <label>City/Zip</label>
+        <input type="text" name="LocationStr" />
+        <button>Search</button>
+    }
+</div>
+@if (Model == null)
+{
+    <div class="error">
+        We can't find the location you're looking for. Please enter a city or ZIP code within the United States.
+    </div>
+}
+@if (Model != null)
+{
+    <div class="weatherdata">
+        <h2>@Model.Weatherlocationname</h2>
+        <div class="hr"></div>
+        <div class="float-left current-weather">
+            <img class="float-left" src='@string.Format("http://blu.stc.s-msn.com/as/wea3/i/en-us/law/{0}.gif", Model.Skycode)' />
+            <div class="float-left"><span class="curtemp">@Model.Temperature<span>°C</span></span></div>
+            <dl>
+                <dt class="alt">Sky</dt>
+                <dd class="alt">@Model.Skytext</dd>
+                <dt class="alt">Feelslike</dt>
+                <dd class="alt">@Model.Feelslike<span>°</span></dd>
+                <dt>Humidity</dt>
+                <dd>@Model.Humidity<span>%</span></dd>
+                <dt>Wind</dt>
+                <dd>>@Model.Windspeed<span>km/hr</span></dd>
+                <dt class="alt">Date</dt>
+                <dd class="alt">@Model.Date</dd>
+                <dt class="alt">Day</dt>
+                <dd class="alt">@Model.Day</dd>
+            </dl>
+            <ul>
+                <li><strong>Observation point: </strong>@Model.Observationpoint</li>
+                <li><strong>Observation time: </strong>@Model.Observationtime</li>
+            </ul>
+        </div>
+        <div class="float-left forecast-weather">
+            <ol>
+                @foreach (ForecastWeatherdataModel m in Model.Forecast)
+                {
+                    <li>
+                        <img src="@string.Format("http://blu.stc.s-msn.com/as/wea3/i/en-us/saw/{0}.gif", m.Skycodeday)"/>
+                        <div style="width: 90px">
+                            <ul>
+                                <li>@m.ShortDay</li>
+                                <li>@m.High°/@m.Low°</li>
+                                <li>@m.Skytextday</li>
+                            </ul>
+                        </div>
+                        <span class="clear-fix"></span>
+                    </li>
+                }
+            </ol>
+        </div>
+        <div class="clear-fix"></div>
+    </div>
+}

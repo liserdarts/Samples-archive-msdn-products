@@ -1,0 +1,153 @@
+﻿html {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #fff;
+    color: #333;
+    font-size: 11px;
+    font-family: "Segoe UI", Verdana, Helvetica, Sans-Serif;
+    margin: 0;
+    padding: 0;
+    min-width: 500px;
+}
+
+a {
+    color: #333;
+    outline: none;
+    padding-left: 3px;
+    padding-right: 3px;
+    text-decoration: underline;
+}
+
+    a:link, a:visited,
+    a:active, a:hover {
+        color: #333;
+    }
+
+    a:hover {
+        background-color: #c7d1d6;
+    }
+
+    a.selected {
+        background-color: #c7d1d6;
+    }
+
+header, footer, hgroup,
+nav, section {
+    display: block;
+}
+
+ul, ol, li, dl, dt, dd {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+
+mark {
+    background-color: #a6dbed;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+.hr {
+    clear: both;
+    margin: 0 0.5em;
+    border-top: 2px solid #ccebf7;
+}
+
+.float-left {
+    float: left;
+}
+
+.float-right {
+    float: right;
+}
+
+.clear-fix {
+    clear: both;
+    display: block;
+    float: none!important;
+    height: 0;
+    visibility: hidden;
+}
+
+.main-content {
+    padding: 2px;
+}
+
+.location {
+    padding-bottom: 10px;
+}
+
+.weatherdata {
+    border: 1px solid #ddd;
+}
+
+    .weatherdata h2 {
+        margin: 1em;
+    }
+
+    .weatherdata > div {
+        margin: 1em;
+    }
+
+.current-weather {
+    width: 340px;
+}
+
+    .current-weather > dl {
+        clear: both;
+        padding-top: 15px;
+    }
+
+        .current-weather > dl > * {
+            float: left;
+            width: 24%;
+            line-height: 2em;
+        }
+
+        .current-weather > dl > dt {
+            font-weight: bold;
+        }
+
+        .current-weather > dl > .alt {
+            background-color: #f2f2f2;
+        }
+
+    .current-weather > ul {
+        clear: both;
+        padding-top: 15px;
+    }
+
+
+.curtemp {
+    display: block;
+    font-size: 32px;
+    font-weight: bold;
+    padding: 0 15px 0 0;
+}
+
+
+.forecast-weather {
+    width: 150px;
+    background-color: #f2f2f2;
+}
+
+    .forecast-weather > ol > li {
+        border-top: 1px solid #fff;
+        padding: 5px;
+    }
+
+        .forecast-weather > ol > li:first-child {
+            border-top: none;
+        }
+
+        .forecast-weather > ol > li > div {
+            margin-left: 7px;
+        }
+
+        .forecast-weather > ol > li > * {
+            float: left;
+        }

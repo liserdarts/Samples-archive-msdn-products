@@ -1,0 +1,1 @@
+C:\Office 365 Code Samples\18-Weather Report O365 SharePoint App\WeatherReport\bin\Debug\app.publish\1.0.0.0\WeatherReport.app

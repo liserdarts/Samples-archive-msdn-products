@@ -1,0 +1,461 @@
+<html xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:mtps="http://msdn2.microsoft.com/mtps" xmlns:mshelp="http://msdn.microsoft.com/mshelp" xmlns:ddue="http://ddue.schemas.microsoft.com/authoring/2003/5" xmlns:msxsl="urn:schemas-microsoft-com:xslt"><head><META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=UTF-8" /><META NAME="BuildDateTime" CONTENT="2014-06-06 11:12:00" /><META NAME="BuildVersion" CONTENT="1.0.14157.1112" /><META NAME="save" CONTENT="history" /><META NAME="DCSext.Title" CONTENT="SharePoint 2013: Weather Report provider-hosted app for SharePoint" /><title>SharePoint 2013: Weather Report provider-hosted app for SharePoint</title><meta name="Language" content="en-us" /><meta name="Microsoft.Help.Id" content="9f5ddcc2-dfde-46c2-a9a1-8f184775bfa0" /><meta name="Microsoft.Help.ContentType" content="Concepts" /><style type="text/css">
+                        .userDataStyle {
+                        BEHAVIOR: url(#default#userData)
+                        }
+                        DIV.saveHistory {
+                        BEHAVIOR: url(#default#savehistory)
+                        }
+                        IMG.toggle {
+                        BORDER-BOTTOM: 0px; BORDER-LEFT: 0px; BORDER-TOP: 0px; MARGIN-RIGHT: 5px; BORDER-RIGHT: 0px
+                        }
+                        IMG#toggleAllImage {
+                        MARGIN-LEFT: 0px; VERTICAL-ALIGN: middle
+                        }
+                        MSHelp\:link {
+                        COLOR: #0000ff; CURSOR: hand; TEXT-DECORATION: underline; hoverColor: #3366ff
+                        }
+                        MSHelp\:link:visited {
+                        COLOR: #0481da
+                        }
+                        BODY {
+                        FONT-STYLE: normal; MARGIN: 0px; WIDTH: 100%; FONT-FAMILY: Verdana; BACKGROUND: #ffffff; COLOR: #000000; FONT-SIZE: medium; FONT-WEIGHT: normal
+                        }
+                        DL {
+                        MARGIN-TOP: 15px; PADDING-LEFT: 1px; MARGIN-BOTTOM: 5px
+                        }
+                        DL.authored DT {
+                        MARGIN-TOP: 2px
+                        }
+                        DD {
+                        MARGIN-LEFT: 0px
+                        }
+                        UL {
+                        LIST-STYLE-TYPE: disc; MARGIN-TOP: 0px; MARGIN-BOTTOM: 0px; MARGIN-LEFT: 17px
+                        }
+                        UL UL {
+                        LIST-STYLE-TYPE: disc; MARGIN-TOP: 3px; MARGIN-BOTTOM: 4px; MARGIN-LEFT: 17px
+                        }
+                        OL {
+                        LIST-STYLE-TYPE: decimal; MARGIN-TOP: 0px; MARGIN-BOTTOM: 0px; MARGIN-LEFT: 28px
+                        }
+                        OL OL {
+                        LIST-STYLE-TYPE: lower-alpha; MARGIN-TOP: 3px; MARGIN-BOTTOM: 4px; MARGIN-LEFT: 28px
+                        }
+                        OL OL OL {
+                        LIST-STYLE-TYPE: lower-roman; MARGIN-TOP: 3px; MARGIN-BOTTOM: 4px; MARGIN-LEFT: 28px
+                        }
+                        LI {
+                        MARGIN-TOP: 5px; MARGIN-BOTTOM: 5px
+                        }
+                        P {
+                        MARGIN-TOP: 10px; MARGIN-BOTTOM: 5px
+                        }
+                        A:link {
+                        COLOR: #0000ff
+                        }
+                        A:visited {
+                        COLOR: #dd7c3b
+                        }
+                        A:hover {
+                        COLOR: #3366ff
+                        }
+                        CODE {
+                        FONT-FAMILY: Monospace, Courier New, Courier; COLOR: #000066; FONT-SIZE: 105%
+                        }
+                        SPAN.parameter {
+                        FONT-STYLE: italic
+                        }
+                        SPAN.italic {
+                        FONT-STYLE: italic
+                        }
+                        SPAN.selflink {
+                        FONT-WEIGHT: bold
+                        }
+                        SPAN.nolink {
+                        FONT-WEIGHT: bold
+                        }
+                        DIV#mainSection {
+                        WIDTH: 100%; FONT-SIZE: 62.5%
+                        }
+                        HTML &gt; BODY #mainSection {
+                        WIDTH: 100%; FONT-SIZE: 73%
+                        }
+                        DIV#mainBody {
+                        MARGIN-TOP: 10px; MARGIN-LEFT: 15px; FONT-SIZE: 100%
+                        }
+                        HTML &gt; BODY #mainBody {
+                        PADDING-BOTTOM: 20px; MARGIN-TOP: 10px; MARGIN-LEFT: 15px; FONT-SIZE: 93%
+                        }
+                        DIV#mainBody P {
+                        PADDING-RIGHT: 5px
+                        }
+                        DIV#mainBody OL {
+                        PADDING-RIGHT: 5px
+                        }
+                        DIV#mainBody UL {
+                        PADDING-RIGHT: 5px
+                        }
+                        DIV#mainBody DL {
+                        PADDING-RIGHT: 5px
+                        }
+                        DIV#header {
+                        PADDING-BOTTOM: 0px; BACKGROUND-COLOR: #ffffff; PADDING-LEFT: 0px; WIDTH: 100%; PADDING-RIGHT: 0px; PADDING-TOP: 0px
+                        }
+                        DIV#header TABLE {
+                        WIDTH: 100%
+                        }
+                        DIV#header TABLE TD {
+                        MARGIN-TOP: 0px; PADDING-RIGHT: 20px; MARGIN-BOTTOM: 0px; COLOR: #0000ff; FONT-SIZE: 70%
+                        }
+                        DIV#header TABLE TR#headerTableRow2 TD {
+                        PADDING-LEFT: 13px
+                        }
+                        DIV#header TABLE TR#headerTableRow3 TD {
+                        PADDING-LEFT: 15px; PADDING-TOP: 2px
+                        }
+                        DIV#header TABLE#bottomTable {
+                        TEXT-ALIGN: left; PADDING-BOTTOM: 5px; PADDING-LEFT: 15px; BORDER-TOP: #ffffff 1px solid; PADDING-TOP: 5px
+                        }
+                        DIV#mainSection TABLE TD.imageCell {
+                        WHITE-SPACE: nowrap
+                        }
+                        DIV#mainBody DIV.alert {
+                        WIDTH: 98.9%
+                        }
+                        DIV#mainBody DIV.code {
+                        WIDTH: 98.9%
+                        }
+                        DIV#mainBody DIV.tableSection {
+                        WIDTH: 98.9%
+                        }
+                        DIV#mainBody DIV.section DIV.alert {
+                        WIDTH: 100%
+                        }
+                        DIV#mainBody DIV.section DIV.code {
+                        WIDTH: 100%
+                        }
+                        DIV#mainBody DIV.section DIV.tableSection {
+                        WIDTH: 100%
+                        }
+                        DIV#mainBody DIV.section UL DIV.alert {
+                        WIDTH: 100%
+                        }
+                        DIV#mainBody DIV.section UL DIV.code {
+                        WIDTH: 100%
+                        }
+                        DIV#mainBody DIV.section UL DIV.tableSection {
+                        WIDTH: 100%
+                        }
+                        DIV#mainBody DIV.section OL DIV.alert {
+                        WIDTH: 100%
+                        }
+                        DIV#mainBody DIV.section OL DIV.code {
+                        WIDTH: 100%
+                        }
+                        DIV#mainBody DIV.section OL DIV.tableSection {
+                        WIDTH: 100%
+                        }
+                        DIV.alert P {
+                        MARGIN-TOP: 5px; MARGIN-BOTTOM: 8px
+                        }
+                        DIV.code P {
+                        MARGIN-TOP: 5px; MARGIN-BOTTOM: 8px
+                        }
+                        DD P {
+                        MARGIN-TOP: 2px; MARGIN-BOTTOM: 8px
+                        }
+                        DIV.tableSection P {
+                        MARGIN-TOP: 1px; MARGIN-BOTTOM: 4px
+                        }
+                        LI P {
+                        MARGIN-TOP: 2px; MARGIN-BOTTOM: 2px
+                        }
+                        DIV.seeAlsoNoToggleSection DL {
+                        MARGIN-TOP: 8px; PADDING-LEFT: 1px; MARGIN-BOTTOM: 1px
+                        }
+                        DIV.seeAlsoNoToggleSection DD P {
+                        MARGIN-TOP: 2px; MARGIN-BOTTOM: 8px
+                        }
+                        DIV.section DL {
+                        MARGIN-TOP: 8px; PADDING-LEFT: 1px; MARGIN-BOTTOM: 1px
+                        }
+                        DIV.section DD P {
+                        MARGIN-TOP: 2px; MARGIN-BOTTOM: 8px
+                        }
+                        DIV.code TABLE {
+                        BORDER-BOTTOM: 0px; BORDER-LEFT: 0px; MARGIN-TOP: -0.4em; WIDTH: 100%; MARGIN-BOTTOM: 5px; FONT-SIZE: 95%; BORDER-TOP: 0px; BORDER-RIGHT: 0px
+                        }
+                        DIV.code TABLE TH {
+                        BORDER-BOTTOM: #c8cdde 1px solid; PADDING-LEFT: 5px; PADDING-RIGHT: 5px; BACKGROUND: #efeff7; COLOR: #000066; FONT-WEIGHT: bold
+                        }
+                        DIV.code TABLE TD {
+                        PADDING-LEFT: 5px; PADDING-RIGHT: 5px; BACKGROUND: #f7f7ff; BORDER-TOP: #ffffff 1px solid; PADDING-TOP: 5px
+                        }
+                        SPAN#runningHeaderText {
+                        PADDING-LEFT: 13px; COLOR: #8c8c8c; FONT-SIZE: 90%
+                        }
+                        SPAN#nsrTitle {
+                        FONT-FAMILY: arial; COLOR: #000000; FONT-SIZE: 160%; FONT-WEIGHT: 400
+                        }
+                        DIV#footer {
+                        PADDING-BOTTOM: 6px; MARGIN: 0px; PADDING-LEFT: 1px; WIDTH: 100%; PADDING-RIGHT: 1px; FONT-SIZE: 80%; PADDING-TOP: 8px
+                        }
+                        HTML &gt; BODY DIV#footer {
+                        PADDING-BOTTOM: 6px; MARGIN: 0px; PADDING-LEFT: 1px; WIDTH: 98%; PADDING-RIGHT: 1px; FONT-SIZE: 80%; PADDING-TOP: 2px
+                        }
+                        DIV.seeAlsoNoToggleSection {
+                        PADDING-BOTTOM: 2px; PADDING-LEFT: 0px; WIDTH: 100%; PADDING-RIGHT: 15px; MARGIN-LEFT: 0px; PADDING-TOP: 2px
+                        }
+                        DIV.section {
+                        PADDING-BOTTOM: 0px; PADDING-LEFT: 16px; WIDTH: 100%; PADDING-RIGHT: 15px; MARGIN-LEFT: 0px; PADDING-TOP: 0px
+                        }
+                        HTML &gt; BODY DIV.section {
+                        PADDING-BOTTOM: 2px; PADDING-LEFT: 16px; WIDTH: 97%; PADDING-RIGHT: 15px; MARGIN-LEFT: 0px; PADDING-TOP: 2px
+                        }
+                        DIV.seeSection {
+                        PADDING-BOTTOM: 2px; PADDING-LEFT: 16px; WIDTH: 100%; PADDING-RIGHT: 15px; MARGIN-LEFT: 0px; PADDING-TOP: 0px
+                        }
+                        .heading {
+                        MARGIN-TOP: 18px; MARGIN-BOTTOM: 8px; FONT-WEIGHT: bold
+                        }
+                        H1.heading {
+                        COLOR: #003399; FONT-SIZE: 145%
+                        }
+                        .subHeading {
+                        MARGIN-BOTTOM: 4px; FONT-WEIGHT: bold
+                        }
+                        .procedureSubHeading {
+                        MARGIN-BOTTOM: 4px; FONT-WEIGHT: bold
+                        }
+                        H3.subHeading {
+                        COLOR: #003399; FONT-SIZE: 125%; FONT-WEIGHT: 800
+                        }
+                        H3.procedureSubHeading {
+                        COLOR: #003399; FONT-SIZE: 100%
+                        }
+                        H4.subHeading {
+                        FONT-VARIANT: small-caps; COLOR: #003399; FONT-SIZE: 110%; FONT-WEIGHT: 800
+                        }
+                        SPAN.labelheading {
+                        COLOR: #003399; FONT-SIZE: 100%
+                        }
+                        DIV.labelheading {
+                        COLOR: #003399; FONT-SIZE: 100%
+                        }
+                        IMG.copyCodeImage {
+                        BORDER-BOTTOM: 0px; BORDER-LEFT: 0px; MARGIN: 1px 3px 1px 1px; BORDER-TOP: 0px; BORDER-RIGHT: 0px
+                        }
+                        IMG.downloadCodeImage {
+                        BORDER-BOTTOM: 0px; BORDER-LEFT: 0px; BORDER-TOP: 0px; MARGIN-RIGHT: 3px; BORDER-RIGHT: 0px
+                        }
+                        IMG.viewCodeImage {
+                        BORDER-BOTTOM: 0px; BORDER-LEFT: 0px; BORDER-TOP: 0px; MARGIN-RIGHT: 3px; BORDER-RIGHT: 0px
+                        }
+                        IMG.note {
+                        BORDER-BOTTOM: 0px; BORDER-LEFT: 0px; BORDER-TOP: 0px; MARGIN-RIGHT: 3px; BORDER-RIGHT: 0px
+                        }
+                        DIV#mainSection TABLE {
+                        BORDER-BOTTOM: 0px; BORDER-LEFT: 0px; MARGIN-TOP: 5px; WIDTH: 98.9%; MARGIN-BOTTOM: 5px; FONT-SIZE: 100%; BORDER-TOP: 0px; BORDER-RIGHT: 0px
+                        }
+                        DIV#mainSection TABLE TR {
+                        VERTICAL-ALIGN: top
+                        }
+                        DIV#mainSection TABLE TH {
+                        BORDER-BOTTOM: #c8cdde 1px solid; TEXT-ALIGN: left; BORDER-LEFT: #d5d5d3 1px; BACKGROUND-COLOR: #efeff7; PADDING-LEFT: 5px; PADDING-RIGHT: 5px; COLOR: #000066
+                        }
+                        DIV#mainSection TABLE TD {
+                        BORDER-BOTTOM: #d5d5d3 1px solid; BORDER-LEFT: #d5d5d3 1px; BACKGROUND-COLOR: #f7f7ff; PADDING-LEFT: 5px; PADDING-RIGHT: 5px
+                        }
+                        DIV#mainSection TABLE TD.imageCell {
+                        WHITE-SPACE: nowrap
+                        }
+                        DIV.code TABLE {
+                        BORDER-BOTTOM: 0px; BORDER-LEFT: 0px; WIDTH: 100%; MARGIN-BOTTOM: 5px; FONT-SIZE: 95%; BORDER-TOP: 0px; BORDER-RIGHT: 0px
+                        }
+                        DIV.code TABLE TH {
+                        BORDER-BOTTOM: #c8cdde 1px solid; PADDING-LEFT: 5px; PADDING-RIGHT: 5px; BACKGROUND: #efeff7; COLOR: #000066; FONT-WEIGHT: bold
+                        }
+                        DIV.code TABLE TD {
+                        PADDING-LEFT: 5px; PADDING-RIGHT: 5px; BACKGROUND: #f7f7ff; BORDER-TOP: #ffffff 1px solid; PADDING-TOP: 5px
+                        }
+                        DIV.alert TABLE {
+                        BORDER-BOTTOM: 0px; BORDER-LEFT: 0px; WIDTH: 100%; FONT-SIZE: 100%; BORDER-TOP: 0px; BORDER-RIGHT: 0px
+                        }
+                        DIV.alert TABLE TH {
+                        PADDING-LEFT: 5px; PADDING-RIGHT: 5px; BACKGROUND: #efeff7; BORDER-BOTTOM-WIDTH: 0px; COLOR: #000066
+                        }
+                        DIV.alert TABLE TD {
+                        PADDING-LEFT: 5px; PADDING-RIGHT: 5px; BACKGROUND: #f7f7ff; BORDER-TOP: #ffffff 1px solid
+                        }
+                        SPAN.copyCode {
+                        TEXT-ALIGN: right; DISPLAY: inline; FLOAT: right; COLOR: #0000ff; FONT-SIZE: 90%; CURSOR: pointer; FONT-WEIGHT: normal; TEXT-DECORATION: underline
+                        }
+                        SPAN.copyCodeOnHover {
+                        TEXT-ALIGN: right; DISPLAY: inline; FLOAT: right; COLOR: #e85f17; FONT-SIZE: xx-small; CURSOR: pointer; FONT-WEIGHT: normal; TEXT-DECORATION: underline
+                        }
+                        .downloadCode {
+                        COLOR: #0000ff; FONT-SIZE: 90%; CURSOR: pointer; FONT-WEIGHT: normal
+                        }
+                        .viewCode {
+                        COLOR: #0000ff; FONT-SIZE: 90%; CURSOR: pointer; FONT-WEIGHT: normal
+                        }
+                        DIV.code PRE {
+                        FONT-FAMILY: Monospace, Courier New, Courier; WORD-WRAP: break-word; BACKGROUND: #f7f7ff; COLOR: #000066; FONT-SIZE: 105%
+                        }
+                        .tip {
+                        FONT-STYLE: italic; COLOR: #0000ff; CURSOR: pointer; TEXT-DECORATION: underline
+                        }
+                        .math {
+                        FONT-FAMILY: Times New Roman; FONT-SIZE: 125%
+                        }
+                        #devlangsMenu {
+                        BORDER-BOTTOM: #f3cbb5 1px solid; POSITION: absolute; BORDER-LEFT: #f3cbb5 1px solid; PADDING-BOTTOM: 4px; PADDING-LEFT: 4px; PADDING-RIGHT: 8px; BACKGROUND: #fcece4; VISIBILITY: hidden; FONT-SIZE: 70%; BORDER-TOP: #f3cbb5 1px solid; BORDER-RIGHT: #f3cbb5 1px solid; PADDING-TOP: 4px
+                        }
+                        #memberOptionsMenu {
+                        BORDER-BOTTOM: #f3cbb5 1px solid; POSITION: absolute; BORDER-LEFT: #f3cbb5 1px solid; PADDING-BOTTOM: 4px; PADDING-LEFT: 4px; PADDING-RIGHT: 8px; BACKGROUND: #fcece4; VISIBILITY: hidden; FONT-SIZE: 70%; BORDER-TOP: #f3cbb5 1px solid; BORDER-RIGHT: #f3cbb5 1px solid; PADDING-TOP: 4px
+                        }
+                        #memberFrameworksMenu {
+                        BORDER-BOTTOM: #f3cbb5 1px solid; POSITION: absolute; BORDER-LEFT: #f3cbb5 1px solid; PADDING-BOTTOM: 4px; PADDING-LEFT: 4px; PADDING-RIGHT: 8px; BACKGROUND: #fcece4; VISIBILITY: hidden; FONT-SIZE: 70%; BORDER-TOP: #f3cbb5 1px solid; BORDER-RIGHT: #f3cbb5 1px solid; PADDING-TOP: 4px
+                        }
+                        .checkboxLabel {
+                        PADDING-BOTTOM: 4px; COLOR: #0000ff; FONT-SIZE: 90%; CURSOR: pointer; TEXT-DECORATION: underline
+                        }
+                        IMG#devlangsDropdownImage {
+                        BORDER-BOTTOM: 0px; BORDER-LEFT: 0px; MARGIN-LEFT: 0px; VERTICAL-ALIGN: middle; BORDER-TOP: 0px; BORDER-RIGHT: 0px
+                        }
+                        IMG#memberOptionsDropdownImage {
+                        BORDER-BOTTOM: 0px; BORDER-LEFT: 0px; MARGIN-LEFT: 0px; VERTICAL-ALIGN: middle; BORDER-TOP: 0px; BORDER-RIGHT: 0px
+                        }
+                        IMG#memberFrameworksDropdownImage {
+                        BORDER-BOTTOM: 0px; BORDER-LEFT: 0px; MARGIN-LEFT: 0px; VERTICAL-ALIGN: middle; BORDER-TOP: 0px; BORDER-RIGHT: 0px
+                        }
+                        DIV.footerLine {
+                        PADDING-BOTTOM: 6px; MARGIN: 0px; WIDTH: 100%; PADDING-TOP: 8px
+                        }
+                        DIV.hr1 {
+                        PADDING-BOTTOM: 0px; MARGIN: 0px; PADDING-LEFT: 0px; WIDTH: 100%; PADDING-RIGHT: 0px; BACKGROUND: #c8cdde; HEIGHT: 1px; FONT-SIZE: 1px; PADDING-TOP: 0px
+                        }
+                        DIV.hr2 {
+                        PADDING-BOTTOM: 0px; MARGIN: 0px; PADDING-LEFT: 0px; WIDTH: 100%; PADDING-RIGHT: 0px; BACKGROUND: #d4dfff; HEIGHT: 1px; FONT-SIZE: 1px; PADDING-TOP: 0px
+                        }
+                        DIV.hr3 {
+                        PADDING-BOTTOM: 0px; MARGIN: 0px; PADDING-LEFT: 0px; WIDTH: 100%; PADDING-RIGHT: 0px; BACKGROUND: #eeeeff; HEIGHT: 1px; FONT-SIZE: 1px; PADDING-TOP: 0px
+                        }
+                        SPAN.cs {
+                        DISPLAY: none
+                        }
+                        SPAN.vb {
+                        DISPLAY: none
+                        }
+                        SPAN.cpp {
+                        DISPLAY: none
+                        }
+                        SPAN.nu {
+                        DISPLAY: inline
+                        }
+                        SPAN.fs {
+                        DISPLAY: none
+                        }
+                        SPAN.code {
+                        FONT-FAMILY: Monospace, Courier New, Courier; COLOR: #000066; FONT-SIZE: 105%
+                        }
+                        SPAN.ui {
+                        FONT-WEIGHT: bold
+                        }
+                        SPAN.math {
+                        FONT-STYLE: italic
+                        }
+                        SPAN.input {
+                        FONT-WEIGHT: bold
+                        }
+                        SPAN.term {
+                        FONT-STYLE: italic
+                        }
+                        SPAN.label {
+                        FONT-WEIGHT: bold
+                        }
+                        SPAN.foreignPhrase {
+                        FONT-STYLE: italic
+                        }
+                        SPAN.placeholder {
+                        FONT-STYLE: italic
+                        }
+                        SPAN.keyword {
+                        FONT-WEIGHT: bold
+                        }
+                        SPAN.typeparameter {
+                        FONT-STYLE: italic
+                        }
+                        DIV.caption {
+                        COLOR: #003399; FONT-SIZE: 100%; FONT-WEIGHT: bold
+                        }
+                        DIV.code SPAN.identifier {
+
+                        }
+                        DIV.code SPAN.keyword {
+                        COLOR: #871f78
+                        }
+                        DIV.code SPAN.parameter {
+                        FONT-STYLE: italic
+                        }
+                        DIV.code SPAN.literal {
+                        COLOR: #8b0000
+                        }
+                        DIV.code SPAN.comment {
+                        COLOR: #006400
+                        }
+                        SPAN.syntaxLabel {
+                        COLOR: #0481da; FONT-WEIGHT: bold
+                        }
+                        SPAN.introStyle {
+                        COLOR: darkgray
+                        }
+                        DIV.seeAlsoStyle {
+                        PADDING-TOP: 5px
+                        }
+                        TD.nsrBottom {
+                        WIDTH: 100%; HEIGHT: 0.6em
+                        }
+                        SPAN.clsGlossary {
+                        COLOR: #509950; CURSOR: default; FONT-WEIGHT: bold
+                        }
+                        DIV.clsTooltip {
+                        BORDER-BOTTOM: black 1px solid; POSITION: absolute; BORDER-LEFT: black 1px solid; PADDING-BOTTOM: 2px; BACKGROUND-COLOR: #ffffaa; PADDING-LEFT: 2px; PADDING-RIGHT: 2px; DISPLAY: none; FONT-FAMILY: Arial; COLOR: black; FONT-SIZE: 8pt; BORDER-TOP: black 1px solid; BORDER-RIGHT: black 1px solid; PADDING-TOP: 2px; TOP: 0px; LEFT: 0px
+                        }
+                        SPAN.feedbackcss {
+                        WIDTH: 100%; MARGIN-LEFT: 15px; FONT-SIZE: 110%
+                        }
+                        DIV#feedbackarea TABLE {
+                        BORDER-RIGHT-WIDTH: 0px; MARGIN-TOP: 0px; WIDTH: 300px; MARGIN-BOTTOM: 0px; BORDER-TOP-WIDTH: 0px; BORDER-BOTTOM-WIDTH: 0px; MARGIN-LEFT: 0px; BORDER-LEFT-WIDTH: 0px
+                        }
+                        DIV#feedbackarea TABLE TD {
+                        BORDER-BOTTOM: 0px; TEXT-ALIGN: center; FONT-FAMILY: Verdana; FONT-SIZE: 100%
+                        }
+                        DIV#feedbackarea P {
+                        MARGIN: 0px 5px 0px 6px; WIDTH: 100%; FONT-SIZE: 100%
+                        }
+                        DIV#feedbackarea H5 {
+                        MARGIN-TOP: 0px; MARGIN-BOTTOM: 0.7em; MARGIN-LEFT: 6px; FONT-SIZE: 10pt
+                        }
+                        P.feedbackarea {
+                        BACKGROUND-COLOR: #d4dfff; ; WIDTH: expression(document.body.clientWidth-27); FONT-SIZE: 100%
+                        }
+                        INPUT#submitFeedback {
+                        TEXT-ALIGN: center; FONT-SIZE: 100%
+                        }
+                        SPAN#feedbackarea {
+                        WIDTH: 100%
+                        }
+                        DIV#feedbackarea {
+                        WIDTH: 100%
+                        }
+                        SPAN.filterOnHover {
+                        COLOR: #e85f17
+                        }
+                        SPAN.filter {
+                        COLOR: #0000ff
+                        }
+                        A IMG {
+                        BORDER-BOTTOM: 0px; BORDER-LEFT: 0px; BORDER-TOP: 0px; BORDER-RIGHT: 0px
+                        }
+                    </style></head><body><div id="header"><table id="bottomTable" cellpadding="0" cellspacing="0"><tr id="headerTableRow1"><td align="left"><span id="runningHeaderText" /></td></tr><tr id="headerTableRow2"><td align="left"><span id="nsrTitle">SharePoint 2013: Weather Report provider-hosted app for SharePoint</span></td></tr></table></div><div id="mainSection"><div id="mainBody"><div class="summary"><p>Learn how to use the MVC pattern to develop a provider-hosted app for SharePoint.</p></div><div class="introduction"><p><b>Last modified:  </b>June 05, 2014</p><p><b>In this article</b><br /><a href="#O15Readme_Prereq">Prerequisites</a><br /><a href="#sectionSection1">Sample for demonstration purposes only</a><br /><a href="#O15Readme_components">Key components</a><br /><a href="#O15Readme_config">Configure the sample</a><br /><a href="#O15Readme_build">Build and deploy the sample</a><br /><a href="#O15Readme_test">Run and test the sample</a><br /><a href="#O15Readme_Changelog">Change log</a><br /><a href="#O15Readme_RelatedContent">Related content</a><br /></p><p><span class="label">Provided by:</span>&nbsp;&nbsp;Todd Baginski, <a href="http://www.canviz.com" target="_blank">Canviz Consulting </a></p><p>This sample shows how to use the model-view-controller (MVC) pattern to develop a provider-hosted app for SharePoint that uses MSN weather services to get weather forecast data.</p><div class="caption">Figure 1. Weather Report app part</div><br /><img alt="SP15_WeatherReportSample_SharePointApp" src="SP15_WeatherReportSample_SharePointApp.png" /></div><a name="O15Readme_Prereq" /><h2 class="heading">Prerequisites</h2><div id="sectionSection0" class="section" name="collapseableSection" style=""><p>This sample requires the following:</p><ul><li><p>An Office 365 Developer Site</p></li><li><p>Visual Studio 2012 and Office Developer Tools for Visual Studio 2012 installed on your development computer</p></li><li><p>A <a href="https://manage.windowsazure.com" target="_blank">Microsoft Azure account</a> with permissions to deploy a website</p></li><li><p>The Microsoft Azure SDK for .NET installed on your development computer</p></li></ul></div><a name="sectionSection1"></a><h2 class="heading">Sample for demonstration purposes only</h2><div id="sectionSection1" class="section" name="collapseableSection" style=""><p>This sample does not conform to all the best practices that you should use in a production app. Specifically, be aware of the following:</p><ul><li><p>The app has limited exception handling.</p></li><li><p>In a production scenario, the OAuth access token should be saved following established best practices.</p></li></ul></div><a name="O15Readme_components" /><h2 class="heading">Key components</h2><div id="sectionSection2" class="section" name="collapseableSection" style=""><p /><ul><li><p><b>WeatherReport</b> project, containing the AppManifest.xml file, which registers the provider-hosted app for SharePoint.</p></li><li><p><b>WeatherReportMVCWeb</b> project, which contains:</p><ul><li><p><b>Views\Weather\Index.cshtml</b>. Displays weather forecast data.</p></li><li><p><b>Web.config</b>. Stores the client id and client secret.</p></li></ul></li></ul></div><a name="O15Readme_config" /><h2 class="heading">Configure the sample</h2><div id="sectionSection3" class="section" name="collapseableSection" style=""><p>Follow these steps to configure the sample.</p><ol><li><p>Open the <b>WeatherReport.sln</b> file in Visual Studio 2012 and select the <b>WeatherReport</b> project.</p></li><li><p>In the <span class="ui">Properties</span> pane for the project, change the <span class="ui">Site URL</span> property. It is the absolute URL of your SharePoint test site collection on Office 365: https://<span class="placeholder">&lt;my tenant&gt;</span>.sharepoint.com/sites/dev.</p></li></ol></div><a name="O15Readme_build" /><h2 class="heading">Build and deploy the sample</h2><div id="sectionSection4" class="section" name="collapseableSection" style=""><p>Follow these steps to build and deploy the sample.</p><h3 class="procedureSubHeading">To build and deploy the WeatherReportMVCWeb project to Microsoft Azure</h3><div class="subSection"><ol><li><p>Install the missing packages to the solution.</p><ol><li><p>Right-click the <span class="ui">WeatherReport</span> solution in <span class="ui">Solution Explorer</span>, and choose <span class="ui">Manage NuGet package for Solution</span>.</p></li><li><p>Choose the <span class="ui">Restore</span> button (Figure 2).</p><div class="caption">Figure 2. Choosing the Restore button installs the missing NuGet packages</div><br /><img alt="SP15_WeatherReportSample_NUGetRestore" src="SP15_WeatherReportSample_NUGetRestore.png" /></li><li><p>After Visual Studio 2012 finishes installing the missing packages, close the window.</p></li></ol></li><li><p>Create an empty website on <a href="https://manage.windowsazure.com" target="_blank">Microsoft Azure</a>, and download the publishing profile for that site.</p></li><li><p>Register an app at the <span class="ui">/_layouts/15/appregnew.aspx</span> page of your SharePoint test site collection on Office 365: https://<span class="placeholder">&lt;my tenant&gt;</span>.sharepoint.com/sites/dev/_layouts/15/appregnew.aspx. Be sure to fill in the following details:</p><ul><li><p>Generate a client ID and client secret. Save these two fields for later input.</p></li><li><p>Enter the URL of the website that you created on Microsoft Azure for <span class="ui">App Domain</span>.</p></li><li><p>Leave the <span class="ui">Redirect URI</span> field empty.</p></li></ul></li><li><p>Open the <b>Web.config</b> file. In the <span class="keyword">appSettings</span> section, assign values for the following keys:</p><ul><li><p><b>ClientID</b>: The value of the client ID that you created when you registered the app with Office 365.</p></li><li><p><b>ClientSecret</b>: The value of the client secret that you created when you registered the app with Office 365.</p></li></ul></li><li><p>Right-click the <span class="ui">WeatherReportMvcWeb</span> project in <span class="ui">Solution Explorer</span>, and choose <span class="ui"> Publish…</span>.</p></li><li><p>Follow the instructions to import the publishing profile of your Microsoft Azure site, and publish the project to Microsoft Azure.</p></li></ol></div><h3 class="procedureSubHeading">To build and deploy the app for SharePoint</h3><div class="subSection"><ol><li><p>Right-click the <span class="ui">WeatherReport</span> project in <span class="ui">Solution Explorer</span>, and choose <span class="ui">Publish…</span>.</p></li><li><p>For <span class="ui">Which profile do you want to publish</span>, enter <span class="input">WeatherReport</span> to create a publishing profile. Choose <span class="ui">Next</span>.</p></li><li><p>For <span class="ui">Where is your website hosted</span>, enter the location of the Microsoft Azure site where you published the <span class="ui">WeatherReportMVCWeb</span> project.</p></li><li><p>For Client ID, enter the client ID value that you created when you registered the app with Office 365.</p></li><li><p>For Client Secret, enter the client secret value that you created when you registered the app with Office 365.</p></li><li><p>Choose <span class="ui">Next</span>, and then choose <span class="ui">Finish</span>.</p><p>The resulting app package file has an .app extension (<b>WeatherReport.app</b>) and is saved in the <span class="ui">app.publish</span> subfolder of the <span class="ui">bin\Debug</span> folder of the Visual Studio solution.</p></li><li><p>In your browser, navigate to the home page of your Office 365 Developer Site. In the left panel, choose the <span class="ui">Apps in Testing</span> link.</p></li><li><p>Choose <span class="ui">new app to deploy</span>, and follow the instructions to upload the WeatherReport.app package file and deploy it to your Developer Site.</p></li><li><p>Choose <span class="ui">Trust It</span>, and wait for the app to install.</p></li></ol></div></div><a name="O15Readme_test" /><h2 class="heading">Run and test the sample</h2><div id="sectionSection5" class="section" name="collapseableSection" style=""><ol><li><p>In the web browser, navigate to the home page of your Office 365 Developer Site.</p></li><li><p>Edit the page, and add the <span class="ui">Weather Report Client Web Part</span> from the Web Part gallery.</p></li></ol></div><a name="O15Readme_Changelog" /><h2 class="heading">Change log</h2><div id="sectionSection6" class="section" name="collapseableSection" style=""><div class="caption"></div><div class="tableSection"><table width="50%" cellspacing="2" cellpadding="5" frame="lhs"><tr><th><p>Version</p></th><th><p>Date</p></th></tr><tr><td><p>First version</p></td><td><p>June 2013</p></td></tr></table></div></div><a name="O15Readme_RelatedContent" /><h2 class="heading">Related content</h2><div id="sectionSection7" class="section" name="collapseableSection" style=""><ul><li><p><a href="http://msdn.microsoft.com/library/3038dd73-41ee-436f-8c78-ef8e6869bf7b.aspx" target="_blank">How to: Create a basic provider-hosted app for SharePoint</a></p></li><li><p><a href="http://msdn.microsoft.com/en-us/library/fp179933.aspx" target="_blank">Deploying and installing apps for SharePoint: methods and options</a></p></li><li><p><a href="http://www.asp.net/mvc" target="_blank">Getting Started with ASP.NET MVC</a></p></li></ul></div></div></div></body></html>
