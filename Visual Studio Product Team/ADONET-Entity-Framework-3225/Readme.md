@@ -55,7 +55,7 @@
 <p><br>
 <em>&nbsp;&nbsp;</em></p>
 <h1>Screenshot</h1>
-<p><img src="/site/view/file/22514/1/Screenshot.png" alt="" width="904" height="550"></p>
+<p><img src="22514-screenshot.png" alt="" width="904" height="550"></p>
 <p>&nbsp;</p>
 <h1>Sample Code</h1>
 <h1>
