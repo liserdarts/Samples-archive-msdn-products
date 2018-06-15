@@ -35,8 +35,8 @@ How to: Install and Troubleshoot Database Components for Samples</a>.</p>
 <h4>UserInterface</h4>
 <p>This project is a user interface implemented in WPF. The entry point for the application is in the code behind file for ProductList.xaml.</p>
 <h1>Screenshots</h1>
-<p><img src="/site/view/file/22534/1/Screenshot.png" alt="" width="640" height="480"></p>
-<p><img src="/site/view/file/22535/1/Screenshot2.png" alt="" width="330" height="352"></p>
+<p><img src="22534-screenshot.png" alt="" width="640" height="480"></p>
+<p><img src="22535-screenshot2.png" alt="" width="330" height="352"></p>
 <h1>Sample Code</h1>
 <div class="scriptcode">
 <div class="pluginEditHolder" pluginCommand="mceScriptCode">
