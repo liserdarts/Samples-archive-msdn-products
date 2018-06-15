@@ -27,7 +27,7 @@ There is a sample for C&#43;&#43;, C#, and Visual Basic.<br>
 <br>
 </p>
 <h3>Screenshot:</h3>
-<h3><img src="http://i4.code.msdn.microsoft.com/referencepackage-268184ad/image/file/18584/1/package.jpg" alt="" width="843" height="540"></h3>
+<h3><img src="18584-package.jpg" alt="" width="843" height="540"></h3>
 <h3>Requirements:</h3>
 <ul>
 <li>Visual Studio 2010 </li><li>Visual Studio 2010 SDK </li></ul>
