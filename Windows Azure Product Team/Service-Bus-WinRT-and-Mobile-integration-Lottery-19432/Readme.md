@@ -28,7 +28,7 @@
 </span><span style="font-size:small">Insert script of the Prizes table inside Mobile Services. Client uses the
 </span><span style="font-size:small">Mobile Services Messaging SDK to start a receiving loop as soon as the app is
 </span><span style="font-size:small">started.</span></p>
-<h1>&nbsp;<img id="70352" src="http://i1.code.msdn.s-msft.com/windowsazure/service-bus-winrt-and-b31312a2/image/file/70352/1/sbzumo.png" alt="" width="727" height="499"><span>Building the Sample</span></h1>
+<h1>&nbsp;<img id="70352" src="70352-sbzumo.png" alt="" width="727" height="499"><span>Building the Sample</span></h1>
 <p><span style="font-size:small">If you haven&rsquo;t </span><span style="font-size:small">already, we strongly recommend you look at the
 <a href="https://www.windowsazure.com/en-us/develop/net/how-to-guides/service-bus-queues/">
 Service Bus Queues tutorial</a> to understand the Service Bus feature we will be using
@@ -63,7 +63,7 @@ for the Free Trial</a></span> </li><li><span style="font-size:small"><a href="ht
 </li><li><span style="font-size:small">Open the solution (.sln</span><span style="font-size:small"> file) inside the zip with Visual Studio 2012 (make sure you have first&nbsp;</span><span style="font-size:small">extracted the zip file).</span>
 </li><li><span style="font-size:small">Configure your client app to point at your new</span><span style="font-size:small"> mobile service endpoint. Inside the Window Azure management portal,
 </span><span style="font-size:small">navigate to the Quick Start in your application:<br>
-</span><img id="70301" src="/windowsazure/site/view/file/70301/1/mobile.png" alt="" width="405" height="372">
+</span><img id="70301" src="70301-mobile.png" alt="" width="405" height="372">
 </li><li><span style="font-size:small">Click &ldquo;Connect an existing Windows 8 application&rdquo;&nbsp;</span><span style="font-size:small">and copy the url and application key from the code sample. Open App.xaml.cs&nbsp;</span><span style="font-size:small">and
  paste the url and key into the appropriate fields.</span> </li><li><span style="font-size:small">Open MainPage.xaml.cs Replace the following&nbsp;</span><span style="font-size:small">placeholders:</span>
 <ul>
