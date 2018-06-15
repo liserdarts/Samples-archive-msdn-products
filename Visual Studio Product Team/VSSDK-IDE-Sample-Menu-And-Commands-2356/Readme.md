@@ -58,7 +58,7 @@ The last section, the key binding section, allows associations between commands 
 </li></ul>
 <p>&nbsp;</p>
 <h3>Screenshot</h3>
-<h3><img src="http://i1.code.msdn.microsoft.com/vssdk-ide-sample-menu-and-6165af30/image/file/18576/1/menuandcommands.png" alt="" width="752" height="602"></h3>
+<h3><img src="18576-menuandcommands.png" alt="" width="752" height="602"></h3>
 <h3>Additional Resources</h3>
 <p>&nbsp;</p>
 <h4>Unit Tests:</h4>
