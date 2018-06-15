@@ -88,7 +88,7 @@ be used.<br>
 <br>
 </p>
 <h3>Screenshot:</h3>
-<h3><img src="http://i4.code.msdn.microsoft.com/referenceservices-sample-d9b0acce/image/file/18580/1/services.jpg" alt="" width="821" height="610"></h3>
+<h3><img src="18580-services.jpg" alt="" width="821" height="610"></h3>
 <h3>Requirements:</h3>
 <ul>
 <li>Visual Studio 2010 </li><li>Visual Studio 2010 SDK </li></ul>
