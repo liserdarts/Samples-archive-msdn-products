@@ -35,5 +35,5 @@ The ProvideProfile attribute is used to provide persistence for the package. The
 </li></ol>
 <p>&nbsp;</p>
 <h3>Screenshot</h3>
-<p><img src="file://tg-server-hp/PartnerDrops/VSSDKSamples/2013/VSSDK_IDE_Sample_Options_Page/description/Example.OptionsPage.jpg" alt=""></p>
-<p><img id="115706" src="/vstudio/site/view/file/115706/1/Example.OptionsPages.png" alt="" width="1212" height="897"></p>
+<p><img src="-example.optionspage.jpg" alt=""></p>
+<p><img id="115706" src="115706-example.optionspages.png" alt="" width="1212" height="897"></p>
