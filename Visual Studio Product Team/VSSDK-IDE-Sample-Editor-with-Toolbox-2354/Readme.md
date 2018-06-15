@@ -49,7 +49,7 @@ File</strong>. </li><li>In the <strong>Categories</strong> box, select <strong>T
 <p><br>
 &nbsp;</p>
 <h3>Screenshot</h3>
-<h3>&nbsp;<img src="/VSSDK-IDE-Sample-Editor-685aa6d9/image/file/18571/1/Example.EditorWithToolbox.jpg" alt="" width="784" height="606"></h3>
+<h3>&nbsp;<img src="18571-example.editorwithtoolbox.jpg" alt="" width="784" height="606"></h3>
 <h3>&nbsp;</h3>
 <h3>Additional Resources</h3>
 <p>&nbsp;</p>
