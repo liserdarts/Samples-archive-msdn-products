@@ -39,11 +39,11 @@ talked about universal Windows apps</a>, which enable developers to more easily 
 </li><li>
 <p>Select <strong>Menu Command</strong> on the Visual Studio Package Wizard <strong>
 Select VSPackage Options</strong> page.</p>
-<p><img alt="Select VSPackage Options" id="112835" src="/site/view/file/112835/1/01.png" width="400"></p>
+<p><img alt="Select VSPackage Options" id="112835" src="112835-01.png" width="400"></p>
 </li><li>
 <p>Start debugging (F5). A second instance of Visual Studio comes up. This instance is known as the experimental instance. In the experimental instance, you should see a new menu item
 <strong>My Command name</strong> on the <strong>Tools</strong> menu.</p>
-<p><img alt="My Command name" id="112836" src="/site/view/file/112836/1/02.jpg" width="400"></p>
+<p><img alt="My Command name" id="112836" src="112836-02.jpg" width="400"></p>
 </li><li>Create a C# Universal Project in the experimental instance. There are 3 projects in the Solution Explorer. HubApp.Windows and HubApp.WindowsPhone are the platform projects, and HubApp.Shared is the project that is shared between the Windows Store app and
  the Windows Phone app. </li><li>Stop debugging. The experimental instance disappears. </li></ul>
 <h2>Navigate the shared project</h2>
