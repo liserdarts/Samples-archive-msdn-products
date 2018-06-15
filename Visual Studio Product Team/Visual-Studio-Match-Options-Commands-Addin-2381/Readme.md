@@ -22,7 +22,7 @@ This is behavior that existed in prior versions of Visual Studio, but was remove
 A version that works with Visual Studio 2010 is <a class="externalLink" href="http://visualstudiogallery.msdn.microsoft.com/en-us/2b40d661-4e55-4716-a383-368d86dad674">
 available on the Visual Studio Gallery</a>. <br>
 <br>
-<img src="http://archive.msdn.microsoft.com/Project/Download/FileDownload.aspx?ProjectName=vsmatchoptions&DownloadId=1297" alt="Screenshot.png"><br>
+<img src="-filedownload.aspx?projectname=vsmatchoptions&downloadid=1297" alt="Screenshot.png"><br>
 <br>
 </p>
 <div class="Description" id="ctl00_ctl00_Content_TabContentPanel_Content_ReleaseDescriptionPanel">
