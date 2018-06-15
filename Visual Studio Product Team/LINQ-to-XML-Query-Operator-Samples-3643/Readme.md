@@ -26,7 +26,7 @@
 <li>Open Program.cs </li><li>Uncomment the line for the sample that you want to run; comment ones you don't want to run
 </li><li>Press Ctrl &#43; F5 </li></ol>
 <h1>Screenshot</h1>
-<p><img src="/site/view/file/23930/1/Screenshot.png" alt="" width="677" height="294"></p>
+<p><img src="23930-screenshot.png" alt="" width="677" height="294"></p>
 <h1>Sample Code<em><br>
 </em></h1>
 <div class="scriptcode">
