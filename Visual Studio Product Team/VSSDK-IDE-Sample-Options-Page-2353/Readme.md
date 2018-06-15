@@ -36,7 +36,7 @@ The ProvideProfile attribute is used to provide persistence for the package. The
 </li></ol>
 <p>&nbsp;</p>
 <h3>Screenshot</h3>
-<p><img src="/site/view/file/18565/1/Example.OptionsPage.jpg" alt="" width="600px"></p>
+<p><img src="18565-example.optionspage.jpg" alt="" width="600px"></p>
 <h3>Additional Resources</h3>
 <p>&nbsp;</p>
 <h4>Unit Tests:</h4>
