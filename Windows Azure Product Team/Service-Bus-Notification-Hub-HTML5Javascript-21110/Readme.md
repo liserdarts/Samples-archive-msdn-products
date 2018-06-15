@@ -32,7 +32,7 @@
 <p>This is sample is a simple Windows Store app written in HTML5 and Javascript that registers to a Notification Hub. Follow the instructions below to push native notifications to the sample app and to learn how to use this code in your own HTML5&#43;Javascript
  app.</p>
 <p><strong>Disclaimer</strong>: This sample&nbsp;is *not* the official WinJS SDK for Notification Hubs, which will be available soon,&nbsp;and its use comes with no guarantees.</p>
-<p><img id="77073" src="http://i1.code.msdn.s-msft.com/windowsazure/service-bus-notification-3bfcd161/image/file/77073/1/winjssample.png" alt="" width="640" height="350"></p>
+<p><img id="77073" src="77073-winjssample.png" alt="" width="640" height="350"></p>
 <h1>Building the sample</h1>
 <p>Developers already familiar with Service Bus Notification Hubs can skip to the next section that explains how to use this sample in your own application.</p>
 <p>Make sure you have the following prerequisites:</p>
@@ -48,22 +48,22 @@
 <li>Open the sample solution &lsquo;NotificationHubWinJSApp&rsquo; </li><li>Open the context menu on the project node (i.e. right-click) and find the <em>
 Store </em>submenu; after you select <em>Associate App with the Store</em>, a wizard window will pop up and guide you through associating this project with a Windows Store app registration. After the Sign-In step that requires a Windows Store developer account,
  you&rsquo;ll land at a page that shows your existing apps. Select the one you want to associate with the Notification Hub HTML5 and Javascript sample app. (Follow the link to the Windows Store developer dashboard if you have no registered Windows Store app).<br>
-<img id="77075" src="http://i1.code.msdn.s-msft.com/windowsazure/service-bus-notification-3bfcd161/image/file/77075/1/winjssample1.png" alt="" width="550" height="409">
+<img id="77075" src="77075-winjssample1.png" alt="" width="550" height="409">
 </li></ol>
 <p><strong>Create and configure a Service Bus Notification Hub</strong></p>
 <ol>
-<li>In the Windows Store developer dashboard, select your app. </li><li>Skip to the <em>Advanced Features</em> step. </li><li><img id="77076" src="http://i1.code.msdn.s-msft.com/windowsazure/service-bus-notification-3bfcd161/image/file/77076/1/winjssample2.png" alt="" width="546" height="306">
+<li>In the Windows Store developer dashboard, select your app. </li><li>Skip to the <em>Advanced Features</em> step. </li><li><img id="77076" src="77076-winjssample2.png" alt="" width="546" height="306">
 </li><li>Click that step and then follow the link to <em>Push notifications and Live Connect services<br>
-info</em>, which lands you here: </li><li><img id="77078" src="http://i1.code.msdn.s-msft.com/windowsazure/service-bus-notification-3bfcd161/image/file/77078/1/winjssample3.png" alt="" width="542" height="306">
+info</em>, which lands you here: </li><li><img id="77078" src="77078-winjssample3.png" alt="" width="542" height="306">
 </li><li>In the push notifications section, click <em>Authenticating your service</em>. On the following page you will find two important pieces of information, which you will need to make a note of as you will need them shortly: The
 <em>Package Security Identifier (SID)</em> and the <em>Client secret</em>. </li><li>Go to the Windows Azure management portal (<a href="https://manage.windowsazure.com/">https://manage.windowsazure.com/</a>)
 </li><li>Click <em>NEW </em>in the bottom-left corner of the page </li><li>Navigate to <em>App Services &gt; Service Bus Notification Hub &gt; Quick Create</em> and select a name for the Notification Hub, a geographic region indicating the datacenter, and the Service Bus namespace in which the Notification Hub will be created.
  If there are no namespaces available, a new one with the desired name will be<br>
-provisioned. </li><li><img id="77079" src="http://i1.code.msdn.s-msft.com/windowsazure/service-bus-notification-3bfcd161/image/file/77079/1/winjssample4.png" alt="" width="550" height="381">
+provisioned. </li><li><img id="77079" src="77079-winjssample4.png" alt="" width="550" height="381">
 </li><li>To create the Notification Hub, click the check mark. Now, after selecting the Service Bus tab on the left navigation pane, click on the newly created (or reused) namespace. The new Notification Hub will<br>
-appear in the list. </li><li><img id="77080" src="http://i1.code.msdn.s-msft.com/windowsazure/service-bus-notification-3bfcd161/image/file/77080/1/winjssample5.png" alt="" width="547" height="357">
+appear in the list. </li><li><img id="77080" src="77080-winjssample5.png" alt="" width="547" height="357">
 </li><li>Click on the Notification Hub, which gets you to the Notification Hub&rsquo;s overview page and then click on the
-<em>Configure</em> tab on the top. </li><li><img id="77081" src="http://i1.code.msdn.s-msft.com/windowsazure/service-bus-notification-3bfcd161/image/file/77081/1/winjssample6.png" alt="" width="544" height="384">
+<em>Configure</em> tab on the top. </li><li><img id="77081" src="77081-winjssample6.png" alt="" width="544" height="384">
 </li><li>Here, you insert the Package SID and Client Secret you took a note of navigating the Windows Store portal a minute ago; once you&rsquo;re done, click Save in the bottom toolbar.
 </li><li>Click the <em>View SAS Key</em> button on the bottom. Take a note of these two key values, which are used to gain access to the Notification Hub at runtime. You will need these keys as we complete the scenario.
 </li></ol>
