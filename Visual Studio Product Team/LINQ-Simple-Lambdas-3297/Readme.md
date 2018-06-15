@@ -50,7 +50,7 @@
 <p>The samples are named <span class="code">Sample1()</span>, <span class="code">
 Sample2()</span>, and so forth, up to <span class="code">Sample10()</span>.</p>
 <h1>Screenshot</h1>
-<p><img src="/site/view/file/22793/1/Screenshot.png" alt="" width="341" height="227"></p>
+<p><img src="22793-screenshot.png" alt="" width="341" height="227"></p>
 <h1>Sample Code</h1>
 <p></p>
 <div class="scriptcode">
