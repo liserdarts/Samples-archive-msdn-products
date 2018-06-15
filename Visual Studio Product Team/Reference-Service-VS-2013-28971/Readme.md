@@ -88,7 +88,7 @@ be used.<br>
 <br>
 </p>
 <h3>Screenshot:</h3>
-<h3><img id="115678" src="/vstudio/site/view/file/115678/1/Services.jpg" alt="" width="1211" height="800"></h3>
+<h3><img id="115678" src="115678-services.jpg" alt="" width="1211" height="800"></h3>
 <h3>Requirements:</h3>
 <ul>
 <li>Visual Studio 2013 </li><li>Visual Studio 2013 SDK </li></ul>
