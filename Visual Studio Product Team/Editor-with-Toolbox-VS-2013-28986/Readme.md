@@ -45,4 +45,4 @@ File</strong>. </li><li>Choose to create a new <strong>Text File</strong> type, 
 </li></ol>
 <p>&nbsp;</p>
 <h3>Screenshot</h3>
-<h3>&nbsp;<img id="115736" src="/vstudio/site/view/file/115736/1/Example.EditorWithToolbox.jpg" alt="" width="1985" height="1253"></h3>
+<h3>&nbsp;<img id="115736" src="115736-example.editorwithtoolbox.jpg" alt="" width="1985" height="1253"></h3>
