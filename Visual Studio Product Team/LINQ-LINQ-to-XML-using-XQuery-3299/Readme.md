@@ -24,7 +24,7 @@
 <h1>Description</h1>
 <p>This sample demonstrates the code that is required to write a LINQ to XML query. A directory named data is included in this sample. The XML file that is queried is included in that directory.</p>
 <h1>Screenshot</h1>
-<p><img src="/site/view/file/22799/1/Screenshot.png" alt="" width="677" height="462"></p>
+<p><img src="22799-screenshot.png" alt="" width="677" height="462"></p>
 <h1>Sample Code</h1>
 <p></p>
 <div class="scriptcode">
