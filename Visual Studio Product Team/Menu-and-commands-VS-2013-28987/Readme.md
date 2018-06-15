@@ -55,5 +55,5 @@ The last section, the key binding section, allows associations between commands 
 </li></ul>
 <p>&nbsp;</p>
 <h3>Screenshot</h3>
-<h3><img src="file://tg-server-hp/PartnerDrops/VSSDKSamples/2013/VSSDK_IDE_Sample_Menu_And_Commands/description/menuandcommands.png" alt=""></h3>
-<p><img id="115741" src="/vstudio/site/view/file/115741/1/Exammple.MenuAndCommands.png" alt="" width="1213" height="898"></p>
+<h3><img src="-menuandcommands.png" alt=""></h3>
+<p><img id="115741" src="115741-exammple.menuandcommands.png" alt="" width="1213" height="898"></p>
