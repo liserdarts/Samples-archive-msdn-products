@@ -28,7 +28,7 @@
 <ul>
 <li>Get the outer XML of a node </li><li>Get the inner text of a node </li><li>Check if an element has attributes </li><li>Check if an element has element children </li><li>Check if an element is empty </li><li>Get the name of an element </li><li>Get the name of an attribute </li><li>Get the XML declaration </li><li>Find the type of the node </li><li>Verify that the phone numbers are of the format xxx-xxx-xxxx </li><li>Validate file structure </li><li>Calculate sum, average, min, and max of freight of all orders </li></ul>
 <h1>Screenshot</h1>
-<p><img src="/site/view/file/23923/1/Screenshot.png" alt="" width="677" height="102"></p>
+<p><img src="23923-screenshot.png" alt="" width="677" height="102"></p>
 <h1>Sample Code</h1>
 <div class="scriptcode">
 <div class="pluginEditHolder" pluginCommand="mceScriptCode">
