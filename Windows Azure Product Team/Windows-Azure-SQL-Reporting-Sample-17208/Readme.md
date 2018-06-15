@@ -84,16 +84,16 @@ report server.</span></div>
 </span></p>
 <ol>
 <li><span style="color:black; line-height:115%; font-family:&quot;Verdana&quot;,&quot;sans-serif&quot;; font-size:10pt">Once you launch the application, you will see all the report items listed along with the path of the report item, and the type of report item.</span>
-</li><li><span style="color:black; line-height:115%; font-family:&quot;Verdana&quot;,&quot;sans-serif&quot;; font-size:10pt"><img id="59527" src="http://i1.code.msdn.s-msft.com/windowsazure/windows-azure-sql-f1caed47/image/file/59527/1/permissions.png" alt="" width="600" height="201"></span>
+</li><li><span style="color:black; line-height:115%; font-family:&quot;Verdana&quot;,&quot;sans-serif&quot;; font-size:10pt"><img id="59527" src="59527-permissions.png" alt="" width="600" height="201"></span>
 </li><li><span style="color:black; line-height:115%; font-family:&quot;Verdana&quot;,&quot;sans-serif&quot;; font-size:10pt"><span style="color:black; line-height:115%; font-family:&quot;Verdana&quot;,&quot;sans-serif&quot;; font-size:10pt">Select the report item for which you want to modify permissions.
  You can modify permissions of any report item by clicking on Permissions button.</span></span>
-</li><li><img id="59528" src="http://i1.code.msdn.s-msft.com/windowsazure/windows-azure-sql-f1caed47/image/file/59528/1/sample.png" alt="" width="444" height="300">
+</li><li><img id="59528" src="59528-sample.png" alt="" width="444" height="300">
 </li><li><span style="color:black; line-height:115%; font-family:&quot;Verdana&quot;,&quot;sans-serif&quot;; font-size:10pt"><span style="color:black; line-height:115%; font-family:&quot;Verdana&quot;,&quot;sans-serif&quot;; font-size:10pt">The
 <strong>Manage Permissions</strong> dialog is launched.</span></span> </li><li><span style="color:black; line-height:115%; font-family:&quot;Verdana&quot;,&quot;sans-serif&quot;; font-size:10pt"><span style="color:black; line-height:115%; font-family:&quot;Verdana&quot;,&quot;sans-serif&quot;; font-size:10pt">Click
 <strong>Edit</strong> button corresponding to the user for whom you want to edit permissions.</span></span>
 </li><li><span style="color:black; line-height:115%; font-family:&quot;Verdana&quot;,&quot;sans-serif&quot;; font-size:10pt"><span style="color:black; line-height:115%; font-family:&quot;Verdana&quot;,&quot;sans-serif&quot;; font-size:10pt">Select/Unselect the checkboxes for the corresponding roles that
  are displayed. Click <strong>Update</strong> button to update the permissions.</span></span>
-</li><li><img id="59526" src="http://i1.code.msdn.s-msft.com/windowsazure/windows-azure-sql-f1caed47/image/file/59526/1/editperm.png" alt="" width="624" height="101">
+</li><li><img id="59526" src="59526-editperm.png" alt="" width="624" height="101">
 </li><li><span style="color:black; line-height:115%; font-family:&quot;Verdana&quot;,&quot;sans-serif&quot;; font-size:10pt"><span style="color:black; line-height:115%; font-family:&quot;Verdana&quot;,&quot;sans-serif&quot;; font-size:10pt">Click S<strong>ave</strong> button to update the permissions.</span></span>
 </li></ol>
 <p>&nbsp;</p>
