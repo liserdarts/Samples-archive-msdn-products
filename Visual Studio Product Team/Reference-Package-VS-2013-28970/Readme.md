@@ -27,7 +27,7 @@ There is a sample for C&#43;&#43;, C#, and Visual Basic.<br>
 <br>
 </p>
 <h3>Screenshot:</h3>
-<h3><img id="115671" src="/vstudio/site/view/file/115671/1/Package.jpg" alt="" width="1423" height="900"></h3>
+<h3><img id="115671" src="115671-package.jpg" alt="" width="1423" height="900"></h3>
 <h3>Requirements:</h3>
 <ul>
 <li>Visual Studio 2013 </li><li>Visual Studio 2013 SDK </li></ul>
