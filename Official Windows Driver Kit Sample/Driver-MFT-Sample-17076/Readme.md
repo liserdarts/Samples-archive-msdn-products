@@ -103,7 +103,7 @@ HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\DeviceClasses\</strong>.
 </li><li>In Registry Editor, under the <strong>GLOBAL#\Device Parameters</strong> key, add a
 <strong>CameraPostProcessingPluginCLSID</strong> value, and set its value to <strong>
 {7BB640D9-33A4-4759-B290-F41A31DCF848}</strong>. This is the CLSID of the Driver MFT defined in the SampleMFT0 project.
-<p><img src="/windowshardware/site/view/file/112254/1/image.png" alt="" align="middle"></p>
+<p><img src="112254-image.png" alt="" align="middle"></p>
 </li></ul>
 </li></ol>
 <h2>Run the sample</h2>
@@ -122,7 +122,7 @@ Camera Capture UI sample</a>. </li><li>When the Camera Capture UI is displayed, 
 <strong>Effect On/Off</strong> and <strong>Effect</strong> controls.. </li><li>If the Driver MFT is installed, the bottom half of the video preview will be green. Modify the effect by adjusting the
 <strong>Effect On/Off</strong> and <strong>Effect</strong> switches in the <strong>
 More options</strong> flyout.
-<p><img src="/windowshardware/site/view/file/112255/1/image.png" alt="" align="middle"></p>
+<p><img src="112255-image.png" alt="" align="middle"></p>
 </li></ul>
 </li></ol>
 <h2><a id="Troubleshooting"></a><a id="troubleshooting"></a><a id="TROUBLESHOOTING"></a>Troubleshooting</h2>
@@ -139,7 +139,7 @@ Camera Capture UI sample</a> to test. </li><li>If you have an internal camera (r
  ACPI tables. </li><li>If you have an internal camera, after installing the <a href="http://go.microsoft.com/fwlink/p/?linkid=249441">
 Device app for camera sample</a>, refresh the PC using the <strong>Devices and Printers</strong> folder. Select the PC in the folder, and click the Refresh button. The camera itself should not be visible in the
 <strong>Devices and Printers</strong> folder. This is because internal cameras are enumerated as part of the PC device container.
-<p><img src="/windowshardware/site/view/file/112256/1/image.png" alt="" align="middle"></p>
+<p><img src="112256-image.png" alt="" align="middle"></p>
 </li></ul>
 <p>If the green box in the bottom half of the video preview doesn't appear, check the following:</p>
 <ul>
