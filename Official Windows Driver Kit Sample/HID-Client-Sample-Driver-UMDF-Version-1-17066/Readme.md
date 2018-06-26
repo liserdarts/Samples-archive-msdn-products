@@ -46,7 +46,7 @@
 <b>hidusbfx2.sys</b> ). The function driver is a minimal WDM driver and you can reuse it without any modification. Remember to rename the driver binary when you reuse it, to avoid a name conflict. You need to modify the KMDF filter driver according to your
  device's requirements.</p>
 <p>The following illustration depicts the complete driver stack for these samples.</p>
-<img src="/windowshardware/site/view/file/111957/1/image.png" alt="" align="middle">
+<img src="111957-image.png" alt="" align="middle">
 <p><b>Mapping a non-HID USB device to HID</b> </p>
 <p>When the HIDclass driver queries the minidriver, the minidriver returns a hard-coded report descriptor that enables the HID class driver to create child devices as described by the report descriptor. The report descriptor has one top-level application collection:
  vendor-defined.</p>
