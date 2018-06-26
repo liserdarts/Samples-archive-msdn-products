@@ -166,7 +166,7 @@ Devices by type</b>. In the device tree, locate <b>Microsoft Fake Modem User-Mod
 </p>
 <p>To install the driver, you must specify the driver install package. Visual Studio builds the package and then deploys it to the target computer, where it's stored under C:\DriverTest\Driver. For the Fake Modem device, its INF specifies the device class as
  Modem and Modem.sys as the function driver. The INF also specifies the Reflector driver (Wudfrd.sys) as a lower device filter driver. The kernel mode device stack is as follows:</p>
-<p><img src="/windowshardware/site/view/file/112060/1/image.png" alt="" align="middle">
+<p><img src="112060-image.png" alt="" align="middle">
 </p>
 <p>In the user-mode stack, FakeModem.dll is loaded as the device driver. When an application that wants to communicate with the device initiates requests, the I/O Manager creates the neccassary IRP and passes it to the reflector. The reflector reroutes the
  request back to device driver in user mode. That driver either handles the request or sends it to the kernel-mode driver, Modem.sys.
