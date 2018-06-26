@@ -87,7 +87,7 @@ WDK&nbsp;8 samples pack</a>. The samples in the WDK&nbsp;8 samples pack will bui
 <p>The driver controls a device that has more than one component. It needs to access one of those components for processing each I/O request that it receives. The specific component that it needs to access depends on the I/O request that it receives.</p>
 <p>In order to support this, the driver creates one top-level, power-managed queue to receive all its requests. It also creates one secondary, power-managed queue for each of its components. These secondary queues are called component queues. This is shown
  in the diagram below.</p>
-<img src="/windowshardware/site/view/file/112062/1/image.png" alt="" align="middle">
+<img src="112062-image.png" alt="" align="middle">
 <p>When the driver's dispatch routine for the top-level queue is invoked, it examines the request to determine which component it needs to access in order to process the request. Then, it forwards the request to the component queue for the component that it
  needs to access for that request. When the driver's dispatch routine for the component queue is invoked, it accesses the component hardware to process the request.</p>
 <p>The driver's top-level queue and component queues are all power-managed so KMDF ensures that the device is in D0 while the queues are in a dispatching state. The key point to note is that the driver is designed to maintain a component queue in a dispatching
